@@ -38,9 +38,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gradle-
           
-    - name: Make gradle wrapper executable
-      run: chmod +x ./gradlew
-      
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: 8.14.2
+        
     - name: Accept Android SDK licenses
       run: yes | sdkmanager --licenses || true
       
@@ -52,16 +54,16 @@ jobs:
         echo "VERSION_NAME=${VERSION#v}" >> $GITHUB_OUTPUT
         
     - name: Build release APK
-      run: ./gradlew assembleRelease --stacktrace
+      run: gradle assembleRelease --stacktrace
       
     - name: Build debug APK (for testing)
-      run: ./gradlew assembleDebug --stacktrace
+      run: gradle assembleDebug --stacktrace
       
     - name: Run tests
-      run: ./gradlew test --stacktrace
+      run: gradle test --stacktrace
       
     - name: Run lint checks
-      run: ./gradlew lint --stacktrace
+      run: gradle lint --stacktrace
       
     - name: Generate build info
       run: |

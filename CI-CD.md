@@ -123,6 +123,7 @@ Each workflow sets up a complete Android build environment:
 - Ubuntu Latest runner
 - JDK 17 (Temurin distribution)
 - Android SDK with latest tools
+- Gradle 8.14.2 (via gradle-build-action)
 - Gradle caching for performance
 - Automatic license acceptance
 ```
@@ -299,6 +300,13 @@ git push origin v1.2.0
 ```yaml
 # Solution: Workflow automatically installs Android SDK
 # Check Actions logs for setup steps
+```
+
+**"Gradle wrapper" Error:**
+```yaml
+# Solution: Workflows use gradle-build-action instead of wrapper
+# This ensures consistent Gradle version across all builds
+# Local development can still use 'gradle' command directly
 ```
 
 **"Tests failed" Error:**
