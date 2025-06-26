@@ -251,12 +251,35 @@ make build install  # Quick rebuild and install
 make clean test lint build
 ```
 
+## 🚀 CI/CD Pipeline
+
+The project includes automated build and release workflows:
+
+```bash
+# Push code - triggers automatic build
+git push origin main
+
+# Create release - triggers APK distribution
+git tag v1.0.0 && git push origin v1.0.0
+```
+
+📖 **[Complete CI/CD Guide](CI-CD.md)** - Detailed workflow documentation
+
+### Quick CI/CD Setup
+1. Push code to GitHub repository
+2. Workflows automatically activate
+3. APKs built on every commit
+4. Tagged versions create releases
+5. Download APKs from GitHub Releases page
+
 ## 📚 Additional Resources
 
+- **[CI/CD Documentation](CI-CD.md)** - Complete automated build guide
 - [Android Developer Documentation](https://developer.android.com/)
 - [Jetpack Compose Guide](https://developer.android.com/jetpack/compose)
 - [Archive.org API Documentation](https://archive.org/help/aboutapi.php)
 - [Gradle Build Tool](https://gradle.org/guides/)
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
 ## 🆘 Getting Help
 

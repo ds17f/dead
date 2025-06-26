@@ -99,7 +99,8 @@ This will automatically:
 - **Gradle 8.14+**
 - **Android SDK API 34**
 
-📖 **[Complete Setup Guide](SETUP.md)** - Detailed installation instructions
+📖 **[Complete Setup Guide](SETUP.md)** - Detailed installation instructions  
+🚀 **[CI/CD Documentation](CI-CD.md)** - Automated build and release guide
 
 ### Development Commands
 ```bash
