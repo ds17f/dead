@@ -1,5 +1,8 @@
 # Dead Archive - Grateful Dead Concert Archive Android App
 
+[![Build APK](https://github.com/username/dead-archive/actions/workflows/build-apk.yml/badge.svg)](https://github.com/username/dead-archive/actions/workflows/build-apk.yml)
+[![Release](https://github.com/username/dead-archive/actions/workflows/release.yml/badge.svg)](https://github.com/username/dead-archive/releases)
+
 A modern Android application for browsing, streaming, and downloading Grateful Dead concert recordings from Archive.org.
 
 ## Project Overview
@@ -155,6 +158,32 @@ The app requires the following Android permissions:
 - `FOREGROUND_SERVICE` - Background music playback
 - `FOREGROUND_SERVICE_MEDIA_PLAYBACK` - Media playback service
 - `WAKE_LOCK` - Keep device awake during playback
+
+## 📦 Downloads & Releases
+
+### Latest Release
+[![Latest Release](https://img.shields.io/github/v/release/username/dead-archive)](https://github.com/username/dead-archive/releases/latest)
+
+Download the latest APK from the [Releases page](https://github.com/username/dead-archive/releases).
+
+### Automated Builds
+- ✅ **Every commit** triggers automatic APK build
+- ✅ **Pull requests** are automatically tested
+- ✅ **Tagged releases** create GitHub releases with APKs
+- ✅ **Quality checks** include tests and lint validation
+
+### Creating a Release
+```bash
+# Create and push a version tag
+git tag v1.0.0
+git push origin v1.0.0
+
+# GitHub Actions will automatically:
+# 1. Build release APK
+# 2. Run all tests
+# 3. Create GitHub release
+# 4. Upload APK files
+```
 
 ## Contributing
 

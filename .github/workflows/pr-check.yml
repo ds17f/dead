@@ -1,0 +1,114 @@
+name: Pull Request Checks
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    types: [opened, synchronize, reopened]
+
+jobs:
+  validate:
+    name: Validate Pull Request
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+      
+    - name: Cache Gradle packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+          
+    - name: Make gradle wrapper executable
+      run: chmod +x ./gradlew
+      
+    - name: Accept Android SDK licenses
+      run: yes | sdkmanager --licenses || true
+      
+    - name: Build debug APK
+      run: ./gradlew assembleDebug --stacktrace
+      
+    - name: Run unit tests
+      run: ./gradlew test --stacktrace
+      
+    - name: Run lint checks
+      run: ./gradlew lint --stacktrace
+      
+    - name: Generate test report
+      if: always()
+      run: |
+        echo "## 🧪 Test Results" >> $GITHUB_STEP_SUMMARY
+        if [ -f "app/build/reports/tests/testDebugUnitTest/index.html" ]; then
+          echo "✅ Unit tests completed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Unit tests failed or not found" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: Generate lint report
+      if: always()
+      run: |
+        echo "## 🔍 Code Quality" >> $GITHUB_STEP_SUMMARY
+        if [ -f "app/build/reports/lint-results-debug.xml" ]; then
+          LINT_ERRORS=$(grep -c 'severity="Error"' app/build/reports/lint-results-debug.xml || echo "0")
+          LINT_WARNINGS=$(grep -c 'severity="Warning"' app/build/reports/lint-results-debug.xml || echo "0")
+          echo "- **Errors**: $LINT_ERRORS" >> $GITHUB_STEP_SUMMARY
+          echo "- **Warnings**: $LINT_WARNINGS" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "❌ Lint report not found" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+    - name: Upload PR artifacts
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: pr-build-${{ github.event.number }}
+        path: |
+          app/build/outputs/apk/debug/app-debug.apk
+          app/build/reports/lint-results*.html
+          app/build/reports/tests/
+        retention-days: 7
+        
+    - name: Comment PR results
+      if: always()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          let comment = '## 🤖 Automated Build Results\n\n';
+          
+          // Check if build succeeded
+          if (context.job.status === 'success') {
+            comment += '✅ **Build**: Success\n';
+            comment += '✅ **Tests**: Passed\n';
+            comment += '✅ **Lint**: Completed\n\n';
+            comment += '📱 Debug APK built and ready for testing.\n';
+          } else {
+            comment += '❌ **Build**: Failed\n\n';
+            comment += '🔍 Check the workflow logs for details.\n';
+          }
+          
+          comment += '\n---\n';
+          comment += `**Commit**: ${context.sha.substring(0, 8)}\n`;
+          comment += `**Workflow**: [${context.runNumber}](${context.payload.repository.html_url}/actions/runs/${context.runId})`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
