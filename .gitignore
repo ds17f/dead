@@ -86,6 +86,8 @@ release.keystore
 android_logs.txt
 temp/
 create_wrapper.py
-mcp-shrimp-task-manager/
 
 .claude
+
+# Task manager files
+mcp-shrimp-task-manager/

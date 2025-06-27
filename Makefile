@@ -1,7 +1,7 @@
 # Dead Archive Android App - Makefile
 # Simplifies common development tasks
 
-.PHONY: help build clean test lint install run run-emulator debug release setup deps check status logs
+.PHONY: help build clean test lint install run run-emulator debug release tag-release dry-run-release setup deps check status logs
 
 # Default target
 help:
@@ -13,7 +13,9 @@ help:
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
-	@echo "  make release     - Build release APK"
+	@echo "  make release     - Build release APK
+	@echo "  make tag-release    - Create release version, changelog, and build APK
+	@echo "  make dry-run-release - Test release process without making changes"""
 	@echo "  make clean       - Clean build artifacts"
 	@echo ""
 	@echo "Development:"
@@ -66,6 +68,20 @@ release:
 	gradle assembleRelease
 	@echo "✅ Release APK built successfully!"
 	@echo "📱 APK location: app/build/outputs/apk/release/"
+
+tag-release:
+	@echo "🚀 Creating new release version..."
+	@chmod +x ./scripts/release.sh
+	@./scripts/release.sh
+	@echo "🔨 Building release APK..."
+	gradle assembleRelease
+	@echo "✅ Release created, tagged, and built successfully!"
+
+dry-run-release:
+	@echo "🧪 Testing release process (dry run)..."
+	@chmod +x ./scripts/release.sh
+	@./scripts/release.sh --dry-run
+	@echo "💡 To perform an actual release, use 'make tag-release'"
 
 clean:
 	@echo "🧹 Cleaning build artifacts..."
