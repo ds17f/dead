@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.1] - 2025-06-27
+
+### Bug Fixes
+* resolve gradle wrapper issues in GitHub Actions workflows (10d71cc)
+
+### Other Changes
+* security: enhance GitHub Actions workflow secret protection (c357923)
+
+
 ## [0.1.0] - 2025-06-27
 
 ### New Features
@@ -22,6 +31,3 @@
 
 ### Build System
 * add release build configuration and documentation (586dfa7)
-
-
-## [1.1.0] - 2025-06-27
