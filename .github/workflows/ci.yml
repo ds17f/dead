@@ -44,15 +44,16 @@ jobs:
       with:
         gradle-version: 8.7
     
-    - name: Cache Gradle dependencies
-      uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
+    # Disable cache temporarily as it's causing 503 errors
+    # - name: Cache Gradle dependencies
+    #   uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+    #   with:
+    #     path: |
+    #       ~/.gradle/caches
+    #       ~/.gradle/wrapper
+    #     key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-gradle-
     
     - name: Accept Android SDK licenses
       run: yes | sdkmanager --licenses || true
@@ -82,24 +83,18 @@ jobs:
     - name: Run lint checks
       run: ./gradlew lint --no-daemon --stacktrace
     
-    # Build debug APK for PR/push, release APK for tags
-    - name: Build APK
+    # Build APKs based on context (debug for PR/push, release APK+AAB for tags)
+    - name: Build Android Artifacts
       run: |
         if [[ "${{ github.ref_type }}" == "tag" ]]; then
-          echo "🏷️ Tag detected - building release APK"
-          ./gradlew assembleRelease --no-daemon --stacktrace
+          echo "🏷️ Tag detected - building release APK and AAB..."
+          ./gradlew clean assembleRelease bundleRelease --no-daemon --stacktrace
+          echo "✅ Release builds completed"
         else
           echo "🔨 Building debug APK for CI"
           ./gradlew assembleDebug --no-daemon --stacktrace
+          echo "✅ Debug build completed"
         fi
-    
-    # Only build release AAB for tags
-    - name: Build Release AAB and APK
-      if: github.ref_type == 'tag'
-      run: |
-        echo "🔨 Building both release APK and AAB..."
-        ./gradlew assembleRelease bundleRelease --no-daemon --stacktrace
-        echo "✅ Build completed"
     
     # Release-specific steps (only run for tags)
     - name: Check Release Prerequisites
@@ -370,24 +365,38 @@ jobs:
         # Get the version from the tag (remove 'v' prefix)
         VERSION=${GITHUB_REF#refs/tags/v}
         
-        # Identify signed or unsigned APK
-        if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
-          ORIGINAL_APK="app/build/outputs/apk/release/app-release.apk"
-        else
-          ORIGINAL_APK="app/build/outputs/apk/release/app-release-unsigned.apk"
-        fi
-        
         # Create directory for renamed files
         mkdir -p renamed-artifacts
         
-        # Copy and rename APK
-        cp "$ORIGINAL_APK" "renamed-artifacts/dead-archive-$VERSION-release.apk"
+        # Check for APK and copy if found
+        if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
+          echo "📦 Found signed APK, renaming..."
+          cp "app/build/outputs/apk/release/app-release.apk" "renamed-artifacts/dead-archive-$VERSION-release.apk"
+        elif [ -f "app/build/outputs/apk/release/app-release-unsigned.apk" ]; then
+          echo "⚠️ Found unsigned APK - this should not happen with signing enabled"
+          echo "⚠️ Skipping APK renaming as it should be signed"
+        else
+          echo "❌ No APK file found - build may have failed"
+          exit 1
+        fi
         
-        # Copy and rename AAB
-        cp "app/build/outputs/bundle/release/app-release.aab" "renamed-artifacts/dead-archive-$VERSION-release.aab"
+        # Check for AAB and copy if found
+        if [ -f "app/build/outputs/bundle/release/app-release.aab" ]; then
+          echo "📦 Found AAB, renaming..."
+          cp "app/build/outputs/bundle/release/app-release.aab" "renamed-artifacts/dead-archive-$VERSION-release.aab"
+        else
+          echo "❌ No AAB file found - build may have failed"
+          exit 1
+        fi
         
         echo "✅ Files renamed successfully:"
         ls -la renamed-artifacts/
+        
+        # Verify the renamed files
+        if [ ! -f "renamed-artifacts/dead-archive-$VERSION-release.apk" ] || [ ! -f "renamed-artifacts/dead-archive-$VERSION-release.aab" ]; then
+          echo "❌ Failed to rename files properly"
+          exit 1
+        fi
         
     # Create GitHub Release (for tags only)
     - name: Create Release
