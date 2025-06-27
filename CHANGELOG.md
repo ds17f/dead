@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.2.6] - 2025-06-27
+
+### Bug Fixes
+* use explicit conditional syntax for GitHub Actions tag detection (e451bcd)
+
+
 ## [0.2.5] - 2025-06-27
 
 ### Bug Fixes
 * resolve GitHub Actions conditional logic for tag detection (619386d)
-
-
 ## [0.2.4] - 2025-06-27
 
 ### Code Refactoring
