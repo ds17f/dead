@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.0] - 2025-06-27
+
+### New Features
+* enhance CI workflow with improved build process and file naming (47ee847)
+
+
 ## [0.1.3] - 2025-06-27
 
 ### Bug Fixes
@@ -7,8 +13,6 @@
 
 ### Code Refactoring
 * unify CI/CD workflows into single pipeline with conditional logic (e94a8a1)
-
-
 ## [0.1.2] - 2025-06-27
 
 ### Bug Fixes
