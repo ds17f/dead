@@ -164,15 +164,16 @@ extract_commits() {
   local title=$2
   local commits
   
-  commits=$(git log ${FROM_REVISION} --pretty=format:"* %s (%h)" | grep -E "^* ${type}(\([^)]+\))?:" || true)
+  # Use fixed strings instead of regex to avoid grep errors
+  commits=$(git log ${FROM_REVISION} --pretty=format:"* %s (%h)" | grep "^* ${type}" || true)
   
   if [ -n "$commits" ]; then
     echo "### $title" >> "$TEMP_CHANGELOG"
     
     # Process each commit to clean up the message
-    echo "$commits" | while read -r commit; do
+    echo "$commits" | while IFS= read -r commit; do
       # Remove the commit type prefix and format it nicely
-      clean_msg=$(echo "$commit" | sed -E "s/^\* ${type}(\([^)]+\))?: //")
+      clean_msg=$(echo "$commit" | sed "s/^\* ${type}[^:]*: //")
       echo "* $clean_msg" >> "$TEMP_CHANGELOG"
     done
     
@@ -191,7 +192,7 @@ extract_commits "build" "Build System"
 extract_commits "ci" "CI Changes"
 
 # Get miscellaneous commits (those not following conventional commit format)
-MISC_COMMITS=$(git log ${FROM_REVISION} --pretty=format:"* %s (%h)" | grep -v -E "^* (feat|fix|perf|refactor|docs|test|build|ci)(\([^)]+\))?:" || true)
+MISC_COMMITS=$(git log ${FROM_REVISION} --pretty=format:"* %s (%h)" | grep -v "^* \(feat\|fix\|perf\|refactor\|docs\|test\|build\|ci\)" || true)
 
 if [ -n "$MISC_COMMITS" ]; then
   echo "### Other Changes" >> "$TEMP_CHANGELOG"
@@ -199,8 +200,11 @@ if [ -n "$MISC_COMMITS" ]; then
   echo "" >> "$TEMP_CHANGELOG"
 fi
 
-# Add existing changelog content
-cat "$CHANGELOG_FILE" | grep -v "^# Changelog" >> "$TEMP_CHANGELOG" || true
+# Add existing changelog content (skip the header and empty sections)
+if [ -f "$CHANGELOG_FILE" ] && [ -s "$CHANGELOG_FILE" ]; then
+  # Skip the header and any empty sections, add existing content
+  sed '/^# Changelog/d; /^## \[1\.1\.0\]/d; /^$/N; /^\n$/d' "$CHANGELOG_FILE" >> "$TEMP_CHANGELOG" || true
+fi
 
 if [ "$DRY_RUN" = false ]; then
   # Replace the existing changelog only if not dry run
