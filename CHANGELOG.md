@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.2.7] - 2025-06-27
+
+### Code Refactoring
+* consolidate signing logic into build step using bash conditionals (9eb2972)
+
+
 ## [0.2.6] - 2025-06-27
 
 ### Bug Fixes
 * use explicit conditional syntax for GitHub Actions tag detection (e451bcd)
-
-
 ## [0.2.5] - 2025-06-27
 
 ### Bug Fixes
