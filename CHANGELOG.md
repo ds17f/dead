@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.3] - 2025-06-27
+
+### Bug Fixes
+* resolve APK signing configuration issues in release builds (37f0a46)
+
+
 ## [0.2.2] - 2025-06-27
 
 ### Bug Fixes
@@ -7,8 +13,6 @@
 
 ### Code Refactoring
 * enhance CI workflow with better APK info and error handling (6bf9c41)
-
-
 ## [0.2.1] - 2025-06-27
 
 ### Bug Fixes
