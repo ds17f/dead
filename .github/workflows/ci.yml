@@ -184,14 +184,24 @@ jobs:
           echo "📦 AAB Size: $AAB_SIZE"
           
           # Get version info
-          aapt dump badging "$APK_FILE" | grep -E "(package|application-label)"
+          AAPT_PATH=$(find $ANDROID_HOME/build-tools -name "aapt" | head -1)
+          if [ -n "$AAPT_PATH" ]; then
+            $AAPT_PATH dump badging "$APK_FILE" | grep -E "(package|application-label)"
+          else
+            echo "⚠️ aapt not found - skipping version info"
+          fi
         else
           # Debug build info
           APK_FILE="app/build/outputs/apk/debug/app-debug.apk"
           if [ -f "$APK_FILE" ]; then
             APK_SIZE=$(ls -lh "$APK_FILE" | awk '{print $5}')
             echo "📦 Debug APK Size: $APK_SIZE"
-            aapt dump badging "$APK_FILE" | grep -E "(package|application-label)"
+            AAPT_PATH=$(find $ANDROID_HOME/build-tools -name "aapt" | head -1)
+            if [ -n "$AAPT_PATH" ]; then
+              $AAPT_PATH dump badging "$APK_FILE" | grep -E "(package|application-label)"
+            else
+              echo "⚠️ aapt not found - skipping version info"
+            fi
           else
             echo "❌ Debug APK not found"
           fi
