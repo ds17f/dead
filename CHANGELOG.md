@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.2.5] - 2025-06-27
+
+### Bug Fixes
+* resolve GitHub Actions conditional logic for tag detection (619386d)
+
+
 ## [0.2.4] - 2025-06-27
 
 ### Code Refactoring
 * implement industry-standard signing configuration approach (b9d3fbe)
-
-
 ## [0.2.3] - 2025-06-27
 
 ### Bug Fixes
