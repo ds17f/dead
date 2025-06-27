@@ -13,9 +13,9 @@ help:
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
-	@echo "  make release     - Build release APK
-	@echo "  make tag-release    - Create release version, changelog, and build APK
-	@echo "  make dry-run-release - Test release process without making changes"""
+	@echo "  make release     - Build release APK"
+	@echo "  make tag-release - Create release version, changelog, and build APK"
+	@echo "  make dry-run-release - Test release process without making changes"
 	@echo "  make clean       - Clean build artifacts"
 	@echo ""
 	@echo "Development:"
