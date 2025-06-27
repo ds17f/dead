@@ -202,8 +202,10 @@ fi
 # Add existing changelog content
 cat "$CHANGELOG_FILE" | grep -v "^# Changelog" >> "$TEMP_CHANGELOG" || true
 
-# Replace the existing changelog
-mv "$TEMP_CHANGELOG" "$CHANGELOG_FILE"
+if [ "$DRY_RUN" = false ]; then
+  # Replace the existing changelog only if not dry run
+  mv "$TEMP_CHANGELOG" "$CHANGELOG_FILE"
+fi
 
 echo -e "${GREEN}✅ Changelog generated${NC}"
 
@@ -211,7 +213,13 @@ echo -e "${GREEN}✅ Changelog generated${NC}"
 echo ""
 echo "${BOLD}📋 Changelog Preview:${NORMAL}"
 echo "-----------------------------"
-head -n 20 "$CHANGELOG_FILE"
+if [ "$DRY_RUN" = true ]; then
+  # In dry run, show the temp changelog
+  head -n 20 "$TEMP_CHANGELOG"
+else
+  # In real run, show the actual changelog
+  head -n 20 "$CHANGELOG_FILE"
+fi
 echo "..."
 echo "-----------------------------"
 
@@ -272,6 +280,10 @@ if [ "$DRY_RUN" = true ]; then
   echo ""
   echo -e "${GREEN}✅ Dry run complete. No changes were made.${NC}"
   echo "Run without --dry-run to perform actual release."
+  
+  # Clean up temp changelog file
+  rm -f "$TEMP_CHANGELOG"
+  
   echo ""
   echo "🎸 Keep on truckin'! 🎸"
 else
