@@ -22,13 +22,55 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            // Only configure if signing properties are available
+            val storeFile = project.findProperty("RELEASE_STORE_FILE") as String?
+            val storePassword = project.findProperty("RELEASE_STORE_PASSWORD") as String?
+            val keyAlias = project.findProperty("RELEASE_KEY_ALIAS") as String?
+            val keyPassword = project.findProperty("RELEASE_KEY_PASSWORD") as String?
+            
+            if (storeFile != null && file(storeFile).exists() && 
+                !storePassword.isNullOrEmpty() && !keyAlias.isNullOrEmpty()) {
+                this.storeFile = file(storeFile)
+                this.storePassword = storePassword
+                this.keyAlias = keyAlias
+                this.keyPassword = keyPassword ?: storePassword
+            }
+        }
+    }
+
     buildTypes {
-        release {
+        debug {
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
+            isDebuggable = true
             isMinifyEnabled = false
+        }
+        
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            
+            // Only use signing if keystore exists
+            val keystoreFile = file(project.findProperty("RELEASE_STORE_FILE") ?: "release.keystore")
+            if (keystoreFile.exists() && project.hasProperty("RELEASE_STORE_PASSWORD")) {
+                signingConfig = signingConfigs.getByName("release")
+            }
+            
+            // Optional: different app name for release
+            // manifestPlaceholders["appName"] = "Dead Archive"
+        }
+        
+        create("benchmark") {
+            initWith(buildTypes.getByName("release"))
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
         }
     }
 

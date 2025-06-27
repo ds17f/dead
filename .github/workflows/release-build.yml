@@ -1,0 +1,142 @@
+name: Build Release APK
+
+on:
+  push:
+    tags:
+      - 'v*'  # Trigger on version tags like v1.0.0
+  workflow_dispatch:  # Allow manual trigger
+    inputs:
+      version:
+        description: 'Version to build'
+        required: false
+        default: 'manual'
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+    
+    - name: Cache Gradle dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+    
+    - name: Decode Keystore
+      env:
+        KEYSTORE_BASE64: ${{ secrets.KEYSTORE_FILE }}
+      run: |
+        echo $KEYSTORE_BASE64 | base64 -d > release.keystore
+        ls -la release.keystore
+    
+    - name: Create gradle.properties
+      env:
+        KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      run: |
+        cat > gradle.properties << EOF
+        org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+        org.gradle.parallel=true
+        org.gradle.configureondemand=true
+        org.gradle.caching=true
+        android.useAndroidX=true
+        android.enableJetifier=true
+        android.nonTransitiveRClass=true
+        
+        # Release signing
+        RELEASE_STORE_FILE=release.keystore
+        RELEASE_STORE_PASSWORD=$KEYSTORE_PASSWORD
+        RELEASE_KEY_ALIAS=$KEY_ALIAS
+        RELEASE_KEY_PASSWORD=$KEY_PASSWORD
+        EOF
+    
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    
+    - name: Build Release APK
+      run: ./gradlew assembleRelease --no-daemon --stacktrace
+    
+    - name: Build Release AAB
+      run: ./gradlew bundleRelease --no-daemon --stacktrace
+    
+    - name: Verify APK Signature
+      run: |
+        jarsigner -verify -verbose app/build/outputs/apk/release/app-release.apk
+        echo "✅ APK is properly signed!"
+    
+    - name: Get APK Info
+      run: |
+        APK_SIZE=$(ls -lh app/build/outputs/apk/release/app-release.apk | awk '{print $5}')
+        AAB_SIZE=$(ls -lh app/build/outputs/bundle/release/app-release.aab | awk '{print $5}')
+        echo "📦 APK Size: $APK_SIZE"
+        echo "📦 AAB Size: $AAB_SIZE"
+        
+        # Get version info
+        aapt dump badging app/build/outputs/apk/release/app-release.apk | grep -E "(package|application-label)"
+    
+    - name: Upload Release APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: dead-archive-apk-${{ github.sha }}
+        path: app/build/outputs/apk/release/app-release.apk
+        retention-days: 30
+    
+    - name: Upload Release AAB
+      uses: actions/upload-artifact@v4
+      with:
+        name: dead-archive-aab-${{ github.sha }}
+        path: app/build/outputs/bundle/release/app-release.aab
+        retention-days: 30
+    
+    - name: Upload Mapping Files
+      uses: actions/upload-artifact@v4
+      with:
+        name: dead-archive-mapping-${{ github.sha }}
+        path: app/build/outputs/mapping/release/
+        retention-days: 90
+    
+    # Optional: Create GitHub Release
+    - name: Create Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          app/build/outputs/apk/release/app-release.apk
+          app/build/outputs/bundle/release/app-release.aab
+        body: |
+          🎸 Dead Archive Release Build
+          
+          **Changes in this release:**
+          - Archive.org API integration complete
+          - Network layer with robust JSON parsing
+          - Modern Android architecture (MVVM, Jetpack Compose)
+          
+          **Download:**
+          - **APK**: Direct installation file
+          - **AAB**: For Google Play Store upload
+          
+          **Testing:**
+          ```bash
+          adb install -r app-release.apk
+          ```
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
