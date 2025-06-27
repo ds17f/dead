@@ -153,40 +153,31 @@ jobs:
           exit 1
         fi
     
-    - name: Create gradle.properties
+    - name: Create signing configuration
       if: github.ref_type == 'tag'
       env:
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
       run: |
-        echo "📝 Creating gradle.properties with signing configuration..."
+        echo "📝 Creating signing.properties with signing configuration..."
         
-        # Create gradle.properties without echoing secrets
+        # Create signing.properties without echoing secrets
         {
-          echo "org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8"
-          echo "org.gradle.parallel=true"
-          echo "org.gradle.configureondemand=true"
-          echo "org.gradle.caching=true"
-          echo "android.useAndroidX=true"
-          echo "android.enableJetifier=true"
-          echo "android.nonTransitiveRClass=true"
-          echo ""
-          echo "# Release signing"
-          echo "RELEASE_STORE_FILE=release.keystore"
-          echo "RELEASE_STORE_PASSWORD=${KEYSTORE_PASSWORD}"
-          echo "RELEASE_KEY_ALIAS=${KEY_ALIAS}"
-          echo "RELEASE_KEY_PASSWORD=${KEY_PASSWORD}"
-        } > gradle.properties
+          echo "storeFile=release.keystore"
+          echo "storePassword=${KEYSTORE_PASSWORD}"
+          echo "keyAlias=${KEY_ALIAS}"
+          echo "keyPassword=${KEY_PASSWORD}"
+        } > signing.properties
         
-        echo "✅ gradle.properties created with $(wc -l < gradle.properties) lines"
+        echo "✅ signing.properties created with $(wc -l < signing.properties) lines"
         
         # Debug: Verify signing configuration (without revealing secrets)
         echo "🔍 Verifying signing configuration..."
         echo "- Keystore file exists: $([ -f 'release.keystore' ] && echo 'YES' || echo 'NO')"
-        echo "- gradle.properties exists: $([ -f 'gradle.properties' ] && echo 'YES' || echo 'NO')"
-        echo "- gradle.properties contains RELEASE_STORE_FILE: $(grep -q 'RELEASE_STORE_FILE' gradle.properties && echo 'YES' || echo 'NO')"
-        echo "- gradle.properties contains RELEASE_STORE_PASSWORD: $(grep -q 'RELEASE_STORE_PASSWORD' gradle.properties && echo 'YES' || echo 'NO')"
+        echo "- signing.properties exists: $([ -f 'signing.properties' ] && echo 'YES' || echo 'NO')"
+        echo "- signing.properties contains storeFile: $(grep -q 'storeFile' signing.properties && echo 'YES' || echo 'NO')"
+        echo "- signing.properties contains storePassword: $(grep -q 'storePassword' signing.properties && echo 'YES' || echo 'NO')"
     
     - name: Verify APK Signature
       if: github.ref_type == 'tag'
@@ -293,7 +284,7 @@ jobs:
       if: always() && github.ref_type == 'tag'
       run: |
         echo "🧹 Cleaning up sensitive files..."
-        rm -f release.keystore gradle.properties
+        rm -f release.keystore signing.properties
         echo "✅ Cleanup complete"
     
     # Upload artifacts conditionally

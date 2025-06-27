@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -24,28 +26,20 @@ android {
 
     signingConfigs {
         create("release") {
-            // Check if signing properties are available
-            val storeFile = project.findProperty("RELEASE_STORE_FILE") as String? ?: "release.keystore"
-            val storePassword = project.findProperty("RELEASE_STORE_PASSWORD") as String?
-            val keyAlias = project.findProperty("RELEASE_KEY_ALIAS") as String?
-            val keyPassword = project.findProperty("RELEASE_KEY_PASSWORD") as String?
-            
-            // Configure signing if all required properties are present
-            if (file(storeFile).exists() && 
-                !storePassword.isNullOrEmpty() && 
-                !keyAlias.isNullOrEmpty() && 
-                !keyPassword.isNullOrEmpty()) {
-                this.storeFile = file(storeFile)
-                this.storePassword = storePassword
-                this.keyAlias = keyAlias
-                this.keyPassword = keyPassword
-                println("✅ Release signing configuration applied")
+            // Use standard properties file approach
+            val signingPropsFile = rootProject.file("signing.properties")
+            if (signingPropsFile.exists()) {
+                val signingProps = Properties()
+                signingProps.load(signingPropsFile.inputStream())
+                
+                storeFile = file(signingProps["storeFile"] as String)
+                storePassword = signingProps["storePassword"] as String
+                keyAlias = signingProps["keyAlias"] as String
+                keyPassword = signingProps["keyPassword"] as String
+                
+                println("✅ Release signing configuration loaded from signing.properties")
             } else {
-                println("⚠️ Release signing configuration not available - some properties missing")
-                println("  - Store file exists: ${file(storeFile).exists()}")
-                println("  - Store password present: ${!storePassword.isNullOrEmpty()}")
-                println("  - Key alias present: ${!keyAlias.isNullOrEmpty()}")
-                println("  - Key password present: ${!keyPassword.isNullOrEmpty()}")
+                println("⚠️ signing.properties not found - release builds will be unsigned")
             }
         }
     }
@@ -67,7 +61,7 @@ android {
                 "proguard-rules.pro"
             )
             
-            // Always try to use release signing configuration
+            // Use release signing if available
             signingConfig = signingConfigs.getByName("release")
             
             // Optional: different app name for release
