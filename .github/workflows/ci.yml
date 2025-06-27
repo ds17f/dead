@@ -96,7 +96,7 @@ jobs:
           echo "✅ Debug build completed"
         fi
     
-    # Debug GitHub context for troubleshooting
+    # Debug GitHub context for troubleshooting  
     - name: Debug GitHub Context
       run: |
         echo "🔍 GitHub Context Debug Info:"
@@ -106,10 +106,11 @@ jobs:
         echo "- github.event_name: ${{ github.event_name }}"
         echo "- Tag detected (ref_type): ${{ github.ref_type == 'tag' }}"
         echo "- Tag detected (startsWith): ${{ startsWith(github.ref, 'refs/tags/') }}"
+        echo "- Will run signing steps: ${{ startsWith(github.ref, 'refs/tags/') }}"
 
     # Release-specific steps (only run for tags)
     - name: Check Release Prerequisites
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       run: |
         echo "🔍 Checking release build prerequisites..."
         
@@ -148,7 +149,7 @@ jobs:
         echo "✅ All signing secrets are configured"
 
     - name: Decode Keystore
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       env:
         KEYSTORE_BASE64: ${{ secrets.KEYSTORE_FILE }}
       run: |
@@ -165,7 +166,7 @@ jobs:
         fi
     
     - name: Create signing configuration
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       env:
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
@@ -191,7 +192,7 @@ jobs:
         echo "- signing.properties contains storePassword: $(grep -q 'storePassword' signing.properties && echo 'YES' || echo 'NO')"
     
     - name: Verify APK Signature
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       run: |
         echo "🔍 Checking for APK files..."
         ls -la app/build/outputs/apk/release/
@@ -292,7 +293,7 @@ jobs:
     
     # Clean up sensitive files (release only)
     - name: Clean up sensitive files
-      if: always() && startsWith(github.ref, 'refs/tags/')
+      if: ${{ always() && startsWith(github.ref, 'refs/tags/') }}
       run: |
         echo "🧹 Cleaning up sensitive files..."
         rm -f release.keystore signing.properties
@@ -311,7 +312,7 @@ jobs:
         retention-days: 7
     
     - name: Upload Release APK
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: dead-archive-${{ github.ref_name }}-release
@@ -319,7 +320,7 @@ jobs:
         retention-days: 30
     
     - name: Upload Release AAB
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: dead-archive-${{ github.ref_name }}-aab
@@ -327,7 +328,7 @@ jobs:
         retention-days: 30
     
     - name: Upload Mapping Files
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: dead-archive-${{ github.ref_name }}-mapping
@@ -409,7 +410,7 @@ jobs:
         
     # Create GitHub Release (for tags only)
     - name: Create Release
-      if: startsWith(github.ref, 'refs/tags/')
+      if: ${{ startsWith(github.ref, 'refs/tags/') }}
       uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
       with:
         files: |
