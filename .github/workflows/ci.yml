@@ -180,6 +180,13 @@ jobs:
         } > gradle.properties
         
         echo "✅ gradle.properties created with $(wc -l < gradle.properties) lines"
+        
+        # Debug: Verify signing configuration (without revealing secrets)
+        echo "🔍 Verifying signing configuration..."
+        echo "- Keystore file exists: $([ -f 'release.keystore' ] && echo 'YES' || echo 'NO')"
+        echo "- gradle.properties exists: $([ -f 'gradle.properties' ] && echo 'YES' || echo 'NO')"
+        echo "- gradle.properties contains RELEASE_STORE_FILE: $(grep -q 'RELEASE_STORE_FILE' gradle.properties && echo 'YES' || echo 'NO')"
+        echo "- gradle.properties contains RELEASE_STORE_PASSWORD: $(grep -q 'RELEASE_STORE_PASSWORD' gradle.properties && echo 'YES' || echo 'NO')"
     
     - name: Verify APK Signature
       if: github.ref_type == 'tag'

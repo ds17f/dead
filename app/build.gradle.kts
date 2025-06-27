@@ -24,18 +24,28 @@ android {
 
     signingConfigs {
         create("release") {
-            // Only configure if signing properties are available
-            val storeFile = project.findProperty("RELEASE_STORE_FILE") as String?
+            // Check if signing properties are available
+            val storeFile = project.findProperty("RELEASE_STORE_FILE") as String? ?: "release.keystore"
             val storePassword = project.findProperty("RELEASE_STORE_PASSWORD") as String?
             val keyAlias = project.findProperty("RELEASE_KEY_ALIAS") as String?
             val keyPassword = project.findProperty("RELEASE_KEY_PASSWORD") as String?
             
-            if (storeFile != null && file(storeFile).exists() && 
-                !storePassword.isNullOrEmpty() && !keyAlias.isNullOrEmpty()) {
+            // Configure signing if all required properties are present
+            if (file(storeFile).exists() && 
+                !storePassword.isNullOrEmpty() && 
+                !keyAlias.isNullOrEmpty() && 
+                !keyPassword.isNullOrEmpty()) {
                 this.storeFile = file(storeFile)
                 this.storePassword = storePassword
                 this.keyAlias = keyAlias
-                this.keyPassword = keyPassword ?: storePassword
+                this.keyPassword = keyPassword
+                println("✅ Release signing configuration applied")
+            } else {
+                println("⚠️ Release signing configuration not available - some properties missing")
+                println("  - Store file exists: ${file(storeFile).exists()}")
+                println("  - Store password present: ${!storePassword.isNullOrEmpty()}")
+                println("  - Key alias present: ${!keyAlias.isNullOrEmpty()}")
+                println("  - Key password present: ${!keyPassword.isNullOrEmpty()}")
             }
         }
     }
@@ -57,11 +67,8 @@ android {
                 "proguard-rules.pro"
             )
             
-            // Only use signing if keystore exists
-            val keystoreFile = file(project.findProperty("RELEASE_STORE_FILE") ?: "release.keystore")
-            if (keystoreFile.exists() && project.hasProperty("RELEASE_STORE_PASSWORD")) {
-                signingConfig = signingConfigs.getByName("release")
-            }
+            // Always try to use release signing configuration
+            signingConfig = signingConfigs.getByName("release")
             
             // Optional: different app name for release
             // manifestPlaceholders["appName"] = "Dead Archive"
