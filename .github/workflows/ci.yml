@@ -94,9 +94,12 @@ jobs:
         fi
     
     # Only build release AAB for tags
-    - name: Build Release AAB
+    - name: Build Release AAB and APK
       if: github.ref_type == 'tag'
-      run: ./gradlew bundleRelease --no-daemon --stacktrace
+      run: |
+        echo "🔨 Building both release APK and AAB..."
+        ./gradlew assembleRelease bundleRelease --no-daemon --stacktrace
+        echo "✅ Build completed"
     
     # Release-specific steps (only run for tags)
     - name: Decode Keystore
@@ -255,7 +258,7 @@ jobs:
       if: github.ref_type == 'tag'
       uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
-        name: dead-archive-apk-${{ github.sha }}
+        name: dead-archive-${{ github.ref_name }}-release
         path: app/build/outputs/apk/release/app-release*.apk
         retention-days: 30
     
@@ -263,7 +266,7 @@ jobs:
       if: github.ref_type == 'tag'
       uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
-        name: dead-archive-aab-${{ github.sha }}
+        name: dead-archive-${{ github.ref_name }}-aab
         path: app/build/outputs/bundle/release/app-release.aab
         retention-days: 30
     
@@ -271,7 +274,7 @@ jobs:
       if: github.ref_type == 'tag'
       uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
-        name: dead-archive-mapping-${{ github.sha }}
+        name: dead-archive-${{ github.ref_name }}-mapping
         path: app/build/outputs/mapping/release/
         retention-days: 90
     
@@ -307,14 +310,41 @@ jobs:
             body: comment
           });
     
+    # Rename release files with proper naming convention
+    - name: Rename release files
+      if: github.ref_type == 'tag'
+      run: |
+        echo "🏷️ Renaming release files to follow naming convention..."
+        # Get the version from the tag (remove 'v' prefix)
+        VERSION=${GITHUB_REF#refs/tags/v}
+        
+        # Identify signed or unsigned APK
+        if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
+          ORIGINAL_APK="app/build/outputs/apk/release/app-release.apk"
+        else
+          ORIGINAL_APK="app/build/outputs/apk/release/app-release-unsigned.apk"
+        fi
+        
+        # Create directory for renamed files
+        mkdir -p renamed-artifacts
+        
+        # Copy and rename APK
+        cp "$ORIGINAL_APK" "renamed-artifacts/dead-archive-$VERSION-release.apk"
+        
+        # Copy and rename AAB
+        cp "app/build/outputs/bundle/release/app-release.aab" "renamed-artifacts/dead-archive-$VERSION-release.aab"
+        
+        echo "✅ Files renamed successfully:"
+        ls -la renamed-artifacts/
+        
     # Create GitHub Release (for tags only)
     - name: Create Release
       if: github.ref_type == 'tag'
       uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
       with:
         files: |
-          app/build/outputs/apk/release/app-release*.apk
-          app/build/outputs/bundle/release/app-release.aab
+          renamed-artifacts/dead-archive-*-release.apk
+          renamed-artifacts/dead-archive-*-release.aab
         body: |
           🎸 Dead Archive Release Build
           
@@ -324,12 +354,12 @@ jobs:
           - Modern Android architecture (MVVM, Jetpack Compose)
           
           **Download:**
-          - **APK**: Direct installation file
+          - **APK**: Direct installation file for Android devices
           - **AAB**: For Google Play Store upload
           
           **Testing:**
           ```bash
-          adb install -r app-release.apk
+          adb install -r dead-archive-${{ github.ref_name }}-release.apk
           ```
         draft: false
         prerelease: false
