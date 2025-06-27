@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.3] - 2025-06-27
+
+### Bug Fixes
+* resolve aapt command not found error in CI workflow (51ab24d)
+
+### Code Refactoring
+* unify CI/CD workflows into single pipeline with conditional logic (e94a8a1)
+
+
 ## [0.1.2] - 2025-06-27
 
 ### Bug Fixes
@@ -7,8 +16,6 @@
 
 ### Code Refactoring
 * streamline release process and remove workflow duplication (436487e)
-
-
 ## [0.1.1] - 2025-06-27
 
 ### Bug Fixes
