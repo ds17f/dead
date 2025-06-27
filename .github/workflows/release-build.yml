@@ -11,30 +11,35 @@ on:
         required: false
         default: 'manual'
 
+permissions:
+  contents: read
+  actions: read
+  packages: write
+
 jobs:
   build-release:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
     
     - name: Set up JDK 17
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
       with:
         java-version: '17'
         distribution: 'temurin'
     
     - name: Setup Android SDK
-      uses: android-actions/setup-android@v3
+      uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3.2.2
     
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
+      uses: gradle/gradle-build-action@a8f75513eafdebd8141bd1cd4e30fcd194af8dfa # v2.12.0
       with:
         gradle-version: 8.7
     
     - name: Cache Gradle dependencies
-      uses: actions/cache@v4
+      uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
       with:
         path: |
           ~/.gradle/caches
@@ -47,8 +52,17 @@ jobs:
       env:
         KEYSTORE_BASE64: ${{ secrets.KEYSTORE_FILE }}
       run: |
-        echo $KEYSTORE_BASE64 | base64 -d > release.keystore
-        ls -la release.keystore
+        echo "🔐 Decoding keystore from base64..."
+        echo "$KEYSTORE_BASE64" | base64 -d > release.keystore
+        
+        # Verify keystore exists without showing details
+        if [ -f "release.keystore" ]; then
+          echo "✅ Keystore file created successfully"
+          echo "📏 Size: $(stat -f%z release.keystore 2>/dev/null || stat -c%s release.keystore) bytes"
+        else
+          echo "❌ Failed to create keystore file"
+          exit 1
+        fi
     
     - name: Create gradle.properties
       env:
@@ -56,21 +70,26 @@ jobs:
         KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
       run: |
-        cat > gradle.properties << EOF
-        org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
-        org.gradle.parallel=true
-        org.gradle.configureondemand=true
-        org.gradle.caching=true
-        android.useAndroidX=true
-        android.enableJetifier=true
-        android.nonTransitiveRClass=true
+        echo "📝 Creating gradle.properties with signing configuration..."
         
-        # Release signing
-        RELEASE_STORE_FILE=release.keystore
-        RELEASE_STORE_PASSWORD=$KEYSTORE_PASSWORD
-        RELEASE_KEY_ALIAS=$KEY_ALIAS
-        RELEASE_KEY_PASSWORD=$KEY_PASSWORD
-        EOF
+        # Create gradle.properties without echoing secrets
+        {
+          echo "org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8"
+          echo "org.gradle.parallel=true"
+          echo "org.gradle.configureondemand=true"
+          echo "org.gradle.caching=true"
+          echo "android.useAndroidX=true"
+          echo "android.enableJetifier=true"
+          echo "android.nonTransitiveRClass=true"
+          echo ""
+          echo "# Release signing"
+          echo "RELEASE_STORE_FILE=release.keystore"
+          echo "RELEASE_STORE_PASSWORD=${KEYSTORE_PASSWORD}"
+          echo "RELEASE_KEY_ALIAS=${KEY_ALIAS}"
+          echo "RELEASE_KEY_PASSWORD=${KEY_PASSWORD}"
+        } > gradle.properties
+        
+        echo "✅ gradle.properties created with $(wc -l < gradle.properties) lines"
     
     - name: Fix Gradle Wrapper
       run: |
@@ -111,22 +130,29 @@ jobs:
         # Get version info
         aapt dump badging app/build/outputs/apk/release/app-release.apk | grep -E "(package|application-label)"
     
+    - name: Clean up sensitive files
+      if: always()
+      run: |
+        echo "🧹 Cleaning up sensitive files..."
+        rm -f release.keystore gradle.properties
+        echo "✅ Cleanup complete"
+    
     - name: Upload Release APK
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: dead-archive-apk-${{ github.sha }}
         path: app/build/outputs/apk/release/app-release.apk
         retention-days: 30
     
     - name: Upload Release AAB
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: dead-archive-aab-${{ github.sha }}
         path: app/build/outputs/bundle/release/app-release.aab
         retention-days: 30
     
     - name: Upload Mapping Files
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
       with:
         name: dead-archive-mapping-${{ github.sha }}
         path: app/build/outputs/mapping/release/
@@ -135,7 +161,7 @@ jobs:
     # Optional: Create GitHub Release
     - name: Create Release
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
       with:
         files: |
           app/build/outputs/apk/release/app-release.apk

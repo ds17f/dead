@@ -15,21 +15,21 @@ jobs:
       
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
         fetch-depth: 0  # Fetch full history for changelog generation
         
     - name: Set up JDK 17
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00 # v4.7.1
       with:
         java-version: '17'
         distribution: 'temurin'
         
     - name: Setup Android SDK
-      uses: android-actions/setup-android@v3
+      uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3.2.2
       
     - name: Cache Gradle packages
-      uses: actions/cache@v3
+      uses: actions/cache@2f8e54208210a422b2efd51efaa6bd6d7ca8920f # v3.4.3
       with:
         path: |
           ~/.gradle/caches
@@ -39,7 +39,7 @@ jobs:
           ${{ runner.os }}-gradle-
           
     - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
+      uses: gradle/gradle-build-action@a8f75513eafdebd8141bd1cd4e30fcd194af8dfa # v2.12.0
       with:
         gradle-version: 8.14.2
         
@@ -124,7 +124,7 @@ jobs:
         EOF
         
     - name: Create GitHub Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844 # v1
       with:
         tag_name: ${{ steps.version.outputs.VERSION }}
         name: Dead Archive ${{ steps.version.outputs.VERSION }}
