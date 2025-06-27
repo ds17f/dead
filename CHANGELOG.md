@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.2.9] - 2025-06-27
+
+### Bug Fixes
+* correct keystore path in signing.properties for app module (9939bf8)
+
+
 ## [0.2.8] - 2025-06-27
 
 ### Bug Fixes
 * resolve YAML syntax error in workflow heredoc usage (829c018)
-
-
 ## [0.2.7] - 2025-06-27
 
 ### Code Refactoring
