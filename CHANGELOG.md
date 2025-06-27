@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.2] - 2025-06-27
+
+### Bug Fixes
+* improve GitHub Actions workflow APK handling and artifact uploads (5395a19)
+
+### Code Refactoring
+* streamline release process and remove workflow duplication (436487e)
+
+
 ## [0.1.1] - 2025-06-27
 
 ### Bug Fixes
@@ -7,8 +16,6 @@
 
 ### Other Changes
 * security: enhance GitHub Actions workflow secret protection (c357923)
-
-
 ## [0.1.0] - 2025-06-27
 
 ### New Features
