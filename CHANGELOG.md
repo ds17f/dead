@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.2.1] - 2025-06-27
+
+### Bug Fixes
+* repair broken Makefile help command due to unterminated quotes (5426319)
+
+### Other Changes
+* security: enforce APK signing for release builds and validate prerequisites (14e5f8e)
+
+
 ## [0.2.0] - 2025-06-27
 
 ### New Features
 * enhance CI workflow with improved build process and file naming (47ee847)
-
-
 ## [0.1.3] - 2025-06-27
 
 ### Bug Fixes
