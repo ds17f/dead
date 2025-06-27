@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.2] - 2025-06-27
+
+### Bug Fixes
+* resolve release script commit counting bug when single commit exists (9a8735f)
+
+### Code Refactoring
+* enhance CI workflow with better APK info and error handling (6bf9c41)
+
+
 ## [0.2.1] - 2025-06-27
 
 ### Bug Fixes
@@ -7,8 +16,6 @@
 
 ### Other Changes
 * security: enforce APK signing for release builds and validate prerequisites (14e5f8e)
-
-
 ## [0.2.0] - 2025-06-27
 
 ### New Features
