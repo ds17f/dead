@@ -99,8 +99,13 @@ if [ "$VERSION_PROVIDED" = false ]; then
   FIXES=$(git log ${FROM_REVISION} --pretty=format:"%s" | grep -E "^fix(\([^)]+\))?:" || echo "")
   FIXES_COUNT=$(echo "$FIXES" | grep -v "^$" | wc -l | tr -d ' ')
   
-  # Count total commits
-  TOTAL_COMMITS=$(git log ${FROM_REVISION} --pretty=format:"%H" | wc -l | tr -d ' ')
+  # Count total commits (handle case where single commit has no trailing newline)
+  COMMIT_HASHES=$(git log ${FROM_REVISION} --pretty=format:"%H")
+  if [ -n "$COMMIT_HASHES" ]; then
+    TOTAL_COMMITS=$(echo "$COMMIT_HASHES" | wc -l | tr -d ' ')
+  else
+    TOTAL_COMMITS=0
+  fi
   
   echo -e "${BLUE}📊 Commit Analysis:${NC}"
   echo "  - Breaking changes: $BREAKING_CHANGES_COUNT"
