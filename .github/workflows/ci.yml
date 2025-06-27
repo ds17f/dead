@@ -102,6 +102,45 @@ jobs:
         echo "✅ Build completed"
     
     # Release-specific steps (only run for tags)
+    - name: Check Release Prerequisites
+      if: github.ref_type == 'tag'
+      run: |
+        echo "🔍 Checking release build prerequisites..."
+        
+        # Check if required secrets are available (without revealing values)
+        if [ -z "${{ secrets.KEYSTORE_FILE }}" ]; then
+          echo "❌ KEYSTORE_FILE secret is missing"
+          MISSING_SECRETS=true
+        fi
+        
+        if [ -z "${{ secrets.KEYSTORE_PASSWORD }}" ]; then
+          echo "❌ KEYSTORE_PASSWORD secret is missing"
+          MISSING_SECRETS=true
+        fi
+        
+        if [ -z "${{ secrets.KEY_ALIAS }}" ]; then
+          echo "❌ KEY_ALIAS secret is missing"
+          MISSING_SECRETS=true
+        fi
+        
+        if [ -z "${{ secrets.KEY_PASSWORD }}" ]; then
+          echo "❌ KEY_PASSWORD secret is missing"
+          MISSING_SECRETS=true
+        fi
+        
+        if [ "$MISSING_SECRETS" = "true" ]; then
+          echo ""
+          echo "🚫 Release build cannot proceed without signing secrets."
+          echo "📋 Configure these secrets in GitHub repository settings:"
+          echo "   - KEYSTORE_FILE (base64 encoded keystore)"
+          echo "   - KEYSTORE_PASSWORD"
+          echo "   - KEY_ALIAS"
+          echo "   - KEY_PASSWORD"
+          exit 1
+        fi
+        
+        echo "✅ All signing secrets are configured"
+
     - name: Decode Keystore
       if: github.ref_type == 'tag'
       env:
@@ -153,16 +192,29 @@ jobs:
         echo "🔍 Checking for APK files..."
         ls -la app/build/outputs/apk/release/
         
-        # Check for signed APK first, then unsigned
+        # For release builds, we REQUIRE a signed APK
         if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
           echo "📱 Found signed APK: app-release.apk"
           APK_FILE="app/build/outputs/apk/release/app-release.apk"
-          jarsigner -verify -verbose "$APK_FILE"
-          echo "✅ APK is properly signed!"
+          
+          # Verify the signature
+          if jarsigner -verify -verbose "$APK_FILE"; then
+            echo "✅ APK is properly signed!"
+          else
+            echo "❌ APK signature verification failed!"
+            exit 1
+          fi
         elif [ -f "app/build/outputs/apk/release/app-release-unsigned.apk" ]; then
-          echo "📱 Found unsigned APK: app-release-unsigned.apk"
-          APK_FILE="app/build/outputs/apk/release/app-release-unsigned.apk"
-          echo "⚠️ APK is unsigned - signing configuration may be missing"
+          echo "❌ Release build produced unsigned APK!"
+          echo "💡 This indicates missing signing configuration."
+          echo "📋 Required GitHub secrets:"
+          echo "   - KEYSTORE_FILE (base64 encoded keystore)"
+          echo "   - KEYSTORE_PASSWORD"
+          echo "   - KEY_ALIAS"
+          echo "   - KEY_PASSWORD"
+          echo ""
+          echo "🚫 Release builds MUST be signed. Failing build."
+          exit 1
         else
           echo "❌ No APK file found in expected location"
           exit 1
