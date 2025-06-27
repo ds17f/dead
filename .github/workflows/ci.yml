@@ -85,11 +85,65 @@ jobs:
     
     # Build APKs based on context (debug for PR/push, release APK+AAB for tags)
     - name: Build Android Artifacts
+      env:
+        KEYSTORE_BASE64: ${{ secrets.KEYSTORE_FILE }}
+        KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
       run: |
         if [[ "${{ github.ref }}" == refs/tags/* ]]; then
           echo "🏷️ Tag detected - building release APK and AAB..."
+          
+          # Create signing configuration for release builds
+          echo "🔐 Setting up signing configuration..."
+          
+          # Decode keystore
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > release.keystore
+            echo "✅ Keystore decoded ($(stat -c%s release.keystore 2>/dev/null || stat -f%z release.keystore) bytes)"
+          else
+            echo "❌ KEYSTORE_BASE64 not available"
+            exit 1
+          fi
+          
+          # Create signing.properties
+          if [ -n "$KEYSTORE_PASSWORD" ] && [ -n "$KEY_ALIAS" ] && [ -n "$KEY_PASSWORD" ]; then
+            cat > signing.properties << EOF
+storeFile=release.keystore
+storePassword=$KEYSTORE_PASSWORD
+keyAlias=$KEY_ALIAS
+keyPassword=$KEY_PASSWORD
+EOF
+            echo "✅ signing.properties created"
+          else
+            echo "❌ Missing signing credentials"
+            exit 1
+          fi
+          
+          # Build release artifacts
           ./gradlew clean assembleRelease bundleRelease --no-daemon --stacktrace
-          echo "✅ Release builds completed"
+          
+          # Verify signing worked
+          if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
+            echo "✅ Signed APK produced: $(ls -lh app/build/outputs/apk/release/app-release.apk | awk '{print $5}')"
+            # Verify signature
+            if jarsigner -verify app/build/outputs/apk/release/app-release.apk; then
+              echo "✅ APK signature verified"
+            else
+              echo "❌ APK signature verification failed"
+              exit 1
+            fi
+          elif [ -f "app/build/outputs/apk/release/app-release-unsigned.apk" ]; then
+            echo "❌ Only unsigned APK was produced - signing failed"
+            exit 1
+          else
+            echo "❌ No APK found"
+            exit 1
+          fi
+          
+          # Cleanup sensitive files
+          rm -f release.keystore signing.properties
+          echo "✅ Release builds completed and cleaned up"
         else
           echo "🔨 Building debug APK for CI"
           ./gradlew assembleDebug --no-daemon --stacktrace
@@ -107,123 +161,6 @@ jobs:
         echo "- Tag detected (ref_type): ${{ github.ref_type == 'tag' }}"
         echo "- Tag detected (startsWith): ${{ startsWith(github.ref, 'refs/tags/') }}"
         echo "- Will run signing steps: ${{ startsWith(github.ref, 'refs/tags/') }}"
-
-    # Release-specific steps (only run for tags)
-    - name: Check Release Prerequisites
-      if: ${{ startsWith(github.ref, 'refs/tags/') }}
-      run: |
-        echo "🔍 Checking release build prerequisites..."
-        
-        # Check if required secrets are available (without revealing values)
-        if [ -z "${{ secrets.KEYSTORE_FILE }}" ]; then
-          echo "❌ KEYSTORE_FILE secret is missing"
-          MISSING_SECRETS=true
-        fi
-        
-        if [ -z "${{ secrets.KEYSTORE_PASSWORD }}" ]; then
-          echo "❌ KEYSTORE_PASSWORD secret is missing"
-          MISSING_SECRETS=true
-        fi
-        
-        if [ -z "${{ secrets.KEY_ALIAS }}" ]; then
-          echo "❌ KEY_ALIAS secret is missing"
-          MISSING_SECRETS=true
-        fi
-        
-        if [ -z "${{ secrets.KEY_PASSWORD }}" ]; then
-          echo "❌ KEY_PASSWORD secret is missing"
-          MISSING_SECRETS=true
-        fi
-        
-        if [ "$MISSING_SECRETS" = "true" ]; then
-          echo ""
-          echo "🚫 Release build cannot proceed without signing secrets."
-          echo "📋 Configure these secrets in GitHub repository settings:"
-          echo "   - KEYSTORE_FILE (base64 encoded keystore)"
-          echo "   - KEYSTORE_PASSWORD"
-          echo "   - KEY_ALIAS"
-          echo "   - KEY_PASSWORD"
-          exit 1
-        fi
-        
-        echo "✅ All signing secrets are configured"
-
-    - name: Decode Keystore
-      if: ${{ startsWith(github.ref, 'refs/tags/') }}
-      env:
-        KEYSTORE_BASE64: ${{ secrets.KEYSTORE_FILE }}
-      run: |
-        echo "🔐 Decoding keystore from base64..."
-        echo "$KEYSTORE_BASE64" | base64 -d > release.keystore
-        
-        # Verify keystore exists without showing details
-        if [ -f "release.keystore" ]; then
-          echo "✅ Keystore file created successfully"
-          echo "📏 Size: $(stat -f%z release.keystore 2>/dev/null || stat -c%s release.keystore) bytes"
-        else
-          echo "❌ Failed to create keystore file"
-          exit 1
-        fi
-    
-    - name: Create signing configuration
-      if: ${{ startsWith(github.ref, 'refs/tags/') }}
-      env:
-        KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-        KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-        KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-      run: |
-        echo "📝 Creating signing.properties with signing configuration..."
-        
-        # Create signing.properties without echoing secrets
-        {
-          echo "storeFile=release.keystore"
-          echo "storePassword=${KEYSTORE_PASSWORD}"
-          echo "keyAlias=${KEY_ALIAS}"
-          echo "keyPassword=${KEY_PASSWORD}"
-        } > signing.properties
-        
-        echo "✅ signing.properties created with $(wc -l < signing.properties) lines"
-        
-        # Debug: Verify signing configuration (without revealing secrets)
-        echo "🔍 Verifying signing configuration..."
-        echo "- Keystore file exists: $([ -f 'release.keystore' ] && echo 'YES' || echo 'NO')"
-        echo "- signing.properties exists: $([ -f 'signing.properties' ] && echo 'YES' || echo 'NO')"
-        echo "- signing.properties contains storeFile: $(grep -q 'storeFile' signing.properties && echo 'YES' || echo 'NO')"
-        echo "- signing.properties contains storePassword: $(grep -q 'storePassword' signing.properties && echo 'YES' || echo 'NO')"
-    
-    - name: Verify APK Signature
-      if: ${{ startsWith(github.ref, 'refs/tags/') }}
-      run: |
-        echo "🔍 Checking for APK files..."
-        ls -la app/build/outputs/apk/release/
-        
-        # For release builds, we REQUIRE a signed APK
-        if [ -f "app/build/outputs/apk/release/app-release.apk" ]; then
-          echo "📱 Found signed APK: app-release.apk"
-          APK_FILE="app/build/outputs/apk/release/app-release.apk"
-          
-          # Verify the signature
-          if jarsigner -verify -verbose "$APK_FILE"; then
-            echo "✅ APK is properly signed!"
-          else
-            echo "❌ APK signature verification failed!"
-            exit 1
-          fi
-        elif [ -f "app/build/outputs/apk/release/app-release-unsigned.apk" ]; then
-          echo "❌ Release build produced unsigned APK!"
-          echo "💡 This indicates missing signing configuration."
-          echo "📋 Required GitHub secrets:"
-          echo "   - KEYSTORE_FILE (base64 encoded keystore)"
-          echo "   - KEYSTORE_PASSWORD"
-          echo "   - KEY_ALIAS"
-          echo "   - KEY_PASSWORD"
-          echo ""
-          echo "🚫 Release builds MUST be signed. Failing build."
-          exit 1
-        else
-          echo "❌ No APK file found in expected location"
-          exit 1
-        fi
     
     - name: Get APK Info
       run: |
@@ -291,13 +228,6 @@ jobs:
           echo "❌ Lint report not found" >> $GITHUB_STEP_SUMMARY
         fi
     
-    # Clean up sensitive files (release only)
-    - name: Clean up sensitive files
-      if: ${{ always() && startsWith(github.ref, 'refs/tags/') }}
-      run: |
-        echo "🧹 Cleaning up sensitive files..."
-        rm -f release.keystore signing.properties
-        echo "✅ Cleanup complete"
     
     # Upload artifacts conditionally
     - name: Upload Debug APK
