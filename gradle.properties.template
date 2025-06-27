@@ -1,0 +1,21 @@
+# Gradle Properties Template
+# Copy this file to gradle.properties and fill in your values
+# DO NOT commit gradle.properties with real passwords to version control!
+
+# Gradle Settings
+org.gradle.jvmargs=-Xmx2048m -Dfile.encoding=UTF-8
+org.gradle.parallel=true
+org.gradle.configureondemand=true
+org.gradle.caching=true
+
+# Android Settings
+android.useAndroidX=true
+android.enableJetifier=true
+android.nonTransitiveRClass=true
+
+# Release Signing Configuration
+# Replace these with your actual values:
+RELEASE_STORE_FILE=release.keystore
+RELEASE_STORE_PASSWORD=your_keystore_password_here
+RELEASE_KEY_ALIAS=dead-archive-key
+RELEASE_KEY_PASSWORD=your_key_password_here

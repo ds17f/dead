@@ -76,4 +76,16 @@ lint/tmp/
 app/release/output.json
 .idea/codeStyles/
 
+# Release build security - never commit these!
+gradle.properties
+release.keystore
+*.jks
+*.keystore
+
+# Temporary files
+android_logs.txt
+temp/
+create_wrapper.py
+mcp-shrimp-task-manager/
+
 .claude
