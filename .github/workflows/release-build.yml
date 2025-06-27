@@ -28,6 +28,11 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
     
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: 8.7
+    
     - name: Cache Gradle dependencies
       uses: actions/cache@v4
       with:
@@ -67,8 +72,23 @@ jobs:
         RELEASE_KEY_PASSWORD=$KEY_PASSWORD
         EOF
     
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Fix Gradle Wrapper
+      run: |
+        echo "🔧 Fixing corrupted Gradle wrapper..."
+        
+        # Remove corrupted wrapper jar
+        rm -f gradle/wrapper/gradle-wrapper.jar
+        
+        # Use system gradle to regenerate wrapper
+        gradle wrapper --gradle-version=8.7
+        
+        # Make gradlew executable
+        chmod +x gradlew
+        
+        # Verify wrapper works
+        ./gradlew --version
+        
+        echo "✅ Gradle wrapper fixed!"
     
     - name: Build Release APK
       run: ./gradlew assembleRelease --no-daemon --stacktrace
