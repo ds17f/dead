@@ -73,9 +73,7 @@ tag-release:
 	@echo "🚀 Creating new release version..."
 	@chmod +x ./scripts/release.sh
 	@./scripts/release.sh
-	@echo "🔨 Building release APK..."
-	gradle assembleRelease
-	@echo "✅ Release created, tagged, and built successfully!"
+	@echo "✅ Release tagged and pushed! GitHub Actions will build the artifacts."
 
 dry-run-release:
 	@echo "🧪 Testing release process (dry run)..."
