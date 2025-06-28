@@ -1,12 +1,19 @@
 # Changelog
 
+## [0.5.1] - 2025-06-27
+
+### Bug Fixes
+* use @OptIn annotation for UnstableApi in MainActivity (1ac2f70)
+* add @UnstableApi annotation to MainActivity (4a8153c)
+* add @UnstableApi annotation for Media3 API usage (c3d5eb6)
+* add POST_NOTIFICATIONS permission for Android 13+ compatibility (1062df0)
+
+
 ## [0.5.0] - 2025-06-27
 
 ### New Features
 * add test fixtures and documentation for test suite (8350130)
 * add comprehensive unit test suite for model layer (822e81c)
-
-
 ## [0.4.0] - 2025-06-27
 
 ### New Features
