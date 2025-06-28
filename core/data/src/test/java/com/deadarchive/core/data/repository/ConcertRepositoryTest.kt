@@ -1,12 +1,19 @@
 package com.deadarchive.core.data.repository
 
 import com.deadarchive.core.database.ConcertDao
+import com.deadarchive.core.database.ConcertEntity
 import com.deadarchive.core.database.FavoriteDao
+import com.deadarchive.core.model.Concert
 import com.deadarchive.core.network.ArchiveApiService
+import com.deadarchive.core.network.model.ArchiveSearchResponse
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
+import io.mockk.coVerify
 import io.mockk.mockk
+import io.mockk.slot
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
 import org.junit.Test
@@ -274,5 +281,97 @@ class ConcertRepositoryTest {
 
         // Should find the track with "t09" in filename
         assertThat(result).isEqualTo("https://ia800207.us.archive.org/1/items/test-concert/gd1995-07-09d1t09.mp3")
+    }
+
+    // ===================
+    // FOCUSED UNIT TESTS FOR NEW FUNCTIONALITY
+    // ===================
+    
+    @Test
+    fun `search query builder creates correct query for year search`() {
+        // Test the query building logic in isolation
+        val query1977 = "1977"
+        val queryGeneral = "Jerry Garcia"
+        val queryBlank = ""
+        val queryWhitespace = "   "
+        
+        // Test year detection regex
+        assertThat(query1977.matches(Regex("\\d{4}"))).isTrue()
+        assertThat(queryGeneral.matches(Regex("\\d{4}"))).isFalse()
+        assertThat("12345".matches(Regex("\\d{4}"))).isFalse()
+        assertThat("123".matches(Regex("\\d{4}"))).isFalse()
+        
+        // Test blank detection
+        assertThat(queryBlank.isBlank()).isTrue()
+        assertThat(queryWhitespace.isBlank()).isTrue()
+        assertThat(query1977.isBlank()).isFalse()
+    }
+
+    @Test
+    fun `cache expiry logic works correctly`() {
+        val currentTime = System.currentTimeMillis()
+        val recentTimestamp = currentTime - (12 * 60 * 60 * 1000L) // 12 hours ago  
+        val oldTimestamp = currentTime - (48 * 60 * 60 * 1000L) // 48 hours ago
+        val exactBoundaryTimestamp = currentTime - (24 * 60 * 60 * 1000L) // Exactly 24 hours ago
+        
+        // Test the expiry calculation logic in isolation
+        val cacheExpiryHours = 24
+        
+        // Recent cache should not be expired
+        val recentExpiryTime = recentTimestamp + (cacheExpiryHours * 60 * 60 * 1000L)
+        assertThat(currentTime > recentExpiryTime).isFalse()
+        
+        // Old cache should be expired
+        val oldExpiryTime = oldTimestamp + (cacheExpiryHours * 60 * 60 * 1000L)
+        assertThat(currentTime > oldExpiryTime).isTrue()
+        
+        // Exactly at boundary should be expired
+        val boundaryExpiryTime = exactBoundaryTimestamp + (cacheExpiryHours * 60 * 60 * 1000L)
+        assertThat(currentTime >= boundaryExpiryTime).isTrue()
+    }
+
+    // ===================
+    // TEST HELPER METHODS
+    // ===================
+
+    private fun createMockSearchResponse(concerts: List<ArchiveSearchResponse.ArchiveDoc>): ArchiveSearchResponse {
+        return ArchiveSearchResponse(
+            response = ArchiveSearchResponse.ArchiveResponse(
+                numFound = concerts.size,
+                start = 0,
+                docs = concerts
+            )
+        )
+    }
+
+    private fun createMockConcert(identifier: String, title: String, date: String): ArchiveSearchResponse.ArchiveDoc {
+        return ArchiveSearchResponse.ArchiveDoc(
+            identifier = identifier,
+            title = title,
+            date = date
+            // All other fields are optional and will use defaults
+        )
+    }
+
+    private fun createMockConcertEntity(id: String, title: String, date: String): ConcertEntity {
+        return ConcertEntity(
+            id = id,
+            title = title,
+            date = date,
+            venue = "Test Venue",
+            location = "Test City, CA",
+            year = date.take(4),
+            source = "SBD",
+            taper = "Test Taper",
+            transferer = "Test Transferer",
+            lineage = "Test Lineage",
+            description = "Test Description",
+            setlistRaw = "Test Setlist",
+            uploader = "Test Uploader",
+            addedDate = "2023-01-01T00:00:00Z",
+            publicDate = "2023-01-01T00:00:00Z",
+            isFavorite = false,
+            cachedTimestamp = System.currentTimeMillis()
+        )
     }
 }

@@ -155,7 +155,7 @@
       "name": "Repository Implementations",
       "description": "Create repositories for managing data access across the app",
       "notes": "Use Flow for reactive data streams. Implement caching strategy for concert data.",
-      "status": "pending",
+      "status": "in_progress",
       "dependencies": [
         {
           "taskId": "9f28dc03-da6b-4ff3-b402-8b9c19bc9f3b"
@@ -165,7 +165,7 @@
         }
       ],
       "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T03:32:02.147Z",
+      "updatedAt": "2025-06-28T13:05:20.680Z",
       "relatedFiles": [
         {
           "path": "core/data/src/main/java/com/grateful/dead/core/data/repository/ConcertRepository.kt",
@@ -455,6 +455,207 @@
       "implementationGuide": "Create Material3 theme inspired by Grateful Dead aesthetics. Implement light and dark themes. Create custom UI components for consistent look and feel. Add animations and transitions for UI interactions.",
       "verificationCriteria": "App has consistent visual styling. Themes work correctly in light and dark mode. UI components have appropriate animations.",
       "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics."
+    },
+    {
+      "id": "b11f4c1c-7cd1-401a-b8e9-1234e91357d2",
+      "name": "Complete ConcertRepository Implementation",
+      "description": "Enhance existing ConcertRepositoryImpl with full search functionality, local caching, and reactive data streams combining API and database sources",
+      "notes": "Build upon existing streaming URL functionality. Integrate with ConcertDao for local storage. Use Flow.combine for reactive data merging.",
+      "status": "completed",
+      "dependencies": [],
+      "createdAt": "2025-06-28T13:14:07.266Z",
+      "updatedAt": "2025-06-28T13:19:07.915Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/ConcertRepository.kt",
+          "type": "TO_MODIFY",
+          "description": "Existing repository interface and partial implementation",
+          "lineStart": 1,
+          "lineEnd": 164
+        },
+        {
+          "path": "core/network/src/main/java/com/deadarchive/core/network/mapper/ArchiveMapper.kt",
+          "type": "REFERENCE",
+          "description": "Existing network-to-domain mappers to extend",
+          "lineStart": 1,
+          "lineEnd": 175
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/ConcertDao.kt",
+          "type": "REFERENCE",
+          "description": "Database access layer for concert caching",
+          "lineStart": 1,
+          "lineEnd": 19
+        }
+      ],
+      "implementationGuide": "Extend current ConcertRepositoryImpl by implementing:\n1. searchConcerts(): Combine API search with local cache using Flow\n2. getConcertById(): Check local DB first, fallback to API + cache result\n3. getFavoriteConcerts(): Join favorites with concert data using Room queries\n4. Add caching mechanism with 24h expiry for search results\n5. Implement offline-first strategy with proper error handling\n6. Use existing ArchiveMapper for network-to-domain conversion\n7. Follow established error handling patterns from ErrorHandlingInterceptor",
+      "verificationCriteria": "Repository provides search results from both network and cache. Offline functionality works correctly. Data flows properly through reactive streams. Caching mechanism expires old data appropriately. Error handling covers all network and database scenarios.",
+      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies.",
+      "summary": "Successfully implemented complete ConcertRepository with offline-first caching strategy, reactive Flow-based data streams, and comprehensive error handling. Enhanced ConcertDao and ConcertEntity to support full concert data caching with 24h expiry. Integrated favorites status with concert data. All streaming URL functionality preserved. Implementation follows established patterns and architectural consistency.",
+      "completedAt": "2025-06-28T13:19:07.914Z"
+    },
+    {
+      "id": "524ebeb9-d1f5-4402-80cf-88ef15eb667d",
+      "name": "Create Data Mappers Module",
+      "description": "Implement comprehensive data mapping utilities for converting between network, database, and domain models across all repository layers",
+      "notes": "Consolidate all mapping logic in single location. Reuse existing FavoriteEntity and DownloadEntity conversion methods. Ensure type safety and null handling.",
+      "status": "pending",
+      "dependencies": [
+        {
+          "taskId": "b11f4c1c-7cd1-401a-b8e9-1234e91357d2"
+        }
+      ],
+      "createdAt": "2025-06-28T13:14:07.266Z",
+      "updatedAt": "2025-06-28T13:14:07.266Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/mapper",
+          "type": "CREATE",
+          "description": "New mapper module directory"
+        },
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/mapper/DataMappers.kt",
+          "type": "CREATE",
+          "description": "Unified data mapping utilities"
+        },
+        {
+          "path": "core/network/src/main/java/com/deadarchive/core/network/mapper/ArchiveMapper.kt",
+          "type": "REFERENCE",
+          "description": "Existing mapper patterns to follow and extend"
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/FavoriteEntity.kt",
+          "type": "REFERENCE",
+          "description": "Existing entity conversion methods",
+          "lineStart": 17,
+          "lineEnd": 39
+        }
+      ],
+      "implementationGuide": "Create DataMappers object with:\n1. Extend ArchiveMapper with additional network-to-domain conversions\n2. Create bidirectional Concert <-> ConcertEntity mappers\n3. Add utility functions for handling nullable/optional fields\n4. Implement batch conversion utilities for List transformations\n5. Add proper error handling for malformed data\n6. Follow existing mapper patterns from ArchiveMapper\n7. Include comprehensive unit tests for all mapping functions",
+      "verificationCriteria": "All data transformations handled correctly. Mapping functions are type-safe and handle edge cases. Performance is optimized for large datasets. Unit tests cover all mapping scenarios including error cases.",
+      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies."
+    },
+    {
+      "id": "69edf3df-4949-4e96-9bb4-e45fd95eddb1",
+      "name": "Implement FavoriteRepository",
+      "description": "Create complete favorites management repository with CRUD operations for concerts and tracks using Room database and reactive streams",
+      "notes": "Integrate with ConcertRepository for combined data. Support both concert and track favorites. Ensure real-time updates via Flow streams.",
+      "status": "pending",
+      "dependencies": [
+        {
+          "taskId": "524ebeb9-d1f5-4402-80cf-88ef15eb667d"
+        }
+      ],
+      "createdAt": "2025-06-28T13:14:07.266Z",
+      "updatedAt": "2025-06-28T13:14:07.266Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/FavoriteRepository.kt",
+          "type": "CREATE",
+          "description": "Favorites repository interface and implementation"
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/FavoriteDao.kt",
+          "type": "REFERENCE",
+          "description": "Database access layer for favorites",
+          "lineStart": 1,
+          "lineEnd": 60
+        },
+        {
+          "path": "core/model/src/main/java/com/deadarchive/core/model/FavoriteItem.kt",
+          "type": "REFERENCE",
+          "description": "Domain model for favorites",
+          "lineStart": 1,
+          "lineEnd": 37
+        },
+        {
+          "path": "core/data/src/test/java/com/deadarchive/core/data/repository/FavoriteRepositoryTest.kt",
+          "type": "CREATE",
+          "description": "Unit tests for favorites repository"
+        }
+      ],
+      "implementationGuide": "Create FavoriteRepository interface and implementation:\n1. Define interface with Flow-based methods: getAllFavorites(), getFavoritesByType(), toggleFavorite()\n2. Implement FavoriteRepositoryImpl with FavoriteDao injection\n3. Create reactive streams combining favorite status with concert/track data\n4. Add batch operations for managing multiple favorites\n5. Implement proper error handling and transaction management\n6. Use existing FavoriteEntity conversion methods\n7. Follow established repository patterns from ConcertRepository\n8. Add comprehensive unit tests with MockK",
+      "verificationCriteria": "CRUD operations work correctly for both concerts and tracks. Reactive streams provide real-time updates. Data consistency maintained across operations. Error handling covers all database scenarios. Performance optimized for large favorite lists.",
+      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies."
+    },
+    {
+      "id": "60b8c3f7-5576-4783-b15a-399d06f89689",
+      "name": "Implement DownloadRepository",
+      "description": "Create download management repository with progress tracking, queue management, and file system integration for offline content",
+      "notes": "Coordinate with media player for downloaded content playback. Handle storage permissions and disk space. Implement retry logic for failed downloads.",
+      "status": "pending",
+      "dependencies": [
+        {
+          "taskId": "524ebeb9-d1f5-4402-80cf-88ef15eb667d"
+        }
+      ],
+      "createdAt": "2025-06-28T13:14:07.266Z",
+      "updatedAt": "2025-06-28T13:14:07.266Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/DownloadRepository.kt",
+          "type": "CREATE",
+          "description": "Download repository interface and implementation"
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/DownloadDao.kt",
+          "type": "REFERENCE",
+          "description": "Database access layer for downloads",
+          "lineStart": 1,
+          "lineEnd": 61
+        },
+        {
+          "path": "core/model/src/main/java/com/deadarchive/core/model/DownloadState.kt",
+          "type": "REFERENCE",
+          "description": "Domain model for download state",
+          "lineStart": 1,
+          "lineEnd": 41
+        },
+        {
+          "path": "core/data/src/test/java/com/deadarchive/core/data/repository/DownloadRepositoryTest.kt",
+          "type": "CREATE",
+          "description": "Unit tests for download repository"
+        }
+      ],
+      "implementationGuide": "Create DownloadRepository interface and implementation:\n1. Define interface with download lifecycle methods: startDownload(), pauseDownload(), cancelDownload()\n2. Implement DownloadRepositoryImpl with DownloadDao and file system access\n3. Create progress tracking with real-time updates via Flow\n4. Add download queue management with priority handling\n5. Implement file system integration for local storage paths\n6. Add proper cleanup for failed/cancelled downloads\n7. Use existing DownloadEntity conversion methods\n8. Follow established error handling patterns\n9. Add comprehensive unit tests covering all download states",
+      "verificationCriteria": "Download lifecycle managed correctly through all states. Progress tracking provides accurate real-time updates. Queue management handles multiple concurrent downloads. File system operations are safe and efficient. Error recovery handles network and storage issues.",
+      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies."
+    },
+    {
+      "id": "ef0b1a28-858c-4017-a4ee-062ac881c9cf",
+      "name": "Update DataModule Dependencies",
+      "description": "Configure Dagger Hilt dependency injection bindings for all repository implementations and ensure proper singleton scoping",
+      "notes": "Maintain consistency with existing DataModule structure. Ensure all repositories are properly scoped as singletons. Verify circular dependency prevention.",
+      "status": "pending",
+      "dependencies": [
+        {
+          "taskId": "69edf3df-4949-4e96-9bb4-e45fd95eddb1"
+        },
+        {
+          "taskId": "60b8c3f7-5576-4783-b15a-399d06f89689"
+        }
+      ],
+      "createdAt": "2025-06-28T13:14:07.266Z",
+      "updatedAt": "2025-06-28T13:14:07.266Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/di/DataModule.kt",
+          "type": "TO_MODIFY",
+          "description": "Existing DI module to extend",
+          "lineStart": 1,
+          "lineEnd": 20
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/di/DatabaseModule.kt",
+          "type": "REFERENCE",
+          "description": "Database DI patterns to follow",
+          "lineStart": 1,
+          "lineEnd": 60
+        }
+      ],
+      "implementationGuide": "Update DataModule.kt to include:\n1. Add @Binds methods for FavoriteRepository and DownloadRepository\n2. Ensure proper @Singleton scoping for all repositories\n3. Verify dependency injection chain works correctly\n4. Add any required @Provides methods for complex dependencies\n5. Update module documentation with clear dependency relationships\n6. Follow existing pattern from ConcertRepository binding\n7. Test DI configuration with integration tests",
+      "verificationCriteria": "All repository dependencies resolve correctly. Singleton scoping prevents multiple instances. No circular dependencies detected. Integration tests pass with DI container. Documentation accurately reflects dependency relationships.",
+      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies."
     }
   ]
 }

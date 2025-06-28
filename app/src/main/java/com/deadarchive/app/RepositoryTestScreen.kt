@@ -9,6 +9,8 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -70,15 +72,29 @@ class RepositoryTestViewModel @Inject constructor(
             _uiState.value = RepositoryTestUiState.Loading("Testing search with caching...")
             addLog("🔍 Starting search for '$query'")
             
+            // Debug: Show what the actual search query will be
+            val debugQuery = if (query.isBlank()) {
+                "collection:GratefulDead"
+            } else if (query.matches(Regex("\\d{4}"))) {
+                "collection:GratefulDead AND date:$query*"
+            } else {
+                "collection:GratefulDead AND ($query)"
+            }
+            addLog("🔧 API Query: $debugQuery")
+            
             try {
                 val searchTime = measureTimeMillis {
                     concertRepository.searchConcerts(query).take(2).collect { results ->
                         _concerts.value = results
                         addLog("📦 Received ${results.size} concerts")
                         
+                        // Show years in the results to debug
+                        val years = results.map { it.date.take(4) }.distinct()
+                        addLog("📅 Years in results: ${years.joinToString(", ")}")
+                        
                         // Show if any are from cache vs fresh
                         val cacheIndicator = if (results.isNotEmpty()) "📊" else "⚡"
-                        addLog("$cacheIndicator Results: ${results.take(2).joinToString { it.title.take(30) }}")
+                        addLog("$cacheIndicator Results: ${results.take(2).joinToString { "${it.date.take(4)}: ${it.title.take(30)}" }}")
                     }
                 }
                 
@@ -99,27 +115,53 @@ class RepositoryTestViewModel @Inject constructor(
             addLog("📴 Testing offline behavior (simulated)")
             
             try {
-                // First ensure we have some cached data
-                addLog("💾 Checking for cached data...")
-                val cachedConcerts = concertDao.getRecentConcerts(5)
+                // First ensure we have some cached data - check for 1977 concerts specifically
+                addLog("💾 Checking for cached 1977 concerts...")
+                val cachedConcerts = concertDao.searchConcerts("1977")
+                addLog("🔍 Found ${cachedConcerts.size} cached concerts matching '1977'")
+                
+                // Also check total cached concerts
+                val totalCached = concertDao.getRecentConcerts(200)
+                addLog("📊 Total cached concerts: ${totalCached.size}")
+                
+                // Show dates of cached concerts for debugging
+                if (totalCached.isNotEmpty()) {
+                    val cachedYears = totalCached.mapNotNull { it.date?.take(4) }.distinct().sorted()
+                    addLog("📅 Cached years: ${cachedYears.joinToString(", ")}")
+                }
                 
                 if (cachedConcerts.isEmpty()) {
-                    addLog("⚠️ No cached data found. Run search first to populate cache.")
-                    _uiState.value = RepositoryTestUiState.Error("No cached data. Run search first.")
-                    return@launch
+                    // Try any cached concerts as fallback
+                    val anyCached = concertDao.getRecentConcerts(10)
+                    if (anyCached.isEmpty()) {
+                        addLog("⚠️ No cached data found. Run search first to populate cache.")
+                        _uiState.value = RepositoryTestUiState.Error("No cached data. Run search first.")
+                        return@launch
+                    } else {
+                        addLog("✅ Found ${anyCached.size} cached concerts (not 1977-specific)")
+                        // Convert cached entities to domain models for display
+                        val concerts = anyCached.map { entity ->
+                            entity.toConcert().copy(
+                                isFavorite = favoriteDao.isConcertFavorite(entity.id)
+                            )
+                        }
+                        _concerts.value = concerts
+                        addLog("📱 Offline mode: Showing ${concerts.size} cached concerts")
+                    }
+                } else {
+                    addLog("✅ Found ${cachedConcerts.size} cached 1977 concerts")
+                    
+                    // Convert cached entities to domain models for display
+                    val concerts = cachedConcerts.take(10).map { entity ->
+                        entity.toConcert().copy(
+                            isFavorite = favoriteDao.isConcertFavorite(entity.id)
+                        )
+                    }
+                    
+                    _concerts.value = concerts
+                    addLog("📱 Offline mode: Showing ${concerts.size} cached 1977 concerts")
                 }
                 
-                addLog("✅ Found ${cachedConcerts.size} cached concerts")
-                
-                // Convert cached entities to domain models for display
-                val concerts = cachedConcerts.map { entity ->
-                    entity.toConcert().copy(
-                        isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                    )
-                }
-                
-                _concerts.value = concerts
-                addLog("📱 Offline mode: Showing ${concerts.size} cached concerts")
                 _uiState.value = RepositoryTestUiState.Success("Offline test completed - showing cached data")
                 
             } catch (e: Exception) {
@@ -242,8 +284,8 @@ class RepositoryTestViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // Clear non-favorite concerts
-                val cutoffDate = "2099-01-01" // Future date to clear everything
-                concertDao.cleanupOldCachedConcerts(cutoffDate)
+                val cutoffTimestamp = System.currentTimeMillis() + (24 * 60 * 60 * 1000L) // Future timestamp to clear everything
+                concertDao.cleanupOldCachedConcerts(cutoffTimestamp)
                 addLog("🗑️ Cache cleared (favorites preserved)")
                 updateCacheStats()
                 _concerts.value = emptyList()
@@ -378,10 +420,10 @@ fun RepositoryTestScreen(
                     horizontalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     Button(
-                        onClick = { viewModel.testSearchWithCaching() },
+                        onClick = { viewModel.testSearchWithCaching("1977") },
                         modifier = Modifier.weight(1f)
                     ) {
-                        Text("🔍 Search + Cache")
+                        Text("🔍 Search 1977")
                     }
                     Button(
                         onClick = { viewModel.testOfflineBehavior() },
@@ -529,25 +571,52 @@ fun RepositoryTestScreen(
             
             // Test log
             item {
-                Text(
-                    text = "📝 Test Log",
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(top = 16.dp)
-                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "📝 Test Log",
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.padding(top = 16.dp)
+                    )
+                    
+                    val clipboardManager = LocalClipboardManager.current
+                    Button(
+                        onClick = {
+                            val logText = testLog.reversed().joinToString("\n")
+                            clipboardManager.setText(AnnotatedString(logText))
+                        },
+                        modifier = Modifier.padding(top = 16.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.secondary
+                        )
+                    ) {
+                        Text("📋 Copy Logs")
+                    }
+                }
             }
             
-            items(testLog.reversed()) { logEntry ->
+            item {
                 Card(
+                    modifier = Modifier.fillMaxWidth(),
                     colors = CardDefaults.cardColors(
                         containerColor = MaterialTheme.colorScheme.surfaceVariant
                     )
                 ) {
-                    Text(
-                        text = logEntry,
-                        modifier = Modifier.padding(8.dp),
-                        style = MaterialTheme.typography.bodySmall
-                    )
+                    Column(
+                        modifier = Modifier.padding(12.dp)
+                    ) {
+                        testLog.reversed().forEach { logEntry ->
+                            Text(
+                                text = logEntry,
+                                style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.padding(vertical = 2.dp)
+                            )
+                        }
+                    }
                 }
             }
         }

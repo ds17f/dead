@@ -20,14 +20,14 @@ interface ConcertDao {
     @Query("SELECT * FROM concerts WHERE id = :id")
     suspend fun getConcertById(id: String): ConcertEntity?
     
-    @Query("SELECT * FROM concerts WHERE title LIKE '%' || :query || '%' OR venue LIKE '%' || :query || '%' ORDER BY date DESC")
+    @Query("SELECT * FROM concerts WHERE title LIKE '%' || :query || '%' OR venue LIKE '%' || :query || '%' OR date LIKE '%' || :query || '%' ORDER BY date DESC")
     suspend fun searchConcerts(query: String): List<ConcertEntity>
     
     @Query("SELECT * FROM concerts ORDER BY date DESC LIMIT :limit")
     suspend fun getRecentConcerts(limit: Int = 50): List<ConcertEntity>
     
-    @Query("DELETE FROM concerts WHERE id NOT IN (SELECT id FROM concerts WHERE isFavorite = 1) AND date < :cutoffDate")
-    suspend fun cleanupOldCachedConcerts(cutoffDate: String)
+    @Query("DELETE FROM concerts WHERE id NOT IN (SELECT id FROM concerts WHERE isFavorite = 1) AND cachedTimestamp < :cutoffTimestamp")
+    suspend fun cleanupOldCachedConcerts(cutoffTimestamp: Long)
     
     @Query("SELECT COUNT(*) FROM concerts WHERE id = :id")
     suspend fun concertExists(id: String): Int

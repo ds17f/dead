@@ -9,13 +9,12 @@ import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import retrofit2.HttpException
 import java.io.IOException
 import java.net.URLEncoder
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -50,52 +49,66 @@ class ConcertRepositoryImpl @Inject constructor(
      * 3. Update cache and emit fresh results
      */
     override fun searchConcerts(query: String): Flow<List<Concert>> = flow {
-        try {
-            // First emit cached results if available
-            val cachedConcerts = concertDao.searchConcerts(query)
-            if (cachedConcerts.isNotEmpty()) {
-                val concerts = cachedConcerts.map { entity ->
-                    val isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                    entity.toConcert().copy(isFavorite = isFavorite)
-                }
-                emit(concerts)
+        // First emit cached results if available
+        val cachedConcerts = concertDao.searchConcerts(query)
+        if (cachedConcerts.isNotEmpty()) {
+            val concerts = cachedConcerts.map { entity ->
+                val isFavorite = favoriteDao.isConcertFavorite(entity.id)
+                entity.toConcert().copy(isFavorite = isFavorite)
             }
-            
-            // Try to fetch fresh data from API
-            val response = archiveApiService.searchConcerts(
-                query = if (query.isBlank()) "collection:GratefulDead" else "collection:GratefulDead AND ($query)",
-                rows = 100
-            )
-            
-            if (response.isSuccessful) {
-                response.body()?.let { searchResponse ->
-                    val freshConcerts = searchResponse.response.docs.map { doc ->
-                        ArchiveMapper.run { doc.toConcert() }
-                    }
-                    
-                    // Cache the fresh results
-                    cacheConcerts(freshConcerts)
-                    
-                    // Emit fresh results with favorite status
-                    val concertsWithFavorites = freshConcerts.map { concert ->
-                        val isFavorite = favoriteDao.isConcertFavorite(concert.identifier)
-                        concert.copy(isFavorite = isFavorite)
-                    }
-                    emit(concertsWithFavorites)
+            emit(concerts)
+        }
+        
+        // Try to fetch fresh data from API
+        val searchQuery = if (query.isBlank()) {
+            "collection:GratefulDead"
+        } else if (query.matches(Regex("\\d{4}"))) {
+            // If query is a 4-digit year, search in date field
+            "collection:GratefulDead AND date:$query*"
+        } else {
+            // General search
+            "collection:GratefulDead AND ($query)"
+        }
+        
+        val response = archiveApiService.searchConcerts(
+            query = searchQuery,
+            rows = 100
+        )
+        
+        if (response.isSuccessful) {
+            response.body()?.let { searchResponse ->
+                println("DEBUG: API response successful, processing ${searchResponse.response.docs.size} docs")
+                val freshConcerts = searchResponse.response.docs.map { doc ->
+                    ArchiveMapper.run { doc.toConcert() }
                 }
-            }
-        } catch (e: Exception) {
-            // If network fails, try to return cached results
-            val cachedConcerts = concertDao.searchConcerts(query)
-            if (cachedConcerts.isNotEmpty()) {
-                val concerts = cachedConcerts.map { entity ->
-                    val isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                    entity.toConcert().copy(isFavorite = isFavorite)
+                println("DEBUG: Converted ${freshConcerts.size} docs to Concert objects")
+                
+                // Cache the fresh results
+                println("DEBUG: About to cache ${freshConcerts.size} fresh concerts")
+                cacheConcerts(freshConcerts)
+                
+                // Emit fresh results with favorite status
+                val concertsWithFavorites = freshConcerts.map { concert ->
+                    val isFavorite = favoriteDao.isConcertFavorite(concert.identifier)
+                    concert.copy(isFavorite = isFavorite)
                 }
-                emit(concerts)
-            } else {
-                emit(emptyList())
+                println("DEBUG: Emitting ${concertsWithFavorites.size} concerts with favorite status")
+                emit(concertsWithFavorites)
             }
+        } else {
+            println("DEBUG: API response failed with code: ${response.code()}")
+        }
+    }.catch { e ->
+        // If network fails, try to return cached results
+        val cachedConcerts = concertDao.searchConcerts(query)
+        if (cachedConcerts.isNotEmpty()) {
+            val concerts = cachedConcerts.map { entity ->
+                val isFavorite = favoriteDao.isConcertFavorite(entity.id)
+                entity.toConcert().copy(isFavorite = isFavorite)
+            }
+            emit(concerts)
+        } else {
+            emit(emptyList())
         }
     }
     
@@ -146,16 +159,34 @@ class ConcertRepositoryImpl @Inject constructor(
      */
     private suspend fun cacheConcerts(concerts: List<Concert>) {
         try {
+            println("DEBUG: cacheConcerts called with ${concerts.size} concerts")
+            
             val entities = concerts.map { concert ->
+                println("DEBUG: Processing concert: ${concert.identifier} - ${concert.title}")
                 val isFavorite = favoriteDao.isConcertFavorite(concert.identifier)
-                ConcertEntity.fromConcert(concert, isFavorite)
+                println("DEBUG: isFavorite for ${concert.identifier}: $isFavorite")
+                val entity = ConcertEntity.fromConcert(concert, isFavorite)
+                println("DEBUG: Created entity with id: ${entity.id}, title: ${entity.title}")
+                entity
             }
+            
+            println("DEBUG: About to insert ${entities.size} entities into database")
             concertDao.insertConcerts(entities)
+            println("DEBUG: Successfully inserted entities into database")
+            
+            // Verify insertion by checking if we can find them
+            val insertedCount = entities.map { entity ->
+                concertDao.concertExists(entity.id)
+            }.sum()
+            println("DEBUG: Verification - ${insertedCount} out of ${entities.size} concerts exist in database")
             
             // Clean up old cached concerts (keep favorites)
             cleanupOldCache()
+            println("DEBUG: Cache cleanup completed")
+            
         } catch (e: Exception) {
-            // Log error but don't fail the operation
+            println("ERROR: cacheConcerts failed with exception: ${e.message}")
+            e.printStackTrace()
         }
     }
     
@@ -164,12 +195,13 @@ class ConcertRepositoryImpl @Inject constructor(
      */
     private suspend fun cleanupOldCache() {
         try {
-            val cutoffDate = LocalDateTime.now()
-                .minusHours(CACHE_EXPIRY_HOURS.toLong())
-                .format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
-            concertDao.cleanupOldCachedConcerts(cutoffDate)
+            val cutoffTimestamp = System.currentTimeMillis() - (CACHE_EXPIRY_HOURS * 60 * 60 * 1000L)
+            println("DEBUG: Cleaning up cache with cutoff timestamp: $cutoffTimestamp")
+            concertDao.cleanupOldCachedConcerts(cutoffTimestamp)
+            println("DEBUG: Cache cleanup completed successfully")
         } catch (e: Exception) {
-            // Ignore cleanup errors
+            println("ERROR: Cache cleanup failed: ${e.message}")
+            e.printStackTrace()
         }
     }
     
