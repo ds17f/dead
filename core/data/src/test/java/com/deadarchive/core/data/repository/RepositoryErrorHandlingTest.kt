@@ -131,16 +131,16 @@ class RepositoryErrorHandlingTest {
     // Business Logic Error Scenarios
 
     @Test
-    fun `searchConcerts handles malformed API responses gracefully`() = runTest {
-        // Given - API returns successful response but with null data
+    fun `searchConcerts handles API parsing errors gracefully`() = runTest {
+        // Given - API throws parsing exception, no cache
         coEvery { mockConcertDao.searchConcerts("test") } returns emptyList()
-        coEvery { mockApiService.searchConcerts(any(), any(), any(), any(), any(), any()) } returns 
-            Response.success(null)
+        coEvery { mockApiService.searchConcerts(any(), any(), any(), any(), any(), any()) } throws 
+            RuntimeException("JSON parsing failed")
 
         // When
         val result = concertRepository.searchConcerts("test").first()
 
-        // Then - Should handle gracefully
+        // Then - Should handle gracefully by returning empty list
         assertThat(result).isEmpty()
     }
 

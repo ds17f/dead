@@ -230,7 +230,7 @@ class DownloadRepositoryTest {
             mockDownloadDao.updateDownloadStatus(
                 eq("test1_track1.mp3"), 
                 eq("COMPLETED"), 
-                match { timestamp -> timestamp != null && timestamp >= beforeTime }
+                match { timestamp -> timestamp >= beforeTime }
             )
         }
     }

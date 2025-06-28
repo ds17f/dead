@@ -75,20 +75,28 @@ class FavoriteRepositoryTest {
     fun `ID generation handles special characters correctly`() = runTest {
         // Given - Concert ID with special characters
         val concert = createTestConcert("gd1977-05-08.sbd.miller.89174.sbeok.flac16", "Cornell")
-        val track = createTestTrack("gd77-05-08d1t01.shn", "Fire On The Mountain")
-        val concertEntitySlot = slot<FavoriteEntity>()
-        val trackEntitySlot = slot<FavoriteEntity>()
-        
-        coEvery { mockFavoriteDao.insertFavorite(capture(concertEntitySlot)) } returns Unit
-        coEvery { mockFavoriteDao.insertFavorite(capture(trackEntitySlot)) } returns Unit
+        val entitySlot = slot<FavoriteEntity>()
+        coEvery { mockFavoriteDao.insertFavorite(capture(entitySlot)) } returns Unit
 
         // When
         repository.addConcertToFavorites(concert)
-        repository.addTrackToFavorites(concert.identifier, track)
 
-        // Then - IDs should preserve special characters
-        assertThat(concertEntitySlot.captured.id).isEqualTo("concert_gd1977-05-08.sbd.miller.89174.sbeok.flac16")
-        assertThat(trackEntitySlot.captured.id).isEqualTo("track_gd1977-05-08.sbd.miller.89174.sbeok.flac16_gd77-05-08d1t01.shn")
+        // Then - Concert ID should preserve special characters
+        assertThat(entitySlot.captured.id).isEqualTo("concert_gd1977-05-08.sbd.miller.89174.sbeok.flac16")
+    }
+
+    @Test
+    fun `track ID generation handles special characters correctly`() = runTest {
+        // Given - Track with special characters
+        val track = createTestTrack("gd77-05-08d1t01.shn", "Fire On The Mountain")
+        val entitySlot = slot<FavoriteEntity>()
+        coEvery { mockFavoriteDao.insertFavorite(capture(entitySlot)) } returns Unit
+
+        // When
+        repository.addTrackToFavorites("gd1977-05-08.sbd.miller.89174.sbeok.flac16", track)
+
+        // Then - Track ID should preserve special characters
+        assertThat(entitySlot.captured.id).isEqualTo("track_gd1977-05-08.sbd.miller.89174.sbeok.flac16_gd77-05-08d1t01.shn")
     }
 
     // Toggle State Machine Logic Tests
