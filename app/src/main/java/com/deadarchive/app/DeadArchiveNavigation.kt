@@ -2,6 +2,7 @@ package com.deadarchive.app
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.media3.common.util.UnstableApi
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -11,6 +12,7 @@ import com.deadarchive.feature.downloads.navigation.downloadsScreen
 import com.deadarchive.feature.favorites.navigation.favoritesScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 
+@UnstableApi
 @Composable
 fun DeadArchiveNavigation(
     modifier: Modifier = Modifier,
