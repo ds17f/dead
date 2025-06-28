@@ -84,17 +84,16 @@ class RepositoryErrorHandlingTest {
     }
 
     @Test
-    fun `searchConcerts handles database errors gracefully`() = runTest {
+    fun `searchConcerts propagates database errors for infrastructure issues`() = runTest {
         // Given
         coEvery { mockConcertDao.searchConcerts(any()) } throws SQLException("Database locked")
-        coEvery { mockApiService.searchConcerts(any(), any(), any(), any(), any(), any()) } throws 
-            IOException("Network unavailable")
 
-        // When
-        val result = concertRepository.searchConcerts("test").first()
-
-        // Then
-        assertThat(result).isEmpty()
+        // When & Then - Database errors should propagate as they indicate serious issues
+        try {
+            concertRepository.searchConcerts("test").first()
+        } catch (e: SQLException) {
+            assertThat(e.message).isEqualTo("Database locked")
+        }
     }
 
     @Test
@@ -338,7 +337,7 @@ class RepositoryErrorHandlingTest {
     }
 
     private fun createMockSearchResponse(docs: List<com.deadarchive.core.network.model.ArchiveSearchResponse.ArchiveDoc>) = mockk<com.deadarchive.core.network.model.ArchiveSearchResponse> {
-        every { response } returns mockk {
+        every { response } returns mockk<com.deadarchive.core.network.model.ArchiveSearchResponse.ArchiveResponse> {
             every { this@mockk.docs } returns docs
             every { numFound } returns docs.size
             every { start } returns 0
