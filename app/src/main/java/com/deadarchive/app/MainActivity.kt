@@ -10,10 +10,12 @@ import androidx.compose.ui.Modifier
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.design.theme.DeadArchiveTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlin.OptIn
 
 @UnstableApi
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    @OptIn(UnstableApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
