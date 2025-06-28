@@ -1,5 +1,7 @@
 package com.deadarchive.core.network.model
 
+import com.deadarchive.core.network.serializer.FlexibleStringSerializer
+import com.deadarchive.core.network.serializer.FlexibleStringListSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -9,7 +11,7 @@ data class ArchiveMetadataResponse(
     val files: List<ArchiveFile> = emptyList(),
     
     @SerialName("metadata")
-    val metadata: ArchiveMetadata,
+    val metadata: ArchiveMetadata? = null,
     
     @SerialName("reviews")
     val reviews: List<ArchiveReview>? = null,
@@ -80,34 +82,43 @@ data class ArchiveMetadataResponse(
         val date: String? = null,
         
         @SerialName("venue")
-        val venue: List<String>? = null,
+        @Serializable(with = FlexibleStringSerializer::class)
+        val venue: String? = null,
         
         @SerialName("coverage")
         val coverage: String? = null,
         
         @SerialName("creator")
-        val creator: List<String>? = null,
+        @Serializable(with = FlexibleStringSerializer::class)
+        val creator: String? = null,
         
         @SerialName("description")
-        val description: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val description: String? = null,
         
         @SerialName("setlist")
-        val setlist: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val setlist: String? = null,
         
         @SerialName("source")
-        val source: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val source: String? = null,
         
         @SerialName("taper")
-        val taper: List<String>? = null,
+        @Serializable(with = FlexibleStringSerializer::class)
+        val taper: String? = null,
         
         @SerialName("transferer")
-        val transferer: List<String>? = null,
+        @Serializable(with = FlexibleStringSerializer::class)
+        val transferer: String? = null,
         
         @SerialName("lineage")
-        val lineage: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val lineage: String? = null,
         
         @SerialName("notes")
-        val notes: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val notes: String? = null,
         
         @SerialName("uploader")
         val uploader: String? = null,
@@ -119,10 +130,12 @@ data class ArchiveMetadataResponse(
         val publicDate: String? = null,
         
         @SerialName("collection")
-        val collection: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val collection: String? = null,
         
         @SerialName("subject")
-        val subject: List<String>? = null,
+        @Serializable(with = FlexibleStringListSerializer::class)
+        val subject: String? = null,
         
         @SerialName("licenseurl")
         val licenseUrl: String? = null

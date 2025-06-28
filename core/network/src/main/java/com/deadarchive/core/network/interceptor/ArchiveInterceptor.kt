@@ -36,11 +36,11 @@ class ArchiveInterceptor : Interceptor {
         }
         
         // Build request with appropriate headers
+        // Note: Don't manually set Accept-Encoding - let OkHttp handle gzip automatically
         val originalRequest = chain.request()
         val modifiedRequest = originalRequest.newBuilder()
             .addHeader("User-Agent", USER_AGENT)
             .addHeader("Accept", ACCEPT_HEADER)
-            .addHeader("Accept-Encoding", "gzip, deflate")
             .build()
         
         lastRequestTime = System.currentTimeMillis()

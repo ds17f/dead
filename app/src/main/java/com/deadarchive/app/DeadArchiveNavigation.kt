@@ -14,17 +14,28 @@ import com.deadarchive.feature.player.navigation.playerScreen
 @Composable
 fun DeadArchiveNavigation(
     modifier: Modifier = Modifier,
-    navController: NavHostController = rememberNavController()
+    navController: NavHostController = rememberNavController(),
+    showSplash: Boolean = false
 ) {
     NavHost(
         navController = navController,
-        startDestination = "home",
+        startDestination = if (showSplash) "splash" else "home",
         modifier = modifier
     ) {
+        composable("splash") {
+            SplashScreen(
+                onSplashComplete = { 
+                    navController.navigate("home") {
+                        popUpTo("splash") { inclusive = true }
+                    }
+                }
+            )
+        }
         composable("home") {
             HomeScreen(
                 onNavigateToNetworkTest = { navController.navigate("network_test") },
-                onNavigateToDatabaseTest = { navController.navigate("database_test") }
+                onNavigateToDatabaseTest = { navController.navigate("database_test") },
+                onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") }
             )
         }
         
@@ -36,6 +47,12 @@ fun DeadArchiveNavigation(
         
         composable("database_test") {
             DatabaseTestScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+        
+        composable("media_player_test") {
+            MediaPlayerTestScreen(
                 onNavigateBack = { navController.popBackStack() }
             )
         }

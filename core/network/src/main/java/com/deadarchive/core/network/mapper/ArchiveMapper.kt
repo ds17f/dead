@@ -41,23 +41,23 @@ object ArchiveMapper {
     fun ArchiveMetadataResponse.toConcert(): Concert {
         val meta = metadata
         return Concert(
-            identifier = meta.identifier,
-            title = meta.title,
-            date = meta.date ?: "",
-            venue = meta.venue?.firstOrNull(),
-            location = meta.coverage,
-            year = extractYearFromDate(meta.date),
-            source = meta.source?.firstOrNull(),
-            taper = meta.taper?.firstOrNull(),
-            transferer = meta.transferer?.firstOrNull(),
-            lineage = meta.lineage?.joinToString("\n"),
-            description = meta.description?.joinToString("\n"),
-            setlistRaw = meta.setlist?.joinToString("\n"),
-            uploader = meta.uploader,
-            addedDate = meta.addedDate,
-            publicDate = meta.publicDate,
+            identifier = meta?.identifier ?: "",
+            title = meta?.title ?: "",
+            date = meta?.date ?: "",
+            venue = meta?.venue,
+            location = meta?.coverage,
+            year = extractYearFromDate(meta?.date),
+            source = meta?.source,
+            taper = meta?.taper,
+            transferer = meta?.transferer,
+            lineage = meta?.lineage,
+            description = meta?.description,
+            setlistRaw = meta?.setlist,
+            uploader = meta?.uploader,
+            addedDate = meta?.addedDate,
+            publicDate = meta?.publicDate,
             tracks = files.filter { it.isAudioFile() }.mapIndexed { index, file ->
-                file.toTrack(meta.identifier, index + 1)
+                file.toTrack(meta?.identifier ?: "", index + 1)
             },
             audioFiles = files.filter { it.isAudioFile() }.map { it.toAudioFile() }
         )

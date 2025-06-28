@@ -102,8 +102,10 @@ android {
 dependencies {
     implementation(project(":core:design"))
     implementation(project(":core:common"))
+    implementation(project(":core:data"))
     implementation(project(":core:database"))
     implementation(project(":core:network"))
+    implementation(project(":core:media"))
     implementation(project(":feature:browse"))
     implementation(project(":feature:player"))
     implementation(project(":feature:downloads"))
@@ -125,6 +127,9 @@ dependencies {
     // Navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
+    // Media3 (for annotations)
+    implementation("androidx.media3:media3-common:1.3.1")
+    
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-compiler:2.51.1")
