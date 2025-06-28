@@ -4,20 +4,23 @@ import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.DownloadEntity
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.Concert
-import com.deadarchive.core.model.DownloadState
 import com.deadarchive.core.model.DownloadStatus
 import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
-import io.mockk.every
 import io.mockk.mockk
 import io.mockk.slot
-import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
 import org.junit.Test
 
+/**
+ * Unit tests focusing on DownloadRepository business logic:
+ * - Download ID generation algorithms
+ * - State machine transitions for download lifecycle
+ * - Download restart and recovery logic
+ * - Business rule validation
+ */
 class DownloadRepositoryTest {
 
     private lateinit var mockDownloadDao: DownloadDao
@@ -26,128 +29,55 @@ class DownloadRepositoryTest {
 
     @Before
     fun setup() {
-        mockDownloadDao = mockk()
-        mockConcertRepository = mockk()
+        mockDownloadDao = mockk(relaxed = true)
+        mockConcertRepository = mockk(relaxed = true)
         repository = DownloadRepositoryImpl(mockDownloadDao, mockConcertRepository)
     }
 
+    // Download ID Generation Business Logic Tests
+
     @Test
-    fun `getAllDownloads returns mapped download states`() = runTest {
+    fun `startDownload generates correct ID format`() = runTest {
         // Given
-        val downloadEntities = listOf(
-            createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED),
-            createTestDownloadEntity("test1_track2.mp3", "test1", "track2.mp3", DownloadStatus.DOWNLOADING)
-        )
-        every { mockDownloadDao.getAllDownloads() } returns flowOf(downloadEntities)
+        val concert = createTestConcert("gd1977-05-08", "Cornell '77")
+        val trackFilename = "gd77-05-08d1t01.flac"
+        val entitySlot = slot<DownloadEntity>()
+        coEvery { mockDownloadDao.getDownloadById(any()) } returns null
+        coEvery { mockDownloadDao.insertDownload(capture(entitySlot)) } returns Unit
 
         // When
-        val result = repository.getAllDownloads().first()
+        val result = repository.startDownload(concert, trackFilename)
 
-        // Then
-        assertThat(result).hasSize(2)
-        assertThat(result[0].concertIdentifier).isEqualTo("test1")
-        assertThat(result[0].trackFilename).isEqualTo("track1.mp3")
-        assertThat(result[0].status).isEqualTo(DownloadStatus.COMPLETED)
-        assertThat(result[1].status).isEqualTo(DownloadStatus.DOWNLOADING)
+        // Then - Verify ID generation algorithm
+        assertThat(result).isEqualTo("gd1977-05-08_gd77-05-08d1t01.flac")
+        val capturedEntity = entitySlot.captured
+        assertThat(capturedEntity.id).isEqualTo("gd1977-05-08_gd77-05-08d1t01.flac")
+        assertThat(capturedEntity.concertIdentifier).isEqualTo("gd1977-05-08")
+        assertThat(capturedEntity.trackFilename).isEqualTo("gd77-05-08d1t01.flac")
     }
 
     @Test
-    fun `getDownloadsByStatus filters by status`() = runTest {
+    fun `ID generation handles special characters in concert and track names`() = runTest {
         // Given
-        val completedEntities = listOf(
-            createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
-        )
-        every { mockDownloadDao.getDownloadsByStatus("COMPLETED") } returns flowOf(completedEntities)
+        val concert = createTestConcert("gd1977-05-08.sbd.miller.89174.sbeok.flac16", "Cornell")
+        val trackFilename = "gd77-05-08d1t01.shn"
+        val entitySlot = slot<DownloadEntity>()
+        coEvery { mockDownloadDao.getDownloadById(any()) } returns null
+        coEvery { mockDownloadDao.insertDownload(capture(entitySlot)) } returns Unit
 
         // When
-        val result = repository.getDownloadsByStatus(DownloadStatus.COMPLETED).first()
+        val result = repository.startDownload(concert, trackFilename)
 
-        // Then
-        assertThat(result).hasSize(1)
-        assertThat(result[0].status).isEqualTo(DownloadStatus.COMPLETED)
-        coVerify { mockDownloadDao.getDownloadsByStatus("COMPLETED") }
+        // Then - ID should preserve special characters
+        val expectedId = "gd1977-05-08.sbd.miller.89174.sbeok.flac16_gd77-05-08d1t01.shn"
+        assertThat(result).isEqualTo(expectedId)
+        assertThat(entitySlot.captured.id).isEqualTo(expectedId)
     }
 
-    @Test
-    fun `getActiveDownloads delegates to DAO`() = runTest {
-        // Given
-        val activeEntities = listOf(
-            createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.DOWNLOADING),
-            createTestDownloadEntity("test1_track2.mp3", "test1", "track2.mp3", DownloadStatus.QUEUED)  
-        )
-        every { mockDownloadDao.getActiveDownloads() } returns flowOf(activeEntities)
-
-        // When
-        val result = repository.getActiveDownloads().first()
-
-        // Then
-        assertThat(result).hasSize(2)
-        assertThat(result.all { it.status in listOf(DownloadStatus.DOWNLOADING, DownloadStatus.QUEUED) }).isTrue()
-    }
+    // Download State Machine Logic Tests
 
     @Test
-    fun `getCompletedDownloads delegates to DAO`() = runTest {
-        // Given
-        val completedEntities = listOf(
-            createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
-        )
-        every { mockDownloadDao.getCompletedDownloads() } returns flowOf(completedEntities)
-
-        // When
-        val result = repository.getCompletedDownloads().first()
-
-        // Then
-        assertThat(result).hasSize(1)
-        assertThat(result[0].status).isEqualTo(DownloadStatus.COMPLETED)
-    }
-
-    @Test
-    fun `getDownloadsForConcert filters by concert ID`() = runTest {
-        // Given
-        val concertDownloads = listOf(
-            createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED),
-            createTestDownloadEntity("test1_track2.mp3", "test1", "track2.mp3", DownloadStatus.DOWNLOADING)
-        )
-        every { mockDownloadDao.getDownloadsForConcert("test1") } returns flowOf(concertDownloads)
-
-        // When
-        val result = repository.getDownloadsForConcert("test1").first()
-
-        // Then
-        assertThat(result).hasSize(2)
-        assertThat(result.all { it.concertIdentifier == "test1" }).isTrue()
-    }
-
-    @Test
-    fun `getDownloadById returns mapped download state`() = runTest {
-        // Given
-        val downloadEntity = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns downloadEntity
-
-        // When
-        val result = repository.getDownloadById("test1_track1.mp3")
-
-        // Then
-        assertThat(result).isNotNull()
-        assertThat(result!!.concertIdentifier).isEqualTo("test1")
-        assertThat(result.trackFilename).isEqualTo("track1.mp3")
-        assertThat(result.status).isEqualTo(DownloadStatus.COMPLETED)
-    }
-
-    @Test
-    fun `getDownloadById returns null when not found`() = runTest {
-        // Given
-        coEvery { mockDownloadDao.getDownloadById("nonexistent") } returns null
-
-        // When
-        val result = repository.getDownloadById("nonexistent")
-
-        // Then
-        assertThat(result).isNull()
-    }
-
-    @Test
-    fun `startDownload creates new download when not exists`() = runTest {
+    fun `startDownload creates new download in QUEUED state`() = runTest {
         // Given
         val concert = createTestConcert("test1", "Test Concert")
         val entitySlot = slot<DownloadEntity>()
@@ -155,57 +85,93 @@ class DownloadRepositoryTest {
         coEvery { mockDownloadDao.insertDownload(capture(entitySlot)) } returns Unit
 
         // When
-        val result = repository.startDownload(concert, "track1.mp3")
+        repository.startDownload(concert, "track1.mp3")
 
-        // Then
-        assertThat(result).isEqualTo("test1_track1.mp3")
+        // Then - New download should start in QUEUED state
         val capturedEntity = entitySlot.captured
-        assertThat(capturedEntity.id).isEqualTo("test1_track1.mp3")
-        assertThat(capturedEntity.concertIdentifier).isEqualTo("test1")
-        assertThat(capturedEntity.trackFilename).isEqualTo("track1.mp3")
         assertThat(capturedEntity.status).isEqualTo("QUEUED")
         assertThat(capturedEntity.progress).isEqualTo(0f)
         assertThat(capturedEntity.bytesDownloaded).isEqualTo(0L)
+        assertThat(capturedEntity.errorMessage).isNull()
     }
 
     @Test
-    fun `startDownload resets failed download`() = runTest {
-        // Given
+    fun `startDownload restarts failed download correctly`() = runTest {
+        // Given - Existing failed download
         val concert = createTestConcert("test1", "Test Concert")
-        val existingDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.FAILED)
+        val failedDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.FAILED)
+            .copy(progress = 0.5f, bytesDownloaded = 500L, errorMessage = "Network timeout")
         val updatedEntitySlot = slot<DownloadEntity>()
         
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns existingDownload
+        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns failedDownload
         coEvery { mockDownloadDao.updateDownload(capture(updatedEntitySlot)) } returns Unit
 
         // When
         val result = repository.startDownload(concert, "track1.mp3")
 
-        // Then
+        // Then - Should reset download state
         assertThat(result).isEqualTo("test1_track1.mp3")
         val updatedEntity = updatedEntitySlot.captured
         assertThat(updatedEntity.status).isEqualTo("QUEUED")
         assertThat(updatedEntity.progress).isEqualTo(0f)
         assertThat(updatedEntity.bytesDownloaded).isEqualTo(0L)
         assertThat(updatedEntity.errorMessage).isNull()
+        assertThat(updatedEntity.startedTimestamp).isNotEqualTo(failedDownload.startedTimestamp)
     }
 
     @Test
-    fun `startDownload returns existing ID for active download`() = runTest {
-        // Given
+    fun `startDownload restarts cancelled download correctly`() = runTest {
+        // Given - Existing cancelled download
         val concert = createTestConcert("test1", "Test Concert")
-        val existingDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.DOWNLOADING)
+        val cancelledDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.CANCELLED)
+        val updatedEntitySlot = slot<DownloadEntity>()
         
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns existingDownload
+        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns cancelledDownload
+        coEvery { mockDownloadDao.updateDownload(capture(updatedEntitySlot)) } returns Unit
+
+        // When
+        repository.startDownload(concert, "track1.mp3")
+
+        // Then - Should reset to QUEUED state
+        val updatedEntity = updatedEntitySlot.captured
+        assertThat(updatedEntity.status).isEqualTo("QUEUED")
+    }
+
+    @Test
+    fun `startDownload does not modify active downloads`() = runTest {
+        // Given - Existing active download
+        val concert = createTestConcert("test1", "Test Concert")
+        val activeDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.DOWNLOADING)
+        
+        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns activeDownload
 
         // When
         val result = repository.startDownload(concert, "track1.mp3")
 
-        // Then
+        // Then - Should return existing ID without modification
         assertThat(result).isEqualTo("test1_track1.mp3")
         coVerify(exactly = 0) { mockDownloadDao.insertDownload(any()) }
         coVerify(exactly = 0) { mockDownloadDao.updateDownload(any()) }
     }
+
+    @Test
+    fun `startDownload does not modify completed downloads`() = runTest {
+        // Given - Existing completed download
+        val concert = createTestConcert("test1", "Test Concert")
+        val completedDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
+        
+        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns completedDownload
+
+        // When
+        val result = repository.startDownload(concert, "track1.mp3")
+
+        // Then - Should return existing ID without modification
+        assertThat(result).isEqualTo("test1_track1.mp3")
+        coVerify(exactly = 0) { mockDownloadDao.insertDownload(any()) }
+        coVerify(exactly = 0) { mockDownloadDao.updateDownload(any()) }
+    }
+
+    // Batch Download Logic Tests
 
     @Test
     fun `startConcertDownload creates downloads for all tracks`() = runTest {
@@ -213,7 +179,8 @@ class DownloadRepositoryTest {
         val concert = createTestConcert("test1", "Test Concert")
         val trackUrls = listOf(
             createTestAudioFile("track1.mp3") to "https://example.com/track1.mp3",
-            createTestAudioFile("track2.mp3") to "https://example.com/track2.mp3"
+            createTestAudioFile("track2.mp3") to "https://example.com/track2.mp3",
+            createTestAudioFile("track3.flac") to "https://example.com/track3.flac"
         )
         
         coEvery { mockConcertRepository.getTrackStreamingUrls("test1") } returns trackUrls
@@ -223,34 +190,63 @@ class DownloadRepositoryTest {
         // When
         val result = repository.startConcertDownload(concert)
 
-        // Then
-        assertThat(result).hasSize(2)
-        assertThat(result).containsExactly("test1_track1.mp3", "test1_track2.mp3")
-        coVerify(exactly = 2) { mockDownloadDao.insertDownload(any()) }
+        // Then - Should create download for each track with correct IDs
+        assertThat(result).hasSize(3)
+        assertThat(result).containsExactly(
+            "test1_track1.mp3",
+            "test1_track2.mp3", 
+            "test1_track3.flac"
+        )
+        coVerify(exactly = 3) { mockDownloadDao.insertDownload(any()) }
     }
 
     @Test
-    fun `updateDownloadProgress delegates to DAO`() = runTest {
+    fun `startConcertDownload handles empty track list`() = runTest {
         // Given
-        coEvery { mockDownloadDao.updateDownloadProgress("test1_track1.mp3", 0.5f, 1024L) } returns Unit
+        val concert = createTestConcert("test1", "Test Concert")
+        coEvery { mockConcertRepository.getTrackStreamingUrls("test1") } returns emptyList()
 
         // When
-        repository.updateDownloadProgress("test1_track1.mp3", 0.5f, 1024L)
+        val result = repository.startConcertDownload(concert)
 
-        // Then
-        coVerify { mockDownloadDao.updateDownloadProgress("test1_track1.mp3", 0.5f, 1024L) }
+        // Then - Should return empty list
+        assertThat(result).isEmpty()
+        coVerify(exactly = 0) { mockDownloadDao.insertDownload(any()) }
     }
 
+    // Status Update Business Logic Tests
+
     @Test
-    fun `updateDownloadStatus with completion sets timestamp`() = runTest {
+    fun `updateDownloadStatus sets completion timestamp for COMPLETED status`() = runTest {
         // Given
+        val beforeTime = System.currentTimeMillis()
         coEvery { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "COMPLETED", any()) } returns Unit
 
         // When
         repository.updateDownloadStatus("test1_track1.mp3", DownloadStatus.COMPLETED)
 
-        // Then
-        coVerify { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "COMPLETED", any()) }
+        // Then - Should set completion timestamp
+        coVerify { 
+            mockDownloadDao.updateDownloadStatus(
+                eq("test1_track1.mp3"), 
+                eq("COMPLETED"), 
+                match { timestamp -> timestamp != null && timestamp >= beforeTime }
+            )
+        }
+    }
+
+    @Test
+    fun `updateDownloadStatus does not set timestamp for non-completion states`() = runTest {
+        // Given
+        coEvery { mockDownloadDao.updateDownloadStatus(any(), any(), any()) } returns Unit
+
+        // When
+        repository.updateDownloadStatus("test1_track1.mp3", DownloadStatus.PAUSED)
+        repository.updateDownloadStatus("test1_track1.mp3", DownloadStatus.FAILED)
+
+        // Then - Should not set completion timestamp
+        coVerify { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "PAUSED", null) }
+        coVerify { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "FAILED", null) }
     }
 
     @Test
@@ -264,17 +260,50 @@ class DownloadRepositoryTest {
         coEvery { mockDownloadDao.updateDownload(capture(updatedEntitySlot)) } returns Unit
 
         // When
-        repository.updateDownloadStatus("test1_track1.mp3", DownloadStatus.FAILED, "Network error")
+        repository.updateDownloadStatus("test1_track1.mp3", DownloadStatus.FAILED, "Network timeout")
 
-        // Then
+        // Then - Should update error message
         val updatedEntity = updatedEntitySlot.captured
-        assertThat(updatedEntity.errorMessage).isEqualTo("Network error")
-        coVerify { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "FAILED", null) }
-        coVerify { mockDownloadDao.updateDownload(any()) }
+        assertThat(updatedEntity.errorMessage).isEqualTo("Network timeout")
+    }
+
+    // Download State Query Logic Tests
+
+    @Test
+    fun `isTrackDownloaded returns true only for completed downloads`() = runTest {
+        // Given
+        val completedDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
+        val downloadingDownload = createTestDownloadEntity("test1_track2.mp3", "test1", "track2.mp3", DownloadStatus.DOWNLOADING)
+        
+        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns completedDownload
+        coEvery { mockDownloadDao.getDownloadById("test1_track2.mp3") } returns downloadingDownload
+        coEvery { mockDownloadDao.getDownloadById("test1_track3.mp3") } returns null
+
+        // When & Then
+        assertThat(repository.isTrackDownloaded("test1", "track1.mp3")).isTrue()
+        assertThat(repository.isTrackDownloaded("test1", "track2.mp3")).isFalse()
+        assertThat(repository.isTrackDownloaded("test1", "track3.mp3")).isFalse()
     }
 
     @Test
-    fun `pauseDownload updates status to PAUSED`() = runTest {
+    fun `getLocalFilePath returns path only for completed downloads`() = runTest {
+        // Given
+        val completedDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
+            .copy(localPath = "/storage/music/track1.mp3")
+        val downloadingDownload = createTestDownloadEntity("test1_track2.mp3", "test1", "track2.mp3", DownloadStatus.DOWNLOADING)
+        
+        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns completedDownload
+        coEvery { mockDownloadDao.getDownloadById("test1_track2.mp3") } returns downloadingDownload
+
+        // When & Then
+        assertThat(repository.getLocalFilePath("test1", "track1.mp3")).isEqualTo("/storage/music/track1.mp3")
+        assertThat(repository.getLocalFilePath("test1", "track2.mp3")).isNull()
+    }
+
+    // State Transition Helper Method Tests
+
+    @Test
+    fun `pauseDownload transitions to PAUSED state`() = runTest {
         // Given
         coEvery { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "PAUSED", null) } returns Unit
 
@@ -286,7 +315,7 @@ class DownloadRepositoryTest {
     }
 
     @Test
-    fun `resumeDownload updates status to QUEUED`() = runTest {
+    fun `resumeDownload transitions to QUEUED state`() = runTest {
         // Given
         coEvery { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "QUEUED", null) } returns Unit
 
@@ -298,7 +327,7 @@ class DownloadRepositoryTest {
     }
 
     @Test
-    fun `cancelDownload updates status to CANCELLED`() = runTest {
+    fun `cancelDownload transitions to CANCELLED state`() = runTest {
         // Given
         coEvery { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "CANCELLED", null) } returns Unit
 
@@ -307,119 +336,6 @@ class DownloadRepositoryTest {
 
         // Then
         coVerify { mockDownloadDao.updateDownloadStatus("test1_track1.mp3", "CANCELLED", null) }
-    }
-
-    @Test
-    fun `deleteDownload delegates to DAO`() = runTest {
-        // Given
-        coEvery { mockDownloadDao.deleteDownloadById("test1_track1.mp3") } returns Unit
-
-        // When
-        repository.deleteDownload("test1_track1.mp3")
-
-        // Then
-        coVerify { mockDownloadDao.deleteDownloadById("test1_track1.mp3") }
-    }
-
-    @Test
-    fun `cancelAllActiveDownloads delegates to DAO`() = runTest {
-        // Given
-        coEvery { mockDownloadDao.cancelAllActiveDownloads() } returns Unit
-
-        // When
-        repository.cancelAllActiveDownloads()
-
-        // Then
-        coVerify { mockDownloadDao.cancelAllActiveDownloads() }
-    }
-
-    @Test
-    fun `deleteCompletedDownloads delegates to DAO`() = runTest {
-        // Given
-        coEvery { mockDownloadDao.deleteCompletedDownloads() } returns Unit
-
-        // When
-        repository.deleteCompletedDownloads()
-
-        // Then
-        coVerify { mockDownloadDao.deleteCompletedDownloads() }
-    }
-
-    @Test
-    fun `deleteFailedDownloads delegates to DAO`() = runTest {
-        // Given
-        coEvery { mockDownloadDao.deleteFailedDownloads() } returns Unit
-
-        // When
-        repository.deleteFailedDownloads()
-
-        // Then
-        coVerify { mockDownloadDao.deleteFailedDownloads() }
-    }
-
-    @Test
-    fun `isTrackDownloaded returns true for completed download`() = runTest {
-        // Given
-        val completedDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns completedDownload
-
-        // When
-        val result = repository.isTrackDownloaded("test1", "track1.mp3")
-
-        // Then
-        assertThat(result).isTrue()
-    }
-
-    @Test
-    fun `isTrackDownloaded returns false for non-completed download`() = runTest {
-        // Given
-        val downloadingDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.DOWNLOADING)
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns downloadingDownload
-
-        // When
-        val result = repository.isTrackDownloaded("test1", "track1.mp3")
-
-        // Then
-        assertThat(result).isFalse()
-    }
-
-    @Test
-    fun `isTrackDownloaded returns false when download not found`() = runTest {
-        // Given
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns null
-
-        // When
-        val result = repository.isTrackDownloaded("test1", "track1.mp3")
-
-        // Then
-        assertThat(result).isFalse()
-    }
-
-    @Test
-    fun `getLocalFilePath returns path for completed download`() = runTest {
-        // Given
-        val completedDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.COMPLETED)
-            .copy(localPath = "/storage/music/track1.mp3")
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns completedDownload
-
-        // When
-        val result = repository.getLocalFilePath("test1", "track1.mp3")
-
-        // Then
-        assertThat(result).isEqualTo("/storage/music/track1.mp3")
-    }
-
-    @Test
-    fun `getLocalFilePath returns null for non-completed download`() = runTest {
-        // Given
-        val downloadingDownload = createTestDownloadEntity("test1_track1.mp3", "test1", "track1.mp3", DownloadStatus.DOWNLOADING)
-        coEvery { mockDownloadDao.getDownloadById("test1_track1.mp3") } returns downloadingDownload
-
-        // When
-        val result = repository.getLocalFilePath("test1", "track1.mp3")
-
-        // Then
-        assertThat(result).isNull()
     }
 
     // Helper methods for creating test data
@@ -449,8 +365,8 @@ class DownloadRepositoryTest {
             identifier = identifier,
             title = title,
             date = "1977-05-08",
-            venue = "Test Venue",
-            location = "Test Location"
+            venue = "Barton Hall",
+            location = "Ithaca, NY"
         )
     }
 
