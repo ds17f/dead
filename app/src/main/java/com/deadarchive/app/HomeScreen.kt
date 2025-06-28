@@ -14,7 +14,8 @@ import androidx.compose.ui.unit.dp
 fun HomeScreen(
     onNavigateToNetworkTest: () -> Unit,
     onNavigateToDatabaseTest: () -> Unit,
-    onNavigateToMediaPlayerTest: () -> Unit
+    onNavigateToMediaPlayerTest: () -> Unit,
+    onNavigateToRepositoryTest: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -74,6 +75,21 @@ fun HomeScreen(
         ) {
             Text(
                 text = "Database Test",
+                style = MaterialTheme.typography.titleMedium
+            )
+        }
+        
+        Button(
+            onClick = onNavigateToRepositoryTest,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.tertiary
+            )
+        ) {
+            Text(
+                text = "🧪 Repository Test",
                 style = MaterialTheme.typography.titleMedium
             )
         }

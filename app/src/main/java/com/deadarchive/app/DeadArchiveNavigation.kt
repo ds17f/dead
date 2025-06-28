@@ -37,7 +37,8 @@ fun DeadArchiveNavigation(
             HomeScreen(
                 onNavigateToNetworkTest = { navController.navigate("network_test") },
                 onNavigateToDatabaseTest = { navController.navigate("database_test") },
-                onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") }
+                onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") },
+                onNavigateToRepositoryTest = { navController.navigate("repository_test") }
             )
         }
         
@@ -49,6 +50,12 @@ fun DeadArchiveNavigation(
         
         composable("database_test") {
             DatabaseTestScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+        
+        composable("repository_test") {
+            RepositoryTestScreen(
                 onNavigateBack = { navController.popBackStack() }
             )
         }
