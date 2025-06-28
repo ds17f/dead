@@ -337,7 +337,7 @@ class RepositoryErrorHandlingTest {
         every { toConcert() } returns createTestConcert(id, title)
     }
 
-    private fun createMockSearchResponse(docs: List<Any>) = mockk<com.deadarchive.core.network.model.ArchiveSearchResponse> {
+    private fun createMockSearchResponse(docs: List<com.deadarchive.core.network.model.ArchiveSearchResponse.ArchiveDoc>) = mockk<com.deadarchive.core.network.model.ArchiveSearchResponse> {
         every { response } returns mockk {
             every { this@mockk.docs } returns docs
             every { numFound } returns docs.size
