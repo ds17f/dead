@@ -23,7 +23,7 @@ interface ConcertRepository {
     suspend fun getConcertById(id: String): Concert?
     fun getFavoriteConcerts(): Flow<List<Concert>>
     
-    // New methods for streaming URL generation
+    // Streaming URL generation methods
     suspend fun getConcertMetadata(identifier: String): ArchiveMetadataResponse?
     suspend fun getStreamingUrl(identifier: String, filename: String): String?
     suspend fun getTrackStreamingUrls(identifier: String): List<Pair<AudioFile, String>>
