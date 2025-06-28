@@ -97,7 +97,9 @@ object ArchiveMapper {
      * Check if archive file is an audio file
      */
     private fun ArchiveMetadataResponse.ArchiveFile.isAudioFile(): Boolean {
-        val audioFormats = setOf("mp3", "flac", "ogg", "m4a", "wav", "shn")
+        val audioFormats = setOf(
+            "flac", "mp3", "vbr mp3", "ogg vorbis", "ogg", "wav", "aiff", "ape", "wv", "m4a", "shn"
+        )
         return format?.lowercase() in audioFormats
     }
     
