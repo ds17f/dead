@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.6.0] - 2025-06-28
+
+### New Features
+* add Repository Test Screen for manual testing (436d3ff)
+* implement complete ConcertRepository with offline-first caching (4374120)
+
+### Bug Fixes
+* implement year-specific search and offline-first caching (b741940)
+* bump Room database version for ConcertEntity schema changes (c0e03ed)
+* add core:model dependency to app module (731ea67)
+
+### Tests
+* add integration tests for favorites synchronization bug (ec51fe1)
+
+
 ## [0.5.1] - 2025-06-27
 
 ### Bug Fixes
@@ -7,8 +22,6 @@
 * add @UnstableApi annotation to MainActivity (4a8153c)
 * add @UnstableApi annotation for Media3 API usage (c3d5eb6)
 * add POST_NOTIFICATIONS permission for Android 13+ compatibility (1062df0)
-
-
 ## [0.5.0] - 2025-06-27
 
 ### New Features
