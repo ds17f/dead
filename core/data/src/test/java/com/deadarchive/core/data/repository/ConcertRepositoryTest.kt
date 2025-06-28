@@ -1,5 +1,7 @@
 package com.deadarchive.core.data.repository
 
+import com.deadarchive.core.database.ConcertDao
+import com.deadarchive.core.database.FavoriteDao
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.google.common.truth.Truth.assertThat
@@ -13,12 +15,16 @@ import retrofit2.Response
 class ConcertRepositoryTest {
 
     private lateinit var mockApiService: ArchiveApiService
+    private lateinit var mockConcertDao: ConcertDao
+    private lateinit var mockFavoriteDao: FavoriteDao
     private lateinit var repository: ConcertRepositoryImpl
 
     @Before
     fun setup() {
         mockApiService = mockk()
-        repository = ConcertRepositoryImpl(mockApiService)
+        mockConcertDao = mockk()
+        mockFavoriteDao = mockk()
+        repository = ConcertRepositoryImpl(mockApiService, mockConcertDao, mockFavoriteDao)
     }
 
     @Test
