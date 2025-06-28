@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.3.0] - 2025-06-27
+
+### New Features
+* add database layer, test screens, and Steal Your Face app icon (248c4a0)
+
+
 ## [0.2.9] - 2025-06-27
 
 ### Bug Fixes
 * correct keystore path in signing.properties for app module (9939bf8)
-
-
 ## [0.2.8] - 2025-06-27
 
 ### Bug Fixes
