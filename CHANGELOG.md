@@ -1,11 +1,16 @@
 # Changelog
 
+## [0.4.0] - 2025-06-27
+
+### New Features
+* set Steal Your Face as app icon (ddad768)
+* add Archive.org streaming and media player with test UI (79e7a73)
+
+
 ## [0.3.0] - 2025-06-27
 
 ### New Features
 * add database layer, test screens, and Steal Your Face app icon (248c4a0)
-
-
 ## [0.2.9] - 2025-06-27
 
 ### Bug Fixes
