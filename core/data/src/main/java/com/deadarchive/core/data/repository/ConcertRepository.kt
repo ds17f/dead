@@ -22,6 +22,7 @@ interface ConcertRepository {
     fun searchConcerts(query: String): Flow<List<Concert>>
     suspend fun getConcertById(id: String): Concert?
     fun getFavoriteConcerts(): Flow<List<Concert>>
+    fun getAllCachedConcerts(): Flow<List<Concert>>
     
     // Streaming URL generation methods
     suspend fun getConcertMetadata(identifier: String): ArchiveMetadataResponse?
@@ -151,6 +152,17 @@ class ConcertRepositoryImpl @Inject constructor(
     override fun getFavoriteConcerts(): Flow<List<Concert>> {
         return concertDao.getFavoriteConcerts().map { entities ->
             entities.map { it.toConcert().copy(isFavorite = true) }
+        }
+    }
+    
+    /**
+     * Get all cached concerts with favorite status
+     */
+    override fun getAllCachedConcerts(): Flow<List<Concert>> {
+        return concertDao.getAllConcerts().map { entities ->
+            entities.map { entity ->
+                entity.toConcert().copy(isFavorite = entity.isFavorite)
+            }
         }
     }
     

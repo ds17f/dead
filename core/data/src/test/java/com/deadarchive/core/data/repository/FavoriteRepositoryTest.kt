@@ -18,12 +18,14 @@ import org.junit.Test
 class FavoriteRepositoryTest {
 
     private lateinit var mockFavoriteDao: FavoriteDao
+    private lateinit var mockConcertRepository: ConcertRepository
     private lateinit var repository: FavoriteRepositoryImpl
 
     @Before
     fun setup() {
         mockFavoriteDao = mockk(relaxed = true)
-        repository = FavoriteRepositoryImpl(mockFavoriteDao)
+        mockConcertRepository = mockk(relaxed = true)
+        repository = FavoriteRepositoryImpl(mockFavoriteDao, mockConcertRepository)
     }
 
     // Behavior-focused tests - what matters to users

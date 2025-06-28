@@ -13,7 +13,9 @@ data class DownloadState(
     val localPath: String? = null,
     val errorMessage: String? = null,
     val startedTimestamp: Long = System.currentTimeMillis(),
-    val completedTimestamp: Long? = null
+    val completedTimestamp: Long? = null,
+    val priority: Int = 0,
+    val retryCount: Int = 0
 ) {
     val id: String
         get() = "${concertIdentifier}_${trackFilename}"

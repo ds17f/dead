@@ -57,4 +57,10 @@ interface FavoriteDao {
     
     @Query("UPDATE favorites SET notes = :notes WHERE id = :id")
     suspend fun updateFavoriteNotes(id: String, notes: String?)
+    
+    @Query("DELETE FROM favorites WHERE id IN (:favoriteIds)")
+    suspend fun deleteFavoritesByIds(favoriteIds: List<String>)
+    
+    @Query("SELECT * FROM favorites ORDER BY addedTimestamp DESC")
+    suspend fun getAllFavoritesSync(): List<FavoriteEntity>
 }

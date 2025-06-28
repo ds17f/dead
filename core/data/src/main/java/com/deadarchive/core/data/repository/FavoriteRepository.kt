@@ -1,12 +1,15 @@
 package com.deadarchive.core.data.repository
 
+import com.deadarchive.core.data.mapper.DataMappers.toFavoriteEntity
+import com.deadarchive.core.data.mapper.DataMappers.toFavoriteItem
+import com.deadarchive.core.data.mapper.DataMappers.toFavoriteItems
 import com.deadarchive.core.database.FavoriteDao
-import com.deadarchive.core.database.FavoriteEntity
 import com.deadarchive.core.model.Concert
 import com.deadarchive.core.model.FavoriteItem  
 import com.deadarchive.core.model.FavoriteType
 import com.deadarchive.core.model.Track
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -123,22 +126,41 @@ interface FavoriteRepository {
      * Clear all favorites of a specific type
      */
     suspend fun clearFavoritesByType(type: FavoriteType)
+    
+    /**
+     * Batch operations for managing multiple favorites
+     */
+    suspend fun addFavorites(favoriteItems: List<FavoriteItem>)
+    suspend fun removeFavorites(favoriteIds: List<String>)
+    suspend fun toggleFavorites(concerts: List<Concert>): List<Boolean>
+    
+    /**
+     * Get favorite concerts with enhanced data from ConcertRepository integration
+     */
+    fun getFavoriteConcertsWithData(): Flow<List<Concert>>
+    
+    /**
+     * Export favorites for backup/sharing
+     */
+    suspend fun exportFavorites(): List<FavoriteItem>
+    suspend fun importFavorites(favorites: List<FavoriteItem>)
 }
 
 @Singleton
 class FavoriteRepositoryImpl @Inject constructor(
-    private val favoriteDao: FavoriteDao
+    private val favoriteDao: FavoriteDao,
+    private val concertRepository: ConcertRepository
 ) : FavoriteRepository {
 
     override fun getAllFavorites(): Flow<List<FavoriteItem>> {
         return favoriteDao.getAllFavorites().map { entities ->
-            entities.map { it.toFavoriteItem() }
+            entities.toFavoriteItems()
         }
     }
 
     override fun getFavoritesByType(type: FavoriteType): Flow<List<FavoriteItem>> {
         return favoriteDao.getFavoritesByType(type.name).map { entities ->
-            entities.map { it.toFavoriteItem() }
+            entities.toFavoriteItems()
         }
     }
 
@@ -153,13 +175,13 @@ class FavoriteRepositoryImpl @Inject constructor(
     override fun getFavoriteTracksForConcert(concertId: String): Flow<List<FavoriteItem>> {
         return favoriteDao.getFavoritesForConcert(concertId).map { entities ->
             entities.filter { it.type == FavoriteType.TRACK.name }
-                .map { it.toFavoriteItem() }
+                .toFavoriteItems()
         }
     }
 
     override fun getFavoritesForConcert(concertId: String): Flow<List<FavoriteItem>> {
         return favoriteDao.getFavoritesForConcert(concertId).map { entities ->
-            entities.map { it.toFavoriteItem() }
+            entities.toFavoriteItems()
         }
     }
 
@@ -181,18 +203,18 @@ class FavoriteRepositoryImpl @Inject constructor(
 
     override suspend fun addConcertToFavorites(concert: Concert, notes: String?) {
         val favoriteItem = FavoriteItem.fromConcert(concert).copy(notes = notes)
-        val entity = FavoriteEntity.fromFavoriteItem(favoriteItem)
+        val entity = favoriteItem.toFavoriteEntity()
         favoriteDao.insertFavorite(entity)
     }
 
     override suspend fun addTrackToFavorites(concertId: String, track: Track, notes: String?) {
         val favoriteItem = FavoriteItem.fromTrack(concertId, track).copy(notes = notes)
-        val entity = FavoriteEntity.fromFavoriteItem(favoriteItem)
+        val entity = favoriteItem.toFavoriteEntity()
         favoriteDao.insertFavorite(entity)
     }
 
     override suspend fun addFavorite(favoriteItem: FavoriteItem) {
-        val entity = FavoriteEntity.fromFavoriteItem(favoriteItem)
+        val entity = favoriteItem.toFavoriteEntity()
         favoriteDao.insertFavorite(entity)
     }
 
@@ -256,5 +278,52 @@ class FavoriteRepositoryImpl @Inject constructor(
 
     override suspend fun clearFavoritesByType(type: FavoriteType) {
         favoriteDao.deleteFavoritesByType(type.name)
+    }
+
+    // ============ Enhanced Batch Operations ============
+
+    override suspend fun addFavorites(favoriteItems: List<FavoriteItem>) {
+        val entities = favoriteItems.map { it.toFavoriteEntity() }
+        favoriteDao.insertFavorites(entities)
+    }
+
+    override suspend fun removeFavorites(favoriteIds: List<String>) {
+        favoriteDao.deleteFavoritesByIds(favoriteIds)
+    }
+
+    override suspend fun toggleFavorites(concerts: List<Concert>): List<Boolean> {
+        val results = mutableListOf<Boolean>()
+        for (concert in concerts) {
+            val newStatus = toggleConcertFavorite(concert)
+            results.add(newStatus)
+        }
+        return results
+    }
+
+    // ============ Integration with ConcertRepository ============
+
+    override fun getFavoriteConcertsWithData(): Flow<List<Concert>> {
+        return combine(
+            getFavoriteConcerts(),
+            concertRepository.getAllCachedConcerts()
+        ) { favorites, cachedConcerts ->
+            val favoriteConcertIds = favorites.map { it.concertIdentifier }.toSet()
+            cachedConcerts.filter { concert ->
+                favoriteConcertIds.contains(concert.identifier)
+            }.map { concert ->
+                concert.copy(isFavorite = true)
+            }
+        }
+    }
+
+    // ============ Import/Export Operations ============
+
+    override suspend fun exportFavorites(): List<FavoriteItem> {
+        return favoriteDao.getAllFavoritesSync().toFavoriteItems()
+    }
+
+    override suspend fun importFavorites(favorites: List<FavoriteItem>) {
+        val entities = favorites.map { it.toFavoriteEntity() }
+        favoriteDao.insertFavorites(entities)
     }
 }

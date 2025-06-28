@@ -58,4 +58,44 @@ interface DownloadDao {
     
     @Query("UPDATE downloads SET status = :status, completedTimestamp = :timestamp WHERE id = :id")
     suspend fun updateDownloadStatus(id: String, status: String, timestamp: Long? = null)
+    
+    // Enhanced queue and priority management
+    @Query("DELETE FROM downloads WHERE status = :status")
+    suspend fun deleteDownloadsByStatus(status: String)
+    
+    @Query("UPDATE downloads SET priority = :priority WHERE id = :id")
+    suspend fun updateDownloadPriority(id: String, priority: Int)
+    
+    @Query("SELECT * FROM downloads WHERE status = 'QUEUED' ORDER BY priority DESC, startedTimestamp ASC LIMIT 1")
+    suspend fun getNextQueuedDownload(): DownloadEntity?
+    
+    // File system and cleanup operations
+    @Query("SELECT * FROM downloads WHERE status NOT IN ('COMPLETED', 'CANCELLED')")
+    suspend fun getIncompleteDownloads(): List<DownloadEntity>
+    
+    // Analytics and monitoring
+    @Query("SELECT COUNT(*) FROM downloads")
+    suspend fun getTotalDownloadCount(): Int
+    
+    @Query("SELECT COUNT(*) FROM downloads WHERE status = :status")
+    suspend fun getDownloadCountByStatus(status: String): Int
+    
+    @Query("SELECT SUM(totalBytes) FROM downloads WHERE status = 'COMPLETED'")
+    suspend fun getTotalBytesDownloaded(): Long
+    
+    @Query("SELECT concertIdentifier FROM downloads WHERE status = 'COMPLETED' GROUP BY concertIdentifier ORDER BY COUNT(*) DESC LIMIT 1")
+    suspend fun getMostDownloadedConcert(): String?
+    
+    @Query("SELECT * FROM downloads ORDER BY startedTimestamp DESC")
+    suspend fun getDownloadHistory(): List<DownloadEntity>
+    
+    @Query("SELECT * FROM downloads")
+    suspend fun getAllDownloadsSync(): List<DownloadEntity>
+    
+    // Synchronous methods for enhanced operations
+    @Query("SELECT * FROM downloads WHERE status = :status")
+    suspend fun getDownloadsByStatusList(status: String): List<DownloadEntity>
+    
+    @Query("SELECT * FROM downloads WHERE status IN ('QUEUED', 'DOWNLOADING', 'PAUSED')")
+    suspend fun getActiveDownloadsList(): List<DownloadEntity>
 }

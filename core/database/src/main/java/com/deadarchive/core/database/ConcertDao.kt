@@ -11,6 +11,9 @@ interface ConcertDao {
     @Query("SELECT * FROM concerts WHERE isFavorite = 1")
     fun getFavoriteConcerts(): Flow<List<ConcertEntity>>
     
+    @Query("SELECT * FROM concerts ORDER BY date DESC")
+    fun getAllConcerts(): Flow<List<ConcertEntity>>
+    
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertConcert(concert: ConcertEntity)
     

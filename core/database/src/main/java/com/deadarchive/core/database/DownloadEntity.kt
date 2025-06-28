@@ -17,7 +17,9 @@ data class DownloadEntity(
     val localPath: String? = null,
     val errorMessage: String? = null,
     val startedTimestamp: Long = System.currentTimeMillis(),
-    val completedTimestamp: Long? = null
+    val completedTimestamp: Long? = null,
+    val priority: Int = 0,
+    val retryCount: Int = 0
 ) {
     fun toDownloadState(): DownloadState {
         return DownloadState(
@@ -30,7 +32,9 @@ data class DownloadEntity(
             localPath = localPath,
             errorMessage = errorMessage,
             startedTimestamp = startedTimestamp,
-            completedTimestamp = completedTimestamp
+            completedTimestamp = completedTimestamp,
+            priority = priority,
+            retryCount = retryCount
         )
     }
     
@@ -47,7 +51,9 @@ data class DownloadEntity(
                 localPath = downloadState.localPath,
                 errorMessage = downloadState.errorMessage,
                 startedTimestamp = downloadState.startedTimestamp,
-                completedTimestamp = downloadState.completedTimestamp
+                completedTimestamp = downloadState.completedTimestamp,
+                priority = downloadState.priority,
+                retryCount = downloadState.retryCount
             )
         }
     }
