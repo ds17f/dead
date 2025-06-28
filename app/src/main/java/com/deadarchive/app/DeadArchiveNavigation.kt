@@ -18,9 +18,28 @@ fun DeadArchiveNavigation(
 ) {
     NavHost(
         navController = navController,
-        startDestination = "browse",
+        startDestination = "home",
         modifier = modifier
     ) {
+        composable("home") {
+            HomeScreen(
+                onNavigateToNetworkTest = { navController.navigate("network_test") },
+                onNavigateToDatabaseTest = { navController.navigate("database_test") }
+            )
+        }
+        
+        composable("network_test") {
+            NetworkTestScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+        
+        composable("database_test") {
+            DatabaseTestScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
+        }
+        
         browseScreen(
             onNavigateToPlayer = { navController.navigate("player") }
         )

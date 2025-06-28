@@ -102,6 +102,8 @@ android {
 dependencies {
     implementation(project(":core:design"))
     implementation(project(":core:common"))
+    implementation(project(":core:database"))
+    implementation(project(":core:network"))
     implementation(project(":feature:browse"))
     implementation(project(":feature:player"))
     implementation(project(":feature:downloads"))
