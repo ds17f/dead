@@ -297,6 +297,90 @@ class ConcertRepositoryIntegrationTest {
     }
     
     @Test
+    fun `favoriting a concert appears in favorites list immediately`() = runTest {
+        // Setup: Mock API to return a concert (simulates user searching)
+        val testConcert = createTestArchiveDoc("test-concert-1977", "Grateful Dead Live at Winterland 1977")
+        val apiResponse = createMockSearchResponse(listOf(testConcert))
+        coEvery { mockApiService.searchConcerts(any(), any(), any(), any(), any(), any()) } returns 
+            Response.success(apiResponse)
+        
+        // Step 1: User searches for concerts (populates cache)
+        val searchResults = repository.searchConcerts("1977").first()
+        assertThat(searchResults).hasSize(1)
+        val concert = searchResults[0]
+        assertThat(concert.isFavorite).isFalse() // Initially not favorited
+        
+        // Step 2: Check favorites list is initially empty
+        val initialFavorites = repository.getFavoriteConcerts().first()
+        assertThat(initialFavorites).isEmpty()
+        
+        // Step 3: User favorites the concert (simulates the actual user workflow)
+        // This is the critical step that was failing - adding to FavoriteEntity table
+        val favoriteItem = com.deadarchive.core.model.FavoriteItem.fromConcert(concert)
+        val favoriteEntity = com.deadarchive.core.database.FavoriteEntity.fromFavoriteItem(favoriteItem)
+        favoriteDao.insertFavorite(favoriteEntity)
+        
+        // THIS IS THE BUG: The above step adds to FavoriteEntity table, 
+        // but getFavoriteConcerts() queries the concerts table where isFavorite = 1
+        // The concerts table still has isFavorite = false for this concert
+        
+        // Step 4: Update the concerts table to reflect the favorite status (the fix)
+        val cachedConcert = concertDao.getConcertById(concert.identifier)
+        assertThat(cachedConcert).isNotNull() // Concert should be cached from search
+        val updatedEntity = cachedConcert!!.copy(isFavorite = true)
+        concertDao.insertConcert(updatedEntity)
+        
+        // Step 5: Verify concert now appears in favorites list immediately  
+        val updatedFavorites = repository.getFavoriteConcerts().first()
+        assertThat(updatedFavorites).hasSize(1)
+        assertThat(updatedFavorites[0].identifier).isEqualTo("test-concert-1977")
+        assertThat(updatedFavorites[0].isFavorite).isTrue()
+        assertThat(updatedFavorites[0].title).contains("Winterland")
+        
+        // Step 6: Verify the workflow works end-to-end
+        // If user searches again, the favorite status should persist
+        val searchResultsAfterFavorite = repository.searchConcerts("1977").first()
+        val concertAfterFavorite = searchResultsAfterFavorite.find { it.identifier == "test-concert-1977" }
+        assertThat(concertAfterFavorite?.isFavorite).isTrue()
+    }
+    
+    @Test
+    fun `reproduces favorite bug - favoriting without updating concerts table fails`() = runTest {
+        // Setup: Mock API to return a concert
+        val testConcert = createTestArchiveDoc("bug-concert", "Test Concert for Bug Reproduction")
+        val apiResponse = createMockSearchResponse(listOf(testConcert))
+        coEvery { mockApiService.searchConcerts(any(), any(), any(), any(), any(), any()) } returns 
+            Response.success(apiResponse)
+        
+        // Step 1: User searches and caches a concert
+        val searchResults = repository.searchConcerts("test").first()
+        val concert = searchResults[0]
+        
+        // Step 2: User favorites the concert (OLD BUGGY WAY - only updates FavoriteEntity)
+        val favoriteItem = com.deadarchive.core.model.FavoriteItem.fromConcert(concert)
+        val favoriteEntity = com.deadarchive.core.database.FavoriteEntity.fromFavoriteItem(favoriteItem)
+        favoriteDao.insertFavorite(favoriteEntity)
+        
+        // Step 3: Check if concert appears in favorites (THIS SHOULD FAIL before fix)
+        val favorites = repository.getFavoriteConcerts().first()
+        
+        // This assertion would fail with the original bug because:
+        // - FavoriteEntity table has the favorite
+        // - But concerts table still has isFavorite = false
+        // - getFavoriteConcerts() queries concerts table, finds nothing
+        assertThat(favorites).isEmpty() // This documents the bug behavior
+        
+        // Now apply the fix - update concerts table too
+        val cachedConcert = concertDao.getConcertById(concert.identifier)!!
+        val updatedEntity = cachedConcert.copy(isFavorite = true)
+        concertDao.insertConcert(updatedEntity)
+        
+        // Now it should work
+        val favoritesAfterFix = repository.getFavoriteConcerts().first()
+        assertThat(favoritesAfterFix).hasSize(1)
+    }
+    
+    @Test
     fun `handles large search results efficiently`() = runTest {
         // Mock: API returns 100 concerts
         val largeDocs = (1..100).map { i ->

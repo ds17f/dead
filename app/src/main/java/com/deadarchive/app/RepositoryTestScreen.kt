@@ -219,6 +219,14 @@ class RepositoryTestViewModel @Inject constructor(
                     addLog("💖 Added favorite: ${concert.title.take(30)}")
                 }
                 
+                // Update the concerts table to reflect favorite status change
+                val existingConcert = concertDao.getConcertById(concert.identifier)
+                if (existingConcert != null) {
+                    val updatedEntity = existingConcert.copy(isFavorite = !concert.isFavorite)
+                    concertDao.insertConcert(updatedEntity)
+                    addLog("🔄 Updated concert cache with favorite status")
+                }
+                
                 // Refresh current concerts to update favorite status
                 if (_concerts.value.isNotEmpty()) {
                     _concerts.value = _concerts.value.map { c ->
