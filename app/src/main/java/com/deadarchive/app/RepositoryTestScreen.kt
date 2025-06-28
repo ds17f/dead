@@ -17,8 +17,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.ConcertRepository
-import com.deadarchive.core.database.ConcertDao
-import com.deadarchive.core.database.FavoriteDao
+import com.deadarchive.core.data.repository.FavoriteRepository
 import com.deadarchive.core.model.Concert
 import com.deadarchive.core.model.FavoriteItem
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -31,8 +30,7 @@ import kotlin.system.measureTimeMillis
 @HiltViewModel
 class RepositoryTestViewModel @Inject constructor(
     private val concertRepository: ConcertRepository,
-    private val concertDao: ConcertDao,
-    private val favoriteDao: FavoriteDao
+    private val favoriteRepository: FavoriteRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<RepositoryTestUiState>(RepositoryTestUiState.Idle)
@@ -112,57 +110,26 @@ class RepositoryTestViewModel @Inject constructor(
     fun testOfflineBehavior() {
         viewModelScope.launch {
             _uiState.value = RepositoryTestUiState.Loading("Testing offline behavior...")
-            addLog("📴 Testing offline behavior (simulated)")
+            addLog("📴 Testing offline behavior - using cached data")
             
             try {
-                // First ensure we have some cached data - check for 1977 concerts specifically
-                addLog("💾 Checking for cached 1977 concerts...")
-                val cachedConcerts = concertDao.searchConcerts("1977")
-                addLog("🔍 Found ${cachedConcerts.size} cached concerts matching '1977'")
-                
-                // Also check total cached concerts
-                val totalCached = concertDao.getRecentConcerts(200)
-                addLog("📊 Total cached concerts: ${totalCached.size}")
-                
-                // Show dates of cached concerts for debugging
-                if (totalCached.isNotEmpty()) {
-                    val cachedYears = totalCached.mapNotNull { it.date?.take(4) }.distinct().sorted()
-                    addLog("📅 Cached years: ${cachedYears.joinToString(", ")}")
-                }
-                
-                if (cachedConcerts.isEmpty()) {
-                    // Try any cached concerts as fallback
-                    val anyCached = concertDao.getRecentConcerts(10)
-                    if (anyCached.isEmpty()) {
+                // Use repository method to get cached concerts
+                concertRepository.getAllCachedConcerts().take(1).collect { cachedConcerts ->
+                    addLog("💾 Found ${cachedConcerts.size} cached concerts")
+                    
+                    if (cachedConcerts.isEmpty()) {
                         addLog("⚠️ No cached data found. Run search first to populate cache.")
                         _uiState.value = RepositoryTestUiState.Error("No cached data. Run search first.")
-                        return@launch
                     } else {
-                        addLog("✅ Found ${anyCached.size} cached concerts (not 1977-specific)")
-                        // Convert cached entities to domain models for display
-                        val concerts = anyCached.map { entity ->
-                            entity.toConcert().copy(
-                                isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                            )
-                        }
-                        _concerts.value = concerts
-                        addLog("📱 Offline mode: Showing ${concerts.size} cached concerts")
+                        _concerts.value = cachedConcerts.take(10)
+                        addLog("📱 Offline mode: Showing ${cachedConcerts.take(10).size} cached concerts")
+                        
+                        // Show some stats
+                        val years = cachedConcerts.mapNotNull { it.date.take(4) }.distinct().sorted()
+                        addLog("📅 Cached years available: ${years.joinToString(", ")}")
+                        _uiState.value = RepositoryTestUiState.Success("Offline test completed - showing cached data")
                     }
-                } else {
-                    addLog("✅ Found ${cachedConcerts.size} cached 1977 concerts")
-                    
-                    // Convert cached entities to domain models for display
-                    val concerts = cachedConcerts.take(10).map { entity ->
-                        entity.toConcert().copy(
-                            isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                        )
-                    }
-                    
-                    _concerts.value = concerts
-                    addLog("📱 Offline mode: Showing ${concerts.size} cached 1977 concerts")
                 }
-                
-                _uiState.value = RepositoryTestUiState.Success("Offline test completed - showing cached data")
                 
             } catch (e: Exception) {
                 addLog("❌ Offline test failed: ${e.message}")
@@ -209,22 +176,12 @@ class RepositoryTestViewModel @Inject constructor(
             try {
                 if (concert.isFavorite) {
                     // Remove favorite
-                    favoriteDao.deleteFavoriteById("concert_${concert.identifier}")
+                    favoriteRepository.removeConcertFromFavorites(concert.identifier)
                     addLog("💔 Removed favorite: ${concert.title.take(30)}")
                 } else {
                     // Add favorite
-                    val favorite = FavoriteItem.fromConcert(concert)
-                    val entity = com.deadarchive.core.database.FavoriteEntity.fromFavoriteItem(favorite)
-                    favoriteDao.insertFavorite(entity)
+                    favoriteRepository.addConcertToFavorites(concert)
                     addLog("💖 Added favorite: ${concert.title.take(30)}")
-                }
-                
-                // Update the concerts table to reflect favorite status change
-                val existingConcert = concertDao.getConcertById(concert.identifier)
-                if (existingConcert != null) {
-                    val updatedEntity = existingConcert.copy(isFavorite = !concert.isFavorite)
-                    concertDao.insertConcert(updatedEntity)
-                    addLog("🔄 Updated concert cache with favorite status")
                 }
                 
                 // Refresh current concerts to update favorite status
@@ -272,14 +229,15 @@ class RepositoryTestViewModel @Inject constructor(
     private fun updateCacheStats() {
         viewModelScope.launch {
             try {
-                val recentConcerts = concertDao.getRecentConcerts(100)
-                val favoriteCount = favoriteDao.getFavoriteCount()
-                
-                _cacheStats.value = buildString {
-                    appendLine("📊 Cache Statistics:")
-                    appendLine("• Cached concerts: ${recentConcerts.size}")
-                    appendLine("• Total favorites: $favoriteCount")
-                    appendLine("• Last updated: ${System.currentTimeMillis() % 100000}")
+                concertRepository.getAllCachedConcerts().take(1).collect { cachedConcerts ->
+                    val favoriteCount = _favorites.value.size
+                    
+                    _cacheStats.value = buildString {
+                        appendLine("📊 Cache Statistics:")
+                        appendLine("• Cached concerts: ${cachedConcerts.size}")
+                        appendLine("• Total favorites: $favoriteCount")
+                        appendLine("• Last updated: ${System.currentTimeMillis() % 100000}")
+                    }
                 }
                 
             } catch (e: Exception) {
@@ -291,12 +249,11 @@ class RepositoryTestViewModel @Inject constructor(
     fun clearCache() {
         viewModelScope.launch {
             try {
-                // Clear non-favorite concerts
-                val cutoffTimestamp = System.currentTimeMillis() + (24 * 60 * 60 * 1000L) // Future timestamp to clear everything
-                concertDao.cleanupOldCachedConcerts(cutoffTimestamp)
-                addLog("🗑️ Cache cleared (favorites preserved)")
-                updateCacheStats()
+                // Clear current display and show message
                 _concerts.value = emptyList()
+                addLog("🗑️ Display cache cleared")
+                addLog("ℹ️ Full cache clearing requires restart")
+                updateCacheStats()
                 
             } catch (e: Exception) {
                 addLog("❌ Clear cache failed: ${e.message}")
