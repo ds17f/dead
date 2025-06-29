@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.7.0] - 2025-06-28
+
+### New Features
+* implement comprehensive data layer with enhanced repositories and data mappers (af5c974)
+* complete repository implementations with comprehensive test coverage (8683156)
+
+### Bug Fixes
+* resolve favorites not updating immediately after toggle (1f44a97)
+* resolve database schema conflicts and Flow exception transparency violations (f8e9f4e)
+* update RepositoryTestScreen to use repositories instead of direct DAO access (a31108e)
+* resolve test failures and compilation warnings (eaf0193)
+* resolve test compilation and logic issues in RepositoryErrorHandlingTest (f4dccc9)
+* correct type mismatch in RepositoryErrorHandlingTest (422be3d)
+
+### Code Refactoring
+* simplify repository unit tests to focus on behavior over implementation (61682fa)
+* implement hybrid testing approach focusing on business logic (691ccb2)
+
+
 ## [0.6.0] - 2025-06-28
 
 ### New Features
@@ -13,8 +32,6 @@
 
 ### Tests
 * add integration tests for favorites synchronization bug (ec51fe1)
-
-
 ## [0.5.1] - 2025-06-27
 
 ### Bug Fixes
