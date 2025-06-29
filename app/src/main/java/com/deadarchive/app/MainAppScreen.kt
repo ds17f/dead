@@ -1,0 +1,119 @@
+package com.deadarchive.app
+
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.rememberNavController
+import com.deadarchive.core.design.component.DeadArchiveBottomNavigation
+import com.deadarchive.feature.browse.navigation.browseScreen
+import androidx.media3.common.util.UnstableApi
+
+/**
+ * Main app screen with bottom navigation
+ * This wraps the entire app and provides the bottom navigation bar
+ */
+@UnstableApi
+@Composable
+fun MainAppScreen(
+    navController: NavHostController = rememberNavController()
+) {
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
+    
+    Scaffold(
+        bottomBar = {
+            // Show bottom navigation on main screens, hide on detail screens
+            if (shouldShowBottomNavigation(currentRoute)) {
+                DeadArchiveBottomNavigation(
+                    currentRoute = currentRoute,
+                    onNavigateToDestination = { route ->
+                        navController.navigate(route) {
+                            // Pop up to the graph's start destination to avoid building up a large stack
+                            popUpTo(navController.graph.startDestinationId) {
+                                saveState = true
+                            }
+                            // Avoid multiple copies of the same destination
+                            launchSingleTop = true
+                            // Restore state when re-selecting a previously selected item
+                            restoreState = true
+                        }
+                    }
+                )
+            }
+        }
+    ) { paddingValues ->
+        NavHost(
+            navController = navController,
+            startDestination = "home",
+            modifier = Modifier.padding(paddingValues)
+        ) {
+            composable("home") {
+                HomeScreen(
+                    onNavigateToDebug = { navController.navigate("debug") },
+                    onNavigateToBrowse = { navController.navigate("browse") }
+                )
+            }
+            
+            // Browse/Search functionality
+            browseScreen(
+                onNavigateToPlayer = { concertId -> 
+                    navController.navigate("player/$concertId") 
+                }
+            )
+            
+            composable("library") {
+                LibraryScreen()
+            }
+            
+            composable("debug") {
+                DebugScreen(
+                    onBackClick = { navController.popBackStack() },
+                    onNavigateToRepositoryTest = { navController.navigate("repository_test") },
+                    onNavigateToDatabaseTest = { navController.navigate("database_test") },
+                    onNavigateToNetworkTest = { navController.navigate("network_test") },
+                    onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") }
+                )
+            }
+            
+            // Debug screens (hidden from bottom nav)
+            composable("network_test") {
+                NetworkTestScreen(
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+            
+            composable("database_test") {
+                DatabaseTestScreen(
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+            
+            composable("repository_test") {
+                RepositoryTestScreen(
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+            
+            composable("media_player_test") {
+                MediaPlayerTestScreen(
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+        }
+    }
+}
+
+/**
+ * Determines whether to show the bottom navigation bar based on current route
+ */
+private fun shouldShowBottomNavigation(currentRoute: String?): Boolean {
+    return when (currentRoute) {
+        "home", "browse", "library", "debug" -> true
+        else -> false
+    }
+}

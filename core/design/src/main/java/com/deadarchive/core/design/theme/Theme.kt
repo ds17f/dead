@@ -7,16 +7,37 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
+// Grateful Dead inspired color palette
+private val DeadRed = Color(0xFFDC143C)      // Crimson red
+private val DeadGold = Color(0xFFFFD700)     // Golden yellow  
+private val DeadGreen = Color(0xFF228B22)    // Forest green
+private val DeadBlue = Color(0xFF4169E1)     // Royal blue
+private val DeadPurple = Color(0xFF8A2BE2)   // Blue violet
+
 private val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFF6750A4),
-    secondary = Color(0xFF625B71),
-    tertiary = Color(0xFF7D5260)
+    primary = DeadRed,
+    onPrimary = Color.White,
+    secondary = DeadGold,
+    onSecondary = Color.Black,
+    tertiary = DeadGreen,
+    onTertiary = Color.White,
+    background = Color(0xFF121212),
+    surface = Color(0xFF1E1E1E),
+    onBackground = Color.White,
+    onSurface = Color.White
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Color(0xFF6750A4),
-    secondary = Color(0xFF625B71),
-    tertiary = Color(0xFF7D5260)
+    primary = DeadRed,
+    onPrimary = Color.White,
+    secondary = DeadGold,
+    onSecondary = Color.Black,
+    tertiary = DeadGreen,
+    onTertiary = Color.White,
+    background = Color.White,
+    surface = Color(0xFFFFFBFE),
+    onBackground = Color.Black,
+    onSurface = Color.Black
 )
 
 @Composable

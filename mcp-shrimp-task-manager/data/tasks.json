@@ -431,14 +431,14 @@
       "name": "UI Theming and Polish",
       "description": "Create custom theme and visual styling for the app",
       "notes": "Use Grateful Dead colors like olive green, dark red, and gold. Consider iconic imagery like the dancing bears or lightning bolt.",
-      "status": "pending",
+      "status": "in_progress",
       "dependencies": [
         {
           "taskId": "5869fe6d-9bd5-4e03-a26b-1e558fae09c2"
         }
       ],
       "createdAt": "2025-06-16T03:32:02.148Z",
-      "updatedAt": "2025-06-16T03:32:02.148Z",
+      "updatedAt": "2025-06-29T20:33:39.514Z",
       "relatedFiles": [
         {
           "path": "core/design/src/main/java/com/grateful/dead/core/design/theme/Theme.kt",
