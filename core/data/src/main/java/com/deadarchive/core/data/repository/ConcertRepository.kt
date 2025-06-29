@@ -65,8 +65,8 @@ class ConcertRepositoryImpl @Inject constructor(
         // Try to fetch fresh data from API
         val searchQuery = if (query.isBlank()) {
             "collection:GratefulDead"
-        } else if (query.matches(Regex("\\d{4}"))) {
-            // If query is a 4-digit year, search in date field
+        } else if (query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?"))) {
+            // If query is a date pattern (1977, 1977-05, 1977-05-08), search in date field
             "collection:GratefulDead AND date:$query*"
         } else {
             // General search

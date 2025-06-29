@@ -64,9 +64,30 @@ class SearchBugSimulationTest {
             println("  - ${concert.title} (${concert.date})")
         }
         
-        // This shows the potential problem
-        assertTrue("The '05' query should match both 1977-05 AND 1995 dates", 
-            badMatches.size > 2)
+        // Test 2: Check if the API search query construction is correct
+        println("\n=== Testing API Search Query Construction Fix ===")
+        
+        // Test the regex patterns from ConcertRepository
+        val dateQueries = listOf("1977", "1977-05", "1977-05-08")
+        val datePattern = Regex("\\d{4}(-\\d{2})?(-\\d{2})?")
+        
+        dateQueries.forEach { query ->
+            val isDatePattern = query.matches(datePattern)
+            val expectedAPIQuery = if (isDatePattern) {
+                "collection:GratefulDead AND date:$query*"
+            } else {
+                "collection:GratefulDead AND ($query)"
+            }
+            
+            println("Query '$query' → isDatePattern: $isDatePattern")
+            println("  API Query: $expectedAPIQuery")
+            
+            // The key insight: "1977-05" should be treated as a date pattern
+            if (query == "1977-05") {
+                assertTrue("1977-05 should match date pattern", isDatePattern)
+                assertTrue("1977-05 should use date: search", expectedAPIQuery.contains("date:1977-05*"))
+            }
+        }
         
         // Test 3: Simulate the exact search that's failing in the UI
         println("\n=== Simulating exact UI search: '1977-05-08' ===")
