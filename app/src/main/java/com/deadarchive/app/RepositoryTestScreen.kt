@@ -51,7 +51,7 @@ class RepositoryTestViewModel @Inject constructor(
     init {
         // Observe favorites in real-time
         viewModelScope.launch {
-            concertRepository.getFavoriteConcerts().collect { favoriteConcerts ->
+            favoriteRepository.getFavoriteConcertsWithData().collect { favoriteConcerts ->
                 _favorites.value = favoriteConcerts
                 addLog("✨ Favorites updated: ${favoriteConcerts.size} items")
             }
