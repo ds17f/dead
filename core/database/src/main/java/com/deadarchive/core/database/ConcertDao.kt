@@ -27,8 +27,9 @@ interface ConcertDao {
     
     /**
      * Search by exact date: 1977-05-08
+     * Handles both date formats: '1993-05-16' and '1993-05-16T00:00:00Z'
      */
-    @Query("SELECT * FROM concerts WHERE date = :date ORDER BY date DESC")
+    @Query("SELECT * FROM concerts WHERE date LIKE :date || '%' ORDER BY date DESC")
     suspend fun searchConcertsByExactDate(date: String): List<ConcertEntity>
     
     /**

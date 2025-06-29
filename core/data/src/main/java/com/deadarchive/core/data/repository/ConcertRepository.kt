@@ -50,14 +50,26 @@ class ConcertRepositoryImpl @Inject constructor(
      * Provides fast, consistent results from the complete local catalog
      */
     override fun searchConcerts(query: String): Flow<List<Concert>> = flow {
-        val searchResults = performPreciseLocalSearch(query.trim())
+        val trimmedQuery = query.trim()
+        println("🔍 SEARCH START: query='$trimmedQuery'")
+        
+        val startTime = System.currentTimeMillis()
+        val searchResults = performPreciseLocalSearch(trimmedQuery)
+        val searchTime = System.currentTimeMillis() - startTime
+        
+        println("🔍 SEARCH RESULTS: query='$trimmedQuery', found=${searchResults.size} concerts in ${searchTime}ms")
+        searchResults.forEachIndexed { index, entity ->
+            println("  [$index] ${entity.id} - ${entity.title} (${entity.date})")
+        }
         
         val concerts = searchResults.map { entity ->
             val isFavorite = favoriteDao.isConcertFavorite(entity.id)
             entity.toConcert().copy(isFavorite = isFavorite)
         }
         
+        println("🔍 SEARCH EMIT: query='$trimmedQuery', emitting ${concerts.size} concerts")
         emit(concerts)
+        println("🔍 SEARCH COMPLETE: query='$trimmedQuery'")
     }
     
     /**
@@ -65,38 +77,63 @@ class ConcertRepositoryImpl @Inject constructor(
      * No API fallbacks - returns exactly what matches or empty results
      */
     private suspend fun performPreciseLocalSearch(query: String): List<ConcertEntity> {
+        println("🔎 LOCAL SEARCH: query='$query'")
+        
         if (query.isBlank()) {
-            // Return recent concerts for empty query
-            return concertDao.getRecentConcerts(100)
+            println("🔎 LOCAL SEARCH: empty query, returning recent concerts")
+            println("🗃️ DB QUERY: getRecentConcerts(100)")
+            val results = concertDao.getRecentConcerts(100)
+            println("🗃️ DB RESULT: getRecentConcerts returned ${results.size} concerts")
+            return results
         }
         
-        return when {
+        val results = when {
             // Exact date patterns: 1977, 1977-05, 1977-05-08
             query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?")) -> {
+                println("🔎 LOCAL SEARCH: detected date pattern '$query'")
                 searchByDatePattern(query)
             }
             
             // Year range: 1970s, 1980s
             query.matches(Regex("\\d{4}s")) -> {
                 val decade = query.substring(0, 4).toInt()
-                concertDao.searchConcertsByYearRange(decade, decade + 9)
+                println("🔎 LOCAL SEARCH: detected decade pattern '$query', searching ${decade}-${decade + 9}")
+                println("🗃️ DB QUERY: searchConcertsByYearRange($decade, ${decade + 9})")
+                val results = concertDao.searchConcertsByYearRange(decade, decade + 9)
+                println("🗃️ DB RESULT: searchConcertsByYearRange returned ${results.size} concerts")
+                results
             }
             
             // Venue-specific searches: Winterland, MSG, etc.
             isVenueQuery(query) -> {
-                concertDao.searchConcertsByVenue(query)
+                println("🔎 LOCAL SEARCH: detected venue query '$query'")
+                println("🗃️ DB QUERY: searchConcertsByVenue('$query')")
+                val results = concertDao.searchConcertsByVenue(query)
+                println("🗃️ DB RESULT: searchConcertsByVenue returned ${results.size} concerts")
+                results
             }
             
             // Location searches: Berkeley, Boston, NYC
             isCityQuery(query) -> {
-                concertDao.searchConcertsByLocation(query)
+                println("🔎 LOCAL SEARCH: detected city query '$query'")
+                println("🗃️ DB QUERY: searchConcertsByLocation('$query')")
+                val results = concertDao.searchConcertsByLocation(query)
+                println("🗃️ DB RESULT: searchConcertsByLocation returned ${results.size} concerts")
+                results
             }
             
             // General text search across all fields
             else -> {
-                concertDao.searchConcertsGeneral(query)
+                println("🔎 LOCAL SEARCH: using general search for '$query'")
+                println("🗃️ DB QUERY: searchConcertsGeneral('$query')")
+                val results = concertDao.searchConcertsGeneral(query)
+                println("🗃️ DB RESULT: searchConcertsGeneral returned ${results.size} concerts")
+                results
             }
         }
+        
+        println("🔎 LOCAL SEARCH: query='$query' returned ${results.size} results")
+        return results
     }
     
     /**
@@ -106,20 +143,44 @@ class ConcertRepositoryImpl @Inject constructor(
         return when {
             // Full date: 1977-05-08
             dateQuery.matches(Regex("\\d{4}-\\d{2}-\\d{2}")) -> {
-                concertDao.searchConcertsByExactDate(dateQuery)
+                println("🗃️ DB QUERY: searchConcertsByExactDate('$dateQuery')")
+                val results = concertDao.searchConcertsByExactDate(dateQuery)
+                println("🗃️ DB RESULT: searchConcertsByExactDate returned ${results.size} concerts")
+                
+                // Debug: Also try a general search to see if the data exists
+                val debugResults = concertDao.searchConcertsGeneral(dateQuery)
+                println("🗃️ DEBUG: searchConcertsGeneral('$dateQuery') returned ${debugResults.size} concerts")
+                if (debugResults.isNotEmpty()) {
+                    println("🗃️ DEBUG: First match - ${debugResults[0].id} - ${debugResults[0].date}")
+                    // Export sample data for testing
+                    debugResults.take(3).forEach { concert ->
+                        println("🗃️ SAMPLE DATA: ${concert.id}|${concert.date}|${concert.title}|${concert.venue}|${concert.location}")
+                    }
+                }
+                
+                results
             }
             
             // Year-month: 1977-05
             dateQuery.matches(Regex("\\d{4}-\\d{2}")) -> {
-                concertDao.searchConcertsByYearMonth(dateQuery)
+                println("🗃️ DB QUERY: searchConcertsByYearMonth('$dateQuery')")
+                val results = concertDao.searchConcertsByYearMonth(dateQuery)
+                println("🗃️ DB RESULT: searchConcertsByYearMonth returned ${results.size} concerts")
+                results
             }
             
             // Year only: 1977
             dateQuery.matches(Regex("\\d{4}")) -> {
-                concertDao.searchConcertsByYear(dateQuery)
+                println("🗃️ DB QUERY: searchConcertsByYear('$dateQuery')")
+                val results = concertDao.searchConcertsByYear(dateQuery)
+                println("🗃️ DB RESULT: searchConcertsByYear returned ${results.size} concerts")
+                results
             }
             
-            else -> emptyList()
+            else -> {
+                println("🗃️ DB QUERY: no matching date pattern for '$dateQuery'")
+                emptyList()
+            }
         }
     }
     

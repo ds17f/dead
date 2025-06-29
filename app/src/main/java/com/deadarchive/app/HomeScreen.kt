@@ -12,10 +12,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun HomeScreen(
-    onNavigateToNetworkTest: () -> Unit,
-    onNavigateToDatabaseTest: () -> Unit,
-    onNavigateToMediaPlayerTest: () -> Unit,
-    onNavigateToRepositoryTest: () -> Unit,
+    onNavigateToDebug: () -> Unit,
     onNavigateToBrowse: () -> Unit = {}
 ) {
     Column(
@@ -63,65 +60,14 @@ fun HomeScreen(
             )
         }
         
-        Text(
-            text = "Test Screens",
-            style = MaterialTheme.typography.headlineMedium,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.padding(top = 16.dp)
-        )
-        
-        Spacer(modifier = Modifier.height(8.dp))
-        
-        Button(
-            onClick = onNavigateToNetworkTest,
+        OutlinedButton(
+            onClick = onNavigateToDebug,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(56.dp)
         ) {
             Text(
-                text = "Network Test",
-                style = MaterialTheme.typography.titleMedium
-            )
-        }
-        
-        Button(
-            onClick = onNavigateToDatabaseTest,
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp)
-        ) {
-            Text(
-                text = "Database Test",
-                style = MaterialTheme.typography.titleMedium
-            )
-        }
-        
-        Button(
-            onClick = onNavigateToRepositoryTest,
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = MaterialTheme.colorScheme.tertiary
-            )
-        ) {
-            Text(
-                text = "🧪 Repository Test",
-                style = MaterialTheme.typography.titleMedium
-            )
-        }
-        
-        Button(
-            onClick = onNavigateToMediaPlayerTest,
-            modifier = Modifier
-                .fillMaxWidth()
-                .height(56.dp),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = MaterialTheme.colorScheme.secondary
-            )
-        ) {
-            Text(
-                text = "🎸 Media Player Test",
+                text = "🛠️ Debug & Testing",
                 style = MaterialTheme.typography.titleMedium
             )
         }

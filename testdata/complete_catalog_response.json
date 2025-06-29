@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "exported_at": "2025-06-29T06:48:08Z",
+    "source": "Real app data via DataSyncService",
+    "total_concerts": 10
+  },
+  "sample_concerts": [
+    {
+      "identifier": "gd1995-07-09.schoeps.wklitz.95444.flac1648",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "Schoeps MK4's>Rbox>Casio DAR-100 FOB/DFC",
+      "description": "Set 1 Touch Of Grey Little Red Rooster Lazy River Road When I Paint My Masterpiece Childhood's End C"
+    },
+    {
+      "identifier": "gd1995-07-09.sbd.miller.114369.flac16",
+      "title": "The Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "SBD -> Dat (44.1k)",
+      "description": "Set 1 Touch Of Gray, Little Red Rooster, Lazy River Road, When I Paint My Masterpiece*, Childhood's "
+    },
+    {
+      "identifier": "gd1995-07-09.schoeps.wklitz.95445.flac16",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "Schoeps MK4's>Rbox>Casio DAR-100 FOB/DFC",
+      "description": "Set 1 Touch Of Grey Little Red Rooster Lazy River Road When I Paint My Masterpiece Childhood's End C"
+    },
+    {
+      "identifier": "gd1995-07-09.sbd.gardner.4091.shnf",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "dsbd(pre-FM)>dat",
+      "description": "Set 1 Touch Of Grey Little Red Rooster Lazy River Road When I Paint My Masterpiece Childhood's End C"
+    },
+    {
+      "identifier": "gd95-07-09.sbd.7233.sbeok.shnf",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "Soundboard",
+      "description": "Touch Of Gray, Little Red Rooster, Lazy River Road, When I Paint My Masterpiece*, Childhood's End, C"
+    },
+    {
+      "identifier": "gd1995-07-09.aud.liberated-bootleg.larson.27977.flac16",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "Bootleg \"To The Sky: Jerry's Last Show\" (probably AUD FOB)",
+      "description": "Set 1 Touch Of Grey Little Red Rooster Lazy River Road When I Paint My Masterpiece Childhood's End C"
+    },
+    {
+      "identifier": "gd1995-07-09.aud.mahoney.86405.flac16",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "? > Patch > Sony D6 > Master Cassette",
+      "description": "Set 1 Touch Of Grey Little Red Rooster Lazy River Road When I Paint My Masterpiece Childhood's End C"
+    },
+    {
+      "identifier": "gd1995-07-09.147058.walsh.suraci.at835.flac24",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "Source: Audio Technica 835b>Sony D5 Location: OTS, Stand at 9 feet",
+      "description": "Set I Touch Of Grey Little Red Rooster Lazy River Road When I Paint My Masterpiece Childhood's End C"
+    },
+    {
+      "identifier": "gd1995-07-09.127735.nick.flac16",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "3 source matrix from mix of audience source id 95445, soundboard source id 114369, and audience source id 86405",
+      "description": "Set 1 Touch Of Gray, Little Red Rooster, Lazy River Road, When I Paint My Masterpiece*, Childhood's "
+    },
+    {
+      "identifier": "gd1995-07-09.134130.oade-micro-mics.flac1648",
+      "title": "Grateful Dead Live at Soldier Field on 1995-07-09",
+      "date": "1995-07-09T00:00:00Z",
+      "venue": "Soldier Field",
+      "location": "Chicago, IL",
+      "year": 1995,
+      "source": "flac16/48kHz ; recording info: Oade Micro Mics > DAT Master @ 16bit/48kHz -23rd Row; pedigree: DAT Master > DAT > DAT; processing: DAT > Tascam DA45-HR > SD Usbpre2 > Adobe Audition > CDWAV > TLH Flac 8",
+      "description": "Set 1 Touch Of Gray, Little Red Rooster, Lazy River Road, When I Paint My Masterpiece*, Childhood's "
+    }
+  ]
+}

@@ -38,7 +38,9 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideHttpLoggingInterceptor(): HttpLoggingInterceptor {
-        return HttpLoggingInterceptor().apply {
+        return HttpLoggingInterceptor { message ->
+            println("🌐 API_CAPTURE: $message")
+        }.apply {
             level = HttpLoggingInterceptor.Level.BODY
         }
     }

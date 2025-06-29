@@ -1,7 +1,7 @@
 # Dead Archive Android App - Makefile
 # Simplifies common development tasks
 
-.PHONY: help build clean test lint install run run-emulator debug release tag-release dry-run-release setup deps check status logs
+.PHONY: help build clean test lint install run run-emulator debug release tag-release dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data
 
 # Default target
 help:
@@ -34,6 +34,11 @@ help:
 	@echo "  make emulator    - Start Android emulator (first available AVD)"
 	@echo "  make emu-list    - List all available Android Virtual Devices"
 	@echo "  make emu-stop    - Stop all running emulators"
+	@echo ""
+	@echo "Test Data Management:"
+	@echo "  make capture-test-data - Pull test data exported by debug screen"
+	@echo "  make clean-test-data   - Clear app data and remove test data files"  
+	@echo "  make view-test-data    - Show info about captured test data"
 	@echo ""
 	@echo "Utilities:"
 	@echo "  make status      - Show project and device status"
@@ -303,3 +308,46 @@ docs:
 	gradle dokkaHtml || echo "Dokka not configured"
 	@echo "📖 Opening README..."
 	@cat README.md | head -20
+
+# Test Data Management
+capture-test-data:
+	@echo "📥 Capturing test data from device..."
+	@echo "1️⃣ Make sure you've exported data using the Debug screen in the app"
+	@echo "2️⃣ Pulling files from device..."
+	@mkdir -p testdata
+	@echo "   Trying app external files directory..."
+	@adb pull /storage/emulated/0/Android/data/com.deadarchive.app.debug/files/testdata/ ./testdata/ 2>/dev/null || \
+	 adb pull /storage/emulated/0/Android/data/com.deadarchive.app/files/testdata/ ./testdata/ 2>/dev/null || \
+	 adb pull /sdcard/Android/data/com.deadarchive.app.debug/files/testdata/ ./testdata/ 2>/dev/null || \
+	 adb pull /sdcard/Android/data/com.deadarchive.app/files/testdata/ ./testdata/ 2>/dev/null || \
+	 echo "⚠️  No data found. Make sure to export data first using the Debug screen"
+	@if [ -d "testdata/testdata" ]; then mv testdata/testdata/* testdata/ && rmdir testdata/testdata; fi
+	@echo "✅ Test data captured to ./testdata/"
+	@$(MAKE) --no-print-directory view-test-data
+
+clean-test-data:
+	@echo "🧹 Cleaning test data..."
+	@adb shell pm clear com.deadarchive.app || echo "⚠️  App not installed or ADB not connected"
+	@rm -rf testdata/
+	@echo "✅ Test data cleaned"
+
+view-test-data:
+	@echo "📊 Test Data Summary:"
+	@if [ -d "testdata" ]; then \
+		echo "  Directory: testdata/"; \
+		if [ -f "testdata/complete_catalog_response.json" ]; then \
+			echo "  Complete Catalog: $$(wc -l < testdata/complete_catalog_response.json 2>/dev/null || echo 0) lines, $$(du -h testdata/complete_catalog_response.json 2>/dev/null | cut -f1 || echo '0B') size"; \
+		else \
+			echo "  Complete Catalog: Not found"; \
+		fi; \
+		if [ -f "testdata/sample_metadata_responses.json" ]; then \
+			echo "  Sample Metadata: $$(wc -l < testdata/sample_metadata_responses.json 2>/dev/null || echo 0) lines"; \
+		else \
+			echo "  Sample Metadata: Not found"; \
+		fi; \
+		echo "  All files:"; \
+		ls -la testdata/ 2>/dev/null || echo "    (empty)"; \
+	else \
+		echo "  No test data directory found"; \
+		echo "  💡 Use 'make capture-test-data' after exporting from Debug screen"; \
+	fi

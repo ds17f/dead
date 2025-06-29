@@ -48,6 +48,11 @@ interface DataSyncService {
      * Get total number of concerts in local database
      */
     suspend fun getTotalConcertCount(): Int
+    
+    /**
+     * DEBUG: Force fresh sync by clearing sync metadata
+     */
+    suspend fun forceRefreshCatalog(): SyncResult
 }
 
 @Singleton
@@ -213,6 +218,22 @@ class DataSyncServiceImpl @Inject constructor(
     
     override suspend fun getTotalConcertCount(): Int {
         return syncMetadataDao.getSyncMetadata()?.totalConcerts ?: 0
+    }
+    
+    override suspend fun forceRefreshCatalog(): SyncResult {
+        return try {
+            // Clear sync metadata to force fresh download
+            syncMetadataDao.clearSyncMetadata()
+            
+            // Clear existing concerts (except favorites)
+            val cutoffTimestamp = System.currentTimeMillis() + 1000 // Future timestamp to clear all non-favorites
+            concertDao.cleanupOldCachedConcerts(cutoffTimestamp)
+            
+            // Download fresh catalog
+            downloadCompleteCatalog()
+        } catch (e: Exception) {
+            SyncResult.Error("Force refresh failed: ${e.message}")
+        }
     }
     
     private fun updateProgress(
