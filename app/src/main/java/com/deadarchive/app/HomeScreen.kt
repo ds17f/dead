@@ -64,7 +64,7 @@ fun HomeScreen(
                     QuickAccessCard(
                         title = "Browse All",
                         subtitle = "17,000+ shows",
-                        icon = Icons.Default.PlaylistPlay,
+                        icon = Icons.Default.Search,
                         onClick = onNavigateToBrowse
                     )
                 }

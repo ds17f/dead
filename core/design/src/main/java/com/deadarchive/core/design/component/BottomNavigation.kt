@@ -30,7 +30,7 @@ enum class BottomNavDestination(
 ) {
     HOME("home", "Home", Icons.Filled.Home, Icons.Outlined.Home),
     SEARCH("browse", "Search", Icons.Filled.Search, Icons.Outlined.Search),
-    LIBRARY("library", "Library", Icons.Filled.PlaylistPlay, Icons.Outlined.PlaylistPlay),
+    LIBRARY("library", "Library", Icons.Filled.Favorite, Icons.Outlined.FavoriteBorder),
     SETTINGS("debug", "Settings", Icons.Filled.Settings, Icons.Outlined.Settings)
 }
 
