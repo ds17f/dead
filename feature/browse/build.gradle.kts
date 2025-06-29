@@ -62,6 +62,13 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
     
     testImplementation("junit:junit:4.13.2")
+    
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test:core:1.5.0") 
+    androidTestImplementation("androidx.test:runner:1.5.2")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    androidTestImplementation("io.mockk:mockk-android:1.13.8")
+    androidTestImplementation("androidx.room:room-testing:2.6.1")
 }
 
 kapt {
