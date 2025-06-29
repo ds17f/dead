@@ -6,6 +6,7 @@ import com.deadarchive.core.database.ConcertDao
 import com.deadarchive.core.database.DeadArchiveDatabase
 import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.FavoriteDao
+import com.deadarchive.core.database.SyncMetadataDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -56,5 +57,13 @@ object DatabaseModule {
     @Provides
     fun provideFavoriteDao(database: DeadArchiveDatabase): FavoriteDao {
         return database.favoriteDao()
+    }
+    
+    /**
+     * Provides Sync Metadata DAO for sync tracking operations
+     */
+    @Provides
+    fun provideSyncMetadataDao(database: DeadArchiveDatabase): SyncMetadataDao {
+        return database.syncMetadataDao()
     }
 }

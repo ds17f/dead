@@ -46,103 +46,106 @@ class ConcertRepositoryImpl @Inject constructor(
     }
     
     /**
-     * Search concerts with offline-first strategy
-     * 1. Emit cached results immediately
-     * 2. Fetch from API in background 
-     * 3. Update cache and emit fresh results
+     * Search concerts using local-only precise matching strategy
+     * Provides fast, consistent results from the complete local catalog
      */
     override fun searchConcerts(query: String): Flow<List<Concert>> = flow {
-        // First emit cached results if available
-        val cachedConcerts = concertDao.searchConcerts(query)
-        if (cachedConcerts.isNotEmpty()) {
-            val concerts = cachedConcerts.map { entity ->
-                val isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                entity.toConcert().copy(isFavorite = isFavorite)
-            }
-            emit(concerts)
-        }
+        val searchResults = performPreciseLocalSearch(query.trim())
         
-        // Try to fetch fresh data from API
-        val searchQuery = if (query.isBlank()) {
-            "collection:GratefulDead"
-        } else if (query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?"))) {
-            // If query is a date pattern (1977, 1977-05, 1977-05-08), search in date field
-            "collection:GratefulDead AND date:$query*"
-        } else {
-            // General search
-            "collection:GratefulDead AND ($query)"
-        }
-        
-        val response = archiveApiService.searchConcerts(
-            query = searchQuery,
-            rows = 100
-        )
-        
-        if (response.isSuccessful) {
-            response.body()?.let { searchResponse ->
-                println("DEBUG: API response successful, processing ${searchResponse.response.docs.size} docs")
-                val freshConcerts = searchResponse.response.docs.map { doc ->
-                    ArchiveMapper.run { doc.toConcert() }
-                }
-                println("DEBUG: Converted ${freshConcerts.size} docs to Concert objects")
-                
-                // Cache the fresh results
-                println("DEBUG: About to cache ${freshConcerts.size} fresh concerts")
-                cacheConcerts(freshConcerts)
-                
-                // Emit fresh results with favorite status
-                val concertsWithFavorites = freshConcerts.map { concert ->
-                    val isFavorite = favoriteDao.isConcertFavorite(concert.identifier)
-                    concert.copy(isFavorite = isFavorite)
-                }
-                println("DEBUG: Emitting ${concertsWithFavorites.size} concerts with favorite status")
-                emit(concertsWithFavorites)
-            }
-        } else {
-            println("DEBUG: API response failed with code: ${response.code()}")
-        }
-    }.catch { e ->
-        println("DEBUG: API search failed for query '$query', error: ${e.message}")
-        // If network fails, try comprehensive cached search
-        val cachedConcerts = searchCachedConcerts(query)
-        println("DEBUG: Found ${cachedConcerts.size} cached concerts for query '$query'")
-        
-        val concerts = cachedConcerts.map { entity ->
+        val concerts = searchResults.map { entity ->
             val isFavorite = favoriteDao.isConcertFavorite(entity.id)
             entity.toConcert().copy(isFavorite = isFavorite)
         }
-        // Re-emit as a new flow to avoid transparency violation
-        emitAll(flowOf(concerts))
+        
+        emit(concerts)
     }
     
     /**
-     * Search cached concerts with comprehensive matching
+     * Perform precise local search with field-specific matching
+     * No API fallbacks - returns exactly what matches or empty results
      */
-    private suspend fun searchCachedConcerts(query: String): List<ConcertEntity> {
+    private suspend fun performPreciseLocalSearch(query: String): List<ConcertEntity> {
+        if (query.isBlank()) {
+            // Return recent concerts for empty query
+            return concertDao.getRecentConcerts(100)
+        }
+        
         return when {
-            // For date patterns, try multiple search approaches
+            // Exact date patterns: 1977, 1977-05, 1977-05-08
             query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?")) -> {
-                println("DEBUG: Using date-specific search for '$query'")
-                val dateResults = concertDao.searchConcertsByDate(query)
-                if (dateResults.isNotEmpty()) {
-                    dateResults
-                } else {
-                    // Fallback to general search
-                    concertDao.searchConcerts(query)
-                }
+                searchByDatePattern(query)
             }
             
-            // For partial dates like "-05-08" or "05-08"
-            query.matches(Regex(".*\\d{1,2}[-/]\\d{1,2}.*")) -> {
-                println("DEBUG: Searching for partial date pattern '$query'")
-                concertDao.searchConcerts(query)
+            // Year range: 1970s, 1980s
+            query.matches(Regex("\\d{4}s")) -> {
+                val decade = query.substring(0, 4).toInt()
+                concertDao.searchConcertsByYearRange(decade, decade + 9)
             }
             
-            // For everything else, use comprehensive search
+            // Venue-specific searches: Winterland, MSG, etc.
+            isVenueQuery(query) -> {
+                concertDao.searchConcertsByVenue(query)
+            }
+            
+            // Location searches: Berkeley, Boston, NYC
+            isCityQuery(query) -> {
+                concertDao.searchConcertsByLocation(query)
+            }
+            
+            // General text search across all fields
             else -> {
-                println("DEBUG: Using comprehensive search for '$query'")
-                concertDao.searchConcerts(query)
+                concertDao.searchConcertsGeneral(query)
             }
+        }
+    }
+    
+    /**
+     * Search by precise date patterns with no fallback
+     */
+    private suspend fun searchByDatePattern(dateQuery: String): List<ConcertEntity> {
+        return when {
+            // Full date: 1977-05-08
+            dateQuery.matches(Regex("\\d{4}-\\d{2}-\\d{2}")) -> {
+                concertDao.searchConcertsByExactDate(dateQuery)
+            }
+            
+            // Year-month: 1977-05
+            dateQuery.matches(Regex("\\d{4}-\\d{2}")) -> {
+                concertDao.searchConcertsByYearMonth(dateQuery)
+            }
+            
+            // Year only: 1977
+            dateQuery.matches(Regex("\\d{4}")) -> {
+                concertDao.searchConcertsByYear(dateQuery)
+            }
+            
+            else -> emptyList()
+        }
+    }
+    
+    /**
+     * Check if query is likely a venue search
+     */
+    private fun isVenueQuery(query: String): Boolean {
+        val venueKeywords = setOf(
+            "winterland", "fillmore", "garden", "arena", "coliseum", "stadium", 
+            "theater", "theatre", "hall", "center", "dome", "pavilion", "forum"
+        )
+        return venueKeywords.any { keyword -> 
+            query.contains(keyword, ignoreCase = true) 
+        }
+    }
+    
+    /**
+     * Check if query is likely a city/location search
+     */
+    private fun isCityQuery(query: String): Boolean {
+        val cityKeywords = setOf(
+            "berkeley", "san francisco", "boston", "chicago", "detroit", 
+            "philadelphia", "new york", "nyc", "buffalo", "atlanta"
+        )
+        return cityKeywords.any { city -> 
+            query.contains(city, ignoreCase = true) 
         }
     }
     

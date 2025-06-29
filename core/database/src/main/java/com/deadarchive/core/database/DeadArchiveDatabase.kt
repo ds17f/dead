@@ -10,9 +10,10 @@ import android.content.Context
     entities = [
         ConcertEntity::class,
         DownloadEntity::class,
-        FavoriteEntity::class
+        FavoriteEntity::class,
+        SyncMetadataEntity::class
     ],
-    version = 4,
+    version = 5,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -20,5 +21,6 @@ abstract class DeadArchiveDatabase : RoomDatabase() {
     abstract fun concertDao(): ConcertDao
     abstract fun downloadDao(): DownloadDao
     abstract fun favoriteDao(): FavoriteDao
+    abstract fun syncMetadataDao(): SyncMetadataDao
     
 }

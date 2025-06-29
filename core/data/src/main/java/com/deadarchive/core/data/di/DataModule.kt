@@ -6,6 +6,8 @@ import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.DownloadRepositoryImpl
 import com.deadarchive.core.data.repository.FavoriteRepository
 import com.deadarchive.core.data.repository.FavoriteRepositoryImpl
+import com.deadarchive.core.data.sync.DataSyncService
+import com.deadarchive.core.data.sync.DataSyncServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -61,4 +63,14 @@ abstract class DataModule {
     abstract fun bindFavoriteRepository(
         favoriteRepositoryImpl: FavoriteRepositoryImpl
     ): FavoriteRepository
+    
+    /**
+     * Binds DataSyncService interface to its implementation.
+     * Provides complete catalog download and background sync capabilities.
+     */
+    @Binds
+    @Singleton
+    abstract fun bindDataSyncService(
+        dataSyncServiceImpl: DataSyncServiceImpl
+    ): DataSyncService
 }
