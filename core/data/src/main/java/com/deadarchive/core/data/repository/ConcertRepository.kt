@@ -103,39 +103,46 @@ class ConcertRepositoryImpl @Inject constructor(
         }
     }.catch { e ->
         println("DEBUG: API search failed for query '$query', error: ${e.message}")
-        // If network fails, try cached results but be more strict about matching
-        val cachedConcerts = if (query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?"))) {
-            // For pure date queries, use date-specific search
-            println("DEBUG: Using date-specific search for query '$query'")
-            concertDao.searchConcertsByDate(query)
-        } else {
-            concertDao.searchConcerts(query)
-        }
+        // If network fails, try comprehensive cached search
+        val cachedConcerts = searchCachedConcerts(query)
         println("DEBUG: Found ${cachedConcerts.size} cached concerts for query '$query'")
         
-        if (cachedConcerts.isNotEmpty()) {
-            // Filter cached results more strictly for date queries
-            val filteredConcerts = if (query.matches(Regex(".*\\d{4}.*"))) {
-                // For date queries, be more strict about matching
-                cachedConcerts.filter { entity ->
-                    entity.date?.contains(query, ignoreCase = true) == true ||
-                    entity.title.contains(query, ignoreCase = true)
+        val concerts = cachedConcerts.map { entity ->
+            val isFavorite = favoriteDao.isConcertFavorite(entity.id)
+            entity.toConcert().copy(isFavorite = isFavorite)
+        }
+        // Re-emit as a new flow to avoid transparency violation
+        emitAll(flowOf(concerts))
+    }
+    
+    /**
+     * Search cached concerts with comprehensive matching
+     */
+    private suspend fun searchCachedConcerts(query: String): List<ConcertEntity> {
+        return when {
+            // For date patterns, try multiple search approaches
+            query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?")) -> {
+                println("DEBUG: Using date-specific search for '$query'")
+                val dateResults = concertDao.searchConcertsByDate(query)
+                if (dateResults.isNotEmpty()) {
+                    dateResults
+                } else {
+                    // Fallback to general search
+                    concertDao.searchConcerts(query)
                 }
-            } else {
-                cachedConcerts
             }
             
-            println("DEBUG: After filtering: ${filteredConcerts.size} concerts")
-            
-            val concerts = filteredConcerts.map { entity ->
-                val isFavorite = favoriteDao.isConcertFavorite(entity.id)
-                entity.toConcert().copy(isFavorite = isFavorite)
+            // For partial dates like "-05-08" or "05-08"
+            query.matches(Regex(".*\\d{1,2}[-/]\\d{1,2}.*")) -> {
+                println("DEBUG: Searching for partial date pattern '$query'")
+                concertDao.searchConcerts(query)
             }
-            // Re-emit as a new flow to avoid transparency violation
-            emitAll(flowOf(concerts))
-        } else {
-            println("DEBUG: No cached concerts found, returning empty list")
-            emitAll(flowOf(emptyList()))
+            
+            // For everything else, use comprehensive search
+            else -> {
+                println("DEBUG: Using comprehensive search for '$query'")
+                concertDao.searchConcerts(query)
+            }
         }
     }
     

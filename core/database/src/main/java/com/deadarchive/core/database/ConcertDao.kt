@@ -23,7 +23,17 @@ interface ConcertDao {
     @Query("SELECT * FROM concerts WHERE id = :id")
     suspend fun getConcertById(id: String): ConcertEntity?
     
-    @Query("SELECT * FROM concerts WHERE title LIKE '%' || :query || '%' OR venue LIKE '%' || :query || '%' OR date LIKE '%' || :query || '%' ORDER BY date DESC")
+    @Query("""
+        SELECT * FROM concerts WHERE 
+        title LIKE '%' || :query || '%' OR 
+        venue LIKE '%' || :query || '%' OR 
+        location LIKE '%' || :query || '%' OR
+        date LIKE '%' || :query || '%' OR
+        year LIKE '%' || :query || '%' OR
+        description LIKE '%' || :query || '%' OR
+        source LIKE '%' || :query || '%'
+        ORDER BY date DESC
+    """)
     suspend fun searchConcerts(query: String): List<ConcertEntity>
     
     @Query("SELECT * FROM concerts WHERE date LIKE :datePattern || '%' ORDER BY date DESC")
