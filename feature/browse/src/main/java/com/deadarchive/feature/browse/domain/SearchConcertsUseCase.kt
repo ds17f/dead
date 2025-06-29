@@ -19,8 +19,20 @@ class SearchConcertsUseCase @Inject constructor(
     operator fun invoke(query: String): Flow<List<Concert>> {
         val searchQuery = when {
             query.isBlank() -> "grateful dead"
-            query.length < 3 -> "grateful dead $query"
-            else -> query
+            // Check if it's a date pattern (1977, 1977-05, 1977-05-08)
+            query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?")) -> "grateful dead $query"
+            // Check if it's a short search that might need context
+            query.length < 3 && !query.matches(Regex("\\d+")) -> "grateful dead $query"
+            else -> {
+                // If it doesn't contain "grateful dead" and isn't obviously a date/venue, add it
+                if (!query.contains("grateful", ignoreCase = true) && 
+                    !query.contains("dead", ignoreCase = true) &&
+                    !query.matches(Regex(".*\\d{4}.*"))) {
+                    "grateful dead $query"
+                } else {
+                    query
+                }
+            }
         }
         
         return concertRepository.searchConcerts(searchQuery)

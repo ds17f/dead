@@ -102,16 +102,39 @@ class ConcertRepositoryImpl @Inject constructor(
             println("DEBUG: API response failed with code: ${response.code()}")
         }
     }.catch { e ->
-        // If network fails, return cached results using Flow.catch
-        val cachedConcerts = concertDao.searchConcerts(query)
+        println("DEBUG: API search failed for query '$query', error: ${e.message}")
+        // If network fails, try cached results but be more strict about matching
+        val cachedConcerts = if (query.matches(Regex("\\d{4}(-\\d{2})?(-\\d{2})?"))) {
+            // For pure date queries, use date-specific search
+            println("DEBUG: Using date-specific search for query '$query'")
+            concertDao.searchConcertsByDate(query)
+        } else {
+            concertDao.searchConcerts(query)
+        }
+        println("DEBUG: Found ${cachedConcerts.size} cached concerts for query '$query'")
+        
         if (cachedConcerts.isNotEmpty()) {
-            val concerts = cachedConcerts.map { entity ->
+            // Filter cached results more strictly for date queries
+            val filteredConcerts = if (query.matches(Regex(".*\\d{4}.*"))) {
+                // For date queries, be more strict about matching
+                cachedConcerts.filter { entity ->
+                    entity.date.contains(query, ignoreCase = true) ||
+                    entity.title.contains(query, ignoreCase = true)
+                }
+            } else {
+                cachedConcerts
+            }
+            
+            println("DEBUG: After filtering: ${filteredConcerts.size} concerts")
+            
+            val concerts = filteredConcerts.map { entity ->
                 val isFavorite = favoriteDao.isConcertFavorite(entity.id)
                 entity.toConcert().copy(isFavorite = isFavorite)
             }
             // Re-emit as a new flow to avoid transparency violation
             emitAll(flowOf(concerts))
         } else {
+            println("DEBUG: No cached concerts found, returning empty list")
             emitAll(flowOf(emptyList()))
         }
     }

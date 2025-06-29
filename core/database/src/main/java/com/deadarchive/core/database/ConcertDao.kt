@@ -26,6 +26,9 @@ interface ConcertDao {
     @Query("SELECT * FROM concerts WHERE title LIKE '%' || :query || '%' OR venue LIKE '%' || :query || '%' OR date LIKE '%' || :query || '%' ORDER BY date DESC")
     suspend fun searchConcerts(query: String): List<ConcertEntity>
     
+    @Query("SELECT * FROM concerts WHERE date LIKE :datePattern || '%' ORDER BY date DESC")
+    suspend fun searchConcertsByDate(datePattern: String): List<ConcertEntity>
+    
     @Query("SELECT * FROM concerts ORDER BY date DESC LIMIT :limit")
     suspend fun getRecentConcerts(limit: Int = 50): List<ConcertEntity>
     
