@@ -118,7 +118,7 @@ class ConcertRepositoryImpl @Inject constructor(
             val filteredConcerts = if (query.matches(Regex(".*\\d{4}.*"))) {
                 // For date queries, be more strict about matching
                 cachedConcerts.filter { entity ->
-                    entity.date.contains(query, ignoreCase = true) ||
+                    entity.date?.contains(query, ignoreCase = true) == true ||
                     entity.title.contains(query, ignoreCase = true)
                 }
             } else {
