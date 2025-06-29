@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.8.0] - 2025-06-29
+
+### New Features
+* implement multi-query approach to bypass Archive.org 10k limit (9ca9d4e)
+* implement real data testing system and fix date search bug (6d2bb22)
+* implement complete dataset caching strategy with local-only search (eeccbcf)
+* implement comprehensive search functionality across all concert fields (96e81e4)
+* implement comprehensive Browse feature with navigation fix (4f7a6eb)
+
+### Bug Fixes
+* resolve search bug where date patterns returned wrong results (64ef916)
+* handle nullable date field in ConcertEntity filtering (9904057)
+* improve search functionality for date queries and prevent incorrect fallback results (3bc1bf9)
+
+### Tests
+* add realistic search bug reproduction tests (e698588)
+* add comprehensive end-to-end search functionality tests (905da73)
+
+
 ## [0.7.0] - 2025-06-28
 
 ### New Features
@@ -17,8 +36,6 @@
 ### Code Refactoring
 * simplify repository unit tests to focus on behavior over implementation (61682fa)
 * implement hybrid testing approach focusing on business logic (691ccb2)
-
-
 ## [0.6.0] - 2025-06-28
 
 ### New Features
