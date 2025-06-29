@@ -49,7 +49,7 @@ fun LibraryScreen(
             
             item {
                 LibrarySection(
-                    icon = Icons.Default.Download,
+                    icon = Icons.Default.Star,
                     title = "Downloaded",
                     subtitle = "Available offline",
                     onClick = { /* Navigate to downloads */ }
@@ -58,7 +58,7 @@ fun LibraryScreen(
             
             item {
                 LibrarySection(
-                    icon = Icons.Default.PlaylistPlay,
+                    icon = Icons.Default.PlayArrow,
                     title = "Recently Played",
                     subtitle = "Your listening history",
                     onClick = { /* Navigate to recent */ }
@@ -120,7 +120,7 @@ private fun LibrarySection(
             }
             
             Icon(
-                imageVector = Icons.Default.ChevronRight,
+                imageVector = Icons.Default.KeyboardArrowRight,
                 contentDescription = "Go to $title",
                 tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
             )
