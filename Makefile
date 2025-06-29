@@ -64,14 +64,14 @@ deps:
 # Build Commands
 build:
 	@echo "🔨 Building debug APK..."
-	gradle assembleDebug
-	@echo "✅ Debug APK built successfully!"
+	gradle assembleDebug --console=plain 2>&1 | tee build-output.log
+	@echo "✅ Debug APK built successfully! Output saved to build-output.log"
 	@echo "📱 APK location: app/build/outputs/apk/debug/"
 
 release:
 	@echo "🔨 Building release APK..."
-	gradle assembleRelease
-	@echo "✅ Release APK built successfully!"
+	gradle assembleRelease --console=plain 2>&1 | tee release-output.log
+	@echo "✅ Release APK built successfully! Output saved to release-output.log"
 	@echo "📱 APK location: app/build/outputs/apk/release/"
 
 tag-release:
@@ -94,8 +94,8 @@ clean:
 # Development
 install:
 	@echo "📱 Installing debug APK to device..."
-	gradle installDebug
-	@echo "✅ App installed!"
+	gradle installDebug --console=plain 2>&1 | tee install-output.log
+	@echo "✅ App installed! Output saved to install-output.log"
 
 run: install
 	@echo "🚀 Launching Dead Archive app..."
@@ -139,13 +139,13 @@ debug: build install
 # Quality Assurance
 test:
 	@echo "🧪 Running unit tests..."
-	gradle test
-	@echo "✅ Tests completed!"
+	gradle test --console=plain 2>&1 | tee test-output.log
+	@echo "✅ Tests completed! Output saved to test-output.log"
 
 lint:
 	@echo "🔍 Running lint checks..."
-	gradle lint
-	@echo "✅ Lint checks completed!"
+	gradle lint --console=plain 2>&1 | tee lint-output.log
+	@echo "✅ Lint checks completed! Output saved to lint-output.log"
 	@echo "📊 Lint report: app/build/reports/lint-results.html"
 
 check: test lint
