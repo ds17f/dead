@@ -206,8 +206,15 @@ class ConcertRepositoryLocalSearchTest {
             venue = "Test Venue", 
             location = "Test City, TS",
             year = id.substring(2, 6), // Extract year from ID
-            description = "Test concert",
             source = "Test source",
+            taper = "Test Taper",
+            transferer = "Test Transferer",
+            lineage = "Test Lineage",
+            description = "Test concert",
+            setlistRaw = "Test Setlist",
+            uploader = "Test Uploader",
+            addedDate = "2023-01-01",
+            publicDate = "2023-01-01",
             isFavorite = false,
             cachedTimestamp = System.currentTimeMillis()
         )

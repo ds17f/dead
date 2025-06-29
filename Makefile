@@ -327,7 +327,7 @@ capture-test-data:
 
 clean-test-data:
 	@echo "🧹 Cleaning test data..."
-	@adb shell pm clear com.deadarchive.app || echo "⚠️  App not installed or ADB not connected"
+	@adb shell pm clear com.deadarchive.app.debug || adb shell pm clear com.deadarchive.app || echo "⚠️  App not installed or ADB not connected"
 	@rm -rf testdata/
 	@echo "✅ Test data cleaned"
 

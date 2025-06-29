@@ -6,6 +6,7 @@ import com.deadarchive.core.database.SyncMetadataDao
 import com.deadarchive.core.database.SyncMetadataEntity
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
+import com.deadarchive.core.network.model.ArchiveSearchResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -76,9 +77,18 @@ class DataSyncServiceImpl @Inject constructor(
         private const val BATCH_SIZE = 50
         private const val MAX_RETRIES = 3
         
-        // Archive.org search query to get all Grateful Dead concerts
-        private const val COMPLETE_CATALOG_QUERY = "collection:GratefulDead"
-        private const val MAX_ROWS = 10000 // Should be more than enough for GD catalog
+        // Archive.org search queries to get all Grateful Dead concerts
+        // Split by decades to avoid 10k result limit per query
+        private val CATALOG_QUERIES = listOf(
+            "collection:GratefulDead AND date:[1965-01-01 TO 1969-12-31]", // 1960s
+            "collection:GratefulDead AND date:[1970-01-01 TO 1974-12-31]", // Early 70s
+            "collection:GratefulDead AND date:[1975-01-01 TO 1979-12-31]", // Late 70s
+            "collection:GratefulDead AND date:[1980-01-01 TO 1984-12-31]", // Early 80s
+            "collection:GratefulDead AND date:[1985-01-01 TO 1989-12-31]", // Late 80s
+            "collection:GratefulDead AND date:[1990-01-01 TO 1995-12-31]", // 90s
+            "collection:GratefulDead AND NOT date:[1965-01-01 TO 1995-12-31]" // Catch undated or post-95
+        )
+        private const val MAX_ROWS = 10000 // Archive.org limit per query
     }
     
     override fun getDownloadProgress(): Flow<SyncProgress> = _downloadProgress.asStateFlow()
@@ -92,26 +102,105 @@ class DataSyncServiceImpl @Inject constructor(
         return try {
             updateProgress(SyncPhase.STARTING, totalItems = 0, currentItem = "Initializing...")
             
-            // Step 1: Fetch complete catalog from Archive.org
+            // Step 1: Fetch complete catalog using multiple date-range queries
             updateProgress(SyncPhase.FETCHING, totalItems = 0, currentItem = "Fetching concert list from Archive.org...")
             
-            val response = archiveApiService.searchConcerts(
-                query = COMPLETE_CATALOG_QUERY,
-                rows = MAX_ROWS
-            )
+            val allConcerts = mutableListOf<ArchiveSearchResponse.ArchiveDoc>()
+            var totalFound = 0
+            var queryCount = 0
             
-            if (!response.isSuccessful) {
-                return SyncResult.Error("Failed to fetch catalog: HTTP ${response.code()}")
+            // Execute each date-range query
+            for (query in CATALOG_QUERIES) {
+                queryCount++
+                val queryPeriod = when(queryCount) {
+                    1 -> "1960s"
+                    2 -> "Early 1970s" 
+                    3 -> "Late 1970s"
+                    4 -> "Early 1980s"
+                    5 -> "Late 1980s"
+                    6 -> "1990s"
+                    7 -> "Undated/Other"
+                    else -> "Query $queryCount"
+                }
+                
+                updateProgress(
+                    SyncPhase.FETCHING,
+                    totalItems = totalFound,
+                    processedItems = allConcerts.size,
+                    currentItem = "Fetching $queryPeriod concerts..."
+                )
+                
+                var retryCount = 0
+                var querySuccess = false
+                
+                // Retry logic for each query
+                while (!querySuccess && retryCount < MAX_RETRIES) {
+                    try {
+                        println("DEBUG: Executing query $queryCount/${CATALOG_QUERIES.size}: $query")
+                        
+                        val response = archiveApiService.searchConcerts(
+                            query = query,
+                            rows = MAX_ROWS,
+                            start = 0
+                        )
+                        
+                        if (!response.isSuccessful) {
+                            throw Exception("HTTP ${response.code()}: ${response.message()}")
+                        }
+                        
+                        val searchResponse = response.body() 
+                            ?: throw Exception("Empty response body")
+                        
+                        val concerts = searchResponse.response.docs
+                        val queryFound = searchResponse.response.numFound
+                        
+                        allConcerts.addAll(concerts)
+                        totalFound += queryFound
+                        
+                        querySuccess = true
+                        println("DEBUG: Query $queryCount ($queryPeriod): ${concerts.size} concerts downloaded, ${queryFound} total found")
+                        
+                        updateProgress(
+                            SyncPhase.FETCHING,
+                            totalItems = totalFound,
+                            processedItems = allConcerts.size,
+                            currentItem = "Downloaded ${allConcerts.size} concerts from $queryPeriod"
+                        )
+                        
+                    } catch (e: Exception) {
+                        retryCount++
+                        println("DEBUG: Query $queryCount ($queryPeriod) failed (attempt $retryCount/$MAX_RETRIES): ${e.message}")
+                        
+                        if (retryCount < MAX_RETRIES) {
+                            updateProgress(
+                                SyncPhase.FETCHING,
+                                totalItems = totalFound,
+                                processedItems = allConcerts.size,
+                                currentItem = "Retrying $queryPeriod (attempt $retryCount/$MAX_RETRIES)..."
+                            )
+                            kotlinx.coroutines.delay(2000) // Longer delay between queries
+                        } else {
+                            println("DEBUG: Giving up on $queryPeriod after $MAX_RETRIES attempts")
+                        }
+                    }
+                }
             }
             
-            val searchResponse = response.body() 
-                ?: return SyncResult.Error("Empty response from Archive.org")
+            println("DEBUG: Multiple query approach completed. Final stats:")
+            println("DEBUG: - Queries executed: ${CATALOG_QUERIES.size}")
+            println("DEBUG: - Total concerts downloaded: ${allConcerts.size}")
+            println("DEBUG: - Estimated total available: $totalFound")
             
-            val totalConcerts = searchResponse.response.docs.size
-            updateProgress(SyncPhase.PROCESSING, totalItems = totalConcerts, currentItem = "Processing concerts...")
+            val finalTotalConcerts = allConcerts.size
+            
+            if (finalTotalConcerts == 0) {
+                return SyncResult.Error("No concerts downloaded from any date range query")
+            }
+            
+            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalConcerts, currentItem = "Processing $finalTotalConcerts concerts...")
             
             // Step 2: Process and save concerts in batches
-            val concerts = searchResponse.response.docs
+            val concerts = allConcerts
             var processedCount = 0
             var savedCount = 0
             
@@ -120,7 +209,7 @@ class DataSyncServiceImpl @Inject constructor(
                     val concertEntities = batch.map { doc ->
                         updateProgress(
                             SyncPhase.PROCESSING,
-                            totalItems = totalConcerts,
+                            totalItems = finalTotalConcerts,
                             processedItems = processedCount,
                             currentItem = "Processing: ${doc.title ?: doc.identifier}"
                         )
@@ -141,7 +230,7 @@ class DataSyncServiceImpl @Inject constructor(
             }
             
             // Step 3: Update sync metadata
-            updateProgress(SyncPhase.FINALIZING, totalItems = totalConcerts, processedItems = processedCount, currentItem = "Finalizing...")
+            updateProgress(SyncPhase.FINALIZING, totalItems = finalTotalConcerts, processedItems = processedCount, currentItem = "Finalizing...")
             
             val now = System.currentTimeMillis()
             val metadata = SyncMetadataEntity(
@@ -153,10 +242,10 @@ class DataSyncServiceImpl @Inject constructor(
             )
             syncMetadataDao.insertOrUpdateSyncMetadata(metadata)
             
-            updateProgress(SyncPhase.COMPLETED, totalItems = totalConcerts, processedItems = processedCount, currentItem = "Sync completed!")
+            updateProgress(SyncPhase.COMPLETED, totalItems = finalTotalConcerts, processedItems = processedCount, currentItem = "Sync completed!")
             
             SyncResult.Success(
-                message = "Downloaded $savedCount out of $totalConcerts concerts",
+                message = "Downloaded $savedCount out of $finalTotalConcerts concerts",
                 concertsProcessed = savedCount
             )
             
@@ -176,7 +265,7 @@ class DataSyncServiceImpl @Inject constructor(
             updateProgress(SyncPhase.FETCHING, totalItems = 0, currentItem = "Checking for new concerts...")
             
             val response = archiveApiService.searchConcerts(
-                query = COMPLETE_CATALOG_QUERY,
+                query = "collection:GratefulDead",
                 rows = 100 // Just check recent additions
             )
             
