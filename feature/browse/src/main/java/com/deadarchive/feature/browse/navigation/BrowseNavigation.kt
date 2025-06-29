@@ -5,11 +5,11 @@ import androidx.navigation.compose.composable
 import com.deadarchive.feature.browse.BrowseScreen
 
 fun NavGraphBuilder.browseScreen(
-    onNavigateToPlayer: () -> Unit
+    onNavigateToPlayer: (String) -> Unit
 ) {
     composable("browse") {
         BrowseScreen(
-            onNavigateToPlayer = onNavigateToPlayer
+            onNavigateToPlayer = { concert -> onNavigateToPlayer(concert.identifier) }
         )
     }
 }

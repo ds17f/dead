@@ -15,7 +15,8 @@ fun HomeScreen(
     onNavigateToNetworkTest: () -> Unit,
     onNavigateToDatabaseTest: () -> Unit,
     onNavigateToMediaPlayerTest: () -> Unit,
-    onNavigateToRepositoryTest: () -> Unit
+    onNavigateToRepositoryTest: () -> Unit,
+    onNavigateToBrowse: () -> Unit = {}
 ) {
     Column(
         modifier = Modifier
@@ -45,6 +46,22 @@ fun HomeScreen(
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
+        
+        // Main Browse Feature
+        Button(
+            onClick = onNavigateToBrowse,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(64.dp),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = MaterialTheme.colorScheme.primary
+            )
+        ) {
+            Text(
+                text = "🎵 Browse Concerts",
+                style = MaterialTheme.typography.titleLarge
+            )
+        }
         
         Text(
             text = "Test Screens",

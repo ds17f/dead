@@ -38,7 +38,8 @@ fun DeadArchiveNavigation(
                 onNavigateToNetworkTest = { navController.navigate("network_test") },
                 onNavigateToDatabaseTest = { navController.navigate("database_test") },
                 onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") },
-                onNavigateToRepositoryTest = { navController.navigate("repository_test") }
+                onNavigateToRepositoryTest = { navController.navigate("repository_test") },
+                onNavigateToBrowse = { navController.navigate("browse") }
             )
         }
         
@@ -67,7 +68,7 @@ fun DeadArchiveNavigation(
         }
         
         browseScreen(
-            onNavigateToPlayer = { navController.navigate("player") }
+            onNavigateToPlayer = { concertId -> navController.navigate("player/$concertId") }
         )
         
         playerScreen(

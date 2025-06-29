@@ -9,12 +9,19 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun PlayerScreen(
-    onNavigateBack: () -> Unit
+    onNavigateBack: () -> Unit,
+    concertId: String? = null
 ) {
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text("Player Screen - Coming Soon!")
+        Text(
+            text = if (concertId.isNullOrBlank()) {
+                "Player Screen - Coming Soon!"
+            } else {
+                "Player Screen - Coming Soon!\nConcert ID: $concertId"
+            }
+        )
     }
 }
