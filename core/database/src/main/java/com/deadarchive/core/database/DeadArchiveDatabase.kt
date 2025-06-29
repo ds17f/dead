@@ -12,7 +12,7 @@ import android.content.Context
         DownloadEntity::class,
         FavoriteEntity::class
     ],
-    version = 3,
+    version = 4,
     exportSchema = false
 )
 @TypeConverters(Converters::class)

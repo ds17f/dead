@@ -10,7 +10,9 @@ import com.deadarchive.core.network.mapper.ArchiveMapper
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 import retrofit2.HttpException
 import java.io.IOException
@@ -100,16 +102,17 @@ class ConcertRepositoryImpl @Inject constructor(
             println("DEBUG: API response failed with code: ${response.code()}")
         }
     }.catch { e ->
-        // If network fails, try to return cached results
+        // If network fails, return cached results using Flow.catch
         val cachedConcerts = concertDao.searchConcerts(query)
         if (cachedConcerts.isNotEmpty()) {
             val concerts = cachedConcerts.map { entity ->
                 val isFavorite = favoriteDao.isConcertFavorite(entity.id)
                 entity.toConcert().copy(isFavorite = isFavorite)
             }
-            emit(concerts)
+            // Re-emit as a new flow to avoid transparency violation
+            emitAll(flowOf(concerts))
         } else {
-            emit(emptyList())
+            emitAll(flowOf(emptyList()))
         }
     }
     
