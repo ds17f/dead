@@ -12,6 +12,7 @@ import androidx.navigation.compose.rememberNavController
 import com.deadarchive.core.design.component.DeadArchiveBottomNavigation
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
+import com.deadarchive.feature.playlist.navigation.playlistScreen
 import androidx.media3.common.util.UnstableApi
 
 /**
@@ -64,7 +65,7 @@ fun MainAppScreen(
             // Browse/Search functionality
             browseScreen(
                 onNavigateToPlayer = { concertId -> 
-                    onNavigateToPlayer(concertId) 
+                    navController.navigate("playlist/$concertId")
                 }
             )
             
@@ -107,6 +108,12 @@ fun MainAppScreen(
                 )
             }
             
+            // Playlist screen
+            playlistScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToPlayer = { navController.navigate("player") }
+            )
+            
             // Player screen
             playerScreen(
                 onNavigateBack = { navController.popBackStack() }
@@ -122,6 +129,7 @@ private fun shouldShowBottomNavigation(currentRoute: String?): Boolean {
     return when {
         currentRoute == null -> false
         currentRoute.startsWith("player") -> false
+        currentRoute.startsWith("playlist") -> true
         currentRoute in listOf("home", "browse", "library", "debug") -> true
         else -> false
     }

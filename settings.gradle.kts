@@ -30,5 +30,6 @@ include(":core:common")
 // Feature modules
 include(":feature:browse")
 include(":feature:player")
+include(":feature:playlist")
 include(":feature:downloads")
 include(":feature:favorites")
