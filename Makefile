@@ -34,6 +34,7 @@ help:
 	@echo "  make emulator    - Start Android emulator (first available AVD)"
 	@echo "  make emu-list    - List all available Android Virtual Devices"
 	@echo "  make emu-stop    - Stop all running emulators"
+	@echo "  make emu-cold-boot - Perform a cold boot of the emulator with virtual audio"
 	@echo ""
 	@echo "Test Data Management:"
 	@echo "  make capture-test-data - Pull test data exported by debug screen"
@@ -215,7 +216,7 @@ bundle:
 	@echo "✅ Bundle built: app/build/outputs/bundle/release/app-release.aab"
 
 # Device management
-.PHONY: devices install-release uninstall emulator emu-list emu-start emu-stop
+.PHONY: devices install-release uninstall emulator emu-list emu-start emu-stop emu-cold-boot
 devices:
 	@echo "📱 Connected Android devices:"
 	adb devices -l
@@ -276,7 +277,7 @@ emu-start:
 		exit 1; \
 	else \
 		echo "📱 Starting emulator: $$AVD_NAME"; \
-		$$EMULATOR_CMD -avd $$AVD_NAME -no-audio -no-boot-anim & \
+		$$EMULATOR_CMD -avd $$AVD_NAME -audio virtual -no-boot-anim & \
 		echo "⏳ Emulator starting in background..."; \
 		echo "🔍 Use 'make devices' to check when it's ready"; \
 	fi
@@ -285,6 +286,35 @@ emu-stop:
 	@echo "🛑 Stopping Android emulators..."
 	@adb devices | grep emulator | cut -f1 | while read line; do adb -s $$line emu kill; done
 	@echo "✅ All emulators stopped"
+
+emu-cold-boot:
+	@echo "❄️ Performing cold boot of Android emulator..."
+	@EMULATOR_CMD=""; \
+	if command -v emulator >/dev/null 2>&1; then \
+		EMULATOR_CMD="emulator"; \
+	elif [ -f "$$ANDROID_HOME/emulator/emulator" ]; then \
+		EMULATOR_CMD="$$ANDROID_HOME/emulator/emulator"; \
+	elif [ -f "$$HOME/Library/Android/sdk/emulator/emulator" ]; then \
+		EMULATOR_CMD="$$HOME/Library/Android/sdk/emulator/emulator"; \
+	elif [ -f "/usr/local/share/android-commandlinetools/emulator/emulator" ]; then \
+		EMULATOR_CMD="/usr/local/share/android-commandlinetools/emulator/emulator"; \
+	else \
+		echo "❌ Emulator not found. Run 'make emu-list' for help."; \
+		exit 1; \
+	fi; \
+	AVD_NAME=$$($$EMULATOR_CMD -list-avds 2>/dev/null | head -1); \
+	if [ -z "$$AVD_NAME" ]; then \
+		echo "❌ No AVDs available. Create one in Android Studio first."; \
+		exit 1; \
+	else \
+		echo "📱 Stopping any running emulators..."; \
+		adb devices | grep emulator | cut -f1 | while read line; do adb -s $$line emu kill; done; \
+		sleep 2; \
+		echo "📱 Cold booting emulator: $$AVD_NAME"; \
+		$$EMULATOR_CMD -avd $$AVD_NAME -no-snapshot -audio virtual -no-boot-anim -verbose & \
+		echo "⏳ Cold boot emulator starting in background..."; \
+		echo "🔍 Use 'make devices' to check when it's ready"; \
+	fi
 
 # Performance and analysis
 .PHONY: profile analyze size
