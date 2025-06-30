@@ -1,0 +1,18 @@
+Debug Commands for Player Crash Investigation:
+
+1. Check if logs are working at all:
+   adb logcat | grep -E "(PlayerScreen|PlayerViewModel|BrowseScreen|ConcertRepository)"
+
+2. Check for crash logs:
+   adb logcat | grep -E "(FATAL|AndroidRuntime|CRASH)"
+
+3. Check all app logs:
+   adb logcat | grep com.deadarchive
+
+4. Clear logcat and start fresh:
+   adb logcat -c
+
+5. Full verbose logging:
+   adb logcat -v time
+
+Try running command #4 first, then start the app and click play, then run command #1 to see if any of our debug messages appear.

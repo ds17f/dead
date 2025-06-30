@@ -35,7 +35,11 @@ fun DeadArchiveNavigation(
         }
         
         composable("main_app") {
-            MainAppScreen()
+            MainAppScreen(
+                onNavigateToPlayer = { concertId -> 
+                    navController.navigate("player/$concertId") 
+                }
+            )
         }
         
         // Player screens (full screen, no bottom nav)

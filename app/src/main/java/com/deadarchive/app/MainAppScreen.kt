@@ -11,6 +11,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.deadarchive.core.design.component.DeadArchiveBottomNavigation
 import com.deadarchive.feature.browse.navigation.browseScreen
+import com.deadarchive.feature.player.navigation.playerScreen
 import androidx.media3.common.util.UnstableApi
 
 /**
@@ -20,7 +21,8 @@ import androidx.media3.common.util.UnstableApi
 @UnstableApi
 @Composable
 fun MainAppScreen(
-    navController: NavHostController = rememberNavController()
+    navController: NavHostController = rememberNavController(),
+    onNavigateToPlayer: (String) -> Unit = {}
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
@@ -62,7 +64,7 @@ fun MainAppScreen(
             // Browse/Search functionality
             browseScreen(
                 onNavigateToPlayer = { concertId -> 
-                    navController.navigate("player/$concertId") 
+                    onNavigateToPlayer(concertId) 
                 }
             )
             
@@ -104,6 +106,11 @@ fun MainAppScreen(
                     onNavigateBack = { navController.popBackStack() }
                 )
             }
+            
+            // Player screen
+            playerScreen(
+                onNavigateBack = { navController.popBackStack() }
+            )
         }
     }
 }
@@ -112,8 +119,10 @@ fun MainAppScreen(
  * Determines whether to show the bottom navigation bar based on current route
  */
 private fun shouldShowBottomNavigation(currentRoute: String?): Boolean {
-    return when (currentRoute) {
-        "home", "browse", "library", "debug" -> true
+    return when {
+        currentRoute == null -> false
+        currentRoute.startsWith("player") -> false
+        currentRoute in listOf("home", "browse", "library", "debug") -> true
         else -> false
     }
 }

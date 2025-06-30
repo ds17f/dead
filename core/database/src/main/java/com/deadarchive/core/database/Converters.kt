@@ -1,6 +1,9 @@
 package com.deadarchive.core.database
 
 import androidx.room.TypeConverter
+import com.deadarchive.core.model.Track
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import java.util.Date
 
 class Converters {
@@ -23,5 +26,23 @@ class Converters {
     @TypeConverter
     fun fromListString(list: List<String>?): String? {
         return list?.joinToString(",")
+    }
+    
+    @TypeConverter
+    fun fromTrackListJson(value: String?): List<Track> {
+        return try {
+            value?.let { Json.decodeFromString<List<Track>>(it) } ?: emptyList()
+        } catch (e: Exception) {
+            emptyList()
+        }
+    }
+    
+    @TypeConverter
+    fun trackListToJson(tracks: List<Track>?): String? {
+        return try {
+            tracks?.let { Json.encodeToString(it) }
+        } catch (e: Exception) {
+            null
+        }
     }
 }

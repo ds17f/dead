@@ -58,22 +58,36 @@ These icons from the core set have been verified to work in the Dead Archive app
 ### Navigation Icons
 - `Icons.Default.Home` / `Icons.Filled.Home` / `Icons.Outlined.Home`
 - `Icons.Default.KeyboardArrowRight` (Note: Consider `Icons.AutoMirrored.Filled.KeyboardArrowRight` for RTL support)
-- `Icons.Default.ArrowBack`
+- `Icons.Default.ArrowBack` / `Icons.AutoMirrored.Filled.ArrowBack` (newer RTL-aware)
+- `Icons.Default.Close`
+- `Icons.Default.Menu`
 
 ### Action Icons
 - `Icons.Default.Favorite` / `Icons.Filled.Favorite` / `Icons.Outlined.FavoriteBorder`
 - `Icons.Default.Search` / `Icons.Filled.Search` / `Icons.Outlined.Search`
 - `Icons.Default.Settings` / `Icons.Filled.Settings` / `Icons.Outlined.Settings`
 - `Icons.Default.Star`
+- `Icons.Default.Share`
+- `Icons.Default.MoreVert` (options menu)
 - `Icons.Default.ArrowDownward` (download alternative)
 - `Icons.Default.GetApp` (download alternative)
 - `Icons.Default.SaveAlt` (download alternative)
+- `Icons.Default.List` (for playlists)
 
-### Media Icons
+### Media Control Icons
 - `Icons.Default.PlayArrow`
 - `Icons.Default.Pause`
 - `Icons.Default.SkipNext`
 - `Icons.Default.SkipPrevious`
+- `Icons.Default.Repeat`
+- `Icons.Default.RepeatOne`
+- `Icons.Default.Shuffle`
+
+### Volume Control Icons
+- `Icons.Default.VolumeUp`
+- `Icons.Default.VolumeDown`
+- `Icons.Default.VolumeMute`
+- `Icons.Default.VolumeOff`
 
 ## Icon Usage in Dead Archive
 
@@ -162,3 +176,97 @@ If you need icons from the extended set:
    ```
 3. Document the addition in this reference guide
 4. Consider app size impact - use only when necessary
+
+## Media Player Icon Usage Examples
+
+Here are examples of how to use icons in a media player UI:
+
+### Player Controls
+```kotlin
+// Basic media controls
+Row(
+    horizontalArrangement = Arrangement.SpaceEvenly,
+    verticalAlignment = Alignment.CenterVertically,
+    modifier = Modifier.fillMaxWidth()
+) {
+    IconButton(onClick = { /* Skip to previous */ }) {
+        Icon(
+            imageVector = Icons.Default.SkipPrevious,
+            contentDescription = "Previous track"
+        )
+    }
+    
+    IconButton(
+        onClick = { /* Play/Pause toggle */ },
+        modifier = Modifier
+            .size(64.dp)
+            .padding(8.dp)
+    ) {
+        Icon(
+            imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
+            contentDescription = if (isPlaying) "Pause" else "Play",
+            modifier = Modifier.size(32.dp)
+        )
+    }
+    
+    IconButton(onClick = { /* Skip to next */ }) {
+        Icon(
+            imageVector = Icons.Default.SkipNext,
+            contentDescription = "Next track"
+        )
+    }
+}
+
+// Additional controls
+Row(
+    horizontalArrangement = Arrangement.SpaceBetween,
+    modifier = Modifier.fillMaxWidth()
+) {
+    IconButton(onClick = { /* Toggle shuffle */ }) {
+        Icon(
+            imageVector = Icons.Default.Shuffle,
+            contentDescription = "Shuffle",
+            tint = if (shuffleEnabled) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+        )
+    }
+    
+    IconButton(onClick = { /* Toggle repeat */ }) {
+        Icon(
+            imageVector = when (repeatMode) {
+                RepeatMode.NONE -> Icons.Default.Repeat
+                RepeatMode.ALL -> Icons.Default.Repeat
+                RepeatMode.ONE -> Icons.Default.RepeatOne
+            },
+            contentDescription = "Repeat mode",
+            tint = if (repeatMode != RepeatMode.NONE) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f)
+        )
+    }
+}
+```
+
+### Volume Controls
+```kotlin
+// Volume slider with icon
+Row(
+    verticalAlignment = Alignment.CenterVertically,
+    modifier = Modifier.padding(horizontal = 16.dp)
+) {
+    val volumeIcon = when {
+        volume <= 0f -> Icons.Default.VolumeOff
+        volume < 0.5f -> Icons.Default.VolumeDown
+        else -> Icons.Default.VolumeUp
+    }
+    
+    IconButton(onClick = { /* Mute/unmute */ }) {
+        Icon(
+            imageVector = volumeIcon,
+            contentDescription = "Volume"
+        )
+    }
+    
+    Slider(
+        value = volume,
+        onValueChange = { /* Update volume */ },
+        modifier = Modifier.weight(1f)
+    )
+}

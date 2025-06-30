@@ -1,5 +1,6 @@
 package com.deadarchive.core.data.repository
 
+import android.util.Log
 import com.deadarchive.core.database.ConcertDao
 import com.deadarchive.core.database.ConcertEntity
 import com.deadarchive.core.database.FavoriteDao
@@ -43,6 +44,7 @@ class ConcertRepositoryImpl @Inject constructor(
     
     companion object {
         private const val CACHE_EXPIRY_HOURS = 24
+        private const val TAG = "ConcertRepository"
     }
     
     /**
@@ -214,31 +216,50 @@ class ConcertRepositoryImpl @Inject constructor(
      * Get concert by ID with cache-first strategy
      */
     override suspend fun getConcertById(id: String): Concert? {
+        Log.d(TAG, "getConcertById: Looking for concert with ID: $id")
         return try {
             // Check local cache first
             val cachedConcert = concertDao.getConcertById(id)
+            Log.d(TAG, "getConcertById: Cached concert found: ${cachedConcert != null}")
+            
             if (cachedConcert != null && !isCacheExpired(cachedConcert.cachedTimestamp)) {
+                Log.d(TAG, "getConcertById: Using cached concert (not expired)")
                 val isFavorite = favoriteDao.isConcertFavorite(id)
-                return cachedConcert.toConcert().copy(isFavorite = isFavorite)
+                val concert = cachedConcert.toConcert().copy(isFavorite = isFavorite)
+                Log.d(TAG, "getConcertById: Cached concert - title: ${concert.title}, tracks: ${concert.tracks.size}")
+                return concert
             }
             
             // Fetch from API if not cached or expired
+            Log.d(TAG, "getConcertById: Fetching from API (cache miss or expired)")
             val metadata = getConcertMetadata(id)
             metadata?.let { 
+                Log.d(TAG, "getConcertById: API metadata received")
                 val concert = ArchiveMapper.run { it.toConcert() }
+                Log.d(TAG, "getConcertById: Mapped concert - title: ${concert.title}, tracks: ${concert.tracks.size}")
                 
                 // Cache the result
                 val isFavorite = favoriteDao.isConcertFavorite(id)
                 val entity = ConcertEntity.fromConcert(concert, isFavorite)
+                Log.d(TAG, "getConcertById: Caching concert entity")
                 concertDao.insertConcert(entity)
                 
-                concert.copy(isFavorite = isFavorite)
+                val finalConcert = concert.copy(isFavorite = isFavorite)
+                Log.d(TAG, "getConcertById: Returning API concert - tracks: ${finalConcert.tracks.size}")
+                finalConcert
+            } ?: run {
+                Log.w(TAG, "getConcertById: No metadata received from API")
+                null
             }
         } catch (e: Exception) {
+            Log.e(TAG, "getConcertById: Exception occurred", e)
             // Return cached version if available, even if expired
             concertDao.getConcertById(id)?.let { entity ->
+                Log.d(TAG, "getConcertById: Falling back to expired cache")
                 val isFavorite = favoriteDao.isConcertFavorite(id)
-                entity.toConcert().copy(isFavorite = isFavorite)
+                val concert = entity.toConcert().copy(isFavorite = isFavorite)
+                Log.d(TAG, "getConcertById: Fallback concert - tracks: ${concert.tracks.size}")
+                concert
             }
         }
     }

@@ -4,6 +4,7 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
     id("com.google.devtools.ksp")
+    id("kotlinx-serialization")
 }
 
 android {
@@ -37,6 +38,9 @@ dependencies {
     implementation(project(":core:model"))
     
     implementation("androidx.core:core-ktx:1.12.0")
+    
+    // Kotlinx Serialization
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     
     // Room
     implementation("androidx.room:room-runtime:2.6.1")

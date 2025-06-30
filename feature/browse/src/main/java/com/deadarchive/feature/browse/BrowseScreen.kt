@@ -1,5 +1,6 @@
 package com.deadarchive.feature.browse
 
+import android.util.Log
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -144,7 +145,10 @@ fun BrowseScreen(
                         items(state.concerts) { concert ->
                             ConcertItem(
                                 concert = concert,
-                                onPlayClick = { onNavigateToPlayer(concert) },
+                                onPlayClick = { 
+                                    Log.d("BrowseScreen", "onPlayClick: Navigating to player for concert ${concert.identifier} - ${concert.title}")
+                                    onNavigateToPlayer(concert) 
+                                },
                                 onFavoriteClick = { viewModel.toggleFavorite(concert) }
                             )
                         }

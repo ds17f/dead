@@ -3,6 +3,7 @@ package com.deadarchive.core.database
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Track
 
 @Entity(tableName = "concerts")
 data class ConcertEntity(
@@ -21,10 +22,20 @@ data class ConcertEntity(
     val uploader: String?,
     val addedDate: String?,
     val publicDate: String?,
+    val tracksJson: String? = null,
     val isFavorite: Boolean = false,
     val cachedTimestamp: Long = System.currentTimeMillis()
 ) {
     fun toConcert(): Concert {
+        // Parse tracks from JSON
+        val tracks = try {
+            tracksJson?.let { 
+                kotlinx.serialization.json.Json.decodeFromString(kotlinx.serialization.builtins.ListSerializer(Track.serializer()), it) 
+            } ?: emptyList()
+        } catch (e: Exception) {
+            emptyList()
+        }
+        
         return Concert(
             identifier = id,
             title = title,
@@ -41,12 +52,22 @@ data class ConcertEntity(
             uploader = uploader,
             addedDate = addedDate,
             publicDate = publicDate,
+            tracks = tracks,
             isFavorite = isFavorite
         )
     }
     
     companion object {
         fun fromConcert(concert: Concert, isFavorite: Boolean = false): ConcertEntity {
+            // Serialize tracks to JSON
+            val tracksJson = try {
+                if (concert.tracks.isNotEmpty()) {
+                    kotlinx.serialization.json.Json.encodeToString(kotlinx.serialization.builtins.ListSerializer(Track.serializer()), concert.tracks)
+                } else null
+            } catch (e: Exception) {
+                null
+            }
+            
             return ConcertEntity(
                 id = concert.identifier,
                 title = concert.title,
@@ -63,6 +84,7 @@ data class ConcertEntity(
                 uploader = concert.uploader,
                 addedDate = concert.addedDate,
                 publicDate = concert.publicDate,
+                tracksJson = tracksJson,
                 isFavorite = isFavorite
             )
         }
