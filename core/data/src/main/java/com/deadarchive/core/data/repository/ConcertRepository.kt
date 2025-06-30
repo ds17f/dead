@@ -223,11 +223,17 @@ class ConcertRepositoryImpl @Inject constructor(
             Log.d(TAG, "getConcertById: Cached concert found: ${cachedConcert != null}")
             
             if (cachedConcert != null && !isCacheExpired(cachedConcert.cachedTimestamp)) {
-                Log.d(TAG, "getConcertById: Using cached concert (not expired)")
                 val isFavorite = favoriteDao.isConcertFavorite(id)
                 val concert = cachedConcert.toConcert().copy(isFavorite = isFavorite)
                 Log.d(TAG, "getConcertById: Cached concert - title: ${concert.title}, tracks: ${concert.tracks.size}")
-                return concert
+                
+                // Force refresh if cached concert has no tracks (likely cached before ArchiveMapper fix)
+                if (concert.tracks.isNotEmpty()) {
+                    Log.d(TAG, "getConcertById: Using cached concert (not expired, has tracks)")
+                    return concert
+                } else {
+                    Log.d(TAG, "getConcertById: Cached concert has no tracks, forcing API refresh")
+                }
             }
             
             // Fetch from API if not cached or expired

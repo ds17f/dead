@@ -6,6 +6,7 @@ import com.deadarchive.core.model.Concert
 import com.deadarchive.core.model.Track
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.deadarchive.core.network.model.ArchiveSearchResponse
+import java.net.URLEncoder
 
 /**
  * Mapper utilities for converting Archive.org API responses to domain models
@@ -40,8 +41,16 @@ object ArchiveMapper {
      */
     fun ArchiveMetadataResponse.toConcert(): Concert {
         val meta = metadata
+        val identifier = meta?.identifier ?: ""
+        
+        // Get server and directory info for URL generation
+        val server = server ?: workableServers?.firstOrNull() ?: "ia800000.us.archive.org"
+        val directoryPath = directory ?: "/0"
+        
+        val audioFiles = files.filter { it.isAudioFile() }
+        
         return Concert(
-            identifier = meta?.identifier ?: "",
+            identifier = identifier,
             title = meta?.title ?: "",
             date = meta?.date ?: "",
             venue = meta?.venue,
@@ -56,10 +65,12 @@ object ArchiveMapper {
             uploader = meta?.uploader,
             addedDate = meta?.addedDate,
             publicDate = meta?.publicDate,
-            tracks = files.filter { it.isAudioFile() }.mapIndexed { index, file ->
-                file.toTrack(meta?.identifier ?: "", index + 1)
+            tracks = audioFiles.mapIndexed { index, file ->
+                file.toTrack(index + 1, server, directoryPath)
             },
-            audioFiles = files.filter { it.isAudioFile() }.map { it.toAudioFile() }
+            audioFiles = audioFiles.map { file ->
+                file.toAudioFile(server, directoryPath)
+            }
         )
     }
     
@@ -67,29 +78,42 @@ object ArchiveMapper {
      * Convert Archive file to Track domain model
      */
     private fun ArchiveMetadataResponse.ArchiveFile.toTrack(
-        concertId: String,
-        trackNumber: Int
+        trackNumber: Int,
+        server: String,
+        directoryPath: String
     ): Track {
         return Track(
             filename = name,
             title = title ?: name.substringBeforeLast('.'),
             trackNumber = trackNumber.toString(),
             durationSeconds = length?.toString(),
-            audioFile = toAudioFile()
+            audioFile = toAudioFile(server, directoryPath)
         )
     }
     
     /**
      * Convert Archive file to AudioFile domain model
      */
-    private fun ArchiveMetadataResponse.ArchiveFile.toAudioFile(): AudioFile {
+    private fun ArchiveMetadataResponse.ArchiveFile.toAudioFile(
+        server: String,
+        directoryPath: String
+    ): AudioFile {
+        // Generate the streaming URL for this audio file
+        // Only encode spaces for Archive.org URLs (they don't encode other characters)
+        val encodedFilename = name.replace(" ", "%20")
+        val downloadUrl = "https://$server$directoryPath/$encodedFilename"
+        
         return AudioFile(
             filename = name,
             format = format ?: "Unknown",
             sizeBytes = size?.toString(),
             durationSeconds = length?.toString(),
             bitrate = bitrate,
-            sampleRate = sampleRate
+            sampleRate = sampleRate,
+            md5Hash = md5,
+            sha1Hash = sha1,
+            crc32Hash = crc32,
+            downloadUrl = downloadUrl
         )
     }
     

@@ -149,4 +149,75 @@ class ArchiveMapperTest {
         assertThat(concert.tracks[1].trackNumber).isEqualTo("2")
         assertThat(concert.tracks[1].title).isEqualTo("Fire on the Mountain")
     }
+
+    @Test
+    fun `generates correct download URLs for audio files`() {
+        val metadataResponse = ArchiveMetadataResponse(
+            files = listOf(
+                ArchiveMetadataResponse.ArchiveFile(
+                    name = "gd1977-05-08d1t01.mp3",
+                    format = "VBR MP3",
+                    title = "Promised Land"
+                ),
+                ArchiveMetadataResponse.ArchiveFile(
+                    name = "gd1977-05-08d1t02 with spaces.flac",
+                    format = "Flac",
+                    title = "Fire on the Mountain"
+                )
+            ),
+            metadata = ArchiveMetadataResponse.ArchiveMetadata(
+                identifier = "gd1977-05-08.sbd.hicks.4982.sbeok.shnf",
+                title = "Grateful Dead Live at Barton Hall on 1977-05-08"
+            ),
+            server = "ia800207.us.archive.org",
+            directory = "/26/items/gd1977-05-08.sbd.hicks.4982.sbeok.shnf"
+        )
+
+        val concert = metadataResponse.toConcert()
+        
+        // Verify tracks have audio files with download URLs
+        assertThat(concert.tracks).hasSize(2)
+        
+        val track1 = concert.tracks[0]
+        assertThat(track1.audioFile).isNotNull()
+        assertThat(track1.audioFile!!.downloadUrl)
+            .isEqualTo("https://ia800207.us.archive.org/26/items/gd1977-05-08.sbd.hicks.4982.sbeok.shnf/gd1977-05-08d1t01.mp3")
+        
+        val track2 = concert.tracks[1]
+        assertThat(track2.audioFile).isNotNull()
+        assertThat(track2.audioFile!!.downloadUrl)
+            .isEqualTo("https://ia800207.us.archive.org/26/items/gd1977-05-08.sbd.hicks.4982.sbeok.shnf/gd1977-05-08d1t02%20with%20spaces.flac")
+        
+        // Also verify AudioFile objects have correct URLs
+        assertThat(concert.audioFiles).hasSize(2)
+        assertThat(concert.audioFiles[0].downloadUrl)
+            .isEqualTo("https://ia800207.us.archive.org/26/items/gd1977-05-08.sbd.hicks.4982.sbeok.shnf/gd1977-05-08d1t01.mp3")
+        assertThat(concert.audioFiles[1].downloadUrl)
+            .isEqualTo("https://ia800207.us.archive.org/26/items/gd1977-05-08.sbd.hicks.4982.sbeok.shnf/gd1977-05-08d1t02%20with%20spaces.flac")
+    }
+
+    @Test
+    fun `handles missing server and directory information`() {
+        val metadataResponse = ArchiveMetadataResponse(
+            files = listOf(
+                ArchiveMetadataResponse.ArchiveFile(
+                    name = "test.mp3",
+                    format = "VBR MP3"
+                )
+            ),
+            metadata = ArchiveMetadataResponse.ArchiveMetadata(
+                identifier = "test-concert",
+                title = "Test Concert"
+            ),
+            server = null,
+            directory = null
+        )
+
+        val concert = metadataResponse.toConcert()
+        
+        // Should fallback to default server and directory
+        assertThat(concert.tracks).hasSize(1)
+        assertThat(concert.tracks[0].audioFile!!.downloadUrl)
+            .isEqualTo("https://ia800000.us.archive.org/0/test.mp3")
+    }
 }
