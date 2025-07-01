@@ -99,9 +99,9 @@ object IconResources {
         
         @Composable
         fun Menu() = customIcon(R.drawable.ic_menu)
-        // Player control icons are accessed via the PlayerControls object
-                                                                                                                       
-                                                                                                                        
+    }
+    
+    // Player control icons are accessed via the PlayerControls object
     /**
      * Player control icons used for media playback.
      */
@@ -150,9 +150,9 @@ object IconResources {
         
         @Composable
         fun VolumeMute2() = customIcon(R.drawable.ic_volume_mute)
-        // Status icons are in the Status object category
-                                                                       
-                                                                        
+    }
+    
+    // Status icons are in the Status object category
     /**
      * Status and notification icons.
      */
@@ -187,9 +187,9 @@ object IconResources {
         // For compatibility
         @Composable
         fun Success() = CheckCircle()
-        // Content type icons are accessed via the Content object
-                                                                                                                                                                                               
-                                                                                                                                                                                                    
+    }
+    
+    // Content type icons are accessed via the Content object
     /**
      * Content type icons.
      */
@@ -299,6 +299,5 @@ object IconResources {
         val MEDIUM = 24.dp
         val LARGE = 32.dp
         val XLARGE = 48.dp
-                                                                                                                                    }
-        // Navigation icons are in the Navigation object category
-                                                                                                                                }
+    }
+}
