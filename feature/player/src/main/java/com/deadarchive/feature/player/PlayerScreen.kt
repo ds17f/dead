@@ -29,6 +29,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun PlayerScreen(
     onNavigateBack: () -> Unit,
+    onNavigateToQueue: () -> Unit = {},
     concertId: String? = null,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
@@ -63,13 +64,8 @@ fun PlayerScreen(
                 "concert: ${currentConcert?.title}")
     }
     
-    // Update position periodically when playing
-    LaunchedEffect(uiState.isPlaying) {
-        while (uiState.isPlaying) {
-            viewModel.updatePosition()
-            delay(1000) // Update every second
-        }
-    }
+    // Position updates are handled automatically by MediaControllerRepository
+    // No manual position updates needed - service provides real-time position via StateFlow
     
     Column(
         modifier = Modifier
@@ -94,10 +90,31 @@ fun PlayerScreen(
                 }
             },
             actions = {
-                IconButton(onClick = { 
-                    // TODO: Show menu bottom sheet
-                }) {
-                    Icon(painter = IconResources.Navigation.MoreVertical(), contentDescription = "More options")
+                var showDropdownMenu by remember { mutableStateOf(false) }
+                
+                Box {
+                    IconButton(onClick = { showDropdownMenu = true }) {
+                        Icon(painter = IconResources.Navigation.MoreVertical(), contentDescription = "More options")
+                    }
+                    
+                    DropdownMenu(
+                        expanded = showDropdownMenu,
+                        onDismissRequest = { showDropdownMenu = false }
+                    ) {
+                        DropdownMenuItem(
+                            text = { Text("View Queue") },
+                            onClick = {
+                                showDropdownMenu = false
+                                onNavigateToQueue()
+                            },
+                            leadingIcon = {
+                                Icon(
+                                    painter = IconResources.PlayerControls.Queue(),
+                                    contentDescription = "Queue"
+                                )
+                            }
+                        )
+                    }
                 }
             }
         )

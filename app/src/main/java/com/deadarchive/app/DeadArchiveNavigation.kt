@@ -44,7 +44,8 @@ fun DeadArchiveNavigation(
         
         // Player screens (full screen, no bottom nav)
         playerScreen(
-            onNavigateBack = { navController.popBackStack() }
+            onNavigateBack = { navController.popBackStack() },
+            navController = navController
         )
         
         downloadsScreen(

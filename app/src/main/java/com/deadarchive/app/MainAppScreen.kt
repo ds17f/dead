@@ -116,7 +116,8 @@ fun MainAppScreen(
             
             // Player screen
             playerScreen(
-                onNavigateBack = { navController.popBackStack() }
+                onNavigateBack = { navController.popBackStack() },
+                navController = navController
             )
         }
     }
