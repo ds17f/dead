@@ -290,9 +290,9 @@ object ArchiveMapper {
      * Convert existing Concert objects to ConcertNew objects (for migration)
      */
     fun List<Concert>.migrateToConcertNew(): List<ConcertNew> {
-        return this.map { concert ->
+        val recordings = this.map { concert ->
             // Convert each Concert to a Recording first
-            val recording = Recording(
+            Recording(
                 identifier = concert.identifier,
                 title = concert.title,
                 source = concert.source,
@@ -310,20 +310,9 @@ object ArchiveMapper {
                 isFavorite = concert.isFavorite,
                 isDownloaded = concert.isDownloaded
             )
-            
-            // Then create ConcertNew with single recording
-            ConcertNew(
-                date = concert.date,
-                venue = concert.venue,
-                location = concert.location,
-                year = concert.year,
-                setlistRaw = concert.setlistRaw,
-                sets = concert.sets,
-                recordings = listOf(recording),
-                isFavorite = concert.isFavorite
-            )
         }
-        // Group any concerts that share the same date/venue using existing groupByConcert extension
+        
+        // Group recordings by concert date/venue using existing groupByConcert extension
         return recordings.groupByConcert()
     }
     

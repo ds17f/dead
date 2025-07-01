@@ -84,7 +84,7 @@ fun ConcertListScreen(
                             verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             Icon(
-                                painter = IconResources.General.Error(),
+                                painter = IconResources.Status.Error(),
                                 contentDescription = "Error",
                                 modifier = Modifier.size(48.dp),
                                 tint = MaterialTheme.colorScheme.error
@@ -123,7 +123,7 @@ fun ConcertListScreen(
                             verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             Icon(
-                                painter = IconResources.General.Error(),
+                                painter = IconResources.Status.Error(),
                                 contentDescription = "No concerts",
                                 modifier = Modifier.size(48.dp),
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant

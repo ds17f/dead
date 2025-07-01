@@ -14,8 +14,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ExpandLess
-import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material3.*
@@ -60,6 +58,7 @@ fun ExpandableConcertItem(
                 isExpanded = isExpanded,
                 onExpandClick = { isExpanded = !isExpanded },
                 onConcertClick = onConcertClick,
+                onRecordingClick = onRecordingClick,
                 onFavoriteClick = onFavoriteClick
             )
             
@@ -84,6 +83,7 @@ private fun ConcertHeader(
     isExpanded: Boolean,
     onExpandClick: () -> Unit,
     onConcertClick: (ConcertNew) -> Unit,
+    onRecordingClick: (Recording) -> Unit,
     onFavoriteClick: (ConcertNew) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -202,7 +202,7 @@ private fun ConcertHeader(
             // Expand/collapse button
             IconButton(onClick = onExpandClick) {
                 Icon(
-                    imageVector = if (isExpanded) Icons.Default.ExpandLess else Icons.Default.ExpandMore,
+                    painter = if (isExpanded) IconResources.Navigation.ExpandLess() else IconResources.Navigation.ExpandMore(),
                     contentDescription = if (isExpanded) "Collapse" else "Expand",
                     tint = MaterialTheme.colorScheme.onSurfaceVariant
                 )
