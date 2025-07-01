@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.9.0] - 2025-07-01
+
+### New Features
+* add settings icon as custom vector drawable (ea9661c)
+* update download_material_icons.py to only download new icons and provide usage information (3c37235)
+* add download-icons make target for simple icon management (8d473d4)
+* implement consistent Material Icons utility (70653e2)
+* implement audio playback and Spotify-style player integration (db3877e)
+* implement Spotify-like playlist navigation architecture (3253b5b)
+* add emulator cold boot command and improve audio support (4c30e5f)
+* implement Spotify-style bottom navigation and home screen redesign (8c8fce0)
+
+### Bug Fixes
+* correct object structure in IconResources.kt (705f115)
+* prevent duplicate function definitions in IconResources.kt (e933cbd)
+* update material icon script to use Composable functions instead of direct references (83c36f4)
+* implement track streaming functionality by generating download URLs (83ccf3d)
+* resolve navigation crash and implement basic player screen (d8de66c)
+* replace non-existent Material Icons with core alternatives (8e2694b)
+* use valid Material Icons (Favorite/FavoriteBorder, Search) to resolve compilation errors (6c7d289)
+* resolve icon compilation errors and improve build logging (c4d811a)
+
+
 ## [0.8.0] - 2025-06-29
 
 ### New Features
@@ -17,8 +40,6 @@
 ### Tests
 * add realistic search bug reproduction tests (e698588)
 * add comprehensive end-to-end search functionality tests (905da73)
-
-
 ## [0.7.0] - 2025-06-28
 
 ### New Features
