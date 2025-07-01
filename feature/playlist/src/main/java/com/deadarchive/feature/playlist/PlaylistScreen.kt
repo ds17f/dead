@@ -81,30 +81,9 @@ fun PlaylistScreen(
             )
         },
         bottomBar = {
-            // MiniPlayer will be integrated here in a later task
-            // For now, show a placeholder when audio is playing
-            if (uiState.currentTrack != null) {
-                Surface(
-                    modifier = Modifier.fillMaxWidth(),
-                    color = MaterialTheme.colorScheme.surfaceVariant,
-                    shadowElevation = 8.dp
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(64.dp)
-                            .clickable { onNavigateToPlayer() }
-                            .padding(16.dp),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Text(
-                            text = "♪ ${uiState.currentTrack?.displayTitle ?: "Playing..."} - Tap to expand",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                }
-            }
+            MiniPlayerContainer(
+                onTapToExpand = onNavigateToPlayer
+            )
         }
     ) { paddingValues ->
         Column(

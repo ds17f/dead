@@ -111,7 +111,7 @@ fun MainAppScreen(
             // Playlist screen
             playlistScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToPlayer = { navController.navigate("player") }
+                onNavigateToPlayer = { concertId -> navController.navigate("player/$concertId") }
             )
             
             // Player screen

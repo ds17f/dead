@@ -4,8 +4,6 @@ import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -16,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -38,16 +37,18 @@ fun PlayerScreen(
     val uiState by viewModel.uiState.collectAsState()
     val currentConcert by viewModel.currentConcert.collectAsState()
     
-    // Load concert data when concertId is provided
-    LaunchedEffect(concertId) {
-        Log.d("PlayerScreen", "LaunchedEffect: concertId = $concertId")
-        if (!concertId.isNullOrBlank()) {
-            Log.d("PlayerScreen", "LaunchedEffect: Calling viewModel.loadConcert($concertId)")
+    // Load concert data when concertId is provided, but only if not already loaded
+    LaunchedEffect(concertId, currentConcert) {
+        Log.d("PlayerScreen", "LaunchedEffect: concertId = $concertId, currentConcert.identifier = ${currentConcert?.identifier}")
+        if (!concertId.isNullOrBlank() && currentConcert?.identifier != concertId) {
+            Log.d("PlayerScreen", "LaunchedEffect: Loading new concert $concertId")
             try {
                 viewModel.loadConcert(concertId)
             } catch (e: Exception) {
                 Log.e("PlayerScreen", "LaunchedEffect: Exception in loadConcert", e)
             }
+        } else if (!concertId.isNullOrBlank() && currentConcert?.identifier == concertId) {
+            Log.d("PlayerScreen", "LaunchedEffect: Concert $concertId already loaded, skipping reload")
         } else {
             Log.w("PlayerScreen", "LaunchedEffect: concertId is null or blank")
         }
@@ -74,18 +75,28 @@ fun PlayerScreen(
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
     ) {
-        // Top App Bar
+        // Spotify-style Top App Bar
         TopAppBar(
             title = {
                 Text(
                     text = currentConcert?.displayTitle ?: "Player",
                     maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.clickable {
+                        // TODO: Navigate to album/playlist view
+                    }
                 )
             },
             navigationIcon = {
                 IconButton(onClick = onNavigateBack) {
-                    Icon(Icons.Default.Close, contentDescription = "Back")
+                    Icon(Icons.Default.KeyboardArrowDown, contentDescription = "Back")
+                }
+            },
+            actions = {
+                IconButton(onClick = { 
+                    // TODO: Show menu bottom sheet
+                }) {
+                    Icon(Icons.Default.MoreVert, contentDescription = "More options")
                 }
             }
         )
@@ -129,75 +140,29 @@ fun PlayerScreen(
             }
             
             uiState.tracks.isEmpty() -> {
-                // Show basic player UI even without tracks
-                Column(
+                // Show full-screen player UI even without tracks
+                NowPlayingSection(
+                    uiState = uiState,
+                    concert = currentConcert,
+                    onPlayPause = viewModel::playPause,
+                    onNext = viewModel::skipToNext,
+                    onPrevious = viewModel::skipToPrevious,
+                    onSeek = viewModel::seekTo,
                     modifier = Modifier.fillMaxSize()
-                ) {
-                    // Now Playing section - shows loading or no tracks message
-                    NowPlayingSection(
-                        uiState = uiState,
-                        concert = currentConcert,
-                        onPlayPause = viewModel::playPause,
-                        onNext = viewModel::skipToNext,
-                        onPrevious = viewModel::skipToPrevious,
-                        onSeek = viewModel::seekTo,
-                        modifier = Modifier.weight(1f)
-                    )
-                    
-                    HorizontalDivider()
-                    
-                    // Empty track list message
-                    Box(
-                        modifier = Modifier
-                            .weight(2f)
-                            .fillMaxWidth(),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Column(
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                            verticalArrangement = Arrangement.spacedBy(8.dp)
-                        ) {
-                            Text(
-                                text = if (currentConcert == null) "Loading concert..." else "No tracks available",
-                                style = MaterialTheme.typography.bodyLarge,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                            if (concertId != null && !uiState.isLoading) {
-                                Button(onClick = { viewModel.loadConcert(concertId) }) {
-                                    Text("Retry")
-                                }
-                            }
-                        }
-                    }
-                }
+                )
             }
             
             else -> {
-                // Main player content
-                Column(
+                // Full-screen player content
+                NowPlayingSection(
+                    uiState = uiState,
+                    concert = currentConcert,
+                    onPlayPause = viewModel::playPause,
+                    onNext = viewModel::skipToNext,
+                    onPrevious = viewModel::skipToPrevious,
+                    onSeek = viewModel::seekTo,
                     modifier = Modifier.fillMaxSize()
-                ) {
-                    // Now Playing section (takes 1/3 of screen)
-                    NowPlayingSection(
-                        uiState = uiState,
-                        concert = currentConcert,
-                        onPlayPause = viewModel::playPause,
-                        onNext = viewModel::skipToNext,
-                        onPrevious = viewModel::skipToPrevious,
-                        onSeek = viewModel::seekTo,
-                        modifier = Modifier.weight(1f)
-                    )
-                    
-                    HorizontalDivider()
-                    
-                    // Track list (takes 2/3 of screen)
-                    TrackList(
-                        tracks = uiState.tracks,
-                        currentTrackIndex = uiState.currentTrackIndex,
-                        onTrackClick = viewModel::playTrack,
-                        modifier = Modifier.weight(2f)
-                    )
-                }
+                )
             }
         }
     }
@@ -215,54 +180,87 @@ private fun NowPlayingSection(
 ) {
     Column(
         modifier = modifier
-            .fillMaxWidth()
-            .padding(24.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+            .fillMaxSize()
+            .padding(horizontal = 24.dp, vertical = 16.dp),
+        verticalArrangement = Arrangement.SpaceBetween
     ) {
-        // Album art placeholder
+        // Large cover art - takes up most of the screen
         Box(
             modifier = Modifier
-                .size(200.dp)
-                .clip(RoundedCornerShape(16.dp))
-                .background(MaterialTheme.colorScheme.surfaceVariant)
-                .align(Alignment.CenterHorizontally),
+                .weight(1f)
+                .fillMaxWidth()
+                .padding(bottom = 24.dp),
             contentAlignment = Alignment.Center
         ) {
-            Icon(
-                Icons.Default.PlayArrow,
-                contentDescription = "Album Art",
-                modifier = Modifier.size(80.dp),
-                tint = MaterialTheme.colorScheme.onSurfaceVariant
-            )
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .aspectRatio(1f)
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(MaterialTheme.colorScheme.surfaceVariant),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    Icons.Default.PlayArrow,
+                    contentDescription = "Album Art",
+                    modifier = Modifier.size(80.dp),
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
         }
         
-        // Track info
+        // Track info section with scrolling title and add button
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(4.dp)
-        ) {
-            Text(
-                text = uiState.currentTrack?.displayTitle ?: "No track selected",
-                style = MaterialTheme.typography.headlineSmall,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis
-            )
-            
-            Text(
-                text = concert?.displayTitle ?: "",
-                style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis
-            )
-        }
-        
-        // Progress bar
-        Column(
+            modifier = Modifier.fillMaxWidth(),
             verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = uiState.currentTrack?.displayTitle ?: "No track selected",
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    
+                    Text(
+                        text = concert?.displayTitle ?: "",
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+                
+                // Add to playlist button
+                IconButton(
+                    onClick = { 
+                        // TODO: Add to playlist functionality
+                    }
+                ) {
+                    Icon(
+                        Icons.Default.Add,
+                        contentDescription = "Add to playlist",
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        }
+        
+        // Progress bar section
+        Column(
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 16.dp)
         ) {
             Slider(
                 value = uiState.progress,
@@ -270,7 +268,12 @@ private fun NowPlayingSection(
                     val newPosition = (progress * uiState.duration).toLong()
                     onSeek(newPosition)
                 },
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier.fillMaxWidth(),
+                colors = SliderDefaults.colors(
+                    thumbColor = MaterialTheme.colorScheme.onSurface,
+                    activeTrackColor = MaterialTheme.colorScheme.onSurface,
+                    inactiveTrackColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.3f)
+                )
             )
             
             Row(
@@ -290,163 +293,102 @@ private fun NowPlayingSection(
             }
         }
         
-        // Media controls
+        // Media controls - clean Material Design
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 16.dp),
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically
         ) {
+            // Previous button
             IconButton(
                 onClick = onPrevious,
-                enabled = uiState.hasPreviousTrack
-            ) {
-                Icon(
-                    Icons.Default.KeyboardArrowLeft,
-                    contentDescription = "Previous",
-                    modifier = Modifier.size(32.dp)
-                )
-            }
-            
-            IconButton(
-                onClick = onPlayPause,
-                modifier = Modifier
-                    .size(64.dp)
-                    .clip(CircleShape)
-                    .background(MaterialTheme.colorScheme.primary)
+                enabled = uiState.hasPreviousTrack,
+                modifier = Modifier.size(56.dp)
             ) {
                 Icon(
                     Icons.Default.PlayArrow,
-                    contentDescription = if (uiState.isPlaying) "Pause" else "Play",
-                    modifier = Modifier.size(32.dp),
-                    tint = MaterialTheme.colorScheme.onPrimary
+                    contentDescription = "Previous",
+                    modifier = Modifier
+                        .size(32.dp)
+                        .graphicsLayer(rotationZ = 180f),
+                    tint = if (uiState.hasPreviousTrack) {
+                        MaterialTheme.colorScheme.onSurface
+                    } else {
+                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
+                    }
                 )
             }
             
+            // Play/Pause button - large and prominent
+            IconButton(
+                onClick = onPlayPause,
+                modifier = Modifier
+                    .size(72.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.onSurface)
+            ) {
+                if (uiState.isBuffering) {
+                    CircularProgressIndicator(
+                        modifier = Modifier.size(36.dp),
+                        color = MaterialTheme.colorScheme.surface,
+                        strokeWidth = 3.dp
+                    )
+                } else {
+                    Icon(
+                        if (uiState.isPlaying) Icons.Default.Star else Icons.Default.PlayArrow,
+                        contentDescription = if (uiState.isPlaying) "Pause" else "Play",
+                        modifier = Modifier.size(36.dp),
+                        tint = MaterialTheme.colorScheme.surface
+                    )
+                }
+            }
+            
+            // Next button
             IconButton(
                 onClick = onNext,
-                enabled = uiState.hasNextTrack
+                enabled = uiState.hasNextTrack,
+                modifier = Modifier.size(56.dp)
             ) {
                 Icon(
-                    Icons.Default.KeyboardArrowRight,
+                    Icons.Default.PlayArrow,
                     contentDescription = "Next",
-                    modifier = Modifier.size(32.dp)
+                    modifier = Modifier.size(32.dp),
+                    tint = if (uiState.hasNextTrack) {
+                        MaterialTheme.colorScheme.onSurface
+                    } else {
+                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
+                    }
                 )
             }
         }
-    }
-}
-
-@Composable
-private fun TrackList(
-    tracks: List<Track>,
-    currentTrackIndex: Int,
-    onTrackClick: (Int) -> Unit,
-    modifier: Modifier = Modifier
-) {
-    LazyColumn(
-        modifier = modifier.fillMaxWidth(),
-        contentPadding = PaddingValues(16.dp),
-        verticalArrangement = Arrangement.spacedBy(4.dp)
-    ) {
-        itemsIndexed(tracks) { index, track ->
-            TrackItem(
-                track = track,
-                isCurrentTrack = index == currentTrackIndex,
-                onClick = { onTrackClick(index) }
+        
+        // Expandable bottom section placeholder
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(48.dp)
+                .background(
+                    MaterialTheme.colorScheme.surfaceVariant,
+                    RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp)
+                ),
+            contentAlignment = Alignment.Center
+        ) {
+            // Pull indicator
+            Box(
+                modifier = Modifier
+                    .width(40.dp)
+                    .height(4.dp)
+                    .background(
+                        MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
+                        RoundedCornerShape(2.dp)
+                    )
             )
         }
     }
 }
 
-@Composable
-private fun TrackItem(
-    track: Track,
-    isCurrentTrack: Boolean,
-    onClick: () -> Unit
-) {
-    Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clickable { onClick() },
-        colors = CardDefaults.cardColors(
-            containerColor = if (isCurrentTrack) {
-                MaterialTheme.colorScheme.primaryContainer
-            } else {
-                MaterialTheme.colorScheme.surface
-            }
-        )
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            // Track number
-            Box(
-                modifier = Modifier
-                    .size(40.dp)
-                    .clip(CircleShape)
-                    .background(
-                        if (isCurrentTrack) {
-                            MaterialTheme.colorScheme.primary
-                        } else {
-                            MaterialTheme.colorScheme.surfaceVariant
-                        }
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-                if (isCurrentTrack) {
-                    Icon(
-                        Icons.Default.PlayArrow,
-                        contentDescription = "Currently playing",
-                        tint = MaterialTheme.colorScheme.onPrimary,
-                        modifier = Modifier.size(20.dp)
-                    )
-                } else {
-                    Text(
-                        text = track.displayTrackNumber,
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-            
-            Spacer(modifier = Modifier.width(16.dp))
-            
-            // Track info
-            Column(
-                modifier = Modifier.weight(1f)
-            ) {
-                Text(
-                    text = track.displayTitle,
-                    style = MaterialTheme.typography.bodyLarge,
-                    fontWeight = if (isCurrentTrack) FontWeight.Medium else FontWeight.Normal,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    color = if (isCurrentTrack) {
-                        MaterialTheme.colorScheme.onPrimaryContainer
-                    } else {
-                        MaterialTheme.colorScheme.onSurface
-                    }
-                )
-                
-                track.audioFile?.let { audioFile ->
-                    Text(
-                        text = "${audioFile.displayFormat} • ${track.formattedDuration}",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = if (isCurrentTrack) {
-                            MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
-                        } else {
-                            MaterialTheme.colorScheme.onSurfaceVariant
-                        }
-                    )
-                }
-            }
-        }
-    }
-}
 
 private fun formatTime(milliseconds: Long): String {
     val totalSeconds = milliseconds / 1000
