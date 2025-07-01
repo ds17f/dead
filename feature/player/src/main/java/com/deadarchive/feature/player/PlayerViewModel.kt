@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.ConcertRepository
-import com.deadarchive.core.media.player.PlayerRepository
+import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.Concert
 import com.deadarchive.core.model.PlaylistItem
@@ -19,7 +19,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PlayerViewModel @Inject constructor(
-    private val playerRepository: PlayerRepository,
+    private val mediaControllerRepository: MediaControllerRepository,
     private val concertRepository: ConcertRepository
 ) : ViewModel() {
     
@@ -43,11 +43,11 @@ class PlayerViewModel @Inject constructor(
             viewModelScope.launch {
                 Log.d(TAG, "PlayerViewModel: Setting up player state observation")
                 combine(
-                    playerRepository.isPlaying,
-                    playerRepository.currentPosition,
-                    playerRepository.duration,
-                    playerRepository.playbackState,
-                    playerRepository.currentTrack
+                    mediaControllerRepository.isPlaying,
+                    mediaControllerRepository.currentPosition,
+                    mediaControllerRepository.duration,
+                    mediaControllerRepository.playbackState,
+                    mediaControllerRepository.currentTrack
                 ) { isPlaying, position, duration, state, currentMediaItem ->
                     _uiState.value.copy(
                         isPlaying = isPlaying,
@@ -140,7 +140,7 @@ class PlayerViewModel @Inject constructor(
             if (downloadUrl != null) {
                 Log.d(TAG, "playTrack: Playing track with URL: $downloadUrl")
                 try {
-                    playerRepository.playTrack(
+                    mediaControllerRepository.playTrack(
                         url = downloadUrl,
                         title = track.displayTitle,
                         artist = _currentConcert.value?.title
@@ -172,7 +172,7 @@ class PlayerViewModel @Inject constructor(
         
         if (_uiState.value.isPlaying) {
             Log.d(TAG, "playPause: Pausing playback")
-            playerRepository.pause()
+            mediaControllerRepository.pause()
         } else {
             // If no track is currently loaded, start the first track
             val currentTrack = _uiState.value.currentTrack
@@ -181,7 +181,7 @@ class PlayerViewModel @Inject constructor(
                 playTrack(0)
             } else {
                 Log.d(TAG, "playPause: Resuming playback")
-                playerRepository.play()
+                mediaControllerRepository.play()
             }
         }
     }
@@ -222,11 +222,11 @@ class PlayerViewModel @Inject constructor(
     }
     
     fun seekTo(position: Long) {
-        playerRepository.seekTo(position)
+        mediaControllerRepository.seekTo(position)
     }
     
     fun updatePosition() {
-        playerRepository.updatePosition()
+        mediaControllerRepository.updatePosition()
     }
     
     // Playlist management methods
@@ -369,7 +369,7 @@ class PlayerViewModel @Inject constructor(
         if (downloadUrl != null) {
             Log.d(TAG, "playTrackFromPlaylist: Playing track with URL: $downloadUrl")
             try {
-                playerRepository.playTrack(
+                mediaControllerRepository.playTrack(
                     url = downloadUrl,
                     title = track.displayTitle,
                     artist = _playlistTitle.value ?: _currentConcert.value?.title
@@ -377,7 +377,7 @@ class PlayerViewModel @Inject constructor(
                 
                 _uiState.value = _uiState.value.copy(error = null)
             } catch (e: Exception) {
-                Log.e(TAG, "playTrackFromPlaylist: Exception calling playerRepository.playTrack", e)
+                Log.e(TAG, "playTrackFromPlaylist: Exception calling mediaControllerRepository.playTrack", e)
                 _uiState.value = _uiState.value.copy(
                     error = "Failed to play track: ${e.localizedMessage}"
                 )
@@ -393,7 +393,7 @@ class PlayerViewModel @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         Log.d(TAG, "onCleared: Releasing player resources")
-        playerRepository.release()
+        mediaControllerRepository.release()
     }
     
     companion object {
