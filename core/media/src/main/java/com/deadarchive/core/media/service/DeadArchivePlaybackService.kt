@@ -219,7 +219,11 @@ class DeadArchivePlaybackService : MediaSessionService() {
             session: MediaSession,
             controller: MediaSession.ControllerInfo
         ): MediaSession.ConnectionResult {
-            Log.d(TAG, "Controller connected: ${controller.packageName}")
+            Log.d(TAG, "=== NEW CONTROLLER CONNECTION ===")
+            Log.d(TAG, "Package name: ${controller.packageName}")
+            Log.d(TAG, "Controller UID: ${controller.uid}")
+            Log.d(TAG, "Connection request from: ${if (controller.packageName == packageName) "UI/APP" else "SYSTEM"}")
+            
             return MediaSession.ConnectionResult.AcceptedResultBuilder(session)
                 .build()
         }
@@ -245,12 +249,22 @@ class DeadArchivePlaybackService : MediaSessionService() {
             startIndex: Int,
             startPositionMs: Long
         ): ListenableFuture<MediaSession.MediaItemsWithStartPosition> {
-            Log.d(TAG, "onSetMediaItems: ${mediaItems.size} items, startIndex: $startIndex")
+            Log.d(TAG, "=== SET MEDIA ITEMS COMMAND RECEIVED ===")
+            Log.d(TAG, "From controller: ${controller.packageName}")
+            Log.d(TAG, "Items count: ${mediaItems.size}")
+            Log.d(TAG, "Start index: $startIndex")
+            Log.d(TAG, "Start position: $startPositionMs")
+            
+            mediaItems.forEachIndexed { index, item ->
+                Log.d(TAG, "Item $index: ${item.mediaId} - ${item.mediaMetadata.title}")
+            }
             
             // Update internal queue
             currentQueue.clear()
             currentQueue.addAll(mediaItems)
             currentQueueIndex = startIndex
+            
+            Log.d(TAG, "Internal queue updated, returning items to MediaSession")
             
             // Return the media items with start position
             val result = MediaSession.MediaItemsWithStartPosition(mediaItems, startIndex, startPositionMs)
