@@ -3,6 +3,8 @@ package com.deadarchive.core.network.mapper
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.AudioQuality
 import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.deadarchive.core.network.model.ArchiveSearchResponse
@@ -196,4 +198,197 @@ object ArchiveMapper {
             null
         }
     }
+    
+    // ==================== NEW RECORDING/CONCERT MAPPING ====================
+    
+    /**
+     * Convert Archive search document to Recording domain model
+     */
+    fun ArchiveSearchResponse.ArchiveDoc.toRecording(): Recording {
+        return Recording(
+            identifier = identifier,
+            title = title,
+            source = source,
+            taper = taper,
+            transferer = transferer,
+            lineage = lineage,
+            description = description,
+            uploader = uploader,
+            addedDate = addedDate,
+            publicDate = publicDate,
+            concertDate = date ?: "",
+            concertVenue = venue,
+            tracks = emptyList(), // Will be populated from detailed metadata
+            audioFiles = emptyList(),
+            isFavorite = false,
+            isDownloaded = false
+        )
+    }
+    
+    /**
+     * Convert Archive metadata to Recording domain model with full track information
+     */
+    fun ArchiveMetadataResponse.toRecording(): Recording {
+        val meta = metadata
+        val identifier = meta?.identifier ?: ""
+        
+        // Get server and directory info for URL generation
+        val server = server ?: workableServers?.firstOrNull() ?: "ia800000.us.archive.org"
+        val directoryPath = directory ?: "/0"
+        
+        val audioFiles = files.filter { it.isAudioFile() }
+        
+        return Recording(
+            identifier = identifier,
+            title = meta?.title ?: "",
+            source = meta?.source,
+            taper = meta?.taper,
+            transferer = meta?.transferer,
+            lineage = meta?.lineage,
+            description = meta?.description,
+            uploader = meta?.uploader,
+            addedDate = meta?.addedDate,
+            publicDate = meta?.publicDate,
+            concertDate = meta?.date ?: "",
+            concertVenue = meta?.venue,
+            tracks = audioFiles.mapIndexed { index, file ->
+                file.toTrackNew(index + 1, server, directoryPath)
+            },
+            audioFiles = audioFiles.map { file ->
+                file.toAudioFile(server, directoryPath)
+            },
+            isFavorite = false,
+            isDownloaded = false
+        )
+    }
+    
+    /**
+     * Group multiple recordings into ConcertNew objects by date and venue
+     */
+    fun List<Recording>.groupByConcert(): List<ConcertNew> {
+        return this.groupBy { recording ->
+            // Group by date + venue combination
+            "${recording.concertDate}_${recording.concertVenue ?: "Unknown"}"
+        }.map { (_, recordings) ->
+            // Use the first recording to get concert-level metadata
+            val firstRecording = recordings.first()
+            
+            ConcertNew(
+                date = firstRecording.concertDate,
+                venue = firstRecording.concertVenue,
+                location = extractLocationFromRecordings(recordings),
+                year = extractYearFromDate(firstRecording.concertDate),
+                setlistRaw = extractSetlistFromRecordings(recordings),
+                sets = emptyList(), // Will be parsed from setlistRaw later
+                recordings = recordings.sortedWith(recordingComparator),
+                isFavorite = false
+            )
+        }.sortedByDescending { it.date }
+    }
+    
+    /**
+     * Convert existing Concert objects to ConcertNew objects (for migration)
+     */
+    fun List<Concert>.migrateToConcertNew(): List<ConcertNew> {
+        return this.map { concert ->
+            // Convert each Concert to a Recording first
+            val recording = Recording(
+                identifier = concert.identifier,
+                title = concert.title,
+                source = concert.source,
+                taper = concert.taper,
+                transferer = concert.transferer,
+                lineage = concert.lineage,
+                description = concert.description,
+                uploader = concert.uploader,
+                addedDate = concert.addedDate,
+                publicDate = concert.publicDate,
+                concertDate = concert.date,
+                concertVenue = concert.venue,
+                tracks = concert.tracks,
+                audioFiles = concert.audioFiles,
+                isFavorite = concert.isFavorite,
+                isDownloaded = concert.isDownloaded
+            )
+            
+            // Then create ConcertNew with single recording
+            ConcertNew(
+                date = concert.date,
+                venue = concert.venue,
+                location = concert.location,
+                year = concert.year,
+                setlistRaw = concert.setlistRaw,
+                sets = concert.sets,
+                recordings = listOf(recording),
+                isFavorite = concert.isFavorite
+            )
+        }.groupByConcert() // Group any concerts that share the same date/venue
+    }
+    
+    /**
+     * Convert Archive file to Track domain model for new Recording
+     */
+    private fun ArchiveMetadataResponse.ArchiveFile.toTrackNew(
+        trackNumber: Int,
+        server: String,
+        directoryPath: String
+    ): Track {
+        // Generate the streaming URL for this audio file
+        val encodedFilename = name.replace(" ", "%20")
+        val downloadUrl = "https://$server$directoryPath/$encodedFilename"
+        
+        return Track(
+            filename = name,
+            title = extractTrackTitle(name),
+            trackNumber = trackNumber,
+            duration = length?.toDoubleOrNull(),
+            format = format ?: "unknown",
+            size = size?.toLongOrNull() ?: 0L,
+            downloadUrl = downloadUrl,
+            quality = determineQuality()
+        )
+    }
+    
+    // Helper functions for new Recording/Concert mapping
+    
+    private fun extractLocationFromRecordings(recordings: List<Recording>): String? {
+        // Try to find location from recording titles or descriptions
+        return recordings.firstNotNullOfOrNull { recording ->
+            // This could be enhanced to parse location from title/description
+            // For now, return null - location might need to be looked up separately
+            null
+        }
+    }
+    
+    private fun extractSetlistFromRecordings(recordings: List<Recording>): String? {
+        // Try to find setlist information from descriptions
+        return recordings.firstNotNullOfOrNull { recording ->
+            recording.description?.let { desc ->
+                if (desc.contains("setlist", ignoreCase = true) || 
+                    desc.contains("set list", ignoreCase = true) ||
+                    desc.contains("set 1", ignoreCase = true)) {
+                    desc
+                } else null
+            }
+        }
+    }
+    
+    private fun extractTrackTitle(filename: String): String {
+        // Remove file extension and track numbers
+        return filename
+            .substringBeforeLast(".")
+            .replace(Regex("^\\d+[.-]\\s*"), "") // Remove leading track numbers
+            .trim()
+    }
+    
+    // Comparator for sorting recordings within a concert (best quality first)
+    private val recordingComparator = compareBy<Recording> { recording ->
+        when (recording.source?.uppercase()) {
+            "SBD" -> 1
+            "MATRIX" -> 2
+            "FM" -> 3
+            "AUD" -> 4
+            else -> 5
+        }
+    }.thenBy { it.identifier }
 }
