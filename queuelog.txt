@@ -1,0 +1,1282 @@
+--------- beginning of main
+07-01 13:04:52.366 15356 15356 D PlayerViewModel: loadConcert: Starting to load concert with ID: gd77-12-27.sbd.cotsman.19288.sbeok.shnf
+07-01 13:04:52.366 15356 15356 D PlayerViewModel: loadConcert: Calling repository.getConcertById(gd77-12-27.sbd.cotsman.19288.sbeok.shnf)
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Concert found - title: Grateful Dead Live at Winterland Arena on 1977-12-27, tracks count: 46
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 0 - title: Bertha, audioFile: gd77-12-27d1t01.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 1 - title: gd77-12-27d1t01, audioFile: gd77-12-27d1t01.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 2 - title: Good Lovin', audioFile: gd77-12-27d1t02.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 3 - title: gd77-12-27d1t02, audioFile: gd77-12-27d1t02.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 4 - title: Brown Eyed Women, audioFile: gd77-12-27d1t03.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 5 - title: gd77-12-27d1t03, audioFile: gd77-12-27d1t03.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 6 - title: Cassidy, audioFile: gd77-12-27d1t04.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 7 - title: gd77-12-27d1t04, audioFile: gd77-12-27d1t04.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 8 - title: Peggy-O, audioFile: gd77-12-27d1t05.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 9 - title: gd77-12-27d1t05, audioFile: gd77-12-27d1t05.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 10 - title: Looks Like Rain, audioFile: gd77-12-27d1t06.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 11 - title: gd77-12-27d1t06, audioFile: gd77-12-27d1t06.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 12 - title: Dire Wolf, audioFile: gd77-12-27d1t07.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 13 - title: gd77-12-27d1t07, audioFile: gd77-12-27d1t07.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 14 - title: Passenger, audioFile: gd77-12-27d1t08.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 15 - title: gd77-12-27d1t08, audioFile: gd77-12-27d1t08.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 16 - title: Candyman, audioFile: gd77-12-27d1t09.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 17 - title: gd77-12-27d1t09, audioFile: gd77-12-27d1t09.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 18 - title: El Paso, audioFile: gd77-12-27d1t10.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 19 - title: gd77-12-27d1t10, audioFile: gd77-12-27d1t10.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 20 - title: Friend Of The Devil, audioFile: gd77-12-27d1t11.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 21 - title: gd77-12-27d1t11, audioFile: gd77-12-27d1t11.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 22 - title: The Music Never Stopped, audioFile: gd77-12-27d1t12.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 23 - title: gd77-12-27d1t12, audioFile: gd77-12-27d1t12.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 24 - title: Cold Rain and Snow, audioFile: gd77-12-27d2t01.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 25 - title: gd77-12-27d2t01, audioFile: gd77-12-27d2t01.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 26 - title: Lazy Lightning, audioFile: gd77-12-27d2t02.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 27 - title: gd77-12-27d2t02, audioFile: gd77-12-27d2t02.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 28 - title: Supplication, audioFile: gd77-12-27d2t03.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 29 - title: gd77-12-27d2t03, audioFile: gd77-12-27d2t03.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 30 - title: Scarlet Begonias, audioFile: gd77-12-27d2t04.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 31 - title: gd77-12-27d2t04, audioFile: gd77-12-27d2t04.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 32 - title: Fire On The Mountain, audioFile: gd77-12-27d2t05.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 33 - title: gd77-12-27d2t05, audioFile: gd77-12-27d2t05.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 34 - title: Estimated Prophet, audioFile: gd77-12-27d2t06.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 35 - title: gd77-12-27d2t06, audioFile: gd77-12-27d2t06.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 36 - title: He's Gone, audioFile: gd77-12-27d2t07.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 37 - title: gd77-12-27d2t07, audioFile: gd77-12-27d2t07.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 38 - title: Truckin', audioFile: gd77-12-27d3t01.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 39 - title: gd77-12-27d3t01, audioFile: gd77-12-27d3t01.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 40 - title: Wharf Rat, audioFile: gd77-12-27d3t02.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 41 - title: gd77-12-27d3t02, audioFile: gd77-12-27d3t02.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 42 - title: Around and Around, audioFile: gd77-12-27d3t03.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 43 - title: gd77-12-27d3t03, audioFile: gd77-12-27d3t03.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 44 - title: Samson and Delilah, audioFile: gd77-12-27d3t04.mp3
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: loadConcert: Track 45 - title: gd77-12-27d3t04, audioFile: gd77-12-27d3t04.ogg
+07-01 13:04:52.390 15356 15356 D PlayerViewModel: updateQueueContext: Updating MediaController with 46 queue items
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: === UPDATING QUEUE CONTEXT ===
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: Queue size: 46
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: Current index: 0
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: === QUEUE STATE UPDATED ===
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: StateFlow queueUrls updated: 46 items
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: StateFlow queueIndex updated: 0
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: === SYNCING QUEUE TO MEDIACONTROLLER ===
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: Queue size: 46
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: Current index: 0
+07-01 13:04:52.391 15356 15356 D MediaControllerRepository: Setting MediaItems with 46 items
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Position changed from 132030 to 0
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Service track changed to: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Track title: null
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Track artist: null
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Transition reason: 3
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Current track URL updated: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Service playbackState changed: 2
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: State name: BUFFERING
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 2, trackIndex: 0
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 2, trackIndex: 0
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: UI StateFlow updated - playbackState: 2
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: Queue synced to MediaController successfully
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: loadConcert: Auto-playing first track
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: playTrack: Attempting to play track at index 0
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: playTrack: Total tracks available: 46
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: playTrack: Selected track - title: Bertha, filename: gd77-12-27d1t01.mp3
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: playTrack: AudioFile - gd77-12-27d1t01.mp3, downloadUrl: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.392 15356 15356 D PlayerViewModel: playTrack: Playing track with URL: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: === PLAY TRACK COMMAND ===
+07-01 13:04:52.392 15356 15356 D MediaControllerRepository: URL: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Title: Bertha
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Artist: Grateful Dead Live at Winterland Arena on 1977-12-27
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Controller connected: true
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: MediaController available, checking state...
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Controller playback state: 2
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Controller isPlaying: false
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Controller available commands: androidx.media3.common.Player$Commands@f49a7715
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Playing track with queue context (46 items)
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Track found at queue index: 0
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Setting queue with 46 items, starting at index 0
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Position changed from 0 to 0
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Service track changed to: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Track title: Bertha
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Track artist: Grateful Dead Live at Winterland Arena on 1977-12-27
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Transition reason: 3
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: Current track URL updated: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:04:52.393 15356 15356 D MediaControllerRepository: === QUEUE-BASED PLAYBACK STARTED ===
+07-01 13:04:52.437 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-01 13:04:52.437 15356 15356 D MediaControllerRepository: Position changed from 0 to 0
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: Service playbackState changed: 3
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: State name: READY
+07-01 13:04:52.875 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.875 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: Duration updated from service: 350902
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: UI StateFlow updated - playbackState: 3
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: Service isPlaying changed: true
+07-01 13:04:52.875 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.875 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: Starting position updates synchronized with service
+07-01 13:04:52.875 15356 15356 D MediaControllerRepository: UI StateFlow updated - isPlaying: true
+07-01 13:04:52.887 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 13, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.887 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 13, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:52.887 15356 15356 D MediaControllerRepository: Position synced from service: 13ms
+07-01 13:04:53.064 15356 15356 D PlayerViewModel: onCleared: PlayerViewModel cleared
+07-01 13:04:53.888 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1004, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:54.890 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 2005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:55.890 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 3006, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:56.891 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 4017, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:57.893 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 5019, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:57.893 15356 15356 D MediaControllerRepository: Position synced from service: 5019ms
+07-01 13:04:58.894 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 6020, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:04:59.896 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 7019, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:00.898 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 8021, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:00.994 15356 15356 D PlayerViewModel: PlayerViewModel: Initializing
+07-01 13:05:00.994 15356 15356 D PlayerViewModel: PlayerViewModel: Setting up player state observation
+07-01 13:05:00.994 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 8021, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.009 15356 15356 D PlayerViewModel: loadConcert: Starting to load concert with ID: gd77-12-27.sbd.cotsman.19288.sbeok.shnf
+07-01 13:05:01.009 15356 15356 D PlayerViewModel: loadConcert: Calling repository.getConcertById(gd77-12-27.sbd.cotsman.19288.sbeok.shnf)
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Concert found - title: Grateful Dead Live at Winterland Arena on 1977-12-27, tracks count: 46
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 0 - title: Bertha, audioFile: gd77-12-27d1t01.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 1 - title: gd77-12-27d1t01, audioFile: gd77-12-27d1t01.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 2 - title: Good Lovin', audioFile: gd77-12-27d1t02.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 3 - title: gd77-12-27d1t02, audioFile: gd77-12-27d1t02.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 4 - title: Brown Eyed Women, audioFile: gd77-12-27d1t03.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 5 - title: gd77-12-27d1t03, audioFile: gd77-12-27d1t03.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 6 - title: Cassidy, audioFile: gd77-12-27d1t04.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 7 - title: gd77-12-27d1t04, audioFile: gd77-12-27d1t04.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 8 - title: Peggy-O, audioFile: gd77-12-27d1t05.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 9 - title: gd77-12-27d1t05, audioFile: gd77-12-27d1t05.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 10 - title: Looks Like Rain, audioFile: gd77-12-27d1t06.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 11 - title: gd77-12-27d1t06, audioFile: gd77-12-27d1t06.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 12 - title: Dire Wolf, audioFile: gd77-12-27d1t07.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 13 - title: gd77-12-27d1t07, audioFile: gd77-12-27d1t07.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 14 - title: Passenger, audioFile: gd77-12-27d1t08.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 15 - title: gd77-12-27d1t08, audioFile: gd77-12-27d1t08.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 16 - title: Candyman, audioFile: gd77-12-27d1t09.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 17 - title: gd77-12-27d1t09, audioFile: gd77-12-27d1t09.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 18 - title: El Paso, audioFile: gd77-12-27d1t10.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 19 - title: gd77-12-27d1t10, audioFile: gd77-12-27d1t10.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 20 - title: Friend Of The Devil, audioFile: gd77-12-27d1t11.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 21 - title: gd77-12-27d1t11, audioFile: gd77-12-27d1t11.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 22 - title: The Music Never Stopped, audioFile: gd77-12-27d1t12.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 23 - title: gd77-12-27d1t12, audioFile: gd77-12-27d1t12.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 24 - title: Cold Rain and Snow, audioFile: gd77-12-27d2t01.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 25 - title: gd77-12-27d2t01, audioFile: gd77-12-27d2t01.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 26 - title: Lazy Lightning, audioFile: gd77-12-27d2t02.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 27 - title: gd77-12-27d2t02, audioFile: gd77-12-27d2t02.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 28 - title: Supplication, audioFile: gd77-12-27d2t03.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 29 - title: gd77-12-27d2t03, audioFile: gd77-12-27d2t03.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 30 - title: Scarlet Begonias, audioFile: gd77-12-27d2t04.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 31 - title: gd77-12-27d2t04, audioFile: gd77-12-27d2t04.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 32 - title: Fire On The Mountain, audioFile: gd77-12-27d2t05.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 33 - title: gd77-12-27d2t05, audioFile: gd77-12-27d2t05.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 34 - title: Estimated Prophet, audioFile: gd77-12-27d2t06.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 35 - title: gd77-12-27d2t06, audioFile: gd77-12-27d2t06.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 36 - title: He's Gone, audioFile: gd77-12-27d2t07.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 37 - title: gd77-12-27d2t07, audioFile: gd77-12-27d2t07.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 38 - title: Truckin', audioFile: gd77-12-27d3t01.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 39 - title: gd77-12-27d3t01, audioFile: gd77-12-27d3t01.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 40 - title: Wharf Rat, audioFile: gd77-12-27d3t02.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 41 - title: gd77-12-27d3t02, audioFile: gd77-12-27d3t02.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 42 - title: Around and Around, audioFile: gd77-12-27d3t03.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 43 - title: gd77-12-27d3t03, audioFile: gd77-12-27d3t03.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 44 - title: Samson and Delilah, audioFile: gd77-12-27d3t04.mp3
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: loadConcert: Track 45 - title: gd77-12-27d3t04, audioFile: gd77-12-27d3t04.ogg
+07-01 13:05:01.032 15356 15356 D PlayerViewModel: updateQueueContext: Updating MediaController with 46 queue items
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: === UPDATING QUEUE CONTEXT ===
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: Queue size: 46
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: Current index: 0
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: === QUEUE STATE UPDATED ===
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: StateFlow queueUrls updated: 46 items
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: StateFlow queueIndex updated: 0
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: === SYNCING QUEUE TO MEDIACONTROLLER ===
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: Queue size: 46
+07-01 13:05:01.032 15356 15356 D MediaControllerRepository: Current index: 0
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Setting MediaItems with 46 items
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Position changed from 6536 to 0
+07-01 13:05:01.033 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.033 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Service track changed to: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Track title: null
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Track artist: null
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Transition reason: 3
+07-01 13:05:01.033 15356 15356 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Current track URL updated: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Service playbackState changed: 2
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: State name: BUFFERING
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 2, trackIndex: 0
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 2, trackIndex: 0
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: UI StateFlow updated - playbackState: 2
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Service isPlaying changed: false
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 2, trackIndex: 0
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 2, trackIndex: 0
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: UI StateFlow updated - isPlaying: false
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Queue synced to MediaController successfully
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: loadConcert: Auto-playing first track
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: playTrack: Attempting to play track at index 0
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: playTrack: Total tracks available: 46
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: playTrack: Selected track - title: Bertha, filename: gd77-12-27d1t01.mp3
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: playTrack: AudioFile - gd77-12-27d1t01.mp3, downloadUrl: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.034 15356 15356 D PlayerViewModel: playTrack: Playing track with URL: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: === PLAY TRACK COMMAND ===
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: URL: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Title: Bertha
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Artist: Grateful Dead Live at Winterland Arena on 1977-12-27
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Controller connected: true
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: MediaController available, checking state...
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Controller playback state: 2
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Controller isPlaying: false
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Controller available commands: androidx.media3.common.Player$Commands@f49a7715
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Playing track with queue context (46 items)
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Track found at queue index: 0
+07-01 13:05:01.034 15356 15356 D MediaControllerRepository: Setting queue with 46 items, starting at index 0
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Position changed from 0 to 0
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Service track changed to: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Track title: Bertha
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Track artist: Grateful Dead Live at Winterland Arena on 1977-12-27
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Transition reason: 3
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: Current track URL updated: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:01.035 15356 15356 D MediaControllerRepository: === QUEUE-BASED PLAYBACK STARTED ===
+07-01 13:05:01.078 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-01 13:05:01.078 15356 15356 D MediaControllerRepository: Position changed from 0 to 0
+07-01 13:05:01.705 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-01 13:05:01.705 15356 15356 D MediaControllerRepository: Service playbackState changed: 3
+07-01 13:05:01.705 15356 15356 D MediaControllerRepository: State name: READY
+07-01 13:05:01.705 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.705 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: false, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.706 15356 15356 D MediaControllerRepository: Duration updated from service: 350902
+07-01 13:05:01.706 15356 15356 D MediaControllerRepository: UI StateFlow updated - playbackState: 3
+07-01 13:05:01.706 15356 15356 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-01 13:05:01.706 15356 15356 D MediaControllerRepository: Service isPlaying changed: true
+07-01 13:05:01.706 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.706 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 0, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.706 15356 15356 D MediaControllerRepository: Starting position updates synchronized with service
+07-01 13:05:01.706 15356 15356 D MediaControllerRepository: UI StateFlow updated - isPlaying: true
+07-01 13:05:01.712 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 6, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.712 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 6, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:01.712 15356 15356 D MediaControllerRepository: Position synced from service: 6ms
+07-01 13:05:02.714 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1008, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:02.714 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1008, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:03.662 15356 15356 D PlayerViewModel: PlayerViewModel: Initializing
+07-01 13:05:03.662 15356 15356 D PlayerViewModel: PlayerViewModel: Setting up player state observation
+07-01 13:05:03.663 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1008, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:03.663 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: === PLAYLIST COMBINE FLOW ===
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls.size: 46
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: concert: null
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[0]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[1]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t01.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[2]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t02.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[3]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t02.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[4]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t03.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[5]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t03.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[6]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t04.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[7]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t04.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[8]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t05.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[9]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t05.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[10]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t06.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[11]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t06.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[12]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t07.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[13]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t07.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[14]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t08.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[15]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t08.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[16]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t09.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[17]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t09.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[18]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t10.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[19]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t10.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[20]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t11.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[21]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t11.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[22]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t12.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[23]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d1t12.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[24]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t01.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[25]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t01.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[26]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t02.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[27]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t02.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[28]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t03.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[29]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t03.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[30]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t04.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[31]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t04.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[32]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t05.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[33]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t05.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[34]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t06.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[35]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t06.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[36]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t07.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[37]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d2t07.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[38]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t01.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[39]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t01.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[40]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t02.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[41]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t02.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[42]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t03.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[43]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t03.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[44]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t04.mp3
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: queueUrls[45]: https://ia800207.us.archive.org/30/items/gd77-12-27.sbd.cotsman.19288.sbeok.shnf/gd77-12-27d3t04.ogg
+07-01 13:05:03.673 15356 15356 D PlayerViewModel: Returning empty playlist - queueUrls empty: false, concert null: true
+07-01 13:05:03.673 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:03.673 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:03.673 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:03.673 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:03.673 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:03.677 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:03.715 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1933, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:03.715 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1933, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:03.715 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 1933, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:03.726 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:03.728 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:03.728 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:03.728 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:03.728 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:03.728 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:04.376 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:04.392 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:04.718 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 2935, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:04.718 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 2935, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:04.718 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 2935, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:04.725 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:04.725 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:04.725 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:04.725 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:04.725 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:04.725 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:05.721 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 3938, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:05.721 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 3938, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:05.721 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 3938, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:05.726 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:05.727 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:05.727 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:05.727 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:05.727 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:05.727 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:06.722 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 4930, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:06.722 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 4930, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:06.722 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 4930, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:06.724 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:06.724 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:06.724 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:06.724 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:06.724 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:06.724 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:07.723 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 5931, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:07.723 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 5931, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:07.724 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 5931, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:07.724 15356 15356 D MediaControllerRepository: Position synced from service: 5931ms
+07-01 13:05:07.741 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:07.741 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:07.741 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:07.741 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:07.741 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:07.741 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:08.725 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 6933, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:08.725 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 6933, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:08.725 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 6933, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:08.741 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:08.741 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:08.741 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:08.741 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:08.741 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:08.741 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:09.726 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 7945, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:09.726 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 7945, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:09.727 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 7945, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:09.741 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:09.741 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:09.741 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:09.741 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:09.741 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:09.741 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:10.728 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 8947, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:10.728 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 8947, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:10.728 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 8947, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:10.741 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:10.741 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:10.741 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:10.741 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:10.741 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:10.741 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:11.732 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 9950, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:11.732 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 9950, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:11.733 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 9950, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:11.743 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:11.744 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:11.744 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:11.744 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:11.744 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:11.744 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:12.735 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 10948, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:12.735 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 10948, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:12.735 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 10948, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:12.735 15356 15356 D MediaControllerRepository: Position synced from service: 10948ms
+07-01 13:05:12.742 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:12.742 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:12.742 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:12.742 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:12.742 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:12.742 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:13.736 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 11948, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:13.737 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 11948, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:13.737 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 11948, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:13.742 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:13.743 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:13.743 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:13.743 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:13.743 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:13.743 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:14.739 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 12952, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:14.739 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 12952, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:14.739 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 12952, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:14.741 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:14.741 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:14.741 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:14.741 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:14.741 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:14.741 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:15.742 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 13958, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:15.742 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 13958, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:15.743 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 13958, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:15.760 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:15.761 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:15.761 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:15.761 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:15.761 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:15.761 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:16.745 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 14961, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:16.745 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 14961, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:16.745 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 14961, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:16.758 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:16.759 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:16.759 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:16.759 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:16.759 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:16.759 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:17.748 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 15964, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:17.748 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 15964, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:17.748 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 15964, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:17.748 15356 15356 D MediaControllerRepository: Position synced from service: 15964ms
+07-01 13:05:17.759 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:17.760 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:17.760 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:17.760 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:17.760 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:17.760 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:18.753 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 16964, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:18.754 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 16964, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:18.754 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 16964, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:18.769 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:18.771 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:18.771 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:18.771 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:18.771 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:18.771 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:19.756 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 17968, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:19.757 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 17968, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:19.757 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 17968, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:19.776 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:19.777 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:19.777 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:19.777 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:19.777 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:19.777 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:20.760 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 18972, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:20.761 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 18972, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:20.762 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 18972, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:20.776 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:20.777 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:20.777 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:20.777 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:20.777 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:20.777 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:21.764 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 19975, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:21.764 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 19975, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:21.765 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 19975, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:21.777 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:21.778 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:21.779 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:21.779 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:21.779 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:21.779 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:22.768 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 20979, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:22.769 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 20979, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:22.769 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 20979, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:22.770 15356 15356 D MediaControllerRepository: Position synced from service: 20979ms
+07-01 13:05:22.776 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:22.777 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:22.777 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:22.777 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:22.777 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:22.777 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:23.772 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 21983, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:23.772 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 21983, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:23.773 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 21983, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:23.776 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:23.777 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:23.777 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:23.777 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:23.777 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:23.777 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:24.776 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 22991, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:24.776 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 22991, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:24.777 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 22991, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:24.791 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:24.792 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:24.792 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:24.792 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:24.792 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:24.792 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:25.778 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 23993, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:25.778 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 23993, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:25.779 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 23993, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:25.791 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:25.792 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:25.792 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:25.792 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:25.792 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:25.792 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:26.782 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 24998, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:26.783 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 24998, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:26.783 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 24998, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:26.792 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:26.792 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:26.792 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:26.792 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:26.792 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:26.792 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:27.784 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 25999, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:27.784 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 25999, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:27.784 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 25999, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:27.784 15356 15356 D MediaControllerRepository: Position synced from service: 25999ms
+07-01 13:05:27.791 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:27.791 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:27.791 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:27.791 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:27.791 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:27.791 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:28.787 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 27002, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:28.787 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 27002, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:28.787 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 27002, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:28.791 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:28.791 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:28.791 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:28.791 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:28.791 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:28.792 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:29.790 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 28005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:29.790 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 28005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:29.791 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 28005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:29.809 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:29.810 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:29.810 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:29.810 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:29.810 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:29.810 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:30.794 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 29005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:30.794 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 29005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:30.795 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 29005, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:30.809 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:30.810 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:30.810 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:30.810 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:30.810 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:30.810 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:31.798 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 30008, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:31.798 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 30008, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:31.799 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 30008, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:31.799 15356 15356 D MediaControllerRepository: Position synced from service: 30008ms
+07-01 13:05:31.808 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:31.809 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:31.809 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:31.809 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:31.809 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:31.809 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:32.801 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 31013, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:32.801 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 31013, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:32.802 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 31013, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:32.807 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:32.808 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:32.808 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:32.808 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:32.808 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:32.808 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:33.804 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 32016, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:33.804 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 32016, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:33.805 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 32016, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:33.809 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:33.809 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:33.810 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:33.810 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:33.810 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:33.810 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:34.808 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 33020, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:34.808 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 33020, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:34.809 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 33020, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:34.825 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:34.825 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:34.826 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:34.826 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:34.826 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:34.826 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:35.811 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 34024, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:35.812 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 34024, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:35.812 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 34024, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:35.826 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:35.826 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:35.827 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:35.827 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:35.827 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:35.827 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:36.814 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 35024, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:36.814 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 35024, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:36.815 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 35024, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:36.815 15356 15356 D MediaControllerRepository: Position synced from service: 35024ms
+07-01 13:05:36.825 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:36.826 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:36.826 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:36.826 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:36.826 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:36.826 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:37.818 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 36028, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:37.818 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 36028, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:37.818 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 36028, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:37.825 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:37.826 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:37.826 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:37.826 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:37.826 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:37.827 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:38.820 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 37030, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:38.821 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 37030, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:38.821 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 37030, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:38.825 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:38.826 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:38.826 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:38.826 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:38.826 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:38.826 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:39.824 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 38036, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:39.824 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 38036, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:39.825 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 38036, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:39.843 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:39.844 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:39.844 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:39.844 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:39.844 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:39.844 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:40.827 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 39039, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:40.828 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 39039, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:40.828 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 39039, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:40.842 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:40.843 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:40.843 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:40.843 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:40.843 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:40.843 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:41.832 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 40044, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:41.832 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 40044, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:41.833 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 40044, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:41.833 15356 15356 D MediaControllerRepository: Position synced from service: 40044ms
+07-01 13:05:41.843 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:41.845 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:41.845 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:41.845 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:41.845 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:41.845 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:42.835 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 41047, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:42.835 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 41047, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:42.836 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 41047, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:42.842 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:42.843 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:42.843 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:42.843 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:42.843 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:42.843 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:43.838 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 42051, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:43.838 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 42051, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:43.839 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 42051, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:43.842 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:43.843 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:43.843 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:43.843 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:43.843 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:43.843 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:44.840 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 43054, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:44.840 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 43054, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:44.841 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 43054, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:44.859 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:44.860 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:44.860 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:44.860 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:44.860 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:44.860 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:45.843 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 44057, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:45.843 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 44057, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:45.843 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 44057, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:45.857 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:45.858 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:45.858 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:45.858 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:45.858 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:45.858 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:46.846 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 45064, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:46.847 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 45064, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:46.848 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 45064, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:46.849 15356 15356 D MediaControllerRepository: Position synced from service: 45064ms
+07-01 13:05:46.859 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:46.860 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:46.860 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:46.861 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:46.861 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:46.861 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:47.851 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 46070, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:47.851 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 46070, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:47.851 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 46070, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:47.857 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:47.858 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:47.858 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:47.858 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:47.858 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:47.858 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:48.853 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 47071, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:48.853 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 47071, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:48.854 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 47071, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:48.858 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:48.860 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:48.860 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:48.860 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:48.860 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:48.860 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:49.856 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 48066, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:49.856 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 48066, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:49.857 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 48066, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:49.857 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:49.858 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:49.858 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:49.858 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:49.858 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:49.858 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:50.858 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 49068, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:50.858 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 49068, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:50.858 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 49068, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:50.874 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:50.875 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:50.875 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:50.875 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:50.875 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:50.875 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:51.860 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 50070, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:51.860 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 50070, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:51.861 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 50070, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:51.861 15356 15356 D MediaControllerRepository: Position synced from service: 50070ms
+07-01 13:05:51.876 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:51.877 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:51.877 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:51.877 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:51.877 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:51.877 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:52.864 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 51078, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:52.864 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 51078, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:52.865 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 51078, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:52.876 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:52.876 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:52.877 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:52.877 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:52.877 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:52.877 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:53.868 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 52082, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:53.868 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 52082, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:53.869 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 52082, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:53.876 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:53.877 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:53.877 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:53.877 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:53.877 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:53.877 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:54.871 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 53085, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:54.872 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 53085, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:54.872 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 53085, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:54.875 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:54.877 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:54.877 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:54.877 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:54.877 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:54.877 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:55.875 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 54088, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:55.875 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 54088, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:55.876 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 54088, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:55.893 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:55.894 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:55.894 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:55.894 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:55.894 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:55.894 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:56.878 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 55091, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:56.878 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 55091, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:56.880 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 55091, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:56.880 15356 15356 D MediaControllerRepository: Position synced from service: 55091ms
+07-01 13:05:56.892 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:56.893 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:56.893 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:56.893 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:56.893 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:56.893 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:57.882 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 56095, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:57.883 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 56095, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:57.883 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 56095, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:57.893 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:57.894 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:57.894 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:57.894 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:57.894 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:57.894 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:58.887 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 57097, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:58.887 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 57097, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:58.888 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 57097, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:58.893 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:58.895 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:58.895 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:58.895 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:58.895 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:58.895 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:05:59.891 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 58101, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:59.892 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 58101, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:59.892 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 58101, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:05:59.910 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:05:59.912 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:05:59.912 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:05:59.913 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:05:59.913 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:05:59.913 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:00.895 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 59105, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:00.895 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 59105, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:00.896 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 59105, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:00.913 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:00.913 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:00.913 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:00.913 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:00.913 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:00.914 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:01.899 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 60107, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:01.900 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 60107, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:01.900 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 60107, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:01.900 15356 15356 D MediaControllerRepository: Position synced from service: 60107ms
+07-01 13:06:01.908 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:01.909 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:01.909 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:01.909 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:01.909 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:01.909 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:02.902 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 61111, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:02.903 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 61111, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:02.903 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 61111, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:02.907 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:02.908 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:02.908 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:02.908 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:02.908 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:02.908 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:03.904 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 62113, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:03.904 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 62113, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:03.905 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 62113, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:03.908 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:03.912 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:03.912 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:03.912 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:03.912 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:03.912 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:04.908 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 63122, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:04.909 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 63122, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:04.909 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 63122, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:04.926 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:04.927 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:04.927 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:04.927 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:04.927 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:04.927 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:05.912 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 64126, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:05.912 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 64126, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:05.913 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 64126, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:05.925 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:05.926 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:05.926 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:05.926 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:05.926 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:05.926 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:06.920 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 65137, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:06.920 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 65137, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:06.921 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 65137, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:06.922 15356 15356 D MediaControllerRepository: Position synced from service: 65137ms
+07-01 13:06:06.925 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:06.926 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:06.927 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:06.927 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:06.927 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:06.927 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:07.925 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 66143, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:07.926 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 66143, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:07.926 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 66143, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:07.943 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:07.944 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:07.944 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:07.944 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:07.944 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:07.944 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:08.928 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 67146, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:08.928 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 67146, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:08.929 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 67146, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:08.944 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:08.945 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:08.945 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:08.945 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:08.945 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:08.945 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:09.929 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 68146, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:09.930 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 68146, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:09.930 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 68146, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:09.942 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:09.942 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:09.942 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:09.942 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:09.942 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:09.943 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:10.933 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 69150, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:10.933 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 69150, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:10.934 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 69150, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:10.942 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:10.943 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:10.943 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:10.943 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:10.943 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:10.943 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:11.936 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 70153, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:11.938 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 70153, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:11.943 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 70153, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:11.944 15356 15356 D MediaControllerRepository: Position synced from service: 70153ms
+07-01 13:06:11.958 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:11.960 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:11.960 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:11.960 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:11.960 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:11.960 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:12.945 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 71159, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:12.945 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 71159, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:12.946 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 71159, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:12.958 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:12.959 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:12.959 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:12.959 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:12.959 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:12.959 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:13.948 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 72161, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:13.948 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 72161, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:13.948 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 72161, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:13.958 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:13.958 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:13.958 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:13.958 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:13.958 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:13.958 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:14.950 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 73163, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:14.950 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 73163, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:14.950 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 73163, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:14.959 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:14.959 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:14.959 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:14.959 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:14.959 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:14.959 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:15.950 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 74162, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:15.951 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 74162, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:15.951 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 74162, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:15.958 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:15.958 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:15.958 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:15.958 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:15.958 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:15.958 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:16.952 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 75163, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:16.952 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 75163, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:16.953 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 75163, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:16.953 15356 15356 D MediaControllerRepository: Position synced from service: 75163ms
+07-01 13:06:16.959 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:16.960 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:16.960 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:16.961 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:16.961 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:16.961 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:17.955 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 76166, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:17.955 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 76166, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:17.955 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 76166, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:17.958 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:17.958 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:17.958 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:17.958 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:17.958 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:17.958 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:18.956 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 77168, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:18.956 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 77168, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:18.957 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 77168, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:18.975 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:18.976 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:18.976 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:18.976 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:18.976 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:18.976 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:19.959 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 78171, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:19.960 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 78171, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:19.960 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 78171, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:19.975 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:19.976 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:19.976 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:19.976 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:19.976 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:19.976 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:20.962 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 79174, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:20.962 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 79174, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:20.963 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 79174, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:20.975 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:20.975 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:20.975 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:20.975 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:20.975 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:20.975 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:21.964 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 80180, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:21.964 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 80180, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:21.965 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 80180, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:21.965 15356 15356 D MediaControllerRepository: Position synced from service: 80180ms
+07-01 13:06:21.975 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:21.976 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:21.976 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:21.976 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:21.976 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:21.976 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:22.966 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 81182, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:22.967 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 81182, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:22.968 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 81182, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:22.976 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:22.977 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:22.977 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:22.977 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:22.977 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:22.977 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:23.970 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 82185, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:23.971 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 82185, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:23.971 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 82185, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:23.975 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:23.977 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:23.977 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:23.977 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:23.977 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:23.977 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:24.973 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 83186, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:24.973 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 83186, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:24.974 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 83186, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:24.992 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:24.993 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:24.993 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:24.993 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:24.993 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:24.993 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:25.975 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 84188, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:25.977 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 84188, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:25.978 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 84188, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:25.992 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:25.993 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:25.993 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:25.993 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:25.993 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:25.993 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:26.980 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 85194, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:26.981 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 85194, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:26.982 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 85194, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:26.982 15356 15356 D MediaControllerRepository: Position synced from service: 85194ms
+07-01 13:06:26.992 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:26.993 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:26.993 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:26.993 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:26.993 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:26.993 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:27.983 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 86196, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:27.984 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 86196, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:27.984 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 86196, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:27.991 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:27.992 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:27.992 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:27.992 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:27.992 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:27.992 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:28.987 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 87199, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:28.987 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 87199, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:28.987 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 87199, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:28.991 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:28.992 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:28.992 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:28.992 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:28.992 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:28.992 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:29.988 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 88200, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:29.988 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 88200, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:29.988 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 88200, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:29.991 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:29.991 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:29.991 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:29.991 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:29.991 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:29.991 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:30.989 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 89201, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:30.989 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 89201, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:30.989 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 89201, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:30.991 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:30.991 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:30.991 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:30.991 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:30.991 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:30.991 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:31.994 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 90205, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:31.996 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 90205, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:31.997 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 90205, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:31.997 15356 15356 D MediaControllerRepository: Position synced from service: 90205ms
+07-01 13:06:32.008 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:32.009 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:32.009 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:32.009 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:32.009 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:32.009 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:32.998 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 91211, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:32.999 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 91211, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:32.999 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 91211, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:33.007 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:33.008 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:33.008 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:33.008 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:33.008 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:33.008 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:34.000 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 92216, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:34.001 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 92216, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:34.001 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 92216, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:34.008 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:34.009 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:34.009 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:34.009 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:34.009 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:34.009 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:35.004 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 93220, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:35.004 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 93220, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:35.005 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 93220, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:35.009 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:35.010 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:35.010 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:35.010 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:35.010 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:35.010 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:36.007 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 94223, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:36.008 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 94223, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:36.008 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 94223, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:36.025 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:36.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:36.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:36.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:36.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:36.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:37.010 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 95225, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:37.010 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 95225, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:37.010 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 95225, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:37.010 15356 15356 D MediaControllerRepository: Position synced from service: 95225ms
+07-01 13:06:37.025 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:37.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:37.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:37.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:37.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:37.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:38.012 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 96226, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:38.012 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 96226, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:38.012 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 96226, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:38.024 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:38.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:38.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:38.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:38.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:38.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:39.014 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 97229, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:39.015 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 97229, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:39.015 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 97229, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:39.025 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:39.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:39.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:39.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:39.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:39.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:40.016 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 98234, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:40.016 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 98234, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:40.017 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 98234, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:40.024 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:40.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:40.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:40.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:40.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:40.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:41.019 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 99237, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:41.019 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 99237, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:41.020 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 99237, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:41.025 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:41.028 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:41.028 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:41.028 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:41.028 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:41.028 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:42.022 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 100241, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:42.022 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 100241, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:42.022 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 100241, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:42.022 15356 15356 D MediaControllerRepository: Position synced from service: 100241ms
+07-01 13:06:42.024 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:42.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:42.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:42.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:42.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:42.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:43.022 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 101231, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:43.023 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 101231, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:43.023 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 101231, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:43.025 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:43.025 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:43.025 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:43.025 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:43.025 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:43.025 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:44.025 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 102234, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:44.025 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 102234, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:44.026 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 102234, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:44.041 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:44.041 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:44.041 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:44.041 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:44.041 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:44.041 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:45.027 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 103236, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:45.028 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 103236, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:45.028 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 103236, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:45.041 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:45.042 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:45.042 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:45.042 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:45.042 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:45.042 15356 15356 D QueueScreen: QueueScreen: currentTrack = null
+07-01 13:06:46.029 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 104246, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:46.030 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 104246, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:46.030 15356 15356 D PlayerViewModel: PlayerViewModel: State updated - isPlaying: true, position: 104246, duration: 350902, playbackState: 3, trackIndex: 0
+07-01 13:06:46.041 15356 15356 D QueueScreen: QueueScreen: Composing
+07-01 13:06:46.042 15356 15356 D QueueScreen: QueueScreen: currentPlaylist.size = 0
+07-01 13:06:46.042 15356 15356 D QueueScreen: QueueScreen: uiState.tracks.size = 0
+07-01 13:06:46.042 15356 15356 D QueueScreen: QueueScreen: playlistTitle = null
+07-01 13:06:46.042 15356 15356 D QueueScreen: QueueScreen: isPlaying = true
+07-01 13:06:46.042 15356 15356 D QueueScreen: QueueScreen: currentTrack = null

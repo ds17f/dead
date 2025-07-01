@@ -41,7 +41,7 @@ data class Recording(
     val concertDate: String, // YYYY-MM-DD format - links to Concert
     val concertVenue: String? = null, // For grouping recordings by concert
     
-    // Audio content
+    // Audio content  
     val tracks: List<Track> = emptyList(),
     val audioFiles: List<AudioFile> = emptyList(),
     

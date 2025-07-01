@@ -1,675 +1,175 @@
 {
   "tasks": [
     {
-      "id": "5869fe6d-9bd5-4e03-a26b-1e558fae09c2",
-      "name": "Project Setup and Architecture",
-      "description": "Set up the Android project with modular architecture, core dependencies, and basic navigation",
-      "notes": "Follow modern Android development best practices. Use Kotlin DSL for Gradle configuration.",
+      "id": "9d9e18c6-d710-4420-8953-98208149678c",
+      "name": "Enhance MediaControllerRepository for proper queue handling",
+      "description": "Fix MediaController queue synchronization with PlayerViewModel to enable proper forward/back buttons in notifications and native Media3 queue management. This addresses the core issue of media controls showing only back button.",
       "status": "completed",
       "dependencies": [],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T13:15:35.091Z",
+      "createdAt": "2025-07-01T16:14:26.830Z",
+      "updatedAt": "2025-07-01T16:25:12.654Z",
       "relatedFiles": [
         {
-          "path": "build.gradle.kts",
-          "type": "CREATE",
-          "description": "Root build file"
+          "path": "core/media/src/main/java/com/deadarchive/core/media/player/MediaControllerRepository.kt",
+          "type": "TO_MODIFY",
+          "description": "Add queue synchronization and MediaController.setMediaItems() support",
+          "lineStart": 287,
+          "lineEnd": 358
         },
         {
-          "path": "settings.gradle.kts",
-          "type": "CREATE",
-          "description": "Project settings"
-        },
-        {
-          "path": "app/build.gradle.kts",
-          "type": "CREATE",
-          "description": "App module build file"
+          "path": "core/media/src/main/java/com/deadarchive/core/media/service/DeadArchivePlaybackService.kt",
+          "type": "REFERENCE",
+          "description": "MediaSessionService for queue-based playback integration"
         }
       ],
-      "implementationGuide": "Create a new Android project with Kotlin and Gradle. Set up the modular structure with core modules (model, data, database, network, media, design, common) and feature modules (browse, player, downloads, favorites). Configure build.gradle files for each module and set up dependencies. Create a basic navigation graph with placeholders for each feature screen.",
-      "verificationCriteria": "Project successfully builds. All modules are properly configured with dependencies. Navigation graph is set up with routes for each feature.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Android project setup complete with modular architecture. Created 7 core modules (model, data, database, network, media, design, common) and 4 feature modules (browse, player, downloads, favorites). Basic navigation graph established with placeholder screens. All Gradle build files configured with proper dependencies. App includes Hilt DI, Jetpack Compose UI, and Material3 theming. Project structure follows modern Android development best practices.",
-      "completedAt": "2025-06-16T13:15:35.091Z"
+      "implementationGuide": "1. Modify MediaControllerRepository.playTrack() to also call controller.setMediaItems() with queue context when available\\n2. Add queue synchronization logic in MediaControllerRepository to observe PlayerViewModel queue state\\n3. Ensure MediaController.setMediaItems() is called whenever queue changes\\n4. Add proper queue-based next/previous logic using MediaController native methods\\n5. Verify MediaSession callbacks properly handle queue-based navigation",
+      "verificationCriteria": "MediaController.setMediaItems() is called when queue changes, notification shows forward/back buttons when queue has multiple items, native Media3 queue navigation works properly",
+      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback.",
+      "summary": "Successfully enhanced MediaControllerRepository with proper queue handling and synchronized PlayerViewModel to provide queue context. Key improvements include: 1) Added updateQueueContext() method to MediaControllerRepository for queue synchronization 2) Modified playTrack() to use queue-based playback with MediaController.setMediaItems() when queue context is available 3) Enhanced skipToNext/skipToPrevious methods to be queue-aware with proper state tracking 4) Updated PlayerViewModel to call updateQueueContext() whenever playlist changes 5) All playlist operations (setPlaylist, addToPlaylist, removeFromPlaylist, clearPlaylist) now properly sync with MediaControllerRepository queue state. This addresses the core issue of media controls showing only back button by ensuring MediaController receives proper queue context for native Media3 playlist management.",
+      "completedAt": "2025-07-01T16:25:12.654Z"
     },
     {
-      "id": "0225c33a-7985-4c7a-b5fe-958f4da28d0c",
-      "name": "Core Domain Models",
-      "description": "Create domain models for concerts, sets, tracks, and related entities",
-      "notes": "Keep models clean of Android dependencies to maintain separation of concerns.",
-      "status": "completed",
+      "id": "ea596bcd-acca-4d78-8f78-ebab2d325de0",
+      "name": "Create QueueScreen UI component",
+      "description": "Build a dedicated queue viewing and management screen following existing Compose patterns. This screen should be accessible from PlayerScreen 3-dots menu and provide queue reordering, removal, and management capabilities.",
+      "status": "in_progress",
       "dependencies": [
         {
-          "taskId": "5869fe6d-9bd5-4e03-a26b-1e558fae09c2"
+          "taskId": "9d9e18c6-d710-4420-8953-98208149678c"
         }
       ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T13:51:19.357Z",
+      "createdAt": "2025-07-01T16:14:26.830Z",
+      "updatedAt": "2025-07-01T16:34:03.351Z",
       "relatedFiles": [
         {
-          "path": "core/model/src/main/java/com/grateful/dead/core/model/Concert.kt",
+          "path": "feature/player/src/main/java/com/deadarchive/feature/player/QueueScreen.kt",
           "type": "CREATE",
-          "description": "Concert domain model"
+          "description": "New Compose screen for queue viewing and management"
         },
         {
-          "path": "core/model/src/main/java/com/grateful/dead/core/model/Set.kt",
-          "type": "CREATE",
-          "description": "Set domain model"
+          "path": "feature/player/src/main/java/com/deadarchive/feature/player/PlayerScreen.kt",
+          "type": "TO_MODIFY",
+          "description": "Add queue access to 3-dots menu",
+          "lineStart": 1,
+          "lineEnd": 50
         },
         {
-          "path": "core/model/src/main/java/com/grateful/dead/core/model/Track.kt",
-          "type": "CREATE",
-          "description": "Track domain model"
+          "path": "feature/playlist/src/main/java/com/deadarchive/feature/playlist/PlaylistScreen.kt",
+          "type": "REFERENCE",
+          "description": "Reference for UI patterns and track listing components"
         }
       ],
-      "implementationGuide": "Create data classes for Concert, Set, Track, and related entities. Implement serialization for JSON responses. These models will be used throughout the app and should be placed in the core:model module.",
-      "verificationCriteria": "Models compile without errors. All required fields are present. Models provide proper encapsulation of data.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Core domain models successfully implemented with comprehensive data classes for Concert, Track, AudioFile, ConcertSet, and supporting entities. Models include proper serialization annotations for Archive.org API integration, computed properties for UI display, and clean separation from Android dependencies. Added utility models for search, playback state, favorites, downloads, and app constants. All models provide proper encapsulation and follow Kotlin best practices.",
-      "completedAt": "2025-06-16T13:51:19.356Z"
+      "implementationGuide": "1. Create QueueScreen.kt in feature/player following PlayerScreen patterns\\n2. Use LazyColumn with drag-to-reorder functionality for queue items\\n3. Add queue management actions (remove, reorder, clear queue)\\n4. Follow existing Material3 design system and card-based layouts\\n5. Integrate with existing navigation patterns using NavController\\n6. Add queue access option to PlayerScreen 3-dots menu",
+      "verificationCriteria": "QueueScreen displays current queue items, allows reordering and removal, accessible from PlayerScreen menu, follows Material3 design patterns",
+      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
     },
     {
-      "id": "9f28dc03-da6b-4ff3-b402-8b9c19bc9f3b",
-      "name": "Network Layer for Archive.org API",
-      "description": "Implement networking layer for Archive.org API integration",
-      "notes": "Ensure proper error handling for network requests. Consider rate limiting for Archive.org API.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "0225c33a-7985-4c7a-b5fe-958f4da28d0c"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-26T20:08:05.259Z",
-      "relatedFiles": [
-        {
-          "path": "core/network/src/main/java/com/grateful/dead/core/network/service/ArchiveApiService.kt",
-          "type": "CREATE",
-          "description": "Archive.org API service interface"
-        },
-        {
-          "path": "core/network/src/main/java/com/grateful/dead/core/network/model/SearchResponse.kt",
-          "type": "CREATE",
-          "description": "API response models"
-        },
-        {
-          "path": "core/network/src/main/java/com/grateful/dead/core/network/di/NetworkModule.kt",
-          "type": "CREATE",
-          "description": "Network DI module"
-        }
-      ],
-      "implementationGuide": "Create Retrofit service interfaces for Archive.org API. Implement data models for API responses. Create network module for Retrofit setup with OkHttp and dependency injection.",
-      "verificationCriteria": "API service interfaces are properly defined. Network module successfully injects dependencies. Test API call completes successfully.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Network Layer for Archive.org API successfully implemented with comprehensive API service containing 7 endpoints (search, date range, venue, metadata, popular, recent concerts), complete data models matching Archive.org JSON structure, robust error handling with custom exceptions, rate limiting interceptor (100ms between requests), Hilt dependency injection module, and data mappers converting API responses to domain models. All components follow Android architecture best practices with proper coroutine usage, sealed Result classes, and clean separation of concerns.",
-      "completedAt": "2025-06-26T20:08:05.258Z"
-    },
-    {
-      "id": "7397a425-99c9-4c08-bf38-8c27c4395003",
-      "name": "Database Setup for Local Storage",
-      "description": "Create local database for storing favorites and download information",
-      "notes": "Ensure database schema is flexible for future expansion.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "0225c33a-7985-4c7a-b5fe-958f4da28d0c"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-27T23:44:07.669Z",
-      "relatedFiles": [
-        {
-          "path": "core/database/src/main/java/com/grateful/dead/core/database/DeadArchiveDatabase.kt",
-          "type": "CREATE",
-          "description": "Room database definition"
-        },
-        {
-          "path": "core/database/src/main/java/com/grateful/dead/core/database/entity/DownloadEntity.kt",
-          "type": "CREATE",
-          "description": "Download entity"
-        },
-        {
-          "path": "core/database/src/main/java/com/grateful/dead/core/database/entity/FavoriteEntity.kt",
-          "type": "CREATE",
-          "description": "Favorite entity"
-        },
-        {
-          "path": "core/database/src/main/java/com/grateful/dead/core/database/dao/DownloadDao.kt",
-          "type": "CREATE",
-          "description": "Download DAO"
-        },
-        {
-          "path": "core/database/src/main/java/com/grateful/dead/core/database/dao/FavoriteDao.kt",
-          "type": "CREATE",
-          "description": "Favorite DAO"
-        }
-      ],
-      "implementationGuide": "Set up Room database with entities for downloads and favorites. Create DAOs for database operations. Implement type converters for dates and durations. Set up database module for dependency injection.",
-      "verificationCriteria": "Database schema is properly defined. DAOs provide all necessary operations. Database migrations work correctly.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Database Setup for Local Storage task successfully completed. Implemented comprehensive Room database architecture with DownloadEntity and FavoriteEntity entities, corresponding DAOs with full CRUD operations, type converters for date handling, updated DeadArchiveDatabase with version 2 schema, and created DatabaseModule for Hilt dependency injection following established patterns. All components properly integrated for tracking downloads and favorites locally.",
-      "completedAt": "2025-06-27T23:44:07.668Z"
-    },
-    {
-      "id": "8c5ea86b-9198-407c-943c-96eb4f0e5952",
-      "name": "Repository Implementations",
-      "description": "Create repositories for managing data access across the app",
-      "notes": "Use Flow for reactive data streams. Implement caching strategy for concert data.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "9f28dc03-da6b-4ff3-b402-8b9c19bc9f3b"
-        },
-        {
-          "taskId": "7397a425-99c9-4c08-bf38-8c27c4395003"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-28T20:40:02.016Z",
-      "relatedFiles": [
-        {
-          "path": "core/data/src/main/java/com/grateful/dead/core/data/repository/ConcertRepository.kt",
-          "type": "CREATE",
-          "description": "Concert repository interface"
-        },
-        {
-          "path": "core/data/src/main/java/com/grateful/dead/core/data/repository/ConcertRepositoryImpl.kt",
-          "type": "CREATE",
-          "description": "Concert repository implementation"
-        },
-        {
-          "path": "core/data/src/main/java/com/grateful/dead/core/data/repository/DownloadRepository.kt",
-          "type": "CREATE",
-          "description": "Download repository interface"
-        },
-        {
-          "path": "core/data/src/main/java/com/grateful/dead/core/data/repository/FavoriteRepository.kt",
-          "type": "CREATE",
-          "description": "Favorite repository interface"
-        },
-        {
-          "path": "core/data/src/main/java/com/grateful/dead/core/data/mapper/NetworkToDomainMappers.kt",
-          "type": "CREATE",
-          "description": "Data mappers"
-        }
-      ],
-      "implementationGuide": "Implement ConcertRepository to fetch and manage concerts from API and local cache. Create DownloadRepository for managing downloads. Implement FavoriteRepository for managing favorites. Create mappers to convert between network, database, and domain models.",
-      "verificationCriteria": "Repositories provide data correctly from both network and local sources. Caching works properly. Data flows correctly through the app.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Repository Implementations successfully completed with proper separation of concerns. Created ConcertRepository for concert data management with streaming capabilities, DownloadRepository for comprehensive download management with progress tracking, and FavoriteRepository for managing both concert and track favorites. All repositories follow offline-first strategy with reactive Flow patterns, maintain independence without circular dependencies, and are properly configured in Dagger Hilt dependency injection. Data flows correctly through API and local database sources with appropriate caching strategies.",
-      "completedAt": "2025-06-28T20:40:02.015Z"
-    },
-    {
-      "id": "d6e2c800-1bb0-4417-a78c-b3ac9e424dfd",
-      "name": "Media Player Integration",
-      "description": "Set up Media3/ExoPlayer for audio playback with background support",
-      "notes": "Ensure proper lifecycle management for the player. Handle audio focus changes appropriately.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "0225c33a-7985-4c7a-b5fe-958f4da28d0c"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-28T01:36:48.163Z",
-      "relatedFiles": [
-        {
-          "path": "core/media/src/main/java/com/grateful/dead/core/media/service/DeadArchivePlaybackService.kt",
-          "type": "CREATE",
-          "description": "Media playback service"
-        },
-        {
-          "path": "core/media/src/main/java/com/grateful/dead/core/media/player/PlayerRepository.kt",
-          "type": "CREATE",
-          "description": "Player repository"
-        },
-        {
-          "path": "core/media/src/main/java/com/grateful/dead/core/media/notification/DeadArchiveNotificationProvider.kt",
-          "type": "CREATE",
-          "description": "Media notifications"
-        },
-        {
-          "path": "core/media/src/main/AndroidManifest.xml",
-          "type": "CREATE",
-          "description": "Media service manifest"
-        }
-      ],
-      "implementationGuide": "Implement MediaSessionService for background playback. Create PlayerRepository to manage player state and interactions. Set up notifications for media controls. Handle audio focus and playback interruptions.",
-      "verificationCriteria": "Media playback works in foreground and background. Notifications show correct media controls. Player handles interruptions gracefully.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Media Player Integration successfully completed. Implemented comprehensive Media3/ExoPlayer integration with MediaSessionService for background playback, PlayerRepository for state management, notification controls, audio focus handling, and complete UI test interface. The system can now stream Grateful Dead concerts directly from Archive.org with full playback controls, progress tracking, and background support. Created MediaPlayerTestScreen that demonstrates playing the legendary Cornell '77 Fire on the Mountain track.",
-      "completedAt": "2025-06-28T01:36:48.160Z"
-    },
-    {
-      "id": "d18de219-b2e1-44d8-8701-9da0f6957ed6",
-      "name": "Browse Feature Implementation",
-      "description": "Implement concert browsing and searching UI",
-      "notes": "Use proper loading states and error handling in the UI. Implement efficient list rendering with LazyColumn.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "8c5ea86b-9198-407c-943c-96eb4f0e5952"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-29T02:25:52.093Z",
-      "relatedFiles": [
-        {
-          "path": "feature/browse/src/main/java/com/grateful/dead/feature/browse/BrowseViewModel.kt",
-          "type": "CREATE",
-          "description": "Browse screen view model"
-        },
-        {
-          "path": "feature/browse/src/main/java/com/grateful/dead/feature/browse/BrowseScreen.kt",
-          "type": "CREATE",
-          "description": "Browse screen UI"
-        },
-        {
-          "path": "feature/browse/src/main/java/com/grateful/dead/feature/browse/components/FilterDialog.kt",
-          "type": "CREATE",
-          "description": "Filter dialog component"
-        },
-        {
-          "path": "feature/browse/src/main/java/com/grateful/dead/feature/browse/domain/SearchConcertsUseCase.kt",
-          "type": "CREATE",
-          "description": "Search use case"
-        }
-      ],
-      "implementationGuide": "Create BrowseViewModel for managing UI state and data fetching. Implement BrowseScreen using Jetpack Compose with search, filtering, and infinite scrolling. Create use cases for concert search and filtering. Add navigation to player screen.",
-      "verificationCriteria": "Browse screen displays concerts correctly. Search and filtering work as expected. Navigation to player works correctly.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Successfully implemented comprehensive Browse feature with modern UI, search functionality, and proper architecture. Created BrowseViewModel with reactive state management, BrowseScreen with Material 3 design including search bar, concert list with LazyColumn, favorite toggle functionality, and navigation to player. Implemented SearchConcertsUseCase for clean architecture separation. Added Browse navigation to HomeScreen as main feature. Features include real-time search, popular/recent concert quick access, loading states, error handling, and responsive UI with proper spacing and typography.",
-      "completedAt": "2025-06-29T02:25:52.092Z"
-    },
-    {
-      "id": "4dc1a22f-6b48-4522-bd93-52dfe33677e7",
-      "name": "Player Feature Implementation",
-      "description": "Create audio player UI and playback controls",
-      "notes": "Ensure efficient state updates with Flow. Implement smooth animations for player controls.",
+      "id": "29214f11-77eb-4776-b765-bcdbabb0a81b",
+      "name": "Enhance PlayerViewModel queue state management",
+      "description": "Improve existing playlist functionality in PlayerViewModel to better serve as queue system. Rename playlist-related properties to queue terminology and add proper queue state synchronization with MediaControllerRepository.",
       "status": "pending",
       "dependencies": [
         {
-          "taskId": "d6e2c800-1bb0-4417-a78c-b3ac9e424dfd"
-        },
-        {
-          "taskId": "8c5ea86b-9198-407c-943c-96eb4f0e5952"
+          "taskId": "9d9e18c6-d710-4420-8953-98208149678c"
         }
       ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T03:32:02.147Z",
+      "createdAt": "2025-07-01T16:14:26.830Z",
+      "updatedAt": "2025-07-01T16:14:26.830Z",
       "relatedFiles": [
         {
-          "path": "feature/player/src/main/java/com/grateful/dead/feature/player/PlayerViewModel.kt",
-          "type": "CREATE",
-          "description": "Player screen view model"
+          "path": "feature/player/src/main/java/com/deadarchive/feature/player/PlayerViewModel.kt",
+          "type": "TO_MODIFY",
+          "description": "Enhance existing playlist/queue functionality",
+          "lineStart": 32,
+          "lineEnd": 404
         },
         {
-          "path": "feature/player/src/main/java/com/grateful/dead/feature/player/PlayerScreen.kt",
-          "type": "CREATE",
-          "description": "Player screen UI"
-        },
-        {
-          "path": "feature/player/src/main/java/com/grateful/dead/feature/player/domain/GetConcertDetailsUseCase.kt",
-          "type": "CREATE",
-          "description": "Concert details use case"
-        },
-        {
-          "path": "feature/player/src/main/java/com/grateful/dead/feature/player/domain/PlayerControlsUseCase.kt",
-          "type": "CREATE",
-          "description": "Player controls use case"
+          "path": "core/model/src/main/java/com/deadarchive/core/model/PlaylistItem.kt",
+          "type": "REFERENCE",
+          "description": "Data model for queue items"
         }
       ],
-      "implementationGuide": "Create PlayerViewModel for managing playback state. Implement PlayerScreen with album art, track list, and playback controls. Create PlayerControlsUseCase for player interactions. Handle track selection and playback state changes.",
-      "verificationCriteria": "Player displays concert and track information correctly. Playback controls work as expected. Track selection works properly.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics."
+      "implementationGuide": "1. Rename _currentPlaylist to _currentQueue for clarity\\n2. Add queue-specific UI state properties (queuePosition, queueSize, hasNext/hasPrevious)\\n3. Enhance queue operations (addToQueue, removeFromQueue, reorderQueue)\\n4. Improve queue synchronization with MediaControllerRepository currentTrackUrl\\n5. Add queue persistence state for UI consistency\\n6. Ensure proper queue state updates when tracks change",
+      "verificationCriteria": "PlayerViewModel queue state properly syncs with service, queue operations work correctly, UI views cooperate through shared queue state",
+      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
     },
     {
-      "id": "1ed89937-b2b1-4534-901b-96cad73227b7",
-      "name": "Downloads Feature Implementation",
-      "description": "Implement functionality for downloading and managing offline content",
-      "notes": "Handle edge cases like insufficient storage, download failures, etc. Provide feedback on download progress.",
+      "id": "33c7e433-6dfb-4246-a2cf-5c6c2c52d68e",
+      "name": "Add queue persistence with Room database",
+      "description": "Implement queue persistence using Room database to maintain queue state across app restarts. This ensures queue continuity and proper restoration of playback state.",
       "status": "pending",
       "dependencies": [
         {
-          "taskId": "8c5ea86b-9198-407c-943c-96eb4f0e5952"
-        },
-        {
-          "taskId": "d6e2c800-1bb0-4417-a78c-b3ac9e424dfd"
+          "taskId": "29214f11-77eb-4776-b765-bcdbabb0a81b"
         }
       ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T03:32:02.147Z",
+      "createdAt": "2025-07-01T16:14:26.830Z",
+      "updatedAt": "2025-07-01T16:14:26.830Z",
       "relatedFiles": [
         {
-          "path": "core/data/src/main/java/com/grateful/dead/core/data/download/DownloadManager.kt",
+          "path": "core/database/src/main/java/com/deadarchive/core/database/entity/QueueEntity.kt",
           "type": "CREATE",
-          "description": "Download manager"
+          "description": "Room entity for queue persistence"
         },
         {
-          "path": "feature/downloads/src/main/java/com/grateful/dead/feature/downloads/DownloadsViewModel.kt",
+          "path": "core/database/src/main/java/com/deadarchive/core/database/dao/QueueDao.kt",
           "type": "CREATE",
-          "description": "Downloads view model"
+          "description": "DAO for queue operations"
         },
         {
-          "path": "feature/downloads/src/main/java/com/grateful/dead/feature/downloads/DownloadsScreen.kt",
-          "type": "CREATE",
-          "description": "Downloads screen UI"
+          "path": "core/database/src/main/java/com/deadarchive/core/database/DeadArchiveDatabase.kt",
+          "type": "TO_MODIFY",
+          "description": "Add queue table to database",
+          "lineStart": 15,
+          "lineEnd": 40
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/entity/ConcertEntity.kt",
+          "type": "REFERENCE",
+          "description": "Reference for entity patterns and type converters"
         }
       ],
-      "implementationGuide": "Create DownloadManager for handling file downloads and tracking progress. Implement DownloadsViewModel and DownloadsScreen for managing downloads. Set up storage management with quotas and cleanup. Modify PlayerRepository to support playing from local files.",
-      "verificationCriteria": "Downloads are tracked correctly in the database. Files are stored on disk and can be played back offline. Storage management works correctly.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics."
+      "implementationGuide": "1. Create QueueEntity in core/database following existing entity patterns\\n2. Create QueueDao with queue operations (insert, delete, reorder, clear)\\n3. Add queue table to DeadArchiveDatabase\\n4. Implement queue persistence in PlayerViewModel using repository pattern\\n5. Add queue restoration logic on app startup\\n6. Follow existing database patterns with type converters for complex data",
+      "verificationCriteria": "Queue state persists across app restarts, queue operations are properly saved to database, queue restoration works on app startup",
+      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
     },
     {
-      "id": "c46d51f1-4fb4-45c5-98db-4bf27c9c02a1",
-      "name": "Favorites Feature Implementation",
-      "description": "Implement favorites functionality for concerts and tracks",
-      "notes": "Ensure real-time updates of favorite status across screens.",
+      "id": "417ce6b4-72d0-4d9c-9239-1675d9c2ca48",
+      "name": "Integrate queue system with existing screens",
+      "description": "Update PlaylistScreen and other relevant screens to properly add tracks to the queue system. Ensure all track selection flows properly populate the queue for consistent playback behavior.",
       "status": "pending",
       "dependencies": [
         {
-          "taskId": "8c5ea86b-9198-407c-943c-96eb4f0e5952"
+          "taskId": "ea596bcd-acca-4d78-8f78-ebab2d325de0"
+        },
+        {
+          "taskId": "29214f11-77eb-4776-b765-bcdbabb0a81b"
         }
       ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T03:32:02.147Z",
+      "createdAt": "2025-07-01T16:14:26.830Z",
+      "updatedAt": "2025-07-01T16:14:26.830Z",
       "relatedFiles": [
         {
-          "path": "feature/favorites/src/main/java/com/grateful/dead/feature/favorites/FavoritesViewModel.kt",
-          "type": "CREATE",
-          "description": "Favorites view model"
-        },
-        {
-          "path": "feature/favorites/src/main/java/com/grateful/dead/feature/favorites/FavoritesScreen.kt",
-          "type": "CREATE",
-          "description": "Favorites screen UI"
-        }
-      ],
-      "implementationGuide": "Create FavoritesViewModel and FavoritesScreen for managing favorites. Implement favorite toggle functionality in player and browse screens. Set up data flow for favorites status updates.",
-      "verificationCriteria": "Favorites can be added and removed. Favorites screen displays correct information. Favorite status is consistent across screens.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics."
-    },
-    {
-      "id": "0ee7e573-3f99-48bf-b8a0-12e0b71a2a20",
-      "name": "Sharing Implementation",
-      "description": "Add sharing capabilities for concerts and tracks",
-      "notes": "Generate informative share text with context about the content.",
-      "status": "pending",
-      "dependencies": [
-        {
-          "taskId": "d18de219-b2e1-44d8-8701-9da0f6957ed6"
-        },
-        {
-          "taskId": "4dc1a22f-6b48-4522-bd93-52dfe33677e7"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.147Z",
-      "updatedAt": "2025-06-16T03:32:02.148Z",
-      "relatedFiles": [
-        {
-          "path": "core/common/src/main/java/com/grateful/dead/core/common/util/ShareHelper.kt",
-          "type": "CREATE",
-          "description": "Sharing utility"
-        },
-        {
-          "path": "app/src/main/AndroidManifest.xml",
+          "path": "feature/playlist/src/main/java/com/deadarchive/feature/playlist/PlaylistScreen.kt",
           "type": "TO_MODIFY",
-          "description": "Update for deep links"
+          "description": "Update to integrate with queue system",
+          "lineStart": 1,
+          "lineEnd": 100
         },
         {
-          "path": "app/src/main/java/com/grateful/dead/app/navigation/DeadArchiveNavHost.kt",
+          "path": "feature/playlist/src/main/java/com/deadarchive/feature/playlist/PlaylistViewModel.kt",
           "type": "TO_MODIFY",
-          "description": "Update for deep links"
-        }
-      ],
-      "implementationGuide": "Create ShareHelper utility to handle sharing operations. Set up deep link handling for shared content. Add share buttons to player and concert items. Configure AndroidManifest for intent handling.",
-      "verificationCriteria": "Share functionality works correctly. Deep links are properly handled. Share text is informative and correctly formatted.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics."
-    },
-    {
-      "id": "1777df4d-3e91-4544-9bcc-bb2017d95879",
-      "name": "UI Theming and Polish",
-      "description": "Create custom theme and visual styling for the app",
-      "notes": "Use Grateful Dead colors like olive green, dark red, and gold. Consider iconic imagery like the dancing bears or lightning bolt.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "5869fe6d-9bd5-4e03-a26b-1e558fae09c2"
-        }
-      ],
-      "createdAt": "2025-06-16T03:32:02.148Z",
-      "updatedAt": "2025-06-29T20:38:54.418Z",
-      "relatedFiles": [
-        {
-          "path": "core/design/src/main/java/com/grateful/dead/core/design/theme/Theme.kt",
-          "type": "CREATE",
-          "description": "App theme definition"
+          "description": "Add queue integration logic"
         },
         {
-          "path": "core/design/src/main/java/com/grateful/dead/core/design/component/Components.kt",
-          "type": "CREATE",
-          "description": "Reusable UI components"
-        },
-        {
-          "path": "core/design/src/main/res/values/themes.xml",
-          "type": "CREATE",
-          "description": "Theme resources"
-        }
-      ],
-      "implementationGuide": "Create Material3 theme inspired by Grateful Dead aesthetics. Implement light and dark themes. Create custom UI components for consistent look and feel. Add animations and transitions for UI interactions.",
-      "verificationCriteria": "App has consistent visual styling. Themes work correctly in light and dark mode. UI components have appropriate animations.",
-      "analysisResult": "The Grateful Dead Archive Android app will use modern development practices with Kotlin, Jetpack Compose UI, MVVM clean architecture, Room database, Media3/ExoPlayer, and Retrofit. The modular architecture includes core modules (data, domain, design, network) and feature modules (browse, player, downloads, favorites). Key capabilities include streaming from Archive.org API, background playback, offline caching, and social sharing. The app will follow material design principles with custom theming inspired by Grateful Dead aesthetics.",
-      "summary": "Successfully implemented Spotify-style UI with bottom navigation bar featuring Home, Search, Library, and Settings tabs. Created Grateful Dead inspired color scheme using crimson red, gold, and forest green. Redesigned home screen with modern sections showing Featured Eras and Popular Venues. Added proper Material3 theming with light/dark mode support and smooth navigation structure.",
-      "completedAt": "2025-06-29T20:38:54.417Z"
-    },
-    {
-      "id": "b11f4c1c-7cd1-401a-b8e9-1234e91357d2",
-      "name": "Complete ConcertRepository Implementation",
-      "description": "Enhance existing ConcertRepositoryImpl with full search functionality, local caching, and reactive data streams combining API and database sources",
-      "notes": "Build upon existing streaming URL functionality. Integrate with ConcertDao for local storage. Use Flow.combine for reactive data merging.",
-      "status": "completed",
-      "dependencies": [],
-      "createdAt": "2025-06-28T13:14:07.266Z",
-      "updatedAt": "2025-06-28T13:19:07.915Z",
-      "relatedFiles": [
-        {
-          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/ConcertRepository.kt",
-          "type": "TO_MODIFY",
-          "description": "Existing repository interface and partial implementation",
-          "lineStart": 1,
-          "lineEnd": 164
-        },
-        {
-          "path": "core/network/src/main/java/com/deadarchive/core/network/mapper/ArchiveMapper.kt",
+          "path": "feature/player/src/main/java/com/deadarchive/feature/player/components/MiniPlayer.kt",
           "type": "REFERENCE",
-          "description": "Existing network-to-domain mappers to extend",
-          "lineStart": 1,
-          "lineEnd": 175
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/ConcertDao.kt",
-          "type": "REFERENCE",
-          "description": "Database access layer for concert caching",
-          "lineStart": 1,
-          "lineEnd": 19
+          "description": "Update to reflect queue state"
         }
       ],
-      "implementationGuide": "Extend current ConcertRepositoryImpl by implementing:\n1. searchConcerts(): Combine API search with local cache using Flow\n2. getConcertById(): Check local DB first, fallback to API + cache result\n3. getFavoriteConcerts(): Join favorites with concert data using Room queries\n4. Add caching mechanism with 24h expiry for search results\n5. Implement offline-first strategy with proper error handling\n6. Use existing ArchiveMapper for network-to-domain conversion\n7. Follow established error handling patterns from ErrorHandlingInterceptor",
-      "verificationCriteria": "Repository provides search results from both network and cache. Offline functionality works correctly. Data flows properly through reactive streams. Caching mechanism expires old data appropriately. Error handling covers all network and database scenarios.",
-      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies.",
-      "summary": "Successfully implemented complete ConcertRepository with offline-first caching strategy, reactive Flow-based data streams, and comprehensive error handling. Enhanced ConcertDao and ConcertEntity to support full concert data caching with 24h expiry. Integrated favorites status with concert data. All streaming URL functionality preserved. Implementation follows established patterns and architectural consistency.",
-      "completedAt": "2025-06-28T13:19:07.914Z"
-    },
-    {
-      "id": "524ebeb9-d1f5-4402-80cf-88ef15eb667d",
-      "name": "Create Data Mappers Module",
-      "description": "Implement comprehensive data mapping utilities for converting between network, database, and domain models across all repository layers",
-      "notes": "Consolidate all mapping logic in single location. Reuse existing FavoriteEntity and DownloadEntity conversion methods. Ensure type safety and null handling.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "b11f4c1c-7cd1-401a-b8e9-1234e91357d2"
-        }
-      ],
-      "createdAt": "2025-06-28T13:14:07.266Z",
-      "updatedAt": "2025-06-28T22:39:40.350Z",
-      "relatedFiles": [
-        {
-          "path": "core/data/src/main/java/com/deadarchive/core/data/mapper",
-          "type": "CREATE",
-          "description": "New mapper module directory"
-        },
-        {
-          "path": "core/data/src/main/java/com/deadarchive/core/data/mapper/DataMappers.kt",
-          "type": "CREATE",
-          "description": "Unified data mapping utilities"
-        },
-        {
-          "path": "core/network/src/main/java/com/deadarchive/core/network/mapper/ArchiveMapper.kt",
-          "type": "REFERENCE",
-          "description": "Existing mapper patterns to follow and extend"
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/FavoriteEntity.kt",
-          "type": "REFERENCE",
-          "description": "Existing entity conversion methods",
-          "lineStart": 17,
-          "lineEnd": 39
-        }
-      ],
-      "implementationGuide": "Create DataMappers object with:\n1. Extend ArchiveMapper with additional network-to-domain conversions\n2. Create bidirectional Concert <-> ConcertEntity mappers\n3. Add utility functions for handling nullable/optional fields\n4. Implement batch conversion utilities for List transformations\n5. Add proper error handling for malformed data\n6. Follow existing mapper patterns from ArchiveMapper\n7. Include comprehensive unit tests for all mapping functions",
-      "verificationCriteria": "All data transformations handled correctly. Mapping functions are type-safe and handle edge cases. Performance is optimized for large datasets. Unit tests cover all mapping scenarios including error cases.",
-      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies.",
-      "summary": "Successfully implemented comprehensive DataMappers module with centralized data transformation utilities. Created bidirectional mapping functions for all network-to-domain and domain-to-database conversions, with proper error handling, null safety, and batch processing utilities. Included comprehensive end-to-end test suite covering all mapping scenarios, roundtrip conversions, utility functions, and edge cases. All data transformations preserve integrity and handle malformed data gracefully.",
-      "completedAt": "2025-06-28T22:39:40.350Z"
-    },
-    {
-      "id": "69edf3df-4949-4e96-9bb4-e45fd95eddb1",
-      "name": "Implement FavoriteRepository",
-      "description": "Create complete favorites management repository with CRUD operations for concerts and tracks using Room database and reactive streams",
-      "notes": "Integrate with ConcertRepository for combined data. Support both concert and track favorites. Ensure real-time updates via Flow streams.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "524ebeb9-d1f5-4402-80cf-88ef15eb667d"
-        }
-      ],
-      "createdAt": "2025-06-28T13:14:07.266Z",
-      "updatedAt": "2025-06-28T22:42:24.354Z",
-      "relatedFiles": [
-        {
-          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/FavoriteRepository.kt",
-          "type": "CREATE",
-          "description": "Favorites repository interface and implementation"
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/FavoriteDao.kt",
-          "type": "REFERENCE",
-          "description": "Database access layer for favorites",
-          "lineStart": 1,
-          "lineEnd": 60
-        },
-        {
-          "path": "core/model/src/main/java/com/deadarchive/core/model/FavoriteItem.kt",
-          "type": "REFERENCE",
-          "description": "Domain model for favorites",
-          "lineStart": 1,
-          "lineEnd": 37
-        },
-        {
-          "path": "core/data/src/test/java/com/deadarchive/core/data/repository/FavoriteRepositoryTest.kt",
-          "type": "CREATE",
-          "description": "Unit tests for favorites repository"
-        }
-      ],
-      "implementationGuide": "Create FavoriteRepository interface and implementation:\n1. Define interface with Flow-based methods: getAllFavorites(), getFavoritesByType(), toggleFavorite()\n2. Implement FavoriteRepositoryImpl with FavoriteDao injection\n3. Create reactive streams combining favorite status with concert/track data\n4. Add batch operations for managing multiple favorites\n5. Implement proper error handling and transaction management\n6. Use existing FavoriteEntity conversion methods\n7. Follow established repository patterns from ConcertRepository\n8. Add comprehensive unit tests with MockK",
-      "verificationCriteria": "CRUD operations work correctly for both concerts and tracks. Reactive streams provide real-time updates. Data consistency maintained across operations. Error handling covers all database scenarios. Performance optimized for large favorite lists.",
-      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies.",
-      "summary": "Successfully enhanced FavoriteRepository with comprehensive CRUD operations, reactive Flow streams, and integration with ConcertRepository. Added batch operations for managing multiple favorites, import/export functionality for backup/sharing, and enhanced data retrieval with combined concert data. Implemented all operations using DataMappers for consistent data transformation. Created comprehensive end-to-end tests focusing on behavior and data integrity rather than implementation details. All operations maintain data consistency and provide real-time updates via reactive streams.",
-      "completedAt": "2025-06-28T22:42:24.353Z"
-    },
-    {
-      "id": "60b8c3f7-5576-4783-b15a-399d06f89689",
-      "name": "Implement DownloadRepository",
-      "description": "Create download management repository with progress tracking, queue management, and file system integration for offline content",
-      "notes": "Coordinate with media player for downloaded content playback. Handle storage permissions and disk space. Implement retry logic for failed downloads.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "524ebeb9-d1f5-4402-80cf-88ef15eb667d"
-        }
-      ],
-      "createdAt": "2025-06-28T13:14:07.266Z",
-      "updatedAt": "2025-06-28T22:49:14.832Z",
-      "relatedFiles": [
-        {
-          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/DownloadRepository.kt",
-          "type": "CREATE",
-          "description": "Download repository interface and implementation"
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/DownloadDao.kt",
-          "type": "REFERENCE",
-          "description": "Database access layer for downloads",
-          "lineStart": 1,
-          "lineEnd": 61
-        },
-        {
-          "path": "core/model/src/main/java/com/deadarchive/core/model/DownloadState.kt",
-          "type": "REFERENCE",
-          "description": "Domain model for download state",
-          "lineStart": 1,
-          "lineEnd": 41
-        },
-        {
-          "path": "core/data/src/test/java/com/deadarchive/core/data/repository/DownloadRepositoryTest.kt",
-          "type": "CREATE",
-          "description": "Unit tests for download repository"
-        }
-      ],
-      "implementationGuide": "Create DownloadRepository interface and implementation:\n1. Define interface with download lifecycle methods: startDownload(), pauseDownload(), cancelDownload()\n2. Implement DownloadRepositoryImpl with DownloadDao and file system access\n3. Create progress tracking with real-time updates via Flow\n4. Add download queue management with priority handling\n5. Implement file system integration for local storage paths\n6. Add proper cleanup for failed/cancelled downloads\n7. Use existing DownloadEntity conversion methods\n8. Follow established error handling patterns\n9. Add comprehensive unit tests covering all download states",
-      "verificationCriteria": "Download lifecycle managed correctly through all states. Progress tracking provides accurate real-time updates. Queue management handles multiple concurrent downloads. File system operations are safe and efficient. Error recovery handles network and storage issues.",
-      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies.",
-      "summary": "Successfully completed enhanced DownloadRepository implementation with comprehensive download management features including priority-based queue operations, file system integration, retry/recovery mechanisms, batch operations, analytics, and export/import functionality. Added priority and retryCount fields to DownloadEntity and DownloadState models. Created extensive end-to-end tests covering all enhanced functionality with behavior-focused testing approach. Implementation includes 400+ lines of robust download management code with proper error handling, reactive Flow streams, and DataMapper integration.",
-      "completedAt": "2025-06-28T22:49:14.831Z"
-    },
-    {
-      "id": "ef0b1a28-858c-4017-a4ee-062ac881c9cf",
-      "name": "Update DataModule Dependencies",
-      "description": "Configure Dagger Hilt dependency injection bindings for all repository implementations and ensure proper singleton scoping",
-      "notes": "Maintain consistency with existing DataModule structure. Ensure all repositories are properly scoped as singletons. Verify circular dependency prevention.",
-      "status": "completed",
-      "dependencies": [
-        {
-          "taskId": "69edf3df-4949-4e96-9bb4-e45fd95eddb1"
-        },
-        {
-          "taskId": "60b8c3f7-5576-4783-b15a-399d06f89689"
-        }
-      ],
-      "createdAt": "2025-06-28T13:14:07.266Z",
-      "updatedAt": "2025-06-28T22:49:43.677Z",
-      "relatedFiles": [
-        {
-          "path": "core/data/src/main/java/com/deadarchive/core/data/di/DataModule.kt",
-          "type": "TO_MODIFY",
-          "description": "Existing DI module to extend",
-          "lineStart": 1,
-          "lineEnd": 20
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/di/DatabaseModule.kt",
-          "type": "REFERENCE",
-          "description": "Database DI patterns to follow",
-          "lineStart": 1,
-          "lineEnd": 60
-        }
-      ],
-      "implementationGuide": "Update DataModule.kt to include:\n1. Add @Binds methods for FavoriteRepository and DownloadRepository\n2. Ensure proper @Singleton scoping for all repositories\n3. Verify dependency injection chain works correctly\n4. Add any required @Provides methods for complex dependencies\n5. Update module documentation with clear dependency relationships\n6. Follow existing pattern from ConcertRepository binding\n7. Test DI configuration with integration tests",
-      "verificationCriteria": "All repository dependencies resolve correctly. Singleton scoping prevents multiple instances. No circular dependencies detected. Integration tests pass with DI container. Documentation accurately reflects dependency relationships.",
-      "analysisResult": "Complete Repository layer implementation for Grateful Dead Archive Android app with data mappers, caching strategy, and reactive Flow-based data streams. The implementation follows Clean Architecture with MVVM, uses Dagger Hilt for DI, and integrates seamlessly with existing Network and Database layers. Key focus on offline support, error handling, and performance optimization through proper caching strategies.",
-      "summary": "Successfully completed DataModule Dependencies configuration with comprehensive Dagger Hilt bindings for all repository implementations. Enhanced existing bindings with detailed documentation explaining dependency relationships and circular dependency prevention strategies. All three repositories (ConcertRepository, DownloadRepository, FavoriteRepository) properly scoped as @Singleton with clear @Binds methods. Dependency injection chain verified to work correctly: DatabaseModule provides all required DAOs, DataModule binds repository interfaces to implementations, and repositories inject dependencies without circular references. Added comprehensive module documentation explaining singleton scoping benefits for consistent state management and memory optimization.",
-      "completedAt": "2025-06-28T22:49:43.676Z"
+      "implementationGuide": "1. Update PlaylistScreen to add entire concert/show to queue when track is selected\\n2. Modify track selection logic to use queue-based playback\\n3. Add queue management actions to relevant screens (add to queue, play next)\\n4. Ensure MiniPlayer properly reflects queue state\\n5. Update navigation flows to maintain queue context\\n6. Add queue status indicators where appropriate",
+      "verificationCriteria": "All screens properly add tracks to queue, track selection flows work consistently, MiniPlayer reflects queue state, navigation maintains queue context",
+      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
     }
   ]
 }

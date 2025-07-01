@@ -322,7 +322,9 @@ object ArchiveMapper {
                 recordings = listOf(recording),
                 isFavorite = concert.isFavorite
             )
-        }.groupByConcert() // Group any concerts that share the same date/venue
+        }
+        // Group any concerts that share the same date/venue using existing groupByConcert extension
+        return recordings.groupByConcert()
     }
     
     /**
@@ -333,19 +335,12 @@ object ArchiveMapper {
         server: String,
         directoryPath: String
     ): Track {
-        // Generate the streaming URL for this audio file
-        val encodedFilename = name.replace(" ", "%20")
-        val downloadUrl = "https://$server$directoryPath/$encodedFilename"
-        
         return Track(
             filename = name,
             title = extractTrackTitle(name),
-            trackNumber = trackNumber,
-            duration = length?.toDoubleOrNull(),
-            format = format ?: "unknown",
-            size = size?.toLongOrNull() ?: 0L,
-            downloadUrl = downloadUrl,
-            quality = determineQuality()
+            trackNumber = trackNumber.toString(),
+            durationSeconds = length,
+            audioFile = toAudioFile(server, directoryPath)
         )
     }
     
