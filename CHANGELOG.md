@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.11.0] - 2025-07-01
+
+### New Features
+* create expandable concert list UI with recordings support (fb66dc3)
+* add Recording/Concert grouping to API mappers (7ae3d74)
+* implement Concert/Recording separation to eliminate duplicate entries (7c420a6)
+
+### Bug Fixes
+* resolve critical lint errors in MediaSessionService (f40a5e3)
+* resolve compilation errors and finalize Concert/Recording UI (8c47215)
+* resolve ArchiveMapper compilation errors (2820147)
+
+
 ## [0.10.0] - 2025-07-01
 
 ### New Features
@@ -12,8 +25,6 @@
 
 ### Bug Fixes
 * disable failing PlayerViewModelIntegrationTest to unblock release builds (35a5447)
-
-
 ## [0.9.0] - 2025-07-01
 
 ### New Features
