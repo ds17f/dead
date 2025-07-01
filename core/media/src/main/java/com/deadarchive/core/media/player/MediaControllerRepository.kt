@@ -67,6 +67,9 @@ class MediaControllerRepository @Inject constructor(
     private val _currentTrack = MutableStateFlow<MediaItem?>(null)
     val currentTrack: StateFlow<MediaItem?> = _currentTrack.asStateFlow()
     
+    private val _currentTrackUrl = MutableStateFlow<String?>(null)
+    val currentTrackUrl: StateFlow<String?> = _currentTrackUrl.asStateFlow()
+    
     private val _playbackState = MutableStateFlow(Player.STATE_IDLE)
     val playbackState: StateFlow<Int> = _playbackState.asStateFlow()
     
@@ -76,6 +79,10 @@ class MediaControllerRepository @Inject constructor(
     // Connection state for debugging and error handling
     private val _isConnected = MutableStateFlow(false)
     val isConnected: StateFlow<Boolean> = _isConnected.asStateFlow()
+    
+    // Queue context for proper MediaController synchronization
+    private var currentQueueUrls: List<String> = emptyList()
+    private var currentQueueIndex: Int = 0
     
     init {
         Log.d(TAG, "MediaControllerRepository initializing")
@@ -180,7 +187,9 @@ class MediaControllerRepository @Inject constructor(
                 Log.d(TAG, "Reason name: ${reasonNames[reason] ?: "UNKNOWN"}")
                 
                 _currentTrack.value = mediaItem
+                _currentTrackUrl.value = mediaItem?.mediaId // mediaId is the URL
                 Log.d(TAG, "UI StateFlow updated - currentTrack: ${_currentTrack.value?.mediaId}")
+                Log.d(TAG, "Current track URL updated: ${_currentTrackUrl.value}")
             }
             
             override fun onPositionDiscontinuity(oldPosition: Player.PositionInfo, newPosition: Player.PositionInfo, reason: Int) {
@@ -202,6 +211,12 @@ class MediaControllerRepository @Inject constructor(
         
         // Initialize current state from controller
         updateStateFromController()
+        
+        // Sync any existing queue context to the newly connected controller
+        if (currentQueueUrls.isNotEmpty()) {
+            Log.d(TAG, "Syncing existing queue context to newly connected controller")
+            syncQueueToMediaController()
+        }
     }
     
     /**
@@ -217,6 +232,7 @@ class MediaControllerRepository @Inject constructor(
         _currentPosition.value = 0L
         _duration.value = 0L
         _currentTrack.value = null
+        _currentTrackUrl.value = null
         stopPositionUpdates()
         
         _lastError.value = PlaybackException(
@@ -257,6 +273,7 @@ class MediaControllerRepository @Inject constructor(
         _currentPosition.value = controller.currentPosition
         _duration.value = controller.duration.takeIf { it != C.TIME_UNSET } ?: 0L
         _currentTrack.value = controller.currentMediaItem
+        _currentTrackUrl.value = controller.currentMediaItem?.mediaId
         
         Log.d(TAG, "UI StateFlows updated to match service state:")
         Log.d(TAG, "  - _isPlaying: ${_isPlaying.value}")
@@ -275,7 +292,57 @@ class MediaControllerRepository @Inject constructor(
     // Public API methods - identical interface to PlayerRepository
     
     /**
-     * Play a single track from Archive.org
+     * Update queue context for proper MediaController synchronization
+     */
+    fun updateQueueContext(queueUrls: List<String>, currentIndex: Int = 0) {
+        Log.d(TAG, "=== UPDATING QUEUE CONTEXT ===")
+        Log.d(TAG, "Queue size: ${queueUrls.size}")
+        Log.d(TAG, "Current index: $currentIndex")
+        
+        currentQueueUrls = queueUrls
+        currentQueueIndex = currentIndex
+        
+        // If we have a queue and controller is connected, sync the queue to MediaController
+        if (queueUrls.isNotEmpty() && mediaController != null) {
+            syncQueueToMediaController()
+        }
+    }
+    
+    /**
+     * Sync current queue to MediaController using setMediaItems()
+     */
+    private fun syncQueueToMediaController() {
+        val controller = mediaController ?: return
+        
+        if (currentQueueUrls.isEmpty()) {
+            Log.d(TAG, "No queue to sync to MediaController")
+            return
+        }
+        
+        Log.d(TAG, "=== SYNCING QUEUE TO MEDIACONTROLLER ===")
+        Log.d(TAG, "Queue size: ${currentQueueUrls.size}")
+        Log.d(TAG, "Current index: $currentQueueIndex")
+        
+        try {
+            val mediaItems = currentQueueUrls.map { url ->
+                MediaItem.Builder()
+                    .setUri(url)
+                    .setMediaId(url)
+                    .build()
+            }
+            
+            Log.d(TAG, "Setting MediaItems with ${mediaItems.size} items")
+            controller.setMediaItems(mediaItems, currentQueueIndex, 0L)
+            controller.prepare()
+            
+            Log.d(TAG, "Queue synced to MediaController successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error syncing queue to MediaController", e)
+        }
+    }
+    
+    /**
+     * Play a single track from Archive.org with queue context
      */
     fun playTrack(url: String, title: String, artist: String? = null) {
         Log.d(TAG, "=== PLAY TRACK COMMAND ===")
@@ -305,6 +372,46 @@ class MediaControllerRepository @Inject constructor(
         Log.d(TAG, "Controller available commands: ${controller.availableCommands}")
         
         try {
+            // Check if we have queue context and use it for proper media control navigation
+            if (currentQueueUrls.isNotEmpty() && url in currentQueueUrls) {
+                // Use queue-based playback for proper forward/back button support
+                Log.d(TAG, "Playing track with queue context (${currentQueueUrls.size} items)")
+                
+                val trackIndex = currentQueueUrls.indexOf(url)
+                if (trackIndex >= 0) {
+                    currentQueueIndex = trackIndex
+                    Log.d(TAG, "Track found at queue index: $trackIndex")
+                    
+                    // Create MediaItems with metadata for the entire queue
+                    val mediaItems = currentQueueUrls.mapIndexed { index, queueUrl ->
+                        val metadata = if (queueUrl == url) {
+                            MediaMetadata.Builder()
+                                .setTitle(title)
+                                .setArtist(artist)
+                                .build()
+                        } else {
+                            MediaMetadata.Builder().build()
+                        }
+                        
+                        MediaItem.Builder()
+                            .setUri(queueUrl)
+                            .setMediaId(queueUrl)
+                            .setMediaMetadata(metadata)
+                            .build()
+                    }
+                    
+                    Log.d(TAG, "Setting queue with ${mediaItems.size} items, starting at index $trackIndex")
+                    controller.setMediaItems(mediaItems, trackIndex, 0L)
+                    controller.prepare()
+                    controller.play()
+                    
+                    Log.d(TAG, "=== QUEUE-BASED PLAYBACK STARTED ===")
+                    return
+                }
+            }
+            
+            // Fallback to single track playback if no queue context
+            Log.d(TAG, "Playing single track without queue context")
             val mediaMetadata = MediaMetadata.Builder()
                 .setTitle(title)
                 .setArtist(artist)
@@ -334,7 +441,7 @@ class MediaControllerRepository @Inject constructor(
             Log.d(TAG, "Calling controller.play()...")
             controller.play()
             
-            Log.d(TAG, "=== ALL COMMANDS SENT SUCCESSFULLY ===")
+            Log.d(TAG, "=== SINGLE TRACK PLAYBACK STARTED ===")
             Log.d(TAG, "Controller state after commands: isPlaying=${controller.isPlaying}, playbackState=${controller.playbackState}")
             
             // Log the current MediaItem to verify it was set
@@ -351,16 +458,22 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
-     * Play a playlist of tracks
+     * Play a playlist/queue of tracks
      */
-    fun playPlaylist(urls: List<String>) {
-        Log.d(TAG, "playPlaylist: ${urls.size} tracks")
+    fun playPlaylist(urls: List<String>, startIndex: Int = 0) {
+        Log.d(TAG, "=== PLAY PLAYLIST/QUEUE COMMAND ===")
+        Log.d(TAG, "Queue size: ${urls.size} tracks")
+        Log.d(TAG, "Start index: $startIndex")
         
         val controller = mediaController
         if (controller == null) {
             Log.w(TAG, "MediaController not connected, cannot play playlist")
             return
         }
+        
+        // Update our queue context
+        currentQueueUrls = urls
+        currentQueueIndex = startIndex
         
         try {
             val mediaItems = urls.map { url ->
@@ -370,11 +483,12 @@ class MediaControllerRepository @Inject constructor(
                     .build()
             }
             
-            controller.setMediaItems(mediaItems)
+            Log.d(TAG, "Setting MediaItems with ${mediaItems.size} items, starting at index $startIndex")
+            controller.setMediaItems(mediaItems, startIndex, 0L)
             controller.prepare()
             controller.play()
             
-            Log.d(TAG, "Playlist queued for playback")
+            Log.d(TAG, "=== PLAYLIST/QUEUE PLAYBACK STARTED ===")
         } catch (e: Exception) {
             Log.e(TAG, "Error playing playlist", e)
             _lastError.value = PlaybackException(
@@ -434,28 +548,52 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
-     * Skip to next track
+     * Skip to next track (queue-aware)
      */
     fun skipToNext() {
-        Log.d(TAG, "skipToNext() called")
+        Log.d(TAG, "=== SKIP TO NEXT COMMAND ===")
         val controller = mediaController
-        if (controller != null && controller.hasNextMediaItem()) {
-            controller.seekToNext()
+        if (controller != null) {
+            Log.d(TAG, "Current queue index: $currentQueueIndex, queue size: ${currentQueueUrls.size}")
+            Log.d(TAG, "Controller hasNextMediaItem: ${controller.hasNextMediaItem()}")
+            
+            if (controller.hasNextMediaItem()) {
+                controller.seekToNext()
+                // Update our queue index tracking
+                if (currentQueueIndex < currentQueueUrls.size - 1) {
+                    currentQueueIndex++
+                    Log.d(TAG, "Updated queue index to: $currentQueueIndex")
+                }
+            } else {
+                Log.w(TAG, "No next item available in queue")
+            }
         } else {
-            Log.w(TAG, "Cannot skip to next - MediaController not connected or no next item")
+            Log.w(TAG, "Cannot skip to next - MediaController not connected")
         }
     }
     
     /**
-     * Skip to previous track
+     * Skip to previous track (queue-aware)
      */
     fun skipToPrevious() {
-        Log.d(TAG, "skipToPrevious() called")
+        Log.d(TAG, "=== SKIP TO PREVIOUS COMMAND ===")
         val controller = mediaController
-        if (controller != null && controller.hasPreviousMediaItem()) {
-            controller.seekToPrevious()
+        if (controller != null) {
+            Log.d(TAG, "Current queue index: $currentQueueIndex, queue size: ${currentQueueUrls.size}")
+            Log.d(TAG, "Controller hasPreviousMediaItem: ${controller.hasPreviousMediaItem()}")
+            
+            if (controller.hasPreviousMediaItem()) {
+                controller.seekToPrevious()
+                // Update our queue index tracking
+                if (currentQueueIndex > 0) {
+                    currentQueueIndex--
+                    Log.d(TAG, "Updated queue index to: $currentQueueIndex")
+                }
+            } else {
+                Log.w(TAG, "No previous item available in queue")
+            }
         } else {
-            Log.w(TAG, "Cannot skip to previous - MediaController not connected or no previous item")
+            Log.w(TAG, "Cannot skip to previous - MediaController not connected")
         }
     }
     

@@ -47,17 +47,30 @@ class PlayerViewModel @Inject constructor(
                     mediaControllerRepository.currentPosition,
                     mediaControllerRepository.duration,
                     mediaControllerRepository.playbackState,
-                    mediaControllerRepository.currentTrack
-                ) { isPlaying, position, duration, state, currentMediaItem ->
-                    _uiState.value.copy(
+                    mediaControllerRepository.currentTrackUrl
+                ) { isPlaying, position, duration, state, currentTrackUrl ->
+                    var updatedState = _uiState.value.copy(
                         isPlaying = isPlaying,
                         currentPosition = position,
                         duration = duration,
                         playbackState = state
                     )
+                    
+                    // Sync track index based on service's current track URL
+                    currentTrackUrl?.let { url ->
+                        val trackIndex = _uiState.value.tracks.indexOfFirst { track ->
+                            track.audioFile?.downloadUrl == url
+                        }
+                        if (trackIndex >= 0 && trackIndex != updatedState.currentTrackIndex) {
+                            Log.d(TAG, "Service track changed, syncing UI track index from ${updatedState.currentTrackIndex} to $trackIndex")
+                            updatedState = updatedState.copy(currentTrackIndex = trackIndex)
+                        }
+                    }
+                    
+                    updatedState
                 }.collect { updatedState ->
                     _uiState.value = updatedState
-                    Log.d(TAG, "PlayerViewModel: State updated - isPlaying: ${updatedState.isPlaying}, position: ${updatedState.currentPosition}, duration: ${updatedState.duration}, playbackState: ${updatedState.playbackState}")
+                    Log.d(TAG, "PlayerViewModel: State updated - isPlaying: ${updatedState.isPlaying}, position: ${updatedState.currentPosition}, duration: ${updatedState.duration}, playbackState: ${updatedState.playbackState}, trackIndex: ${updatedState.currentTrackIndex}")
                 }
             }
         } catch (e: Exception) {
@@ -93,6 +106,9 @@ class PlayerViewModel @Inject constructor(
                     _currentPlaylist.value = playlist
                     _playlistTitle.value = concert.displayTitle
                     
+                    // Update MediaControllerRepository with queue context
+                    updateQueueContext(playlist)
+                    
                     _uiState.value = _uiState.value.copy(
                         isLoading = false,
                         tracks = concert.tracks,
@@ -123,6 +139,19 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
+    /**
+     * Update MediaControllerRepository with current queue context
+     */
+    private fun updateQueueContext(playlist: List<PlaylistItem>) {
+        val queueUrls = playlist.mapNotNull { it.track.audioFile?.downloadUrl }
+        if (queueUrls.isNotEmpty()) {
+            Log.d(TAG, "updateQueueContext: Updating MediaController with ${queueUrls.size} queue items")
+            mediaControllerRepository.updateQueueContext(queueUrls, _uiState.value.currentTrackIndex)
+        } else {
+            Log.w(TAG, "updateQueueContext: No valid URLs found in playlist")
+        }
+    }
+    
     fun playTrack(trackIndex: Int) {
         Log.d(TAG, "playTrack: Attempting to play track at index $trackIndex")
         val tracks = _uiState.value.tracks
@@ -140,6 +169,12 @@ class PlayerViewModel @Inject constructor(
             if (downloadUrl != null) {
                 Log.d(TAG, "playTrack: Playing track with URL: $downloadUrl")
                 try {
+                    // Update queue context with current track index before playing
+                    val currentPlaylist = _currentPlaylist.value
+                    if (currentPlaylist.isNotEmpty()) {
+                        updateQueueContext(currentPlaylist)
+                    }
+                    
                     mediaControllerRepository.playTrack(
                         url = downloadUrl,
                         title = track.displayTitle,
@@ -241,6 +276,9 @@ class PlayerViewModel @Inject constructor(
         _currentPlaylist.value = playlist
         _playlistTitle.value = title
         
+        // Update MediaControllerRepository with queue context
+        updateQueueContext(playlist)
+        
         // Update UI state with tracks from playlist
         val tracks = playlist.map { it.track }
         _uiState.value = _uiState.value.copy(
@@ -295,6 +333,9 @@ class PlayerViewModel @Inject constructor(
         
         _currentPlaylist.value = currentPlaylist
         
+        // Update MediaControllerRepository with queue context
+        updateQueueContext(currentPlaylist)
+        
         // Update UI state tracks
         val tracks = currentPlaylist.map { it.track }
         _uiState.value = _uiState.value.copy(
@@ -321,6 +362,9 @@ class PlayerViewModel @Inject constructor(
             }
             
             _currentPlaylist.value = currentPlaylist
+            
+            // Update MediaControllerRepository with queue context
+            updateQueueContext(currentPlaylist)
             
             // Update UI state tracks
             val tracks = currentPlaylist.map { it.track }
@@ -349,6 +393,10 @@ class PlayerViewModel @Inject constructor(
         Log.d(TAG, "clearPlaylist: Clearing current playlist")
         _currentPlaylist.value = emptyList()
         _playlistTitle.value = null
+        
+        // Clear MediaControllerRepository queue context
+        mediaControllerRepository.updateQueueContext(emptyList(), 0)
+        
         _uiState.value = _uiState.value.copy(
             tracks = emptyList(),
             currentTrackIndex = 0
@@ -390,10 +438,12 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
+    
     override fun onCleared() {
         super.onCleared()
-        Log.d(TAG, "onCleared: Releasing player resources")
-        mediaControllerRepository.release()
+        Log.d(TAG, "onCleared: PlayerViewModel cleared")
+        // Don't release MediaControllerRepository - it should persist for background playback
+        // The service should continue running independently of UI lifecycle
     }
     
     companion object {
