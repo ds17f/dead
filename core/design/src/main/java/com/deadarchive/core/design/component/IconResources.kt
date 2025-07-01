@@ -99,7 +99,7 @@ object IconResources {
         
         @Composable
         fun Menu() = customIcon(R.drawable.ic_menu)
-    }
+                                                                                                                            }
     
     // Player control icons are accessed via the PlayerControls object
     /**
@@ -150,7 +150,7 @@ object IconResources {
         
         @Composable
         fun VolumeMute2() = customIcon(R.drawable.ic_volume_mute)
-    }
+                                                                            }
     
     // Status icons are in the Status object category
     /**
@@ -187,7 +187,7 @@ object IconResources {
         // For compatibility
         @Composable
         fun Success() = CheckCircle()
-    }
+                                                                                                                                                                                                    }
     
     // Content type icons are accessed via the Content object
     /**
@@ -300,4 +300,4 @@ object IconResources {
         val LARGE = 32.dp
         val XLARGE = 48.dp
     }
-}
+                                                                                                                                }

@@ -59,7 +59,7 @@ def parse_arguments():
     parser.add_argument('--output', default=DEFAULT_OUTPUT_DIR, 
                       help='Output directory for vector drawables')
     parser.add_argument('--update-registry', action='store_true',
-                      help='Update IconResources.kt with new icons')
+                      help='Analyze IconResources.kt and report available icons (does not modify the file)')
     parser.add_argument('--icon-registry-path', default=ICON_RESOURCES_PATH,
                       help='Path to the IconResources.kt file')
     parser.add_argument('--registry-category', default="PlayerControls",
@@ -161,37 +161,31 @@ def save_vector_drawable(vector_content: bytes, icon_name: str, output_dir: str)
     
     return output_path
 
-def update_icon_registry(icon_names: List[str], registry_path: str, category: str) -> bool:
-    """Update the IconResources.kt file with new icon entries."""
+def analyze_icon_registry(icon_names: List[str], registry_path: str, category: str) -> Dict[str, List[str]]:
+    """Analyze IconResources.kt and report which icons already exist and which are new."""
     if not os.path.exists(registry_path):
         print(f"Error: Icon registry file not found at {registry_path}")
-        return False
+        return {'existing': [], 'new': icon_names}
     
     # Read the registry file
     with open(registry_path, 'r') as f:
         content = f.read()
     
-    # Check the entire file for existing functions to avoid duplicates across categories
+    # Check the entire file for existing functions
     existing_functions = set()
     for match in re.finditer(r'fun\s+(\w+)\(\)', content):
         existing_functions.add(match.group(1))
-    
-    # Also check for duplicate function definitions at the top level (outside object blocks)
-    # These are often found at the end of the file and can cause build errors
-    top_level_functions = set()
-    for match in re.finditer(r'@Composable\s+fun\s+(\w+)\(\)', content):
-        top_level_functions.add(match.group(1))
     
     # Find the specified category object
     pattern = f"object {category} {{"
     category_pos = content.find(pattern)
     
     if category_pos == -1:
-        print(f"Error: Category '{category}' not found in IconResources.kt")
+        print(f"Category '{category}' not found in IconResources.kt")
         print("Available categories:")
         for match in re.finditer(ICON_REGISTRY_PATTERN, content):
             print(f"  - {match.group(1)}")
-        return False
+        return {'existing': [], 'new': icon_names}
     
     # Find the end of the category block
     open_braces = 1
@@ -205,60 +199,26 @@ def update_icon_registry(icon_names: List[str], registry_path: str, category: st
                 category_end_pos = i
                 break
     
-    # Prepare new entries
-    new_entries = []
+    # Categorize the icons
+    existing_icons = []
+    new_icons = []
+    suggestions = []
+    
     for icon_name in icon_names:
         camel_case_name = snake_to_camel_case(icon_name)
         
-        # Skip if function already exists anywhere in the file
+        # Check if icon exists in this category or elsewhere in the file
         if camel_case_name in existing_functions:
-            print(f"Icon {camel_case_name} already exists somewhere in the file")
-            continue
-            
-        # Skip if function exists at the top level (typically duplicate functions at file end)
-        if camel_case_name in top_level_functions:
-            print(f"Icon {camel_case_name} exists as a top-level function and may cause conflicts")
-            continue
-        
-        # Check if the icon already exists in this category (both function and property)
-        if re.search(rf"fun {camel_case_name}\(\)", content[category_pos:category_end_pos]) or \
-           re.search(rf"val {camel_case_name} =", content[category_pos:category_end_pos]):
-            print(f"Icon {camel_case_name} already exists in {category}")
-            continue
-        
-        # For custom icons - use Composable function pattern
-        entry = f'        @Composable\n        fun {camel_case_name}() = customIcon(R.drawable.ic_{icon_name})'
-        
-        new_entries.append(entry)
-        # Add to set to prevent duplicates within the same run
-        existing_functions.add(camel_case_name)
+            existing_icons.append(icon_name)
+        else:
+            new_icons.append(icon_name)
+            # We don't generate code suggestions anymore, just track which icons are new
     
-    if not new_entries:
-        print("No new entries to add")
-        return True
-    
-    # Insert new entries before the closing brace
-    insert_pos = content.rfind("    }", 0, category_end_pos) - 1
-    new_content = content[:insert_pos] + "\n" + "\n".join(new_entries) + content[insert_pos:]
-    
-    # Check for and remove any top-level duplicate functions to ensure clean builds
-    # These are often found at the end of the file after the closing brace of the main object
-    for entry in new_entries:
-        # Extract function name from entry
-        match = re.search(r'fun\s+(\w+)\(\)', entry)
-        if match:
-            function_name = match.group(1)
-            # Create pattern to find top-level duplicate functions
-            duplicate_pattern = rf'@Composable\s+fun\s+{function_name}\(\)[^\n]+\n'
-            # Remove these from the file content
-            new_content = re.sub(duplicate_pattern, '', new_content)
-    
-    # Write the updated content
-    with open(registry_path, 'w') as f:
-        f.write(new_content)
-    
-    print(f"Added {len(new_entries)} new icons to {category} in {registry_path}")
-    return True
+    return {
+        'existing': existing_icons,
+        'new': new_icons,
+        'category': category
+    }
 
 def load_icons_from_json(json_path: str) -> Dict[str, List[str]]:
     """Load icon configuration from JSON file."""
@@ -278,21 +238,32 @@ def load_icons_from_json(json_path: str) -> Dict[str, List[str]]:
         print(f"Error loading JSON: {e}")
         sys.exit(1)
 
-def process_icons(icon_names: List[str], args) -> List[str]:
-    """Download, convert and save icons."""
-    successful_icons = []
+def process_icons(icon_names: List[str], args) -> Dict[str, List[str]]:
+    """Download, convert and save icons that don't already exist."""
+    newly_downloaded = []
+    already_exist = []
+    failed = []
     
     for icon_name in icon_names:
-        print(f"Processing icon: {icon_name}")
+        # Check if icon already exists in the output directory
+        icon_path = os.path.join(args.output, f"ic_{icon_name}.xml")
+        
+        if os.path.exists(icon_path):
+            print(f"✅ Icon {icon_name} already exists at {icon_path}")
+            already_exist.append(icon_name)
+            continue
+            
+        print(f"Processing new icon: {icon_name}")
         
         if args.dry_run:
             print(f"Would download {icon_name}")
-            successful_icons.append(icon_name)
+            newly_downloaded.append(icon_name)
             continue
         
         # Download SVG directly
         svg_content = download_icon_svg(icon_name, args.style, args.version)
         if not svg_content:
+            failed.append(icon_name)
             continue
         
         # Convert to Vector Drawable
@@ -301,13 +272,18 @@ def process_icons(icon_names: List[str], args) -> List[str]:
         
             # Save Vector Drawable
             output_path = save_vector_drawable(vector_content, icon_name, args.output)
-            print(f"Saved {icon_name} to {output_path}")
+            print(f"✨ Downloaded new icon {icon_name} to {output_path}")
             
-            successful_icons.append(icon_name)
+            newly_downloaded.append(icon_name)
         except Exception as e:
-            print(f"Error processing {icon_name}: {str(e)}")
+            print(f"❌ Error processing {icon_name}: {str(e)}")
+            failed.append(icon_name)
     
-    return successful_icons
+    return {
+        'newly_downloaded': newly_downloaded,
+        'already_exist': already_exist,
+        'failed': failed
+    }
 
 def main():
     args = parse_arguments()
@@ -327,40 +303,57 @@ def main():
             icons_to_process.extend(category_icons)
     
     # Process the icons
-    successful_icons = process_icons(icons_to_process, args)
+    results = process_icons(icons_to_process, args)
+    newly_downloaded_icons = results['newly_downloaded']
+    already_existing_icons = results['already_exist']
+    failed_icons = results['failed']
     
-    # Update the icon registry if requested
-    if args.update_registry and successful_icons and not args.dry_run:
-        # First, remove any duplicated icon functions at the top level of the file
-        # This helps prevent build errors from duplicate definitions
-        if os.path.exists(args.icon_registry_path):
-            with open(args.icon_registry_path, 'r') as f:
-                content = f.read()
-                
-            # Look for top-level function definitions outside of object blocks
-            # These are typically found at the end of the file and can cause build errors
-            object_end_pos = content.rfind("}\n\n}")
-            if object_end_pos != -1:
-                # Everything after the main object closing brace should be cleaned up
-                # Only preserve comments and package declarations
-                clean_content = content[:object_end_pos+3]
-                
-                # Write the cleaned content back
-                with open(args.icon_registry_path, 'w') as f:
-                    f.write(clean_content)
-                print(f"Cleaned up duplicated top-level functions in {args.icon_registry_path}")
-            
-        # Group successful icons by category
+    # Print download summary
+    print("\n📊 Icon Download Summary:")
+    print("=======================\n")
+    print(f"✅ {len(already_existing_icons)} icons already existed")
+    print(f"✨ {len(newly_downloaded_icons)} icons newly downloaded")
+    print(f"❌ {len(failed_icons)} icons failed to download")
+    
+    # Analyze the icon registry but don't update it
+    if newly_downloaded_icons and not args.dry_run:
+        # Show newly downloaded icons
+        print("\n🎉 Newly Downloaded Icons:")
+        for icon_name in newly_downloaded_icons:
+            print(f"  - {icon_name} → {snake_to_camel_case(icon_name)}()")
+        
+        # Group newly downloaded icons by category and analyze
+        print("\n📋 Icon Analysis Results:")
+        print("=======================")
+        
         for category, category_icons in categories.items():
-            # Only include icons that were successfully processed
-            icons_to_register = [icon for icon in category_icons if icon in successful_icons]
-            if icons_to_register:
-                update_icon_registry(icons_to_register, args.icon_registry_path, category)
+            # Only include icons that were newly downloaded
+            icons_to_analyze = [icon for icon in category_icons if icon in newly_downloaded_icons]
+            if icons_to_analyze:
+                results = analyze_icon_registry(icons_to_analyze, args.icon_registry_path, category)
+                
+                print(f"\n📁 Category: {results['category']}")
+                
+                if results['existing']:
+                    print(f"\n✅ {len(results['existing'])} icons already exist:")
+                    for icon in results['existing']:
+                        print(f"   - {icon} → {snake_to_camel_case(icon)}()")
+                
+                if results['new']:
+                    print(f"\n🆕 {len(results['new'])} new icons available:")
+                    for icon in results['new']:
+                        print(f"   - {icon} → ic_{icon}.xml")
+                        print(f"     Access via: IconResources.{results['category']}.{snake_to_camel_case(icon)}()")
+                    
+                    print("\n📋 Newly downloaded icons are in the drawable directory and ready to use")
+                else:
+                    print("\n✨ All icons are already in the codebase")
     
-    if successful_icons:
-        print(f"Successfully processed {len(successful_icons)} icons")
+    total_processed = len(newly_downloaded_icons) + len(already_existing_icons)
+    if total_processed > 0:
+        print(f"\nSuccessfully processed {total_processed} icons")
     else:
-        print("No icons were processed successfully")
+        print("\nNo icons were processed successfully")
 
 if __name__ == "__main__":
     main()
