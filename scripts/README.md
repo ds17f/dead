@@ -2,13 +2,41 @@
 
 This directory contains scripts for downloading Material Design icons, converting them to Android vector drawable format, and adding them to your project.
 
-## Prerequisites
+## Usage
 
-Install required dependencies:
+### Using the Makefile (Recommended)
+
+The simplest way to download icons is to use the Makefile target from the project root:
 
 ```bash
-pip install -r requirements.txt
+make download-icons
 ```
+
+This will:
+1. Create a Python virtual environment (.venv) in the scripts directory
+2. Install all required dependencies
+3. Run the script with the correct arguments
+4. Save icons to the correct location in the project
+
+### Manual Setup (Alternative)
+
+If you need to run the script directly:
+
+```bash
+cd scripts
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python download_material_icons.py --from-json material_icons_config.json
+```
+
+## Script Details
+
+### Key Parameters:
+- `--from-json PATH` - Path to the JSON config file with icon names
+- `--output PATH` - Path to save the vector drawables (defaults to core/design/src/main/res/drawable)
+- `--update-registry` - Update the IconResources.kt file with new icons
+- `--icon-registry-path PATH` - Path to the IconResources.kt file
 
 ## Available Scripts
 

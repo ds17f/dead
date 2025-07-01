@@ -60,6 +60,8 @@ def parse_arguments():
                       help='Output directory for vector drawables')
     parser.add_argument('--update-registry', action='store_true',
                       help='Update IconResources.kt with new icons')
+    parser.add_argument('--icon-registry-path', default=ICON_RESOURCES_PATH,
+                      help='Path to the IconResources.kt file')
     parser.add_argument('--registry-category', default="PlayerControls",
                       help='Category in IconResources to add icons to')
     parser.add_argument('--dry-run', action='store_true', 
@@ -301,7 +303,7 @@ def main():
             # Only include icons that were successfully processed
             icons_to_register = [icon for icon in category_icons if icon in successful_icons]
             if icons_to_register:
-                update_icon_registry(icons_to_register, ICON_RESOURCES_PATH, category)
+                update_icon_registry(icons_to_register, args.icon_registry_path, category)
     
     if successful_icons:
         print(f"Successfully processed {len(successful_icons)} icons")

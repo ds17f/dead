@@ -10,6 +10,7 @@ help:
 	@echo "Setup & Dependencies:"
 	@echo "  make setup       - Initial project setup and dependency installation"
 	@echo "  make deps        - Download and install dependencies"
+	@echo "  make download-icons - Download Material icons and update resources"
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
@@ -338,6 +339,22 @@ docs:
 	gradle dokkaHtml || echo "Dokka not configured"
 	@echo "📖 Opening README..."
 	@cat README.md | head -20
+
+# Material Icons Management
+.PHONY: download-icons
+download-icons:
+	@echo "🔍 Downloading Material Icons..."
+	@cd scripts && \
+		python3 -m venv .venv || virtualenv .venv && \
+		. .venv/bin/activate && \
+		pip install --upgrade pip && \
+		pip install -r requirements.txt && \
+		python download_material_icons.py \
+		--from-json "$(PWD)/scripts/material_icons_config.json" \
+		--output "$(PWD)/core/design/src/main/res/drawable" \
+		--icon-registry-path "$(PWD)/core/design/src/main/java/com/deadarchive/core/design/component/IconResources.kt" \
+		--update-registry
+	@echo "✅ Icons downloaded and processed!"
 
 # Test Data Management
 capture-test-data:
