@@ -47,7 +47,7 @@ object IconResources {
         fun LibraryOutlined() = vectorIcon(Icons.Outlined.FavoriteBorder)
         
         @Composable
-        fun Settings() = vectorIcon(Icons.Filled.Settings)
+        fun Settings() = customIcon(R.drawable.ic_settings)
         
         @Composable
         fun SettingsOutlined() = vectorIcon(Icons.Outlined.Settings)
@@ -99,7 +99,7 @@ object IconResources {
         
         @Composable
         fun Menu() = customIcon(R.drawable.ic_menu)
-                                                                                                                            }
+    }
     
     // Player control icons are accessed via the PlayerControls object
     /**
