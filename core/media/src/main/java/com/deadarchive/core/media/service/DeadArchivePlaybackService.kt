@@ -86,6 +86,7 @@ class DeadArchivePlaybackService : MediaSessionService() {
     
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(TAG, "Service onStartCommand: $intent")
+        super.onStartCommand(intent, flags, startId)
         return START_STICKY // Keep service running for background playback
     }
     
@@ -266,11 +267,20 @@ class DeadArchivePlaybackService : MediaSessionService() {
                 Log.d(TAG, "Starting foreground service for media playback")
                 try {
                     // Create a basic notification for foreground service
-                    val notification = android.app.Notification.Builder(this@DeadArchivePlaybackService, "dead_archive_playback")
-                        .setContentTitle("Dead Archive")
-                        .setContentText("Loading media...")
-                        .setSmallIcon(android.R.drawable.ic_media_play)
-                        .build()
+                    val notification = if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                        android.app.Notification.Builder(this@DeadArchivePlaybackService, "dead_archive_playback")
+                            .setContentTitle("Dead Archive")
+                            .setContentText("Loading media...")
+                            .setSmallIcon(android.R.drawable.ic_media_play)
+                            .build()
+                    } else {
+                        @Suppress("DEPRECATION")
+                        android.app.Notification.Builder(this@DeadArchivePlaybackService)
+                            .setContentTitle("Dead Archive")
+                            .setContentText("Loading media...")
+                            .setSmallIcon(android.R.drawable.ic_media_play)
+                            .build()
+                    }
                     
                     startForeground(NOTIFICATION_ID, notification)
                 } catch (e: Exception) {
