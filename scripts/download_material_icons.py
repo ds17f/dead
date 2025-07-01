@@ -198,17 +198,14 @@ def update_icon_registry(icon_names: List[str], registry_path: str, category: st
     new_entries = []
     for icon_name in icon_names:
         camel_case_name = snake_to_camel_case(icon_name)
-        # Check if the icon already exists in this category
-        if re.search(rf"val {camel_case_name} =", content[category_pos:category_end_pos]):
+        # Check if the icon already exists in this category (both function and property)
+        if re.search(rf"fun {camel_case_name}\(\)", content[category_pos:category_end_pos]) or \
+           re.search(rf"val {camel_case_name} =", content[category_pos:category_end_pos]):
             print(f"Icon {camel_case_name} already exists in {category}")
             continue
         
-        # For standard Material Icons
-        capitalized_name = "".join(x.capitalize() for x in icon_name.split('_'))
-        entry = f"        val {camel_case_name} = Icons.Default.{capitalized_name}"
-        
-        # For custom icons that aren't in the standard Material Icons set
-        # entry = f'        @Composable\n        fun {camelName}() = customIcon(R.drawable.ic_{icon_name})'
+        # For custom icons - use Composable function pattern
+        entry = f'        @Composable\n        fun {camel_case_name}() = customIcon(R.drawable.ic_{icon_name})'
         
         new_entries.append(entry)
     
