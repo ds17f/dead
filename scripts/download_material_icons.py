@@ -171,6 +171,17 @@ def update_icon_registry(icon_names: List[str], registry_path: str, category: st
     with open(registry_path, 'r') as f:
         content = f.read()
     
+    # Check the entire file for existing functions to avoid duplicates across categories
+    existing_functions = set()
+    for match in re.finditer(r'fun\s+(\w+)\(\)', content):
+        existing_functions.add(match.group(1))
+    
+    # Also check for duplicate function definitions at the top level (outside object blocks)
+    # These are often found at the end of the file and can cause build errors
+    top_level_functions = set()
+    for match in re.finditer(r'@Composable\s+fun\s+(\w+)\(\)', content):
+        top_level_functions.add(match.group(1))
+    
     # Find the specified category object
     pattern = f"object {category} {{"
     category_pos = content.find(pattern)
@@ -198,6 +209,17 @@ def update_icon_registry(icon_names: List[str], registry_path: str, category: st
     new_entries = []
     for icon_name in icon_names:
         camel_case_name = snake_to_camel_case(icon_name)
+        
+        # Skip if function already exists anywhere in the file
+        if camel_case_name in existing_functions:
+            print(f"Icon {camel_case_name} already exists somewhere in the file")
+            continue
+            
+        # Skip if function exists at the top level (typically duplicate functions at file end)
+        if camel_case_name in top_level_functions:
+            print(f"Icon {camel_case_name} exists as a top-level function and may cause conflicts")
+            continue
+        
         # Check if the icon already exists in this category (both function and property)
         if re.search(rf"fun {camel_case_name}\(\)", content[category_pos:category_end_pos]) or \
            re.search(rf"val {camel_case_name} =", content[category_pos:category_end_pos]):
@@ -208,6 +230,8 @@ def update_icon_registry(icon_names: List[str], registry_path: str, category: st
         entry = f'        @Composable\n        fun {camel_case_name}() = customIcon(R.drawable.ic_{icon_name})'
         
         new_entries.append(entry)
+        # Add to set to prevent duplicates within the same run
+        existing_functions.add(camel_case_name)
     
     if not new_entries:
         print("No new entries to add")
@@ -216,6 +240,18 @@ def update_icon_registry(icon_names: List[str], registry_path: str, category: st
     # Insert new entries before the closing brace
     insert_pos = content.rfind("    }", 0, category_end_pos) - 1
     new_content = content[:insert_pos] + "\n" + "\n".join(new_entries) + content[insert_pos:]
+    
+    # Check for and remove any top-level duplicate functions to ensure clean builds
+    # These are often found at the end of the file after the closing brace of the main object
+    for entry in new_entries:
+        # Extract function name from entry
+        match = re.search(r'fun\s+(\w+)\(\)', entry)
+        if match:
+            function_name = match.group(1)
+            # Create pattern to find top-level duplicate functions
+            duplicate_pattern = rf'@Composable\s+fun\s+{function_name}\(\)[^\n]+\n'
+            # Remove these from the file content
+            new_content = re.sub(duplicate_pattern, '', new_content)
     
     # Write the updated content
     with open(registry_path, 'w') as f:
@@ -295,6 +331,25 @@ def main():
     
     # Update the icon registry if requested
     if args.update_registry and successful_icons and not args.dry_run:
+        # First, remove any duplicated icon functions at the top level of the file
+        # This helps prevent build errors from duplicate definitions
+        if os.path.exists(args.icon_registry_path):
+            with open(args.icon_registry_path, 'r') as f:
+                content = f.read()
+                
+            # Look for top-level function definitions outside of object blocks
+            # These are typically found at the end of the file and can cause build errors
+            object_end_pos = content.rfind("}\n\n}")
+            if object_end_pos != -1:
+                # Everything after the main object closing brace should be cleaned up
+                # Only preserve comments and package declarations
+                clean_content = content[:object_end_pos+3]
+                
+                # Write the cleaned content back
+                with open(args.icon_registry_path, 'w') as f:
+                    f.write(clean_content)
+                print(f"Cleaned up duplicated top-level functions in {args.icon_registry_path}")
+            
         # Group successful icons by category
         for category, category_icons in categories.items():
             # Only include icons that were successfully processed

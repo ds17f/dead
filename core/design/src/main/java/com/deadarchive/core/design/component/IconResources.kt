@@ -99,39 +99,9 @@ object IconResources {
         
         @Composable
         fun Menu() = customIcon(R.drawable.ic_menu)
-        // PlayArrow is accessed via the Play() function
-        @Composable
-        fun playArrow() = customIcon(R.drawable.ic_play_arrow)
-        @Composable
-        fun pause() = customIcon(R.drawable.ic_pause)
-        @Composable
-        fun skipNext() = customIcon(R.drawable.ic_skip_next)
-        @Composable
-        fun skipPrevious() = customIcon(R.drawable.ic_skip_previous)
-        @Composable
-        fun fastForward() = customIcon(R.drawable.ic_fast_forward)
-        @Composable
-        fun fastRewind() = customIcon(R.drawable.ic_fast_rewind)
-        @Composable
-        fun album() = customIcon(R.drawable.ic_album)
-        @Composable
-        fun queueMusic() = customIcon(R.drawable.ic_queue_music)
-        @Composable
-        fun repeat() = customIcon(R.drawable.ic_repeat)
-        @Composable
-        fun repeatOne() = customIcon(R.drawable.ic_repeat_one)
-        @Composable
-        fun shuffle() = customIcon(R.drawable.ic_shuffle)
-        @Composable
-        fun volumeUp() = customIcon(R.drawable.ic_volume_up)
-        @Composable
-        fun volumeDown() = customIcon(R.drawable.ic_volume_down)
-        @Composable
-        fun volumeOff() = customIcon(R.drawable.ic_volume_off)
-        @Composable
-        fun volumeMute() = customIcon(R.drawable.ic_volume_mute)
-    }
-
+        // Player control icons are accessed via the PlayerControls object
+                                                                                                                       
+                                                                                                                        
     /**
      * Player control icons used for media playback.
      */
@@ -180,27 +150,9 @@ object IconResources {
         
         @Composable
         fun VolumeMute2() = customIcon(R.drawable.ic_volume_mute)
-        // Icons are accessed via corresponding composable functions
-        @Composable
-        fun checkCircle() = customIcon(R.drawable.ic_check_circle)
-        @Composable
-        fun warning() = customIcon(R.drawable.ic_warning)
-        @Composable
-        fun info() = customIcon(R.drawable.ic_info)
-        @Composable
-        fun error() = customIcon(R.drawable.ic_error)
-        @Composable
-        fun done() = customIcon(R.drawable.ic_done)
-        @Composable
-        fun doneAll() = customIcon(R.drawable.ic_done_all)
-        @Composable
-        fun sync() = customIcon(R.drawable.ic_sync)
-        @Composable
-        fun syncProblem() = customIcon(R.drawable.ic_sync_problem)
-        @Composable
-        fun refresh() = customIcon(R.drawable.ic_refresh)
-    }
-
+        // Status icons are in the Status object category
+                                                                       
+                                                                        
     /**
      * Status and notification icons.
      */
@@ -235,57 +187,9 @@ object IconResources {
         // For compatibility
         @Composable
         fun Success() = CheckCircle()
-        // Icons are accessed via corresponding composable functions
-        @Composable
-        fun getApp() = customIcon(R.drawable.ic_get_app)
-        @Composable
-        fun cloudDownload() = customIcon(R.drawable.ic_cloud_download)
-        @Composable
-        fun fileDownload() = customIcon(R.drawable.ic_file_download)
-        @Composable
-        fun downloadDone() = customIcon(R.drawable.ic_download_done)
-        @Composable
-        fun downloadForOffline() = customIcon(R.drawable.ic_download_for_offline)
-        @Composable
-        fun filePresent() = customIcon(R.drawable.ic_file_present)
-        @Composable
-        fun fileCopy() = customIcon(R.drawable.ic_file_copy)
-        @Composable
-        fun folder() = customIcon(R.drawable.ic_folder)
-        @Composable
-        fun folderOpen() = customIcon(R.drawable.ic_folder_open)
-        @Composable
-        fun libraryMusic() = customIcon(R.drawable.ic_library_music)
-        @Composable
-        fun queue() = customIcon(R.drawable.ic_queue)
-        @Composable
-        fun star() = customIcon(R.drawable.ic_star)
-        @Composable
-        fun starBorder() = customIcon(R.drawable.ic_star_border)
-        @Composable
-        fun starHalf() = customIcon(R.drawable.ic_star_half)
-        @Composable
-        fun favorite() = customIcon(R.drawable.ic_favorite)
-        @Composable
-        fun favoriteBorder() = customIcon(R.drawable.ic_favorite_border)
-        @Composable
-        fun search() = customIcon(R.drawable.ic_search)
-        @Composable
-        fun playlistAdd() = customIcon(R.drawable.ic_playlist_add)
-        @Composable
-        fun playlistAddCheck() = customIcon(R.drawable.ic_playlist_add_check)
-        @Composable
-        fun playlistPlay() = customIcon(R.drawable.ic_playlist_play)
-        @Composable
-        fun addCircle() = customIcon(R.drawable.ic_add_circle)
-        @Composable
-        fun addCircleOutline() = customIcon(R.drawable.ic_add_circle_outline)
-        @Composable
-        fun share() = customIcon(R.drawable.ic_share)
-        @Composable
-        fun trendingUp() = customIcon(R.drawable.ic_trending_up)
-    }
-    
+        // Content type icons are accessed via the Content object
+                                                                                                                                                                                               
+                                                                                                                                                                                                    
     /**
      * Content type icons.
      */
@@ -395,38 +299,6 @@ object IconResources {
         val MEDIUM = 24.dp
         val LARGE = 32.dp
         val XLARGE = 48.dp
-    }
-        // Icons are accessed via corresponding composable functions
-        @Composable
-        fun arrowBack() = customIcon(R.drawable.ic_arrow_back)
-        @Composable
-        fun arrowForward() = customIcon(R.drawable.ic_arrow_forward)
-        @Composable
-        fun close() = customIcon(R.drawable.ic_close)
-        @Composable
-        fun home() = customIcon(R.drawable.ic_home)
-        @Composable
-        fun keyboardArrowDown() = customIcon(R.drawable.ic_keyboard_arrow_down)
-        @Composable
-        fun keyboardArrowUp() = customIcon(R.drawable.ic_keyboard_arrow_up)
-        @Composable
-        fun keyboardArrowLeft() = customIcon(R.drawable.ic_keyboard_arrow_left)
-        @Composable
-        fun keyboardArrowRight() = customIcon(R.drawable.ic_keyboard_arrow_right)
-        @Composable
-        fun moreVert() = customIcon(R.drawable.ic_more_vert)
-        @Composable
-        fun menu() = customIcon(R.drawable.ic_menu)
-        @Composable
-        fun chevronLeft() = customIcon(R.drawable.ic_chevron_left)
-        @Composable
-        fun chevronRight() = customIcon(R.drawable.ic_chevron_right)
-        @Composable
-        fun expandMore() = customIcon(R.drawable.ic_expand_more)
-        @Composable
-        fun expandLess() = customIcon(R.drawable.ic_expand_less)
-        @Composable
-        fun fullscreen() = customIcon(R.drawable.ic_fullscreen)
-        @Composable
-        fun fullscreenExit() = customIcon(R.drawable.ic_fullscreen_exit)
-}
+                                                                                                                                    }
+        // Navigation icons are in the Navigation object category
+                                                                                                                                }
