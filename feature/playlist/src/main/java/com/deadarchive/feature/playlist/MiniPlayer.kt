@@ -7,6 +7,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -68,7 +69,7 @@ fun MiniPlayer(
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        Icons.Default.PlayArrow,
+                        painter = IconResources.PlayerControls.AlbumArt(),
                         contentDescription = "Album Art",
                         modifier = Modifier.size(20.dp),
                         tint = MaterialTheme.colorScheme.onSurfaceVariant
@@ -118,7 +119,7 @@ fun MiniPlayer(
                         )
                     } else {
                         Icon(
-                            imageVector = if (uiState.isPlaying) Icons.Default.Star else Icons.Default.PlayArrow,
+                            painter = if (uiState.isPlaying) IconResources.PlayerControls.Pause() else IconResources.PlayerControls.Play(),
                             contentDescription = if (uiState.isPlaying) "Pause" else "Play",
                             modifier = Modifier.size(20.dp),
                             tint = MaterialTheme.colorScheme.onPrimary

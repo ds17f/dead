@@ -8,6 +8,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -89,14 +90,14 @@ fun PlayerScreen(
             },
             navigationIcon = {
                 IconButton(onClick = onNavigateBack) {
-                    Icon(Icons.Default.KeyboardArrowDown, contentDescription = "Back")
+                    Icon(painter = IconResources.Navigation.KeyboardArrowDown(), contentDescription = "Back")
                 }
             },
             actions = {
                 IconButton(onClick = { 
                     // TODO: Show menu bottom sheet
                 }) {
-                    Icon(Icons.Default.MoreVert, contentDescription = "More options")
+                    Icon(painter = IconResources.Navigation.MoreVertical(), contentDescription = "More options")
                 }
             }
         )
@@ -121,7 +122,7 @@ fun PlayerScreen(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         Icon(
-                            Icons.Default.Warning,
+                            painter = IconResources.Status.Error(),
                             contentDescription = "Error",
                             tint = MaterialTheme.colorScheme.error,
                             modifier = Modifier.size(48.dp)
@@ -201,7 +202,7 @@ private fun NowPlayingSection(
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
-                    Icons.Default.PlayArrow,
+                    painter = IconResources.PlayerControls.AlbumArt(),
                     contentDescription = "Album Art",
                     modifier = Modifier.size(80.dp),
                     tint = MaterialTheme.colorScheme.onSurfaceVariant
@@ -247,7 +248,7 @@ private fun NowPlayingSection(
                     }
                 ) {
                     Icon(
-                        Icons.Default.Add,
+                        painter = IconResources.Navigation.Add(),
                         contentDescription = "Add to playlist",
                         tint = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -308,11 +309,9 @@ private fun NowPlayingSection(
                 modifier = Modifier.size(56.dp)
             ) {
                 Icon(
-                    Icons.Default.PlayArrow,
+                    painter = IconResources.PlayerControls.SkipPrevious(),
                     contentDescription = "Previous",
-                    modifier = Modifier
-                        .size(32.dp)
-                        .graphicsLayer(rotationZ = 180f),
+                    modifier = Modifier.size(32.dp),
                     tint = if (uiState.hasPreviousTrack) {
                         MaterialTheme.colorScheme.onSurface
                     } else {
@@ -337,7 +336,7 @@ private fun NowPlayingSection(
                     )
                 } else {
                     Icon(
-                        if (uiState.isPlaying) Icons.Default.Star else Icons.Default.PlayArrow,
+                        painter = if (uiState.isPlaying) IconResources.PlayerControls.Pause() else IconResources.PlayerControls.Play(),
                         contentDescription = if (uiState.isPlaying) "Pause" else "Play",
                         modifier = Modifier.size(36.dp),
                         tint = MaterialTheme.colorScheme.surface
@@ -352,7 +351,7 @@ private fun NowPlayingSection(
                 modifier = Modifier.size(56.dp)
             ) {
                 Icon(
-                    Icons.Default.PlayArrow,
+                    painter = IconResources.PlayerControls.SkipNext(),
                     contentDescription = "Next",
                     modifier = Modifier.size(32.dp),
                     tint = if (uiState.hasNextTrack) {

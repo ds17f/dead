@@ -21,6 +21,7 @@ import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Search
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -75,7 +76,7 @@ fun BrowseScreen(
             onValueChange = { viewModel.updateSearchQuery(it) },
             label = { Text("Search concerts...") },
             leadingIcon = {
-                Icon(Icons.Default.Search, contentDescription = "Search")
+                Icon(painter = IconResources.Navigation.Search(), contentDescription = "Search")
             },
             trailingIcon = {
                 if (isSearching) {
@@ -244,7 +245,7 @@ fun ConcertItem(
                     modifier = Modifier.size(24.dp)
                 ) {
                     Icon(
-                        imageVector = if (concert.isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                        painter = if (concert.isFavorite) IconResources.Navigation.Library() else IconResources.Navigation.LibraryOutlined(),
                         contentDescription = if (concert.isFavorite) "Remove from favorites" else "Add to favorites",
                         tint = if (concert.isFavorite) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -286,7 +287,7 @@ fun ConcertItem(
                     modifier = Modifier.size(48.dp)
                 ) {
                     Icon(
-                        imageVector = Icons.Default.PlayArrow,
+                        painter = IconResources.PlayerControls.Play(),
                         contentDescription = "Play concert",
                         tint = MaterialTheme.colorScheme.primary,
                         modifier = Modifier.size(32.dp)

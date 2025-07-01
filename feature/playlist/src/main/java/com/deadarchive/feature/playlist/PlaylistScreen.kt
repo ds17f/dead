@@ -10,6 +10,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -75,7 +76,7 @@ fun PlaylistScreen(
                 },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                        Icon(painter = IconResources.Navigation.Back(), contentDescription = "Back")
                     }
                 }
             )
@@ -111,7 +112,7 @@ fun PlaylistScreen(
                             verticalArrangement = Arrangement.spacedBy(16.dp)
                         ) {
                             Icon(
-                                Icons.Default.Warning,
+                                painter = IconResources.Status.Error(),
                                 contentDescription = "Error",
                                 tint = MaterialTheme.colorScheme.error,
                                 modifier = Modifier.size(48.dp)
@@ -277,7 +278,7 @@ private fun ConcertHeader(
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        Icons.Default.PlayArrow,
+                        painter = IconResources.PlayerControls.AlbumArt(),
                         contentDescription = "Album Art",
                         modifier = Modifier.size(24.dp),
                         tint = MaterialTheme.colorScheme.onSurfaceVariant
@@ -328,7 +329,7 @@ private fun TrackItem(
             ) {
                 if (isCurrentTrack) {
                     Icon(
-                        Icons.Default.PlayArrow,
+                        painter = IconResources.PlayerControls.Play(),
                         contentDescription = "Currently playing",
                         tint = MaterialTheme.colorScheme.onPrimary,
                         modifier = Modifier.size(20.dp)

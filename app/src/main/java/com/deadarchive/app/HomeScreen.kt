@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -64,7 +65,7 @@ fun HomeScreen(
                     QuickAccessCard(
                         title = "Browse All",
                         subtitle = "17,000+ shows",
-                        icon = Icons.Default.Search,
+                        icon = IconResources.Navigation.Search(),
                         onClick = onNavigateToBrowse
                     )
                 }
@@ -72,7 +73,7 @@ fun HomeScreen(
                     QuickAccessCard(
                         title = "Settings",
                         subtitle = "Debug & tools",
-                        icon = Icons.Default.Settings,
+                        icon = IconResources.Navigation.Settings(),
                         onClick = onNavigateToDebug
                     )
                 }
@@ -160,7 +161,7 @@ private fun HomeSectionHeader(title: String) {
 private fun QuickAccessCard(
     title: String,
     subtitle: String,
-    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    icon: androidx.compose.ui.graphics.painter.Painter,
     onClick: () -> Unit
 ) {
     Card(
@@ -179,7 +180,7 @@ private fun QuickAccessCard(
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Icon(
-                imageVector = icon,
+                painter = icon,
                 contentDescription = null,
                 tint = MaterialTheme.colorScheme.onPrimaryContainer,
                 modifier = Modifier.size(32.dp)

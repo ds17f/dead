@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -40,7 +41,7 @@ fun LibraryScreen(
         ) {
             item {
                 LibrarySection(
-                    icon = Icons.Default.Favorite,
+                    painter = IconResources.Content.Favorite(),
                     title = "Liked Shows",
                     subtitle = "Your favorite concerts",
                     onClick = { /* Navigate to favorites */ }
@@ -49,7 +50,7 @@ fun LibraryScreen(
             
             item {
                 LibrarySection(
-                    icon = Icons.Default.Star,
+                    painter = IconResources.Content.DownloadForOffline(),
                     title = "Downloaded",
                     subtitle = "Available offline",
                     onClick = { /* Navigate to downloads */ }
@@ -58,7 +59,7 @@ fun LibraryScreen(
             
             item {
                 LibrarySection(
-                    icon = Icons.Default.PlayArrow,
+                    painter = IconResources.PlayerControls.Play(),
                     title = "Recently Played",
                     subtitle = "Your listening history",
                     onClick = { /* Navigate to recent */ }
@@ -67,7 +68,7 @@ fun LibraryScreen(
             
             item {
                 LibrarySection(
-                    icon = Icons.Default.Star,
+                    painter = IconResources.Content.Star(),
                     title = "Top Shows",
                     subtitle = "Most popular concerts",
                     onClick = { /* Navigate to top shows */ }
@@ -120,7 +121,58 @@ private fun LibrarySection(
             }
             
             Icon(
-                imageVector = Icons.Default.KeyboardArrowRight,
+                painter = IconResources.Navigation.KeyboardArrowRight(),
+                contentDescription = "Go to $title",
+                tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
+            )
+        }
+    }
+}
+
+@Composable
+private fun LibrarySection(
+    painter: androidx.compose.ui.graphics.painter.Painter,
+    title: String,
+    subtitle: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        onClick = onClick,
+        modifier = modifier.fillMaxWidth()
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                painter = painter,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(40.dp)
+            )
+            
+            Spacer(modifier = Modifier.width(16.dp))
+            
+            Column(
+                modifier = Modifier.weight(1f)
+            ) {
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Medium
+                )
+                Text(
+                    text = subtitle,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
+                )
+            }
+            
+            Icon(
+                painter = IconResources.Navigation.KeyboardArrowRight(),
                 contentDescription = "Go to $title",
                 tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
             )
