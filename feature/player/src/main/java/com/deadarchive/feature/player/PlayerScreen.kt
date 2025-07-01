@@ -30,31 +30,34 @@ import kotlinx.coroutines.delay
 fun PlayerScreen(
     onNavigateBack: () -> Unit,
     onNavigateToQueue: () -> Unit = {},
-    concertId: String? = null,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
-    Log.d("PlayerScreen", "PlayerScreen: Composing with concertId: $concertId")
+    Log.d("PlayerScreen", "PlayerScreen: Pure view mode - displaying current MediaController state")
     
-    Log.d("PlayerScreen", "PlayerScreen: Getting states")
+    // PlayerScreen is a pure view - gets all data from MediaController via viewModel
     val uiState by viewModel.uiState.collectAsState()
     val currentConcert by viewModel.currentConcert.collectAsState()
     
-    // Load concert data when concertId is provided, but only if not already loaded
-    LaunchedEffect(concertId, currentConcert) {
-        Log.d("PlayerScreen", "LaunchedEffect: concertId = $concertId, currentConcert.identifier = ${currentConcert?.identifier}")
-        if (!concertId.isNullOrBlank() && currentConcert?.identifier != concertId) {
-            Log.d("PlayerScreen", "LaunchedEffect: Loading new concert $concertId")
-            try {
-                viewModel.loadConcert(concertId)
-            } catch (e: Exception) {
-                Log.e("PlayerScreen", "LaunchedEffect: Exception in loadConcert", e)
-            }
-        } else if (!concertId.isNullOrBlank() && currentConcert?.identifier == concertId) {
-            Log.d("PlayerScreen", "LaunchedEffect: Concert $concertId already loaded, skipping reload")
-        } else {
-            Log.w("PlayerScreen", "LaunchedEffect: concertId is null or blank")
-        }
+    // Get current track info from MediaController through ViewModel
+    val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
+    val queueMetadata by viewModel.mediaControllerRepository.queueMetadata.collectAsState()
+    val queueUrls by viewModel.mediaControllerRepository.queueUrls.collectAsState()
+    val queueIndex by viewModel.mediaControllerRepository.queueIndex.collectAsState()
+    
+    // Get track title from MediaController metadata (avoiding direct MediaItem access)
+    val currentTrackTitle = if (currentTrackUrl != null) {
+        queueMetadata.find { it.first == currentTrackUrl }?.second 
+            ?: currentTrackUrl?.substringAfterLast("/")?.substringBeforeLast(".")
+            ?: "Unknown Track"
+    } else {
+        "No track selected"
     }
+    
+    val currentArtist = currentConcert?.displayTitle ?: "Unknown Artist"
+    
+    // Determine skip button states from MediaController queue
+    val hasNextTrack = queueUrls.isNotEmpty() && queueIndex < queueUrls.size - 1
+    val hasPreviousTrack = queueUrls.isNotEmpty() && queueIndex > 0
     
     // Debug current state
     LaunchedEffect(uiState, currentConcert) {
@@ -150,9 +153,12 @@ fun PlayerScreen(
                             textAlign = TextAlign.Center,
                             color = MaterialTheme.colorScheme.error
                         )
-                        Button(onClick = { concertId?.let { viewModel.loadConcert(it) } }) {
-                            Text("Retry")
-                        }
+                        // PlayerScreen is a pure view - no retry functionality needed
+                        Text(
+                            text = "Please return to the playlist to retry",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
                     }
                 }
             }
@@ -162,9 +168,13 @@ fun PlayerScreen(
                 NowPlayingSection(
                     uiState = uiState,
                     concert = currentConcert,
+                    currentTrackTitle = currentTrackTitle,
+                    currentArtist = currentArtist,
+                    hasNextTrack = hasNextTrack,
+                    hasPreviousTrack = hasPreviousTrack,
                     onPlayPause = viewModel::playPause,
-                    onNext = viewModel::skipToNext,
-                    onPrevious = viewModel::skipToPrevious,
+                    onNext = { viewModel.mediaControllerRepository.skipToNext() },
+                    onPrevious = { viewModel.mediaControllerRepository.skipToPrevious() },
                     onSeek = viewModel::seekTo,
                     modifier = Modifier.fillMaxSize()
                 )
@@ -175,9 +185,13 @@ fun PlayerScreen(
                 NowPlayingSection(
                     uiState = uiState,
                     concert = currentConcert,
+                    currentTrackTitle = currentTrackTitle,
+                    currentArtist = currentArtist,
+                    hasNextTrack = hasNextTrack,
+                    hasPreviousTrack = hasPreviousTrack,
                     onPlayPause = viewModel::playPause,
-                    onNext = viewModel::skipToNext,
-                    onPrevious = viewModel::skipToPrevious,
+                    onNext = { viewModel.mediaControllerRepository.skipToNext() },
+                    onPrevious = { viewModel.mediaControllerRepository.skipToPrevious() },
                     onSeek = viewModel::seekTo,
                     modifier = Modifier.fillMaxSize()
                 )
@@ -190,6 +204,10 @@ fun PlayerScreen(
 private fun NowPlayingSection(
     uiState: PlayerUiState,
     concert: Concert?,
+    currentTrackTitle: String,
+    currentArtist: String,
+    hasNextTrack: Boolean,
+    hasPreviousTrack: Boolean,
     onPlayPause: () -> Unit,
     onNext: () -> Unit,
     onPrevious: () -> Unit,
@@ -241,7 +259,7 @@ private fun NowPlayingSection(
                     modifier = Modifier.weight(1f)
                 ) {
                     Text(
-                        text = uiState.currentTrack?.displayTitle ?: "No track selected",
+                        text = currentTrackTitle,
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
                         maxLines = 1,
@@ -250,7 +268,7 @@ private fun NowPlayingSection(
                     )
                     
                     Text(
-                        text = concert?.displayTitle ?: "",
+                        text = currentArtist,
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
@@ -322,14 +340,14 @@ private fun NowPlayingSection(
             // Previous button
             IconButton(
                 onClick = onPrevious,
-                enabled = uiState.hasPreviousTrack,
+                enabled = hasPreviousTrack,
                 modifier = Modifier.size(56.dp)
             ) {
                 Icon(
                     painter = IconResources.PlayerControls.SkipPrevious(),
                     contentDescription = "Previous",
                     modifier = Modifier.size(32.dp),
-                    tint = if (uiState.hasPreviousTrack) {
+                    tint = if (hasPreviousTrack) {
                         MaterialTheme.colorScheme.onSurface
                     } else {
                         MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
@@ -364,14 +382,14 @@ private fun NowPlayingSection(
             // Next button
             IconButton(
                 onClick = onNext,
-                enabled = uiState.hasNextTrack,
+                enabled = hasNextTrack,
                 modifier = Modifier.size(56.dp)
             ) {
                 Icon(
                     painter = IconResources.PlayerControls.SkipNext(),
                     contentDescription = "Next",
                     modifier = Modifier.size(32.dp),
-                    tint = if (uiState.hasNextTrack) {
+                    tint = if (hasNextTrack) {
                         MaterialTheme.colorScheme.onSurface
                     } else {
                         MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)

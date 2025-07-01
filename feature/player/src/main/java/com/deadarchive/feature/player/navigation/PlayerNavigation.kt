@@ -19,11 +19,10 @@ fun NavGraphBuilder.playerScreen(
     }
     
     composable("player/{concertId}") { backStackEntry ->
-        val concertId = backStackEntry.arguments?.getString("concertId") ?: ""
+        // PlayerScreen is a pure view - concertId is ignored
         PlayerScreen(
             onNavigateBack = onNavigateBack,
-            onNavigateToQueue = { navController.navigate("queue") },
-            concertId = concertId
+            onNavigateToQueue = { navController.navigate("queue") }
         )
     }
     

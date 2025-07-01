@@ -41,16 +41,18 @@ fun PlaylistScreen(
     val uiState by viewModel.uiState.collectAsState()
     val currentConcert by viewModel.currentConcert.collectAsState()
     
-    // Load concert data when concertId is provided
+    // Only load concert metadata for display, not for playback
     LaunchedEffect(concertId) {
-        Log.d("PlaylistScreen", "LaunchedEffect: concertId = $concertId")
-        if (!concertId.isNullOrBlank()) {
-            Log.d("PlaylistScreen", "LaunchedEffect: Calling viewModel.loadConcert($concertId)")
+        Log.d("PlaylistScreen", "LaunchedEffect: concertId = $concertId, currentConcert.identifier = ${currentConcert?.identifier}")
+        if (!concertId.isNullOrBlank() && currentConcert?.identifier != concertId) {
+            Log.d("PlaylistScreen", "LaunchedEffect: Loading concert metadata for display only: $concertId")
             try {
                 viewModel.loadConcert(concertId)
             } catch (e: Exception) {
                 Log.e("PlaylistScreen", "LaunchedEffect: Exception in loadConcert", e)
             }
+        } else if (currentConcert?.identifier == concertId) {
+            Log.d("PlaylistScreen", "LaunchedEffect: Concert $concertId already loaded")
         } else {
             Log.w("PlaylistScreen", "LaunchedEffect: concertId is null or blank")
         }
@@ -150,6 +152,7 @@ fun PlaylistScreen(
                         // Concert header
                         ConcertHeader(
                             concert = currentConcert,
+                            onPlayConcert = { viewModel.playConcertFromBeginning() },
                             modifier = Modifier.padding(16.dp)
                         )
                         
@@ -186,7 +189,10 @@ fun PlaylistScreen(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         item {
-                            ConcertHeader(concert = currentConcert)
+                            ConcertHeader(
+                                concert = currentConcert,
+                                onPlayConcert = { viewModel.playConcertFromBeginning() }
+                            )
                         }
                         
                         item {
@@ -215,6 +221,7 @@ fun PlaylistScreen(
 @Composable
 private fun ConcertHeader(
     concert: Concert?,
+    onPlayConcert: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     if (concert == null) return
@@ -284,6 +291,29 @@ private fun ConcertHeader(
                         tint = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
+            }
+            
+            // Play button
+            Spacer(modifier = Modifier.height(12.dp))
+            
+            Button(
+                onClick = onPlayConcert,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.primary
+                )
+            ) {
+                Icon(
+                    painter = IconResources.PlayerControls.Play(),
+                    contentDescription = "Play",
+                    modifier = Modifier.size(20.dp)
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(
+                    text = "Play",
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Medium
+                )
             }
         }
     }

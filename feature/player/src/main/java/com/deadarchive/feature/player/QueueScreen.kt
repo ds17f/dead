@@ -21,19 +21,48 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.ViewModel
+import dagger.hilt.android.lifecycle.HiltViewModel
 import com.deadarchive.core.model.PlaylistItem
+import com.deadarchive.core.media.player.MediaControllerRepository
+import javax.inject.Inject
+
+// Simple ViewModel for MediaControllerRepository access
+@HiltViewModel
+class QueueViewModel @Inject constructor(
+    val mediaControllerRepository: MediaControllerRepository
+) : ViewModel()
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun QueueScreen(
     onNavigateBack: () -> Unit,
-    viewModel: PlayerViewModel = hiltViewModel()
+    queueViewModel: QueueViewModel = hiltViewModel(),
+    playerViewModel: PlayerViewModel = hiltViewModel()
 ) {
     Log.d("QueueScreen", "QueueScreen: Composing")
     
-    val uiState by viewModel.uiState.collectAsState()
-    val currentPlaylist by viewModel.currentPlaylist.collectAsState()
-    val playlistTitle by viewModel.playlistTitle.collectAsState()
+    // MediaControllerRepository is the single source of truth
+    val currentQueueIndex by queueViewModel.mediaControllerRepository.queueIndex.collectAsState()
+    val queueUrls by queueViewModel.mediaControllerRepository.queueUrls.collectAsState()
+    val queueMetadata by queueViewModel.mediaControllerRepository.queueMetadata.collectAsState()
+    
+    // Only use PlayerViewModel for playlist title and actions, not for queue state
+    val playlistTitle by playerViewModel.playlistTitle.collectAsState()
+    
+    // Debug logging
+    LaunchedEffect(queueUrls, currentQueueIndex, queueMetadata) {
+        Log.d("QueueScreen", "QueueScreen: queueUrls.size = ${queueUrls.size}")
+        Log.d("QueueScreen", "QueueScreen: currentQueueIndex = $currentQueueIndex")
+        Log.d("QueueScreen", "QueueScreen: queueMetadata.size = ${queueMetadata.size}")
+        Log.d("QueueScreen", "QueueScreen: playlistTitle = $playlistTitle")
+        queueUrls.forEachIndexed { index, url ->
+            Log.d("QueueScreen", "QueueScreen: queueUrls[$index] = $url")
+        }
+        queueMetadata.forEachIndexed { index, (_, title) ->
+            Log.d("QueueScreen", "QueueScreen: metadata[$index] = $title")
+        }
+    }
     
     Scaffold(
         topBar = {
@@ -55,10 +84,10 @@ fun QueueScreen(
                 },
                 actions = {
                     // Clear queue button
-                    if (currentPlaylist.isNotEmpty()) {
+                    if (queueUrls.isNotEmpty()) {
                         IconButton(
                             onClick = {
-                                viewModel.clearPlaylist()
+                                playerViewModel.clearPlaylist()
                                 Log.d("QueueScreen", "Queue cleared")
                             }
                         ) {
@@ -78,7 +107,7 @@ fun QueueScreen(
                 .padding(paddingValues)
         ) {
             when {
-                currentPlaylist.isEmpty() -> {
+                queueUrls.isEmpty() -> {
                     // Empty queue state
                     Box(
                         modifier = Modifier.fillMaxSize(),
@@ -120,23 +149,27 @@ fun QueueScreen(
                         item {
                             QueueHeader(
                                 title = playlistTitle ?: "Current Queue",
-                                itemCount = currentPlaylist.size,
+                                itemCount = queueUrls.size,
                                 modifier = Modifier.padding(bottom = 8.dp)
                             )
                         }
                         
-                        // Queue items
-                        itemsIndexed(currentPlaylist) { index, playlistItem ->
-                            QueueItem(
-                                playlistItem = playlistItem,
+                        // Queue items - build from MediaController data
+                        itemsIndexed(queueUrls) { index, url ->
+                            val trackTitle = queueMetadata.find { it.first == url }?.second 
+                                ?: url.substringAfterLast("/").substringBeforeLast(".")
+                            
+                            QueueItemFromUrl(
+                                url = url,
+                                title = trackTitle,
                                 position = index + 1,
-                                isCurrentTrack = index == uiState.currentTrackIndex,
+                                isCurrentTrack = index == currentQueueIndex,
                                 onPlayClick = { 
-                                    viewModel.navigateToTrack(index)
+                                    playerViewModel.navigateToTrack(index)
                                     Log.d("QueueScreen", "Playing track at queue position $index")
                                 },
                                 onRemoveClick = { 
-                                    viewModel.removeFromPlaylist(index)
+                                    playerViewModel.removeFromPlaylist(index)
                                     Log.d("QueueScreen", "Removed track at queue position $index")
                                 }
                             )
@@ -322,4 +355,114 @@ private fun formatDuration(durationInSeconds: Double): String {
 private fun formatFileSize(sizeInBytes: Long): String {
     val sizeInMB = sizeInBytes / (1024.0 * 1024.0)
     return String.format("%.1f MB", sizeInMB)
+}
+
+@Composable
+private fun QueueItemFromUrl(
+    url: String,
+    title: String,
+    position: Int,
+    isCurrentTrack: Boolean,
+    onPlayClick: () -> Unit,
+    onRemoveClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable { onPlayClick() },
+        colors = CardDefaults.cardColors(
+            containerColor = if (isCurrentTrack) {
+                MaterialTheme.colorScheme.primaryContainer
+            } else {
+                MaterialTheme.colorScheme.surface
+            }
+        ),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // Queue position indicator
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .background(
+                        if (isCurrentTrack) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.surfaceVariant
+                        }
+                    ),
+                contentAlignment = Alignment.Center
+            ) {
+                if (isCurrentTrack) {
+                    Icon(
+                        painter = IconResources.PlayerControls.Play(),
+                        contentDescription = "Currently playing",
+                        tint = MaterialTheme.colorScheme.onPrimary,
+                        modifier = Modifier.size(20.dp)
+                    )
+                } else {
+                    Text(
+                        text = position.toString(),
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+            
+            Spacer(modifier = Modifier.width(12.dp))
+            
+            // Track info
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = if (isCurrentTrack) FontWeight.SemiBold else FontWeight.Normal,
+                    color = if (isCurrentTrack) {
+                        MaterialTheme.colorScheme.onPrimaryContainer
+                    } else {
+                        MaterialTheme.colorScheme.onSurface
+                    },
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                
+                // URL-based file info (simplified)
+                val filename = url.substringAfterLast("/")
+                val format = filename.substringAfterLast(".").uppercase()
+                Text(
+                    text = format,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = if (isCurrentTrack) {
+                        MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
+                    } else {
+                        MaterialTheme.colorScheme.onSurfaceVariant
+                    }
+                )
+            }
+            
+            // Remove button
+            IconButton(
+                onClick = onRemoveClick,
+                modifier = Modifier.size(40.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Close,
+                    contentDescription = "Remove from queue",
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.size(18.dp)
+                )
+            }
+        }
+    }
 }

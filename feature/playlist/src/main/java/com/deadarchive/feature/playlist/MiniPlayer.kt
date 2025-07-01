@@ -26,12 +26,13 @@ import com.deadarchive.feature.player.PlayerViewModel
 fun MiniPlayer(
     uiState: PlayerUiState,
     concert: Concert?,
+    trackTitle: String?,
     onPlayPause: () -> Unit,
     onTapToExpand: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     // Only show MiniPlayer if there's a current track
-    if (uiState.currentTrack == null) return
+    if (trackTitle == null) return
     
     Card(
         modifier = modifier
@@ -84,7 +85,7 @@ fun MiniPlayer(
                     verticalArrangement = Arrangement.Center
                 ) {
                     Text(
-                        text = uiState.currentTrack?.displayTitle ?: "Unknown Track",
+                        text = trackTitle ?: "Unknown Track",
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Medium,
                         maxLines = 1,
@@ -137,12 +138,51 @@ fun MiniPlayerContainer(
     modifier: Modifier = Modifier,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
-    val uiState by viewModel.uiState.collectAsState()
-    val currentConcert by viewModel.currentConcert.collectAsState()
+    // Get current playback state directly from MediaController
+    val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
+    val queueMetadata by viewModel.mediaControllerRepository.queueMetadata.collectAsState()
+    val isPlaying by viewModel.mediaControllerRepository.isPlaying.collectAsState()
+    val currentPosition by viewModel.mediaControllerRepository.currentPosition.collectAsState()
+    val duration by viewModel.mediaControllerRepository.duration.collectAsState()
+    val playbackState by viewModel.mediaControllerRepository.playbackState.collectAsState()
+    
+    // Get track title from MediaController metadata
+    val currentTrackTitle = if (currentTrackUrl != null) {
+        queueMetadata.find { it.first == currentTrackUrl }?.second 
+            ?: currentTrackUrl?.substringAfterLast("/")?.substringBeforeLast(".")
+            ?: "Unknown Track"
+    } else {
+        null
+    }
+    
+    // Get artist name from MediaController metadata - use concert name from metadata
+    val currentArtist = if (currentTrackUrl != null && queueMetadata.isNotEmpty()) {
+        "Unknown Artist" // We could enhance this with proper artist metadata
+    } else {
+        null
+    }
+    
+    // Create a minimal UI state for the mini player based on MediaController data
+    val miniPlayerUiState = PlayerUiState(
+        isPlaying = isPlaying,
+        currentPosition = currentPosition,
+        duration = duration,
+        playbackState = playbackState // Already an Int from MediaController
+    )
+    
+    // Create a minimal concert object for display
+    val miniPlayerConcert = if (currentArtist != null) {
+        Concert(
+            identifier = "",
+            title = currentArtist,
+            date = ""
+        )
+    } else null
     
     MiniPlayer(
-        uiState = uiState,
-        concert = currentConcert,
+        uiState = miniPlayerUiState,
+        concert = miniPlayerConcert,
+        trackTitle = currentTrackTitle,
         onPlayPause = viewModel::playPause,
         onTapToExpand = onTapToExpand,
         modifier = modifier

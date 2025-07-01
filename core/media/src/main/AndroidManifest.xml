@@ -9,7 +9,8 @@
         <!-- MediaSessionService for background playback -->
         <service
             android:name=".service.DeadArchivePlaybackService"
-            android:exported="true"
+            android:exported="false"
+            android:enabled="true"
             android:foregroundServiceType="mediaPlayback">
             <intent-filter>
                 <action android:name="androidx.media3.session.MediaSessionService" />

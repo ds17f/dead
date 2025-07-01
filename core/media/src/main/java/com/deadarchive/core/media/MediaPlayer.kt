@@ -3,25 +3,26 @@ package com.deadarchive.core.media
 import androidx.media3.common.Player
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.util.UnstableApi
-import com.deadarchive.core.media.player.PlayerRepository
+import com.deadarchive.core.media.player.MediaControllerRepository
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 import javax.inject.Singleton
 
 /**
  * High-level interface for media playback in the Dead Archive app
+ * Now uses service-based MediaControllerRepository for proper background playback
  */
 @UnstableApi
 @Singleton
 class MediaPlayer @Inject constructor(
-    private val playerRepository: PlayerRepository
+    private val mediaControllerRepository: MediaControllerRepository
 ) {
     
-    val isPlaying: StateFlow<Boolean> = playerRepository.isPlaying
-    val currentPosition: StateFlow<Long> = playerRepository.currentPosition
-    val duration: StateFlow<Long> = playerRepository.duration
-    val playbackState: StateFlow<Int> = playerRepository.playbackState
-    val lastError: StateFlow<PlaybackException?> = playerRepository.lastError
+    val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying
+    val currentPosition: StateFlow<Long> = mediaControllerRepository.currentPosition
+    val duration: StateFlow<Long> = mediaControllerRepository.duration
+    val playbackState: StateFlow<Int> = mediaControllerRepository.playbackState
+    val lastError: StateFlow<PlaybackException?> = mediaControllerRepository.lastError
     
     /**
      * Play a single track from Archive.org
@@ -30,7 +31,7 @@ class MediaPlayer @Inject constructor(
      * @param artist Artist name (usually "Grateful Dead")
      */
     fun playTrack(url: String, title: String, artist: String = "Grateful Dead") {
-        playerRepository.playTrack(url, title, artist)
+        mediaControllerRepository.playTrack(url, title, artist)
     }
     
     /**
@@ -41,7 +42,7 @@ class MediaPlayer @Inject constructor(
      */
     fun playLocalAsset(assetFileName: String, title: String, artist: String = "Grateful Dead") {
         val assetUrl = "asset:///$assetFileName"
-        playerRepository.playTrack(assetUrl, title, artist)
+        mediaControllerRepository.playTrack(assetUrl, title, artist)
     }
     
     /**
@@ -49,28 +50,28 @@ class MediaPlayer @Inject constructor(
      * @param urls List of track URLs
      */
     fun playConcert(urls: List<String>) {
-        playerRepository.playPlaylist(urls)
+        mediaControllerRepository.playPlaylist(urls)
     }
     
     /**
      * Resume/start playback
      */
     fun play() {
-        playerRepository.play()
+        mediaControllerRepository.play()
     }
     
     /**
      * Pause playback
      */
     fun pause() {
-        playerRepository.pause()
+        mediaControllerRepository.pause()
     }
     
     /**
      * Stop playback
      */
     fun stop() {
-        playerRepository.stop()
+        mediaControllerRepository.stop()
     }
     
     /**
@@ -78,21 +79,21 @@ class MediaPlayer @Inject constructor(
      * @param position Position in milliseconds
      */
     fun seekTo(position: Long) {
-        playerRepository.seekTo(position)
+        mediaControllerRepository.seekTo(position)
     }
     
     /**
      * Skip to next track
      */
     fun skipToNext() {
-        playerRepository.skipToNext()
+        mediaControllerRepository.skipToNext()
     }
     
     /**
      * Skip to previous track
      */
     fun skipToPrevious() {
-        playerRepository.skipToPrevious()
+        mediaControllerRepository.skipToPrevious()
     }
     
     /**
@@ -100,21 +101,21 @@ class MediaPlayer @Inject constructor(
      * @param repeatMode One of Player.REPEAT_MODE_OFF, REPEAT_MODE_ONE, REPEAT_MODE_ALL
      */
     fun setRepeatMode(repeatMode: Int) {
-        playerRepository.setRepeatMode(repeatMode)
+        mediaControllerRepository.setRepeatMode(repeatMode)
     }
     
     /**
      * Enable/disable shuffle mode
      */
     fun setShuffleMode(enabled: Boolean) {
-        playerRepository.setShuffleMode(enabled)
+        mediaControllerRepository.setShuffleMode(enabled)
     }
     
     /**
      * Update position - should be called periodically by UI
      */
     fun updatePosition() {
-        playerRepository.updatePosition()
+        mediaControllerRepository.updatePosition()
     }
     
     /**

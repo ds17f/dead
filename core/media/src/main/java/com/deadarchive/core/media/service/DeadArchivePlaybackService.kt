@@ -50,14 +50,35 @@ class DeadArchivePlaybackService : MediaSessionService() {
     
     private var mediaSession: MediaSession? = null
     
-    // Queue and state management
-    private val currentQueue = mutableListOf<MediaItem>()
-    private var currentQueueIndex = 0
+    // Note: Queue management is handled natively by Media3/ExoPlayer
+    // No custom queue tracking needed - ExoPlayer maintains the playlist state
+    
+    /**
+     * Create notification channel for Android 8.0+
+     */
+    private fun createNotificationChannel() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val channel = android.app.NotificationChannel(
+                "dead_archive_playback",
+                "Dead Archive Playback",
+                android.app.NotificationManager.IMPORTANCE_LOW
+            ).apply {
+                description = "Media playback controls"
+                setShowBadge(false)
+            }
+            
+            val notificationManager = getSystemService(android.app.NotificationManager::class.java)
+            notificationManager.createNotificationChannel(channel)
+            
+            Log.d(TAG, "Notification channel created")
+        }
+    }
     
     override fun onCreate() {
         super.onCreate()
         Log.d(TAG, "Service onCreate")
         
+        createNotificationChannel()
         initializePlayer()
         createMediaSession()
         setupNotifications()
@@ -130,7 +151,6 @@ class DeadArchivePlaybackService : MediaSessionService() {
         mediaSession = MediaSession.Builder(this, player)
             .setCallback(sessionCallback)
             .setSessionActivity(createSessionActivityPendingIntent())
-            .setCustomLayout(createCustomCommandButtons())
             .build()
         
         Log.d(TAG, "MediaSession created successfully")
@@ -138,6 +158,7 @@ class DeadArchivePlaybackService : MediaSessionService() {
     
     /**
      * Setup notification management
+     * Media3 MediaSessionService handles notifications automatically
      */
     private fun setupNotifications() {
         Log.d(TAG, "Setting up notifications")
@@ -147,11 +168,10 @@ class DeadArchivePlaybackService : MediaSessionService() {
     
     /**
      * Update notification with current playback state
+     * Media3 handles this automatically based on MediaSession state
      */
     private fun updateNotification() {
-        if (player.isPlaying) {
-            notificationManager.showNotification(this)
-        }
+        Log.d(TAG, "Notification will be updated automatically by Media3")
     }
     
     /**
@@ -178,24 +198,6 @@ class DeadArchivePlaybackService : MediaSessionService() {
         }
     }
     
-    /**
-     * Create custom command buttons for extended controls
-     */
-    private fun createCustomCommandButtons(): ImmutableList<CommandButton> {
-        val shuffleButton = CommandButton.Builder()
-            .setDisplayName("Shuffle")
-            .setSessionCommand(SessionCommand(CUSTOM_COMMAND_TOGGLE_SHUFFLE, Bundle()))
-            .setIconResId(android.R.drawable.ic_menu_sort_alphabetically)
-            .build()
-        
-        val repeatButton = CommandButton.Builder()
-            .setDisplayName("Repeat")
-            .setSessionCommand(SessionCommand(CUSTOM_COMMAND_TOGGLE_REPEAT, Bundle()))
-            .setIconResId(android.R.drawable.ic_menu_revert)
-            .build()
-        
-        return ImmutableList.of(shuffleButton, repeatButton)
-    }
     
     /**
      * Create PendingIntent for returning to the main activity
@@ -259,12 +261,24 @@ class DeadArchivePlaybackService : MediaSessionService() {
                 Log.d(TAG, "Item $index: ${item.mediaId} - ${item.mediaMetadata.title}")
             }
             
-            // Update internal queue
-            currentQueue.clear()
-            currentQueue.addAll(mediaItems)
-            currentQueueIndex = startIndex
+            // Ensure the service is in foreground when media is loaded
+            if (mediaItems.isNotEmpty()) {
+                Log.d(TAG, "Starting foreground service for media playback")
+                try {
+                    // Create a basic notification for foreground service
+                    val notification = android.app.Notification.Builder(this@DeadArchivePlaybackService, "dead_archive_playback")
+                        .setContentTitle("Dead Archive")
+                        .setContentText("Loading media...")
+                        .setSmallIcon(android.R.drawable.ic_media_play)
+                        .build()
+                    
+                    startForeground(NOTIFICATION_ID, notification)
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error starting foreground service", e)
+                }
+            }
             
-            Log.d(TAG, "Internal queue updated, returning items to MediaSession")
+            Log.d(TAG, "Returning items to MediaSession for native playlist management")
             
             // Return the media items with start position
             val result = MediaSession.MediaItemsWithStartPosition(mediaItems, startIndex, startPositionMs)
@@ -278,8 +292,8 @@ class DeadArchivePlaybackService : MediaSessionService() {
         ): ListenableFuture<MutableList<MediaItem>> {
             Log.d(TAG, "onAddMediaItems: ${mediaItems.size} items")
             
-            // Add to internal queue
-            currentQueue.addAll(mediaItems)
+            // Note: Queue management handled natively by Media3/ExoPlayer
+            // No custom queue tracking needed - Media3 will add to its native playlist
             
             // Return the media items to be added
             return Futures.immediateFuture(mediaItems)

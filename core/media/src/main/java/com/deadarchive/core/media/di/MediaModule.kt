@@ -6,6 +6,7 @@ import androidx.media3.datasource.DefaultHttpDataSource
 import androidx.media3.datasource.DefaultDataSource
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
+import com.deadarchive.core.media.player.MediaControllerRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -48,5 +49,17 @@ object MediaModule {
         return ExoPlayer.Builder(context)
             .setMediaSourceFactory(mediaSourceFactory)
             .build()
+    }
+    
+    /**
+     * Provides MediaControllerRepository for service-based media playback.
+     * This replaces direct ExoPlayer access in UI components.
+     */
+    @Provides
+    @Singleton
+    fun provideMediaControllerRepository(
+        @ApplicationContext context: Context
+    ): MediaControllerRepository {
+        return MediaControllerRepository(context)
     }
 }

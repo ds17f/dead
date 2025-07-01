@@ -43,6 +43,7 @@ android {
 dependencies {
     implementation(project(":core:design"))
     implementation(project(":core:model"))
+    implementation(project(":core:media"))
     implementation(project(":feature:player"))
     
     implementation("androidx.core:core-ktx:1.12.0")

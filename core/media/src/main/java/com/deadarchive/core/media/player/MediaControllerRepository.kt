@@ -84,6 +84,17 @@ class MediaControllerRepository @Inject constructor(
     private var currentQueueUrls: List<String> = emptyList()
     private var currentQueueIndex: Int = 0
     
+    // Queue state exposed to UI
+    private val _queueUrls = MutableStateFlow<List<String>>(emptyList())
+    val queueUrls: StateFlow<List<String>> = _queueUrls.asStateFlow()
+    
+    private val _queueIndex = MutableStateFlow(0)
+    val queueIndex: StateFlow<Int> = _queueIndex.asStateFlow()
+    
+    // Queue metadata for proper track title display
+    private val _queueMetadata = MutableStateFlow<List<Pair<String, String>>>(emptyList()) // URL to Title pairs
+    val queueMetadata: StateFlow<List<Pair<String, String>>> = _queueMetadata.asStateFlow()
+    
     init {
         Log.d(TAG, "MediaControllerRepository initializing")
         connectToService()
@@ -294,13 +305,45 @@ class MediaControllerRepository @Inject constructor(
     /**
      * Update queue context for proper MediaController synchronization
      */
+    // Store track metadata for proper display in media controls
+    private var queueTrackTitles: List<String> = emptyList()
+    private var queueTrackArtists: List<String> = emptyList()
+    
     fun updateQueueContext(queueUrls: List<String>, currentIndex: Int = 0) {
+        updateQueueContext(queueUrls, emptyList(), emptyList(), currentIndex)
+    }
+    
+    fun updateQueueContext(
+        queueUrls: List<String>, 
+        trackTitles: List<String> = emptyList(),
+        trackArtists: List<String> = emptyList(),
+        currentIndex: Int = 0
+    ) {
         Log.d(TAG, "=== UPDATING QUEUE CONTEXT ===")
         Log.d(TAG, "Queue size: ${queueUrls.size}")
+        Log.d(TAG, "Track titles: ${trackTitles.size}")
         Log.d(TAG, "Current index: $currentIndex")
         
         currentQueueUrls = queueUrls
         currentQueueIndex = currentIndex
+        queueTrackTitles = trackTitles
+        queueTrackArtists = trackArtists
+        
+        // Update StateFlow for UI
+        _queueUrls.value = queueUrls
+        _queueIndex.value = currentIndex
+        
+        // Update queue metadata for UI display
+        val metadata = queueUrls.mapIndexed { index, url ->
+            val title = queueTrackTitles.getOrNull(index) ?: url.substringAfterLast("/").substringBeforeLast(".")
+            url to title
+        }
+        _queueMetadata.value = metadata
+        
+        Log.d(TAG, "=== QUEUE STATE UPDATED ===")
+        Log.d(TAG, "StateFlow queueUrls updated: ${queueUrls.size} items")
+        Log.d(TAG, "StateFlow queueIndex updated: $currentIndex")
+        Log.d(TAG, "StateFlow queueMetadata updated: ${metadata.size} items")
         
         // If we have a queue and controller is connected, sync the queue to MediaController
         if (queueUrls.isNotEmpty() && mediaController != null) {
@@ -324,10 +367,19 @@ class MediaControllerRepository @Inject constructor(
         Log.d(TAG, "Current index: $currentQueueIndex")
         
         try {
-            val mediaItems = currentQueueUrls.map { url ->
+            val mediaItems = currentQueueUrls.mapIndexed { index, url ->
+                val title = queueTrackTitles.getOrNull(index) ?: url.substringAfterLast("/").substringBeforeLast(".")
+                val artist = queueTrackArtists.getOrNull(index)
+                
+                val metadata = MediaMetadata.Builder()
+                    .setTitle(title)
+                    .apply { if (artist != null) setArtist(artist) }
+                    .build()
+                
                 MediaItem.Builder()
                     .setUri(url)
                     .setMediaId(url)
+                    .setMediaMetadata(metadata)
                     .build()
             }
             
@@ -380,6 +432,7 @@ class MediaControllerRepository @Inject constructor(
                 val trackIndex = currentQueueUrls.indexOf(url)
                 if (trackIndex >= 0) {
                     currentQueueIndex = trackIndex
+                    _queueIndex.value = currentQueueIndex
                     Log.d(TAG, "Track found at queue index: $trackIndex")
                     
                     // Create MediaItems with metadata for the entire queue
@@ -475,6 +528,10 @@ class MediaControllerRepository @Inject constructor(
         currentQueueUrls = urls
         currentQueueIndex = startIndex
         
+        // Update StateFlow for UI
+        _queueUrls.value = urls
+        _queueIndex.value = startIndex
+        
         try {
             val mediaItems = urls.map { url ->
                 MediaItem.Builder()
@@ -562,6 +619,7 @@ class MediaControllerRepository @Inject constructor(
                 // Update our queue index tracking
                 if (currentQueueIndex < currentQueueUrls.size - 1) {
                     currentQueueIndex++
+                    _queueIndex.value = currentQueueIndex
                     Log.d(TAG, "Updated queue index to: $currentQueueIndex")
                 }
             } else {
@@ -587,6 +645,7 @@ class MediaControllerRepository @Inject constructor(
                 // Update our queue index tracking
                 if (currentQueueIndex > 0) {
                     currentQueueIndex--
+                    _queueIndex.value = currentQueueIndex
                     Log.d(TAG, "Updated queue index to: $currentQueueIndex")
                 }
             } else {
