@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.11.1] - 2025-07-01
+
+### Bug Fixes
+* resolve release build resource linking errors in design system (1f5bf04)
+
+
 ## [0.11.0] - 2025-07-01
 
 ### New Features
@@ -11,8 +17,6 @@
 * resolve critical lint errors in MediaSessionService (f40a5e3)
 * resolve compilation errors and finalize Concert/Recording UI (8c47215)
 * resolve ArchiveMapper compilation errors (2820147)
-
-
 ## [0.10.0] - 2025-07-01
 
 ### New Features
