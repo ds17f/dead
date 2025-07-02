@@ -1,18 +1,11 @@
 import java.util.Properties
 import java.io.ByteArrayOutputStream
 
-// Function to get git commit hash
-fun getGitCommitHash(): String {
-    return try {
-        val stdout = ByteArrayOutputStream()
-        exec {
-            commandLine("git", "rev-parse", "--short", "HEAD")
-            standardOutput = stdout
-        }
-        stdout.toString().trim()
-    } catch (e: Exception) {
-        "unknown"
-    }
+// Function to get git commit hash (configuration cache friendly)
+fun getGitCommitHash(): Provider<String> {
+    return providers.exec {
+        commandLine("git", "rev-parse", "--short", "HEAD")
+    }.standardOutput.asText.map { it.trim() }.orElse("unknown")
 }
 
 plugins {
@@ -41,7 +34,6 @@ android {
         // Add build config fields for version information
         buildConfigField("String", "VERSION_NAME", "\"${versionName}\"")
         buildConfigField("int", "VERSION_CODE", "${versionCode}")
-        buildConfigField("String", "BUILD_TYPE", "\"${buildType.name}\"")
         buildConfigField("long", "BUILD_TIME", "${System.currentTimeMillis()}L")
     }
 
@@ -72,8 +64,9 @@ android {
             isDebuggable = true
             isMinifyEnabled = false
             
-            // Add git commit hash for debug builds
-            buildConfigField("String", "GIT_COMMIT_HASH", "\"${getGitCommitHash()}\"")
+            // Add build type and git commit hash for debug builds
+            buildConfigField("String", "BUILD_TYPE", "\"debug\"")
+            buildConfigField("String", "GIT_COMMIT_HASH", "\"${getGitCommitHash().get()}\"")
         }
         
         release {
@@ -88,7 +81,8 @@ android {
             // Use release signing if available
             signingConfig = signingConfigs.getByName("release")
             
-            // No commit hash for release builds
+            // Add build type and no commit hash for release builds
+            buildConfigField("String", "BUILD_TYPE", "\"release\"")
             buildConfigField("String", "GIT_COMMIT_HASH", "\"\"")
             
             // Optional: different app name for release
