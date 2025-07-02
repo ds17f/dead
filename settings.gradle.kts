@@ -26,6 +26,7 @@ include(":core:network")
 include(":core:media")
 include(":core:design")
 include(":core:common")
+include(":core:settings")
 
 // Feature modules
 include(":feature:browse")
