@@ -30,6 +30,7 @@ fun PlayerScreen(
     concertId: String? = null,
     onNavigateBack: () -> Unit,
     onNavigateToQueue: () -> Unit = {},
+    onNavigateToPlaylist: (String?) -> Unit = {},
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
     Log.d("DEBUG_PLAYER_NEW_CODE", "=== NEW CODE IS RUNNING === concertId: $concertId")
@@ -91,7 +92,8 @@ fun PlayerScreen(
                 PlayerTopBarTitle(
                     concert = currentConcert,
                     modifier = Modifier.clickable {
-                        // TODO: Navigate to album/playlist view
+                        Log.d("PlayerScreen", "Title tapped! Navigating to playlist with concertId: $concertId")
+                        onNavigateToPlaylist(concertId)
                     }
                 )
             },

@@ -14,7 +14,14 @@ fun NavGraphBuilder.playerScreen(
     composable("player") {
         PlayerScreen(
             onNavigateBack = onNavigateBack,
-            onNavigateToQueue = { navController.navigate("queue") }
+            onNavigateToQueue = { navController.navigate("queue") },
+            onNavigateToPlaylist = { concertId ->
+                if (concertId != null) {
+                    navController.navigate("playlist/$concertId")
+                } else {
+                    navController.popBackStack() // Fallback to previous screen
+                }
+            }
         )
     }
     
@@ -24,7 +31,15 @@ fun NavGraphBuilder.playerScreen(
         PlayerScreen(
             concertId = concertId,
             onNavigateBack = onNavigateBack,
-            onNavigateToQueue = { navController.navigate("queue") }
+            onNavigateToQueue = { navController.navigate("queue") },
+            onNavigateToPlaylist = { concertId ->
+                android.util.Log.d("PlayerNavigation", "Navigating to playlist with concertId: '$concertId'")
+                if (concertId != null) {
+                    navController.navigate("playlist/$concertId")
+                } else {
+                    navController.popBackStack() // Fallback to previous screen
+                }
+            }
         )
     }
     
