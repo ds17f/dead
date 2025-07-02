@@ -157,7 +157,13 @@ fun ConcertListScreen(
                         ) { concert ->
                             ExpandableConcertItem(
                                 concert = concert,
-                                onConcertClick = { /* TODO: Navigate to concert details */ },
+                                onConcertClick = { selectedConcert ->
+                                    // Navigate to playlist with best recording
+                                    selectedConcert.bestRecording?.let { recording ->
+                                        onRecordingSelected(recording)
+                                        onNavigateToPlayer()
+                                    }
+                                },
                                 onRecordingClick = { recording ->
                                     onRecordingSelected(recording)
                                     onNavigateToPlayer()

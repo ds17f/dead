@@ -58,7 +58,6 @@ fun ExpandableConcertItem(
                 isExpanded = isExpanded,
                 onExpandClick = { isExpanded = !isExpanded },
                 onConcertClick = onConcertClick,
-                onRecordingClick = onRecordingClick,
                 onFavoriteClick = onFavoriteClick
             )
             
@@ -83,14 +82,13 @@ private fun ConcertHeader(
     isExpanded: Boolean,
     onExpandClick: () -> Unit,
     onConcertClick: (ConcertNew) -> Unit,
-    onRecordingClick: (Recording) -> Unit,
     onFavoriteClick: (ConcertNew) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .clickable { onExpandClick() }
+            .clickable { onConcertClick(concert) }
             .padding(16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -179,24 +177,6 @@ private fun ConcertHeader(
                     contentDescription = "Favorite",
                     tint = if (concert.isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
                 )
-            }
-            
-            // Play best recording button
-            if (concert.bestRecording != null) {
-                IconButton(
-                    onClick = { onRecordingClick(concert.bestRecording!!) },
-                    modifier = Modifier
-                        .size(40.dp)
-                        .clip(CircleShape)
-                        .background(MaterialTheme.colorScheme.primary)
-                ) {
-                    Icon(
-                        painter = IconResources.PlayerControls.Play(),
-                        contentDescription = "Play Best Recording",
-                        modifier = Modifier.size(20.dp),
-                        tint = MaterialTheme.colorScheme.onPrimary
-                    )
-                }
             }
             
             // Expand/collapse button
