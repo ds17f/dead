@@ -3,6 +3,9 @@ package com.deadarchive.core.settings
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -166,30 +169,35 @@ private fun AudioFormatSettingsCard(
                 style = MaterialTheme.typography.bodyMedium
             )
             
-            // Display current format order
+            // Display current format order with reordering controls
             Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 settings.audioFormatPreference.forEachIndexed { index, format ->
-                    Card(
-                        modifier = Modifier.fillMaxWidth(),
-                        colors = CardDefaults.cardColors(
-                            containerColor = MaterialTheme.colorScheme.surface
-                        )
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .padding(12.dp)
-                                .fillMaxWidth(),
-                            horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Text(
-                                text = "${index + 1}. $format",
-                                style = MaterialTheme.typography.bodyMedium
-                            )
+                    FormatPreferenceItem(
+                        format = format,
+                        position = index + 1,
+                        isFirst = index == 0,
+                        isLast = index == settings.audioFormatPreference.size - 1,
+                        onMoveUp = {
+                            if (index > 0) {
+                                val newList = settings.audioFormatPreference.toMutableList()
+                                val temp = newList[index]
+                                newList[index] = newList[index - 1]
+                                newList[index - 1] = temp
+                                onUpdateAudioFormats(newList)
+                            }
+                        },
+                        onMoveDown = {
+                            if (index < settings.audioFormatPreference.size - 1) {
+                                val newList = settings.audioFormatPreference.toMutableList()
+                                val temp = newList[index]
+                                newList[index] = newList[index + 1]
+                                newList[index + 1] = temp
+                                onUpdateAudioFormats(newList)
+                            }
                         }
-                    }
+                    )
                 }
             }
         }
@@ -401,6 +409,117 @@ private fun DeveloperOptionsCard(
                 )
             ) {
                 Text("Reset All Settings")
+            }
+        }
+    }
+}
+
+@Composable
+private fun FormatPreferenceItem(
+    format: String,
+    position: Int,
+    isFirst: Boolean,
+    isLast: Boolean,
+    onMoveUp: () -> Unit,
+    onMoveDown: () -> Unit
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        )
+    ) {
+        Row(
+            modifier = Modifier
+                .padding(12.dp)
+                .fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.weight(1f)
+            ) {
+                // Priority indicator
+                Card(
+                    modifier = Modifier.size(24.dp),
+                    colors = CardDefaults.cardColors(
+                        containerColor = when (position) {
+                            1 -> MaterialTheme.colorScheme.primary
+                            2 -> MaterialTheme.colorScheme.secondary
+                            3 -> MaterialTheme.colorScheme.tertiary
+                            else -> MaterialTheme.colorScheme.outline
+                        }
+                    )
+                ) {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = position.toString(),
+                            style = MaterialTheme.typography.labelSmall,
+                            color = when (position) {
+                                1 -> MaterialTheme.colorScheme.onPrimary
+                                2 -> MaterialTheme.colorScheme.onSecondary
+                                3 -> MaterialTheme.colorScheme.onTertiary
+                                else -> MaterialTheme.colorScheme.onSurface
+                            },
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                }
+                
+                Spacer(modifier = Modifier.width(12.dp))
+                
+                Column {
+                    Text(
+                        text = format,
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = when (position) {
+                            1 -> "Most preferred"
+                            2 -> "Second choice"
+                            3 -> "Third choice"
+                            else -> "Alternative"
+                        },
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+            
+            // Reorder buttons
+            Row {
+                IconButton(
+                    onClick = onMoveUp,
+                    enabled = !isFirst
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.KeyboardArrowUp,
+                        contentDescription = "Move up",
+                        tint = if (isFirst) 
+                            MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                        else 
+                            MaterialTheme.colorScheme.onSurface
+                    )
+                }
+                
+                IconButton(
+                    onClick = onMoveDown,
+                    enabled = !isLast
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.KeyboardArrowDown,
+                        contentDescription = "Move down",
+                        tint = if (isLast) 
+                            MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                        else 
+                            MaterialTheme.colorScheme.onSurface
+                    )
+                }
             }
         }
     }
