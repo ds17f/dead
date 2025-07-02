@@ -44,6 +44,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.model.Recording
+import com.deadarchive.feature.playlist.ExpandableConcertItem
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -51,6 +54,17 @@ import java.util.Locale
 @Composable
 fun BrowseScreen(
     onNavigateToPlayer: (Concert) -> Unit,
+    onNavigateToRecording: (Recording) -> Unit = { recording ->
+        // Convert Recording to Concert for navigation compatibility
+        val concert = Concert(
+            identifier = recording.identifier,
+            title = recording.title,
+            date = recording.concertDate,
+            venue = recording.concertVenue,
+            source = recording.source
+        )
+        onNavigateToPlayer(concert)
+    },
     viewModel: BrowseViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -144,13 +158,21 @@ fun BrowseScreen(
                         verticalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
                         items(state.concerts) { concert ->
-                            ConcertItem(
+                            ExpandableConcertItem(
                                 concert = concert,
-                                onPlayClick = { 
-                                    Log.d("BrowseScreen", "onPlayClick: Navigating to player for concert ${concert.identifier} - ${concert.title}")
-                                    onNavigateToPlayer(concert) 
+                                onConcertClick = { clickedConcert: ConcertNew ->
+                                    // Navigate to best recording of this concert
+                                    clickedConcert.bestRecording?.let { recording ->
+                                        onNavigateToRecording(recording)
+                                    }
                                 },
-                                onFavoriteClick = { viewModel.toggleFavorite(concert) }
+                                onRecordingClick = { recording: Recording ->
+                                    Log.d("BrowseScreen", "onRecordingClick: Navigating to player for recording ${recording.identifier} - ${recording.title}")
+                                    onNavigateToRecording(recording)
+                                },
+                                onFavoriteClick = { clickedConcert: ConcertNew ->
+                                    viewModel.toggleFavorite(clickedConcert)
+                                }
                             )
                         }
                     }
@@ -208,95 +230,6 @@ fun QuickSearchButton(
     }
 }
 
-@Composable
-fun ConcertItem(
-    concert: Concert,
-    onPlayClick: () -> Unit,
-    onFavoriteClick: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    Card(
-        modifier = modifier.fillMaxWidth(),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp),
-        shape = RoundedCornerShape(12.dp)
-    ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            // Header row with title and favorite button
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.Top
-            ) {
-                Text(
-                    text = concert.title,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    maxLines = 2,
-                    overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.weight(1f)
-                )
-                IconButton(
-                    onClick = onFavoriteClick,
-                    modifier = Modifier.size(24.dp)
-                ) {
-                    Icon(
-                        painter = if (concert.isFavorite) IconResources.Navigation.Library() else IconResources.Navigation.LibraryOutlined(),
-                        contentDescription = if (concert.isFavorite) "Remove from favorites" else "Add to favorites",
-                        tint = if (concert.isFavorite) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-            
-            // Concert details
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column {
-                    Text(
-                        text = formatDate(concert.date),
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                    Spacer(modifier = Modifier.height(4.dp))
-                    Text(
-                        text = concert.venue ?: "Unknown venue",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                    if (concert.displaySource.isNotBlank()) {
-                        Text(
-                            text = "Source: ${concert.displaySource}",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                }
-                
-                // Play button
-                IconButton(
-                    onClick = onPlayClick,
-                    modifier = Modifier.size(48.dp)
-                ) {
-                    Icon(
-                        painter = IconResources.PlayerControls.Play(),
-                        contentDescription = "Play concert",
-                        tint = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.size(32.dp)
-                    )
-                }
-            }
-        }
-    }
-}
 
 private fun formatDate(dateString: String): String {
     return try {

@@ -4,7 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.FavoriteRepository
 import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.ConcertNew
 import com.deadarchive.feature.browse.domain.SearchConcertsUseCase
+import com.deadarchive.feature.browse.domain.SearchConcertsNewUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -17,6 +19,7 @@ import javax.inject.Inject
 @HiltViewModel
 class BrowseViewModel @Inject constructor(
     private val searchConcertsUseCase: SearchConcertsUseCase,
+    private val searchConcertsNewUseCase: SearchConcertsNewUseCase,
     private val favoriteRepository: FavoriteRepository
 ) : ViewModel() {
     
@@ -31,7 +34,7 @@ class BrowseViewModel @Inject constructor(
     
     init {
         // Load popular concerts on startup
-        searchConcerts("grateful dead 1977")
+        searchConcertsNew("grateful dead 1977")
     }
     
     fun updateSearchQuery(query: String) {
@@ -40,7 +43,7 @@ class BrowseViewModel @Inject constructor(
         // Auto-search when user types (with debouncing handled by UI)
         if (query.length >= 2) {
             println("📱 UI SEARCH: triggering search for '$query' (length ${query.length})")
-            searchConcerts(query)
+            searchConcertsNew(query)
         } else if (query.isEmpty()) {
             println("📱 UI SEARCH: empty query, setting idle state")
             _uiState.value = BrowseUiState.Idle
@@ -49,25 +52,26 @@ class BrowseViewModel @Inject constructor(
         }
     }
     
-    fun searchConcerts(query: String = _searchQuery.value) {
-        println("📱 VM SEARCH: searchConcerts called with '$query'")
+    
+    fun searchConcertsNew(query: String = _searchQuery.value) {
+        println("📱 VM SEARCH NEW: searchConcertsNew called with '$query'")
         if (query.isBlank()) {
-            println("📱 VM SEARCH: blank query, setting idle state")
+            println("📱 VM SEARCH NEW: blank query, setting idle state")
             _uiState.value = BrowseUiState.Idle
             return
         }
         
         viewModelScope.launch {
-            println("📱 VM SEARCH: starting coroutine for '$query'")
+            println("📱 VM SEARCH NEW: starting coroutine for '$query'")
             _isSearching.value = true
             _uiState.value = BrowseUiState.Loading
             
             try {
                 val startTime = System.currentTimeMillis()
-                searchConcertsUseCase(query)
+                searchConcertsNewUseCase(query)
                     .catch { exception ->
                         val searchTime = System.currentTimeMillis() - startTime
-                        println("📱 VM SEARCH: error after ${searchTime}ms for '$query': ${exception.message}")
+                        println("📱 VM SEARCH NEW: error after ${searchTime}ms for '$query': ${exception.message}")
                         _uiState.value = BrowseUiState.Error(
                             exception.message ?: "Failed to search concerts"
                         )
@@ -75,15 +79,15 @@ class BrowseViewModel @Inject constructor(
                     }
                     .collect { concerts ->
                         val searchTime = System.currentTimeMillis() - startTime
-                        println("📱 VM SEARCH: success after ${searchTime}ms for '$query', got ${concerts.size} concerts")
+                        println("📱 VM SEARCH NEW: success after ${searchTime}ms for '$query', got ${concerts.size} concerts")
                         concerts.take(3).forEachIndexed { index, concert ->
-                            println("  📱 [$index] ${concert.identifier} - ${concert.title} (${concert.date})")
+                            println("  📱 [$index] ${concert.concertId} - ${concert.displayTitle} (${concert.date}) - ${concert.recordingCount} recordings")
                         }
                         _uiState.value = BrowseUiState.Success(concerts)
                         _isSearching.value = false
                     }
             } catch (e: Exception) {
-                println("📱 VM SEARCH: exception for '$query': ${e.message}")
+                println("📱 VM SEARCH NEW: exception for '$query': ${e.message}")
                 _uiState.value = BrowseUiState.Error(
                     e.message ?: "Failed to search concerts"
                 )
@@ -92,16 +96,28 @@ class BrowseViewModel @Inject constructor(
         }
     }
     
-    fun toggleFavorite(concert: Concert) {
+    fun toggleFavorite(concert: ConcertNew) {
         viewModelScope.launch {
             try {
-                if (concert.isFavorite) {
-                    favoriteRepository.removeConcertFromFavorites(concert.identifier)
-                } else {
-                    favoriteRepository.addConcertToFavorites(concert)
+                // For ConcertNew, we need to handle favoriting individual recordings
+                // For now, let's favorite the best recording
+                concert.bestRecording?.let { recording ->
+                    if (concert.isFavorite) {
+                        favoriteRepository.removeConcertFromFavorites(recording.identifier)
+                    } else {
+                        // Convert Recording back to Concert for now (temporary until FavoriteRepository is updated)
+                        val tempConcert = Concert(
+                            identifier = recording.identifier,
+                            title = recording.title,
+                            date = recording.concertDate,
+                            venue = recording.concertVenue,
+                            source = recording.source
+                        )
+                        favoriteRepository.addConcertToFavorites(tempConcert)
+                    }
                 }
                 // Refresh search to update favorite status
-                searchConcerts()
+                searchConcertsNew()
             } catch (e: Exception) {
                 // Could add error handling/snackbar here
             }
@@ -114,7 +130,7 @@ class BrowseViewModel @Inject constructor(
             _uiState.value = BrowseUiState.Loading
             
             try {
-                searchConcertsUseCase.getPopularConcerts()
+                searchConcertsNewUseCase.getPopularConcerts()
                     .catch { exception ->
                         _uiState.value = BrowseUiState.Error(
                             exception.message ?: "Failed to load popular concerts"
@@ -140,7 +156,7 @@ class BrowseViewModel @Inject constructor(
             _uiState.value = BrowseUiState.Loading
             
             try {
-                searchConcertsUseCase.getRecentConcerts()
+                searchConcertsNewUseCase.getRecentConcerts()
                     .catch { exception ->
                         _uiState.value = BrowseUiState.Error(
                             exception.message ?: "Failed to load recent concerts"
@@ -164,6 +180,6 @@ class BrowseViewModel @Inject constructor(
 sealed class BrowseUiState {
     object Idle : BrowseUiState()
     object Loading : BrowseUiState()
-    data class Success(val concerts: List<Concert>) : BrowseUiState()
+    data class Success(val concerts: List<ConcertNew>) : BrowseUiState()
     data class Error(val message: String) : BrowseUiState()
 }

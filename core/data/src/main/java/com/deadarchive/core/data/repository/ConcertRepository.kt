@@ -5,6 +5,7 @@ import com.deadarchive.core.database.ConcertDao
 import com.deadarchive.core.database.ConcertEntity
 import com.deadarchive.core.database.FavoriteDao
 import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.ConcertNew
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
@@ -26,6 +27,9 @@ interface ConcertRepository {
     suspend fun getConcertById(id: String): Concert?
     fun getFavoriteConcerts(): Flow<List<Concert>>
     fun getAllCachedConcerts(): Flow<List<Concert>>
+    
+    // New Concert/Recording structure methods
+    fun searchConcertsNew(query: String): Flow<List<ConcertNew>>
     
     // Streaming URL generation methods
     suspend fun getConcertMetadata(identifier: String): ArchiveMetadataResponse?
@@ -72,6 +76,31 @@ class ConcertRepositoryImpl @Inject constructor(
         println("🔍 SEARCH EMIT: query='$trimmedQuery', emitting ${concerts.size} concerts")
         emit(concerts)
         println("🔍 SEARCH COMPLETE: query='$trimmedQuery'")
+    }
+    
+    /**
+     * Search concerts using the new Concert/Recording structure
+     * Groups individual recordings into concerts by date and venue
+     */
+    override fun searchConcertsNew(query: String): Flow<List<ConcertNew>> = flow {
+        val trimmedQuery = query.trim()
+        println("🔍 NEW SEARCH START: query='$trimmedQuery'")
+        
+        // First get the old concert results
+        val searchResults = performPreciseLocalSearch(trimmedQuery)
+        
+        // Convert old Concert entities to new Concert model format
+        val concerts = searchResults.map { entity ->
+            val isFavorite = favoriteDao.isConcertFavorite(entity.id)
+            entity.toConcert().copy(isFavorite = isFavorite)
+        }
+        
+        // Convert to ConcertNew structure using the migration method
+        val concertsNew = ArchiveMapper.run { concerts.migrateToConcertNew() }
+        
+        println("🔍 NEW SEARCH RESULTS: query='$trimmedQuery', found=${concertsNew.size} concerts")
+        emit(concertsNew)
+        println("🔍 NEW SEARCH COMPLETE: query='$trimmedQuery'")
     }
     
     /**
