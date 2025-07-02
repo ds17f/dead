@@ -453,25 +453,27 @@ private fun PlayerTopBarTitle(
         return
     }
     
-    // Create a comprehensive title with date and venue
+    // Create a clean title with Artist - Date - Venue - Location format
     val titleText = buildString {
-        // Start with the main title
-        if (concert.title.isNotBlank()) {
-            append(concert.title)
-        } else {
-            append("Grateful Dead")
-        }
+        // Start with artist name
+        append("Grateful Dead")
         
         // Add date if available
         if (concert.date.isNotBlank()) {
-            append(" • ")
+            append(" - ")
             append(formatConcertDate(concert.date))
         }
         
-        // Add venue if available and different from title
-        if (!concert.venue.isNullOrBlank() && concert.venue != concert.title) {
-            append(" • ")
+        // Add venue if available
+        if (!concert.venue.isNullOrBlank()) {
+            append(" - ")
             append(concert.venue)
+        }
+        
+        // Add location (city, state) if available
+        if (!concert.location.isNullOrBlank()) {
+            append(" - ")
+            append(concert.location)
         }
     }
     
@@ -493,15 +495,28 @@ private fun ScrollingText(
     var textWidth by remember { mutableStateOf(0) }
     var containerWidth by remember { mutableStateOf(0) }
     
-    // Animation for scrolling
+    // Custom easing function that pauses at both ends
+    val pausingEasing = Easing { fraction ->
+        when {
+            fraction < 0.15f -> 0f // Pause at start (15% of time at position 0)
+            fraction > 0.85f -> 1f // Pause at end (15% of time at position 1)
+            else -> {
+                // Smooth transition for the middle 70% of the time
+                val adjustedFraction = (fraction - 0.15f) / 0.7f
+                adjustedFraction
+            }
+        }
+    }
+    
+    // Animation for scrolling - back and forth motion with pauses at ends
     val animatedOffset by animateFloatAsState(
         targetValue = if (shouldScroll) -(textWidth - containerWidth).toFloat() else 0f,
         animationSpec = infiniteRepeatable(
             animation = tween(
-                durationMillis = ((text.length * 100) + 2000).coerceAtLeast(3000),
-                easing = LinearEasing
+                durationMillis = 8000, // Fixed 8 second duration for consistency
+                easing = pausingEasing
             ),
-            repeatMode = RepeatMode.Restart
+            repeatMode = RepeatMode.Reverse
         ),
         label = "scrolling_text"
     )

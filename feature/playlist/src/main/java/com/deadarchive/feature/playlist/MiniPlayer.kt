@@ -1,5 +1,6 @@
 package com.deadarchive.feature.playlist
 
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -13,10 +14,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.delay
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Concert
 import com.deadarchive.feature.player.PlayerUiState
@@ -85,20 +89,16 @@ fun MiniPlayer(
                     modifier = Modifier.weight(1f),
                     verticalArrangement = Arrangement.Center
                 ) {
-                    Text(
+                    ScrollingText(
                         text = trackTitle ?: "Unknown Track",
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Medium,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
                         color = MaterialTheme.colorScheme.onSurface
                     )
                     
-                    Text(
+                    ScrollingText(
                         text = concert?.displayTitle ?: "Unknown Concert",
                         style = MaterialTheme.typography.bodySmall,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
@@ -190,4 +190,78 @@ fun MiniPlayerContainer(
         concertId = currentConcertId,
         modifier = modifier
     )
+}
+
+@Composable
+private fun ScrollingText(
+    text: String,
+    style: androidx.compose.ui.text.TextStyle = MaterialTheme.typography.bodyMedium,
+    fontWeight: FontWeight? = null,
+    color: androidx.compose.ui.graphics.Color = MaterialTheme.colorScheme.onSurface,
+    modifier: Modifier = Modifier
+) {
+    var shouldScroll by remember { mutableStateOf(false) }
+    var textWidth by remember { mutableStateOf(0) }
+    var containerWidth by remember { mutableStateOf(0) }
+    
+    // Custom easing function that pauses at both ends
+    val pausingEasing = Easing { fraction ->
+        when {
+            fraction < 0.15f -> 0f // Pause at start (15% of time at position 0)
+            fraction > 0.85f -> 1f // Pause at end (15% of time at position 1)
+            else -> {
+                // Smooth transition for the middle 70% of the time
+                val adjustedFraction = (fraction - 0.15f) / 0.7f
+                adjustedFraction
+            }
+        }
+    }
+    
+    // Animation for scrolling - back and forth motion with pauses at ends
+    val animatedOffset by animateFloatAsState(
+        targetValue = if (shouldScroll) -(textWidth - containerWidth).toFloat() else 0f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = 8000, // Fixed 8 second duration for consistency
+                easing = pausingEasing
+            ),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "scrolling_text"
+    )
+    
+    // Auto-start scrolling after a delay if text is too long
+    LaunchedEffect(shouldScroll, textWidth, containerWidth) {
+        if (textWidth > containerWidth && containerWidth > 0) {
+            delay(2000) // Wait 2 seconds before starting to scroll
+            shouldScroll = true
+        }
+    }
+    
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .clip(RectangleShape)
+            .onGloballyPositioned { coordinates ->
+                containerWidth = coordinates.size.width
+            }
+    ) {
+        Text(
+            text = text,
+            style = style,
+            fontWeight = fontWeight,
+            color = color,
+            maxLines = 1,
+            overflow = TextOverflow.Visible,
+            softWrap = false,
+            modifier = Modifier
+                .graphicsLayer {
+                    translationX = animatedOffset
+                }
+                .wrapContentWidth(Alignment.Start, unbounded = true)
+                .onGloballyPositioned { coordinates ->
+                    textWidth = coordinates.size.width
+                }
+        )
+    }
 }
