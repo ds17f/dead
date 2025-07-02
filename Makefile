@@ -133,8 +133,12 @@ dry-run-release:
 	@echo "💡 To perform an actual release, use 'make tag-release'"
 
 clean:
-	@echo "🧹 Cleaning build artifacts..."
-	gradle clean
+	@echo "🧹 Cleaning build artifacts and cache..."
+	gradle clean --no-configuration-cache
+	rm -rf .gradle/
+	rm -rf build/
+	rm -rf */build/
+	rm -rf */*/build/
 	@echo "✅ Clean complete!"
 
 # Development

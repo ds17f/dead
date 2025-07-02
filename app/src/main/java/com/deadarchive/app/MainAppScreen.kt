@@ -38,9 +38,15 @@ fun MainAppScreen(
                     // Global MiniPlayer - shows above bottom navigation
                     if (shouldShowMiniPlayer(currentRoute)) {
                         MiniPlayerContainer(
-                            onTapToExpand = { 
+                            onTapToExpand = { concertId ->
                                 // Navigate to full player when tapping mini player
-                                navController.navigate("player") 
+                                if (concertId != null) {
+                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player/$concertId'")
+                                    navController.navigate("player/$concertId")
+                                } else {
+                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player' (no concertId)")
+                                    navController.navigate("player")
+                                }
                             }
                         )
                     }
@@ -94,6 +100,7 @@ fun MainAppScreen(
             // Browse/Search functionality
             browseScreen(
                 onNavigateToPlayer = { concertId -> 
+                    android.util.Log.d("MainAppNavigation", "Browse navigating to playlist with concertId: '$concertId'")
                     navController.navigate("playlist/$concertId")
                 }
             )
@@ -147,7 +154,10 @@ fun MainAppScreen(
             // Playlist screen
             playlistScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToPlayer = { concertId -> navController.navigate("player/$concertId") }
+                onNavigateToPlayer = { concertId -> 
+                    android.util.Log.d("MainAppNavigation", "Playlist navigating to player with concertId: '$concertId'")
+                    navController.navigate("player/$concertId") 
+                }
             )
             
             // Player screen

@@ -1,6 +1,7 @@
 package com.deadarchive.feature.player
 
 import android.util.Log
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -14,8 +15,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -28,11 +31,22 @@ import kotlinx.coroutines.delay
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PlayerScreen(
+    concertId: String? = null,
     onNavigateBack: () -> Unit,
     onNavigateToQueue: () -> Unit = {},
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
-    Log.d("PlayerScreen", "PlayerScreen: Pure view mode - displaying current MediaController state")
+    Log.d("DEBUG_PLAYER_NEW_CODE", "=== NEW CODE IS RUNNING === concertId: $concertId")
+    // Load concert data if concertId is provided
+    LaunchedEffect(concertId) {
+        Log.d("PlayerScreen", "LaunchedEffect: concertId = '$concertId'")
+        if (!concertId.isNullOrBlank()) {
+            Log.d("PlayerScreen", "Calling viewModel.loadConcert('$concertId')")
+            viewModel.loadConcert(concertId)
+        } else {
+            Log.d("PlayerScreen", "concertId is null or blank, not loading concert data")
+        }
+    }
     
     // PlayerScreen is a pure view - gets all data from MediaController via viewModel
     val uiState by viewModel.uiState.collectAsState()
@@ -64,7 +78,7 @@ fun PlayerScreen(
         Log.d("PlayerScreen", "State Update - isLoading: ${uiState.isLoading}, " +
                 "tracks.size: ${uiState.tracks.size}, " +
                 "error: ${uiState.error}, " +
-                "concert: ${currentConcert?.title}")
+                "concert: ${currentConcert?.let { "${it.title} (${it.date}) - ${it.venue}" } ?: "null"}")
     }
     
     // Position updates are handled automatically by MediaControllerRepository
@@ -78,10 +92,8 @@ fun PlayerScreen(
         // Spotify-style Top App Bar
         TopAppBar(
             title = {
-                Text(
-                    text = currentConcert?.displayTitle ?: "Player",
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
+                PlayerTopBarTitle(
+                    concert = currentConcert,
                     modifier = Modifier.clickable {
                         // TODO: Navigate to album/playlist view
                     }
@@ -423,6 +435,139 @@ private fun NowPlayingSection(
     }
 }
 
+@Composable
+private fun PlayerTopBarTitle(
+    concert: Concert?,
+    modifier: Modifier = Modifier
+) {
+    Log.d("PlayerTopBarTitle", "Concert data: ${concert?.let { "${it.title} (${it.date}) - ${it.venue}" } ?: "null"}")
+    
+    if (concert == null) {
+        Log.d("PlayerTopBarTitle", "Concert is null, showing 'Player'")
+        Text(
+            text = "Player",
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            modifier = modifier
+        )
+        return
+    }
+    
+    // Create a comprehensive title with date and venue
+    val titleText = buildString {
+        // Start with the main title
+        if (concert.title.isNotBlank()) {
+            append(concert.title)
+        } else {
+            append("Grateful Dead")
+        }
+        
+        // Add date if available
+        if (concert.date.isNotBlank()) {
+            append(" • ")
+            append(formatConcertDate(concert.date))
+        }
+        
+        // Add venue if available and different from title
+        if (!concert.venue.isNullOrBlank() && concert.venue != concert.title) {
+            append(" • ")
+            append(concert.venue)
+        }
+    }
+    
+    Log.d("PlayerTopBarTitle", "Generated title text: '$titleText'")
+    
+    // Use scrolling text for long titles
+    ScrollingText(
+        text = titleText,
+        modifier = modifier
+    )
+}
+
+@Composable
+private fun ScrollingText(
+    text: String,
+    modifier: Modifier = Modifier
+) {
+    var shouldScroll by remember { mutableStateOf(false) }
+    var textWidth by remember { mutableStateOf(0) }
+    var containerWidth by remember { mutableStateOf(0) }
+    
+    // Animation for scrolling
+    val animatedOffset by animateFloatAsState(
+        targetValue = if (shouldScroll) -(textWidth - containerWidth).toFloat() else 0f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = ((text.length * 100) + 2000).coerceAtLeast(3000),
+                easing = LinearEasing
+            ),
+            repeatMode = RepeatMode.Restart
+        ),
+        label = "scrolling_text"
+    )
+    
+    // Auto-start scrolling after a delay if text is too long
+    LaunchedEffect(shouldScroll, textWidth, containerWidth) {
+        Log.d("ScrollingText", "LaunchedEffect triggered - textWidth: $textWidth, containerWidth: $containerWidth, shouldScroll: $shouldScroll")
+        if (textWidth > containerWidth && containerWidth > 0) {
+            Log.d("ScrollingText", "Text exceeds container, starting scroll in 2 seconds...")
+            delay(2000) // Wait 2 seconds before starting to scroll
+            shouldScroll = true
+            Log.d("ScrollingText", "Scroll started!")
+        } else {
+            Log.d("ScrollingText", "Text fits in container or measurements not ready")
+        }
+    }
+    
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .clip(RectangleShape)
+            .onGloballyPositioned { coordinates ->
+                containerWidth = coordinates.size.width
+                Log.d("ScrollingText", "Container measured - width: $containerWidth")
+            }
+    ) {
+        Text(
+            text = text,
+            maxLines = 1,
+            overflow = TextOverflow.Visible,
+            softWrap = false,
+            modifier = Modifier
+                .graphicsLayer {
+                    translationX = animatedOffset
+                }
+                .wrapContentWidth(Alignment.Start, unbounded = true)
+                .onGloballyPositioned { coordinates ->
+                    textWidth = coordinates.size.width
+                    Log.d("ScrollingText", "Text measured - width: $textWidth, text: '${text.take(50)}...'")
+                }
+        )
+    }
+}
+
+private fun formatConcertDate(dateString: String): String {
+    return try {
+        // Convert from YYYY-MM-DD to more readable format
+        val parts = dateString.split("-")
+        if (parts.size == 3) {
+            val year = parts[0]
+            val month = parts[1].toInt()
+            val day = parts[2].toInt()
+            
+            val monthNames = arrayOf(
+                "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+            )
+            
+            "${monthNames[month - 1]} $day, $year"
+        } else {
+            dateString
+        }
+    } catch (e: Exception) {
+        dateString
+    }
+}
 
 private fun formatTime(milliseconds: Long): String {
     val totalSeconds = milliseconds / 1000

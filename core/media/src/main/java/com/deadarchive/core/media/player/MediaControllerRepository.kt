@@ -95,6 +95,12 @@ class MediaControllerRepository @Inject constructor(
     private val _queueMetadata = MutableStateFlow<List<Pair<String, String>>>(emptyList()) // URL to Title pairs
     val queueMetadata: StateFlow<List<Pair<String, String>>> = _queueMetadata.asStateFlow()
     
+    // Current concert ID for UI access
+    private val _currentConcertId = MutableStateFlow<String?>(null)
+    val currentConcertIdFlow: StateFlow<String?> = _currentConcertId.asStateFlow()
+    
+    fun getCurrentConcertId(): String? = currentConcertId
+    
     init {
         Log.d(TAG, "MediaControllerRepository initializing")
         connectToService()
@@ -308,30 +314,35 @@ class MediaControllerRepository @Inject constructor(
     // Store track metadata for proper display in media controls
     private var queueTrackTitles: List<String> = emptyList()
     private var queueTrackArtists: List<String> = emptyList()
+    private var currentConcertId: String? = null
     
     fun updateQueueContext(queueUrls: List<String>, currentIndex: Int = 0) {
-        updateQueueContext(queueUrls, emptyList(), emptyList(), currentIndex)
+        updateQueueContext(queueUrls, emptyList(), emptyList(), null, currentIndex)
     }
     
     fun updateQueueContext(
         queueUrls: List<String>, 
         trackTitles: List<String> = emptyList(),
         trackArtists: List<String> = emptyList(),
+        concertId: String? = null,
         currentIndex: Int = 0
     ) {
         Log.d(TAG, "=== UPDATING QUEUE CONTEXT ===")
         Log.d(TAG, "Queue size: ${queueUrls.size}")
         Log.d(TAG, "Track titles: ${trackTitles.size}")
         Log.d(TAG, "Current index: $currentIndex")
+        Log.d(TAG, "Concert ID: $concertId")
         
         currentQueueUrls = queueUrls
         currentQueueIndex = currentIndex
         queueTrackTitles = trackTitles
         queueTrackArtists = trackArtists
+        currentConcertId = concertId
         
         // Update StateFlow for UI
         _queueUrls.value = queueUrls
         _queueIndex.value = currentIndex
+        _currentConcertId.value = concertId
         
         // Update queue metadata for UI display
         val metadata = queueUrls.mapIndexed { index, url ->

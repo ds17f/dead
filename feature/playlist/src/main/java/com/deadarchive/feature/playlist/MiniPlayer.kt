@@ -28,7 +28,8 @@ fun MiniPlayer(
     concert: Concert?,
     trackTitle: String?,
     onPlayPause: () -> Unit,
-    onTapToExpand: () -> Unit,
+    onTapToExpand: (String?) -> Unit,
+    concertId: String? = null,
     modifier: Modifier = Modifier
 ) {
     // Only show MiniPlayer if there's a current track
@@ -38,7 +39,7 @@ fun MiniPlayer(
         modifier = modifier
             .fillMaxWidth()
             .height(72.dp)
-            .clickable { onTapToExpand() },
+            .clickable { onTapToExpand(concertId) },
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp),
         colors = CardDefaults.cardColors(
@@ -134,7 +135,7 @@ fun MiniPlayer(
 
 @Composable
 fun MiniPlayerContainer(
-    onTapToExpand: () -> Unit,
+    onTapToExpand: (String?) -> Unit, // Now accepts concert ID
     modifier: Modifier = Modifier,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
@@ -145,6 +146,7 @@ fun MiniPlayerContainer(
     val currentPosition by viewModel.mediaControllerRepository.currentPosition.collectAsState()
     val duration by viewModel.mediaControllerRepository.duration.collectAsState()
     val playbackState by viewModel.mediaControllerRepository.playbackState.collectAsState()
+    val currentConcertId by viewModel.mediaControllerRepository.currentConcertIdFlow.collectAsState()
     
     // Get track title from MediaController metadata
     val currentTrackTitle = if (currentTrackUrl != null) {
@@ -185,6 +187,7 @@ fun MiniPlayerContainer(
         trackTitle = currentTrackTitle,
         onPlayPause = viewModel::playPause,
         onTapToExpand = onTapToExpand,
+        concertId = currentConcertId,
         modifier = modifier
     )
 }

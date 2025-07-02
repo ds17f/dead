@@ -248,6 +248,7 @@ class PlayerViewModel @Inject constructor(
                     queueUrls = queueUrls,
                     trackTitles = trackTitles,
                     trackArtists = trackArtists,
+                    concertId = _currentConcert.value?.identifier,
                     currentIndex = _uiState.value.currentTrackIndex
                 )
             } else {
