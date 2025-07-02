@@ -5,6 +5,7 @@ import com.deadarchive.core.database.ConcertEntity
 import com.deadarchive.core.database.FavoriteDao
 import com.deadarchive.core.model.Concert
 import com.deadarchive.core.network.ArchiveApiService
+import com.deadarchive.core.data.service.AudioFormatFilterService
 import com.deadarchive.core.network.model.ArchiveSearchResponse
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.google.common.truth.Truth.assertThat
@@ -24,6 +25,7 @@ class ConcertRepositoryTest {
     private lateinit var mockApiService: ArchiveApiService
     private lateinit var mockConcertDao: ConcertDao
     private lateinit var mockFavoriteDao: FavoriteDao
+    private lateinit var mockAudioFormatFilterService: AudioFormatFilterService
     private lateinit var repository: ConcertRepositoryImpl
 
     @Before
@@ -31,7 +33,8 @@ class ConcertRepositoryTest {
         mockApiService = mockk()
         mockConcertDao = mockk()
         mockFavoriteDao = mockk()
-        repository = ConcertRepositoryImpl(mockApiService, mockConcertDao, mockFavoriteDao)
+        mockAudioFormatFilterService = mockk(relaxed = true)
+        repository = ConcertRepositoryImpl(mockApiService, mockConcertDao, mockFavoriteDao, mockAudioFormatFilterService)
     }
 
     @Test

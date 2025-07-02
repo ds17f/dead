@@ -557,8 +557,8 @@ object ArchiveMapper {
                 publicDate = concert.publicDate,
                 concertDate = normalizedDate,
                 concertVenue = concert.venue,
-                tracks = filterPreferredAudioTracks(concert.tracks),
-                audioFiles = filterPreferredAudioFiles(concert.audioFiles),
+                tracks = concert.tracks, // No longer filter here - filtering is done in repository
+                audioFiles = concert.audioFiles, // No longer filter here - filtering is done in repository
                 isFavorite = concert.isFavorite,
                 isDownloaded = concert.isDownloaded
             )

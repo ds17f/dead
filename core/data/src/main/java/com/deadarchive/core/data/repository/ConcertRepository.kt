@@ -10,6 +10,7 @@ import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
+import com.deadarchive.core.data.service.AudioFormatFilterService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.emitAll
@@ -25,6 +26,7 @@ import javax.inject.Singleton
 interface ConcertRepository {
     fun searchConcerts(query: String): Flow<List<Concert>>
     suspend fun getConcertById(id: String): Concert?
+    suspend fun getConcertByIdWithFormatFilter(id: String, formatPreferences: List<String>): Concert?
     fun getFavoriteConcerts(): Flow<List<Concert>>
     fun getAllCachedConcerts(): Flow<List<Concert>>
     
@@ -43,7 +45,8 @@ interface ConcertRepository {
 class ConcertRepositoryImpl @Inject constructor(
     private val archiveApiService: ArchiveApiService,
     private val concertDao: ConcertDao,
-    private val favoriteDao: FavoriteDao
+    private val favoriteDao: FavoriteDao,
+    private val audioFormatFilterService: AudioFormatFilterService
 ) : ConcertRepository {
     
     companion object {
@@ -299,6 +302,28 @@ class ConcertRepositoryImpl @Inject constructor(
         }
     }
     
+    /**
+     * Get concert by ID with audio format filtering applied
+     * This returns a concert with only the highest-ranked format for each song
+     */
+    override suspend fun getConcertByIdWithFormatFilter(id: String, formatPreferences: List<String>): Concert? {
+        Log.d(TAG, "getConcertByIdWithFormatFilter: ID=$id, preferences=$formatPreferences")
+        
+        // First get the full concert with all tracks
+        val concert = getConcertById(id) ?: return null
+        
+        // Apply format filtering to tracks
+        val filteredTracks = audioFormatFilterService.filterTracksByPreferredFormat(
+            tracks = concert.tracks,
+            formatPreferences = formatPreferences
+        )
+        
+        Log.d(TAG, "getConcertByIdWithFormatFilter: Filtered ${concert.tracks.size} tracks to ${filteredTracks.size}")
+        
+        // Return concert with filtered tracks
+        return concert.copy(tracks = filteredTracks)
+    }
+
     /**
      * Get favorite concerts with real-time updates
      */

@@ -16,13 +16,15 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class PlayerViewModel @Inject constructor(
     val mediaControllerRepository: MediaControllerRepository,
-    private val concertRepository: ConcertRepository
+    private val concertRepository: ConcertRepository,
+    private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow(PlayerUiState())
@@ -152,18 +154,24 @@ class PlayerViewModel @Inject constructor(
             _uiState.value = _uiState.value.copy(isLoading = true, error = null)
             
             try {
-                Log.d(TAG, "loadConcert: Calling repository.getConcertById($concertId)")
-                val concert = concertRepository.getConcertById(concertId)
+                // Get user's audio format preferences
+                val settings = settingsRepository.getSettings().firstOrNull()
+                val formatPreferences = settings?.audioFormatPreference ?: com.deadarchive.core.model.AppConstants.PREFERRED_AUDIO_FORMATS
+                
+                Log.d(TAG, "loadConcert: Using format preferences: $formatPreferences")
+                
+                // Load concert with format filtering applied
+                val concert = concertRepository.getConcertByIdWithFormatFilter(concertId, formatPreferences)
                 
                 if (concert != null) {
-                    Log.d(TAG, "loadConcert: Concert found - title: ${concert.title}, tracks count: ${concert.tracks.size}")
+                    Log.d(TAG, "loadConcert: Concert found - title: ${concert.title}, filtered tracks count: ${concert.tracks.size}")
                     concert.tracks.forEachIndexed { index, track ->
-                        Log.d(TAG, "loadConcert: Track $index - title: ${track.displayTitle}, audioFile: ${track.audioFile?.filename}")
+                        Log.d(TAG, "loadConcert: Track $index - title: ${track.displayTitle}, format: ${track.audioFile?.format}")
                     }
                     
                     _currentConcert.value = concert
                     
-                    // Create playlist from concert tracks
+                    // Create playlist from filtered concert tracks
                     val playlist = concert.tracks.mapIndexed { index, track ->
                         PlaylistItem(
                             concertIdentifier = concert.identifier,
@@ -186,7 +194,7 @@ class PlayerViewModel @Inject constructor(
                     )
                     
                     // Note: Removed auto-play behavior - concerts should only play when explicitly requested
-                    Log.d(TAG, "loadConcert: Concert loaded successfully, ${concert.tracks.size} tracks available")
+                    Log.d(TAG, "loadConcert: Concert loaded successfully, ${concert.tracks.size} filtered tracks available")
                 } else {
                     Log.w(TAG, "loadConcert: Concert not found for ID: $concertId")
                     _uiState.value = _uiState.value.copy(
@@ -219,6 +227,7 @@ class PlayerViewModel @Inject constructor(
     
     /**
      * Update MediaControllerRepository with current queue context
+     * The playlist should already contain filtered tracks (one format per song)
      */
     private fun updateQueueContext(playlist: List<PlaylistItem>) {
         val queueUrls = playlist.mapNotNull { it.track.audioFile?.downloadUrl }
@@ -229,8 +238,12 @@ class PlayerViewModel @Inject constructor(
             // Only update queue context if nothing is currently playing to avoid interrupting playback
             val isCurrentlyPlaying = mediaControllerRepository.isPlaying.value
             if (!isCurrentlyPlaying) {
-                Log.d(TAG, "updateQueueContext: Updating MediaController with ${queueUrls.size} queue items (not currently playing)")
+                Log.d(TAG, "updateQueueContext: Updating MediaController with ${queueUrls.size} filtered queue items (not currently playing)")
                 Log.d(TAG, "updateQueueContext: Sample titles: ${trackTitles.take(3)}")
+                // Log the formats being queued to verify filtering worked
+                playlist.take(3).forEach { item ->
+                    Log.d(TAG, "updateQueueContext: Queue item - ${item.track.displayTitle} (${item.track.audioFile?.format})")
+                }
                 mediaControllerRepository.updateQueueContext(
                     queueUrls = queueUrls,
                     trackTitles = trackTitles,
@@ -361,12 +374,18 @@ class PlayerViewModel @Inject constructor(
     
     /**
      * Set a custom playlist for playback
+     * Note: The playlist should already have format filtering applied before calling this method
      * @param playlist List of PlaylistItem to set as current playlist
      * @param title Optional title for the playlist
      */
     fun setPlaylist(playlist: List<PlaylistItem>, title: String? = null) {
         Log.d(TAG, "setPlaylist: Setting playlist with ${playlist.size} items, title: $title")
         _playlistTitle.value = title
+        
+        // Log formats to verify filtering was applied
+        playlist.take(3).forEach { item ->
+            Log.d(TAG, "setPlaylist: Item - ${item.track.displayTitle} (${item.track.audioFile?.format})")
+        }
         
         // Update MediaControllerRepository with queue context (this will populate currentPlaylist via StateFlow)
         updateQueueContext(playlist)

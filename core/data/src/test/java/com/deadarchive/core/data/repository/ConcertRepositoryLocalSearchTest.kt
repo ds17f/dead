@@ -4,6 +4,7 @@ import com.deadarchive.core.database.ConcertDao
 import com.deadarchive.core.database.ConcertEntity
 import com.deadarchive.core.database.FavoriteDao
 import com.deadarchive.core.network.ArchiveApiService
+import com.deadarchive.core.data.service.AudioFormatFilterService
 import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -22,13 +23,15 @@ class ConcertRepositoryLocalSearchTest {
     private lateinit var mockConcertDao: ConcertDao
     private lateinit var mockFavoriteDao: FavoriteDao
     private lateinit var mockApiService: ArchiveApiService
+    private lateinit var mockAudioFormatFilterService: AudioFormatFilterService
 
     @Before
     fun setup() {
         mockConcertDao = mockk(relaxed = true)
         mockFavoriteDao = mockk(relaxed = true)
         mockApiService = mockk(relaxed = true) // Not used in local-only search
-        concertRepository = ConcertRepositoryImpl(mockApiService, mockConcertDao, mockFavoriteDao)
+        mockAudioFormatFilterService = mockk(relaxed = true)
+        concertRepository = ConcertRepositoryImpl(mockApiService, mockConcertDao, mockFavoriteDao, mockAudioFormatFilterService)
     }
 
     @Test
