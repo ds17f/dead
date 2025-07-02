@@ -49,15 +49,29 @@ fun MainAppScreen(
                     DeadArchiveBottomNavigation(
                         currentRoute = currentRoute,
                         onNavigateToDestination = { route ->
-                            navController.navigate(route) {
-                                // Pop up to the graph's start destination to avoid building up a large stack
-                                popUpTo(navController.graph.startDestinationId) {
-                                    saveState = true
+                            when (route) {
+                                "home" -> {
+                                    // For home button, always navigate to fresh home screen
+                                    navController.navigate(route) {
+                                        popUpTo("home") {
+                                            inclusive = true
+                                        }
+                                        launchSingleTop = true
+                                    }
                                 }
-                                // Avoid multiple copies of the same destination
-                                launchSingleTop = true
-                                // Restore state when re-selecting a previously selected item
-                                restoreState = true
+                                else -> {
+                                    // For other tabs, use standard bottom nav behavior
+                                    navController.navigate(route) {
+                                        // Pop up to the graph's start destination to avoid building up a large stack
+                                        popUpTo(navController.graph.startDestinationId) {
+                                            saveState = true
+                                        }
+                                        // Avoid multiple copies of the same destination
+                                        launchSingleTop = true
+                                        // Restore state when re-selecting a previously selected item
+                                        restoreState = true
+                                    }
+                                }
                             }
                         }
                     )
