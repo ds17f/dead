@@ -1,7 +1,6 @@
 package com.deadarchive.feature.player
 
 import android.util.Log
-import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -17,8 +16,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.graphicsLayer
-import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -26,7 +23,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Concert
 import com.deadarchive.core.model.Track
-import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -453,113 +449,57 @@ private fun PlayerTopBarTitle(
         return
     }
     
-    // Create a clean title with Artist - Date - Venue - Location format
-    val titleText = buildString {
-        // Start with artist name
-        append("Grateful Dead")
-        
-        // Add date if available
-        if (concert.date.isNotBlank()) {
-            append(" - ")
-            append(formatConcertDate(concert.date))
+    Column(
+        modifier = modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        // First line: Artist - Date
+        val firstLine = buildString {
+            append("Grateful Dead")
+            if (concert.date.isNotBlank()) {
+                append(" - ")
+                append(formatConcertDate(concert.date))
+            }
         }
         
-        // Add venue if available
-        if (!concert.venue.isNullOrBlank()) {
-            append(" - ")
-            append(concert.venue)
+        Text(
+            text = firstLine,
+            style = MaterialTheme.typography.titleMedium,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            color = MaterialTheme.colorScheme.onSurface,
+            textAlign = TextAlign.Center,
+            modifier = Modifier.fillMaxWidth()
+        )
+        
+        // Second line: Venue - City, State
+        val secondLine = buildString {
+            if (!concert.venue.isNullOrBlank()) {
+                append(concert.venue)
+            }
+            if (!concert.location.isNullOrBlank()) {
+                if (!concert.venue.isNullOrBlank()) {
+                    append(" - ")
+                }
+                append(concert.location)
+            }
         }
         
-        // Add location (city, state) if available
-        if (!concert.location.isNullOrBlank()) {
-            append(" - ")
-            append(concert.location)
+        if (secondLine.isNotBlank()) {
+            Text(
+                text = secondLine,
+                style = MaterialTheme.typography.bodySmall,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth()
+            )
         }
     }
-    
-    Log.d("PlayerTopBarTitle", "Generated title text: '$titleText'")
-    
-    // Use scrolling text for long titles
-    ScrollingText(
-        text = titleText,
-        modifier = modifier
-    )
 }
 
-@Composable
-private fun ScrollingText(
-    text: String,
-    modifier: Modifier = Modifier
-) {
-    var shouldScroll by remember { mutableStateOf(false) }
-    var textWidth by remember { mutableStateOf(0) }
-    var containerWidth by remember { mutableStateOf(0) }
-    
-    // Custom easing function that pauses at both ends
-    val pausingEasing = Easing { fraction ->
-        when {
-            fraction < 0.15f -> 0f // Pause at start (15% of time at position 0)
-            fraction > 0.85f -> 1f // Pause at end (15% of time at position 1)
-            else -> {
-                // Smooth transition for the middle 70% of the time
-                val adjustedFraction = (fraction - 0.15f) / 0.7f
-                adjustedFraction
-            }
-        }
-    }
-    
-    // Animation for scrolling - back and forth motion with pauses at ends
-    val animatedOffset by animateFloatAsState(
-        targetValue = if (shouldScroll) -(textWidth - containerWidth).toFloat() else 0f,
-        animationSpec = infiniteRepeatable(
-            animation = tween(
-                durationMillis = 8000, // Fixed 8 second duration for consistency
-                easing = pausingEasing
-            ),
-            repeatMode = RepeatMode.Reverse
-        ),
-        label = "scrolling_text"
-    )
-    
-    // Auto-start scrolling after a delay if text is too long
-    LaunchedEffect(shouldScroll, textWidth, containerWidth) {
-        Log.d("ScrollingText", "LaunchedEffect triggered - textWidth: $textWidth, containerWidth: $containerWidth, shouldScroll: $shouldScroll")
-        if (textWidth > containerWidth && containerWidth > 0) {
-            Log.d("ScrollingText", "Text exceeds container, starting scroll in 2 seconds...")
-            delay(2000) // Wait 2 seconds before starting to scroll
-            shouldScroll = true
-            Log.d("ScrollingText", "Scroll started!")
-        } else {
-            Log.d("ScrollingText", "Text fits in container or measurements not ready")
-        }
-    }
-    
-    Box(
-        modifier = modifier
-            .fillMaxWidth()
-            .clip(RectangleShape)
-            .onGloballyPositioned { coordinates ->
-                containerWidth = coordinates.size.width
-                Log.d("ScrollingText", "Container measured - width: $containerWidth")
-            }
-    ) {
-        Text(
-            text = text,
-            maxLines = 1,
-            overflow = TextOverflow.Visible,
-            softWrap = false,
-            modifier = Modifier
-                .graphicsLayer {
-                    translationX = animatedOffset
-                }
-                .wrapContentWidth(Alignment.Start, unbounded = true)
-                .onGloballyPositioned { coordinates ->
-                    textWidth = coordinates.size.width
-                    Log.d("ScrollingText", "Text measured - width: $textWidth, text: '${text.take(50)}...'")
-                }
-        )
-    }
-}
 
 private fun formatConcertDate(dateString: String): String {
     return try {
