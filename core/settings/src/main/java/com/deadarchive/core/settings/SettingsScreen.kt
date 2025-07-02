@@ -1,21 +1,23 @@
 package com.deadarchive.core.settings
 
+import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.KeyboardArrowDown
-import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.RepeatMode
 import com.deadarchive.core.settings.model.ThemeMode
 
 /**
@@ -121,12 +123,6 @@ fun SettingsScreen(
                 onUpdateDownloadWifiOnly = viewModel::updateDownloadWifiOnly
             )
             
-            // Media Player Settings Section
-            MediaPlayerSettingsCard(
-                settings = settings,
-                onUpdateRepeatMode = viewModel::updateRepeatMode,
-                onUpdateShuffleEnabled = viewModel::updateShuffleEnabled
-            )
             
             // Developer Options Section
             DeveloperOptionsCard(
@@ -150,6 +146,9 @@ private fun AudioFormatSettingsCard(
     settings: AppSettings,
     onUpdateAudioFormats: (List<String>) -> Unit
 ) {
+    var draggedItem by remember { mutableStateOf<String?>(null) }
+    var draggedOverItem by remember { mutableStateOf<String?>(null) }
+    
     Card(
         modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
@@ -165,38 +164,38 @@ private fun AudioFormatSettingsCard(
             )
             
             Text(
-                text = "Priority order for audio formats when multiple are available",
+                text = "Drag to reorder priority when multiple formats are available",
                 style = MaterialTheme.typography.bodyMedium
             )
             
-            // Display current format order with reordering controls
+            // Display current format order with drag-and-drop
             Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 settings.audioFormatPreference.forEachIndexed { index, format ->
-                    FormatPreferenceItem(
+                    DraggableFormatItem(
                         format = format,
                         position = index + 1,
-                        isFirst = index == 0,
-                        isLast = index == settings.audioFormatPreference.size - 1,
-                        onMoveUp = {
-                            if (index > 0) {
-                                val newList = settings.audioFormatPreference.toMutableList()
-                                val temp = newList[index]
-                                newList[index] = newList[index - 1]
-                                newList[index - 1] = temp
-                                onUpdateAudioFormats(newList)
+                        isDragged = draggedItem == format,
+                        isDraggedOver = draggedOverItem == format,
+                        onDragStart = { draggedItem = format },
+                        onDragEnd = { 
+                            draggedItem?.let { draggedFormat ->
+                                draggedOverItem?.let { targetFormat ->
+                                    val fromIndex = settings.audioFormatPreference.indexOf(draggedFormat)
+                                    val toIndex = settings.audioFormatPreference.indexOf(targetFormat)
+                                    if (fromIndex != -1 && toIndex != -1 && fromIndex != toIndex) {
+                                        val newList = settings.audioFormatPreference.toMutableList()
+                                        val item = newList.removeAt(fromIndex)
+                                        newList.add(toIndex, item)
+                                        onUpdateAudioFormats(newList)
+                                    }
+                                }
                             }
+                            draggedItem = null
+                            draggedOverItem = null
                         },
-                        onMoveDown = {
-                            if (index < settings.audioFormatPreference.size - 1) {
-                                val newList = settings.audioFormatPreference.toMutableList()
-                                val temp = newList[index]
-                                newList[index] = newList[index + 1]
-                                newList[index + 1] = temp
-                                onUpdateAudioFormats(newList)
-                            }
-                        }
+                        onDragOver = { draggedOverItem = format }
                     )
                 }
             }
@@ -298,83 +297,6 @@ private fun DownloadSettingsCard(
     }
 }
 
-@Composable
-private fun MediaPlayerSettingsCard(
-    settings: AppSettings,
-    onUpdateRepeatMode: (RepeatMode) -> Unit,
-    onUpdateShuffleEnabled: (Boolean) -> Unit
-) {
-    Card(
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
-            Text(
-                text = "Media Player",
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold
-            )
-            
-            // Repeat Mode
-            Text(
-                text = "Repeat Mode",
-                style = MaterialTheme.typography.bodyMedium,
-                fontWeight = FontWeight.Medium
-            )
-            
-            Column(
-                verticalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                RepeatMode.values().forEach { repeatMode ->
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        RadioButton(
-                            selected = settings.repeatMode == repeatMode,
-                            onClick = { onUpdateRepeatMode(repeatMode) }
-                        )
-                        Spacer(modifier = Modifier.width(8.dp))
-                        Text(
-                            text = repeatMode.displayName,
-                            style = MaterialTheme.typography.bodyMedium
-                        )
-                    }
-                }
-            }
-            
-            Spacer(modifier = Modifier.height(8.dp))
-            
-            // Shuffle Setting
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column(
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Text(
-                        text = "Shuffle",
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = "Play tracks in random order",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-                Switch(
-                    checked = settings.shuffleEnabled,
-                    onCheckedChange = onUpdateShuffleEnabled
-                )
-            }
-        }
-    }
-}
 
 @Composable
 private fun DeveloperOptionsCard(
@@ -415,18 +337,35 @@ private fun DeveloperOptionsCard(
 }
 
 @Composable
-private fun FormatPreferenceItem(
+private fun DraggableFormatItem(
     format: String,
     position: Int,
-    isFirst: Boolean,
-    isLast: Boolean,
-    onMoveUp: () -> Unit,
-    onMoveDown: () -> Unit
+    isDragged: Boolean,
+    isDraggedOver: Boolean,
+    onDragStart: () -> Unit,
+    onDragEnd: () -> Unit,
+    onDragOver: () -> Unit
 ) {
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .pointerInput(format) {
+                detectDragGestures(
+                    onDragStart = { onDragStart() },
+                    onDragEnd = { onDragEnd() }
+                ) { _, _ ->
+                    onDragOver()
+                }
+            },
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surface
+            containerColor = when {
+                isDragged -> MaterialTheme.colorScheme.primaryContainer
+                isDraggedOver -> MaterialTheme.colorScheme.secondaryContainer
+                else -> MaterialTheme.colorScheme.surface
+            }
+        ),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = if (isDragged) 8.dp else 1.dp
         )
     ) {
         Row(
@@ -491,36 +430,12 @@ private fun FormatPreferenceItem(
                 }
             }
             
-            // Reorder buttons
-            Row {
-                IconButton(
-                    onClick = onMoveUp,
-                    enabled = !isFirst
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.KeyboardArrowUp,
-                        contentDescription = "Move up",
-                        tint = if (isFirst) 
-                            MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
-                        else 
-                            MaterialTheme.colorScheme.onSurface
-                    )
-                }
-                
-                IconButton(
-                    onClick = onMoveDown,
-                    enabled = !isLast
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.KeyboardArrowDown,
-                        contentDescription = "Move down",
-                        tint = if (isLast) 
-                            MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
-                        else 
-                            MaterialTheme.colorScheme.onSurface
-                    )
-                }
-            }
+            // Drag handle
+            Icon(
+                imageVector = Icons.Default.Menu,
+                contentDescription = "Drag to reorder",
+                tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
         }
     }
 }

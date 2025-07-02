@@ -2,7 +2,6 @@ package com.deadarchive.core.settings.data
 
 import android.util.Log
 import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.RepeatMode
 import com.deadarchive.core.settings.model.ThemeMode
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -76,33 +75,6 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
-    /**
-     * Update the media player repeat mode
-     */
-    override suspend fun updateRepeatMode(repeatMode: RepeatMode) {
-        try {
-            Log.d(TAG, "Updating repeat mode: $repeatMode")
-            settingsDataStore.updateRepeatMode(repeatMode)
-            Log.d(TAG, "Repeat mode updated successfully")
-        } catch (e: Exception) {
-            Log.e(TAG, "Failed to update repeat mode", e)
-            throw e
-        }
-    }
-    
-    /**
-     * Update the media player shuffle setting
-     */
-    override suspend fun updateShuffleEnabled(enabled: Boolean) {
-        try {
-            Log.d(TAG, "Updating shuffle enabled: $enabled")
-            settingsDataStore.updateShuffleEnabled(enabled)
-            Log.d(TAG, "Shuffle enabled updated successfully")
-        } catch (e: Exception) {
-            Log.e(TAG, "Failed to update shuffle enabled setting", e)
-            throw e
-        }
-    }
     
     /**
      * Reset all settings to their default values

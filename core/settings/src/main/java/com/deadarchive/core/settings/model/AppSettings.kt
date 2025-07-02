@@ -9,9 +9,7 @@ import com.deadarchive.core.model.AppConstants
 data class AppSettings(
     val audioFormatPreference: List<String> = AppConstants.PREFERRED_AUDIO_FORMATS,
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
-    val downloadOnWifiOnly: Boolean = true,
-    val repeatMode: RepeatMode = RepeatMode.OFF,
-    val shuffleEnabled: Boolean = false
+    val downloadOnWifiOnly: Boolean = true
 )
 
 /**
@@ -23,11 +21,3 @@ enum class ThemeMode(val displayName: String) {
     SYSTEM("Follow System")
 }
 
-/**
- * Repeat mode options for media playback
- */
-enum class RepeatMode(val displayName: String) {
-    OFF("Off"),
-    ONE("Repeat One"),
-    ALL("Repeat All")
-}

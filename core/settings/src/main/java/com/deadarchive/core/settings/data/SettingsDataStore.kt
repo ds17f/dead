@@ -10,7 +10,6 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.deadarchive.core.model.AppConstants
 import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.RepeatMode
 import com.deadarchive.core.settings.model.ThemeMode
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
@@ -35,8 +34,6 @@ class SettingsDataStore @Inject constructor(
     private val audioFormatPreferenceKey = stringPreferencesKey(AppConstants.PREF_AUDIO_QUALITY)
     private val themeModeKey = stringPreferencesKey(AppConstants.PREF_THEME_MODE)
     private val downloadWifiOnlyKey = booleanPreferencesKey(AppConstants.PREF_DOWNLOAD_WIFI_ONLY)
-    private val repeatModeKey = stringPreferencesKey(AppConstants.PREF_REPEAT_MODE)
-    private val shuffleEnabledKey = booleanPreferencesKey(AppConstants.PREF_SHUFFLE_ENABLED)
     
     /**
      * Reactive flow of application settings
@@ -77,23 +74,6 @@ class SettingsDataStore @Inject constructor(
         }
     }
     
-    /**
-     * Update repeat mode setting
-     */
-    suspend fun updateRepeatMode(repeatMode: RepeatMode) {
-        dataStore.edit { preferences ->
-            preferences[repeatModeKey] = repeatMode.name
-        }
-    }
-    
-    /**
-     * Update shuffle enabled setting
-     */
-    suspend fun updateShuffleEnabled(enabled: Boolean) {
-        dataStore.edit { preferences ->
-            preferences[shuffleEnabledKey] = enabled
-        }
-    }
     
     /**
      * Reset all settings to defaults
@@ -122,19 +102,10 @@ class SettingsDataStore @Inject constructor(
             ThemeMode.SYSTEM
         }
         
-        val repeatModeString = this[repeatModeKey] ?: RepeatMode.OFF.name
-        val repeatMode = try {
-            RepeatMode.valueOf(repeatModeString)
-        } catch (e: IllegalArgumentException) {
-            RepeatMode.OFF
-        }
-        
         return AppSettings(
             audioFormatPreference = audioFormatPreference,
             themeMode = themeMode,
-            downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true,
-            repeatMode = repeatMode,
-            shuffleEnabled = this[shuffleEnabledKey] ?: false
+            downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true
         )
     }
 }

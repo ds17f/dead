@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.settings.data.SettingsRepository
 import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.RepeatMode
 import com.deadarchive.core.settings.model.ThemeMode
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -131,59 +130,6 @@ class SettingsViewModel @Inject constructor(
         }
     }
     
-    /**
-     * Update the repeat mode setting
-     */
-    fun updateRepeatMode(repeatMode: RepeatMode) {
-        viewModelScope.launch {
-            try {
-                Log.d(TAG, "Updating repeat mode to: $repeatMode")
-                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
-                
-                settingsRepository.updateRepeatMode(repeatMode)
-                
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    successMessage = "Repeat mode set to ${repeatMode.displayName}"
-                )
-                Log.d(TAG, "Repeat mode updated successfully")
-                
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to update repeat mode", e)
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    errorMessage = "Failed to update repeat mode: ${e.message}"
-                )
-            }
-        }
-    }
-    
-    /**
-     * Update the shuffle enabled setting
-     */
-    fun updateShuffleEnabled(enabled: Boolean) {
-        viewModelScope.launch {
-            try {
-                Log.d(TAG, "Updating shuffle enabled to: $enabled")
-                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
-                
-                settingsRepository.updateShuffleEnabled(enabled)
-                
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    successMessage = if (enabled) "Shuffle enabled" else "Shuffle disabled"
-                )
-                Log.d(TAG, "Shuffle enabled setting updated successfully")
-                
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to update shuffle enabled setting", e)
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    errorMessage = "Failed to update shuffle setting: ${e.message}"
-                )
-            }
-        }
-    }
     
     /**
      * Reset all settings to their default values

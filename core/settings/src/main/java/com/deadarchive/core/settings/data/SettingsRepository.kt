@@ -1,7 +1,6 @@
 package com.deadarchive.core.settings.data
 
 import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.RepeatMode
 import com.deadarchive.core.settings.model.ThemeMode
 import kotlinx.coroutines.flow.Flow
 
@@ -35,17 +34,6 @@ interface SettingsRepository {
      */
     suspend fun updateDownloadWifiOnly(wifiOnly: Boolean)
     
-    /**
-     * Update the media player repeat mode
-     * @param repeatMode Selected repeat mode (Off, One, or All)
-     */
-    suspend fun updateRepeatMode(repeatMode: RepeatMode)
-    
-    /**
-     * Update the media player shuffle setting
-     * @param enabled True to enable shuffle, false to disable
-     */
-    suspend fun updateShuffleEnabled(enabled: Boolean)
     
     /**
      * Reset all settings to their default values
