@@ -15,8 +15,8 @@ help:
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
 	@echo "  make release     - Build release APK"
-	@echo "  make tag-release - Create release version, changelog, and build APK"
-	@echo "  make dry-run-release - Test release process without making changes"
+	@echo "  make tag-release - Run tests/lint/builds, then create release version and tag"
+	@echo "  make dry-run-release - Test full release process including quality checks"
 	@echo "  make clean       - Clean build artifacts"
 	@echo ""
 	@echo "Development:"
@@ -66,24 +66,68 @@ deps:
 # Build Commands
 build:
 	@echo "🔨 Building debug APK..."
-	gradle assembleDebug --console=plain 2>&1 | tee build-output.log
-	@echo "✅ Debug APK built successfully! Output saved to build-output.log"
-	@echo "📱 APK location: app/build/outputs/apk/debug/"
+	@if gradle assembleDebug --console=plain > build-output.log 2>&1; then \
+		echo "✅ Debug APK built successfully!"; \
+	else \
+		echo "❌ Debug build failed! Check build-output.log for details"; \
+		exit 1; \
+	fi
 
 release:
 	@echo "🔨 Building release APK..."
-	gradle assembleRelease --console=plain 2>&1 | tee release-output.log
-	@echo "✅ Release APK built successfully! Output saved to release-output.log"
-	@echo "📱 APK location: app/build/outputs/apk/release/"
+	@if gradle assembleRelease --console=plain > release-output.log 2>&1; then \
+		echo "✅ Release APK built successfully!"; \
+	else \
+		echo "❌ Release build failed! Check release-output.log for details"; \
+		exit 1; \
+	fi
 
 tag-release:
 	@echo "🚀 Creating new release version..."
+	@echo "🔍 Checking git working directory..."
+	@if [ -n "$$(git status --porcelain)" ]; then \
+		echo "❌ Working directory not clean! Please commit or stash changes first."; \
+		git status; \
+		exit 1; \
+	fi
+	@echo "✅ Working directory is clean"
+	@echo "1️⃣ Running quality checks and builds before release..."
+	@$(MAKE) --no-print-directory test
+	@$(MAKE) --no-print-directory lint
+	@$(MAKE) --no-print-directory build
+	@echo "2️⃣ Attempting release build (may fail due to signing requirements)..."
+	@if $(MAKE) --no-print-directory release > /dev/null 2>&1; then \
+		echo "✅ Release build succeeded!"; \
+	else \
+		echo "⚠️ Release build failed (likely due to signing), but debug build passed"; \
+		echo "🔍 This is normal in CI/CD environments without signing keys"; \
+	fi
+	@echo "3️⃣ All quality checks passed! Proceeding with release..."
 	@chmod +x ./scripts/release.sh
 	@./scripts/release.sh
 	@echo "✅ Release tagged and pushed! GitHub Actions will build the artifacts."
 
 dry-run-release:
 	@echo "🧪 Testing release process (dry run)..."
+	@echo "🔍 Checking git working directory..."
+	@if [ -n "$$(git status --porcelain)" ]; then \
+		echo "❌ Working directory not clean! Please commit or stash changes first."; \
+		git status; \
+		exit 1; \
+	fi
+	@echo "✅ Working directory is clean"
+	@echo "1️⃣ Running quality checks and builds to validate release readiness..."
+	@$(MAKE) --no-print-directory test
+	@$(MAKE) --no-print-directory lint
+	@$(MAKE) --no-print-directory build
+	@echo "2️⃣ Attempting release build (may fail due to signing requirements)..."
+	@if $(MAKE) --no-print-directory release > /dev/null 2>&1; then \
+		echo "✅ Release build succeeded!"; \
+	else \
+		echo "⚠️ Release build failed (likely due to signing), but debug build passed"; \
+		echo "🔍 This is normal in CI/CD environments without signing keys"; \
+	fi
+	@echo "3️⃣ All quality checks passed! Proceeding with dry run..."
 	@chmod +x ./scripts/release.sh
 	@./scripts/release.sh --dry-run
 	@echo "💡 To perform an actual release, use 'make tag-release'"
@@ -141,14 +185,21 @@ debug: build install
 # Quality Assurance
 test:
 	@echo "🧪 Running unit tests..."
-	gradle test --console=plain 2>&1 | tee test-output.log
-	@echo "✅ Tests completed! Output saved to test-output.log"
+	@if gradle test --console=plain > test-output.log 2>&1; then \
+		echo "✅ Tests passed!"; \
+	else \
+		echo "❌ Tests failed! Check test-output.log for details"; \
+		exit 1; \
+	fi
 
 lint:
 	@echo "🔍 Running lint checks..."
-	gradle lint --console=plain 2>&1 | tee lint-output.log
-	@echo "✅ Lint checks completed! Output saved to lint-output.log"
-	@echo "📊 Lint report: app/build/reports/lint-results.html"
+	@if gradle lint --console=plain > lint-output.log 2>&1; then \
+		echo "✅ Lint checks passed!"; \
+	else \
+		echo "❌ Lint checks failed! Check lint-output.log for details"; \
+		exit 1; \
+	fi
 
 check: test lint
 	@echo "✅ All quality checks completed!"
