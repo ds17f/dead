@@ -37,6 +37,9 @@ dependencies {
     
     implementation("androidx.core:core-ktx:1.12.0")
     
+    // ViewModel and lifecycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    
     // DataStore for settings persistence
     implementation("androidx.datastore:datastore-preferences:1.1.1")
     
