@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.11.2] - 2025-07-01
+
+### Bug Fixes
+* resolve empty venue handling in concert grouping tests (e9ddde2)
+
+### Other Changes
+* update: enhance Makefile with comprehensive quality checks and clean output (e7b6d91)
+
+
 ## [0.11.1] - 2025-07-01
 
 ### Bug Fixes
 * resolve release build resource linking errors in design system (1f5bf04)
-
-
 ## [0.11.0] - 2025-07-01
 
 ### New Features
