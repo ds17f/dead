@@ -1,175 +1,340 @@
 {
   "tasks": [
     {
-      "id": "9d9e18c6-d710-4420-8953-98208149678c",
-      "name": "Enhance MediaControllerRepository for proper queue handling",
-      "description": "Fix MediaController queue synchronization with PlayerViewModel to enable proper forward/back buttons in notifications and native Media3 queue management. This addresses the core issue of media controls showing only back button.",
+      "id": "519a2416-6e0f-44bb-805a-4f062e34bbc8",
+      "name": "Create Settings Core Module Structure",
+      "description": "Create the core settings module with proper package structure, data classes, and interfaces following existing core module patterns in the Dead Archive app.",
       "status": "completed",
       "dependencies": [],
-      "createdAt": "2025-07-01T16:14:26.830Z",
-      "updatedAt": "2025-07-01T16:25:12.654Z",
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:45:40.894Z",
       "relatedFiles": [
         {
-          "path": "core/media/src/main/java/com/deadarchive/core/media/player/MediaControllerRepository.kt",
-          "type": "TO_MODIFY",
-          "description": "Add queue synchronization and MediaController.setMediaItems() support",
-          "lineStart": 287,
-          "lineEnd": 358
+          "path": "core/model/src/main/java/com/deadarchive/core/model/AppConstants.kt",
+          "type": "REFERENCE",
+          "description": "Contains existing preference keys and audio format constants to reuse"
         },
         {
-          "path": "core/media/src/main/java/com/deadarchive/core/media/service/DeadArchivePlaybackService.kt",
+          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/ConcertRepository.kt",
           "type": "REFERENCE",
-          "description": "MediaSessionService for queue-based playback integration"
+          "description": "Reference for repository interface patterns and documentation style"
         }
       ],
-      "implementationGuide": "1. Modify MediaControllerRepository.playTrack() to also call controller.setMediaItems() with queue context when available\\n2. Add queue synchronization logic in MediaControllerRepository to observe PlayerViewModel queue state\\n3. Ensure MediaController.setMediaItems() is called whenever queue changes\\n4. Add proper queue-based next/previous logic using MediaController native methods\\n5. Verify MediaSession callbacks properly handle queue-based navigation",
-      "verificationCriteria": "MediaController.setMediaItems() is called when queue changes, notification shows forward/back buttons when queue has multiple items, native Media3 queue navigation works properly",
-      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback.",
-      "summary": "Successfully enhanced MediaControllerRepository with proper queue handling and synchronized PlayerViewModel to provide queue context. Key improvements include: 1) Added updateQueueContext() method to MediaControllerRepository for queue synchronization 2) Modified playTrack() to use queue-based playback with MediaController.setMediaItems() when queue context is available 3) Enhanced skipToNext/skipToPrevious methods to be queue-aware with proper state tracking 4) Updated PlayerViewModel to call updateQueueContext() whenever playlist changes 5) All playlist operations (setPlaylist, addToPlaylist, removeFromPlaylist, clearPlaylist) now properly sync with MediaControllerRepository queue state. This addresses the core issue of media controls showing only back button by ensuring MediaController receives proper queue context for native Media3 playlist management.",
-      "completedAt": "2025-07-01T16:25:12.654Z"
+      "implementationGuide": "1. Create core/settings module directory structure:\n   - core/settings/src/main/java/com/deadarchive/core/settings/\n   - data/ (repository interfaces and implementations)\n   - model/ (settings data classes)\n   - di/ (Hilt dependency injection)\n\n2. Create settings data models using existing AppConstants:\n   ```kotlin\n   data class AppSettings(\n       val audioFormatPreference: List<String> = AppConstants.PREFERRED_AUDIO_FORMATS,\n       val themeMode: ThemeMode = ThemeMode.SYSTEM,\n       val downloadOnWifiOnly: Boolean = true,\n       val repeatMode: RepeatMode = RepeatMode.OFF,\n       val shuffleEnabled: Boolean = false\n   )\n   \n   enum class ThemeMode { LIGHT, DARK, SYSTEM }\n   enum class RepeatMode { OFF, ONE, ALL }\n   ```\n\n3. Create SettingsRepository interface following ConcertRepository pattern:\n   - Flow<AppSettings> for reactive updates\n   - Suspend functions for individual setting updates\n   - Follow same documentation and naming patterns",
+      "verificationCriteria": "Module structure follows existing core module patterns, data classes use existing constants from AppConstants, repository interface follows established patterns with Flow and suspend functions, proper package organization matches other core modules",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Successfully created core settings module structure with proper package organization following existing patterns. Created AppSettings data class with enums for ThemeMode and RepeatMode, using existing constants from AppConstants. Implemented SettingsRepository interface following ConcertRepository patterns with Flow for reactive updates and suspend functions for modifications. Module includes proper build.gradle.kts with DataStore dependency.",
+      "completedAt": "2025-07-02T00:45:40.894Z"
     },
     {
-      "id": "ea596bcd-acca-4d78-8f78-ebab2d325de0",
-      "name": "Create QueueScreen UI component",
-      "description": "Build a dedicated queue viewing and management screen following existing Compose patterns. This screen should be accessible from PlayerScreen 3-dots menu and provide queue reordering, removal, and management capabilities.",
+      "id": "bca45a58-d7fe-40f9-9dc3-fb07f61843db",
+      "name": "Implement DataStore Settings Repository",
+      "description": "Implement SettingsRepository using Android DataStore Preferences for type-safe, asynchronous settings storage following established singleton repository patterns.",
+      "status": "completed",
+      "dependencies": [
+        {
+          "taskId": "519a2416-6e0f-44bb-805a-4f062e34bbc8"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:52:56.527Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/ConcertRepositoryImpl.kt",
+          "type": "REFERENCE",
+          "description": "Reference implementation for singleton repository pattern with Hilt injection"
+        },
+        {
+          "path": "core/model/src/main/java/com/deadarchive/core/model/AppConstants.kt",
+          "type": "REFERENCE",
+          "description": "Contains preference keys to use for DataStore mapping"
+        }
+      ],
+      "implementationGuide": "1. Add DataStore dependency to core/settings/build.gradle.kts:\n   ```kotlin\n   implementation(libs.androidx.datastore.preferences)\n   ```\n\n2. Create SettingsDataStore wrapper:\n   ```kotlin\n   @Singleton\n   class SettingsDataStore @Inject constructor(\n       @ApplicationContext context: Context\n   ) {\n       private val dataStore = context.dataStorePreferences(name = \"settings\")\n       \n       val data: Flow<AppSettings> = dataStore.data\n           .catch { emit(emptyPreferences()) }\n           .map { preferences -> preferences.toAppSettings() }\n   }\n   ```\n\n3. Implement SettingsRepositoryImpl:\n   - Follow ConcertRepositoryImpl singleton pattern\n   - Use Hilt @Inject constructor\n   - Implement reactive Flow updates\n   - Add proper error handling and logging\n\n4. Create preference key mappings using AppConstants keys",
+      "verificationCriteria": "DataStore preferences implemented with proper type safety, SettingsRepository follows singleton pattern like other repositories, reactive Flow updates work correctly, proper error handling implemented, uses existing preference keys from AppConstants",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Successfully implemented DataStore Settings Repository with proper singleton pattern following ConcertRepositoryImpl. Created SettingsDataStore wrapper using Android DataStore Preferences with proper type safety and error handling. Implemented SettingsRepositoryImpl with all interface methods, comprehensive logging, and reactive Flow updates. Added proper DI module and build configuration. Uses existing AppConstants preference keys for consistency.",
+      "completedAt": "2025-07-02T00:52:56.526Z"
+    },
+    {
+      "id": "bd0ff068-5f22-4b36-b9b3-b5c78b4b1648",
+      "name": "Create Settings Hilt DI Module",
+      "description": "Create Hilt dependency injection module for settings following the established DI patterns used in DataModule, DatabaseModule, and NetworkModule.",
+      "status": "completed",
+      "dependencies": [
+        {
+          "taskId": "bca45a58-d7fe-40f9-9dc3-fb07f61843db"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:59:53.838Z",
+      "relatedFiles": [
+        {
+          "path": "core/data/src/main/java/com/deadarchive/core/data/di/DataModule.kt",
+          "type": "REFERENCE",
+          "description": "Reference pattern for Hilt DI module structure and documentation"
+        },
+        {
+          "path": "core/database/src/main/java/com/deadarchive/core/database/di/DatabaseModule.kt",
+          "type": "REFERENCE",
+          "description": "Additional reference for DI module patterns"
+        }
+      ],
+      "implementationGuide": "1. Create SettingsModule.kt in core/settings/di/:\n   ```kotlin\n   @Module\n   @InstallIn(SingletonComponent::class)\n   abstract class SettingsModule {\n       \n       @Binds\n       @Singleton\n       abstract fun bindSettingsRepository(\n           settingsRepositoryImpl: SettingsRepositoryImpl\n       ): SettingsRepository\n   }\n   ```\n\n2. Add @Provides for DataStore if needed:\n   ```kotlin\n   @Provides\n   @Singleton\n   fun provideSettingsDataStore(\n       @ApplicationContext context: Context\n   ): SettingsDataStore = SettingsDataStore(context)\n   ```\n\n3. Follow exact patterns from existing DI modules:\n   - Same annotation style and organization\n   - Same documentation format\n   - Same singleton scoping approach",
+      "verificationCriteria": "Hilt module follows exact same patterns as existing DI modules, proper singleton scoping applied, documentation style matches existing modules, repository binding works correctly",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Settings Hilt DI Module was already implemented in the previous task. The SettingsModule.kt file exists with proper @Module, @InstallIn(SingletonComponent::class), @Binds, and @Singleton annotations following exact patterns from DataModule and DatabaseModule. Documentation style matches existing modules with comprehensive dependency relationship descriptions. Repository binding implemented correctly for SettingsRepository interface.",
+      "completedAt": "2025-07-02T00:59:53.836Z"
+    },
+    {
+      "id": "1a5525e2-5b69-42da-8a69-d584813db37a",
+      "name": "Create Settings ViewModel",
+      "description": "Implement SettingsViewModel following established ViewModel patterns with StateFlow for reactive UI updates and proper Hilt integration.",
+      "status": "completed",
+      "dependencies": [
+        {
+          "taskId": "bd0ff068-5f22-4b36-b9b3-b5c78b4b1648"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T01:02:19.480Z",
+      "relatedFiles": [
+        {
+          "path": "feature/browse/src/main/java/com/deadarchive/feature/browse/BrowseViewModel.kt",
+          "type": "REFERENCE",
+          "description": "Reference for StateFlow patterns and Hilt ViewModel structure"
+        },
+        {
+          "path": "app/src/main/java/com/deadarchive/app/DebugViewModel.kt",
+          "type": "REFERENCE",
+          "description": "Additional ViewModel pattern reference for UI state management"
+        }
+      ],
+      "implementationGuide": "1. Create SettingsViewModel in core/settings/:\n   ```kotlin\n   @HiltViewModel\n   class SettingsViewModel @Inject constructor(\n       private val settingsRepository: SettingsRepository\n   ) : ViewModel() {\n       \n       private val _uiState = MutableStateFlow(SettingsUiState())\n       val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()\n       \n       val settings = settingsRepository.settings\n           .stateIn(\n               scope = viewModelScope,\n               started = SharingStarted.WhileSubscribed(5_000),\n               initialValue = AppSettings()\n           )\n   }\n   ```\n\n2. Create SettingsUiState data class for UI state management\n\n3. Add suspend functions for settings updates:\n   - updateThemeMode()\n   - updateAudioFormatPreference()\n   - updateDownloadSettings()\n   - Follow existing ViewModel error handling patterns\n\n4. Use same StateFlow patterns as BrowseViewModel and other existing ViewModels",
+      "verificationCriteria": "ViewModel follows established patterns with @HiltViewModel, StateFlow reactive updates work correctly, UI state management matches existing ViewModels, proper error handling implemented",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Successfully implemented SettingsViewModel following established patterns with @HiltViewModel and StateFlow reactive updates. Created SettingsUiState for UI state management with loading, error, and success states. Implemented all settings update functions with proper error handling and logging following BrowseViewModel patterns. Used stateIn with SharingStarted.WhileSubscribed for efficient resource management. Added comprehensive logging and user feedback messages for all operations.",
+      "completedAt": "2025-07-02T01:02:19.480Z"
+    },
+    {
+      "id": "6e37e8ba-5233-4fd7-ab70-db866120b863",
+      "name": "Design Settings Screen UI Structure",
+      "description": "Create the main SettingsScreen composable with organized card-based sections following the established DebugScreen layout patterns and Material3 design system.",
+      "status": "completed",
+      "dependencies": [
+        {
+          "taskId": "1a5525e2-5b69-42da-8a69-d584813db37a"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T01:10:12.431Z",
+      "relatedFiles": [
+        {
+          "path": "app/src/main/java/com/deadarchive/app/DebugScreen.kt",
+          "type": "REFERENCE",
+          "description": "Reference for screen layout structure, card organization, and Material3 patterns"
+        },
+        {
+          "path": "feature/browse/src/main/java/com/deadarchive/feature/browse/BrowseScreen.kt",
+          "type": "REFERENCE",
+          "description": "Additional screen layout reference for LazyColumn and state handling"
+        }
+      ],
+      "implementationGuide": "1. Create SettingsScreen.kt following DebugScreen.kt structure:\n   ```kotlin\n   @OptIn(ExperimentalMaterial3Api::class)\n   @Composable\n   fun SettingsScreen(\n       onNavigateToDebug: () -> Unit,\n       viewModel: SettingsViewModel = hiltViewModel()\n   ) {\n       val settings by viewModel.settings.collectAsState()\n       \n       Scaffold(\n           topBar = {\n               TopAppBar(title = { Text(\"Settings\") })\n           }\n       ) { paddingValues ->\n           LazyColumn(\n               modifier = Modifier\n                   .fillMaxSize()\n                   .padding(paddingValues)\n                   .padding(16.dp),\n               verticalArrangement = Arrangement.spacedBy(16.dp)\n           ) {\n               item { PlaybackSettingsCard(settings, viewModel) }\n               item { AppearanceSettingsCard(settings, viewModel) }\n               item { DownloadSettingsCard(settings, viewModel) }\n               item { DeveloperOptionsCard(onNavigateToDebug) }\n           }\n       }\n   }\n   ```\n\n2. Use same Card-based layout as DebugScreen with CardDefaults.cardColors()\n3. Follow same Material3 component usage and spacing patterns\n4. Create section cards as separate composables for organization",
+      "verificationCriteria": "Screen layout follows DebugScreen card-based structure, Material3 components used consistently, proper state collection and reactive updates, section organization is clear and user-friendly",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Successfully created SettingsScreen composable with organized card-based sections following DebugScreen patterns. Implements Material3 design system with TopAppBar, Cards, and proper spacing. Created separate section cards for Audio Formats, Appearance, Downloads, Media Player, and Developer Options. Added proper state collection, loading indicators, error/success message handling, and reactive UI updates. Includes Compose dependencies and build configuration.",
+      "completedAt": "2025-07-02T01:10:12.429Z"
+    },
+    {
+      "id": "9ed76408-b267-4530-bb51-98f6cd4969b4",
+      "name": "Implement Audio Format Preference Section",
+      "description": "Create the audio format preference UI section with drag-and-drop reordering capability and format priority selection using existing PREFERRED_AUDIO_FORMATS.",
+      "status": "completed",
+      "dependencies": [
+        {
+          "taskId": "6e37e8ba-5233-4fd7-ab70-db866120b863"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T01:22:49.168Z",
+      "relatedFiles": [
+        {
+          "path": "core/model/src/main/java/com/deadarchive/core/model/AppConstants.kt",
+          "type": "REFERENCE",
+          "description": "Contains PREFERRED_AUDIO_FORMATS list to use as default values"
+        },
+        {
+          "path": "app/src/main/java/com/deadarchive/app/DebugScreen.kt",
+          "type": "REFERENCE",
+          "description": "Reference for card styling and button interaction patterns"
+        }
+      ],
+      "implementationGuide": "1. Create PlaybackSettingsCard composable:\n   ```kotlin\n   @Composable\n   fun PlaybackSettingsCard(\n       settings: AppSettings,\n       onUpdateAudioFormats: (List<String>) -> Unit\n   ) {\n       Card(modifier = Modifier.fillMaxWidth()) {\n           Column(modifier = Modifier.padding(16.dp)) {\n               Text(\n                   text = \"Audio Format Preference\",\n                   fontSize = 18.sp,\n                   fontWeight = FontWeight.Bold\n               )\n               Text(\n                   text = \"Choose preferred format when multiple are available\",\n                   style = MaterialTheme.typography.bodyMedium\n               )\n               \n               // Format selection with reordering\n               settings.audioFormatPreference.forEach { format ->\n                   FormatPreferenceItem(format, onMoveUp, onMoveDown)\n               }\n           }\n       }\n   }\n   ```\n\n2. Implement format reordering with up/down arrows\n3. Use existing PREFERRED_AUDIO_FORMATS as default\n4. Add visual indicators for format priority (1st, 2nd, 3rd choice)\n5. Follow existing card styling from DebugScreen",
+      "verificationCriteria": "Audio format preference UI allows reordering, uses existing format constants, visual priority indicators clear, card styling matches existing patterns",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Successfully implemented audio format preference section with interactive reordering capability. Created FormatPreferenceItem composable with up/down arrow controls, color-coded priority indicators, and swap logic for reordering. Uses existing PREFERRED_AUDIO_FORMATS constants, follows Material3 design patterns, and provides clear visual feedback for priority levels.",
+      "completedAt": "2025-07-02T01:22:49.168Z"
+    },
+    {
+      "id": "5ab8ea0f-19c4-410a-a55c-61a367dffc23",
+      "name": "Implement Theme and Appearance Settings",
+      "description": "Create appearance settings section with theme mode selection (Light/Dark/System) that integrates with the existing DeadArchiveTheme system.",
+      "status": "completed",
+      "dependencies": [
+        {
+          "taskId": "9ed76408-b267-4530-bb51-98f6cd4969b4"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T01:34:49.747Z",
+      "relatedFiles": [
+        {
+          "path": "core/design/src/main/java/com/deadarchive/core/design/theme/Theme.kt",
+          "type": "TO_MODIFY",
+          "description": "Will need to be updated to accept theme mode parameter instead of just system detection"
+        },
+        {
+          "path": "app/src/main/java/com/deadarchive/app/MainActivity.kt",
+          "type": "TO_MODIFY",
+          "description": "Will need to observe theme settings and pass to DeadArchiveTheme"
+        }
+      ],
+      "implementationGuide": "1. Create AppearanceSettingsCard:\n   ```kotlin\n   @Composable\n   fun AppearanceSettingsCard(\n       settings: AppSettings,\n       onUpdateThemeMode: (ThemeMode) -> Unit\n   ) {\n       Card(modifier = Modifier.fillMaxWidth()) {\n           Column(modifier = Modifier.padding(16.dp)) {\n               Text(\"Appearance\", fontSize = 18.sp, fontWeight = FontWeight.Bold)\n               \n               // Theme selection\n               ThemeMode.values().forEach { mode ->\n                   Row(verticalAlignment = Alignment.CenterVertically) {\n                       RadioButton(\n                           selected = settings.themeMode == mode,\n                           onClick = { onUpdateThemeMode(mode) }\n                       )\n                       Text(mode.displayName)\n                   }\n               }\n           }\n       }\n   }\n   ```\n\n2. Add theme mode display names (Light, Dark, Follow System)\n3. Ensure immediate UI updates when theme changes\n4. Follow existing radio button and selection patterns from the app",
+      "verificationCriteria": "Theme selection works with radio buttons, immediate theme switching functional, integrates properly with existing DeadArchiveTheme, UI updates reactively",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options.",
+      "summary": "Theme and Appearance Settings implementation is complete with full integration between SettingsRepository, MainActivity, and DeadArchiveTheme for immediate theme switching.",
+      "completedAt": "2025-07-02T01:34:49.746Z"
+    },
+    {
+      "id": "846a3535-da1f-42b2-8b68-ef1a3b4a234b",
+      "name": "Implement Download and Media Settings",
+      "description": "Create download settings section with WiFi-only toggle and media player preferences (repeat mode, shuffle) using existing preference keys.",
       "status": "in_progress",
       "dependencies": [
         {
-          "taskId": "9d9e18c6-d710-4420-8953-98208149678c"
+          "taskId": "5ab8ea0f-19c4-410a-a55c-61a367dffc23"
         }
       ],
-      "createdAt": "2025-07-01T16:14:26.830Z",
-      "updatedAt": "2025-07-01T16:34:03.351Z",
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T01:35:00.247Z",
       "relatedFiles": [
         {
-          "path": "feature/player/src/main/java/com/deadarchive/feature/player/QueueScreen.kt",
-          "type": "CREATE",
-          "description": "New Compose screen for queue viewing and management"
-        },
-        {
-          "path": "feature/player/src/main/java/com/deadarchive/feature/player/PlayerScreen.kt",
-          "type": "TO_MODIFY",
-          "description": "Add queue access to 3-dots menu",
-          "lineStart": 1,
-          "lineEnd": 50
-        },
-        {
-          "path": "feature/playlist/src/main/java/com/deadarchive/feature/playlist/PlaylistScreen.kt",
+          "path": "core/model/src/main/java/com/deadarchive/core/model/AppConstants.kt",
           "type": "REFERENCE",
-          "description": "Reference for UI patterns and track listing components"
+          "description": "Contains preference keys for download and media settings"
         }
       ],
-      "implementationGuide": "1. Create QueueScreen.kt in feature/player following PlayerScreen patterns\\n2. Use LazyColumn with drag-to-reorder functionality for queue items\\n3. Add queue management actions (remove, reorder, clear queue)\\n4. Follow existing Material3 design system and card-based layouts\\n5. Integrate with existing navigation patterns using NavController\\n6. Add queue access option to PlayerScreen 3-dots menu",
-      "verificationCriteria": "QueueScreen displays current queue items, allows reordering and removal, accessible from PlayerScreen menu, follows Material3 design patterns",
-      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
+      "implementationGuide": "1. Create DownloadSettingsCard:\n   ```kotlin\n   @Composable\n   fun DownloadSettingsCard(\n       settings: AppSettings,\n       onUpdateDownloadSettings: (Boolean) -> Unit,\n       onUpdateRepeatMode: (RepeatMode) -> Unit,\n       onUpdateShuffle: (Boolean) -> Unit\n   ) {\n       Card(modifier = Modifier.fillMaxWidth()) {\n           Column(modifier = Modifier.padding(16.dp)) {\n               Text(\"Downloads & Playback\", fontSize = 18.sp, fontWeight = FontWeight.Bold)\n               \n               // WiFi-only toggle\n               Row(verticalAlignment = Alignment.CenterVertically) {\n                   Switch(\n                       checked = settings.downloadOnWifiOnly,\n                       onCheckedChange = onUpdateDownloadSettings\n                   )\n                   Text(\"Download on WiFi only\")\n               }\n               \n               // Repeat mode selection\n               // Shuffle toggle\n           }\n       }\n   }\n   ```\n\n2. Use existing preference keys: PREF_DOWNLOAD_WIFI_ONLY, PREF_REPEAT_MODE, PREF_SHUFFLE_ENABLED\n3. Follow Material3 Switch and selection components\n4. Add proper spacing and organization like other cards",
+      "verificationCriteria": "Download settings use existing preference keys, Switch components work correctly, media player settings integrate properly, card styling consistent",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options."
     },
     {
-      "id": "29214f11-77eb-4776-b765-bcdbabb0a81b",
-      "name": "Enhance PlayerViewModel queue state management",
-      "description": "Improve existing playlist functionality in PlayerViewModel to better serve as queue system. Rename playlist-related properties to queue terminology and add proper queue state synchronization with MediaControllerRepository.",
+      "id": "1d6d7448-0011-4bca-9e48-2d2e9773f5ac",
+      "name": "Create Developer Options Section",
+      "description": "Create developer options section that provides access to the existing debug functionality while keeping it non-prominent in the main settings.",
       "status": "pending",
       "dependencies": [
         {
-          "taskId": "9d9e18c6-d710-4420-8953-98208149678c"
+          "taskId": "846a3535-da1f-42b2-8b68-ef1a3b4a234b"
         }
       ],
-      "createdAt": "2025-07-01T16:14:26.830Z",
-      "updatedAt": "2025-07-01T16:14:26.830Z",
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:40:07.614Z",
       "relatedFiles": [
         {
-          "path": "feature/player/src/main/java/com/deadarchive/feature/player/PlayerViewModel.kt",
-          "type": "TO_MODIFY",
-          "description": "Enhance existing playlist/queue functionality",
-          "lineStart": 32,
-          "lineEnd": 404
-        },
-        {
-          "path": "core/model/src/main/java/com/deadarchive/core/model/PlaylistItem.kt",
+          "path": "app/src/main/java/com/deadarchive/app/DebugScreen.kt",
           "type": "REFERENCE",
-          "description": "Data model for queue items"
+          "description": "The debug functionality that will remain accessible through developer options"
         }
       ],
-      "implementationGuide": "1. Rename _currentPlaylist to _currentQueue for clarity\\n2. Add queue-specific UI state properties (queuePosition, queueSize, hasNext/hasPrevious)\\n3. Enhance queue operations (addToQueue, removeFromQueue, reorderQueue)\\n4. Improve queue synchronization with MediaControllerRepository currentTrackUrl\\n5. Add queue persistence state for UI consistency\\n6. Ensure proper queue state updates when tracks change",
-      "verificationCriteria": "PlayerViewModel queue state properly syncs with service, queue operations work correctly, UI views cooperate through shared queue state",
-      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
+      "implementationGuide": "1. Create DeveloperOptionsCard at bottom of settings:\n   ```kotlin\n   @Composable\n   fun DeveloperOptionsCard(\n       onNavigateToDebug: () -> Unit\n   ) {\n       Card(\n           modifier = Modifier.fillMaxWidth(),\n           colors = CardDefaults.cardColors(\n               containerColor = MaterialTheme.colorScheme.surfaceVariant\n           )\n       ) {\n           Column(modifier = Modifier.padding(16.dp)) {\n               Text(\n                   text = \"Developer Options\",\n                   fontSize = 16.sp,\n                   fontWeight = FontWeight.Bold\n               )\n               Text(\n                   text = \"Advanced debugging and testing tools\",\n                   style = MaterialTheme.typography.bodySmall\n               )\n               \n               TextButton(\n                   onClick = onNavigateToDebug,\n                   modifier = Modifier.fillMaxWidth()\n               ) {\n                   Text(\"Open Debug Panel\")\n               }\n           }\n       }\n   }\n   ```\n\n2. Use subtle styling (surfaceVariant color) to make it less prominent\n3. Maintain access to all existing debug functionality\n4. Clear labeling that this is for advanced users",
+      "verificationCriteria": "Developer options section is subtle but accessible, maintains full debug functionality access, clear advanced user labeling, proper navigation to debug screen",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options."
     },
     {
-      "id": "33c7e433-6dfb-4246-a2cf-5c6c2c52d68e",
-      "name": "Add queue persistence with Room database",
-      "description": "Implement queue persistence using Room database to maintain queue state across app restarts. This ensures queue continuity and proper restoration of playback state.",
+      "id": "1598bb6f-2c40-49f7-950f-0d3cb7ec278d",
+      "name": "Update Navigation for Settings Screen",
+      "description": "Update the app navigation to route the Settings bottom nav item to the proper SettingsScreen instead of the DebugScreen, while maintaining debug screen accessibility.",
       "status": "pending",
       "dependencies": [
         {
-          "taskId": "29214f11-77eb-4776-b765-bcdbabb0a81b"
+          "taskId": "1d6d7448-0011-4bca-9e48-2d2e9773f5ac"
         }
       ],
-      "createdAt": "2025-07-01T16:14:26.830Z",
-      "updatedAt": "2025-07-01T16:14:26.830Z",
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:40:07.614Z",
       "relatedFiles": [
         {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/entity/QueueEntity.kt",
-          "type": "CREATE",
-          "description": "Room entity for queue persistence"
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/dao/QueueDao.kt",
-          "type": "CREATE",
-          "description": "DAO for queue operations"
-        },
-        {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/DeadArchiveDatabase.kt",
+          "path": "app/src/main/java/com/deadarchive/app/MainAppScreen.kt",
           "type": "TO_MODIFY",
-          "description": "Add queue table to database",
-          "lineStart": 15,
-          "lineEnd": 40
+          "description": "Add settings route and update navigation composables"
         },
         {
-          "path": "core/database/src/main/java/com/deadarchive/core/database/entity/ConcertEntity.kt",
-          "type": "REFERENCE",
-          "description": "Reference for entity patterns and type converters"
+          "path": "core/design/src/main/java/com/deadarchive/core/design/component/BottomNavigation.kt",
+          "type": "TO_MODIFY",
+          "description": "Update SETTINGS destination to use \"settings\" route instead of \"debug\""
         }
       ],
-      "implementationGuide": "1. Create QueueEntity in core/database following existing entity patterns\\n2. Create QueueDao with queue operations (insert, delete, reorder, clear)\\n3. Add queue table to DeadArchiveDatabase\\n4. Implement queue persistence in PlayerViewModel using repository pattern\\n5. Add queue restoration logic on app startup\\n6. Follow existing database patterns with type converters for complex data",
-      "verificationCriteria": "Queue state persists across app restarts, queue operations are properly saved to database, queue restoration works on app startup",
-      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
+      "implementationGuide": "1. Update MainAppScreen.kt navigation:\n   ```kotlin\n   composable(\"settings\") {\n       SettingsScreen(\n           onNavigateToDebug = { navController.navigate(\"debug\") }\n       )\n   }\n   ```\n\n2. Update BottomNavDestination in BottomNavigation.kt:\n   ```kotlin\n   SETTINGS(\"settings\", \"Settings\", Icons.Filled.Settings, Icons.Outlined.Settings)\n   ```\n   Change from \"debug\" route to \"settings\" route\n\n3. Keep debug screen composable but remove from bottom navigation:\n   - Debug screen remains accessible via developer options\n   - All existing debug functionality preserved\n   - Navigation structure maintains backward compatibility\n\n4. Update shouldShowBottomNavigation function to include \"settings\" route",
+      "verificationCriteria": "Settings bottom nav routes to SettingsScreen, debug functionality remains accessible, navigation transitions work smoothly, bottom nav highlighting works correctly",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options."
     },
     {
-      "id": "417ce6b4-72d0-4d9c-9239-1675d9c2ca48",
-      "name": "Integrate queue system with existing screens",
-      "description": "Update PlaylistScreen and other relevant screens to properly add tracks to the queue system. Ensure all track selection flows properly populate the queue for consistent playback behavior.",
+      "id": "99b65a7e-7c6b-4ec0-92ea-23f7abee3c6d",
+      "name": "Integrate Settings with ConcertRepository for Format Filtering",
+      "description": "Integrate the SettingsRepository with ConcertRepository to implement audio format filtering based on user preferences when displaying recordings.",
       "status": "pending",
       "dependencies": [
         {
-          "taskId": "ea596bcd-acca-4d78-8f78-ebab2d325de0"
-        },
-        {
-          "taskId": "29214f11-77eb-4776-b765-bcdbabb0a81b"
+          "taskId": "1598bb6f-2c40-49f7-950f-0d3cb7ec278d"
         }
       ],
-      "createdAt": "2025-07-01T16:14:26.830Z",
-      "updatedAt": "2025-07-01T16:14:26.830Z",
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:40:07.614Z",
       "relatedFiles": [
         {
-          "path": "feature/playlist/src/main/java/com/deadarchive/feature/playlist/PlaylistScreen.kt",
+          "path": "core/data/src/main/java/com/deadarchive/core/data/repository/ConcertRepositoryImpl.kt",
           "type": "TO_MODIFY",
-          "description": "Update to integrate with queue system",
-          "lineStart": 1,
-          "lineEnd": 100
+          "description": "Add SettingsRepository injection and implement format filtering logic"
         },
         {
-          "path": "feature/playlist/src/main/java/com/deadarchive/feature/playlist/PlaylistViewModel.kt",
+          "path": "core/data/src/main/java/com/deadarchive/core/data/di/DataModule.kt",
           "type": "TO_MODIFY",
-          "description": "Add queue integration logic"
-        },
-        {
-          "path": "feature/player/src/main/java/com/deadarchive/feature/player/components/MiniPlayer.kt",
-          "type": "REFERENCE",
-          "description": "Update to reflect queue state"
+          "description": "May need to update if circular dependency issues arise"
         }
       ],
-      "implementationGuide": "1. Update PlaylistScreen to add entire concert/show to queue when track is selected\\n2. Modify track selection logic to use queue-based playback\\n3. Add queue management actions to relevant screens (add to queue, play next)\\n4. Ensure MiniPlayer properly reflects queue state\\n5. Update navigation flows to maintain queue context\\n6. Add queue status indicators where appropriate",
-      "verificationCriteria": "All screens properly add tracks to queue, track selection flows work consistently, MiniPlayer reflects queue state, navigation maintains queue context",
-      "analysisResult": "Based on analysis of the Dead Archive Android codebase, the queue system implementation should leverage existing PlayerViewModel playlist infrastructure and MediaControllerRepository patterns. The solution focuses on enhancing existing functionality rather than creating duplicate systems, ensuring proper media control cooperation and queue-based playback."
+      "implementationGuide": "1. Inject SettingsRepository into ConcertRepositoryImpl:\n   ```kotlin\n   @Singleton\n   class ConcertRepositoryImpl @Inject constructor(\n       private val archiveApiService: ArchiveApiService,\n       private val concertDao: ConcertDao,\n       private val favoriteDao: FavoriteDao,\n       private val settingsRepository: SettingsRepository // NEW\n   ) : ConcertRepository\n   ```\n\n2. Implement format filtering function:\n   ```kotlin\n   private suspend fun filterByPreferredFormat(audioFiles: List<AudioFile>): List<AudioFile> {\n       val settings = settingsRepository.settings.first()\n       val preferredFormats = settings.audioFormatPreference\n       \n       return audioFiles.groupBy { \"${it.title}_${it.trackNumber}\" }\n           .values\n           .mapNotNull { duplicates ->\n               preferredFormats.firstNotNullOfOrNull { format ->\n                   duplicates.find { it.format.contains(format, ignoreCase = true) }\n               } ?: duplicates.firstOrNull()\n           }\n   }\n   ```\n\n3. Apply filtering in getTrackStreamingUrls and related methods\n4. Ensure reactive updates when settings change",
+      "verificationCriteria": "SettingsRepository properly injected into ConcertRepository, format filtering works based on user preferences, reactive updates when preferences change, no circular dependency issues",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options."
+    },
+    {
+      "id": "5fec7c8d-a9fc-426c-beb4-d8b39a6c54df",
+      "name": "Update Theme System for Dynamic Switching",
+      "description": "Modify the existing DeadArchiveTheme and MainActivity to support dynamic theme switching based on settings rather than just system detection.",
+      "status": "pending",
+      "dependencies": [
+        {
+          "taskId": "99b65a7e-7c6b-4ec0-92ea-23f7abee3c6d"
+        }
+      ],
+      "createdAt": "2025-07-02T00:40:07.614Z",
+      "updatedAt": "2025-07-02T00:40:07.614Z",
+      "relatedFiles": [
+        {
+          "path": "core/design/src/main/java/com/deadarchive/core/design/theme/Theme.kt",
+          "type": "TO_MODIFY",
+          "description": "Update to accept ThemeMode parameter instead of just system detection"
+        },
+        {
+          "path": "app/src/main/java/com/deadarchive/app/MainActivity.kt",
+          "type": "TO_MODIFY",
+          "description": "Inject SettingsRepository and observe theme settings"
+        }
+      ],
+      "implementationGuide": "1. Update DeadArchiveTheme composable:\n   ```kotlin\n   @Composable\n   fun DeadArchiveTheme(\n       themeMode: ThemeMode = ThemeMode.SYSTEM,\n       content: @Composable () -> Unit\n   ) {\n       val darkTheme = when (themeMode) {\n           ThemeMode.LIGHT -> false\n           ThemeMode.DARK -> true\n           ThemeMode.SYSTEM -> isSystemInDarkTheme()\n       }\n       \n       val colorScheme = when {\n           darkTheme -> DarkColorScheme\n           else -> LightColorScheme\n       }\n       // ... rest of theme setup\n   }\n   ```\n\n2. Update MainActivity to observe theme settings:\n   ```kotlin\n   class MainActivity : ComponentActivity() {\n       @Inject lateinit var settingsRepository: SettingsRepository\n       \n       override fun onCreate(savedInstanceState: Bundle?) {\n           super.onCreate(savedInstanceState)\n           setContent {\n               val settings by settingsRepository.settings.collectAsState()\n               \n               DeadArchiveTheme(themeMode = settings.themeMode) {\n                   // App content\n               }\n           }\n       }\n   }\n   ```\n\n3. Ensure theme changes apply immediately across the app\n4. Test theme persistence across app restarts",
+      "verificationCriteria": "Dynamic theme switching works immediately, theme persists across app restarts, MainActivity properly observes settings changes, all screens update theme correctly",
+      "analysisResult": "Implement a comprehensive settings system for Dead Archive Android app following established architectural patterns. The system will provide centralized settings management with DataStore persistence, organized UI sections, audio format preferences, and seamless integration with existing repositories and theme system. Debug functionality will remain accessible through developer options."
     }
   ]
 }

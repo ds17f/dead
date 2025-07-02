@@ -44,6 +44,9 @@ android {
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     
+    // Settings dependency for ThemeMode
+    implementation(project(":core:settings"))
+    
     // Compose BOM
     api(platform("androidx.compose:compose-bom:2024.05.00"))
     api("androidx.compose.ui:ui")

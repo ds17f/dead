@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.deadarchive.core.design.component.DeadArchiveBottomNavigation
+import com.deadarchive.core.settings.SettingsScreen
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
@@ -74,6 +75,13 @@ fun MainAppScreen(
             }
             
             composable("debug") {
+                SettingsScreen(
+                    onNavigateToDebug = { navController.navigate("debug_screen") }
+                )
+            }
+            
+            // Debug screen (accessible from Settings)
+            composable("debug_screen") {
                 DebugScreen(
                     onBackClick = { navController.popBackStack() },
                     onNavigateToRepositoryTest = { navController.navigate("repository_test") },
