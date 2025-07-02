@@ -11,6 +11,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.deadarchive.core.design.component.DeadArchiveBottomNavigation
 import com.deadarchive.core.settings.SettingsScreen
+import com.deadarchive.core.settings.model.VersionInfo
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
@@ -111,7 +112,14 @@ fun MainAppScreen(
             
             composable("debug") {
                 SettingsScreen(
-                    onNavigateToDebug = { navController.navigate("debug_screen") }
+                    onNavigateToDebug = { navController.navigate("debug_screen") },
+                    versionInfo = VersionInfo(
+                        versionName = BuildConfig.VERSION_NAME,
+                        versionCode = BuildConfig.VERSION_CODE,
+                        buildType = BuildConfig.BUILD_TYPE,
+                        buildTime = BuildConfig.BUILD_TIME,
+                        gitCommitHash = if (BuildConfig.GIT_COMMIT_HASH.isNotBlank()) BuildConfig.GIT_COMMIT_HASH else null
+                    )
                 )
             }
             

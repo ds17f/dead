@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.model.ThemeMode
+import com.deadarchive.core.settings.model.VersionInfo
 
 /**
  * Main settings screen with organized card-based sections
@@ -25,6 +26,7 @@ import com.deadarchive.core.settings.model.ThemeMode
 @Composable
 fun SettingsScreen(
     onNavigateToDebug: () -> Unit,
+    versionInfo: VersionInfo,
     viewModel: SettingsViewModel = hiltViewModel()
 ) {
     val settings by viewModel.settings.collectAsState()
@@ -120,6 +122,8 @@ fun SettingsScreen(
                 onUpdateDownloadWifiOnly = viewModel::updateDownloadWifiOnly
             )
             
+            // About Section
+            AboutCard(versionInfo = versionInfo)
             
             // Developer Options Section
             DeveloperOptionsCard(
@@ -428,6 +432,101 @@ private fun FormatPreferenceItem(
                         imageVector = Icons.Default.KeyboardArrowDown,
                         contentDescription = "Move down",
                         tint = if (!isLast) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun AboutCard(versionInfo: VersionInfo) {
+    Card(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(
+                text = "About",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
+            )
+            
+            // App Version
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "Version",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.Medium
+                )
+                Text(
+                    text = versionInfo.getFormattedVersion(),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            
+            // Version Code (for debug builds)
+            if (versionInfo.isDebugBuild()) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "Version Code",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = versionInfo.versionCode.toString(),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+            
+            // Build Date
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "Build Date",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.Medium
+                )
+                Text(
+                    text = versionInfo.getFormattedBuildDate(),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            
+            // Build Type (for debug builds)
+            if (versionInfo.isDebugBuild()) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        text = "Build Type",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = versionInfo.buildType.uppercase(),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.secondary,
+                        fontWeight = FontWeight.Medium
                     )
                 }
             }
