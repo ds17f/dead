@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.12.0] - 2025-07-01
+
+### New Features
+* implement audio format filtering service with on-demand filtering (062bcd3)
+* implement arrow-based audio format reordering in settings (c9a9656)
+* make settings panel accessible from bottom navigation (8ab43b6)
+* implement audio format preference reordering with drag controls (4121320)
+* create comprehensive Settings Screen UI with Material3 design (8659094)
+* implement SettingsViewModel with reactive state management (b5b82a3)
+* implement DataStore settings repository with reactive updates (b1203f2)
+* create core settings module with foundational architecture (7e2bf6a)
+
+### Code Refactoring
+* improve audio format settings UX (592705f)
+
+
 ## [0.11.2] - 2025-07-01
 
 ### Bug Fixes
@@ -7,8 +23,6 @@
 
 ### Other Changes
 * update: enhance Makefile with comprehensive quality checks and clean output (e7b6d91)
-
-
 ## [0.11.1] - 2025-07-01
 
 ### Bug Fixes
