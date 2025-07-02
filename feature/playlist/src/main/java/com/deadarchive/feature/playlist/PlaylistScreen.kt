@@ -82,11 +82,6 @@ fun PlaylistScreen(
                     }
                 }
             )
-        },
-        bottomBar = {
-            MiniPlayerContainer(
-                onTapToExpand = onNavigateToPlayer
-            )
         }
     ) { paddingValues ->
         Column(

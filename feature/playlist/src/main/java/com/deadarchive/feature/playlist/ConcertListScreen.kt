@@ -171,11 +171,6 @@ fun ConcertListScreen(
                 }
             }
         }
-        
-        // Mini Player
-        MiniPlayerContainer(
-            onTapToExpand = onNavigateToPlayer
-        )
     }
 }
 

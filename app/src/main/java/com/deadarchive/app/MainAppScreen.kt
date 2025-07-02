@@ -14,6 +14,7 @@ import com.deadarchive.core.settings.SettingsScreen
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
+import com.deadarchive.feature.playlist.MiniPlayerContainer
 import androidx.media3.common.util.UnstableApi
 
 /**
@@ -33,21 +34,34 @@ fun MainAppScreen(
         bottomBar = {
             // Show bottom navigation on main screens, hide on detail screens
             if (shouldShowBottomNavigation(currentRoute)) {
-                DeadArchiveBottomNavigation(
-                    currentRoute = currentRoute,
-                    onNavigateToDestination = { route ->
-                        navController.navigate(route) {
-                            // Pop up to the graph's start destination to avoid building up a large stack
-                            popUpTo(navController.graph.startDestinationId) {
-                                saveState = true
+                Column {
+                    // Global MiniPlayer - shows above bottom navigation
+                    if (shouldShowMiniPlayer(currentRoute)) {
+                        MiniPlayerContainer(
+                            onTapToExpand = { 
+                                // Navigate to full player when tapping mini player
+                                navController.navigate("player") 
                             }
-                            // Avoid multiple copies of the same destination
-                            launchSingleTop = true
-                            // Restore state when re-selecting a previously selected item
-                            restoreState = true
-                        }
+                        )
                     }
-                )
+                    
+                    // Bottom Navigation
+                    DeadArchiveBottomNavigation(
+                        currentRoute = currentRoute,
+                        onNavigateToDestination = { route ->
+                            navController.navigate(route) {
+                                // Pop up to the graph's start destination to avoid building up a large stack
+                                popUpTo(navController.graph.startDestinationId) {
+                                    saveState = true
+                                }
+                                // Avoid multiple copies of the same destination
+                                launchSingleTop = true
+                                // Restore state when re-selecting a previously selected item
+                                restoreState = true
+                            }
+                        }
+                    )
+                }
             }
         }
     ) { paddingValues ->
@@ -138,6 +152,20 @@ private fun shouldShowBottomNavigation(currentRoute: String?): Boolean {
     return when {
         currentRoute == null -> false
         currentRoute.startsWith("player") -> false
+        currentRoute.startsWith("playlist") -> true
+        currentRoute in listOf("home", "browse", "library", "debug") -> true
+        else -> false
+    }
+}
+
+/**
+ * Determines whether to show the miniplayer based on current route
+ * Shows miniplayer on all main screens except full player
+ */
+private fun shouldShowMiniPlayer(currentRoute: String?): Boolean {
+    return when {
+        currentRoute == null -> false
+        currentRoute.startsWith("player") -> false  // Hide on full player screen
         currentRoute.startsWith("playlist") -> true
         currentRoute in listOf("home", "browse", "library", "debug") -> true
         else -> false
