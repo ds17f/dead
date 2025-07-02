@@ -1,7 +1,9 @@
 package com.deadarchive.core.data.sync
 
-import com.deadarchive.core.database.ConcertDao
-import com.deadarchive.core.database.ConcertEntity
+import com.deadarchive.core.database.RecordingDao
+import com.deadarchive.core.database.RecordingEntity
+import com.deadarchive.core.database.ShowDao
+import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.database.SyncMetadataDao
 import com.deadarchive.core.database.SyncMetadataEntity
 import com.deadarchive.core.network.ArchiveApiService
@@ -35,7 +37,7 @@ interface DataSyncService {
     suspend fun isInitialSyncComplete(): Boolean
     
     /**
-     * Perform incremental sync to get new/updated concerts
+     * Perform incremental sync to get new/updated recordings
      * This is called periodically in the background
      */
     suspend fun performIncrementalSync(): SyncResult
@@ -46,9 +48,9 @@ interface DataSyncService {
     suspend fun getLastSyncTimestamp(): Long
     
     /**
-     * Get total number of concerts in local database
+     * Get total number of recordings in local database
      */
-    suspend fun getTotalConcertCount(): Int
+    suspend fun getTotalRecordingCount(): Int
     
     /**
      * DEBUG: Force fresh sync by clearing sync metadata
@@ -59,7 +61,8 @@ interface DataSyncService {
 @Singleton
 class DataSyncServiceImpl @Inject constructor(
     private val archiveApiService: ArchiveApiService,
-    private val concertDao: ConcertDao,
+    private val recordingDao: RecordingDao,
+    private val showDao: ShowDao,
     private val syncMetadataDao: SyncMetadataDao
 ) : DataSyncService {
     
@@ -77,7 +80,7 @@ class DataSyncServiceImpl @Inject constructor(
         private const val BATCH_SIZE = 50
         private const val MAX_RETRIES = 3
         
-        // Archive.org search queries to get all Grateful Dead concerts
+        // Archive.org search queries to get all Grateful Dead recordings
         // Split by decades to avoid 10k result limit per query
         private val CATALOG_QUERIES = listOf(
             "collection:GratefulDead AND date:[1965-01-01 TO 1969-12-31]", // 1960s
@@ -105,7 +108,7 @@ class DataSyncServiceImpl @Inject constructor(
             // Step 1: Fetch complete catalog using multiple date-range queries
             updateProgress(SyncPhase.FETCHING, totalItems = 0, currentItem = "Fetching concert list from Archive.org...")
             
-            val allConcerts = mutableListOf<ArchiveSearchResponse.ArchiveDoc>()
+            val allRecordings = mutableListOf<ArchiveSearchResponse.ArchiveDoc>()
             var totalFound = 0
             var queryCount = 0
             
@@ -126,8 +129,8 @@ class DataSyncServiceImpl @Inject constructor(
                 updateProgress(
                     SyncPhase.FETCHING,
                     totalItems = totalFound,
-                    processedItems = allConcerts.size,
-                    currentItem = "Fetching $queryPeriod concerts..."
+                    processedItems = allRecordings.size,
+                    currentItem = "Fetching $queryPeriod recordings..."
                 )
                 
                 var retryCount = 0
@@ -138,7 +141,7 @@ class DataSyncServiceImpl @Inject constructor(
                     try {
                         println("DEBUG: Executing query $queryCount/${CATALOG_QUERIES.size}: $query")
                         
-                        val response = archiveApiService.searchConcerts(
+                        val response = archiveApiService.searchRecordings(
                             query = query,
                             rows = MAX_ROWS,
                             start = 0
@@ -151,20 +154,20 @@ class DataSyncServiceImpl @Inject constructor(
                         val searchResponse = response.body() 
                             ?: throw Exception("Empty response body")
                         
-                        val concerts = searchResponse.response.docs
+                        val recordings = searchResponse.response.docs
                         val queryFound = searchResponse.response.numFound
                         
-                        allConcerts.addAll(concerts)
+                        allRecordings.addAll(recordings)
                         totalFound += queryFound
                         
                         querySuccess = true
-                        println("DEBUG: Query $queryCount ($queryPeriod): ${concerts.size} concerts downloaded, ${queryFound} total found")
+                        println("DEBUG: Query $queryCount ($queryPeriod): ${recordings.size} recordings downloaded, ${queryFound} total found")
                         
                         updateProgress(
                             SyncPhase.FETCHING,
                             totalItems = totalFound,
-                            processedItems = allConcerts.size,
-                            currentItem = "Downloaded ${allConcerts.size} concerts from $queryPeriod"
+                            processedItems = allRecordings.size,
+                            currentItem = "Downloaded ${allRecordings.size} recordings from $queryPeriod"
                         )
                         
                     } catch (e: Exception) {
@@ -175,7 +178,7 @@ class DataSyncServiceImpl @Inject constructor(
                             updateProgress(
                                 SyncPhase.FETCHING,
                                 totalItems = totalFound,
-                                processedItems = allConcerts.size,
+                                processedItems = allRecordings.size,
                                 currentItem = "Retrying $queryPeriod (attempt $retryCount/$MAX_RETRIES)..."
                             )
                             kotlinx.coroutines.delay(2000) // Longer delay between queries
@@ -188,39 +191,49 @@ class DataSyncServiceImpl @Inject constructor(
             
             println("DEBUG: Multiple query approach completed. Final stats:")
             println("DEBUG: - Queries executed: ${CATALOG_QUERIES.size}")
-            println("DEBUG: - Total concerts downloaded: ${allConcerts.size}")
+            println("DEBUG: - Total recordings downloaded: ${allRecordings.size}")
             println("DEBUG: - Estimated total available: $totalFound")
             
-            val finalTotalConcerts = allConcerts.size
+            val finalTotalRecordings = allRecordings.size
             
-            if (finalTotalConcerts == 0) {
-                return SyncResult.Error("No concerts downloaded from any date range query")
+            if (finalTotalRecordings == 0) {
+                return SyncResult.Error("No recordings downloaded from any date range query")
             }
             
-            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalConcerts, currentItem = "Processing $finalTotalConcerts concerts...")
+            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, currentItem = "Processing $finalTotalRecordings recordings...")
             
-            // Step 2: Process and save concerts in batches
-            val concerts = allConcerts
+            // Step 2: Process recordings and group by show (but don't save recordings yet)
+            val recordings = allRecordings
             var processedCount = 0
-            var savedCount = 0
+            val showsMap = mutableMapOf<String, MutableList<RecordingEntity>>()
+            val allRecordingEntities = mutableListOf<RecordingEntity>()
             
-            concerts.chunked(BATCH_SIZE).forEach { batch ->
+            recordings.chunked(BATCH_SIZE).forEach { batch ->
                 try {
-                    val concertEntities = batch.map { doc ->
+                    val recordingEntities = batch.map { doc ->
                         updateProgress(
                             SyncPhase.PROCESSING,
-                            totalItems = finalTotalConcerts,
+                            totalItems = finalTotalRecordings,
                             processedItems = processedCount,
                             currentItem = "Processing: ${doc.title ?: doc.identifier}"
                         )
                         
-                        val concert = ArchiveMapper.run { doc.toConcert() }
-                        ConcertEntity.fromConcert(concert, isFavorite = false)
+                        val recording = ArchiveMapper.run { doc.toRecording() }
+                        // Fix date format - convert ISO date to simple YYYY-MM-DD format
+                        val simpleDateFormat = recording.concertDate.take(10) // Take only YYYY-MM-DD part
+                        val showId = "${simpleDateFormat}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                        println("DEBUG: Processing recording ${recording.identifier} -> showId: $showId (originalDate=${recording.concertDate}, simplifiedDate=${simpleDateFormat}, venue=${recording.concertVenue})")
+                        RecordingEntity.fromRecording(recording, showId)
                     }
                     
-                    // Save batch to database
-                    concertDao.insertConcerts(concertEntities)
-                    savedCount += concertEntities.size
+                    // Group recordings by show for show creation
+                    recordingEntities.forEach { recordingEntity ->
+                        val showId = recordingEntity.concertId
+                        showsMap.computeIfAbsent(showId) { mutableListOf() }.add(recordingEntity)
+                    }
+                    
+                    // Collect all recordings for later batch insert (after shows are created)
+                    allRecordingEntities.addAll(recordingEntities)
                     processedCount += batch.size
                     
                 } catch (e: Exception) {
@@ -229,8 +242,58 @@ class DataSyncServiceImpl @Inject constructor(
                 }
             }
             
-            // Step 3: Update sync metadata
-            updateProgress(SyncPhase.FINALIZING, totalItems = finalTotalConcerts, processedItems = processedCount, currentItem = "Finalizing...")
+            // Step 2.5: Create and save Show entities FIRST (to satisfy foreign key constraints)
+            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, processedItems = processedCount, currentItem = "Creating shows from recordings...")
+            
+            val showEntities = showsMap.map { (showId, recordingEntities) ->
+                val firstRecording = recordingEntities.first()
+                // Fix date format for show entity
+                val simpleDateFormat = firstRecording.concertDate.take(10) // Take only YYYY-MM-DD part
+                ShowEntity(
+                    showId = showId,
+                    date = simpleDateFormat,
+                    venue = firstRecording.concertVenue,
+                    location = firstRecording.concertLocation,
+                    year = simpleDateFormat.take(4),
+                    setlistRaw = null, // We don't have setlist data from the recordings
+                    setsJson = null,
+                    isFavorite = false,
+                    cachedTimestamp = System.currentTimeMillis()
+                )
+            }
+            
+            try {
+                showDao.insertShows(showEntities)
+                println("DEBUG: Created ${showEntities.size} shows from ${allRecordingEntities.size} recordings")
+                
+                // Debug: Show some example show IDs
+                showEntities.take(5).forEach { show ->
+                    println("DEBUG: Created show: ${show.showId} (date=${show.date}, venue=${show.venue})")
+                }
+            } catch (e: Exception) {
+                println("ERROR: Failed to save shows: ${e.message}")
+                e.printStackTrace()
+            }
+            
+            // Step 3: Now save all recordings (after shows exist to satisfy foreign key constraints)
+            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, processedItems = processedCount, currentItem = "Saving recordings...")
+            
+            var savedCount = 0
+            try {
+                // Save recordings in batches to avoid memory issues
+                allRecordingEntities.chunked(BATCH_SIZE).forEach { batch ->
+                    recordingDao.insertRecordings(batch)
+                    savedCount += batch.size
+                    println("DEBUG: Saved ${batch.size} recordings, total saved: $savedCount")
+                }
+                println("DEBUG: Successfully saved $savedCount recordings total")
+            } catch (e: Exception) {
+                println("ERROR: Failed to save recordings: ${e.message}")
+                e.printStackTrace()
+            }
+            
+            // Step 4: Update sync metadata
+            updateProgress(SyncPhase.FINALIZING, totalItems = finalTotalRecordings, processedItems = processedCount, currentItem = "Finalizing...")
             
             val now = System.currentTimeMillis()
             val metadata = SyncMetadataEntity(
@@ -242,11 +305,11 @@ class DataSyncServiceImpl @Inject constructor(
             )
             syncMetadataDao.insertOrUpdateSyncMetadata(metadata)
             
-            updateProgress(SyncPhase.COMPLETED, totalItems = finalTotalConcerts, processedItems = processedCount, currentItem = "Sync completed!")
+            updateProgress(SyncPhase.COMPLETED, totalItems = finalTotalRecordings, processedItems = processedCount, currentItem = "Sync completed!")
             
             SyncResult.Success(
-                message = "Downloaded $savedCount out of $finalTotalConcerts concerts",
-                concertsProcessed = savedCount
+                message = "Downloaded $savedCount out of $finalTotalRecordings recordings",
+                recordingsProcessed = savedCount
             )
             
         } catch (e: Exception) {
@@ -260,11 +323,11 @@ class DataSyncServiceImpl @Inject constructor(
         return try {
             val lastSync = getLastSyncTimestamp()
             
-            // For now, we'll do a simple check for new concerts
+            // For now, we'll do a simple check for new recordings
             // In a more sophisticated implementation, we could use modification dates
-            updateProgress(SyncPhase.FETCHING, totalItems = 0, currentItem = "Checking for new concerts...")
+            updateProgress(SyncPhase.FETCHING, totalItems = 0, currentItem = "Checking for new recordings...")
             
-            val response = archiveApiService.searchConcerts(
+            val response = archiveApiService.searchRecordings(
                 query = "collection:GratefulDead",
                 rows = 100 // Just check recent additions
             )
@@ -276,24 +339,67 @@ class DataSyncServiceImpl @Inject constructor(
             val searchResponse = response.body() 
                 ?: return SyncResult.Error("Empty response during incremental sync")
             
-            // Filter for concerts not already in our database
-            var newConcerts = 0
+            // Filter for recordings not already in our database and collect new recordings
+            val newRecordingEntities = mutableListOf<RecordingEntity>()
+            val newShowsMap = mutableMapOf<String, MutableList<RecordingEntity>>()
+            
             searchResponse.response.docs.forEach { doc ->
-                val exists = concertDao.concertExists(doc.identifier) > 0
+                val exists = recordingDao.recordingExists(doc.identifier)
                 if (!exists) {
-                    val concert = ArchiveMapper.run { doc.toConcert() }
-                    val entity = ConcertEntity.fromConcert(concert, isFavorite = false)
-                    concertDao.insertConcert(entity)
-                    newConcerts++
+                    val recording = ArchiveMapper.run { doc.toRecording() }
+                    // Fix date format - convert ISO date to simple YYYY-MM-DD format
+                    val simpleDateFormat = recording.concertDate.take(10) // Take only YYYY-MM-DD part
+                    val showId = "${simpleDateFormat}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                    val entity = RecordingEntity.fromRecording(recording, showId)
+                    
+                    // Collect new recordings (don't save yet)
+                    newRecordingEntities.add(entity)
+                    
+                    // Group new recordings by show
+                    newShowsMap.computeIfAbsent(showId) { mutableListOf() }.add(entity)
                 }
+            }
+            
+            // Create new show entities FIRST (for shows that don't exist yet)
+            newShowsMap.forEach { (showId, recordingEntities) ->
+                val showExists = showDao.showExists(showId)
+                if (!showExists) {
+                    val firstRecording = recordingEntities.first()
+                    // Fix date format for show entity
+                    val simpleDateFormat = firstRecording.concertDate.take(10) // Take only YYYY-MM-DD part
+                    val showEntity = ShowEntity(
+                        showId = showId,
+                        date = simpleDateFormat,
+                        venue = firstRecording.concertVenue,
+                        location = firstRecording.concertLocation,
+                        year = simpleDateFormat.take(4),
+                        setlistRaw = null,
+                        setsJson = null,
+                        isFavorite = false,
+                        cachedTimestamp = System.currentTimeMillis()
+                    )
+                    showDao.insertShow(showEntity)
+                }
+            }
+            
+            // Now save all new recordings (after shows exist to satisfy foreign key constraints)
+            var newRecordings = 0
+            try {
+                if (newRecordingEntities.isNotEmpty()) {
+                    recordingDao.insertRecordings(newRecordingEntities)
+                    newRecordings = newRecordingEntities.size
+                    println("DEBUG: Incremental sync saved $newRecordings new recordings")
+                }
+            } catch (e: Exception) {
+                println("ERROR: Failed to save new recordings during incremental sync: ${e.message}")
             }
             
             // Update last delta sync timestamp
             syncMetadataDao.updateLastDeltaSync(System.currentTimeMillis())
             
             SyncResult.Success(
-                message = "Incremental sync completed. Added $newConcerts new concerts",
-                concertsProcessed = newConcerts
+                message = "Incremental sync completed. Added $newRecordings new recordings",
+                recordingsProcessed = newRecordings
             )
             
         } catch (e: Exception) {
@@ -305,7 +411,7 @@ class DataSyncServiceImpl @Inject constructor(
         return syncMetadataDao.getSyncMetadata()?.lastFullSync ?: 0L
     }
     
-    override suspend fun getTotalConcertCount(): Int {
+    override suspend fun getTotalRecordingCount(): Int {
         return syncMetadataDao.getSyncMetadata()?.totalConcerts ?: 0
     }
     
@@ -314,9 +420,10 @@ class DataSyncServiceImpl @Inject constructor(
             // Clear sync metadata to force fresh download
             syncMetadataDao.clearSyncMetadata()
             
-            // Clear existing concerts (except favorites)
+            // Clear existing recordings and shows (except favorites)
             val cutoffTimestamp = System.currentTimeMillis() + 1000 // Future timestamp to clear all non-favorites
-            concertDao.cleanupOldCachedConcerts(cutoffTimestamp)
+            recordingDao.cleanupOldCachedRecordings(cutoffTimestamp)
+            showDao.cleanupOldCachedShows(cutoffTimestamp)
             
             // Download fresh catalog
             downloadCompleteCatalog()
@@ -378,7 +485,7 @@ enum class SyncPhase {
 sealed class SyncResult {
     data class Success(
         val message: String,
-        val concertsProcessed: Int
+        val recordingsProcessed: Int
     ) : SyncResult()
     
     data class Error(
