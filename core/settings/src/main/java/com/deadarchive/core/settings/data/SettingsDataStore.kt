@@ -39,7 +39,7 @@ class SettingsDataStore @Inject constructor(
      * Reactive flow of application settings
      */
     val settingsFlow: Flow<AppSettings> = dataStore.data
-        .catch { exception ->
+        .catch { _ ->
             // If there's an error reading preferences, emit empty preferences
             emit(emptyPreferences())
         }

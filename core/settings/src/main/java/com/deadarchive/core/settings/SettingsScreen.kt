@@ -1,18 +1,15 @@
 package com.deadarchive.core.settings
 
-import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -146,9 +143,6 @@ private fun AudioFormatSettingsCard(
     settings: AppSettings,
     onUpdateAudioFormats: (List<String>) -> Unit
 ) {
-    var draggedItem by remember { mutableStateOf<String?>(null) }
-    var draggedOverItem by remember { mutableStateOf<String?>(null) }
-    
     Card(
         modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
@@ -164,38 +158,38 @@ private fun AudioFormatSettingsCard(
             )
             
             Text(
-                text = "Drag to reorder priority when multiple formats are available",
+                text = "Use arrows to reorder priority when multiple formats are available",
                 style = MaterialTheme.typography.bodyMedium
             )
             
-            // Display current format order with drag-and-drop
+            // Display current format order with up/down controls
             Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 settings.audioFormatPreference.forEachIndexed { index, format ->
-                    DraggableFormatItem(
+                    FormatPreferenceItem(
                         format = format,
                         position = index + 1,
-                        isDragged = draggedItem == format,
-                        isDraggedOver = draggedOverItem == format,
-                        onDragStart = { draggedItem = format },
-                        onDragEnd = { 
-                            draggedItem?.let { draggedFormat ->
-                                draggedOverItem?.let { targetFormat ->
-                                    val fromIndex = settings.audioFormatPreference.indexOf(draggedFormat)
-                                    val toIndex = settings.audioFormatPreference.indexOf(targetFormat)
-                                    if (fromIndex != -1 && toIndex != -1 && fromIndex != toIndex) {
-                                        val newList = settings.audioFormatPreference.toMutableList()
-                                        val item = newList.removeAt(fromIndex)
-                                        newList.add(toIndex, item)
-                                        onUpdateAudioFormats(newList)
-                                    }
-                                }
+                        isFirst = index == 0,
+                        isLast = index == settings.audioFormatPreference.size - 1,
+                        onMoveUp = {
+                            if (index > 0) {
+                                val newList = settings.audioFormatPreference.toMutableList()
+                                val temp = newList[index]
+                                newList[index] = newList[index - 1]
+                                newList[index - 1] = temp
+                                onUpdateAudioFormats(newList)
                             }
-                            draggedItem = null
-                            draggedOverItem = null
                         },
-                        onDragOver = { draggedOverItem = format }
+                        onMoveDown = {
+                            if (index < settings.audioFormatPreference.size - 1) {
+                                val newList = settings.audioFormatPreference.toMutableList()
+                                val temp = newList[index]
+                                newList[index] = newList[index + 1]
+                                newList[index + 1] = temp
+                                onUpdateAudioFormats(newList)
+                            }
+                        }
                     )
                 }
             }
@@ -337,36 +331,20 @@ private fun DeveloperOptionsCard(
 }
 
 @Composable
-private fun DraggableFormatItem(
+private fun FormatPreferenceItem(
     format: String,
     position: Int,
-    isDragged: Boolean,
-    isDraggedOver: Boolean,
-    onDragStart: () -> Unit,
-    onDragEnd: () -> Unit,
-    onDragOver: () -> Unit
+    isFirst: Boolean,
+    isLast: Boolean,
+    onMoveUp: () -> Unit,
+    onMoveDown: () -> Unit
 ) {
     Card(
-        modifier = Modifier
-            .fillMaxWidth()
-            .pointerInput(format) {
-                detectDragGestures(
-                    onDragStart = { onDragStart() },
-                    onDragEnd = { onDragEnd() }
-                ) { _, _ ->
-                    onDragOver()
-                }
-            },
+        modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(
-            containerColor = when {
-                isDragged -> MaterialTheme.colorScheme.primaryContainer
-                isDraggedOver -> MaterialTheme.colorScheme.secondaryContainer
-                else -> MaterialTheme.colorScheme.surface
-            }
+            containerColor = MaterialTheme.colorScheme.surface
         ),
-        elevation = CardDefaults.cardElevation(
-            defaultElevation = if (isDragged) 8.dp else 1.dp
-        )
+        elevation = CardDefaults.cardElevation(defaultElevation = 1.dp)
     ) {
         Row(
             modifier = Modifier
@@ -430,12 +408,30 @@ private fun DraggableFormatItem(
                 }
             }
             
-            // Drag handle
-            Icon(
-                imageVector = Icons.Default.Menu,
-                contentDescription = "Drag to reorder",
-                tint = MaterialTheme.colorScheme.onSurfaceVariant
-            )
+            // Arrow controls
+            Row {
+                IconButton(
+                    onClick = onMoveUp,
+                    enabled = !isFirst
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.KeyboardArrowUp,
+                        contentDescription = "Move up",
+                        tint = if (!isFirst) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                    )
+                }
+                IconButton(
+                    onClick = onMoveDown,
+                    enabled = !isLast
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.KeyboardArrowDown,
+                        contentDescription = "Move down",
+                        tint = if (!isLast) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                    )
+                }
+            }
         }
     }
 }
+
