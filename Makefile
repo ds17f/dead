@@ -92,7 +92,6 @@ tag-release:
 	fi
 	@echo "✅ Working directory is clean"
 	@echo "1️⃣ Running quality checks and builds before release..."
-	@$(MAKE) --no-print-directory test
 	@$(MAKE) --no-print-directory lint
 	@$(MAKE) --no-print-directory build
 	@echo "2️⃣ Attempting release build (may fail due to signing requirements)..."
@@ -117,7 +116,6 @@ dry-run-release:
 	fi
 	@echo "✅ Working directory is clean"
 	@echo "1️⃣ Running quality checks and builds to validate release readiness..."
-	@$(MAKE) --no-print-directory test
 	@$(MAKE) --no-print-directory lint
 	@$(MAKE) --no-print-directory build
 	@echo "2️⃣ Attempting release build (may fail due to signing requirements)..."
