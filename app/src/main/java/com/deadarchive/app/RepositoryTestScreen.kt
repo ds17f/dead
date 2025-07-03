@@ -16,9 +16,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.core.data.repository.ConcertRepository
+import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.FavoriteRepository
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.FavoriteItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
@@ -29,18 +29,18 @@ import kotlin.system.measureTimeMillis
 
 @HiltViewModel
 class RepositoryTestViewModel @Inject constructor(
-    private val concertRepository: ConcertRepository,
+    private val showRepository: ShowRepository,
     private val favoriteRepository: FavoriteRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<RepositoryTestUiState>(RepositoryTestUiState.Idle)
     val uiState: StateFlow<RepositoryTestUiState> = _uiState.asStateFlow()
     
-    private val _concerts = MutableStateFlow<List<Concert>>(emptyList())
-    val concerts: StateFlow<List<Concert>> = _concerts.asStateFlow()
+    private val _concerts = MutableStateFlow<List<Recording>>(emptyList())
+    val concerts: StateFlow<List<Recording>> = _concerts.asStateFlow()
     
-    private val _favorites = MutableStateFlow<List<Concert>>(emptyList())
-    val favorites: StateFlow<List<Concert>> = _favorites.asStateFlow()
+    private val _favorites = MutableStateFlow<List<Recording>>(emptyList())
+    val favorites: StateFlow<List<Recording>> = _favorites.asStateFlow()
     
     private val _cacheStats = MutableStateFlow("")
     val cacheStats: StateFlow<String> = _cacheStats.asStateFlow()
@@ -51,9 +51,9 @@ class RepositoryTestViewModel @Inject constructor(
     init {
         // Observe favorites in real-time
         viewModelScope.launch {
-            favoriteRepository.getFavoriteConcertsWithData().collect { favoriteConcerts ->
-                _favorites.value = favoriteConcerts
-                addLog("✨ Favorites updated: ${favoriteConcerts.size} items")
+            favoriteRepository.getFavoriteRecordingsWithData().collect { favoriteRecordings ->
+                _favorites.value = favoriteRecordings
+                addLog("✨ Favorites updated: ${favoriteRecordings.size} items")
             }
         }
         updateCacheStats()
@@ -82,17 +82,17 @@ class RepositoryTestViewModel @Inject constructor(
             
             try {
                 val searchTime = measureTimeMillis {
-                    concertRepository.searchConcerts(query).take(2).collect { results ->
+                    showRepository.searchRecordings(query).take(2).collect { results ->
                         _concerts.value = results
                         addLog("📦 Received ${results.size} concerts")
                         
                         // Show years in the results to debug
-                        val years = results.map { it.date.take(4) }.distinct()
+                        val years = results.map { it.concertDate.take(4) }.distinct()
                         addLog("📅 Years in results: ${years.joinToString(", ")}")
                         
                         // Show if any are from cache vs fresh
                         val cacheIndicator = if (results.isNotEmpty()) "📊" else "⚡"
-                        addLog("$cacheIndicator Results: ${results.take(2).joinToString { "${it.date.take(4)}: ${it.title.take(30)}" }}")
+                        addLog("$cacheIndicator Results: ${results.take(2).joinToString { "${it.concertDate.take(4)}: ${it.title.take(30)}" }}")
                     }
                 }
                 
@@ -114,18 +114,18 @@ class RepositoryTestViewModel @Inject constructor(
             
             try {
                 // Use repository method to get cached concerts
-                concertRepository.getAllCachedConcerts().take(1).collect { cachedConcerts ->
-                    addLog("💾 Found ${cachedConcerts.size} cached concerts")
+                showRepository.getAllCachedRecordings().take(1).collect { cachedRecordings ->
+                    addLog("💾 Found ${cachedRecordings.size} cached concerts")
                     
-                    if (cachedConcerts.isEmpty()) {
+                    if (cachedRecordings.isEmpty()) {
                         addLog("⚠️ No cached data found. Run search first to populate cache.")
                         _uiState.value = RepositoryTestUiState.Error("No cached data. Run search first.")
                     } else {
-                        _concerts.value = cachedConcerts.take(10)
-                        addLog("📱 Offline mode: Showing ${cachedConcerts.take(10).size} cached concerts")
+                        _concerts.value = cachedRecordings.take(10)
+                        addLog("📱 Offline mode: Showing ${cachedRecordings.take(10).size} cached concerts")
                         
                         // Show some stats
-                        val years = cachedConcerts.mapNotNull { it.date.take(4) }.distinct().sorted()
+                        val years = cachedRecordings.mapNotNull { it.concertDate.take(4) }.distinct().sorted()
                         addLog("📅 Cached years available: ${years.joinToString(", ")}")
                         _uiState.value = RepositoryTestUiState.Success("Offline test completed - showing cached data")
                     }
@@ -151,7 +151,7 @@ class RepositoryTestViewModel @Inject constructor(
                 val jobs = queries.map { query ->
                     viewModelScope.launch {
                         addLog("🔍 Starting search: $query")
-                        concertRepository.searchConcerts(query).first()
+                        showRepository.searchRecordings(query).first()
                         addLog("✅ Completed search: $query")
                     }
                 }
@@ -171,16 +171,16 @@ class RepositoryTestViewModel @Inject constructor(
         }
     }
     
-    fun toggleFavorite(concert: Concert) {
+    fun toggleFavorite(concert: Recording) {
         viewModelScope.launch {
             try {
                 if (concert.isFavorite) {
                     // Remove favorite
-                    favoriteRepository.removeConcertFromFavorites(concert.identifier)
+                    favoriteRepository.removeRecordingFromFavorites(concert.identifier)
                     addLog("💔 Removed favorite: ${concert.title.take(30)}")
                 } else {
                     // Add favorite
-                    favoriteRepository.addConcertToFavorites(concert)
+                    favoriteRepository.addRecordingToFavorites(concert)
                     addLog("💖 Added favorite: ${concert.title.take(30)}")
                 }
                 
@@ -199,7 +199,7 @@ class RepositoryTestViewModel @Inject constructor(
         }
     }
     
-    fun testGetConcertById() {
+    fun testGetRecordingById() {
         viewModelScope.launch {
             if (_concerts.value.isEmpty()) {
                 addLog("⚠️ No concerts available. Run search first.")
@@ -207,21 +207,21 @@ class RepositoryTestViewModel @Inject constructor(
             }
             
             val concert = _concerts.value.first()
-            addLog("🔍 Testing getConcertById for: ${concert.identifier}")
+            addLog("🔍 Testing getRecordingById for: ${concert.identifier}")
             
             try {
                 val fetchTime = measureTimeMillis {
-                    val result = concertRepository.getConcertById(concert.identifier)
+                    val result = showRepository.getRecordingById(concert.identifier)
                     result?.let {
                         addLog("✅ Found concert: ${it.title}")
                         addLog("📊 Is favorite: ${it.isFavorite}")
-                    } ?: addLog("❌ Concert not found")
+                    } ?: addLog("❌ Recording not found")
                 }
                 
-                addLog("⏱️ getConcertById completed in ${fetchTime}ms")
+                addLog("⏱️ getRecordingById completed in ${fetchTime}ms")
                 
             } catch (e: Exception) {
-                addLog("❌ getConcertById failed: ${e.message}")
+                addLog("❌ getRecordingById failed: ${e.message}")
             }
         }
     }
@@ -229,12 +229,12 @@ class RepositoryTestViewModel @Inject constructor(
     private fun updateCacheStats() {
         viewModelScope.launch {
             try {
-                concertRepository.getAllCachedConcerts().take(1).collect { cachedConcerts ->
+                showRepository.getAllCachedRecordings().take(1).collect { cachedRecordings ->
                     val favoriteCount = _favorites.value.size
                     
                     _cacheStats.value = buildString {
                         appendLine("📊 Cache Statistics:")
-                        appendLine("• Cached concerts: ${cachedConcerts.size}")
+                        appendLine("• Cached concerts: ${cachedRecordings.size}")
                         appendLine("• Total favorites: $favoriteCount")
                         appendLine("• Last updated: ${System.currentTimeMillis() % 100000}")
                     }
@@ -411,7 +411,7 @@ fun RepositoryTestScreen(
                         Text("🚀 Concurrent")
                     }
                     Button(
-                        onClick = { viewModel.testGetConcertById() },
+                        onClick = { viewModel.testGetRecordingById() },
                         modifier = Modifier.weight(1f)
                     ) {
                         Text("🔍 Get By ID")
@@ -483,7 +483,7 @@ fun RepositoryTestScreen(
                             fontWeight = FontWeight.Medium
                         )
                         Text(
-                            text = "${concert.date} • ${concert.venue}",
+                            text = "${concert.concertDate} • ${concert.concertVenue}",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -491,10 +491,10 @@ fun RepositoryTestScreen(
                 }
             }
             
-            // Concerts section
+            // Recordings section
             item {
                 Text(
-                    text = "🎵 Concerts (${concerts.size})",
+                    text = "🎵 Recordings (${concerts.size})",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(top = 16.dp)
@@ -516,7 +516,7 @@ fun RepositoryTestScreen(
                                 fontWeight = FontWeight.Medium
                             )
                             Text(
-                                text = "${concert.date} • ${concert.venue}",
+                                text = "${concert.concertDate} • ${concert.concertVenue}",
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )

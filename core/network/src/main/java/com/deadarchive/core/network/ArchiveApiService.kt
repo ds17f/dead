@@ -16,11 +16,11 @@ import retrofit2.http.Query
 interface ArchiveApiService {
     
     /**
-     * Search for Grateful Dead concerts using the advanced search API
+     * Search for Grateful Dead recordings using the advanced search API
      * 
      * @param query Search query string (e.g., "Grateful Dead 1977")
      * @param collection Filter by collection (default: GratefulDead)
-     * @param mediaType Filter by media type (default: etree for concerts)
+     * @param mediaType Filter by media type (default: etree for recordings)
      * @param fields Fields to return in response
      * @param rows Number of results to return (max 10000)
      * @param start Starting index for pagination
@@ -29,7 +29,7 @@ interface ArchiveApiService {
      * @return Search response with concert listings
      */
     @GET("advancedsearch.php")
-    suspend fun searchConcerts(
+    suspend fun searchRecordings(
         @Query("q") query: String = "collection:GratefulDead",
         @Query("fl") fields: String = "identifier,title,date,venue,coverage,creator,year,source,taper,transferer,lineage,description,setlist,uploader,addeddate,publicdate",
         @Query("rows") rows: Int = 50,
@@ -39,17 +39,17 @@ interface ArchiveApiService {
     ): Response<ArchiveSearchResponse>
     
     /**
-     * Search concerts by date range
+     * Search recordings by date range
      * 
      * @param startDate Start date in YYYY-MM-DD format
      * @param endDate End date in YYYY-MM-DD format
      * @param fields Fields to return in response
      * @param rows Number of results to return
      * @param start Starting index for pagination
-     * @return Search response with concerts in date range
+     * @return Search response with recordings in date range
      */
     @GET("advancedsearch.php")
-    suspend fun searchConcertsByDateRange(
+    suspend fun searchRecordingsByDateRange(
         @Query("q") query: String = "collection:GratefulDead",
         @Query("fl") fields: String = "identifier,title,date,venue,coverage,creator,source",
         @Query("rows") rows: Int = 100,
@@ -59,16 +59,16 @@ interface ArchiveApiService {
     ): Response<ArchiveSearchResponse>
     
     /**
-     * Search concerts by venue
+     * Search recordings by venue
      * 
      * @param venue Venue name (e.g., "Fillmore West")
      * @param fields Fields to return in response
      * @param rows Number of results to return
      * @param start Starting index for pagination
-     * @return Search response with concerts at specified venue
+     * @return Search response with recordings at specified venue
      */
     @GET("advancedsearch.php")
-    suspend fun searchConcertsByVenue(
+    suspend fun searchRecordingsByVenue(
         @Query("q") query: String = "collection:GratefulDead",
         @Query("fl") fields: String = "identifier,title,date,venue,coverage,source",
         @Query("rows") rows: Int = 100,
@@ -84,7 +84,7 @@ interface ArchiveApiService {
      * @return Metadata response with files, full metadata, and reviews
      */
     @GET("metadata/{identifier}")
-    suspend fun getConcertMetadata(
+    suspend fun getRecordingMetadata(
         @Path("identifier") identifier: String
     ): Response<ArchiveMetadataResponse>
     
@@ -95,21 +95,21 @@ interface ArchiveApiService {
      * @return Metadata response focused on files
      */
     @GET("metadata/{identifier}/files")
-    suspend fun getConcertFiles(
+    suspend fun getRecordingFiles(
         @Path("identifier") identifier: String
     ): Response<ArchiveMetadataResponse>
     
     /**
-     * Search for popular/highly-rated concerts
+     * Search for popular/highly-rated recordings
      * 
      * @param minRating Minimum average rating (1.0 to 5.0)
      * @param minReviews Minimum number of reviews
      * @param year Optional year filter
      * @param rows Number of results to return
-     * @return Search response with popular concerts
+     * @return Search response with popular recordings
      */
     @GET("advancedsearch.php")
-    suspend fun getPopularConcerts(
+    suspend fun getPopularRecordings(
         @Query("q") query: String = "collection:GratefulDead",
         @Query("fl") fields: String = "identifier,title,date,venue,coverage,source,downloads",
         @Query("rows") rows: Int = 50,
@@ -119,14 +119,14 @@ interface ArchiveApiService {
     ): Response<ArchiveSearchResponse>
     
     /**
-     * Get recently added concerts
+     * Get recently added recordings
      * 
      * @param days Number of days to look back (default 30)
      * @param rows Number of results to return
-     * @return Search response with recently added concerts
+     * @return Search response with recently added recordings
      */
     @GET("advancedsearch.php")
-    suspend fun getRecentConcerts(
+    suspend fun getRecentRecordings(
         @Query("q") query: String = "collection:GratefulDead",
         @Query("fl") fields: String = "identifier,title,date,venue,coverage,source,addeddate,uploader",
         @Query("rows") rows: Int = 50,

@@ -4,7 +4,7 @@ import com.deadarchive.core.data.mapper.DataMappers.toFavoriteEntity
 import com.deadarchive.core.data.mapper.DataMappers.toFavoriteItem
 import com.deadarchive.core.data.mapper.DataMappers.toFavoriteItems
 import com.deadarchive.core.database.FavoriteDao
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.FavoriteItem  
 import com.deadarchive.core.model.FavoriteType
 import com.deadarchive.core.model.Track
@@ -66,9 +66,9 @@ interface FavoriteRepository {
     suspend fun getFavoriteById(id: String): FavoriteItem?
     
     /**
-     * Add a concert to favorites
+     * Add a recording to favorites
      */
-    suspend fun addConcertToFavorites(concert: Concert, notes: String? = null)
+    suspend fun addRecordingToFavorites(recording: Recording, notes: String? = null)
     
     /**
      * Add a track to favorites
@@ -81,9 +81,9 @@ interface FavoriteRepository {
     suspend fun addFavorite(favoriteItem: FavoriteItem)
     
     /**
-     * Remove a concert from favorites
+     * Remove a recording from favorites
      */
-    suspend fun removeConcertFromFavorites(concertId: String)
+    suspend fun removeRecordingFromFavorites(recordingId: String)
     
     /**
      * Remove a track from favorites
@@ -96,9 +96,9 @@ interface FavoriteRepository {
     suspend fun removeFavorite(id: String)
     
     /**
-     * Toggle concert favorite status
+     * Toggle recording favorite status
      */
-    suspend fun toggleConcertFavorite(concert: Concert): Boolean
+    suspend fun toggleRecordingFavorite(recording: Recording): Boolean
     
     /**
      * Toggle track favorite status
@@ -132,12 +132,12 @@ interface FavoriteRepository {
      */
     suspend fun addFavorites(favoriteItems: List<FavoriteItem>)
     suspend fun removeFavorites(favoriteIds: List<String>)
-    suspend fun toggleFavorites(concerts: List<Concert>): List<Boolean>
+    suspend fun toggleFavorites(recordings: List<Recording>): List<Boolean>
     
     /**
-     * Get favorite concerts with enhanced data from ConcertRepository integration
+     * Get favorite recordings with enhanced data from ShowRepository integration
      */
-    fun getFavoriteConcertsWithData(): Flow<List<Concert>>
+    fun getFavoriteRecordingsWithData(): Flow<List<Recording>>
     
     /**
      * Export favorites for backup/sharing
@@ -149,7 +149,7 @@ interface FavoriteRepository {
 @Singleton
 class FavoriteRepositoryImpl @Inject constructor(
     private val favoriteDao: FavoriteDao,
-    private val concertRepository: ConcertRepository
+    private val showRepository: ShowRepository
 ) : FavoriteRepository {
 
     override fun getAllFavorites(): Flow<List<FavoriteItem>> {
@@ -186,7 +186,7 @@ class FavoriteRepositoryImpl @Inject constructor(
     }
 
     override suspend fun isConcertFavorite(concertId: String): Boolean {
-        return favoriteDao.isConcertFavorite(concertId)
+        return favoriteDao.isRecordingFavorite(concertId)
     }
 
     override suspend fun isTrackFavorite(concertId: String, trackFilename: String): Boolean {
@@ -201,8 +201,8 @@ class FavoriteRepositoryImpl @Inject constructor(
         return favoriteDao.getFavoriteById(id)?.toFavoriteItem()
     }
 
-    override suspend fun addConcertToFavorites(concert: Concert, notes: String?) {
-        val favoriteItem = FavoriteItem.fromConcert(concert).copy(notes = notes)
+    override suspend fun addRecordingToFavorites(recording: Recording, notes: String?) {
+        val favoriteItem = FavoriteItem.fromRecording(recording).copy(notes = notes)
         val entity = favoriteItem.toFavoriteEntity()
         favoriteDao.insertFavorite(entity)
     }
@@ -218,8 +218,8 @@ class FavoriteRepositoryImpl @Inject constructor(
         favoriteDao.insertFavorite(entity)
     }
 
-    override suspend fun removeConcertFromFavorites(concertId: String) {
-        val favoriteId = "concert_$concertId"
+    override suspend fun removeRecordingFromFavorites(recordingId: String) {
+        val favoriteId = "recording_$recordingId"
         favoriteDao.deleteFavoriteById(favoriteId)
     }
 
@@ -232,13 +232,13 @@ class FavoriteRepositoryImpl @Inject constructor(
         favoriteDao.deleteFavoriteById(id)
     }
 
-    override suspend fun toggleConcertFavorite(concert: Concert): Boolean {
-        val isFavorite = isConcertFavorite(concert.identifier)
+    override suspend fun toggleRecordingFavorite(recording: Recording): Boolean {
+        val isFavorite = isConcertFavorite(recording.identifier)
         
         if (isFavorite) {
-            removeConcertFromFavorites(concert.identifier)
+            removeRecordingFromFavorites(recording.identifier)
         } else {
-            addConcertToFavorites(concert)
+            addRecordingToFavorites(recording)
         }
         
         return !isFavorite // Return new favorite status
@@ -261,7 +261,7 @@ class FavoriteRepositoryImpl @Inject constructor(
     }
 
     override suspend fun removeAllFavoritesForConcert(concertId: String) {
-        favoriteDao.deleteFavoritesForConcert(concertId)
+        favoriteDao.deleteFavoritesForRecording(concertId)
     }
 
     override suspend fun getFavoriteCount(): Int {
@@ -291,10 +291,10 @@ class FavoriteRepositoryImpl @Inject constructor(
         favoriteDao.deleteFavoritesByIds(favoriteIds)
     }
 
-    override suspend fun toggleFavorites(concerts: List<Concert>): List<Boolean> {
+    override suspend fun toggleFavorites(recordings: List<Recording>): List<Boolean> {
         val results = mutableListOf<Boolean>()
-        for (concert in concerts) {
-            val newStatus = toggleConcertFavorite(concert)
+        for (recording in recordings) {
+            val newStatus = toggleRecordingFavorite(recording)
             results.add(newStatus)
         }
         return results
@@ -302,16 +302,16 @@ class FavoriteRepositoryImpl @Inject constructor(
 
     // ============ Integration with ConcertRepository ============
 
-    override fun getFavoriteConcertsWithData(): Flow<List<Concert>> {
+    override fun getFavoriteRecordingsWithData(): Flow<List<Recording>> {
         return combine(
             getFavoriteConcerts(),
-            concertRepository.getAllCachedConcerts()
-        ) { favorites, cachedConcerts ->
-            val favoriteConcertIds = favorites.map { it.concertIdentifier }.toSet()
-            cachedConcerts.filter { concert ->
-                favoriteConcertIds.contains(concert.identifier)
-            }.map { concert ->
-                concert.copy(isFavorite = true)
+            showRepository.getAllCachedRecordings()
+        ) { favorites, cachedRecordings ->
+            val favoriteRecordingIds = favorites.map { it.recordingId }.toSet()
+            cachedRecordings.filter { recording ->
+                favoriteRecordingIds.contains(recording.identifier)
+            }.map { recording ->
+                recording.copy(isFavorite = true)
             }
         }
     }

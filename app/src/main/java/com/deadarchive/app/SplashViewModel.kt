@@ -83,7 +83,7 @@ class SplashViewModel @Inject constructor(
                 is SyncResult.Success -> {
                     _uiState.value = _uiState.value.copy(
                         syncStatus = SyncStatus.COMPLETED,
-                        message = "Setup complete! Downloaded ${result.concertsProcessed} concerts."
+                        message = "Setup complete! Downloaded ${result.recordingsProcessed} concerts."
                     )
                 }
                 is SyncResult.Error -> {

@@ -55,10 +55,13 @@ interface RecordingDao {
     
     // Favorites
     @Query("SELECT * FROM recordings WHERE isFavorite = 1 ORDER BY concertDate DESC, identifier ASC")
-    suspend fun getFavoriteRecordings(): List<RecordingEntity>
+    fun getFavoriteRecordings(): Flow<List<RecordingEntity>>
     
     @Query("SELECT * FROM recordings WHERE isFavorite = 1 ORDER BY concertDate DESC, identifier ASC")
     fun getFavoriteRecordingsFlow(): Flow<List<RecordingEntity>>
+    
+    @Query("SELECT * FROM recordings ORDER BY concertDate DESC, identifier ASC")
+    fun getAllRecordings(): Flow<List<RecordingEntity>>
     
     @Query("UPDATE recordings SET isFavorite = :isFavorite WHERE identifier = :recordingId")
     suspend fun updateFavoriteStatus(recordingId: String, isFavorite: Boolean)

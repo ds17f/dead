@@ -1,12 +1,15 @@
 package com.deadarchive.app
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -166,9 +169,31 @@ fun DebugScreen(
                         fontWeight = FontWeight.Bold
                     )
                     
-                    Text("Cached Concerts: ${uiState.cachedConcertCount}")
+                    Text("Cached Recordings: ${uiState.cachedRecordingCount}")
                     Text("Last Sync: ${uiState.lastSyncTime}")
                     Text("Database Size: ${uiState.databaseSize}")
+                    
+                    Button(
+                        onClick = { viewModel.debugDatabaseState() },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("Debug Database State")
+                    }
+                    
+                    if (uiState.databaseDebugInfo.isNotEmpty()) {
+                        Text(
+                            text = uiState.databaseDebugInfo,
+                            style = MaterialTheme.typography.bodySmall,
+                            fontFamily = FontFamily.Monospace,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .background(
+                                    MaterialTheme.colorScheme.surfaceVariant,
+                                    RoundedCornerShape(8.dp)
+                                )
+                                .padding(8.dp)
+                        )
+                    }
                 }
             }
         }

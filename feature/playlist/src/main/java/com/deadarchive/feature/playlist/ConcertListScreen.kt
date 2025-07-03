@@ -14,7 +14,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.IconResources
-import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -113,7 +113,7 @@ fun ConcertListScreen(
             }
             
             is ConcertListUiState.Success -> {
-                if (state.concerts.isEmpty()) {
+                if (state.shows.isEmpty()) {
                     Box(
                         modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
@@ -145,21 +145,21 @@ fun ConcertListScreen(
                         // Summary header
                         item {
                             ConcertListSummary(
-                                totalConcerts = state.concerts.size,
-                                totalRecordings = state.concerts.sumOf { it.recordingCount }
+                                totalConcerts = state.shows.size,
+                                totalRecordings = state.shows.sumOf { it.recordingCount }
                             )
                         }
                         
                         // Concert list
                         items(
-                            items = state.concerts,
-                            key = { concert -> concert.concertId }
-                        ) { concert ->
+                            items = state.shows,
+                            key = { show -> show.showId }
+                        ) { show ->
                             ExpandableConcertItem(
-                                concert = concert,
-                                onConcertClick = { selectedConcert ->
+                                show = show,
+                                onShowClick = { selectedShow ->
                                     // Navigate to playlist with best recording
-                                    selectedConcert.bestRecording?.let { recording ->
+                                    selectedShow.bestRecording?.let { recording ->
                                         onRecordingSelected(recording)
                                         onNavigateToPlayer()
                                     }
@@ -168,8 +168,8 @@ fun ConcertListScreen(
                                     onRecordingSelected(recording)
                                     onNavigateToPlayer()
                                 },
-                                onFavoriteClick = { concertToToggle ->
-                                    viewModel.toggleFavorite(concertToToggle)
+                                onFavoriteClick = { showToToggle ->
+                                    viewModel.toggleFavorite(showToToggle)
                                 }
                             )
                         }

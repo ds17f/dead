@@ -27,7 +27,7 @@ data class ArchiveMetadata(
     val totalSize: Long = 0,
     
     @SerialName("metadata")
-    val metadata: Concert
+    val metadata: Recording
 ) {
     val audioFiles: List<AudioFile>
         get() = files.filter { file ->

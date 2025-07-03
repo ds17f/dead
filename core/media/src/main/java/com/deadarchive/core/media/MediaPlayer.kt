@@ -49,7 +49,7 @@ class MediaPlayer @Inject constructor(
      * Play a concert (multiple tracks)
      * @param urls List of track URLs
      */
-    fun playConcert(urls: List<String>) {
+    fun playRecording(urls: List<String>) {
         mediaControllerRepository.playPlaylist(urls)
     }
     

@@ -1,7 +1,7 @@
 package com.deadarchive.core.data.di
 
-import com.deadarchive.core.data.repository.ConcertRepository
-import com.deadarchive.core.data.repository.ConcertRepositoryImpl
+import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.repository.ShowRepositoryImpl
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.DownloadRepositoryImpl
 import com.deadarchive.core.data.repository.FavoriteRepository
@@ -21,9 +21,9 @@ import javax.inject.Singleton
  * to ensure single instances across the application lifecycle.
  * 
  * Dependency relationships:
- * - ConcertRepository -> ConcertDao (from DatabaseModule)
- * - DownloadRepository -> DownloadDao + ConcertRepository (circular prevention via lazy injection)
- * - FavoriteRepository -> FavoriteDao + ConcertRepository (for enhanced features)
+ * - ShowRepository -> ShowDao + RecordingDao (from DatabaseModule)
+ * - DownloadRepository -> DownloadDao + ShowRepository (circular prevention via lazy injection)
+ * - FavoriteRepository -> FavoriteDao + ShowRepository (for enhanced features)
  * 
  * All repositories are scoped as @Singleton to:
  * - Maintain consistent state across ViewModels
@@ -35,14 +35,14 @@ import javax.inject.Singleton
 abstract class DataModule {
     
     /**
-     * Binds ConcertRepository interface to its implementation.
-     * Provides concert data access with offline-first caching strategy.
+     * Binds ShowRepository interface to its implementation.
+     * Provides show and recording data access with offline-first caching strategy.
      */
     @Binds
     @Singleton
-    abstract fun bindConcertRepository(
-        concertRepositoryImpl: ConcertRepositoryImpl
-    ): ConcertRepository
+    abstract fun bindShowRepository(
+        showRepositoryImpl: ShowRepositoryImpl
+    ): ShowRepository
     
     /**
      * Binds DownloadRepository interface to its implementation.

@@ -28,34 +28,34 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
 import kotlin.math.abs
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PlayerScreen(
-    concertId: String? = null,
+    recordingId: String? = null,
     onNavigateBack: () -> Unit,
     onNavigateToQueue: () -> Unit = {},
     onNavigateToPlaylist: (String?) -> Unit = {},
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
-    Log.d("DEBUG_PLAYER_NEW_CODE", "=== NEW CODE IS RUNNING === concertId: $concertId")
-    // Load concert data if concertId is provided
-    LaunchedEffect(concertId) {
-        Log.d("PlayerScreen", "LaunchedEffect: concertId = '$concertId'")
-        if (!concertId.isNullOrBlank()) {
-            Log.d("PlayerScreen", "Calling viewModel.loadConcert('$concertId')")
-            viewModel.loadConcert(concertId)
+    Log.d("DEBUG_PLAYER_NEW_CODE", "=== NEW CODE IS RUNNING === recordingId: $recordingId")
+    // Load recording data if recordingId is provided
+    LaunchedEffect(recordingId) {
+        Log.d("PlayerScreen", "LaunchedEffect: recordingId = '$recordingId'")
+        if (!recordingId.isNullOrBlank()) {
+            Log.d("PlayerScreen", "Calling viewModel.loadRecording('$recordingId')")
+            viewModel.loadRecording(recordingId)
         } else {
-            Log.d("PlayerScreen", "concertId is null or blank, not loading concert data")
+            Log.d("PlayerScreen", "recordingId is null or blank, not loading recording data")
         }
     }
     
     // PlayerScreen is a pure view - gets all data from MediaController via viewModel
     val uiState by viewModel.uiState.collectAsState()
-    val currentConcert by viewModel.currentConcert.collectAsState()
+    val currentRecording by viewModel.currentRecording.collectAsState()
     
     // Get current track info from MediaController through ViewModel
     val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
@@ -72,18 +72,18 @@ fun PlayerScreen(
         "No track selected"
     }
     
-    val currentArtist = currentConcert?.displayTitle ?: "Unknown Artist"
+    val currentArtist = currentRecording?.displayTitle ?: "Unknown Artist"
     
     // Determine skip button states from MediaController queue
     val hasNextTrack = queueUrls.isNotEmpty() && queueIndex < queueUrls.size - 1
     val hasPreviousTrack = queueUrls.isNotEmpty() && queueIndex > 0
     
     // Debug current state
-    LaunchedEffect(uiState, currentConcert) {
+    LaunchedEffect(uiState, currentRecording) {
         Log.d("PlayerScreen", "State Update - isLoading: ${uiState.isLoading}, " +
                 "tracks.size: ${uiState.tracks.size}, " +
                 "error: ${uiState.error}, " +
-                "concert: ${currentConcert?.let { "${it.title} (${it.date}) - ${it.venue}" } ?: "null"}")
+                "recording: ${currentRecording?.let { "${it.title} (${it.concertDate}) - ${it.concertVenue}" } ?: "null"}")
     }
     
     // Animation state for swipe gestures (moved to main scope for track change detection)
@@ -104,10 +104,10 @@ fun PlayerScreen(
         TopAppBar(
             title = {
                 PlayerTopBarTitle(
-                    concert = currentConcert,
+                    recording = currentRecording,
                     modifier = Modifier.clickable {
-                        Log.d("PlayerScreen", "Title tapped! Navigating to playlist with concertId: $concertId")
-                        onNavigateToPlaylist(concertId)
+                        Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $recordingId")
+                        onNavigateToPlaylist(recordingId)
                     }
                 )
             },
@@ -191,7 +191,7 @@ fun PlayerScreen(
                 // Show full-screen player UI even without tracks
                 NowPlayingSection(
                     uiState = uiState,
-                    concert = currentConcert,
+                    recording = currentRecording,
                     currentTrackTitle = currentTrackTitle,
                     currentArtist = currentArtist,
                     hasNextTrack = hasNextTrack,
@@ -216,7 +216,7 @@ fun PlayerScreen(
                 // Full-screen player content
                 NowPlayingSection(
                     uiState = uiState,
-                    concert = currentConcert,
+                    recording = currentRecording,
                     currentTrackTitle = currentTrackTitle,
                     currentArtist = currentArtist,
                     hasNextTrack = hasNextTrack,
@@ -243,7 +243,7 @@ fun PlayerScreen(
 @Composable
 private fun NowPlayingSection(
     uiState: PlayerUiState,
-    concert: Concert?,
+    recording: Recording?,
     currentTrackTitle: String,
     currentArtist: String,
     hasNextTrack: Boolean,
@@ -637,13 +637,13 @@ private fun CarouselContainer(
 
 @Composable
 private fun PlayerTopBarTitle(
-    concert: Concert?,
+    recording: Recording?,
     modifier: Modifier = Modifier
 ) {
-    Log.d("PlayerTopBarTitle", "Concert data: ${concert?.let { "${it.title} (${it.date}) - ${it.venue}" } ?: "null"}")
+    Log.d("PlayerTopBarTitle", "Recording data: ${recording?.let { "${it.title} (${it.concertDate}) - ${it.concertVenue}" } ?: "null"}")
     
-    if (concert == null) {
-        Log.d("PlayerTopBarTitle", "Concert is null, showing 'Player'")
+    if (recording == null) {
+        Log.d("PlayerTopBarTitle", "Recording is null, showing 'Player'")
         Text(
             text = "Player",
             maxLines = 1,
@@ -661,9 +661,9 @@ private fun PlayerTopBarTitle(
         // First line: Artist - Date
         val firstLine = buildString {
             append("Grateful Dead")
-            if (concert.date.isNotBlank()) {
+            if (recording.concertDate.isNotBlank()) {
                 append(" - ")
-                append(formatConcertDate(concert.date))
+                append(formatConcertDate(recording.concertDate))
             }
         }
         
@@ -679,14 +679,14 @@ private fun PlayerTopBarTitle(
         
         // Second line: Venue - City, State
         val secondLine = buildString {
-            if (!concert.venue.isNullOrBlank()) {
-                append(concert.venue)
+            if (!recording.concertVenue.isNullOrBlank()) {
+                append(recording.concertVenue)
             }
-            if (!concert.location.isNullOrBlank()) {
-                if (!concert.venue.isNullOrBlank()) {
+            if (!recording.concertLocation.isNullOrBlank()) {
+                if (!recording.concertVenue.isNullOrBlank()) {
                     append(" - ")
                 }
-                append(concert.location)
+                append(recording.concertLocation)
             }
         }
         

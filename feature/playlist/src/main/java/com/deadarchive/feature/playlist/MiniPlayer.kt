@@ -22,18 +22,18 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.feature.player.PlayerUiState
 import com.deadarchive.feature.player.PlayerViewModel
 
 @Composable
 fun MiniPlayer(
     uiState: PlayerUiState,
-    concert: Concert?,
+    recording: Recording?,
     trackTitle: String?,
     onPlayPause: () -> Unit,
     onTapToExpand: (String?) -> Unit,
-    concertId: String? = null,
+    recordingId: String? = null,
     modifier: Modifier = Modifier
 ) {
     // Only show MiniPlayer if there's a current track
@@ -43,7 +43,7 @@ fun MiniPlayer(
         modifier = modifier
             .fillMaxWidth()
             .height(72.dp)
-            .clickable { onTapToExpand(concertId) },
+            .clickable { onTapToExpand(recordingId) },
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp),
         colors = CardDefaults.cardColors(
@@ -97,7 +97,7 @@ fun MiniPlayer(
                     )
                     
                     ScrollingText(
-                        text = concert?.displayTitle ?: "Unknown Concert",
+                        text = recording?.displayTitle ?: "Unknown Recording",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -135,7 +135,7 @@ fun MiniPlayer(
 
 @Composable
 fun MiniPlayerContainer(
-    onTapToExpand: (String?) -> Unit, // Now accepts concert ID
+    onTapToExpand: (String?) -> Unit, // Now accepts recording ID
     modifier: Modifier = Modifier,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
@@ -146,7 +146,7 @@ fun MiniPlayerContainer(
     val currentPosition by viewModel.mediaControllerRepository.currentPosition.collectAsState()
     val duration by viewModel.mediaControllerRepository.duration.collectAsState()
     val playbackState by viewModel.mediaControllerRepository.playbackState.collectAsState()
-    val currentConcertId by viewModel.mediaControllerRepository.currentConcertIdFlow.collectAsState()
+    val currentRecordingId by viewModel.mediaControllerRepository.currentRecordingIdFlow.collectAsState()
     
     // Get track title from MediaController metadata
     val currentTrackTitle = if (currentTrackUrl != null) {
@@ -172,22 +172,22 @@ fun MiniPlayerContainer(
         playbackState = playbackState // Already an Int from MediaController
     )
     
-    // Create a minimal concert object for display
-    val miniPlayerConcert = if (currentArtist != null) {
-        Concert(
+    // Create a minimal recording object for display
+    val miniPlayerRecording = if (currentArtist != null) {
+        Recording(
             identifier = "",
             title = currentArtist,
-            date = ""
+            concertDate = ""
         )
     } else null
     
     MiniPlayer(
         uiState = miniPlayerUiState,
-        concert = miniPlayerConcert,
+        recording = miniPlayerRecording,
         trackTitle = currentTrackTitle,
         onPlayPause = viewModel::playPause,
         onTapToExpand = onTapToExpand,
-        concertId = currentConcertId,
+        recordingId = currentRecordingId,
         modifier = modifier
     )
 }

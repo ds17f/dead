@@ -5,9 +5,9 @@
 
 ## Player
 
-- [ ] Player shows "Player" at top of screen
-- [ ] Top of player should go to show / Recording
-- [ ] Swipe for next track on player
+- [x] Player shows "Player" at top of screen
+- [x] Top of player should go to show / Recording
+- [x] Swipe for next track on player
 - [ ] Player information enhancements
   - [ ] Lyrics
   - [ ] History of show
@@ -15,7 +15,7 @@
 
 ## Global
 
-- [ ] Version ID somewhere (home screen? Settings?, Setting for home screen?)
+- [x] Version ID somewhere (home screen? Settings?, Setting for home screen?)
 - [ ] Play next show when show completes?
   - [ ] Setting for this
 - [ ] Enrich data set with additional material

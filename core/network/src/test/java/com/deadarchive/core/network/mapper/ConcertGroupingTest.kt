@@ -1,8 +1,7 @@
 package com.deadarchive.core.network.mapper
 
-import com.deadarchive.core.model.Concert
-import com.deadarchive.core.network.mapper.ArchiveMapper.groupByConcert
-import com.deadarchive.core.network.mapper.ArchiveMapper.migrateToConcertNew
+import com.deadarchive.core.model.Recording
+import com.deadarchive.core.network.mapper.ArchiveMapper.toShows
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import org.junit.Test
@@ -53,111 +52,126 @@ class ConcertGroupingTest {
         println("=== REAL DATA GROUPING TEST ===")
         println("Loaded ${testData.sample_concerts.size} concerts from test data")
         
-        // Convert test data to Concert models
-        val concerts = testData.sample_concerts.map { testConcert ->
-            Concert(
+        // Convert test data to Recording models
+        val recordings = testData.sample_concerts.map { testConcert ->
+            Recording(
                 identifier = testConcert.identifier,
                 title = testConcert.title,
-                date = testConcert.date,
-                venue = testConcert.venue,
-                location = testConcert.location,
-                year = testConcert.year?.toString(),
+                concertDate = testConcert.date,
+                concertVenue = testConcert.venue,
+                concertLocation = testConcert.location,
                 source = testConcert.source,
-                description = testConcert.description
+                description = testConcert.description,
+                isFavorite = false,
+                isDownloaded = false
             )
         }
         
-        println("\nInput concerts by date:")
-        concerts.groupBy { it.date }.forEach { (date, dateConcerts) ->
-            println("  $date: ${dateConcerts.size} recordings")
-            dateConcerts.forEach { concert ->
-                println("    - ${concert.identifier} venue='${concert.venue}'")
+        println("\nInput recordings by date:")
+        recordings.groupBy { it.concertDate }.forEach { (date, dateRecordings) ->
+            println("  $date: ${dateRecordings.size} recordings")
+            dateRecordings.forEach { recording ->
+                println("    - ${recording.identifier} venue='${recording.concertVenue}'")
             }
         }
         
         // Apply the grouping logic
-        val groupedConcerts = concerts.migrateToConcertNew()
+        val groupedShows = recordings.toShows()
         
-        println("\nOutput grouped concerts:")
-        groupedConcerts.forEach { concert ->
-            println("  ${concert.date} at '${concert.venue}': ${concert.recordingCount} recordings")
-            concert.recordings.forEach { recording ->
+        println("\nOutput grouped shows:")
+        groupedShows.forEach { show ->
+            println("  ${show.date} at '${show.venue}': ${show.recordings.size} recordings")
+            show.recordings.forEach { recording ->
                 println("    - ${recording.identifier}")
             }
         }
         
         // Assertions - this is the critical test
-        val concertsFor1995_07_09 = groupedConcerts.filter { it.date == "1995-07-09" }
+        val showsFor1995_07_09 = groupedShows.filter { it.date == "1995-07-09" }
         assertEquals(
-            "Should have exactly 1 concert for 1995-07-09 (all recordings should be grouped together)",
+            "Should have exactly 1 show for 1995-07-09 (all recordings should be grouped together)",
             1,
-            concertsFor1995_07_09.size
+            showsFor1995_07_09.size
         )
         
-        val concert = concertsFor1995_07_09.first()
-        assertEquals("Should have 10 recordings for 1995-07-09", 10, concert.recordingCount)
-        assertEquals("Venue should be normalized", "Soldier Field", concert.venue)
+        val show = showsFor1995_07_09.first()
+        assertEquals("Should have 10 recordings for 1995-07-09", 10, show.recordings.size)
+        assertEquals("Venue should be normalized", "Soldier Field", show.venue)
         
         // Verify all recordings are accounted for
-        val originalCount = concerts.count { it.date == "1995-07-09T00:00:00Z" }
-        assertEquals("Should preserve all recordings", originalCount, concert.recordingCount)
+        val originalCount = recordings.count { it.concertDate == "1995-07-09T00:00:00Z" }
+        assertEquals("Should preserve all recordings", originalCount, show.recordings.size)
         
-        println("\n✅ SUCCESS: 1995-07-09 correctly grouped into 1 concert with ${concert.recordingCount} recordings")
+        println("\n✅ SUCCESS: 1995-07-09 correctly grouped into 1 show with ${show.recordings.size} recordings")
     }
     
     @Test
     fun testVenueFuzzyMatching() {
-        // Test the fuzzy matching specifically
-        val testConcerts = listOf(
-            Concert(
+        // Test the fuzzy matching specifically for Sam Boyd Silver Bowl variations
+        val testRecordings = listOf(
+            Recording(
                 identifier = "test1",
                 title = "Test 1",
-                date = "1993-05-16",
-                venue = "Sam Boyd Silver Bowl",
-                source = "SBD"
+                concertDate = "1993-05-16",
+                concertVenue = "Sam Boyd Silver Bowl",
+                source = "SBD",
+                isFavorite = false,
+                isDownloaded = false
             ),
-            Concert(
+            Recording(
                 identifier = "test2", 
                 title = "Test 2",
-                date = "1993-05-16",
-                venue = "Sam Boyd Silver Bowl, U.N.L.V.",
-                source = "AUD"
+                concertDate = "1993-05-16",
+                concertVenue = "Sam Boyd Silver Bowl, U.N.L.V.",
+                source = "AUD",
+                isFavorite = false,
+                isDownloaded = false
             ),
-            Concert(
+            Recording(
                 identifier = "test3",
                 title = "Test 3", 
-                date = "1993-05-16",
-                venue = "Sam Boyd Silver Bowl",
-                source = "Matrix"
+                concertDate = "1993-05-16",
+                concertVenue = "Sam Boyd Silver Bowl",
+                source = "Matrix",
+                isFavorite = false,
+                isDownloaded = false
             )
         )
         
-        val grouped = testConcerts.migrateToConcertNew()
+        val grouped = testRecordings.toShows()
         
         println("=== VENUE FUZZY MATCHING TEST ===")
-        println("Input: ${testConcerts.size} concerts")
-        println("Output: ${grouped.size} concerts")
+        println("Input: ${testRecordings.size} recordings")
+        println("Input venues:")
+        testRecordings.forEach { recording ->
+            println("  - ${recording.identifier}: '${recording.concertVenue}'")
+        }
+        println("Output: ${grouped.size} shows")
         
-        grouped.forEach { concert ->
-            println("Concert: date=${concert.date}, venue='${concert.venue}', recordings=${concert.recordingCount}")
+        grouped.forEach { show ->
+            println("Show: date=${show.date}, venue='${show.venue}', recordings=${show.recordings.size}")
+            show.recordings.forEach { recording ->
+                println("  - ${recording.identifier}: '${recording.concertVenue}'")
+            }
         }
         
-        assertEquals("Should group all recordings into 1 concert", 1, grouped.size)
-        assertEquals("Should have 3 recordings", 3, grouped.first().recordingCount)
+        assertEquals("Should group all recordings into 1 show", 1, grouped.size)
+        assertEquals("Should have 3 recordings", 3, grouped.first().recordings.size)
+        println("✅ SUCCESS: Sam Boyd Silver Bowl variations correctly grouped into 1 show")
     }
 
     // ==================== PROBLEMATIC CASE TEST FRAMEWORK ====================
     
     /**
-     * Data class representing a problematic concert grouping case
+     * Data class representing a problematic show grouping case
      */
     data class ProblematicCase(
         val name: String,
         val description: String,
-        val concerts: List<Concert>,
+        val recordings: List<Recording>,
         val expectedGroups: Int,
         val expectedRecordingsPerGroup: Map<String, Int> = emptyMap(),
-        val additionalAssertions: ((grouped: List<com.deadarchive.core.model.ConcertNew>) -> Unit)? = null
+        val additionalAssertions: ((grouped: List<com.deadarchive.core.model.Show>) -> Unit)? = null
     )
     
     /**
@@ -166,23 +180,23 @@ class ConcertGroupingTest {
     private fun testProblematicCase(case: ProblematicCase) {
         println("=== TESTING: ${case.name} ===")
         println("Description: ${case.description}")
-        println("Input: ${case.concerts.size} recordings")
+        println("Input: ${case.recordings.size} recordings")
         
         // Show input data
-        case.concerts.groupBy { it.date }.forEach { (date, dateConcerts) ->
-            println("  $date: ${dateConcerts.size} recordings")
-            dateConcerts.forEach { concert ->
-                println("    - ${concert.identifier} venue='${concert.venue}' source='${concert.source}'")
+        case.recordings.groupBy { it.concertDate }.forEach { (date, dateRecordings) ->
+            println("  $date: ${dateRecordings.size} recordings")
+            dateRecordings.forEach { recording ->
+                println("    - ${recording.identifier} venue='${recording.concertVenue}' source='${recording.source}'")
             }
         }
         
         // Apply grouping
-        val grouped = case.concerts.migrateToConcertNew()
+        val grouped = case.recordings.toShows()
         
         println("\nOutput: ${grouped.size} groups")
-        grouped.forEach { concert ->
-            println("  ${concert.date} at '${concert.venue}': ${concert.recordingCount} recordings")
-            concert.recordings.forEach { recording ->
+        grouped.forEach { show ->
+            println("  ${show.date} at '${show.venue}': ${show.recordings.size} recordings")
+            show.recordings.forEach { recording ->
                 println("    - ${recording.identifier} (${recording.source})")
             }
         }
@@ -201,7 +215,7 @@ class ConcertGroupingTest {
             assertEquals(
                 "Group '$groupKey' should have $expectedCount recordings",
                 expectedCount,
-                group!!.recordingCount
+                group!!.recordings.size
             )
         }
         
@@ -219,27 +233,33 @@ class ConcertGroupingTest {
             ProblematicCase(
                 name = "Sam Boyd Silver Bowl Variations",
                 description = "Venue names with and without institutional suffixes should group together",
-                concerts = listOf(
-                    Concert(
+                recordings = listOf(
+                    Recording(
                         identifier = "gd1993-05-16.sbd.smith.shnf",
                         title = "1993-05-16 Sam Boyd Silver Bowl",
-                        date = "1993-05-16",
-                        venue = "Sam Boyd Silver Bowl",
-                        source = "SBD"
+                        concertDate = "1993-05-16",
+                        concertVenue = "Sam Boyd Silver Bowl",
+                        source = "SBD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1993-05-16.aud.jones.flac16",
                         title = "1993-05-16 Sam Boyd Silver Bowl, U.N.L.V.",
-                        date = "1993-05-16",
-                        venue = "Sam Boyd Silver Bowl, U.N.L.V.",
-                        source = "AUD"
+                        concertDate = "1993-05-16",
+                        concertVenue = "Sam Boyd Silver Bowl, U.N.L.V.",
+                        source = "AUD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1993-05-16.matrix.doe.shnf",
                         title = "1993-05-16 Sam Boyd Silver Bowl (UNLV)",
-                        date = "1993-05-16",
-                        venue = "Sam Boyd Silver Bowl (UNLV)",
-                        source = "Matrix"
+                        concertDate = "1993-05-16",
+                        concertVenue = "Sam Boyd Silver Bowl (UNLV)",
+                        source = "Matrix",
+                        isFavorite = false,
+                        isDownloaded = false
                     )
                 ),
                 expectedGroups = 1,
@@ -250,27 +270,33 @@ class ConcertGroupingTest {
             ProblematicCase(
                 name = "Madison Square Garden Variations", 
                 description = "MSG vs Madison Square Garden vs Madison Sq Garden should group together",
-                concerts = listOf(
-                    Concert(
+                recordings = listOf(
+                    Recording(
                         identifier = "gd1981-10-19.sbd.anonymous.shnf",
                         title = "1981-10-19 Madison Square Garden",
-                        date = "1981-10-19",
-                        venue = "Madison Square Garden",
-                        source = "SBD"
+                        concertDate = "1981-10-19",
+                        concertVenue = "Madison Square Garden",
+                        source = "SBD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1981-10-19.aud.taper.flac16",
                         title = "1981-10-19 MSG",
-                        date = "1981-10-19", 
-                        venue = "MSG",
-                        source = "AUD"
+                        concertDate = "1981-10-19", 
+                        concertVenue = "MSG",
+                        source = "AUD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1981-10-19.matrix.source.shnf",
                         title = "1981-10-19 Madison Sq Garden",
-                        date = "1981-10-19",
-                        venue = "Madison Sq Garden", 
-                        source = "Matrix"
+                        concertDate = "1981-10-19",
+                        concertVenue = "Madison Sq Garden", 
+                        source = "Matrix",
+                        isFavorite = false,
+                        isDownloaded = false
                     )
                 ),
                 expectedGroups = 1,
@@ -281,19 +307,21 @@ class ConcertGroupingTest {
             ProblematicCase(
                 name = "Amphitheater Name Variations",
                 description = "Amphitheater vs Amphitheatre vs Ampitheater spelling variations",
-                concerts = listOf(
-                    Concert(
+                recordings = listOf(
+                    Recording(
                         identifier = "gd1987-07-19.sbd.miller.shnf",
                         title = "1987-07-19 Alpine Valley Music Theatre",
-                        date = "1987-07-19",
-                        venue = "Alpine Valley Music Theatre",
-                        source = "SBD"
+                        concertDate = "1987-07-19",
+                        concertVenue = "Alpine Valley Music Theatre",
+                        source = "SBD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1987-07-19.aud.taper2.flac16",
                         title = "1987-07-19 Alpine Valley Music Theater",
-                        date = "1987-07-19",
-                        venue = "Alpine Valley Music Theater",
+                        concertDate = "1987-07-19",
+                        concertVenue = "Alpine Valley Music Theater",
                         source = "AUD"
                     )
                 ),
@@ -305,27 +333,33 @@ class ConcertGroupingTest {
             ProblematicCase(
                 name = "Empty Venue Handling",
                 description = "Recordings with missing venue info should still group by date",
-                concerts = listOf(
-                    Concert(
+                recordings = listOf(
+                    Recording(
                         identifier = "gd1995-07-09.sbd.unknown.shnf",
                         title = "1995-07-09",
-                        date = "1995-07-09",
-                        venue = null,
-                        source = "SBD"
+                        concertDate = "1995-07-09",
+                        concertVenue = null,
+                        source = "SBD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1995-07-09.aud.mystery.flac16",
                         title = "1995-07-09",
-                        date = "1995-07-09",
-                        venue = "",
-                        source = "AUD"
+                        concertDate = "1995-07-09",
+                        concertVenue = "",
+                        source = "AUD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1995-07-09.matrix.anon.shnf",
                         title = "1995-07-09",
-                        date = "1995-07-09",
-                        venue = null,
-                        source = "Matrix"
+                        concertDate = "1995-07-09",
+                        concertVenue = null,
+                        source = "Matrix",
+                        isFavorite = false,
+                        isDownloaded = false
                     )
                 ),
                 expectedGroups = 1,
@@ -336,19 +370,21 @@ class ConcertGroupingTest {
             ProblematicCase(
                 name = "Different Dates Should Not Group",
                 description = "Same venue but different dates should create separate concerts",
-                concerts = listOf(
-                    Concert(
+                recordings = listOf(
+                    Recording(
                         identifier = "gd1995-07-08.sbd.early.shnf",
                         title = "1995-07-08 Soldier Field",
-                        date = "1995-07-08",
-                        venue = "Soldier Field",
-                        source = "SBD"
+                        concertDate = "1995-07-08",
+                        concertVenue = "Soldier Field",
+                        source = "SBD",
+                        isFavorite = false,
+                        isDownloaded = false
                     ),
-                    Concert(
+                    Recording(
                         identifier = "gd1995-07-09.sbd.late.shnf", 
                         title = "1995-07-09 Soldier Field",
-                        date = "1995-07-09",
-                        venue = "Soldier Field",
+                        concertDate = "1995-07-09",
+                        concertVenue = "Soldier Field",
                         source = "SBD"
                     )
                 ),
@@ -386,20 +422,22 @@ class ConcertGroupingTest {
         realWorldConcerts: List<Pair<String, Pair<String, String?>>>, // (identifier, (date, venue))
         expectedGroupCount: Int
     ): ProblematicCase {
-        val concerts = realWorldConcerts.map { (identifier, dateVenue) ->
-            Concert(
+        val recordings = realWorldConcerts.map { (identifier, dateVenue) ->
+            Recording(
                 identifier = identifier,
                 title = "${dateVenue.first} ${dateVenue.second ?: "Unknown"}",
-                date = dateVenue.first,
-                venue = dateVenue.second,
-                source = "SBD" // Default, can be extracted from identifier if needed
+                concertDate = dateVenue.first,
+                concertVenue = dateVenue.second,
+                source = "SBD", // Default, can be extracted from identifier if needed
+                isFavorite = false,
+                isDownloaded = false
             )
         }
         
         return ProblematicCase(
             name = caseName,
             description = description,
-            concerts = concerts,
+            recordings = recordings,
             expectedGroups = expectedGroupCount
         )
     }

@@ -43,8 +43,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.model.Concert
-import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.feature.playlist.ExpandableConcertItem
 import java.text.SimpleDateFormat
@@ -53,17 +52,10 @@ import java.util.Locale
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BrowseScreen(
-    onNavigateToPlayer: (Concert) -> Unit,
+    onNavigateToPlayer: (String) -> Unit, // recordingId
     onNavigateToRecording: (Recording) -> Unit = { recording ->
-        // Convert Recording to Concert for navigation compatibility
-        val concert = Concert(
-            identifier = recording.identifier,
-            title = recording.title,
-            date = recording.concertDate,
-            venue = recording.concertVenue,
-            source = recording.source
-        )
-        onNavigateToPlayer(concert)
+        // Navigate using recording ID
+        onNavigateToPlayer(recording.identifier)
     },
     viewModel: BrowseViewModel = hiltViewModel()
 ) {
@@ -109,12 +101,12 @@ fun BrowseScreen(
         ) {
             QuickSearchButton(
                 text = "Popular",
-                onClick = { viewModel.loadPopularConcerts() },
+                onClick = { viewModel.loadPopularShows() },
                 modifier = Modifier.weight(1f)
             )
             QuickSearchButton(
                 text = "Recent",
-                onClick = { viewModel.loadRecentConcerts() },
+                onClick = { viewModel.loadRecentShows() },
                 modifier = Modifier.weight(1f)
             )
         }
@@ -142,7 +134,7 @@ fun BrowseScreen(
                 }
             }
             is BrowseUiState.Success -> {
-                if (state.concerts.isEmpty()) {
+                if (state.shows.isEmpty()) {
                     Box(
                         modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
@@ -157,21 +149,26 @@ fun BrowseScreen(
                     LazyColumn(
                         verticalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
-                        items(state.concerts) { concert ->
+                        items(state.shows) { show ->
                             ExpandableConcertItem(
-                                concert = concert,
-                                onConcertClick = { clickedConcert: ConcertNew ->
-                                    // Navigate to best recording of this concert
-                                    clickedConcert.bestRecording?.let { recording ->
+                                show = show,
+                                onShowClick = { clickedShow: Show ->
+                                    // Navigate to best recording of this show
+                                    Log.d("BrowseScreen", "onShowClick: Show ${clickedShow.showId} has ${clickedShow.recordings.size} recordings")
+                                    Log.d("BrowseScreen", "onShowClick: bestRecording = ${clickedShow.bestRecording?.identifier}")
+                                    clickedShow.bestRecording?.let { recording ->
+                                        Log.d("BrowseScreen", "onShowClick: Navigating to best recording: ${recording.identifier}")
                                         onNavigateToRecording(recording)
+                                    } ?: run {
+                                        Log.w("BrowseScreen", "onShowClick: No best recording found for show ${clickedShow.showId}")
                                     }
                                 },
                                 onRecordingClick = { recording: Recording ->
                                     Log.d("BrowseScreen", "onRecordingClick: Navigating to player for recording ${recording.identifier} - ${recording.title}")
                                     onNavigateToRecording(recording)
                                 },
-                                onFavoriteClick = { clickedConcert: ConcertNew ->
-                                    viewModel.toggleFavorite(clickedConcert)
+                                onFavoriteClick = { clickedShow: Show ->
+                                    viewModel.toggleFavorite(clickedShow)
                                 }
                             )
                         }

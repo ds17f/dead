@@ -54,7 +54,7 @@ fun SplashScreen(
             )
             
             Text(
-                text = "Grateful Dead Live Concert Archive",
+                text = "Grateful Dead Live Recording Archive",
                 style = MaterialTheme.typography.titleLarge,
                 textAlign = TextAlign.Center,
                 color = MaterialTheme.colorScheme.onSurfaceVariant

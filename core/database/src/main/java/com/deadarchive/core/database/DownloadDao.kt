@@ -17,8 +17,8 @@ interface DownloadDao {
     @Query("SELECT * FROM downloads WHERE status = :status")
     fun getDownloadsByStatus(status: String): Flow<List<DownloadEntity>>
     
-    @Query("SELECT * FROM downloads WHERE concertIdentifier = :concertId")
-    fun getDownloadsForConcert(concertId: String): Flow<List<DownloadEntity>>
+    @Query("SELECT * FROM downloads WHERE recordingId = :recordingId")
+    fun getDownloadsForConcert(recordingId: String): Flow<List<DownloadEntity>>
     
     @Query("SELECT * FROM downloads WHERE id = :id")
     suspend fun getDownloadById(id: String): DownloadEntity?
@@ -83,8 +83,8 @@ interface DownloadDao {
     @Query("SELECT SUM(totalBytes) FROM downloads WHERE status = 'COMPLETED'")
     suspend fun getTotalBytesDownloaded(): Long
     
-    @Query("SELECT concertIdentifier FROM downloads WHERE status = 'COMPLETED' GROUP BY concertIdentifier ORDER BY COUNT(*) DESC LIMIT 1")
-    suspend fun getMostDownloadedConcert(): String?
+    @Query("SELECT recordingId FROM downloads WHERE status = 'COMPLETED' GROUP BY recordingId ORDER BY COUNT(*) DESC LIMIT 1")
+    suspend fun getMostDownloadedRecording(): String?
     
     @Query("SELECT * FROM downloads ORDER BY startedTimestamp DESC")
     suspend fun getDownloadHistory(): List<DownloadEntity>

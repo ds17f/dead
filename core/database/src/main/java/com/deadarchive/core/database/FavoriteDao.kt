@@ -16,8 +16,8 @@ interface FavoriteDao {
     @Query("SELECT * FROM favorites WHERE type = :type ORDER BY addedTimestamp DESC")
     fun getFavoritesByType(type: String): Flow<List<FavoriteEntity>>
     
-    @Query("SELECT * FROM favorites WHERE concertIdentifier = :concertId ORDER BY addedTimestamp DESC")
-    fun getFavoritesForConcert(concertId: String): Flow<List<FavoriteEntity>>
+    @Query("SELECT * FROM favorites WHERE recordingId = :recordingId ORDER BY addedTimestamp DESC")
+    fun getFavoritesForConcert(recordingId: String): Flow<List<FavoriteEntity>>
     
     @Query("SELECT * FROM favorites WHERE id = :id")
     suspend fun getFavoriteById(id: String): FavoriteEntity?
@@ -25,11 +25,11 @@ interface FavoriteDao {
     @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE id = :id)")
     suspend fun isFavorite(id: String): Boolean
     
-    @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE concertIdentifier = :concertId AND type = 'CONCERT')")
-    suspend fun isConcertFavorite(concertId: String): Boolean
+    @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE recordingId = :recordingId AND type = 'RECORDING')")
+    suspend fun isRecordingFavorite(recordingId: String): Boolean
     
-    @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE concertIdentifier = :concertId AND trackFilename = :trackFilename AND type = 'TRACK')")
-    suspend fun isTrackFavorite(concertId: String, trackFilename: String): Boolean
+    @Query("SELECT EXISTS(SELECT 1 FROM favorites WHERE recordingId = :recordingId AND trackFilename = :trackFilename AND type = 'TRACK')")
+    suspend fun isTrackFavorite(recordingId: String, trackFilename: String): Boolean
     
     @Query("SELECT COUNT(*) FROM favorites")
     suspend fun getFavoriteCount(): Int
@@ -49,8 +49,8 @@ interface FavoriteDao {
     @Query("DELETE FROM favorites WHERE id = :id")
     suspend fun deleteFavoriteById(id: String)
     
-    @Query("DELETE FROM favorites WHERE concertIdentifier = :concertId")
-    suspend fun deleteFavoritesForConcert(concertId: String)
+    @Query("DELETE FROM favorites WHERE recordingId = :recordingId")
+    suspend fun deleteFavoritesForRecording(recordingId: String)
     
     @Query("DELETE FROM favorites WHERE type = :type")
     suspend fun deleteFavoritesByType(type: String)

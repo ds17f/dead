@@ -8,12 +8,12 @@ fun NavGraphBuilder.playlistScreen(
     onNavigateBack: () -> Unit,
     onNavigateToPlayer: (String) -> Unit
 ) {
-    composable("playlist/{concertId}") { backStackEntry ->
-        val concertId = backStackEntry.arguments?.getString("concertId") ?: ""
+    composable("playlist/{recordingId}") { backStackEntry ->
+        val recordingId = backStackEntry.arguments?.getString("recordingId") ?: ""
         PlaylistScreen(
             onNavigateBack = onNavigateBack,
-            onNavigateToPlayer = { onNavigateToPlayer(concertId) },
-            concertId = concertId
+            onNavigateToPlayer = { onNavigateToPlayer(recordingId) },
+            recordingId = recordingId
         )
     }
 }

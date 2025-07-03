@@ -2,7 +2,7 @@ package com.deadarchive.feature.playlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.model.Show
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -46,23 +46,23 @@ class ConcertListViewModel @Inject constructor(
         loadConcerts()
     }
     
-    fun toggleFavorite(concert: ConcertNew) {
+    fun toggleFavorite(show: Show) {
         viewModelScope.launch {
             try {
                 // TODO: Update favorite status in repository
-                // concertRepository.updateFavoriteStatus(concert.concertId, !concert.isFavorite)
+                // showRepository.updateFavoriteStatus(show.showId, !show.isFavorite)
                 
                 // For now, update the state locally
                 val currentState = _uiState.value
                 if (currentState is ConcertListUiState.Success) {
-                    val updatedConcerts = currentState.concerts.map { existingConcert ->
-                        if (existingConcert.concertId == concert.concertId) {
-                            existingConcert.copy(isFavorite = !existingConcert.isFavorite)
+                    val updatedShows = currentState.shows.map { existingShow ->
+                        if (existingShow.showId == show.showId) {
+                            existingShow.copy(isFavorite = !existingShow.isFavorite)
                         } else {
-                            existingConcert
+                            existingShow
                         }
                     }
-                    _uiState.value = ConcertListUiState.Success(updatedConcerts)
+                    _uiState.value = ConcertListUiState.Success(updatedShows)
                 }
             } catch (e: Exception) {
                 // TODO: Handle error appropriately
@@ -71,9 +71,9 @@ class ConcertListViewModel @Inject constructor(
     }
     
     // Mock data for demonstration
-    private fun createMockConcerts(): List<ConcertNew> {
+    private fun createMockConcerts(): List<Show> {
         return listOf(
-            ConcertNew(
+            Show(
                 date = "1977-05-08",
                 venue = "Cornell University",
                 location = "Ithaca, NY",
@@ -101,7 +101,7 @@ class ConcertListViewModel @Inject constructor(
                 ),
                 isFavorite = false
             ),
-            ConcertNew(
+            Show(
                 date = "1977-05-07",
                 venue = "Boston Garden",
                 location = "Boston, MA", 
@@ -138,7 +138,7 @@ class ConcertListViewModel @Inject constructor(
                 ),
                 isFavorite = true
             ),
-            ConcertNew(
+            Show(
                 date = "1972-05-03",
                 venue = "Olympia Theatre",
                 location = "Paris, France",
@@ -165,7 +165,7 @@ sealed class ConcertListUiState {
     object Loading : ConcertListUiState()
     
     data class Success(
-        val concerts: List<ConcertNew>
+        val shows: List<Show>
     ) : ConcertListUiState()
     
     data class Error(

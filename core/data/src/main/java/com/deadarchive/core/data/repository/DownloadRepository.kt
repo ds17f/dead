@@ -6,7 +6,7 @@ import com.deadarchive.core.data.mapper.DataMappers.toDownloadState
 import com.deadarchive.core.data.mapper.DataMappers.toDownloadStates
 import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.DownloadEntity
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.DownloadState
 import com.deadarchive.core.model.DownloadStatus
 import kotlinx.coroutines.flow.Flow
@@ -38,9 +38,9 @@ interface DownloadRepository {
     fun getCompletedDownloads(): Flow<List<DownloadState>>
     
     /**
-     * Get downloads for a specific concert
+     * Get downloads for a specific recording
      */
-    fun getDownloadsForConcert(concertId: String): Flow<List<DownloadState>>
+    fun getDownloadsForRecording(recordingId: String): Flow<List<DownloadState>>
     
     /**
      * Get download by ID
@@ -48,14 +48,14 @@ interface DownloadRepository {
     suspend fun getDownloadById(id: String): DownloadState?
     
     /**
-     * Start downloading a concert track
+     * Start downloading a recording track
      */
-    suspend fun startDownload(concert: Concert, trackFilename: String): String
+    suspend fun startDownload(recording: Recording, trackFilename: String): String
     
     /**
-     * Start downloading all tracks for a concert
+     * Start downloading all tracks for a recording
      */
-    suspend fun startConcertDownload(concert: Concert): List<String>
+    suspend fun startRecordingDownload(recording: Recording): List<String>
     
     /**
      * Update download progress
@@ -105,12 +105,12 @@ interface DownloadRepository {
     /**
      * Check if a track is downloaded
      */
-    suspend fun isTrackDownloaded(concertId: String, trackFilename: String): Boolean
+    suspend fun isTrackDownloaded(recordingId: String, trackFilename: String): Boolean
     
     /**
      * Get local file path for a downloaded track
      */
-    suspend fun getLocalFilePath(concertId: String, trackFilename: String): String?
+    suspend fun getLocalFilePath(recordingId: String, trackFilename: String): String?
     
     /**
      * Enhanced download queue management
@@ -144,7 +144,7 @@ interface DownloadRepository {
     /**
      * Batch download operations
      */
-    suspend fun startMultipleDownloads(downloads: List<Pair<Concert, String>>): List<String>
+    suspend fun startMultipleDownloads(downloads: List<Pair<Recording, String>>): List<String>
     suspend fun pauseAllDownloads()
     suspend fun resumeAllDownloads()
     
@@ -158,7 +158,7 @@ interface DownloadRepository {
      * Export/Import downloaded content
      */
     suspend fun exportDownloadList(): List<DownloadState>
-    suspend fun getDownloadedTracks(): List<Pair<Concert, String>>
+    suspend fun getDownloadedTracks(): List<Pair<Recording, String>>
 }
 
 /**
@@ -170,13 +170,13 @@ data class DownloadStats(
     val failedDownloads: Int,
     val totalBytesDownloaded: Long,
     val averageDownloadSpeed: Double,
-    val mostDownloadedConcert: String?
+    val mostDownloadedRecording: String?
 )
 
 @Singleton
 class DownloadRepositoryImpl @Inject constructor(
     private val downloadDao: DownloadDao,
-    private val concertRepository: ConcertRepository
+    private val showRepository: ShowRepository
 ) : DownloadRepository {
     
     // Download directory management
@@ -210,8 +210,8 @@ class DownloadRepositoryImpl @Inject constructor(
         }
     }
 
-    override fun getDownloadsForConcert(concertId: String): Flow<List<DownloadState>> {
-        return downloadDao.getDownloadsForConcert(concertId).map { entities ->
+    override fun getDownloadsForRecording(recordingId: String): Flow<List<DownloadState>> {
+        return downloadDao.getDownloadsForConcert(recordingId).map { entities ->
             entities.map { it.toDownloadState() }
         }
     }
@@ -220,8 +220,8 @@ class DownloadRepositoryImpl @Inject constructor(
         return downloadDao.getDownloadById(id)?.toDownloadState()
     }
 
-    override suspend fun startDownload(concert: Concert, trackFilename: String): String {
-        val downloadId = "${concert.identifier}_$trackFilename"
+    override suspend fun startDownload(recording: Recording, trackFilename: String): String {
+        val downloadId = "${recording.identifier}_$trackFilename"
         
         // Check if download already exists
         val existingDownload = downloadDao.getDownloadById(downloadId)
@@ -242,26 +242,26 @@ class DownloadRepositoryImpl @Inject constructor(
         }
 
         // Create new download entry
-        val downloadState = DownloadState(
-            concertIdentifier = concert.identifier,
+        val downloadEntity = createDownloadState(
+            recordingId = recording.identifier,
             trackFilename = trackFilename,
+            url = "https://archive.org/download/${recording.identifier}/$trackFilename",
             status = DownloadStatus.QUEUED
         )
 
-        val downloadEntity = DownloadEntity.fromDownloadState(downloadState)
         downloadDao.insertDownload(downloadEntity)
         
         return downloadId
     }
 
-    override suspend fun startConcertDownload(concert: Concert): List<String> {
+    override suspend fun startRecordingDownload(recording: Recording): List<String> {
         val downloadIds = mutableListOf<String>()
         
         // Get track streaming URLs to determine available tracks
-        val trackUrls = concertRepository.getTrackStreamingUrls(concert.identifier)
+        val trackUrls = showRepository.getTrackStreamingUrls(recording.identifier)
         
         for ((audioFile, _) in trackUrls) {
-            val downloadId = startDownload(concert, audioFile.filename)
+            val downloadId = startDownload(recording, audioFile.filename)
             downloadIds.add(downloadId)
         }
         
@@ -442,11 +442,11 @@ class DownloadRepositoryImpl @Inject constructor(
 
     // ============ Batch Operations ============
 
-    override suspend fun startMultipleDownloads(downloads: List<Pair<Concert, String>>): List<String> {
+    override suspend fun startMultipleDownloads(downloads: List<Pair<Recording, String>>): List<String> {
         val downloadIds = mutableListOf<String>()
         
-        for ((concert, trackFilename) in downloads) {
-            val downloadId = startDownload(concert, trackFilename)
+        for ((recording, trackFilename) in downloads) {
+            val downloadId = startDownload(recording, trackFilename)
             downloadIds.add(downloadId)
         }
         
@@ -477,7 +477,7 @@ class DownloadRepositoryImpl @Inject constructor(
         val failedDownloads = downloadDao.getDownloadCountByStatus(DownloadStatus.FAILED.name)
         val totalBytesDownloaded = downloadDao.getTotalBytesDownloaded()
         val averageDownloadSpeed = calculateAverageDownloadSpeed()
-        val mostDownloadedConcert = downloadDao.getMostDownloadedConcert()
+        val mostDownloadedRecording = downloadDao.getMostDownloadedRecording()
 
         return DownloadStats(
             totalDownloads = totalDownloads,
@@ -485,7 +485,7 @@ class DownloadRepositoryImpl @Inject constructor(
             failedDownloads = failedDownloads,
             totalBytesDownloaded = totalBytesDownloaded,
             averageDownloadSpeed = averageDownloadSpeed,
-            mostDownloadedConcert = mostDownloadedConcert
+            mostDownloadedRecording = mostDownloadedRecording
         )
     }
 
@@ -499,14 +499,14 @@ class DownloadRepositoryImpl @Inject constructor(
         return downloadDao.getAllDownloadsSync().toDownloadStates()
     }
 
-    override suspend fun getDownloadedTracks(): List<Pair<Concert, String>> {
+    override suspend fun getDownloadedTracks(): List<Pair<Recording, String>> {
         val completedDownloads = downloadDao.getDownloadsByStatusList(DownloadStatus.COMPLETED.name)
-        val downloadedTracks = mutableListOf<Pair<Concert, String>>()
+        val downloadedTracks = mutableListOf<Pair<Recording, String>>()
         
         for (download in completedDownloads) {
-            val concert = concertRepository.getConcertById(download.concertIdentifier)
-            if (concert != null) {
-                downloadedTracks.add(Pair(concert, download.trackFilename))
+            val recording = showRepository.getRecordingById(download.recordingId)
+            if (recording != null) {
+                downloadedTracks.add(Pair(recording, download.trackFilename))
             }
         }
         

@@ -13,8 +13,8 @@ import kotlinx.serialization.json.Json
     tableName = "recordings",
     foreignKeys = [
         ForeignKey(
-            entity = ConcertNewEntity::class,
-            parentColumns = ["concertId"],
+            entity = ShowEntity::class,
+            parentColumns = ["showId"],
             childColumns = ["concertId"],
             onDelete = ForeignKey.CASCADE
         )
@@ -44,9 +44,10 @@ data class RecordingEntity(
     val publicDate: String?,
     
     // Concert reference
-    val concertId: String, // Foreign key to ConcertNewEntity
+    val concertId: String, // Foreign key to ShowEntity
     val concertDate: String, // YYYY-MM-DD format
     val concertVenue: String?,
+    val concertLocation: String?, // City, State format
     
     // Audio content as JSON
     val tracksJson: String? = null,
@@ -80,6 +81,7 @@ data class RecordingEntity(
             publicDate = publicDate,
             concertDate = concertDate,
             concertVenue = concertVenue,
+            concertLocation = concertLocation,
             tracks = tracks,
             audioFiles = emptyList(), // Will be populated from tracks
             isFavorite = isFavorite,
@@ -107,6 +109,7 @@ data class RecordingEntity(
                 concertId = concertId,
                 concertDate = recording.concertDate,
                 concertVenue = recording.concertVenue,
+                concertLocation = recording.concertLocation,
                 tracksJson = tracksJson,
                 isFavorite = recording.isFavorite,
                 isDownloaded = recording.isDownloaded

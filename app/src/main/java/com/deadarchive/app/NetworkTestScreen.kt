@@ -40,7 +40,7 @@ class NetworkTestViewModel @Inject constructor(
                 _message.value = "Testing API connection..."
                 
                 // Test a simple API call - search for grateful dead concerts
-                val response = apiService.searchConcerts(
+                val response = apiService.searchRecordings(
                     query = "collection:GratefulDead",
                     rows = 5
                 )

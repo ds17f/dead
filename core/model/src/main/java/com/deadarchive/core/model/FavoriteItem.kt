@@ -6,25 +6,25 @@ import kotlinx.serialization.Serializable
 data class FavoriteItem(
     val id: String,
     val type: FavoriteType,
-    val concertIdentifier: String,
+    val recordingId: String,
     val trackFilename: String? = null,
     val addedTimestamp: Long = System.currentTimeMillis(),
     val notes: String? = null
 ) {
     companion object {
-        fun fromConcert(concert: Concert): FavoriteItem {
+        fun fromRecording(recording: Recording): FavoriteItem {
             return FavoriteItem(
-                id = "concert_${concert.identifier}",
-                type = FavoriteType.CONCERT,
-                concertIdentifier = concert.identifier
+                id = "recording_${recording.identifier}",
+                type = FavoriteType.RECORDING,
+                recordingId = recording.identifier
             )
         }
         
-        fun fromTrack(concertIdentifier: String, track: Track): FavoriteItem {
+        fun fromTrack(recordingId: String, track: Track): FavoriteItem {
             return FavoriteItem(
-                id = "track_${concertIdentifier}_${track.filename}",
+                id = "track_${recordingId}_${track.filename}",
                 type = FavoriteType.TRACK,
-                concertIdentifier = concertIdentifier,
+                recordingId = recordingId,
                 trackFilename = track.filename
             )
         }
@@ -33,5 +33,6 @@ data class FavoriteItem(
 
 enum class FavoriteType {
     CONCERT,
+    RECORDING,
     TRACK
 }

@@ -9,7 +9,7 @@ fun NavGraphBuilder.browseScreen(
 ) {
     composable("browse") {
         BrowseScreen(
-            onNavigateToPlayer = { concert -> onNavigateToPlayer(concert.identifier) }
+            onNavigateToPlayer = onNavigateToPlayer
         )
     }
 }

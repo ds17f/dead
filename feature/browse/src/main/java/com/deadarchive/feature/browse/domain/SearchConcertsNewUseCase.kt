@@ -1,29 +1,29 @@
 package com.deadarchive.feature.browse.domain
 
-import com.deadarchive.core.data.repository.ConcertRepository
-import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.model.Show
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 /**
- * Use case for searching concerts with the new Concert/Recording structure
- * Groups individual recordings into concerts by date and venue
+ * Use case for searching shows with the new Show/Recording structure
+ * Groups individual recordings into shows by date and venue
  */
-class SearchConcertsNewUseCase @Inject constructor(
-    private val concertRepository: ConcertRepository
+class SearchShowsUseCase @Inject constructor(
+    private val showRepository: ShowRepository
 ) {
     
     /**
-     * Search for concerts with intelligent query processing
-     * Returns ConcertNew objects with grouped recordings
+     * Search for shows with intelligent query processing
+     * Returns Show objects with grouped recordings
      */
-    operator fun invoke(query: String): Flow<List<ConcertNew>> {
+    operator fun invoke(query: String): Flow<List<Show>> {
         if (query.isBlank()) {
-            return concertRepository.searchConcertsNew("grateful dead")
+            return showRepository.searchShows("grateful dead")
         }
         
         val searchQuery = processSearchQuery(query.trim())
-        return concertRepository.searchConcertsNew(searchQuery)
+        return showRepository.searchShows(searchQuery)
     }
     
     /**
@@ -71,16 +71,16 @@ class SearchConcertsNewUseCase @Inject constructor(
     }
     
     /**
-     * Get popular concerts (famous shows)
+     * Get popular shows (famous shows)
      */
-    fun getPopularConcerts(): Flow<List<ConcertNew>> {
-        return concertRepository.searchConcertsNew("1977")
+    fun getPopularShows(): Flow<List<Show>> {
+        return showRepository.searchShows("1977")
     }
     
     /**
-     * Get recent concerts 
+     * Get recent shows 
      */
-    fun getRecentConcerts(): Flow<List<ConcertNew>> {
-        return concertRepository.searchConcertsNew("grateful dead")
+    fun getRecentShows(): Flow<List<Show>> {
+        return showRepository.getAllShows()
     }
 }

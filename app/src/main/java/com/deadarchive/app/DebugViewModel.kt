@@ -3,7 +3,7 @@ package com.deadarchive.app
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.sync.DataSyncService
-import com.deadarchive.core.data.repository.ConcertRepository
+import com.deadarchive.core.data.repository.ShowRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -18,15 +18,16 @@ data class DebugUiState(
     val isExporting: Boolean = false,
     val exportStatus: String = "",
     val exportSuccess: Boolean = false,
-    val cachedConcertCount: Int = 0,
+    val cachedRecordingCount: Int = 0,
     val lastSyncTime: String = "Never",
-    val databaseSize: String = "Unknown"
+    val databaseSize: String = "Unknown",
+    val databaseDebugInfo: String = ""
 )
 
 @HiltViewModel
 class DebugViewModel @Inject constructor(
     private val dataSyncService: DataSyncService,
-    private val concertRepository: ConcertRepository,
+    private val concertRepository: ShowRepository,
     @ApplicationContext private val context: Context
 ) : ViewModel() {
     
@@ -40,7 +41,7 @@ class DebugViewModel @Inject constructor(
     private fun loadAppInfo() {
         viewModelScope.launch {
             try {
-                val concertCount = dataSyncService.getTotalConcertCount()
+                val concertCount = dataSyncService.getTotalRecordingCount()
                 val lastSync = dataSyncService.getLastSyncTimestamp()
                 val lastSyncFormatted = if (lastSync > 0) {
                     SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(Date(lastSync))
@@ -49,7 +50,7 @@ class DebugViewModel @Inject constructor(
                 }
                 
                 _uiState.value = _uiState.value.copy(
-                    cachedConcertCount = concertCount,
+                    cachedRecordingCount = concertCount,
                     lastSyncTime = lastSyncFormatted,
                     databaseSize = "~${concertCount * 2}KB" // Rough estimate
                 )
@@ -138,29 +139,29 @@ class DebugViewModel @Inject constructor(
     private suspend fun exportCatalogData(testDataDir: File) {
         try {
             // Get sample concerts from the database to show the real data format
-            val sampleConcerts = concertRepository.getAllCachedConcerts().first().take(10)
+            val sampleRecordings = concertRepository.getAllCachedRecordings().first().take(10)
             
             val catalogData = buildString {
                 appendLine("{")
                 appendLine("  \"metadata\": {")
                 appendLine("    \"exported_at\": \"${SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.getDefault()).format(Date())}\",")
                 appendLine("    \"source\": \"Real app data via DataSyncService\",")
-                appendLine("    \"total_concerts\": ${sampleConcerts.size}")
+                appendLine("    \"total_concerts\": ${sampleRecordings.size}")
                 appendLine("  },")
                 appendLine("  \"sample_concerts\": [")
                 
-                sampleConcerts.forEachIndexed { index, concert ->
+                sampleRecordings.forEachIndexed { index, concert ->
                     appendLine("    {")
                     appendLine("      \"identifier\": \"${concert.identifier}\",")
                     appendLine("      \"title\": \"${concert.title.replace("\"", "\\\"")}\",")
-                    appendLine("      \"date\": \"${concert.date}\",")
-                    appendLine("      \"venue\": \"${concert.venue?.replace("\"", "\\\"") ?: ""}\",")
-                    appendLine("      \"location\": \"${concert.location?.replace("\"", "\\\"") ?: ""}\",")
-                    appendLine("      \"year\": ${concert.year ?: 0},")
+                    appendLine("      \"date\": \"${concert.concertDate}\",")
+                    appendLine("      \"venue\": \"${concert.concertVenue?.replace("\"", "\\\"") ?: ""}\",")
+                    appendLine("      \"location\": \"${concert.concertLocation?.replace("\"", "\\\"") ?: ""}\",")
+                    appendLine("      \"year\": ${concert.concertDate.take(4).toIntOrNull() ?: 0},")
                     appendLine("      \"source\": \"${concert.source?.replace("\"", "\\\"") ?: ""}\",")
                     appendLine("      \"description\": \"${concert.description?.take(100)?.replace("\"", "\\\"") ?: ""}\"")
                     append("    }")
-                    if (index < sampleConcerts.size - 1) appendLine(",")
+                    if (index < sampleRecordings.size - 1) appendLine(",")
                 }
                 
                 appendLine("")
@@ -179,14 +180,14 @@ class DebugViewModel @Inject constructor(
     private suspend fun exportSampleMetadata(testDataDir: File) {
         try {
             // Get a few sample concerts for metadata export
-            val sampleConcerts = concertRepository.getAllCachedConcerts().first().take(3)
+            val sampleRecordings = concertRepository.getAllCachedRecordings().first().take(3)
             
             val metadataData = buildString {
                 appendLine("[")
                 
-                sampleConcerts.forEachIndexed { index, concert ->
+                sampleRecordings.forEachIndexed { index, concert ->
                     // Try to fetch real metadata using the concert repository
-                    val metadata = concertRepository.getConcertMetadata(concert.identifier)
+                    val metadata = concertRepository.getRecordingMetadata(concert.identifier)
                     
                     appendLine("  {")
                     appendLine("    \"identifier\": \"${concert.identifier}\",")
@@ -197,7 +198,7 @@ class DebugViewModel @Inject constructor(
                         appendLine("    \"files_count\": ${metadata.files.size}")
                     }
                     append("  }")
-                    if (index < sampleConcerts.size - 1) appendLine(",")
+                    if (index < sampleRecordings.size - 1) appendLine(",")
                 }
                 
                 appendLine("")
@@ -209,6 +210,27 @@ class DebugViewModel @Inject constructor(
         } catch (e: Exception) {
             println("DEBUG: Error exporting metadata: ${e.message}")
             throw e
+        }
+    }
+    
+    /**
+     * Debug the database state to see shows and recordings
+     */
+    fun debugDatabaseState() {
+        viewModelScope.launch {
+            try {
+                val debugInfo = concertRepository.debugDatabaseState()
+                _uiState.value = _uiState.value.copy(
+                    databaseDebugInfo = debugInfo
+                )
+                println("DEBUG: Database state:\n$debugInfo")
+            } catch (e: Exception) {
+                val errorInfo = "Error debugging database: ${e.message}"
+                _uiState.value = _uiState.value.copy(
+                    databaseDebugInfo = errorInfo
+                )
+                println("DEBUG: $errorInfo")
+            }
         }
     }
 }

@@ -4,49 +4,49 @@ import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface ConcertNewDao {
+interface ShowDao {
     
     // Basic CRUD operations
-    @Query("SELECT * FROM concerts_new WHERE concertId = :concertId")
-    suspend fun getConcertById(concertId: String): ConcertNewEntity?
+    @Query("SELECT * FROM concerts_new WHERE showId = :showId")
+    suspend fun getShowById(showId: String): ShowEntity?
     
     @Query("SELECT * FROM concerts_new ORDER BY date DESC")
-    suspend fun getAllConcerts(): List<ConcertNewEntity>
+    suspend fun getAllShows(): List<ShowEntity>
     
     @Query("SELECT * FROM concerts_new ORDER BY date DESC")
-    fun getAllConcertsFlow(): Flow<List<ConcertNewEntity>>
+    fun getAllShowsFlow(): Flow<List<ShowEntity>>
     
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertConcert(concert: ConcertNewEntity)
+    suspend fun insertShow(show: ShowEntity)
     
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertConcerts(concerts: List<ConcertNewEntity>)
+    suspend fun insertShows(shows: List<ShowEntity>)
     
     @Delete
-    suspend fun deleteConcert(concert: ConcertNewEntity)
+    suspend fun deleteShow(show: ShowEntity)
     
-    @Query("DELETE FROM concerts_new WHERE concertId = :concertId")
-    suspend fun deleteConcertById(concertId: String)
+    @Query("DELETE FROM concerts_new WHERE showId = :showId")
+    suspend fun deleteShowById(showId: String)
     
     // Date-based searches
     @Query("SELECT * FROM concerts_new WHERE date = :date ORDER BY venue ASC")
-    suspend fun getConcertsByExactDate(date: String): List<ConcertNewEntity>
+    suspend fun getShowsByExactDate(date: String): List<ShowEntity>
     
     @Query("SELECT * FROM concerts_new WHERE date LIKE :yearMonth || '%' ORDER BY date ASC, venue ASC")
-    suspend fun getConcertsByYearMonth(yearMonth: String): List<ConcertNewEntity>
+    suspend fun getShowsByYearMonth(yearMonth: String): List<ShowEntity>
     
     @Query("SELECT * FROM concerts_new WHERE year = :year ORDER BY date ASC, venue ASC")
-    suspend fun getConcertsByYear(year: String): List<ConcertNewEntity>
+    suspend fun getShowsByYear(year: String): List<ShowEntity>
     
     @Query("SELECT * FROM concerts_new WHERE year BETWEEN :startYear AND :endYear ORDER BY date ASC, venue ASC")
-    suspend fun getConcertsByYearRange(startYear: String, endYear: String): List<ConcertNewEntity>
+    suspend fun getShowsByYearRange(startYear: String, endYear: String): List<ShowEntity>
     
     // Venue and location searches
     @Query("SELECT * FROM concerts_new WHERE venue LIKE '%' || :venue || '%' ORDER BY date DESC")
-    suspend fun getConcertsByVenue(venue: String): List<ConcertNewEntity>
+    suspend fun getShowsByVenue(venue: String): List<ShowEntity>
     
     @Query("SELECT * FROM concerts_new WHERE location LIKE '%' || :location || '%' ORDER BY date DESC")
-    suspend fun getConcertsByLocation(location: String): List<ConcertNewEntity>
+    suspend fun getShowsByLocation(location: String): List<ShowEntity>
     
     // General search
     @Query("""
@@ -57,24 +57,24 @@ interface ConcertNewDao {
            OR date LIKE '%' || :query || '%'
         ORDER BY date DESC
     """)
-    suspend fun searchConcerts(query: String): List<ConcertNewEntity>
+    suspend fun searchShows(query: String): List<ShowEntity>
     
     // Favorites
     @Query("SELECT * FROM concerts_new WHERE isFavorite = 1 ORDER BY date DESC")
-    suspend fun getFavoriteConcerts(): List<ConcertNewEntity>
+    suspend fun getFavoriteShows(): List<ShowEntity>
     
     @Query("SELECT * FROM concerts_new WHERE isFavorite = 1 ORDER BY date DESC")
-    fun getFavoriteConcertsFlow(): Flow<List<ConcertNewEntity>>
+    fun getFavoriteShowsFlow(): Flow<List<ShowEntity>>
     
-    @Query("UPDATE concerts_new SET isFavorite = :isFavorite WHERE concertId = :concertId")
-    suspend fun updateFavoriteStatus(concertId: String, isFavorite: Boolean)
+    @Query("UPDATE concerts_new SET isFavorite = :isFavorite WHERE showId = :showId")
+    suspend fun updateFavoriteStatus(showId: String, isFavorite: Boolean)
     
     // Statistics and utility
     @Query("SELECT COUNT(*) FROM concerts_new")
-    suspend fun getConcertCount(): Int
+    suspend fun getShowCount(): Int
     
     @Query("SELECT * FROM concerts_new ORDER BY date DESC LIMIT :limit")
-    suspend fun getRecentConcerts(limit: Int): List<ConcertNewEntity>
+    suspend fun getRecentShows(limit: Int): List<ShowEntity>
     
     @Query("SELECT DISTINCT venue FROM concerts_new WHERE venue IS NOT NULL ORDER BY venue ASC")
     suspend fun getAllVenues(): List<String>
@@ -89,29 +89,29 @@ interface ConcertNewDao {
     @Query("""
         SELECT c.*, COUNT(r.identifier) as recordingCount
         FROM concerts_new c
-        LEFT JOIN recordings r ON c.concertId = r.concertId
-        GROUP BY c.concertId
+        LEFT JOIN recordings r ON c.showId = r.concertId
+        GROUP BY c.showId
         ORDER BY c.date DESC
     """)
-    suspend fun getConcertsWithRecordingCounts(): List<ConcertWithRecordingCount>
+    suspend fun getShowsWithRecordingCounts(): List<ShowWithRecordingCount>
     
     // Cache management
     @Query("DELETE FROM concerts_new WHERE cachedTimestamp < :cutoffTime")
-    suspend fun cleanupOldCachedConcerts(cutoffTime: Long)
+    suspend fun cleanupOldCachedShows(cutoffTime: Long)
     
-    @Query("SELECT EXISTS(SELECT 1 FROM concerts_new WHERE concertId = :concertId)")
-    suspend fun concertExists(concertId: String): Boolean
+    @Query("SELECT EXISTS(SELECT 1 FROM concerts_new WHERE showId = :showId)")
+    suspend fun showExists(showId: String): Boolean
     
     // Date range queries
     @Query("SELECT MIN(date) FROM concerts_new")
-    suspend fun getEarliestConcertDate(): String?
+    suspend fun getEarliestShowDate(): String?
     
     @Query("SELECT MAX(date) FROM concerts_new")
-    suspend fun getLatestConcertDate(): String?
+    suspend fun getLatestShowDate(): String?
 }
 
 // Data classes for query results
-data class ConcertWithRecordingCount(
-    @Embedded val concert: ConcertNewEntity,
+data class ShowWithRecordingCount(
+    @Embedded val show: ShowEntity,
     val recordingCount: Int
 )

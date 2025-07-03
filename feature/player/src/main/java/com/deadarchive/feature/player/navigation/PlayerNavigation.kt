@@ -10,14 +10,14 @@ fun NavGraphBuilder.playerScreen(
     onNavigateBack: () -> Unit,
     navController: NavController
 ) {
-    // Handle both routes for now - with and without concert ID
+    // Handle both routes for now - with and without recording ID
     composable("player") {
         PlayerScreen(
             onNavigateBack = onNavigateBack,
             onNavigateToQueue = { navController.navigate("queue") },
-            onNavigateToPlaylist = { concertId ->
-                if (concertId != null) {
-                    navController.navigate("playlist/$concertId")
+            onNavigateToPlaylist = { recordingId ->
+                if (recordingId != null) {
+                    navController.navigate("playlist/$recordingId")
                 } else {
                     navController.popBackStack() // Fallback to previous screen
                 }
@@ -25,17 +25,17 @@ fun NavGraphBuilder.playerScreen(
         )
     }
     
-    composable("player/{concertId}") { backStackEntry ->
-        val concertId = backStackEntry.arguments?.getString("concertId")
-        android.util.Log.d("PlayerNavigation", "Navigating to player with concertId: '$concertId'")
+    composable("player/{recordingId}") { backStackEntry ->
+        val recordingId = backStackEntry.arguments?.getString("recordingId")
+        android.util.Log.d("PlayerNavigation", "Navigating to player with recordingId: '$recordingId'")
         PlayerScreen(
-            concertId = concertId,
+            recordingId = recordingId,
             onNavigateBack = onNavigateBack,
             onNavigateToQueue = { navController.navigate("queue") },
-            onNavigateToPlaylist = { concertId ->
-                android.util.Log.d("PlayerNavigation", "Navigating to playlist with concertId: '$concertId'")
-                if (concertId != null) {
-                    navController.navigate("playlist/$concertId")
+            onNavigateToPlaylist = { recordingId ->
+                android.util.Log.d("PlayerNavigation", "Navigating to playlist with recordingId: '$recordingId'")
+                if (recordingId != null) {
+                    navController.navigate("playlist/$recordingId")
                 } else {
                     navController.popBackStack() // Fallback to previous screen
                 }

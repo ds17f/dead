@@ -2,7 +2,8 @@ package com.deadarchive.core.database.di
 
 import android.content.Context
 import androidx.room.Room
-import com.deadarchive.core.database.ConcertDao
+import com.deadarchive.core.database.ShowDao
+import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.DeadArchiveDatabase
 import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.FavoriteDao
@@ -36,11 +37,19 @@ object DatabaseModule {
     }
     
     /**
-     * Provides Concert DAO for database operations
+     * Provides Show DAO for database operations
      */
     @Provides
-    fun provideConcertDao(database: DeadArchiveDatabase): ConcertDao {
-        return database.concertDao()
+    fun provideShowDao(database: DeadArchiveDatabase): ShowDao {
+        return database.showDao()
+    }
+    
+    /**
+     * Provides Recording DAO for database operations
+     */
+    @Provides
+    fun provideRecordingDao(database: DeadArchiveDatabase): RecordingDao {
+        return database.recordingDao()
     }
     
     /**

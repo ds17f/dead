@@ -33,7 +33,7 @@ import javax.inject.Inject
 @HiltViewModel
 class MediaPlayerTestViewModel @Inject constructor(
     private val mediaPlayer: MediaPlayer,
-    private val concertRepository: com.deadarchive.core.data.repository.ConcertRepository,
+    private val showRepository: com.deadarchive.core.data.repository.ShowRepository,
     @ApplicationContext private val context: Context
 ) : ViewModel() {
     
@@ -117,12 +117,12 @@ class MediaPlayerTestViewModel @Inject constructor(
                 
                 // Use Archive.org metadata API to get proper streaming URL
                 val concertId = "gd1995-07-09.sbd.miller.114369.flac16"  // Soldier Field 1995 - known working
-                addLog("Concert ID: $concertId (Soldier Field 1995-07-09)")
+                addLog("Recording ID: $concertId (Soldier Field 1995-07-09)")
                 
                 _message.value = "🌐 Fetching metadata from Archive.org..."
                 addLog("Fetching metadata from Archive.org...")
                 
-                val streamingUrl = concertRepository.getPreferredStreamingUrl(concertId)
+                val streamingUrl = showRepository.getPreferredStreamingUrl(concertId)
                 
                 if (streamingUrl != null) {
                     addLog("Generated streaming URL: $streamingUrl")
@@ -186,12 +186,12 @@ class MediaPlayerTestViewModel @Inject constructor(
                 
                 // Use a different version of the same working concert
                 val concertId = "gd1995-07-09.schoeps.wklitz.95444.flac1648"  // Same show, different taper
-                addLog("Concert ID: $concertId (Soldier Field 1995 - audience recording)")
+                addLog("Recording ID: $concertId (Soldier Field 1995 - audience recording)")
                 
                 _message.value = "🌐 Fetching metadata from Archive.org..."
                 addLog("Fetching metadata for audience recording...")
                 
-                val streamingUrl = concertRepository.getPreferredStreamingUrl(concertId)
+                val streamingUrl = showRepository.getPreferredStreamingUrl(concertId)
                 
                 if (streamingUrl != null) {
                     addLog("Generated streaming URL: $streamingUrl")
@@ -264,12 +264,12 @@ class MediaPlayerTestViewModel @Inject constructor(
                 
                 // Use the third version from search results
                 val concertId = "gd1995-07-09.schoeps.wklitz.95445.flac16"  // Same show, 16-bit version
-                addLog("Concert ID: $concertId (Soldier Field 1995 - 16-bit FLAC)")
+                addLog("Recording ID: $concertId (Soldier Field 1995 - 16-bit FLAC)")
                 
                 _message.value = "🌐 Fetching metadata from Archive.org..."
                 addLog("Fetching metadata for 16-bit version...")
                 
-                val streamingUrl = concertRepository.getPreferredStreamingUrl(concertId)
+                val streamingUrl = showRepository.getPreferredStreamingUrl(concertId)
                 
                 if (streamingUrl != null) {
                     addLog("Generated streaming URL: $streamingUrl")

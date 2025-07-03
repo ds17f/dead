@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class DownloadState(
-    val concertIdentifier: String,
+    val recordingId: String,
     val trackFilename: String,
     val status: DownloadStatus,
     val progress: Float = 0f,
@@ -18,7 +18,7 @@ data class DownloadState(
     val retryCount: Int = 0
 ) {
     val id: String
-        get() = "${concertIdentifier}_${trackFilename}"
+        get() = "${recordingId}_${trackFilename}"
     
     val progressPercentage: Int
         get() = (progress * 100).toInt()

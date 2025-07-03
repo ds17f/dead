@@ -8,7 +8,7 @@ import com.deadarchive.core.model.DownloadStatus
 @Entity(tableName = "downloads")
 data class DownloadEntity(
     @PrimaryKey val id: String,
-    val concertIdentifier: String,
+    val recordingId: String,
     val trackFilename: String,
     val status: String,
     val progress: Float = 0f,
@@ -23,7 +23,7 @@ data class DownloadEntity(
 ) {
     fun toDownloadState(): DownloadState {
         return DownloadState(
-            concertIdentifier = concertIdentifier,
+            recordingId = recordingId,
             trackFilename = trackFilename,
             status = DownloadStatus.valueOf(status),
             progress = progress,
@@ -42,7 +42,7 @@ data class DownloadEntity(
         fun fromDownloadState(downloadState: DownloadState): DownloadEntity {
             return DownloadEntity(
                 id = downloadState.id,
-                concertIdentifier = downloadState.concertIdentifier,
+                recordingId = downloadState.recordingId,
                 trackFilename = downloadState.trackFilename,
                 status = downloadState.status.name,
                 progress = downloadState.progress,

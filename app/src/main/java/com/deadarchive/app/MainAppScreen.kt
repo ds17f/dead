@@ -39,13 +39,13 @@ fun MainAppScreen(
                     // Global MiniPlayer - shows above bottom navigation
                     if (shouldShowMiniPlayer(currentRoute)) {
                         MiniPlayerContainer(
-                            onTapToExpand = { concertId ->
+                            onTapToExpand = { recordingId ->
                                 // Navigate to full player when tapping mini player
-                                if (concertId != null) {
-                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player/$concertId'")
-                                    navController.navigate("player/$concertId")
+                                if (recordingId != null) {
+                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player/$recordingId'")
+                                    navController.navigate("player/$recordingId")
                                 } else {
-                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player' (no concertId)")
+                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player' (no recordingId)")
                                     navController.navigate("player")
                                 }
                             }
@@ -67,16 +67,15 @@ fun MainAppScreen(
                                     }
                                 }
                                 else -> {
-                                    // For other tabs, use standard bottom nav behavior
+                                    // For other tabs, always clear stack and navigate to destination
+                                    // This ensures Settings button always works regardless of current stack
                                     navController.navigate(route) {
-                                        // Pop up to the graph's start destination to avoid building up a large stack
+                                        // Clear everything back to start destination
                                         popUpTo(navController.graph.startDestinationId) {
-                                            saveState = true
+                                            inclusive = false
                                         }
                                         // Avoid multiple copies of the same destination
                                         launchSingleTop = true
-                                        // Restore state when re-selecting a previously selected item
-                                        restoreState = true
                                     }
                                 }
                             }
@@ -100,9 +99,9 @@ fun MainAppScreen(
             
             // Browse/Search functionality
             browseScreen(
-                onNavigateToPlayer = { concertId -> 
-                    android.util.Log.d("MainAppNavigation", "Browse navigating to playlist with concertId: '$concertId'")
-                    navController.navigate("playlist/$concertId")
+                onNavigateToPlayer = { recordingId -> 
+                    android.util.Log.d("MainAppNavigation", "Browse navigating to playlist with recordingId: '$recordingId'")
+                    navController.navigate("playlist/$recordingId")
                 }
             )
             
@@ -162,9 +161,9 @@ fun MainAppScreen(
             // Playlist screen
             playlistScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToPlayer = { concertId -> 
-                    android.util.Log.d("MainAppNavigation", "Playlist navigating to player with concertId: '$concertId'")
-                    navController.navigate("player/$concertId") 
+                onNavigateToPlayer = { recordingId -> 
+                    android.util.Log.d("MainAppNavigation", "Playlist navigating to player with recordingId: '$recordingId'")
+                    navController.navigate("player/$recordingId") 
                 }
             )
             

@@ -12,7 +12,7 @@ data class SearchResult(
 @Serializable
 data class SearchResponse(
     @SerialName("docs")
-    val concerts: List<Concert>,
+    val recordings: List<Recording>,
     
     @SerialName("numFound")
     val totalResults: Int,
@@ -21,11 +21,11 @@ data class SearchResponse(
     val startIndex: Int
 ) {
     val hasMoreResults: Boolean
-        get() = startIndex + concerts.size < totalResults
+        get() = startIndex + recordings.size < totalResults
     
     val currentPage: Int
-        get() = (startIndex / concerts.size) + 1
+        get() = (startIndex / recordings.size) + 1
     
     val totalPages: Int
-        get() = kotlin.math.ceil(totalResults.toDouble() / concerts.size).toInt()
+        get() = kotlin.math.ceil(totalResults.toDouble() / recordings.size).toInt()
 }

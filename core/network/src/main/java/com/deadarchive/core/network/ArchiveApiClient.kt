@@ -1,9 +1,9 @@
 package com.deadarchive.core.network
 
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.network.interceptor.ArchiveApiException
 import com.deadarchive.core.network.interceptor.NetworkException
-import com.deadarchive.core.network.mapper.ArchiveMapper.toConcert
+import com.deadarchive.core.network.mapper.ArchiveMapper.toRecording
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
@@ -26,11 +26,11 @@ class ArchiveApiClient @Inject constructor(
      * @param offset Starting index for pagination
      * @return Result with list of concerts or error
      */
-    suspend fun searchConcerts(
+    suspend fun searchRecordings(
         query: String,
         limit: Int = 50,
         offset: Int = 0
-    ): ApiResult<List<Concert>> = withContext(Dispatchers.IO) {
+    ): ApiResult<List<Recording>> = withContext(Dispatchers.IO) {
         try {
             val searchQuery = if (query.isBlank()) {
                 "Grateful Dead"
@@ -38,14 +38,14 @@ class ArchiveApiClient @Inject constructor(
                 "Grateful Dead $query"
             }
             
-            val response = apiService.searchConcerts(
+            val response = apiService.searchRecordings(
                 query = searchQuery,
                 rows = limit,
                 start = offset
             )
             
             if (response.isSuccessful && response.body() != null) {
-                val concerts = response.body()!!.response.docs.map { it.toConcert() }
+                val concerts = response.body()!!.response.docs.map { it.toRecording() }
                 ApiResult.Success(concerts)
             } else {
                 ApiResult.Error(
@@ -69,20 +69,20 @@ class ArchiveApiClient @Inject constructor(
      * @param limit Maximum number of results
      * @return Result with list of concerts or error
      */
-    suspend fun searchConcertsByDateRange(
+    suspend fun searchRecordingsByDateRange(
         startDate: String,
         endDate: String,
         limit: Int = 100
-    ): ApiResult<List<Concert>> = withContext(Dispatchers.IO) {
+    ): ApiResult<List<Recording>> = withContext(Dispatchers.IO) {
         try {
             val dateFilter = "date:[$startDate TO $endDate]"
             
-            val response = apiService.searchConcertsByDateRange(
+            val response = apiService.searchRecordingsByDateRange(
                 rows = limit
             )
             
             if (response.isSuccessful && response.body() != null) {
-                val concerts = response.body()!!.response.docs.map { it.toConcert() }
+                val concerts = response.body()!!.response.docs.map { it.toRecording() }
                 ApiResult.Success(concerts)
             } else {
                 ApiResult.Error(
@@ -105,20 +105,20 @@ class ArchiveApiClient @Inject constructor(
      * @param limit Maximum number of results
      * @return Result with list of concerts or error
      */
-    suspend fun searchConcertsByVenue(
+    suspend fun searchRecordingsByVenue(
         venue: String,
         limit: Int = 100
-    ): ApiResult<List<Concert>> = withContext(Dispatchers.IO) {
+    ): ApiResult<List<Recording>> = withContext(Dispatchers.IO) {
         try {
             val venueQuery = "venue:\"$venue\""
             
-            val response = apiService.searchConcertsByVenue(
+            val response = apiService.searchRecordingsByVenue(
                 query = "collection:GratefulDead AND venue:\"$venue\"",
                 rows = limit
             )
             
             if (response.isSuccessful && response.body() != null) {
-                val concerts = response.body()!!.response.docs.map { it.toConcert() }
+                val concerts = response.body()!!.response.docs.map { it.toRecording() }
                 ApiResult.Success(concerts)
             } else {
                 ApiResult.Error(
@@ -140,14 +140,14 @@ class ArchiveApiClient @Inject constructor(
      * @param identifier Archive.org item identifier
      * @return Result with detailed concert or error
      */
-    suspend fun getConcertDetails(
+    suspend fun getRecordingDetails(
         identifier: String
-    ): ApiResult<Concert> = withContext(Dispatchers.IO) {
+    ): ApiResult<Recording> = withContext(Dispatchers.IO) {
         try {
-            val response = apiService.getConcertMetadata(identifier)
+            val response = apiService.getRecordingMetadata(identifier)
             
             if (response.isSuccessful && response.body() != null) {
-                val concert = response.body()!!.toConcert()
+                val concert = response.body()!!.toRecording()
                 ApiResult.Success(concert)
             } else {
                 ApiResult.Error(
@@ -171,20 +171,20 @@ class ArchiveApiClient @Inject constructor(
      * @param limit Maximum number of results
      * @return Result with list of popular concerts or error
      */
-    suspend fun getPopularConcerts(
+    suspend fun getPopularRecordings(
         minRating: Double = 4.0,
         minReviews: Int = 5,
         limit: Int = 50
-    ): ApiResult<List<Concert>> = withContext(Dispatchers.IO) {
+    ): ApiResult<List<Recording>> = withContext(Dispatchers.IO) {
         try {
             val filters = "avg_rating:[$minRating TO *] AND num_reviews:[$minReviews TO *]"
             
-            val response = apiService.getPopularConcerts(
+            val response = apiService.getPopularRecordings(
                 rows = limit
             )
             
             if (response.isSuccessful && response.body() != null) {
-                val concerts = response.body()!!.response.docs.map { it.toConcert() }
+                val concerts = response.body()!!.response.docs.map { it.toRecording() }
                 ApiResult.Success(concerts)
             } else {
                 ApiResult.Error(
@@ -207,19 +207,19 @@ class ArchiveApiClient @Inject constructor(
      * @param limit Maximum number of results
      * @return Result with list of recent concerts or error
      */
-    suspend fun getRecentConcerts(
+    suspend fun getRecentRecordings(
         days: Int = 30,
         limit: Int = 50
-    ): ApiResult<List<Concert>> = withContext(Dispatchers.IO) {
+    ): ApiResult<List<Recording>> = withContext(Dispatchers.IO) {
         try {
             val dateFilter = "addeddate:[NOW-${days}DAYS TO NOW]"
             
-            val response = apiService.getRecentConcerts(
+            val response = apiService.getRecentRecordings(
                 rows = limit
             )
             
             if (response.isSuccessful && response.body() != null) {
-                val concerts = response.body()!!.response.docs.map { it.toConcert() }
+                val concerts = response.body()!!.response.docs.map { it.toRecording() }
                 ApiResult.Success(concerts)
             } else {
                 ApiResult.Error(

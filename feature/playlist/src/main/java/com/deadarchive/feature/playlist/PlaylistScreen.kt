@@ -25,7 +25,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.model.Concert
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
 import com.deadarchive.feature.player.PlayerViewModel
 import kotlinx.coroutines.delay
@@ -37,37 +37,37 @@ import java.util.Locale
 fun PlaylistScreen(
     onNavigateBack: () -> Unit,
     onNavigateToPlayer: () -> Unit,
-    concertId: String? = null,
+    recordingId: String? = null,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
-    Log.d("PlaylistScreen", "PlaylistScreen: Composing with concertId: $concertId")
+    Log.d("PlaylistScreen", "PlaylistScreen: Composing with recordingId: $recordingId")
     
     val uiState by viewModel.uiState.collectAsState()
-    val currentConcert by viewModel.currentConcert.collectAsState()
+    val currentRecording by viewModel.currentRecording.collectAsState()
     
-    // Only load concert metadata for display, not for playback
-    LaunchedEffect(concertId) {
-        Log.d("PlaylistScreen", "LaunchedEffect: concertId = $concertId, currentConcert.identifier = ${currentConcert?.identifier}")
-        if (!concertId.isNullOrBlank() && currentConcert?.identifier != concertId) {
-            Log.d("PlaylistScreen", "LaunchedEffect: Loading concert metadata for display only: $concertId")
+    // Only load recording metadata for display, not for playback
+    LaunchedEffect(recordingId) {
+        Log.d("PlaylistScreen", "LaunchedEffect: recordingId = $recordingId, currentRecording.identifier = ${currentRecording?.identifier}")
+        if (!recordingId.isNullOrBlank() && currentRecording?.identifier != recordingId) {
+            Log.d("PlaylistScreen", "LaunchedEffect: Loading recording metadata for display only: $recordingId")
             try {
-                viewModel.loadConcert(concertId)
+                viewModel.loadRecording(recordingId)
             } catch (e: Exception) {
-                Log.e("PlaylistScreen", "LaunchedEffect: Exception in loadConcert", e)
+                Log.e("PlaylistScreen", "LaunchedEffect: Exception in loadRecording", e)
             }
-        } else if (currentConcert?.identifier == concertId) {
-            Log.d("PlaylistScreen", "LaunchedEffect: Concert $concertId already loaded")
+        } else if (currentRecording?.identifier == recordingId) {
+            Log.d("PlaylistScreen", "LaunchedEffect: Recording $recordingId already loaded")
         } else {
-            Log.w("PlaylistScreen", "LaunchedEffect: concertId is null or blank")
+            Log.w("PlaylistScreen", "LaunchedEffect: recordingId is null or blank")
         }
     }
     
     // Debug current state
-    LaunchedEffect(uiState, currentConcert) {
+    LaunchedEffect(uiState, currentRecording) {
         Log.d("PlaylistScreen", "State Update - isLoading: ${uiState.isLoading}, " +
                 "tracks.size: ${uiState.tracks.size}, " +
                 "error: ${uiState.error}, " +
-                "concert: ${currentConcert?.title}")
+                "recording: ${currentRecording?.title}")
     }
     
     Scaffold(
@@ -75,27 +75,27 @@ fun PlaylistScreen(
             TopAppBar(
                 title = {
                     ScrollingText(
-                        text = currentConcert?.let { concert ->
+                        text = currentRecording?.let { recording ->
                             buildString {
                                 // Start with artist name
                                 append("Grateful Dead")
                                 
                                 // Add date if available
-                                if (concert.date.isNotBlank()) {
+                                if (recording.concertDate.isNotBlank()) {
                                     append(" - ")
-                                    append(formatConcertDate(concert.date))
+                                    append(formatConcertDate(recording.concertDate))
                                 }
                                 
                                 // Add venue if available
-                                if (!concert.venue.isNullOrBlank()) {
+                                if (!recording.concertVenue.isNullOrBlank()) {
                                     append(" - ")
-                                    append(concert.venue)
+                                    append(recording.concertVenue)
                                 }
                                 
                                 // Add location (city, state) if available
-                                if (!concert.location.isNullOrBlank()) {
+                                if (!recording.concertLocation.isNullOrBlank()) {
                                     append(" - ")
-                                    append(concert.location)
+                                    append(recording.concertLocation)
                                 }
                             }
                         } ?: "Playlist"
@@ -145,20 +145,20 @@ fun PlaylistScreen(
                                 textAlign = TextAlign.Center,
                                 color = MaterialTheme.colorScheme.error
                             )
-                            Button(onClick = { concertId?.let { viewModel.loadConcert(it) } }) {
+                            Button(onClick = { recordingId?.let { viewModel.loadRecording(it) } }) {
                                 Text("Retry")
                             }
                         }
                     }
                 }
                 
-                currentConcert == null -> {
+                currentRecording == null -> {
                     Box(
                         modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
-                            text = "Loading concert...",
+                            text = "Loading recording...",
                             style = MaterialTheme.typography.bodyLarge,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -169,10 +169,10 @@ fun PlaylistScreen(
                     Column(
                         modifier = Modifier.fillMaxSize()
                     ) {
-                        // Concert header
-                        ConcertHeader(
-                            concert = currentConcert,
-                            onPlayConcert = { viewModel.playConcertFromBeginning() },
+                        // Recording header
+                        RecordingHeader(
+                            recording = currentRecording,
+                            onPlayRecording = { viewModel.playRecordingFromBeginning() },
                             modifier = Modifier.padding(16.dp)
                         )
                         
@@ -192,8 +192,8 @@ fun PlaylistScreen(
                                     style = MaterialTheme.typography.bodyLarge,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
-                                if (concertId != null && !uiState.isLoading) {
-                                    Button(onClick = { viewModel.loadConcert(concertId) }) {
+                                if (recordingId != null && !uiState.isLoading) {
+                                    Button(onClick = { viewModel.loadRecording(recordingId) }) {
                                         Text("Retry")
                                     }
                                 }
@@ -209,9 +209,9 @@ fun PlaylistScreen(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         item {
-                            ConcertHeader(
-                                concert = currentConcert,
-                                onPlayConcert = { viewModel.playConcertFromBeginning() }
+                            RecordingHeader(
+                                recording = currentRecording,
+                                onPlayRecording = { viewModel.playRecordingFromBeginning() }
                             )
                         }
                         
@@ -239,12 +239,12 @@ fun PlaylistScreen(
 }
 
 @Composable
-private fun ConcertHeader(
-    concert: Concert?,
-    onPlayConcert: () -> Unit = {},
+private fun RecordingHeader(
+    recording: Recording?,
+    onPlayRecording: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
-    if (concert == null) return
+    if (recording == null) return
     
     Card(
         modifier = modifier.fillMaxWidth(),
@@ -257,9 +257,9 @@ private fun ConcertHeader(
                 .padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            // Concert title
+            // Recording title
             Text(
-                text = concert.title,
+                text = recording.title,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
                 maxLines = 2,
@@ -274,11 +274,11 @@ private fun ConcertHeader(
             ) {
                 Column {
                     Text(
-                        text = formatDate(concert.date),
+                        text = formatDate(recording.concertDate),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.primary
                     )
-                    concert.venue?.takeIf { it.isNotBlank() }?.let { venue ->
+                    recording.concertVenue?.takeIf { it.isNotBlank() }?.let { venue ->
                         Text(
                             text = venue,
                             style = MaterialTheme.typography.bodySmall,
@@ -287,9 +287,9 @@ private fun ConcertHeader(
                             overflow = TextOverflow.Ellipsis
                         )
                     }
-                    if (concert.displaySource.isNotBlank()) {
+                    if (recording.displaySource.isNotBlank()) {
                         Text(
-                            text = "Source: ${concert.displaySource}",
+                            text = "Source: ${recording.displaySource}",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -317,7 +317,7 @@ private fun ConcertHeader(
             Spacer(modifier = Modifier.height(12.dp))
             
             Button(
-                onClick = onPlayConcert,
+                onClick = onPlayRecording,
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.primary

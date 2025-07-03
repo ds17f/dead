@@ -6,6 +6,7 @@ import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.database.SyncMetadataDao
 import com.deadarchive.core.database.SyncMetadataEntity
+import com.deadarchive.core.model.Recording
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
 import com.deadarchive.core.network.model.ArchiveSearchResponse
@@ -202,44 +203,64 @@ class DataSyncServiceImpl @Inject constructor(
             
             updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, currentItem = "Processing $finalTotalRecordings recordings...")
             
-            // Step 2: Process recordings and group by show (but don't save recordings yet)
-            val recordings = allRecordings
+            // Step 2: Convert documents to Recording objects first
+            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, currentItem = "Converting recordings...")
+            val recordingsList = mutableListOf<Recording>()
             var processedCount = 0
-            val showsMap = mutableMapOf<String, MutableList<RecordingEntity>>()
-            val allRecordingEntities = mutableListOf<RecordingEntity>()
             
-            recordings.chunked(BATCH_SIZE).forEach { batch ->
+            allRecordings.chunked(BATCH_SIZE).forEach { batch ->
                 try {
-                    val recordingEntities = batch.map { doc ->
+                    val batchRecordings = batch.map { doc ->
                         updateProgress(
                             SyncPhase.PROCESSING,
                             totalItems = finalTotalRecordings,
                             processedItems = processedCount,
-                            currentItem = "Processing: ${doc.title ?: doc.identifier}"
+                            currentItem = "Converting: ${doc.title ?: doc.identifier}"
                         )
                         
-                        val recording = ArchiveMapper.run { doc.toRecording() }
-                        // Fix date format - convert ISO date to simple YYYY-MM-DD format
-                        val simpleDateFormat = recording.concertDate.take(10) // Take only YYYY-MM-DD part
-                        val showId = "${simpleDateFormat}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
-                        println("DEBUG: Processing recording ${recording.identifier} -> showId: $showId (originalDate=${recording.concertDate}, simplifiedDate=${simpleDateFormat}, venue=${recording.concertVenue})")
-                        RecordingEntity.fromRecording(recording, showId)
+                        ArchiveMapper.run { doc.toRecording() }
                     }
                     
-                    // Group recordings by show for show creation
-                    recordingEntities.forEach { recordingEntity ->
-                        val showId = recordingEntity.concertId
-                        showsMap.computeIfAbsent(showId) { mutableListOf() }.add(recordingEntity)
-                    }
-                    
-                    // Collect all recordings for later batch insert (after shows are created)
-                    allRecordingEntities.addAll(recordingEntities)
+                    recordingsList.addAll(batchRecordings)
                     processedCount += batch.size
                     
                 } catch (e: Exception) {
-                    // Log error but continue with other batches
-                    println("ERROR: Failed to process batch at position $processedCount: ${e.message}")
+                    println("ERROR: Failed to convert batch at position $processedCount: ${e.message}")
                 }
+            }
+            
+            // Step 3: Apply fuzzy matching grouping to create consistent show groups
+            updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, processedItems = processedCount, currentItem = "Applying fuzzy matching grouping...")
+            
+            println("DEBUG: About to apply fuzzy matching to ${recordingsList.size} recordings")
+            val groupedShows = ArchiveMapper.run { recordingsList.toShows() }
+            println("DEBUG: Fuzzy matching created ${groupedShows.size} shows from ${recordingsList.size} recordings")
+            
+            // Debug output for 1993-05-16 specifically
+            val shows1993_05_16 = groupedShows.filter { it.date.startsWith("1993-05-16") }
+            println("DEBUG: Found ${shows1993_05_16.size} shows for 1993-05-16:")
+            shows1993_05_16.forEach { show ->
+                println("DEBUG:   - ${show.venue} (${show.recordings.size} recordings)")
+            }
+            
+            // Step 4: Create RecordingEntity objects with consistent showIds based on fuzzy matching results
+            val showsMap = mutableMapOf<String, MutableList<RecordingEntity>>()
+            val allRecordingEntities = mutableListOf<RecordingEntity>()
+            
+            groupedShows.forEach { show ->
+                // Create consistent showId from the grouped show
+                val simpleDateFormat = show.date.take(10) // Take only YYYY-MM-DD part
+                val showId = "${simpleDateFormat}_${show.venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                
+                // Convert all recordings in this show to RecordingEntity with the same showId
+                val recordingEntities = show.recordings.map { recording ->
+                    println("DEBUG: Processing recording ${recording.identifier} -> showId: $showId (originalDate=${recording.concertDate}, simplifiedDate=${simpleDateFormat}, venue=${recording.concertVenue})")
+                    RecordingEntity.fromRecording(recording, showId)
+                }
+                
+                // Group recordings by show for show creation
+                showsMap[showId] = recordingEntities.toMutableList()
+                allRecordingEntities.addAll(recordingEntities)
             }
             
             // Step 2.5: Create and save Show entities FIRST (to satisfy foreign key constraints)

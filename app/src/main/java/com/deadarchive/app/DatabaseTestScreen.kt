@@ -56,7 +56,7 @@ class DatabaseTestViewModel @Inject constructor(
             try {
                 val testDownload = DownloadEntity(
                     id = "test-${System.currentTimeMillis()}",
-                    concertIdentifier = "gd1977-05-08.sbd.miller.97245.flac16",
+                    recordingId = "gd1977-05-08.sbd.miller.97245.flac16",
                     trackFilename = "gd77-05-08d1t01.flac",
                     status = "QUEUED",
                     progress = 0f,
@@ -81,7 +81,7 @@ class DatabaseTestViewModel @Inject constructor(
                 val testFavorite = FavoriteEntity(
                     id = "fav-${System.currentTimeMillis()}",
                     type = "CONCERT",
-                    concertIdentifier = "gd1977-05-08.sbd.miller.97245.flac16",
+                    recordingId = "gd1977-05-08.sbd.miller.97245.flac16",
                     trackFilename = null,
                     addedTimestamp = System.currentTimeMillis(),
                     notes = "Classic Cornell '77 show!"
@@ -245,7 +245,7 @@ fun DatabaseTestScreen(
                         modifier = Modifier.padding(16.dp)
                     ) {
                         Text("ID: ${download.id}")
-                        Text("Concert: ${download.concertIdentifier}")
+                        Text("Recording: ${download.recordingId}")
                         Text("Track: ${download.trackFilename}")
                         Text("Status: ${download.status}")
                         Text("Progress: ${(download.progress * 100).toInt()}%")
@@ -268,7 +268,7 @@ fun DatabaseTestScreen(
                     ) {
                         Text("ID: ${favorite.id}")
                         Text("Type: ${favorite.type}")
-                        Text("Concert: ${favorite.concertIdentifier}")
+                        Text("Recording: ${favorite.recordingId}")
                         if (favorite.trackFilename != null) {
                             Text("Track: ${favorite.trackFilename}")
                         }
