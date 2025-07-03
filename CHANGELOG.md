@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.13.0] - 2025-07-03
+
+### New Features
+* implement priority-based recording source visualization (1220aa7)
+* simplify concert item UX by removing play button (2ee506f)
+* add version information display to settings screen (d2b2f55)
+* add navigation from player screen title to playlist screen (5486042)
+* implement scrolling text for long titles across player screens (6207b4b)
+* implement global miniplayer visible across all navigation screens (bae7607)
+
+### Bug Fixes
+* remove broken test dependency from release targets (9bb85d5)
+* resolve foreign key constraint issue in sync process (5ae48de)
+* resolve gradle build configuration issues for version info (b2a10f3)
+* improve carousel content mapping logic in player screen (5677414)
+* player screen shows concert information instead of 'Player' (78a5ce7)
+* ensure home button always navigates to fresh home screen (7ab52c7)
+
+### Code Refactoring
+* complete Concert → Show+Recording model architecture overhaul (0443938)
+* replace scrolling text with centered two-line title in player screen (cdd0880)
+
+### Documentation Updates
+* Some todo docs (53dd866)
+
+
 ## [0.12.0] - 2025-07-01
 
 ### New Features
@@ -14,8 +40,6 @@
 
 ### Code Refactoring
 * improve audio format settings UX (592705f)
-
-
 ## [0.11.2] - 2025-07-01
 
 ### Bug Fixes

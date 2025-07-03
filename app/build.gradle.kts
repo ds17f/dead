@@ -23,8 +23,8 @@ android {
         applicationId = "com.deadarchive.app"
         minSdk = 24
         targetSdk = 34
-        versionCode = 28
-        versionName = "0.12.0"
+        versionCode = 29
+        versionName = "0.13.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
