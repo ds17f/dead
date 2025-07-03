@@ -26,15 +26,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.deadarchive.core.design.component.IconResources
-import com.deadarchive.core.model.ConcertNew
+import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 
 @Composable
 fun ExpandableConcertItem(
-    concert: ConcertNew,
-    onConcertClick: (ConcertNew) -> Unit,
+    show: Show,
+    onShowClick: (Show) -> Unit,
     onRecordingClick: (Recording) -> Unit,
-    onFavoriteClick: (ConcertNew) -> Unit,
+    onFavoriteClick: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     var isExpanded by remember { mutableStateOf(false) }
@@ -52,12 +52,12 @@ fun ExpandableConcertItem(
         Column(
             modifier = Modifier.fillMaxWidth()
         ) {
-            // Main concert header
-            ConcertHeader(
-                concert = concert,
+            // Main show header
+            ShowHeader(
+                show = show,
                 isExpanded = isExpanded,
                 onExpandClick = { isExpanded = !isExpanded },
-                onConcertClick = onConcertClick,
+                onShowClick = onShowClick,
                 onFavoriteClick = onFavoriteClick
             )
             
@@ -68,7 +68,7 @@ fun ExpandableConcertItem(
                 exit = shrinkVertically() + fadeOut()
             ) {
                 RecordingsSection(
-                    recordings = concert.recordings,
+                    recordings = show.recordings,
                     onRecordingClick = onRecordingClick
                 )
             }
@@ -77,18 +77,18 @@ fun ExpandableConcertItem(
 }
 
 @Composable
-private fun ConcertHeader(
-    concert: ConcertNew,
+private fun ShowHeader(
+    show: Show,
     isExpanded: Boolean,
     onExpandClick: () -> Unit,
-    onConcertClick: (ConcertNew) -> Unit,
-    onFavoriteClick: (ConcertNew) -> Unit,
+    onShowClick: (Show) -> Unit,
+    onFavoriteClick: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .clickable { onConcertClick(concert) }
+            .clickable { onShowClick(show) }
             .padding(16.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -115,21 +115,31 @@ private fun ConcertHeader(
             modifier = Modifier.weight(1f),
             verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
-            // Concert title
+            // Date (most prominent)
             Text(
-                text = concert.displayTitle,
+                text = show.displayDate,
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
+            )
+            
+            // Venue name
+            Text(
+                text = show.displayVenue,
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.Medium,
                 color = MaterialTheme.colorScheme.onSurface,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
             
-            // Date and location
+            // City, State
             Text(
-                text = concert.displayDate,
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.primary,
+                text = show.displayLocation,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
@@ -140,12 +150,12 @@ private fun ConcertHeader(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 Text(
-                    text = "${concert.recordingCount} recordings",
+                    text = "${show.recordingCount} recordings",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 
-                if (concert.availableSources.isNotEmpty()) {
+                if (show.availableSources.isNotEmpty()) {
                     Text(
                         text = "•",
                         style = MaterialTheme.typography.bodySmall,
@@ -153,7 +163,7 @@ private fun ConcertHeader(
                     )
                     
                     Text(
-                        text = concert.availableSources.joinToString(", "),
+                        text = show.availableSources.joinToString(", "),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
@@ -170,12 +180,12 @@ private fun ConcertHeader(
         ) {
             // Favorite button
             IconButton(
-                onClick = { onFavoriteClick(concert) }
+                onClick = { onFavoriteClick(show) }
             ) {
                 Icon(
-                    imageVector = if (concert.isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                    imageVector = if (show.isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
                     contentDescription = "Favorite",
-                    tint = if (concert.isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
+                    tint = if (show.isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
             
@@ -210,8 +220,16 @@ private fun RecordingsSection(
             modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
         )
         
-        // Recordings list
-        recordings.forEach { recording ->
+        // Recordings list - sorted by quality priority (SBD > MATRIX > FM > AUD > others)
+        recordings.sortedBy { recording ->
+            when (recording.cleanSource?.uppercase()) {
+                "SBD" -> 1
+                "MATRIX" -> 2
+                "FM" -> 3
+                "AUD" -> 4
+                else -> 5
+            }
+        }.forEach { recording ->
             RecordingItem(
                 recording = recording,
                 onRecordingClick = onRecordingClick
@@ -246,22 +264,27 @@ private fun RecordingItem(
                     .size(32.dp)
                     .clip(CircleShape)
                     .background(
-                        when (recording.source?.uppercase()) {
-                            "SBD" -> MaterialTheme.colorScheme.primary
-                            "MATRIX" -> MaterialTheme.colorScheme.secondary
-                            "FM" -> MaterialTheme.colorScheme.tertiary
-                            else -> MaterialTheme.colorScheme.outline
+                        when (recording.cleanSource?.uppercase()) {
+                            "SBD" -> Color(0xFFD32F2F)      // Bright Red - Highest priority
+                            "MATRIX" -> Color(0xFFFF9800)   // Orange - High priority  
+                            "FM" -> Color(0xFF4CAF50)       // Green - Medium priority
+                            "AUD" -> Color(0xFF2196F3)      // Blue - Lower priority
+                            else -> MaterialTheme.colorScheme.outline // Grey - Unknown
+                        }.also { color ->
+                            // Debug logging to see what's happening
+                            println("DEBUG: Recording ${recording.identifier} - source='${recording.source}' cleanSource='${recording.cleanSource}' color=$color")
                         }
                     ),
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = recording.source?.take(3)?.uppercase() ?: "?",
+                    text = recording.cleanSource?.take(3)?.uppercase() ?: "?",
                     style = MaterialTheme.typography.labelSmall,
-                    color = when (recording.source?.uppercase()) {
-                        "SBD" -> MaterialTheme.colorScheme.onPrimary
-                        "MATRIX" -> MaterialTheme.colorScheme.onSecondary
-                        "FM" -> MaterialTheme.colorScheme.onTertiary
+                    color = when (recording.cleanSource?.uppercase()) {
+                        "SBD" -> Color.White       // White text on red background
+                        "MATRIX" -> Color.White    // White text on orange background
+                        "FM" -> Color.White        // White text on green background
+                        "AUD" -> Color.White       // White text on blue background
                         else -> MaterialTheme.colorScheme.onSurface
                     },
                     fontWeight = FontWeight.Bold

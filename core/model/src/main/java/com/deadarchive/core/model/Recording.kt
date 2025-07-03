@@ -41,6 +41,9 @@ data class Recording(
     val concertDate: String, // YYYY-MM-DD format - links to Concert
     val concertVenue: String? = null, // For grouping recordings by concert
     
+    @SerialName("coverage")
+    val concertLocation: String? = null, // City, State format
+    
     // Audio content  
     val tracks: List<Track> = emptyList(),
     val audioFiles: List<AudioFile> = emptyList(),
@@ -49,6 +52,15 @@ data class Recording(
     val isFavorite: Boolean = false,
     val isDownloaded: Boolean = false
 ) {
+    val displayTitle: String
+        get() = if (concertVenue?.isNotBlank() == true && concertDate.isNotBlank()) {
+            "$concertDate - $concertVenue"
+        } else if (concertDate.isNotBlank()) {
+            concertDate
+        } else {
+            title
+        }
+        
     val displaySource: String
         get() = source ?: "Unknown Source"
         
@@ -59,11 +71,28 @@ data class Recording(
         get() = "https://archive.org/details/$identifier"
         
     val recordingQuality: String
-        get() = when (source?.uppercase()) {
+        get() = when (cleanSource?.uppercase()) {
             "SBD" -> "Soundboard"
-            "AUD" -> "Audience"
+            "AUD" -> "Audience" 
             "FM" -> "FM Broadcast"
             "MATRIX" -> "Matrix"
-            else -> source ?: "Unknown"
+            else -> cleanSource ?: "Unknown"
+        }
+    
+    val cleanSource: String?
+        get() {
+            val clean = source?.replace(Regex("<[^>]*>"), "")?.trim()
+            return when {
+                clean == null -> null
+                clean.contains("Soundboard", ignoreCase = true) -> "SBD"
+                clean.startsWith("SBD", ignoreCase = true) -> "SBD"  // Handles "SBD -> Cassette Master"
+                clean.contains("Audience", ignoreCase = true) -> "AUD"
+                clean.startsWith("AUD", ignoreCase = true) -> "AUD"  // Handles "AUD -> ..."
+                clean.contains("Matrix", ignoreCase = true) -> "MATRIX"
+                clean.startsWith("MATRIX", ignoreCase = true) -> "MATRIX"
+                clean.contains("FM", ignoreCase = true) -> "FM"
+                clean.startsWith("FM", ignoreCase = true) -> "FM"
+                else -> clean
+            }
         }
 }
