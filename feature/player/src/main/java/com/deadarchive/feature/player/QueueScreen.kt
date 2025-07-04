@@ -8,8 +8,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
+import androidx.compose.ui.res.painterResource
+import com.deadarchive.core.design.R
 import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -92,7 +92,7 @@ fun QueueScreen(
                             }
                         ) {
                             Icon(
-                                imageVector = Icons.Default.Clear,
+                                painter = painterResource(R.drawable.ic_close),
                                 contentDescription = "Clear queue"
                             )
                         }
@@ -330,7 +330,7 @@ private fun QueueItem(
                 modifier = Modifier.size(40.dp)
             ) {
                 Icon(
-                    imageVector = Icons.Default.Close,
+                    painter = painterResource(R.drawable.ic_close),
                     contentDescription = "Remove from queue",
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.size(18.dp)
@@ -457,7 +457,7 @@ private fun QueueItemFromUrl(
                 modifier = Modifier.size(40.dp)
             ) {
                 Icon(
-                    imageVector = Icons.Default.Close,
+                    painter = painterResource(R.drawable.ic_close),
                     contentDescription = "Remove from queue",
                     tint = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.size(18.dp)

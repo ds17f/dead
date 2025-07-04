@@ -28,7 +28,7 @@ data class Show(
     val recordings: List<Recording> = emptyList(),
     
     // UI state
-    val isFavorite: Boolean = false
+    val isInLibrary: Boolean = false
 ) {
     // Unique identifier combining date and venue
     val showId: String

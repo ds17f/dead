@@ -6,7 +6,7 @@ import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.DeadArchiveDatabase
 import com.deadarchive.core.database.DownloadDao
-import com.deadarchive.core.database.FavoriteDao
+import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.database.SyncMetadataDao
 import dagger.Module
 import dagger.Provides
@@ -61,11 +61,11 @@ object DatabaseModule {
     }
     
     /**
-     * Provides Favorite DAO for favorites operations
+     * Provides Library DAO for library operations
      */
     @Provides
-    fun provideFavoriteDao(database: DeadArchiveDatabase): FavoriteDao {
-        return database.favoriteDao()
+    fun provideLibraryDao(database: DeadArchiveDatabase): LibraryDao {
+        return database.libraryDao()
     }
     
     /**

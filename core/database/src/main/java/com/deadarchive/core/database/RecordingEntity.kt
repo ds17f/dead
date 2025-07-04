@@ -53,7 +53,7 @@ data class RecordingEntity(
     val tracksJson: String? = null,
     
     // UI state
-    val isFavorite: Boolean = false,
+    val isInLibrary: Boolean = false,
     val isDownloaded: Boolean = false,
     
     // Cache management
@@ -84,7 +84,7 @@ data class RecordingEntity(
             concertLocation = concertLocation,
             tracks = tracks,
             audioFiles = emptyList(), // Will be populated from tracks
-            isFavorite = isFavorite,
+            isInLibrary = isInLibrary,
             isDownloaded = isDownloaded
         )
     }
@@ -111,7 +111,7 @@ data class RecordingEntity(
                 concertVenue = recording.concertVenue,
                 concertLocation = recording.concertLocation,
                 tracksJson = tracksJson,
-                isFavorite = recording.isFavorite,
+                isInLibrary = recording.isInLibrary,
                 isDownloaded = recording.isDownloaded
             )
         }

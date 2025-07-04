@@ -49,7 +49,7 @@ data class Recording(
     val audioFiles: List<AudioFile> = emptyList(),
     
     // UI state
-    val isFavorite: Boolean = false,
+    val isInLibrary: Boolean = false,
     val isDownloaded: Boolean = false
 ) {
     val displayTitle: String

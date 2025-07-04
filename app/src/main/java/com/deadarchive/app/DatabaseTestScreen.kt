@@ -13,8 +13,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.DownloadEntity
-import com.deadarchive.core.database.FavoriteDao
-import com.deadarchive.core.database.FavoriteEntity
+import com.deadarchive.core.database.LibraryDao
+import com.deadarchive.core.database.LibraryEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -26,14 +26,14 @@ import javax.inject.Inject
 @HiltViewModel
 class DatabaseTestViewModel @Inject constructor(
     private val downloadDao: DownloadDao,
-    private val favoriteDao: FavoriteDao
+    private val libraryDao: LibraryDao
 ) : ViewModel() {
     
     private val _downloads = MutableStateFlow<List<DownloadEntity>>(emptyList())
     val downloads: StateFlow<List<DownloadEntity>> = _downloads.asStateFlow()
     
-    private val _favorites = MutableStateFlow<List<FavoriteEntity>>(emptyList())
-    val favorites: StateFlow<List<FavoriteEntity>> = _favorites.asStateFlow()
+    private val _library = MutableStateFlow<List<LibraryEntity>>(emptyList())
+    val library: StateFlow<List<LibraryEntity>> = _library.asStateFlow()
     
     private val _message = MutableStateFlow("")
     val message: StateFlow<String> = _message.asStateFlow()
@@ -47,7 +47,7 @@ class DatabaseTestViewModel @Inject constructor(
             downloadDao.getAllDownloads().collect { _downloads.value = it }
         }
         viewModelScope.launch {
-            favoriteDao.getAllFavorites().collect { _favorites.value = it }
+            libraryDao.getAllLibraryItems().collect { _library.value = it }
         }
     }
     
@@ -75,21 +75,21 @@ class DatabaseTestViewModel @Inject constructor(
         }
     }
     
-    fun addTestFavorite() {
+    fun addTestLibraryItem() {
         viewModelScope.launch {
             try {
-                val testFavorite = FavoriteEntity(
-                    id = "fav-${System.currentTimeMillis()}",
-                    type = "CONCERT",
+                val testLibraryItem = LibraryEntity(
+                    id = "lib-${System.currentTimeMillis()}",
+                    type = "RECORDING",
                     recordingId = "gd1977-05-08.sbd.miller.97245.flac16",
                     trackFilename = null,
                     addedTimestamp = System.currentTimeMillis(),
                     notes = "Classic Cornell '77 show!"
                 )
-                favoriteDao.insertFavorite(testFavorite)
-                _message.value = "Test favorite added successfully"
+                libraryDao.insertLibraryItem(testLibraryItem)
+                _message.value = "Test library item added successfully"
             } catch (e: Exception) {
-                _message.value = "Error adding favorite: ${e.message}"
+                _message.value = "Error adding library item: ${e.message}"
             }
         }
     }
@@ -126,13 +126,13 @@ class DatabaseTestViewModel @Inject constructor(
         }
     }
     
-    fun clearFavorites() {
+    fun clearLibrary() {
         viewModelScope.launch {
             try {
-                _favorites.value.forEach { favoriteDao.deleteFavorite(it) }
-                _message.value = "All favorites cleared"
+                _library.value.forEach { libraryDao.deleteLibraryItem(it) }
+                _message.value = "All library items cleared"
             } catch (e: Exception) {
-                _message.value = "Error clearing favorites: ${e.message}"
+                _message.value = "Error clearing library: ${e.message}"
             }
         }
     }
@@ -145,7 +145,7 @@ fun DatabaseTestScreen(
     viewModel: DatabaseTestViewModel = hiltViewModel()
 ) {
     val downloads by viewModel.downloads.collectAsState()
-    val favorites by viewModel.favorites.collectAsState()
+    val library by viewModel.library.collectAsState()
     val message by viewModel.message.collectAsState()
     
     Column(
@@ -196,10 +196,10 @@ fun DatabaseTestScreen(
                 Text("Add Download")
             }
             Button(
-                onClick = { viewModel.addTestFavorite() },
+                onClick = { viewModel.addTestLibraryItem() },
                 modifier = Modifier.weight(1f)
             ) {
-                Text("Add Favorite")
+                Text("Add Library")
             }
         }
         
@@ -222,10 +222,10 @@ fun DatabaseTestScreen(
         }
         
         Button(
-            onClick = { viewModel.clearFavorites() },
+            onClick = { viewModel.clearLibrary() },
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text("Clear Favorites")
+            Text("Clear Library")
         }
         
         // Data display
@@ -255,25 +255,25 @@ fun DatabaseTestScreen(
             
             item {
                 Text(
-                    text = "Favorites (${favorites.size})",
+                    text = "Library (${library.size})",
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(top = 16.dp)
                 )
             }
             
-            items(favorites) { favorite ->
+            items(library) { libraryItem ->
                 Card {
                     Column(
                         modifier = Modifier.padding(16.dp)
                     ) {
-                        Text("ID: ${favorite.id}")
-                        Text("Type: ${favorite.type}")
-                        Text("Recording: ${favorite.recordingId}")
-                        if (favorite.trackFilename != null) {
-                            Text("Track: ${favorite.trackFilename}")
+                        Text("ID: ${libraryItem.id}")
+                        Text("Type: ${libraryItem.type}")
+                        Text("Recording: ${libraryItem.recordingId}")
+                        if (libraryItem.trackFilename != null) {
+                            Text("Track: ${libraryItem.trackFilename}")
                         }
-                        if (favorite.notes?.isNotEmpty() == true) {
-                            Text("Notes: ${favorite.notes}")
+                        if (libraryItem.notes?.isNotEmpty() == true) {
+                            Text("Notes: ${libraryItem.notes}")
                         }
                     }
                 }

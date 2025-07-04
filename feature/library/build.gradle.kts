@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.feature.favorites"
+    namespace = "com.deadarchive.feature.library"
     compileSdk = 34
 
     defaultConfig {

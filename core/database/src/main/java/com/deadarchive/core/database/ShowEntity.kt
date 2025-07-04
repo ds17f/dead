@@ -32,7 +32,7 @@ data class ShowEntity(
     val setsJson: String? = null,
     
     // UI state
-    val isFavorite: Boolean = false,
+    val isInLibrary: Boolean = false,
     
     // Cache management
     val cachedTimestamp: Long = System.currentTimeMillis()
@@ -54,7 +54,7 @@ data class ShowEntity(
             setlistRaw = setlistRaw,
             sets = sets,
             recordings = recordings,
-            isFavorite = isFavorite
+            isInLibrary = isInLibrary
         )
     }
     
@@ -72,7 +72,7 @@ data class ShowEntity(
                 year = show.year,
                 setlistRaw = show.setlistRaw,
                 setsJson = setsJson,
-                isFavorite = show.isFavorite
+                isInLibrary = show.isInLibrary
             )
         }
         

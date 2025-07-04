@@ -278,7 +278,7 @@ class DataSyncServiceImpl @Inject constructor(
                     year = simpleDateFormat.take(4),
                     setlistRaw = null, // We don't have setlist data from the recordings
                     setsJson = null,
-                    isFavorite = false,
+                    isInLibrary = false,
                     cachedTimestamp = System.currentTimeMillis()
                 )
             }
@@ -396,7 +396,7 @@ class DataSyncServiceImpl @Inject constructor(
                         year = simpleDateFormat.take(4),
                         setlistRaw = null,
                         setsJson = null,
-                        isFavorite = false,
+                        isInLibrary = false,
                         cachedTimestamp = System.currentTimeMillis()
                     )
                     showDao.insertShow(showEntity)

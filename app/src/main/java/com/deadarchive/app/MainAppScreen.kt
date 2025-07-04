@@ -106,7 +106,12 @@ fun MainAppScreen(
             )
             
             composable("library") {
-                LibraryScreen()
+                LibraryScreen(
+                    onRecordingSelected = { recording ->
+                        android.util.Log.d("MainAppNavigation", "Library navigating to player with recordingId: '${recording.identifier}'")
+                        navController.navigate("player/${recording.identifier}")
+                    }
+                )
             }
             
             composable("debug") {

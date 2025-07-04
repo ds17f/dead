@@ -17,9 +17,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.ShowRepository
-import com.deadarchive.core.data.repository.FavoriteRepository
+import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.model.Recording
-import com.deadarchive.core.model.FavoriteItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
@@ -30,7 +29,7 @@ import kotlin.system.measureTimeMillis
 @HiltViewModel
 class RepositoryTestViewModel @Inject constructor(
     private val showRepository: ShowRepository,
-    private val favoriteRepository: FavoriteRepository
+    private val libraryRepository: LibraryRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<RepositoryTestUiState>(RepositoryTestUiState.Idle)
@@ -49,11 +48,11 @@ class RepositoryTestViewModel @Inject constructor(
     val testLog: StateFlow<List<String>> = _testLog.asStateFlow()
     
     init {
-        // Observe favorites in real-time
+        // Observe library in real-time
         viewModelScope.launch {
-            favoriteRepository.getFavoriteRecordingsWithData().collect { favoriteRecordings ->
-                _favorites.value = favoriteRecordings
-                addLog("✨ Favorites updated: ${favoriteRecordings.size} items")
+            showRepository.getLibraryRecordings().collect { libraryRecordings ->
+                _favorites.value = libraryRecordings
+                addLog("✨ Library updated: ${libraryRecordings.size} items")
             }
         }
         updateCacheStats()
@@ -174,27 +173,24 @@ class RepositoryTestViewModel @Inject constructor(
     fun toggleFavorite(concert: Recording) {
         viewModelScope.launch {
             try {
-                if (concert.isFavorite) {
-                    // Remove favorite
-                    favoriteRepository.removeRecordingFromFavorites(concert.identifier)
-                    addLog("💔 Removed favorite: ${concert.title.take(30)}")
+                val isInLibrary = libraryRepository.toggleRecordingLibrary(concert)
+                if (isInLibrary) {
+                    addLog("💖 Added to library: ${concert.title.take(30)}")
                 } else {
-                    // Add favorite
-                    favoriteRepository.addRecordingToFavorites(concert)
-                    addLog("💖 Added favorite: ${concert.title.take(30)}")
+                    addLog("💔 Removed from library: ${concert.title.take(30)}")
                 }
                 
-                // Refresh current concerts to update favorite status
+                // Refresh current concerts to update library status
                 if (_concerts.value.isNotEmpty()) {
                     _concerts.value = _concerts.value.map { c ->
                         if (c.identifier == concert.identifier) {
-                            c.copy(isFavorite = !c.isFavorite)
+                            c.copy(isInLibrary = isInLibrary)
                         } else c
                     }
                 }
                 
             } catch (e: Exception) {
-                addLog("❌ Toggle favorite failed: ${e.message}")
+                addLog("❌ Toggle library failed: ${e.message}")
             }
         }
     }
@@ -214,7 +210,7 @@ class RepositoryTestViewModel @Inject constructor(
                     val result = showRepository.getRecordingById(concert.identifier)
                     result?.let {
                         addLog("✅ Found concert: ${it.title}")
-                        addLog("📊 Is favorite: ${it.isFavorite}")
+                        addLog("📊 In library: ${it.isInLibrary}")
                     } ?: addLog("❌ Recording not found")
                 }
                 
@@ -230,12 +226,12 @@ class RepositoryTestViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 showRepository.getAllCachedRecordings().take(1).collect { cachedRecordings ->
-                    val favoriteCount = _favorites.value.size
+                    val libraryCount = _favorites.value.size
                     
                     _cacheStats.value = buildString {
                         appendLine("📊 Cache Statistics:")
                         appendLine("• Cached concerts: ${cachedRecordings.size}")
-                        appendLine("• Total favorites: $favoriteCount")
+                        appendLine("• Library items: $libraryCount")
                         appendLine("• Last updated: ${System.currentTimeMillis() % 100000}")
                     }
                 }
@@ -458,10 +454,10 @@ fun RepositoryTestScreen(
                 }
             }
             
-            // Favorites section
+            // Library section
             item {
                 Text(
-                    text = "💖 Favorites (${favorites.size})",
+                    text = "📚 Library (${favorites.size})",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(top = 16.dp)
@@ -526,7 +522,7 @@ fun RepositoryTestScreen(
                             onClick = { viewModel.toggleFavorite(concert) }
                         ) {
                             Text(
-                                text = if (concert.isFavorite) "💖" else "🤍",
+                                text = if (concert.isInLibrary) "📚" else "📖",
                                 style = MaterialTheme.typography.titleMedium
                             )
                         }

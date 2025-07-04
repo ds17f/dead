@@ -2,7 +2,7 @@ package com.deadarchive.feature.browse
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.core.data.repository.FavoriteRepository
+import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.model.Show
 import com.deadarchive.feature.browse.domain.SearchShowsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -17,7 +17,7 @@ import javax.inject.Inject
 @HiltViewModel
 class BrowseViewModel @Inject constructor(
     private val searchShowsUseCase: SearchShowsUseCase,
-    private val favoriteRepository: FavoriteRepository
+    private val libraryRepository: LibraryRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<BrowseUiState>(BrowseUiState.Idle)
@@ -93,18 +93,14 @@ class BrowseViewModel @Inject constructor(
         }
     }
     
-    fun toggleFavorite(show: Show) {
+    fun toggleLibrary(show: Show) {
         viewModelScope.launch {
             try {
-                // For Show, we favorite the best recording
+                // For Show, we add/remove the best recording to/from library
                 show.bestRecording?.let { recording ->
-                    if (show.isFavorite) {
-                        favoriteRepository.removeRecordingFromFavorites(recording.identifier)
-                    } else {
-                        favoriteRepository.addRecordingToFavorites(recording)
-                    }
+                    libraryRepository.toggleRecordingLibrary(recording)
                 }
-                // Refresh search to update favorite status
+                // Refresh search to update library status
                 searchShows()
             } catch (e: Exception) {
                 // Could add error handling/snackbar here

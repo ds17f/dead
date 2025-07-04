@@ -3,9 +3,8 @@ package com.deadarchive.feature.playlist
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Search
+import androidx.compose.ui.res.painterResource
+import com.deadarchive.core.design.R
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -43,7 +42,7 @@ fun ConcertListScreen(
             navigationIcon = {
                 IconButton(onClick = onBackClick) {
                     Icon(
-                        imageVector = Icons.Default.ArrowBack,
+                        painter = painterResource(R.drawable.ic_arrow_back),
                         contentDescription = "Back"
                     )
                 }
@@ -51,7 +50,7 @@ fun ConcertListScreen(
             actions = {
                 IconButton(onClick = { /* TODO: Implement search */ }) {
                     Icon(
-                        imageVector = Icons.Default.Search,
+                        painter = painterResource(R.drawable.ic_search),
                         contentDescription = "Search"
                     )
                 }
@@ -168,8 +167,8 @@ fun ConcertListScreen(
                                     onRecordingSelected(recording)
                                     onNavigateToPlayer()
                                 },
-                                onFavoriteClick = { showToToggle ->
-                                    viewModel.toggleFavorite(showToToggle)
+                                onLibraryClick = { showToToggle ->
+                                    viewModel.toggleLibrary(showToToggle)
                                 }
                             )
                         }

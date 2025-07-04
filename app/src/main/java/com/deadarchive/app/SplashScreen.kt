@@ -2,8 +2,6 @@ package com.deadarchive.app
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Warning
 import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*

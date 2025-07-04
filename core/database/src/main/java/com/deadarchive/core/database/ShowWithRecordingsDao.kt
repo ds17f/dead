@@ -66,9 +66,9 @@ abstract class ShowWithRecordingsDao {
         }
     }
     
-    // Get favorite shows with recordings
-    suspend fun getFavoriteShowsWithRecordings(): List<Show> {
-        val showEntities = showDao.getFavoriteShows()
+    // Get library shows with recordings
+    suspend fun getLibraryShowsWithRecordings(): List<Show> {
+        val showEntities = showDao.getLibraryShows()
         return showEntities.map { showEntity ->
             val recordingEntities = recordingDao.getRecordingsByConcertId(showEntity.showId)
             val recordings = recordingEntities.map { it.toRecording() }

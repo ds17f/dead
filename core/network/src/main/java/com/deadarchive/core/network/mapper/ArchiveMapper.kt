@@ -32,7 +32,7 @@ object ArchiveMapper {
             concertDate = date ?: "",
             concertVenue = venue,
             concertLocation = coverage,
-            isFavorite = false,
+            isInLibrary = false,
             isDownloaded = false
         )
     }
@@ -89,7 +89,7 @@ object ArchiveMapper {
             concertLocation = meta?.coverage,
             tracks = tracks,
             audioFiles = allAudioFiles,
-            isFavorite = false,
+            isInLibrary = false,
             isDownloaded = false
         )
     }
@@ -308,7 +308,7 @@ object ArchiveMapper {
                     venue = firstRecording.concertVenue,
                     location = firstRecording.concertLocation,
                     recordings = recordings,
-                    isFavorite = recordings.any { it.isFavorite }
+                    isInLibrary = recordings.any { it.isInLibrary }
                 )
             }
             .sortedByDescending { it.date }

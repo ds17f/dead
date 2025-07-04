@@ -2,6 +2,7 @@ package com.deadarchive.feature.playlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.model.Show
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -12,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ConcertListViewModel @Inject constructor(
-    // TODO: Inject the new concert repository when it's created
+    private val libraryRepository: LibraryRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<ConcertListUiState>(ConcertListUiState.Loading)
@@ -46,18 +47,20 @@ class ConcertListViewModel @Inject constructor(
         loadConcerts()
     }
     
-    fun toggleFavorite(show: Show) {
+    fun toggleLibrary(show: Show) {
         viewModelScope.launch {
             try {
-                // TODO: Update favorite status in repository
-                // showRepository.updateFavoriteStatus(show.showId, !show.isFavorite)
+                // Add/remove the best recording to/from library
+                show.bestRecording?.let { recording ->
+                    libraryRepository.toggleRecordingLibrary(recording)
+                }
                 
-                // For now, update the state locally
+                // Update the state locally
                 val currentState = _uiState.value
                 if (currentState is ConcertListUiState.Success) {
                     val updatedShows = currentState.shows.map { existingShow ->
                         if (existingShow.showId == show.showId) {
-                            existingShow.copy(isFavorite = !existingShow.isFavorite)
+                            existingShow.copy(isInLibrary = !existingShow.isInLibrary)
                         } else {
                             existingShow
                         }
@@ -99,7 +102,7 @@ class ConcertListViewModel @Inject constructor(
                         tracks = emptyList()
                     )
                 ),
-                isFavorite = false
+                isInLibrary = false
             ),
             Show(
                 date = "1977-05-07",
@@ -136,7 +139,7 @@ class ConcertListViewModel @Inject constructor(
                         tracks = emptyList()
                     )
                 ),
-                isFavorite = true
+                isInLibrary = true
             ),
             Show(
                 date = "1972-05-03",
@@ -155,7 +158,7 @@ class ConcertListViewModel @Inject constructor(
                         tracks = emptyList()
                     )
                 ),
-                isFavorite = false
+                isInLibrary = false
             )
         )
     }

@@ -13,9 +13,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.FavoriteBorder
+import androidx.compose.ui.res.painterResource
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -26,6 +24,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.core.design.R
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 
@@ -34,7 +33,7 @@ fun ExpandableConcertItem(
     show: Show,
     onShowClick: (Show) -> Unit,
     onRecordingClick: (Recording) -> Unit,
-    onFavoriteClick: (Show) -> Unit,
+    onLibraryClick: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     var isExpanded by remember { mutableStateOf(false) }
@@ -58,7 +57,7 @@ fun ExpandableConcertItem(
                 isExpanded = isExpanded,
                 onExpandClick = { isExpanded = !isExpanded },
                 onShowClick = onShowClick,
-                onFavoriteClick = onFavoriteClick
+                onLibraryClick = onLibraryClick
             )
             
             // Expandable recordings section
@@ -82,7 +81,7 @@ private fun ShowHeader(
     isExpanded: Boolean,
     onExpandClick: () -> Unit,
     onShowClick: (Show) -> Unit,
-    onFavoriteClick: (Show) -> Unit,
+    onLibraryClick: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Row(
@@ -178,14 +177,14 @@ private fun ShowHeader(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            // Favorite button
+            // Library button
             IconButton(
-                onClick = { onFavoriteClick(show) }
+                onClick = { onLibraryClick(show) }
             ) {
                 Icon(
-                    imageVector = if (show.isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
-                    contentDescription = "Favorite",
-                    tint = if (show.isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
+                    painter = if (show.isInLibrary) painterResource(R.drawable.ic_library_add_check) else painterResource(R.drawable.ic_library_add),
+                    contentDescription = if (show.isInLibrary) "Remove from Library" else "Add to Library",
+                    tint = if (show.isInLibrary) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
             

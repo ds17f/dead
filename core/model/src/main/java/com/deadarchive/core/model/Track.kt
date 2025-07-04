@@ -25,7 +25,7 @@ data class Track(
     
     // Playback state
     val isCurrentlyPlaying: Boolean = false,
-    val isFavorite: Boolean = false,
+    val isInLibrary: Boolean = false,
     val playbackPosition: Long = 0L // in milliseconds
 ) {
     val displayTitle: String

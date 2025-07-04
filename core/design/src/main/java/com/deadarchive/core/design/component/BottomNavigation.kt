@@ -4,16 +4,15 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
-import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.graphics.painter.Painter
+import com.deadarchive.core.design.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -25,13 +24,25 @@ import androidx.compose.ui.unit.sp
 enum class BottomNavDestination(
     val route: String,
     val title: String,
-    val selectedIcon: ImageVector,
-    val unselectedIcon: ImageVector
+    val selectedIcon: @Composable () -> Painter,
+    val unselectedIcon: @Composable () -> Painter
 ) {
-    HOME("home", "Home", Icons.Filled.Home, Icons.Outlined.Home),
-    SEARCH("browse", "Search", Icons.Filled.Search, Icons.Outlined.Search),
-    LIBRARY("library", "Library", Icons.Filled.Favorite, Icons.Outlined.FavoriteBorder),
-    SETTINGS("debug", "Settings", Icons.Filled.Settings, Icons.Outlined.Settings)
+    HOME("home", "Home", 
+        { painterResource(R.drawable.ic_home) }, 
+        { painterResource(R.drawable.ic_home) }
+    ),
+    SEARCH("browse", "Search", 
+        { painterResource(R.drawable.ic_search) }, 
+        { painterResource(R.drawable.ic_search) }
+    ),
+    LIBRARY("library", "Library", 
+        { painterResource(R.drawable.ic_library_add_check) }, 
+        { painterResource(R.drawable.ic_library_add) }
+    ),
+    SETTINGS("debug", "Settings", 
+        { painterResource(R.drawable.ic_settings) }, 
+        { painterResource(R.drawable.ic_settings) }
+    )
 }
 
 /**
@@ -89,7 +100,7 @@ private fun BottomNavItem(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Icon(
-            imageVector = if (isSelected) destination.selectedIcon else destination.unselectedIcon,
+            painter = if (isSelected) destination.selectedIcon() else destination.unselectedIcon(),
             contentDescription = destination.title,
             tint = contentColor,
             modifier = Modifier.size(24.dp)

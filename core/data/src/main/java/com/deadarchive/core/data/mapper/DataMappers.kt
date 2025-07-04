@@ -2,7 +2,6 @@ package com.deadarchive.core.data.mapper
 
 import com.deadarchive.core.database.RecordingEntity
 import com.deadarchive.core.database.DownloadEntity
-import com.deadarchive.core.database.FavoriteEntity
 import com.deadarchive.core.model.*
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.deadarchive.core.network.model.ArchiveSearchResponse
@@ -28,7 +27,7 @@ object DataMappers {
             concertDate = date ?: "",
             concertVenue = venue,
             concertLocation = coverage,
-            isFavorite = false,
+            isInLibrary = false,
             isDownloaded = false
         )
     }
@@ -97,30 +96,4 @@ object DataMappers {
         )
     }
     
-    // Favorite item mapping
-    fun FavoriteEntity.toFavoriteItem(): FavoriteItem {
-        return FavoriteItem(
-            id = id,
-            type = FavoriteType.valueOf(type),
-            recordingId = recordingId,
-            trackFilename = trackFilename,
-            addedTimestamp = addedTimestamp,
-            notes = notes
-        )
-    }
-    
-    fun List<FavoriteEntity>.toFavoriteItems(): List<FavoriteItem> {
-        return map { it.toFavoriteItem() }
-    }
-    
-    fun FavoriteItem.toFavoriteEntity(): FavoriteEntity {
-        return FavoriteEntity(
-            id = id,
-            type = type.name,
-            recordingId = recordingId,
-            trackFilename = trackFilename,
-            addedTimestamp = addedTimestamp,
-            notes = notes
-        )
-    }
 }

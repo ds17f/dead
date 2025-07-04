@@ -41,10 +41,10 @@ object IconResources {
         fun SearchOutlined() = vectorIcon(Icons.Outlined.Search)
         
         @Composable
-        fun Library() = vectorIcon(Icons.Filled.Favorite)
+        fun Library() = customIcon(R.drawable.ic_library_add_check)
         
         @Composable
-        fun LibraryOutlined() = vectorIcon(Icons.Outlined.FavoriteBorder)
+        fun LibraryOutlined() = customIcon(R.drawable.ic_library_add)
         
         @Composable
         fun Settings() = customIcon(R.drawable.ic_settings)
@@ -223,6 +223,12 @@ object IconResources {
         
         @Composable
         fun LibraryMusic() = customIcon(R.drawable.ic_library_music)
+        
+        @Composable
+        fun LibraryAdd() = customIcon(R.drawable.ic_library_add)
+        
+        @Composable
+        fun LibraryAddCheck() = customIcon(R.drawable.ic_library_add_check)
         
         @Composable
         fun Queue() = customIcon(R.drawable.ic_queue)

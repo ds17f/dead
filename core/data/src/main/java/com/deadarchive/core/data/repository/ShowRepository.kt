@@ -3,7 +3,7 @@ package com.deadarchive.core.data.repository
 import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.RecordingEntity
 import com.deadarchive.core.database.ShowDao
-import com.deadarchive.core.database.FavoriteDao
+import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.AudioFile
@@ -27,7 +27,7 @@ interface ShowRepository {
     fun searchRecordings(query: String): Flow<List<Recording>>
     suspend fun getRecordingById(id: String): Recording?
     suspend fun getRecordingByIdWithFormatFilter(id: String, formatPreferences: List<String>): Recording?
-    fun getFavoriteRecordings(): Flow<List<Recording>>
+    fun getLibraryRecordings(): Flow<List<Recording>>
     fun getAllCachedRecordings(): Flow<List<Recording>>
     
     // Streaming URL generation methods
@@ -46,7 +46,7 @@ class ShowRepositoryImpl @Inject constructor(
     private val archiveApiService: ArchiveApiService,
     private val recordingDao: RecordingDao,
     private val showDao: ShowDao,
-    private val favoriteDao: FavoriteDao,
+    private val libraryDao: LibraryDao,
     private val audioFormatFilterService: AudioFormatFilterService
 ) : ShowRepository {
     
@@ -160,15 +160,15 @@ class ShowRepositoryImpl @Inject constructor(
                 println("DEBUG: getRecordingById mapped recording - title: ${recording.title}, tracks: ${recording.tracks.size}")
                 
                 // Cache the result with tracks
-                val isFavorite = favoriteDao.isFavorite(id)
+                val isInLibrary = libraryDao.isRecordingInLibrary(id)
                 val newEntity = RecordingEntity.fromRecording(recording, cachedEntity?.concertId ?: "unknown").copy(
-                    isFavorite = isFavorite,
+                    isInLibrary = isInLibrary,
                     cachedTimestamp = System.currentTimeMillis()
                 )
                 println("DEBUG: getRecordingById caching recording entity with ${recording.tracks.size} tracks")
                 recordingDao.insertRecording(newEntity)
                 
-                val finalRecording = recording.copy(isFavorite = isFavorite)
+                val finalRecording = recording.copy(isInLibrary = isInLibrary)
                 println("DEBUG: getRecordingById returning API recording - tracks: ${finalRecording.tracks.size}")
                 finalRecording
             } ?: run {
@@ -205,8 +205,8 @@ class ShowRepositoryImpl @Inject constructor(
         return recording.copy(tracks = filteredTracks)
     }
     
-    override fun getFavoriteRecordings(): Flow<List<Recording>> {
-        return recordingDao.getFavoriteRecordings().map { entities ->
+    override fun getLibraryRecordings(): Flow<List<Recording>> {
+        return recordingDao.getLibraryRecordings().map { entities ->
             entities.map { it.toRecording() }
         }
     }
@@ -306,7 +306,7 @@ class ShowRepositoryImpl @Inject constructor(
                     location = groupedRecordings.first().concertLocation,
                     year = groupedRecordings.first().concertDate.take(4),
                     recordings = groupedRecordings,
-                    isFavorite = groupedRecordings.any { it.isFavorite }
+                    isInLibrary = groupedRecordings.any { it.isInLibrary }
                 )
             }
             .sortedByDescending { it.date }

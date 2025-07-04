@@ -9,7 +9,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.downloads.navigation.downloadsScreen
-import com.deadarchive.feature.favorites.navigation.favoritesScreen
+import com.deadarchive.feature.library.navigation.libraryScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 
 @UnstableApi
@@ -52,7 +52,7 @@ fun DeadArchiveNavigation(
             onNavigateToPlayer = { navController.navigate("player") }
         )
         
-        favoritesScreen(
+        libraryScreen(
             onNavigateToPlayer = { navController.navigate("player") }
         )
     }

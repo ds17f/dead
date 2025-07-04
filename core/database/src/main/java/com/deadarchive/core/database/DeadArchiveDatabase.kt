@@ -11,10 +11,10 @@ import android.content.Context
         ShowEntity::class,
         RecordingEntity::class,
         DownloadEntity::class,
-        FavoriteEntity::class,
+        LibraryEntity::class,
         SyncMetadataEntity::class
     ],
-    version = 7,
+    version = 8,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -22,7 +22,7 @@ abstract class DeadArchiveDatabase : RoomDatabase() {
     abstract fun showDao(): ShowDao
     abstract fun recordingDao(): RecordingDao
     abstract fun downloadDao(): DownloadDao
-    abstract fun favoriteDao(): FavoriteDao
+    abstract fun libraryDao(): LibraryDao
     abstract fun syncMetadataDao(): SyncMetadataDao
     
 }

@@ -134,7 +134,7 @@ dependencies {
     implementation(project(":feature:player"))
     implementation(project(":feature:playlist"))
     implementation(project(":feature:downloads"))
-    implementation(project(":feature:favorites"))
+    implementation(project(":feature:library"))
 
     // Core Android
     implementation("androidx.core:core-ktx:1.12.0")

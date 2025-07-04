@@ -59,15 +59,15 @@ interface ShowDao {
     """)
     suspend fun searchShows(query: String): List<ShowEntity>
     
-    // Favorites
-    @Query("SELECT * FROM concerts_new WHERE isFavorite = 1 ORDER BY date DESC")
-    suspend fun getFavoriteShows(): List<ShowEntity>
+    // Library
+    @Query("SELECT * FROM concerts_new WHERE isInLibrary = 1 ORDER BY date DESC")
+    suspend fun getLibraryShows(): List<ShowEntity>
     
-    @Query("SELECT * FROM concerts_new WHERE isFavorite = 1 ORDER BY date DESC")
-    fun getFavoriteShowsFlow(): Flow<List<ShowEntity>>
+    @Query("SELECT * FROM concerts_new WHERE isInLibrary = 1 ORDER BY date DESC")
+    fun getLibraryShowsFlow(): Flow<List<ShowEntity>>
     
-    @Query("UPDATE concerts_new SET isFavorite = :isFavorite WHERE showId = :showId")
-    suspend fun updateFavoriteStatus(showId: String, isFavorite: Boolean)
+    @Query("UPDATE concerts_new SET isInLibrary = :isInLibrary WHERE showId = :showId")
+    suspend fun updateLibraryStatus(showId: String, isInLibrary: Boolean)
     
     // Statistics and utility
     @Query("SELECT COUNT(*) FROM concerts_new")
