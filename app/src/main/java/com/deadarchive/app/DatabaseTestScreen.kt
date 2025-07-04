@@ -80,9 +80,8 @@ class DatabaseTestViewModel @Inject constructor(
             try {
                 val testLibraryItem = LibraryEntity(
                     id = "lib-${System.currentTimeMillis()}",
-                    type = "RECORDING",
-                    recordingId = "gd1977-05-08.sbd.miller.97245.flac16",
-                    trackFilename = null,
+                    type = "SHOW",
+                    showId = "1977-05-08_Cornell University",
                     addedTimestamp = System.currentTimeMillis(),
                     notes = "Classic Cornell '77 show!"
                 )
@@ -268,10 +267,7 @@ fun DatabaseTestScreen(
                     ) {
                         Text("ID: ${libraryItem.id}")
                         Text("Type: ${libraryItem.type}")
-                        Text("Recording: ${libraryItem.recordingId}")
-                        if (libraryItem.trackFilename != null) {
-                            Text("Track: ${libraryItem.trackFilename}")
-                        }
+                        Text("Show: ${libraryItem.showId}")
                         if (libraryItem.notes?.isNotEmpty() == true) {
                             Text("Notes: ${libraryItem.notes}")
                         }

@@ -3,9 +3,14 @@ import java.io.ByteArrayOutputStream
 
 // Function to get git commit hash (configuration cache friendly)
 fun getGitCommitHash(): Provider<String> {
-    return providers.exec {
-        commandLine("git", "rev-parse", "--short", "HEAD")
-    }.standardOutput.asText.map { it.trim() }.orElse("unknown")
+    return try {
+        providers.exec {
+            commandLine("git", "rev-parse", "--short", "HEAD")
+            isIgnoreExitValue = true
+        }.standardOutput.asText.map { it.trim() }.orElse("worktree-build")
+    } catch (e: Exception) {
+        providers.provider { "worktree-build" }
+    }
 }
 
 plugins {

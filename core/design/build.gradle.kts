@@ -44,6 +44,9 @@ android {
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     
+    // Model dependency for Show and Recording types
+    implementation(project(":core:model"))
+    
     // Settings dependency for ThemeMode
     implementation(project(":core:settings"))
     

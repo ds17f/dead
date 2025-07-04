@@ -14,7 +14,7 @@ fun LibraryScreen(
     modifier: Modifier = Modifier
 ) {
     FeatureLibraryScreen(
-        onRecordingSelected = onRecordingSelected,
+        onNavigateToRecording = onRecordingSelected,
         modifier = modifier
     )
 }

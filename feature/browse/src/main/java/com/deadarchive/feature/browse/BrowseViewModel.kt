@@ -96,12 +96,21 @@ class BrowseViewModel @Inject constructor(
     fun toggleLibrary(show: Show) {
         viewModelScope.launch {
             try {
-                // For Show, we add/remove the best recording to/from library
-                show.bestRecording?.let { recording ->
-                    libraryRepository.toggleRecordingLibrary(recording)
+                // Add/remove the show to/from library
+                val isInLibrary = libraryRepository.toggleShowLibrary(show)
+                
+                // Update the UI state locally instead of refreshing search
+                val currentState = _uiState.value
+                if (currentState is BrowseUiState.Success) {
+                    val updatedShows = currentState.shows.map { existingShow ->
+                        if (existingShow.showId == show.showId) {
+                            existingShow.copy(isInLibrary = isInLibrary)
+                        } else {
+                            existingShow
+                        }
+                    }
+                    _uiState.value = BrowseUiState.Success(updatedShows)
                 }
-                // Refresh search to update library status
-                searchShows()
             } catch (e: Exception) {
                 // Could add error handling/snackbar here
             }

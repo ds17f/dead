@@ -50,10 +50,8 @@ class ConcertListViewModel @Inject constructor(
     fun toggleLibrary(show: Show) {
         viewModelScope.launch {
             try {
-                // Add/remove the best recording to/from library
-                show.bestRecording?.let { recording ->
-                    libraryRepository.toggleRecordingLibrary(recording)
-                }
+                // Add/remove the show to/from library
+                libraryRepository.toggleShowLibrary(show)
                 
                 // Update the state locally
                 val currentState = _uiState.value

@@ -13,6 +13,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 

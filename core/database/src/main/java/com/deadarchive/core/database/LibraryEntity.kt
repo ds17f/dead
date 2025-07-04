@@ -9,8 +9,7 @@ import com.deadarchive.core.model.LibraryItemType
 data class LibraryEntity(
     @PrimaryKey val id: String,
     val type: String,
-    val recordingId: String,
-    val trackFilename: String? = null,
+    val showId: String,
     val addedTimestamp: Long = System.currentTimeMillis(),
     val notes: String? = null
 ) {
@@ -18,8 +17,7 @@ data class LibraryEntity(
         return LibraryItem(
             id = id,
             type = LibraryItemType.valueOf(type),
-            recordingId = recordingId,
-            trackFilename = trackFilename,
+            showId = showId,
             addedTimestamp = addedTimestamp,
             notes = notes
         )
@@ -30,8 +28,7 @@ data class LibraryEntity(
             return LibraryEntity(
                 id = libraryItem.id,
                 type = libraryItem.type.name,
-                recordingId = libraryItem.recordingId,
-                trackFilename = libraryItem.trackFilename,
+                showId = libraryItem.showId,
                 addedTimestamp = libraryItem.addedTimestamp,
                 notes = libraryItem.notes
             )

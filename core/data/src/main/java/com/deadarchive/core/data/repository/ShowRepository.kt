@@ -160,7 +160,7 @@ class ShowRepositoryImpl @Inject constructor(
                 println("DEBUG: getRecordingById mapped recording - title: ${recording.title}, tracks: ${recording.tracks.size}")
                 
                 // Cache the result with tracks
-                val isInLibrary = libraryDao.isRecordingInLibrary(id)
+                val isInLibrary = false // Individual recordings don't have library status anymore
                 val newEntity = RecordingEntity.fromRecording(recording, cachedEntity?.concertId ?: "unknown").copy(
                     isInLibrary = isInLibrary,
                     cachedTimestamp = System.currentTimeMillis()
@@ -296,20 +296,25 @@ class ShowRepositoryImpl @Inject constructor(
         return report.toString()
     }
     
-    private fun groupRecordingsIntoShows(recordings: List<Recording>): List<Show> {
-        return recordings
-            .groupBy { "${it.concertDate}_${it.concertVenue}" }
-            .map { (showKey, groupedRecordings) ->
-                Show(
-                    date = groupedRecordings.first().concertDate,
-                    venue = groupedRecordings.first().concertVenue,
-                    location = groupedRecordings.first().concertLocation,
-                    year = groupedRecordings.first().concertDate.take(4),
-                    recordings = groupedRecordings,
-                    isInLibrary = groupedRecordings.any { it.isInLibrary }
-                )
-            }
-            .sortedByDescending { it.date }
+    private suspend fun groupRecordingsIntoShows(recordings: List<Recording>): List<Show> {
+        val groupedRecordings = recordings.groupBy { "${it.concertDate}_${it.concertVenue}" }
+        val shows = mutableListOf<Show>()
+        
+        for ((showKey, recordingGroup) in groupedRecordings) {
+            val show = Show(
+                date = recordingGroup.first().concertDate,
+                venue = recordingGroup.first().concertVenue,
+                location = recordingGroup.first().concertLocation,
+                year = recordingGroup.first().concertDate.take(4),
+                recordings = recordingGroup,
+                isInLibrary = false // Will be updated below
+            )
+            // Check if this show is in the library
+            val isInLibrary = libraryDao.isShowInLibrary(show.showId)
+            shows.add(show.copy(isInLibrary = isInLibrary))
+        }
+        
+        return shows.sortedByDescending { it.date }
     }
     
     /**

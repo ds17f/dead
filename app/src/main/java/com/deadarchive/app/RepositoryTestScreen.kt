@@ -19,6 +19,7 @@ import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.model.Recording
+import com.deadarchive.core.model.Show
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
@@ -173,7 +174,16 @@ class RepositoryTestViewModel @Inject constructor(
     fun toggleFavorite(concert: Recording) {
         viewModelScope.launch {
             try {
-                val isInLibrary = libraryRepository.toggleRecordingLibrary(concert)
+                // Create a Show from the Recording for the new library system
+                val show = Show(
+                    date = concert.concertDate,
+                    venue = concert.concertVenue,
+                    location = concert.concertLocation,
+                    year = concert.concertDate.take(4),
+                    recordings = listOf(concert),
+                    isInLibrary = concert.isInLibrary
+                )
+                val isInLibrary = libraryRepository.toggleShowLibrary(show)
                 if (isInLibrary) {
                     addLog("💖 Added to library: ${concert.title.take(30)}")
                 } else {

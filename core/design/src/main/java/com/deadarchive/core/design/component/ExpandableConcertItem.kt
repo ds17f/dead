@@ -1,4 +1,4 @@
-package com.deadarchive.feature.playlist
+package com.deadarchive.core.design.component
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
@@ -23,7 +23,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.R
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording

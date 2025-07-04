@@ -16,8 +16,8 @@ interface LibraryDao {
     @Query("SELECT * FROM library_items WHERE type = :type ORDER BY addedTimestamp DESC")
     fun getLibraryItemsByType(type: String): Flow<List<LibraryEntity>>
     
-    @Query("SELECT * FROM library_items WHERE recordingId = :recordingId ORDER BY addedTimestamp DESC")
-    fun getLibraryItemsForRecording(recordingId: String): Flow<List<LibraryEntity>>
+    @Query("SELECT * FROM library_items WHERE showId = :showId ORDER BY addedTimestamp DESC")
+    fun getLibraryItemsForShow(showId: String): Flow<List<LibraryEntity>>
     
     @Query("SELECT * FROM library_items WHERE id = :id")
     suspend fun getLibraryItemById(id: String): LibraryEntity?
@@ -25,11 +25,8 @@ interface LibraryDao {
     @Query("SELECT EXISTS(SELECT 1 FROM library_items WHERE id = :id)")
     suspend fun isInLibrary(id: String): Boolean
     
-    @Query("SELECT EXISTS(SELECT 1 FROM library_items WHERE recordingId = :recordingId AND type = 'RECORDING')")
-    suspend fun isRecordingInLibrary(recordingId: String): Boolean
-    
-    @Query("SELECT EXISTS(SELECT 1 FROM library_items WHERE recordingId = :recordingId AND trackFilename = :trackFilename AND type = 'TRACK')")
-    suspend fun isTrackInLibrary(recordingId: String, trackFilename: String): Boolean
+    @Query("SELECT EXISTS(SELECT 1 FROM library_items WHERE showId = :showId AND type = 'SHOW')")
+    suspend fun isShowInLibrary(showId: String): Boolean
     
     @Query("SELECT COUNT(*) FROM library_items")
     suspend fun getLibraryItemCount(): Int
@@ -49,8 +46,8 @@ interface LibraryDao {
     @Query("DELETE FROM library_items WHERE id = :id")
     suspend fun deleteLibraryItemById(id: String)
     
-    @Query("DELETE FROM library_items WHERE recordingId = :recordingId")
-    suspend fun deleteLibraryItemsForRecording(recordingId: String)
+    @Query("DELETE FROM library_items WHERE showId = :showId")
+    suspend fun deleteLibraryItemsForShow(showId: String)
     
     @Query("DELETE FROM library_items WHERE type = :type")
     suspend fun deleteLibraryItemsByType(type: String)

@@ -14,15 +14,18 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.LibraryItem
 import com.deadarchive.core.model.Recording
+import com.deadarchive.core.model.Show
+import com.deadarchive.core.design.component.ExpandableConcertItem
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LibraryScreen(
-    onRecordingSelected: (Recording) -> Unit,
+    onNavigateToRecording: (Recording) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: LibraryViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    var showToRemove by remember { mutableStateOf<Show?>(null) }
     
     Column(
         modifier = modifier.fillMaxSize()
@@ -77,7 +80,7 @@ fun LibraryScreen(
             }
             
             is LibraryUiState.Success -> {
-                if (state.libraryItems.isEmpty()) {
+                if (state.shows.isEmpty()) {
                     Box(
                         modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
@@ -131,7 +134,7 @@ fun LibraryScreen(
                                     )
                                     Spacer(modifier = Modifier.height(8.dp))
                                     Text(
-                                        text = "${state.libraryItems.size} items in your library",
+                                        text = "${state.shows.size} shows in your library",
                                         style = MaterialTheme.typography.bodyMedium,
                                         color = MaterialTheme.colorScheme.onPrimaryContainer
                                     )
@@ -140,17 +143,22 @@ fun LibraryScreen(
                         }
                         
                         items(
-                            items = state.libraryItems,
-                            key = { item -> item.id }
-                        ) { libraryItem ->
-                            LibraryItemCard(
-                                libraryItem = libraryItem,
-                                onItemClick = { item ->
-                                    // TODO: Navigate to recording when available
-                                    // For now, we just have the recording ID
+                            items = state.shows,
+                            key = { show -> show.showId }
+                        ) { show ->
+                            ExpandableConcertItem(
+                                show = show,
+                                onShowClick = { clickedShow: Show ->
+                                    // Navigate to best recording of this show
+                                    clickedShow.bestRecording?.let { recording ->
+                                        onNavigateToRecording(recording)
+                                    }
                                 },
-                                onRemoveClick = { item ->
-                                    viewModel.removeFromLibrary(item)
+                                onRecordingClick = { recording: Recording ->
+                                    onNavigateToRecording(recording)
+                                },
+                                onLibraryClick = { clickedShow: Show ->
+                                    showToRemove = clickedShow
                                 }
                             )
                         }
@@ -159,68 +167,33 @@ fun LibraryScreen(
             }
         }
     }
-}
-
-@Composable
-private fun LibraryItemCard(
-    libraryItem: LibraryItem,
-    onItemClick: (LibraryItem) -> Unit,
-    onRemoveClick: (LibraryItem) -> Unit,
-    modifier: Modifier = Modifier
-) {
-    Card(
-        modifier = modifier.fillMaxWidth(),
-        onClick = { onItemClick(libraryItem) }
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Column(
-                modifier = Modifier.weight(1f)
-            ) {
-                Text(
-                    text = libraryItem.recordingId,
-                    style = MaterialTheme.typography.titleMedium
-                )
-                Text(
-                    text = "Added ${formatTimestamp(libraryItem.addedTimestamp)}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-                Text(
-                    text = "Type: ${libraryItem.type.name}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            }
-            
-            IconButton(
-                onClick = { onRemoveClick(libraryItem) }
-            ) {
-                Icon(
-                    painter = painterResource(R.drawable.ic_close),
-                    contentDescription = "Remove from library",
-                    tint = MaterialTheme.colorScheme.error
-                )
-            }
-        }
-    }
-}
-
-private fun formatTimestamp(timestamp: Long): String {
-    val now = System.currentTimeMillis()
-    val diff = now - timestamp
-    val days = diff / (24 * 60 * 60 * 1000)
     
-    return when {
-        days == 0L -> "today"
-        days == 1L -> "yesterday"
-        days < 7 -> "$days days ago"
-        days < 30 -> "${days / 7} weeks ago"
-        else -> "${days / 30} months ago"
+    // Confirmation dialog for removing shows from library
+    showToRemove?.let { show ->
+        AlertDialog(
+            onDismissRequest = { showToRemove = null },
+            title = { Text("Remove from Library") },
+            text = { 
+                Text("Are you sure you want to remove \"${show.displayDate} - ${show.displayVenue}\" from your library?")
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        viewModel.removeShowFromLibrary(show.showId)
+                        showToRemove = null
+                    }
+                ) {
+                    Text("Remove")
+                }
+            },
+            dismissButton = {
+                TextButton(
+                    onClick = { showToRemove = null }
+                ) {
+                    Text("Cancel")
+                }
+            }
+        )
     }
 }
+
