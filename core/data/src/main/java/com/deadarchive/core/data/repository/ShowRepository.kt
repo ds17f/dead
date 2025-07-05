@@ -3,6 +3,7 @@ package com.deadarchive.core.data.repository
 import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.RecordingEntity
 import com.deadarchive.core.database.ShowDao
+import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
@@ -22,6 +23,7 @@ interface ShowRepository {
     // Show-based methods
     fun searchShows(query: String): Flow<List<Show>>
     fun getAllShows(): Flow<List<Show>>
+    suspend fun getRecordingsByShowId(showId: String): List<Recording>
     
     // Recording-based methods (individual recordings)
     fun searchRecordings(query: String): Flow<List<Recording>>
@@ -71,6 +73,15 @@ class ShowRepositoryImpl @Inject constructor(
             val allRecordings = recordingDao.getAllRecordings().firstOrNull()?.map { it.toRecording() } ?: emptyList()
             val shows = groupRecordingsIntoShows(allRecordings)
             emit(shows)
+        }
+    }
+    
+    override suspend fun getRecordingsByShowId(showId: String): List<Recording> {
+        return try {
+            recordingDao.getRecordingsByConcertId(showId).map { it.toRecording() }
+        } catch (e: Exception) {
+            println("ERROR: Failed to get recordings for show $showId: ${e.message}")
+            emptyList()
         }
     }
     
@@ -256,11 +267,62 @@ class ShowRepositoryImpl @Inject constructor(
             
             val response = archiveApiService.searchRecordings(searchQuery, rows = 50)
             if (response.isSuccessful) {
-                response.body()?.response?.docs?.map { doc ->
+                val recordings = response.body()?.response?.docs?.map { doc ->
                     com.deadarchive.core.network.mapper.ArchiveMapper.run { 
                         doc.toRecording() 
                     }
                 } ?: emptyList()
+                
+                // Save recordings AND corresponding ShowEntity records to database
+                if (recordings.isNotEmpty()) {
+                    try {
+                        // Group recordings by show and create ShowEntity records
+                        val recordingsByShow = recordings.groupBy { recording ->
+                            "${recording.concertDate}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                        }
+                        
+                        val recordingEntities = mutableListOf<RecordingEntity>()
+                        val newShowEntities = mutableListOf<ShowEntity>()
+                        
+                        for ((showId, showRecordings) in recordingsByShow) {
+                            // Create RecordingEntity records
+                            val entities = showRecordings.map { recording ->
+                                RecordingEntity.fromRecording(recording, showId)
+                            }
+                            recordingEntities.addAll(entities)
+                            
+                            // Create ShowEntity if it doesn't exist
+                            if (!showDao.showExists(showId)) {
+                                val firstRecording = showRecordings.first()
+                                val showEntity = ShowEntity(
+                                    showId = showId,
+                                    date = firstRecording.concertDate.take(10),
+                                    venue = firstRecording.concertVenue,
+                                    location = firstRecording.concertLocation,
+                                    year = firstRecording.concertDate.take(4),
+                                    setlistRaw = null,
+                                    setsJson = null,
+                                    isInLibrary = false, // Will be updated if added to library
+                                    cachedTimestamp = System.currentTimeMillis()
+                                )
+                                newShowEntities.add(showEntity)
+                            }
+                        }
+                        
+                        // Save everything atomically
+                        if (newShowEntities.isNotEmpty()) {
+                            showDao.insertShows(newShowEntities)
+                            println("DEBUG: Created ${newShowEntities.size} ShowEntity records from API")
+                        }
+                        recordingDao.insertRecordings(recordingEntities)
+                        println("DEBUG: Saved ${recordings.size} API recordings to database")
+                    } catch (e: Exception) {
+                        println("ERROR: Failed to save API recordings and shows: ${e.message}")
+                        // Continue anyway - the recordings will still work for this search
+                    }
+                }
+                
+                recordings
             } else {
                 emptyList()
             }
@@ -299,6 +361,7 @@ class ShowRepositoryImpl @Inject constructor(
     private suspend fun groupRecordingsIntoShows(recordings: List<Recording>): List<Show> {
         val groupedRecordings = recordings.groupBy { "${it.concertDate}_${it.concertVenue}" }
         val shows = mutableListOf<Show>()
+        val newShowEntities = mutableListOf<ShowEntity>()
         
         for ((showKey, recordingGroup) in groupedRecordings) {
             val show = Show(
@@ -309,9 +372,40 @@ class ShowRepositoryImpl @Inject constructor(
                 recordings = recordingGroup,
                 isInLibrary = false // Will be updated below
             )
+            
             // Check if this show is in the library
             val isInLibrary = libraryDao.isShowInLibrary(show.showId)
-            shows.add(show.copy(isInLibrary = isInLibrary))
+            val finalShow = show.copy(isInLibrary = isInLibrary)
+            shows.add(finalShow)
+            
+            // Check if ShowEntity already exists, if not, create it
+            if (!showDao.showExists(show.showId)) {
+                val firstRecording = recordingGroup.first()
+                val showEntity = ShowEntity(
+                    showId = show.showId,
+                    date = firstRecording.concertDate.take(10), // Take only YYYY-MM-DD part
+                    venue = firstRecording.concertVenue,
+                    location = firstRecording.concertLocation,
+                    year = firstRecording.concertDate.take(4),
+                    setlistRaw = null, // We don't have setlist data from recordings
+                    setsJson = null,
+                    isInLibrary = isInLibrary,
+                    cachedTimestamp = System.currentTimeMillis()
+                )
+                newShowEntities.add(showEntity)
+                println("DEBUG: Will create ShowEntity for ${show.showId}")
+            }
+        }
+        
+        // Save new ShowEntity records if any were created
+        if (newShowEntities.isNotEmpty()) {
+            try {
+                showDao.insertShows(newShowEntities)
+                println("DEBUG: Successfully saved ${newShowEntities.size} new ShowEntity records")
+            } catch (e: Exception) {
+                println("ERROR: Failed to save ShowEntity records: ${e.message}")
+                // Continue anyway - the shows will still work, just won't be persisted
+            }
         }
         
         return shows.sortedByDescending { it.date }

@@ -32,7 +32,15 @@ data class Show(
 ) {
     // Unique identifier combining date and venue
     val showId: String
-        get() = "${date}_${venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+        get() {
+            // Extract just the date part (YYYY-MM-DD) from potentially timestamped dates
+            val dateOnly = if (date.contains("T")) {
+                date.substringBefore("T")
+            } else {
+                date
+            }
+            return "${dateOnly}_${venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+        }
     
     val displayTitle: String
         get() = "${displayVenue} - $date"

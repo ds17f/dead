@@ -44,15 +44,27 @@ class LibraryViewModel @Inject constructor(
                     }
                     println("DEBUG LibraryViewModel: Found ${allShows.size} total shows")
                     
-                    // Find matching shows with recordings, or create basic ones
+                    // Find matching shows with recordings - should now work consistently
                     val libraryShows = libraryItems.map { libraryItem ->
                         val matchingShow = allShows.find { show -> show.showId == libraryItem.showId }
                         
                         if (matchingShow != null) {
                             // Use the actual show data with recordings
+                            println("DEBUG LibraryViewModel: Found show ${libraryItem.showId} with ${matchingShow.recordings.size} recordings")
+                            if (libraryItem.showId.contains("1995-07-09")) {
+                                println("DEBUG LibraryViewModel: 1995-07-09 details - showId: ${matchingShow.showId}, recordings: ${matchingShow.recordings.size}")
+                                matchingShow.recordings.take(3).forEach { recording ->
+                                    println("DEBUG LibraryViewModel: 1995-07-09 recording: ${recording.identifier}")
+                                }
+                            }
                             matchingShow.copy(isInLibrary = true)
                         } else {
-                            // Create basic show from showId if not found
+                            // This should never happen now - shows should always have ShowEntity records
+                            println("ERROR LibraryViewModel: Show ${libraryItem.showId} not found in getAllShows() - this indicates a bug!")
+                            if (libraryItem.showId.contains("1995-07-09")) {
+                                println("ERROR LibraryViewModel: 1995-07-09 is missing from getAllShows()!")
+                                println("ERROR LibraryViewModel: Available shows: ${allShows.map { it.showId }.filter { it.contains("1995") }}")
+                            }
                             val parts = libraryItem.showId.split("_")
                             val date = parts.getOrNull(0) ?: "Unknown Date"
                             val venue = parts.drop(1).joinToString(" ").replace("_", " ") 

@@ -117,3 +117,12 @@ data class RecordingEntity(
         }
     }
 }
+
+/**
+ * Extension function to convert Recording to RecordingEntity
+ */
+fun Recording.toRecordingEntity(): RecordingEntity {
+    // Calculate showId the same way Show class does
+    val showId = "${concertDate}_${concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+    return RecordingEntity.fromRecording(this, showId)
+}
