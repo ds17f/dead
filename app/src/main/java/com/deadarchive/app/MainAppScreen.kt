@@ -134,7 +134,8 @@ fun MainAppScreen(
                     onNavigateToRepositoryTest = { navController.navigate("repository_test") },
                     onNavigateToDatabaseTest = { navController.navigate("database_test") },
                     onNavigateToNetworkTest = { navController.navigate("network_test") },
-                    onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") }
+                    onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") },
+                    onNavigateToWorkManagerTest = { navController.navigate("workmanager_test") }
                 )
             }
             
@@ -159,6 +160,12 @@ fun MainAppScreen(
             
             composable("media_player_test") {
                 MediaPlayerTestScreen(
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+            
+            composable("workmanager_test") {
+                WorkManagerTestScreen(
                     onNavigateBack = { navController.popBackStack() }
                 )
             }

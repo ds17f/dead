@@ -24,6 +24,7 @@ fun DebugScreen(
     onNavigateToDatabaseTest: () -> Unit,
     onNavigateToNetworkTest: () -> Unit,
     onNavigateToMediaPlayerTest: () -> Unit,
+    onNavigateToWorkManagerTest: () -> Unit,
     viewModel: DebugViewModel = hiltViewModel()
 ) {
     val scope = rememberCoroutineScope()
@@ -151,6 +152,13 @@ fun DebugScreen(
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text("Media Player Testing")
+                    }
+                    
+                    OutlinedButton(
+                        onClick = onNavigateToWorkManagerTest,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("WorkManager Testing")
                     }
                 }
             }

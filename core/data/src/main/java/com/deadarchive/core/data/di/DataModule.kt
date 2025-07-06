@@ -8,6 +8,7 @@ import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.LibraryRepositoryImpl
 import com.deadarchive.core.data.sync.DataSyncService
 import com.deadarchive.core.data.sync.DataSyncServiceImpl
+import com.deadarchive.core.data.debug.WorkManagerDebugUtil
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -161,13 +161,23 @@ dependencies {
     // Media3 (for annotations)
     implementation("androidx.media3:media3-common:1.3.1")
     
+    // WorkManager
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    implementation("androidx.hilt:hilt-work:1.1.0")
+    
     // Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-compiler:2.51.1")
+    kapt("androidx.hilt:hilt-compiler:1.1.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
+    testImplementation("androidx.work:work-testing:2.9.0")
+    testImplementation("org.robolectric:robolectric:4.11.1")
+    testImplementation("com.google.dagger:hilt-android-testing:2.51.1")
+    testImplementation("com.google.truth:truth:1.4.2")
+    kaptTest("com.google.dagger:hilt-compiler:2.51.1")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2024.05.00"))
