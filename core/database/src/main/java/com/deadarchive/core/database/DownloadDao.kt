@@ -59,6 +59,9 @@ interface DownloadDao {
     @Query("UPDATE downloads SET status = :status, completedTimestamp = :timestamp WHERE id = :id")
     suspend fun updateDownloadStatus(id: String, status: String, timestamp: Long? = null)
     
+    @Query("UPDATE downloads SET localPath = :localPath WHERE id = :id")
+    suspend fun updateDownloadLocalPath(id: String, localPath: String)
+    
     // Enhanced queue and priority management
     @Query("DELETE FROM downloads WHERE status = :status")
     suspend fun deleteDownloadsByStatus(status: String)

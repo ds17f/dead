@@ -68,6 +68,11 @@ interface DownloadRepository {
     suspend fun updateDownloadStatus(id: String, status: DownloadStatus, errorMessage: String? = null)
     
     /**
+     * Update download local file path
+     */
+    suspend fun updateDownloadLocalPath(id: String, localPath: String)
+    
+    /**
      * Pause a download
      */
     suspend fun pauseDownload(id: String)
@@ -287,6 +292,10 @@ class DownloadRepositoryImpl @Inject constructor(
                 downloadDao.updateDownload(updatedDownload)
             }
         }
+    }
+
+    override suspend fun updateDownloadLocalPath(id: String, localPath: String) {
+        downloadDao.updateDownloadLocalPath(id, localPath)
     }
 
     override suspend fun pauseDownload(id: String) {

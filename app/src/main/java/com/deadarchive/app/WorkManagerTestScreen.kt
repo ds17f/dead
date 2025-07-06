@@ -105,7 +105,7 @@ fun WorkManagerTestScreen(
                 }
             }
             
-            // Action Buttons
+            // Action Buttons Row 1
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
@@ -135,6 +135,34 @@ fun WorkManagerTestScreen(
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Text("Copy Report")
+                }
+            }
+            
+            // Action Buttons Row 2 - Download Testing
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Button(
+                    onClick = { viewModel.testDownloadWorker() },
+                    modifier = Modifier.weight(1f),
+                    enabled = !uiState.isLoading,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.secondary
+                    )
+                ) {
+                    Text("Test Download Worker")
+                }
+                
+                OutlinedButton(
+                    onClick = { viewModel.cancelAllWork() },
+                    modifier = Modifier.weight(1f),
+                    enabled = !uiState.isLoading,
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        contentColor = MaterialTheme.colorScheme.error
+                    )
+                ) {
+                    Text("Cancel All Work")
                 }
             }
             
