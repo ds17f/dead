@@ -16,6 +16,7 @@ import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
+import com.deadarchive.core.settings.SettingsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -24,9 +25,11 @@ fun ConcertListScreen(
     onRecordingSelected: (Recording) -> Unit,
     onNavigateToPlayer: () -> Unit,
     modifier: Modifier = Modifier,
-    viewModel: ConcertListViewModel = hiltViewModel()
+    viewModel: ConcertListViewModel = hiltViewModel(),
+    settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val settings by settingsViewModel.settings.collectAsState()
     
     Column(
         modifier = modifier.fillMaxSize()
@@ -157,6 +160,7 @@ fun ConcertListScreen(
                         ) { show ->
                             ExpandableConcertItem(
                                 show = show,
+                                settings = settings,
                                 onShowClick = { selectedShow ->
                                     // Navigate to playlist with best recording
                                     selectedShow.bestRecording?.let { recording ->

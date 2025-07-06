@@ -44,7 +44,9 @@ dependencies {
     implementation(project(":core:design"))
     implementation(project(":core:model"))
     implementation(project(":core:data"))
+    implementation(project(":core:database"))
     implementation(project(":core:network"))
+    implementation(project(":core:settings"))
     implementation(project(":feature:playlist"))
     
     implementation("androidx.core:core-ktx:1.12.0")

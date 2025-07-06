@@ -55,6 +55,7 @@ interface ShowDao {
            OR location LIKE '%' || :query || '%'
            OR setlistRaw LIKE '%' || :query || '%'
            OR date LIKE '%' || :query || '%'
+           OR year = :query
         ORDER BY date DESC
     """)
     suspend fun searchShows(query: String): List<ShowEntity>

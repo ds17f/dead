@@ -41,6 +41,8 @@ interface ShowRepository {
     
     // Debug methods
     suspend fun debugDatabaseState(): String
+    suspend fun getShowEntityById(showId: String): ShowEntity?
+    suspend fun getShowById(showId: String): Show?
 }
 
 @Singleton
@@ -58,21 +60,24 @@ class ShowRepositoryImpl @Inject constructor(
     }
     
     override fun getAllShows(): Flow<List<Show>> = flow {
+        android.util.Log.d("ShowRepository", "📋 getAllShows: Starting to retrieve all shows from database")
         try {
             // Get all shows from database with their recordings
             val showEntities = showDao.getAllShows()
+            android.util.Log.d("ShowRepository", "📋 Found ${showEntities.size} show entities in database")
+            
             val shows = showEntities.map { showEntity ->
                 // Get recordings for this show
                 val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
-                println("DEBUG: Show ${showEntity.showId} has ${recordings.size} recordings")
+                android.util.Log.d("ShowRepository", "📋 Show '${showEntity.showId}' has ${recordings.size} recordings from database")
                 showEntity.toShow(recordings)
             }
+            
+            android.util.Log.d("ShowRepository", "📋 Successfully retrieved ${shows.size} shows from database")
             emit(shows)
         } catch (e: Exception) {
-            // Fallback to grouping all recordings if show entities don't exist
-            val allRecordings = recordingDao.getAllRecordings().firstOrNull()?.map { it.toRecording() } ?: emptyList()
-            val shows = groupRecordingsIntoShows(allRecordings)
-            emit(shows)
+            android.util.Log.e("ShowRepository", "📋 ❌ Failed to get shows from database: ${e.message}", e)
+            emit(emptyList())
         }
     }
     
@@ -86,52 +91,38 @@ class ShowRepositoryImpl @Inject constructor(
     }
     
     override fun searchShows(query: String): Flow<List<Show>> = flow {
+        android.util.Log.d("ShowRepository", "🔍 searchShows called with query: '$query'")
         try {
-            // First try to search shows directly in the database
+            // ONLY search shows from database - shows should already exist from initial setup
             val cachedShows = showDao.searchShows(query)
+            android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from database search")
             
-            if (cachedShows.isNotEmpty()) {
-                // Use actual Show entities with their recordings
-                val shows = cachedShows.map { showEntity ->
-                    val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
-                    println("DEBUG: Search - Show ${showEntity.showId} has ${recordings.size} recordings")
-                    showEntity.toShow(recordings)
-                }
-                emit(shows)
-            } else {
-                // Fallback: search recordings and group into shows
-                val cachedRecordings = recordingDao.searchRecordings(query).map { it.toRecording() }
-                
-                if (cachedRecordings.isNotEmpty()) {
-                    val shows = groupRecordingsIntoShows(cachedRecordings)
-                    emit(shows)
-                } else {
-                    // If no cached results, search via API
-                    val apiRecordings = searchRecordingsViaApi(query)
-                    val shows = groupRecordingsIntoShows(apiRecordings)
-                    emit(shows)
-                }
+            // Use actual Show entities with their recordings
+            val databaseShows = cachedShows.map { showEntity ->
+                val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
+                android.util.Log.d("ShowRepository", "🔍 Database show '${showEntity.showId}' has ${recordings.size} recordings")
+                showEntity.toShow(recordings)
             }
+            
+            android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} shows from database")
+            databaseShows.forEach { show ->
+                android.util.Log.d("ShowRepository", "🔍   Show: '${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings")
+            }
+            emit(databaseShows.sortedByDescending { it.date })
         } catch (e: Exception) {
-            // On error, emit empty list
+            android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchShows: ${e.message}", e)
             emit(emptyList())
         }
     }
     
     override fun searchRecordings(query: String): Flow<List<Recording>> = flow {
         try {
-            // First try to search locally cached recordings
+            // ONLY search locally cached recordings - no API fallback
             val cachedRecordings = recordingDao.searchRecordings(query).map { it.toRecording() }
-            
-            if (cachedRecordings.isNotEmpty()) {
-                emit(cachedRecordings)
-            } else {
-                // If no cached results, search via API
-                val apiRecordings = searchRecordingsViaApi(query)
-                emit(apiRecordings)
-            }
+            android.util.Log.d("ShowRepository", "🔍 searchRecordings found ${cachedRecordings.size} recordings from database")
+            emit(cachedRecordings)
         } catch (e: Exception) {
-            // On error, emit empty list
+            android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchRecordings: ${e.message}", e)
             emit(emptyList())
         }
     }
@@ -257,13 +248,17 @@ class ShowRepositoryImpl @Inject constructor(
         return getStreamingUrl(identifier, trackQuery)
     }
     
+    // NOTE: This method is kept for potential future use in database initialization
+    // but should NOT be called during normal browse operations
     private suspend fun searchRecordingsViaApi(query: String): List<Recording> {
+        android.util.Log.d("ShowRepository", "🌐 searchRecordingsViaApi: Starting API search for query '$query'")
         return try {
             val searchQuery = when {
                 query.matches(Regex("\\d{4}")) -> "collection:GratefulDead AND date:$query*"
                 query.isBlank() -> "collection:GratefulDead"
                 else -> "collection:GratefulDead AND ($query)"
             }
+            android.util.Log.d("ShowRepository", "🌐 Transformed query: '$searchQuery'")
             
             val response = archiveApiService.searchRecordings(searchQuery, rows = 50)
             if (response.isSuccessful) {
@@ -273,60 +268,37 @@ class ShowRepositoryImpl @Inject constructor(
                     }
                 } ?: emptyList()
                 
-                // Save recordings AND corresponding ShowEntity records to database
+                android.util.Log.d("ShowRepository", "🌐 API returned ${recordings.size} recordings")
+                
+                // Save recordings to database (shows will be created by the emergency fallback logic)
                 if (recordings.isNotEmpty()) {
+                    android.util.Log.d("ShowRepository", "🌐 About to save ${recordings.size} API recordings to database")
                     try {
-                        // Group recordings by show and create ShowEntity records
-                        val recordingsByShow = recordings.groupBy { recording ->
-                            "${recording.concertDate}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                        // Save recordings with proper showId associations
+                        val recordingEntities = recordings.map { recording ->
+                            val normalizedDate = normalizeDate(recording.concertDate)
+                            val showId = "${normalizedDate}_${normalizeVenue(recording.concertVenue)}"
+                            android.util.Log.d("ShowRepository", "🌐 Mapping recording ${recording.identifier} to showId '$showId'")
+                            RecordingEntity.fromRecording(recording, showId)
                         }
                         
-                        val recordingEntities = mutableListOf<RecordingEntity>()
-                        val newShowEntities = mutableListOf<ShowEntity>()
-                        
-                        for ((showId, showRecordings) in recordingsByShow) {
-                            // Create RecordingEntity records
-                            val entities = showRecordings.map { recording ->
-                                RecordingEntity.fromRecording(recording, showId)
-                            }
-                            recordingEntities.addAll(entities)
-                            
-                            // Create ShowEntity if it doesn't exist
-                            if (!showDao.showExists(showId)) {
-                                val firstRecording = showRecordings.first()
-                                val showEntity = ShowEntity(
-                                    showId = showId,
-                                    date = firstRecording.concertDate.take(10),
-                                    venue = firstRecording.concertVenue,
-                                    location = firstRecording.concertLocation,
-                                    year = firstRecording.concertDate.take(4),
-                                    setlistRaw = null,
-                                    setsJson = null,
-                                    isInLibrary = false, // Will be updated if added to library
-                                    cachedTimestamp = System.currentTimeMillis()
-                                )
-                                newShowEntities.add(showEntity)
-                            }
-                        }
-                        
-                        // Save everything atomically
-                        if (newShowEntities.isNotEmpty()) {
-                            showDao.insertShows(newShowEntities)
-                            println("DEBUG: Created ${newShowEntities.size} ShowEntity records from API")
-                        }
                         recordingDao.insertRecordings(recordingEntities)
-                        println("DEBUG: Saved ${recordings.size} API recordings to database")
+                        android.util.Log.d("ShowRepository", "🌐 ✅ Saved ${recordings.size} API recordings to database")
                     } catch (e: Exception) {
-                        println("ERROR: Failed to save API recordings and shows: ${e.message}")
-                        // Continue anyway - the recordings will still work for this search
+                        android.util.Log.e("ShowRepository", "🌐 ❌ Failed to save API recordings: ${e.message}", e)
                     }
+                } else {
+                    android.util.Log.d("ShowRepository", "🌐 No recordings returned from API")
                 }
                 
+                android.util.Log.d("ShowRepository", "🌐 Returning ${recordings.size} recordings from API")
                 recordings
             } else {
+                android.util.Log.w("ShowRepository", "🌐 API response was not successful: ${response.code()}")
                 emptyList()
             }
         } catch (e: Exception) {
+            android.util.Log.e("ShowRepository", "🌐 ❌ Exception in searchRecordingsViaApi: ${e.message}", e)
             emptyList()
         }
     }
@@ -358,59 +330,226 @@ class ShowRepositoryImpl @Inject constructor(
         return report.toString()
     }
     
-    private suspend fun groupRecordingsIntoShows(recordings: List<Recording>): List<Show> {
-        val groupedRecordings = recordings.groupBy { "${it.concertDate}_${it.concertVenue}" }
+    override suspend fun getShowEntityById(showId: String): ShowEntity? {
+        return try {
+            showDao.getShowById(showId)
+        } catch (e: Exception) {
+            android.util.Log.e(TAG, "Error fetching ShowEntity: $showId", e)
+            null
+        }
+    }
+    
+    override suspend fun getShowById(showId: String): Show? {
+        return try {
+            val showEntity = showDao.getShowById(showId) ?: return null
+            val recordings = recordingDao.getRecordingsByConcertId(showId).map { it.toRecording() }
+            val isInLibrary = libraryDao.isShowInLibrary(showId)
+            
+            Show(
+                date = showEntity.date,
+                venue = showEntity.venue,
+                location = showEntity.location,
+                year = showEntity.year,
+                recordings = recordings,
+                isInLibrary = isInLibrary
+            )
+        } catch (e: Exception) {
+            android.util.Log.e(TAG, "Error fetching Show: $showId", e)
+            null
+        }
+    }
+    
+    /**
+     * CANONICAL show creation method - the ONLY way to create shows from recordings
+     * Creates ShowEntity records in database and returns Show objects
+     */
+    private suspend fun createAndSaveShowsFromRecordings(recordings: List<Recording>): List<Show> {
+        android.util.Log.d("ShowRepository", "🔧 createAndSaveShowsFromRecordings: Processing ${recordings.size} recordings")
+        android.util.Log.d("ShowRepository", "🔧 Recording identifiers: ${recordings.map { it.identifier }}")
+        
+        // Group recordings by normalized date + venue
+        val groupedRecordings = recordings.groupBy { recording ->
+            val normalizedDate = normalizeDate(recording.concertDate)
+            val normalizedVenue = normalizeVenue(recording.concertVenue)
+            val showId = "${normalizedDate}_${normalizedVenue}"
+            android.util.Log.d("ShowRepository", "🔧 Recording ${recording.identifier}: date='${recording.concertDate}' → '$normalizedDate', venue='${recording.concertVenue}' → '$normalizedVenue', showId='$showId'")
+            showId
+        }
+        
+        android.util.Log.d("ShowRepository", "🔧 Grouped recordings into ${groupedRecordings.size} potential shows:")
+        groupedRecordings.forEach { (showId, recordings) ->
+            android.util.Log.d("ShowRepository", "🔧   Show '$showId': ${recordings.size} recordings [${recordings.map { it.identifier }}]")
+        }
+        
         val shows = mutableListOf<Show>()
         val newShowEntities = mutableListOf<ShowEntity>()
+        val failedShows = mutableListOf<String>()
         
-        for ((showKey, recordingGroup) in groupedRecordings) {
-            val show = Show(
-                date = recordingGroup.first().concertDate,
-                venue = recordingGroup.first().concertVenue,
-                location = recordingGroup.first().concertLocation,
-                year = recordingGroup.first().concertDate.take(4),
-                recordings = recordingGroup,
-                isInLibrary = false // Will be updated below
-            )
-            
-            // Check if this show is in the library
-            val isInLibrary = libraryDao.isShowInLibrary(show.showId)
-            val finalShow = show.copy(isInLibrary = isInLibrary)
-            shows.add(finalShow)
-            
-            // Check if ShowEntity already exists, if not, create it
-            if (!showDao.showExists(show.showId)) {
+        for ((_, recordingGroup) in groupedRecordings) {
+            try {
                 val firstRecording = recordingGroup.first()
-                val showEntity = ShowEntity(
-                    showId = show.showId,
-                    date = firstRecording.concertDate.take(10), // Take only YYYY-MM-DD part
-                    venue = firstRecording.concertVenue,
+                val normalizedDate = normalizeDate(firstRecording.concertDate)
+                
+                // Validate we can create a proper show
+                if (normalizedDate.isBlank()) {
+                    failedShows.add("Invalid date for recordings: ${recordingGroup.map { it.identifier }}")
+                    continue
+                }
+                
+                val normalizedVenue = normalizeVenue(firstRecording.concertVenue)
+                val showId = "${normalizedDate}_${normalizedVenue}"
+                
+                // Debug: Show venue normalization in action
+                if (firstRecording.concertVenue != normalizedVenue) {
+                    android.util.Log.d("ShowRepository", "Venue normalized: '${firstRecording.concertVenue}' → '$normalizedVenue'")
+                }
+                
+                // Check if ShowEntity already exists
+                val showExists = showDao.showExists(showId)
+                android.util.Log.d("ShowRepository", "🔧 Checking if show '$showId' exists in database: $showExists")
+                
+                if (showExists) {
+                    android.util.Log.d("ShowRepository", "🔧 SKIPPING show creation for '$showId' - already exists in database")
+                } else {
+                    android.util.Log.d("ShowRepository", "🔧 WILL CREATE new show entity for '$showId'")
+                }
+                
+                if (!showExists) {
+                    // Create new ShowEntity - use original venue name for display
+                    val showEntity = ShowEntity(
+                        showId = showId, // Uses normalized venue for deduplication
+                        date = normalizedDate,
+                        venue = firstRecording.concertVenue, // Keep original readable venue name
+                        location = firstRecording.concertLocation,
+                        year = normalizedDate.take(4),
+                        setlistRaw = null,
+                        setsJson = null,
+                        isInLibrary = false, // Will be updated when added to library
+                        cachedTimestamp = System.currentTimeMillis()
+                    )
+                    newShowEntities.add(showEntity)
+                    android.util.Log.d("ShowRepository", "🔧 Added new ShowEntity to creation list: $showId with ${recordingGroup.size} recordings")
+                    android.util.Log.d("ShowRepository", "🔧   ShowEntity details: date='$normalizedDate', venue='${firstRecording.concertVenue}', location='${firstRecording.concertLocation}'")
+                }
+                
+                // Create Show object - use ORIGINAL venue name for display, normalized only for showId
+                val isInLibrary = libraryDao.isShowInLibrary(showId)
+                val show = Show(
+                    date = normalizedDate,
+                    venue = firstRecording.concertVenue, // Keep original readable venue name
                     location = firstRecording.concertLocation,
-                    year = firstRecording.concertDate.take(4),
-                    setlistRaw = null, // We don't have setlist data from recordings
-                    setsJson = null,
-                    isInLibrary = isInLibrary,
-                    cachedTimestamp = System.currentTimeMillis()
+                    year = normalizedDate.take(4),
+                    recordings = recordingGroup,
+                    isInLibrary = isInLibrary
                 )
-                newShowEntities.add(showEntity)
-                println("DEBUG: Will create ShowEntity for ${show.showId}")
+                shows.add(show)
+                
+            } catch (e: Exception) {
+                failedShows.add("Failed to create show from recordings ${recordingGroup.map { it.identifier }}: ${e.message}")
+                android.util.Log.e("ShowRepository", "Failed to create show from recordings: ${e.message}")
             }
         }
         
-        // Save new ShowEntity records if any were created
+        // Save new ShowEntity records
         if (newShowEntities.isNotEmpty()) {
+            android.util.Log.d("ShowRepository", "🔧 About to save ${newShowEntities.size} new ShowEntity records to database:")
+            newShowEntities.forEach { entity ->
+                android.util.Log.d("ShowRepository", "🔧   Saving ShowEntity: showId='${entity.showId}', date='${entity.date}', venue='${entity.venue}'")
+            }
             try {
                 showDao.insertShows(newShowEntities)
-                println("DEBUG: Successfully saved ${newShowEntities.size} new ShowEntity records")
+                android.util.Log.d("ShowRepository", "🔧 ✅ Successfully saved ${newShowEntities.size} new ShowEntity records to database")
+                
+                // Verify what we actually saved
+                newShowEntities.forEach { entity ->
+                    val exists = showDao.showExists(entity.showId)
+                    android.util.Log.d("ShowRepository", "🔧 Post-save verification: '${entity.showId}' exists in database: $exists")
+                }
             } catch (e: Exception) {
-                println("ERROR: Failed to save ShowEntity records: ${e.message}")
-                // Continue anyway - the shows will still work, just won't be persisted
+                android.util.Log.e("ShowRepository", "🔧 ❌ CRITICAL: Failed to save ShowEntity records: ${e.message}")
+                android.util.Log.e("ShowRepository", "🔧 Exception details:", e)
+                failedShows.add("Database save failed: ${e.message}")
+            }
+        } else {
+            android.util.Log.d("ShowRepository", "🔧 No new ShowEntity records to save - all shows already exist")
+        }
+        
+        // Log any failures
+        if (failedShows.isNotEmpty()) {
+            android.util.Log.w("ShowRepository", "Failed to create ${failedShows.size} shows:")
+            failedShows.forEach { failure ->
+                android.util.Log.w("ShowRepository", "  - $failure")
             }
         }
         
+        android.util.Log.d("ShowRepository", "🔧 ✅ Successfully created ${shows.size} shows from ${recordings.size} recordings")
+        android.util.Log.d("ShowRepository", "🔧 Final show summary:")
+        shows.forEach { show ->
+            android.util.Log.d("ShowRepository", "🔧   Show: showId='${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings")
+        }
         return shows.sortedByDescending { it.date }
     }
     
+    /**
+     * Normalize date from potentially timestamped format to simple YYYY-MM-DD format
+     */
+    private fun normalizeDate(date: String?): String {
+        if (date.isNullOrBlank()) return ""
+        return if (date.contains("T")) {
+            date.substringBefore("T")
+        } else {
+            date
+        }
+    }
+    
+    /**
+     * Normalize venue name to eliminate duplicates caused by inconsistent venue names
+     */
+    private fun normalizeVenue(venue: String?): String {
+        if (venue.isNullOrBlank()) return "Unknown"
+        
+        return venue
+            // Remove punctuation that causes issues
+            .replace("'", "")      // Veterans' -> Veterans
+            .replace("'", "")      // Smart quote
+            .replace(".", "")      // U.C.S.B. -> UCSB
+            .replace("\"", "")     // Remove quotes
+            .replace("(", "_")     // Convert parens to underscores
+            .replace(")", "_")
+            
+            // Normalize separators
+            .replace(" - ", "_")   // Common separator
+            .replace(" – ", "_")   // Em dash
+            .replace(", ", "_")    // Comma separator
+            .replace(" & ", "_and_")
+            .replace("&", "_and_")
+            
+            // Standardize common word variations
+            .replace("Theatre", "Theater", ignoreCase = true)
+            .replace("Center", "Center", ignoreCase = true)  // Keep consistent
+            .replace("Coliseum", "Coliseum", ignoreCase = true)
+            
+            // University abbreviations (most common cases)
+            .replace(" University", "_U", ignoreCase = true)
+            .replace(" College", "_C", ignoreCase = true)
+            .replace(" State", "_St", ignoreCase = true)
+            .replace("Memorial", "Mem", ignoreCase = true)
+            .replace("Auditorium", "Aud", ignoreCase = true)
+            .replace("Stadium", "Stad", ignoreCase = true)
+            
+            // Remove common filler words
+            .replace(" The ", "_", ignoreCase = true)
+            .replace("The ", "", ignoreCase = true)
+            .replace(" of ", "_", ignoreCase = true)
+            .replace(" at ", "_", ignoreCase = true)
+            
+            // Clean up and normalize
+            .replace(Regex("\\s+"), "_")     // Any whitespace to underscore
+            .replace(Regex("_+"), "_")       // Multiple underscores to single
+            .trim('_')                       // Remove leading/trailing underscores
+            .lowercase()                     // Consistent case
+    }
+
     /**
      * Check if cache entry is expired
      */

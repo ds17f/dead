@@ -130,6 +130,32 @@ class SettingsViewModel @Inject constructor(
         }
     }
     
+    /**
+     * Update the debug info visibility setting
+     */
+    fun updateShowDebugInfo(showDebugInfo: Boolean) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Updating show debug info to: $showDebugInfo")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                settingsRepository.updateShowDebugInfo(showDebugInfo)
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = if (showDebugInfo) "Debug panels enabled" else "Debug panels disabled"
+                )
+                Log.d(TAG, "Show debug info setting updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update show debug info setting", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update debug setting: ${e.message}"
+                )
+            }
+        }
+    }
     
     /**
      * Reset all settings to their default values

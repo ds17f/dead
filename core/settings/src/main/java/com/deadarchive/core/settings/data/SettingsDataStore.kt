@@ -34,6 +34,7 @@ class SettingsDataStore @Inject constructor(
     private val audioFormatPreferenceKey = stringPreferencesKey(AppConstants.PREF_AUDIO_QUALITY)
     private val themeModeKey = stringPreferencesKey(AppConstants.PREF_THEME_MODE)
     private val downloadWifiOnlyKey = booleanPreferencesKey(AppConstants.PREF_DOWNLOAD_WIFI_ONLY)
+    private val showDebugInfoKey = booleanPreferencesKey(AppConstants.PREF_SHOW_DEBUG_INFO)
     
     /**
      * Reactive flow of application settings
@@ -74,6 +75,14 @@ class SettingsDataStore @Inject constructor(
         }
     }
     
+    /**
+     * Update debug info visibility setting
+     */
+    suspend fun updateShowDebugInfo(showDebugInfo: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[showDebugInfoKey] = showDebugInfo
+        }
+    }
     
     /**
      * Reset all settings to defaults
@@ -105,7 +114,8 @@ class SettingsDataStore @Inject constructor(
         return AppSettings(
             audioFormatPreference = audioFormatPreference,
             themeMode = themeMode,
-            downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true
+            downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true,
+            showDebugInfo = this[showDebugInfoKey] ?: false
         )
     }
 }

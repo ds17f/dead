@@ -9,6 +9,8 @@ import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.PlaylistItem
 import com.deadarchive.core.model.Track
+import com.deadarchive.core.model.Show
+import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.network.mapper.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -621,6 +623,53 @@ class PlayerViewModel @Inject constructor(
     
     companion object {
         private const val TAG = "PlayerViewModel"
+    }
+    
+    /**
+     * Get ShowEntity by showId for debug purposes
+     */
+    suspend fun getShowEntityById(showId: String): ShowEntity? {
+        return try {
+            showRepository.getShowEntityById(showId)
+        } catch (e: Exception) {
+            Log.e(TAG, "Error fetching ShowEntity: $showId", e)
+            null
+        }
+    }
+    
+    /**
+     * Get Show object from Recording for debug purposes
+     */
+    suspend fun getShowByRecording(recording: Recording): Show? {
+        return try {
+            // Calculate showId from recording
+            val normalizedDate = if (recording.concertDate.contains("T")) {
+                recording.concertDate.substringBefore("T")
+            } else {
+                recording.concertDate
+            }
+            val normalizedVenue = recording.concertVenue
+                ?.replace("'", "")
+                ?.replace(".", "")
+                ?.replace(" - ", "_")
+                ?.replace(", ", "_")
+                ?.replace(" & ", "_and_")
+                ?.replace("&", "_and_")
+                ?.replace(" University", "_U", true)
+                ?.replace(" College", "_C", true)
+                ?.replace("Memorial", "Mem", true)
+                ?.replace("\\s+".toRegex(), "_")
+                ?.replace("_+".toRegex(), "_")
+                ?.trim('_')
+                ?.lowercase()
+                ?: "unknown"
+            val showId = "${normalizedDate}_${normalizedVenue}"
+            
+            showRepository.getShowById(showId)
+        } catch (e: Exception) {
+            Log.e(TAG, "Error fetching Show from recording", e)
+            null
+        }
     }
 }
 

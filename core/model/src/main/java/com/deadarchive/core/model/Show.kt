@@ -52,7 +52,12 @@ data class Show(
         get() = venue ?: "Unknown Venue"
     
     val displayDate: String
-        get() = date
+        get() = if (date.contains("T")) {
+            android.util.Log.w("Show", "WARNING: Show still has ISO timestamp date: '$date' for venue: '$venue'")
+            date.substringBefore("T")
+        } else {
+            date
+        }
         
     // Recording statistics
     val recordingCount: Int

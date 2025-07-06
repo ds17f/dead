@@ -57,6 +57,7 @@ object AppConstants {
     const val PREF_THEME_MODE = "theme_mode"
     const val PREF_REPEAT_MODE = "repeat_mode"
     const val PREF_SHUFFLE_ENABLED = "shuffle_enabled"
+    const val PREF_SHOW_DEBUG_INFO = "show_debug_info"
     
     // Notification constants
     const val NOTIFICATION_CHANNEL_ID = "playback_channel"

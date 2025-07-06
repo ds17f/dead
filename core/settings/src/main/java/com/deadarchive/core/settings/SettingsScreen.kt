@@ -127,8 +127,10 @@ fun SettingsScreen(
             
             // Developer Options Section
             DeveloperOptionsCard(
+                settings = settings,
                 onNavigateToDebug = onNavigateToDebug,
-                onResetSettings = viewModel::resetToDefaults
+                onResetSettings = viewModel::resetToDefaults,
+                onUpdateShowDebugInfo = viewModel::updateShowDebugInfo
             )
         }
     }
@@ -298,8 +300,10 @@ private fun DownloadSettingsCard(
 
 @Composable
 private fun DeveloperOptionsCard(
+    settings: AppSettings,
     onNavigateToDebug: () -> Unit,
-    onResetSettings: () -> Unit
+    onResetSettings: () -> Unit,
+    onUpdateShowDebugInfo: (Boolean) -> Unit
 ) {
     Card(
         modifier = Modifier.fillMaxWidth()
@@ -313,6 +317,30 @@ private fun DeveloperOptionsCard(
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold
             )
+            
+            // Debug Info Toggle
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "Show Debug Info",
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Display debug panels and technical information",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.showDebugInfo,
+                    onCheckedChange = onUpdateShowDebugInfo
+                )
+            }
             
             OutlinedButton(
                 onClick = onNavigateToDebug,

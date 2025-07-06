@@ -16,15 +16,19 @@ import com.deadarchive.core.model.LibraryItem
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.design.component.ExpandableConcertItem
+import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.SettingsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LibraryScreen(
     onNavigateToRecording: (Recording) -> Unit,
     modifier: Modifier = Modifier,
-    viewModel: LibraryViewModel = hiltViewModel()
+    viewModel: LibraryViewModel = hiltViewModel(),
+    settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val settings by settingsViewModel.settings.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
     Column(
@@ -148,6 +152,7 @@ fun LibraryScreen(
                         ) { show ->
                             ExpandableConcertItem(
                                 show = show,
+                                settings = settings,
                                 onShowClick = { clickedShow: Show ->
                                     // Navigate to best recording of this show
                                     clickedShow.bestRecording?.let { recording ->

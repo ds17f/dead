@@ -43,6 +43,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.ExpandableConcertItem
+import com.deadarchive.core.settings.SettingsViewModel
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -54,11 +55,13 @@ fun BrowseScreen(
         // Navigate using recording ID
         onNavigateToPlayer(recording.identifier)
     },
-    viewModel: BrowseViewModel = hiltViewModel()
+    viewModel: BrowseViewModel = hiltViewModel(),
+    settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val isSearching by viewModel.isSearching.collectAsState()
+    val settings by settingsViewModel.settings.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
     Column(
@@ -150,6 +153,7 @@ fun BrowseScreen(
                         items(state.shows) { show ->
                             ExpandableConcertItem(
                                 show = show,
+                                settings = settings,
                                 onShowClick = { clickedShow: Show ->
                                     // Navigate to best recording of this show
                                     Log.d("BrowseScreen", "onShowClick: Show ${clickedShow.showId} has ${clickedShow.recordings.size} recordings")

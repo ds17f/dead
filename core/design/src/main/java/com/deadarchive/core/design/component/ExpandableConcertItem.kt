@@ -23,13 +23,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.LocalClipboardManager
+import androidx.compose.ui.text.AnnotatedString
 import com.deadarchive.core.design.R
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
+import com.deadarchive.core.settings.model.AppSettings
 
 @Composable
 fun ExpandableConcertItem(
     show: Show,
+    settings: AppSettings,
     onShowClick: (Show) -> Unit,
     onRecordingClick: (Recording) -> Unit,
     onLibraryClick: (Show) -> Unit,
@@ -66,8 +70,10 @@ fun ExpandableConcertItem(
                 exit = shrinkVertically() + fadeOut()
             ) {
                 RecordingsSection(
+                    show = show,
                     recordings = show.recordings,
-                    onRecordingClick = onRecordingClick
+                    onRecordingClick = onRecordingClick,
+                    settings = settings
                 )
             }
         }
@@ -201,15 +207,90 @@ private fun ShowHeader(
 
 @Composable
 private fun RecordingsSection(
+    show: Show,
     recordings: List<Recording>,
     onRecordingClick: (Recording) -> Unit,
+    settings: AppSettings,
     modifier: Modifier = Modifier
 ) {
+    val clipboardManager = LocalClipboardManager.current
+    
     Column(
         modifier = modifier
             .fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
     ) {
+        // Debug panel - moved above recordings list
+        if (settings.showDebugInfo) {
+            DebugPanel(
+                title = "Show Debug Info",
+                isVisible = true,
+                initiallyExpanded = false,
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+            ) {
+                // Debug data
+                val debugData = buildDebugString(show, recordings)
+                
+                // Copy button
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.End
+                ) {
+                    Button(
+                        onClick = {
+                            clipboardManager.setText(AnnotatedString(debugData))
+                        },
+                        modifier = Modifier.height(32.dp),
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp)
+                    ) {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_library_add), // Using available icon, ideally would be copy icon
+                            contentDescription = "Copy to clipboard",
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(
+                            "Copy",
+                            style = MaterialTheme.typography.bodySmall
+                        )
+                    }
+                }
+                
+                Spacer(modifier = Modifier.height(8.dp))
+                
+                // Show basic information
+                DebugText("Show ID", show.showId ?: "N/A")
+                DebugText("Date", show.date)
+                DebugText("Venue", show.venue ?: "N/A")
+                DebugText("Location", show.location ?: "N/A")
+                DebugText("Year", show.year ?: "N/A")
+                
+                DebugDivider()
+                
+                // Show the actual showId that was used (already normalized)
+                DebugText("Show ID (stored)", show.showId ?: "N/A")
+                DebugText("First Recording Venue", recordings.firstOrNull()?.concertVenue ?: "N/A")
+                
+                DebugDivider()
+                
+                // Recording information
+                DebugText("Recording Count", recordings.size.toString())
+                DebugText("Is In Library", show.isInLibrary.toString())
+                DebugText("Available Sources", show.availableSources.joinToString(", "))
+                
+                if (recordings.isNotEmpty()) {
+                    DebugDivider()
+                    DebugText("Recordings", "")
+                    recordings.forEachIndexed { index, recording ->
+                        DebugText("  Recording ${index + 1}", recording.identifier)
+                        DebugText("    Title", recording.title ?: "N/A")
+                        DebugText("    Source", recording.source ?: "N/A")
+                        DebugText("    Clean Source", recording.cleanSource ?: "N/A")
+                    }
+                }
+            }
+        }
+        
         // Section header
         Text(
             text = "Available Recordings",
@@ -235,6 +316,37 @@ private fun RecordingsSection(
         }
         
         Spacer(modifier = Modifier.height(8.dp))
+    }
+}
+
+private fun buildDebugString(show: Show, recordings: List<Recording>): String {
+    return buildString {
+        appendLine("=== SHOW DEBUG INFO ===")
+        appendLine("Show ID: ${show.showId ?: "N/A"}")
+        appendLine("Date: ${show.date}")
+        appendLine("Venue: ${show.venue ?: "N/A"}")
+        appendLine("Location: ${show.location ?: "N/A"}")
+        appendLine("Year: ${show.year ?: "N/A"}")
+        appendLine()
+        appendLine("=== STORED DATA ===")
+        appendLine("Show ID (stored): ${show.showId ?: "N/A"}")
+        appendLine("First Recording Venue: ${recordings.firstOrNull()?.concertVenue ?: "N/A"}")
+        appendLine()
+        appendLine("=== RECORDING INFO ===")
+        appendLine("Recording Count: ${recordings.size}")
+        appendLine("Is In Library: ${show.isInLibrary}")
+        appendLine("Available Sources: ${show.availableSources.joinToString(", ")}")
+        
+        if (recordings.isNotEmpty()) {
+            appendLine()
+            appendLine("=== RECORDINGS ===")
+            recordings.forEachIndexed { index, recording ->
+                appendLine("Recording ${index + 1}: ${recording.identifier}")
+                appendLine("  Title: ${recording.title ?: "N/A"}")
+                appendLine("  Source: ${recording.source ?: "N/A"}")
+                appendLine("  Clean Source: ${recording.cleanSource ?: "N/A"}")
+            }
+        }
     }
 }
 

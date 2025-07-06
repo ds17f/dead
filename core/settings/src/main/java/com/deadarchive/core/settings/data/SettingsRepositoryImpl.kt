@@ -75,6 +75,19 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
+    /**
+     * Update the debug info visibility setting
+     */
+    override suspend fun updateShowDebugInfo(showDebugInfo: Boolean) {
+        try {
+            Log.d(TAG, "Updating show debug info: $showDebugInfo")
+            settingsDataStore.updateShowDebugInfo(showDebugInfo)
+            Log.d(TAG, "Show debug info updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update show debug info setting", e)
+            throw e
+        }
+    }
     
     /**
      * Reset all settings to their default values

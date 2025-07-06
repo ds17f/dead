@@ -25,6 +25,15 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
+import com.deadarchive.core.model.PlaylistItem
+import com.deadarchive.core.model.Show
+import com.deadarchive.core.database.ShowEntity
+import com.deadarchive.core.design.component.DebugPanel
+import com.deadarchive.core.design.component.DebugText
+import com.deadarchive.core.design.component.DebugDivider
+import com.deadarchive.core.design.component.DebugMultilineText
+import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
 import kotlinx.coroutines.delay
 import java.text.SimpleDateFormat
@@ -36,12 +45,59 @@ fun PlaylistScreen(
     onNavigateBack: () -> Unit,
     onNavigateToPlayer: () -> Unit,
     recordingId: String? = null,
-    viewModel: PlayerViewModel = hiltViewModel()
+    viewModel: PlayerViewModel = hiltViewModel(),
+    settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     Log.d("PlaylistScreen", "PlaylistScreen: Composing with recordingId: $recordingId")
     
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
+    val settings by settingsViewModel.settings.collectAsState()
+    
+    // Debug information states
+    var debugShow by remember { mutableStateOf<Show?>(null) }
+    var debugShowEntity by remember { mutableStateOf<ShowEntity?>(null) }
+    
+    // Fetch debug information when recording changes
+    LaunchedEffect(currentRecording, settings.showDebugInfo) {
+        if (settings.showDebugInfo && currentRecording != null) {
+            try {
+                val showId = currentRecording?.let { recording ->
+                    val normalizedDate = if (recording.concertDate.contains("T")) {
+                        recording.concertDate.substringBefore("T")
+                    } else {
+                        recording.concertDate
+                    }
+                    val normalizedVenue = recording.concertVenue
+                        ?.replace("'", "")
+                        ?.replace(".", "")
+                        ?.replace(" - ", "_")
+                        ?.replace(", ", "_")
+                        ?.replace(" & ", "_and_")
+                        ?.replace("&", "_and_")
+                        ?.replace(" University", "_U", true)
+                        ?.replace(" College", "_C", true)
+                        ?.replace("Memorial", "Mem", true)
+                        ?.replace("\\s+".toRegex(), "_")
+                        ?.replace("_+".toRegex(), "_")
+                        ?.trim('_')
+                        ?.lowercase()
+                        ?: "unknown"
+                    "${normalizedDate}_${normalizedVenue}"
+                }
+                
+                if (showId != null) {
+                    debugShowEntity = viewModel.getShowEntityById(showId)
+                    debugShow = viewModel.getShowByRecording(currentRecording!!)
+                }
+            } catch (e: Exception) {
+                Log.e("PlaylistScreen", "Error fetching debug info", e)
+            }
+        } else {
+            debugShow = null
+            debugShowEntity = null
+        }
+    }
     
     // Only load recording metadata for display, not for playback
     LaunchedEffect(recordingId) {
@@ -220,6 +276,90 @@ fun PlaylistScreen(
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier.padding(bottom = 8.dp)
                             )
+                        }
+                        
+                        // Debug panel
+                        if (settings.showDebugInfo && currentRecording != null) {
+                            item {
+                                DebugPanel(
+                                    title = "Database Debug Info",
+                                    isVisible = settings.showDebugInfo,
+                                    initiallyExpanded = false
+                                ) {
+                                    currentRecording?.let { recording ->
+                                        // Show basic recording info
+                                        DebugText("Recording ID", recording.identifier)
+                                        DebugText("Title", recording.title ?: "N/A")
+                                        DebugText("Concert Date", recording.concertDate)
+                                        DebugText("Concert Venue", recording.concertVenue ?: "N/A")
+                                        DebugText("Concert Location", recording.concertLocation ?: "N/A")
+                                        DebugText("Source", recording.source ?: "N/A")
+                                        DebugText("Tracks Count", "${recording.tracks.size}")
+                                        
+                                        DebugDivider()
+                                        
+                                        // Show calculated showId
+                                        val normalizedDate = if (recording.concertDate.contains("T")) {
+                                            recording.concertDate.substringBefore("T")
+                                        } else {
+                                            recording.concertDate
+                                        }
+                                        val normalizedVenue = recording.concertVenue
+                                            ?.replace("'", "")
+                                            ?.replace(".", "")
+                                            ?.replace(" - ", "_")
+                                            ?.replace(", ", "_")
+                                            ?.replace(" & ", "_and_")
+                                            ?.replace("&", "_and_")
+                                            ?.replace(" University", "_U", true)
+                                            ?.replace(" College", "_C", true)
+                                            ?.replace("Memorial", "Mem", true)
+                                            ?.replace("\\s+".toRegex(), "_")
+                                            ?.replace("_+".toRegex(), "_")
+                                            ?.trim('_')
+                                            ?.lowercase()
+                                            ?: "unknown"
+                                        val calculatedShowId = "${normalizedDate}_${normalizedVenue}"
+                                        
+                                        DebugText("Calculated ShowID", calculatedShowId)
+                                        DebugText("Normalized Date", normalizedDate)
+                                        DebugText("Normalized Venue", normalizedVenue)
+                                        
+                                        DebugDivider()
+                                        
+                                        // Show entity information if available
+                                        debugShowEntity?.let { entity ->
+                                            DebugText("DB ShowEntity ID", entity.showId)
+                                            DebugText("DB Date", entity.date)
+                                            DebugText("DB Venue", entity.venue ?: "N/A")
+                                            DebugText("DB Location", entity.location ?: "N/A")
+                                            DebugText("DB Year", entity.year ?: "N/A")
+                                            DebugText("DB In Library", entity.isInLibrary.toString())
+                                            DebugText("DB Cache Time", entity.cachedTimestamp.toString())
+                                            entity.setlistRaw?.let { setlist ->
+                                                DebugMultilineText("DB Setlist", setlist, maxLines = 3)
+                                            }
+                                        } ?: run {
+                                            DebugText("DB ShowEntity", "Not found or not loaded")
+                                        }
+                                        
+                                        DebugDivider()
+                                        
+                                        // Show object information if available
+                                        debugShow?.let { show ->
+                                            DebugText("Show Date", show.date)
+                                            DebugText("Show Venue", show.venue ?: "N/A")
+                                            DebugText("Show Location", show.location ?: "N/A")
+                                            DebugText("Show Year", show.year ?: "N/A")
+                                            DebugText("Show In Library", show.isInLibrary.toString())
+                                            DebugText("Show Recordings", "${show.recordings.size}")
+                                            DebugText("Show ID", show.showId)
+                                        } ?: run {
+                                            DebugText("Show Object", "Not found or not loaded")
+                                        }
+                                    }
+                                }
+                            }
                         }
                         
                         itemsIndexed(uiState.tracks) { index, track ->

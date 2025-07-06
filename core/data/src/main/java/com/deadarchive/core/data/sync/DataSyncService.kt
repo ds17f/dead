@@ -97,6 +97,18 @@ class DataSyncServiceImpl @Inject constructor(
     
     override fun getDownloadProgress(): Flow<SyncProgress> = _downloadProgress.asStateFlow()
     
+    /**
+     * Normalize date from potentially timestamped format to simple YYYY-MM-DD format
+     */
+    private fun normalizeDate(date: String?): String {
+        if (date.isNullOrBlank()) return ""
+        return if (date.contains("T")) {
+            date.substringBefore("T")
+        } else {
+            date
+        }
+    }
+    
     override suspend fun isInitialSyncComplete(): Boolean {
         val metadata = syncMetadataDao.getSyncMetadata()
         return metadata?.lastFullSync != null && metadata.totalConcerts > 0
@@ -249,7 +261,7 @@ class DataSyncServiceImpl @Inject constructor(
             
             groupedShows.forEach { show ->
                 // Create consistent showId from the grouped show
-                val simpleDateFormat = show.date.take(10) // Take only YYYY-MM-DD part
+                val simpleDateFormat = normalizeDate(show.date)
                 val showId = "${simpleDateFormat}_${show.venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
                 
                 // Convert all recordings in this show to RecordingEntity with the same showId
@@ -269,7 +281,7 @@ class DataSyncServiceImpl @Inject constructor(
             val showEntities = showsMap.map { (showId, recordingEntities) ->
                 val firstRecording = recordingEntities.first()
                 // Fix date format for show entity
-                val simpleDateFormat = firstRecording.concertDate.take(10) // Take only YYYY-MM-DD part
+                val simpleDateFormat = normalizeDate(firstRecording.concertDate)
                 ShowEntity(
                     showId = showId,
                     date = simpleDateFormat,
@@ -369,7 +381,7 @@ class DataSyncServiceImpl @Inject constructor(
                 if (!exists) {
                     val recording = ArchiveMapper.run { doc.toRecording() }
                     // Fix date format - convert ISO date to simple YYYY-MM-DD format
-                    val simpleDateFormat = recording.concertDate.take(10) // Take only YYYY-MM-DD part
+                    val simpleDateFormat = normalizeDate(recording.concertDate)
                     val showId = "${simpleDateFormat}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
                     val entity = RecordingEntity.fromRecording(recording, showId)
                     
@@ -387,7 +399,7 @@ class DataSyncServiceImpl @Inject constructor(
                 if (!showExists) {
                     val firstRecording = recordingEntities.first()
                     // Fix date format for show entity
-                    val simpleDateFormat = firstRecording.concertDate.take(10) // Take only YYYY-MM-DD part
+                    val simpleDateFormat = normalizeDate(firstRecording.concertDate)
                     val showEntity = ShowEntity(
                         showId = showId,
                         date = simpleDateFormat,

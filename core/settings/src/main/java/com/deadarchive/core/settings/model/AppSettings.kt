@@ -9,7 +9,8 @@ import com.deadarchive.core.model.AppConstants
 data class AppSettings(
     val audioFormatPreference: List<String> = AppConstants.PREFERRED_AUDIO_FORMATS,
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
-    val downloadOnWifiOnly: Boolean = true
+    val downloadOnWifiOnly: Boolean = true,
+    val showDebugInfo: Boolean = false
 )
 
 /**

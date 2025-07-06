@@ -34,6 +34,11 @@ interface SettingsRepository {
      */
     suspend fun updateDownloadWifiOnly(wifiOnly: Boolean)
     
+    /**
+     * Update the debug info visibility setting
+     * @param showDebugInfo True to show debug panels, false to hide them
+     */
+    suspend fun updateShowDebugInfo(showDebugInfo: Boolean)
     
     /**
      * Reset all settings to their default values
