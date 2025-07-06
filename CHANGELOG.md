@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.14.0] - 2025-07-06
+
+### New Features
+* implement comprehensive debug system and fix duplicate show creation (fdf2f9b)
+* complete show-based library system with confirmation dialogs (da0bc94)
+* implement library functionality and migrate to custom icon system (4c31c5f)
+
+### Bug Fixes
+* resolve library functionality issues with comprehensive architecture fixes (73338de)
+
+
 ## [0.13.0] - 2025-07-03
 
 ### New Features
@@ -24,8 +35,6 @@
 
 ### Documentation Updates
 * Some todo docs (53dd866)
-
-
 ## [0.12.0] - 2025-07-01
 
 ### New Features
