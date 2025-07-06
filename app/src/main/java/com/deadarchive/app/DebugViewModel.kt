@@ -419,4 +419,169 @@ class DebugViewModel @Inject constructor(
             }
         }
     }
+    
+    /**
+     * List all downloads in the system
+     */
+    fun listAllDownloads() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Loading all downloads..."
+                )
+                
+                val allDownloads = downloadRepository.exportDownloadList()
+                val downloadStats = downloadRepository.getDownloadStats()
+                
+                val downloadReport = buildString {
+                    appendLine("📋 ALL DOWNLOADS REPORT")
+                    appendLine("==============================")
+                    appendLine("Total Downloads: ${downloadStats.totalDownloads}")
+                    appendLine("Completed: ${downloadStats.completedDownloads}")
+                    appendLine("Failed: ${downloadStats.failedDownloads}")
+                    appendLine("Total Bytes Downloaded: ${formatBytes(downloadStats.totalBytesDownloaded)}")
+                    appendLine()
+                    
+                    if (allDownloads.isEmpty()) {
+                        appendLine("❌ No downloads found!")
+                        appendLine("Try running 'Test Download' first.")
+                    } else {
+                        appendLine("📁 DOWNLOAD ENTRIES:")
+                        allDownloads.take(10).forEach { download ->
+                            appendLine("• ${download.recordingId}")
+                            appendLine("  Status: ${download.status}")
+                            appendLine("  Progress: ${(download.progress * 100).toInt()}%")
+                            if (download.localPath != null) {
+                                appendLine("  File: ${download.localPath}")
+                            }
+                            if (download.errorMessage != null) {
+                                appendLine("  Error: ${download.errorMessage}")
+                            }
+                            appendLine()
+                        }
+                        
+                        if (allDownloads.size > 10) {
+                            appendLine("... and ${allDownloads.size - 10} more downloads")
+                        }
+                    }
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = downloadReport,
+                    downloadTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "❌ Failed to list downloads: ${e.message}",
+                    downloadTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    /**
+     * Verify that downloaded files actually exist on the file system
+     */
+    fun verifyDownloadedFiles() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Verifying downloaded files..."
+                )
+                
+                val completedDownloads = downloadRepository.getCompletedDownloads().first()
+                val downloadDir = downloadRepository.getDownloadDirectory()
+                val usedSpace = downloadRepository.getUsedStorageSpace()
+                val availableSpace = downloadRepository.getAvailableStorageSpace()
+                
+                val verificationReport = buildString {
+                    appendLine("🔍 FILE VERIFICATION REPORT")
+                    appendLine("==============================")
+                    appendLine("Download Directory: ${downloadDir.absolutePath}")
+                    appendLine("Directory Exists: ${downloadDir.exists()}")
+                    appendLine("Directory Writable: ${downloadDir.canWrite()}")
+                    appendLine("Used Space: ${formatBytes(usedSpace)}")
+                    appendLine("Available Space: ${formatBytes(availableSpace)}")
+                    appendLine()
+                    
+                    if (completedDownloads.isEmpty()) {
+                        appendLine("❌ No completed downloads found!")
+                        appendLine("Downloads may still be in progress or failed.")
+                        appendLine("Check 'List Downloads' for status details.")
+                    } else {
+                        appendLine("📁 COMPLETED DOWNLOADS:")
+                        var filesFound = 0
+                        var filesMissing = 0
+                        
+                        completedDownloads.take(10).forEach { download ->
+                            appendLine("• ${download.recordingId}")
+                            if (download.localPath != null) {
+                                val file = java.io.File(download.localPath)
+                                val exists = file.exists()
+                                val size = if (exists) file.length() else 0
+                                
+                                appendLine("  File: ${download.localPath}")
+                                appendLine("  Exists: ${if (exists) "✅ YES" else "❌ NO"}")
+                                if (exists) {
+                                    appendLine("  Size: ${formatBytes(size)}")
+                                    filesFound++
+                                } else {
+                                    filesMissing++
+                                }
+                            } else {
+                                appendLine("  ❌ No local path recorded")
+                                filesMissing++
+                            }
+                            appendLine()
+                        }
+                        
+                        appendLine("SUMMARY:")
+                        appendLine("✅ Files Found: $filesFound")
+                        appendLine("❌ Files Missing: $filesMissing")
+                        
+                        if (completedDownloads.size > 10) {
+                            appendLine("... and ${completedDownloads.size - 10} more completed downloads")
+                        }
+                    }
+                    
+                    appendLine()
+                    appendLine("🔧 TROUBLESHOOTING:")
+                    if (completedDownloads.isEmpty()) {
+                        appendLine("• Run 'Test Download' to create downloads")
+                        appendLine("• Check 'List Downloads' for current status")
+                        appendLine("• Monitor logcat for download worker activity")
+                    } else if (completedDownloads.isNotEmpty()) {
+                        appendLine("• Files are saved to: ${downloadDir.absolutePath}")
+                        appendLine("• Check device storage space if downloads fail")
+                        appendLine("• Use file manager to browse download directory")
+                    }
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = verificationReport,
+                    downloadTestSuccess = completedDownloads.isNotEmpty()
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "❌ File verification failed: ${e.message}",
+                    downloadTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    /**
+     * Format bytes into human-readable format
+     */
+    private fun formatBytes(bytes: Long): String {
+        if (bytes < 1024) return "$bytes B"
+        val kb = bytes / 1024.0
+        if (kb < 1024) return "%.1f KB".format(kb)
+        val mb = kb / 1024.0
+        if (mb < 1024) return "%.1f MB".format(mb)
+        val gb = mb / 1024.0
+        return "%.1f GB".format(gb)
+    }
 }

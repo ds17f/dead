@@ -15,14 +15,18 @@ The debug screen now includes comprehensive download system testing tools:
 2. **Download System Testing Section**:
    - **Test Download**: Downloads a single sample recording
    - **Test Queue**: Queues multiple downloads to test concurrency
-   - **Check Download Status**: Shows current system status and monitoring commands
+   - **Check Status**: Shows current system status and monitoring commands
+   - **List Downloads**: Shows all downloads with detailed status information
+   - **Verify Downloaded Files**: Confirms files actually exist on device storage
 
-3. **Test Steps**:
+3. **Test Steps** (UPDATED):
    ```
    1. First run "Export Test Data" to populate the database with recordings
    2. Click "Test Download" to test a single download
-   3. Click "Test Queue" to test multiple downloads
-   4. Use "Check Download Status" to monitor the system
+   3. Click "List Downloads" to see all download entries with status
+   4. Click "Verify Downloaded Files" to confirm files exist on device
+   5. Click "Test Queue" to test multiple downloads
+   6. Use "Check Status" to monitor the system
    ```
 
 ### Option 2: Direct UI Testing (NEW Show-Level Downloads!)
@@ -40,6 +44,59 @@ You can now test downloads through the normal UI with enhanced show-level downlo
    - Expand any concert to see individual recordings
    - Click download buttons next to specific recordings
    - Each recording has its own download state
+
+## How to Confirm Downloads Are Working
+
+### Method 1: Debug Screen Verification (Easiest)
+
+1. **After starting downloads**, use these debug screen buttons:
+   
+   **"List Downloads"** shows:
+   - All download entries in the database
+   - Current status (QUEUED, DOWNLOADING, COMPLETED, FAILED)
+   - Progress percentage and file paths
+   - Error messages if any downloads failed
+   
+   **"Verify Downloaded Files"** shows:
+   - Download directory location on device
+   - Whether files actually exist on storage
+   - File sizes of downloaded content
+   - Storage space usage and available space
+
+2. **What to look for**:
+   - ✅ Status shows "COMPLETED" for successful downloads
+   - ✅ "Verify Downloaded Files" shows "Files Found: X" 
+   - ✅ Actual file paths and sizes are displayed
+   - ❌ If files are missing, you'll see troubleshooting tips
+
+### Method 2: File Manager Verification
+
+1. **Find the download directory**:
+   - Use "Verify Downloaded Files" to get the exact path
+   - Usually: `/storage/emulated/0/Android/data/com.deadarchive.app/files/Downloads`
+
+2. **Open with file manager**:
+   - Use device file manager app
+   - Navigate to the downloads directory
+   - Look for audio files (typically .mp3, .flac, .ogg formats)
+
+3. **Check file details**:
+   - Files should have reasonable sizes (10MB-100MB+ per track)
+   - File names should match recording identifiers
+   - Files should be playable in media players
+
+### Method 3: Database Inspection
+
+If you have database access:
+```sql
+-- Check download entries
+SELECT * FROM downloads ORDER BY created_timestamp DESC;
+
+-- Check completed downloads only
+SELECT recordingId, status, progress, localPath 
+FROM downloads 
+WHERE status = 'COMPLETED';
+```
 
 ## Monitoring Downloads
 
@@ -59,6 +116,9 @@ adb logcat | grep WorkManager
 
 # Network activity
 adb logcat | grep -i network
+
+# Use the provided monitoring script (with color coding):
+./monitor_downloads.sh
 ```
 
 ### WorkManager Status

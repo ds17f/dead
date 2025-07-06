@@ -9,6 +9,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -164,18 +165,51 @@ fun DebugScreen(
                         }
                     }
                     
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.checkDownloadStatus()
+                                }
+                            },
+                            modifier = Modifier.weight(1f),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = MaterialTheme.colorScheme.tertiary
+                            )
+                        ) {
+                            Text("Check Status")
+                        }
+                        
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.listAllDownloads()
+                                }
+                            },
+                            modifier = Modifier.weight(1f),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = MaterialTheme.colorScheme.secondary
+                            )
+                        ) {
+                            Text("List Downloads")
+                        }
+                    }
+                    
                     Button(
                         onClick = {
                             scope.launch {
-                                viewModel.checkDownloadStatus()
+                                viewModel.verifyDownloadedFiles()
                             }
                         },
                         modifier = Modifier.fillMaxWidth(),
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = MaterialTheme.colorScheme.tertiary
+                            containerColor = Color(0xFF4CAF50) // Green for verification
                         )
                     ) {
-                        Text("Check Download Status")
+                        Text("Verify Downloaded Files")
                     }
                     
                     if (uiState.downloadTestStatus.isNotEmpty()) {
