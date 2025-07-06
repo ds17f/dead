@@ -166,6 +166,59 @@ fun WorkManagerTestScreen(
                 }
             }
             
+            // Action Buttons Row 3 - Queue Management Testing
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Button(
+                    onClick = { viewModel.testQueueManagement() },
+                    modifier = Modifier.weight(1f),
+                    enabled = !uiState.isLoading,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.tertiary
+                    )
+                ) {
+                    Text("Test Queue Manager")
+                }
+                
+                OutlinedButton(
+                    onClick = { viewModel.stopQueueProcessing() },
+                    modifier = Modifier.weight(1f),
+                    enabled = !uiState.isLoading
+                ) {
+                    Text("Stop Queue Processing")
+                }
+            }
+            
+            // Action Buttons Row 4 - Hilt Testing
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Button(
+                    onClick = { viewModel.testHiltWorker() },
+                    modifier = Modifier.weight(1f),
+                    enabled = !uiState.isLoading,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.error
+                    )
+                ) {
+                    Text("Test Hilt Worker")
+                }
+                
+                Button(
+                    onClick = { viewModel.testSimpleWorker() },
+                    modifier = Modifier.weight(1f),
+                    enabled = !uiState.isLoading,
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.primary
+                    )
+                ) {
+                    Text("Simple Test")
+                }
+            }
+            
             // WorkManager Configuration Debug Panel
             DebugPanel(
                 title = "Configuration",

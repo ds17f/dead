@@ -164,6 +164,13 @@ interface DownloadRepository {
      */
     suspend fun exportDownloadList(): List<DownloadState>
     suspend fun getDownloadedTracks(): List<Pair<Recording, String>>
+    
+    /**
+     * Queue management operations
+     */
+    fun startDownloadQueueProcessing()
+    fun stopDownloadQueueProcessing()
+    suspend fun isQueueProcessingActive(): Boolean
 }
 
 /**
@@ -427,11 +434,13 @@ class DownloadRepositoryImpl @Inject constructor(
             retriedIds.add(download.id)
         }
         
+        // Note: triggerImmediateProcessing() is already called in retryFailedDownload()
         return retriedIds
     }
 
     override suspend fun autoRetryDownloads(maxRetries: Int) {
         val failedDownloads = downloadDao.getDownloadsByStatusList(DownloadStatus.FAILED.name)
+        var hasRetries = false
         
         for (download in failedDownloads) {
             val retryCount = download.retryCount ?: 0
@@ -445,6 +454,7 @@ class DownloadRepositoryImpl @Inject constructor(
                     startedTimestamp = System.currentTimeMillis()
                 )
                 downloadDao.updateDownload(updatedDownload)
+                hasRetries = true
             }
         }
     }
@@ -539,5 +549,25 @@ class DownloadRepositoryImpl @Inject constructor(
         val totalBytes = completedDownloads.sumOf { it.totalBytes }
         
         return if (totalTime > 0) totalBytes / totalTime else 0.0
+    }
+
+    // ============ Queue Management Operations ============
+    // Note: Queue processing is managed by DownloadQueueManager directly
+    // These methods are placeholders for interface compatibility
+
+    override fun startDownloadQueueProcessing() {
+        // Queue processing should be managed by DownloadQueueManager
+        // This is called from external components that have access to DownloadQueueManager
+    }
+
+    override fun stopDownloadQueueProcessing() {
+        // Queue processing should be managed by DownloadQueueManager
+        // This is called from external components that have access to DownloadQueueManager
+    }
+
+    override suspend fun isQueueProcessingActive(): Boolean {
+        // Queue processing status should be checked via DownloadQueueManager
+        // This is a placeholder that returns false
+        return false
     }
 }

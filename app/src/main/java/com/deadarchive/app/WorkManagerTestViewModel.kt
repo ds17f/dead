@@ -11,7 +11,11 @@ import androidx.work.WorkQuery
 import androidx.work.workDataOf
 import com.deadarchive.core.data.debug.WorkManagerDebugUtil
 import com.deadarchive.core.data.download.worker.AudioDownloadWorker
+import com.deadarchive.core.data.download.worker.TestWorker
+import com.deadarchive.core.data.download.DownloadQueueManager
+import com.deadarchive.core.data.repository.DownloadRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -22,7 +26,9 @@ import javax.inject.Inject
 
 @HiltViewModel
 class WorkManagerTestViewModel @Inject constructor(
-    private val workManagerDebugUtil: WorkManagerDebugUtil
+    private val workManagerDebugUtil: WorkManagerDebugUtil,
+    private val downloadQueueManager: DownloadQueueManager,
+    private val downloadRepository: DownloadRepository
 ) : ViewModel() {
     
     companion object {
@@ -273,6 +279,170 @@ class WorkManagerTestViewModel @Inject constructor(
                 Log.e(TAG, "Failed to cancel work", e)
                 _uiState.value = _uiState.value.copy(
                     errorMessage = "Failed to cancel work: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Test the download queue management system
+     */
+    fun testQueueManagement() {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Testing download queue management")
+                _uiState.value = _uiState.value.copy(
+                    isLoading = true,
+                    errorMessage = ""
+                )
+                
+                // Start queue processing
+                downloadQueueManager.startQueueProcessing()
+                
+                // Trigger immediate processing to test the system
+                downloadQueueManager.triggerImmediateProcessing()
+                
+                // Check queue processing status
+                val isActive = downloadQueueManager.isQueueProcessingActive()
+                val status = downloadQueueManager.getQueueProcessingStatus()
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    statusMessage = "Queue management tested successfully! Status: $status, Active: $isActive"
+                )
+                
+                // Refresh status to show any queue management workers
+                refreshWorkManagerStatus()
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to test queue management", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to test queue management: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Stop download queue processing
+     */
+    fun stopQueueProcessing() {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Stopping queue processing")
+                downloadQueueManager.stopQueueProcessing()
+                
+                _uiState.value = _uiState.value.copy(
+                    statusMessage = "Queue processing stopped"
+                )
+                
+                // Refresh status after a delay
+                kotlinx.coroutines.delay(1000)
+                refreshWorkManagerStatus()
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to stop queue processing", e)
+                _uiState.value = _uiState.value.copy(
+                    errorMessage = "Failed to stop queue processing: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Get detailed queue information
+     */
+    suspend fun getQueueStatusReport(): String {
+        return try {
+            val queueStatus = downloadQueueManager.getQueueProcessingStatus()
+            val isActive = downloadQueueManager.isQueueProcessingActive()
+            val downloadQueue = downloadRepository.getDownloadQueue()
+            
+            buildString {
+                appendLine("=== Download Queue Status ===")
+                appendLine("Queue Processing Status: $queueStatus")
+                appendLine("Queue Processing Active: $isActive")
+                appendLine("Queued Downloads: ${downloadQueue.size}")
+                appendLine()
+                
+                if (downloadQueue.isNotEmpty()) {
+                    appendLine("Queued Items:")
+                    downloadQueue.forEach { download ->
+                        appendLine("- ${download.id}: ${download.recordingId}/${download.trackFilename}")
+                        appendLine("  Priority: ${download.priority}")
+                        appendLine("  Status: ${download.status}")
+                    }
+                }
+            }
+        } catch (e: Exception) {
+            "Error getting queue status: ${e.message}"
+        }
+    }
+    
+    /**
+     * Test basic Hilt worker injection
+     */
+    fun testHiltWorker() {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Testing basic Hilt worker injection")
+                _uiState.value = _uiState.value.copy(
+                    isLoading = true,
+                    errorMessage = ""
+                )
+                
+                val testWorkRequest = OneTimeWorkRequestBuilder<TestWorker>()
+                    .addTag("hilt_test")
+                    .build()
+                
+                val workManager = WorkManager.getInstance(workManagerDebugUtil.context)
+                workManager.enqueue(testWorkRequest)
+                
+                Log.d(TAG, "Test worker enqueued with ID: ${testWorkRequest.id}")
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    statusMessage = "Hilt test worker enqueued! Check logs for Hilt injection success/failure."
+                )
+                
+                // Refresh status to show the new work item
+                refreshWorkManagerStatus()
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to test Hilt worker", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to test Hilt worker: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    fun testSimpleWorker() {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Testing simple worker with no constraints")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = "")
+                
+                val simpleWorkRequest = OneTimeWorkRequestBuilder<com.deadarchive.core.data.download.worker.SimpleTestWorker>()
+                    .addTag("simple_test")
+                    .build()
+                
+                val workManager = WorkManager.getInstance(workManagerDebugUtil.context)
+                workManager.enqueue(simpleWorkRequest)
+                Log.d(TAG, "Simple worker enqueued successfully")
+                
+                delay(1000)
+                refreshWorkManagerStatus()
+                
+                _uiState.value = _uiState.value.copy(isLoading = false)
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to test simple worker", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to test simple worker: ${e.message}"
                 )
             }
         }
