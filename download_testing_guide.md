@@ -25,22 +25,21 @@ The debug screen now includes comprehensive download system testing tools:
    4. Use "Check Download Status" to monitor the system
    ```
 
-### Option 2: Direct UI Testing
+### Option 2: Direct UI Testing (NEW Show-Level Downloads!)
 
-You can also test downloads through the normal UI:
+You can now test downloads through the normal UI with enhanced show-level downloads:
 
-1. **Browse Screen**:
-   - Search for concerts (e.g., "grateful dead 1977")
-   - Expand a concert to see recordings
-   - Click the download button next to any recording
+1. **Show-Level Download (NEW)**:
+   - **Browse Screen**: Search for concerts and click the download icon in the show header
+   - **Library Screen**: Click download icons on shows in your library
+   - **Concert List Screen**: Use download icons on show headers
+   - Downloads the **best/priority recording** automatically
+   - **Visual States**: Gray (not downloaded) → Orange (downloading) → Green (success) → Red (failed)
 
-2. **Library Screen**:
-   - Add shows to your library first
-   - Expand shows and click download buttons
-
-3. **Concert List Screen**:
-   - Navigate to playlists/concerts
-   - Use download buttons on recordings
+2. **Individual Recording Downloads** (existing):
+   - Expand any concert to see individual recordings
+   - Click download buttons next to specific recordings
+   - Each recording has its own download state
 
 ## Monitoring Downloads
 
@@ -76,6 +75,12 @@ adb shell dumpsys jobscheduler | grep -A 10 "androidx.work"
 
 ## Expected Behavior
 
+### Show-Level Download States (NEW)
+- **Gray Download Icon**: Show not downloaded (default state)
+- **Orange Download Icon**: Show is currently downloading 
+- **Green Checkmark Icon**: Show successfully downloaded
+- **Red Download Icon**: Download failed or encountered error
+
 ### Single Download Test
 1. Should create a download entry in the database
 2. Should trigger the DownloadQueueManagerWorker
@@ -87,6 +92,12 @@ adb shell dumpsys jobscheduler | grep -A 10 "androidx.work"
 2. Should respect concurrency limits (max 2 concurrent downloads)
 3. Should process downloads in queue order
 4. Should handle failures gracefully
+
+### Show Download Behavior
+1. Clicking show download icon downloads the **best/priority recording**
+2. Best recording is determined by quality priority: SBD > MATRIX > FM > AUD
+3. Download state reflects the status of the best recording download
+4. Individual recording downloads work independently
 
 ### Status Check
 Shows:
@@ -133,6 +144,29 @@ The debug screen provides:
 - Logcat commands for monitoring
 - System status verification
 
+## UI Changes Summary
+
+### Enhanced Show Header
+- **New Download Button**: Added between Library and Expand buttons
+- **State-Based Icons**: Visual feedback with color-coded states
+- **Smart Download**: Automatically selects best/priority recording
+
+### Visual Design
+- **Colors Used**:
+  - Gray: Default theme color for not downloaded
+  - Orange (`#FFA726`): Downloading state  
+  - Green (`#4CAF50`): Successfully downloaded
+  - Red: Theme error color for failed downloads
+- **Icons Used**:
+  - `ic_file_download`: Default download icon
+  - `ic_download_done`: Success checkmark icon
+
+### User Experience
+- **One-Click Downloads**: No need to expand shows to download
+- **Priority Selection**: System chooses best quality automatically
+- **Visual Feedback**: Clear state indication without text
+- **Consistent Placement**: Same position across all screens
+
 ## Files Involved
 
 ### Core Components
@@ -141,10 +175,11 @@ The debug screen provides:
 - `AudioDownloadWorker` - Performs actual downloads
 - `DownloadQueueManagerWorker` - Processes queue
 
-### UI Components
-- `ExpandableConcertItem` - Shows download buttons
-- `DownloadState` - Manages download state UI
-- `BrowseScreen/LibraryScreen/ConcertListScreen` - Download integration
+### UI Components (Enhanced)
+- `ExpandableConcertItem` - Enhanced with show-level download buttons
+- `ShowDownloadState` - New sealed class for show download states
+- `DownloadState` - Existing recording-level download states
+- `BrowseScreen/LibraryScreen/ConcertListScreen` - Updated with show download callbacks
 
 ### Testing Components
 - `DebugScreen` - Download testing interface

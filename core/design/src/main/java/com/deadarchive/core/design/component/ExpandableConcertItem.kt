@@ -40,6 +40,16 @@ sealed class DownloadState {
     data class Error(val message: String) : DownloadState()
 }
 
+/**
+ * Represents the download state of an entire show (for the best/priority recording)
+ */
+sealed class ShowDownloadState {
+    object NotDownloaded : ShowDownloadState()
+    object Downloading : ShowDownloadState()
+    object Downloaded : ShowDownloadState()
+    object Failed : ShowDownloadState()
+}
+
 @Composable
 fun ExpandableConcertItem(
     show: Show,
@@ -49,6 +59,8 @@ fun ExpandableConcertItem(
     onLibraryClick: (Show) -> Unit,
     onDownloadClick: (Recording) -> Unit = { },
     getDownloadState: (Recording) -> DownloadState = { DownloadState.Available },
+    onShowDownloadClick: (Show) -> Unit = { },
+    getShowDownloadState: (Show) -> ShowDownloadState = { ShowDownloadState.NotDownloaded },
     modifier: Modifier = Modifier
 ) {
     var isExpanded by remember { mutableStateOf(false) }
@@ -72,7 +84,9 @@ fun ExpandableConcertItem(
                 isExpanded = isExpanded,
                 onExpandClick = { isExpanded = !isExpanded },
                 onShowClick = onShowClick,
-                onLibraryClick = onLibraryClick
+                onLibraryClick = onLibraryClick,
+                onShowDownloadClick = onShowDownloadClick,
+                getShowDownloadState = getShowDownloadState
             )
             
             // Expandable recordings section
@@ -101,6 +115,8 @@ private fun ShowHeader(
     onExpandClick: () -> Unit,
     onShowClick: (Show) -> Unit,
     onLibraryClick: (Show) -> Unit,
+    onShowDownloadClick: (Show) -> Unit,
+    getShowDownloadState: (Show) -> ShowDownloadState,
     modifier: Modifier = Modifier
 ) {
     Row(
@@ -205,6 +221,43 @@ private fun ShowHeader(
                     contentDescription = if (show.isInLibrary) "Remove from Library" else "Add to Library",
                     tint = if (show.isInLibrary) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
                 )
+            }
+            
+            // Download button (for best recording)
+            val downloadState = getShowDownloadState(show)
+            IconButton(
+                onClick = { onShowDownloadClick(show) }
+            ) {
+                when (downloadState) {
+                    is ShowDownloadState.NotDownloaded -> {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_file_download),
+                            contentDescription = "Download Show",
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    is ShowDownloadState.Downloading -> {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_file_download),
+                            contentDescription = "Downloading...",
+                            tint = Color(0xFFFFA726) // Orange/Yellow for downloading
+                        )
+                    }
+                    is ShowDownloadState.Downloaded -> {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_download_done),
+                            contentDescription = "Downloaded",
+                            tint = Color(0xFF4CAF50) // Green for success
+                        )
+                    }
+                    is ShowDownloadState.Failed -> {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_file_download),
+                            contentDescription = "Download Failed",
+                            tint = MaterialTheme.colorScheme.error // Red for error
+                        )
+                    }
+                }
             }
             
             // Expand/collapse button

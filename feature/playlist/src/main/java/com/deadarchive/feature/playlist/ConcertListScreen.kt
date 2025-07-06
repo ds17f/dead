@@ -15,6 +15,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
+import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.settings.SettingsViewModel
@@ -181,6 +182,12 @@ fun ConcertListScreen(
                                 },
                                 getDownloadState = { recording: Recording ->
                                     viewModel.getDownloadState(recording)
+                                },
+                                onShowDownloadClick = { show: Show ->
+                                    viewModel.downloadShow(show)
+                                },
+                                getShowDownloadState = { show: Show ->
+                                    viewModel.getShowDownloadState(show)
                                 }
                             )
                         }

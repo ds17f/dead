@@ -10,6 +10,7 @@ import com.deadarchive.core.model.LibraryItemType
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.DownloadState
+import com.deadarchive.core.design.component.ShowDownloadState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -156,6 +157,39 @@ class LibraryViewModel @Inject constructor(
             DownloadState.Available
         } catch (e: Exception) {
             DownloadState.Error("Failed to get download state")
+        }
+    }
+    
+    /**
+     * Start downloading the best recording of a show
+     */
+    fun downloadShow(show: Show) {
+        viewModelScope.launch {
+            try {
+                // Get the best recording for this show
+                val bestRecording = show.bestRecording
+                if (bestRecording != null) {
+                    println("Downloading best recording for show ${show.showId}: ${bestRecording.identifier}")
+                    downloadRepository.downloadRecording(bestRecording)
+                } else {
+                    println("No best recording available for show ${show.showId}")
+                }
+            } catch (e: Exception) {
+                println("Failed to start download for show ${show.showId}: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Get the current download state for a show (based on its best recording)
+     */
+    fun getShowDownloadState(show: Show): ShowDownloadState {
+        return try {
+            // For now, return NotDownloaded state as a placeholder
+            // In Task 5, we'll implement proper download progress tracking
+            ShowDownloadState.NotDownloaded
+        } catch (e: Exception) {
+            ShowDownloadState.Failed
         }
     }
 }
