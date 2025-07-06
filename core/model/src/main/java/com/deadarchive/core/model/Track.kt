@@ -23,6 +23,9 @@ data class Track(
     // Audio file reference
     val audioFile: AudioFile? = null,
     
+    // Streaming URL for playback/download
+    val streamingUrl: String? = null,
+    
     // Playback state
     val isCurrentlyPlaying: Boolean = false,
     val isInLibrary: Boolean = false,

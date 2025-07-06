@@ -31,7 +31,8 @@ class AudioDownloadWorker @AssistedInject constructor(
     @Assisted context: Context,
     @Assisted workerParams: WorkerParameters,
     private val downloadRepository: DownloadRepository,
-    private val okHttpClient: OkHttpClient
+    private val okHttpClient: OkHttpClient,
+    private val downloadQueueManager: com.deadarchive.core.data.download.DownloadQueueManager
 ) : CoroutineWorker(context, workerParams) {
 
     companion object {
@@ -106,6 +107,10 @@ class AudioDownloadWorker @AssistedInject constructor(
                     
                     Log.d(TAG, "Download completed successfully: $downloadId")
                     Log.d(TAG, "File saved to: ${targetFile.absolutePath}")
+                    
+                    // Trigger immediate queue processing to start next download
+                    downloadQueueManager.triggerImmediateProcessing()
+                    
                     Result.success(createSuccessOutput(fileSize))
                 }
                 result.shouldRetry -> {

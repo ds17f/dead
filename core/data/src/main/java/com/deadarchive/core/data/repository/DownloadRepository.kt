@@ -1,5 +1,7 @@
 package com.deadarchive.core.data.repository
 
+import android.content.Context
+import android.os.Environment
 import com.deadarchive.core.data.mapper.DataMappers.createDownloadState
 import com.deadarchive.core.data.mapper.DataMappers.toDownloadEntity
 import com.deadarchive.core.data.mapper.DataMappers.toDownloadState
@@ -9,6 +11,7 @@ import com.deadarchive.core.database.DownloadEntity
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.DownloadState
 import com.deadarchive.core.model.DownloadStatus
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
@@ -176,6 +179,12 @@ interface DownloadRepository {
     fun startDownloadQueueProcessing()
     fun stopDownloadQueueProcessing()
     suspend fun isQueueProcessingActive(): Boolean
+    
+    /**
+     * Additional download management methods
+     */
+    suspend fun retryDownload(downloadId: String)
+    suspend fun clearCompletedDownloads()
 }
 
 /**
@@ -193,13 +202,32 @@ data class DownloadStats(
 @Singleton
 class DownloadRepositoryImpl @Inject constructor(
     private val downloadDao: DownloadDao,
-    private val showRepository: ShowRepository
+    private val showRepository: ShowRepository,
+    private val audioFormatFilterService: com.deadarchive.core.data.service.AudioFormatFilterService,
+    private val downloadQueueManager: com.deadarchive.core.data.download.DownloadQueueManager,
+    @ApplicationContext private val context: Context
 ) : DownloadRepository {
     
     // Download directory management
     private val downloadDir by lazy {
-        File("/storage/emulated/0/Android/data/com.deadarchive.app/files/Downloads").apply {
-            if (!exists()) mkdirs()
+        // Use app-specific external files directory (no permissions required)
+        val externalDir = context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS)
+        val downloadDir = if (externalDir != null) {
+            File(externalDir, "DeadArchive")
+        } else {
+            // Fallback to internal files directory
+            File(context.filesDir, "downloads")
+        }
+        
+        downloadDir.apply {
+            if (!exists()) {
+                val created = mkdirs()
+                android.util.Log.d("DownloadRepository", "📁 Download directory created: $created at $absolutePath")
+                android.util.Log.d("DownloadRepository", "📁 Directory permissions - canRead: ${canRead()}, canWrite: ${canWrite()}")
+            } else {
+                android.util.Log.d("DownloadRepository", "📁 Download directory exists at $absolutePath")
+                android.util.Log.d("DownloadRepository", "📁 Directory permissions - canRead: ${canRead()}, canWrite: ${canWrite()}")
+            }
         }
     }
 
@@ -238,6 +266,17 @@ class DownloadRepositoryImpl @Inject constructor(
     }
 
     override suspend fun startDownload(recording: Recording, trackFilename: String): String {
+        // Get the proper streaming URL instead of constructing direct Archive.org URL
+        val streamingUrl = showRepository.getStreamingUrl(recording.identifier, trackFilename)
+            ?: "https://archive.org/download/${recording.identifier}/$trackFilename" // Fallback to direct URL
+        
+        return startDownloadWithUrl(recording, trackFilename, streamingUrl)
+    }
+    
+    /**
+     * Start download with a specific URL (used internally)
+     */
+    private suspend fun startDownloadWithUrl(recording: Recording, trackFilename: String, url: String): String {
         val downloadId = "${recording.identifier}_$trackFilename"
         
         // Check if download already exists
@@ -258,15 +297,20 @@ class DownloadRepositoryImpl @Inject constructor(
             return downloadId
         }
 
-        // Create new download entry
+        android.util.Log.d("DownloadRepository", "📱 Creating download for ${recording.identifier}/$trackFilename with URL: $url")
+        
+        // Create new download entry with resolved streaming URL
         val downloadEntity = createDownloadState(
             recordingId = recording.identifier,
             trackFilename = trackFilename,
-            url = "https://archive.org/download/${recording.identifier}/$trackFilename",
+            url = url,
             status = DownloadStatus.QUEUED
         )
 
         downloadDao.insertDownload(downloadEntity)
+        
+        // Trigger immediate queue processing when new download is added
+        downloadQueueManager.triggerImmediateProcessing()
         
         return downloadId
     }
@@ -277,9 +321,31 @@ class DownloadRepositoryImpl @Inject constructor(
         // Get track streaming URLs to determine available tracks
         val trackUrls = showRepository.getTrackStreamingUrls(recording.identifier)
         
-        for ((audioFile, _) in trackUrls) {
-            val downloadId = startDownload(recording, audioFile.filename)
+        // Apply format filtering to get only preferred formats (MP3 by default)
+        val preferredFormats = com.deadarchive.core.model.AppConstants.PREFERRED_AUDIO_FORMATS
+        val filteredTracks = audioFormatFilterService.filterTracksByPreferredFormat(
+            tracks = trackUrls.map { (audioFile, url) ->
+                com.deadarchive.core.model.Track(
+                    filename = audioFile.filename,
+                    title = extractTitleFromFilename(audioFile.filename),
+                    trackNumber = extractTrackNumberFromFilename(audioFile.filename),
+                    audioFile = audioFile,
+                    streamingUrl = url
+                )
+            },
+            formatPreferences = preferredFormats
+        )
+        
+        android.util.Log.d("DownloadRepository", "📱 Filtered from ${trackUrls.size} tracks to ${filteredTracks.size} preferred format tracks for ${recording.identifier}")
+        
+        for (track in filteredTracks) {
+            val downloadId = startDownloadWithUrl(recording, track.filename, track.streamingUrl ?: "")
             downloadIds.add(downloadId)
+        }
+        
+        // Trigger immediate queue processing when downloads are added
+        if (downloadIds.isNotEmpty()) {
+            downloadQueueManager.triggerImmediateProcessing()
         }
         
         return downloadIds
@@ -579,4 +645,49 @@ class DownloadRepositoryImpl @Inject constructor(
         // This is a placeholder that returns false
         return false
     }
+    
+    override suspend fun retryDownload(downloadId: String) {
+        try {
+            // Reset download status to queued for retry
+            downloadDao.updateDownloadStatus(downloadId, DownloadStatus.QUEUED.name)
+            downloadDao.updateDownloadProgress(downloadId, 0f, 0L) // Reset progress
+            android.util.Log.d("DownloadRepository", "🔄 Download retry queued: $downloadId")
+        } catch (e: Exception) {
+            android.util.Log.e("DownloadRepository", "Failed to retry download: $downloadId", e)
+            throw e
+        }
+    }
+    
+    override suspend fun clearCompletedDownloads() {
+        try {
+            downloadDao.deleteDownloadsByStatus(DownloadStatus.COMPLETED.name)
+            android.util.Log.d("DownloadRepository", "🗑️ Completed downloads cleared")
+        } catch (e: Exception) {
+            android.util.Log.e("DownloadRepository", "Failed to clear completed downloads", e)
+            throw e
+        }
+    }
+    
+    // ============ Helper Methods for Format Filtering ============
+    
+    /**
+     * Extract title from filename for track grouping
+     */
+    private fun extractTitleFromFilename(filename: String): String? {
+        return filename.substringBeforeLast(".")
+            .replace(Regex("[^a-zA-Z0-9\\s]"), " ")
+            .trim()
+            .takeIf { it.isNotBlank() }
+    }
+    
+    /**
+     * Extract track number from filename for sorting
+     */
+    private fun extractTrackNumberFromFilename(filename: String): String? {
+        // Look for patterns like "t01", "d1t01", "track01", etc.
+        val trackPattern = Regex("(?:t|track)(\\d+)", RegexOption.IGNORE_CASE)
+        val match = trackPattern.find(filename)
+        return match?.groupValues?.get(1)
+    }
+    
 }
