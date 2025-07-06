@@ -20,10 +20,6 @@ import kotlinx.coroutines.launch
 @Composable
 fun DebugScreen(
     onBackClick: () -> Unit,
-    onNavigateToRepositoryTest: () -> Unit,
-    onNavigateToDatabaseTest: () -> Unit,
-    onNavigateToNetworkTest: () -> Unit,
-    onNavigateToMediaPlayerTest: () -> Unit,
     onNavigateToWorkManagerTest: () -> Unit,
     viewModel: DebugViewModel = hiltViewModel()
 ) {
@@ -125,34 +121,6 @@ fun DebugScreen(
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Bold
                     )
-                    
-                    OutlinedButton(
-                        onClick = onNavigateToRepositoryTest,
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text("Repository Testing")
-                    }
-                    
-                    OutlinedButton(
-                        onClick = onNavigateToDatabaseTest,
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text("Database Testing")
-                    }
-                    
-                    OutlinedButton(
-                        onClick = onNavigateToNetworkTest,
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text("Network Testing")
-                    }
-                    
-                    OutlinedButton(
-                        onClick = onNavigateToMediaPlayerTest,
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Text("Media Player Testing")
-                    }
                     
                     OutlinedButton(
                         onClick = onNavigateToWorkManagerTest,

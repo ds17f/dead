@@ -131,39 +131,11 @@ fun MainAppScreen(
             composable("debug_screen") {
                 DebugScreen(
                     onBackClick = { navController.popBackStack() },
-                    onNavigateToRepositoryTest = { navController.navigate("repository_test") },
-                    onNavigateToDatabaseTest = { navController.navigate("database_test") },
-                    onNavigateToNetworkTest = { navController.navigate("network_test") },
-                    onNavigateToMediaPlayerTest = { navController.navigate("media_player_test") },
                     onNavigateToWorkManagerTest = { navController.navigate("workmanager_test") }
                 )
             }
             
-            // Debug screens (hidden from bottom nav)
-            composable("network_test") {
-                NetworkTestScreen(
-                    onNavigateBack = { navController.popBackStack() }
-                )
-            }
-            
-            composable("database_test") {
-                DatabaseTestScreen(
-                    onNavigateBack = { navController.popBackStack() }
-                )
-            }
-            
-            composable("repository_test") {
-                RepositoryTestScreen(
-                    onNavigateBack = { navController.popBackStack() }
-                )
-            }
-            
-            composable("media_player_test") {
-                MediaPlayerTestScreen(
-                    onNavigateBack = { navController.popBackStack() }
-                )
-            }
-            
+            // WorkManager test screen (hidden from bottom nav)
             composable("workmanager_test") {
                 WorkManagerTestScreen(
                     onNavigateBack = { navController.popBackStack() }
