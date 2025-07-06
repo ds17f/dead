@@ -43,6 +43,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.ExpandableConcertItem
+import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.settings.SettingsViewModel
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -177,6 +178,13 @@ fun BrowseScreen(
                                         // Add to library immediately
                                         viewModel.toggleLibrary(clickedShow)
                                     }
+                                },
+                                onDownloadClick = { recording: Recording ->
+                                    Log.d("BrowseScreen", "Download requested for recording: ${recording.identifier}")
+                                    viewModel.downloadRecording(recording)
+                                },
+                                getDownloadState = { recording: Recording ->
+                                    viewModel.getDownloadState(recording)
                                 }
                             )
                         }

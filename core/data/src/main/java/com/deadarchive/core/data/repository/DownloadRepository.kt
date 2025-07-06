@@ -58,6 +58,11 @@ interface DownloadRepository {
     suspend fun startRecordingDownload(recording: Recording): List<String>
     
     /**
+     * Convenience method to download a recording (wrapper for startRecordingDownload)
+     */
+    suspend fun downloadRecording(recording: Recording): List<String>
+    
+    /**
      * Update download progress
      */
     suspend fun updateDownloadProgress(id: String, progress: Float, bytesDownloaded: Long)
@@ -278,6 +283,10 @@ class DownloadRepositoryImpl @Inject constructor(
         }
         
         return downloadIds
+    }
+    
+    override suspend fun downloadRecording(recording: Recording): List<String> {
+        return startRecordingDownload(recording)
     }
 
     override suspend fun updateDownloadProgress(id: String, progress: Float, bytesDownloaded: Long) {

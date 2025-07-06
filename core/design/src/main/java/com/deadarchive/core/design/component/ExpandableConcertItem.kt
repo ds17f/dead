@@ -30,6 +30,16 @@ import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.settings.model.AppSettings
 
+/**
+ * Represents the download state of a recording
+ */
+sealed class DownloadState {
+    object Available : DownloadState()
+    data class Downloading(val progress: Float) : DownloadState()
+    object Downloaded : DownloadState()
+    data class Error(val message: String) : DownloadState()
+}
+
 @Composable
 fun ExpandableConcertItem(
     show: Show,
@@ -37,6 +47,8 @@ fun ExpandableConcertItem(
     onShowClick: (Show) -> Unit,
     onRecordingClick: (Recording) -> Unit,
     onLibraryClick: (Show) -> Unit,
+    onDownloadClick: (Recording) -> Unit = { },
+    getDownloadState: (Recording) -> DownloadState = { DownloadState.Available },
     modifier: Modifier = Modifier
 ) {
     var isExpanded by remember { mutableStateOf(false) }
@@ -73,6 +85,8 @@ fun ExpandableConcertItem(
                     show = show,
                     recordings = show.recordings,
                     onRecordingClick = onRecordingClick,
+                    onDownloadClick = onDownloadClick,
+                    getDownloadState = getDownloadState,
                     settings = settings
                 )
             }
@@ -210,6 +224,8 @@ private fun RecordingsSection(
     show: Show,
     recordings: List<Recording>,
     onRecordingClick: (Recording) -> Unit,
+    onDownloadClick: (Recording) -> Unit,
+    getDownloadState: (Recording) -> DownloadState,
     settings: AppSettings,
     modifier: Modifier = Modifier
 ) {
@@ -311,7 +327,9 @@ private fun RecordingsSection(
         }.forEach { recording ->
             RecordingItem(
                 recording = recording,
-                onRecordingClick = onRecordingClick
+                onRecordingClick = onRecordingClick,
+                onDownloadClick = onDownloadClick,
+                getDownloadState = getDownloadState
             )
         }
         
@@ -354,6 +372,8 @@ private fun buildDebugString(show: Show, recordings: List<Recording>): String {
 private fun RecordingItem(
     recording: Recording,
     onRecordingClick: (Recording) -> Unit,
+    onDownloadClick: (Recording) -> Unit,
+    getDownloadState: (Recording) -> DownloadState,
     modifier: Modifier = Modifier
 ) {
     Surface(
@@ -432,17 +452,65 @@ private fun RecordingItem(
                 }
             }
             
-            // Play button
-            IconButton(
-                onClick = { onRecordingClick(recording) },
-                modifier = Modifier.size(32.dp)
-            ) {
-                Icon(
-                    painter = IconResources.PlayerControls.Play(),
-                    contentDescription = "Play Recording",
-                    modifier = Modifier.size(16.dp),
-                    tint = MaterialTheme.colorScheme.primary
-                )
+            // Action buttons
+            Row {
+                // Download button
+                val downloadState = getDownloadState(recording)
+                IconButton(
+                    onClick = { onDownloadClick(recording) },
+                    modifier = Modifier.size(32.dp)
+                ) {
+                    when (downloadState) {
+                        is DownloadState.Available -> {
+                            Icon(
+                                painter = painterResource(id = R.drawable.ic_file_download),
+                                contentDescription = "Download Recording",
+                                modifier = Modifier.size(16.dp),
+                                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        is DownloadState.Downloading -> {
+                            // TODO: Add circular progress indicator
+                            Icon(
+                                painter = painterResource(id = R.drawable.ic_file_download),
+                                contentDescription = "Downloading...",
+                                modifier = Modifier.size(16.dp),
+                                tint = MaterialTheme.colorScheme.primary
+                            )
+                        }
+                        is DownloadState.Downloaded -> {
+                            Icon(
+                                painter = painterResource(id = R.drawable.ic_download_done),
+                                contentDescription = "Downloaded",
+                                modifier = Modifier.size(16.dp),
+                                tint = MaterialTheme.colorScheme.primary
+                            )
+                        }
+                        is DownloadState.Error -> {
+                            Icon(
+                                painter = painterResource(id = R.drawable.ic_file_download),
+                                contentDescription = "Download Error: ${downloadState.message}",
+                                modifier = Modifier.size(16.dp),
+                                tint = MaterialTheme.colorScheme.error
+                            )
+                        }
+                    }
+                }
+                
+                Spacer(modifier = Modifier.width(4.dp))
+                
+                // Play button
+                IconButton(
+                    onClick = { onRecordingClick(recording) },
+                    modifier = Modifier.size(32.dp)
+                ) {
+                    Icon(
+                        painter = IconResources.PlayerControls.Play(),
+                        contentDescription = "Play Recording",
+                        modifier = Modifier.size(16.dp),
+                        tint = MaterialTheme.colorScheme.primary
+                    )
+                }
             }
         }
     }

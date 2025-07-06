@@ -16,6 +16,7 @@ import com.deadarchive.core.model.LibraryItem
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.design.component.ExpandableConcertItem
+import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 
@@ -164,6 +165,12 @@ fun LibraryScreen(
                                 },
                                 onLibraryClick = { clickedShow: Show ->
                                     showToRemove = clickedShow
+                                },
+                                onDownloadClick = { recording: Recording ->
+                                    viewModel.downloadRecording(recording)
+                                },
+                                getDownloadState = { recording: Recording ->
+                                    viewModel.getDownloadState(recording)
                                 }
                             )
                         }

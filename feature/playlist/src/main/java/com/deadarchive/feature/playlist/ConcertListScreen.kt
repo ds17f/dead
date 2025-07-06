@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.component.ExpandableConcertItem
+import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.settings.SettingsViewModel
@@ -174,6 +175,12 @@ fun ConcertListScreen(
                                 },
                                 onLibraryClick = { showToToggle ->
                                     viewModel.toggleLibrary(showToToggle)
+                                },
+                                onDownloadClick = { recording: Recording ->
+                                    viewModel.downloadRecording(recording)
+                                },
+                                getDownloadState = { recording: Recording ->
+                                    viewModel.getDownloadState(recording)
                                 }
                             )
                         }

@@ -108,6 +108,97 @@ fun DebugScreen(
                 }
             }
             
+            // Download Testing Section
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(
+                        text = "Download System Testing",
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    
+                    Text(
+                        text = "Test the WorkManager-based download queue system",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.testSampleDownload()
+                                }
+                            },
+                            enabled = !uiState.isDownloadTesting,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            if (uiState.isDownloadTesting) {
+                                CircularProgressIndicator(
+                                    modifier = Modifier.size(16.dp),
+                                    strokeWidth = 2.dp
+                                )
+                            } else {
+                                Text("Test Download")
+                            }
+                        }
+                        
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.testMultipleDownloads()
+                                }
+                            },
+                            enabled = !uiState.isDownloadTesting,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Test Queue")
+                        }
+                    }
+                    
+                    Button(
+                        onClick = {
+                            scope.launch {
+                                viewModel.checkDownloadStatus()
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.tertiary
+                        )
+                    ) {
+                        Text("Check Download Status")
+                    }
+                    
+                    if (uiState.downloadTestStatus.isNotEmpty()) {
+                        Card(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = CardDefaults.cardColors(
+                                containerColor = if (uiState.downloadTestSuccess) 
+                                    MaterialTheme.colorScheme.tertiaryContainer 
+                                else 
+                                    MaterialTheme.colorScheme.errorContainer
+                            )
+                        ) {
+                            Text(
+                                text = uiState.downloadTestStatus,
+                                modifier = Modifier.padding(12.dp),
+                                style = MaterialTheme.typography.bodySmall,
+                                fontFamily = FontFamily.Monospace
+                            )
+                        }
+                    }
+                }
+            }
+            
             // Test Screens Section
             Card(
                 modifier = Modifier.fillMaxWidth()

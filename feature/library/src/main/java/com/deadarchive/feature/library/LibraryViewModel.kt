@@ -4,9 +4,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.model.LibraryItem
 import com.deadarchive.core.model.LibraryItemType
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.Recording
+import com.deadarchive.core.design.component.DownloadState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -19,7 +22,8 @@ import javax.inject.Inject
 @HiltViewModel
 class LibraryViewModel @Inject constructor(
     private val libraryRepository: LibraryRepository,
-    private val showRepository: ShowRepository
+    private val showRepository: ShowRepository,
+    private val downloadRepository: DownloadRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<LibraryUiState>(LibraryUiState.Loading)
@@ -126,6 +130,33 @@ class LibraryViewModel @Inject constructor(
     
     fun retry() {
         loadLibraryItems()
+    }
+    
+    /**
+     * Start downloading a recording
+     */
+    fun downloadRecording(recording: Recording) {
+        viewModelScope.launch {
+            try {
+                downloadRepository.downloadRecording(recording)
+            } catch (e: Exception) {
+                // Could add error handling/snackbar here
+                println("Failed to start download for recording ${recording.identifier}: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Get the current download state for a recording
+     */
+    fun getDownloadState(recording: Recording): DownloadState {
+        return try {
+            // For now, return Available state as a placeholder
+            // In Task 5, we'll implement proper download progress tracking
+            DownloadState.Available
+        } catch (e: Exception) {
+            DownloadState.Error("Failed to get download state")
+        }
     }
 }
 

@@ -4,9 +4,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.sync.DataSyncService
 import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.data.download.DownloadQueueManager
+import com.deadarchive.core.model.Recording
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.delay
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
@@ -21,13 +25,18 @@ data class DebugUiState(
     val cachedRecordingCount: Int = 0,
     val lastSyncTime: String = "Never",
     val databaseSize: String = "Unknown",
-    val databaseDebugInfo: String = ""
+    val databaseDebugInfo: String = "",
+    val isDownloadTesting: Boolean = false,
+    val downloadTestStatus: String = "",
+    val downloadTestSuccess: Boolean = false
 )
 
 @HiltViewModel
 class DebugViewModel @Inject constructor(
     private val dataSyncService: DataSyncService,
     private val concertRepository: ShowRepository,
+    private val downloadRepository: DownloadRepository,
+    private val downloadQueueManager: DownloadQueueManager,
     @ApplicationContext private val context: Context
 ) : ViewModel() {
     
@@ -230,6 +239,183 @@ class DebugViewModel @Inject constructor(
                     databaseDebugInfo = errorInfo
                 )
                 println("DEBUG: $errorInfo")
+            }
+        }
+    }
+    
+    /**
+     * Test downloading a sample recording
+     */
+    fun testSampleDownload() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    isDownloadTesting = true,
+                    downloadTestStatus = "Starting sample download test...",
+                    downloadTestSuccess = false
+                )
+                
+                // Get a sample recording from the database
+                val recordings = concertRepository.getAllCachedRecordings().first()
+                if (recordings.isEmpty()) {
+                    _uiState.value = _uiState.value.copy(
+                        isDownloadTesting = false,
+                        downloadTestStatus = "❌ No recordings available for testing. Run 'Export Test Data' first.",
+                        downloadTestSuccess = false
+                    )
+                    return@launch
+                }
+                
+                val sampleRecording = recordings.first()
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Testing download for: ${sampleRecording.title}\nIdentifier: ${sampleRecording.identifier}"
+                )
+                
+                // Start the download
+                downloadRepository.downloadRecording(sampleRecording)
+                
+                // Give it a moment to start
+                delay(2000)
+                
+                // Check the status
+                val queueStatus = downloadQueueManager.getQueueProcessingStatus()
+                
+                _uiState.value = _uiState.value.copy(
+                    isDownloadTesting = false,
+                    downloadTestStatus = "✅ Download initiated successfully!\n\n" +
+                            "Recording: ${sampleRecording.title}\n" +
+                            "Identifier: ${sampleRecording.identifier}\n" +
+                            "Queue Status: $queueStatus\n\n" +
+                            "Check logcat for detailed progress:\n" +
+                            "adb logcat | grep -E '(DownloadRepository|DownloadQueueManager|AudioDownloadWorker)'",
+                    downloadTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isDownloadTesting = false,
+                    downloadTestStatus = "❌ Download test failed: ${e.message}",
+                    downloadTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    /**
+     * Test multiple downloads to verify queue management
+     */
+    fun testMultipleDownloads() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    isDownloadTesting = true,
+                    downloadTestStatus = "Starting multiple download test...",
+                    downloadTestSuccess = false
+                )
+                
+                // Get multiple recordings for testing
+                val recordings = concertRepository.getAllCachedRecordings().first()
+                if (recordings.size < 3) {
+                    _uiState.value = _uiState.value.copy(
+                        isDownloadTesting = false,
+                        downloadTestStatus = "❌ Need at least 3 recordings for queue testing. Only found ${recordings.size}.",
+                        downloadTestSuccess = false
+                    )
+                    return@launch
+                }
+                
+                val testRecordings = recordings.take(3)
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Queuing ${testRecordings.size} downloads for queue testing..."
+                )
+                
+                // Start multiple downloads
+                testRecordings.forEachIndexed { index, recording ->
+                    _uiState.value = _uiState.value.copy(
+                        downloadTestStatus = "Queuing download ${index + 1}/3: ${recording.identifier}"
+                    )
+                    downloadRepository.downloadRecording(recording)
+                    delay(500) // Small delay between queuing
+                }
+                
+                // Give the system time to process
+                delay(3000)
+                
+                val queueStatus = downloadQueueManager.getQueueProcessingStatus()
+                
+                _uiState.value = _uiState.value.copy(
+                    isDownloadTesting = false,
+                    downloadTestStatus = "✅ Queue test completed!\n\n" +
+                            "Queued ${testRecordings.size} downloads:\n" +
+                            testRecordings.mapIndexed { index, recording ->
+                                "${index + 1}. ${recording.identifier}"
+                            }.joinToString("\n") +
+                            "\n\nQueue Status: $queueStatus\n\n" +
+                            "The downloads will be processed with concurrency limits.\n" +
+                            "Check logcat for detailed progress:\n" +
+                            "adb logcat | grep -E '(DownloadQueueManager|AudioDownloadWorker)'",
+                    downloadTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isDownloadTesting = false,
+                    downloadTestStatus = "❌ Queue test failed: ${e.message}",
+                    downloadTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    /**
+     * Check the current status of the download system
+     */
+    fun checkDownloadStatus() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Checking download system status..."
+                )
+                
+                val queueStatus = downloadQueueManager.getQueueProcessingStatus()
+                val isActive = downloadQueueManager.isQueueProcessingActive()
+                
+                // Get pending downloads count (if available)
+                val pendingDownloads = try {
+                    val queuedDownloads = downloadRepository.getDownloadQueue()
+                    "${queuedDownloads.size} queued"
+                } catch (e: Exception) {
+                    "Unable to determine (${e.message})"
+                }
+                
+                val statusReport = buildString {
+                    appendLine("📊 DOWNLOAD SYSTEM STATUS")
+                    appendLine("==============================")  
+                    appendLine("Queue Processing: ${if (isActive) "ACTIVE" else "INACTIVE"}")
+                    appendLine("Queue Status: $queueStatus")
+                    appendLine("Pending Downloads: $pendingDownloads")
+                    appendLine()
+                    appendLine("💡 MONITORING COMMANDS:")
+                    appendLine("• View download logs:")
+                    appendLine("  adb logcat | grep -E '(Download|Queue|Worker)'")
+                    appendLine()
+                    appendLine("• Check WorkManager status:")
+                    appendLine("  adb shell dumpsys jobscheduler | grep androidx.work")
+                    appendLine()
+                    appendLine("• Monitor network usage:")
+                    appendLine("  adb shell cat /proc/net/dev")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = statusReport,
+                    downloadTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "❌ Status check failed: ${e.message}",
+                    downloadTestSuccess = false
+                )
             }
         }
     }
