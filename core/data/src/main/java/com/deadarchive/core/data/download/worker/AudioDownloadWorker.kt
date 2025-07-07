@@ -56,7 +56,7 @@ class AudioDownloadWorker @AssistedInject constructor(
         
         // Constants
         private const val BUFFER_SIZE = 8192
-        private const val PROGRESS_UPDATE_INTERVAL = 1024 * 1024 // Update every 1MB
+        private const val PROGRESS_UPDATE_INTERVAL = 256 * 1024 // Update every 256KB for smoother progress
         private const val MAX_RETRY_ATTEMPTS = 3
     }
 

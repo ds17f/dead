@@ -1,20 +1,27 @@
 package com.deadarchive.feature.browse
 
+import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.work.WorkInfo
+import androidx.work.WorkManager
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.data.download.worker.AudioDownloadWorker
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
+import com.deadarchive.core.model.DownloadStatus
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.feature.browse.domain.SearchShowsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -22,8 +29,11 @@ import javax.inject.Inject
 class BrowseViewModel @Inject constructor(
     private val searchShowsUseCase: SearchShowsUseCase,
     private val libraryRepository: LibraryRepository,
-    private val downloadRepository: DownloadRepository
+    private val downloadRepository: DownloadRepository,
+    @ApplicationContext private val context: Context
 ) : ViewModel() {
+    
+    private val workManager = WorkManager.getInstance(context)
     
     private val _uiState = MutableStateFlow<BrowseUiState>(BrowseUiState.Idle)
     val uiState: StateFlow<BrowseUiState> = _uiState.asStateFlow()
@@ -34,9 +44,15 @@ class BrowseViewModel @Inject constructor(
     private val _isSearching = MutableStateFlow(false)
     val isSearching: StateFlow<Boolean> = _isSearching.asStateFlow()
     
+    // Download state tracking
+    private val _downloadStates = MutableStateFlow<Map<String, ShowDownloadState>>(emptyMap())
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = _downloadStates.asStateFlow()
+    
     init {
         // Load popular shows on startup
         searchShows("grateful dead 1977")
+        // Start monitoring download states
+        startDownloadStateMonitoring()
     }
     
     fun updateSearchQuery(query: String) {
@@ -189,12 +205,56 @@ class BrowseViewModel @Inject constructor(
     }
     
     /**
+     * Start monitoring download states for all recordings
+     */
+    private fun startDownloadStateMonitoring() {
+        viewModelScope.launch {
+            // Monitor all downloads and update states
+            downloadRepository.getAllDownloads().collect { downloads ->
+                val stateMap = mutableMapOf<String, ShowDownloadState>()
+                
+                // Group downloads by recording ID
+                val downloadsByRecording = downloads.groupBy { it.recordingId }
+                
+                downloadsByRecording.forEach { (recordingId, recordingDownloads) ->
+                    val showDownloadState = when {
+                        recordingDownloads.any { it.status == DownloadStatus.COMPLETED } -> {
+                            ShowDownloadState.Downloaded
+                        }
+                        recordingDownloads.any { it.status == DownloadStatus.DOWNLOADING } -> {
+                            val downloadingTrack = recordingDownloads.first { it.status == DownloadStatus.DOWNLOADING }
+                            ShowDownloadState.Downloading(
+                                progress = downloadingTrack.progress,
+                                bytesDownloaded = downloadingTrack.bytesDownloaded
+                            )
+                        }
+                        recordingDownloads.any { it.status == DownloadStatus.QUEUED } -> {
+                            ShowDownloadState.Queued
+                        }
+                        recordingDownloads.any { it.status == DownloadStatus.FAILED } -> {
+                            val failedTrack = recordingDownloads.first { it.status == DownloadStatus.FAILED }
+                            ShowDownloadState.Failed(failedTrack.errorMessage)
+                        }
+                        else -> {
+                            ShowDownloadState.NotDownloaded
+                        }
+                    }
+                    
+                    stateMap[recordingId] = showDownloadState
+                }
+                
+                _downloadStates.value = stateMap
+            }
+        }
+    }
+    
+    /**
      * Get the current download state for a recording
      */
     fun getDownloadState(recording: Recording): DownloadState {
         return try {
-            // For now, return Available state as a placeholder
-            // In Task 5, we'll implement proper download progress tracking
+            // This is a simplified version for individual recording downloads
+            // For now, return Available state as most UI uses show-level downloads
             DownloadState.Available
         } catch (e: Exception) {
             DownloadState.Error("Failed to get download state")
@@ -226,12 +286,15 @@ class BrowseViewModel @Inject constructor(
      */
     fun getShowDownloadState(show: Show): ShowDownloadState {
         return try {
-            // For now, return NotDownloaded state as a placeholder
-            // In Task 5, we'll implement proper download progress tracking
-            // This would check the download state of the show's best recording
-            ShowDownloadState.NotDownloaded
+            val bestRecording = show.bestRecording
+            if (bestRecording != null) {
+                // Get the current state from our monitored state map
+                _downloadStates.value[bestRecording.identifier] ?: ShowDownloadState.NotDownloaded
+            } else {
+                ShowDownloadState.NotDownloaded
+            }
         } catch (e: Exception) {
-            ShowDownloadState.Failed
+            ShowDownloadState.Failed("Failed to get download state")
         }
     }
 }

@@ -23,6 +23,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.text.AnnotatedString
 import com.deadarchive.core.design.R
@@ -45,9 +46,10 @@ sealed class DownloadState {
  */
 sealed class ShowDownloadState {
     object NotDownloaded : ShowDownloadState()
-    object Downloading : ShowDownloadState()
+    object Queued : ShowDownloadState()
+    data class Downloading(val progress: Float = -1f, val bytesDownloaded: Long = 0L) : ShowDownloadState()
     object Downloaded : ShowDownloadState()
-    object Failed : ShowDownloadState()
+    data class Failed(val errorMessage: String? = null) : ShowDownloadState()
 }
 
 @Composable
@@ -225,38 +227,76 @@ private fun ShowHeader(
             
             // Download button (for best recording)
             val downloadState = getShowDownloadState(show)
-            IconButton(
-                onClick = { onShowDownloadClick(show) }
-            ) {
-                when (downloadState) {
-                    is ShowDownloadState.NotDownloaded -> {
-                        Icon(
-                            painter = painterResource(R.drawable.ic_file_download),
-                            contentDescription = "Download Show",
-                            tint = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
+            Box {
+                IconButton(
+                    onClick = { onShowDownloadClick(show) }
+                ) {
+                    when (downloadState) {
+                        is ShowDownloadState.NotDownloaded -> {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_file_download),
+                                contentDescription = "Download Show",
+                                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        is ShowDownloadState.Queued -> {
+                            // Show queued state with queue icon
+                            Icon(
+                                painter = painterResource(R.drawable.ic_queue),
+                                contentDescription = "Queued for download",
+                                tint = Color(0xFF9E9E9E), // Gray for queued
+                                modifier = Modifier.size(24.dp)
+                            )
+                        }
+                        is ShowDownloadState.Downloading -> {
+                            if (downloadState.progress >= 0f) {
+                                // Show circular progress indicator with progress
+                                CircularProgressIndicator(
+                                    progress = { downloadState.progress },
+                                    modifier = Modifier.size(24.dp),
+                                    color = Color(0xFFFFA726), // Orange
+                                    strokeWidth = 2.dp
+                                )
+                            } else {
+                                // Show indeterminate progress
+                                CircularProgressIndicator(
+                                    modifier = Modifier.size(24.dp),
+                                    color = Color(0xFFFFA726), // Orange
+                                    strokeWidth = 2.dp
+                                )
+                            }
+                        }
+                        is ShowDownloadState.Downloaded -> {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_check_circle),
+                                contentDescription = "Downloaded",
+                                tint = Color(0xFF4CAF50) // Green for success
+                            )
+                        }
+                        is ShowDownloadState.Failed -> {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_file_download),
+                                contentDescription = "Download Failed - ${downloadState.errorMessage ?: "Unknown error"}",
+                                tint = MaterialTheme.colorScheme.error // Red for error
+                            )
+                        }
                     }
-                    is ShowDownloadState.Downloading -> {
-                        Icon(
-                            painter = painterResource(R.drawable.ic_file_download),
-                            contentDescription = "Downloading...",
-                            tint = Color(0xFFFFA726) // Orange/Yellow for downloading
-                        )
-                    }
-                    is ShowDownloadState.Downloaded -> {
-                        Icon(
-                            painter = painterResource(R.drawable.ic_download_done),
-                            contentDescription = "Downloaded",
-                            tint = Color(0xFF4CAF50) // Green for success
-                        )
-                    }
-                    is ShowDownloadState.Failed -> {
-                        Icon(
-                            painter = painterResource(R.drawable.ic_file_download),
-                            contentDescription = "Download Failed",
-                            tint = MaterialTheme.colorScheme.error // Red for error
-                        )
-                    }
+                }
+                
+                // Show progress percentage text overlay for downloading state
+                if (downloadState is ShowDownloadState.Downloading && downloadState.progress >= 0f) {
+                    Text(
+                        text = "${(downloadState.progress * 100).toInt()}%",
+                        style = MaterialTheme.typography.labelSmall.copy(fontSize = 8.sp),
+                        color = Color(0xFFFFA726),
+                        modifier = Modifier
+                            .align(Alignment.Center)
+                            .background(
+                                MaterialTheme.colorScheme.surface.copy(alpha = 0.8f),
+                                RoundedCornerShape(2.dp)
+                            )
+                            .padding(horizontal = 2.dp)
+                    )
                 }
             }
             
