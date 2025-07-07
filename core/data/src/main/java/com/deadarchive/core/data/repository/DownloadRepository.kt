@@ -854,9 +854,12 @@ class DownloadRepositoryImpl @Inject constructor(
     
     override suspend fun cleanupDeletedDownloads(olderThanTimestamp: Long) {
         val downloadsToCleanup = downloadDao.getAllDownloadsSync()
-            .filter { it.isMarkedForDeletion && 
-                     it.deletionTimestamp != null && 
-                     it.deletionTimestamp < olderThanTimestamp }
+            .filter { download ->
+                val deletionTimestamp = download.deletionTimestamp
+                download.isMarkedForDeletion && 
+                deletionTimestamp != null && 
+                deletionTimestamp < olderThanTimestamp
+            }
         
         for (download in downloadsToCleanup) {
             // Delete actual file if it exists

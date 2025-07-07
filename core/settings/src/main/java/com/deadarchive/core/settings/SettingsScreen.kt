@@ -302,7 +302,7 @@ private fun DownloadSettingsCard(
                 )
             }
             
-            Divider()
+            HorizontalDivider()
             
             // Deletion Grace Period Setting
             Row(
