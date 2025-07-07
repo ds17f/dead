@@ -44,4 +44,16 @@ interface SettingsRepository {
      * Reset all settings to their default values
      */
     suspend fun resetToDefaults()
+    
+    /**
+     * Update the deletion grace period for soft delete
+     * @param days Grace period in days before permanent deletion
+     */
+    suspend fun updateDeletionGracePeriod(days: Int)
+    
+    /**
+     * Update the low storage threshold for cleanup triggering
+     * @param thresholdMB Threshold in megabytes below which cleanup is triggered
+     */
+    suspend fun updateLowStorageThreshold(thresholdMB: Long)
 }

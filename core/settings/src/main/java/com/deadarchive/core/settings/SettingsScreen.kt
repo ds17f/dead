@@ -4,8 +4,10 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
+import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -121,6 +123,8 @@ fun SettingsScreen(
             DownloadSettingsCard(
                 settings = settings,
                 onUpdateDownloadWifiOnly = viewModel::updateDownloadWifiOnly,
+                onUpdateDeletionGracePeriod = viewModel::updateDeletionGracePeriod,
+                onUpdateLowStorageThreshold = viewModel::updateLowStorageThreshold,
                 onNavigateToDownloads = onNavigateToDownloads
             )
             
@@ -257,6 +261,8 @@ private fun AppearanceSettingsCard(
 private fun DownloadSettingsCard(
     settings: AppSettings,
     onUpdateDownloadWifiOnly: (Boolean) -> Unit,
+    onUpdateDeletionGracePeriod: (Int) -> Unit,
+    onUpdateLowStorageThreshold: (Long) -> Unit,
     onNavigateToDownloads: () -> Unit
 ) {
     Card(
@@ -272,6 +278,7 @@ private fun DownloadSettingsCard(
                 fontWeight = FontWeight.Bold
             )
             
+            // WiFi Only Setting
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween,
@@ -295,6 +302,104 @@ private fun DownloadSettingsCard(
                     checked = settings.downloadOnWifiOnly,
                     onCheckedChange = onUpdateDownloadWifiOnly
                 )
+            }
+            
+            Divider()
+            
+            // Deletion Grace Period Setting
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Grace period: ${settings.deletionGracePeriodDays} days",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "How long to keep removed downloads before cleanup",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                
+                Row {
+                    IconButton(
+                        onClick = { 
+                            if (settings.deletionGracePeriodDays > 1) {
+                                onUpdateDeletionGracePeriod(settings.deletionGracePeriodDays - 1)
+                            }
+                        },
+                        enabled = settings.deletionGracePeriodDays > 1
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Remove,
+                            contentDescription = "Decrease"
+                        )
+                    }
+                    IconButton(
+                        onClick = { 
+                            onUpdateDeletionGracePeriod(settings.deletionGracePeriodDays + 1)
+                        }
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Add,
+                            contentDescription = "Increase"
+                        )
+                    }
+                }
+            }
+            
+            // Storage Threshold Setting
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Storage threshold: ${settings.lowStorageThresholdMB}MB",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Trigger cleanup when free space falls below this",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                
+                Row {
+                    IconButton(
+                        onClick = { 
+                            if (settings.lowStorageThresholdMB > 100L) {
+                                onUpdateLowStorageThreshold(settings.lowStorageThresholdMB - 100L)
+                            }
+                        },
+                        enabled = settings.lowStorageThresholdMB > 100L
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Remove,
+                            contentDescription = "Decrease"
+                        )
+                    }
+                    IconButton(
+                        onClick = { 
+                            onUpdateLowStorageThreshold(settings.lowStorageThresholdMB + 100L)
+                        }
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.Add,
+                            contentDescription = "Increase"
+                        )
+                    }
+                }
             }
             
             Spacer(modifier = Modifier.height(8.dp))

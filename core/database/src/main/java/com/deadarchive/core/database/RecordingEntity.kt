@@ -56,6 +56,10 @@ data class RecordingEntity(
     val isInLibrary: Boolean = false,
     val isDownloaded: Boolean = false,
     
+    // Soft delete fields (recording-level)
+    val isMarkedForDeletion: Boolean = false,
+    val deletionTimestamp: Long? = null,
+    
     // Cache management
     val cachedTimestamp: Long = System.currentTimeMillis()
 ) {
@@ -85,7 +89,9 @@ data class RecordingEntity(
             tracks = tracks,
             audioFiles = emptyList(), // Will be populated from tracks
             isInLibrary = isInLibrary,
-            isDownloaded = isDownloaded
+            isDownloaded = isDownloaded,
+            isMarkedForDeletion = isMarkedForDeletion,
+            deletionTimestamp = deletionTimestamp
         )
     }
     
@@ -112,7 +118,9 @@ data class RecordingEntity(
                 concertLocation = recording.concertLocation,
                 tracksJson = tracksJson,
                 isInLibrary = recording.isInLibrary,
-                isDownloaded = recording.isDownloaded
+                isDownloaded = recording.isDownloaded,
+                isMarkedForDeletion = recording.isMarkedForDeletion,
+                deletionTimestamp = recording.deletionTimestamp
             )
         }
     }

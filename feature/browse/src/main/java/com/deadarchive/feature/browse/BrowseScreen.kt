@@ -45,6 +45,7 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
+import com.deadarchive.core.design.component.ConfirmationDialog
 import com.deadarchive.core.settings.SettingsViewModel
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -65,6 +66,7 @@ fun BrowseScreen(
     val isSearching by viewModel.isSearching.collectAsState()
     val downloadStates by viewModel.downloadStates.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
+    val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
     Column(
@@ -196,6 +198,10 @@ fun BrowseScreen(
                                     Log.d("BrowseScreen", "Cancel download requested for show: ${show.showId}")
                                     viewModel.cancelShowDownloads(show)
                                 },
+                                onRemoveDownloadClick = { show: Show ->
+                                    Log.d("BrowseScreen", "Remove download requested for show: ${show.showId}")
+                                    viewModel.showRemoveDownloadConfirmation(show)
+                                },
                                 getShowDownloadState = { show: Show ->
                                     // Use the observed download states for real-time updates
                                     val bestRecording = show.bestRecording
@@ -259,6 +265,20 @@ fun BrowseScreen(
                 ) {
                     Text("Cancel")
                 }
+            }
+        )
+    }
+    
+    // Confirmation dialog for removing downloads
+    showConfirmationDialog?.let { show ->
+        ConfirmationDialog(
+            title = "Remove Download",
+            message = "Are you sure you want to remove the download for \"${show.displayDate} - ${show.displayVenue}\"?",
+            onConfirm = {
+                viewModel.confirmRemoveDownload()
+            },
+            onCancel = {
+                viewModel.hideConfirmationDialog()
             }
         )
     }

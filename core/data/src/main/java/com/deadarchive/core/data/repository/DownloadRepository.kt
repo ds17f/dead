@@ -190,6 +190,17 @@ interface DownloadRepository {
      */
     suspend fun retryDownload(downloadId: String)
     suspend fun clearCompletedDownloads()
+    
+    /**
+     * Soft delete methods for Spotify-style behavior
+     */
+    suspend fun markDownloadForDeletion(downloadId: String)
+    suspend fun markRecordingForDeletion(recordingId: String)
+    suspend fun restoreDeletedDownload(downloadId: String)
+    suspend fun restoreDeletedRecording(recordingId: String)
+    suspend fun getDownloadsMarkedForDeletion(): List<DownloadState>
+    suspend fun cleanupDeletedDownloads(olderThanTimestamp: Long)
+    suspend fun getStorageThreshold(): Long
 }
 
 /**
@@ -764,6 +775,110 @@ class DownloadRepositoryImpl @Inject constructor(
         val trackPattern = Regex("(?:t|track)(\\d+)", RegexOption.IGNORE_CASE)
         val match = trackPattern.find(filename)
         return match?.groupValues?.get(1)
+    }
+    
+    // ============ Soft Delete Implementation ============
+    
+    override suspend fun markDownloadForDeletion(downloadId: String) {
+        val download = downloadDao.getDownloadById(downloadId)
+        if (download != null) {
+            val updatedDownload = download.copy(
+                isMarkedForDeletion = true,
+                deletionTimestamp = System.currentTimeMillis()
+            )
+            downloadDao.updateDownload(updatedDownload)
+            android.util.Log.d("DownloadRepository", "🗑️ Download marked for deletion: $downloadId")
+        }
+    }
+    
+    override suspend fun markRecordingForDeletion(recordingId: String) {
+        // Mark all downloads for this recording for deletion
+        val recordingDownloads = downloadDao.getAllDownloadsSync()
+            .filter { it.recordingId == recordingId }
+            
+        recordingDownloads.forEach { download ->
+            markDownloadForDeletion(download.id)
+        }
+        
+        // Mark recording itself for deletion
+        val recordingEntity = recordingDao.getRecordingById(recordingId)
+        if (recordingEntity != null) {
+            val updatedEntity = recordingEntity.copy(
+                isMarkedForDeletion = true,
+                deletionTimestamp = System.currentTimeMillis()
+            )
+            recordingDao.updateRecording(updatedEntity)
+            android.util.Log.d("DownloadRepository", "🗑️ Recording marked for deletion: $recordingId")
+        }
+    }
+    
+    override suspend fun restoreDeletedDownload(downloadId: String) {
+        val download = downloadDao.getDownloadById(downloadId)
+        if (download?.isMarkedForDeletion == true) {
+            val updatedDownload = download.copy(
+                isMarkedForDeletion = false,
+                deletionTimestamp = null,
+                lastAccessTimestamp = System.currentTimeMillis()
+            )
+            downloadDao.updateDownload(updatedDownload)
+            android.util.Log.d("DownloadRepository", "♻️ Download restored from deletion: $downloadId")
+        }
+    }
+    
+    override suspend fun restoreDeletedRecording(recordingId: String) {
+        // Restore all downloads for this recording
+        val recordingDownloads = downloadDao.getAllDownloadsSync()
+            .filter { it.recordingId == recordingId && it.isMarkedForDeletion }
+            
+        recordingDownloads.forEach { download ->
+            restoreDeletedDownload(download.id)
+        }
+        
+        // Restore recording itself
+        val recordingEntity = recordingDao.getRecordingById(recordingId)
+        if (recordingEntity?.isMarkedForDeletion == true) {
+            val updatedEntity = recordingEntity.copy(
+                isMarkedForDeletion = false,
+                deletionTimestamp = null
+            )
+            recordingDao.updateRecording(updatedEntity)
+            android.util.Log.d("DownloadRepository", "♻️ Recording restored from deletion: $recordingId")
+        }
+    }
+    
+    override suspend fun getDownloadsMarkedForDeletion(): List<DownloadState> {
+        return downloadDao.getAllDownloadsSync()
+            .filter { it.isMarkedForDeletion }
+            .map { it.toDownloadState() }
+    }
+    
+    override suspend fun cleanupDeletedDownloads(olderThanTimestamp: Long) {
+        val downloadsToCleanup = downloadDao.getAllDownloadsSync()
+            .filter { it.isMarkedForDeletion && 
+                     it.deletionTimestamp != null && 
+                     it.deletionTimestamp < olderThanTimestamp }
+        
+        for (download in downloadsToCleanup) {
+            // Delete actual file if it exists
+            download.localPath?.let { path ->
+                val file = File(path)
+                if (file.exists()) {
+                    val deleted = file.delete()
+                    android.util.Log.d("DownloadRepository", "🗑️ File deletion: $path - success: $deleted")
+                }
+            }
+            
+            // Remove from database
+            downloadDao.deleteDownloadById(download.id)
+        }
+        
+        android.util.Log.d("DownloadRepository", "🧹 Cleaned up ${downloadsToCleanup.size} downloads from storage")
+    }
+    
+    override suspend fun getStorageThreshold(): Long {
+        // Return available storage space threshold (e.g., 500MB)
+        // This would typically come from settings/preferences
+        return 500L * 1024L * 1024L // 500MB
     }
     
 }

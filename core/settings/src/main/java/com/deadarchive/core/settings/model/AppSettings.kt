@@ -10,7 +10,10 @@ data class AppSettings(
     val audioFormatPreference: List<String> = AppConstants.PREFERRED_AUDIO_FORMATS,
     val themeMode: ThemeMode = ThemeMode.SYSTEM,
     val downloadOnWifiOnly: Boolean = true,
-    val showDebugInfo: Boolean = false
+    val showDebugInfo: Boolean = false,
+    // Soft delete settings
+    val deletionGracePeriodDays: Int = 7,
+    val lowStorageThresholdMB: Long = 500L
 )
 
 /**

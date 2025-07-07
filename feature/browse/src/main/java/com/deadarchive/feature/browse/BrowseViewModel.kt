@@ -48,6 +48,10 @@ class BrowseViewModel @Inject constructor(
     private val _downloadStates = MutableStateFlow<Map<String, ShowDownloadState>>(emptyMap())
     val downloadStates: StateFlow<Map<String, ShowDownloadState>> = _downloadStates.asStateFlow()
     
+    // Confirmation dialog state
+    private val _showConfirmationDialog = MutableStateFlow<Show?>(null)
+    val showConfirmationDialog: StateFlow<Show?> = _showConfirmationDialog.asStateFlow()
+    
     init {
         // Load popular shows on startup
         searchShows("grateful dead 1977")
@@ -236,6 +240,10 @@ class BrowseViewModel @Inject constructor(
                 
                 downloadsByRecording.forEach { (recordingId, recordingDownloads) ->
                     val showDownloadState = when {
+                        // If any download is marked for deletion, treat as not downloaded
+                        recordingDownloads.any { it.isMarkedForDeletion } -> {
+                            ShowDownloadState.NotDownloaded
+                        }
                         recordingDownloads.all { it.status == DownloadStatus.COMPLETED } -> {
                             ShowDownloadState.Downloaded
                         }
@@ -320,6 +328,43 @@ class BrowseViewModel @Inject constructor(
             }
         } catch (e: Exception) {
             ShowDownloadState.Failed("Failed to get download state")
+        }
+    }
+    
+    /**
+     * Show confirmation dialog for removing download
+     */
+    fun showRemoveDownloadConfirmation(show: Show) {
+        _showConfirmationDialog.value = show
+    }
+    
+    /**
+     * Hide confirmation dialog
+     */
+    fun hideConfirmationDialog() {
+        _showConfirmationDialog.value = null
+    }
+    
+    /**
+     * Confirm removal of download (soft delete)
+     */
+    fun confirmRemoveDownload() {
+        viewModelScope.launch {
+            val show = _showConfirmationDialog.value
+            if (show != null) {
+                try {
+                    val bestRecording = show.bestRecording
+                    if (bestRecording != null) {
+                        // Soft delete the recording
+                        downloadRepository.markRecordingForDeletion(bestRecording.identifier)
+                        println("🗑️ Recording ${bestRecording.identifier} marked for soft deletion")
+                    }
+                } catch (e: Exception) {
+                    println("Failed to mark recording for deletion: ${e.message}")
+                } finally {
+                    _showConfirmationDialog.value = null
+                }
+            }
         }
     }
 }

@@ -70,6 +70,7 @@ fun ExpandableConcertItem(
     getDownloadState: (Recording) -> DownloadState = { DownloadState.Available },
     onShowDownloadClick: (Show) -> Unit = { },
     onCancelDownloadClick: (Show) -> Unit = { },
+    onRemoveDownloadClick: (Show) -> Unit = { },
     getShowDownloadState: (Show) -> ShowDownloadState = { ShowDownloadState.NotDownloaded },
     modifier: Modifier = Modifier
 ) {
@@ -96,6 +97,7 @@ fun ExpandableConcertItem(
                 onShowClick = onShowClick,
                 onLibraryClick = onLibraryClick,
                 onShowDownloadClick = onShowDownloadClick,
+                onRemoveDownloadClick = onRemoveDownloadClick,
                 getShowDownloadState = getShowDownloadState
             )
             
@@ -126,6 +128,7 @@ private fun ShowHeader(
     onShowClick: (Show) -> Unit,
     onLibraryClick: (Show) -> Unit,
     onShowDownloadClick: (Show) -> Unit,
+    onRemoveDownloadClick: (Show) -> Unit,
     getShowDownloadState: (Show) -> ShowDownloadState,
     modifier: Modifier = Modifier
 ) {
@@ -285,8 +288,11 @@ private fun ShowHeader(
                         is ShowDownloadState.Downloaded -> {
                             Icon(
                                 painter = painterResource(R.drawable.ic_check_circle),
-                                contentDescription = "Downloaded",
-                                tint = MaterialTheme.colorScheme.primary // Theme primary color for success
+                                contentDescription = "Downloaded - Click to remove",
+                                tint = MaterialTheme.colorScheme.primary, // Theme primary color for success
+                                modifier = Modifier.clickable {
+                                    onRemoveDownloadClick(show)
+                                }
                             )
                         }
                         is ShowDownloadState.Failed -> {

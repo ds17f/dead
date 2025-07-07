@@ -50,7 +50,11 @@ data class Recording(
     
     // UI state
     val isInLibrary: Boolean = false,
-    val isDownloaded: Boolean = false
+    val isDownloaded: Boolean = false,
+    
+    // Soft delete fields (recording-level)
+    val isMarkedForDeletion: Boolean = false,
+    val deletionTimestamp: Long? = null
 ) {
     val displayTitle: String
         get() = if (concertVenue?.isNotBlank() == true && concertDate.isNotBlank()) {

@@ -17,7 +17,12 @@ data class DownloadState(
     val priority: Int = 0,
     val retryCount: Int = 0,
     val createdAt: Long = System.currentTimeMillis(),
-    val updatedAt: Long = System.currentTimeMillis()
+    val updatedAt: Long = System.currentTimeMillis(),
+    
+    // Soft delete fields
+    val isMarkedForDeletion: Boolean = false,
+    val deletionTimestamp: Long? = null,
+    val lastAccessTimestamp: Long = System.currentTimeMillis()
 ) {
     val id: String
         get() = "${recordingId}_${trackFilename}"

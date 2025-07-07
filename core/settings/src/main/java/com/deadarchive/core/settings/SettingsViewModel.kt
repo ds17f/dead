@@ -200,4 +200,58 @@ class SettingsViewModel @Inject constructor(
     fun setDraggingFormats(dragging: Boolean) {
         _uiState.value = _uiState.value.copy(isDraggingFormats = dragging)
     }
+    
+    /**
+     * Update the deletion grace period in days
+     */
+    fun updateDeletionGracePeriod(days: Int) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Updating deletion grace period to: $days days")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                settingsRepository.updateDeletionGracePeriod(days)
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "Grace period updated to $days days"
+                )
+                Log.d(TAG, "Deletion grace period updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update deletion grace period", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update grace period: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Update the low storage threshold in MB
+     */
+    fun updateLowStorageThreshold(thresholdMB: Long) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Updating low storage threshold to: ${thresholdMB}MB")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                settingsRepository.updateLowStorageThreshold(thresholdMB)
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "Storage threshold updated to ${thresholdMB}MB"
+                )
+                Log.d(TAG, "Low storage threshold updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update low storage threshold", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update storage threshold: ${e.message}"
+                )
+            }
+        }
+    }
 }

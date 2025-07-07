@@ -19,7 +19,12 @@ data class DownloadEntity(
     val startedTimestamp: Long = System.currentTimeMillis(),
     val completedTimestamp: Long? = null,
     val priority: Int = 0,
-    val retryCount: Int = 0
+    val retryCount: Int = 0,
+    
+    // Soft delete fields
+    val isMarkedForDeletion: Boolean = false,
+    val deletionTimestamp: Long? = null,
+    val lastAccessTimestamp: Long = System.currentTimeMillis()
 ) {
     fun toDownloadState(): DownloadState {
         return DownloadState(
@@ -34,7 +39,10 @@ data class DownloadEntity(
             startedTimestamp = startedTimestamp,
             completedTimestamp = completedTimestamp,
             priority = priority,
-            retryCount = retryCount
+            retryCount = retryCount,
+            isMarkedForDeletion = isMarkedForDeletion,
+            deletionTimestamp = deletionTimestamp,
+            lastAccessTimestamp = lastAccessTimestamp
         )
     }
     
@@ -53,7 +61,10 @@ data class DownloadEntity(
                 startedTimestamp = downloadState.startedTimestamp,
                 completedTimestamp = downloadState.completedTimestamp,
                 priority = downloadState.priority,
-                retryCount = downloadState.retryCount
+                retryCount = downloadState.retryCount,
+                isMarkedForDeletion = downloadState.isMarkedForDeletion,
+                deletionTimestamp = downloadState.deletionTimestamp,
+                lastAccessTimestamp = downloadState.lastAccessTimestamp
             )
         }
     }

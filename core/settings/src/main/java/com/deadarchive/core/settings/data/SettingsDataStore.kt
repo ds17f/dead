@@ -6,6 +6,8 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.emptyPreferences
+import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.deadarchive.core.model.AppConstants
@@ -35,6 +37,8 @@ class SettingsDataStore @Inject constructor(
     private val themeModeKey = stringPreferencesKey(AppConstants.PREF_THEME_MODE)
     private val downloadWifiOnlyKey = booleanPreferencesKey(AppConstants.PREF_DOWNLOAD_WIFI_ONLY)
     private val showDebugInfoKey = booleanPreferencesKey(AppConstants.PREF_SHOW_DEBUG_INFO)
+    private val deletionGracePeriodKey = intPreferencesKey("deletion_grace_period_days")
+    private val lowStorageThresholdKey = longPreferencesKey("low_storage_threshold_mb")
     
     /**
      * Reactive flow of application settings
@@ -94,6 +98,24 @@ class SettingsDataStore @Inject constructor(
     }
     
     /**
+     * Update deletion grace period setting
+     */
+    suspend fun updateDeletionGracePeriod(days: Int) {
+        dataStore.edit { preferences ->
+            preferences[deletionGracePeriodKey] = days
+        }
+    }
+    
+    /**
+     * Update low storage threshold setting
+     */
+    suspend fun updateLowStorageThreshold(thresholdMB: Long) {
+        dataStore.edit { preferences ->
+            preferences[lowStorageThresholdKey] = thresholdMB
+        }
+    }
+    
+    /**
      * Convert DataStore preferences to AppSettings
      */
     private fun Preferences.toAppSettings(): AppSettings {
@@ -115,7 +137,9 @@ class SettingsDataStore @Inject constructor(
             audioFormatPreference = audioFormatPreference,
             themeMode = themeMode,
             downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true,
-            showDebugInfo = this[showDebugInfoKey] ?: false
+            showDebugInfo = this[showDebugInfoKey] ?: false,
+            deletionGracePeriodDays = this[deletionGracePeriodKey] ?: 7,
+            lowStorageThresholdMB = this[lowStorageThresholdKey] ?: 500L
         )
     }
 }

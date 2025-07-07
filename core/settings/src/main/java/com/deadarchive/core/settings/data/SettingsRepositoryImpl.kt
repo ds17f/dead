@@ -102,4 +102,26 @@ class SettingsRepositoryImpl @Inject constructor(
             throw e
         }
     }
+    
+    override suspend fun updateDeletionGracePeriod(days: Int) {
+        try {
+            Log.d(TAG, "Updating deletion grace period to $days days")
+            settingsDataStore.updateDeletionGracePeriod(days)
+            Log.d(TAG, "Deletion grace period updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update deletion grace period", e)
+            throw e
+        }
+    }
+    
+    override suspend fun updateLowStorageThreshold(thresholdMB: Long) {
+        try {
+            Log.d(TAG, "Updating low storage threshold to ${thresholdMB}MB")
+            settingsDataStore.updateLowStorageThreshold(thresholdMB)
+            Log.d(TAG, "Low storage threshold updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update low storage threshold", e)
+            throw e
+        }
+    }
 }
