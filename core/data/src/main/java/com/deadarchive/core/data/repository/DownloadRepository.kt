@@ -106,6 +106,11 @@ interface DownloadRepository {
     suspend fun cancelAllActiveDownloads()
     
     /**
+     * Cancel all downloads for a specific recording
+     */
+    suspend fun cancelRecordingDownloads(recordingId: String)
+    
+    /**
      * Delete all completed downloads
      */
     suspend fun deleteCompletedDownloads()
@@ -456,6 +461,19 @@ class DownloadRepositoryImpl @Inject constructor(
 
     override suspend fun cancelAllActiveDownloads() {
         downloadDao.cancelAllActiveDownloads()
+    }
+
+    override suspend fun cancelRecordingDownloads(recordingId: String) {
+        // Get all active downloads for this recording
+        val activeDownloads = downloadDao.getAllDownloadsSync()
+            .filter { it.recordingId == recordingId && it.status in listOf("QUEUED", "DOWNLOADING", "PAUSED") }
+        
+        // Cancel each download
+        activeDownloads.forEach { download ->
+            updateDownloadStatus(download.id, DownloadStatus.CANCELLED)
+        }
+        
+        android.util.Log.d("DownloadRepository", "🛑 Cancelled ${activeDownloads.size} downloads for recording $recordingId")
     }
 
     override suspend fun deleteCompletedDownloads() {

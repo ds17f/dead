@@ -51,9 +51,9 @@ class DownloadQueueManagerWorker @AssistedInject constructor(
                 .build()
             
             return PeriodicWorkRequestBuilder<DownloadQueueManagerWorker>(
-                repeatInterval = 15, // Check every 15 minutes
+                repeatInterval = 15, // Minimum allowed by Android (will be overridden by immediate processing)
                 repeatIntervalTimeUnit = java.util.concurrent.TimeUnit.MINUTES,
-                flexTimeInterval = 5, // Allow 5 minute flex window
+                flexTimeInterval = 1, // Minimal flex window for faster processing
                 flexTimeIntervalUnit = java.util.concurrent.TimeUnit.MINUTES
             )
                 .setConstraints(constraints)
@@ -85,25 +85,54 @@ class DownloadQueueManagerWorker @AssistedInject constructor(
 
     override suspend fun doWork(): Result = withContext(Dispatchers.IO) {
         try {
-            Log.d(TAG, "DownloadQueueManagerWorker.doWork() called - WITH REPOSITORY")
-            Log.d(TAG, "Worker context: ${applicationContext.javaClass.simpleName}")
-            Log.d(TAG, "Worker initialized successfully with repository dependency")
+            Log.d(TAG, "🚀 DownloadQueueManagerWorker.doWork() STARTED - NEW IMPLEMENTATION")
+            Log.d(TAG, "⚙️ Worker context: ${applicationContext.javaClass.simpleName}")
+            Log.d(TAG, "⚙️ Repository injected: ${downloadRepository.javaClass.simpleName}")
             
-            // Test repository access
-            Log.d(TAG, "Testing repository access...")
-            try {
-                val testQueue = downloadRepository.getDownloadQueue()
-                Log.d(TAG, "Repository access successful, queue size: ${testQueue.size}")
-            } catch (e: Exception) {
-                Log.e(TAG, "Repository access failed", e)
-                return@withContext Result.failure(workDataOf("error" to "Repository access failed: ${e.message}"))
+            // Get queued downloads
+            val queuedDownloads = downloadRepository.getDownloadQueue()
+            Log.d(TAG, "🔍 Found ${queuedDownloads.size} queued downloads in database")
+            
+            if (queuedDownloads.isEmpty()) {
+                Log.d(TAG, "No downloads in queue, queue processing complete")
+                return@withContext Result.success(workDataOf(
+                    "status" to "success",
+                    "message" to "No downloads in queue"
+                ))
             }
             
-            delay(1000) // Simulate some work
-            Log.d(TAG, "Worker execution successful with repository!")
+            // Get current running download count
+            val runningCount = getCurrentRunningDownloadCount()
+            val availableSlots = MAX_CONCURRENT_DOWNLOADS - runningCount
+            
+            Log.d(TAG, "Current running downloads: $runningCount, Available slots: $availableSlots")
+            
+            if (availableSlots <= 0) {
+                Log.d(TAG, "Maximum concurrent downloads reached, skipping new downloads")
+                return@withContext Result.success(workDataOf(
+                    "status" to "success",
+                    "message" to "Max concurrent downloads reached"
+                ))
+            }
+            
+            // Process the download queue up to available slots
+            val startedCount = processDownloadQueue(availableSlots)
+            
+            Log.d(TAG, "Queue processing complete. Started $startedCount downloads")
+            
+            // Check if there are still downloads in queue after processing
+            val remainingDownloads = downloadRepository.getDownloadQueue()
+            if (remainingDownloads.isNotEmpty() && startedCount > 0) {
+                // Immediately queue another processing cycle if there are more downloads
+                Log.d(TAG, "🔄 ${remainingDownloads.size} downloads still queued, scheduling immediate re-processing")
+                enqueueImmediateProcessing()
+            }
+            
             Result.success(workDataOf(
                 "status" to "success",
-                "message" to "Worker executed successfully with repository access"
+                "downloads_started" to startedCount,
+                "remaining_queue_size" to remainingDownloads.size,
+                "message" to "Started $startedCount downloads, ${remainingDownloads.size} remaining"
             ))
             
         } catch (e: Exception) {
@@ -117,7 +146,6 @@ class DownloadQueueManagerWorker @AssistedInject constructor(
         }
     }
 
-    /*
     /**
      * Gets the current count of running download workers
      */
@@ -266,5 +294,18 @@ class DownloadQueueManagerWorker @AssistedInject constructor(
             Log.e(TAG, "Failed to cleanup workers", e)
         }
     }
-    */
+    
+    /**
+     * Immediately enqueue another instance of this worker to continue processing
+     */
+    private fun enqueueImmediateProcessing() {
+        try {
+            val workManager = WorkManager.getInstance(applicationContext)
+            val immediateWorkRequest = createImmediateWorkRequest()
+            workManager.enqueue(immediateWorkRequest)
+            Log.d(TAG, "🚀 Immediate queue processing work enqueued")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to enqueue immediate processing", e)
+        }
+    }
 }

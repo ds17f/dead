@@ -101,4 +101,7 @@ interface DownloadDao {
     
     @Query("SELECT * FROM downloads WHERE status IN ('QUEUED', 'DOWNLOADING', 'PAUSED')")
     suspend fun getActiveDownloadsList(): List<DownloadEntity>
+    
+    @Query("UPDATE downloads SET status = :newStatus WHERE status = :oldStatus")
+    suspend fun updateDownloadStatusForAll(oldStatus: String, newStatus: String)
 }
