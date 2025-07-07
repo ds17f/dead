@@ -244,32 +244,38 @@ class BrowseViewModel @Inject constructor(
                         recordingDownloads.any { it.isMarkedForDeletion } -> {
                             ShowDownloadState.NotDownloaded
                         }
-                        recordingDownloads.all { it.status == DownloadStatus.COMPLETED } -> {
-                            ShowDownloadState.Downloaded
-                        }
-                        recordingDownloads.any { it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED } -> {
-                            // Calculate track-based progress (Spotify-style immediate feedback)
-                            val totalTracks = recordingDownloads.size
-                            val completedTracks = recordingDownloads.count { it.status == DownloadStatus.COMPLETED }
-                            
-                            // Get byte progress from actively downloading track if any
-                            val downloadingTrack = recordingDownloads.firstOrNull { it.status == DownloadStatus.DOWNLOADING }
-                            val byteProgress = downloadingTrack?.progress ?: -1f
-                            val bytesDownloaded = downloadingTrack?.bytesDownloaded ?: 0L
-                            
-                            ShowDownloadState.Downloading(
-                                progress = byteProgress,
-                                bytesDownloaded = bytesDownloaded,
-                                completedTracks = completedTracks,
-                                totalTracks = totalTracks
-                            )
-                        }
+                        // Handle failed downloads separately (show as failed)
                         recordingDownloads.any { it.status == DownloadStatus.FAILED } -> {
                             val failedTrack = recordingDownloads.first { it.status == DownloadStatus.FAILED }
                             ShowDownloadState.Failed(failedTrack.errorMessage)
                         }
-                        else -> {
-                            ShowDownloadState.NotDownloaded
+                        // Filter out cancelled and failed downloads for status determination
+                        else -> recordingDownloads.filter { it.status !in listOf(DownloadStatus.CANCELLED, DownloadStatus.FAILED) }.let { activeDownloads ->
+                            when {
+                                activeDownloads.all { it.status == DownloadStatus.COMPLETED } && activeDownloads.isNotEmpty() -> {
+                                    ShowDownloadState.Downloaded
+                                }
+                                activeDownloads.any { it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED } -> {
+                                    // Calculate track-based progress (Spotify-style immediate feedback)
+                                    val totalTracks = activeDownloads.size
+                                    val completedTracks = activeDownloads.count { it.status == DownloadStatus.COMPLETED }
+                                    
+                                    // Get byte progress from actively downloading track if any
+                                    val downloadingTrack = activeDownloads.firstOrNull { it.status == DownloadStatus.DOWNLOADING }
+                                    val byteProgress = downloadingTrack?.progress ?: -1f
+                                    val bytesDownloaded = downloadingTrack?.bytesDownloaded ?: 0L
+                                    
+                                    ShowDownloadState.Downloading(
+                                        progress = byteProgress,
+                                        bytesDownloaded = bytesDownloaded,
+                                        completedTracks = completedTracks,
+                                        totalTracks = totalTracks
+                                    )
+                                }
+                                else -> {
+                                    ShowDownloadState.NotDownloaded
+                                }
+                            }
                         }
                     }
                     
