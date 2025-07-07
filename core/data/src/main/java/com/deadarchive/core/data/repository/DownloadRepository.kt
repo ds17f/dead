@@ -347,8 +347,28 @@ class DownloadRepositoryImpl @Inject constructor(
     override suspend fun startRecordingDownload(recording: Recording): List<String> {
         val downloadIds = mutableListOf<String>()
         
-        // Check if recording is marked for deletion and restore it
+        // Get recording entity (used for both library addition and soft delete check)
         val recordingEntity = recordingDao.getRecordingById(recording.identifier)
+        
+        // Auto-add show to library when starting download
+        try {
+            if (recordingEntity != null) {
+                val show = showRepository.getShowById(recordingEntity.concertId)
+                if (show != null) {
+                    val wasAdded = libraryRepository.addShowToLibrary(show)
+                    if (wasAdded) {
+                        android.util.Log.d("DownloadRepository", "📚 Show ${show.showId} automatically added to library when starting download")
+                    } else {
+                        android.util.Log.d("DownloadRepository", "📚 Show ${show.showId} already in library")
+                    }
+                }
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("DownloadRepository", "❌ Failed to auto-add show to library when starting download", e)
+            // Don't fail the download if library addition fails
+        }
+        
+        // Check if recording is marked for deletion and restore it
         if (recordingEntity?.isMarkedForDeletion == true) {
             val restoredEntity = recordingEntity.copy(
                 isMarkedForDeletion = false,

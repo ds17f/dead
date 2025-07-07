@@ -201,6 +201,20 @@ class BrowseViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 downloadRepository.downloadRecording(recording)
+                
+                // Update the UI state locally to show the recording's show is now in library
+                val currentState = _uiState.value
+                if (currentState is BrowseUiState.Success) {
+                    val updatedShows = currentState.shows.map { existingShow ->
+                        // Find the show that contains this recording
+                        if (existingShow.recordings.any { it.identifier == recording.identifier }) {
+                            existingShow.copy(isInLibrary = true)
+                        } else {
+                            existingShow
+                        }
+                    }
+                    _uiState.value = BrowseUiState.Success(updatedShows)
+                }
             } catch (e: Exception) {
                 // Could add error handling/snackbar here
                 println("Failed to start download for recording ${recording.identifier}: ${e.message}")
@@ -311,6 +325,19 @@ class BrowseViewModel @Inject constructor(
                 if (bestRecording != null) {
                     println("Downloading best recording for show ${show.showId}: ${bestRecording.identifier}")
                     downloadRepository.downloadRecording(bestRecording)
+                    
+                    // Update the UI state locally to show the show is now in library
+                    val currentState = _uiState.value
+                    if (currentState is BrowseUiState.Success) {
+                        val updatedShows = currentState.shows.map { existingShow ->
+                            if (existingShow.showId == show.showId) {
+                                existingShow.copy(isInLibrary = true)
+                            } else {
+                                existingShow
+                            }
+                        }
+                        _uiState.value = BrowseUiState.Success(updatedShows)
+                    }
                 } else {
                     println("No best recording available for show ${show.showId}")
                 }
