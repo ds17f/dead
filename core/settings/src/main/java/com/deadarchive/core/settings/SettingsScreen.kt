@@ -4,10 +4,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
-import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -336,9 +334,9 @@ private fun DownloadSettingsCard(
                         },
                         enabled = settings.deletionGracePeriodDays > 1
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.Remove,
-                            contentDescription = "Decrease"
+                        Text(
+                            text = "−",
+                            style = MaterialTheme.typography.titleLarge
                         )
                     }
                     IconButton(
@@ -346,9 +344,9 @@ private fun DownloadSettingsCard(
                             onUpdateDeletionGracePeriod(settings.deletionGracePeriodDays + 1)
                         }
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.Add,
-                            contentDescription = "Increase"
+                        Text(
+                            text = "+",
+                            style = MaterialTheme.typography.titleLarge
                         )
                     }
                 }
@@ -384,9 +382,9 @@ private fun DownloadSettingsCard(
                         },
                         enabled = settings.lowStorageThresholdMB > 100L
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.Remove,
-                            contentDescription = "Decrease"
+                        Text(
+                            text = "−",
+                            style = MaterialTheme.typography.titleLarge
                         )
                     }
                     IconButton(
@@ -394,9 +392,9 @@ private fun DownloadSettingsCard(
                             onUpdateLowStorageThreshold(settings.lowStorageThresholdMB + 100L)
                         }
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.Add,
-                            contentDescription = "Increase"
+                        Text(
+                            text = "+",
+                            style = MaterialTheme.typography.titleLarge
                         )
                     }
                 }
