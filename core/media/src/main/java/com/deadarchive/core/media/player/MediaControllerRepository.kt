@@ -40,7 +40,8 @@ import javax.inject.Singleton
 @UnstableApi
 @Singleton
 class MediaControllerRepository @Inject constructor(
-    @ApplicationContext private val context: Context
+    @ApplicationContext private val context: Context,
+    private val localFileResolver: LocalFileResolver
 ) {
     
     companion object {
@@ -364,6 +365,7 @@ class MediaControllerRepository @Inject constructor(
     
     /**
      * Sync current queue to MediaController using setMediaItems()
+     * Now resolves local files for offline playback
      */
     private fun syncQueueToMediaController() {
         val controller = mediaController ?: return
@@ -378,38 +380,47 @@ class MediaControllerRepository @Inject constructor(
         Log.d(TAG, "Current index: $currentQueueIndex")
         
         try {
-            val mediaItems = currentQueueUrls.mapIndexed { index, url ->
-                val title = queueTrackTitles.getOrNull(index) ?: url.substringAfterLast("/").substringBeforeLast(".")
-                val artist = queueTrackArtists.getOrNull(index)
+            // Resolve local files for each queue item asynchronously
+            coroutineScope.launch {
+                val mediaItems = mutableListOf<MediaItem>()
                 
-                val metadata = MediaMetadata.Builder()
-                    .setTitle(title)
-                    .apply { if (artist != null) setArtist(artist) }
-                    .build()
+                for ((index, url) in currentQueueUrls.withIndex()) {
+                    val resolvedUrl = resolvePlaybackUrl(url) ?: url
+                    val title = queueTrackTitles.getOrNull(index) ?: url.substringAfterLast("/").substringBeforeLast(".")
+                    val artist = queueTrackArtists.getOrNull(index)
+                    
+                    val metadata = MediaMetadata.Builder()
+                        .setTitle(title)
+                        .apply { if (artist != null) setArtist(artist) }
+                        .build()
+                    
+                    val mediaItem = MediaItem.Builder()
+                        .setUri(resolvedUrl)
+                        .setMediaId(url) // Keep original URL as ID for queue management
+                        .setMediaMetadata(metadata)
+                        .build()
+                    
+                    mediaItems.add(mediaItem)
+                }
                 
-                MediaItem.Builder()
-                    .setUri(url)
-                    .setMediaId(url)
-                    .setMediaMetadata(metadata)
-                    .build()
+                Log.d(TAG, "Setting MediaItems with ${mediaItems.size} items (with local file resolution)")
+                controller.setMediaItems(mediaItems, currentQueueIndex, 0L)
+                controller.prepare()
+                
+                Log.d(TAG, "Queue synced to MediaController successfully")
             }
-            
-            Log.d(TAG, "Setting MediaItems with ${mediaItems.size} items")
-            controller.setMediaItems(mediaItems, currentQueueIndex, 0L)
-            controller.prepare()
-            
-            Log.d(TAG, "Queue synced to MediaController successfully")
         } catch (e: Exception) {
             Log.e(TAG, "Error syncing queue to MediaController", e)
         }
     }
     
     /**
-     * Play a single track from Archive.org with queue context
+     * Play a single track from Archive.org with queue context.
+     * Now supports offline playback by checking for local files first.
      */
     fun playTrack(url: String, title: String, artist: String? = null) {
         Log.d(TAG, "=== PLAY TRACK COMMAND ===")
-        Log.d(TAG, "URL: $url")
+        Log.d(TAG, "Original URL: $url")
         Log.d(TAG, "Title: $title")
         Log.d(TAG, "Artist: $artist")
         Log.d(TAG, "Controller connected: ${_isConnected.value}")
@@ -428,6 +439,47 @@ class MediaControllerRepository @Inject constructor(
             return
         }
         
+        // Check for local file first (offline playback support)
+        coroutineScope.launch {
+            val finalUrl = resolvePlaybackUrl(url) ?: url
+            playTrackWithResolvedUrl(finalUrl, url, title, artist, controller)
+        }
+    }
+    
+    /**
+     * Resolve the best URL for playback (local file if available, otherwise streaming URL)
+     */
+    private suspend fun resolvePlaybackUrl(originalUrl: String): String? {
+        return try {
+            // Use current recording ID if available for better resolution
+            val recordingId = currentRecordingId
+            val localFileUri = localFileResolver.resolveLocalFile(originalUrl, recordingId)
+            if (localFileUri != null) {
+                Log.i(TAG, "🎵 OFFLINE PLAYBACK: Using local file for $originalUrl")
+                localFileUri
+            } else {
+                Log.d(TAG, "📡 STREAMING PLAYBACK: No local file found for $originalUrl")
+                null // Will use original URL
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error resolving local file for $originalUrl", e)
+            null // Fallback to streaming
+        }
+    }
+    
+    /**
+     * Play track with the resolved URL (either local file or streaming URL)
+     */
+    private fun playTrackWithResolvedUrl(
+        finalUrl: String,
+        originalUrl: String,
+        title: String,
+        artist: String?,
+        controller: MediaController
+    ) {
+        Log.d(TAG, "Final URL for playback: $finalUrl")
+        Log.d(TAG, "Original URL (for queue matching): $originalUrl")
+        
         // Verify controller is in a good state
         Log.d(TAG, "MediaController available, checking state...")
         Log.d(TAG, "Controller playback state: ${controller.playbackState}")
@@ -436,40 +488,48 @@ class MediaControllerRepository @Inject constructor(
         
         try {
             // Check if we have queue context and use it for proper media control navigation
-            if (currentQueueUrls.isNotEmpty() && url in currentQueueUrls) {
+            if (currentQueueUrls.isNotEmpty() && originalUrl in currentQueueUrls) {
                 // Use queue-based playback for proper forward/back button support
                 Log.d(TAG, "Playing track with queue context (${currentQueueUrls.size} items)")
                 
-                val trackIndex = currentQueueUrls.indexOf(url)
+                val trackIndex = currentQueueUrls.indexOf(originalUrl)
                 if (trackIndex >= 0) {
                     currentQueueIndex = trackIndex
                     _queueIndex.value = currentQueueIndex
                     Log.d(TAG, "Track found at queue index: $trackIndex")
                     
                     // Create MediaItems with metadata for the entire queue
-                    val mediaItems = currentQueueUrls.mapIndexed { index, queueUrl ->
-                        val metadata = if (queueUrl == url) {
-                            MediaMetadata.Builder()
-                                .setTitle(title)
-                                .setArtist(artist)
+                    // NOTE: We need to resolve local files for each queue item too
+                    coroutineScope.launch {
+                        val mediaItems = mutableListOf<MediaItem>()
+                        
+                        for ((index, queueUrl) in currentQueueUrls.withIndex()) {
+                            val resolvedUrl = resolvePlaybackUrl(queueUrl) ?: queueUrl
+                            val metadata = if (queueUrl == originalUrl) {
+                                MediaMetadata.Builder()
+                                    .setTitle(title)
+                                    .setArtist(artist)
+                                    .build()
+                            } else {
+                                MediaMetadata.Builder().build()
+                            }
+                            
+                            val mediaItem = MediaItem.Builder()
+                                .setUri(resolvedUrl)
+                                .setMediaId(queueUrl) // Keep original URL as ID for queue management
+                                .setMediaMetadata(metadata)
                                 .build()
-                        } else {
-                            MediaMetadata.Builder().build()
+                            
+                            mediaItems.add(mediaItem)
                         }
                         
-                        MediaItem.Builder()
-                            .setUri(queueUrl)
-                            .setMediaId(queueUrl)
-                            .setMediaMetadata(metadata)
-                            .build()
+                        Log.d(TAG, "Setting queue with ${mediaItems.size} items (with local file resolution), starting at index $trackIndex")
+                        controller.setMediaItems(mediaItems, trackIndex, 0L)
+                        controller.prepare()
+                        controller.play()
+                        
+                        Log.d(TAG, "=== QUEUE-BASED PLAYBACK STARTED ===")
                     }
-                    
-                    Log.d(TAG, "Setting queue with ${mediaItems.size} items, starting at index $trackIndex")
-                    controller.setMediaItems(mediaItems, trackIndex, 0L)
-                    controller.prepare()
-                    controller.play()
-                    
-                    Log.d(TAG, "=== QUEUE-BASED PLAYBACK STARTED ===")
                     return
                 }
             }
@@ -482,12 +542,13 @@ class MediaControllerRepository @Inject constructor(
                 .build()
             
             val mediaItem = MediaItem.Builder()
-                .setUri(url)
-                .setMediaId(url)
+                .setUri(finalUrl)
+                .setMediaId(originalUrl) // Keep original URL as ID for consistency
                 .setMediaMetadata(mediaMetadata)
                 .build()
             
             Log.d(TAG, "Created MediaItem: ${mediaItem.mediaId} with metadata: ${mediaItem.mediaMetadata.title}")
+            Log.d(TAG, "Using URI: ${mediaItem.localConfiguration?.uri}")
             
             // Stop any current playback first
             if (controller.isPlaying) {

@@ -6,6 +6,8 @@ import androidx.media3.datasource.DefaultHttpDataSource
 import androidx.media3.datasource.DefaultDataSource
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
+import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.media.player.LocalFileResolver
 import com.deadarchive.core.media.player.MediaControllerRepository
 import dagger.Module
 import dagger.Provides
@@ -52,14 +54,27 @@ object MediaModule {
     }
     
     /**
+     * Provides LocalFileResolver for offline playback support.
+     */
+    @Provides
+    @Singleton
+    fun provideLocalFileResolver(
+        downloadRepository: DownloadRepository
+    ): LocalFileResolver {
+        return LocalFileResolver(downloadRepository)
+    }
+    
+    /**
      * Provides MediaControllerRepository for service-based media playback.
      * This replaces direct ExoPlayer access in UI components.
+     * Now includes LocalFileResolver for offline playback support.
      */
     @Provides
     @Singleton
     fun provideMediaControllerRepository(
-        @ApplicationContext context: Context
+        @ApplicationContext context: Context,
+        localFileResolver: LocalFileResolver
     ): MediaControllerRepository {
-        return MediaControllerRepository(context)
+        return MediaControllerRepository(context, localFileResolver)
     }
 }
