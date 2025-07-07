@@ -3,11 +3,14 @@ package com.deadarchive.feature.browse
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -18,9 +21,8 @@ import com.deadarchive.core.model.*
 
 /**
  * Card component for displaying "Today in Grateful Dead History" on the home screen.
- * Shows a featured show from today's date in history with statistics.
+ * Shows shows from today's date in history as a horizontal carousel.
  */
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TodayInHistoryCard(
     onShowClick: (Show) -> Unit = {},
@@ -29,39 +31,26 @@ fun TodayInHistoryCard(
     viewModel: TodayInHistoryViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    val displayMode by viewModel.displayMode.collectAsState()
 
-    Card(
-        modifier = modifier
-            .fillMaxWidth()
-            .height(if (displayMode == HistoryDisplayMode.COMPACT) 180.dp else 240.dp),
-        colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surface
-        ),
-        elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
-    ) {
-        when (val state = uiState) {
-            is TodayInHistoryState.Loading -> {
-                LoadingContent()
-            }
-            is TodayInHistoryState.Success -> {
-                SuccessContent(
-                    todayInHistory = state.todayInHistory,
-                    displayMode = displayMode,
-                    onShowClick = onShowClick,
-                    onViewAllClick = onViewAllClick,
-                    onShuffleClick = { viewModel.shuffleFeaturedShow() }
-                )
-            }
-            is TodayInHistoryState.Error -> {
-                ErrorContent(
-                    message = state.message,
-                    onRetry = { viewModel.refresh() }
-                )
-            }
-            is TodayInHistoryState.NoShows -> {
-                NoShowsContent()
-            }
+    when (val state = uiState) {
+        is TodayInHistoryState.Loading -> {
+            LoadingContent()
+        }
+        is TodayInHistoryState.Success -> {
+            SuccessContent(
+                todayInHistory = state.todayInHistory,
+                onShowClick = onShowClick,
+                onViewAllClick = onViewAllClick
+            )
+        }
+        is TodayInHistoryState.Error -> {
+            ErrorContent(
+                message = state.message,
+                onRetry = { viewModel.refresh() }
+            )
+        }
+        is TodayInHistoryState.NoShows -> {
+            NoShowsContent()
         }
     }
 }
@@ -69,7 +58,9 @@ fun TodayInHistoryCard(
 @Composable
 private fun LoadingContent() {
     Box(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxWidth() 
+            .height(200.dp),
         contentAlignment = Alignment.Center
     ) {
         Column(
@@ -89,53 +80,31 @@ private fun LoadingContent() {
 @Composable
 private fun SuccessContent(
     todayInHistory: TodayInHistory,
-    displayMode: HistoryDisplayMode,
     onShowClick: (Show) -> Unit,
-    onViewAllClick: (TodayInHistory) -> Unit,
-    onShuffleClick: () -> Unit
+    onViewAllClick: (TodayInHistory) -> Unit
 ) {
     Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.SpaceBetween
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // Header with date and statistics
+        // Header
         Column(
+            modifier = Modifier.padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = "Today in Dead History",
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.primary
-                )
-                if (todayInHistory.shows.size > 1) {
-                    IconButton(
-                        onClick = onShuffleClick,
-                        modifier = Modifier.size(24.dp)
-                    ) {
-                        Icon(
-                            painter = IconResources.PlayerControls.Shuffle(),
-                            contentDescription = "Shuffle featured show",
-                            tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
-                            modifier = Modifier.size(16.dp)
-                        )
-                    }
-                }
-            }
-
             Text(
-                text = todayInHistory.dateFormatted,
+                text = "Today in Dead History",
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold
             )
-
+            
+            Text(
+                text = todayInHistory.dateFormatted,
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.primary,
+                fontWeight = FontWeight.Medium
+            )
+            
             Text(
                 text = todayInHistory.statistics.summaryText,
                 style = MaterialTheme.typography.bodyMedium,
@@ -143,168 +112,102 @@ private fun SuccessContent(
             )
         }
 
-        // Featured show or statistics
-        when (displayMode) {
-            HistoryDisplayMode.COMPACT -> {
-                todayInHistory.featuredShow?.let { show ->
-                    FeaturedShowContent(
-                        show = show,
-                        onShowClick = onShowClick
-                    )
-                }
-            }
-            HistoryDisplayMode.SUMMARY -> {
-                StatisticsContent(
-                    statistics = todayInHistory.statistics,
-                    yearsSpan = todayInHistory.yearsSpan
+        // Shows carousel - sorted by year ascending
+        val sortedShows = todayInHistory.shows.sortedBy { it.year?.toIntOrNull() ?: 0 }
+        
+        LazyRow(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            contentPadding = PaddingValues(horizontal = 16.dp)
+        ) {
+            items(sortedShows) { show ->
+                ShowCard(
+                    show = show,
+                    onClick = { onShowClick(show) }
                 )
-            }
-            HistoryDisplayMode.DETAILED -> {
-                // For detailed mode, show "View All" button
-                Button(
-                    onClick = { onViewAllClick(todayInHistory) },
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Text("View All ${todayInHistory.totalShows} Shows")
-                }
-            }
-        }
-
-        // Footer with action buttons
-        if (displayMode == HistoryDisplayMode.COMPACT && todayInHistory.totalShows > 1) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.End
-            ) {
-                TextButton(
-                    onClick = { onViewAllClick(todayInHistory) }
-                ) {
-                    Text("View All ${todayInHistory.totalShows}")
-                    Spacer(modifier = Modifier.width(4.dp))
-                    Icon(
-                        painter = IconResources.Navigation.Forward(),
-                        contentDescription = null,
-                        modifier = Modifier.size(16.dp)
-                    )
-                }
             }
         }
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun FeaturedShowContent(
+private fun ShowCard(
     show: Show,
-    onShowClick: (Show) -> Unit
+    onClick: () -> Unit
 ) {
     Card(
+        onClick = onClick,
         modifier = Modifier
-            .fillMaxWidth()
-            .clickable { onShowClick(show) },
+            .width(140.dp)
+            .height(140.dp)
+            .clip(RoundedCornerShape(8.dp)),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer
         )
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(12.dp),
-            verticalArrangement = Arrangement.spacedBy(4.dp)
+        Box(
+            modifier = Modifier.fillMaxSize()
         ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.Top
+            // Gradient background
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(
+                        Brush.verticalGradient(
+                            colors = listOf(
+                                MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f),
+                                MaterialTheme.colorScheme.primaryContainer
+                            )
+                        )
+                    )
+            )
+            
+            // Content
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(12.dp),
+                verticalArrangement = Arrangement.SpaceBetween
             ) {
+                // Year at the top
+                Text(
+                    text = show.year ?: "Unknown",
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                )
+                
+                // Venue and location at the bottom
                 Column(
-                    modifier = Modifier.weight(1f)
+                    verticalArrangement = Arrangement.spacedBy(2.dp)
                 ) {
                     Text(
                         text = show.displayVenue,
-                        style = MaterialTheme.typography.titleSmall,
-                        fontWeight = FontWeight.Bold,
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontWeight = FontWeight.Medium,
                         color = MaterialTheme.colorScheme.onPrimaryContainer,
-                        maxLines = 1,
+                        maxLines = 2,
                         overflow = TextOverflow.Ellipsis
                     )
                     show.location?.let { location ->
                         Text(
                             text = location,
                             style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f),
+                            color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f),
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis
                         )
                     }
+                    if (show.recordingCount > 0) {
+                        Text(
+                            text = "${show.recordingCount} recording${if (show.recordingCount != 1) "s" else ""}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.6f)
+                        )
+                    }
                 }
-                Text(
-                    text = show.year ?: "",
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.primary
-                )
-            }
-
-            if (show.recordingCount > 0) {
-                Text(
-                    text = "${show.recordingCount} recording${if (show.recordingCount != 1) "s" else ""}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.6f)
-                )
             }
         }
-    }
-}
-
-@Composable
-private fun StatisticsContent(
-    statistics: HistoryStatistics,
-    yearsSpan: IntRange?
-) {
-    Row(
-        modifier = Modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly
-    ) {
-        StatisticItem(
-            label = "Shows",
-            value = statistics.totalShows.toString()
-        )
-        StatisticItem(
-            label = "Years",
-            value = statistics.yearsWithShows.size.toString()
-        )
-        StatisticItem(
-            label = "Venues",
-            value = statistics.venueCount.toString()
-        )
-        yearsSpan?.let { span ->
-            StatisticItem(
-                label = "Span",
-                value = "${span.first}-${span.last}"
-            )
-        }
-    }
-}
-
-@Composable
-private fun StatisticItem(
-    label: String,
-    value: String
-) {
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = value,
-            style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.primary
-        )
-        Text(
-            text = label,
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
-        )
     }
 }
 
@@ -315,7 +218,8 @@ private fun ErrorContent(
 ) {
     Column(
         modifier = Modifier
-            .fillMaxSize()
+            .fillMaxWidth()
+            .height(200.dp)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -343,7 +247,8 @@ private fun ErrorContent(
 private fun NoShowsContent() {
     Column(
         modifier = Modifier
-            .fillMaxSize()
+            .fillMaxWidth()
+            .height(200.dp)
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
