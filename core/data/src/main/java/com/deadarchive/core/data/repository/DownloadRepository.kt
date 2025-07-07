@@ -203,6 +203,7 @@ data class DownloadStats(
 class DownloadRepositoryImpl @Inject constructor(
     private val downloadDao: DownloadDao,
     private val recordingDao: com.deadarchive.core.database.RecordingDao,
+    private val libraryRepository: LibraryRepository,
     private val showRepository: ShowRepository,
     private val audioFormatFilterService: com.deadarchive.core.data.service.AudioFormatFilterService,
     private val downloadQueueManager: com.deadarchive.core.data.download.DownloadQueueManager,
@@ -402,6 +403,26 @@ class DownloadRepositoryImpl @Inject constructor(
                     // Update recording as downloaded
                     recordingDao.updateDownloadedStatus(recordingId, true)
                     android.util.Log.d("DownloadRepository", "✅ Recording $recordingId marked as downloaded (${recordingDownloads.size} tracks)")
+                    
+                    // Auto-add completed recording's show to library
+                    try {
+                        val recordingEntity = recordingDao.getRecordingById(recordingId)
+                        if (recordingEntity != null) {
+                            val show = showRepository.getShowById(recordingEntity.concertId)
+                            if (show != null) {
+                                val wasAdded = libraryRepository.addShowToLibrary(show)
+                                if (wasAdded) {
+                                    android.util.Log.d("DownloadRepository", "📚 Show ${show.showId} automatically added to library after download completion")
+                                } else {
+                                    android.util.Log.d("DownloadRepository", "📚 Show ${show.showId} already in library")
+                                }
+                            } else {
+                                android.util.Log.w("DownloadRepository", "⚠️ Could not find show for downloaded recording $recordingId")
+                            }
+                        }
+                    } catch (e: Exception) {
+                        android.util.Log.e("DownloadRepository", "❌ Failed to auto-add downloaded show to library", e)
+                    }
                 } else {
                     // Update recording as not downloaded (in case it was previously marked as downloaded)
                     recordingDao.updateDownloadedStatus(recordingId, false)

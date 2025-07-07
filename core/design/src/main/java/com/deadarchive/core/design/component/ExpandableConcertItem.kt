@@ -248,9 +248,9 @@ private fun ShowHeader(
                             )
                         }
                         is ShowDownloadState.Queued -> {
-                            // Show queued state with queue icon
+                            // Show queued state with sync icon (indicates waiting/processing)
                             Icon(
-                                painter = painterResource(R.drawable.ic_queue),
+                                painter = painterResource(R.drawable.ic_sync),
                                 contentDescription = "Queued for download",
                                 tint = Color(0xFF9E9E9E), // Gray for queued
                                 modifier = Modifier.size(24.dp)
