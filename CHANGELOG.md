@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.16.0] - 2025-07-07
+
+### New Features
+* redesign Today in History as carousel display (3690d36)
+* implement Today in Grateful Dead History feature (ee409fa)
+
+### Bug Fixes
+* resolve Today in History navigation by loading show recordings (0a80975)
+* resolve compilation errors in Today in History feature (4516f35)
+
+
 ## [0.15.0] - 2025-07-07
 
 ### New Features
@@ -44,8 +55,6 @@
 
 ### Documentation Updates
 * update TODO with download system progress (2e009fc)
-
-
 ## [0.14.0] - 2025-07-06
 
 ### New Features
