@@ -4,13 +4,17 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.repository.LibraryRepository
+import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.PlaylistItem
 import com.deadarchive.core.model.Track
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.DownloadStatus
 import com.deadarchive.core.database.ShowEntity
+import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.network.mapper.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -27,6 +31,8 @@ import javax.inject.Inject
 class PlayerViewModel @Inject constructor(
     val mediaControllerRepository: MediaControllerRepository,
     private val showRepository: ShowRepository,
+    private val libraryRepository: LibraryRepository,
+    private val downloadRepository: DownloadRepository,
     private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository
 ) : ViewModel() {
     
@@ -35,6 +41,14 @@ class PlayerViewModel @Inject constructor(
     
     private val _currentRecording = MutableStateFlow<Recording?>(null)
     val currentRecording: StateFlow<Recording?> = _currentRecording.asStateFlow()
+    
+    // Download state tracking
+    private val _downloadStates = MutableStateFlow<Map<String, ShowDownloadState>>(emptyMap())
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = _downloadStates.asStateFlow()
+    
+    // Track-level download states
+    private val _trackDownloadStates = MutableStateFlow<Map<String, Boolean>>(emptyMap())
+    val trackDownloadStates: StateFlow<Map<String, Boolean>> = _trackDownloadStates.asStateFlow()
     
     // Playlist management state - now derived from MediaControllerRepository
     val currentPlaylist: StateFlow<List<PlaylistItem>> = combine(
@@ -146,6 +160,9 @@ class PlayerViewModel @Inject constructor(
                     Log.d(TAG, "PlayerViewModel: State updated - isPlaying: ${updatedState.isPlaying}, position: ${updatedState.currentPosition}, duration: ${updatedState.duration}, playbackState: ${updatedState.playbackState}, trackIndex: ${updatedState.currentTrackIndex}")
                 }
             }
+            
+            // Start monitoring download states
+            startDownloadStateMonitoring()
         } catch (e: Exception) {
             Log.e(TAG, "PlayerViewModel: Exception in init", e)
         }
@@ -619,6 +636,202 @@ class PlayerViewModel @Inject constructor(
         Log.d(TAG, "onCleared: PlayerViewModel cleared")
         // Don't release MediaControllerRepository - it should persist for background playback
         // The service should continue running independently of UI lifecycle
+    }
+    
+    /**
+     * Start monitoring download states for recording and tracks
+     */
+    private fun startDownloadStateMonitoring() {
+        viewModelScope.launch {
+            // Monitor all downloads and update states
+            downloadRepository.getAllDownloads().collect { downloads ->
+                val stateMap = mutableMapOf<String, ShowDownloadState>()
+                val trackStatesMap = mutableMapOf<String, Boolean>()
+                
+                // Group downloads by recording ID
+                val downloadsByRecording = downloads.groupBy { it.recordingId }
+                
+                downloadsByRecording.forEach { (recordingId, recordingDownloads) ->
+                    val showDownloadState = when {
+                        // If any download is marked for deletion, treat as not downloaded
+                        recordingDownloads.any { it.isMarkedForDeletion } -> {
+                            ShowDownloadState.NotDownloaded
+                        }
+                        // Handle failed downloads separately (show as failed)
+                        recordingDownloads.any { it.status == DownloadStatus.FAILED } -> {
+                            val failedTrack = recordingDownloads.first { it.status == DownloadStatus.FAILED }
+                            ShowDownloadState.Failed(failedTrack.errorMessage)
+                        }
+                        // Filter out cancelled and failed downloads for status determination
+                        else -> recordingDownloads.filter { it.status !in listOf(DownloadStatus.CANCELLED, DownloadStatus.FAILED) }.let { activeDownloads ->
+                            when {
+                                activeDownloads.all { it.status == DownloadStatus.COMPLETED } && activeDownloads.isNotEmpty() -> {
+                                    ShowDownloadState.Downloaded
+                                }
+                                activeDownloads.any { it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED } -> {
+                                    // Calculate track-based progress (Spotify-style immediate feedback)
+                                    val totalTracks = activeDownloads.size
+                                    val completedTracks = activeDownloads.count { it.status == DownloadStatus.COMPLETED }
+                                    
+                                    // Get byte progress from actively downloading track if any
+                                    val downloadingTrack = activeDownloads.firstOrNull { it.status == DownloadStatus.DOWNLOADING }
+                                    val byteProgress = downloadingTrack?.progress ?: -1f
+                                    val bytesDownloaded = downloadingTrack?.bytesDownloaded ?: 0L
+                                    
+                                    ShowDownloadState.Downloading(
+                                        progress = byteProgress,
+                                        bytesDownloaded = bytesDownloaded,
+                                        completedTracks = completedTracks,
+                                        totalTracks = totalTracks
+                                    )
+                                }
+                                else -> {
+                                    ShowDownloadState.NotDownloaded
+                                }
+                            }
+                        }
+                    }
+                    
+                    stateMap[recordingId] = showDownloadState
+                    
+                    // Update individual track download states
+                    recordingDownloads.forEach { download ->
+                        val trackKey = "${recordingId}_${download.trackFilename}"
+                        trackStatesMap[trackKey] = download.status == DownloadStatus.COMPLETED && !download.isMarkedForDeletion
+                    }
+                }
+                
+                _downloadStates.value = stateMap
+                _trackDownloadStates.value = trackStatesMap
+            }
+        }
+    }
+    
+    /**
+     * Start downloading the current recording
+     */
+    fun downloadRecording() {
+        viewModelScope.launch {
+            try {
+                val recording = _currentRecording.value
+                if (recording != null) {
+                    // Provide immediate UI feedback
+                    val currentDownloadStates = _downloadStates.value.toMutableMap()
+                    currentDownloadStates[recording.identifier] = ShowDownloadState.Downloading(
+                        progress = -1f, // -1 indicates "queued/starting"
+                        bytesDownloaded = 0L,
+                        completedTracks = 0,
+                        totalTracks = 1 // Placeholder until actual track count is known
+                    )
+                    _downloadStates.value = currentDownloadStates
+                    
+                    // Start the actual download
+                    downloadRepository.downloadRecording(recording)
+                    
+                    println("Downloading recording: ${recording.identifier}")
+                } else {
+                    println("No recording available to download")
+                }
+            } catch (e: Exception) {
+                println("Failed to start download: ${e.message}")
+                
+                // On error, revert the optimistic UI state
+                val recording = _currentRecording.value
+                if (recording != null) {
+                    val currentDownloadStates = _downloadStates.value.toMutableMap()
+                    currentDownloadStates[recording.identifier] = ShowDownloadState.Failed("Failed to start download")
+                    _downloadStates.value = currentDownloadStates
+                }
+            }
+        }
+    }
+    
+    /**
+     * Cancel downloads for the current recording
+     */
+    fun cancelRecordingDownloads() {
+        viewModelScope.launch {
+            try {
+                val recording = _currentRecording.value
+                if (recording != null) {
+                    downloadRepository.cancelRecordingDownloads(recording.identifier)
+                } else {
+                    println("No recording found to cancel downloads")
+                }
+            } catch (e: Exception) {
+                println("Failed to cancel downloads: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Add/remove the current show from library
+     */
+    fun toggleLibrary() {
+        viewModelScope.launch {
+            try {
+                val recording = _currentRecording.value
+                if (recording != null) {
+                    // TODO: Implement library toggle for recordings
+                    // Need to implement a way to get Show from Recording
+                    // or add recording-specific library functionality
+                    println("Library toggle for recording not yet implemented: ${recording.identifier}")
+                }
+            } catch (e: Exception) {
+                println("Failed to toggle library: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Get the current download state for the recording
+     */
+    fun getRecordingDownloadState(): ShowDownloadState {
+        return try {
+            val recording = _currentRecording.value
+            if (recording != null) {
+                _downloadStates.value[recording.identifier] ?: ShowDownloadState.NotDownloaded
+            } else {
+                ShowDownloadState.NotDownloaded
+            }
+        } catch (e: Exception) {
+            ShowDownloadState.Failed("Failed to get download state")
+        }
+    }
+    
+    /**
+     * Check if a track is downloaded
+     */
+    fun isTrackDownloaded(track: Track): Boolean {
+        return try {
+            val recording = _currentRecording.value
+            if (recording != null) {
+                val trackKey = "${recording.identifier}_${track.audioFile?.filename}"
+                _trackDownloadStates.value[trackKey] ?: false
+            } else {
+                false
+            }
+        } catch (e: Exception) {
+            false
+        }
+    }
+    
+    /**
+     * Show removal confirmation for download
+     */
+    fun showRemoveDownloadConfirmation() {
+        viewModelScope.launch {
+            val recording = _currentRecording.value
+            if (recording != null) {
+                try {
+                    // Soft delete the recording
+                    downloadRepository.markRecordingForDeletion(recording.identifier)
+                    println("🗑️ Recording ${recording.identifier} marked for soft deletion")
+                } catch (e: Exception) {
+                    println("Failed to mark recording for deletion: ${e.message}")
+                }
+            }
+        }
     }
     
     companion object {

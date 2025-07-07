@@ -10,6 +10,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.core.design.component.ShowDownloadState
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -53,6 +54,10 @@ fun PlaylistScreen(
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
+    
+    // Collect download and library states
+    val downloadStates by viewModel.downloadStates.collectAsState()
+    val trackDownloadStates by viewModel.trackDownloadStates.collectAsState()
     
     // Debug information states
     var debugShow by remember { mutableStateOf<Show?>(null) }
@@ -227,6 +232,12 @@ fun PlaylistScreen(
                         RecordingHeader(
                             recording = currentRecording,
                             onPlayRecording = { viewModel.playRecordingFromBeginning() },
+                            onLibraryClick = { viewModel.toggleLibrary() },
+                            onDownloadClick = { viewModel.downloadRecording() },
+                            onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
+                            onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
+                            downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
+                            isInLibrary = false, // TODO: Add library state tracking
                             modifier = Modifier.padding(16.dp)
                         )
                         
@@ -265,7 +276,13 @@ fun PlaylistScreen(
                         item {
                             RecordingHeader(
                                 recording = currentRecording,
-                                onPlayRecording = { viewModel.playRecordingFromBeginning() }
+                                onPlayRecording = { viewModel.playRecordingFromBeginning() },
+                                onLibraryClick = { viewModel.toggleLibrary() },
+                                onDownloadClick = { viewModel.downloadRecording() },
+                                onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
+                                onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
+                                downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
+                                isInLibrary = false // TODO: Add library state tracking
                             )
                         }
                         
@@ -366,6 +383,10 @@ fun PlaylistScreen(
                             TrackItem(
                                 track = track,
                                 isCurrentTrack = index == uiState.currentTrackIndex,
+                                isDownloaded = currentRecording?.let { recording ->
+                                    val trackKey = "${recording.identifier}_${track.audioFile?.filename}"
+                                    trackDownloadStates[trackKey] == true
+                                } ?: false,
                                 onClick = { viewModel.playTrack(index) }
                             )
                         }
@@ -380,6 +401,12 @@ fun PlaylistScreen(
 private fun RecordingHeader(
     recording: Recording?,
     onPlayRecording: () -> Unit = {},
+    onLibraryClick: () -> Unit = {},
+    onDownloadClick: () -> Unit = {},
+    onCancelDownloadClick: () -> Unit = {},
+    onRemoveDownloadClick: () -> Unit = {},
+    downloadState: ShowDownloadState = ShowDownloadState.NotDownloaded,
+    isInLibrary: Boolean = false,
     modifier: Modifier = Modifier
 ) {
     if (recording == null) return
@@ -451,6 +478,88 @@ private fun RecordingHeader(
                 }
             }
             
+            // Library and Download buttons
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // Library button
+                IconButton(
+                    onClick = onLibraryClick
+                ) {
+                    Icon(
+                        painter = if (isInLibrary) IconResources.Navigation.Back() else IconResources.Navigation.Back(), // TODO: Add proper library icons
+                        contentDescription = if (isInLibrary) "Remove from Library" else "Add to Library",
+                        tint = if (isInLibrary) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                
+                // Download button
+                IconButton(
+                    onClick = onDownloadClick
+                ) {
+                    when (downloadState) {
+                        is com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded -> {
+                            Icon(
+                                painter = IconResources.PlayerControls.AlbumArt(), // TODO: Add proper download icon
+                                contentDescription = "Download Recording",
+                                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        is com.deadarchive.core.design.component.ShowDownloadState.Downloading -> {
+                            // Spotify-style: Stop icon with circular progress ring
+                            val progressValue = when {
+                                downloadState.totalTracks > 0 -> downloadState.trackProgress
+                                downloadState.progress >= 0f -> downloadState.progress
+                                else -> 0f
+                            }
+                            
+                            Box(
+                                contentAlignment = Alignment.Center,
+                                modifier = Modifier.size(24.dp)
+                            ) {
+                                // Background progress ring
+                                CircularProgressIndicator(
+                                    progress = { progressValue },
+                                    modifier = Modifier.size(24.dp),
+                                    color = MaterialTheme.colorScheme.primary,
+                                    strokeWidth = 2.dp,
+                                    trackColor = MaterialTheme.colorScheme.surfaceVariant
+                                )
+                                
+                                // Stop icon in center - clickable to cancel
+                                Icon(
+                                    painter = IconResources.PlayerControls.Play(), // TODO: Add proper stop icon
+                                    contentDescription = "Cancel download",
+                                    tint = MaterialTheme.colorScheme.primary,
+                                    modifier = Modifier
+                                        .size(14.dp)
+                                        .clickable { onCancelDownloadClick() }
+                                )
+                            }
+                        }
+                        is com.deadarchive.core.design.component.ShowDownloadState.Downloaded -> {
+                            Icon(
+                                painter = IconResources.PlayerControls.Play(), // TODO: Add proper check icon
+                                contentDescription = "Downloaded - Click to remove",
+                                tint = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier.clickable { onRemoveDownloadClick() }
+                            )
+                        }
+                        is com.deadarchive.core.design.component.ShowDownloadState.Failed -> {
+                            Icon(
+                                painter = IconResources.PlayerControls.AlbumArt(), // TODO: Add proper download icon
+                                contentDescription = "Download Failed - ${downloadState.errorMessage ?: "Unknown error"}",
+                                tint = MaterialTheme.colorScheme.error
+                            )
+                        }
+                    }
+                }
+                
+                Spacer(modifier = Modifier.weight(1f))
+            }
+            
             // Play button
             Spacer(modifier = Modifier.height(12.dp))
             
@@ -481,6 +590,7 @@ private fun RecordingHeader(
 private fun TrackItem(
     track: Track,
     isCurrentTrack: Boolean,
+    isDownloaded: Boolean = false,
     onClick: () -> Unit
 ) {
     Card(
@@ -562,6 +672,17 @@ private fun TrackItem(
                         }
                     )
                 }
+            }
+            
+            // Download indicator - only shown if track is downloaded
+            if (isDownloaded) {
+                Spacer(modifier = Modifier.width(8.dp))
+                Icon(
+                    painter = IconResources.Status.CheckCircle(),
+                    contentDescription = "Downloaded",
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(16.dp)
+                )
             }
         }
     }
