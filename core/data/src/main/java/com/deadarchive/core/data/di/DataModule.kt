@@ -6,6 +6,7 @@ import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.DownloadRepositoryImpl
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.LibraryRepositoryImpl
+import com.deadarchive.core.data.repository.TodayInHistoryRepository
 import com.deadarchive.core.data.sync.DataSyncService
 import com.deadarchive.core.data.sync.DataSyncServiceImpl
 import com.deadarchive.core.data.debug.WorkManagerDebugUtil

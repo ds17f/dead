@@ -41,6 +41,13 @@ interface ShowDao {
     @Query("SELECT * FROM concerts_new WHERE year BETWEEN :startYear AND :endYear ORDER BY date ASC, venue ASC")
     suspend fun getShowsByYearRange(startYear: String, endYear: String): List<ShowEntity>
     
+    // "Today in History" queries - shows by month/day across all years
+    @Query("SELECT * FROM concerts_new WHERE SUBSTR(date, 6, 5) = :monthDay ORDER BY date DESC, venue ASC")
+    suspend fun getShowsByMonthDay(monthDay: String): List<ShowEntity>
+    
+    @Query("SELECT * FROM concerts_new WHERE SUBSTR(date, 6, 2) = :month ORDER BY date DESC, venue ASC")
+    suspend fun getShowsByMonth(month: String): List<ShowEntity>
+    
     // Venue and location searches
     @Query("SELECT * FROM concerts_new WHERE venue LIKE '%' || :venue || '%' ORDER BY date DESC")
     suspend fun getShowsByVenue(venue: String): List<ShowEntity>

@@ -15,11 +15,14 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.deadarchive.feature.browse.TodayInHistoryCard
+import com.deadarchive.core.model.Show
 
 @Composable
 fun HomeScreen(
     onNavigateToDebug: () -> Unit,
-    onNavigateToBrowse: () -> Unit = {}
+    onNavigateToBrowse: () -> Unit = {},
+    onNavigateToShow: (Show) -> Unit = {}
 ) {
     LazyColumn(
         modifier = Modifier
@@ -76,6 +79,17 @@ fun HomeScreen(
                     )
                 }
             }
+        }
+        
+        item {
+            // Today in Grateful Dead History
+            TodayInHistoryCard(
+                onShowClick = onNavigateToShow,
+                onViewAllClick = { todayInHistory ->
+                    // Navigate to browse with today's shows
+                    onNavigateToBrowse()
+                }
+            )
         }
         
         item {
