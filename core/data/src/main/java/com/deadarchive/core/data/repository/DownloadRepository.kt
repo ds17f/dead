@@ -300,15 +300,24 @@ class DownloadRepositoryImpl @Inject constructor(
         // Check if download already exists
         val existingDownload = downloadDao.getDownloadById(downloadId)
         if (existingDownload != null) {
-            // If it's soft deleted, restore it
+            // If it's soft deleted, restore it and reset to QUEUED for re-download
             if (existingDownload.isMarkedForDeletion) {
                 val restoredDownload = existingDownload.copy(
                     isMarkedForDeletion = false,
                     deletionTimestamp = null,
-                    lastAccessTimestamp = System.currentTimeMillis()
+                    lastAccessTimestamp = System.currentTimeMillis(),
+                    status = DownloadStatus.QUEUED.name,
+                    progress = 0f,
+                    bytesDownloaded = 0L,
+                    errorMessage = null,
+                    startedTimestamp = System.currentTimeMillis(),
+                    completedTimestamp = null
                 )
                 downloadDao.updateDownload(restoredDownload)
-                android.util.Log.d("DownloadRepository", "♻️ Restored soft-deleted download: $downloadId")
+                android.util.Log.d("DownloadRepository", "♻️ Restored soft-deleted download and reset to QUEUED: $downloadId")
+                
+                // Trigger immediate queue processing for restored download
+                downloadQueueManager.triggerImmediateProcessing()
                 return downloadId
             }
             // If it's failed or cancelled, reset it to queued

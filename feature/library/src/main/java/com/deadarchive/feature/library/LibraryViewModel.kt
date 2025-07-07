@@ -18,6 +18,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import com.deadarchive.core.model.DownloadStatus
 import javax.inject.Inject
@@ -51,6 +52,7 @@ class LibraryViewModel @Inject constructor(
             try {
                 _uiState.value = LibraryUiState.Loading
                 
+                // Use combine to properly handle both flows with exception safety
                 combine(
                     libraryRepository.getAllLibraryItems(),
                     showRepository.getAllShows()
@@ -61,7 +63,7 @@ class LibraryViewModel @Inject constructor(
                     }
                     println("DEBUG LibraryViewModel: Found ${allShows.size} total shows")
                     
-                    // Find matching shows with recordings - should now work consistently
+                    // Find matching shows with recordings - sort by show date for consistency
                     val libraryShows = libraryItems.map { libraryItem ->
                         val matchingShow = allShows.find { show -> show.showId == libraryItem.showId }
                         
@@ -95,7 +97,7 @@ class LibraryViewModel @Inject constructor(
                                 isInLibrary = true
                             )
                         }
-                    }
+                    }.sortedBy { it.date } // Sort by show date for consistent ordering
                     println("DEBUG LibraryViewModel: Created ${libraryShows.size} shows for display")
                     LibraryUiState.Success(libraryItems, libraryShows)
                 }
