@@ -47,7 +47,15 @@ sealed class DownloadState {
 sealed class ShowDownloadState {
     object NotDownloaded : ShowDownloadState()
     object Queued : ShowDownloadState()
-    data class Downloading(val progress: Float = -1f, val bytesDownloaded: Long = 0L) : ShowDownloadState()
+    data class Downloading(
+        val progress: Float = -1f, 
+        val bytesDownloaded: Long = 0L,
+        val completedTracks: Int = 0,
+        val totalTracks: Int = 0
+    ) : ShowDownloadState() {
+        val trackProgress: Float
+            get() = if (totalTracks > 0) completedTracks.toFloat() / totalTracks.toFloat() else 0f
+    }
     object Downloaded : ShowDownloadState()
     data class Failed(val errorMessage: String? = null) : ShowDownloadState()
 }
@@ -249,10 +257,17 @@ private fun ShowHeader(
                             )
                         }
                         is ShowDownloadState.Downloading -> {
-                            if (downloadState.progress >= 0f) {
+                            // Use track progress if available, otherwise fall back to byte progress
+                            val progressValue = when {
+                                downloadState.totalTracks > 0 -> downloadState.trackProgress
+                                downloadState.progress >= 0f -> downloadState.progress
+                                else -> -1f
+                            }
+                            
+                            if (progressValue >= 0f) {
                                 // Show circular progress indicator with progress
                                 CircularProgressIndicator(
-                                    progress = { downloadState.progress },
+                                    progress = { progressValue },
                                     modifier = Modifier.size(24.dp),
                                     color = Color(0xFFFFA726), // Orange
                                     strokeWidth = 2.dp
@@ -283,10 +298,20 @@ private fun ShowHeader(
                     }
                 }
                 
-                // Show progress percentage text overlay for downloading state
-                if (downloadState is ShowDownloadState.Downloading && downloadState.progress >= 0f) {
+                // Show progress text overlay for downloading state
+                if (downloadState is ShowDownloadState.Downloading) {
+                    val progressText = when {
+                        downloadState.totalTracks > 0 -> {
+                            "${downloadState.completedTracks}/${downloadState.totalTracks}"
+                        }
+                        downloadState.progress >= 0f -> {
+                            "${(downloadState.progress * 100).toInt()}%"
+                        }
+                        else -> "..."
+                    }
+                    
                     Text(
-                        text = "${(downloadState.progress * 100).toInt()}%",
+                        text = progressText,
                         style = MaterialTheme.typography.labelSmall.copy(fontSize = 8.sp),
                         color = Color(0xFFFFA726),
                         modifier = Modifier

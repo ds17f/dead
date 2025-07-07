@@ -218,14 +218,24 @@ class BrowseViewModel @Inject constructor(
                 
                 downloadsByRecording.forEach { (recordingId, recordingDownloads) ->
                     val showDownloadState = when {
-                        recordingDownloads.any { it.status == DownloadStatus.COMPLETED } -> {
+                        recordingDownloads.all { it.status == DownloadStatus.COMPLETED } -> {
                             ShowDownloadState.Downloaded
                         }
                         recordingDownloads.any { it.status == DownloadStatus.DOWNLOADING } -> {
+                            // Calculate track-based progress
+                            val totalTracks = recordingDownloads.size
+                            val completedTracks = recordingDownloads.count { it.status == DownloadStatus.COMPLETED }
+                            
+                            // Get byte progress from actively downloading track
                             val downloadingTrack = recordingDownloads.first { it.status == DownloadStatus.DOWNLOADING }
+                            val byteProgress = downloadingTrack.progress
+                            val bytesDownloaded = downloadingTrack.bytesDownloaded
+                            
                             ShowDownloadState.Downloading(
-                                progress = downloadingTrack.progress,
-                                bytesDownloaded = downloadingTrack.bytesDownloaded
+                                progress = byteProgress,
+                                bytesDownloaded = bytesDownloaded,
+                                completedTracks = completedTracks,
+                                totalTracks = totalTracks
                             )
                         }
                         recordingDownloads.any { it.status == DownloadStatus.QUEUED } -> {
