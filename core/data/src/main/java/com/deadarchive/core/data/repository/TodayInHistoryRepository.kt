@@ -168,7 +168,7 @@ class TodayInHistoryRepository @Inject constructor(
      * @param monthDay Month-day in MM-dd format
      * @return Map of statistics (total shows, years span, etc.)
      */
-    suspend fun getHistoryStatistics(monthDay: String): Map<String, Any> {
+    suspend fun getHistoryStatistics(monthDay: String): Map<String, Any?> {
         val shows = getShowsByMonthDay(monthDay)
         
         if (shows.isEmpty()) {
@@ -177,7 +177,8 @@ class TodayInHistoryRepository @Inject constructor(
                 "yearsWithShows" to emptyList<String>(),
                 "earliestYear" to null,
                 "latestYear" to null,
-                "venueCount" to 0
+                "venueCount" to 0,
+                "uniqueVenues" to emptyList<String>()
             )
         }
         

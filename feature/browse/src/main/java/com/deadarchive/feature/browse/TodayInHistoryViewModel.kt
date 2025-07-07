@@ -55,13 +55,13 @@ class TodayInHistoryViewModel @Inject constructor(
                 val statisticsMap = todayInHistoryRepository.getHistoryStatistics(monthDay)
                 
                 val statistics = HistoryStatistics(
-                    totalShows = statisticsMap["totalShows"] as Int,
-                    yearsWithShows = statisticsMap["yearsWithShows"] as List<String>,
-                    uniqueVenues = statisticsMap["uniqueVenues"] as List<String>,
-                    venueCount = statisticsMap["venueCount"] as Int,
+                    totalShows = statisticsMap["totalShows"] as? Int ?: 0,
+                    yearsWithShows = statisticsMap["yearsWithShows"] as? List<String> ?: emptyList(),
+                    uniqueVenues = statisticsMap["uniqueVenues"] as? List<String> ?: emptyList(),
+                    venueCount = statisticsMap["venueCount"] as? Int ?: 0,
                     yearRange = Pair(
-                        statisticsMap["earliestYear"] as String?,
-                        statisticsMap["latestYear"] as String?
+                        statisticsMap["earliestYear"] as? String,
+                        statisticsMap["latestYear"] as? String
                     )
                 )
                 
@@ -114,13 +114,13 @@ class TodayInHistoryViewModel @Inject constructor(
                 val statisticsMap = todayInHistoryRepository.getHistoryStatistics(monthDay)
                 
                 val statistics = HistoryStatistics(
-                    totalShows = statisticsMap["totalShows"] as Int,
-                    yearsWithShows = statisticsMap["yearsWithShows"] as List<String>,
-                    uniqueVenues = statisticsMap["uniqueVenues"] as List<String>,
-                    venueCount = statisticsMap["venueCount"] as Int,
+                    totalShows = statisticsMap["totalShows"] as? Int ?: 0,
+                    yearsWithShows = statisticsMap["yearsWithShows"] as? List<String> ?: emptyList(),
+                    uniqueVenues = statisticsMap["uniqueVenues"] as? List<String> ?: emptyList(),
+                    venueCount = statisticsMap["venueCount"] as? Int ?: 0,
                     yearRange = Pair(
-                        statisticsMap["earliestYear"] as String?,
-                        statisticsMap["latestYear"] as String?
+                        statisticsMap["earliestYear"] as? String,
+                        statisticsMap["latestYear"] as? String
                     )
                 )
                 

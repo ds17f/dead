@@ -182,7 +182,7 @@ private fun SuccessContent(
                     Text("View All ${todayInHistory.totalShows}")
                     Spacer(modifier = Modifier.width(4.dp))
                     Icon(
-                        painter = IconResources.Navigation.ArrowForward(),
+                        painter = IconResources.Navigation.Forward(),
                         contentDescription = null,
                         modifier = Modifier.size(16.dp)
                     )
@@ -349,7 +349,7 @@ private fun NoShowsContent() {
         verticalArrangement = Arrangement.Center
     ) {
         Icon(
-            painter = IconResources.Content.CalendarToday(),
+            painter = IconResources.Content.Star(),
             contentDescription = null,
             tint = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f),
             modifier = Modifier.size(48.dp)
