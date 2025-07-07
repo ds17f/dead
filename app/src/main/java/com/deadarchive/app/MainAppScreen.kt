@@ -16,6 +16,7 @@ import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
 import com.deadarchive.feature.playlist.MiniPlayerContainer
+import com.deadarchive.feature.downloads.DownloadsScreen
 import androidx.media3.common.util.UnstableApi
 
 /**
@@ -117,6 +118,7 @@ fun MainAppScreen(
             composable("debug") {
                 SettingsScreen(
                     onNavigateToDebug = { navController.navigate("debug_screen") },
+                    onNavigateToDownloads = { navController.navigate("downloads") },
                     versionInfo = VersionInfo(
                         versionName = BuildConfig.VERSION_NAME,
                         versionCode = BuildConfig.VERSION_CODE,
@@ -124,6 +126,13 @@ fun MainAppScreen(
                         buildTime = BuildConfig.BUILD_TIME,
                         gitCommitHash = if (BuildConfig.GIT_COMMIT_HASH.isNotBlank()) BuildConfig.GIT_COMMIT_HASH else null
                     )
+                )
+            }
+            
+            // Downloads screen (accessible from Settings)
+            composable("downloads") {
+                DownloadsScreen(
+                    onNavigateToPlayer = { navController.navigate("player") }
                 )
             }
             
@@ -168,7 +177,7 @@ private fun shouldShowBottomNavigation(currentRoute: String?): Boolean {
         currentRoute == null -> false
         currentRoute.startsWith("player") -> false
         currentRoute.startsWith("playlist") -> true
-        currentRoute in listOf("home", "browse", "library", "debug") -> true
+        currentRoute in listOf("home", "browse", "library", "debug", "downloads") -> true
         else -> false
     }
 }
@@ -182,7 +191,7 @@ private fun shouldShowMiniPlayer(currentRoute: String?): Boolean {
         currentRoute == null -> false
         currentRoute.startsWith("player") -> false  // Hide on full player screen
         currentRoute.startsWith("playlist") -> true
-        currentRoute in listOf("home", "browse", "library", "debug") -> true
+        currentRoute in listOf("home", "browse", "library", "debug", "downloads") -> true
         else -> false
     }
 }

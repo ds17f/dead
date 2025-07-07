@@ -26,6 +26,7 @@ import com.deadarchive.core.settings.model.VersionInfo
 @Composable
 fun SettingsScreen(
     onNavigateToDebug: () -> Unit,
+    onNavigateToDownloads: () -> Unit = {},
     versionInfo: VersionInfo,
     viewModel: SettingsViewModel = hiltViewModel()
 ) {
@@ -119,7 +120,8 @@ fun SettingsScreen(
             // Download Settings Section
             DownloadSettingsCard(
                 settings = settings,
-                onUpdateDownloadWifiOnly = viewModel::updateDownloadWifiOnly
+                onUpdateDownloadWifiOnly = viewModel::updateDownloadWifiOnly,
+                onNavigateToDownloads = onNavigateToDownloads
             )
             
             // About Section
@@ -254,7 +256,8 @@ private fun AppearanceSettingsCard(
 @Composable
 private fun DownloadSettingsCard(
     settings: AppSettings,
-    onUpdateDownloadWifiOnly: (Boolean) -> Unit
+    onUpdateDownloadWifiOnly: (Boolean) -> Unit,
+    onNavigateToDownloads: () -> Unit
 ) {
     Card(
         modifier = Modifier.fillMaxWidth()
@@ -292,6 +295,15 @@ private fun DownloadSettingsCard(
                     checked = settings.downloadOnWifiOnly,
                     onCheckedChange = onUpdateDownloadWifiOnly
                 )
+            }
+            
+            Spacer(modifier = Modifier.height(8.dp))
+            
+            OutlinedButton(
+                onClick = onNavigateToDownloads,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Manage Downloads")
             }
         }
     }
