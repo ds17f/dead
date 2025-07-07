@@ -27,7 +27,7 @@
 
 - [ ] Browse Results List Enhancements
   - [ ] Change card to be more informative
-  - [ ] Down Arrow to expand and show details
+  - [x] Down Arrow to expand and show details
 - [ ] Browse date bug 1993-05-16 <- Doesn't work at first
 
 ## Library
@@ -39,7 +39,7 @@
 - [ ] Settings - Flush Database
   - [ ] Persist Favorites and other show data
 - [ ] Gapless Playback
-- [ ] Downloading
+- [-] Downloading
 - [ ] Streaming over Wifi only
 
 ## Home Screen
