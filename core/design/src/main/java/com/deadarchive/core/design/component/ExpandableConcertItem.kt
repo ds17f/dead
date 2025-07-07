@@ -46,7 +46,6 @@ sealed class DownloadState {
  */
 sealed class ShowDownloadState {
     object NotDownloaded : ShowDownloadState()
-    object Queued : ShowDownloadState()
     data class Downloading(
         val progress: Float = -1f, 
         val bytesDownloaded: Long = 0L,
@@ -70,6 +69,7 @@ fun ExpandableConcertItem(
     onDownloadClick: (Recording) -> Unit = { },
     getDownloadState: (Recording) -> DownloadState = { DownloadState.Available },
     onShowDownloadClick: (Show) -> Unit = { },
+    onCancelDownloadClick: (Show) -> Unit = { },
     getShowDownloadState: (Show) -> ShowDownloadState = { ShowDownloadState.NotDownloaded },
     modifier: Modifier = Modifier
 ) {
@@ -247,37 +247,38 @@ private fun ShowHeader(
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                         }
-                        is ShowDownloadState.Queued -> {
-                            // Show queued state with sync icon (indicates waiting/processing)
-                            Icon(
-                                painter = painterResource(R.drawable.ic_sync),
-                                contentDescription = "Queued for download",
-                                tint = Color(0xFF9E9E9E), // Gray for queued
-                                modifier = Modifier.size(24.dp)
-                            )
-                        }
                         is ShowDownloadState.Downloading -> {
-                            // Use track progress if available, otherwise fall back to byte progress
+                            // Spotify-style: Stop icon with circular progress ring
                             val progressValue = when {
                                 downloadState.totalTracks > 0 -> downloadState.trackProgress
                                 downloadState.progress >= 0f -> downloadState.progress
-                                else -> -1f
+                                else -> 0f
                             }
                             
-                            if (progressValue >= 0f) {
-                                // Show circular progress indicator with progress
+                            Box(
+                                contentAlignment = Alignment.Center,
+                                modifier = Modifier.size(24.dp)
+                            ) {
+                                // Background progress ring
                                 CircularProgressIndicator(
                                     progress = { progressValue },
                                     modifier = Modifier.size(24.dp),
-                                    color = Color(0xFFFFA726), // Orange
-                                    strokeWidth = 2.dp
+                                    color = MaterialTheme.colorScheme.primary, // Theme primary color
+                                    strokeWidth = 2.dp,
+                                    trackColor = Color(0xFFE0E0E0) // Light gray track
                                 )
-                            } else {
-                                // Show indeterminate progress
-                                CircularProgressIndicator(
-                                    modifier = Modifier.size(24.dp),
-                                    color = Color(0xFFFFA726), // Orange
-                                    strokeWidth = 2.dp
+                                
+                                // Stop icon in center - clickable to cancel
+                                Icon(
+                                    painter = painterResource(R.drawable.ic_stop),
+                                    contentDescription = "Cancel download",
+                                    tint = MaterialTheme.colorScheme.primary, // Theme primary color to match progress
+                                    modifier = Modifier
+                                        .size(14.dp)
+                                        .clickable {
+                                            // TODO: Add cancel functionality - temporarily disabled for compilation
+                                            // onCancelDownloadClick(show)
+                                        }
                                 )
                             }
                         }
@@ -285,7 +286,7 @@ private fun ShowHeader(
                             Icon(
                                 painter = painterResource(R.drawable.ic_check_circle),
                                 contentDescription = "Downloaded",
-                                tint = Color(0xFF4CAF50) // Green for success
+                                tint = MaterialTheme.colorScheme.primary // Theme primary color for success
                             )
                         }
                         is ShowDownloadState.Failed -> {
@@ -298,31 +299,7 @@ private fun ShowHeader(
                     }
                 }
                 
-                // Show progress text overlay for downloading state
-                if (downloadState is ShowDownloadState.Downloading) {
-                    val progressText = when {
-                        downloadState.totalTracks > 0 -> {
-                            "${downloadState.completedTracks}/${downloadState.totalTracks}"
-                        }
-                        downloadState.progress >= 0f -> {
-                            "${(downloadState.progress * 100).toInt()}%"
-                        }
-                        else -> "..."
-                    }
-                    
-                    Text(
-                        text = progressText,
-                        style = MaterialTheme.typography.labelSmall.copy(fontSize = 8.sp),
-                        color = Color(0xFFFFA726),
-                        modifier = Modifier
-                            .align(Alignment.Center)
-                            .background(
-                                MaterialTheme.colorScheme.surface.copy(alpha = 0.8f),
-                                RoundedCornerShape(2.dp)
-                            )
-                            .padding(horizontal = 2.dp)
-                    )
-                }
+                // Spotify-style: Clean progress ring with stop icon, no text overlay
             }
             
             // Expand/collapse button
