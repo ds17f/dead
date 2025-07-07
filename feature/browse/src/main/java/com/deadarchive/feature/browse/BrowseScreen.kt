@@ -63,6 +63,7 @@ fun BrowseScreen(
     val uiState by viewModel.uiState.collectAsState()
     val searchQuery by viewModel.searchQuery.collectAsState()
     val isSearching by viewModel.isSearching.collectAsState()
+    val downloadStates by viewModel.downloadStates.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
@@ -191,8 +192,18 @@ fun BrowseScreen(
                                     Log.d("BrowseScreen", "Download requested for show: ${show.showId}")
                                     viewModel.downloadShow(show)
                                 },
+                                onCancelDownloadClick = { show: Show ->
+                                    Log.d("BrowseScreen", "Cancel download requested for show: ${show.showId}")
+                                    viewModel.cancelShowDownloads(show)
+                                },
                                 getShowDownloadState = { show: Show ->
-                                    viewModel.getShowDownloadState(show)
+                                    // Use the observed download states for real-time updates
+                                    val bestRecording = show.bestRecording
+                                    if (bestRecording != null) {
+                                        downloadStates[bestRecording.identifier] ?: ShowDownloadState.NotDownloaded
+                                    } else {
+                                        ShowDownloadState.NotDownloaded
+                                    }
                                 }
                             )
                         }

@@ -177,6 +177,9 @@ fun LibraryScreen(
                                 onShowDownloadClick = { show: Show ->
                                     viewModel.downloadShow(show)
                                 },
+                                onCancelDownloadClick = { show: Show ->
+                                    viewModel.cancelShowDownloads(show)
+                                },
                                 getShowDownloadState = { show: Show ->
                                     viewModel.getShowDownloadState(show)
                                 }

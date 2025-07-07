@@ -189,6 +189,24 @@ class LibraryViewModel @Inject constructor(
     }
     
     /**
+     * Cancel all downloads for a show (best recording)
+     */
+    fun cancelShowDownloads(show: Show) {
+        viewModelScope.launch {
+            try {
+                val bestRecording = show.bestRecording
+                if (bestRecording != null) {
+                    downloadRepository.cancelRecordingDownloads(bestRecording.identifier)
+                } else {
+                    println("No best recording found for show ${show.showId}")
+                }
+            } catch (e: Exception) {
+                println("Failed to cancel downloads for show ${show.showId}: ${e.message}")
+            }
+        }
+    }
+    
+    /**
      * Start monitoring download states for all recordings
      */
     private fun startDownloadStateMonitoring() {
@@ -205,15 +223,15 @@ class LibraryViewModel @Inject constructor(
                         recordingDownloads.all { it.status == DownloadStatus.COMPLETED } -> {
                             ShowDownloadState.Downloaded
                         }
-                        recordingDownloads.any { it.status == DownloadStatus.DOWNLOADING } -> {
-                            // Calculate track-based progress
+                        recordingDownloads.any { it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED } -> {
+                            // Calculate track-based progress (Spotify-style immediate feedback)
                             val totalTracks = recordingDownloads.size
                             val completedTracks = recordingDownloads.count { it.status == DownloadStatus.COMPLETED }
                             
-                            // Get byte progress from actively downloading track
-                            val downloadingTrack = recordingDownloads.first { it.status == DownloadStatus.DOWNLOADING }
-                            val byteProgress = downloadingTrack.progress
-                            val bytesDownloaded = downloadingTrack.bytesDownloaded
+                            // Get byte progress from actively downloading track if any
+                            val downloadingTrack = recordingDownloads.firstOrNull { it.status == DownloadStatus.DOWNLOADING }
+                            val byteProgress = downloadingTrack?.progress ?: -1f
+                            val bytesDownloaded = downloadingTrack?.bytesDownloaded ?: 0L
                             
                             ShowDownloadState.Downloading(
                                 progress = byteProgress,
@@ -221,9 +239,6 @@ class LibraryViewModel @Inject constructor(
                                 completedTracks = completedTracks,
                                 totalTracks = totalTracks
                             )
-                        }
-                        recordingDownloads.any { it.status == DownloadStatus.QUEUED } -> {
-                            ShowDownloadState.Queued
                         }
                         recordingDownloads.any { it.status == DownloadStatus.FAILED } -> {
                             val failedTrack = recordingDownloads.first { it.status == DownloadStatus.FAILED }
