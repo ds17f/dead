@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.painterResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
@@ -36,6 +37,7 @@ import com.deadarchive.core.design.component.DebugMultilineText
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
+import com.deadarchive.core.design.R
 import kotlinx.coroutines.delay
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -502,7 +504,7 @@ private fun RecordingHeader(
                     when (downloadState) {
                         is com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded -> {
                             Icon(
-                                painter = IconResources.PlayerControls.AlbumArt(), // TODO: Add proper download icon
+                                painter = IconResources.Content.FileDownload(),
                                 contentDescription = "Download Recording",
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -530,7 +532,7 @@ private fun RecordingHeader(
                                 
                                 // Stop icon in center - clickable to cancel
                                 Icon(
-                                    painter = IconResources.PlayerControls.Play(), // TODO: Add proper stop icon
+                                    painter = painterResource(R.drawable.ic_stop),
                                     contentDescription = "Cancel download",
                                     tint = MaterialTheme.colorScheme.primary,
                                     modifier = Modifier
@@ -541,7 +543,7 @@ private fun RecordingHeader(
                         }
                         is com.deadarchive.core.design.component.ShowDownloadState.Downloaded -> {
                             Icon(
-                                painter = IconResources.PlayerControls.Play(), // TODO: Add proper check icon
+                                painter = IconResources.Status.CheckCircle(),
                                 contentDescription = "Downloaded - Click to remove",
                                 tint = MaterialTheme.colorScheme.primary,
                                 modifier = Modifier.clickable { onRemoveDownloadClick() }
@@ -549,7 +551,7 @@ private fun RecordingHeader(
                         }
                         is com.deadarchive.core.design.component.ShowDownloadState.Failed -> {
                             Icon(
-                                painter = IconResources.PlayerControls.AlbumArt(), // TODO: Add proper download icon
+                                painter = IconResources.Content.FileDownload(),
                                 contentDescription = "Download Failed - ${downloadState.errorMessage ?: "Unknown error"}",
                                 tint = MaterialTheme.colorScheme.error
                             )
