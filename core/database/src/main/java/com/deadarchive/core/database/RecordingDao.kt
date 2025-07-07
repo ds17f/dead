@@ -66,6 +66,9 @@ interface RecordingDao {
     @Query("UPDATE recordings SET isInLibrary = :isInLibrary WHERE identifier = :recordingId")
     suspend fun updateLibraryStatus(recordingId: String, isInLibrary: Boolean)
     
+    @Query("UPDATE recordings SET isDownloaded = :isDownloaded WHERE identifier = :recordingId")
+    suspend fun updateDownloadedStatus(recordingId: String, isDownloaded: Boolean)
+    
     // Statistics
     @Query("SELECT COUNT(*) FROM recordings")
     suspend fun getRecordingCount(): Int

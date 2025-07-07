@@ -30,6 +30,7 @@ fun LibraryScreen(
     settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val downloadStates by viewModel.downloadStates.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     

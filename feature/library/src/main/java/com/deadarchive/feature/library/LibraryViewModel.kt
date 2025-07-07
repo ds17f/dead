@@ -17,7 +17,9 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import com.deadarchive.core.model.DownloadStatus
 import javax.inject.Inject
 
 @HiltViewModel
@@ -30,8 +32,14 @@ class LibraryViewModel @Inject constructor(
     private val _uiState = MutableStateFlow<LibraryUiState>(LibraryUiState.Loading)
     val uiState: StateFlow<LibraryUiState> = _uiState.asStateFlow()
     
+    // Download state tracking
+    private val _downloadStates = MutableStateFlow<Map<String, ShowDownloadState>>(emptyMap())
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = _downloadStates.asStateFlow()
+    
     init {
         loadLibraryItems()
+        // Start monitoring download states
+        startDownloadStateMonitoring()
     }
     
     private fun loadLibraryItems() {
@@ -181,15 +189,63 @@ class LibraryViewModel @Inject constructor(
     }
     
     /**
+     * Start monitoring download states for all recordings
+     */
+    private fun startDownloadStateMonitoring() {
+        viewModelScope.launch {
+            // Monitor all downloads and update states
+            downloadRepository.getAllDownloads().collect { downloads ->
+                val stateMap = mutableMapOf<String, ShowDownloadState>()
+                
+                // Group downloads by recording ID
+                val downloadsByRecording = downloads.groupBy { it.recordingId }
+                
+                downloadsByRecording.forEach { (recordingId, recordingDownloads) ->
+                    val showDownloadState = when {
+                        recordingDownloads.any { it.status == DownloadStatus.COMPLETED } -> {
+                            ShowDownloadState.Downloaded
+                        }
+                        recordingDownloads.any { it.status == DownloadStatus.DOWNLOADING } -> {
+                            val downloadingTrack = recordingDownloads.first { it.status == DownloadStatus.DOWNLOADING }
+                            ShowDownloadState.Downloading(
+                                progress = downloadingTrack.progress,
+                                bytesDownloaded = downloadingTrack.bytesDownloaded
+                            )
+                        }
+                        recordingDownloads.any { it.status == DownloadStatus.QUEUED } -> {
+                            ShowDownloadState.Queued
+                        }
+                        recordingDownloads.any { it.status == DownloadStatus.FAILED } -> {
+                            val failedTrack = recordingDownloads.first { it.status == DownloadStatus.FAILED }
+                            ShowDownloadState.Failed(failedTrack.errorMessage)
+                        }
+                        else -> {
+                            ShowDownloadState.NotDownloaded
+                        }
+                    }
+                    
+                    stateMap[recordingId] = showDownloadState
+                }
+                
+                _downloadStates.value = stateMap
+            }
+        }
+    }
+    
+    /**
      * Get the current download state for a show (based on its best recording)
      */
     fun getShowDownloadState(show: Show): ShowDownloadState {
         return try {
-            // For now, return NotDownloaded state as a placeholder
-            // In Task 5, we'll implement proper download progress tracking
-            ShowDownloadState.NotDownloaded
+            val bestRecording = show.bestRecording
+            if (bestRecording != null) {
+                // Get the current state from our monitored state map
+                _downloadStates.value[bestRecording.identifier] ?: ShowDownloadState.NotDownloaded
+            } else {
+                ShowDownloadState.NotDownloaded
+            }
         } catch (e: Exception) {
-            ShowDownloadState.Failed
+            ShowDownloadState.Failed("Failed to get download state")
         }
     }
 }

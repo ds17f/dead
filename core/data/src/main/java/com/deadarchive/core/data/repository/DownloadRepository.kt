@@ -202,6 +202,7 @@ data class DownloadStats(
 @Singleton
 class DownloadRepositoryImpl @Inject constructor(
     private val downloadDao: DownloadDao,
+    private val recordingDao: com.deadarchive.core.database.RecordingDao,
     private val showRepository: ShowRepository,
     private val audioFormatFilterService: com.deadarchive.core.data.service.AudioFormatFilterService,
     private val downloadQueueManager: com.deadarchive.core.data.download.DownloadQueueManager,
@@ -373,6 +374,42 @@ class DownloadRepositoryImpl @Inject constructor(
                 val updatedDownload = download.copy(errorMessage = errorMessage)
                 downloadDao.updateDownload(updatedDownload)
             }
+        }
+        
+        // Check if recording is complete when a track finishes downloading
+        if (status == DownloadStatus.COMPLETED) {
+            val download = downloadDao.getDownloadById(id)
+            download?.let { 
+                checkAndUpdateRecordingDownloadStatus(it.recordingId)
+            }
+        }
+    }
+    
+    /**
+     * Check if all tracks of a recording are downloaded and update recording status
+     */
+    private suspend fun checkAndUpdateRecordingDownloadStatus(recordingId: String) {
+        try {
+            // Get all downloads for this recording
+            val recordingDownloads = downloadDao.getAllDownloadsSync()
+                .filter { it.recordingId == recordingId }
+            
+            if (recordingDownloads.isNotEmpty()) {
+                // Check if all downloads are completed
+                val allCompleted = recordingDownloads.all { it.status == DownloadStatus.COMPLETED.name }
+                
+                if (allCompleted) {
+                    // Update recording as downloaded
+                    recordingDao.updateDownloadedStatus(recordingId, true)
+                    android.util.Log.d("DownloadRepository", "✅ Recording $recordingId marked as downloaded (${recordingDownloads.size} tracks)")
+                } else {
+                    // Update recording as not downloaded (in case it was previously marked as downloaded)
+                    recordingDao.updateDownloadedStatus(recordingId, false)
+                    android.util.Log.d("DownloadRepository", "📋 Recording $recordingId status updated - ${recordingDownloads.count { it.status == DownloadStatus.COMPLETED.name }}/${recordingDownloads.size} tracks completed")
+                }
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("DownloadRepository", "❌ Failed to update recording download status for $recordingId", e)
         }
     }
 
