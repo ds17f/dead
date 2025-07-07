@@ -1,5 +1,51 @@
 # Changelog
 
+## [0.15.0] - 2025-07-07
+
+### New Features
+* implement offline playback for downloaded tracks (658a35a)
+* add Spotify-style playlist UI with download and library controls (a8b3940)
+* auto-add shows to library when downloading and update UI state (9c8965a)
+* implement Spotify-style soft delete for downloads (f123206)
+* add supporting infrastructure for download system (52f0568)
+* enhance debug tools with comprehensive download troubleshooting (f86ebe7)
+* integrate download system into main app architecture (97a7e67)
+* implement comprehensive Downloads screen with management capabilities (3cc151d)
+* integrate download state monitoring across Browse and Library screens (ddc7d54)
+* enhance download system with improved queue management and cancellation (ece640a)
+* add storage permissions for download functionality (3a3b4a7)
+* implement Spotify-style download progress with theme colors (afd0370)
+* fix queued download icon and auto-add downloaded shows to library (50cfe95)
+* implement database-driven progress indicators with track counts (6cd5f66)
+* implement comprehensive download status tracking in database (d252f20)
+* improve download progress indicator and completion UI (12c5c16)
+* add comprehensive download verification and monitoring tools (6b16cfa)
+* add show-level download buttons with visual state indicators (4369f90)
+* implement UI integration for download management system (a0808f8)
+* implement download queue management system with WorkManager (fd69479)
+* implement AudioDownloadWorker for background downloads (e01a77d)
+* implement WorkManager foundation for download system (8f94bf6)
+
+### Bug Fixes
+* add core:data dependency to core:media module (09ff477)
+* standardize download icons in playlist RecordingHeader (8302177)
+* implement immediate UI feedback for download buttons in Library (6bf550e)
+* resolve double-tap download activation issue (d82c433)
+* resolve library UI jumping bug and download restart issues (3926e6e)
+* resolve cancelled download UI state synchronization (81b74c0)
+* enable soft delete and restore functionality in Library screen (11f9d38)
+* enable download cancellation functionality in UI (a22fcaa)
+* resolve compilation errors in DownloadRepository and SettingsScreen (95e95a8)
+* replace non-existent Remove icon with text-based +/- buttons (5129c3a)
+* implement proper URL resolution and format filtering for downloads (5211b6e)
+
+### Code Refactoring
+* clean up debug system and fix deprecation warning (4f80a5e)
+
+### Documentation Updates
+* update TODO with download system progress (2e009fc)
+
+
 ## [0.14.0] - 2025-07-06
 
 ### New Features
@@ -9,8 +55,6 @@
 
 ### Bug Fixes
 * resolve library functionality issues with comprehensive architecture fixes (73338de)
-
-
 ## [0.13.0] - 2025-07-03
 
 ### New Features
