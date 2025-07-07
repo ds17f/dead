@@ -869,10 +869,19 @@ class DownloadRepositoryImpl @Inject constructor(
             val updatedDownload = download.copy(
                 isMarkedForDeletion = false,
                 deletionTimestamp = null,
-                lastAccessTimestamp = System.currentTimeMillis()
+                lastAccessTimestamp = System.currentTimeMillis(),
+                status = DownloadStatus.QUEUED.name,
+                progress = 0f,
+                bytesDownloaded = 0L,
+                errorMessage = null,
+                startedTimestamp = System.currentTimeMillis(),
+                completedTimestamp = null
             )
             downloadDao.updateDownload(updatedDownload)
-            android.util.Log.d("DownloadRepository", "♻️ Download restored from deletion: $downloadId")
+            android.util.Log.d("DownloadRepository", "♻️ Download restored from deletion and reset to QUEUED: $downloadId")
+            
+            // Trigger immediate queue processing for restored download
+            downloadQueueManager.triggerImmediateProcessing()
         }
     }
     
