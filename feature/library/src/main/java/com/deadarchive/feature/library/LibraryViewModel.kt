@@ -184,12 +184,45 @@ class LibraryViewModel @Inject constructor(
                 val bestRecording = show.bestRecording
                 if (bestRecording != null) {
                     println("Downloading best recording for show ${show.showId}: ${bestRecording.identifier}")
+                    
+                    // Provide immediate UI feedback by setting download state to "queued"
+                    val currentDownloadStates = _downloadStates.value.toMutableMap()
+                    currentDownloadStates[bestRecording.identifier] = ShowDownloadState.Downloading(
+                        progress = -1f, // -1 indicates "queued/starting"
+                        bytesDownloaded = 0L,
+                        completedTracks = 0,
+                        totalTracks = 1 // Placeholder until actual track count is known
+                    )
+                    _downloadStates.value = currentDownloadStates
+                    
+                    // Start the actual download
                     downloadRepository.downloadRecording(bestRecording)
+                    
+                    // Update the UI state locally to show the show is now in library (following Browse pattern)
+                    val currentState = _uiState.value
+                    if (currentState is LibraryUiState.Success) {
+                        val updatedShows = currentState.shows.map { existingShow ->
+                            if (existingShow.showId == show.showId) {
+                                existingShow.copy(isInLibrary = true)
+                            } else {
+                                existingShow
+                            }
+                        }
+                        _uiState.value = LibraryUiState.Success(currentState.libraryItems, updatedShows)
+                    }
                 } else {
                     println("No best recording available for show ${show.showId}")
                 }
             } catch (e: Exception) {
                 println("Failed to start download for show ${show.showId}: ${e.message}")
+                
+                // On error, revert the optimistic UI state
+                val bestRecording = show.bestRecording
+                if (bestRecording != null) {
+                    val currentDownloadStates = _downloadStates.value.toMutableMap()
+                    currentDownloadStates[bestRecording.identifier] = ShowDownloadState.Failed("Failed to start download")
+                    _downloadStates.value = currentDownloadStates
+                }
             }
         }
     }
