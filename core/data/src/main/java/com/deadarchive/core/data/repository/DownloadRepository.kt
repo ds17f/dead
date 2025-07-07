@@ -300,6 +300,17 @@ class DownloadRepositoryImpl @Inject constructor(
         // Check if download already exists
         val existingDownload = downloadDao.getDownloadById(downloadId)
         if (existingDownload != null) {
+            // If it's soft deleted, restore it
+            if (existingDownload.isMarkedForDeletion) {
+                val restoredDownload = existingDownload.copy(
+                    isMarkedForDeletion = false,
+                    deletionTimestamp = null,
+                    lastAccessTimestamp = System.currentTimeMillis()
+                )
+                downloadDao.updateDownload(restoredDownload)
+                android.util.Log.d("DownloadRepository", "♻️ Restored soft-deleted download: $downloadId")
+                return downloadId
+            }
             // If it's failed or cancelled, reset it to queued
             if (existingDownload.status in listOf("FAILED", "CANCELLED")) {
                 val updatedDownload = existingDownload.copy(
@@ -335,6 +346,17 @@ class DownloadRepositoryImpl @Inject constructor(
 
     override suspend fun startRecordingDownload(recording: Recording): List<String> {
         val downloadIds = mutableListOf<String>()
+        
+        // Check if recording is marked for deletion and restore it
+        val recordingEntity = recordingDao.getRecordingById(recording.identifier)
+        if (recordingEntity?.isMarkedForDeletion == true) {
+            val restoredEntity = recordingEntity.copy(
+                isMarkedForDeletion = false,
+                deletionTimestamp = null
+            )
+            recordingDao.updateRecording(restoredEntity)
+            android.util.Log.d("DownloadRepository", "♻️ Restored soft-deleted recording: ${recording.identifier}")
+        }
         
         // Get track streaming URLs to determine available tracks
         val trackUrls = showRepository.getTrackStreamingUrls(recording.identifier)
