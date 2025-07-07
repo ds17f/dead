@@ -97,6 +97,7 @@ fun ExpandableConcertItem(
                 onShowClick = onShowClick,
                 onLibraryClick = onLibraryClick,
                 onShowDownloadClick = onShowDownloadClick,
+                onCancelDownloadClick = onCancelDownloadClick,
                 onRemoveDownloadClick = onRemoveDownloadClick,
                 getShowDownloadState = getShowDownloadState
             )
@@ -128,6 +129,7 @@ private fun ShowHeader(
     onShowClick: (Show) -> Unit,
     onLibraryClick: (Show) -> Unit,
     onShowDownloadClick: (Show) -> Unit,
+    onCancelDownloadClick: (Show) -> Unit,
     onRemoveDownloadClick: (Show) -> Unit,
     getShowDownloadState: (Show) -> ShowDownloadState,
     modifier: Modifier = Modifier
@@ -279,8 +281,7 @@ private fun ShowHeader(
                                     modifier = Modifier
                                         .size(14.dp)
                                         .clickable {
-                                            // TODO: Add cancel functionality - temporarily disabled for compilation
-                                            // onCancelDownloadClick(show)
+                                            onCancelDownloadClick(show)
                                         }
                                 )
                             }
