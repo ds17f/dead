@@ -244,7 +244,7 @@ class DebugViewModel @Inject constructor(
     }
     
     /**
-     * Test downloading a sample recording
+     * Test downloading a sample recording with detailed debugging
      */
     fun testSampleDownload() {
         viewModelScope.launch {
@@ -268,33 +268,92 @@ class DebugViewModel @Inject constructor(
                 
                 val sampleRecording = recordings.first()
                 _uiState.value = _uiState.value.copy(
-                    downloadTestStatus = "Testing download for: ${sampleRecording.title}\nIdentifier: ${sampleRecording.identifier}"
+                    downloadTestStatus = "Step 1: Selected recording\n" +
+                            "Title: ${sampleRecording.title}\n" +
+                            "Identifier: ${sampleRecording.identifier}\n\n" +
+                            "Step 2: Starting download..."
                 )
                 
-                // Start the download
-                downloadRepository.downloadRecording(sampleRecording)
+                // Start the download and get the download IDs
+                val downloadIds = downloadRepository.downloadRecording(sampleRecording)
                 
-                // Give it a moment to start
-                delay(2000)
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Step 3: Download initiated\n" +
+                            "Recording: ${sampleRecording.identifier}\n" +
+                            "Download IDs created: ${downloadIds.size}\n" +
+                            "IDs: ${downloadIds.joinToString(", ")}\n\n" +
+                            "Step 4: Checking database entries..."
+                )
                 
-                // Check the status
+                // Give it a moment to process
+                delay(1000)
+                
+                // Check if entries were created in the database
+                val allDownloads = downloadRepository.exportDownloadList()
+                val queuedDownloads = downloadRepository.getDownloadQueue()
+                
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "Step 5: Database verification\n" +
+                            "Total downloads in DB: ${allDownloads.size}\n" +
+                            "Queued downloads: ${queuedDownloads.size}\n\n" +
+                            "Step 6: Triggering queue processing..."
+                )
+                
+                // Manually trigger queue processing
+                downloadQueueManager.triggerImmediateProcessing()
+                
+                // Give it more time to process
+                delay(3000)
+                
+                // Check the final status
                 val queueStatus = downloadQueueManager.getQueueProcessingStatus()
+                val isActive = downloadQueueManager.isQueueProcessingActive()
+                val updatedDownloads = downloadRepository.exportDownloadList()
+                
+                val debugReport = buildString {
+                    appendLine("🔍 DETAILED DOWNLOAD DEBUG REPORT")
+                    appendLine("================================")
+                    appendLine("✅ Recording Selected: ${sampleRecording.identifier}")
+                    appendLine("✅ Download IDs Created: ${downloadIds.size} (${downloadIds.joinToString(", ")})")
+                    appendLine("✅ Database Entries: ${updatedDownloads.size}")
+                    appendLine("✅ Queue Processing Active: $isActive")
+                    appendLine("✅ Queue Status: $queueStatus")
+                    appendLine()
+                    
+                    if (updatedDownloads.isNotEmpty()) {
+                        appendLine("📋 DOWNLOAD ENTRIES:")
+                        updatedDownloads.take(3).forEach { download ->
+                            appendLine("• ID: ${download.id}")
+                            appendLine("  Recording: ${download.recordingId}")
+                            appendLine("  Status: ${download.status}")
+                            appendLine("  Progress: ${(download.progress * 100).toInt()}%")
+                            if (download.errorMessage != null) {
+                                appendLine("  Error: ${download.errorMessage}")
+                            }
+                            appendLine()
+                        }
+                    } else {
+                        appendLine("❌ NO DOWNLOAD ENTRIES FOUND!")
+                        appendLine("This suggests the downloadRecording() method didn't create database entries.")
+                    }
+                    
+                    appendLine("🔧 NEXT STEPS:")
+                    appendLine("1. Use 'List Downloads' to see all database entries")
+                    appendLine("2. Monitor logcat: adb logcat | grep -E '(Download|Worker|Queue)'")
+                    appendLine("3. Check if WorkManager is processing with 'Check Status'")
+                }
                 
                 _uiState.value = _uiState.value.copy(
                     isDownloadTesting = false,
-                    downloadTestStatus = "✅ Download initiated successfully!\n\n" +
-                            "Recording: ${sampleRecording.title}\n" +
-                            "Identifier: ${sampleRecording.identifier}\n" +
-                            "Queue Status: $queueStatus\n\n" +
-                            "Check logcat for detailed progress:\n" +
-                            "adb logcat | grep -E '(DownloadRepository|DownloadQueueManager|AudioDownloadWorker)'",
-                    downloadTestSuccess = true
+                    downloadTestStatus = debugReport,
+                    downloadTestSuccess = downloadIds.isNotEmpty()
                 )
                 
             } catch (e: Exception) {
                 _uiState.value = _uiState.value.copy(
                     isDownloadTesting = false,
-                    downloadTestStatus = "❌ Download test failed: ${e.message}",
+                    downloadTestStatus = "❌ Download test failed at step: ${e.message}\n\n" +
+                            "Stack trace: ${e.stackTraceToString()}",
                     downloadTestSuccess = false
                 )
             }
@@ -566,6 +625,143 @@ class DebugViewModel @Inject constructor(
             } catch (e: Exception) {
                 _uiState.value = _uiState.value.copy(
                     downloadTestStatus = "❌ File verification failed: ${e.message}",
+                    downloadTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    /**
+     * Comprehensive troubleshooting for download system issues
+     */
+    fun troubleshootDownloads() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "🔧 Running download system diagnostics..."
+                )
+                
+                val troubleshootingReport = buildString {
+                    appendLine("🔧 DOWNLOAD SYSTEM TROUBLESHOOTING")
+                    appendLine("===================================")
+                    
+                    // Check 1: Download Repository
+                    try {
+                        val allDownloads = downloadRepository.exportDownloadList()
+                        val queuedDownloads = downloadRepository.getDownloadQueue()
+                        appendLine("✅ DownloadRepository: Working")
+                        appendLine("   Total downloads: ${allDownloads.size}")
+                        appendLine("   Queued downloads: ${queuedDownloads.size}")
+                    } catch (e: Exception) {
+                        appendLine("❌ DownloadRepository: FAILED - ${e.message}")
+                    }
+                    
+                    // Check 2: Download Queue Manager
+                    try {
+                        val queueStatus = downloadQueueManager.getQueueProcessingStatus()
+                        val isActive = downloadQueueManager.isQueueProcessingActive()
+                        appendLine("✅ DownloadQueueManager: Working")
+                        appendLine("   Queue processing active: $isActive")
+                        appendLine("   Queue status: $queueStatus")
+                    } catch (e: Exception) {
+                        appendLine("❌ DownloadQueueManager: FAILED - ${e.message}")
+                    }
+                    
+                    // Check 3: File System
+                    try {
+                        val downloadDir = downloadRepository.getDownloadDirectory()
+                        val usedSpace = downloadRepository.getUsedStorageSpace()
+                        val availableSpace = downloadRepository.getAvailableStorageSpace()
+                        appendLine("✅ File System: Working")
+                        appendLine("   Download directory: ${downloadDir.absolutePath}")
+                        appendLine("   Directory exists: ${downloadDir.exists()}")
+                        appendLine("   Directory writable: ${downloadDir.canWrite()}")
+                        appendLine("   Used space: ${formatBytes(usedSpace)}")
+                        appendLine("   Available space: ${formatBytes(availableSpace)}")
+                    } catch (e: Exception) {
+                        appendLine("❌ File System: FAILED - ${e.message}")
+                    }
+                    
+                    // Check 4: Sample recording availability
+                    try {
+                        val recordings = concertRepository.getAllCachedRecordings().first()
+                        appendLine("✅ Sample Recordings: ${recordings.size} available")
+                        if (recordings.isNotEmpty()) {
+                            val sample = recordings.first()
+                            appendLine("   Sample ID: ${sample.identifier}")
+                            appendLine("   Sample title: ${sample.title}")
+                            
+                            // Try to get track URLs
+                            try {
+                                val trackUrls = concertRepository.getTrackStreamingUrls(sample.identifier)
+                                appendLine("   Track URLs: ${trackUrls.size} tracks found")
+                                trackUrls.take(3).forEach { (audioFile, url) ->
+                                    appendLine("     • ${audioFile.filename} -> ${url.take(50)}...")
+                                }
+                            } catch (e: Exception) {
+                                appendLine("   ❌ Track URLs: FAILED - ${e.message}")
+                            }
+                        }
+                    } catch (e: Exception) {
+                        appendLine("❌ Sample Recordings: FAILED - ${e.message}")
+                    }
+                    
+                    // Check 5: Download creation test
+                    try {
+                        val recordings = concertRepository.getAllCachedRecordings().first()
+                        if (recordings.isNotEmpty()) {
+                            val testRecording = recordings.first()
+                            val downloadIds = downloadRepository.downloadRecording(testRecording)
+                            appendLine("✅ Download Creation Test: SUCCESS")
+                            appendLine("   Created ${downloadIds.size} download entries")
+                            appendLine("   Download IDs: ${downloadIds.joinToString(", ")}")
+                            
+                            // Check if entries actually exist in database
+                            delay(500) // Give it time to save
+                            val allDownloads = downloadRepository.exportDownloadList()
+                            val matchingDownloads = allDownloads.filter { 
+                                downloadIds.contains(it.id) 
+                            }
+                            appendLine("   Database entries created: ${matchingDownloads.size}")
+                            matchingDownloads.forEach { download ->
+                                appendLine("     - ${download.id}: ${download.status}")
+                            }
+                        }
+                    } catch (e: Exception) {
+                        appendLine("❌ Download Creation Test: FAILED - ${e.message}")
+                    }
+                    
+                    appendLine()
+                    appendLine("🎯 COMMON ISSUES & SOLUTIONS:")
+                    appendLine("1. No downloads in database:")
+                    appendLine("   • Check if ShowRepository.getTrackStreamingUrls() is working")
+                    appendLine("   • Verify network connectivity for metadata fetching")
+                    appendLine("   • Run 'Export Test Data' to ensure recordings exist")
+                    appendLine()
+                    appendLine("2. Downloads stuck in QUEUED status:")
+                    appendLine("   • Check WorkManager is properly initialized")
+                    appendLine("   • Verify Hilt dependency injection is working")
+                    appendLine("   • Check device constraints (network, storage, battery)")
+                    appendLine()
+                    appendLine("3. Downloads fail immediately:")
+                    appendLine("   • Check storage permissions")
+                    appendLine("   • Verify download URLs are accessible")
+                    appendLine("   • Check available storage space")
+                    appendLine()
+                    appendLine("💡 NEXT ACTIONS:")
+                    appendLine("• Run detailed 'Test Download' for step-by-step analysis")
+                    appendLine("• Monitor logcat: adb logcat | grep -E '(Download|Worker|Hilt)'")
+                    appendLine("• Check WorkManager status in device settings")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = troubleshootingReport,
+                    downloadTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    downloadTestStatus = "❌ Troubleshooting failed: ${e.message}\n\n${e.stackTraceToString()}",
                     downloadTestSuccess = false
                 )
             }
