@@ -122,7 +122,12 @@ private fun SuccessContent(
             items(sortedShows) { show ->
                 ShowCard(
                     show = show,
-                    onClick = { onShowClick(show) }
+                    onClick = { 
+                        android.util.Log.d("TodayInHistoryCard", "Show card clicked: ${show.displayDate} - ${show.displayVenue}")
+                        android.util.Log.d("TodayInHistoryCard", "Show has ${show.recordings.size} recordings")
+                        android.util.Log.d("TodayInHistoryCard", "Best recording: ${show.bestRecording?.identifier}")
+                        onShowClick(show) 
+                    }
                 )
             }
         }

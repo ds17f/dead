@@ -1,6 +1,7 @@
 package com.deadarchive.core.data.repository
 
 import com.deadarchive.core.database.ShowDao
+import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.model.Show
 import kotlinx.coroutines.flow.Flow
@@ -16,7 +17,8 @@ import javax.inject.Singleton
  */
 @Singleton
 class TodayInHistoryRepository @Inject constructor(
-    private val showDao: ShowDao
+    private val showDao: ShowDao,
+    private val recordingDao: RecordingDao
 ) {
     
     companion object {
@@ -32,7 +34,11 @@ class TodayInHistoryRepository @Inject constructor(
     suspend fun getTodaysShowsInHistory(): List<Show> {
         val todayMonthDay = getCurrentMonthDay()
         val showEntities = showDao.getShowsByMonthDay(todayMonthDay)
-        return showEntities.map { it.toShow() }
+        return showEntities.map { showEntity ->
+            // Get recordings for this show
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
+            showEntity.toShow(recordings)
+        }
     }
     
     /**
@@ -45,7 +51,11 @@ class TodayInHistoryRepository @Inject constructor(
             return emptyList()
         }
         val showEntities = showDao.getShowsByMonthDay(monthDay)
-        return showEntities.map { it.toShow() }
+        return showEntities.map { showEntity ->
+            // Get recordings for this show
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
+            showEntity.toShow(recordings)
+        }
     }
     
     /**
@@ -55,7 +65,11 @@ class TodayInHistoryRepository @Inject constructor(
     fun getTodaysShowsInHistoryFlow(): Flow<List<Show>> = flow {
         val todayMonthDay = getCurrentMonthDay()
         val showEntities = showDao.getShowsByMonthDay(todayMonthDay)
-        emit(showEntities.map { it.toShow() })
+        emit(showEntities.map { showEntity ->
+            // Get recordings for this show
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
+            showEntity.toShow(recordings)
+        })
     }
     
     /**
@@ -79,7 +93,11 @@ class TodayInHistoryRepository @Inject constructor(
     suspend fun getThisMonthInHistory(): List<Show> {
         val currentMonth = getCurrentMonth()
         val showEntities = showDao.getShowsByMonth(currentMonth)
-        return showEntities.map { it.toShow() }
+        return showEntities.map { showEntity ->
+            // Get recordings for this show
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
+            showEntity.toShow(recordings)
+        }
     }
     
     /**
