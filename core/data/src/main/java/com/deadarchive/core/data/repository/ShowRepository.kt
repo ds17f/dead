@@ -237,7 +237,49 @@ class ShowRepositoryImpl @Inject constructor(
     }
     
     override suspend fun getTrackStreamingUrls(identifier: String): List<Pair<AudioFile, String>> {
-        return emptyList()
+        return try {
+            android.util.Log.d("ShowRepository", "🎵 getTrackStreamingUrls: Fetching metadata for $identifier")
+            
+            // Get metadata from Archive.org
+            val metadata = getRecordingMetadata(identifier)
+            if (metadata == null) {
+                android.util.Log.w("ShowRepository", "🎵 getTrackStreamingUrls: No metadata found for $identifier")
+                return emptyList()
+            }
+            
+            android.util.Log.d("ShowRepository", "🎵 getTrackStreamingUrls: Found ${metadata.files.size} files for $identifier")
+            
+            // Filter audio files and create streaming URLs
+            val audioFiles = metadata.files.filter { file ->
+                val isAudio = isAudioFile(file.name)
+                val hasSize = (file.size?.toLongOrNull() ?: 0) > 0
+                isAudio && hasSize
+            }
+            
+            android.util.Log.d("ShowRepository", "🎵 getTrackStreamingUrls: Found ${audioFiles.size} audio files for $identifier")
+            
+            val trackUrls = audioFiles.map { file ->
+                val audioFile = AudioFile(
+                    filename = file.name,
+                    format = file.format ?: "unknown",
+                    sizeBytes = file.size,
+                    durationSeconds = file.length
+                )
+                val streamingUrl = "https://archive.org/download/$identifier/${file.name}"
+                audioFile to streamingUrl
+            }
+            
+            android.util.Log.d("ShowRepository", "🎵 getTrackStreamingUrls: Created ${trackUrls.size} streaming URLs for $identifier")
+            trackUrls.take(3).forEach { (audioFile, url) ->
+                android.util.Log.d("ShowRepository", "🎵   • ${audioFile.filename} (${audioFile.format}) -> $url")
+            }
+            
+            trackUrls
+            
+        } catch (e: Exception) {
+            android.util.Log.e("ShowRepository", "🎵 getTrackStreamingUrls: Failed for $identifier", e)
+            emptyList()
+        }
     }
     
     override suspend fun getPreferredStreamingUrl(identifier: String): String? {
@@ -556,5 +598,14 @@ class ShowRepositoryImpl @Inject constructor(
     private fun isCacheExpired(timestamp: Long): Boolean {
         val expiryTime = timestamp + (CACHE_EXPIRY_HOURS * 60 * 60 * 1000L)
         return System.currentTimeMillis() > expiryTime
+    }
+    
+    /**
+     * Check if a file is an audio file based on its extension
+     */
+    private fun isAudioFile(filename: String): Boolean {
+        val audioExtensions = setOf("mp3", "flac", "ogg", "m4a", "wav", "aac", "wma")
+        val extension = filename.lowercase().substringAfterLast(".", "")
+        return extension in audioExtensions
     }
 }

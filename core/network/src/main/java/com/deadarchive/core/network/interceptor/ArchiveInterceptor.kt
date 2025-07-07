@@ -38,11 +38,23 @@ class ArchiveInterceptor : Interceptor {
         // Build request with appropriate headers
         // Note: Don't manually set Accept-Encoding - let OkHttp handle gzip automatically
         val originalRequest = chain.request()
-        val modifiedRequest = originalRequest.newBuilder()
+        val requestBuilder = originalRequest.newBuilder()
             .addHeader("User-Agent", USER_AGENT)
-            .addHeader("Accept", ACCEPT_HEADER)
-            .build()
         
+        // Only add Accept: application/json for API endpoints, not for file downloads
+        val url = originalRequest.url.toString()
+        val isFileDownload = url.contains("/download/") && (
+            url.endsWith(".flac") || url.endsWith(".mp3") || url.endsWith(".wav") || 
+            url.endsWith(".ogg") || url.endsWith(".m4a") || url.endsWith(".aac")
+        )
+        
+        if (!isFileDownload) {
+            // This is an API call - request JSON
+            requestBuilder.addHeader("Accept", ACCEPT_HEADER)
+        }
+        // For file downloads, let the server determine the appropriate content type
+        
+        val modifiedRequest = requestBuilder.build()
         lastRequestTime = System.currentTimeMillis()
         
         return chain.proceed(modifiedRequest)

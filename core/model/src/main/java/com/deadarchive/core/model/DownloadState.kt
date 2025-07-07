@@ -15,7 +15,9 @@ data class DownloadState(
     val startedTimestamp: Long = System.currentTimeMillis(),
     val completedTimestamp: Long? = null,
     val priority: Int = 0,
-    val retryCount: Int = 0
+    val retryCount: Int = 0,
+    val createdAt: Long = System.currentTimeMillis(),
+    val updatedAt: Long = System.currentTimeMillis()
 ) {
     val id: String
         get() = "${recordingId}_${trackFilename}"

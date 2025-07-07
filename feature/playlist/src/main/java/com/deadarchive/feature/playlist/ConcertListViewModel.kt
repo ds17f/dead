@@ -222,7 +222,7 @@ class ConcertListViewModel @Inject constructor(
             // In Task 5, we'll implement proper download progress tracking
             ShowDownloadState.NotDownloaded
         } catch (e: Exception) {
-            ShowDownloadState.Failed
+            ShowDownloadState.Failed("Failed to get download state")
         }
     }
 }
