@@ -92,3 +92,15 @@ create_wrapper.py
 # Task manager files
 mcp-shrimp-task-manager/
 scripts/.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Metadata cache directories (commit selectively when major datasets are complete)
+scripts/metadata-test/
+# scripts/metadata-1977/  # Committed - complete 1977 dataset
+# scripts/metadata-1995/  # Committed - complete 1995 dataset  
+# scripts/metadata-full/  # Commit when complete full dataset is ready
