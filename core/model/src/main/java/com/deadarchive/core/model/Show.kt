@@ -72,14 +72,36 @@ data class Show(
         
     val bestRecording: Recording?
         get() = recordings.minByOrNull { recording ->
-            // Priority: SBD > MATRIX > FM > AUD
-            when (recording.cleanSource?.uppercase()) {
+            // Multi-tier priority system for selecting the best recording:
+            //
+            // Tier 1: Rating Status (most important)
+            //   - Rated recordings always preferred over unrated ones
+            //   - Example: 2.5★ SBD beats unrated SBD
+            //
+            // Tier 2: Source Type (within same rating tier)  
+            //   - SBD > MATRIX > FM > AUD > Unknown
+            //   - Example: Rated SBD beats rated AUD
+            //
+            // Tier 3: Rating Value (tie-breaker)
+            //   - Higher rating wins within same rating+source group
+            //   - Example: 4.2★ SBD beats 3.1★ SBD
+            
+            val ratingPriority = if (recording.hasRating) 0 else 1 // Rated recordings first
+            
+            val sourcePriority = when (recording.cleanSource?.uppercase()) {
                 "SBD" -> 1
-                "MATRIX" -> 2
+                "MATRIX" -> 2  
                 "FM" -> 3
                 "AUD" -> 4
                 else -> 5
             }
+            
+            // Small rating bonus for tie-breaking (inverted since minByOrNull picks smallest)
+            val ratingValue = recording.rating ?: 0f
+            val ratingBonus = (5f - ratingValue) / 10f // 0.0-0.4 range
+            
+            // Combined score: rating status dominates, then source, then rating value
+            ratingPriority * 10 + sourcePriority + ratingBonus
         }
         
     val hasMultipleRecordings: Boolean
