@@ -8,6 +8,7 @@ import com.deadarchive.core.database.DeadArchiveDatabase
 import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.database.SyncMetadataDao
+import com.deadarchive.core.database.RatingDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -74,5 +75,13 @@ object DatabaseModule {
     @Provides
     fun provideSyncMetadataDao(database: DeadArchiveDatabase): SyncMetadataDao {
         return database.syncMetadataDao()
+    }
+    
+    /**
+     * Provides Rating DAO for ratings operations
+     */
+    @Provides
+    fun provideRatingDao(database: DeadArchiveDatabase): RatingDao {
+        return database.ratingDao()
     }
 }

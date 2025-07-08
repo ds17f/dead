@@ -11,6 +11,10 @@ help:
 	@echo "  make setup       - Initial project setup and dependency installation"
 	@echo "  make deps        - Download and install dependencies"
 	@echo "  make download-icons - Download Material icons and update resources"
+	@echo "  make collect-metadata-full - Full metadata collection (2-3 hours)"
+	@echo "  make collect-metadata-test - Test collection (50 recordings)"
+	@echo "  make generate-ratings-from-cache - Generate ratings from cached data"
+	@echo "  make generate-ratings - Alias for collect-metadata-test"
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
@@ -408,6 +412,70 @@ download-icons:
 		--icon-registry-path "$(PWD)/core/design/src/main/java/com/deadarchive/core/design/component/IconResources.kt" \
 		--update-registry
 	@echo "✅ Icons downloaded and processed!"
+
+# Comprehensive Metadata Collection
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume
+
+# Full metadata collection (2-3 hours, run overnight)
+collect-metadata-full:
+	@echo "⭐ Collecting complete Grateful Dead metadata from Archive.org..."
+	@cd scripts && \
+		rm -rf .venv && \
+		python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt && \
+		python generate_metadata.py \
+		--mode full \
+		--delay 0.25 \
+		--cache "$(PWD)/scripts/metadata" \
+		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--verbose
+	@echo "✅ Complete metadata collection finished!"
+
+# Test collection (small subset)
+collect-metadata-test:
+	@echo "🧪 Testing metadata collection with small subset..."
+	@cd scripts && \
+		rm -rf .venv && \
+		python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt && \
+		python generate_metadata.py \
+		--mode test \
+		--delay 0.25 \
+		--cache "$(PWD)/scripts/metadata-test" \
+		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--max-recordings 10 \
+		--verbose
+	@echo "✅ Test collection completed!"
+
+# Generate ratings from existing cache (fast)
+generate-ratings-from-cache:
+	@echo "⚡ Generating ratings from cached metadata..."
+	@cd scripts && \
+		. .venv/bin/activate && \
+		python generate_metadata.py \
+		--mode ratings-only \
+		--cache "$(PWD)/scripts/metadata" \
+		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--verbose
+	@echo "✅ Ratings generated from cache!"
+
+# Resume interrupted collection
+collect-metadata-resume:
+	@echo "🔄 Resuming metadata collection..."
+	@cd scripts && \
+		. .venv/bin/activate && \
+		python generate_metadata.py \
+		--mode resume \
+		--progress "$(PWD)/scripts/metadata/progress.json" \
+		--verbose
+	@echo "✅ Collection resumed and completed!"
+
+# Legacy alias for backward compatibility
+generate-ratings: collect-metadata-test
 
 # Test Data Management
 capture-test-data:

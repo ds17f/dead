@@ -5,6 +5,7 @@ import androidx.hilt.work.HiltWorkerFactory
 import androidx.work.Configuration
 import androidx.work.WorkManager
 import com.deadarchive.core.data.download.DownloadQueueManager
+import com.deadarchive.core.data.repository.RatingsRepository
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -21,6 +22,9 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
     @Inject 
     lateinit var downloadQueueManager: DownloadQueueManager
     
+    @Inject
+    lateinit var ratingsRepository: RatingsRepository
+    
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
     override fun onCreate() {
@@ -28,6 +32,16 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
         
         // Initialize WorkManager with custom configuration
         WorkManager.initialize(this, workManagerConfiguration)
+        
+        // Initialize ratings database
+        applicationScope.launch {
+            try {
+                ratingsRepository.initializeRatingsIfNeeded()
+                android.util.Log.d("DeadArchiveApplication", "✅ Ratings database initialized")
+            } catch (e: Exception) {
+                android.util.Log.e("DeadArchiveApplication", "❌ Failed to initialize ratings database", e)
+            }
+        }
         
         // Start download queue processing
         applicationScope.launch {

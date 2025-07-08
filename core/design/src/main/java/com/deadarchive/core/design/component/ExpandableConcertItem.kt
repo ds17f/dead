@@ -193,6 +193,15 @@ private fun ShowHeader(
                 overflow = TextOverflow.Ellipsis
             )
             
+            // Star rating
+            if (show.hasRating) {
+                CompactStarRating(
+                    rating = show.rating,
+                    confidence = show.ratingConfidence,
+                    starSize = 16.dp
+                )
+            }
+            
             // Recording count and sources
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -535,6 +544,15 @@ private fun RecordingItem(
                     color = MaterialTheme.colorScheme.onSurface,
                     fontWeight = FontWeight.Medium
                 )
+                
+                // Star rating for recording
+                if (recording.hasRating) {
+                    CompactStarRating(
+                        rating = recording.rating,
+                        confidence = recording.ratingConfidence,
+                        starSize = 12.dp
+                    )
+                }
                 
                 val details = buildList {
                     recording.taper?.let { add("Taper: $it") }

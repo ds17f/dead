@@ -9,6 +9,8 @@
 - [x] Top of player should go to show / Recording
 - [x] Swipe for next track on player
 - [ ] Player information enhancements
+  - [ ] Add to Library (show)
+  - [ ] Download (track or show?)
   - [ ] Lyrics
   - [ ] History of show
   - [ ] Other versions
@@ -39,14 +41,16 @@
 - [ ] Settings - Flush Database
   - [ ] Persist Favorites and other show data
 - [ ] Gapless Playback
-- [-] Downloading
+- [x] Downloading
+  - [ ] Respect the file setting type (download MP3 over OGG)
+  - [ ] Show download status on player / track view
 - [ ] Streaming over Wifi only
 
 ## Home Screen
 
 - [ ] Home screen enhancements
   - [ ] Eras
-  - [ ] TIGDH
+  - [x] TIGDH
 
 ## Media Notifications
 

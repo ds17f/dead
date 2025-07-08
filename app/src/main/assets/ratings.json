@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "generated_at": "2025-07-08T06:56:01.695218",
+    "total_recordings": 10,
+    "total_shows": 9,
+    "version": "1.0.0"
+  },
+  "recording_ratings": {
+    "gd1965-11-01.sbd.bershaw.5417.sbeok.shnf": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1966-01-08.sbd.bershaw.5410.shnf": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "AUD"
+    },
+    "gd1966-01-08.sbd.lestatkatt.106505.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "AUD"
+    },
+    "gd1966-01-29.sbd.berger.99527.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1966-01-29.sbd.bershaw.5411.shnf": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1966-02-05.136661.sbd.bruno.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1966-XX-XX.sbd.GEMS.81254.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd65-11-03.sbd.vernon.9044.sbeok.shnf": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd65-acid-tests.sbd.bershaw.5406.sbeok.shnf": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd66-01-xx.sbd.hanno-uli.18846.sbeok.shnf": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    }
+  },
+  "show_ratings": {
+    "1965-11-01_various": {
+      "best_recording": "gd1965-11-01.sbd.bershaw.5417.sbeok.shnf",
+      "confidence": 0.0,
+      "date": "1965-11-01",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "various"
+    },
+    "1965-11-03_Golden_State_Studios": {
+      "best_recording": "gd65-11-03.sbd.vernon.9044.sbeok.shnf",
+      "confidence": 0.0,
+      "date": "1965-11-03",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "Golden State Studios"
+    },
+    "1966-00-00_Various_-_See_info_file": {
+      "best_recording": "gd1966-XX-XX.sbd.GEMS.81254.flac16",
+      "confidence": 0.0,
+      "date": "1966-00-00",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "Various - See info file"
+    },
+    "1966-01-01_Viola_Lee_Blues_Reahearsals": {
+      "best_recording": "gd66-01-xx.sbd.hanno-uli.18846.sbeok.shnf",
+      "confidence": 0.0,
+      "date": "1966-01-01",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "Viola Lee Blues Reahearsals"
+    },
+    "1966-01-08_Fillmore_Auditorium": {
+      "best_recording": "gd1966-01-08.sbd.bershaw.5410.shnf",
+      "confidence": 0.0,
+      "date": "1966-01-08",
+      "rating": 0,
+      "recording_count": 2,
+      "venue": "Fillmore Auditorium"
+    },
+    "1966-01-08_Various": {
+      "best_recording": "gd65-acid-tests.sbd.bershaw.5406.sbeok.shnf",
+      "confidence": 0.0,
+      "date": "1966-01-08",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "Various"
+    },
+    "1966-01-29_363_6th_Street": {
+      "best_recording": "gd1966-01-29.sbd.bershaw.5411.shnf",
+      "confidence": 0.0,
+      "date": "1966-01-29",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "363 6th Street"
+    },
+    "1966-01-29_Sound_City_Recording_Studios": {
+      "best_recording": "gd1966-01-29.sbd.berger.99527.flac16",
+      "confidence": 0.0,
+      "date": "1966-01-29",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "Sound City Recording Studios"
+    },
+    "1966-02-05_The_Questing_Beast": {
+      "best_recording": "gd1966-02-05.136661.sbd.bruno.flac16",
+      "confidence": 0.0,
+      "date": "1966-02-05",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "The Questing Beast"
+    }
+  }
+}

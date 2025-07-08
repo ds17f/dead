@@ -52,6 +52,10 @@ data class Recording(
     val isInLibrary: Boolean = false,
     val isDownloaded: Boolean = false,
     
+    // Rating information (optional)  
+    val rating: Float? = null,
+    val ratingConfidence: Float? = null,
+    
     // Soft delete fields (recording-level)
     val isMarkedForDeletion: Boolean = false,
     val deletionTimestamp: Long? = null
@@ -99,4 +103,17 @@ data class Recording(
                 else -> clean
             }
         }
+    
+    // Rating properties
+    val hasRating: Boolean
+        get() = rating != null
+    
+    val isHighlyRated: Boolean
+        get() = rating != null && rating >= 4.0f
+    
+    val isReliablyRated: Boolean
+        get() = rating != null && ratingConfidence != null && ratingConfidence >= 0.7f
+    
+    val stars: Int?
+        get() = rating?.let { kotlin.math.round(it).toInt().coerceIn(1, 5) }
 }

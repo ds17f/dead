@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "generated_at": "2024-07-08T00:00:00Z",
+    "version": "1.0.0",
+    "total_recordings": 15,
+    "total_shows": 8,
+    "processing_notes": "Sample data for development and testing"
+  },
+  "recording_ratings": {
+    "gd1977-05-08.sbd.miller.89174.flac16": {
+      "rating": 4.8,
+      "review_count": 12,
+      "source_type": "SBD",
+      "confidence": 1.0
+    },
+    "gd1977-05-08.aud.vernon.32515.flac16": {
+      "rating": 4.2,
+      "review_count": 8,
+      "source_type": "AUD", 
+      "confidence": 0.8
+    },
+    "gd1972-05-03.sbd.miller.97113.flac16": {
+      "rating": 4.6,
+      "review_count": 9,
+      "source_type": "SBD",
+      "confidence": 0.9
+    },
+    "gd1969-07-07.aud.smith.12345.flac16": {
+      "rating": 3.8,
+      "review_count": 3,
+      "source_type": "AUD",
+      "confidence": 0.6
+    },
+    "gd1975-07-07.sbd.jones.54321.flac16": {
+      "rating": 4.4,
+      "review_count": 7,
+      "source_type": "SBD",
+      "confidence": 0.8
+    }
+  },
+  "show_ratings": {
+    "1977-05-08_Barton_Hall_Cornell_University": {
+      "date": "1977-05-08",
+      "venue": "Barton Hall, Cornell University",
+      "rating": 4.7,
+      "confidence": 0.95,
+      "best_recording": "gd1977-05-08.sbd.miller.89174.flac16",
+      "recording_count": 2
+    },
+    "1972-05-03_Olympia_Theatre": {
+      "date": "1972-05-03",
+      "venue": "Olympia Theatre",
+      "rating": 4.6,
+      "confidence": 0.9,
+      "best_recording": "gd1972-05-03.sbd.miller.97113.flac16",
+      "recording_count": 1
+    },
+    "1969-07-07_Piedmont_Park": {
+      "date": "1969-07-07",
+      "venue": "Piedmont Park",
+      "rating": 3.8,
+      "confidence": 0.6,
+      "best_recording": "gd1969-07-07.aud.smith.12345.flac16",
+      "recording_count": 1
+    },
+    "1975-07-07_Aces_Studio": {
+      "date": "1975-07-07", 
+      "venue": "Ace's Studio",
+      "rating": 4.4,
+      "confidence": 0.8,
+      "best_recording": "gd1975-07-07.sbd.jones.54321.flac16",
+      "recording_count": 1
+    }
+  },
+  "top_shows": [
+    {
+      "show_key": "1977-05-08_Barton_Hall_Cornell_University",
+      "rating": 4.7,
+      "date": "1977-05-08",
+      "venue": "Barton Hall, Cornell University"
+    },
+    {
+      "show_key": "1972-05-03_Olympia_Theatre", 
+      "rating": 4.6,
+      "date": "1972-05-03",
+      "venue": "Olympia Theatre"
+    },
+    {
+      "show_key": "1975-07-07_Aces_Studio",
+      "rating": 4.4,
+      "date": "1975-07-07",
+      "venue": "Ace's Studio"
+    },
+    {
+      "show_key": "1969-07-07_Piedmont_Park",
+      "rating": 3.8,
+      "date": "1969-07-07", 
+      "venue": "Piedmont Park"
+    }
+  ]
+}

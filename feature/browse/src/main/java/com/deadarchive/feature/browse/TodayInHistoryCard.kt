@@ -17,6 +17,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.core.design.component.StarRatingBadge
 import com.deadarchive.core.model.*
 
 /**
@@ -174,13 +175,26 @@ private fun ShowCard(
                     .padding(12.dp),
                 verticalArrangement = Arrangement.SpaceBetween
             ) {
-                // Year at the top
-                Text(
-                    text = show.year ?: "Unknown",
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer
-                )
+                // Year and rating at the top
+                Column(
+                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    Text(
+                        text = show.year ?: "Unknown",
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                    )
+                    
+                    // Star rating badge
+                    if (show.hasRating) {
+                        StarRatingBadge(
+                            rating = show.rating,
+                            backgroundColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
+                            contentColor = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
+                }
                 
                 // Venue and location at the bottom
                 Column(

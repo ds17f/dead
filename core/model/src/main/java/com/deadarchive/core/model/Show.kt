@@ -28,7 +28,11 @@ data class Show(
     val recordings: List<Recording> = emptyList(),
     
     // UI state
-    val isInLibrary: Boolean = false
+    val isInLibrary: Boolean = false,
+    
+    // Rating information (optional)
+    val rating: Float? = null,
+    val ratingConfidence: Float? = null
 ) {
     // Unique identifier combining date and venue
     val showId: String
@@ -80,4 +84,17 @@ data class Show(
         
     val hasMultipleRecordings: Boolean
         get() = recordings.size > 1
+    
+    // Rating properties
+    val hasRating: Boolean
+        get() = rating != null
+    
+    val isHighlyRated: Boolean
+        get() = rating != null && rating >= 4.0f
+    
+    val isReliablyRated: Boolean
+        get() = rating != null && ratingConfidence != null && ratingConfidence >= 0.7f
+    
+    val stars: Int?
+        get() = rating?.let { kotlin.math.round(it).toInt().coerceIn(1, 5) }
 }
