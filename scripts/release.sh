@@ -297,26 +297,16 @@ if [ "$DRY_RUN" = true ]; then
   echo "🎸 Keep on truckin'! 🎸"
 else
   echo ""
-  echo -e "${YELLOW}⚠️ Ready to push changes and tag to origin.${NC}"
-  read -p "Push now? (y/n): " -n 1 -r
-  echo ""
+  echo -e "${GREEN}🚀 Auto-pushing changes and tags to origin...${NC}"
+  git push origin HEAD
+  git push origin "$TAG"
   
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "🚀 Pushing changes and tags to origin..."
-    git push origin HEAD
-    git push origin "$TAG"
-    
-    echo -e "${GREEN}✅ Release $VERSION successfully created and pushed!${NC}"
-    echo ""
-    echo "Next steps:"
-    echo "1. GitHub Actions will now build the release"
-    echo "2. Check the release workflow status on GitHub"
-    echo "3. Download the release artifacts when complete"
-    echo ""
-    echo "🎸 Keep on truckin'! 🎸"
-  else
-    echo "Changes committed but not pushed. Run the following commands when ready:"
-    echo "  git push origin HEAD"
-    echo "  git push origin $TAG"
-  fi
+  echo -e "${GREEN}✅ Release $VERSION successfully created and pushed!${NC}"
+  echo ""
+  echo "Next steps:"
+  echo "1. GitHub Actions will now build the release"
+  echo "2. Check the release workflow status on GitHub"
+  echo "3. Download the release artifacts when complete"
+  echo ""
+  echo "🎸 Keep on truckin'! 🎸"
 fi
