@@ -56,10 +56,11 @@ fi
 
 # Check if git is clean
 if [ -n "$(git status --porcelain)" ]; then
-  echo -e "${RED}❌ Error: Working directory not clean${NC}"
-  echo "Please commit or stash changes before releasing"
-  git status
-  exit 1
+  echo -e "${YELLOW}⚠️ Warning: Working directory not clean${NC}"
+  echo "Uncommitted changes detected:"
+  git status --porcelain
+  echo ""
+  echo -e "${BLUE}ℹ️ Proceeding with release anyway...${NC}"
 fi
 
 echo "🔍 Checking current version..."

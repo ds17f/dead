@@ -211,12 +211,12 @@ class GratefulDeadMetadataCollector:
     def get_grateful_dead_recordings(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
         """Get list of Grateful Dead recording identifiers from Archive.org search.
         
+        Uses pagination to fetch all recordings, not just the first 10,000.
+        
         Args:
             year: Specific year to filter (e.g., 1977)
             date_range: Custom date range (e.g., '[1977-01-01 TO 1977-12-31]')
         """
-        self.rate_limit()
-        
         try:
             search_url = "https://archive.org/advancedsearch.php"
             
@@ -229,28 +229,53 @@ class GratefulDeadMetadataCollector:
                 query = f'{base_query} AND date:[{year}-01-01 TO {year}-12-31]'
             else:
                 query = base_query
+            
+            all_identifiers = []
+            start = 0
+            page_size = 1000  # Smaller page size for better reliability
+            
+            while True:
+                self.rate_limit()
                 
-            params = {
-                'q': query,
-                'fl': 'identifier,date,title,venue',
-                'sort[]': 'date asc',
-                'rows': 10000,  # Get more records
-                'output': 'json'
-            }
-            
-            response = self.session.get(search_url, params=params, timeout=60)
-            response.raise_for_status()
-            
-            search_results = response.json()
-            identifiers = []
-            
-            for doc in search_results.get('response', {}).get('docs', []):
-                identifier = doc.get('identifier')
-                if identifier:
-                    identifiers.append(identifier)
+                params = {
+                    'q': query,
+                    'fl': 'identifier,date,title,venue',
+                    'sort[]': 'date asc',
+                    'rows': page_size,
+                    'start': start,
+                    'output': 'json'
+                }
+                
+                self.logger.info(f"Fetching recordings {start} to {start + page_size}...")
+                response = self.session.get(search_url, params=params, timeout=60)
+                response.raise_for_status()
+                
+                search_results = response.json()
+                docs = search_results.get('response', {}).get('docs', [])
+                
+                if not docs:
+                    break
                     
-            self.logger.info(f"Found {len(identifiers)} Grateful Dead recordings")
-            return identifiers
+                batch_identifiers = []
+                for doc in docs:
+                    identifier = doc.get('identifier')
+                    if identifier:
+                        batch_identifiers.append(identifier)
+                
+                all_identifiers.extend(batch_identifiers)
+                self.logger.info(f"Found {len(batch_identifiers)} recordings in this batch (total: {len(all_identifiers)})")
+                
+                # If we got fewer results than requested, we've reached the end
+                if len(docs) < page_size:
+                    break
+                    
+                start += page_size
+                
+                # Add a small delay between pages to be respectful
+                time.sleep(0.1)
+                    
+            self.logger.info(f"Found {len(all_identifiers)} total Grateful Dead recordings")
+            return all_identifiers
             
         except Exception as e:
             self.logger.error(f"Failed to search for recordings: {e}")

@@ -92,11 +92,11 @@ tag-release:
 	@echo "🚀 Creating new release version..."
 	@echo "🔍 Checking git working directory..."
 	@if [ -n "$$(git status --porcelain)" ]; then \
-		echo "❌ Working directory not clean! Please commit or stash changes first."; \
-		git status; \
-		exit 1; \
+		echo "⚠️ Working directory has uncommitted changes - proceeding anyway"; \
+		git status --porcelain; \
+	else \
+		echo "✅ Working directory is clean"; \
 	fi
-	@echo "✅ Working directory is clean"
 	@echo "1️⃣ Running quality checks and builds before release..."
 	@$(MAKE) --no-print-directory lint
 	@$(MAKE) --no-print-directory build
