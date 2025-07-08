@@ -225,8 +225,8 @@ class GratefulDeadMetadataCollector:
         self.logger.info("Full collection mode: fetching recordings by year/month to avoid pagination limits...")
         all_identifiers = []
         
-        # High-volume years that need monthly breakdown (peak taping era)
-        high_volume_years = [1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994]
+        # High-volume years that need monthly breakdown (those hitting 10k limit)
+        high_volume_years = [1983, 1984, 1985, 1987, 1989, 1990]
         
         # Grateful Dead active years: 1965-1995
         for year_num in range(1965, 1996):
@@ -251,9 +251,18 @@ class GratefulDeadMetadataCollector:
         self.logger.info(f"  Breaking down {year} by month due to high volume...")
         all_identifiers = []
         
+        # Ultra high-volume years that might need weekly breakdown
+        ultra_high_volume = [1983, 1984, 1985, 1987, 1989, 1990]
+        
         for month in range(1, 13):
-            date_range = f'[{year}-{month:02d}-01 TO {year}-{month:02d}-31]'
-            month_identifiers = self._get_recordings_single_query(None, date_range)
+            if year in ultra_high_volume:
+                # For ultra-high volume years, break down by week within each month
+                month_identifiers = self._get_recordings_by_week(year, month)
+            else:
+                # Regular monthly breakdown
+                date_range = f'[{year}-{month:02d}-01 TO {year}-{month:02d}-31]'
+                month_identifiers = self._get_recordings_single_query(None, date_range)
+            
             all_identifiers.extend(month_identifiers)
             
             if len(month_identifiers) > 0:
@@ -262,6 +271,35 @@ class GratefulDeadMetadataCollector:
             # Small delay between months
             time.sleep(0.1)
             
+        return all_identifiers
+    
+    def _get_recordings_by_week(self, year: int, month: int) -> List[str]:
+        """Get recordings for a month by breaking it down week by week."""
+        import calendar
+        
+        all_identifiers = []
+        days_in_month = calendar.monthrange(year, month)[1]
+        
+        # Break month into ~weekly chunks (7-8 days each)
+        week_starts = [1, 8, 15, 22]
+        
+        for i, week_start in enumerate(week_starts):
+            if i == len(week_starts) - 1:
+                # Last week goes to end of month
+                week_end = days_in_month
+            else:
+                week_end = min(week_starts[i + 1] - 1, days_in_month)
+            
+            if week_start > days_in_month:
+                break
+                
+            date_range = f'[{year}-{month:02d}-{week_start:02d} TO {year}-{month:02d}-{week_end:02d}]'
+            week_identifiers = self._get_recordings_single_query(None, date_range)
+            all_identifiers.extend(week_identifiers)
+            
+            # Very small delay between weeks
+            time.sleep(0.05)
+        
         return all_identifiers
     
     def _get_recordings_single_query(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
