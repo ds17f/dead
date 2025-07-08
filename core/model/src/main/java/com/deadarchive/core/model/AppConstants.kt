@@ -17,7 +17,7 @@ object AppConstants {
     const val DEFAULT_SEARCH_FIELDS = "identifier,title,date,venue,coverage,source,year,description"
     
     // Audio formats in preference order
-    val PREFERRED_AUDIO_FORMATS = listOf("Ogg Vorbis", "VBR MP3", "MP3", "Flac")
+    val PREFERRED_AUDIO_FORMATS = listOf("VBR MP3", "Ogg Vorbis", "MP3", "Flac")
     
     // Supported audio file extensions
     val SUPPORTED_AUDIO_EXTENSIONS = setOf("flac", "mp3", "ogg", "wav", "m4a")
