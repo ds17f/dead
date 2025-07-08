@@ -18,7 +18,8 @@ import javax.inject.Singleton
 @Singleton
 class TodayInHistoryRepository @Inject constructor(
     private val showDao: ShowDao,
-    private val recordingDao: RecordingDao
+    private val recordingDao: RecordingDao,
+    private val ratingsRepository: RatingsRepository
 ) {
     
     companion object {
@@ -36,8 +37,25 @@ class TodayInHistoryRepository @Inject constructor(
         val showEntities = showDao.getShowsByMonthDay(todayMonthDay)
         return showEntities.map { showEntity ->
             // Get recordings for this show
-            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
-            showEntity.toShow(recordings)
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { recordingEntity ->
+                val recording = recordingEntity.toRecording()
+                // Apply rating data to recording
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    ratingConfidence = recordingRating?.confidence
+                )
+            }
+            
+            // Apply rating data to show
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
         }
     }
     
@@ -53,8 +71,25 @@ class TodayInHistoryRepository @Inject constructor(
         val showEntities = showDao.getShowsByMonthDay(monthDay)
         return showEntities.map { showEntity ->
             // Get recordings for this show
-            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
-            showEntity.toShow(recordings)
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { recordingEntity ->
+                val recording = recordingEntity.toRecording()
+                // Apply rating data to recording
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    ratingConfidence = recordingRating?.confidence
+                )
+            }
+            
+            // Apply rating data to show
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
         }
     }
     
@@ -67,8 +102,25 @@ class TodayInHistoryRepository @Inject constructor(
         val showEntities = showDao.getShowsByMonthDay(todayMonthDay)
         emit(showEntities.map { showEntity ->
             // Get recordings for this show
-            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
-            showEntity.toShow(recordings)
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { recordingEntity ->
+                val recording = recordingEntity.toRecording()
+                // Apply rating data to recording
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    ratingConfidence = recordingRating?.confidence
+                )
+            }
+            
+            // Apply rating data to show
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
         })
     }
     
@@ -95,8 +147,25 @@ class TodayInHistoryRepository @Inject constructor(
         val showEntities = showDao.getShowsByMonth(currentMonth)
         return showEntities.map { showEntity ->
             // Get recordings for this show
-            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { it.toRecording() }
-            showEntity.toShow(recordings)
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { recordingEntity ->
+                val recording = recordingEntity.toRecording()
+                // Apply rating data to recording
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    ratingConfidence = recordingRating?.confidence
+                )
+            }
+            
+            // Apply rating data to show
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
         }
     }
     
