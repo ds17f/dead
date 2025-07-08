@@ -34,6 +34,7 @@ import com.deadarchive.core.design.component.DebugPanel
 import com.deadarchive.core.design.component.DebugText
 import com.deadarchive.core.design.component.DebugDivider
 import com.deadarchive.core.design.component.DebugMultilineText
+import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
@@ -459,6 +460,16 @@ private fun RecordingHeader(
                             text = "Source: ${recording.displaySource}",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    
+                    // Star rating
+                    if (recording.hasRating) {
+                        Spacer(modifier = Modifier.height(4.dp))
+                        CompactStarRating(
+                            rating = recording.rating,
+                            confidence = recording.ratingConfidence,
+                            starSize = IconResources.Size.SMALL
                         )
                     }
                 }
