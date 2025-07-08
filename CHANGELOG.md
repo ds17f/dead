@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.17.0] - 2025-07-08
+
+### New Features
+* remove confirmation prompt from tag-release (9df9ac8)
+* change default audio format preference to VBR MP3 (8a594ea)
+* enhance recording selection to prefer rated recordings over unrated ones (17f2f80)
+* add comprehensive progress reporting to database wipe functionality (8572f06)
+* add complete 1977 Grateful Dead metadata collection (fb0e039)
+* add database wipe functionality with library preservation and ratings refresh (42b6c69)
+* add 1995 Grateful Dead metadata collection for TIGDH testing (30bfe42)
+* add star rating display to playlist recording header (f269492)
+* enhance metadata collection with year filtering and improved ratings data (2d99d1f)
+* implement comprehensive show and recording ratings system (197b96a)
+
+### Bug Fixes
+* apply ratings consistently across all screens (ce76b58)
+
+### Other Changes
+* chore: improve .gitignore for Python cache files and metadata strategy (9cc8b2a)
+
+
 ## [0.16.0] - 2025-07-07
 
 ### New Features
@@ -9,8 +30,6 @@
 ### Bug Fixes
 * resolve Today in History navigation by loading show recordings (0a80975)
 * resolve compilation errors in Today in History feature (4516f35)
-
-
 ## [0.15.0] - 2025-07-07
 
 ### New Features
