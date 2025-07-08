@@ -225,19 +225,20 @@ class GratefulDeadRatingsGenerator:
             self.logger.error(f"Failed to search for recordings: {e}")
             return []
 
-    def compute_recording_rating(self, reviews: List[ReviewData], source_type: str) -> float:
+    def compute_recording_rating(self, reviews: List[ReviewData], source_type: str) -> Optional[float]:
         """
         Compute weighted rating for a single recording.
         
         Applies source type weighting and review quality filtering.
+        Returns None if no valid reviews exist.
         """
         if not reviews:
-            return 0.0
+            return None
             
         # Filter out very low ratings (likely spam/errors)
         valid_reviews = [r for r in reviews if r.stars >= 1.0]
         if not valid_reviews:
-            return 0.0
+            return None
             
         # Compute basic average
         avg_rating = sum(r.stars for r in valid_reviews) / len(valid_reviews)
@@ -358,7 +359,15 @@ class GratefulDeadRatingsGenerator:
                 # Compute recording rating
                 avg_rating = self.compute_recording_rating(reviews, source_type)
                 
-                if avg_rating < self.min_rating_for_inclusion:
+                # Skip recordings with no rating or very low ratings
+                if avg_rating is None or avg_rating < self.min_rating_for_inclusion:
+                    # Store recording with null rating for records
+                    recording_ratings_data[identifier] = {
+                        'rating': None,
+                        'review_count': 0,
+                        'source_type': source_type,
+                        'confidence': None
+                    }
                     continue
                     
                 recording_rating = RecordingRating(

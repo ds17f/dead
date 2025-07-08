@@ -112,7 +112,7 @@ class GratefulDeadMetadataCollector:
         self.api_delay = delay
         self.last_api_call = 0
         self.batch_size = 100
-        self.batch_delay = 30  # seconds between batches
+        self.batch_delay = 0  # seconds between batches
         
         # Directories
         self.cache_dir = Path(cache_dir)
