@@ -211,7 +211,7 @@ class GratefulDeadMetadataCollector:
     def get_grateful_dead_recordings(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
         """Get list of Grateful Dead recording identifiers from Archive.org search.
         
-        Archive.org has a ~10k pagination limit, so for full collection we break it down by year.
+        Archive.org has a ~10k pagination limit, so for full collection we break it down intelligently.
         
         Args:
             year: Specific year to filter (e.g., 1977)
@@ -221,13 +221,22 @@ class GratefulDeadMetadataCollector:
         if year or date_range:
             return self._get_recordings_single_query(year, date_range)
         
-        # For full collection, break down by year to avoid 10k limit
-        self.logger.info("Full collection mode: fetching recordings by year to avoid pagination limits...")
+        # For full collection, break down by year, with monthly breakdown for high-volume years
+        self.logger.info("Full collection mode: fetching recordings by year/month to avoid pagination limits...")
         all_identifiers = []
+        
+        # High-volume years that need monthly breakdown (peak taping era)
+        high_volume_years = [1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994]
         
         # Grateful Dead active years: 1965-1995
         for year_num in range(1965, 1996):
-            year_identifiers = self._get_recordings_single_query(year_num, None)
+            if year_num in high_volume_years:
+                # Break down by month for high-volume years
+                year_identifiers = self._get_recordings_by_month(year_num)
+            else:
+                # Single query for lower-volume years
+                year_identifiers = self._get_recordings_single_query(year_num, None)
+            
             all_identifiers.extend(year_identifiers)
             self.logger.info(f"Year {year_num}: {len(year_identifiers)} recordings (total: {len(all_identifiers)})")
             
@@ -235,6 +244,24 @@ class GratefulDeadMetadataCollector:
             time.sleep(0.2)
             
         self.logger.info(f"Found {len(all_identifiers)} total recordings across all years")
+        return all_identifiers
+    
+    def _get_recordings_by_month(self, year: int) -> List[str]:
+        """Get all recordings for a year by breaking it down month by month."""
+        self.logger.info(f"  Breaking down {year} by month due to high volume...")
+        all_identifiers = []
+        
+        for month in range(1, 13):
+            date_range = f'[{year}-{month:02d}-01 TO {year}-{month:02d}-31]'
+            month_identifiers = self._get_recordings_single_query(None, date_range)
+            all_identifiers.extend(month_identifiers)
+            
+            if len(month_identifiers) > 0:
+                self.logger.info(f"    {year}-{month:02d}: {len(month_identifiers)} recordings")
+            
+            # Small delay between months
+            time.sleep(0.1)
+            
         return all_identifiers
     
     def _get_recordings_single_query(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
@@ -255,9 +282,9 @@ class GratefulDeadMetadataCollector:
             all_identifiers = []
             start = 0
             page_size = 1000  # Reliable page size
-            max_results = 9500  # Stay under Archive.org's ~10k limit
+            max_safe_results = 9500  # Stay under Archive.org's ~10k limit for safety
             
-            while start < max_results:
+            while start < max_safe_results:
                 self.rate_limit()
                 
                 params = {
