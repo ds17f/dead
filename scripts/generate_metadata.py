@@ -211,12 +211,34 @@ class GratefulDeadMetadataCollector:
     def get_grateful_dead_recordings(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
         """Get list of Grateful Dead recording identifiers from Archive.org search.
         
-        Uses pagination to fetch all recordings, not just the first 10,000.
+        Archive.org has a ~10k pagination limit, so for full collection we break it down by year.
         
         Args:
             year: Specific year to filter (e.g., 1977)
             date_range: Custom date range (e.g., '[1977-01-01 TO 1977-12-31]')
         """
+        # If specific year or date range provided, use single query
+        if year or date_range:
+            return self._get_recordings_single_query(year, date_range)
+        
+        # For full collection, break down by year to avoid 10k limit
+        self.logger.info("Full collection mode: fetching recordings by year to avoid pagination limits...")
+        all_identifiers = []
+        
+        # Grateful Dead active years: 1965-1995
+        for year_num in range(1965, 1996):
+            year_identifiers = self._get_recordings_single_query(year_num, None)
+            all_identifiers.extend(year_identifiers)
+            self.logger.info(f"Year {year_num}: {len(year_identifiers)} recordings (total: {len(all_identifiers)})")
+            
+            # Small delay between years
+            time.sleep(0.2)
+            
+        self.logger.info(f"Found {len(all_identifiers)} total recordings across all years")
+        return all_identifiers
+    
+    def _get_recordings_single_query(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
+        """Perform a single search query with pagination up to Archive.org's limits."""
         try:
             search_url = "https://archive.org/advancedsearch.php"
             
@@ -232,9 +254,10 @@ class GratefulDeadMetadataCollector:
             
             all_identifiers = []
             start = 0
-            page_size = 1000  # Smaller page size for better reliability
+            page_size = 1000  # Reliable page size
+            max_results = 9500  # Stay under Archive.org's ~10k limit
             
-            while True:
+            while start < max_results:
                 self.rate_limit()
                 
                 params = {
@@ -246,7 +269,6 @@ class GratefulDeadMetadataCollector:
                     'output': 'json'
                 }
                 
-                self.logger.info(f"Fetching recordings {start} to {start + page_size}...")
                 response = self.session.get(search_url, params=params, timeout=60)
                 response.raise_for_status()
                 
@@ -263,7 +285,6 @@ class GratefulDeadMetadataCollector:
                         batch_identifiers.append(identifier)
                 
                 all_identifiers.extend(batch_identifiers)
-                self.logger.info(f"Found {len(batch_identifiers)} recordings in this batch (total: {len(all_identifiers)})")
                 
                 # If we got fewer results than requested, we've reached the end
                 if len(docs) < page_size:
@@ -271,10 +292,9 @@ class GratefulDeadMetadataCollector:
                     
                 start += page_size
                 
-                # Add a small delay between pages to be respectful
+                # Add a small delay between pages
                 time.sleep(0.1)
                     
-            self.logger.info(f"Found {len(all_identifiers)} total Grateful Dead recordings")
             return all_identifiers
             
         except Exception as e:
