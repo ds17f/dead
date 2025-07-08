@@ -1,0 +1,193 @@
+{
+  "identifier": "gd1977-00-00.125546.tuning.murphy.flac",
+  "title": "Grateful Dead Live at Various on 1977-00-00",
+  "date": "1977-00-00",
+  "venue": "Various",
+  "location": "Various",
+  "source_type": "AUD",
+  "lineage": "",
+  "taper": "",
+  "description": "\"Tuning '77\" - a seamless audio supercut of an entire year of the Grateful Dead tuning their instruments, live on stage.  Chronologically sequenced, this remix incorporates every publicly available recording from 1977, examining the divide between audience expectation and performance anxiety.",
+  "files": [
+    {
+      "name": "__ia_thumb.jpg",
+      "source": "original",
+      "mtime": "1727027479",
+      "size": "2795",
+      "md5": "619b0fb13fb544a274048196ae70c88f",
+      "crc32": "6da7affd",
+      "sha1": "5e8bbbb6ac7bdda2e331746ef0c1afa620354993",
+      "format": "Item Tile",
+      "rotation": "0"
+    },
+    {
+      "name": "gd1977-00-00.125546.tuning.murphy.flac.ffp",
+      "source": "derivative",
+      "format": "Flac FingerPrint",
+      "original": "gd_1977_Tuning_77.flac",
+      "mtime": "1377517525",
+      "size": "56",
+      "md5": "66c6c64a0cc880acb2f6967a4829b9b3",
+      "crc32": "715c9ffe",
+      "sha1": "a0d5f3ed581189a15edbdf9fb043df7e16196a02"
+    },
+    {
+      "name": "gd1977-00-00.125546.tuning.murphy.flac.md5",
+      "source": "derivative",
+      "format": "Checksums",
+      "original": "gd_1977_Tuning_77.flac",
+      "mtime": "1377517525",
+      "size": "57",
+      "md5": "048617e471b3ec131676c70913c3b465",
+      "crc32": "6b3f5a0e",
+      "sha1": "ec9fe09867d0659cadfbb5057cd4212840dd0d44"
+    },
+    {
+      "name": "gd1977-00-00.125546.tuning.murphy.flac_archive.torrent",
+      "source": "metadata",
+      "btih": "6847b9812491e045729e1d154e2915db06c123d9",
+      "mtime": "1727027491",
+      "size": "43646",
+      "md5": "1f3139f06d0a6224a18ecc5e4fd071fd",
+      "crc32": "00141f86",
+      "sha1": "4af8374dada0f2854c7639c4081e5ac38c236d4c",
+      "format": "Archive BitTorrent"
+    },
+    {
+      "name": "gd1977-00-00.125546.tuning.murphy.flac_files.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "md5": "237018dba4a067b65ec5cdafb7f273a0",
+      "summation": "md5"
+    },
+    {
+      "name": "gd1977-00-00.125546.tuning.murphy.flac_meta.xml",
+      "source": "metadata",
+      "format": "Metadata",
+      "mtime": "1473976834",
+      "size": "1120",
+      "md5": "43009aef68e0b4a50921dfb95907cfb3",
+      "crc32": "1c555dd1",
+      "sha1": "e78e033d9e4d902716f6b9befc8d336b46951f9e"
+    },
+    {
+      "name": "gd1977-00-00.125546.tuning.murphy.flac_reviews.xml",
+      "source": "original",
+      "mtime": "1727027477",
+      "size": "2521",
+      "format": "Metadata",
+      "md5": "03aea58d527cc11a0e65be33eedef693",
+      "crc32": "673ea6c2",
+      "sha1": "f47b550ac81ec283690218445b8dc1e5547fbd41"
+    },
+    {
+      "name": "gd1977.all.ffp",
+      "source": "original",
+      "format": "Flac FingerPrint",
+      "mtime": "1377478985",
+      "size": "56",
+      "md5": "66c6c64a0cc880acb2f6967a4829b9b3",
+      "crc32": "715c9ffe",
+      "sha1": "a0d5f3ed581189a15edbdf9fb043df7e16196a02"
+    },
+    {
+      "name": "gd1977.all.md5",
+      "source": "original",
+      "format": "Checksums",
+      "mtime": "1377478986",
+      "size": "57",
+      "md5": "048617e471b3ec131676c70913c3b465",
+      "crc32": "6b3f5a0e",
+      "sha1": "ec9fe09867d0659cadfbb5057cd4212840dd0d44"
+    },
+    {
+      "name": "gd_1977_Tuning_77.flac",
+      "source": "original",
+      "format": "24bit Flac",
+      "length": "5570",
+      "mtime": "1377480111",
+      "size": "877343841",
+      "md5": "d9c218f61f6229e828c8adc90296507d",
+      "crc32": "7f2d83a6",
+      "sha1": "f5e749b393d5c047bcb8472f47237066ae97c6ec",
+      "title": "Tuning",
+      "creator": "Grateful Dead",
+      "album": "1977-00-00 - Various",
+      "track": "01",
+      "height": "0",
+      "width": "0",
+      "artist": "Grateful Dead",
+      "comment": "A seamless audio supercut of an entire year of the Grateful Dead tuning their instruments, live on stage. Chronologically sequenced, this remix incorporates every publicly available recording from 1977, examining the divide between audience expectation"
+    },
+    {
+      "name": "gd_1977_Tuning_77.mp3",
+      "source": "derivative",
+      "creator": "Grateful Dead",
+      "title": "Tuning",
+      "track": "01",
+      "album": "1977-00-00 - Various",
+      "bitrate": "178",
+      "length": "92:50",
+      "format": "VBR MP3",
+      "original": "gd_1977_Tuning_77.flac",
+      "mtime": "1377517241",
+      "size": "123863552",
+      "md5": "fc1a0f6268bb72d886f623876af30899",
+      "crc32": "bbb94add",
+      "sha1": "e6776a4c3743ad2d2914e63fe882ef0dffad82f0",
+      "height": "0",
+      "width": "0"
+    },
+    {
+      "name": "gd_1977_Tuning_77.ogg",
+      "source": "derivative",
+      "format": "Ogg Vorbis",
+      "original": "gd_1977_Tuning_77.flac",
+      "mtime": "1377517520",
+      "size": "57722471",
+      "md5": "116c057217e1810a5af07f2ea21e5d27",
+      "crc32": "cd6e75f8",
+      "sha1": "01623dcae88315f2d7a26eb0283f24ab0f1d4730",
+      "length": "5570",
+      "height": "0",
+      "width": "0"
+    },
+    {
+      "name": "gd_1977_Tuning_77.png",
+      "source": "derivative",
+      "format": "PNG",
+      "original": "gd_1977_Tuning_77.mp3",
+      "mtime": "1414164797",
+      "size": "9091",
+      "md5": "506bfc9864840ce7e68762d862b31974",
+      "crc32": "c188044d",
+      "sha1": "340a45efcdd4728057417d46de74ff8c382a28d7"
+    },
+    {
+      "name": "info.txt",
+      "source": "original",
+      "format": "Text",
+      "mtime": "1377480122",
+      "size": "395",
+      "md5": "05d8d4a3bfd6082414ab5560fddf5dd2",
+      "crc32": "f873ba99",
+      "sha1": "1cdbbe90c488ff5c6a12c88ab6ff0b9ade1ffe8c"
+    }
+  ],
+  "reviews": [
+    {
+      "stars": 5.0,
+      "review_text": "Outstanding Great work.  Maybe you could produce your own \"plunderphonics\" release in the Grayfolded vein.  \n;)",
+      "date": "2014-11-16 06:21:15"
+    },
+    {
+      "stars": 4.0,
+      "review_text": "I play this to fall asleep to Works wonders to quiet my brain and let me fall asleep!\nNeeds a 1974 edition follow-up. ",
+      "date": "2024-09-22 17:51:01"
+    }
+  ],
+  "rating": 2.2049999999999996,
+  "review_count": 2,
+  "confidence": 0.4,
+  "collection_timestamp": "2025-07-08T08:30:07.785582"
+}
