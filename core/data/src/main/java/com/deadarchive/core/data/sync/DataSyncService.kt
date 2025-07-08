@@ -82,16 +82,24 @@ class DataSyncServiceImpl @Inject constructor(
         private const val MAX_RETRIES = 3
         
         // Archive.org search queries to get all Grateful Dead recordings
-        // Split by decades to avoid 10k result limit per query
-        private val CATALOG_QUERIES = listOf(
-            "collection:GratefulDead AND date:[1965-01-01 TO 1969-12-31]", // 1960s
-            "collection:GratefulDead AND date:[1970-01-01 TO 1974-12-31]", // Early 70s
-            "collection:GratefulDead AND date:[1975-01-01 TO 1979-12-31]", // Late 70s
-            "collection:GratefulDead AND date:[1980-01-01 TO 1984-12-31]", // Early 80s
-            "collection:GratefulDead AND date:[1985-01-01 TO 1989-12-31]", // Late 80s
-            "collection:GratefulDead AND date:[1990-01-01 TO 1995-12-31]", // 90s
-            "collection:GratefulDead AND NOT date:[1965-01-01 TO 1995-12-31]" // Catch undated or post-95
-        )
+        // Generate yearly queries to avoid 10k result limit per query
+        // The 1980s have >10k recordings per year, so we need yearly breakdown
+        private val CATALOG_QUERIES = buildList {
+            // Group early years (lower volume)
+            add("collection:GratefulDead AND date:[1965-01-01 TO 1969-12-31]") // 1960s
+            add("collection:GratefulDead AND date:[1970-01-01 TO 1974-12-31]") // Early 70s  
+            add("collection:GratefulDead AND date:[1975-01-01 TO 1979-12-31]") // Late 70s
+            add("collection:GratefulDead AND date:[1980-01-01 TO 1982-12-31]") // Early 80s
+            
+            // High-volume years need individual queries (peak taping era)
+            for (year in 1983..1994) {
+                add("collection:GratefulDead AND date:[${year}-01-01 TO ${year}-12-31]")
+            }
+            
+            // Final year
+            add("collection:GratefulDead AND date:[1995-01-01 TO 1995-12-31]") // 1995
+            add("collection:GratefulDead AND NOT date:[1965-01-01 TO 1995-12-31]") // Catch undated or post-95
+        }
         private const val MAX_ROWS = 10000 // Archive.org limit per query
     }
     
