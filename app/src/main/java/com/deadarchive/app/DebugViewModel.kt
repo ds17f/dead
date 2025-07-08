@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.sync.DataSyncService
 import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.data.repository.RatingsRepository
 import com.deadarchive.core.data.download.DownloadQueueManager
 import com.deadarchive.core.model.Recording
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -28,7 +29,10 @@ data class DebugUiState(
     val databaseDebugInfo: String = "",
     val isDownloadTesting: Boolean = false,
     val downloadTestStatus: String = "",
-    val downloadTestSuccess: Boolean = false
+    val downloadTestSuccess: Boolean = false,
+    val isWipingDatabase: Boolean = false,
+    val databaseWipeStatus: String = "",
+    val databaseWipeSuccess: Boolean = false
 )
 
 @HiltViewModel
@@ -36,6 +40,7 @@ class DebugViewModel @Inject constructor(
     private val dataSyncService: DataSyncService,
     private val concertRepository: ShowRepository,
     private val downloadRepository: DownloadRepository,
+    private val ratingsRepository: RatingsRepository,
     private val downloadQueueManager: DownloadQueueManager,
     @ApplicationContext private val context: Context
 ) : ViewModel() {
@@ -768,6 +773,67 @@ class DebugViewModel @Inject constructor(
         }
     }
     
+    /**
+     * Wipe database while preserving library items
+     */
+    fun wipeDatabase() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    isWipingDatabase = true,
+                    databaseWipeStatus = "Starting database wipe...\n\n⚠️ This will clear all cached data but preserve your library.",
+                    databaseWipeSuccess = false
+                )
+                
+                delay(1000) // Give user time to see the warning
+                
+                _uiState.value = _uiState.value.copy(
+                    databaseWipeStatus = "Clearing cached data while preserving library...\n\nThis may take a few moments."
+                )
+                
+                // Use the force refresh catalog method which clears database but preserves library
+                dataSyncService.forceRefreshCatalog()
+                
+                _uiState.value = _uiState.value.copy(
+                    databaseWipeStatus = "Refreshing ratings data from assets...\n\nAlmost done."
+                )
+                
+                // Also refresh ratings data from assets
+                ratingsRepository.forceRefreshRatings()
+                
+                delay(2000) // Give sync time to complete
+                
+                // Refresh the app info after wipe
+                loadAppInfo()
+                
+                _uiState.value = _uiState.value.copy(
+                    isWipingDatabase = false,
+                    databaseWipeStatus = "✅ Database wipe completed successfully!\n\n" +
+                            "What was cleared and refreshed:\n" +
+                            "• Cached show and recording data\n" +
+                            "• Sync metadata and timestamps\n" +
+                            "• Old downloaded metadata\n" +
+                            "• Ratings data (refreshed from latest assets)\n\n" +
+                            "What was preserved:\n" +
+                            "• Your library (favorited shows/recordings)\n" +
+                            "• App settings and preferences\n" +
+                            "• Downloaded files\n\n" +
+                            "The app will now re-download fresh catalog data from Archive.org when needed.",
+                    databaseWipeSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isWipingDatabase = false,
+                    databaseWipeStatus = "❌ Database wipe failed: ${e.message}\n\n" +
+                            "The database may be partially cleared. Please restart the app and try again if needed.\n\n" +
+                            "Error details:\n${e.stackTraceToString()}",
+                    databaseWipeSuccess = false
+                )
+            }
+        }
+    }
+
     /**
      * Format bytes into human-readable format
      */

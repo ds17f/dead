@@ -62,6 +62,19 @@ class RatingsRepository @Inject constructor(
     }
     
     /**
+     * Force refresh ratings data from assets, clearing existing data.
+     */
+    suspend fun forceRefreshRatings() {
+        try {
+            Log.i(TAG, "Force refreshing ratings from assets...")
+            loadRatingsFromAssets()
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to force refresh ratings: ${e.message}", e)
+            throw e
+        }
+    }
+    
+    /**
      * Load and parse ratings data from the assets file.
      * First tries to load from compressed ZIP, then falls back to uncompressed JSON.
      */
