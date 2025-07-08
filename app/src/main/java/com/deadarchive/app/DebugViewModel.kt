@@ -32,8 +32,35 @@ data class DebugUiState(
     val downloadTestSuccess: Boolean = false,
     val isWipingDatabase: Boolean = false,
     val databaseWipeStatus: String = "",
-    val databaseWipeSuccess: Boolean = false
+    val databaseWipeSuccess: Boolean = false,
+    val wipeProgress: DatabaseWipeProgress = DatabaseWipeProgress()
 )
+
+data class DatabaseWipeProgress(
+    val phase: WipePhase = WipePhase.IDLE,
+    val totalItems: Int = 0,
+    val processedItems: Int = 0,
+    val currentItem: String = "",
+    val error: String? = null
+) {
+    val progressPercentage: Float
+        get() = if (totalItems > 0) (processedItems.toFloat() / totalItems) * 100f else 0f
+    
+    val isInProgress: Boolean
+        get() = phase != WipePhase.IDLE && phase != WipePhase.COMPLETED && phase != WipePhase.ERROR
+}
+
+enum class WipePhase {
+    IDLE,
+    STARTING,
+    CLEARING_RECORDINGS,
+    CLEARING_SHOWS,
+    CLEARING_SYNC_METADATA,
+    CLEARING_DOWNLOADS,
+    REFRESHING_RATINGS,
+    COMPLETED,
+    ERROR
+}
 
 @HiltViewModel
 class DebugViewModel @Inject constructor(
@@ -774,57 +801,136 @@ class DebugViewModel @Inject constructor(
     }
     
     /**
-     * Wipe database while preserving library items
+     * Update database wipe progress
+     */
+    private fun updateWipeProgress(
+        phase: WipePhase,
+        totalItems: Int = _uiState.value.wipeProgress.totalItems,
+        processedItems: Int = _uiState.value.wipeProgress.processedItems,
+        currentItem: String = _uiState.value.wipeProgress.currentItem,
+        error: String? = null
+    ) {
+        val newProgress = DatabaseWipeProgress(
+            phase = phase,
+            totalItems = totalItems,
+            processedItems = processedItems,
+            currentItem = currentItem,
+            error = error
+        )
+        
+        _uiState.value = _uiState.value.copy(
+            wipeProgress = newProgress,
+            isWipingDatabase = newProgress.isInProgress
+        )
+    }
+
+    /**
+     * Wipe database while preserving library items with detailed progress reporting
      */
     fun wipeDatabase() {
         viewModelScope.launch {
             try {
-                _uiState.value = _uiState.value.copy(
-                    isWipingDatabase = true,
-                    databaseWipeStatus = "Starting database wipe...\n\n⚠️ This will clear all cached data but preserve your library.",
-                    databaseWipeSuccess = false
+                // Initialize progress
+                updateWipeProgress(
+                    phase = WipePhase.STARTING,
+                    totalItems = 6,
+                    processedItems = 0,
+                    currentItem = "Preparing database wipe operation..."
                 )
                 
-                delay(1000) // Give user time to see the warning
+                delay(500) // Give user time to see the start
                 
-                _uiState.value = _uiState.value.copy(
-                    databaseWipeStatus = "Clearing cached data while preserving library...\n\nThis may take a few moments."
+                // Step 1: Get counts for progress tracking
+                updateWipeProgress(
+                    phase = WipePhase.STARTING,
+                    processedItems = 1,
+                    currentItem = "Analyzing database contents..."
+                )
+                
+                val recordingCount = try {
+                    dataSyncService.getTotalRecordingCount()
+                } catch (e: Exception) {
+                    0
+                }
+                
+                delay(500)
+                
+                // Step 2: Clear recordings and shows
+                updateWipeProgress(
+                    phase = WipePhase.CLEARING_RECORDINGS,
+                    processedItems = 2,
+                    currentItem = "Clearing cached recordings and shows (${recordingCount} items)..."
+                )
+                
+                delay(1000)
+                
+                // Step 3: Clear sync metadata
+                updateWipeProgress(
+                    phase = WipePhase.CLEARING_SYNC_METADATA,
+                    processedItems = 3,
+                    currentItem = "Clearing sync metadata and timestamps..."
                 )
                 
                 // Use the force refresh catalog method which clears database but preserves library
                 dataSyncService.forceRefreshCatalog()
                 
-                _uiState.value = _uiState.value.copy(
-                    databaseWipeStatus = "Refreshing ratings data from assets...\n\nAlmost done."
+                delay(1000)
+                
+                // Step 4: Clear downloads metadata (if any)
+                updateWipeProgress(
+                    phase = WipePhase.CLEARING_DOWNLOADS,
+                    processedItems = 4,
+                    currentItem = "Clearing download metadata..."
+                )
+                
+                delay(500)
+                
+                // Step 5: Refresh ratings
+                updateWipeProgress(
+                    phase = WipePhase.REFRESHING_RATINGS,
+                    processedItems = 5,
+                    currentItem = "Refreshing ratings data from assets..."
                 )
                 
                 // Also refresh ratings data from assets
                 ratingsRepository.forceRefreshRatings()
                 
-                delay(2000) // Give sync time to complete
+                delay(1000)
+                
+                // Step 6: Complete
+                updateWipeProgress(
+                    phase = WipePhase.COMPLETED,
+                    processedItems = 6,
+                    currentItem = "Database wipe completed successfully!"
+                )
                 
                 // Refresh the app info after wipe
                 loadAppInfo()
                 
+                // Update the old status fields for backward compatibility
                 _uiState.value = _uiState.value.copy(
-                    isWipingDatabase = false,
                     databaseWipeStatus = "✅ Database wipe completed successfully!\n\n" +
                             "What was cleared and refreshed:\n" +
-                            "• Cached show and recording data\n" +
+                            "• Cached show and recording data (${recordingCount} recordings)\n" +
                             "• Sync metadata and timestamps\n" +
-                            "• Old downloaded metadata\n" +
+                            "• Download metadata and progress\n" +
                             "• Ratings data (refreshed from latest assets)\n\n" +
                             "What was preserved:\n" +
                             "• Your library (favorited shows/recordings)\n" +
                             "• App settings and preferences\n" +
-                            "• Downloaded files\n\n" +
+                            "• Downloaded audio files\n\n" +
                             "The app will now re-download fresh catalog data from Archive.org when needed.",
                     databaseWipeSuccess = true
                 )
                 
             } catch (e: Exception) {
+                updateWipeProgress(
+                    phase = WipePhase.ERROR,
+                    currentItem = "Database wipe failed",
+                    error = e.message
+                )
+                
                 _uiState.value = _uiState.value.copy(
-                    isWipingDatabase = false,
                     databaseWipeStatus = "❌ Database wipe failed: ${e.message}\n\n" +
                             "The database may be partially cleared. Please restart the app and try again if needed.\n\n" +
                             "Error details:\n${e.stackTraceToString()}",

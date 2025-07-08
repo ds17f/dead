@@ -112,13 +112,16 @@ class RatingsRepository @Inject constructor(
      * Parse ratings JSON and save to database.
      */
     private suspend fun parseAndSaveRatings(ratingsJson: String) {
+        Log.i(TAG, "Parsing ratings JSON data...")
         val ratingsData = JSONObject(ratingsJson)
         
         // Parse recording ratings
+        Log.i(TAG, "Processing recording ratings...")
         val recordingRatings = mutableListOf<RecordingRatingEntity>()
         if (ratingsData.has("recording_ratings")) {
             val recordingRatingsObj = ratingsData.getJSONObject("recording_ratings")
             val keys = recordingRatingsObj.keys()
+            var count = 0
             while (keys.hasNext()) {
                 val identifier = keys.next()
                 val ratingObj = recordingRatingsObj.getJSONObject(identifier)
@@ -131,14 +134,20 @@ class RatingsRepository @Inject constructor(
                         confidence = ratingObj.optDouble("confidence", 0.0).toFloat()
                     )
                 )
+                count++
+                if (count % 100 == 0) {
+                    Log.i(TAG, "Processed $count recording ratings...")
+                }
             }
         }
         
         // Parse show ratings  
+        Log.i(TAG, "Processing show ratings...")
         val showRatings = mutableListOf<ShowRatingEntity>()
         if (ratingsData.has("show_ratings")) {
             val showRatingsObj = ratingsData.getJSONObject("show_ratings")
             val keys = showRatingsObj.keys()
+            var count = 0
             while (keys.hasNext()) {
                 val showKey = keys.next()
                 val ratingObj = showRatingsObj.getJSONObject(showKey)
@@ -153,10 +162,15 @@ class RatingsRepository @Inject constructor(
                         recordingCount = ratingObj.optInt("recording_count", 0)
                     )
                 )
+                count++
+                if (count % 50 == 0) {
+                    Log.i(TAG, "Processed $count show ratings...")
+                }
             }
         }
         
         // Insert into database
+        Log.i(TAG, "Clearing existing ratings and inserting new data...")
         ratingDao.replaceAllRatings(recordingRatings, showRatings)
         
         Log.i(TAG, "Successfully loaded ${recordingRatings.size} recording ratings and ${showRatings.size} show ratings from assets")

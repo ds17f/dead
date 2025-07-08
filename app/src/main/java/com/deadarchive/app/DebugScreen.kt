@@ -446,6 +446,90 @@ fun DebugScreen(
                         }
                     }
                     
+                    // Progress display for database wipe
+                    if (uiState.wipeProgress.isInProgress) {
+                        Card(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = CardDefaults.cardColors(
+                                containerColor = MaterialTheme.colorScheme.surfaceVariant
+                            )
+                        ) {
+                            Column(
+                                modifier = Modifier.padding(16.dp),
+                                verticalArrangement = Arrangement.spacedBy(8.dp)
+                            ) {
+                                Text(
+                                    text = "Database Wipe Progress",
+                                    style = MaterialTheme.typography.labelMedium,
+                                    fontWeight = FontWeight.Bold
+                                )
+                                
+                                // Progress bar
+                                if (uiState.wipeProgress.totalItems > 0) {
+                                    LinearProgressIndicator(
+                                        progress = { uiState.wipeProgress.progressPercentage / 100f },
+                                        modifier = Modifier.fillMaxWidth(),
+                                    )
+                                    
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween
+                                    ) {
+                                        Text(
+                                            text = "${uiState.wipeProgress.processedItems} / ${uiState.wipeProgress.totalItems}",
+                                            style = MaterialTheme.typography.bodySmall
+                                        )
+                                        Text(
+                                            text = "${uiState.wipeProgress.progressPercentage.toInt()}%",
+                                            style = MaterialTheme.typography.bodySmall
+                                        )
+                                    }
+                                } else {
+                                    LinearProgressIndicator(
+                                        modifier = Modifier.fillMaxWidth()
+                                    )
+                                }
+                                
+                                // Current phase and item
+                                Text(
+                                    text = "Phase: ${uiState.wipeProgress.phase.name.replace('_', ' ')}",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    fontWeight = FontWeight.Medium
+                                )
+                                
+                                if (uiState.wipeProgress.currentItem.isNotEmpty()) {
+                                    Text(
+                                        text = uiState.wipeProgress.currentItem,
+                                        style = MaterialTheme.typography.bodySmall,
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .background(
+                                                MaterialTheme.colorScheme.surface,
+                                                RoundedCornerShape(4.dp)
+                                            )
+                                            .padding(8.dp)
+                                    )
+                                }
+                                
+                                // Error display
+                                if (uiState.wipeProgress.error != null) {
+                                    Text(
+                                        text = "Error: ${uiState.wipeProgress.error}",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.error,
+                                        modifier = Modifier
+                                            .fillMaxWidth()
+                                            .background(
+                                                MaterialTheme.colorScheme.errorContainer,
+                                                RoundedCornerShape(4.dp)
+                                            )
+                                            .padding(8.dp)
+                                    )
+                                }
+                            }
+                        }
+                    }
+                    
                     if (uiState.databaseWipeStatus.isNotEmpty()) {
                         Card(
                             modifier = Modifier.fillMaxWidth(),
