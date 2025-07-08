@@ -208,14 +208,30 @@ class GratefulDeadMetadataCollector:
         else:
             return 'UNKNOWN'
 
-    def get_grateful_dead_recordings(self) -> List[str]:
-        """Get list of Grateful Dead recording identifiers from Archive.org search."""
+    def get_grateful_dead_recordings(self, year: Optional[int] = None, date_range: Optional[str] = None) -> List[str]:
+        """Get list of Grateful Dead recording identifiers from Archive.org search.
+        
+        Args:
+            year: Specific year to filter (e.g., 1977)
+            date_range: Custom date range (e.g., '[1977-01-01 TO 1977-12-31]')
+        """
         self.rate_limit()
         
         try:
             search_url = "https://archive.org/advancedsearch.php"
+            
+            # Build the search query
+            base_query = 'collection:GratefulDead AND mediatype:etree'
+            
+            if date_range:
+                query = f'{base_query} AND date:{date_range}'
+            elif year:
+                query = f'{base_query} AND date:[{year}-01-01 TO {year}-12-31]'
+            else:
+                query = base_query
+                
             params = {
-                'q': 'collection:GratefulDead AND mediatype:etree',
+                'q': query,
                 'fl': 'identifier,date,title,venue',
                 'sort[]': 'date asc',
                 'rows': 10000,  # Get more records
@@ -265,7 +281,7 @@ class GratefulDeadMetadataCollector:
             reviews_data = response.json()
             reviews = []
             
-            for review in reviews_data.get('reviews', []):
+            for review in reviews_data.get('result', []):
                 stars = float(review.get('stars', 0))
                 if stars > 0:
                     reviews.append(ReviewData(
@@ -369,10 +385,10 @@ class GratefulDeadMetadataCollector:
             self.logger.error(f"Error processing {identifier}: {e}")
             return None
 
-    def collect_all_metadata(self, max_recordings: Optional[int] = None):
+    def collect_all_metadata(self, max_recordings: Optional[int] = None, year: Optional[int] = None, date_range: Optional[str] = None):
         """Collect metadata for all recordings."""
         # Get list of recordings
-        recording_ids = self.get_grateful_dead_recordings()
+        recording_ids = self.get_grateful_dead_recordings(year=year, date_range=date_range)
         if max_recordings:
             recording_ids = recording_ids[:max_recordings]
             
@@ -585,6 +601,10 @@ def main():
                        help='Output path for ratings file')
     parser.add_argument('--max-recordings', type=int, 
                        help='Maximum recordings to process (for testing)')
+    parser.add_argument('--year', type=int,
+                       help='Filter by specific year (e.g., 1977)')
+    parser.add_argument('--date-range', 
+                       help='Filter by date range (e.g., "[1977-01-01 TO 1977-12-31]")')
     parser.add_argument('--progress', 
                        help='Progress file to resume from')
     parser.add_argument('--verbose', action='store_true',
@@ -598,7 +618,11 @@ def main():
     collector = GratefulDeadMetadataCollector(delay=args.delay, cache_dir=args.cache)
     
     if args.mode == 'full':
-        collector.collect_all_metadata(max_recordings=args.max_recordings)
+        collector.collect_all_metadata(
+            max_recordings=args.max_recordings,
+            year=args.year,
+            date_range=args.date_range
+        )
         collector.generate_show_metadata()
         collector.generate_ratings_json(args.output)
         
@@ -611,7 +635,11 @@ def main():
         print("Resume mode not yet implemented")
         
     elif args.mode == 'test':
-        collector.collect_all_metadata(max_recordings=args.max_recordings or 10)
+        collector.collect_all_metadata(
+            max_recordings=args.max_recordings or 10,
+            year=args.year,
+            date_range=args.date_range
+        )
         collector.generate_show_metadata()
         collector.generate_ratings_json(args.output)
     

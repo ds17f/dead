@@ -36,6 +36,18 @@
       "review_count": 7,
       "source_type": "SBD",
       "confidence": 0.8
+    },
+    "gd1965-11-01.sbd.bershaw.5417.sbeok.shnf": {
+      "rating": null,
+      "review_count": 0,
+      "source_type": "SBD",
+      "confidence": null
+    },
+    "gd1966-01-08.sbd.bershaw.5410.shnf": {
+      "rating": null,
+      "review_count": 0,
+      "source_type": "SBD", 
+      "confidence": null
     }
   },
   "show_ratings": {
@@ -69,6 +81,22 @@
       "rating": 4.4,
       "confidence": 0.8,
       "best_recording": "gd1975-07-07.sbd.jones.54321.flac16",
+      "recording_count": 1
+    },
+    "1965-11-01_various": {
+      "date": "1965-11-01",
+      "venue": "various",
+      "rating": null,
+      "confidence": null,
+      "best_recording": "gd1965-11-01.sbd.bershaw.5417.sbeok.shnf",
+      "recording_count": 1
+    },
+    "1966-01-08_Fillmore_Auditorium": {
+      "date": "1966-01-08",
+      "venue": "Fillmore Auditorium",
+      "rating": null,
+      "confidence": null,
+      "best_recording": "gd1966-01-08.sbd.bershaw.5410.shnf",
       "recording_count": 1
     }
   },

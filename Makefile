@@ -12,7 +12,8 @@ help:
 	@echo "  make deps        - Download and install dependencies"
 	@echo "  make download-icons - Download Material icons and update resources"
 	@echo "  make collect-metadata-full - Full metadata collection (2-3 hours)"
-	@echo "  make collect-metadata-test - Test collection (50 recordings)"
+	@echo "  make collect-metadata-test - Test collection (10 recordings)"
+	@echo "  make collect-metadata-1977 - Collect 1977 shows (recommended for testing)"
 	@echo "  make generate-ratings-from-cache - Generate ratings from cached data"
 	@echo "  make generate-ratings - Alias for collect-metadata-test"
 	@echo ""
@@ -473,6 +474,25 @@ collect-metadata-resume:
 		--progress "$(PWD)/scripts/metadata/progress.json" \
 		--verbose
 	@echo "✅ Collection resumed and completed!"
+
+# Collect 1977 data specifically (good balance of quality and quantity)
+collect-metadata-1977:
+	@echo "🎸 Collecting 1977 Grateful Dead metadata (the golden year)..."
+	@cd scripts && \
+		rm -rf .venv && \
+		python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt && \
+		python generate_metadata.py \
+		--mode full \
+		--year 1977 \
+		--delay 0.5 \
+		--cache "$(PWD)/scripts/metadata-1977" \
+		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--max-recordings 100 \
+		--verbose
+	@echo "✅ 1977 collection completed!"
 
 # Legacy alias for backward compatibility
 generate-ratings: collect-metadata-test

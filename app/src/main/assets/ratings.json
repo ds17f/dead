@@ -1,144 +1,804 @@
 {
   "metadata": {
-    "generated_at": "2025-07-08T06:56:01.695218",
-    "total_recordings": 10,
-    "total_shows": 9,
+    "generated_at": "2025-07-08T08:33:16.894623",
+    "total_recordings": 100,
+    "total_shows": 24,
     "version": "1.0.0"
   },
   "recording_ratings": {
-    "gd1965-11-01.sbd.bershaw.5417.sbeok.shnf": {
-      "confidence": 0.0,
-      "rating": 0.0,
-      "review_count": 0,
-      "source_type": "UNKNOWN"
-    },
-    "gd1966-01-08.sbd.bershaw.5410.shnf": {
-      "confidence": 0.0,
-      "rating": 0.0,
-      "review_count": 0,
+    "gd1977-00-00.125546.tuning.murphy.flac": {
+      "confidence": 0.4,
+      "rating": 2.2049999999999996,
+      "review_count": 2,
       "source_type": "AUD"
     },
-    "gd1966-01-08.sbd.lestatkatt.106505.flac16": {
+    "gd1977-02-17.145156.Alternative-Terrapin-Station.acetboy.t-flac1644": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-02-17.145591.Goody-pitch-fix.flac1644": {
+      "confidence": 0.2,
+      "rating": 1.5,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-02-26.151834.BettyBoardDeibertremasterAnonNoelpartialupgradet-flac16": {
+      "confidence": 1.0,
+      "rating": 3.5,
+      "review_count": 5,
       "source_type": "AUD"
     },
-    "gd1966-01-29.sbd.berger.99527.flac16": {
+    "gd1977-02-26.152023.remaster.partial.upgr.fixed.151834.Betty.Deibert.Anon.Noel.t-flac16": {
+      "confidence": 0.6,
+      "rating": 2.8000000000000003,
+      "review_count": 3,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.170955.sony.ecm270.menke.miller.clugston.flac1648": {
+      "confidence": 0.2,
+      "rating": 2.1,
+      "review_count": 1,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.aud.bertrando.110231.flac16": {
+      "confidence": 1.0,
+      "rating": 3.383333333333333,
+      "review_count": 12,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.mtx.seamons-bertrando.110037.flac16": {
+      "confidence": 1.0,
+      "rating": 3.2277777777777774,
+      "review_count": 18,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.sbd.cantor.deibert.83283.flac16": {
+      "confidence": 1.0,
+      "rating": 3.466666666666667,
+      "review_count": 21,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.sbd.hamilton.2519.shnf": {
+      "confidence": 1.0,
+      "rating": 3.3727272727272726,
+      "review_count": 11,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.sbd.steve.253.shnf": {
+      "confidence": 1.0,
+      "rating": 3.36,
+      "review_count": 10,
+      "source_type": "AUD"
+    },
+    "gd1977-02-26.sbd.wizard.32009.sbefail.shnf": {
+      "confidence": 1.0,
+      "rating": 2.94,
+      "review_count": 5,
+      "source_type": "AUD"
+    },
+    "gd1977-02-27.143884.SonyECM-280.bertrando.warburton.smith.sirmick.flac2496": {
+      "confidence": 0.4,
+      "rating": 1.575,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-02-27.143885.SonyECM-280.bertrando.warburton.smith.sirmick.flac1644": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
       "source_type": "UNKNOWN"
     },
-    "gd1966-01-29.sbd.bershaw.5411.shnf": {
+    "gd1977-02-27.144911.sbd.miller.flac1644": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
       "source_type": "UNKNOWN"
     },
-    "gd1966-02-05.136661.sbd.bruno.flac16": {
+    "gd1977-02-27.144912.sbd.pc.miller.flac1644": {
+      "confidence": 0.2,
+      "rating": 1.5,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-02-27.145195.sony.ecm280.bertrando.smith.miller.clugston.flac1648": {
+      "confidence": 0.2,
+      "rating": 1.5,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-02-27.168957.sony.ecm280.menke.miller.clugston.flac1648": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
       "source_type": "UNKNOWN"
     },
-    "gd1966-XX-XX.sbd.GEMS.81254.flac16": {
+    "gd1977-02-27.168958.sony.ecm280.menke.miller.clugston.st.stephen.patched.flac1648": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
       "source_type": "UNKNOWN"
     },
-    "gd65-11-03.sbd.vernon.9044.sbeok.shnf": {
+    "gd1977-02-27.gd1977-02-27.145196.sony.ecm280.bertrando.smith.miller.clugston.flac2496": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
       "source_type": "UNKNOWN"
     },
-    "gd65-acid-tests.sbd.bershaw.5406.sbeok.shnf": {
+    "gd1977-03-01.150848.sbd.flac16": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
       "source_type": "UNKNOWN"
     },
-    "gd66-01-xx.sbd.hanno-uli.18846.sbeok.shnf": {
+    "gd1977-03-18.123285.sbd.miller.flac16": {
+      "confidence": 1.0,
+      "rating": 2.176470588235294,
+      "review_count": 17,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.140916.ecm270.menke.sirmick.flac2496": {
       "confidence": 0.0,
       "rating": 0.0,
       "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.140918.ecm270.menke.sirmick.fixed.flac2496": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.140942.fixed.ecm270.menke.sirmick.flac1644": {
+      "confidence": 0.4,
+      "rating": 1.575,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.141163.ecm270.menke.sirmick.revised.flac2496": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.141388.mtx.seamons.ht114.141388.flac1644": {
+      "confidence": 0.4,
+      "rating": 1.4,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.145158.ecm270.menke.sirmick.flac1644": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.145509.mtx.motb.0222.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-18.sbd.clugston.254-patch.79098.shnf": {
+      "confidence": 1.0,
+      "rating": 2.4285714285714284,
+      "review_count": 7,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.123190.sbd.miller.flac16": {
+      "confidence": 1.0,
+      "rating": 2.3,
+      "review_count": 5,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.139354.soneyecm.ebel.flac1644": {
+      "confidence": 0.2,
+      "rating": 1.2,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.140347.mtx.seamons.ht113.flac1644": {
+      "confidence": 0.6,
+      "rating": 2.0,
+      "review_count": 3,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.145510.mtx.motb0224.flac16": {
+      "confidence": 0.2,
+      "rating": 1.2,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.152612.sbd.patched.miller.flac1644": {
+      "confidence": 0.4,
+      "rating": 1.75,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.152613.sbd.patched.miller.flac2496": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.154389.s1pt.s2.sbd.cm.miller.t.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-19.mtx.hansokolow.96856.flac16": {
+      "confidence": 1.0,
+      "rating": 2.4166666666666665,
+      "review_count": 6,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-03-20.132365.aud.taback.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "FM"
+    },
+    "gd1977-03-20.141691.sbd.miller.flac1644": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "FM"
+    },
+    "gd1977-03-20.141710.sbd.miller.flac1644": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "FM"
+    },
+    "gd1977-03-20.145511.mtx.motb0226.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "FM"
+    },
+    "gd1977-03-20.aud.unknown.100022.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-22.152296.aud.petrunis.andrewf.flac1644": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.139535.fob.ecm.99a.hopkins.miller.clugston.flac1648": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.143220.weidner.akg-d200e.miller.flac1644": {
+      "confidence": 0.8,
+      "rating": 2.1375,
+      "review_count": 4,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.143265.akgd200e.miller.fixed.flac1644": {
+      "confidence": 0.2,
+      "rating": 1.5,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.152692.ecm-99a.warburton.smith.sirmick.flac16": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.152693.ecm-99a.warburton.smith.sirmick.flac24": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.mtx.seamons.97596.sbeok.flac16": {
+      "confidence": 1.0,
+      "rating": 2.4393939393939394,
+      "review_count": 33,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.sbd.aj.gardner.4334.shnf": {
+      "confidence": 0.8,
+      "rating": 2.25,
+      "review_count": 4,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.sbd.miller.88401.sbeok.flac16": {
+      "confidence": 1.0,
+      "rating": 2.2,
+      "review_count": 15,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.sbd.unknown.27421.shnf": {
+      "confidence": 0.4,
+      "rating": 1.75,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-23.sonyECM99a.hopkins.minches.83685.flac16": {
+      "confidence": 0.8,
+      "rating": 2.025,
+      "review_count": 4,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-25.141715.s1.sbd.miller.flac2496": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-25.141903.s1.sbd.cm.miller.flac1644": {
+      "confidence": 0.2,
+      "rating": 1.5,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-25.sbd.130529.MrBill.flac16": {
+      "confidence": 1.0,
+      "rating": 2.1,
+      "review_count": 5,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-27.167534.fm.glassberg.smith.clugston.flac1648": {
+      "confidence": 0.2,
+      "rating": 0.96,
+      "review_count": 1,
+      "source_type": "FM"
+    },
+    "gd1977-04-27.167535.fm.glassberg.smith.clugston.flac2496": {
+      "confidence": 0.2,
+      "rating": 0.96,
+      "review_count": 1,
+      "source_type": "FM"
+    },
+    "gd1977-04-27.fm.doinker.91889.flac16": {
+      "confidence": 0.4,
+      "rating": 1.575,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-27.fm.moore.berger.98429.flac24": {
+      "confidence": 0.4,
+      "rating": 1.75,
+      "review_count": 2,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-27.fm.moore.berger.98430.flac16": {
+      "confidence": 1.0,
+      "rating": 2.111111111111111,
+      "review_count": 9,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-27.sbd.braverman.7799.shnf": {
+      "confidence": 0.6,
+      "rating": 1.866666666666667,
+      "review_count": 3,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-04-30.sonyECM33p.moore.vernon.4949.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.2222222222222223,
+      "review_count": 9,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-01.141830.sony.ecm33p.moore.dalton.miller.clugston.flac1644": {
+      "confidence": 0.8,
+      "rating": 1.9125,
+      "review_count": 4,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-01.151748.1st.set.shure.sm57.sublette.mattes.miller.clugston.flac1648": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-01.151749.1st.set.shure.sm57.sublette.mattes.miller.clugston.flac2496": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-01.set-2.sbd.miller.81739.sbeok.flac16": {
+      "confidence": 1.0,
+      "rating": 2.357142857142857,
+      "review_count": 7,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-01set-2.mtx.sirmick.87285.sbeok.flac16": {
+      "confidence": 0.2,
+      "rating": 1.2,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-03.141831.sony.ecm33p.moore.dalton.miller.clugston.flac1644": {
+      "confidence": 0.2,
+      "rating": 0.8999999999999999,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-03.aud.glassberg.motb.0042.86241.flac16": {
+      "confidence": 1.0,
+      "rating": 2.3157894736842106,
+      "review_count": 19,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-03.aud.gorinsky.6710.sbeok.shnf": {
+      "confidence": 0.2,
+      "rating": 1.5,
+      "review_count": 1,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-04.151751.1st.set.shure.sm57.sublette.mattes.miller.clugston.flac2496": {
+      "confidence": 0.0,
+      "rating": 0.0,
+      "review_count": 0,
+      "source_type": "UNKNOWN"
+    },
+    "gd1977-05-04.mtx.seamons.ht09.99106.flac16": {
+      "confidence": 1.0,
+      "rating": 2.357142857142857,
+      "review_count": 7,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-02-17.sbd.outtakes.16745.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.0,
+      "review_count": 12,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-02-20.sbd.moreno.9470.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.1296296296296298,
+      "review_count": 27,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-02-26.sbd.alphadog.9752.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 3.3819767441860464,
+      "review_count": 172,
+      "source_type": "AUD"
+    },
+    "gd77-02-26.sbd.owen.23808.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 3.465,
+      "review_count": 40,
+      "source_type": "AUD"
+    },
+    "gd77-02-27.bertrando.vernon.10378.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.0701754385964914,
+      "review_count": 57,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-03-18.sbd.unknown.254.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.2857142857142856,
+      "review_count": 63,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-03-19.sbd.chinacat.255.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.3421052631578947,
+      "review_count": 38,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-03-20.sbd.kempa.257.sbefixed.shnf": {
+      "confidence": 1.0,
+      "rating": 2.323529411764706,
+      "review_count": 17,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-03-20.sbd.miller.25610.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.369565217391304,
+      "review_count": 23,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-22.sbd.cotsman.10148.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.3,
+      "review_count": 10,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-22.sbd.miller.27747.sbeok.flacf": {
+      "confidence": 1.0,
+      "rating": 2.230769230769231,
+      "review_count": 26,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-22.sony.unknown.8673.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 1.4375,
+      "review_count": 8,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-23.hopkins.vernon.17178.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.3,
+      "review_count": 10,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-23.moore.minches.18438.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.1666666666666665,
+      "review_count": 6,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-23.sbd.jerugim.1827.sbefail.shnf": {
+      "confidence": 1.0,
+      "rating": 2.330188679245283,
+      "review_count": 53,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-25.aud.goodbear.259.sbeok.shnf": {
+      "confidence": 0.8,
+      "rating": 1.125,
+      "review_count": 4,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-25.sbd.symons.15879.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 1.75,
+      "review_count": 16,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-26.aud.goodbear.260.sbefail.shnf": {
+      "confidence": 1.0,
+      "rating": 1.5333333333333334,
+      "review_count": 15,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-27.sbd.samaritano.20331.sbefail.shnf": {
+      "confidence": 1.0,
+      "rating": 2.1052631578947367,
+      "review_count": 38,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-29.moore.unknown.7113.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.1363636363636362,
+      "review_count": 22,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-04-30.moore.minches.17952.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.075,
+      "review_count": 20,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-05-01.aud.goodbear.11941.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.0,
+      "review_count": 5,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-05-01.moore.minches.17953.sbeok.shnf": {
+      "confidence": 0.6,
+      "rating": 1.3333333333333335,
+      "review_count": 3,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-05-01.set2-sbd.unknown.4763.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.3541666666666665,
+      "review_count": 24,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-05-03.moore.minches.17954.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.2,
+      "review_count": 5,
+      "source_type": "UNKNOWN"
+    },
+    "gd77-05-03.set1-sbd.miller.21646.sbeok.shnf": {
+      "confidence": 1.0,
+      "rating": 2.0,
+      "review_count": 6,
       "source_type": "UNKNOWN"
     }
   },
   "show_ratings": {
-    "1965-11-01_various": {
-      "best_recording": "gd1965-11-01.sbd.bershaw.5417.sbeok.shnf",
-      "confidence": 0.0,
-      "date": "1965-11-01",
-      "rating": 0,
-      "recording_count": 1,
-      "venue": "various"
-    },
-    "1965-11-03_Golden_State_Studios": {
-      "best_recording": "gd65-11-03.sbd.vernon.9044.sbeok.shnf",
-      "confidence": 0.0,
-      "date": "1965-11-03",
-      "rating": 0,
-      "recording_count": 1,
-      "venue": "Golden State Studios"
-    },
-    "1966-00-00_Various_-_See_info_file": {
-      "best_recording": "gd1966-XX-XX.sbd.GEMS.81254.flac16",
-      "confidence": 0.0,
-      "date": "1966-00-00",
-      "rating": 0,
-      "recording_count": 1,
-      "venue": "Various - See info file"
-    },
-    "1966-01-01_Viola_Lee_Blues_Reahearsals": {
-      "best_recording": "gd66-01-xx.sbd.hanno-uli.18846.sbeok.shnf",
-      "confidence": 0.0,
-      "date": "1966-01-01",
-      "rating": 0,
-      "recording_count": 1,
-      "venue": "Viola Lee Blues Reahearsals"
-    },
-    "1966-01-08_Fillmore_Auditorium": {
-      "best_recording": "gd1966-01-08.sbd.bershaw.5410.shnf",
-      "confidence": 0.0,
-      "date": "1966-01-08",
-      "rating": 0,
-      "recording_count": 2,
-      "venue": "Fillmore Auditorium"
-    },
-    "1966-01-08_Various": {
-      "best_recording": "gd65-acid-tests.sbd.bershaw.5406.sbeok.shnf",
-      "confidence": 0.0,
-      "date": "1966-01-08",
-      "rating": 0,
+    "1977-00-00_Various": {
+      "best_recording": "gd1977-00-00.125546.tuning.murphy.flac",
+      "confidence": 0.2,
+      "date": "1977-00-00",
+      "rating": 2.2049999999999996,
       "recording_count": 1,
       "venue": "Various"
     },
-    "1966-01-29_363_6th_Street": {
-      "best_recording": "gd1966-01-29.sbd.bershaw.5411.shnf",
-      "confidence": 0.0,
-      "date": "1966-01-29",
-      "rating": 0,
+    "1977-02-17_Arista_Studios": {
+      "best_recording": "gd77-02-17.sbd.outtakes.16745.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-02-17",
+      "rating": 2.0,
       "recording_count": 1,
-      "venue": "363 6th Street"
+      "venue": "Arista Studios"
     },
-    "1966-01-29_Sound_City_Recording_Studios": {
-      "best_recording": "gd1966-01-29.sbd.berger.99527.flac16",
-      "confidence": 0.0,
-      "date": "1966-01-29",
-      "rating": 0,
-      "recording_count": 1,
-      "venue": "Sound City Recording Studios"
+    "1977-02-17_Sound_City": {
+      "best_recording": "gd1977-02-17.145591.Goody-pitch-fix.flac1644",
+      "confidence": 0.1,
+      "date": "1977-02-17",
+      "rating": 1.5,
+      "recording_count": 2,
+      "venue": "Sound City"
     },
-    "1966-02-05_The_Questing_Beast": {
-      "best_recording": "gd1966-02-05.136661.sbd.bruno.flac16",
+    "1977-02-20_Studio_(Terrapin_Station_Outtakes)": {
+      "best_recording": "gd77-02-20.sbd.moreno.9470.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-02-20",
+      "rating": 2.1296296296296298,
+      "recording_count": 1,
+      "venue": "Studio (Terrapin Station Outtakes)"
+    },
+    "1977-02-26_Swing_Auditorium": {
+      "best_recording": "gd1977-02-26.151834.BettyBoardDeibertremasterAnonNoelpartialupgradet-flac16",
+      "confidence": 1.0,
+      "date": "1977-02-26",
+      "rating": 3.3731543624161073,
+      "recording_count": 11,
+      "venue": "Swing Auditorium"
+    },
+    "1977-02-27_Robertson_Gym,_U.C.S.B.": {
+      "best_recording": "gd1977-02-27.143884.SonyECM-280.bertrando.warburton.smith.sirmick.flac2496",
+      "confidence": 0.4,
+      "date": "1977-02-27",
+      "rating": 1.5375,
+      "recording_count": 7,
+      "venue": "Robertson Gym, U.C.S.B."
+    },
+    "1977-02-27_Robertson_Gym,_UC_Santa_Barbara": {
+      "best_recording": "gd77-02-27.bertrando.vernon.10378.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-02-27",
+      "rating": 2.0701754385964914,
+      "recording_count": 1,
+      "venue": "Robertson Gym, UC Santa Barbara"
+    },
+    "1977-02-27_Robertson_Gym_University_Of_California": {
+      "best_recording": "gd1977-02-27.gd1977-02-27.145196.sony.ecm280.bertrando.smith.miller.clugston.flac2496",
       "confidence": 0.0,
-      "date": "1966-02-05",
+      "date": "1977-02-27",
       "rating": 0,
       "recording_count": 1,
-      "venue": "The Questing Beast"
+      "venue": "Robertson Gym University Of California"
+    },
+    "1977-03-01_Multiple": {
+      "best_recording": "gd1977-03-01.150848.sbd.flac16",
+      "confidence": 0.0,
+      "date": "1977-03-01",
+      "rating": 0,
+      "recording_count": 1,
+      "venue": "Multiple"
+    },
+    "1977-03-18_Winterland_Arena": {
+      "best_recording": "gd1977-03-18.sbd.clugston.254-patch.79098.shnf",
+      "confidence": 1.0,
+      "date": "1977-03-18",
+      "rating": 2.2412087912087912,
+      "recording_count": 10,
+      "venue": "Winterland Arena"
+    },
+    "1977-03-19_Winterland_Arena": {
+      "best_recording": "gd1977-03-19.mtx.hansokolow.96856.flac16",
+      "confidence": 1.0,
+      "date": "1977-03-19",
+      "rating": 2.2660714285714287,
+      "recording_count": 9,
+      "venue": "Winterland Arena"
+    },
+    "1977-03-20_Winterland_Arena": {
+      "best_recording": "gd77-03-20.sbd.miller.25610.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-03-20",
+      "rating": 2.35,
+      "recording_count": 7,
+      "venue": "Winterland Arena"
+    },
+    "1977-04-22_The_Spectrum": {
+      "best_recording": "gd77-04-22.sbd.cotsman.10148.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-04-22",
+      "rating": 2.102272727272727,
+      "recording_count": 4,
+      "venue": "The Spectrum"
+    },
+    "1977-04-23_Springfield_Civic_Center": {
+      "best_recording": "gd77-04-23.sbd.jerugim.1827.sbefail.shnf",
+      "confidence": 1.0,
+      "date": "1977-04-23",
+      "rating": 2.2891025641025644,
+      "recording_count": 9,
+      "venue": "Springfield Civic Center"
+    },
+    "1977-04-23_Springfield_Civic_Center_Arena": {
+      "best_recording": "gd1977-04-23.mtx.seamons.97596.sbeok.flac16",
+      "confidence": 1.0,
+      "date": "1977-04-23",
+      "rating": 2.3166666666666664,
+      "recording_count": 4,
+      "venue": "Springfield Civic Center Arena"
+    },
+    "1977-04-25_Capitol_Theater": {
+      "best_recording": "gd1977-04-25.sbd.130529.MrBill.flac16",
+      "confidence": 1.0,
+      "date": "1977-04-25",
+      "rating": 1.7115384615384615,
+      "recording_count": 5,
+      "venue": "Capitol Theater"
+    },
+    "1977-04-26_Capitol_Theater": {
+      "best_recording": "gd77-04-26.aud.goodbear.260.sbefail.shnf",
+      "confidence": 1.0,
+      "date": "1977-04-26",
+      "rating": 1.5333333333333334,
+      "recording_count": 1,
+      "venue": "Capitol Theater"
+    },
+    "1977-04-27_Capitol_Theater": {
+      "best_recording": "gd77-04-27.sbd.samaritano.20331.sbefail.shnf",
+      "confidence": 1.0,
+      "date": "1977-04-27",
+      "rating": 2.0163106796116503,
+      "recording_count": 3,
+      "venue": "Capitol Theater"
+    },
+    "1977-04-27_Capitol_Theatre": {
+      "best_recording": "gd1977-04-27.fm.moore.berger.98430.flac16",
+      "confidence": 1.0,
+      "date": "1977-04-27",
+      "rating": 1.953125,
+      "recording_count": 4,
+      "venue": "Capitol Theatre"
+    },
+    "1977-04-29_The_Palladium": {
+      "best_recording": "gd77-04-29.moore.unknown.7113.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-04-29",
+      "rating": 2.1363636363636362,
+      "recording_count": 1,
+      "venue": "The Palladium"
+    },
+    "1977-04-30_The_Palladium": {
+      "best_recording": "gd1977-04-30.sonyECM33p.moore.vernon.4949.sbeok.shnf",
+      "confidence": 1.0,
+      "date": "1977-04-30",
+      "rating": 2.1206896551724137,
+      "recording_count": 2,
+      "venue": "The Palladium"
+    },
+    "1977-05-01_The_Palladium": {
+      "best_recording": "gd1977-05-01.set-2.sbd.miller.81739.sbeok.flac16",
+      "confidence": 1.0,
+      "date": "1977-05-01",
+      "rating": 2.178409090909091,
+      "recording_count": 8,
+      "venue": "The Palladium"
+    },
+    "1977-05-03_The_Palladium": {
+      "best_recording": "gd1977-05-03.aud.glassberg.motb.0042.86241.flac16",
+      "confidence": 1.0,
+      "date": "1977-05-03",
+      "rating": 2.16875,
+      "recording_count": 5,
+      "venue": "The Palladium"
+    },
+    "1977-05-04_The_Palladium": {
+      "best_recording": "gd1977-05-04.mtx.seamons.ht09.99106.flac16",
+      "confidence": 0.7,
+      "date": "1977-05-04",
+      "rating": 2.357142857142857,
+      "recording_count": 2,
+      "venue": "The Palladium"
     }
   }
 }
