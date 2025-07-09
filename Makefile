@@ -19,6 +19,9 @@ help:
 	@echo "  make generate-ratings - Alias for collect-metadata-test"
 	@echo "  make collect-setlists-full - Collect all setlists from CMU (1972-1995)"
 	@echo "  make collect-setlists-year YEAR=1977 - Collect setlists for a specific year"
+	@echo "  make collect-gdsets-full - Collect all setlists and images from GDSets.com"
+	@echo "  make collect-gdsets-early - Collect early years (1965-1971) from GDSets.com"
+	@echo "  make collect-gdsets-images - Collect only show images from GDSets.com"
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
@@ -418,7 +421,7 @@ download-icons:
 	@echo "✅ Icons downloaded and processed!"
 
 # Comprehensive Metadata Collection
-.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images
 
 # Full metadata collection (2-3 hours, run overnight)
 collect-metadata-full:
@@ -550,6 +553,50 @@ collect-setlists-year:
 		--delay 0.5 \
 		--verbose
 	@echo "✅ Setlist collection for $(YEAR) finished!"
+
+# GDSets Collection
+collect-gdsets-full:
+	@echo "⭐ Extracting Grateful Dead setlists and images from GDSets HTML..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python scrape_gdsets.py \
+		--html-file "$(PWD)/scripts/metadata/sources/gdsets/index.html" \
+		--output-setlists "$(PWD)/scripts/metadata/setlists/gdsets_setlists.json" \
+		--output-images "$(PWD)/scripts/metadata/images/gdsets_images.json" \
+		--verbose
+	@echo "✅ Complete GDSets extraction finished!"
+
+collect-gdsets-early:
+	@echo "🎵 Extracting early years (1965-1971) setlists from GDSets HTML..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python scrape_gdsets.py \
+		--html-file "$(PWD)/scripts/metadata/sources/gdsets/index.html" \
+		--output-setlists "$(PWD)/scripts/metadata/setlists/gdsets_early_setlists.json" \
+		--output-images "$(PWD)/scripts/metadata/images/gdsets_early_images.json" \
+		--focus-years 1965-1971 \
+		--verbose
+	@echo "✅ Early years GDSets extraction finished!"
+
+collect-gdsets-images:
+	@echo "🖼️ Extracting Grateful Dead show images from GDSets HTML..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python scrape_gdsets.py \
+		--html-file "$(PWD)/scripts/metadata/sources/gdsets/index.html" \
+		--output-images "$(PWD)/scripts/metadata/images/gdsets_images.json" \
+		--images-only \
+		--verbose
+	@echo "✅ GDSets image extraction finished!"
 
 # Test Data Management
 capture-test-data:
