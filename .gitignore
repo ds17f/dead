@@ -101,6 +101,11 @@ __pycache__/
 
 # Metadata cache directories (commit selectively when major datasets are complete)
 scripts/metadata-test/
+# Full metadata cache - regeneratable, too large for repo
+scripts/metadata/
 # scripts/metadata-1977/  # Committed - complete 1977 dataset
 # scripts/metadata-1995/  # Committed - complete 1995 dataset  
 # scripts/metadata-full/  # Commit when complete full dataset is ready
+
+# Only keep compressed ratings file in production - uncompressed version is for development only
+app/src/main/assets/ratings.json

@@ -680,22 +680,24 @@ class GratefulDeadMetadataCollector:
             "show_ratings": show_ratings
         }
         
-        # Save ratings.json
-        with open(output_file, 'w') as f:
-            json.dump(ratings_data, f, indent=2, sort_keys=True)
-        
-        self.logger.info(f"Generated ratings.json with {len(recording_ratings)} recordings and {len(show_ratings)} shows")
-        
-        # Create compressed version
+        # Create compressed version directly
         zip_file = output_file.replace('.json', '.zip')
         with zipfile.ZipFile(zip_file, 'w', zipfile.ZIP_DEFLATED) as zf:
-            zf.write(output_file, 'ratings.json')
+            # Write JSON directly to ZIP without creating uncompressed file
+            zf.writestr('ratings.json', json.dumps(ratings_data, indent=2, sort_keys=True))
         
-        # Get file sizes
-        json_size = os.path.getsize(output_file) / (1024 * 1024)  # MB
+        # Create uncompressed version only for development/debugging
+        temp_json_file = output_file + '.temp'
+        with open(temp_json_file, 'w') as f:
+            json.dump(ratings_data, f, indent=2, sort_keys=True)
+        
+        # Get file sizes and then remove temp file
+        json_size = os.path.getsize(temp_json_file) / (1024 * 1024)  # MB
         zip_size = os.path.getsize(zip_file) / (1024 * 1024)  # MB
+        os.remove(temp_json_file)
         
-        self.logger.info(f"Created ratings.zip: {json_size:.1f}MB → {zip_size:.1f}MB ({zip_size/json_size*100:.1f}% of original)")
+        self.logger.info(f"Generated ratings.zip with {len(recording_ratings)} recordings and {len(show_ratings)} shows")
+        self.logger.info(f"Compressed: {json_size:.1f}MB → {zip_size:.1f}MB ({zip_size/json_size*100:.1f}% of original)")
 
 
 def main():
