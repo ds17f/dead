@@ -17,6 +17,8 @@ help:
 	@echo "  make collect-metadata-1995 - Collect 1995 shows (final year, good for TIGDH)"
 	@echo "  make generate-ratings-from-cache - Generate ratings from cached data"
 	@echo "  make generate-ratings - Alias for collect-metadata-test"
+	@echo "  make collect-setlists-full - Collect all setlists from CMU (1972-1995)"
+	@echo "  make collect-setlists-year YEAR=1977 - Collect setlists for a specific year"
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
@@ -416,7 +418,7 @@ download-icons:
 	@echo "✅ Icons downloaded and processed!"
 
 # Comprehensive Metadata Collection
-.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year
 
 # Full metadata collection (2-3 hours, run overnight)
 collect-metadata-full:
@@ -515,6 +517,39 @@ collect-metadata-1995:
 
 # Legacy alias for backward compatibility
 generate-ratings: collect-metadata-test
+
+# Setlist Collection
+collect-setlists-full:
+	@echo "⭐ Collecting complete Grateful Dead setlists from CS.CMU.EDU..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python scrape_cmu_setlists.py \
+		--output "$(PWD)/scripts/metadata/setlists/cmu_setlists.json" \
+		--delay 0.5 \
+		--verbose
+	@echo "✅ Complete setlist collection finished!"
+
+collect-setlists-year:
+	@if [ -z "$(YEAR)" ]; then \
+		echo "⚠️  Error: YEAR parameter is required."; \
+		echo "Usage: make collect-setlists-year YEAR=1977"; \
+		exit 1; \
+	fi
+	@echo "🎸 Collecting setlists for year $(YEAR)..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python scrape_cmu_setlists.py \
+		--output "$(PWD)/scripts/metadata/setlists/cmu_setlists_$(YEAR).json" \
+		--year-range $(YEAR) \
+		--delay 0.5 \
+		--verbose
+	@echo "✅ Setlist collection for $(YEAR) finished!"
 
 # Test Data Management
 capture-test-data:
