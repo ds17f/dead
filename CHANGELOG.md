@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.18.0] - 2025-07-08
+
+### New Features
+* streamline ratings file storage for reduced repo size (e87a1ab)
+* improve release process and metadata collection (9aeeb6b)
+
+### Bug Fixes
+* add weekly breakdown for ultra-high volume years (ed5da68)
+* update app sync queries to capture all recordings (83c70a1)
+* add monthly breakdown for high-volume years in metadata collection (c1b8bcc)
+* work around Archive.org 10k search result limit (4cba4fc)
+
+
 ## [0.17.0] - 2025-07-08
 
 ### New Features
@@ -19,8 +32,6 @@
 
 ### Other Changes
 * chore: improve .gitignore for Python cache files and metadata strategy (9cc8b2a)
-
-
 ## [0.16.0] - 2025-07-07
 
 ### New Features
