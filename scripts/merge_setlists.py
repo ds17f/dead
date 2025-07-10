@@ -6,19 +6,19 @@ This script merges setlist data from CMU and GDSets sources to create a unified 
 It follows Stage 1.3 of the implementation plan outlined in docs/setlist-implementation-plan.md.
 
 Key Features:
-- Combines CMU (1972-1995) and GDSets (1965-1971) setlist data
+- Combines CMU (1972-1995) and GDSets (1965-1995) setlist data
 - Resolves CMU set3/encore classification issue  
-- Uses CMU as primary source for overlapping dates (1972+)
-- Preserves all available metadata fields
-- Handles conflicts with documented precedence rules
+- Uses GDSets as primary source due to superior data quality
+- Preserves all available metadata fields from both sources
+- Handles conflicts with GDSets precedence for better user experience
 - Outputs unified raw setlist dataset
 
 Architecture:
-- CMU covers 1972-1995 (1,604 shows) - primary source for these years
-- GDSets covers 1965-1971 (268 shows) - primary source for early years
+- GDSets covers 1965-1995 (1,961 shows) - primary source with superior quality
+- CMU covers 1972-1995 (1,604 shows) - supplementary source for unique shows
 - Set normalization: CMU "set3" → "encore" when appropriate
-- Conflict resolution with source preference logging
-- Comprehensive metadata merge
+- Conflict resolution with GDSets precedence for consistent data quality
+- Comprehensive metadata merge preserving CMU data as supplementary info
 
 Usage:
     python scripts/merge_setlists.py --cmu scripts/metadata/setlists/cmu_setlists.json --gdsets scripts/metadata/setlists/gdsets_early_setlists.json --output scripts/metadata/setlists/raw_setlists.json
@@ -171,27 +171,18 @@ class SetlistMerger:
         self.merge_stats['conflicts_resolved'] += 1
         self.merge_stats['overlapping_dates'].append(show_id)
         
-        # CMU takes precedence for 1972+ (its primary coverage area)
-        try:
-            year = int(show_id.split('-')[0])
-            if year >= 1972:
-                logger.info(f"Using CMU data for {show_id} (year {year} >= 1972)")
-                resolved = cmu_show.copy()
-                # Preserve GDSets source_url if available
-                if 'source_url' in gdsets_show and 'source_url' not in resolved:
-                    resolved['source_url'] = gdsets_show['source_url']
-                return resolved
-            else:
-                logger.info(f"Using GDSets data for {show_id} (year {year} < 1972)")
-                resolved = gdsets_show.copy()
-                # Preserve CMU raw_content if available
-                if 'raw_content' in cmu_show and 'raw_content' not in resolved:
-                    resolved['raw_content'] = cmu_show['raw_content']
-                return resolved
-        except (ValueError, IndexError):
-            # Fallback: prefer CMU for malformed date
-            logger.warning(f"Malformed date {show_id}, defaulting to CMU")
-            return cmu_show.copy()
+        # GDSets takes precedence due to superior data quality
+        # CMU data is preserved as supplementary information
+        logger.info(f"Using GDSets data for {show_id} (higher quality source)")
+        resolved = gdsets_show.copy()
+        
+        # Preserve useful CMU metadata as supplementary info
+        if 'raw_content' in cmu_show and 'raw_content' not in resolved:
+            resolved['cmu_raw_content'] = cmu_show['raw_content']
+        if 'venue_line' in cmu_show and 'venue_line' not in resolved:
+            resolved['cmu_venue_line'] = cmu_show['venue_line']
+        
+        return resolved
     
     def merge_setlists(self, cmu_data: Dict[str, Any], gdsets_data: Dict[str, Any]) -> Dict[str, Any]:
         """
