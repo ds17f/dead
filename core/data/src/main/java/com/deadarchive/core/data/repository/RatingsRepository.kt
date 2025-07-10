@@ -37,7 +37,7 @@ class RatingsRepository @Inject constructor(
     companion object {
         private const val TAG = "RatingsRepository"
         private const val RATINGS_ASSET_FILE = "ratings.json"
-        private const val RATINGS_ZIP_FILE = "ratings.zip"
+        private const val DATA_ZIP_FILE = "data.zip"
         private const val RATINGS_CACHE_EXPIRY = 7 * 24 * 60 * 60 * 1000L // 7 days
     }
     
@@ -88,23 +88,26 @@ class RatingsRepository @Inject constructor(
     }
     
     /**
-     * Extract ratings data from assets, preferring ZIP over JSON.
+     * Extract ratings data from assets, from consolidated data ZIP.
      */
     private suspend fun extractRatingsFromAssets(): String {
         return try {
-            // First try to load from compressed ZIP file
-            context.assets.open(RATINGS_ZIP_FILE).use { zipStream ->
+            // Load from consolidated data ZIP file
+            context.assets.open(DATA_ZIP_FILE).use { zipStream ->
                 ZipInputStream(zipStream).use { zip ->
-                    zip.nextEntry // Should be ratings.json
-                    zip.readBytes().toString(Charsets.UTF_8)
+                    var entry = zip.nextEntry
+                    while (entry != null) {
+                        if (entry.name == RATINGS_ASSET_FILE) {
+                            return@use zip.readBytes().toString(Charsets.UTF_8)
+                        }
+                        entry = zip.nextEntry
+                    }
+                    throw Exception("ratings.json not found in data.zip")
                 }
             }
         } catch (e: Exception) {
-            Log.w(TAG, "Failed to load from ZIP, trying uncompressed JSON: ${e.message}")
-            // Fallback to uncompressed JSON file
-            context.assets.open(RATINGS_ASSET_FILE).use { inputStream ->
-                inputStream.readBytes().toString(Charsets.UTF_8)
-            }
+            Log.e(TAG, "Failed to load ratings from consolidated data.zip: ${e.message}")
+            throw e
         }
     }
     

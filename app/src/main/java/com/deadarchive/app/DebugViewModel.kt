@@ -6,6 +6,7 @@ import com.deadarchive.core.data.sync.DataSyncService
 import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.RatingsRepository
+import com.deadarchive.core.data.repository.SetlistRepository
 import com.deadarchive.core.data.download.DownloadQueueManager
 import com.deadarchive.core.model.Recording
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -33,7 +34,15 @@ data class DebugUiState(
     val isWipingDatabase: Boolean = false,
     val databaseWipeStatus: String = "",
     val databaseWipeSuccess: Boolean = false,
-    val wipeProgress: DatabaseWipeProgress = DatabaseWipeProgress()
+    val wipeProgress: DatabaseWipeProgress = DatabaseWipeProgress(),
+    // Setlist data
+    val setlistCount: Int = 0,
+    val songCount: Int = 0,
+    val venueCount: Int = 0,
+    val isLoadingSetlistData: Boolean = false,
+    val setlistTestStatus: String = "",
+    val setlistTestSuccess: Boolean = false,
+    val sampleSetlists: List<String> = emptyList()
 )
 
 data class DatabaseWipeProgress(
@@ -68,6 +77,7 @@ class DebugViewModel @Inject constructor(
     private val concertRepository: ShowRepository,
     private val downloadRepository: DownloadRepository,
     private val ratingsRepository: RatingsRepository,
+    private val setlistRepository: SetlistRepository,
     private val downloadQueueManager: DownloadQueueManager,
     @ApplicationContext private val context: Context
 ) : ViewModel() {
@@ -77,6 +87,7 @@ class DebugViewModel @Inject constructor(
     
     init {
         loadAppInfo()
+        loadSetlistInfo()
     }
     
     private fun loadAppInfo() {
@@ -608,7 +619,7 @@ class DebugViewModel @Inject constructor(
                         completedDownloads.take(10).forEach { download ->
                             appendLine("• ${download.recordingId}")
                             if (download.localPath != null) {
-                                val file = java.io.File(download.localPath)
+                                val file = java.io.File(download.localPath!!)
                                 val exists = file.exists()
                                 val size = if (exists) file.length() else 0
                                 
@@ -935,6 +946,170 @@ class DebugViewModel @Inject constructor(
                             "The database may be partially cleared. Please restart the app and try again if needed.\n\n" +
                             "Error details:\n${e.stackTraceToString()}",
                     databaseWipeSuccess = false
+                )
+            }
+        }
+    }
+
+    private fun loadSetlistInfo() {
+        viewModelScope.launch {
+            try {
+                // Initialize setlist data if needed
+                setlistRepository.initializeSetlistDataIfNeeded()
+                
+                // Get setlist statistics
+                val stats = setlistRepository.getSetlistStatistics()
+                _uiState.value = _uiState.value.copy(
+                    setlistCount = stats["setlist_count"] as? Int ?: 0,
+                    songCount = stats["song_count"] as? Int ?: 0,
+                    venueCount = stats["venue_count"] as? Int ?: 0
+                )
+            } catch (e: Exception) {
+                println("DEBUG: Error loading setlist info: ${e.message}")
+            }
+        }
+    }
+    
+    fun testSetlistData() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val result = StringBuilder()
+                
+                // Test basic statistics
+                val stats = setlistRepository.getSetlistStatistics()
+                result.appendLine("=== SETLIST DATA STATISTICS ===")
+                result.appendLine("Total Setlists: ${stats["setlist_count"]}")
+                result.appendLine("Total Songs: ${stats["song_count"]}")
+                result.appendLine("Total Venues: ${stats["venue_count"]}")
+                result.appendLine("Average Songs per Setlist: ${"%.1f".format(stats["average_song_count"] as? Float ?: 0f)}")
+                result.appendLine()
+                
+                // Test sample data queries
+                result.appendLine("=== SAMPLE SETLISTS ===")
+                val sampleSetlists = setlistRepository.getBestQualitySetlists().take(5)
+                sampleSetlists.forEach { setlist ->
+                    result.appendLine("${setlist.date} - ${setlist.displayVenue}")
+                    result.appendLine("  Source: ${setlist.source}, Songs: ${setlist.totalSongs}")
+                    if (setlist.hasSongs) {
+                        val firstFewSongs = setlist.songs.take(3)
+                        firstFewSongs.forEach { song ->
+                            result.appendLine("    • ${song.displayName}")
+                        }
+                        if (setlist.songs.size > 3) {
+                            result.appendLine("    ... and ${setlist.songs.size - 3} more")
+                        }
+                    }
+                    result.appendLine()
+                }
+                
+                // Test search functionality
+                result.appendLine("=== SEARCH TEST ===")
+                val searchResults = setlistRepository.searchSetlists("1977-05-08")
+                result.appendLine("Search for '1977-05-08': ${searchResults.size} results")
+                searchResults.take(2).forEach { setlist ->
+                    result.appendLine("  ${setlist.date} at ${setlist.displayVenue}")
+                }
+                result.appendLine()
+                
+                // Test popular venues
+                result.appendLine("=== POPULAR VENUES ===")
+                val popularVenues = setlistRepository.getMostPopularVenues(5)
+                popularVenues.forEach { venue ->
+                    result.appendLine("${venue.displayName} - ${venue.showFrequency}")
+                }
+                result.appendLine()
+                
+                // Test most played songs
+                result.appendLine("=== MOST PLAYED SONGS ===")
+                val popularSongs = setlistRepository.getMostPlayedSongs(5)
+                popularSongs.forEach { song ->
+                    result.appendLine("${song.displayName} - ${song.performanceFrequency}")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error testing setlist data:\n${e.message}\n\nStack trace:\n${e.stackTraceToString()}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun refreshSetlistData() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                setlistRepository.forceRefreshSetlistData()
+                loadSetlistInfo()
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Setlist data refreshed successfully from assets!",
+                    setlistTestSuccess = true
+                )
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error refreshing setlist data:\n${e.message}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun searchSetlistsByDate(dateQuery: String) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val results = setlistRepository.searchSetlists(dateQuery)
+                val result = StringBuilder()
+                
+                result.appendLine("=== SEARCH RESULTS FOR '$dateQuery' ===")
+                result.appendLine("Found ${results.size} setlists")
+                result.appendLine()
+                
+                results.take(10).forEach { setlist ->
+                    result.appendLine("${setlist.date} - ${setlist.displayVenue}")
+                    result.appendLine("  Source: ${setlist.source}")
+                    if (setlist.hasSongs) {
+                        result.appendLine("  Songs: ${setlist.totalSongs}")
+                        val highlights = setlist.songs.take(2)
+                        highlights.forEach { song ->
+                            result.appendLine("    • ${song.displayName}")
+                        }
+                        if (setlist.songs.size > 2) {
+                            result.appendLine("    ... and ${setlist.songs.size - 2} more")
+                        }
+                    }
+                    result.appendLine()
+                }
+                
+                if (results.size > 10) {
+                    result.appendLine("... and ${results.size - 10} more results")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error searching setlists:\n${e.message}",
+                    setlistTestSuccess = false
                 )
             }
         }

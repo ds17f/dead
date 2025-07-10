@@ -9,6 +9,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -20,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import kotlinx.coroutines.launch
+import androidx.compose.material3.OutlinedTextField
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -345,6 +347,9 @@ fun DebugScreen(
                     Text("Cached Recordings: ${uiState.cachedRecordingCount}")
                     Text("Last Sync: ${uiState.lastSyncTime}")
                     Text("Database Size: ${uiState.databaseSize}")
+                    Text("Setlists: ${uiState.setlistCount}")
+                    Text("Songs: ${uiState.songCount}")
+                    Text("Venues: ${uiState.venueCount}")
                     
                     Button(
                         onClick = { viewModel.debugDatabaseState() },
@@ -392,6 +397,143 @@ fun DebugScreen(
                                             RoundedCornerShape(8.dp)
                                         )
                                         .padding(8.dp)
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // Setlist Data Testing Section
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer)
+            ) {
+                Column(
+                    modifier = Modifier.padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp)
+                ) {
+                    Text(
+                        text = "Setlist Data Testing",
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    
+                    Text(
+                        text = "Test the setlist integration and explore setlist data",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.testSetlistData()
+                                }
+                            },
+                            enabled = !uiState.isLoadingSetlistData,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            if (uiState.isLoadingSetlistData) {
+                                CircularProgressIndicator(
+                                    modifier = Modifier.size(16.dp),
+                                    strokeWidth = 2.dp
+                                )
+                            } else {
+                                Text("Test Setlist Data")
+                            }
+                        }
+                        
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.refreshSetlistData()
+                                }
+                            },
+                            enabled = !uiState.isLoadingSetlistData,
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Refresh Data")
+                        }
+                    }
+                    
+                    // Search functionality
+                    var searchQuery by remember { mutableStateOf("1977") }
+                    
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        OutlinedTextField(
+                            value = searchQuery,
+                            onValueChange = { searchQuery = it },
+                            label = { Text("Search (date/venue)") },
+                            modifier = Modifier.weight(1f),
+                            singleLine = true
+                        )
+                        
+                        Button(
+                            onClick = {
+                                scope.launch {
+                                    viewModel.searchSetlistsByDate(searchQuery)
+                                }
+                            },
+                            enabled = !uiState.isLoadingSetlistData && searchQuery.isNotBlank()
+                        ) {
+                            Text("Search")
+                        }
+                    }
+                    
+                    if (uiState.setlistTestStatus.isNotEmpty()) {
+                        Card(
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = CardDefaults.cardColors(
+                                containerColor = if (uiState.setlistTestSuccess) 
+                                    MaterialTheme.colorScheme.secondaryContainer 
+                                else 
+                                    MaterialTheme.colorScheme.errorContainer
+                            )
+                        ) {
+                            Column(
+                                modifier = Modifier.padding(12.dp)
+                            ) {
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Text(
+                                        text = "Setlist Test Results",
+                                        style = MaterialTheme.typography.labelMedium,
+                                        fontWeight = FontWeight.Bold
+                                    )
+                                    IconButton(
+                                        onClick = {
+                                            clipboardManager.setText(AnnotatedString(uiState.setlistTestStatus))
+                                        }
+                                    ) {
+                                        Icon(
+                                            imageVector = Icons.Default.ContentCopy,
+                                            contentDescription = "Copy to clipboard"
+                                        )
+                                    }
+                                }
+                                Text(
+                                    text = uiState.setlistTestStatus,
+                                    style = MaterialTheme.typography.bodySmall,
+                                    fontFamily = FontFamily.Monospace,
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .background(
+                                            MaterialTheme.colorScheme.surfaceVariant,
+                                            RoundedCornerShape(8.dp)
+                                        )
+                                        .padding(8.dp)
+                                        .heightIn(max = 300.dp)
                                 )
                             }
                         }

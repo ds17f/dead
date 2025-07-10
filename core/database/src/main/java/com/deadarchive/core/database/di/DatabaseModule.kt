@@ -9,6 +9,9 @@ import com.deadarchive.core.database.DownloadDao
 import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.database.SyncMetadataDao
 import com.deadarchive.core.database.RatingDao
+import com.deadarchive.core.database.SetlistDao
+import com.deadarchive.core.database.SongDao
+import com.deadarchive.core.database.VenueDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -83,5 +86,29 @@ object DatabaseModule {
     @Provides
     fun provideRatingDao(database: DeadArchiveDatabase): RatingDao {
         return database.ratingDao()
+    }
+    
+    /**
+     * Provides Setlist DAO for setlist operations
+     */
+    @Provides
+    fun provideSetlistDao(database: DeadArchiveDatabase): SetlistDao {
+        return database.setlistDao()
+    }
+    
+    /**
+     * Provides Song DAO for song operations
+     */
+    @Provides
+    fun provideSongDao(database: DeadArchiveDatabase): SongDao {
+        return database.songDao()
+    }
+    
+    /**
+     * Provides Venue DAO for venue operations
+     */
+    @Provides
+    fun provideVenueDao(database: DeadArchiveDatabase): VenueDao {
+        return database.venueDao()
     }
 }

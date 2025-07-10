@@ -107,5 +107,10 @@ scripts/metadata/
 # scripts/metadata-1995/  # Committed - complete 1995 dataset  
 # scripts/metadata-full/  # Commit when complete full dataset is ready
 
-# Only keep compressed ratings file in production - uncompressed version is for development only
+# Only keep compressed data files in production - uncompressed versions are for development only
 app/src/main/assets/ratings.json
+setlists.json
+songs.json
+venues.json
+debug.txt
+app/src/main/assets/setlists.json
