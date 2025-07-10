@@ -24,6 +24,7 @@ help:
 	@echo "  make merge-setlists-early - Merge CMU with early years GDSets data"
 	@echo "  make process-venues - Process and normalize venue data from merged setlists"
 	@echo "  make process-songs - Process and normalize song data from merged setlists"
+	@echo "  make integrate-setlists - Integrate setlists with venue and song IDs"
 	@echo "  make collect-gdsets-early - Collect early years (1965-1971) from GDSets.com"
 	@echo "  make collect-gdsets-images - Collect only show images from GDSets.com"
 	@echo ""
@@ -425,7 +426,7 @@ download-icons:
 	@echo "✅ Icons downloaded and processed!"
 
 # Comprehensive Metadata Collection
-.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early process-venues process-songs
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early process-venues process-songs integrate-setlists
 
 # Full metadata collection (2-3 hours, run overnight)
 collect-metadata-full:
@@ -659,6 +660,22 @@ process-songs:
 		--output "$(PWD)/scripts/metadata/songs/songs.json" \
 		--verbose
 	@echo "✅ Song processing completed!"
+
+# Setlist Integration  
+integrate-setlists:
+	@echo "🔗 Integrating setlists with venue and song IDs..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python integrate_setlists.py \
+		--setlists "$(PWD)/scripts/metadata/setlists/raw_setlists.json" \
+		--venues "$(PWD)/scripts/metadata/venues/venues.json" \
+		--songs "$(PWD)/scripts/metadata/songs/songs.json" \
+		--output "$(PWD)/scripts/metadata/setlists/setlists.json" \
+		--verbose
+	@echo "✅ Setlist integration completed!"
 
 # Test Data Management
 capture-test-data:
