@@ -151,6 +151,12 @@ The app integrates with Archive.org's API to access the Grateful Dead concert co
 - **Metadata Endpoint**: `/metadata/{identifier}`
 - **Download Endpoint**: `/download/{identifier}`
 
+### Data Pipeline
+
+The app includes a comprehensive data processing pipeline for setlist integration:
+
+📋 **[Setlist Data Pipeline Guide](docs/setlist-data-pipeline.md)** - Complete pipeline for processing Grateful Dead setlist data from Archive.org, CMU, and GDSets sources into normalized databases ready for app integration.
+
 ## Permissions
 
 The app requires the following Android permissions:
