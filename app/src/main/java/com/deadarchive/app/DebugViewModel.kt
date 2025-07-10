@@ -1312,8 +1312,29 @@ class DebugViewModel @Inject constructor(
                 
                 // Step 2: Setlist search process
                 result.appendLine("STEP 2: Setlist Search Process")
+                
+                // First, let's examine some sample setlists to see how songs are stored
+                result.appendLine("Examining sample setlists for song storage format...")
+                val sampleSetlists = setlistRepository.getBestQualitySetlists().take(3)
+                sampleSetlists.forEach { setlist ->
+                    result.appendLine("Sample: ${setlist.date} - ${setlist.totalSongs} songs")
+                    setlist.songs.take(3).forEach { song ->
+                        result.appendLine("  • Song: '${song.songName}' [${song.setName}]")
+                    }
+                }
+                result.appendLine()
+                
                 val setlistResults = setlistRepository.searchSetlistsBySong(songName)
                 result.appendLine("Final setlist results: ${setlistResults.size}")
+                
+                // Let's also try searching for any setlists containing variations
+                result.appendLine()
+                result.appendLine("STEP 3: Manual song matching test...")
+                val testTerms = listOf("queen", "jane", "approximately")
+                testTerms.forEach { term ->
+                    val termResults = setlistRepository.searchSetlists(term)
+                    result.appendLine("Setlists containing '$term': ${termResults.size}")
+                }
                 
                 if (setlistResults.isEmpty()) {
                     result.appendLine()
