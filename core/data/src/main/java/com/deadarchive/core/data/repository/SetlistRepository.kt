@@ -328,20 +328,21 @@ class SetlistRepository @Inject constructor(
             }
         }
         
-        // Parse songs list
+        // Parse songs from sets structure (convert sets to songs list)
         val songs = mutableListOf<com.deadarchive.core.model.SetlistSong>()
-        val songsArray = setlistObj.optJSONArray("songs")
-        if (songsArray != null) {
-            for (i in 0 until songsArray.length()) {
-                val songObj = songsArray.getJSONObject(i)
+        var position = 1
+        
+        for ((setName, songIds) in sets) {
+            for (songId in songIds) {
+                // We'll get the song name from the songs database later, for now use the ID
                 songs.add(
                     com.deadarchive.core.model.SetlistSong(
-                        songName = songObj.getString("song_name"),
-                        songId = songObj.optString("song_id").takeIf { it.isNotEmpty() },
-                        setName = songObj.optString("set_name").takeIf { it.isNotEmpty() },
-                        position = if (songObj.has("position")) songObj.optInt("position") else null,
-                        isSegue = songObj.optBoolean("is_segue", false),
-                        segueType = songObj.optString("segue_type").takeIf { it.isNotEmpty() }
+                        songName = songId, // Temporary - will be resolved later
+                        songId = songId,
+                        setName = setName,
+                        position = position++,
+                        isSegue = false,
+                        segueType = null
                     )
                 )
             }
