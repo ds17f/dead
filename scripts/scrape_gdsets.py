@@ -137,6 +137,19 @@ class GDSetsScraper:
                     except (ValueError, IndexError):
                         pass
                 
+                # HARD CUTOFF: No shows after Jerry's death (7/9/95)
+                # The last Grateful Dead show was July 9, 1995
+                try:
+                    show_date = datetime.strptime(show_id, '%Y-%m-%d')
+                    last_gd_show = datetime(1995, 7, 9)
+                    if show_date > last_gd_show:
+                        logger.warning(f"Skipping post-Jerry show: {show_id} (last GD show was 1995-07-09)")
+                        continue
+                except (ValueError, TypeError):
+                    # If we can't parse the date, log it but don't skip
+                    logger.debug(f"Could not parse date for validation: {show_id}")
+                    pass
+                
                 # Find setlist content after this headline
                 setlist_div = event_div.find_next('div', class_='setlists-div')
                 if not setlist_div:

@@ -20,6 +20,8 @@ help:
 	@echo "  make collect-setlists-full - Collect all setlists from CMU (1972-1995)"
 	@echo "  make collect-setlists-year YEAR=1977 - Collect setlists for a specific year"
 	@echo "  make collect-gdsets-full - Collect all setlists and images from GDSets.com"
+	@echo "  make merge-setlists - Merge CMU and GDSets setlist data (full range)"
+	@echo "  make merge-setlists-early - Merge CMU with early years GDSets data"
 	@echo "  make collect-gdsets-early - Collect early years (1965-1971) from GDSets.com"
 	@echo "  make collect-gdsets-images - Collect only show images from GDSets.com"
 	@echo ""
@@ -421,7 +423,7 @@ download-icons:
 	@echo "✅ Icons downloaded and processed!"
 
 # Comprehensive Metadata Collection
-.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early
 
 # Full metadata collection (2-3 hours, run overnight)
 collect-metadata-full:
@@ -566,6 +568,7 @@ collect-gdsets-full:
 		--html-file "$(PWD)/scripts/metadata/sources/gdsets/index.html" \
 		--output-setlists "$(PWD)/scripts/metadata/setlists/gdsets_setlists.json" \
 		--output-images "$(PWD)/scripts/metadata/images/gdsets_images.json" \
+		--focus-years 1965-1995 \
 		--verbose
 	@echo "✅ Complete GDSets extraction finished!"
 
@@ -597,6 +600,35 @@ collect-gdsets-images:
 		--images-only \
 		--verbose
 	@echo "✅ GDSets image extraction finished!"
+
+# Setlist Merging
+merge-setlists:
+	@echo "🔄 Merging CMU and GDSets setlist data..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python merge_setlists.py \
+		--cmu "$(PWD)/scripts/metadata/setlists/cmu_setlists.json" \
+		--gdsets "$(PWD)/scripts/metadata/setlists/gdsets_setlists.json" \
+		--output "$(PWD)/scripts/metadata/setlists/raw_setlists.json" \
+		--verbose
+	@echo "✅ Setlist merge completed!"
+
+merge-setlists-early:
+	@echo "🔄 Merging CMU setlists with early years GDSets data..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python merge_setlists.py \
+		--cmu "$(PWD)/scripts/metadata/setlists/cmu_setlists.json" \
+		--gdsets "$(PWD)/scripts/metadata/setlists/gdsets_early_setlists.json" \
+		--output "$(PWD)/scripts/metadata/setlists/raw_setlists_early.json" \
+		--verbose
+	@echo "✅ Early years setlist merge completed!"
 
 # Test Data Management
 capture-test-data:
