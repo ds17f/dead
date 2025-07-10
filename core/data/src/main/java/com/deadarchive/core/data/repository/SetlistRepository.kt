@@ -421,6 +421,336 @@ class SetlistRepository @Inject constructor(
         }
     }
     
+    /**
+     * Find setlists containing a specific song.
+     */
+    suspend fun searchSetlistsBySong(songName: String): List<Setlist> {
+        return try {
+            Log.d(TAG, "Searching setlists containing song: '$songName'")
+            
+            // Search for songs matching the query
+            val matchingSongs = songDao.searchSongs(songName)
+            if (matchingSongs.isEmpty()) {
+                Log.d(TAG, "No songs found matching '$songName'")
+                return emptyList()
+            }
+            
+            // Get all setlists containing any of these songs
+            val allSetlists = setlistDao.getSetlistsWithSongs().map { it.toSetlist() }
+            val matchingSetlists = mutableListOf<Setlist>()
+            
+            for (setlist in allSetlists) {
+                val songNames = setlist.songs.map { it.songName.lowercase() }
+                val hasMatchingSong = matchingSongs.any { song ->
+                    songNames.any { songName ->
+                        songName.contains(song.name.lowercase()) ||
+                        song.aliases.any { alias -> songName.contains(alias.lowercase()) }
+                    }
+                }
+                
+                if (hasMatchingSong) {
+                    matchingSetlists.add(setlist)
+                }
+            }
+            
+            Log.d(TAG, "Found ${matchingSetlists.size} setlists containing '$songName'")
+            enrichSetlistsWithVenueInfo(matchingSetlists.sortedByDescending { it.date })
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to search setlists by song '$songName': ${e.message}")
+            emptyList()
+        }
+    }
+    
+    /**
+     * Find setlists with specific song combinations/segues.
+     */
+    suspend fun searchSetlistsWithSongCombination(songs: List<String>): List<Setlist> {
+        return try {
+            Log.d(TAG, "Searching for setlists with song combination: $songs")
+            
+            if (songs.isEmpty()) return emptyList()
+            
+            val allSetlists = setlistDao.getSetlistsWithSongs().map { it.toSetlist() }
+            val matchingSetlists = mutableListOf<Setlist>()
+            
+            for (setlist in allSetlists) {
+                val songNames = setlist.songs.map { it.songName.lowercase() }
+                val hasAllSongs = songs.all { targetSong ->
+                    songNames.any { it.contains(targetSong.lowercase()) }
+                }
+                
+                if (hasAllSongs) {
+                    matchingSetlists.add(setlist)
+                }
+            }
+            
+            Log.d(TAG, "Found ${matchingSetlists.size} setlists with all songs: $songs")
+            enrichSetlistsWithVenueInfo(matchingSetlists.sortedByDescending { it.date })
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to search setlists with song combination: ${e.message}")
+            emptyList()
+        }
+    }
+    
+    /**
+     * Find setlists where a song appears in a specific set position.
+     */
+    suspend fun searchSetlistsBySongPosition(songName: String, position: SongPosition): List<Setlist> {
+        return try {
+            Log.d(TAG, "Searching for '$songName' in position: $position")
+            
+            val allSetlists = setlistDao.getSetlistsWithSongs().map { it.toSetlist() }
+            val matchingSetlists = mutableListOf<Setlist>()
+            
+            for (setlist in allSetlists) {
+                val matches = when (position) {
+                    SongPosition.SHOW_OPENER -> {
+                        setlist.songs.firstOrNull()?.songName?.contains(songName, ignoreCase = true) ?: false
+                    }
+                    SongPosition.SHOW_CLOSER -> {
+                        setlist.songs.lastOrNull()?.songName?.contains(songName, ignoreCase = true) ?: false
+                    }
+                    SongPosition.SET_OPENER -> {
+                        setlist.songsBySet.values.any { setSongs ->
+                            setSongs.firstOrNull()?.songName?.contains(songName, ignoreCase = true) ?: false
+                        }
+                    }
+                    SongPosition.SET_CLOSER -> {
+                        setlist.songsBySet.values.any { setSongs ->
+                            setSongs.lastOrNull()?.songName?.contains(songName, ignoreCase = true) ?: false
+                        }
+                    }
+                    SongPosition.ENCORE -> {
+                        setlist.songsBySet["encore"]?.any { 
+                            it.songName.contains(songName, ignoreCase = true) 
+                        } ?: false
+                    }
+                }
+                
+                if (matches) {
+                    matchingSetlists.add(setlist)
+                }
+            }
+            
+            Log.d(TAG, "Found ${matchingSetlists.size} setlists with '$songName' as $position")
+            enrichSetlistsWithVenueInfo(matchingSetlists.sortedByDescending { it.date })
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to search by song position: ${e.message}")
+            emptyList()
+        }
+    }
+    
+    /**
+     * Get song statistics and performance history.
+     */
+    suspend fun getSongStatistics(songName: String): SongStatistics? {
+        return try {
+            Log.d(TAG, "Getting statistics for song: '$songName'")
+            
+            // Find the song first
+            val songs = songDao.searchSongs(songName)
+            val targetSong = songs.firstOrNull { 
+                it.name.equals(songName, ignoreCase = true) ||
+                it.aliases.any { alias -> alias.equals(songName, ignoreCase = true) }
+            } ?: songs.firstOrNull()
+            
+            if (targetSong == null) {
+                Log.d(TAG, "Song '$songName' not found")
+                return null
+            }
+            
+            // Get all performances
+            val performances = searchSetlistsBySong(targetSong.name)
+            
+            if (performances.isEmpty()) {
+                return SongStatistics(
+                    songName = targetSong.name,
+                    timesPlayed = 0,
+                    firstPlayed = null,
+                    lastPlayed = null,
+                    averageSetPosition = 0f,
+                    mostCommonSet = "Unknown",
+                    venues = emptyList(),
+                    years = emptyMap()
+                )
+            }
+            
+            val venues = performances.mapNotNull { it.venueId }.distinct()
+            val years = performances.groupBy { it.date.substring(0, 4) }
+                .mapValues { it.value.size }
+            
+            // Calculate average set position
+            var totalPosition = 0
+            var positionCount = 0
+            
+            performances.forEach { setlist ->
+                setlist.songs.forEachIndexed { index, song ->
+                    if (song.songName.contains(targetSong.name, ignoreCase = true)) {
+                        totalPosition += index + 1
+                        positionCount++
+                    }
+                }
+            }
+            
+            val avgPosition = if (positionCount > 0) totalPosition.toFloat() / positionCount else 0f
+            
+            // Find most common set
+            val setOccurrences = mutableMapOf<String, Int>()
+            performances.forEach { setlist ->
+                setlist.songs.forEach { song ->
+                    if (song.songName.contains(targetSong.name, ignoreCase = true)) {
+                        val setName = song.setName ?: "unknown"
+                        setOccurrences[setName] = setOccurrences.getOrDefault(setName, 0) + 1
+                    }
+                }
+            }
+            
+            val mostCommonSet = setOccurrences.maxByOrNull { it.value }?.key ?: "Unknown"
+            
+            SongStatistics(
+                songName = targetSong.name,
+                timesPlayed = performances.size,
+                firstPlayed = performances.minByOrNull { it.date }?.date,
+                lastPlayed = performances.maxByOrNull { it.date }?.date,
+                averageSetPosition = avgPosition,
+                mostCommonSet = mostCommonSet,
+                venues = venues,
+                years = years
+            )
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to get song statistics for '$songName': ${e.message}")
+            null
+        }
+    }
+    
+    /**
+     * Find common song segues and transitions.
+     */
+    suspend fun findSongSegues(songName: String): List<SongSegue> {
+        return try {
+            Log.d(TAG, "Finding segues for song: '$songName'")
+            
+            val performances = searchSetlistsBySong(songName)
+            val segues = mutableListOf<SongSegue>()
+            
+            performances.forEach { setlist ->
+                val songs = setlist.songs
+                songs.forEachIndexed { index, song ->
+                    if (song.songName.contains(songName, ignoreCase = true)) {
+                        // Check for song that follows
+                        if (index < songs.size - 1) {
+                            val nextSong = songs[index + 1]
+                            segues.add(SongSegue(
+                                fromSong = song.songName,
+                                toSong = nextSong.songName,
+                                date = setlist.date,
+                                venue = setlist.displayVenue,
+                                isSegue = song.isSegue || nextSong.isSegue,
+                                segueType = song.segueType
+                            ))
+                        }
+                        
+                        // Check for song that precedes
+                        if (index > 0) {
+                            val prevSong = songs[index - 1]
+                            segues.add(SongSegue(
+                                fromSong = prevSong.songName,
+                                toSong = song.songName,
+                                date = setlist.date,
+                                venue = setlist.displayVenue,
+                                isSegue = prevSong.isSegue || song.isSegue,
+                                segueType = prevSong.segueType
+                            ))
+                        }
+                    }
+                }
+            }
+            
+            // Group and count segues
+            val segueGroups = segues.groupBy { "${it.fromSong} -> ${it.toSong}" }
+            val result = segueGroups.map { (transition, occurrences) ->
+                occurrences.first().copy(
+                    occurrenceCount = occurrences.size,
+                    lastOccurrence = occurrences.maxByOrNull { it.date }?.date
+                )
+            }.sortedByDescending { it.occurrenceCount }
+            
+            Log.d(TAG, "Found ${result.size} unique segues for '$songName'")
+            result
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to find segues for '$songName': ${e.message}")
+            emptyList()
+        }
+    }
+    
+    /**
+     * Advanced setlist filtering with multiple criteria.
+     */
+    suspend fun searchSetlistsAdvanced(criteria: SearchCriteria): List<Setlist> {
+        return try {
+            Log.d(TAG, "Advanced search with criteria: $criteria")
+            
+            var results = if (criteria.songs.isNotEmpty()) {
+                searchSetlistsBySong(criteria.songs.first())
+            } else {
+                setlistDao.getSetlistsWithSongs().map { it.toSetlist() }
+            }
+            
+            // Apply date range filter
+            if (criteria.startDate != null) {
+                results = results.filter { it.date >= criteria.startDate }
+            }
+            if (criteria.endDate != null) {
+                results = results.filter { it.date <= criteria.endDate }
+            }
+            
+            // Apply venue filter
+            if (criteria.venue != null) {
+                results = results.filter { 
+                    it.displayVenue.contains(criteria.venue, ignoreCase = true) 
+                }
+            }
+            
+            // Apply minimum songs filter
+            if (criteria.minSongs > 0) {
+                results = results.filter { it.totalSongs >= criteria.minSongs }
+            }
+            
+            // Apply source filter
+            if (criteria.source != null) {
+                results = results.filter { it.source == criteria.source }
+            }
+            
+            // Apply additional song filters
+            if (criteria.songs.size > 1) {
+                val remainingSongs = criteria.songs.drop(1)
+                results = results.filter { setlist ->
+                    remainingSongs.all { targetSong ->
+                        setlist.songs.any { 
+                            it.songName.contains(targetSong, ignoreCase = true) 
+                        }
+                    }
+                }
+            }
+            
+            val sortedResults = when (criteria.sortBy) {
+                SortOrder.DATE_DESC -> results.sortedByDescending { it.date }
+                SortOrder.DATE_ASC -> results.sortedBy { it.date }
+                SortOrder.VENUE -> results.sortedBy { it.displayVenue }
+                SortOrder.SONG_COUNT -> results.sortedByDescending { it.totalSongs }
+            }
+            
+            Log.d(TAG, "Advanced search returned ${sortedResults.size} results")
+            enrichSetlistsWithVenueInfo(sortedResults)
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed advanced search: ${e.message}")
+            emptyList()
+        }
+    }
+    
     // Song queries
     
     suspend fun getSong(songId: String): Song? {
@@ -648,4 +978,118 @@ class SetlistRepository @Inject constructor(
             Log.e(TAG, "Failed to cleanup old setlist data: ${e.message}")
         }
     }
+}
+
+/**
+ * Enum for song position types in setlists.
+ */
+enum class SongPosition {
+    SHOW_OPENER,    // First song of the entire show
+    SHOW_CLOSER,    // Last song of the entire show  
+    SET_OPENER,     // First song of any set
+    SET_CLOSER,     // Last song of any set
+    ENCORE          // Song in encore
+}
+
+/**
+ * Enum for sorting search results.
+ */
+enum class SortOrder {
+    DATE_DESC,      // Most recent first
+    DATE_ASC,       // Oldest first
+    VENUE,          // Alphabetical by venue
+    SONG_COUNT      // Most songs first
+}
+
+/**
+ * Data class for advanced search criteria.
+ */
+data class SearchCriteria(
+    val songs: List<String> = emptyList(),
+    val startDate: String? = null,
+    val endDate: String? = null,
+    val venue: String? = null,
+    val minSongs: Int = 0,
+    val source: String? = null,
+    val sortBy: SortOrder = SortOrder.DATE_DESC
+)
+
+/**
+ * Data class for song performance statistics.
+ */
+data class SongStatistics(
+    val songName: String,
+    val timesPlayed: Int,
+    val firstPlayed: String?,
+    val lastPlayed: String?,
+    val averageSetPosition: Float,
+    val mostCommonSet: String,
+    val venues: List<String>,
+    val years: Map<String, Int>
+) {
+    /**
+     * Get performance frequency description.
+     */
+    val performanceFrequency: String
+        get() = when {
+            timesPlayed == 0 -> "Never played"
+            timesPlayed == 1 -> "Played once"
+            timesPlayed < 10 -> "Rarely played ($timesPlayed times)"
+            timesPlayed < 50 -> "Occasionally played ($timesPlayed times)"
+            timesPlayed < 100 -> "Regularly played ($timesPlayed times)"
+            timesPlayed < 200 -> "Frequently played ($timesPlayed times)"
+            else -> "Very frequently played ($timesPlayed times)"
+        }
+    
+    /**
+     * Get years active as a readable string.
+     */
+    val yearsActive: String
+        get() = if (firstPlayed != null && lastPlayed != null) {
+            val firstYear = firstPlayed.substring(0, 4)
+            val lastYear = lastPlayed.substring(0, 4)
+            if (firstYear == lastYear) firstYear else "$firstYear-$lastYear"
+        } else "Unknown"
+    
+    /**
+     * Get most active year.
+     */
+    val peakYear: String?
+        get() = years.maxByOrNull { it.value }?.key
+}
+
+/**
+ * Data class for song segue information.
+ */
+data class SongSegue(
+    val fromSong: String,
+    val toSong: String,
+    val date: String,
+    val venue: String,
+    val isSegue: Boolean = false,
+    val segueType: String? = null,
+    val occurrenceCount: Int = 1,
+    val lastOccurrence: String? = null
+) {
+    /**
+     * Get display string for the segue.
+     */
+    val displayTransition: String
+        get() = if (isSegue) {
+            "$fromSong ${segueType ?: ">"} $toSong"
+        } else {
+            "$fromSong → $toSong"
+        }
+    
+    /**
+     * Get frequency description.
+     */
+    val frequencyDescription: String
+        get() = when {
+            occurrenceCount == 1 -> "Occurred once"
+            occurrenceCount < 5 -> "Rare transition ($occurrenceCount times)"
+            occurrenceCount < 10 -> "Occasional transition ($occurrenceCount times)"
+            occurrenceCount < 20 -> "Common transition ($occurrenceCount times)"
+            else -> "Frequent transition ($occurrenceCount times)"
+        }
 }

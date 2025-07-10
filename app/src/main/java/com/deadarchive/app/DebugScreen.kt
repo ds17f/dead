@@ -462,6 +462,23 @@ fun DebugScreen(
                     
                     // Search functionality
                     var searchQuery by remember { mutableStateOf("1977") }
+                    var searchType by remember { mutableStateOf("Date/Venue") }
+                    val searchTypes = listOf("Date/Venue", "Song", "Statistics")
+                    
+                    // Search type selector
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        searchTypes.forEach { type ->
+                            FilterChip(
+                                onClick = { searchType = type },
+                                label = { Text(type) },
+                                selected = searchType == type,
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                    }
                     
                     Row(
                         modifier = Modifier.fillMaxWidth(),
@@ -471,7 +488,13 @@ fun DebugScreen(
                         OutlinedTextField(
                             value = searchQuery,
                             onValueChange = { searchQuery = it },
-                            label = { Text("Search (date/venue)") },
+                            label = { Text(
+                                when (searchType) {
+                                    "Song" -> "Song name (e.g., 'Dark Star')"
+                                    "Statistics" -> "Song for stats (e.g., 'Ripple')"
+                                    else -> "Date/venue (e.g., '1977')"
+                                }
+                            ) },
                             modifier = Modifier.weight(1f),
                             singleLine = true
                         )
@@ -479,12 +502,45 @@ fun DebugScreen(
                         Button(
                             onClick = {
                                 scope.launch {
-                                    viewModel.searchSetlistsByDate(searchQuery)
+                                    when (searchType) {
+                                        "Song" -> viewModel.searchSetlistsBySong(searchQuery)
+                                        "Statistics" -> viewModel.getSongStatistics(searchQuery)
+                                        else -> viewModel.searchSetlistsByDate(searchQuery)
+                                    }
                                 }
                             },
                             enabled = !uiState.isLoadingSetlistData && searchQuery.isNotBlank()
                         ) {
                             Text("Search")
+                        }
+                    }
+                    
+                    // Quick search buttons
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(4.dp)
+                    ) {
+                        val quickSearches = when (searchType) {
+                            "Song" -> listOf("Dark Star", "Ripple", "Fire", "Scarlet")
+                            "Statistics" -> listOf("Playing in the Band", "Eyes of the World", "China Cat Sunflower")
+                            else -> listOf("1977", "1995", "Winterland")
+                        }
+                        
+                        quickSearches.forEach { query ->
+                            AssistChip(
+                                onClick = { 
+                                    searchQuery = query
+                                    scope.launch {
+                                        when (searchType) {
+                                            "Song" -> viewModel.searchSetlistsBySong(query)
+                                            "Statistics" -> viewModel.getSongStatistics(query)
+                                            else -> viewModel.searchSetlistsByDate(query)
+                                        }
+                                    }
+                                },
+                                label = { Text(query, fontSize = 10.sp) },
+                                modifier = Modifier.weight(1f)
+                            )
                         }
                     }
                     

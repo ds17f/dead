@@ -1114,6 +1114,105 @@ class DebugViewModel @Inject constructor(
             }
         }
     }
+    
+    fun searchSetlistsBySong(songName: String) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val results = setlistRepository.searchSetlistsBySong(songName)
+                val result = StringBuilder()
+                
+                result.appendLine("=== SONG SEARCH RESULTS FOR '$songName' ===")
+                result.appendLine("Found ${results.size} performances")
+                result.appendLine()
+                
+                results.take(8).forEach { setlist ->
+                    result.appendLine("${setlist.date} - ${setlist.displayVenue}")
+                    result.appendLine("  Songs: ${setlist.totalSongs}")
+                    
+                    // Find the matching songs in this setlist
+                    val matchingSongs = setlist.songs.filter { 
+                        it.songName.contains(songName, ignoreCase = true) 
+                    }
+                    matchingSongs.forEach { song ->
+                        val setInfo = if (song.setName != null) " [${song.setName}]" else ""
+                        result.appendLine("    ★ ${song.displayName}$setInfo")
+                    }
+                    result.appendLine()
+                }
+                
+                if (results.size > 8) {
+                    result.appendLine("... and ${results.size - 8} more performances")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error searching by song:\n${e.message}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun getSongStatistics(songName: String) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val stats = setlistRepository.getSongStatistics(songName)
+                val result = StringBuilder()
+                
+                if (stats != null) {
+                    result.appendLine("=== SONG STATISTICS FOR '${stats.songName}' ===")
+                    result.appendLine("Performance frequency: ${stats.performanceFrequency}")
+                    result.appendLine("Years active: ${stats.yearsActive}")
+                    result.appendLine("Peak year: ${stats.peakYear ?: "Unknown"}")
+                    result.appendLine("Most common set: ${stats.mostCommonSet}")
+                    result.appendLine("Average position in set: ${"%.1f".format(stats.averageSetPosition)}")
+                    result.appendLine("Unique venues: ${stats.venues.size}")
+                    result.appendLine()
+                    
+                    result.appendLine("=== YEARLY BREAKDOWN ===")
+                    stats.years.toSortedMap().forEach { (year, count) ->
+                        result.appendLine("$year: $count performance${if (count != 1) "s" else ""}")
+                    }
+                    result.appendLine()
+                    
+                    // Get some segue information
+                    val segues = setlistRepository.findSongSegues(songName)
+                    if (segues.isNotEmpty()) {
+                        result.appendLine("=== COMMON TRANSITIONS ===")
+                        segues.take(5).forEach { segue ->
+                            result.appendLine("${segue.displayTransition} - ${segue.frequencyDescription}")
+                        }
+                    }
+                } else {
+                    result.appendLine("Song '$songName' not found in database")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = stats != null
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error getting song statistics:\n${e.message}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
 
     /**
      * Format bytes into human-readable format
