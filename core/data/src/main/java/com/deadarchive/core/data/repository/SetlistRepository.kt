@@ -429,11 +429,14 @@ class SetlistRepository @Inject constructor(
             Log.d(TAG, "Searching setlists containing song: '$songName'")
             
             // Search for songs matching the query
-            val matchingSongs = songDao.searchSongs(songName)
-            if (matchingSongs.isEmpty()) {
+            val matchingSongEntities = songDao.searchSongs(songName)
+            if (matchingSongEntities.isEmpty()) {
                 Log.d(TAG, "No songs found matching '$songName'")
                 return emptyList()
             }
+            
+            // Convert to Song models to access aliases
+            val matchingSongs = matchingSongEntities.map { it.toSong() }
             
             // Get all setlists containing any of these songs
             val allSetlists = setlistDao.getSetlistsWithSongs().map { it.toSetlist() }
@@ -548,7 +551,8 @@ class SetlistRepository @Inject constructor(
             Log.d(TAG, "Getting statistics for song: '$songName'")
             
             // Find the song first
-            val songs = songDao.searchSongs(songName)
+            val songEntities = songDao.searchSongs(songName)
+            val songs = songEntities.map { it.toSong() }
             val targetSong = songs.firstOrNull { 
                 it.name.equals(songName, ignoreCase = true) ||
                 it.aliases.any { alias -> alias.equals(songName, ignoreCase = true) }
