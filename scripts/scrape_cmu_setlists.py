@@ -335,7 +335,7 @@ class CMUSetlistScraper:
                     current_set += 1
                 
                 # Extract songs from the section
-                # Remove set headers and extract song lines
+                # Remove set headers and extract song lines, handling segues
                 song_lines = []
                 for line in section.split('\n'):
                     line = line.strip()
@@ -345,7 +345,27 @@ class CMUSetlistScraper:
                     if any(keyword in line.lower() for keyword in 
                            ['set 1', 'set 2', 'set 3', 'first set', 'second set', 'third set', 'encore:']):
                         continue
-                    song_lines.append(line)
+                    
+                    # Handle segue indicators
+                    if line.startswith('>'):
+                        # This song continues from the previous one
+                        # Remove the > and create a segue with the previous song
+                        segue_song = line[1:].strip()
+                        if song_lines and segue_song:
+                            # Modify the previous song to show the segue
+                            prev_song = song_lines[-1]
+                            # Handle case where previous song already has segue indicator
+                            if not prev_song.endswith(' >') and not prev_song.endswith('->'):
+                                song_lines[-1] = f"{prev_song} > {segue_song}"
+                            else:
+                                # Previous song already ends with segue, just add the next song
+                                song_lines.append(segue_song)
+                        else:
+                            # No previous song or empty segue song, just add without >
+                            if segue_song:
+                                song_lines.append(segue_song)
+                    else:
+                        song_lines.append(line)
                 
                 if song_lines:
                     sets[set_key] = song_lines

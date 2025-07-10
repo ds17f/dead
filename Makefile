@@ -23,6 +23,7 @@ help:
 	@echo "  make merge-setlists - Merge CMU and GDSets setlist data (full range)"
 	@echo "  make merge-setlists-early - Merge CMU with early years GDSets data"
 	@echo "  make process-venues - Process and normalize venue data from merged setlists"
+	@echo "  make process-songs - Process and normalize song data from merged setlists"
 	@echo "  make collect-gdsets-early - Collect early years (1965-1971) from GDSets.com"
 	@echo "  make collect-gdsets-images - Collect only show images from GDSets.com"
 	@echo ""
@@ -424,7 +425,7 @@ download-icons:
 	@echo "✅ Icons downloaded and processed!"
 
 # Comprehensive Metadata Collection
-.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early process-venues
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early process-venues process-songs
 
 # Full metadata collection (2-3 hours, run overnight)
 collect-metadata-full:
@@ -644,6 +645,20 @@ process-venues:
 		--output "$(PWD)/scripts/metadata/venues/venues.json" \
 		--verbose
 	@echo "✅ Venue processing completed!"
+
+# Song Processing
+process-songs:
+	@echo "🎵 Processing song data from merged setlists..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip && \
+		pip install -r requirements.txt) && \
+		python process_songs.py \
+		--input "$(PWD)/scripts/metadata/setlists/raw_setlists.json" \
+		--output "$(PWD)/scripts/metadata/songs/songs.json" \
+		--verbose
+	@echo "✅ Song processing completed!"
 
 # Test Data Management
 capture-test-data:
