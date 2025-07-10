@@ -127,8 +127,13 @@ class SetlistIntegrator:
                 if song_name:
                     self.songs_lookup[song_name] = song_id
                 
-                # Include aliases
+                # Include aliases (both raw and normalized forms)
                 for alias in song_info.get('aliases', []):
+                    # Store exact alias as-is for direct matching
+                    if alias and alias not in self.songs_lookup:
+                        self.songs_lookup[alias] = song_id
+                    
+                    # Also store lowercase version for case-insensitive lookup
                     alias_key = alias.lower().strip()
                     if alias_key and alias_key not in self.songs_lookup:
                         self.songs_lookup[alias_key] = song_id
@@ -216,7 +221,7 @@ class SetlistIntegrator:
     
     def normalize_song_for_lookup(self, song_name: str) -> str:
         """
-        Normalize song name for lookup (should match song processor logic)
+        Normalize song name for lookup (should match song processor logic exactly)
         
         Args:
             song_name: Raw song name
@@ -233,8 +238,29 @@ class SetlistIntegrator:
         normalized = re.sub(r'\s*->\s*$', '', normalized)
         normalized = re.sub(r'\s*>\s*$', '', normalized)
         
-        # Basic normalizations
-        normalized = re.sub(r'[^\w\s\-\'\(\)]', '', normalized)
+        # Apply same normalizations as song processor
+        normalized = re.sub(r'[^\w\s\-\'\(\)]', '', normalized)  # Keep only word chars, spaces, hyphens, apostrophes, parens
+        
+        # Standardize common abbreviations (same as song processor)
+        normalized = re.sub(r'\bst\b\.?', 'street', normalized)
+        normalized = re.sub(r'\bmt\b\.?', 'mount', normalized)
+        normalized = re.sub(r'\bmtn\b\.?', 'mountain', normalized)
+        
+        # Handle common Grateful Dead song variations (same as song processor)
+        normalized = re.sub(r'\bsugar\s*mag\b', 'sugar magnolia', normalized)
+        normalized = re.sub(r'\btruckin\b', "truckin'", normalized)
+        normalized = re.sub(r'\btruck\b', "truckin'", normalized)
+        normalized = re.sub(r'\bfotm\b', 'fire on the mountain', normalized)
+        normalized = re.sub(r'\bfire\b', 'fire on the mountain', normalized)
+        normalized = re.sub(r'\bmountain\b(?!\s+song)', 'fire on the mountain', normalized)  
+        # Fix "The Other One" case - only convert if it's not already "the other one"
+        if normalized == 'the other one':
+            pass  # Already correct
+        elif 'other one' in normalized:
+            normalized = re.sub(r'\b(the\s+)?other\s+one\b', 'the other one', normalized)
+        normalized = re.sub(r'\bdark\s*star\b', 'dark star', normalized)
+        
+        # Clean up extra whitespace
         normalized = re.sub(r'\s+', ' ', normalized).strip()
         
         return normalized
@@ -252,6 +278,25 @@ class SetlistIntegrator:
         if not song_name:
             return None
         
+        # Skip commentary text that shouldn't be treated as songs
+        commentary_patterns = [
+            r'^\+\s*',  # Lines starting with +
+            r'^\*\s*',  # Lines starting with *
+            r'soundcheck',
+            r'broadcast',
+            r'opening act',
+            r'joined',
+            r'acoustic',
+            r'^\s*E:\s*',  # Encore markers
+            r'^\s*\d+\s*:',  # Time stamps
+            r'^\?\?\?\?\?',  # Unknown markers
+        ]
+        
+        song_lower = song_name.lower()
+        for pattern in commentary_patterns:
+            if re.search(pattern, song_lower, re.IGNORECASE):
+                return None
+        
         # Handle segued songs (e.g., "Scarlet Begonias > Fire on the Mountain")
         if ' > ' in song_name:
             # For segued songs, try to find the first song
@@ -261,7 +306,15 @@ class SetlistIntegrator:
                 if first_song in self.songs_lookup:
                     return self.songs_lookup[first_song]
         
-        # Try exact match
+        # Try exact match first (case-sensitive)
+        if song_name in self.songs_lookup:
+            return self.songs_lookup[song_name]
+        
+        # Try case-insensitive exact match
+        if song_name.lower() in self.songs_lookup:
+            return self.songs_lookup[song_name.lower()]
+        
+        # Try normalized match as fallback
         normalized = self.normalize_song_for_lookup(song_name)
         if normalized in self.songs_lookup:
             return self.songs_lookup[normalized]
@@ -288,6 +341,9 @@ class SetlistIntegrator:
             if song_id:
                 song_ids.append(song_id)
                 self.processing_stats['songs_matched'] += 1
+            elif song_id is None and self.is_commentary_text(song_name):
+                # Skip commentary text, don't count as missing song
+                continue
             else:
                 # Log missing songs for debugging
                 logger.debug(f"Song not found: '{song_name}'")
@@ -296,6 +352,27 @@ class SetlistIntegrator:
                 song_ids.append(song_name)
         
         return song_ids
+    
+    def is_commentary_text(self, text: str) -> bool:
+        """Check if text is commentary rather than a song"""
+        commentary_patterns = [
+            r'^\+\s*',  # Lines starting with +
+            r'^\*\s*',  # Lines starting with *
+            r'soundcheck',
+            r'broadcast',
+            r'opening act',
+            r'joined',
+            r'acoustic',
+            r'^\s*E:\s*',  # Encore markers
+            r'^\s*\d+\s*:',  # Time stamps
+            r'^\?\?\?\?\?',  # Unknown markers
+        ]
+        
+        text_lower = text.lower()
+        for pattern in commentary_patterns:
+            if re.search(pattern, text_lower, re.IGNORECASE):
+                return True
+        return False
     
     def integrate_setlists(self, setlists_data: Dict[str, Any]) -> Dict[str, Any]:
         """

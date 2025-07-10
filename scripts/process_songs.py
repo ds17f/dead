@@ -150,7 +150,80 @@ class SongProcessor:
             # Encore-specific variations
             'encore break': '',  # Remove
             'encore': '',  # Remove standalone encore markers
+            
+            # Common goodnight song variations
+            'and we bid you goodnight': 'we bid you goodnight',
+            'we bid you goodnight': 'we bid you goodnight',
+            'bid you goodnight': 'we bid you goodnight',
+            
+            # Early years songs from GDSets
+            'the eleven jam': 'the eleven',
+            'eleven jam': 'the eleven',
+            'the main ten': 'the main ten',
+            'main ten': 'the main ten',
+            'the raven space': 'the raven',
+            'raven space': 'the raven',
+            'the boxer': 'the boxer',
+            'boxer': 'the boxer',
+            'goodnight irene': 'goodnight irene',
+            'the ballad of frankie lee judas priest': 'ballad of frankie lee and judas priest',
+            'the ballad of frankie lee & judas priest': 'ballad of frankie lee and judas priest',
+            'ballad of frankie lee judas priest': 'ballad of frankie lee and judas priest',
+            'ballad of frankie lee & judas priest': 'ballad of frankie lee and judas priest',
+            'the things i used to do': 'things i used to do',
+            'things i used to do': 'things i used to do',
         }
+        
+        # Commentary patterns to filter out (not actual songs)
+        self.commentary_patterns = [
+            r'.*on piano.*',
+            r'.*on keyboards.*',
+            r'.*on guitar.*',
+            r'.*on bass.*',
+            r'.*on drums.*',
+            r'.*the entire show.*',
+            r'.*entire set.*',
+            r'.*guest.*',
+            r'.*appeared.*',
+            r'.*joined.*',
+            r'.*sits in.*',
+            r'.*special guest.*',
+            r'.*birthday.*',
+            r'.*dedication.*',
+            r'.*acoustic.*set.*',
+            r'.*electric.*set.*',
+            r'.*sound.*check.*',
+            r'.*tuning.*problems.*',
+            r'.*technical.*problems.*',
+            r'.*equipment.*problems.*',
+            r'.*difficulty.*',
+            r'.*break.*',
+            r'.*intermission.*',
+            r'.*announcement.*',
+            r'.*talk.*',
+            r'.*banter.*',
+            r'.*microphone.*check.*',
+            r'.*mic.*check.*',
+            r'.*happy.*birthday.*',
+            r'.*thank.*you.*audience.*',
+            r'.*good.*night.*everyone.*',
+            r'.*see.*you.*next.*',
+            r'.*billed as.*',
+            r'.*bill.*as.*',
+            r'.*advertised as.*',
+            r'.*listed as.*',
+            r'\(.*billed.*\)',
+            r'\(.*bill.*\)',
+            r'^and$',
+            r'^with$',
+            r'^plus$',
+            r'^featuring$',
+            r'^guest$',
+            r'^special$',
+            r'^acoustic set:$',
+            r'^electric set:$',
+            r'^\d+\s+songs?$'
+        ]
         
         # Segue patterns to detect song relationships
         self.segue_indicators = [
@@ -185,6 +258,28 @@ class SongProcessor:
             logger.error(f"Failed to load setlists: {e}")
             raise
     
+    def is_commentary(self, song_name: str) -> bool:
+        """
+        Check if a song entry is actually commentary and should be filtered out
+        
+        Args:
+            song_name: Raw song name to check
+            
+        Returns:
+            True if this appears to be commentary, not a song
+        """
+        if not song_name or not song_name.strip():
+            return True
+        
+        song_lower = song_name.lower().strip()
+        
+        # Check against commentary patterns
+        for pattern in self.commentary_patterns:
+            if re.match(pattern, song_lower, re.IGNORECASE):
+                return True
+        
+        return False
+    
     def normalize_song_name(self, song_name: str) -> str:
         """
         Normalize song name for consistent matching
@@ -193,16 +288,27 @@ class SongProcessor:
             song_name: Raw song name
             
         Returns:
-            Normalized song name
+            Normalized song name (empty string if commentary)
         """
         if not song_name or not song_name.strip():
             return ""
         
+        # Filter out commentary first
+        if self.is_commentary(song_name):
+            return ""
+        
         normalized = song_name.lower().strip()
         
-        # Remove trailing segue indicators first
+        # Remove asterisks and special annotations first
+        normalized = re.sub(r'\*+', '', normalized)  # Remove asterisks
+        normalized = re.sub(r'\s*\([^)]*\)\s*', ' ', normalized)  # Remove parenthetical notes
+        
+        # Remove trailing segue indicators first  
         normalized = re.sub(r'\s*->\s*$', '', normalized)
         normalized = re.sub(r'\s*>\s*$', '', normalized)
+        
+        # Clean up extra whitespace before other processing
+        normalized = re.sub(r'\s+', ' ', normalized).strip()
         
         # Apply normalization rules
         for pattern, replacement in self.song_normalizations.items():

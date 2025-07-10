@@ -143,7 +143,18 @@ class VenueProcessor:
             'XLUX': 'Luxembourg',
             'ON': 'Ontario, Canada',
             'QC': 'Quebec, Canada',
-            'BC': 'British Columbia, Canada'
+            'BC': 'British Columbia, Canada',
+            # Additional country patterns from GDSets
+            'Denmark': 'Denmark',
+            'Germany': 'Germany', 
+            'West Germany': 'West Germany',
+            'France': 'France',
+            'Luxembourg': 'Luxembourg',
+            'Egypt': 'Egypt',
+            'Netherlands': 'Netherlands',
+            'Sweden': 'Sweden',
+            'Scotland': 'Scotland',
+            'England': 'England'
         }
         
         # Special city-based country mappings for venues without proper country codes
@@ -154,7 +165,113 @@ class VenueProcessor:
             'Barcelona': 'Spain', 
             'Paris': 'France',
             'Calgary': 'Canada',
-            'Montego Bay': 'Jamaica'
+            'Montego Bay': 'Jamaica',
+            # Additional GDSets city patterns
+            'Frankfurt': 'Germany',
+            'Munich': 'Germany',
+            'Luxembourg City': 'Luxembourg',
+            'Cairo': 'Egypt',
+            'Hamburg': 'Germany',
+            'Essen': 'Germany',
+            'Berlin': 'Germany',
+            'Dijon': 'France',
+            'Amsterdam': 'Netherlands',
+            'Bremen': 'Germany',
+            'Stockholm': 'Sweden',
+            'Edinburgh': 'Scotland'
+        }
+        
+        # Common venue name normalizations for major US venues that are often mismatched
+        self.major_venue_normalizations = {
+            # Venue type normalizations
+            'theatre': 'theater',
+            'center': 'center',
+            'centre': 'center',
+            'auditorium': 'auditorium',
+            'aud': 'auditorium',
+            'coliseum': 'coliseum',
+            'colosseum': 'coliseum',
+            'stadium': 'stadium',
+            'ballroom': 'ballroom',
+            'amphitheatre': 'amphitheater',
+            'amphitheater': 'amphitheater',
+            'music hall': 'music hall',
+            'pavilion': 'pavilion',
+            'fieldhouse': 'fieldhouse',
+            'civic center': 'civic center',
+            'civic centre': 'civic center',
+            
+            # Common venue name variations
+            'alpine valley music theatre': 'alpine valley music theater',
+            'alpine valley': 'alpine valley music theater',
+            'warfield theatre': 'warfield theater',
+            'the warfield': 'warfield theater',
+            'greek theatre': 'greek theater',
+            'the greek': 'greek theater',
+            'greek theater berkeley': 'greek theater',
+            'frost amphitheatre': 'frost amphitheater',
+            'frost amphitheater': 'frost amphitheater',
+            'red rocks amphitheatre': 'red rocks amphitheater',
+            'red rocks': 'red rocks amphitheater',
+            'shoreline amphitheatre': 'shoreline amphitheater',
+            'shoreline': 'shoreline amphitheater',
+            'merriweather post pavilion': 'merriweather post pavilion',
+            'merriweather': 'merriweather post pavilion',
+            'pine knob music theatre': 'pine knob music theater',
+            'pine knob': 'pine knob music theater',
+            'deer creek music center': 'deer creek music center',
+            'deer creek': 'deer creek music center',
+            'hampton coliseum': 'hampton coliseum',
+            'hampton roads coliseum': 'hampton coliseum',
+            'capital centre': 'capital center',
+            'cap centre': 'capital center',
+            'madison square garden': 'madison square garden',
+            'msg': 'madison square garden',
+            'the garden': 'madison square garden',
+            'boston garden': 'boston garden',
+            'the boston garden': 'boston garden',
+            'chicago stadium': 'chicago stadium',
+            'the spectrum': 'spectrum',
+            'philadelphia spectrum': 'spectrum',
+            'nassau coliseum': 'nassau coliseum',
+            'nassau veterans memorial coliseum': 'nassau coliseum',
+            'oakland coliseum': 'oakland coliseum',
+            'oakland alameda county coliseum': 'oakland coliseum',
+            'cow palace': 'cow palace',
+            'daly city cow palace': 'cow palace',
+            'the omni': 'omni coliseum',
+            'omni': 'omni coliseum',
+            'atlanta omni': 'omni coliseum',
+            'richfield coliseum': 'richfield coliseum',
+            'richfield': 'richfield coliseum',
+            'brendan byrne arena': 'brendan byrne arena',
+            'byrne arena': 'brendan byrne arena',
+            'meadowlands': 'brendan byrne arena',
+            'continental airlines arena': 'continental airlines arena',
+            'izod center': 'izod center',
+            'giants stadium': 'giants stadium',
+            'meadowlands stadium': 'giants stadium',
+            'robert f kennedy stadium': 'rfk stadium',
+            'rfk stadium': 'rfk stadium',
+            'jfk stadium': 'jfk stadium',
+            'john f kennedy stadium': 'jfk stadium',
+            'veterans stadium': 'veterans stadium',
+            'the vet': 'veterans stadium',
+            'three rivers stadium': 'three rivers stadium',
+            'soldier field': 'soldier field',
+            'comiskey park': 'comiskey park',
+            'wrigley field': 'wrigley field',
+            'yankee stadium': 'yankee stadium',
+            'shea stadium': 'shea stadium',
+            'tiger stadium': 'tiger stadium',
+            'pontiac silverdome': 'pontiac silverdome',
+            'silverdome': 'pontiac silverdome',
+            'superdome': 'superdome',
+            'new orleans superdome': 'superdome',
+            'astrodome': 'astrodome',
+            'houston astrodome': 'astrodome',
+            'kingdome': 'kingdome',
+            'seattle kingdome': 'kingdome'
         }
     
     def load_setlists(self, input_path: str) -> Dict[str, Any]:
@@ -251,12 +368,16 @@ class VenueProcessor:
         
         normalized = venue_name.lower().strip()
         
-        # Apply normalization rules
+        # Apply general normalization rules
         for pattern, replacement in self.venue_normalizations.items():
             normalized = re.sub(pattern, replacement, normalized, flags=re.IGNORECASE)
         
         # Clean up extra whitespace
         normalized = re.sub(r'\s+', ' ', normalized).strip()
+        
+        # Apply major venue normalizations (exact matches first)
+        if normalized in self.major_venue_normalizations:
+            normalized = self.major_venue_normalizations[normalized]
         
         return normalized
     
