@@ -1120,42 +1120,87 @@ class DebugViewModel @Inject constructor(
             _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
             
             try {
-                val results = setlistRepository.searchSetlistsBySong(songName)
                 val result = StringBuilder()
-                
-                result.appendLine("=== SONG SEARCH RESULTS FOR '$songName' ===")
-                result.appendLine("Found ${results.size} performances")
+                result.appendLine("=== DEBUG: SONG SEARCH FOR '$songName' ===")
                 result.appendLine()
                 
-                results.take(8).forEach { setlist ->
-                    result.appendLine("${setlist.date} - ${setlist.displayVenue}")
-                    result.appendLine("  Songs: ${setlist.totalSongs}")
-                    
-                    // Find the matching songs in this setlist
-                    val matchingSongs = setlist.songs.filter { 
-                        it.songName.contains(songName, ignoreCase = true) 
-                    }
-                    matchingSongs.forEach { song ->
-                        val setInfo = if (song.setName != null) " [${song.setName}]" else ""
-                        result.appendLine("    ★ ${song.displayName}$setInfo")
-                    }
-                    result.appendLine()
-                }
+                // Step 1: Search for matching songs in database
+                result.appendLine("STEP 1: Searching songs database for '$songName'...")
+                val songStats = setlistRepository.getSetlistStatistics()
+                result.appendLine("Total songs in database: ${songStats["song_count"]}")
                 
-                if (results.size > 8) {
-                    result.appendLine("... and ${results.size - 8} more performances")
+                // Get all songs and show some that might match
+                val allSongs = setlistRepository.searchSongs(songName)
+                result.appendLine("Songs found matching '$songName': ${allSongs.size}")
+                
+                if (allSongs.isEmpty()) {
+                    result.appendLine("❌ NO SONGS FOUND - trying broader search...")
+                    val broaderSongs = setlistRepository.searchSongs(songName.split(" ").first())
+                    result.appendLine("Broader search for '${songName.split(" ").first()}': ${broaderSongs.size} songs")
+                    broaderSongs.take(10).forEach { song ->
+                        result.appendLine("  • ${song.displayName} (aliases: ${song.aliases.joinToString(", ")})")
+                    }
+                } else {
+                    allSongs.take(10).forEach { song ->
+                        result.appendLine("  ✓ ${song.displayName}")
+                        if (song.aliases.isNotEmpty()) {
+                            result.appendLine("    Aliases: ${song.aliases.joinToString(", ")}")
+                        }
+                    }
+                }
+                result.appendLine()
+                
+                // Step 2: Search setlists
+                result.appendLine("STEP 2: Searching setlists...")
+                val setlistResults = setlistRepository.searchSetlistsBySong(songName)
+                result.appendLine("Setlists found: ${setlistResults.size}")
+                result.appendLine()
+                
+                if (setlistResults.isEmpty()) {
+                    result.appendLine("❌ NO SETLISTS FOUND")
+                    result.appendLine()
+                    result.appendLine("DEBUG INFO:")
+                    result.appendLine("- Song database has ${songStats["song_count"]} songs")
+                    result.appendLine("- Setlist database has ${songStats["setlist_count"]} setlists")
+                    result.appendLine("- Venue database has ${songStats["venue_count"]} venues")
+                    result.appendLine()
+                    result.appendLine("POSSIBLE ISSUES:")
+                    result.appendLine("1. Song name mismatch (check exact spelling)")
+                    result.appendLine("2. Song not in database")
+                    result.appendLine("3. Setlists don't reference this song correctly")
+                    result.appendLine("4. Search logic issue")
+                } else {
+                    result.appendLine("=== PERFORMANCES FOUND ===")
+                    setlistResults.take(8).forEach { setlist ->
+                        result.appendLine("${setlist.date} - ${setlist.displayVenue}")
+                        result.appendLine("  Songs: ${setlist.totalSongs}")
+                        
+                        // Find the matching songs in this setlist
+                        val matchingSongs = setlist.songs.filter { 
+                            it.songName.contains(songName, ignoreCase = true) 
+                        }
+                        matchingSongs.forEach { song ->
+                            val setInfo = if (song.setName != null) " [${song.setName}]" else ""
+                            result.appendLine("    ★ ${song.displayName}$setInfo")
+                        }
+                        result.appendLine()
+                    }
+                    
+                    if (setlistResults.size > 8) {
+                        result.appendLine("... and ${setlistResults.size - 8} more performances")
+                    }
                 }
                 
                 _uiState.value = _uiState.value.copy(
                     isLoadingSetlistData = false,
                     setlistTestStatus = result.toString(),
-                    setlistTestSuccess = true
+                    setlistTestSuccess = setlistResults.isNotEmpty()
                 )
                 
             } catch (e: Exception) {
                 _uiState.value = _uiState.value.copy(
                     isLoadingSetlistData = false,
-                    setlistTestStatus = "Error searching by song:\n${e.message}",
+                    setlistTestStatus = "Error searching by song:\n${e.message}\n\nStack trace:\n${e.stackTraceToString()}",
                     setlistTestSuccess = false
                 )
             }
@@ -1208,6 +1253,102 @@ class DebugViewModel @Inject constructor(
                 _uiState.value = _uiState.value.copy(
                     isLoadingSetlistData = false,
                     setlistTestStatus = "Error getting song statistics:\n${e.message}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun debugSongSearch(songName: String) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val result = StringBuilder()
+                result.appendLine("=== DETAILED DEBUG: SONG SEARCH ===")
+                result.appendLine("Query: '$songName'")
+                result.appendLine("Timestamp: ${System.currentTimeMillis()}")
+                result.appendLine()
+                
+                // Database stats
+                val stats = setlistRepository.getSetlistStatistics()
+                result.appendLine("DATABASE OVERVIEW:")
+                result.appendLine("- Songs: ${stats["song_count"]}")
+                result.appendLine("- Setlists: ${stats["setlist_count"]}")
+                result.appendLine("- Venues: ${stats["venue_count"]}")
+                result.appendLine()
+                
+                // Step 1: Raw song search
+                result.appendLine("STEP 1: Raw Song Database Search")
+                result.appendLine("Searching for songs containing '$songName'...")
+                val matchingSongs = setlistRepository.searchSongs(songName)
+                result.appendLine("Direct matches: ${matchingSongs.size}")
+                
+                if (matchingSongs.isEmpty()) {
+                    // Try partial searches
+                    val words = songName.lowercase().split(" ")
+                    for (word in words) {
+                        if (word.length > 2) {
+                            val partialMatches = setlistRepository.searchSongs(word)
+                            result.appendLine("Partial search '$word': ${partialMatches.size} songs")
+                            partialMatches.take(5).forEach { song ->
+                                result.appendLine("  → ${song.name}")
+                            }
+                        }
+                    }
+                } else {
+                    matchingSongs.forEach { song ->
+                        result.appendLine("  ✓ ${song.name}")
+                        result.appendLine("    ID: ${song.songId}")
+                        if (song.aliases.isNotEmpty()) {
+                            result.appendLine("    Aliases: ${song.aliases}")
+                        }
+                        if (song.canonicalName != null) {
+                            result.appendLine("    Canonical: ${song.canonicalName}")
+                        }
+                    }
+                }
+                result.appendLine()
+                
+                // Step 2: Setlist search process
+                result.appendLine("STEP 2: Setlist Search Process")
+                val setlistResults = setlistRepository.searchSetlistsBySong(songName)
+                result.appendLine("Final setlist results: ${setlistResults.size}")
+                
+                if (setlistResults.isEmpty()) {
+                    result.appendLine()
+                    result.appendLine("❌ DIAGNOSIS:")
+                    if (matchingSongs.isEmpty()) {
+                        result.appendLine("• Song not found in songs database")
+                        result.appendLine("• Try searching with different spelling or partial name")
+                    } else {
+                        result.appendLine("• Song exists in database but no setlist performances found")
+                        result.appendLine("• Possible data linking issue between songs and setlists")
+                    }
+                } else {
+                    result.appendLine()
+                    result.appendLine("✅ SUCCESS: Found performances")
+                    setlistResults.take(3).forEach { setlist ->
+                        result.appendLine("📅 ${setlist.date} at ${setlist.displayVenue}")
+                        val matchingSongsInSetlist = setlist.songs.filter { 
+                            it.songName.contains(songName, ignoreCase = true) 
+                        }
+                        matchingSongsInSetlist.forEach { song ->
+                            result.appendLine("  🎵 ${song.songName} [${song.setName ?: "unknown set"}]")
+                        }
+                    }
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "DEBUG ERROR:\n${e.message}\n\n${e.stackTraceToString()}",
                     setlistTestSuccess = false
                 )
             }

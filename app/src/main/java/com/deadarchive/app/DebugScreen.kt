@@ -513,6 +513,22 @@ fun DebugScreen(
                         ) {
                             Text("Search")
                         }
+                        
+                        if (searchType == "Song") {
+                            Button(
+                                onClick = {
+                                    scope.launch {
+                                        viewModel.debugSongSearch(searchQuery)
+                                    }
+                                },
+                                enabled = !uiState.isLoadingSetlistData && searchQuery.isNotBlank(),
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = MaterialTheme.colorScheme.tertiary
+                                )
+                            ) {
+                                Text("Debug", fontSize = 12.sp)
+                            }
+                        }
                     }
                     
                     // Quick search buttons
