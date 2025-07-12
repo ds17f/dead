@@ -27,6 +27,7 @@ help:
 	@echo "  make integrate-setlists - Integrate setlists with venue and song IDs"
 	@echo "  make collect-gdsets-early - Collect early years (1965-1971) from GDSets.com"
 	@echo "  make collect-gdsets-images - Collect only show images from GDSets.com"
+	@echo "  make package-datazip - Package all metadata into data.zip for app deployment"
 	@echo ""
 	@echo "Build Commands:"
 	@echo "  make build       - Build debug APK"
@@ -426,7 +427,7 @@ download-icons:
 	@echo "✅ Icons downloaded and processed!"
 
 # Comprehensive Metadata Collection
-.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early process-venues process-songs integrate-setlists
+.PHONY: collect-metadata-full collect-metadata-test generate-ratings-from-cache collect-metadata-resume collect-setlists-full collect-setlists-year collect-gdsets-full collect-gdsets-early collect-gdsets-images merge-setlists merge-setlists-early process-venues process-songs integrate-setlists package-datazip
 
 # Full metadata collection (2-3 hours, run overnight)
 collect-metadata-full:
@@ -441,7 +442,7 @@ collect-metadata-full:
 		--mode full \
 		--delay 0.25 \
 		--cache "$(PWD)/scripts/metadata" \
-		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--output "$(PWD)/scripts/metadata/ratings.json" \
 		--verbose
 	@echo "✅ Complete metadata collection finished!"
 
@@ -458,7 +459,7 @@ collect-metadata-test:
 		--mode test \
 		--delay 0.25 \
 		--cache "$(PWD)/scripts/metadata-test" \
-		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--output "$(PWD)/scripts/metadata/ratings.json" \
 		--max-recordings 10 \
 		--verbose
 	@echo "✅ Test collection completed!"
@@ -471,7 +472,7 @@ generate-ratings-from-cache:
 		python generate_metadata.py \
 		--mode ratings-only \
 		--cache "$(PWD)/scripts/metadata" \
-		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--output "$(PWD)/scripts/metadata/ratings.json" \
 		--verbose
 	@echo "✅ Ratings generated from cache!"
 
@@ -500,7 +501,7 @@ collect-metadata-1977:
 		--year 1977 \
 		--delay 0.5 \
 		--cache "$(PWD)/scripts/metadata-1977" \
-		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--output "$(PWD)/scripts/metadata/ratings.json" \
 		--max-recordings 100 \
 		--verbose
 	@echo "✅ 1977 collection completed!"
@@ -519,7 +520,7 @@ collect-metadata-1995:
 		--year 1995 \
 		--delay 0.5 \
 		--cache "$(PWD)/scripts/metadata-1995" \
-		--output "$(PWD)/app/src/main/assets/ratings.json" \
+		--output "$(PWD)/scripts/metadata/ratings.json" \
 		--verbose
 	@echo "✅ 1995 collection completed!"
 
@@ -676,6 +677,19 @@ integrate-setlists:
 		--output "$(PWD)/scripts/metadata/setlists/setlists.json" \
 		--verbose
 	@echo "✅ Setlist integration completed!"
+
+# Data Packaging
+package-datazip:
+	@echo "📦 Packaging metadata into data.zip for app deployment..."
+	@cd scripts && \
+		. .venv/bin/activate || (python3 -m venv .venv && \
+		. .venv/bin/activate && \
+		python -m pip install --upgrade pip) && \
+		python package_datazip.py \
+		--metadata "$(PWD)/scripts/metadata" \
+		--output "$(PWD)/app/src/main/assets/data.zip" \
+		--verbose
+	@echo "✅ data.zip packaged successfully!"
 
 # Test Data Management
 capture-test-data:

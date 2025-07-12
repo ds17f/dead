@@ -160,6 +160,30 @@ python scripts/integrate_setlists.py \
 - Show ID matching using standardized YYYY-MM-DD format
 - Comprehensive error logging and match rate reporting
 
+## Stage 4: App Deployment Packaging
+
+### Step 4.1: Package data.zip for Android App
+
+**Purpose**: Bundle all processed metadata files into data.zip for Android app deployment
+
+```bash
+# Run data packaging
+python scripts/package_datazip.py \
+    --metadata scripts/metadata \
+    --output app/src/main/assets/data.zip \
+    --verbose
+
+# Expected output: Compressed data.zip containing 4 metadata files
+# Processing time: ~1-2 minutes
+```
+
+**Key Features**:
+- Packages ratings.json, setlists.json, songs.json, venues.json into single compressed file
+- Validates all source files exist before packaging
+- Includes package metadata and statistics
+- Optimized compression for mobile app deployment
+- Automatic file timestamp preservation
+
 ## Data Quality Metrics
 
 After successful completion, expect these match rates:
@@ -190,6 +214,9 @@ make process-songs                  # Create normalized songs database
 
 # 3. Integration (5-10 minutes)
 make integrate-setlists             # Final integration with venue/song IDs
+
+# 4. App Deployment (1-2 minutes)
+make package-datazip                # Package all metadata into data.zip
 ```
 
 **Total pipeline execution time**: ~7-13 hours (mostly Step 0)
@@ -213,6 +240,9 @@ python scripts/process_songs.py --input-cmu scripts/metadata/setlists/cmu_setlis
 
 # 3. Integration (5-10 minutes)
 python scripts/integrate_setlists.py --setlists-cmu scripts/metadata/setlists/cmu_setlists.json --setlists-gdsets scripts/metadata/setlists/gdsets_setlists.json --songs scripts/metadata/songs/songs.json --venues scripts/metadata/venues/venues.json --shows scripts/metadata/shows/ --output scripts/metadata/setlists/setlists.json --verbose
+
+# 4. App Deployment (1-2 minutes)
+python scripts/package_datazip.py --metadata scripts/metadata --output app/src/main/assets/data.zip --verbose
 ```
 
 ### Individual Stage Commands (Makefile)

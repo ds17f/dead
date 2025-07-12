@@ -297,7 +297,9 @@ fun determineShowRating(recordings: List<Recording>): Rating? {
         }
     }
 
-    // Fall back to a weighted average of all ratings
+    // DEPRECATED: Fall back to a weighted average of all ratings
+    // NOTE: This approach has been replaced with MAX rating in generate_ratings.py
+    // to avoid dilution by unrated recordings
     val totalReviews = recordings.sumOf { it.numberOfReviews ?: 0 }
     if (totalReviews > 0) {
         val weightedSum = recordings.sumOf {

@@ -709,7 +709,7 @@ def main():
                        help='Delay between API calls in seconds')
     parser.add_argument('--cache', default='scripts/metadata', 
                        help='Metadata cache directory')
-    parser.add_argument('--output', default='app/src/main/assets/ratings.json',
+    parser.add_argument('--output', default='scripts/metadata/ratings.json',
                        help='Output path for ratings file')
     parser.add_argument('--max-recordings', type=int, 
                        help='Maximum recordings to process (for testing)')

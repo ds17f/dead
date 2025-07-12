@@ -3,11 +3,14 @@
 Generate pre-computed show ratings from Archive.org data.
 
 This script fetches review data for Grateful Dead recordings and computes
-show-level ratings using a sophisticated aggregation strategy that prioritizes
+show-level ratings using a MAX rating approach (not average) that prioritizes
 SBD recordings and well-reviewed performances.
 
+IMPORTANT: Uses MAX rating instead of average to avoid dilution by unrated recordings.
+A show with one 4.5★ SBD + two unrated recordings gets 4.5★, not ~2.25★.
+
 Usage:
-    python scripts/generate_ratings.py --output app/src/main/assets/ratings.json
+    python scripts/generate_ratings.py --output scripts/metadata/ratings.json
 """
 
 import json
@@ -256,17 +259,27 @@ class GratefulDeadRatingsGenerator:
         """
         Compute overall show rating from individual recording ratings.
         
-        Implements the sophisticated aggregation logic:
-        1. Prefer SBD recordings with 3+ reviews
-        2. Fall back to any well-reviewed recording (5+ reviews)
-        3. Use weighted average of all recordings
+        Uses MAX rating approach instead of average to avoid dilution by unrated recordings:
+        1. Filter out recordings with no ratings (avg_rating = 0 or review_count = 0)
+        2. Prefer SBD recordings with 3+ reviews
+        3. Fall back to any well-reviewed recording (5+ reviews)
+        4. Use the highest rated recording as the show rating
         """
         if not recording_ratings:
             return None
+        
+        # Filter out recordings with no ratings - these shouldn't dilute the show rating
+        rated_recordings = [
+            r for r in recording_ratings 
+            if r.avg_rating > 0 and r.review_count > 0
+        ]
+        
+        if not rated_recordings:
+            return None  # No ratings available for this show
             
         # Sort by preference: SBD with reviews first, then by rating
         sorted_recordings = sorted(
-            recording_ratings,
+            rated_recordings,
             key=lambda r: (
                 r.source_type == 'SBD' and r.review_count >= 3,  # SBD with good reviews
                 r.review_count >= 5,  # Well-reviewed regardless of source
@@ -278,21 +291,18 @@ class GratefulDeadRatingsGenerator:
         
         best_recording = sorted_recordings[0]
         
-        # Compute show-level rating using weighted average
-        total_weight = 0
-        weighted_sum = 0
+        # Use the best recording's rating as the show rating (no averaging/dilution)
+        show_avg_rating = best_recording.avg_rating
         
-        for recording in recording_ratings:
-            # Weight by review count and source quality
-            weight = recording.review_count * self.source_weights.get(recording.source_type, 0.5)
-            weighted_sum += recording.avg_rating * weight
-            total_weight += weight
-            
-        show_avg_rating = weighted_sum / total_weight if total_weight > 0 else 0
+        # Compute confidence score based on the best recording's review count
+        # but also consider total reviews across all rated recordings
+        total_reviews = sum(r.review_count for r in rated_recordings)
+        best_recording_reviews = best_recording.review_count
         
-        # Compute confidence score
-        total_reviews = sum(r.review_count for r in recording_ratings)
-        confidence_score = min(total_reviews / 10.0, 1.0)  # Max confidence at 10+ total reviews
+        # Confidence combines individual recording confidence with total show review activity
+        individual_confidence = min(best_recording_reviews / 5.0, 1.0)  # Max confidence at 5+ reviews for best recording
+        total_confidence = min(total_reviews / 10.0, 1.0)  # Bonus confidence for multiple rated recordings
+        confidence_score = (individual_confidence + total_confidence) / 2.0  # Average of both factors
         
         # Extract show info from best recording (assuming consistent per show)
         # In real implementation, you'd get this from the recording metadata
@@ -468,7 +478,7 @@ class GratefulDeadRatingsGenerator:
 def main():
     """Main entry point for the script."""
     parser = argparse.ArgumentParser(description='Generate pre-computed show ratings for Grateful Dead recordings')
-    parser.add_argument('--output', default='app/src/main/assets/ratings.json', 
+    parser.add_argument('--output', default='scripts/metadata/ratings.json', 
                        help='Output path for ratings JSON file')
     parser.add_argument('--max-recordings', type=int, default=100,
                        help='Maximum recordings to process (for testing)')
