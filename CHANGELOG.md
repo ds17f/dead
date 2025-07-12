@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.19.1] - 2025-07-12
+
+### Performance Improvements
+* optimize library loading by using library-specific queries (1ba11bb)
+
+
 ## [0.19.0] - 2025-07-12
 
 ### New Features
@@ -28,8 +34,6 @@
 
 ### Other Changes
 * chore: clean up scripts directory by removing temporary and redundant files (748917c)
-
-
 ## [0.18.0] - 2025-07-08
 
 ### New Features
