@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.19.0] - 2025-07-12
+
+### New Features
+* add enhanced setlist structure debugging for Queen Jane issue (210c5db)
+* add comprehensive song search debugging capabilities (2b4eda3)
+* implement advanced setlist search capabilities (1a53305)
+* implement comprehensive setlist integration system (e18159f)
+* implement GDSets-first merge precedence for superior data quality (e2689b9)
+* achieve near-perfect data matching with enhanced processing pipeline (b5778c1)
+* implement setlist integration with ID referencing and complete data pipeline (0da4193)
+* implement song processing with segue handling and comprehensive normalization (43dc0cc)
+* implement comprehensive venue processing with international normalization (637a86e)
+* add Jerry Garcia memorial hard stop and merge commands (1935294)
+* implement setlist merger with CMU set3/encore normalization (d697afe)
+* implement GDSets scraper for early years and memorabilia collection (3364946)
+* implement CMU setlist scraper and data collection (28153b0)
+
+### Bug Fixes
+* resolve song search timing issue with proper setlist data loading (9e77726)
+* resolve setlist songs parsing from sets structure (f9c5899)
+* resolve song entity access in enhanced search methods (b47ce3f)
+* correct venue ID field name in setlist JSON parsing (b2687b3)
+
+### Documentation Updates
+* consolidate and enhance setlist pipeline documentation (5229324)
+
+### Other Changes
+* chore: clean up scripts directory by removing temporary and redundant files (748917c)
+
+
 ## [0.18.0] - 2025-07-08
 
 ### New Features
@@ -11,8 +41,6 @@
 * update app sync queries to capture all recordings (83c70a1)
 * add monthly breakdown for high-volume years in metadata collection (c1b8bcc)
 * work around Archive.org 10k search result limit (4cba4fc)
-
-
 ## [0.17.0] - 2025-07-08
 
 ### New Features
