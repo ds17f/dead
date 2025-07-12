@@ -6,6 +6,8 @@ import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.database.SyncMetadataDao
 import com.deadarchive.core.database.SyncMetadataEntity
+import com.deadarchive.core.database.SetlistDao
+import com.deadarchive.core.data.repository.SetlistRepository
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
@@ -64,7 +66,9 @@ class DataSyncServiceImpl @Inject constructor(
     private val archiveApiService: ArchiveApiService,
     private val recordingDao: RecordingDao,
     private val showDao: ShowDao,
-    private val syncMetadataDao: SyncMetadataDao
+    private val syncMetadataDao: SyncMetadataDao,
+    private val setlistDao: SetlistDao,
+    private val setlistRepository: SetlistRepository
 ) : DataSyncService {
     
     private val _downloadProgress = MutableStateFlow(
@@ -311,6 +315,18 @@ class DataSyncServiceImpl @Inject constructor(
                 showEntities.take(5).forEach { show ->
                     println("DEBUG: Created show: ${show.showId} (date=${show.date}, venue=${show.venue})")
                 }
+                
+                // Automatically populate song names from setlist data
+                updateProgress(SyncPhase.PROCESSING, totalItems = finalTotalRecordings, processedItems = processedCount, currentItem = "Populating song names from setlists...")
+                try {
+                    println("DEBUG: Starting automatic song name population...")
+                    populateSongNamesFromSetlists()
+                    println("DEBUG: Successfully completed automatic song name population")
+                } catch (e: Exception) {
+                    println("ERROR: Failed to populate song names: ${e.message}")
+                    println("ERROR: Stack trace: ${e.stackTraceToString()}")
+                    // Don't fail the entire sync for this
+                }
             } catch (e: Exception) {
                 println("ERROR: Failed to save shows: ${e.message}")
                 e.printStackTrace()
@@ -402,6 +418,7 @@ class DataSyncServiceImpl @Inject constructor(
             }
             
             // Create new show entities FIRST (for shows that don't exist yet)
+            var newShowsCreated = 0
             newShowsMap.forEach { (showId, recordingEntities) ->
                 val showExists = showDao.showExists(showId)
                 if (!showExists) {
@@ -420,6 +437,17 @@ class DataSyncServiceImpl @Inject constructor(
                         cachedTimestamp = System.currentTimeMillis()
                     )
                     showDao.insertShow(showEntity)
+                    newShowsCreated++
+                }
+            }
+            
+            // If we created new shows, try to populate song names for them
+            if (newShowsCreated > 0) {
+                try {
+                    populateSongNamesFromSetlists()
+                    println("DEBUG: Populated song names for $newShowsCreated new shows")
+                } catch (e: Exception) {
+                    println("WARN: Failed to populate song names for new shows: ${e.message}")
                 }
             }
             
@@ -470,6 +498,91 @@ class DataSyncServiceImpl @Inject constructor(
             downloadCompleteCatalog()
         } catch (e: Exception) {
             SyncResult.Error("Force refresh failed: ${e.message}")
+        }
+    }
+    
+    /**
+     * Populate songNames field for shows from setlist data.
+     * This denormalizes song names for efficient search.
+     */
+    private suspend fun populateSongNamesFromSetlists() {
+        try {
+            println("DEBUG: Starting song names population from setlist data...")
+            
+            // FIRST: Ensure setlist data is loaded from assets
+            println("DEBUG: Ensuring setlist data is loaded...")
+            setlistRepository.initializeSetlistDataIfNeeded()
+            println("DEBUG: Setlist data initialization completed")
+            
+            // Get all shows
+            val shows = showDao.getAllShows()
+            println("DEBUG: Found ${shows.size} shows to process")
+            
+            if (shows.isEmpty()) {
+                println("WARN: No shows found - cannot populate song names")
+                return
+            }
+            
+            // Get ALL setlists with songs (not just "best quality" ones)
+            val setlists = setlistDao.getSetlistsWithSongs()
+            println("DEBUG: Found ${setlists.size} setlists with songs")
+            
+            if (setlists.isEmpty()) {
+                println("WARN: No setlists with songs found - cannot populate song names")
+                return
+            }
+            
+            // Create lookup map by date for quick matching
+            val setlistsByDate = setlists.groupBy { it.date }
+            println("DEBUG: Grouped setlists into ${setlistsByDate.size} date buckets")
+            
+            var updatedCount = 0
+            val updatedShows = mutableListOf<ShowEntity>()
+            
+            shows.forEach { show ->
+                try {
+                    // Try to find matching setlist for this show's date
+                    val matchingSetlists = setlistsByDate[show.date]
+                    
+                    if (matchingSetlists != null && matchingSetlists.isNotEmpty()) {
+                        // Use the best quality setlist (prefer GDSets)
+                        val bestSetlist = matchingSetlists
+                            .sortedByDescending { if (it.source == "gdsets") 1 else 0 }
+                            .first()
+                            .toSetlist()
+                        
+                        if (bestSetlist.songs.isNotEmpty()) {
+                            // Extract song names
+                            val songNames = bestSetlist.songs.map { it.songName }.joinToString(", ")
+                            
+                            // Create updated show entity
+                            val updatedShow = show.copy(songNames = songNames)
+                            updatedShows.add(updatedShow)
+                            updatedCount++
+                            
+                            if (updatedCount <= 5) { // Log first few for debugging
+                                println("DEBUG: Updated ${show.date}: ${bestSetlist.songs.size} songs -> ${songNames.take(60)}...")
+                            }
+                        }
+                    }
+                } catch (e: Exception) {
+                    println("ERROR: Failed to process show ${show.date}: ${e.message}")
+                }
+            }
+            
+            // Batch update the shows
+            if (updatedShows.isNotEmpty()) {
+                println("DEBUG: About to update ${updatedCount} shows with song names")
+                showDao.insertShows(updatedShows)
+                println("DEBUG: Successfully updated ${updatedCount} shows with song names")
+            } else {
+                println("WARN: No shows needed song name updates - this suggests no setlist data matches show dates")
+            }
+            
+        } catch (e: Exception) {
+            println("ERROR: Failed to populate song names: ${e.message}")
+            println("ERROR: Stack trace: ${e.stackTraceToString()}")
+            throw e
         }
     }
     

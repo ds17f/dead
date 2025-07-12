@@ -130,12 +130,12 @@ data class RecordingEntity(
  * Extension function to convert Recording to RecordingEntity
  */
 fun Recording.toRecordingEntity(): RecordingEntity {
-    // Calculate showId the same way Show class does, using normalized dates
+    // Use the same normalization logic as ShowEntity.generateShowId()
     val normalizedDate = if (concertDate.contains("T")) {
         concertDate.substringBefore("T")
     } else {
         concertDate
     }
-    val showId = "${normalizedDate}_${concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+    val showId = ShowEntity.generateShowId(normalizedDate, concertVenue)
     return RecordingEntity.fromRecording(this, showId)
 }

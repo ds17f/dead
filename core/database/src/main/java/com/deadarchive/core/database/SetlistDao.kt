@@ -93,8 +93,8 @@ interface SetlistDao {
     
     @Query("""
         SELECT * FROM setlists 
-        WHERE source = 'gdsets' AND hasSongs = 1 
-        ORDER BY totalSongs DESC, date DESC
+        WHERE hasSongs = 1 
+        ORDER BY date DESC
     """)
     suspend fun getBestQualitySetlists(): List<SetlistEntity>
     

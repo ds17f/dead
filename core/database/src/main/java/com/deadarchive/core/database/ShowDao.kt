@@ -61,6 +61,7 @@ interface ShowDao {
         WHERE venue LIKE '%' || :query || '%' 
            OR location LIKE '%' || :query || '%'
            OR setlistRaw LIKE '%' || :query || '%'
+           OR songNames LIKE '%' || :query || '%'
            OR date LIKE '%' || :query || '%'
            OR year = :query
         ORDER BY date DESC

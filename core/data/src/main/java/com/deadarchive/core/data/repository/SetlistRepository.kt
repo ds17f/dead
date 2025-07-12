@@ -79,6 +79,19 @@ class SetlistRepository @Inject constructor(
     }
     
     /**
+     * Force re-resolve song IDs to names in all setlists.
+     */
+    suspend fun forceResolveSongIds() {
+        try {
+            Log.i(TAG, "Force resolving song IDs in setlists...")
+            resolveSongIdsInSetlists()
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to force resolve song IDs: ${e.message}", e)
+            throw e
+        }
+    }
+    
+    /**
      * Load and parse setlist data from the consolidated data assets file.
      */
     private suspend fun loadSetlistDataFromAssets() {
@@ -305,9 +318,68 @@ class SetlistRepository @Inject constructor(
         setlistDao.replaceAllSetlists(setlists)
         Log.i(TAG, "Successfully loaded ${setlists.size} setlists")
         
+        // Post-process to resolve song IDs to actual song names
+        Log.i(TAG, "Resolving song IDs to song names...")
+        resolveSongIdsInSetlists()
+        
         // Debug: Log some sample dates
         if (setlists.isNotEmpty()) {
             Log.d(TAG, "Sample setlist dates: ${setlists.take(5).map { "${it.showId}: ${it.date}" }}")
+        }
+    }
+    
+    /**
+     * Post-process setlists to resolve song IDs to actual song names.
+     */
+    private suspend fun resolveSongIdsInSetlists() {
+        try {
+            Log.i(TAG, "Starting song ID resolution process...")
+            
+            // Get all setlists from database
+            val setlistEntities = setlistDao.getSetlistsWithSongs()
+            Log.i(TAG, "Found ${setlistEntities.size} setlists with songs to process")
+            
+            // Get all songs from database for lookup
+            val allSongs = songDao.getAllSongs()
+            val songIdToNameMap = allSongs.associate { it.songId to it.name }
+            Log.i(TAG, "Created lookup map with ${songIdToNameMap.size} songs")
+            
+            var resolvedCount = 0
+            var unresolvedCount = 0
+            val updatedSetlists = mutableListOf<SetlistEntity>()
+            
+            setlistEntities.forEach { setlistEntity ->
+                val setlist = setlistEntity.toSetlist()
+                
+                // Resolve song IDs to names
+                val updatedSongs = setlist.songs.map { song ->
+                    val resolvedName = if (song.songId != null && songIdToNameMap.containsKey(song.songId)) {
+                        val actualName = songIdToNameMap[song.songId]!!
+                        resolvedCount++
+                        actualName
+                    } else {
+                        // Keep the original name if no ID mapping found
+                        unresolvedCount++
+                        song.songName
+                    }
+                    
+                    song.copy(songName = resolvedName)
+                }
+                
+                // Update the setlist with resolved song names
+                val updatedSetlist = setlist.copy(songs = updatedSongs)
+                updatedSetlists.add(SetlistEntity.fromSetlist(updatedSetlist))
+            }
+            
+            // Batch update all setlists
+            if (updatedSetlists.isNotEmpty()) {
+                setlistDao.insertSetlists(updatedSetlists)
+                Log.i(TAG, "Updated ${updatedSetlists.size} setlists with resolved song names")
+                Log.i(TAG, "Resolved $resolvedCount song IDs, $unresolvedCount unresolved")
+            }
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to resolve song IDs in setlists: ${e.message}", e)
         }
     }
     
@@ -334,10 +406,9 @@ class SetlistRepository @Inject constructor(
         
         for ((setName, songIds) in sets) {
             for (songId in songIds) {
-                // We'll get the song name from the songs database later, for now use the ID
                 songs.add(
                     com.deadarchive.core.model.SetlistSong(
-                        songName = songId, // Temporary - will be resolved later
+                        songName = songId, // Will be resolved to actual name after songs are loaded
                         songId = songId,
                         setName = setName,
                         position = position++,

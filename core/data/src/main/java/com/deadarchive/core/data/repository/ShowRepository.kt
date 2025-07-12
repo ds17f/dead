@@ -16,6 +16,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.catch
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -67,41 +68,40 @@ class ShowRepositoryImpl @Inject constructor(
     
     override fun getAllShows(): Flow<List<Show>> = flow {
         android.util.Log.d("ShowRepository", "📋 getAllShows: Starting to retrieve all shows from database")
-        try {
-            // Get all shows from database with their recordings
-            val showEntities = showDao.getAllShows()
-            android.util.Log.d("ShowRepository", "📋 Found ${showEntities.size} show entities in database")
-            
-            val shows = showEntities.map { showEntity ->
-                // Get recordings for this show
-                val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
-                    val recording = it.toRecording()
-                    // Add recording rating
-                    val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
-                    recording.copy(
-                        rating = recordingRating?.rating,
-                        ratingConfidence = recordingRating?.confidence
-                    )
-                }
-                android.util.Log.d("ShowRepository", "📋 Show '${showEntity.showId}' has ${recordings.size} recordings from database")
-                
-                // Get show rating
-                val showRating = ratingsRepository.getShowRatingByDateVenue(
-                    showEntity.date, showEntity.venue ?: ""
-                )
-                
-                showEntity.toShow(recordings).copy(
-                    rating = showRating?.rating,
-                    ratingConfidence = showRating?.confidence
+        
+        // Get all shows from database with their recordings
+        val showEntities = showDao.getAllShows()
+        android.util.Log.d("ShowRepository", "📋 Found ${showEntities.size} show entities in database")
+        
+        val shows = showEntities.map { showEntity ->
+            // Get recordings for this show
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                val recording = it.toRecording()
+                // Add recording rating
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    ratingConfidence = recordingRating?.confidence
                 )
             }
+            android.util.Log.d("ShowRepository", "📋 Show '${showEntity.showId}' has ${recordings.size} recordings from database")
             
-            android.util.Log.d("ShowRepository", "📋 Successfully retrieved ${shows.size} shows from database")
-            emit(shows)
-        } catch (e: Exception) {
-            android.util.Log.e("ShowRepository", "📋 ❌ Failed to get shows from database: ${e.message}", e)
-            emit(emptyList())
+            // Get show rating
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
         }
+        
+        android.util.Log.d("ShowRepository", "📋 Successfully retrieved ${shows.size} shows from database")
+        emit(shows)
+    }.catch { e ->
+        android.util.Log.e("ShowRepository", "📋 ❌ Failed to get shows from database: ${e.message}", e)
+        emit(emptyList())
     }
     
     override suspend fun getRecordingsByShowId(showId: String): List<Recording> {
@@ -123,50 +123,14 @@ class ShowRepositoryImpl @Inject constructor(
     
     override fun searchShows(query: String): Flow<List<Show>> = flow {
         android.util.Log.d("ShowRepository", "🔍 searchShows called with query: '$query'")
-        try {
-            // ONLY search shows from database - shows should already exist from initial setup
-            val cachedShows = showDao.searchShows(query)
-            android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from database search")
-            
-            // Use actual Show entities with their recordings
-            val databaseShows = cachedShows.map { showEntity ->
-                val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
-                    val recording = it.toRecording()
-                    // Add recording rating
-                    val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
-                    recording.copy(
-                        rating = recordingRating?.rating,
-                        ratingConfidence = recordingRating?.confidence
-                    )
-                }
-                android.util.Log.d("ShowRepository", "🔍 Database show '${showEntity.showId}' has ${recordings.size} recordings")
-                
-                // Get show rating
-                val showRating = ratingsRepository.getShowRatingByDateVenue(
-                    showEntity.date, showEntity.venue ?: ""
-                )
-                
-                showEntity.toShow(recordings).copy(
-                    rating = showRating?.rating,
-                    ratingConfidence = showRating?.confidence
-                )
-            }
-            
-            android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} shows from database")
-            databaseShows.forEach { show ->
-                android.util.Log.d("ShowRepository", "🔍   Show: '${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings")
-            }
-            emit(databaseShows.sortedByDescending { it.date })
-        } catch (e: Exception) {
-            android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchShows: ${e.message}", e)
-            emit(emptyList())
-        }
-    }
-    
-    override fun searchRecordings(query: String): Flow<List<Recording>> = flow {
-        try {
-            // ONLY search locally cached recordings - no API fallback
-            val cachedRecordings = recordingDao.searchRecordings(query).map { 
+        
+        // ONLY search shows from database - shows should already exist from initial setup
+        val cachedShows = showDao.searchShows(query)
+        android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from database search")
+        
+        // Use actual Show entities with their recordings
+        val databaseShows = cachedShows.map { showEntity ->
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
                 val recording = it.toRecording()
                 // Add recording rating
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
@@ -175,12 +139,45 @@ class ShowRepositoryImpl @Inject constructor(
                     ratingConfidence = recordingRating?.confidence
                 )
             }
-            android.util.Log.d("ShowRepository", "🔍 searchRecordings found ${cachedRecordings.size} recordings from database")
-            emit(cachedRecordings)
-        } catch (e: Exception) {
-            android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchRecordings: ${e.message}", e)
-            emit(emptyList())
+            android.util.Log.d("ShowRepository", "🔍 Database show '${showEntity.showId}' has ${recordings.size} recordings")
+            
+            // Get show rating
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
         }
+        
+        android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} shows from database")
+        databaseShows.forEach { show ->
+            android.util.Log.d("ShowRepository", "🔍   Show: '${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings")
+        }
+        emit(databaseShows.sortedByDescending { it.date })
+    }.catch { e ->
+        android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchShows: ${e.message}", e)
+        emit(emptyList())
+    }
+    
+    override fun searchRecordings(query: String): Flow<List<Recording>> = flow {
+        // ONLY search locally cached recordings - no API fallback
+        val cachedRecordings = recordingDao.searchRecordings(query).map { 
+            val recording = it.toRecording()
+            // Add recording rating
+            val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+            recording.copy(
+                rating = recordingRating?.rating,
+                ratingConfidence = recordingRating?.confidence
+            )
+        }
+        android.util.Log.d("ShowRepository", "🔍 searchRecordings found ${cachedRecordings.size} recordings from database")
+        emit(cachedRecordings)
+    }.catch { e ->
+        android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchRecordings: ${e.message}", e)
+        emit(emptyList())
     }
     
     override suspend fun getRecordingById(id: String): Recording? {
@@ -797,5 +794,66 @@ class ShowRepositoryImpl @Inject constructor(
         val audioExtensions = setOf("mp3", "flac", "ogg", "m4a", "wav", "aac", "wma")
         val extension = filename.lowercase().substringAfterLast(".", "")
         return extension in audioExtensions
+    }
+    
+    /**
+     * Populate songNames field for existing shows from setlist data.
+     * This denormalizes song names for efficient search.
+     */
+    suspend fun populateSongNamesFromSetlists(setlistDao: com.deadarchive.core.database.SetlistDao) {
+        try {
+            android.util.Log.i("ShowRepository", "🎵 Starting song names population from setlist data...")
+            
+            // Get all shows
+            val shows = showDao.getAllShows()
+            android.util.Log.i("ShowRepository", "🎵 Found ${shows.size} shows to process")
+            
+            // Get all setlists with songs
+            val setlists = setlistDao.getSetlistsWithSongs()
+            android.util.Log.i("ShowRepository", "🎵 Found ${setlists.size} setlists with songs")
+            
+            // Create lookup map by date for quick matching
+            val setlistsByDate = setlists.groupBy { it.date }
+            
+            var updatedCount = 0
+            val updatedShows = mutableListOf<ShowEntity>()
+            
+            shows.forEach { show ->
+                // Try to find matching setlist for this show's date
+                val matchingSetlists = setlistsByDate[show.date]
+                
+                if (matchingSetlists != null && matchingSetlists.isNotEmpty()) {
+                    // Use the best quality setlist (prefer GDSets)
+                    val bestSetlist = matchingSetlists
+                        .sortedByDescending { if (it.source == "gdsets") 1 else 0 }
+                        .first()
+                        .toSetlist()
+                    
+                    if (bestSetlist.songs.isNotEmpty()) {
+                        // Extract song names
+                        val songNames = bestSetlist.songs.map { it.songName }.joinToString(", ")
+                        
+                        // Create updated show entity
+                        val updatedShow = show.copy(songNames = songNames)
+                        updatedShows.add(updatedShow)
+                        updatedCount++
+                        
+                        android.util.Log.d("ShowRepository", "🎵 Updated ${show.date}: ${bestSetlist.songs.size} songs")
+                    }
+                }
+            }
+            
+            // Batch update the shows
+            if (updatedShows.isNotEmpty()) {
+                showDao.insertShows(updatedShows)
+                android.util.Log.i("ShowRepository", "🎵 ✅ Successfully updated ${updatedCount} shows with song names")
+            } else {
+                android.util.Log.i("ShowRepository", "🎵 No shows needed song name updates")
+            }
+            
+        } catch (e: Exception) {
+            android.util.Log.e("ShowRepository", "🎵 ❌ Failed to populate song names: ${e.message}", e)
+            throw e
+        }
     }
 }

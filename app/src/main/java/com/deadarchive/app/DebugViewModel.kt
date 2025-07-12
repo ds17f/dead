@@ -286,6 +286,237 @@ class DebugViewModel @Inject constructor(
         }
     }
     
+    fun debugShowRecordingRelationships() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val result = StringBuilder()
+                result.appendLine("=== SHOW-RECORDING RELATIONSHIPS DEBUG ===")
+                result.appendLine()
+                
+                // Get some shows that should have recordings
+                val shows = concertRepository.getAllShows().first().take(10)
+                result.appendLine("Checking first 10 shows for recording relationships:")
+                result.appendLine()
+                
+                shows.forEach { show ->
+                    result.appendLine("Show: ${show.date} at ${show.venue}")
+                    result.appendLine("  ShowId: ${show.showId}")
+                    result.appendLine("  Recordings found: ${show.recordings.size}")
+                    
+                    if (show.recordings.isEmpty()) {
+                        result.appendLine("  ❌ NO RECORDINGS - checking database directly...")
+                        
+                        // Try to find recordings that should match this show
+                        val allRecordings = concertRepository.getAllCachedRecordings().first()
+                        val potentialMatches = allRecordings.filter { recording ->
+                            val normalizedDate = if (recording.concertDate.contains("T")) {
+                                recording.concertDate.substringBefore("T")
+                            } else {
+                                recording.concertDate
+                            }
+                            normalizedDate == show.date
+                        }
+                        
+                        result.appendLine("  Potential recording matches by date: ${potentialMatches.size}")
+                        potentialMatches.take(3).forEach { recording ->
+                            result.appendLine("    - ${recording.identifier}: venue='${recording.concertVenue}' vs show venue='${show.venue}'")
+                        }
+                    } else {
+                        result.appendLine("  ✅ Has recordings:")
+                        show.recordings.take(3).forEach { recording ->
+                            result.appendLine("    - ${recording.identifier}")
+                        }
+                    }
+                    result.appendLine()
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error debugging relationships: ${e.message}\\n\\n${e.stackTraceToString()}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun debugSongNamePopulation() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val result = StringBuilder()
+                result.appendLine("=== SONG NAME POPULATION DEBUG ===")
+                result.appendLine()
+                
+                // Check show entities directly from database
+                val shows = concertRepository.getAllShows().first().take(20)
+                result.appendLine("Checking first 20 shows for song name population:")
+                result.appendLine()
+                
+                var showsWithSongs = 0
+                var showsWithoutSongs = 0
+                
+                shows.forEach { show ->
+                    // Check if this show has song names populated
+                    val showEntity = concertRepository.getShowEntityById(show.showId)
+                    val hasSongNames = !showEntity?.songNames.isNullOrBlank()
+                    
+                    if (hasSongNames) {
+                        showsWithSongs++
+                        result.appendLine("✅ ${show.date} at ${show.venue}")
+                        result.appendLine("   Songs: ${showEntity?.songNames?.take(100)}...")
+                    } else {
+                        showsWithoutSongs++
+                        result.appendLine("❌ ${show.date} at ${show.venue} - NO SONG NAMES")
+                        
+                        // Check if there are setlists for this date
+                        val matchingSetlists = setlistRepository.searchSetlists(show.date)
+                        result.appendLine("   Setlists for date: ${matchingSetlists.size}")
+                        if (matchingSetlists.isNotEmpty()) {
+                            val setlist = matchingSetlists.first()
+                            result.appendLine("   Available setlist source: ${setlist.source}")
+                            result.appendLine("   Songs in setlist: ${setlist.totalSongs}")
+                        }
+                    }
+                    result.appendLine()
+                }
+                
+                result.appendLine("SUMMARY:")
+                result.appendLine("Shows with song names: $showsWithSongs")
+                result.appendLine("Shows without song names: $showsWithoutSongs")
+                result.appendLine()
+                
+                // Test a specific song search
+                result.appendLine("=== TESTING SONG SEARCH ===")
+                val searchResults = concertRepository.searchShows("Fire On The Mountain").first()
+                result.appendLine("Search for 'Fire On The Mountain': ${searchResults.size} results")
+                searchResults.take(3).forEach { show ->
+                    val showEntity = concertRepository.getShowEntityById(show.showId)
+                    result.appendLine("  - ${show.date}: has songs = ${!showEntity?.songNames.isNullOrBlank()}")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error debugging song names: ${e.message}\\n\\n${e.stackTraceToString()}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun debugSongNamePopulationDetailed() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                val result = StringBuilder()
+                result.appendLine("=== DETAILED SETLIST LOADING DEBUG ===")
+                result.appendLine()
+                
+                // Step 1: Check database state
+                val stats = setlistRepository.getSetlistStatistics()
+                result.appendLine("STEP 1: Current database state")
+                result.appendLine("Setlists in DB: ${stats["setlist_count"]}")
+                result.appendLine("Songs in DB: ${stats["song_count"]}")
+                result.appendLine("Venues in DB: ${stats["venue_count"]}")
+                result.appendLine()
+                
+                // Step 2: Force refresh setlist data to trace loading
+                result.appendLine("STEP 2: Force refreshing setlist data...")
+                result.appendLine("This will trace the complete loading process...")
+                result.appendLine()
+                
+                try {
+                    setlistRepository.forceRefreshSetlistData()
+                    result.appendLine("✅ Force refresh completed successfully")
+                } catch (e: Exception) {
+                    result.appendLine("❌ Force refresh failed: ${e.message}")
+                    result.appendLine("Stack trace: ${e.stackTraceToString()}")
+                }
+                result.appendLine()
+                
+                // Step 3: Check database state after refresh
+                val newStats = setlistRepository.getSetlistStatistics()
+                result.appendLine("STEP 3: Database state after refresh")
+                result.appendLine("Setlists in DB: ${newStats["setlist_count"]}")
+                result.appendLine("Songs in DB: ${newStats["song_count"]}")
+                result.appendLine("Venues in DB: ${newStats["venue_count"]}")
+                result.appendLine()
+                
+                // Step 4: Test the specific query that's failing
+                result.appendLine("STEP 4: Testing getBestQualitySetlists() query")
+                val bestSetlists = setlistRepository.getBestQualitySetlists()
+                result.appendLine("Best quality setlists found: ${bestSetlists.size}")
+                
+                if (bestSetlists.isNotEmpty()) {
+                    result.appendLine("Sample results:")
+                    bestSetlists.take(5).forEach { setlist ->
+                        result.appendLine("  ${setlist.date} - ${setlist.displayVenue} (${setlist.totalSongs} songs, source: ${setlist.source})")
+                    }
+                } else {
+                    result.appendLine("❌ NO RESULTS from getBestQualitySetlists() - this is the bug!")
+                }
+                result.appendLine()
+                
+                // Step 5: Check for 1995 data specifically
+                result.appendLine("STEP 5: Searching for 1995 setlists")
+                val setlists1995 = setlistRepository.searchSetlists("1995")
+                result.appendLine("1995 setlists found: ${setlists1995.size}")
+                
+                if (setlists1995.isNotEmpty()) {
+                    result.appendLine("Sample 1995 setlists:")
+                    setlists1995.take(5).forEach { setlist ->
+                        result.appendLine("  ${setlist.date} - ${setlist.displayVenue} (${setlist.totalSongs} songs)")
+                    }
+                    
+                    // Check specifically for 1995-07-09
+                    val july9 = setlists1995.find { it.date == "1995-07-09" }
+                    if (july9 != null) {
+                        result.appendLine()
+                        result.appendLine("✅ Found 1995-07-09 setlist!")
+                        result.appendLine("  Venue: ${july9.displayVenue}")
+                        result.appendLine("  Songs: ${july9.totalSongs}")
+                        result.appendLine("  Source: ${july9.source}")
+                        result.appendLine("  Has songs: ${july9.hasSongs}")
+                    } else {
+                        result.appendLine("❌ 1995-07-09 not found in search results")
+                    }
+                } else {
+                    result.appendLine("❌ NO 1995 setlists found - data loading problem!")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error in detailed debug: ${e.message}\\n\\n${e.stackTraceToString()}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
     /**
      * Test downloading a sample recording with detailed debugging
      */
@@ -1066,6 +1297,87 @@ class DebugViewModel @Inject constructor(
             }
         }
     }
+    
+    fun resolveSongIds() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                _uiState.value = _uiState.value.copy(
+                    setlistTestStatus = "Resolving song IDs to song names in all setlists..."
+                )
+                
+                setlistRepository.forceResolveSongIds()
+                
+                // Test a search to see if it works now
+                val testResults = setlistRepository.searchSetlistsBySong("Fire On The Mountain")
+                
+                val result = StringBuilder()
+                result.appendLine("✅ Song ID resolution completed successfully!")
+                result.appendLine()
+                result.appendLine("=== TEST SEARCH: 'Fire On The Mountain' ===")
+                result.appendLine("Results found: ${testResults.size}")
+                result.appendLine()
+                
+                if (testResults.isNotEmpty()) {
+                    result.appendLine("🎉 SUCCESS! Search now works:")
+                    testResults.take(5).forEach { setlist ->
+                        result.appendLine("• ${setlist.date} at ${setlist.displayVenue}")
+                        val matchingSongs = setlist.songs.filter { 
+                            it.songName.contains("Fire On The Mountain", ignoreCase = true) 
+                        }
+                        matchingSongs.forEach { song ->
+                            result.appendLine("  🎵 ${song.songName} [${song.setName ?: "unknown"}]")
+                        }
+                    }
+                } else {
+                    result.appendLine("❌ Still no results - may need data refresh first")
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = result.toString(),
+                    setlistTestSuccess = testResults.isNotEmpty()
+                )
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error resolving song IDs:\n${e.message}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
+    fun populateShowSongNames() {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoadingSetlistData = true)
+            
+            try {
+                _uiState.value = _uiState.value.copy(
+                    setlistTestStatus = "✅ Song names are now automatically populated during database rebuild!\n\n" +
+                            "Database rebuild process now includes:\n" +
+                            "1. Create shows from recordings\n" +
+                            "2. Automatically populate song names from setlists\n" +
+                            "3. Enable song-based search in main browse\n\n" +
+                            "To test: Use 'Wipe Database' then search for song names in main browse interface."
+                )
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestSuccess = true
+                )
+                
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoadingSetlistData = false,
+                    setlistTestStatus = "Error: ${e.message}",
+                    setlistTestSuccess = false
+                )
+            }
+        }
+    }
+    
     
     fun searchSetlistsByDate(dateQuery: String) {
         viewModelScope.launch {

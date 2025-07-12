@@ -351,11 +351,60 @@ fun DebugScreen(
                     Text("Songs: ${uiState.songCount}")
                     Text("Venues: ${uiState.venueCount}")
                     
-                    Button(
-                        onClick = { viewModel.debugDatabaseState() },
-                        modifier = Modifier.fillMaxWidth()
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
-                        Text("Debug Database State")
+                        Button(
+                            onClick = { viewModel.debugDatabaseState() },
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Debug Database")
+                        }
+                        
+                        Button(
+                            onClick = { 
+                                scope.launch {
+                                    viewModel.debugShowRecordingRelationships()
+                                }
+                            },
+                            modifier = Modifier.weight(1f),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = MaterialTheme.colorScheme.secondary
+                            )
+                        ) {
+                            Text("Debug Relations")
+                        }
+                    }
+                    
+                    // Song name debug button
+                    Button(
+                        onClick = { 
+                            scope.launch {
+                                viewModel.debugSongNamePopulation()
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.tertiary
+                        )
+                    ) {
+                        Text("🎵 Debug Song Names")
+                    }
+                    
+                    // Detailed song name debug button
+                    Button(
+                        onClick = { 
+                            scope.launch {
+                                viewModel.debugSongNamePopulationDetailed()
+                            }
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.secondary
+                        )
+                    ) {
+                        Text("🔍 Detailed Song Debug")
                     }
                     
                     if (uiState.databaseDebugInfo.isNotEmpty()) {
@@ -459,6 +508,39 @@ fun DebugScreen(
                             Text("Refresh Data")
                         }
                     }
+                    
+                    // Song ID Resolution button
+                    Button(
+                        onClick = {
+                            scope.launch {
+                                viewModel.resolveSongIds()
+                            }
+                        },
+                        enabled = !uiState.isLoadingSetlistData,
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.secondary
+                        )
+                    ) {
+                        Text("🔧 Resolve Song IDs")
+                    }
+                    
+                    // Populate Show Song Names button
+                    Button(
+                        onClick = {
+                            scope.launch {
+                                viewModel.populateShowSongNames()
+                            }
+                        },
+                        enabled = !uiState.isLoadingSetlistData,
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = MaterialTheme.colorScheme.tertiary
+                        )
+                    ) {
+                        Text("🎵 Fix Main Browse Search")
+                    }
+                    
                     
                     // Search functionality
                     var searchQuery by remember { mutableStateOf("1977") }
