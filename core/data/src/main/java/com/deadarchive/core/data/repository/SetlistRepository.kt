@@ -107,6 +107,7 @@ class SetlistRepository @Inject constructor(
      * Extract data files from the consolidated data zip.
      */
     private suspend fun extractDataFromAssets(): Map<String, String> {
+        Log.i(TAG, "🗜️ Extracting data from $DATA_ZIP_FILE...")
         val dataFiles = mutableMapOf<String, String>()
         
         context.assets.open(DATA_ZIP_FILE).use { zipStream ->
@@ -117,7 +118,7 @@ class SetlistRepository @Inject constructor(
                         SETLISTS_FILE, SONGS_FILE, VENUES_FILE -> {
                             val content = zip.readBytes().toString(Charsets.UTF_8)
                             dataFiles[entry.name] = content
-                            Log.d(TAG, "Extracted ${entry.name}: ${content.length} characters")
+                            Log.d(TAG, "Extracted ${entry.name}: ${content.length / 1024}KB")
                         }
                     }
                     entry = zip.nextEntry
@@ -125,6 +126,8 @@ class SetlistRepository @Inject constructor(
             }
         }
         
+        val totalSize = dataFiles.values.sumOf { it.length }
+        Log.i(TAG, "✅ Extracted ${dataFiles.size} files (${totalSize / 1024}KB total) from ZIP")
         return dataFiles
     }
     
@@ -134,25 +137,40 @@ class SetlistRepository @Inject constructor(
     private suspend fun parseAndSaveSetlistData(dataFiles: Map<String, String>) {
         Log.i(TAG, "Parsing setlist data files...")
         
-        // Parse and save venues first (referenced by setlists)
-        dataFiles[VENUES_FILE]?.let { venuesJson ->
-            Log.i(TAG, "Processing venues data...")
-            parseAndSaveVenues(venuesJson)
+        try {
+            // Parse and save venues first (referenced by setlists)
+            dataFiles[VENUES_FILE]?.let { venuesJson ->
+                Log.i(TAG, "Processing venues data...")
+                parseAndSaveVenues(venuesJson)
+            }
+            
+            // Parse and save songs (referenced by setlists)
+            dataFiles[SONGS_FILE]?.let { songsJson ->
+                Log.i(TAG, "Processing songs data...")
+                parseAndSaveSongs(songsJson)
+            }
+            
+            // Parse and save setlists
+            dataFiles[SETLISTS_FILE]?.let { setlistsJson ->
+                Log.i(TAG, "Processing setlists data...")
+                parseAndSaveSetlists(setlistsJson)
+            }
+            
+            Log.i(TAG, "Successfully loaded setlist data from assets")
+            
+        } finally {
+            // Clean up in-memory JSON data to free memory
+            if (dataFiles.isNotEmpty()) {
+                val totalSize = dataFiles.values.sumOf { it.length }
+                Log.i(TAG, "🧹 Cleaning up JSON data from memory (${totalSize / 1024}KB)")
+                // Note: dataFiles is passed as parameter, so original map will be eligible for GC
+                // after this method returns. Explicitly clearing here for immediate cleanup.
+                (dataFiles as? MutableMap)?.clear()
+                
+                // Force comprehensive memory cleanup
+                forceMemoryCleanup()
+            }
         }
-        
-        // Parse and save songs (referenced by setlists)
-        dataFiles[SONGS_FILE]?.let { songsJson ->
-            Log.i(TAG, "Processing songs data...")
-            parseAndSaveSongs(songsJson)
-        }
-        
-        // Parse and save setlists
-        dataFiles[SETLISTS_FILE]?.let { setlistsJson ->
-            Log.i(TAG, "Processing setlists data...")
-            parseAndSaveSetlists(setlistsJson)
-        }
-        
-        Log.i(TAG, "Successfully loaded setlist data from assets")
     }
     
     /**
@@ -1053,6 +1071,26 @@ class SetlistRepository @Inject constructor(
         } catch (e: Exception) {
             Log.e(TAG, "Failed to cleanup old setlist data: ${e.message}")
         }
+    }
+    
+    /**
+     * Force memory cleanup and log memory statistics.
+     * Useful after processing large JSON datasets.
+     */
+    fun forceMemoryCleanup() {
+        val runtime = Runtime.getRuntime()
+        val usedMemoryBefore = (runtime.totalMemory() - runtime.freeMemory()) / 1024 / 1024
+        
+        Log.i(TAG, "🧹 Memory before cleanup: ${usedMemoryBefore}MB")
+        System.gc()
+        
+        // Wait a moment for GC to complete
+        Thread.sleep(100)
+        
+        val usedMemoryAfter = (runtime.totalMemory() - runtime.freeMemory()) / 1024 / 1024
+        val freed = usedMemoryBefore - usedMemoryAfter
+        
+        Log.i(TAG, "✅ Memory after cleanup: ${usedMemoryAfter}MB (freed: ${freed}MB)")
     }
 }
 

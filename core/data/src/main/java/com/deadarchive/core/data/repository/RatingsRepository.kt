@@ -91,6 +91,8 @@ class RatingsRepository @Inject constructor(
      * Extract ratings data from assets, from consolidated data ZIP.
      */
     private suspend fun extractRatingsFromAssets(): String {
+        Log.i(TAG, "🗜️ Extracting ratings from $DATA_ZIP_FILE...")
+        
         return try {
             // Load from consolidated data ZIP file
             context.assets.open(DATA_ZIP_FILE).use { zipStream ->
@@ -98,7 +100,9 @@ class RatingsRepository @Inject constructor(
                     var entry = zip.nextEntry
                     while (entry != null) {
                         if (entry.name == RATINGS_ASSET_FILE) {
-                            return@use zip.readBytes().toString(Charsets.UTF_8)
+                            val content = zip.readBytes().toString(Charsets.UTF_8)
+                            Log.i(TAG, "✅ Extracted $RATINGS_ASSET_FILE: ${content.length / 1024}KB")
+                            return@use content
                         }
                         entry = zip.nextEntry
                     }
@@ -116,29 +120,31 @@ class RatingsRepository @Inject constructor(
      */
     private suspend fun parseAndSaveRatings(ratingsJson: String) {
         Log.i(TAG, "Parsing ratings JSON data...")
-        val ratingsData = JSONObject(ratingsJson)
         
-        // Parse recording ratings
-        Log.i(TAG, "Processing recording ratings...")
-        val recordingRatings = mutableListOf<RecordingRatingEntity>()
-        if (ratingsData.has("recording_ratings")) {
-            val recordingRatingsObj = ratingsData.getJSONObject("recording_ratings")
-            val keys = recordingRatingsObj.keys()
-            var count = 0
-            while (keys.hasNext()) {
-                val identifier = keys.next()
-                val ratingObj = recordingRatingsObj.getJSONObject(identifier)
-                recordingRatings.add(
-                    RecordingRatingEntity(
-                        identifier = identifier,
-                        rating = ratingObj.optDouble("rating", 0.0).toFloat(),
-                        reviewCount = ratingObj.optInt("review_count", 0),
-                        sourceType = ratingObj.optString("source_type", "UNKNOWN"),
-                        confidence = ratingObj.optDouble("confidence", 0.0).toFloat()
+        try {
+            val ratingsData = JSONObject(ratingsJson)
+            
+            // Parse recording ratings
+            Log.i(TAG, "Processing recording ratings...")
+            val recordingRatings = mutableListOf<RecordingRatingEntity>()
+            if (ratingsData.has("recording_ratings")) {
+                val recordingRatingsObj = ratingsData.getJSONObject("recording_ratings")
+                val keys = recordingRatingsObj.keys()
+                var count = 0
+                while (keys.hasNext()) {
+                    val identifier = keys.next()
+                    val ratingObj = recordingRatingsObj.getJSONObject(identifier)
+                    recordingRatings.add(
+                        RecordingRatingEntity(
+                            identifier = identifier,
+                            rating = ratingObj.optDouble("rating", 0.0).toFloat(),
+                            reviewCount = ratingObj.optInt("review_count", 0),
+                            sourceType = ratingObj.optString("source_type", "UNKNOWN"),
+                            confidence = ratingObj.optDouble("confidence", 0.0).toFloat()
+                        )
                     )
-                )
-                count++
-                if (count % 100 == 0) {
+                    count++
+                    if (count % 100 == 0) {
                     Log.i(TAG, "Processed $count recording ratings...")
                 }
             }
@@ -170,13 +176,20 @@ class RatingsRepository @Inject constructor(
                     Log.i(TAG, "Processed $count show ratings...")
                 }
             }
+            
+            // Insert into database
+            Log.i(TAG, "Clearing existing ratings and inserting new data...")
+            ratingDao.replaceAllRatings(recordingRatings, showRatings)
+            
+            Log.i(TAG, "Successfully loaded ${recordingRatings.size} recording ratings and ${showRatings.size} show ratings from assets")
+            
+        } finally {
+            // Clean up in-memory JSON data to free memory
+            Log.i(TAG, "🧹 Cleaning up ratings JSON data from memory (~${ratingsJson.length / 1024}KB)")
+            
+            // Force comprehensive memory cleanup
+            forceMemoryCleanup()
         }
-        
-        // Insert into database
-        Log.i(TAG, "Clearing existing ratings and inserting new data...")
-        ratingDao.replaceAllRatings(recordingRatings, showRatings)
-        
-        Log.i(TAG, "Successfully loaded ${recordingRatings.size} recording ratings and ${showRatings.size} show ratings from assets")
     }
     
     /**
@@ -376,5 +389,25 @@ class RatingsRepository @Inject constructor(
             Log.e(TAG, "Failed to get rating statistics: ${e.message}")
             emptyMap()
         }
+    }
+    
+    /**
+     * Force memory cleanup and log memory statistics.
+     * Useful after processing large JSON datasets.
+     */
+    fun forceMemoryCleanup() {
+        val runtime = Runtime.getRuntime()
+        val usedMemoryBefore = (runtime.totalMemory() - runtime.freeMemory()) / 1024 / 1024
+        
+        Log.i(TAG, "🧹 Memory before cleanup: ${usedMemoryBefore}MB")
+        System.gc()
+        
+        // Wait a moment for GC to complete
+        Thread.sleep(100)
+        
+        val usedMemoryAfter = (runtime.totalMemory() - runtime.freeMemory()) / 1024 / 1024
+        val freed = usedMemoryBefore - usedMemoryAfter
+        
+        Log.i(TAG, "✅ Memory after cleanup: ${usedMemoryAfter}MB (freed: ${freed}MB)")
     }
 }
