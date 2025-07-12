@@ -55,17 +55,17 @@ class LibraryViewModel @Inject constructor(
                 // Use combine to properly handle both flows with exception safety
                 combine(
                     libraryRepository.getAllLibraryItems(),
-                    showRepository.getAllShows()
-                ) { libraryItems, allShows ->
+                    showRepository.getLibraryShows()
+                ) { libraryItems, libraryShows ->
                     println("DEBUG LibraryViewModel: Found ${libraryItems.size} library items")
                     libraryItems.forEach { item ->
                         println("DEBUG LibraryViewModel: Library item - showId: ${item.showId}, type: ${item.type}")
                     }
-                    println("DEBUG LibraryViewModel: Found ${allShows.size} total shows")
+                    println("DEBUG LibraryViewModel: Found ${libraryShows.size} library shows")
                     
                     // Find matching shows with recordings - sort by show date for consistency
-                    val libraryShows = libraryItems.map { libraryItem ->
-                        val matchingShow = allShows.find { show -> show.showId == libraryItem.showId }
+                    val matchedLibraryShows = libraryItems.map { libraryItem ->
+                        val matchingShow = libraryShows.find { show -> show.showId == libraryItem.showId }
                         
                         if (matchingShow != null) {
                             // Use the actual show data with recordings
@@ -79,10 +79,10 @@ class LibraryViewModel @Inject constructor(
                             matchingShow.copy(isInLibrary = true)
                         } else {
                             // This should never happen now - shows should always have ShowEntity records
-                            println("ERROR LibraryViewModel: Show ${libraryItem.showId} not found in getAllShows() - this indicates a bug!")
+                            println("ERROR LibraryViewModel: Show ${libraryItem.showId} not found in getLibraryShows() - this indicates a bug!")
                             if (libraryItem.showId.contains("1995-07-09")) {
-                                println("ERROR LibraryViewModel: 1995-07-09 is missing from getAllShows()!")
-                                println("ERROR LibraryViewModel: Available shows: ${allShows.map { it.showId }.filter { it.contains("1995") }}")
+                                println("ERROR LibraryViewModel: 1995-07-09 is missing from getLibraryShows()!")
+                                println("ERROR LibraryViewModel: Available library shows: ${libraryShows.map { it.showId }.filter { it.contains("1995") }}")
                             }
                             val parts = libraryItem.showId.split("_")
                             val date = parts.getOrNull(0) ?: "Unknown Date"
@@ -98,8 +98,8 @@ class LibraryViewModel @Inject constructor(
                             )
                         }
                     }.sortedBy { it.date } // Sort by show date for consistent ordering
-                    println("DEBUG LibraryViewModel: Created ${libraryShows.size} shows for display")
-                    LibraryUiState.Success(libraryItems, libraryShows)
+                    println("DEBUG LibraryViewModel: Created ${matchedLibraryShows.size} shows for display")
+                    LibraryUiState.Success(libraryItems, matchedLibraryShows)
                 }
                 .catch { exception ->
                     println("ERROR LibraryViewModel: ${exception.message}")

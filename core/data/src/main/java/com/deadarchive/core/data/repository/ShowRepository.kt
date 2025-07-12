@@ -24,6 +24,8 @@ interface ShowRepository {
     // Show-based methods
     fun searchShows(query: String): Flow<List<Show>>
     fun getAllShows(): Flow<List<Show>>
+    fun getLibraryShows(): Flow<List<Show>>
+    suspend fun getLibraryShowsList(): List<Show>
     suspend fun getRecordingsByShowId(showId: String): List<Recording>
     
     // Recording-based methods (individual recordings)
@@ -102,6 +104,82 @@ class ShowRepositoryImpl @Inject constructor(
     }.catch { e ->
         android.util.Log.e("ShowRepository", "📋 ❌ Failed to get shows from database: ${e.message}", e)
         emit(emptyList())
+    }
+    
+    override fun getLibraryShows(): Flow<List<Show>> = flow {
+        android.util.Log.d("ShowRepository", "📚 getLibraryShows: Starting to retrieve library shows from database")
+        
+        // Get only library shows from database
+        val libraryShowEntities = showDao.getLibraryShows()
+        android.util.Log.d("ShowRepository", "📚 Found ${libraryShowEntities.size} library show entities in database")
+        
+        val shows = libraryShowEntities.map { showEntity ->
+            // Get recordings for this show
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                val recording = it.toRecording()
+                // Add recording rating
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    ratingConfidence = recordingRating?.confidence
+                )
+            }
+            android.util.Log.d("ShowRepository", "📚 Library show '${showEntity.showId}' has ${recordings.size} recordings from database")
+            
+            // Get show rating
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                ratingConfidence = showRating?.confidence
+            )
+        }
+        
+        android.util.Log.d("ShowRepository", "📚 Successfully retrieved ${shows.size} library shows from database")
+        emit(shows)
+    }.catch { e ->
+        android.util.Log.e("ShowRepository", "📚 ❌ Failed to get library shows from database: ${e.message}", e)
+        emit(emptyList())
+    }
+    
+    override suspend fun getLibraryShowsList(): List<Show> {
+        return try {
+            android.util.Log.d("ShowRepository", "📚 getLibraryShowsList: Starting to retrieve library shows from database")
+            
+            // Get only library shows from database
+            val libraryShowEntities = showDao.getLibraryShows()
+            android.util.Log.d("ShowRepository", "📚 Found ${libraryShowEntities.size} library show entities in database")
+            
+            libraryShowEntities.map { showEntity ->
+                // Get recordings for this show
+                val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                    val recording = it.toRecording()
+                    // Add recording rating
+                    val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                    recording.copy(
+                        rating = recordingRating?.rating,
+                        ratingConfidence = recordingRating?.confidence
+                    )
+                }
+                
+                // Get show rating
+                val showRating = ratingsRepository.getShowRatingByDateVenue(
+                    showEntity.date, showEntity.venue ?: ""
+                )
+                
+                showEntity.toShow(recordings).copy(
+                    rating = showRating?.rating,
+                    ratingConfidence = showRating?.confidence
+                )
+            }.also { shows ->
+                android.util.Log.d("ShowRepository", "📚 Successfully retrieved ${shows.size} library shows from database")
+            }
+        } catch (e: Exception) {
+            android.util.Log.e("ShowRepository", "📚 ❌ Failed to get library shows list from database: ${e.message}", e)
+            emptyList()
+        }
     }
     
     override suspend fun getRecordingsByShowId(showId: String): List<Recording> {
