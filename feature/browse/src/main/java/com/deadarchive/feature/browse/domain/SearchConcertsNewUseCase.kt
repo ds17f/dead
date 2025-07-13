@@ -3,6 +3,7 @@ package com.deadarchive.feature.browse.domain
 import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.model.Show
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 /**
@@ -82,11 +83,18 @@ class SearchShowsUseCase @Inject constructor(
     }
     
     /**
-     * Get popular shows (famous shows)
+     * Get popular shows (top-rated shows using weighted ratings for ranking) 
      */
     fun getPopularShows(): Flow<List<Show>> {
-        android.util.Log.d("SearchShowsUseCase", "🔎 getPopularShows called - searching for '1977'")
-        return showRepository.searchShows("1977")
+        android.util.Log.d("SearchShowsUseCase", "🔎 getPopularShows called - getting all shows sorted by weighted rating")
+        return showRepository.getAllShows().map { shows ->
+            shows.filter { it.hasRating }
+                .sortedWith(
+                    compareByDescending<Show> { it.rating ?: 0f }  // Use weighted rating for internal ranking
+                        .thenByDescending { it.date }
+                )
+                .take(50) // Top 50 shows by weighted rating
+        }
     }
     
     /**

@@ -150,11 +150,11 @@ class BrowseViewModel @Inject constructor(
                             }
                         }
                         
-                        // Sort by raw rating (highest first), then by date
+                        // Sort by weighted rating (highest first) for internal ranking, then by date
                         val topRatedShows = eraShows
                             .filter { it.hasRating }
                             .sortedWith(
-                                compareByDescending<Show> { it.rawRating ?: 0f }
+                                compareByDescending<Show> { it.rating ?: 0f }
                                     .thenByDescending { it.date }
                             )
                             .take(50) // Limit to top 50 shows
