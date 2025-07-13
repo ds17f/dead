@@ -58,6 +58,17 @@ if ! gh auth status &> /dev/null; then
   exit 1
 fi
 
+# Check repository context
+echo -e "${BLUE}🔍 Checking repository context...${NC}"
+REPO_INFO=$(gh repo view --json nameWithOwner --jq '.nameWithOwner' 2>/dev/null || echo "")
+if [ -z "$REPO_INFO" ]; then
+  echo -e "${RED}❌ Error: Not in a GitHub repository or repository not accessible${NC}"
+  echo -e "${BLUE}ℹ️ Make sure you're in the correct directory and have repository access${NC}"
+  exit 1
+else
+  echo -e "${BLUE}ℹ️ Working with repository: $REPO_INFO${NC}"
+fi
+
 # Check if changelog exists
 if [ ! -f "$CHANGELOG_FILE" ]; then
   echo -e "${RED}❌ Error: Changelog file $CHANGELOG_FILE not found${NC}"
@@ -68,7 +79,8 @@ fi
 if [ -n "$SPECIFIC_TAG" ]; then
   RELEASES="$SPECIFIC_TAG"
 else
-  RELEASES=$(gh release list --limit 100 | grep -E "v[0-9]+\.[0-9]+\.[0-9]+" | awk '{print $1}' | sort -V)
+  # Get releases with better filtering
+  RELEASES=$(gh release list --limit 100 --json tagName --jq '.[].tagName' | grep -E "^v[0-9]+\.[0-9]+\.[0-9]+$" | sort -V)
 fi
 
 if [ -z "$RELEASES" ]; then
@@ -77,7 +89,13 @@ if [ -z "$RELEASES" ]; then
 fi
 
 echo -e "${BLUE}📋 Found releases to process:${NC}"
-echo "$RELEASES" | sed 's/^/  • /'
+if [ -n "$RELEASES" ]; then
+  echo "$RELEASES" | sed 's/^/  • /'
+  echo ""
+  echo -e "${BLUE}ℹ️ Total releases found: $(echo "$RELEASES" | wc -l | tr -d ' ')${NC}"
+else
+  echo -e "${YELLOW}  No releases found${NC}"
+fi
 echo ""
 
 # Function to extract changelog section for a specific version
@@ -148,10 +166,22 @@ update_release() {
     
     # Update the GitHub release with new description
     echo "  📝 Updating release description..."
-    if gh release edit "$release_tag" --notes "$new_description"; then
+    
+    # Debug: Show what we're trying to update
+    echo "  🔍 Debug: Updating release $release_tag with $(echo "$new_description" | wc -l) lines of content"
+    
+    if gh release edit "$release_tag" --notes "$new_description" 2>/dev/null; then
       echo -e "${GREEN}  ✅ Updated release $release_tag${NC}"
     else
       echo -e "${RED}  ❌ Failed to update release $release_tag${NC}"
+      echo -e "${YELLOW}  🔍 Trying to get more info about this release...${NC}"
+      
+      # Try to get release info for debugging
+      if gh release view "$release_tag" --json url,tagName,name >/dev/null 2>&1; then
+        echo -e "${BLUE}  ℹ️ Release exists but update failed - possibly a permissions issue${NC}"
+      else
+        echo -e "${YELLOW}  ⚠️ Release may not exist or may be a draft${NC}"
+      fi
       return 1
     fi
   fi
