@@ -52,13 +52,15 @@ fun PlaylistScreen(
     onNavigateToPlayer: () -> Unit,
     recordingId: String? = null,
     viewModel: PlayerViewModel = hiltViewModel(),
-    settingsViewModel: SettingsViewModel = hiltViewModel()
+    settingsViewModel: SettingsViewModel = hiltViewModel(),
+    reviewViewModel: ReviewViewModel = hiltViewModel()
 ) {
     Log.d("PlaylistScreen", "PlaylistScreen: Composing with recordingId: $recordingId")
     
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
+    val reviewState by reviewViewModel.reviewState.collectAsState()
     
     // Collect download and library states
     val downloadStates by viewModel.downloadStates.collectAsState()
@@ -406,6 +408,15 @@ fun PlaylistScreen(
         }
     }
     
+    // Load reviews when modal opens
+    LaunchedEffect(showReviewDetails, currentRecording) {
+        if (showReviewDetails && currentRecording != null) {
+            reviewViewModel.loadReviews(currentRecording.identifier)
+        } else if (!showReviewDetails) {
+            reviewViewModel.clearReviews()
+        }
+    }
+    
     // Review Details Modal
     if (showReviewDetails) {
         currentRecording?.let { recording ->
@@ -413,10 +424,10 @@ fun PlaylistScreen(
                 recordingTitle = recording.title,
                 rating = recording.rawRating ?: 0f,
                 reviewCount = recording.reviewCount ?: 0,
-                ratingDistribution = null, // TODO: Add distribution data if available
-                reviews = emptyList(), // TODO: Load actual reviews
-                isLoading = false, // TODO: Add loading state
-                errorMessage = null, // TODO: Add error handling
+                ratingDistribution = reviewState.ratingDistribution,
+                reviews = reviewState.reviews,
+                isLoading = reviewState.isLoading,
+                errorMessage = reviewState.errorMessage,
                 onDismiss = { showReviewDetails = false }
             )
         }
