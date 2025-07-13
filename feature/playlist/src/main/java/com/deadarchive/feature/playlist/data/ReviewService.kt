@@ -28,11 +28,13 @@ class ReviewService @Inject constructor(
                 
                 // Convert Archive.org reviews to our Review model
                 val reviews = archiveReviews.mapNotNull { archiveReview ->
-                    if (archiveReview.reviewer != null && archiveReview.stars != null) {
+                    val reviewer = archiveReview.reviewer
+                    val stars = archiveReview.stars
+                    if (reviewer != null && stars != null) {
                         Review(
-                            username = archiveReview.reviewer,
-                            rating = archiveReview.stars,
-                            stars = archiveReview.stars.toDouble(),
+                            username = reviewer,
+                            rating = stars,
+                            stars = stars.toDouble(),
                             reviewText = archiveReview.body ?: "",
                             reviewDate = formatReviewDate(archiveReview.reviewDate)
                         )
