@@ -118,6 +118,69 @@ class BrowseViewModel @Inject constructor(
         }
     }
     
+    fun filterByEra(era: String) {
+        println("📱 VM ERA FILTER: filtering by era '$era'")
+        viewModelScope.launch {
+            _isSearching.value = true
+            _uiState.value = BrowseUiState.Loading
+            
+            try {
+                val startTime = System.currentTimeMillis()
+                
+                // Get all shows and filter by era, then sort by rating
+                searchShowsUseCase("")
+                    .catch { exception ->
+                        val filterTime = System.currentTimeMillis() - startTime
+                        println("📱 VM ERA FILTER: error after ${filterTime}ms for era '$era': ${exception.message}")
+                        _uiState.value = BrowseUiState.Error(
+                            exception.message ?: "Failed to load shows for era"
+                        )
+                        _isSearching.value = false
+                    }
+                    .collect { allShows ->
+                        val filterTime = System.currentTimeMillis() - startTime
+                        
+                        // Filter by era (decade)
+                        val eraShows = allShows.filter { show ->
+                            when (era.lowercase()) {
+                                "1970s" -> show.date.startsWith("197")
+                                "1980s" -> show.date.startsWith("198") 
+                                "1990s" -> show.date.startsWith("199")
+                                else -> false
+                            }
+                        }
+                        
+                        // Sort by raw rating (highest first), then by date
+                        val topRatedShows = eraShows
+                            .filter { it.hasRating }
+                            .sortedWith(
+                                compareByDescending<Show> { it.rawRating ?: 0f }
+                                    .thenByDescending { it.date }
+                            )
+                            .take(50) // Limit to top 50 shows
+                        
+                        println("📱 VM ERA FILTER: success after ${filterTime}ms for era '$era'")
+                        println("  📱 Total shows: ${allShows.size}")
+                        println("  📱 Era shows: ${eraShows.size}")
+                        println("  📱 Top rated: ${topRatedShows.size}")
+                        
+                        topRatedShows.take(3).forEachIndexed { index, show ->
+                            println("  📱 [$index] ${show.showId} - ${show.displayTitle} - ${show.rawRating}★")
+                        }
+                        
+                        _uiState.value = BrowseUiState.Success(topRatedShows)
+                        _isSearching.value = false
+                    }
+            } catch (e: Exception) {
+                println("📱 VM ERA FILTER: exception for era '$era': ${e.message}")
+                _uiState.value = BrowseUiState.Error(
+                    e.message ?: "Failed to filter shows by era"
+                )
+                _isSearching.value = false
+            }
+        }
+    }
+    
     fun toggleLibrary(show: Show) {
         viewModelScope.launch {
             try {

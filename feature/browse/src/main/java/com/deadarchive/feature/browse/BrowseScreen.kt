@@ -29,6 +29,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -58,6 +59,7 @@ fun BrowseScreen(
         // Navigate using recording ID
         onNavigateToPlayer(recording.identifier)
     },
+    initialEra: String? = null,
     viewModel: BrowseViewModel = hiltViewModel(),
     settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
@@ -69,6 +71,13 @@ fun BrowseScreen(
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
+    // Handle era filtering
+    LaunchedEffect(initialEra) {
+        initialEra?.let { era ->
+            viewModel.filterByEra(era)
+        }
+    }
+    
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -77,7 +86,7 @@ fun BrowseScreen(
     ) {
         // Header
         Text(
-            text = "Browse Concerts",
+            text = if (initialEra != null) "Top ${initialEra} Shows" else "Browse Shows",
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold
         )
