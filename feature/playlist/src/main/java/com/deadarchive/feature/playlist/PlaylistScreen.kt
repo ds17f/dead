@@ -37,6 +37,9 @@ import com.deadarchive.core.design.component.DebugMultilineText
 import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
+import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
+import com.deadarchive.feature.playlist.components.RecordingPreferencesSheet
+import com.deadarchive.feature.playlist.data.RecordingSelectionService
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
@@ -72,6 +75,10 @@ fun PlaylistScreen(
     
     // Review modal state
     var showReviewDetails by remember { mutableStateOf(false) }
+    
+    // Recording selection modal states
+    var showRecordingSelection by remember { mutableStateOf(false) }
+    var showRecordingPreferences by remember { mutableStateOf(false) }
     
     // Fetch debug information when recording changes
     LaunchedEffect(currentRecording, settings.showDebugInfo) {
@@ -247,8 +254,14 @@ fun PlaylistScreen(
                             onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
                             onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
                             onShowReviews = { showReviewDetails = true },
+                            onShowRecordingSelection = { showRecordingSelection = true },
+                            onNavigateToPreviousShow = { /* TODO: Implement navigation */ },
+                            onNavigateToNextShow = { /* TODO: Implement navigation */ },
                             downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                             isInLibrary = false, // TODO: Add library state tracking
+                            hasAlternativeRecordings = true, // TODO: Check for alternatives
+                            hasPreviousShow = true, // TODO: Check for previous show
+                            hasNextShow = true, // TODO: Check for next show
                             modifier = Modifier.padding(16.dp)
                         )
                         
@@ -293,8 +306,14 @@ fun PlaylistScreen(
                                 onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
                                 onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
                                 onShowReviews = { showReviewDetails = true },
+                                onShowRecordingSelection = { showRecordingSelection = true },
+                                onNavigateToPreviousShow = { /* TODO: Implement navigation */ },
+                                onNavigateToNextShow = { /* TODO: Implement navigation */ },
                                 downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
-                                isInLibrary = false // TODO: Add library state tracking
+                                isInLibrary = false, // TODO: Add library state tracking
+                                hasAlternativeRecordings = true, // TODO: Check for alternatives
+                                hasPreviousShow = true, // TODO: Check for previous show
+                                hasNextShow = true // TODO: Check for next show
                             )
                         }
                         
@@ -434,6 +453,45 @@ fun PlaylistScreen(
             )
         }
     }
+    
+    // Recording Selection Modal
+    if (showRecordingSelection && currentRecording != null) {
+        // TODO: Get actual alternative recordings from ViewModel
+        val alternativeRecordings = emptyList<com.deadarchive.feature.playlist.components.RecordingOption>()
+        
+        RecordingSelectionSheet(
+            showTitle = currentRecording?.title ?: "",
+            currentRecording = currentRecording,
+            alternativeRecordings = alternativeRecordings,
+            settings = settings,
+            onRecordingSelected = { recording ->
+                // TODO: Implement recording selection
+                showRecordingSelection = false
+            },
+            onSettingsClick = { 
+                showRecordingSelection = false
+                showRecordingPreferences = true 
+            },
+            onDismiss = { showRecordingSelection = false }
+        )
+    }
+    
+    // Recording Preferences Modal
+    if (showRecordingPreferences) {
+        RecordingPreferencesSheet(
+            settings = settings,
+            onUpdatePreferredAudioSource = { source ->
+                settingsViewModel.updatePreferredAudioSource(source)
+            },
+            onUpdateMinimumRating = { rating ->
+                settingsViewModel.updateMinimumRating(rating)
+            },
+            onUpdatePreferHigherRated = { prefer ->
+                settingsViewModel.updatePreferHigherRated(prefer)
+            },
+            onDismiss = { showRecordingPreferences = false }
+        )
+    }
 }
 
 @Composable
@@ -445,8 +503,14 @@ private fun RecordingHeader(
     onCancelDownloadClick: () -> Unit = {},
     onRemoveDownloadClick: () -> Unit = {},
     onShowReviews: () -> Unit = {},
+    onShowRecordingSelection: () -> Unit = {},
+    onNavigateToPreviousShow: () -> Unit = {},
+    onNavigateToNextShow: () -> Unit = {},
     downloadState: ShowDownloadState = ShowDownloadState.NotDownloaded,
     isInLibrary: Boolean = false,
+    hasAlternativeRecordings: Boolean = false,
+    hasPreviousShow: Boolean = false,
+    hasNextShow: Boolean = false,
     modifier: Modifier = Modifier
 ) {
     if (recording == null) return
@@ -527,6 +591,85 @@ private fun RecordingHeader(
                     confidence = recording.ratingConfidence,
                     onShowReviews = onShowReviews
                 )
+            }
+            
+            // Recording selection button
+            if (hasAlternativeRecordings) {
+                Spacer(modifier = Modifier.height(8.dp))
+                
+                OutlinedButton(
+                    onClick = onShowRecordingSelection,
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        contentColor = MaterialTheme.colorScheme.primary
+                    )
+                ) {
+                    Icon(
+                        painter = IconResources.Navigation.Menu(),
+                        contentDescription = "View Alternative Recordings",
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text(
+                        text = "View Alternative Recordings",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+            }
+            
+            // Chronological navigation buttons
+            if (hasPreviousShow || hasNextShow) {
+                Spacer(modifier = Modifier.height(8.dp))
+                
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    // Previous Show Button
+                    OutlinedButton(
+                        onClick = onNavigateToPreviousShow,
+                        enabled = hasPreviousShow,
+                        modifier = Modifier.weight(1f),
+                        colors = ButtonDefaults.outlinedButtonColors(
+                            contentColor = MaterialTheme.colorScheme.secondary
+                        )
+                    ) {
+                        Icon(
+                            painter = IconResources.Navigation.ChevronLeft(),
+                            contentDescription = "Previous Show",
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(
+                            text = "Previous",
+                            style = MaterialTheme.typography.bodySmall,
+                            fontWeight = FontWeight.Medium
+                        )
+                    }
+                    
+                    // Next Show Button
+                    OutlinedButton(
+                        onClick = onNavigateToNextShow,
+                        enabled = hasNextShow,
+                        modifier = Modifier.weight(1f),
+                        colors = ButtonDefaults.outlinedButtonColors(
+                            contentColor = MaterialTheme.colorScheme.secondary
+                        )
+                    ) {
+                        Text(
+                            text = "Next",
+                            style = MaterialTheme.typography.bodySmall,
+                            fontWeight = FontWeight.Medium
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Icon(
+                            painter = IconResources.Navigation.ChevronRight(),
+                            contentDescription = "Next Show",
+                            modifier = Modifier.size(16.dp)
+                        )
+                    }
+                }
             }
             
             // Library and Download buttons

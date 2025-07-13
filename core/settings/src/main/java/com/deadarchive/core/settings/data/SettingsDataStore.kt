@@ -39,6 +39,9 @@ class SettingsDataStore @Inject constructor(
     private val showDebugInfoKey = booleanPreferencesKey(AppConstants.PREF_SHOW_DEBUG_INFO)
     private val deletionGracePeriodKey = intPreferencesKey("deletion_grace_period_days")
     private val lowStorageThresholdKey = longPreferencesKey("low_storage_threshold_mb")
+    private val preferredAudioSourceKey = stringPreferencesKey("preferred_audio_source")
+    private val minimumRatingKey = stringPreferencesKey("minimum_rating") // Store as string to preserve precision
+    private val preferHigherRatedKey = booleanPreferencesKey("prefer_higher_rated")
     
     /**
      * Reactive flow of application settings
@@ -116,6 +119,33 @@ class SettingsDataStore @Inject constructor(
     }
     
     /**
+     * Update preferred audio source setting
+     */
+    suspend fun updatePreferredAudioSource(source: String) {
+        dataStore.edit { preferences ->
+            preferences[preferredAudioSourceKey] = source
+        }
+    }
+    
+    /**
+     * Update minimum rating filter
+     */
+    suspend fun updateMinimumRating(rating: Float) {
+        dataStore.edit { preferences ->
+            preferences[minimumRatingKey] = rating.toString()
+        }
+    }
+    
+    /**
+     * Update prefer higher rated setting
+     */
+    suspend fun updatePreferHigherRated(prefer: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[preferHigherRatedKey] = prefer
+        }
+    }
+    
+    /**
      * Convert DataStore preferences to AppSettings
      */
     private fun Preferences.toAppSettings(): AppSettings {
@@ -133,13 +163,23 @@ class SettingsDataStore @Inject constructor(
             ThemeMode.SYSTEM
         }
         
+        val minimumRatingString = this[minimumRatingKey] ?: "0"
+        val minimumRating = try {
+            minimumRatingString.toFloat()
+        } catch (e: NumberFormatException) {
+            0f
+        }
+        
         return AppSettings(
             audioFormatPreference = audioFormatPreference,
             themeMode = themeMode,
             downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true,
             showDebugInfo = this[showDebugInfoKey] ?: false,
             deletionGracePeriodDays = this[deletionGracePeriodKey] ?: 7,
-            lowStorageThresholdMB = this[lowStorageThresholdKey] ?: 500L
+            lowStorageThresholdMB = this[lowStorageThresholdKey] ?: 500L,
+            preferredAudioSource = this[preferredAudioSourceKey] ?: "Any",
+            minimumRating = minimumRating,
+            preferHigherRated = this[preferHigherRatedKey] ?: true
         )
     }
 }

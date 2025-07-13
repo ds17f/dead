@@ -254,4 +254,85 @@ class SettingsViewModel @Inject constructor(
             }
         }
     }
+    
+    /**
+     * Update the preferred audio source for recording selection
+     */
+    fun updatePreferredAudioSource(source: String) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Updating preferred audio source to: $source")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                settingsRepository.updatePreferredAudioSource(source)
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "Audio source preference updated to $source"
+                )
+                Log.d(TAG, "Preferred audio source updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update preferred audio source", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update audio source preference: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Update the minimum rating filter for recording selection
+     */
+    fun updateMinimumRating(rating: Float) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Updating minimum rating to: $rating")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                settingsRepository.updateMinimumRating(rating)
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "Minimum rating updated to ${rating}★"
+                )
+                Log.d(TAG, "Minimum rating updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update minimum rating", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update minimum rating: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Update the prefer higher rated setting
+     */
+    fun updatePreferHigherRated(prefer: Boolean) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Updating prefer higher rated to: $prefer")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                settingsRepository.updatePreferHigherRated(prefer)
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = if (prefer) "Higher rated recordings will be preferred" else "Higher rated preference disabled"
+                )
+                Log.d(TAG, "Prefer higher rated updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update prefer higher rated", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update higher rated preference: ${e.message}"
+                )
+            }
+        }
+    }
 }

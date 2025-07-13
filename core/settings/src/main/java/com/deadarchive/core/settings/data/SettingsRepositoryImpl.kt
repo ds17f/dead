@@ -124,4 +124,37 @@ class SettingsRepositoryImpl @Inject constructor(
             throw e
         }
     }
+    
+    override suspend fun updatePreferredAudioSource(source: String) {
+        try {
+            Log.d(TAG, "Updating preferred audio source to: $source")
+            settingsDataStore.updatePreferredAudioSource(source)
+            Log.d(TAG, "Preferred audio source updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update preferred audio source", e)
+            throw e
+        }
+    }
+    
+    override suspend fun updateMinimumRating(rating: Float) {
+        try {
+            Log.d(TAG, "Updating minimum rating to: $rating")
+            settingsDataStore.updateMinimumRating(rating)
+            Log.d(TAG, "Minimum rating updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update minimum rating", e)
+            throw e
+        }
+    }
+    
+    override suspend fun updatePreferHigherRated(prefer: Boolean) {
+        try {
+            Log.d(TAG, "Updating prefer higher rated to: $prefer")
+            settingsDataStore.updatePreferHigherRated(prefer)
+            Log.d(TAG, "Prefer higher rated updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update prefer higher rated", e)
+            throw e
+        }
+    }
 }

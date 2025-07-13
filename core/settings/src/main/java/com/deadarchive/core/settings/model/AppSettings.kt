@@ -13,7 +13,13 @@ data class AppSettings(
     val showDebugInfo: Boolean = false,
     // Soft delete settings
     val deletionGracePeriodDays: Int = 7,
-    val lowStorageThresholdMB: Long = 500L
+    val lowStorageThresholdMB: Long = 500L,
+    // Recording preferences - maps showId to preferred recordingId
+    val recordingPreferences: Map<String, String> = emptyMap(),
+    // Recording selection criteria preferences
+    val preferredAudioSource: String = "Any", // Soundboard, Audience, Any
+    val minimumRating: Float = 0f, // Minimum rating filter (0-5)
+    val preferHigherRated: Boolean = true // Prefer higher rated recordings when multiple options
 )
 
 /**

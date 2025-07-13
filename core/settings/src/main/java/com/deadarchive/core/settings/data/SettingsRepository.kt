@@ -56,4 +56,22 @@ interface SettingsRepository {
      * @param thresholdMB Threshold in megabytes below which cleanup is triggered
      */
     suspend fun updateLowStorageThreshold(thresholdMB: Long)
+    
+    /**
+     * Update the preferred audio source for recording selection
+     * @param source Preferred audio source (Soundboard, Audience, Any)
+     */
+    suspend fun updatePreferredAudioSource(source: String)
+    
+    /**
+     * Update the minimum rating filter for recording selection
+     * @param rating Minimum rating (0-5)
+     */
+    suspend fun updateMinimumRating(rating: Float)
+    
+    /**
+     * Update the prefer higher rated setting
+     * @param prefer True to prefer higher rated recordings, false otherwise
+     */
+    suspend fun updatePreferHigherRated(prefer: Boolean)
 }
