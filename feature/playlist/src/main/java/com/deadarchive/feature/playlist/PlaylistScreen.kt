@@ -35,6 +35,8 @@ import com.deadarchive.core.design.component.DebugText
 import com.deadarchive.core.design.component.DebugDivider
 import com.deadarchive.core.design.component.DebugMultilineText
 import com.deadarchive.core.design.component.CompactStarRating
+import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
+import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
@@ -65,6 +67,9 @@ fun PlaylistScreen(
     // Debug information states
     var debugShow by remember { mutableStateOf<Show?>(null) }
     var debugShowEntity by remember { mutableStateOf<ShowEntity?>(null) }
+    
+    // Review modal state
+    var showReviewDetails by remember { mutableStateOf(false) }
     
     // Fetch debug information when recording changes
     LaunchedEffect(currentRecording, settings.showDebugInfo) {
@@ -239,6 +244,7 @@ fun PlaylistScreen(
                             onDownloadClick = { viewModel.downloadRecording() },
                             onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
                             onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
+                            onShowReviews = { showReviewDetails = true },
                             downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                             isInLibrary = false, // TODO: Add library state tracking
                             modifier = Modifier.padding(16.dp)
@@ -284,6 +290,7 @@ fun PlaylistScreen(
                                 onDownloadClick = { viewModel.downloadRecording() },
                                 onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
                                 onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
+                                onShowReviews = { showReviewDetails = true },
                                 downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                                 isInLibrary = false // TODO: Add library state tracking
                             )
@@ -398,6 +405,22 @@ fun PlaylistScreen(
             }
         }
     }
+    
+    // Review Details Modal
+    if (showReviewDetails) {
+        currentRecording?.let { recording ->
+            ReviewDetailsSheet(
+                recordingTitle = recording.title,
+                rating = recording.rawRating ?: 0.0,
+                reviewCount = recording.reviewCount ?: 0,
+                ratingDistribution = null, // TODO: Add distribution data if available
+                reviews = emptyList(), // TODO: Load actual reviews
+                isLoading = false, // TODO: Add loading state
+                errorMessage = null, // TODO: Add error handling
+                onDismiss = { showReviewDetails = false }
+            )
+        }
+    }
 }
 
 @Composable
@@ -408,6 +431,7 @@ private fun RecordingHeader(
     onDownloadClick: () -> Unit = {},
     onCancelDownloadClick: () -> Unit = {},
     onRemoveDownloadClick: () -> Unit = {},
+    onShowReviews: () -> Unit = {},
     downloadState: ShowDownloadState = ShowDownloadState.NotDownloaded,
     isInLibrary: Boolean = false,
     modifier: Modifier = Modifier
@@ -463,15 +487,6 @@ private fun RecordingHeader(
                         )
                     }
                     
-                    // Star rating
-                    if (recording.hasRawRating) {
-                        Spacer(modifier = Modifier.height(4.dp))
-                        CompactStarRating(
-                            rating = recording.rawRating,
-                            confidence = recording.ratingConfidence,
-                            starSize = IconResources.Size.SMALL
-                        )
-                    }
                 }
                 
                 // Album art placeholder
@@ -489,6 +504,16 @@ private fun RecordingHeader(
                         tint = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
+            }
+            
+            // Interactive rating display
+            if (recording.hasRawRating) {
+                InteractiveRatingDisplay(
+                    rating = recording.rawRating,
+                    reviewCount = recording.reviewCount,
+                    confidence = recording.ratingConfidence,
+                    onShowReviews = onShowReviews
+                )
             }
             
             // Library and Download buttons
