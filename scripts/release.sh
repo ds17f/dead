@@ -239,7 +239,12 @@ NEW_CODE=$((CURRENT_CODE + 1))
 
 # Extract the first section of the changelog for the commit and tag messages
 # Use the temp changelog file since it always contains the current version
-CHANGELOG_SECTION=$(awk "/## \[${VERSION}\]/{flag=1; print; next} /## \[/{flag=0} flag" "$TEMP_CHANGELOG")
+if [ -f "$TEMP_CHANGELOG" ]; then
+  CHANGELOG_SECTION=$(awk "/## \[${VERSION}\]/{flag=1; print; next} /## \[/{flag=0} flag" "$TEMP_CHANGELOG")
+else
+  # Fallback: extract from the actual changelog file
+  CHANGELOG_SECTION=$(awk "/## \[${VERSION}\]/{flag=1; print; next} /## \[/{flag=0} flag" "$CHANGELOG_FILE")
+fi
 
 if [ "$DRY_RUN" = true ]; then
   echo -e "${YELLOW}🧪 DRY RUN: Would update version to $VERSION (code: $NEW_CODE)${NC}"
