@@ -238,16 +238,22 @@ echo "📝 Updating version in $BUILD_GRADLE..."
 NEW_CODE=$((CURRENT_CODE + 1))
 
 # Extract the first section of the changelog for the commit and tag messages
-CHANGELOG_SECTION=$(awk "/## \[${VERSION}\]/{flag=1; print; next} /## \[/{flag=0} flag" "$CHANGELOG_FILE")
+# Use the temp changelog file since it always contains the current version
+CHANGELOG_SECTION=$(awk "/## \[${VERSION}\]/{flag=1; print; next} /## \[/{flag=0} flag" "$TEMP_CHANGELOG")
 
 if [ "$DRY_RUN" = true ]; then
   echo -e "${YELLOW}🧪 DRY RUN: Would update version to $VERSION (code: $NEW_CODE)${NC}"
   echo -e "${YELLOW}🧪 DRY RUN: Would update the following files:${NC}"
   echo "  - $BUILD_GRADLE"
   echo "  - $CHANGELOG_FILE"
-  echo -e "${YELLOW}🧪 DRY RUN: Would create tag $TAG${NC}"
+  echo -e "${YELLOW}🧪 DRY RUN: Would create tag $TAG with changelog content${NC}"
   echo -e "${YELLOW}🧪 DRY RUN: Would create commit with message:${NC}"
-  echo "  chore: release version $VERSION (code: $NEW_CODE)"
+  echo "  chore: release version $VERSION"
+  echo "  "
+  echo "  Release summary:"
+  echo "$CHANGELOG_SECTION" | sed 's/^/  /'
+  echo "  "
+  echo "  Version code updated from $CURRENT_CODE to $NEW_CODE"
 else
   # Use sed to update versions
   if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -269,14 +275,31 @@ else
 
   echo -e "${GREEN}✅ Updated to version $VERSION (code: $NEW_CODE)${NC}"
 
-  # Commit changes
+  # Commit changes with changelog details
   echo "📦 Committing version changes..."
   git add "$BUILD_GRADLE" "$CHANGELOG_FILE"
-  git commit -m "chore: release version $VERSION (code: $NEW_CODE)" -m "$CHANGELOG_SECTION"
+  
+  # Create commit message with changelog summary
+  COMMIT_MESSAGE="chore: release version $VERSION
 
-  # Create tag with annotated message
+Release summary:
+$CHANGELOG_SECTION
+
+Version code updated from $CURRENT_CODE to $NEW_CODE"
+  
+  git commit -m "$COMMIT_MESSAGE"
+
+  # Create tag with annotated message including changelog
   echo "🏷️ Creating tag $TAG..."
-  git tag -a "$TAG" -m "Release $VERSION" -m "$CHANGELOG_SECTION"
+  
+  # Create a more descriptive tag message
+  TAG_MESSAGE="Dead Archive $VERSION
+
+Changes in this release:
+
+$CHANGELOG_SECTION"
+  
+  git tag -a "$TAG" -m "$TAG_MESSAGE"
 fi
 
 # Handle pushing or next steps

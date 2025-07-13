@@ -1,7 +1,7 @@
 # Dead Archive Android App - Makefile
 # Simplifies common development tasks
 
-.PHONY: help build clean test lint install run run-emulator debug release tag-release dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data
+.PHONY: help build clean test lint install run run-emulator debug release tag-release tag-release-quick dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data
 
 # Default target
 help:
@@ -33,6 +33,7 @@ help:
 	@echo "  make build       - Build debug APK"
 	@echo "  make release     - Build release APK"
 	@echo "  make tag-release - Run tests/lint/builds, then create release version and tag"
+	@echo "  make tag-release-quick - Skip quality checks and create release version and tag (faster)"
 	@echo "  make dry-run-release - Test full release process including quality checks"
 	@echo "  make clean       - Clean build artifacts"
 	@echo ""
@@ -119,6 +120,21 @@ tag-release:
 		echo "🔍 This is normal in CI/CD environments without signing keys"; \
 	fi
 	@echo "3️⃣ All quality checks passed! Proceeding with release..."
+	@chmod +x ./scripts/release.sh
+	@./scripts/release.sh
+	@echo "✅ Release tagged and pushed! GitHub Actions will build the artifacts."
+
+tag-release-quick:
+	@echo "⚡ Creating new release version (quick mode - skipping quality checks)..."
+	@echo "🔍 Checking git working directory..."
+	@if [ -n "$$(git status --porcelain)" ]; then \
+		echo "⚠️ Working directory has uncommitted changes - proceeding anyway"; \
+		git status --porcelain; \
+	else \
+		echo "✅ Working directory is clean"; \
+	fi
+	@echo "🚀 Skipping quality checks and builds for faster release..."
+	@echo "⚠️ WARNING: This bypasses lint checks and builds - use with caution!"
 	@chmod +x ./scripts/release.sh
 	@./scripts/release.sh
 	@echo "✅ Release tagged and pushed! GitHub Actions will build the artifacts."
