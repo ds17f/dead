@@ -19,9 +19,9 @@ import com.deadarchive.core.design.component.CompactStarRating
  */
 @Composable
 fun InteractiveRatingDisplay(
-    rating: Double?,
+    rating: Float?,
     reviewCount: Int?,
-    confidence: Double?,
+    confidence: Float?,
     onShowReviews: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -49,8 +49,8 @@ fun InteractiveRatingDisplay(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 CompactStarRating(
-                    rating = rating,
-                    confidence = confidence,
+                    rating = rating.toDouble(),
+                    confidence = confidence?.toDouble(),
                     starSize = IconResources.Size.MEDIUM
                 )
                 

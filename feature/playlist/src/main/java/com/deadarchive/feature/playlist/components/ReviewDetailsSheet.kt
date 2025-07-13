@@ -22,7 +22,7 @@ import com.deadarchive.feature.playlist.data.Review
 @Composable
 fun ReviewDetailsSheet(
     recordingTitle: String,
-    rating: Double,
+    rating: Float,
     reviewCount: Int,
     ratingDistribution: Map<Int, Int>? = null,
     reviews: List<Review> = emptyList(),
@@ -173,7 +173,7 @@ fun ReviewDetailsSheet(
 
 @Composable
 private fun RatingSummaryCard(
-    rating: Double,
+    rating: Float,
     reviewCount: Int,
     ratingDistribution: Map<Int, Int>?
 ) {
@@ -196,7 +196,7 @@ private fun RatingSummaryCard(
             )
             
             CompactStarRating(
-                rating = rating,
+                rating = rating.toDouble(),
                 confidence = null,
                 starSize = IconResources.Size.MEDIUM
             )

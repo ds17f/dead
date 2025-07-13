@@ -411,7 +411,7 @@ fun PlaylistScreen(
         currentRecording?.let { recording ->
             ReviewDetailsSheet(
                 recordingTitle = recording.title,
-                rating = recording.rawRating ?: 0.0,
+                rating = recording.rawRating ?: 0f,
                 reviewCount = recording.reviewCount ?: 0,
                 ratingDistribution = null, // TODO: Add distribution data if available
                 reviews = emptyList(), // TODO: Load actual reviews
