@@ -12,6 +12,7 @@
 * update app terminology from recordings to shows with accurate counts (88a778c)
 
 ### Bug Fixes
+* resolve release script changelog section extraction bug (228a65c)
 * improve GitHub release description update script with better filtering and debugging (4079642)
 * update script to modify GitHub releases instead of git tags (af8fba6)
 * restore missing rating data for individual recordings in playlist (d9cecbd)
@@ -21,6 +22,25 @@
 * rename make target to update-release-descriptions for clarity (39c460e)
 
 
+## [0.21.0] - 2025-07-13
+
+### New Features
+* add comprehensive permissions checking and error reporting to release update script (f162d66)
+* add script to retroactively update all release tags with changelog content (1a9dd03)
+* add tag-release-quick and improve changelog generation (0f0f76e)
+* implement weighted rating system for internal sorting and ranking (85dc749)
+* add rating context indicators with enhanced visual styling (55076c0)
+* implement era-based filtering for top-rated shows (5775228)
+* update app terminology from recordings to shows with accurate counts (88a778c)
+
+### Bug Fixes
+* improve GitHub release description update script with better filtering and debugging (4079642)
+* update script to modify GitHub releases instead of git tags (af8fba6)
+* restore missing rating data for individual recordings in playlist (d9cecbd)
+* comprehensive UI fixes and performance optimizations (045336e)
+
+### Code Refactoring
+* rename make target to update-release-descriptions for clarity (39c460e)
 ## [0.20.0] - 2025-07-12
 
 ### New Features
