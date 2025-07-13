@@ -49,8 +49,8 @@ fun InteractiveRatingDisplay(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
                 CompactStarRating(
-                    rating = rating.toDouble(),
-                    confidence = confidence?.toDouble(),
+                    rating = rating,
+                    confidence = confidence,
                     starSize = IconResources.Size.MEDIUM
                 )
                 

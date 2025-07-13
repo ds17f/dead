@@ -196,7 +196,7 @@ private fun RatingSummaryCard(
             )
             
             CompactStarRating(
-                rating = rating.toDouble(),
+                rating = rating,
                 confidence = null,
                 starSize = IconResources.Size.MEDIUM
             )
@@ -293,7 +293,7 @@ private fun ReviewItem(
                     horizontalArrangement = Arrangement.spacedBy(4.dp)
                 ) {
                     CompactStarRating(
-                        rating = review.stars,
+                        rating = review.stars.toFloat(),
                         confidence = null,
                         starSize = IconResources.Size.SMALL
                     )
