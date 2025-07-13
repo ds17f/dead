@@ -43,7 +43,7 @@ class SplashViewModel @Inject constructor(
                     // Need to perform initial sync
                     _uiState.value = _uiState.value.copy(
                         syncStatus = SyncStatus.REQUIRED,
-                        message = "First time setup - downloading concert catalog..."
+                        message = "First time setup - downloading show catalog..."
                     )
                     startInitialSync()
                 }
@@ -65,8 +65,8 @@ class SplashViewModel @Inject constructor(
                         syncProgress = progress,
                         message = when (progress.phase) {
                             SyncPhase.STARTING -> "Initializing download..."
-                            SyncPhase.FETCHING -> "Fetching concert list from Archive.org..."
-                            SyncPhase.PROCESSING -> "Processing concerts (${progress.processedItems}/${progress.totalItems})"
+                            SyncPhase.FETCHING -> "Fetching show list from Archive.org..."
+                            SyncPhase.PROCESSING -> "Processing shows (${progress.processedItems}/${progress.totalItems})"
                             SyncPhase.FINALIZING -> "Finalizing database..."
                             SyncPhase.COMPLETED -> "Setup complete!"
                             SyncPhase.ERROR -> "Error: ${progress.error}"
@@ -83,7 +83,7 @@ class SplashViewModel @Inject constructor(
                 is SyncResult.Success -> {
                     _uiState.value = _uiState.value.copy(
                         syncStatus = SyncStatus.COMPLETED,
-                        message = "Setup complete! Downloaded ${result.recordingsProcessed} concerts."
+                        message = "Setup complete! Downloaded ${result.recordingsProcessed} shows."
                     )
                 }
                 is SyncResult.Error -> {

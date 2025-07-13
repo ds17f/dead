@@ -22,7 +22,8 @@ import com.deadarchive.core.model.Show
 fun HomeScreen(
     onNavigateToDebug: () -> Unit,
     onNavigateToBrowse: () -> Unit = {},
-    onNavigateToShow: (Show) -> Unit = {}
+    onNavigateToShow: (Show) -> Unit = {},
+    onNavigateToEra: (String) -> Unit = {}
 ) {
     LazyColumn(
         modifier = Modifier
@@ -65,7 +66,7 @@ fun HomeScreen(
                 item {
                     QuickAccessCard(
                         title = "Browse All",
-                        subtitle = "17,000+ shows",
+                        subtitle = "3,000+ shows",
                         icon = IconResources.Navigation.Search(),
                         onClick = onNavigateToBrowse
                     )
@@ -99,32 +100,35 @@ fun HomeScreen(
             ) {
                 item {
                     EraCard(
-                        title = "1970s",
-                        subtitle = "3,791 shows",
+                        title = "1970s", 
+                        subtitle = "979 shows",
                         colors = listOf(
                             MaterialTheme.colorScheme.primary,
                             MaterialTheme.colorScheme.secondary
-                        )
+                        ),
+                        onClick = { onNavigateToEra("1970s") }
                     )
                 }
                 item {
                     EraCard(
                         title = "1980s",
-                        subtitle = "9,322 shows", 
+                        subtitle = "1,204 shows", 
                         colors = listOf(
                             MaterialTheme.colorScheme.tertiary,
                             MaterialTheme.colorScheme.primary
-                        )
+                        ),
+                        onClick = { onNavigateToEra("1980s") }
                     )
                 }
                 item {
                     EraCard(
                         title = "1990s",
-                        subtitle = "4,098 shows",
+                        subtitle = "584 shows",
                         colors = listOf(
                             MaterialTheme.colorScheme.secondary,
                             MaterialTheme.colorScheme.tertiary
-                        )
+                        ),
+                        onClick = { onNavigateToEra("1990s") }
                     )
                 }
             }
@@ -214,13 +218,16 @@ private fun QuickAccessCard(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun EraCard(
     title: String,
     subtitle: String,
-    colors: List<androidx.compose.ui.graphics.Color>
+    colors: List<androidx.compose.ui.graphics.Color>,
+    onClick: () -> Unit = {}
 ) {
     Card(
+        onClick = onClick,
         modifier = Modifier
             .width(140.dp)
             .height(140.dp)

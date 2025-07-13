@@ -104,6 +104,10 @@ fun MainAppScreen(
                         } ?: run {
                             android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
                         }
+                    },
+                    onNavigateToEra = { era ->
+                        // Navigate to browse with era filter
+                        navController.navigate("browse?era=$era")
                     }
                 )
             }
