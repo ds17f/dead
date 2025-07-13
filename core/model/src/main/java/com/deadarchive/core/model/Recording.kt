@@ -53,8 +53,14 @@ data class Recording(
     val isDownloaded: Boolean = false,
     
     // Rating information (optional)  
-    val rating: Float? = null,
+    val rating: Float? = null,                        // Weighted rating (for internal ranking)
+    val rawRating: Float? = null,                     // Simple average (for display)
     val ratingConfidence: Float? = null,
+    val reviewCount: Int? = null,                     // Number of reviews
+    val sourceType: String? = null,                   // SBD, AUD, MATRIX, etc.
+    val ratingDistribution: Map<Int, Int>? = null,    // Distribution {1: 7, 2: 6, ...}
+    val highRatings: Int? = null,                     // Count of 4-5★ reviews
+    val lowRatings: Int? = null,                      // Count of 1-2★ reviews
     
     // Soft delete fields (recording-level)
     val isMarkedForDeletion: Boolean = false,
@@ -106,14 +112,35 @@ data class Recording(
     
     // Rating properties
     val hasRating: Boolean
-        get() = rating != null
+        get() = rawRating != null && rawRating > 0f
     
     val isHighlyRated: Boolean
-        get() = rating != null && rating >= 4.0f
+        get() = rawRating != null && rawRating >= 4.0f
+    
+    // NEW: Enhanced rating properties
+    val displayRating: String
+        get() = rawRating?.let { "%.1f★".format(it) } ?: "Not Rated"
+    
+    val ratingContext: String
+        get() = when {
+            highRatings == null || lowRatings == null -> ""
+            highRatings > 0 && lowRatings > 0 -> "Mixed reactions"
+            highRatings > lowRatings -> "Generally loved"
+            lowRatings > highRatings -> "Generally disliked"
+            else -> ""
+        }
+    
+    val hasRawRating: Boolean
+        get() = rawRating != null && rawRating > 0
+    
+    val isPolarizing: Boolean
+        get() = highRatings != null && lowRatings != null && 
+                highRatings > 0 && lowRatings > 0 &&
+                kotlin.math.abs(highRatings - lowRatings) <= 3
     
     val isReliablyRated: Boolean
         get() = rating != null && ratingConfidence != null && ratingConfidence >= 0.7f
     
     val stars: Int?
-        get() = rating?.let { kotlin.math.round(it).toInt().coerceIn(1, 5) }
+        get() = rawRating?.let { kotlin.math.round(it).toInt().coerceIn(1, 5) }
 }

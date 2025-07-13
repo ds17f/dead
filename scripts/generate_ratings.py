@@ -36,20 +36,27 @@ class ReviewData:
 class RecordingRating:
     """Aggregated rating for a single recording"""
     identifier: str
-    avg_rating: float
+    avg_rating: float        # Weighted/computed rating (for internal ranking)
+    raw_rating: float        # Simple average of all reviews (for display)
     review_count: int
-    source_type: str  # 'SBD', 'AUD', 'MATRIX', etc.
+    source_type: str         # 'SBD', 'AUD', 'MATRIX', etc.
     reviews: List[ReviewData]
+    distribution: Dict[int, int]  # Star rating distribution {1: 7, 2: 6, 3: 5, 4: 8, 5: 4}
+    high_ratings: int        # Count of 4-5 star reviews  
+    low_ratings: int         # Count of 1-2 star reviews
 
 @dataclass 
 class ShowRating:
     """Aggregated rating for an entire show"""
     date: str
     venue: str
-    avg_rating: float
-    confidence_score: float  # 0-1 scale based on review count and source quality
+    avg_rating: float         # Weighted rating (for ranking)
+    raw_rating: float         # Simple average rating (for display)
+    confidence_score: float   # 0-1 scale based on review count and source quality
     best_recording_id: str
     recording_ratings: List[RecordingRating]
+    total_high_ratings: int   # Count of 4-5★ reviews across all recordings
+    total_low_ratings: int    # Count of 1-2★ reviews across all recordings
 
 
 class GratefulDeadRatingsGenerator:
@@ -228,12 +235,12 @@ class GratefulDeadRatingsGenerator:
             self.logger.error(f"Failed to search for recordings: {e}")
             return []
 
-    def compute_recording_rating(self, reviews: List[ReviewData], source_type: str) -> Optional[float]:
+    def compute_recording_rating(self, identifier: str, reviews: List[ReviewData], source_type: str) -> Optional[RecordingRating]:
         """
-        Compute weighted rating for a single recording.
+        Compute comprehensive rating data for a single recording.
         
-        Applies source type weighting and review quality filtering.
-        Returns None if no valid reviews exist.
+        Returns both weighted (for ranking) and raw (for display) ratings,
+        plus distribution and context data.
         """
         if not reviews:
             return None
@@ -242,18 +249,40 @@ class GratefulDeadRatingsGenerator:
         valid_reviews = [r for r in reviews if r.stars >= 1.0]
         if not valid_reviews:
             return None
-            
-        # Compute basic average
-        avg_rating = sum(r.stars for r in valid_reviews) / len(valid_reviews)
         
-        # Apply source type weighting
+        # Compute raw average (for display) 
+        raw_rating = sum(r.stars for r in valid_reviews) / len(valid_reviews)
+        
+        # Compute weighted rating (for internal ranking)
         source_weight = self.source_weights.get(source_type, 0.5)
-        weighted_rating = avg_rating * source_weight
+        weighted_rating = raw_rating * source_weight
         
-        # Confidence adjustment based on review count
-        confidence_factor = min(len(valid_reviews) / 5.0, 1.0)  # Max confidence at 5+ reviews
+        # Confidence adjustment
+        confidence_factor = min(len(valid_reviews) / 5.0, 1.0)
+        final_weighted_rating = weighted_rating * (0.5 + 0.5 * confidence_factor)
         
-        return weighted_rating * (0.5 + 0.5 * confidence_factor)
+        # Calculate rating distribution
+        distribution = {}
+        for star in range(1, 6):
+            count = sum(1 for r in valid_reviews if int(r.stars) == star)
+            if count > 0:
+                distribution[star] = count
+        
+        # Count high and low ratings
+        high_ratings = sum(1 for r in valid_reviews if r.stars >= 4.0)
+        low_ratings = sum(1 for r in valid_reviews if r.stars <= 2.0)
+        
+        return RecordingRating(
+            identifier=identifier,
+            avg_rating=final_weighted_rating,  # Weighted rating for ranking
+            raw_rating=raw_rating,             # Simple average for display  
+            review_count=len(valid_reviews),
+            source_type=source_type,
+            reviews=valid_reviews,
+            distribution=distribution,
+            high_ratings=high_ratings,
+            low_ratings=low_ratings
+        )
 
     def compute_show_rating(self, recording_ratings: List[RecordingRating]) -> ShowRating:
         """
@@ -293,6 +322,7 @@ class GratefulDeadRatingsGenerator:
         
         # Use the best recording's rating as the show rating (no averaging/dilution)
         show_avg_rating = best_recording.avg_rating
+        show_raw_rating = best_recording.raw_rating
         
         # Compute confidence score based on the best recording's review count
         # but also consider total reviews across all rated recordings
@@ -304,6 +334,10 @@ class GratefulDeadRatingsGenerator:
         total_confidence = min(total_reviews / 10.0, 1.0)  # Bonus confidence for multiple rated recordings
         confidence_score = (individual_confidence + total_confidence) / 2.0  # Average of both factors
         
+        # Aggregate high/low rating counts across all recordings
+        total_high_ratings = sum(r.high_ratings for r in rated_recordings)
+        total_low_ratings = sum(r.low_ratings for r in rated_recordings)
+        
         # Extract show info from best recording (assuming consistent per show)
         # In real implementation, you'd get this from the recording metadata
         show_date = "1977-05-08"  # Placeholder - extract from metadata
@@ -313,9 +347,12 @@ class GratefulDeadRatingsGenerator:
             date=show_date,
             venue=show_venue,
             avg_rating=show_avg_rating,
+            raw_rating=show_raw_rating,
             confidence_score=confidence_score,
             best_recording_id=best_recording.identifier,
-            recording_ratings=recording_ratings
+            recording_ratings=recording_ratings,
+            total_high_ratings=total_high_ratings,
+            total_low_ratings=total_low_ratings
         )
 
     def generate_ratings_data(self, max_recordings: int = 100) -> Dict:
@@ -367,33 +404,33 @@ class GratefulDeadRatingsGenerator:
                 source_type = self.extract_source_type(title, description)
                 
                 # Compute recording rating
-                avg_rating = self.compute_recording_rating(reviews, source_type)
+                recording_rating = self.compute_recording_rating(identifier, reviews, source_type)
                 
                 # Skip recordings with no rating or very low ratings
-                if avg_rating is None or avg_rating < self.min_rating_for_inclusion:
+                if recording_rating is None or recording_rating.avg_rating < self.min_rating_for_inclusion:
                     # Store recording with null rating for records
                     recording_ratings_data[identifier] = {
                         'rating': None,
+                        'raw_rating': None,
                         'review_count': 0,
                         'source_type': source_type,
-                        'confidence': None
+                        'confidence': None,
+                        'distribution': {},
+                        'high_ratings': 0,
+                        'low_ratings': 0
                     }
                     continue
-                    
-                recording_rating = RecordingRating(
-                    identifier=identifier,
-                    avg_rating=avg_rating,
-                    review_count=len(reviews),
-                    source_type=source_type,
-                    reviews=reviews
-                )
                 
-                # Store recording-level data
+                # Store recording-level data with new comprehensive structure
                 recording_ratings_data[identifier] = {
-                    'rating': avg_rating,
-                    'review_count': len(reviews),
-                    'source_type': source_type,
-                    'confidence': min(len(reviews) / 5.0, 1.0)
+                    'rating': recording_rating.avg_rating,           # Weighted rating for ranking
+                    'raw_rating': recording_rating.raw_rating,       # Simple average for display
+                    'review_count': recording_rating.review_count,
+                    'source_type': recording_rating.source_type,
+                    'confidence': min(recording_rating.review_count / 5.0, 1.0),
+                    'distribution': recording_rating.distribution,   # NEW: {1: 7, 2: 6, ...}
+                    'high_ratings': recording_rating.high_ratings,   # NEW: Count of 4-5★
+                    'low_ratings': recording_rating.low_ratings      # NEW: Count of 1-2★
                 }
                 
                 # Group by show
@@ -418,10 +455,13 @@ class GratefulDeadRatingsGenerator:
                     show_ratings_data[show_key] = {
                         'date': show_rating.date,
                         'venue': show_rating.venue,
-                        'rating': show_rating.avg_rating,
+                        'rating': show_rating.avg_rating,      # Weighted rating for ranking
+                        'raw_rating': show_rating.raw_rating,  # Simple average for display
                         'confidence': show_rating.confidence_score,
                         'best_recording': show_rating.best_recording_id,
-                        'recording_count': len(recordings)
+                        'recording_count': len(recordings),
+                        'high_ratings': show_rating.total_high_ratings,  # NEW: Total 4-5★ reviews
+                        'low_ratings': show_rating.total_low_ratings     # NEW: Total 1-2★ reviews
                     }
                     
                     # Track top shows

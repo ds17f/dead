@@ -43,7 +43,13 @@ class TodayInHistoryRepository @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             
@@ -54,7 +60,11 @@ class TodayInHistoryRepository @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         }
     }
@@ -77,7 +87,13 @@ class TodayInHistoryRepository @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             
@@ -88,7 +104,11 @@ class TodayInHistoryRepository @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         }
     }
@@ -108,7 +128,13 @@ class TodayInHistoryRepository @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             
@@ -119,7 +145,11 @@ class TodayInHistoryRepository @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         })
     }
@@ -153,7 +183,13 @@ class TodayInHistoryRepository @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             
@@ -164,7 +200,11 @@ class TodayInHistoryRepository @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         }
     }

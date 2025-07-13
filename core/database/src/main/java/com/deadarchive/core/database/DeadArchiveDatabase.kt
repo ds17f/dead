@@ -19,7 +19,7 @@ import android.content.Context
         SongEntity::class,
         VenueEntity::class
     ],
-    version = 12,
+    version = 13,
     exportSchema = false
 )
 @TypeConverters(Converters::class)

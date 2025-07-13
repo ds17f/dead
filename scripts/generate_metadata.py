@@ -60,10 +60,18 @@ class RecordingMetadata:
     description: str
     files: List[Dict[str, Any]]
     reviews: List[ReviewData]
-    rating: float
+    rating: float                             # Weighted rating (for internal ranking)
     review_count: int
     confidence: float
     collection_timestamp: str
+    raw_rating: float = 0.0                  # Simple average (for display)
+    distribution: Dict[int, int] = None      # Star rating distribution {1: 7, 2: 6, ...}
+    high_ratings: int = 0                    # Count of 4-5★ reviews
+    low_ratings: int = 0                     # Count of 1-2★ reviews
+    
+    def __post_init__(self):
+        if self.distribution is None:
+            self.distribution = {}
 
 
 @dataclass

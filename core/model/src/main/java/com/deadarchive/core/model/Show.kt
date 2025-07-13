@@ -31,8 +31,12 @@ data class Show(
     val isInLibrary: Boolean = false,
     
     // Rating information (optional)
-    val rating: Float? = null,
-    val ratingConfidence: Float? = null
+    val rating: Float? = null,                        // Weighted rating (for internal ranking)
+    val rawRating: Float? = null,                     // Simple average (for display)
+    val ratingConfidence: Float? = null,
+    val totalHighRatings: Int? = null,                // Total 4-5★ reviews across all recordings
+    val totalLowRatings: Int? = null,                 // Total 1-2★ reviews across all recordings
+    val bestRecordingId: String? = null              // Identifier of best recording
 ) {
     // Unique identifier combining date and venue
     val showId: String
@@ -43,7 +47,7 @@ data class Show(
             } else {
                 date
             }
-            return "${dateOnly}_${venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+            return "${dateOnly}_${venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and")?.replace("'", "") ?: "Unknown"}"
         }
     
     val displayTitle: String
@@ -86,7 +90,7 @@ data class Show(
             //   - Higher rating wins within same rating+source group
             //   - Example: 4.2★ SBD beats 3.1★ SBD
             
-            val ratingPriority = if (recording.hasRating) 0 else 1 // Rated recordings first
+            val ratingPriority = if (recording.hasRawRating) 0 else 1 // Rated recordings first
             
             val sourcePriority = when (recording.cleanSource?.uppercase()) {
                 "SBD" -> 1
@@ -97,7 +101,7 @@ data class Show(
             }
             
             // Small rating bonus for tie-breaking (inverted since minByOrNull picks smallest)
-            val ratingValue = recording.rating ?: 0f
+            val ratingValue = recording.rawRating ?: 0f
             val ratingBonus = (5f - ratingValue) / 10f // 0.0-0.4 range
             
             // Combined score: rating status dominates, then source, then rating value
@@ -109,14 +113,42 @@ data class Show(
     
     // Rating properties
     val hasRating: Boolean
-        get() = rating != null
+        get() = rawRating != null && rawRating > 0f
     
     val isHighlyRated: Boolean
-        get() = rating != null && rating >= 4.0f
+        get() = rawRating != null && rawRating >= 4.0f
     
     val isReliablyRated: Boolean
         get() = rating != null && ratingConfidence != null && ratingConfidence >= 0.7f
     
     val stars: Int?
-        get() = rating?.let { kotlin.math.round(it).toInt().coerceIn(1, 5) }
+        get() = rawRating?.let { kotlin.math.round(it).toInt().coerceIn(1, 5) }
+    
+    // NEW: Enhanced rating properties
+    val displayRating: String
+        get() = rawRating?.let { "%.1f★".format(it) } ?: "Not Rated"
+    
+    val ratingContext: String
+        get() = when {
+            totalHighRatings == null || totalLowRatings == null -> ""
+            totalHighRatings > 0 && totalLowRatings > 0 -> "Mixed reactions"
+            totalHighRatings > totalLowRatings -> "Fan favorite"
+            totalLowRatings > totalHighRatings -> "Polarizing"
+            else -> ""
+        }
+    
+    val hasRawRating: Boolean
+        get() = rawRating != null && rawRating > 0
+    
+    val isPolarizing: Boolean
+        get() = totalHighRatings != null && totalLowRatings != null &&
+                totalHighRatings > 0 && totalLowRatings > 0 &&
+                kotlin.math.abs(totalHighRatings - totalLowRatings) <= 5
+    
+    val ratingDescription: String
+        get() = when {
+            !hasRawRating -> "No ratings available"
+            ratingContext.isNotEmpty() -> "$displayRating (${recordings.sumOf { it.reviewCount ?: 0 }} reviews) • $ratingContext"
+            else -> "$displayRating (${recordings.sumOf { it.reviewCount ?: 0 }} reviews)"
+        }
 }

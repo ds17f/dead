@@ -134,13 +134,22 @@ class RatingsRepository @Inject constructor(
                 while (keys.hasNext()) {
                     val identifier = keys.next()
                     val ratingObj = recordingRatingsObj.getJSONObject(identifier)
+                    // Parse rating distribution JSON if present
+                    val distributionJson = if (ratingObj.has("distribution")) {
+                        ratingObj.getJSONObject("distribution").toString()
+                    } else null
+                    
                     recordingRatings.add(
                         RecordingRatingEntity(
                             identifier = identifier,
                             rating = ratingObj.optDouble("rating", 0.0).toFloat(),
+                            rawRating = ratingObj.optDouble("raw_rating", 0.0).toFloat(),
                             reviewCount = ratingObj.optInt("review_count", 0),
                             sourceType = ratingObj.optString("source_type", "UNKNOWN"),
-                            confidence = ratingObj.optDouble("confidence", 0.0).toFloat()
+                            confidence = ratingObj.optDouble("confidence", 0.0).toFloat(),
+                            distributionJson = distributionJson,
+                            highRatings = ratingObj.optInt("high_ratings", 0),
+                            lowRatings = ratingObj.optInt("low_ratings", 0)
                         )
                     )
                     count++
@@ -166,9 +175,12 @@ class RatingsRepository @Inject constructor(
                         date = ratingObj.optString("date", ""),
                         venue = ratingObj.optString("venue", ""),
                         rating = ratingObj.optDouble("rating", 0.0).toFloat(),
+                        rawRating = ratingObj.optDouble("raw_rating", 0.0).toFloat(),
                         confidence = ratingObj.optDouble("confidence", 0.0).toFloat(),
                         bestRecordingId = ratingObj.optString("best_recording", ""),
-                        recordingCount = ratingObj.optInt("recording_count", 0)
+                        recordingCount = ratingObj.optInt("recording_count", 0),
+                        totalHighRatings = ratingObj.optInt("total_high_ratings", 0),
+                        totalLowRatings = ratingObj.optInt("total_low_ratings", 0)
                     )
                 )
                 count++
@@ -176,13 +188,17 @@ class RatingsRepository @Inject constructor(
                     Log.i(TAG, "Processed $count show ratings...")
                 }
             }
+        }
             
-            // Insert into database
-            Log.i(TAG, "Clearing existing ratings and inserting new data...")
-            ratingDao.replaceAllRatings(recordingRatings, showRatings)
+        // Insert into database
+        Log.i(TAG, "Clearing existing ratings and inserting new data...")
+        ratingDao.replaceAllRatings(recordingRatings, showRatings)
+        
+        Log.i(TAG, "Successfully loaded ${recordingRatings.size} recording ratings and ${showRatings.size} show ratings from assets")
             
-            Log.i(TAG, "Successfully loaded ${recordingRatings.size} recording ratings and ${showRatings.size} show ratings from assets")
-            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to parse ratings data: ${e.message}", e)
+            throw e
         } finally {
             // Clean up in-memory JSON data to free memory
             Log.i(TAG, "🧹 Cleaning up ratings JSON data from memory (~${ratingsJson.length / 1024}KB)")

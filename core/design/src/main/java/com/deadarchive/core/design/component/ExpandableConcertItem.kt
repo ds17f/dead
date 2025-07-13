@@ -194,9 +194,9 @@ private fun ShowHeader(
             )
             
             // Star rating
-            if (show.hasRating) {
+            if (show.hasRawRating) {
                 CompactStarRating(
-                    rating = show.rating,
+                    rating = show.rawRating,
                     confidence = show.ratingConfidence,
                     starSize = 16.dp
                 )
@@ -546,9 +546,9 @@ private fun RecordingItem(
                 )
                 
                 // Star rating for recording
-                if (recording.hasRating) {
+                if (recording.hasRawRating) {
                     CompactStarRating(
-                        rating = recording.rating,
+                        rating = recording.rawRating,
                         confidence = recording.ratingConfidence,
                         starSize = 12.dp
                     )

@@ -187,9 +187,9 @@ private fun ShowCard(
                     )
                     
                     // Star rating badge
-                    if (show.hasRating) {
+                    if (show.hasRawRating) {
                         StarRatingBadge(
-                            rating = show.rating,
+                            rating = show.rawRating,
                             backgroundColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
                             contentColor = MaterialTheme.colorScheme.onSurface
                         )

@@ -464,10 +464,10 @@ private fun RecordingHeader(
                     }
                     
                     // Star rating
-                    if (recording.hasRating) {
+                    if (recording.hasRawRating) {
                         Spacer(modifier = Modifier.height(4.dp))
                         CompactStarRating(
-                            rating = recording.rating,
+                            rating = recording.rawRating,
                             confidence = recording.ratingConfidence,
                             starSize = IconResources.Size.SMALL
                         )

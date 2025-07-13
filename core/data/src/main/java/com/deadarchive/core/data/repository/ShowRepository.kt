@@ -83,7 +83,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             android.util.Log.d("ShowRepository", "📋 Show '${showEntity.showId}' has ${recordings.size} recordings from database")
@@ -95,7 +101,11 @@ class ShowRepositoryImpl @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         }
         
@@ -121,7 +131,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             android.util.Log.d("ShowRepository", "📚 Library show '${showEntity.showId}' has ${recordings.size} recordings from database")
@@ -133,7 +149,11 @@ class ShowRepositoryImpl @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         }
         
@@ -190,7 +210,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
         } catch (e: Exception) {
@@ -214,7 +240,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             android.util.Log.d("ShowRepository", "🔍 Database show '${showEntity.showId}' has ${recordings.size} recordings")
@@ -226,7 +258,11 @@ class ShowRepositoryImpl @Inject constructor(
             
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         }
         
@@ -330,7 +366,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
         }
@@ -362,7 +404,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
         }
@@ -376,7 +424,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
         }
@@ -553,7 +607,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 recording.copy(
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
             }
             val isInLibrary = libraryDao.isShowInLibrary(showId)
@@ -571,7 +631,11 @@ class ShowRepositoryImpl @Inject constructor(
                 recordings = recordings,
                 isInLibrary = isInLibrary,
                 rating = showRating?.rating,
-                ratingConfidence = showRating?.confidence
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = showRating?.bestRecordingId
             )
         } catch (e: Exception) {
             android.util.Log.e(TAG, "Error fetching Show: $showId", e)
@@ -604,7 +668,11 @@ class ShowRepositoryImpl @Inject constructor(
                         recordings = recordings,
                         isInLibrary = isInLibrary,
                         rating = showRating.rating,
-                        ratingConfidence = showRating.confidence
+                        rawRating = showRating.rawRating,
+                        ratingConfidence = showRating.confidence,
+                        totalHighRatings = showRating.totalHighRatings,
+                        totalLowRatings = showRating.totalLowRatings,
+                        bestRecordingId = showRating.bestRecordingId
                     )
                 }
             }
@@ -622,7 +690,13 @@ class ShowRepositoryImpl @Inject constructor(
                 recordingEntity?.let { entity ->
                     entity.toRecording().copy(
                         rating = recordingRating.rating,
-                        ratingConfidence = recordingRating.confidence
+                        rawRating = recordingRating.rawRating,
+                        ratingConfidence = recordingRating.confidence,
+                        reviewCount = recordingRating.reviewCount,
+                        sourceType = recordingRating.sourceType,
+                        ratingDistribution = recordingRating.ratingDistribution,
+                        highRatings = recordingRating.highRatings,
+                        lowRatings = recordingRating.lowRatings
                     )
                 }
             }
@@ -656,7 +730,11 @@ class ShowRepositoryImpl @Inject constructor(
                         recordings = recordings,
                         isInLibrary = isInLibrary,
                         rating = showRating.rating,
-                        ratingConfidence = showRating.confidence
+                        rawRating = showRating.rawRating,
+                        ratingConfidence = showRating.confidence,
+                        totalHighRatings = showRating.totalHighRatings,
+                        totalLowRatings = showRating.totalLowRatings,
+                        bestRecordingId = showRating.bestRecordingId
                     )
                 }
             }
