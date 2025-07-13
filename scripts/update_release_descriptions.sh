@@ -69,6 +69,16 @@ else
   echo -e "${BLUE}ℹ️ Working with repository: $REPO_INFO${NC}"
 fi
 
+# Check repository permissions
+echo -e "${BLUE}🔍 Checking repository permissions...${NC}"
+REPO_PERMS=$(gh repo view --json viewerCanAdminister,viewerPermission --jq '.viewerPermission' 2>/dev/null || echo "")
+if [ "$REPO_PERMS" = "ADMIN" ] || [ "$REPO_PERMS" = "MAINTAIN" ] || [ "$REPO_PERMS" = "WRITE" ]; then
+  echo -e "${GREEN}✅ You have $REPO_PERMS permissions - should be able to edit releases${NC}"
+else
+  echo -e "${YELLOW}⚠️ Warning: You have $REPO_PERMS permissions - may not be able to edit releases${NC}"
+  echo -e "${BLUE}ℹ️ You need WRITE, MAINTAIN, or ADMIN permissions to edit releases${NC}"
+fi
+
 # Check if changelog exists
 if [ ! -f "$CHANGELOG_FILE" ]; then
   echo -e "${RED}❌ Error: Changelog file $CHANGELOG_FILE not found${NC}"
@@ -170,15 +180,20 @@ update_release() {
     # Debug: Show what we're trying to update
     echo "  🔍 Debug: Updating release $release_tag with $(echo "$new_description" | wc -l) lines of content"
     
-    if gh release edit "$release_tag" --notes "$new_description" 2>/dev/null; then
+    # Capture both success and error output
+    local error_output
+    error_output=$(gh release edit "$release_tag" --notes "$new_description" 2>&1)
+    local exit_code=$?
+    
+    if [ $exit_code -eq 0 ]; then
       echo -e "${GREEN}  ✅ Updated release $release_tag${NC}"
     else
       echo -e "${RED}  ❌ Failed to update release $release_tag${NC}"
-      echo -e "${YELLOW}  🔍 Trying to get more info about this release...${NC}"
+      echo -e "${YELLOW}  🔍 Error details: $error_output${NC}"
       
       # Try to get release info for debugging
       if gh release view "$release_tag" --json url,tagName,name >/dev/null 2>&1; then
-        echo -e "${BLUE}  ℹ️ Release exists but update failed - possibly a permissions issue${NC}"
+        echo -e "${BLUE}  ℹ️ Release exists but update failed - check error above${NC}"
       else
         echo -e "${YELLOW}  ⚠️ Release may not exist or may be a draft${NC}"
       fi
