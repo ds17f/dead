@@ -120,6 +120,7 @@ class BrowseViewModel @Inject constructor(
     
     fun filterByEra(era: String) {
         println("📱 VM ERA FILTER: filtering by era '$era'")
+        android.util.Log.d("BrowseViewModel", "📱 ERA FILTER: Started filtering by era '$era'")
         viewModelScope.launch {
             _isSearching.value = true
             _uiState.value = BrowseUiState.Loading
@@ -127,8 +128,15 @@ class BrowseViewModel @Inject constructor(
             try {
                 val startTime = System.currentTimeMillis()
                 
-                // Get all shows and filter by era, then sort by rating
-                searchShowsUseCase("")
+                // Search for shows in the specific era using database-level filtering
+                val eraQuery = when (era.lowercase()) {
+                    "1970s" -> "197"  // Will match 1970-1979 dates
+                    "1980s" -> "198"  // Will match 1980-1989 dates  
+                    "1990s" -> "199"  // Will match 1990-1999 dates
+                    else -> era.lowercase()
+                }
+                
+                searchShowsUseCase(eraQuery)
                     .catch { exception ->
                         val filterTime = System.currentTimeMillis() - startTime
                         println("📱 VM ERA FILTER: error after ${filterTime}ms for era '$era': ${exception.message}")
@@ -137,18 +145,8 @@ class BrowseViewModel @Inject constructor(
                         )
                         _isSearching.value = false
                     }
-                    .collect { allShows ->
+                    .collect { eraShows ->
                         val filterTime = System.currentTimeMillis() - startTime
-                        
-                        // Filter by era (decade)
-                        val eraShows = allShows.filter { show ->
-                            when (era.lowercase()) {
-                                "1970s" -> show.date.startsWith("197")
-                                "1980s" -> show.date.startsWith("198") 
-                                "1990s" -> show.date.startsWith("199")
-                                else -> false
-                            }
-                        }
                         
                         // Sort by weighted rating (highest first) for internal ranking, then by date
                         val topRatedShows = eraShows
@@ -160,8 +158,7 @@ class BrowseViewModel @Inject constructor(
                             .take(50) // Limit to top 50 shows
                         
                         println("📱 VM ERA FILTER: success after ${filterTime}ms for era '$era'")
-                        println("  📱 Total shows: ${allShows.size}")
-                        println("  📱 Era shows: ${eraShows.size}")
+                        println("  📱 Era shows found: ${eraShows.size}")
                         println("  📱 Top rated: ${topRatedShows.size}")
                         
                         topRatedShows.take(3).forEachIndexed { index, show ->

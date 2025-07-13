@@ -162,9 +162,9 @@ private fun ShowHeader(
         // Concert information
         Column(
             modifier = Modifier.weight(1f),
-            verticalArrangement = Arrangement.spacedBy(4.dp)
+            verticalArrangement = Arrangement.spacedBy(3.dp)
         ) {
-            // Date (most prominent)
+            // Date (dedicated line)
             Text(
                 text = show.displayDate,
                 style = MaterialTheme.typography.titleMedium,
@@ -174,7 +174,7 @@ private fun ShowHeader(
                 overflow = TextOverflow.Ellipsis
             )
             
-            // Venue name
+            // Venue name (dedicated line)
             Text(
                 text = show.displayVenue,
                 style = MaterialTheme.typography.bodyMedium,
@@ -184,7 +184,7 @@ private fun ShowHeader(
                 overflow = TextOverflow.Ellipsis
             )
             
-            // City, State
+            // City, State (dedicated line)
             Text(
                 text = show.displayLocation,
                 style = MaterialTheme.typography.bodySmall,
@@ -193,51 +193,27 @@ private fun ShowHeader(
                 overflow = TextOverflow.Ellipsis
             )
             
-            // Star rating with context
+            // Star rating (dedicated line)
             if (show.hasRawRating) {
-                DetailedStarRating(
+                CompactStarRating(
                     rating = show.rawRating,
-                    reviewCount = show.recordings.sumOf { it.reviewCount ?: 0 },
-                    ratingContext = show.ratingContext.takeIf { it.isNotEmpty() },
-                    confidence = show.ratingConfidence,
-                    starSize = 16.dp,
-                    textSize = 12.sp
+                    starSize = 14.dp,
+                    confidence = show.ratingConfidence
                 )
             }
             
-            // Recording count and sources
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                Text(
-                    text = "${show.recordingCount} recordings",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-                
-                if (show.availableSources.isNotEmpty()) {
-                    Text(
-                        text = "•",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    
-                    Text(
-                        text = show.availableSources.joinToString(", "),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
-                }
-            }
+            // Recording count (dedicated line)
+            Text(
+                text = "${show.recordingCount} recordings",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
         }
         
         // Action buttons
         Row(
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
+            horizontalArrangement = Arrangement.spacedBy(4.dp)
         ) {
             // Library button
             IconButton(
@@ -352,71 +328,36 @@ private fun RecordingsSection(
     ) {
         // Debug panel - moved above recordings list
         if (settings.showDebugInfo) {
-            DebugPanel(
-                title = "Show Debug Info",
-                isVisible = true,
-                initiallyExpanded = false,
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+            Card(
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
+                )
             ) {
-                // Debug data
-                val debugData = buildDebugString(show, recordings)
-                
-                // Copy button
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.End
+                Column(
+                    modifier = Modifier.padding(16.dp)
                 ) {
-                    Button(
-                        onClick = {
-                            clipboardManager.setText(AnnotatedString(debugData))
-                        },
-                        modifier = Modifier.height(32.dp),
-                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp)
-                    ) {
-                        Icon(
-                            painter = painterResource(R.drawable.ic_library_add), // Using available icon, ideally would be copy icon
-                            contentDescription = "Copy to clipboard",
-                            modifier = Modifier.size(16.dp)
-                        )
-                        Spacer(modifier = Modifier.width(4.dp))
-                        Text(
-                            "Copy",
-                            style = MaterialTheme.typography.bodySmall
-                        )
-                    }
-                }
-                
-                Spacer(modifier = Modifier.height(8.dp))
-                
-                // Show basic information
-                DebugText("Show ID", show.showId ?: "N/A")
-                DebugText("Date", show.date)
-                DebugText("Venue", show.venue ?: "N/A")
-                DebugText("Location", show.location ?: "N/A")
-                DebugText("Year", show.year ?: "N/A")
-                
-                DebugDivider()
-                
-                // Show the actual showId that was used (already normalized)
-                DebugText("Show ID (stored)", show.showId ?: "N/A")
-                DebugText("First Recording Venue", recordings.firstOrNull()?.concertVenue ?: "N/A")
-                
-                DebugDivider()
-                
-                // Recording information
-                DebugText("Recording Count", recordings.size.toString())
-                DebugText("Is In Library", show.isInLibrary.toString())
-                DebugText("Available Sources", show.availableSources.joinToString(", "))
-                
-                if (recordings.isNotEmpty()) {
-                    DebugDivider()
-                    DebugText("Recordings", "")
-                    recordings.forEachIndexed { index, recording ->
-                        DebugText("  Recording ${index + 1}", recording.identifier)
-                        DebugText("    Title", recording.title ?: "N/A")
-                        DebugText("    Source", recording.source ?: "N/A")
-                        DebugText("    Clean Source", recording.cleanSource ?: "N/A")
-                    }
+                    Text(
+                        text = "Debug Info",
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.Bold
+                    )
+                    
+                    Spacer(modifier = Modifier.height(8.dp))
+                    
+                    // Show basic information
+                    SimpleDebugText("Show ID", show.showId ?: "N/A")
+                    SimpleDebugText("Date", show.date)
+                    SimpleDebugText("Venue", show.venue ?: "N/A")
+                    SimpleDebugText("Location", show.location ?: "N/A")
+                    SimpleDebugText("Year", show.year ?: "N/A")
+                    
+                    Divider(modifier = Modifier.padding(vertical = 8.dp))
+                    
+                    // Recording information
+                    SimpleDebugText("Recording Count", recordings.size.toString())
+                    SimpleDebugText("Is In Library", show.isInLibrary.toString())
+                    SimpleDebugText("Available Sources", show.availableSources.joinToString(", "))
                 }
             }
         }
@@ -639,5 +580,31 @@ private fun RecordingItem(
                 }
             }
         }
+    }
+}
+
+/**
+ * Simple debug text component for showing key-value pairs
+ */
+@Composable
+private fun SimpleDebugText(label: String, value: String) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 2.dp),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(
+            text = "$label:",
+            style = MaterialTheme.typography.bodySmall,
+            fontWeight = FontWeight.Medium,
+            modifier = Modifier.weight(1f)
+        )
+        Text(
+            text = value,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.weight(2f)
+        )
     }
 }

@@ -18,6 +18,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -46,7 +47,7 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
-import com.deadarchive.core.design.component.ConfirmationDialog
+// import com.deadarchive.core.design.component.ConfirmationDialog // Temporarily removed
 import com.deadarchive.core.settings.SettingsViewModel
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -73,7 +74,9 @@ fun BrowseScreen(
     
     // Handle era filtering
     LaunchedEffect(initialEra) {
+        android.util.Log.d("BrowseScreen", "📱 LaunchedEffect triggered with initialEra: '$initialEra'")
         initialEra?.let { era ->
+            android.util.Log.d("BrowseScreen", "📱 Calling viewModel.filterByEra with era: '$era'")
             viewModel.filterByEra(era)
         }
     }
@@ -278,16 +281,36 @@ fun BrowseScreen(
         )
     }
     
-    // Confirmation dialog for removing downloads
+    // Confirmation dialog for removing downloads - using AlertDialog directly
     showConfirmationDialog?.let { show ->
-        ConfirmationDialog(
-            title = "Remove Download",
-            message = "Are you sure you want to remove the download for \"${show.displayDate} - ${show.displayVenue}\"?",
-            onConfirm = {
-                viewModel.confirmRemoveDownload()
+        AlertDialog(
+            onDismissRequest = { viewModel.hideConfirmationDialog() },
+            title = {
+                Text(
+                    text = "Remove Download",
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.Medium
+                )
             },
-            onCancel = {
-                viewModel.hideConfirmationDialog()
+            text = {
+                Text(
+                    text = "Are you sure you want to remove the download for \"${show.displayDate} - ${show.displayVenue}\"?",
+                    style = MaterialTheme.typography.bodyMedium
+                )
+            },
+            confirmButton = {
+                Button(
+                    onClick = { viewModel.confirmRemoveDownload() }
+                ) {
+                    Text("Remove")
+                }
+            },
+            dismissButton = {
+                TextButton(
+                    onClick = { viewModel.hideConfirmationDialog() }
+                ) {
+                    Text("Cancel")
+                }
             }
         )
     }

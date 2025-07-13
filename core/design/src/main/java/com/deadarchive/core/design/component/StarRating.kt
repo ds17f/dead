@@ -207,30 +207,6 @@ fun CompactStarRating(
     )
 }
 
-/**
- * A detailed version of StarRating that includes all information.
- */
-@Composable
-fun DetailedStarRating(
-    rating: Float?,
-    reviewCount: Int?,
-    confidence: Float? = null,
-    modifier: Modifier = Modifier,
-    starSize: Dp = IconResources.Size.MEDIUM,
-    textSize: TextUnit = 14.sp
-) {
-    StarRating(
-        rating = rating,
-        modifier = modifier,
-        showRatingText = true,
-        showReviewCount = true,
-        reviewCount = reviewCount,
-        starSize = starSize,
-        textSize = textSize,
-        confidence = confidence,
-        showConfidence = true
-    )
-}
 
 /**
  * A star rating badge that's suitable for cards and compact layouts.
