@@ -1,11 +1,19 @@
 # Changelog
 
+## [0.20.0] - 2025-07-12
+
+### New Features
+* implement enhanced rating system with raw ratings and show-level data (8f588dd)
+* implement MAX rating system and data packaging pipeline (f8aec15)
+
+### Performance Improvements
+* add memory cleanup after JSON processing to reduce app data usage (ce6ce40)
+
+
 ## [0.19.1] - 2025-07-12
 
 ### Performance Improvements
 * optimize library loading by using library-specific queries (1ba11bb)
-
-
 ## [0.19.0] - 2025-07-12
 
 ### New Features
