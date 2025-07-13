@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Dead Archive - Update Release Tags Script
-# Updates existing git tags with changelog content to make them more descriptive
+# Dead Archive - Update GitHub Releases Script
+# Updates existing GitHub releases with changelog content to make them more descriptive
 #
 # Usage: 
-#   ./scripts/update_release_tags.sh             - Update all tags with changelog content
+#   ./scripts/update_release_tags.sh             - Update all GitHub releases with changelog content
 #   ./scripts/update_release_tags.sh --dry-run   - Preview what would be changed without making changes
-#   ./scripts/update_release_tags.sh v1.2.3      - Update only a specific tag
+#   ./scripts/update_release_tags.sh v1.2.3      - Update only a specific release
 
 set -e  # Exit on any error
 
@@ -18,8 +18,8 @@ YELLOW='\033[0;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-echo "${BOLD}🏷️ Dead Archive Release Tags Update Script 🏷️${NORMAL}"
-echo "=================================================="
+echo "${BOLD}🚀 Dead Archive GitHub Releases Update Script 🚀${NORMAL}"
+echo "===================================================="
 
 CHANGELOG_FILE="CHANGELOG.md"
 DRY_RUN=false
@@ -31,7 +31,7 @@ if [ "$1" == "--dry-run" ]; then
   echo -e "${YELLOW}🧪 DRY RUN MODE - No changes will be made${NC}"
 elif [ -n "$1" ] && [[ "$1" =~ ^v[0-9]+\.[0-9]+\.[0-9]+.*$ ]]; then
   SPECIFIC_TAG="$1"
-  echo -e "${BLUE}ℹ️ Will update only tag: ${SPECIFIC_TAG}${NC}"
+  echo -e "${BLUE}ℹ️ Will update only release: ${SPECIFIC_TAG}${NC}"
   
   # Check if dry run is the second argument
   if [ "$2" == "--dry-run" ]; then
@@ -39,7 +39,22 @@ elif [ -n "$1" ] && [[ "$1" =~ ^v[0-9]+\.[0-9]+\.[0-9]+.*$ ]]; then
     echo -e "${YELLOW}🧪 DRY RUN MODE - No changes will be made${NC}"
   fi
 elif [ -n "$1" ]; then
-  echo -e "${RED}❌ Error: Invalid argument. Use --dry-run or a valid tag like v1.2.3${NC}"
+  echo -e "${RED}❌ Error: Invalid argument. Use --dry-run or a valid release tag like v1.2.3${NC}"
+  exit 1
+fi
+
+# Check if gh CLI is available
+if ! command -v gh &> /dev/null; then
+  echo -e "${RED}❌ Error: GitHub CLI (gh) is required but not installed${NC}"
+  echo -e "${BLUE}ℹ️ Install it with: brew install gh (macOS) or apt install gh (Ubuntu)${NC}"
+  echo -e "${BLUE}ℹ️ Then authenticate with: gh auth login${NC}"
+  exit 1
+fi
+
+# Check if authenticated with GitHub
+if ! gh auth status &> /dev/null; then
+  echo -e "${RED}❌ Error: Not authenticated with GitHub${NC}"
+  echo -e "${BLUE}ℹ️ Run: gh auth login${NC}"
   exit 1
 fi
 
@@ -49,20 +64,20 @@ if [ ! -f "$CHANGELOG_FILE" ]; then
   exit 1
 fi
 
-# Get all version tags, sorted by version
+# Get all GitHub releases, sorted by version
 if [ -n "$SPECIFIC_TAG" ]; then
-  TAGS="$SPECIFIC_TAG"
+  RELEASES="$SPECIFIC_TAG"
 else
-  TAGS=$(git tag -l "v*.*.*" | sort -V)
+  RELEASES=$(gh release list --limit 100 | grep -E "v[0-9]+\.[0-9]+\.[0-9]+" | awk '{print $1}' | sort -V)
 fi
 
-if [ -z "$TAGS" ]; then
-  echo -e "${YELLOW}⚠️ No version tags found matching pattern v*.*.* ${NC}"
+if [ -z "$RELEASES" ]; then
+  echo -e "${YELLOW}⚠️ No GitHub releases found matching pattern v*.*.* ${NC}"
   exit 0
 fi
 
-echo -e "${BLUE}📋 Found tags to process:${NC}"
-echo "$TAGS" | sed 's/^/  • /'
+echo -e "${BLUE}📋 Found releases to process:${NC}"
+echo "$RELEASES" | sed 's/^/  • /'
 echo ""
 
 # Function to extract changelog section for a specific version
@@ -86,86 +101,72 @@ extract_changelog_section() {
   " "$CHANGELOG_FILE"
 }
 
-# Function to update a single tag
-update_tag() {
-  local tag=$1
-  local version_without_v=${tag#v}
+# Function to update a single GitHub release
+update_release() {
+  local release_tag=$1
+  local version_without_v=${release_tag#v}
   
-  echo -e "${BLUE}🔍 Processing tag: $tag${NC}"
+  echo -e "${BLUE}🔍 Processing release: $release_tag${NC}"
   
-  # Check if tag exists
-  if ! git rev-parse "$tag" >/dev/null 2>&1; then
-    echo -e "${RED}❌ Tag $tag does not exist, skipping${NC}"
+  # Check if release exists
+  if ! gh release view "$release_tag" >/dev/null 2>&1; then
+    echo -e "${RED}❌ Release $release_tag does not exist, skipping${NC}"
     return 1
   fi
   
   # Extract changelog content for this version
   local changelog_content
-  changelog_content=$(extract_changelog_section "$tag")
+  changelog_content=$(extract_changelog_section "$release_tag")
   
   if [ -z "$changelog_content" ]; then
-    echo -e "${YELLOW}⚠️ No changelog content found for $tag, skipping${NC}"
+    echo -e "${YELLOW}⚠️ No changelog content found for $release_tag, skipping${NC}"
     return 1
   fi
   
-  # Get current tag message
-  local current_message
-  current_message=$(git tag -l --format='%(contents)' "$tag")
+  # Get current release description
+  local current_description
+  current_description=$(gh release view "$release_tag" --json body --jq '.body')
   
-  # Create new tag message with changelog
-  local new_message="Dead Archive $version_without_v
-
-Changes in this release:
-
-$changelog_content"
+  # Create new release description with changelog
+  local new_description="$changelog_content"
   
   if [ "$DRY_RUN" = true ]; then
-    echo -e "${YELLOW}🧪 DRY RUN: Would update tag $tag${NC}"
-    echo -e "${YELLOW}📋 Current message:${NC}"
-    echo "$current_message" | sed 's/^/  /'
+    echo -e "${YELLOW}🧪 DRY RUN: Would update release $release_tag${NC}"
+    echo -e "${YELLOW}📋 Current description:${NC}"
+    echo "$current_description" | sed 's/^/  /'
     echo ""
-    echo -e "${YELLOW}📋 New message would be:${NC}"
-    echo "$new_message" | sed 's/^/  /'
+    echo -e "${YELLOW}📋 New description would be:${NC}"
+    echo "$new_description" | sed 's/^/  /'
     echo ""
     echo -e "${YELLOW}---${NC}"
   else
-    # Check if the tag message is already updated (contains "Changes in this release:")
-    if echo "$current_message" | grep -q "Changes in this release:"; then
-      echo -e "${BLUE}ℹ️ Tag $tag already appears to be updated, skipping${NC}"
+    # Check if the release description is already updated (contains changelog sections)
+    if echo "$current_description" | grep -q "### New Features\|### Bug Fixes\|### "; then
+      echo -e "${BLUE}ℹ️ Release $release_tag already appears to be updated, skipping${NC}"
       return 0
     fi
     
-    # Delete the old tag locally
-    echo "  🗑️ Removing old tag..."
-    git tag -d "$tag"
-    
-    # Get the commit hash that the tag was pointing to
-    local commit_hash
-    commit_hash=$(git rev-list -n 1 "$tag^{}" 2>/dev/null || git log --oneline | grep "release version $version_without_v" | head -1 | cut -d' ' -f1)
-    
-    if [ -z "$commit_hash" ]; then
-      echo -e "${RED}❌ Could not find commit for tag $tag${NC}"
+    # Update the GitHub release with new description
+    echo "  📝 Updating release description..."
+    if gh release edit "$release_tag" --notes "$new_description"; then
+      echo -e "${GREEN}  ✅ Updated release $release_tag${NC}"
+    else
+      echo -e "${RED}  ❌ Failed to update release $release_tag${NC}"
       return 1
     fi
-    
-    # Create new annotated tag with changelog content
-    echo "  🏷️ Creating updated tag..."
-    git tag -a "$tag" "$commit_hash" -m "$new_message"
-    
-    echo -e "${GREEN}  ✅ Updated tag $tag${NC}"
   fi
 }
 
-# Process each tag
+# Process each release
 UPDATED_COUNT=0
 SKIPPED_COUNT=0
 FAILED_COUNT=0
 
-echo -e "${BLUE}🚀 Starting tag updates...${NC}"
+echo -e "${BLUE}🚀 Starting GitHub release updates...${NC}"
 echo ""
 
-for tag in $TAGS; do
-  if update_tag "$tag"; then
+for release in $RELEASES; do
+  if update_release "$release"; then
     UPDATED_COUNT=$((UPDATED_COUNT + 1))
   else
     if [ $? -eq 1 ]; then
@@ -178,7 +179,7 @@ done
 
 echo ""
 echo -e "${BOLD}📊 Summary:${NORMAL}"
-echo "  • Tags processed: $(echo "$TAGS" | wc -l | tr -d ' ')"
+echo "  • Releases processed: $(echo "$RELEASES" | wc -l | tr -d ' ')"
 echo "  • Updated: $UPDATED_COUNT"
 echo "  • Skipped: $SKIPPED_COUNT" 
 echo "  • Failed: $FAILED_COUNT"
@@ -186,19 +187,14 @@ echo "  • Failed: $FAILED_COUNT"
 if [ "$DRY_RUN" = true ]; then
   echo ""
   echo -e "${GREEN}✅ Dry run complete. No changes were made.${NC}"
-  echo "Run without --dry-run to perform actual tag updates."
+  echo "Run without --dry-run to perform actual GitHub release updates."
 elif [ "$UPDATED_COUNT" -gt 0 ]; then
   echo ""
-  echo -e "${YELLOW}⚠️ Important: Updated tags need to be force-pushed to origin${NC}"
-  echo -e "${YELLOW}This will overwrite the remote tags with the new content.${NC}"
-  echo ""
-  echo "To push the updated tags, run:"
-  echo -e "${BLUE}  git push origin --tags --force${NC}"
-  echo ""
-  echo -e "${RED}⚠️ WARNING: This will overwrite remote tags. Make sure your team is aware!${NC}"
+  echo -e "${GREEN}✅ GitHub releases updated successfully!${NC}"
+  echo -e "${BLUE}ℹ️ The changes are immediately visible on GitHub releases page.${NC}"
 elif [ "$UPDATED_COUNT" -eq 0 ] && [ "$FAILED_COUNT" -eq 0 ]; then
   echo ""
-  echo -e "${GREEN}✅ All tags are already up to date!${NC}"
+  echo -e "${GREEN}✅ All GitHub releases are already up to date!${NC}"
 fi
 
 echo ""

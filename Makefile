@@ -34,7 +34,7 @@ help:
 	@echo "  make release     - Build release APK"
 	@echo "  make tag-release - Run tests/lint/builds, then create release version and tag"
 	@echo "  make tag-release-quick - Skip quality checks and create release version and tag (faster)"
-	@echo "  make update-release-tags - Update all existing release tags with changelog content"
+	@echo "  make update-release-tags - Update all existing GitHub releases with changelog content"
 	@echo "  make dry-run-release - Test full release process including quality checks"
 	@echo "  make clean       - Clean build artifacts"
 	@echo ""
@@ -141,10 +141,10 @@ tag-release-quick:
 	@echo "✅ Release tagged and pushed! GitHub Actions will build the artifacts."
 
 update-release-tags:
-	@echo "🏷️ Updating all release tags with changelog content..."
+	@echo "🚀 Updating all GitHub releases with changelog content..."
 	@chmod +x ./scripts/update_release_tags.sh
 	@./scripts/update_release_tags.sh
-	@echo "✅ Release tags updated! Use 'git push origin --tags --force' to push changes."
+	@echo "✅ GitHub releases updated! Changes are immediately visible on GitHub."
 
 dry-run-release:
 	@echo "🧪 Testing release process (dry run)..."
