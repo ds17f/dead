@@ -4,9 +4,9 @@
 # Updates existing GitHub releases with changelog content to make them more descriptive
 #
 # Usage: 
-#   ./scripts/update_release_tags.sh             - Update all GitHub releases with changelog content
-#   ./scripts/update_release_tags.sh --dry-run   - Preview what would be changed without making changes
-#   ./scripts/update_release_tags.sh v1.2.3      - Update only a specific release
+#   ./scripts/update_release_descriptions.sh             - Update all GitHub release descriptions with changelog content
+#   ./scripts/update_release_descriptions.sh --dry-run   - Preview what would be changed without making changes
+#   ./scripts/update_release_descriptions.sh v1.2.3      - Update only a specific release
 
 set -e  # Exit on any error
 
