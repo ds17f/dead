@@ -38,6 +38,8 @@ fun StarRating(
     showRatingText: Boolean = true,
     showReviewCount: Boolean = false,
     reviewCount: Int? = null,
+    ratingContext: String? = null,
+    showRatingContext: Boolean = false,
     starSize: Dp = IconResources.Size.MEDIUM,
     textSize: TextUnit = 14.sp,
     starColor: Color = MaterialTheme.colorScheme.primary,
@@ -71,31 +73,83 @@ fun StarRating(
             emptyStarColor = emptyStarColor
         )
         
-        // Rating text and review count
-        if (showRatingText || (showReviewCount && reviewCount != null)) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(4.dp)
+        // Rating text, review count, and context
+        if (showRatingText || (showReviewCount && reviewCount != null) || (showRatingContext && !ratingContext.isNullOrEmpty())) {
+            Column(
+                verticalArrangement = Arrangement.spacedBy(2.dp)
             ) {
-                if (showRatingText && rating != null && rating > 0f) {
-                    Text(
-                        text = String.format("%.1f", safeRating),
-                        fontSize = textSize,
-                        color = textColor.copy(alpha = alpha),
-                        fontWeight = FontWeight.Medium
-                    )
+                // Rating text and review count
+                if (showRatingText || (showReviewCount && reviewCount != null)) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp)
+                    ) {
+                        if (showRatingText && rating != null && rating > 0f) {
+                            Text(
+                                text = String.format("%.1f", safeRating),
+                                fontSize = textSize,
+                                color = textColor.copy(alpha = alpha),
+                                fontWeight = FontWeight.Medium
+                            )
+                        }
+                        
+                        if (showReviewCount && reviewCount != null && reviewCount > 0) {
+                            Text(
+                                text = "($reviewCount)",
+                                fontSize = textSize,
+                                color = textColor.copy(alpha = alpha * 0.7f)
+                            )
+                        }
+                    }
                 }
                 
-                if (showReviewCount && reviewCount != null && reviewCount > 0) {
+                // Rating context indicator
+                if (showRatingContext && !ratingContext.isNullOrEmpty()) {
                     Text(
-                        text = "($reviewCount)",
-                        fontSize = textSize,
-                        color = textColor.copy(alpha = alpha * 0.7f)
+                        text = ratingContext,
+                        fontSize = (textSize.value * 0.85).sp,
+                        color = when (ratingContext.lowercase()) {
+                            "fan favorite" -> MaterialTheme.colorScheme.primary
+                            "mixed reactions" -> MaterialTheme.colorScheme.tertiary
+                            "polarizing" -> MaterialTheme.colorScheme.error
+                            else -> textColor.copy(alpha = alpha * 0.8f)
+                        },
+                        fontWeight = FontWeight.Medium
                     )
                 }
             }
         }
     }
+}
+
+/**
+ * A comprehensive star rating component that displays rating with context indicators.
+ * Ideal for show cards and detailed views where context is important.
+ */
+@Composable
+fun DetailedStarRating(
+    rating: Float?,
+    reviewCount: Int? = null,
+    ratingContext: String? = null,
+    modifier: Modifier = Modifier,
+    starSize: Dp = IconResources.Size.MEDIUM,
+    textSize: TextUnit = 14.sp,
+    starColor: Color = MaterialTheme.colorScheme.primary,
+    confidence: Float? = null
+) {
+    StarRating(
+        rating = rating,
+        modifier = modifier,
+        showRatingText = true,
+        showReviewCount = reviewCount != null && reviewCount > 0,
+        reviewCount = reviewCount,
+        ratingContext = ratingContext,
+        showRatingContext = !ratingContext.isNullOrEmpty(),
+        starSize = starSize,
+        textSize = textSize,
+        starColor = starColor,
+        confidence = confidence
+    )
 }
 
 /**

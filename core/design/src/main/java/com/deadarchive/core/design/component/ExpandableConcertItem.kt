@@ -193,12 +193,15 @@ private fun ShowHeader(
                 overflow = TextOverflow.Ellipsis
             )
             
-            // Star rating
+            // Star rating with context
             if (show.hasRawRating) {
-                CompactStarRating(
+                DetailedStarRating(
                     rating = show.rawRating,
+                    reviewCount = show.recordings.sumOf { it.reviewCount ?: 0 },
+                    ratingContext = show.ratingContext.takeIf { it.isNotEmpty() },
                     confidence = show.ratingConfidence,
-                    starSize = 16.dp
+                    starSize = 16.dp,
+                    textSize = 12.sp
                 )
             }
             
@@ -545,12 +548,15 @@ private fun RecordingItem(
                     fontWeight = FontWeight.Medium
                 )
                 
-                // Star rating for recording
+                // Star rating for recording with context
                 if (recording.hasRawRating) {
-                    CompactStarRating(
+                    DetailedStarRating(
                         rating = recording.rawRating,
+                        reviewCount = recording.reviewCount,
+                        ratingContext = recording.ratingContext.takeIf { it.isNotEmpty() },
                         confidence = recording.ratingConfidence,
-                        starSize = 12.dp
+                        starSize = 12.dp,
+                        textSize = 10.sp
                     )
                 }
                 
