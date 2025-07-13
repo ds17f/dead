@@ -316,7 +316,13 @@ class ShowRepositoryImpl @Inject constructor(
                     val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                     return recording.copy(
                         rating = recordingRating?.rating,
-                        ratingConfidence = recordingRating?.confidence
+                        rawRating = recordingRating?.rawRating,
+                        ratingConfidence = recordingRating?.confidence,
+                        reviewCount = recordingRating?.reviewCount,
+                        sourceType = recordingRating?.sourceType,
+                        ratingDistribution = recordingRating?.ratingDistribution,
+                        highRatings = recordingRating?.highRatings,
+                        lowRatings = recordingRating?.lowRatings
                     )
                 } else {
                     println("DEBUG: getRecordingById cached recording has no tracks, forcing API refresh")
@@ -347,7 +353,13 @@ class ShowRepositoryImpl @Inject constructor(
                 val finalRecording = recording.copy(
                     isInLibrary = isInLibrary,
                     rating = recordingRating?.rating,
-                    ratingConfidence = recordingRating?.confidence
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
                 )
                 println("DEBUG: getRecordingById returning API recording - tracks: ${finalRecording.tracks.size}")
                 finalRecording
