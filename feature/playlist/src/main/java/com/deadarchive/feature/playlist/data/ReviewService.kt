@@ -1,7 +1,7 @@
 package com.deadarchive.feature.playlist.data
 
 import com.deadarchive.core.network.ArchiveApiService
-import com.deadarchive.core.network.model.ArchiveReview
+import com.deadarchive.core.network.model.ArchiveMetadataResponse.ArchiveReview
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -24,7 +24,7 @@ class ReviewService @Inject constructor(
             
             if (response.isSuccessful) {
                 val metadata = response.body()
-                val archiveReviews = metadata?.metadata?.reviews ?: emptyList()
+                val archiveReviews = metadata?.reviews ?: emptyList()
                 
                 // Convert Archive.org reviews to our Review model
                 val reviews = archiveReviews.mapNotNull { archiveReview ->

@@ -410,9 +410,11 @@ fun PlaylistScreen(
     
     // Load reviews when modal opens
     LaunchedEffect(showReviewDetails, currentRecording) {
-        if (showReviewDetails && currentRecording != null) {
-            reviewViewModel.loadReviews(currentRecording.identifier)
-        } else if (!showReviewDetails) {
+        if (showReviewDetails) {
+            currentRecording?.let { recording ->
+                reviewViewModel.loadReviews(recording.identifier)
+            }
+        } else {
             reviewViewModel.clearReviews()
         }
     }
