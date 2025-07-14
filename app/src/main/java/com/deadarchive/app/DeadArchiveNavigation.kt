@@ -53,7 +53,12 @@ fun DeadArchiveNavigation(
         )
         
         libraryScreen(
-            onNavigateToPlayer = { navController.navigate("player") }
+            onNavigateToPlayer = { recording -> navController.navigate("player/${recording.identifier}") },
+            onNavigateToShow = { show -> 
+                show.bestRecording?.let { recording ->
+                    navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
+                }
+            }
         )
     }
 }

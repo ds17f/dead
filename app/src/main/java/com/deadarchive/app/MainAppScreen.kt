@@ -34,6 +34,7 @@ import com.deadarchive.feature.playlist.MiniPlayerContainer
 import com.deadarchive.feature.downloads.DownloadsScreen
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.model.Show
+import com.deadarchive.feature.library.navigation.libraryScreen
 
 /**
  * Bottom navigation destinations
@@ -158,14 +159,20 @@ fun MainAppScreen(
                 }
             )
             
-            composable("library") {
-                LibraryScreen(
-                    onRecordingSelected = { recording ->
-                        android.util.Log.d("MainAppNavigation", "Library navigating to player with recordingId: '${recording.identifier}'")
-                        navController.navigate("player/${recording.identifier}")
+            // Library screen
+            libraryScreen(
+                onNavigateToPlayer = { recording ->
+                    android.util.Log.d("MainAppNavigation", "Library navigating to playlist with recordingId: '${recording.identifier}'")
+                    navController.navigate("playlist/${recording.identifier}")
+                },
+                onNavigateToShow = { show ->
+                    // Navigate to playlist for the best recording of this show
+                    show.bestRecording?.let { recording ->
+                        android.util.Log.d("MainAppNavigation", "Library navigating to playlist with recordingId: '${recording.identifier}' for show: ${show.displayDate} - ${show.displayVenue}")
+                        navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
                     }
-                )
-            }
+                }
+            )
             
             composable("debug") {
                 SettingsScreen(

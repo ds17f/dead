@@ -26,6 +26,12 @@ import com.deadarchive.core.settings.SettingsViewModel
 @Composable
 fun LibraryScreen(
     onNavigateToRecording: (Recording) -> Unit,
+    onNavigateToShow: (Show) -> Unit = { show ->
+        // Default fallback - navigate to best recording
+        show.bestRecording?.let { recording ->
+            onNavigateToRecording(recording)
+        }
+    },
     modifier: Modifier = Modifier,
     viewModel: LibraryViewModel = hiltViewModel(),
     settingsViewModel: SettingsViewModel = hiltViewModel()
@@ -159,10 +165,8 @@ fun LibraryScreen(
                                 show = show,
                                 settings = settings,
                                 onShowClick = { clickedShow: Show ->
-                                    // Navigate to best recording of this show
-                                    clickedShow.bestRecording?.let { recording ->
-                                        onNavigateToRecording(recording)
-                                    }
+                                    // Navigate to show (playlist)
+                                    onNavigateToShow(clickedShow)
                                 },
                                 onRecordingClick = { recording: Recording ->
                                     onNavigateToRecording(recording)
