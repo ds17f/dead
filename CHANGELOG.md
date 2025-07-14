@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.23.0] - 2025-07-14
+
+### New Features
+* add sharing functionality with recording navigation fix (c96cb26)
+
+
 ## [0.22.0] - 2025-07-14
 
 ### New Features
@@ -24,8 +30,6 @@
 * resolve compilation errors in Archive.org API integration (f919a09)
 * resolve Float/Double type compatibility in rating components (b83eb13)
 * resolve type mismatches between Float and Double in rating components (9a680f6)
-
-
 ## [0.21.0] - 2025-07-13
 
 ### New Features
