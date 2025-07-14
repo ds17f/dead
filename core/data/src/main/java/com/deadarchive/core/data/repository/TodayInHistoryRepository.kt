@@ -94,6 +94,10 @@ class TodayInHistoryRepository @Inject constructor(
             return emptyList()
         }
         val showEntities = showDao.getShowsByMonthDay(monthDay)
+        
+        // Get user preferences once for all shows
+        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+        
         return showEntities.map { showEntity ->
             // Get recordings for this show
             val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { recordingEntity ->

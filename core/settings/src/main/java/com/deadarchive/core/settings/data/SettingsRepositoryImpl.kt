@@ -5,6 +5,7 @@ import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.model.ThemeMode
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.firstOrNull
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -166,6 +167,15 @@ class SettingsRepositoryImpl @Inject constructor(
         } catch (e: Exception) {
             Log.e(TAG, "Failed to update recording preference", e)
             throw e
+        }
+    }
+    
+    override suspend fun getRecordingPreference(showId: String): String? {
+        return try {
+            getSettings().firstOrNull()?.recordingPreferences?.get(showId)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to get recording preference for showId: $showId", e)
+            null
         }
     }
 }
