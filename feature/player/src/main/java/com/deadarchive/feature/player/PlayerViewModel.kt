@@ -967,7 +967,32 @@ class PlayerViewModel @Inject constructor(
             null
         }
     }
-    
+    /**
+     * Get alternative recordings for the current show
+     */
+    suspend fun getAlternativeRecordings(): List<Recording> {
+        return try {
+            val currentRecording = _currentRecording.value
+            if (currentRecording != null) {
+                // Get the show for the current recording
+                val show = getShowByRecording(currentRecording)
+                if (show != null) {
+                    Log.d(TAG, "getAlternativeRecordings: Found show ${show.showId} with ${show.recordings.size} recordings")
+                    // Return all recordings for this show
+                    show.recordings
+                } else {
+                    Log.w(TAG, "getAlternativeRecordings: Could not find show for current recording")
+                    emptyList()
+                }
+            } else {
+                Log.w(TAG, "getAlternativeRecordings: No current recording loaded")
+                emptyList()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getAlternativeRecordings: Error fetching alternative recordings", e)
+            emptyList()
+        }
+    }
     
     companion object {
         private const val TAG = "PlayerViewModel"

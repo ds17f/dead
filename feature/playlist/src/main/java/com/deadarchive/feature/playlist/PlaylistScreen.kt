@@ -24,7 +24,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.res.painterResource
-import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.hilt.navigation.compose.hiltViewModel  
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
 import com.deadarchive.core.model.PlaylistItem
@@ -38,9 +38,11 @@ import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
 import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
+import com.deadarchive.feature.playlist.data.RecordingSelectionService
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
+import com.deadarchive.feature.playlist.ReviewViewModel
 import com.deadarchive.core.design.R
 import kotlinx.coroutines.delay
 import java.text.SimpleDateFormat
@@ -58,6 +60,9 @@ fun PlaylistScreen(
 ) {
     Log.d("PlaylistScreen", "PlaylistScreen: Composing with recordingId: $recordingId")
     
+    // Create RecordingSelectionService manually since it has no dependencies
+    val recordingSelectionService = remember { RecordingSelectionService() }
+    
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
@@ -69,6 +74,24 @@ fun PlaylistScreen(
     
     // Navigation loading state
     val isNavigationLoading by viewModel.isNavigationLoading.collectAsState()
+    
+    // Alternative recordings state
+    var hasAlternativeRecordings by remember { mutableStateOf(false) }
+    
+    // Check for alternative recordings when current recording changes
+    LaunchedEffect(currentRecording) {
+        if (currentRecording != null) {
+            try {
+                val allRecordings = viewModel.getAlternativeRecordings()
+                hasAlternativeRecordings = allRecordings.size > 1 // More than just current recording
+            } catch (e: Exception) {
+                Log.e("PlaylistScreen", "Error checking for alternative recordings", e)
+                hasAlternativeRecordings = false
+            }
+        } else {
+            hasAlternativeRecordings = false
+        }
+    }
     
     // Debug information states
     var debugShow by remember { mutableStateOf<Show?>(null) }
@@ -260,7 +283,7 @@ fun PlaylistScreen(
                             onNextShow = { viewModel.navigateToNextShow() },
                             downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                             isInLibrary = false, // TODO: Add library state tracking
-                            hasAlternativeRecordings = true, // TODO: Check for alternatives
+                            hasAlternativeRecordings = hasAlternativeRecordings,
                             isNavigationLoading = isNavigationLoading,
                             modifier = Modifier.padding(16.dp)
                         )
@@ -311,7 +334,7 @@ fun PlaylistScreen(
                                 onNextShow = { viewModel.navigateToNextShow() },
                                 downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                                 isInLibrary = false, // TODO: Add library state tracking
-                                hasAlternativeRecordings = true, // TODO: Check for alternatives
+                                hasAlternativeRecordings = hasAlternativeRecordings,
                                 isNavigationLoading = isNavigationLoading
                             )
                         }
@@ -455,16 +478,32 @@ fun PlaylistScreen(
     
     // Recording Selection Modal
     if (showRecordingSelection && currentRecording != null) {
-        // TODO: Get actual alternative recordings from ViewModel
-        val alternativeRecordings = emptyList<com.deadarchive.feature.playlist.components.RecordingOption>()
+        var alternativeRecordings by remember { mutableStateOf<List<com.deadarchive.feature.playlist.components.RecordingOption>>(emptyList()) }
+        
+        // Load alternative recordings when modal opens
+        LaunchedEffect(showRecordingSelection, currentRecording) {
+            if (showRecordingSelection && currentRecording != null) {
+                try {
+                    val allRecordings = viewModel.getAlternativeRecordings()
+                    alternativeRecordings = recordingSelectionService.getRecordingOptions(
+                        recordings = allRecordings,
+                        currentRecording = currentRecording,
+                        settings = settings
+                    )
+                } catch (e: Exception) {
+                    Log.e("PlaylistScreen", "Error loading alternative recordings", e)
+                    alternativeRecordings = emptyList()
+                }
+            }
+        }
         
         RecordingSelectionSheet(
             showTitle = currentRecording?.title ?: "",
             currentRecording = currentRecording,
             alternativeRecordings = alternativeRecordings,
             settings = settings,
-            onRecordingSelected = { recording ->
-                // TODO: Implement recording selection
+            onRecordingSelected = { selectedRecording ->
+                viewModel.loadRecording(selectedRecording.identifier)
                 showRecordingSelection = false
             },
             onSetAsDefault = { recordingId ->
