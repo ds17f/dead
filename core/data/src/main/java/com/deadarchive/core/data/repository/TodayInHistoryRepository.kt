@@ -117,13 +117,21 @@ class TodayInHistoryRepository @Inject constructor(
                 showEntity.date, showEntity.venue ?: ""
             )
             
+            // Check for user recording preference first
+            val preferredRecordingId = userPreferences[showEntity.showId]
+            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                preferredRecordingId
+            } else {
+                showRating?.bestRecordingId
+            }
+            
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
                 rawRating = showRating?.rawRating,
                 ratingConfidence = showRating?.confidence,
                 totalHighRatings = showRating?.totalHighRatings,
                 totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = showRating?.bestRecordingId
+                bestRecordingId = finalBestRecordingId
             )
         }
     }

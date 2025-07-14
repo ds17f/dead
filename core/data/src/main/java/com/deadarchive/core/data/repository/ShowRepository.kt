@@ -64,7 +64,8 @@ class ShowRepositoryImpl @Inject constructor(
     private val showDao: ShowDao,
     private val libraryDao: LibraryDao,
     private val audioFormatFilterService: AudioFormatFilterService,
-    private val ratingsRepository: RatingsRepository
+    private val ratingsRepository: RatingsRepository,
+    private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository
 ) : ShowRepository {
     
     companion object {
@@ -639,6 +640,10 @@ class ShowRepositoryImpl @Inject constructor(
                 showEntity.date, showEntity.venue ?: ""
             )
             
+            // Get user's preferred recording for this show (takes priority over rating-based best recording)
+            val userPreferredRecordingId = settingsRepository.getRecordingPreference(showId)
+            val bestRecordingId = userPreferredRecordingId ?: showRating?.bestRecordingId
+            
             Show(
                 date = showEntity.date,
                 venue = showEntity.venue,
@@ -651,7 +656,7 @@ class ShowRepositoryImpl @Inject constructor(
                 ratingConfidence = showRating?.confidence,
                 totalHighRatings = showRating?.totalHighRatings,
                 totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = showRating?.bestRecordingId
+                bestRecordingId = bestRecordingId
             )
         } catch (e: Exception) {
             android.util.Log.e(TAG, "Error fetching Show: $showId", e)
