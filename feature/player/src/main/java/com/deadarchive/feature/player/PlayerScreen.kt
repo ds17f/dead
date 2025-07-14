@@ -28,6 +28,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
+import com.deadarchive.core.model.Show
+import com.deadarchive.core.common.service.ShareService
+import androidx.compose.ui.platform.LocalContext
 import kotlin.math.abs
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -54,6 +57,10 @@ fun PlayerScreen(
     // PlayerScreen is a pure view - gets all data from MediaController via viewModel
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
+    
+    // Create ShareService manually
+    val context = LocalContext.current
+    val shareService = remember { ShareService(context) }
     
     // Get current track info from MediaController through ViewModel
     val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
@@ -104,8 +111,9 @@ fun PlayerScreen(
                 PlayerTopBarTitle(
                     recording = currentRecording,
                     modifier = Modifier.clickable {
-                        Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $recordingId")
-                        onNavigateToPlaylist(recordingId)
+                        val currentRecordingId = currentRecording?.identifier ?: recordingId
+                        Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $currentRecordingId")
+                        onNavigateToPlaylist(currentRecordingId)
                     }
                 )
             },
@@ -115,6 +123,61 @@ fun PlayerScreen(
                 }
             },
             actions = {
+                // Share button
+                if (currentRecording != null) {
+                    IconButton(
+                        onClick = {
+                            // Get current track from the queue
+                            val currentTrackUrlFilename = currentTrackUrl?.substringAfterLast("/")
+                            Log.d("PlayerScreen", "=== SHARE DEBUG ===")
+                            Log.d("PlayerScreen", "currentTrackUrl: '$currentTrackUrl'")
+                            Log.d("PlayerScreen", "currentTrackUrlFilename: '$currentTrackUrlFilename'")
+                            Log.d("PlayerScreen", "Available tracks:")
+                            uiState.tracks.forEachIndexed { index, track ->
+                                Log.d("PlayerScreen", "  [$index] track.filename: '${track.filename}'")
+                                Log.d("PlayerScreen", "  [$index] track.audioFile?.filename: '${track.audioFile?.filename}'")
+                                Log.d("PlayerScreen", "  [$index] matches: ${track.audioFile?.filename == currentTrackUrlFilename}")
+                            }
+                            
+                            val currentTrack = if (currentTrackUrl != null) {
+                                // Use currently playing track if available
+                                Log.d("PlayerScreen", "Using playing track matching logic")
+                                uiState.tracks.find { track ->
+                                    track.audioFile?.filename == currentTrackUrlFilename
+                                }
+                            } else {
+                                // Fallback to currently selected/focused track when not playing
+                                Log.d("PlayerScreen", "Using selected track fallback (currentTrackIndex: ${uiState.currentTrackIndex})")
+                                uiState.currentTrack
+                            }
+                            
+                            Log.d("PlayerScreen", "Selected currentTrack: ${if (currentTrack != null) "FOUND (${currentTrack?.filename})" else "NULL"}")
+                            
+                            // Create show object from recording data
+                            val show = Show(
+                                date = currentRecording!!.concertDate,
+                                venue = currentRecording!!.concertVenue,
+                                location = currentRecording!!.concertLocation
+                            )
+                            
+                            if (currentTrack != null) {
+                                // Share specific track with playback position
+                                val currentPosition = uiState.currentPosition / 1000 // Convert to seconds
+                                shareService.shareTrack(show, currentRecording!!, currentTrack, currentPosition)
+                            } else {
+                                // Fallback to sharing the show
+                                shareService.shareShow(show, currentRecording!!)
+                            }
+                        }
+                    ) {
+                        Icon(
+                            painter = IconResources.Content.Share(), 
+                            contentDescription = "Share track",
+                            tint = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
+                }
+                
                 var showDropdownMenu by remember { mutableStateOf(false) }
                 
                 Box {

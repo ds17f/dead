@@ -38,6 +38,8 @@ import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
 import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
+import com.deadarchive.core.common.service.ShareService
+import androidx.compose.ui.platform.LocalContext
 import com.deadarchive.feature.playlist.data.RecordingSelectionService
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
@@ -64,6 +66,10 @@ fun PlaylistScreen(
     
     // Create RecordingSelectionService manually since it has no dependencies
     val recordingSelectionService = remember { RecordingSelectionService() }
+    
+    // Create ShareService manually
+    val context = LocalContext.current
+    val shareService = remember { ShareService(context) }
     
     // Set navigation callback on PlayerViewModel for next/prev show navigation
     LaunchedEffect(onNavigateToShow) {
@@ -253,7 +259,28 @@ fun PlaylistScreen(
                         Icon(painter = IconResources.Navigation.Back(), contentDescription = "Back")
                     }
                 },
-                actions = {}
+                actions = {
+                    // Share button
+                    if (currentRecording != null) {
+                        IconButton(
+                            onClick = {
+                                // Create show object from recording data
+                                val show = Show(
+                                    date = currentRecording!!.concertDate,
+                                    venue = currentRecording!!.concertVenue,
+                                    location = currentRecording!!.concertLocation
+                                )
+                                shareService.shareShow(show, currentRecording!!)
+                            }
+                        ) {
+                            Icon(
+                                painter = IconResources.Content.Share(), 
+                                contentDescription = "Share show",
+                                tint = MaterialTheme.colorScheme.onSurface
+                            )
+                        }
+                    }
+                }
             )
         }
     ) { paddingValues ->
