@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.22.0] - 2025-07-14
+
+### New Features
+* add recording recommendation system with reset functionality (1e388a6)
+* add recording preference support to browse functionality (91924aa)
+* implement showId-based navigation architecture for recording preferences (17aef51)
+* implement functional recording selection modal (dd4a12a)
+* optimize show navigation with efficient database queries (93b0748)
+* optimize playlist layout with compact reviews and repositioned icons (255aca0)
+* complete enhanced playlist features with improved UI layout (2792532)
+* implement enhanced playlist features with user preferences (f99d5b1)
+* implement Archive.org API integration for review data (45a2cb0)
+* implement interactive star ratings with review modal (8b1a715)
+
+### Bug Fixes
+* update library navigation to go to playlist instead of player (c125296)
+* preserve recording preferences in playlist next/prev show navigation (05b7c28)
+* add missing getRecordingPreference method to SettingsRepository (413ed99)
+* ensure TodayInHistoryRepository consistently applies user recording preferences (30f1543)
+* resolve smart cast issue in recording selection modal (9344b9e)
+* resolve smart cast issues in ReviewService (87ab421)
+* resolve compilation errors in Archive.org API integration (f919a09)
+* resolve Float/Double type compatibility in rating components (b83eb13)
+* resolve type mismatches between Float and Double in rating components (9a680f6)
+
+
 ## [0.21.0] - 2025-07-13
 
 ### New Features
@@ -20,8 +46,6 @@
 
 ### Code Refactoring
 * rename make target to update-release-descriptions for clarity (39c460e)
-
-
 ## [0.21.0] - 2025-07-13
 
 ### New Features
