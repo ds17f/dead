@@ -542,96 +542,102 @@ private fun RecordingHeader(
                 }
             }
             
-            // Interactive rating display
-            if (recording.hasRawRating) {
-                InteractiveRatingDisplay(
-                    rating = recording.rawRating,
-                    reviewCount = recording.reviewCount,
-                    confidence = recording.ratingConfidence,
-                    onShowReviews = onShowReviews
-                )
-            }
-            
-            
-            // Action buttons (floated to the right)
+            // Action buttons and rating display on the same line
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.End,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                // Recording selection button (gear icon)
-                if (hasAlternativeRecordings) {
-                    IconButton(
-                        onClick = onShowRecordingSelection
-                    ) {
-                        Icon(
-                            painter = painterResource(R.drawable.ic_settings),
-                            contentDescription = "Choose Recording",
-                            tint = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                }
-                
-                // Download button
-                IconButton(
-                    onClick = onDownloadClick
+                // Action buttons (on the left side)
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    when (downloadState) {
-                        is com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded -> {
+                    // Recording selection button (gear icon)
+                    if (hasAlternativeRecordings) {
+                        IconButton(
+                            onClick = onShowRecordingSelection
+                        ) {
                             Icon(
-                                painter = IconResources.Content.FileDownload(),
-                                contentDescription = "Download Recording",
+                                painter = painterResource(R.drawable.ic_settings),
+                                contentDescription = "Choose Recording",
                                 tint = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                         }
-                        is com.deadarchive.core.design.component.ShowDownloadState.Downloading -> {
-                            // Spotify-style: Stop icon with circular progress ring
-                            val progressValue = when {
-                                downloadState.totalTracks > 0 -> downloadState.trackProgress
-                                downloadState.progress >= 0f -> downloadState.progress
-                                else -> 0f
-                            }
-                            
-                            Box(
-                                contentAlignment = Alignment.Center,
-                                modifier = Modifier.size(24.dp)
-                            ) {
-                                // Background progress ring
-                                CircularProgressIndicator(
-                                    progress = { progressValue },
-                                    modifier = Modifier.size(24.dp),
-                                    color = MaterialTheme.colorScheme.primary,
-                                    strokeWidth = 2.dp,
-                                    trackColor = MaterialTheme.colorScheme.surfaceVariant
-                                )
-                                
-                                // Stop icon in center - clickable to cancel
+                    }
+                    
+                    // Download button
+                    IconButton(
+                        onClick = onDownloadClick
+                    ) {
+                        when (downloadState) {
+                            is com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded -> {
                                 Icon(
-                                    painter = painterResource(R.drawable.ic_stop),
-                                    contentDescription = "Cancel download",
-                                    tint = MaterialTheme.colorScheme.primary,
-                                    modifier = Modifier
-                                        .size(14.dp)
-                                        .clickable { onCancelDownloadClick() }
+                                    painter = IconResources.Content.FileDownload(),
+                                    contentDescription = "Download Recording",
+                                    tint = MaterialTheme.colorScheme.onSurfaceVariant
                                 )
                             }
-                        }
-                        is com.deadarchive.core.design.component.ShowDownloadState.Downloaded -> {
-                            Icon(
-                                painter = IconResources.Status.CheckCircle(),
-                                contentDescription = "Downloaded - Click to remove",
-                                tint = MaterialTheme.colorScheme.primary,
-                                modifier = Modifier.clickable { onRemoveDownloadClick() }
-                            )
-                        }
-                        is com.deadarchive.core.design.component.ShowDownloadState.Failed -> {
-                            Icon(
-                                painter = IconResources.Content.FileDownload(),
-                                contentDescription = "Download Failed - ${downloadState.errorMessage ?: "Unknown error"}",
-                                tint = MaterialTheme.colorScheme.error
-                            )
+                            is com.deadarchive.core.design.component.ShowDownloadState.Downloading -> {
+                                // Spotify-style: Stop icon with circular progress ring
+                                val progressValue = when {
+                                    downloadState.totalTracks > 0 -> downloadState.trackProgress
+                                    downloadState.progress >= 0f -> downloadState.progress
+                                    else -> 0f
+                                }
+                                
+                                Box(
+                                    contentAlignment = Alignment.Center,
+                                    modifier = Modifier.size(24.dp)
+                                ) {
+                                    // Background progress ring
+                                    CircularProgressIndicator(
+                                        progress = { progressValue },
+                                        modifier = Modifier.size(24.dp),
+                                        color = MaterialTheme.colorScheme.primary,
+                                        strokeWidth = 2.dp,
+                                        trackColor = MaterialTheme.colorScheme.surfaceVariant
+                                    )
+                                    
+                                    // Stop icon in center - clickable to cancel
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_stop),
+                                        contentDescription = "Cancel download",
+                                        tint = MaterialTheme.colorScheme.primary,
+                                        modifier = Modifier
+                                            .size(14.dp)
+                                            .clickable { onCancelDownloadClick() }
+                                    )
+                                }
+                            }
+                            is com.deadarchive.core.design.component.ShowDownloadState.Downloaded -> {
+                                Icon(
+                                    painter = IconResources.Status.CheckCircle(),
+                                    contentDescription = "Downloaded - Click to remove",
+                                    tint = MaterialTheme.colorScheme.primary,
+                                    modifier = Modifier.clickable { onRemoveDownloadClick() }
+                                )
+                            }
+                            is com.deadarchive.core.design.component.ShowDownloadState.Failed -> {
+                                Icon(
+                                    painter = IconResources.Content.FileDownload(),
+                                    contentDescription = "Download Failed - ${downloadState.errorMessage ?: "Unknown error"}",
+                                    tint = MaterialTheme.colorScheme.error
+                                )
+                            }
                         }
                     }
+                }
+                
+                // Interactive rating display (takes remaining space)
+                if (recording.hasRawRating) {
+                    InteractiveRatingDisplay(
+                        rating = recording.rawRating,
+                        reviewCount = recording.reviewCount,
+                        confidence = recording.ratingConfidence,
+                        onShowReviews = onShowReviews,
+                        modifier = Modifier.weight(1f)
+                    )
                 }
             }
             

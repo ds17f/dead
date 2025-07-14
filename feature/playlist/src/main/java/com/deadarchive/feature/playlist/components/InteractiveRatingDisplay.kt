@@ -29,7 +29,6 @@ fun InteractiveRatingDisplay(
     
     Card(
         modifier = modifier
-            .fillMaxWidth()
             .clickable { onShowReviews() },
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
@@ -70,7 +69,7 @@ fun InteractiveRatingDisplay(
                 reviewCount?.let { count ->
                     if (count > 0) {
                         Text(
-                            text = "($count reviews)",
+                            text = "($count)",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
