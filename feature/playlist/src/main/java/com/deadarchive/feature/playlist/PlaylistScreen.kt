@@ -53,6 +53,7 @@ import java.util.Locale
 fun PlaylistScreen(
     onNavigateBack: () -> Unit,
     onNavigateToPlayer: () -> Unit,
+    onNavigateToShow: (String, String) -> Unit = { _, _ -> }, // showId, recordingId
     recordingId: String? = null,
     showId: String? = null,
     viewModel: PlayerViewModel = hiltViewModel(),
@@ -63,6 +64,11 @@ fun PlaylistScreen(
     
     // Create RecordingSelectionService manually since it has no dependencies
     val recordingSelectionService = remember { RecordingSelectionService() }
+    
+    // Set navigation callback on PlayerViewModel for next/prev show navigation
+    LaunchedEffect(onNavigateToShow) {
+        viewModel.onNavigateToShow = onNavigateToShow
+    }
     
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()

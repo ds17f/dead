@@ -209,6 +209,10 @@ fun MainAppScreen(
                 onNavigateToPlayer = { recordingId -> 
                     android.util.Log.d("MainAppNavigation", "Playlist navigating to player with recordingId: '$recordingId'")
                     navController.navigate("player/$recordingId") 
+                },
+                onNavigateToShow = { showId, recordingId ->
+                    android.util.Log.d("MainAppNavigation", "Playlist navigating to next/prev show with showId: '$showId', recordingId: '$recordingId'")
+                    navController.navigate("playlist/$recordingId?showId=$showId")
                 }
             )
             

@@ -50,6 +50,8 @@ class PlayerViewModel @Inject constructor(
     private val _trackDownloadStates = MutableStateFlow<Map<String, Boolean>>(emptyMap())
     val trackDownloadStates: StateFlow<Map<String, Boolean>> = _trackDownloadStates.asStateFlow()
     
+    // Navigation callbacks for show navigation with showId parameter
+    var onNavigateToShow: ((showId: String, recordingId: String) -> Unit)? = null
     
     // Playlist management state - now derived from MediaControllerRepository
     val currentPlaylist: StateFlow<List<PlaylistItem>> = combine(
@@ -858,11 +860,16 @@ class PlayerViewModel @Inject constructor(
                     if (nextShow != null) {
                         Log.d(TAG, "navigateToNextShow: Found next show: ${nextShow.date} at ${nextShow.venue}")
                         
-                        // Get the best recording for the next show
-                        val nextRecording = getBestRecordingForShow(nextShow)
+                        // Use getBestRecordingForShowId to respect user preferences
+                        val nextRecording = getBestRecordingForShowId(nextShow.showId)
                         if (nextRecording != null) {
-                            Log.d(TAG, "navigateToNextShow: Loading next recording: ${nextRecording.identifier}")
-                            loadRecording(nextRecording.identifier)
+                            Log.d(TAG, "navigateToNextShow: Navigating to next show with showId: ${nextShow.showId}, recordingId: ${nextRecording.identifier}")
+                            // Use navigation callback to preserve showId parameter
+                            onNavigateToShow?.invoke(nextShow.showId, nextRecording.identifier) ?: run {
+                                // Fallback to direct loading if no callback is set
+                                Log.w(TAG, "navigateToNextShow: No navigation callback set, falling back to direct loading")
+                                loadRecording(nextRecording.identifier)
+                            }
                         } else {
                             Log.w(TAG, "navigateToNextShow: No recordings found for next show: ${nextShow.showId}")
                         }
@@ -932,11 +939,16 @@ class PlayerViewModel @Inject constructor(
                     if (previousShow != null) {
                         Log.d(TAG, "navigateToPreviousShow: Found previous show: ${previousShow.date} at ${previousShow.venue}")
                         
-                        // Get the best recording for the previous show
-                        val previousRecording = getBestRecordingForShow(previousShow)
+                        // Use getBestRecordingForShowId to respect user preferences
+                        val previousRecording = getBestRecordingForShowId(previousShow.showId)
                         if (previousRecording != null) {
-                            Log.d(TAG, "navigateToPreviousShow: Loading previous recording: ${previousRecording.identifier}")
-                            loadRecording(previousRecording.identifier)
+                            Log.d(TAG, "navigateToPreviousShow: Navigating to previous show with showId: ${previousShow.showId}, recordingId: ${previousRecording.identifier}")
+                            // Use navigation callback to preserve showId parameter
+                            onNavigateToShow?.invoke(previousShow.showId, previousRecording.identifier) ?: run {
+                                // Fallback to direct loading if no callback is set
+                                Log.w(TAG, "navigateToPreviousShow: No navigation callback set, falling back to direct loading")
+                                loadRecording(previousRecording.identifier)
+                            }
                         } else {
                             Log.w(TAG, "navigateToPreviousShow: No recordings found for previous show: ${previousShow.showId}")
                         }
