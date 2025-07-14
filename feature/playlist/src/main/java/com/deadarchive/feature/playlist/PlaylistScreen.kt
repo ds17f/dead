@@ -482,17 +482,20 @@ fun PlaylistScreen(
         
         // Load alternative recordings when modal opens
         LaunchedEffect(showRecordingSelection, currentRecording) {
-            if (showRecordingSelection && currentRecording != null) {
-                try {
-                    val allRecordings = viewModel.getAlternativeRecordings()
-                    alternativeRecordings = recordingSelectionService.getRecordingOptions(
-                        recordings = allRecordings,
-                        currentRecording = currentRecording,
-                        settings = settings
-                    )
-                } catch (e: Exception) {
-                    Log.e("PlaylistScreen", "Error loading alternative recordings", e)
-                    alternativeRecordings = emptyList()
+            if (showRecordingSelection) {
+                val recording = currentRecording
+                if (recording != null) {
+                    try {
+                        val allRecordings = viewModel.getAlternativeRecordings()
+                        alternativeRecordings = recordingSelectionService.getRecordingOptions(
+                            recordings = allRecordings,
+                            currentRecording = recording,
+                            settings = settings
+                        )
+                    } catch (e: Exception) {
+                        Log.e("PlaylistScreen", "Error loading alternative recordings", e)
+                        alternativeRecordings = emptyList()
+                    }
                 }
             }
         }
