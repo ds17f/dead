@@ -3,9 +3,11 @@ package com.deadarchive.feature.browse.navigation
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.deadarchive.feature.browse.BrowseScreen
+import com.deadarchive.core.model.Show
 
 fun NavGraphBuilder.browseScreen(
-    onNavigateToPlayer: (String) -> Unit
+    onNavigateToPlayer: (String) -> Unit,
+    onNavigateToShow: (Show) -> Unit
 ) {
     // Handle both "browse" and "browse?era=..." routes
     composable(
@@ -21,6 +23,7 @@ fun NavGraphBuilder.browseScreen(
         val era = backStackEntry.arguments?.getString("era")
         BrowseScreen(
             onNavigateToPlayer = onNavigateToPlayer,
+            onNavigateToShow = onNavigateToShow,
             initialEra = era
         )
     }
@@ -29,6 +32,7 @@ fun NavGraphBuilder.browseScreen(
     composable("browse") {
         BrowseScreen(
             onNavigateToPlayer = onNavigateToPlayer,
+            onNavigateToShow = onNavigateToShow,
             initialEra = null
         )
     }

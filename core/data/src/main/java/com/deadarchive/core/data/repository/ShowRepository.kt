@@ -76,6 +76,9 @@ class ShowRepositoryImpl @Inject constructor(
     override fun getAllShows(): Flow<List<Show>> = flow {
         android.util.Log.d("ShowRepository", "📋 getAllShows: Starting to retrieve all shows from database")
         
+        // Get user preferences once for all shows
+        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+        
         // Get all shows from database with their recordings
         val showEntities = showDao.getAllShows()
         android.util.Log.d("ShowRepository", "📋 Found ${showEntities.size} show entities in database")
@@ -104,13 +107,21 @@ class ShowRepositoryImpl @Inject constructor(
                 showEntity.date, showEntity.venue ?: ""
             )
             
+            // Check for user recording preference first
+            val preferredRecordingId = userPreferences[showEntity.showId]
+            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                preferredRecordingId
+            } else {
+                showRating?.bestRecordingId
+            }
+            
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
                 rawRating = showRating?.rawRating,
                 ratingConfidence = showRating?.confidence,
                 totalHighRatings = showRating?.totalHighRatings,
                 totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = showRating?.bestRecordingId
+                bestRecordingId = finalBestRecordingId
             )
         }
         
@@ -123,6 +134,9 @@ class ShowRepositoryImpl @Inject constructor(
     
     override fun getLibraryShows(): Flow<List<Show>> = flow {
         android.util.Log.d("ShowRepository", "📚 getLibraryShows: Starting to retrieve library shows from database")
+        
+        // Get user preferences once for all shows
+        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
         
         // Get only library shows from database
         val libraryShowEntities = showDao.getLibraryShows()
@@ -152,13 +166,21 @@ class ShowRepositoryImpl @Inject constructor(
                 showEntity.date, showEntity.venue ?: ""
             )
             
+            // Check for user recording preference first
+            val preferredRecordingId = userPreferences[showEntity.showId]
+            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                preferredRecordingId
+            } else {
+                showRating?.bestRecordingId
+            }
+            
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
                 rawRating = showRating?.rawRating,
                 ratingConfidence = showRating?.confidence,
                 totalHighRatings = showRating?.totalHighRatings,
                 totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = showRating?.bestRecordingId
+                bestRecordingId = finalBestRecordingId
             )
         }
         
@@ -233,6 +255,9 @@ class ShowRepositoryImpl @Inject constructor(
     override fun searchShows(query: String): Flow<List<Show>> = flow {
         android.util.Log.d("ShowRepository", "🔍 searchShows called with query: '$query'")
         
+        // Get user preferences once for all shows
+        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+        
         // ONLY search shows from database - shows should already exist from initial setup
         val cachedShows = showDao.searchShows(query)
         android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from database search")
@@ -261,13 +286,21 @@ class ShowRepositoryImpl @Inject constructor(
                 showEntity.date, showEntity.venue ?: ""
             )
             
+            // Check for user recording preference first
+            val preferredRecordingId = userPreferences[showEntity.showId]
+            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                preferredRecordingId
+            } else {
+                showRating?.bestRecordingId
+            }
+            
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
                 rawRating = showRating?.rawRating,
                 ratingConfidence = showRating?.confidence,
                 totalHighRatings = showRating?.totalHighRatings,
                 totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = showRating?.bestRecordingId
+                bestRecordingId = finalBestRecordingId
             )
         }
         

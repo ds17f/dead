@@ -60,6 +60,12 @@ fun BrowseScreen(
         // Navigate using recording ID
         onNavigateToPlayer(recording.identifier)
     },
+    onNavigateToShow: (Show) -> Unit = { show ->
+        // Navigate to best recording of this show with showId parameter
+        show.bestRecording?.let { recording ->
+            onNavigateToPlayer(recording.identifier)
+        }
+    },
     initialEra: String? = null,
     viewModel: BrowseViewModel = hiltViewModel(),
     settingsViewModel: SettingsViewModel = hiltViewModel()
@@ -172,15 +178,11 @@ fun BrowseScreen(
                                 show = show,
                                 settings = settings,
                                 onShowClick = { clickedShow: Show ->
-                                    // Navigate to best recording of this show
+                                    // Navigate to show with showId parameter for recording preferences
                                     Log.d("BrowseScreen", "onShowClick: Show ${clickedShow.showId} has ${clickedShow.recordings.size} recordings")
                                     Log.d("BrowseScreen", "onShowClick: bestRecording = ${clickedShow.bestRecording?.identifier}")
-                                    clickedShow.bestRecording?.let { recording ->
-                                        Log.d("BrowseScreen", "onShowClick: Navigating to best recording: ${recording.identifier}")
-                                        onNavigateToRecording(recording)
-                                    } ?: run {
-                                        Log.w("BrowseScreen", "onShowClick: No best recording found for show ${clickedShow.showId}")
-                                    }
+                                    Log.d("BrowseScreen", "onShowClick: Navigating to show with showId for recording preferences")
+                                    onNavigateToShow(clickedShow)
                                 },
                                 onRecordingClick = { recording: Recording ->
                                     Log.d("BrowseScreen", "onRecordingClick: Navigating to player for recording ${recording.identifier} - ${recording.title}")

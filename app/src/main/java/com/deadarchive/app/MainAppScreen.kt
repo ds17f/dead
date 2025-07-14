@@ -146,6 +146,15 @@ fun MainAppScreen(
                 onNavigateToPlayer = { recordingId -> 
                     android.util.Log.d("MainAppNavigation", "Browse navigating to playlist with recordingId: '$recordingId'")
                     navController.navigate("playlist/$recordingId")
+                },
+                onNavigateToShow = { show ->
+                    // Navigate to playlist for the best recording of this show with showId parameter
+                    show.bestRecording?.let { recording ->
+                        android.util.Log.d("MainAppNavigation", "Browse navigating to playlist with recordingId: '${recording.identifier}' for show: ${show.displayDate} - ${show.displayVenue}")
+                        navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
+                    } ?: run {
+                        android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
+                    }
                 }
             )
             
