@@ -88,4 +88,10 @@ interface SettingsRepository {
      * @return The preferred recording ID, or null if no preference is set
      */
     suspend fun getRecordingPreference(showId: String): String?
+    
+    /**
+     * Remove the recording preference for a specific show
+     * @param showId The show identifier
+     */
+    suspend fun removeRecordingPreference(showId: String)
 }

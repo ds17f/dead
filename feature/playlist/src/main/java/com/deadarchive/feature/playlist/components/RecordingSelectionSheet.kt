@@ -34,6 +34,7 @@ fun RecordingSelectionSheet(
     settings: AppSettings,
     onRecordingSelected: (Recording) -> Unit,
     onSetAsDefault: (String) -> Unit,
+    onResetToRecommended: (() -> Unit)? = null,
     onDismiss: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -105,10 +106,36 @@ fun RecordingSelectionSheet(
                 }
             }
             
+            // Action buttons
+            val hasRecommendedRecording = alternativeRecordings.any { it.isRecommended && it.matchReason == "Recommended" }
+            val recommendedRecording = alternativeRecordings.find { it.isRecommended && it.matchReason == "Recommended" }
+            val currentIsRecommended = recommendedRecording?.recording?.identifier == currentRecording?.identifier
+            
+            Spacer(modifier = Modifier.height(16.dp))
+            
+            // Reset to Recommended button (show if there's a recommended recording and current isn't it)
+            if (hasRecommendedRecording && !currentIsRecommended && onResetToRecommended != null) {
+                OutlinedButton(
+                    onClick = { 
+                        onResetToRecommended()
+                        onDismiss()
+                    },
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Icon(
+                        painter = IconResources.Content.Star(),
+                        contentDescription = null,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text("Reset to Recommended")
+                }
+                
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+            
             // Set as Default button (only show if different recording selected)
             if (selectedRecording != null && selectedRecording?.identifier != currentRecording?.identifier) {
-                Spacer(modifier = Modifier.height(16.dp))
-                
                 Button(
                     onClick = { 
                         onSetAsDefault(selectedRecording!!.identifier)

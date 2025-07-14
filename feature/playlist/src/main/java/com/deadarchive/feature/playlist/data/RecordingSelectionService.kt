@@ -34,22 +34,36 @@ class RecordingSelectionService @Inject constructor() {
     fun getRecordingOptions(
         recordings: List<Recording>,
         currentRecording: Recording,
-        settings: AppSettings
+        settings: AppSettings,
+        ratingsBestRecordingId: String? = null
     ): List<RecordingOption> {
+        android.util.Log.d("RecordingSelectionService", "getRecordingOptions: recommendedRecordingId = $ratingsBestRecordingId")
+        android.util.Log.d("RecordingSelectionService", "getRecordingOptions: currentRecording = ${currentRecording.identifier}")
+        android.util.Log.d("RecordingSelectionService", "getRecordingOptions: total recordings = ${recordings.size}")
+        
+        // Check if the recommended recording actually exists in the available recordings  
+        val recommendedExists = ratingsBestRecordingId != null && 
+            recordings.any { it.identifier == ratingsBestRecordingId }
+        android.util.Log.d("RecordingSelectionService", "getRecordingOptions: recommendedExists = $recommendedExists")
+        
         return recordings
             .filter { it.identifier != currentRecording.identifier }
             .map { recording ->
                 val isRecommended = isRecordingRecommended(recording, settings)
-                val matchReason = getMatchReason(recording, settings)
+                val isShowRecommended = recommendedExists && recording.identifier == ratingsBestRecordingId
+                val matchReason = getMatchReason(recording, settings, isShowRecommended)
+                
+                android.util.Log.d("RecordingSelectionService", "Recording ${recording.identifier}: isRecommended=$isRecommended, isShowRecommended=$isShowRecommended, matchReason='$matchReason'")
                 
                 RecordingOption(
                     recording = recording,
-                    isRecommended = isRecommended,
+                    isRecommended = isRecommended || isShowRecommended,
                     matchReason = matchReason
                 )
             }
             .sortedWith(
-                compareByDescending<RecordingOption> { it.isRecommended }
+                compareByDescending<RecordingOption> { it.matchReason == "Recommended" } // Ratings-based best first
+                    .thenByDescending { it.isRecommended }
                     .thenByDescending { it.recording.rawRating ?: 0f }
                     .thenBy { getSourcePriority(it.recording.source, settings) }
             )
@@ -94,13 +108,23 @@ class RecordingSelectionService @Inject constructor() {
         return hasGoodRating && matchesSourcePreference && meetsMinRating
     }
     
-    private fun getMatchReason(recording: Recording, settings: AppSettings): String? {
+    private fun getMatchReason(recording: Recording, settings: AppSettings, isShowRecommended: Boolean = false): String? {
         val reasons = mutableListOf<String>()
+        
+        // Prioritize show-recommended recording
+        if (isShowRecommended) {
+            reasons.add("Recommended")
+            return reasons.first()
+        }
         
         // Check rating
         val rating = recording.rawRating ?: 0f
         when {
-            rating >= 4.5f -> reasons.add("Excellent Rating")
+            rating >= 4.5f -> {
+                reasons.add("Excellent Rating")
+                // Also mark highest rated as recommended if no explicit ratings-based best recording
+                if (rating >= 4.8f) reasons.add("Top Rated")
+            }
             rating >= 4.0f -> reasons.add("Great Rating")
             rating >= 3.5f && settings.minimumRating <= 3.5f -> reasons.add("Good Rating")
         }
@@ -110,9 +134,6 @@ class RecordingSelectionService @Inject constructor() {
             matchesSourcePreference(recording.source, settings.preferredAudioSource)) {
             reasons.add("Matches ${settings.preferredAudioSource} Preference")
         }
-        
-        // Check if it's the highest rated
-        // Note: This would need the full list to determine, so we'll skip for now
         
         return reasons.firstOrNull()
     }

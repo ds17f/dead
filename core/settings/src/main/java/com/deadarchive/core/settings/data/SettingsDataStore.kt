@@ -179,6 +179,41 @@ class SettingsDataStore @Inject constructor(
     }
     
     /**
+     * Remove recording preference for a specific show
+     */
+    suspend fun removeRecordingPreference(showId: String) {
+        dataStore.edit { preferences ->
+            // Get current preferences
+            val currentPreferencesString = preferences[recordingPreferencesKey] ?: ""
+            val currentPreferences = if (currentPreferencesString.isBlank()) {
+                emptyMap()
+            } else {
+                try {
+                    currentPreferencesString.split(",")
+                        .mapNotNull { pair ->
+                            val parts = pair.split(":")
+                            if (parts.size == 2) parts[0] to parts[1] else null
+                        }.toMap()
+                } catch (e: Exception) {
+                    emptyMap()
+                }
+            }
+            
+            // Remove the preference for this show
+            val updatedPreferences = currentPreferences - showId
+            
+            // Convert back to string format
+            val updatedPreferencesString = if (updatedPreferences.isEmpty()) {
+                ""
+            } else {
+                updatedPreferences.entries.joinToString(",") { "${it.key}:${it.value}" }
+            }
+            
+            preferences[recordingPreferencesKey] = updatedPreferencesString
+        }
+    }
+    
+    /**
      * Convert DataStore preferences to AppSettings
      */
     private fun Preferences.toAppSettings(): AppSettings {

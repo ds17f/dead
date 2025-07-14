@@ -178,4 +178,15 @@ class SettingsRepositoryImpl @Inject constructor(
             null
         }
     }
+    
+    override suspend fun removeRecordingPreference(showId: String) {
+        try {
+            Log.d(TAG, "Removing recording preference for showId: $showId")
+            settingsDataStore.removeRecordingPreference(showId)
+            Log.d(TAG, "Recording preference removed successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to remove recording preference for showId: $showId", e)
+            throw e
+        }
+    }
 }

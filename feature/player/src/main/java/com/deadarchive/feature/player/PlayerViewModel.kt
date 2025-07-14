@@ -33,7 +33,8 @@ class PlayerViewModel @Inject constructor(
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,
-    private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository
+    private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository,
+    private val ratingsRepository: com.deadarchive.core.data.repository.RatingsRepository
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow(PlayerUiState())
@@ -1073,6 +1074,30 @@ class PlayerViewModel @Inject constructor(
     }
     
     /**
+     * Reset recording preference to the original ratings-based best recording
+     */
+    fun resetToRecommendedRecording(showId: String) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Resetting to recommended recording for showId: $showId")
+                // Remove user preference to fall back to ratings-based best recording
+                settingsRepository.removeRecordingPreference(showId)
+                
+                // Load the recommended recording
+                val recommendedRecordingId = getRecommendedRecordingId(showId)
+                if (recommendedRecordingId != null) {
+                    Log.d(TAG, "Loading recommended recording: $recommendedRecordingId")
+                    loadRecording(recommendedRecordingId)
+                } else {
+                    Log.w(TAG, "No recommended recording found for showId: $showId")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to reset to recommended recording", e)
+            }
+        }
+    }
+    
+    /**
      * Get the best recording for a show ID based on user preferences
      */
     suspend fun getBestRecordingForShowId(showId: String): Recording? {
@@ -1110,6 +1135,49 @@ class PlayerViewModel @Inject constructor(
         } catch (e: Exception) {
             Log.e(TAG, "getAlternativeRecordingsById: Error", e)
             emptyList()
+        }
+    }
+    
+    /**
+     * Get the recommended recording ID for a show (ignoring user preferences, using algorithm-based selection)
+     */
+    suspend fun getRecommendedRecordingId(showId: String): String? {
+        return try {
+            Log.d(TAG, "getRecommendedRecordingId: Starting lookup for showId: $showId")
+            
+            // Get the full show with recordings to determine the best recording
+            val show = showRepository.getShowById(showId)
+            if (show != null) {
+                Log.d(TAG, "getRecommendedRecordingId: Found show - date: ${show.date}, venue: ${show.venue}")
+                Log.d(TAG, "getRecommendedRecordingId: Show has ${show.recordings.size} recordings")
+                Log.d(TAG, "getRecommendedRecordingId: Show bestRecordingId: ${show.bestRecordingId}")
+                
+                // Use algorithm-based selection directly, ignoring bestRecordingId (which may be user preference)
+                val algorithmRecording = show.recordings.minByOrNull { recording ->
+                    // Same algorithm as Show.bestRecording but ignoring bestRecordingId
+                    val ratingPriority = if (recording.hasRawRating) 0 else 1
+                    val sourcePriority = when (recording.cleanSource?.uppercase()) {
+                        "SBD" -> 1
+                        "MATRIX" -> 2  
+                        "FM" -> 3
+                        "AUD" -> 4
+                        else -> 5
+                    }
+                    val ratingValue = recording.rawRating ?: 0f
+                    val ratingBonus = (5f - ratingValue) / 10f
+                    
+                    ratingPriority * 10 + sourcePriority + ratingBonus
+                }
+                Log.d(TAG, "getRecommendedRecordingId: Algorithm-based recommended recording: ${algorithmRecording?.identifier}")
+                
+                algorithmRecording?.identifier
+            } else {
+                Log.w(TAG, "getRecommendedRecordingId: Show not found for showId: $showId")
+                null
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getRecommendedRecordingId: Error", e)
+            null
         }
     }
 }

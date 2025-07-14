@@ -546,10 +546,24 @@ fun PlaylistScreen(
                             Log.d("PlaylistScreen", "Recording $index: ${rec.identifier} - ${rec.displayTitle}")
                         }
                         
+                        // Get the recommended recording ID using show's built-in recommendation
+                        val recommendedRecordingId = if (showId != null) {
+                            viewModel.getRecommendedRecordingId(showId)
+                        } else null
+                        Log.d("PlaylistScreen", "Recording selection: Recommended recording ID = $recommendedRecordingId")
+                        Log.d("PlaylistScreen", "Recording selection: Current recording ID = ${recording.identifier}")
+                        
+                        // Debug: Check if any recording matches the recommended best
+                        allRecordings.forEach { rec ->
+                            val isRecommended = rec.identifier == recommendedRecordingId
+                            Log.d("PlaylistScreen", "Recording ${rec.identifier} - isRecommended: $isRecommended, title: ${rec.displayTitle}")
+                        }
+                        
                         alternativeRecordings = recordingSelectionService.getRecordingOptions(
                             recordings = allRecordings,
                             currentRecording = recording,
-                            settings = settings
+                            settings = settings,
+                            ratingsBestRecordingId = recommendedRecordingId
                         )
                         Log.d("PlaylistScreen", "Recording selection: ${alternativeRecordings.size} alternative recordings after filtering")
                         Log.d("PlaylistScreen", "Recording selection: Current recording = ${recording.identifier}")
@@ -581,6 +595,12 @@ fun PlaylistScreen(
                 }
                 showRecordingSelection = false
             },
+            onResetToRecommended = if (showId != null) {
+                {
+                    viewModel.resetToRecommendedRecording(showId)
+                    showRecordingSelection = false
+                }
+            } else null,
             onDismiss = { showRecordingSelection = false }
         )
     }
