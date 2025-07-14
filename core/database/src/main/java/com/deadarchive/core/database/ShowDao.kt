@@ -117,6 +117,13 @@ interface ShowDao {
     
     @Query("SELECT MAX(date) FROM concerts_new")
     suspend fun getLatestShowDate(): String?
+    
+    // Navigation queries for efficient show navigation
+    @Query("SELECT * FROM concerts_new WHERE date > :currentDate ORDER BY date ASC LIMIT 1")
+    suspend fun getNextShowByDate(currentDate: String): ShowEntity?
+    
+    @Query("SELECT * FROM concerts_new WHERE date < :currentDate ORDER BY date DESC LIMIT 1")
+    suspend fun getPreviousShowByDate(currentDate: String): ShowEntity?
 }
 
 // Data classes for query results

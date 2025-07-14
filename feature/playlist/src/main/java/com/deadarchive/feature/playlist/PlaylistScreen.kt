@@ -67,6 +67,9 @@ fun PlaylistScreen(
     val downloadStates by viewModel.downloadStates.collectAsState()
     val trackDownloadStates by viewModel.trackDownloadStates.collectAsState()
     
+    // Navigation loading state
+    val isNavigationLoading by viewModel.isNavigationLoading.collectAsState()
+    
     // Debug information states
     var debugShow by remember { mutableStateOf<Show?>(null) }
     var debugShowEntity by remember { mutableStateOf<ShowEntity?>(null) }
@@ -253,11 +256,12 @@ fun PlaylistScreen(
                             onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
                             onShowReviews = { showReviewDetails = true },
                             onShowRecordingSelection = { showRecordingSelection = true },
-                            onPreviousShow = { /* TODO: Navigate to previous show */ },
-                            onNextShow = { /* TODO: Navigate to next show */ },
+                            onPreviousShow = { viewModel.navigateToPreviousShow() },
+                            onNextShow = { viewModel.navigateToNextShow() },
                             downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                             isInLibrary = false, // TODO: Add library state tracking
                             hasAlternativeRecordings = true, // TODO: Check for alternatives
+                            isNavigationLoading = isNavigationLoading,
                             modifier = Modifier.padding(16.dp)
                         )
                         
@@ -303,11 +307,12 @@ fun PlaylistScreen(
                                 onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
                                 onShowReviews = { showReviewDetails = true },
                                 onShowRecordingSelection = { showRecordingSelection = true },
-                                onPreviousShow = { /* TODO: Navigate to previous show */ },
-                                onNextShow = { /* TODO: Navigate to next show */ },
+                                onPreviousShow = { viewModel.navigateToPreviousShow() },
+                                onNextShow = { viewModel.navigateToNextShow() },
                                 downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                                 isInLibrary = false, // TODO: Add library state tracking
-                                hasAlternativeRecordings = true // TODO: Check for alternatives
+                                hasAlternativeRecordings = true, // TODO: Check for alternatives
+                                isNavigationLoading = isNavigationLoading
                             )
                         }
                         
@@ -486,6 +491,7 @@ private fun RecordingHeader(
     downloadState: ShowDownloadState = ShowDownloadState.NotDownloaded,
     isInLibrary: Boolean = false,
     hasAlternativeRecordings: Boolean = false,
+    isNavigationLoading: Boolean = false,
     modifier: Modifier = Modifier
 ) {
     if (recording == null) return
@@ -652,13 +658,22 @@ private fun RecordingHeader(
                 // Previous show button
                 IconButton(
                     onClick = onPreviousShow,
+                    enabled = !isNavigationLoading,
                     modifier = Modifier.size(36.dp)
                 ) {
-                    Icon(
-                        painter = IconResources.Navigation.ChevronLeft(),
-                        contentDescription = "Previous Show",
-                        tint = MaterialTheme.colorScheme.onSurface
-                    )
+                    if (isNavigationLoading) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            strokeWidth = 2.dp,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                    } else {
+                        Icon(
+                            painter = IconResources.Navigation.ChevronLeft(),
+                            contentDescription = "Previous Show",
+                            tint = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
                 }
                 
                 // Play button (smaller, centered)
@@ -685,13 +700,22 @@ private fun RecordingHeader(
                 // Next show button
                 IconButton(
                     onClick = onNextShow,
+                    enabled = !isNavigationLoading,
                     modifier = Modifier.size(36.dp)
                 ) {
-                    Icon(
-                        painter = IconResources.Navigation.ChevronRight(),
-                        contentDescription = "Next Show",
-                        tint = MaterialTheme.colorScheme.onSurface
-                    )
+                    if (isNavigationLoading) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            strokeWidth = 2.dp,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                    } else {
+                        Icon(
+                            painter = IconResources.Navigation.ChevronRight(),
+                            contentDescription = "Next Show",
+                            tint = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
                 }
             }
         }

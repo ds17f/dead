@@ -50,6 +50,7 @@ class PlayerViewModel @Inject constructor(
     private val _trackDownloadStates = MutableStateFlow<Map<String, Boolean>>(emptyMap())
     val trackDownloadStates: StateFlow<Map<String, Boolean>> = _trackDownloadStates.asStateFlow()
     
+    
     // Playlist management state - now derived from MediaControllerRepository
     val currentPlaylist: StateFlow<List<PlaylistItem>> = combine(
         mediaControllerRepository.queueUrls,
@@ -122,6 +123,10 @@ class PlayerViewModel @Inject constructor(
     
     private val _playlistTitle = MutableStateFlow<String?>(null)
     val playlistTitle: StateFlow<String?> = _playlistTitle.asStateFlow()
+    
+    // Navigation loading state
+    private val _isNavigationLoading = MutableStateFlow(false)
+    val isNavigationLoading: StateFlow<Boolean> = _isNavigationLoading.asStateFlow()
     
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
@@ -833,6 +838,136 @@ class PlayerViewModel @Inject constructor(
             }
         }
     }
+    
+    /**
+     * Navigate to next show chronologically
+     */
+    fun navigateToNextShow() {
+        Log.d(TAG, "navigateToNextShow: Button clicked - starting fast navigation")
+        _isNavigationLoading.value = true
+        viewModelScope.launch {
+            try {
+                val currentRecording = _currentRecording.value
+                if (currentRecording != null) {
+                    Log.d(TAG, "navigateToNextShow: Current recording date: ${currentRecording.concertDate}")
+                    
+                    // Use a more efficient approach: find shows around current date
+                    val currentDate = currentRecording.concertDate
+                    val nextShow = findNextShowByDate(currentDate)
+                    
+                    if (nextShow != null) {
+                        Log.d(TAG, "navigateToNextShow: Found next show: ${nextShow.date} at ${nextShow.venue}")
+                        
+                        // Get the best recording for the next show
+                        val nextRecording = getBestRecordingForShow(nextShow)
+                        if (nextRecording != null) {
+                            Log.d(TAG, "navigateToNextShow: Loading next recording: ${nextRecording.identifier}")
+                            loadRecording(nextRecording.identifier)
+                        } else {
+                            Log.w(TAG, "navigateToNextShow: No recordings found for next show: ${nextShow.showId}")
+                        }
+                    } else {
+                        Log.d(TAG, "navigateToNextShow: No next show available")
+                    }
+                } else {
+                    Log.w(TAG, "navigateToNextShow: No current recording loaded")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "navigateToNextShow: Error navigating to next show", e)
+            } finally {
+                _isNavigationLoading.value = false
+            }
+        }
+    }
+    
+    /**
+     * Find the next show chronologically after the given date (newer shows)
+     */
+    private suspend fun findNextShowByDate(currentDate: String): Show? {
+        return try {
+            val nextShow = showRepository.getNextShowByDate(currentDate)
+            Log.d(TAG, "findNextShowByDate: Current date: $currentDate, Found next show: ${nextShow?.date} at ${nextShow?.venue}")
+            nextShow
+        } catch (e: Exception) {
+            Log.e(TAG, "findNextShowByDate: Error", e)
+            null
+        }
+    }
+    
+    /**
+     * Get the best recording for a show (first one, which is typically highest quality)
+     */
+    private suspend fun getBestRecordingForShow(show: Show): Recording? {
+        return try {
+            // If the show already has recordings loaded, use the first one
+            if (show.recordings.isNotEmpty()) {
+                show.recordings.first()
+            } else {
+                // Otherwise fetch from repository
+                val recordings = showRepository.getRecordingsByShowId(show.showId)
+                recordings.firstOrNull()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getBestRecordingForShow: Error", e)
+            null
+        }
+    }
+    
+    /**
+     * Navigate to previous show chronologically
+     */
+    fun navigateToPreviousShow() {
+        Log.d(TAG, "navigateToPreviousShow: Button clicked - starting fast navigation")
+        _isNavigationLoading.value = true
+        viewModelScope.launch {
+            try {
+                val currentRecording = _currentRecording.value
+                if (currentRecording != null) {
+                    Log.d(TAG, "navigateToPreviousShow: Current recording date: ${currentRecording.concertDate}")
+                    
+                    // Use a more efficient approach: find shows around current date
+                    val currentDate = currentRecording.concertDate
+                    val previousShow = findPreviousShowByDate(currentDate)
+                    
+                    if (previousShow != null) {
+                        Log.d(TAG, "navigateToPreviousShow: Found previous show: ${previousShow.date} at ${previousShow.venue}")
+                        
+                        // Get the best recording for the previous show
+                        val previousRecording = getBestRecordingForShow(previousShow)
+                        if (previousRecording != null) {
+                            Log.d(TAG, "navigateToPreviousShow: Loading previous recording: ${previousRecording.identifier}")
+                            loadRecording(previousRecording.identifier)
+                        } else {
+                            Log.w(TAG, "navigateToPreviousShow: No recordings found for previous show: ${previousShow.showId}")
+                        }
+                    } else {
+                        Log.d(TAG, "navigateToPreviousShow: No previous show available")
+                    }
+                } else {
+                    Log.w(TAG, "navigateToPreviousShow: No current recording loaded")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "navigateToPreviousShow: Error navigating to previous show", e)
+            } finally {
+                _isNavigationLoading.value = false
+            }
+        }
+    }
+    
+    /**
+     * Find the previous show chronologically before the given date (older shows)
+     */
+    private suspend fun findPreviousShowByDate(currentDate: String): Show? {
+        return try {
+            val previousShow = showRepository.getPreviousShowByDate(currentDate)
+            Log.d(TAG, "findPreviousShowByDate: Current date: $currentDate, Found previous show: ${previousShow?.date} at ${previousShow?.venue}")
+            previousShow
+        } catch (e: Exception) {
+            Log.e(TAG, "findPreviousShowByDate: Error", e)
+            null
+        }
+    }
+    
     
     companion object {
         private const val TAG = "PlayerViewModel"

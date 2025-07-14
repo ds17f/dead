@@ -51,6 +51,10 @@ interface ShowRepository {
     suspend fun debugDatabaseState(): String
     suspend fun getShowEntityById(showId: String): ShowEntity?
     suspend fun getShowById(showId: String): Show?
+    
+    // Navigation methods for efficient show navigation
+    suspend fun getNextShowByDate(currentDate: String): Show?
+    suspend fun getPreviousShowByDate(currentDate: String): Show?
 }
 
 @Singleton
@@ -1022,6 +1026,102 @@ class ShowRepositoryImpl @Inject constructor(
         } catch (e: Exception) {
             android.util.Log.e("ShowRepository", "🎵 ❌ Failed to populate song names: ${e.message}", e)
             throw e
+        }
+    }
+    
+    override suspend fun getNextShowByDate(currentDate: String): Show? {
+        return try {
+            val showEntity = showDao.getNextShowByDate(currentDate)
+            if (showEntity != null) {
+                // Get recordings for this show
+                val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                    val recording = it.toRecording()
+                    // Add recording rating
+                    val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                    recording.copy(
+                        rating = recordingRating?.rating,
+                        rawRating = recordingRating?.rawRating,
+                        ratingConfidence = recordingRating?.confidence,
+                        reviewCount = recordingRating?.reviewCount,
+                        sourceType = recordingRating?.sourceType,
+                        ratingDistribution = recordingRating?.ratingDistribution,
+                        highRatings = recordingRating?.highRatings,
+                        lowRatings = recordingRating?.lowRatings
+                    )
+                }
+                val isInLibrary = libraryDao.isShowInLibrary(showEntity.showId)
+                
+                // Get show rating
+                val showRating = ratingsRepository.getShowRatingByDateVenue(
+                    showEntity.date, showEntity.venue ?: ""
+                )
+                
+                Show(
+                    date = showEntity.date,
+                    venue = showEntity.venue,
+                    location = showEntity.location,
+                    year = showEntity.year,
+                    recordings = recordings,
+                    isInLibrary = isInLibrary,
+                    rating = showRating?.rating,
+                    rawRating = showRating?.rawRating,
+                    ratingConfidence = showRating?.confidence,
+                    totalHighRatings = showRating?.totalHighRatings,
+                    totalLowRatings = showRating?.totalLowRatings,
+                    bestRecordingId = showRating?.bestRecordingId
+                )
+            } else null
+        } catch (e: Exception) {
+            android.util.Log.e(TAG, "Error fetching next show by date: $currentDate", e)
+            null
+        }
+    }
+    
+    override suspend fun getPreviousShowByDate(currentDate: String): Show? {
+        return try {
+            val showEntity = showDao.getPreviousShowByDate(currentDate)
+            if (showEntity != null) {
+                // Get recordings for this show
+                val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                    val recording = it.toRecording()
+                    // Add recording rating
+                    val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                    recording.copy(
+                        rating = recordingRating?.rating,
+                        rawRating = recordingRating?.rawRating,
+                        ratingConfidence = recordingRating?.confidence,
+                        reviewCount = recordingRating?.reviewCount,
+                        sourceType = recordingRating?.sourceType,
+                        ratingDistribution = recordingRating?.ratingDistribution,
+                        highRatings = recordingRating?.highRatings,
+                        lowRatings = recordingRating?.lowRatings
+                    )
+                }
+                val isInLibrary = libraryDao.isShowInLibrary(showEntity.showId)
+                
+                // Get show rating
+                val showRating = ratingsRepository.getShowRatingByDateVenue(
+                    showEntity.date, showEntity.venue ?: ""
+                )
+                
+                Show(
+                    date = showEntity.date,
+                    venue = showEntity.venue,
+                    location = showEntity.location,
+                    year = showEntity.year,
+                    recordings = recordings,
+                    isInLibrary = isInLibrary,
+                    rating = showRating?.rating,
+                    rawRating = showRating?.rawRating,
+                    ratingConfidence = showRating?.confidence,
+                    totalHighRatings = showRating?.totalHighRatings,
+                    totalLowRatings = showRating?.totalLowRatings,
+                    bestRecordingId = showRating?.bestRecordingId
+                )
+            } else null
+        } catch (e: Exception) {
+            android.util.Log.e(TAG, "Error fetching previous show by date: $currentDate", e)
+            null
         }
     }
 }
