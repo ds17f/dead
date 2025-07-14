@@ -38,8 +38,6 @@ import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
 import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
-import com.deadarchive.feature.playlist.components.RecordingPreferencesSheet
-import com.deadarchive.feature.playlist.data.RecordingSelectionService
 import com.deadarchive.core.settings.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
@@ -76,9 +74,8 @@ fun PlaylistScreen(
     // Review modal state
     var showReviewDetails by remember { mutableStateOf(false) }
     
-    // Recording selection modal states
+    // Recording selection modal state
     var showRecordingSelection by remember { mutableStateOf(false) }
-    var showRecordingPreferences by remember { mutableStateOf(false) }
     
     // Fetch debug information when recording changes
     LaunchedEffect(currentRecording, settings.showDebugInfo) {
@@ -181,7 +178,8 @@ fun PlaylistScreen(
                     IconButton(onClick = onNavigateBack) {
                         Icon(painter = IconResources.Navigation.Back(), contentDescription = "Back")
                     }
-                }
+                },
+                actions = {}
             )
         }
     ) { paddingValues ->
@@ -255,13 +253,11 @@ fun PlaylistScreen(
                             onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
                             onShowReviews = { showReviewDetails = true },
                             onShowRecordingSelection = { showRecordingSelection = true },
-                            onNavigateToPreviousShow = { /* TODO: Implement navigation */ },
-                            onNavigateToNextShow = { /* TODO: Implement navigation */ },
+                            onPreviousShow = { /* TODO: Navigate to previous show */ },
+                            onNextShow = { /* TODO: Navigate to next show */ },
                             downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                             isInLibrary = false, // TODO: Add library state tracking
                             hasAlternativeRecordings = true, // TODO: Check for alternatives
-                            hasPreviousShow = true, // TODO: Check for previous show
-                            hasNextShow = true, // TODO: Check for next show
                             modifier = Modifier.padding(16.dp)
                         )
                         
@@ -307,13 +303,11 @@ fun PlaylistScreen(
                                 onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
                                 onShowReviews = { showReviewDetails = true },
                                 onShowRecordingSelection = { showRecordingSelection = true },
-                                onNavigateToPreviousShow = { /* TODO: Implement navigation */ },
-                                onNavigateToNextShow = { /* TODO: Implement navigation */ },
+                                onPreviousShow = { /* TODO: Navigate to previous show */ },
+                                onNextShow = { /* TODO: Navigate to next show */ },
                                 downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
                                 isInLibrary = false, // TODO: Add library state tracking
-                                hasAlternativeRecordings = true, // TODO: Check for alternatives
-                                hasPreviousShow = true, // TODO: Check for previous show
-                                hasNextShow = true // TODO: Check for next show
+                                hasAlternativeRecordings = true // TODO: Check for alternatives
                             )
                         }
                         
@@ -468,28 +462,11 @@ fun PlaylistScreen(
                 // TODO: Implement recording selection
                 showRecordingSelection = false
             },
-            onSettingsClick = { 
+            onSetAsDefault = { recordingId ->
+                // TODO: Store as default recording preference
                 showRecordingSelection = false
-                showRecordingPreferences = true 
             },
             onDismiss = { showRecordingSelection = false }
-        )
-    }
-    
-    // Recording Preferences Modal
-    if (showRecordingPreferences) {
-        RecordingPreferencesSheet(
-            settings = settings,
-            onUpdatePreferredAudioSource = { source ->
-                settingsViewModel.updatePreferredAudioSource(source)
-            },
-            onUpdateMinimumRating = { rating ->
-                settingsViewModel.updateMinimumRating(rating)
-            },
-            onUpdatePreferHigherRated = { prefer ->
-                settingsViewModel.updatePreferHigherRated(prefer)
-            },
-            onDismiss = { showRecordingPreferences = false }
         )
     }
 }
@@ -504,13 +481,11 @@ private fun RecordingHeader(
     onRemoveDownloadClick: () -> Unit = {},
     onShowReviews: () -> Unit = {},
     onShowRecordingSelection: () -> Unit = {},
-    onNavigateToPreviousShow: () -> Unit = {},
-    onNavigateToNextShow: () -> Unit = {},
+    onPreviousShow: () -> Unit = {},
+    onNextShow: () -> Unit = {},
     downloadState: ShowDownloadState = ShowDownloadState.NotDownloaded,
     isInLibrary: Boolean = false,
     hasAlternativeRecordings: Boolean = false,
-    hasPreviousShow: Boolean = false,
-    hasNextShow: Boolean = false,
     modifier: Modifier = Modifier
 ) {
     if (recording == null) return
@@ -565,22 +540,6 @@ private fun RecordingHeader(
                     }
                     
                 }
-                
-                // Album art placeholder
-                Box(
-                    modifier = Modifier
-                        .size(60.dp)
-                        .clip(RoundedCornerShape(8.dp))
-                        .background(MaterialTheme.colorScheme.surfaceVariant),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Icon(
-                        painter = IconResources.PlayerControls.AlbumArt(),
-                        contentDescription = "Album Art",
-                        modifier = Modifier.size(24.dp),
-                        tint = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
             }
             
             // Interactive rating display
@@ -593,100 +552,24 @@ private fun RecordingHeader(
                 )
             }
             
-            // Recording selection button
-            if (hasAlternativeRecordings) {
-                Spacer(modifier = Modifier.height(8.dp))
-                
-                OutlinedButton(
-                    onClick = onShowRecordingSelection,
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.outlinedButtonColors(
-                        contentColor = MaterialTheme.colorScheme.primary
-                    )
-                ) {
-                    Icon(
-                        painter = IconResources.Navigation.Menu(),
-                        contentDescription = "View Alternative Recordings",
-                        modifier = Modifier.size(18.dp)
-                    )
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text(
-                        text = "View Alternative Recordings",
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium
-                    )
-                }
-            }
             
-            // Chronological navigation buttons
-            if (hasPreviousShow || hasNextShow) {
-                Spacer(modifier = Modifier.height(8.dp))
-                
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
-                    // Previous Show Button
-                    OutlinedButton(
-                        onClick = onNavigateToPreviousShow,
-                        enabled = hasPreviousShow,
-                        modifier = Modifier.weight(1f),
-                        colors = ButtonDefaults.outlinedButtonColors(
-                            contentColor = MaterialTheme.colorScheme.secondary
-                        )
-                    ) {
-                        Icon(
-                            painter = IconResources.Navigation.ChevronLeft(),
-                            contentDescription = "Previous Show",
-                            modifier = Modifier.size(16.dp)
-                        )
-                        Spacer(modifier = Modifier.width(4.dp))
-                        Text(
-                            text = "Previous",
-                            style = MaterialTheme.typography.bodySmall,
-                            fontWeight = FontWeight.Medium
-                        )
-                    }
-                    
-                    // Next Show Button
-                    OutlinedButton(
-                        onClick = onNavigateToNextShow,
-                        enabled = hasNextShow,
-                        modifier = Modifier.weight(1f),
-                        colors = ButtonDefaults.outlinedButtonColors(
-                            contentColor = MaterialTheme.colorScheme.secondary
-                        )
-                    ) {
-                        Text(
-                            text = "Next",
-                            style = MaterialTheme.typography.bodySmall,
-                            fontWeight = FontWeight.Medium
-                        )
-                        Spacer(modifier = Modifier.width(4.dp))
-                        Icon(
-                            painter = IconResources.Navigation.ChevronRight(),
-                            contentDescription = "Next Show",
-                            modifier = Modifier.size(16.dp)
-                        )
-                    }
-                }
-            }
-            
-            // Library and Download buttons
+            // Action buttons (floated to the right)
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                horizontalArrangement = Arrangement.End,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                // Library button
-                IconButton(
-                    onClick = onLibraryClick
-                ) {
-                    Icon(
-                        painter = if (isInLibrary) IconResources.Navigation.Back() else IconResources.Navigation.Back(), // TODO: Add proper library icons
-                        contentDescription = if (isInLibrary) "Remove from Library" else "Add to Library",
-                        tint = if (isInLibrary) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
-                    )
+                // Recording selection button (gear icon)
+                if (hasAlternativeRecordings) {
+                    IconButton(
+                        onClick = onShowRecordingSelection
+                    ) {
+                        Icon(
+                            painter = painterResource(R.drawable.ic_settings),
+                            contentDescription = "Choose Recording",
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                 }
                 
                 // Download button
@@ -750,31 +633,60 @@ private fun RecordingHeader(
                         }
                     }
                 }
-                
-                Spacer(modifier = Modifier.weight(1f))
             }
             
-            // Play button
+            // Play button with navigation arrows
             Spacer(modifier = Modifier.height(12.dp))
             
-            Button(
-                onClick = onPlayRecording,
+            Row(
                 modifier = Modifier.fillMaxWidth(),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = MaterialTheme.colorScheme.primary
-                )
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                Icon(
-                    painter = IconResources.PlayerControls.Play(),
-                    contentDescription = "Play",
-                    modifier = Modifier.size(20.dp)
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-                Text(
-                    text = "Play",
-                    style = MaterialTheme.typography.bodyLarge,
-                    fontWeight = FontWeight.Medium
-                )
+                // Previous show button
+                IconButton(
+                    onClick = onPreviousShow,
+                    modifier = Modifier.size(36.dp)
+                ) {
+                    Icon(
+                        painter = IconResources.Navigation.ChevronLeft(),
+                        contentDescription = "Previous Show",
+                        tint = MaterialTheme.colorScheme.onSurface
+                    )
+                }
+                
+                // Play button (smaller, centered)
+                Button(
+                    onClick = onPlayRecording,
+                    modifier = Modifier.weight(1f),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.primary
+                    )
+                ) {
+                    Icon(
+                        painter = IconResources.PlayerControls.Play(),
+                        contentDescription = "Play",
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(6.dp))
+                    Text(
+                        text = "Play",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+                
+                // Next show button
+                IconButton(
+                    onClick = onNextShow,
+                    modifier = Modifier.size(36.dp)
+                ) {
+                    Icon(
+                        painter = IconResources.Navigation.ChevronRight(),
+                        contentDescription = "Next Show",
+                        tint = MaterialTheme.colorScheme.onSurface
+                    )
+                }
             }
         }
     }

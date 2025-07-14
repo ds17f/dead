@@ -7,6 +7,7 @@ import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Settings
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -32,11 +33,12 @@ fun RecordingSelectionSheet(
     alternativeRecordings: List<RecordingOption>,
     settings: AppSettings,
     onRecordingSelected: (Recording) -> Unit,
-    onSettingsClick: () -> Unit,
+    onSetAsDefault: (String) -> Unit,
     onDismiss: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+    var selectedRecording by remember { mutableStateOf(currentRecording) }
     
     ModalBottomSheet(
         onDismissRequest = onDismiss,
@@ -49,25 +51,11 @@ fun RecordingSelectionSheet(
                 .padding(16.dp)
         ) {
             // Header
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = "Choose Recording",
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.weight(1f)
-                )
-                
-                IconButton(onClick = onSettingsClick) {
-                    Icon(
-                        imageVector = Icons.Default.Settings,
-                        contentDescription = "Recording Preferences"
-                    )
-                }
-            }
+            Text(
+                text = "Choose Recording",
+                style = MaterialTheme.typography.headlineSmall,
+                fontWeight = FontWeight.Bold
+            )
             
             Text(
                 text = showTitle,
@@ -78,44 +66,6 @@ fun RecordingSelectionSheet(
                 modifier = Modifier.padding(bottom = 16.dp)
             )
             
-            // Current Selection Criteria Info
-            if (settings.preferredAudioSource != "Any" || settings.minimumRating > 0f) {
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(bottom = 16.dp),
-                    colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.secondaryContainer
-                    )
-                ) {
-                    Column(
-                        modifier = Modifier.padding(12.dp)
-                    ) {
-                        Text(
-                            text = "Selection Preferences",
-                            style = MaterialTheme.typography.labelMedium,
-                            fontWeight = FontWeight.Medium,
-                            color = MaterialTheme.colorScheme.onSecondaryContainer
-                        )
-                        
-                        if (settings.preferredAudioSource != "Any") {
-                            Text(
-                                text = "Source: ${settings.preferredAudioSource}",
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSecondaryContainer
-                            )
-                        }
-                        
-                        if (settings.minimumRating > 0f) {
-                            Text(
-                                text = "Min Rating: ${settings.minimumRating}★",
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSecondaryContainer
-                            )
-                        }
-                    }
-                }
-            }
             
             // Recording Options
             LazyColumn(
@@ -129,10 +79,13 @@ fun RecordingSelectionSheet(
                     item {
                         RecordingOptionCard(
                             recording = currentRecording,
-                            isSelected = true,
+                            isSelected = selectedRecording?.identifier == currentRecording.identifier,
                             isRecommended = false,
                             matchReason = "Currently Playing",
-                            onClick = { onRecordingSelected(currentRecording) }
+                            onClick = { 
+                                selectedRecording = currentRecording
+                                onRecordingSelected(currentRecording) 
+                            }
                         )
                     }
                 }
@@ -141,11 +94,38 @@ fun RecordingSelectionSheet(
                 items(alternativeRecordings) { option ->
                     RecordingOptionCard(
                         recording = option.recording,
-                        isSelected = false,
+                        isSelected = selectedRecording?.identifier == option.recording.identifier,
                         isRecommended = option.isRecommended,
                         matchReason = option.matchReason,
-                        onClick = { onRecordingSelected(option.recording) }
+                        onClick = { 
+                            selectedRecording = option.recording
+                            onRecordingSelected(option.recording) 
+                        }
                     )
+                }
+            }
+            
+            // Set as Default button (only show if different recording selected)
+            if (selectedRecording != null && selectedRecording?.identifier != currentRecording?.identifier) {
+                Spacer(modifier = Modifier.height(16.dp))
+                
+                Button(
+                    onClick = { 
+                        onSetAsDefault(selectedRecording!!.identifier)
+                        onDismiss()
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = MaterialTheme.colorScheme.primary
+                    )
+                ) {
+                    Icon(
+                        painter = IconResources.Content.Star(),
+                        contentDescription = null,
+                        modifier = Modifier.size(20.dp)
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text("Set as Default Recording")
                 }
             }
             
