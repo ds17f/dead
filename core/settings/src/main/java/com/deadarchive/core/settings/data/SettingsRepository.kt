@@ -74,4 +74,11 @@ interface SettingsRepository {
      * @param prefer True to prefer higher rated recordings, false otherwise
      */
     suspend fun updatePreferHigherRated(prefer: Boolean)
+    
+    /**
+     * Update recording preference for a specific show
+     * @param showId The show identifier
+     * @param recordingId The preferred recording identifier
+     */
+    suspend fun updateRecordingPreference(showId: String, recordingId: String)
 }

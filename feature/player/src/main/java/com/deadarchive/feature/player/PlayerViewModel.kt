@@ -1044,6 +1044,62 @@ class PlayerViewModel @Inject constructor(
             null
         }
     }
+    
+    /**
+     * Save recording preference for a show
+     */
+    fun setRecordingPreference(showId: String, recordingId: String) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Setting recording preference: showId=$showId, recordingId=$recordingId")
+                settingsRepository.updateRecordingPreference(showId, recordingId)
+                Log.d(TAG, "Recording preference saved successfully")
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to set recording preference", e)
+            }
+        }
+    }
+    
+    /**
+     * Get the best recording for a show ID based on user preferences
+     */
+    suspend fun getBestRecordingForShowId(showId: String): Recording? {
+        return try {
+            Log.d(TAG, "getBestRecordingForShowId: Getting best recording for showId: $showId")
+            val show = showRepository.getShowById(showId)
+            if (show != null) {
+                Log.d(TAG, "getBestRecordingForShowId: Found show with ${show.recordings.size} recordings")
+                // The show.bestRecording property already respects user preferences
+                show.bestRecording
+            } else {
+                Log.w(TAG, "getBestRecordingForShowId: Show not found for showId: $showId")
+                null
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getBestRecordingForShowId: Error", e)
+            null
+        }
+    }
+    
+    /**
+     * Get alternative recordings for a specific show ID
+     */
+    suspend fun getAlternativeRecordingsById(showId: String): List<Recording> {
+        return try {
+            Log.d(TAG, "getAlternativeRecordingsById: Getting recordings for showId: $showId")
+            val show = showRepository.getShowById(showId)
+            if (show != null) {
+                Log.d(TAG, "getAlternativeRecordingsById: Found ${show.recordings.size} recordings")
+                show.recordings
+            } else {
+                Log.w(TAG, "getAlternativeRecordingsById: Show not found for showId: $showId")
+                emptyList()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getAlternativeRecordingsById: Error", e)
+            emptyList()
+        }
+    }
 }
 
 data class PlayerUiState(

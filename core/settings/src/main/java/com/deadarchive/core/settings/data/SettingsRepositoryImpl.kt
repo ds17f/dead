@@ -157,4 +157,15 @@ class SettingsRepositoryImpl @Inject constructor(
             throw e
         }
     }
+    
+    override suspend fun updateRecordingPreference(showId: String, recordingId: String) {
+        try {
+            Log.d(TAG, "Updating recording preference: showId=$showId, recordingId=$recordingId")
+            settingsDataStore.updateRecordingPreference(showId, recordingId)
+            Log.d(TAG, "Recording preference updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update recording preference", e)
+            throw e
+        }
+    }
 }

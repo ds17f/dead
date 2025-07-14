@@ -54,6 +54,7 @@ fun PlaylistScreen(
     onNavigateBack: () -> Unit,
     onNavigateToPlayer: () -> Unit,
     recordingId: String? = null,
+    showId: String? = null,
     viewModel: PlayerViewModel = hiltViewModel(),
     settingsViewModel: SettingsViewModel = hiltViewModel(),
     reviewViewModel: ReviewViewModel = hiltViewModel()
@@ -79,11 +80,25 @@ fun PlaylistScreen(
     var hasAlternativeRecordings by remember { mutableStateOf(false) }
     
     // Check for alternative recordings when current recording changes
-    LaunchedEffect(currentRecording) {
+    LaunchedEffect(currentRecording, showId) {
         if (currentRecording != null) {
             try {
-                val allRecordings = viewModel.getAlternativeRecordings()
+                Log.d("PlaylistScreen", "Checking alternative recordings for: ${currentRecording?.identifier}")
+                Log.d("PlaylistScreen", "Using showId: $showId")
+                
+                val allRecordings = if (showId != null) {
+                    // Use showId directly if available
+                    Log.d("PlaylistScreen", "Using direct showId lookup")
+                    viewModel.getAlternativeRecordingsById(showId)
+                } else {
+                    // Fallback to the old method
+                    Log.d("PlaylistScreen", "Falling back to venue normalization method")
+                    viewModel.getAlternativeRecordings()
+                }
+                
+                Log.d("PlaylistScreen", "Alternative recordings check: found ${allRecordings.size} recordings")
                 hasAlternativeRecordings = allRecordings.size > 1 // More than just current recording
+                Log.d("PlaylistScreen", "Setting hasAlternativeRecordings to: ${allRecordings.size > 1}")
             } catch (e: Exception) {
                 Log.e("PlaylistScreen", "Error checking for alternative recordings", e)
                 hasAlternativeRecordings = false
@@ -144,20 +159,47 @@ fun PlaylistScreen(
         }
     }
     
-    // Only load recording metadata for display, not for playback
-    LaunchedEffect(recordingId) {
-        Log.d("PlaylistScreen", "LaunchedEffect: recordingId = $recordingId, currentRecording.identifier = ${currentRecording?.identifier}")
-        if (!recordingId.isNullOrBlank() && currentRecording?.identifier != recordingId) {
-            Log.d("PlaylistScreen", "LaunchedEffect: Loading recording metadata for display only: $recordingId")
-            try {
-                viewModel.loadRecording(recordingId)
-            } catch (e: Exception) {
-                Log.e("PlaylistScreen", "LaunchedEffect: Exception in loadRecording", e)
+    // Load best recording for the show (including user preferences)
+    LaunchedEffect(showId, recordingId) {
+        Log.d("PlaylistScreen", "LaunchedEffect: showId = $showId, recordingId = $recordingId")
+        Log.d("PlaylistScreen", "LaunchedEffect: currentRecording.identifier = ${currentRecording?.identifier}")
+        
+        when {
+            // If we have a showId, get the best recording for that show (preferred approach)
+            !showId.isNullOrBlank() -> {
+                Log.d("PlaylistScreen", "LaunchedEffect: Loading best recording for showId: $showId")
+                try {
+                    val bestRecording = viewModel.getBestRecordingForShowId(showId)
+                    if (bestRecording != null) {
+                        // Only load if it's different from current recording to avoid disrupting playback
+                        if (currentRecording?.identifier != bestRecording.identifier) {
+                            Log.d("PlaylistScreen", "LaunchedEffect: Loading new best recording: ${bestRecording.identifier}")
+                            viewModel.loadRecording(bestRecording.identifier)
+                        } else {
+                            Log.d("PlaylistScreen", "LaunchedEffect: Best recording ${bestRecording.identifier} already loaded")
+                        }
+                    } else {
+                        Log.w("PlaylistScreen", "LaunchedEffect: No recordings found for showId: $showId")
+                    }
+                } catch (e: Exception) {
+                    Log.e("PlaylistScreen", "LaunchedEffect: Exception loading best recording for show", e)
+                }
             }
-        } else if (currentRecording?.identifier == recordingId) {
-            Log.d("PlaylistScreen", "LaunchedEffect: Recording $recordingId already loaded")
-        } else {
-            Log.w("PlaylistScreen", "LaunchedEffect: recordingId is null or blank")
+            // Fallback: use specific recordingId if no showId available
+            !recordingId.isNullOrBlank() && currentRecording?.identifier != recordingId -> {
+                Log.d("PlaylistScreen", "LaunchedEffect: Fallback - Loading specific recording: $recordingId")
+                try {
+                    viewModel.loadRecording(recordingId)
+                } catch (e: Exception) {
+                    Log.e("PlaylistScreen", "LaunchedEffect: Exception in loadRecording", e)
+                }
+            }
+            currentRecording?.identifier == recordingId -> {
+                Log.d("PlaylistScreen", "LaunchedEffect: Recording $recordingId already loaded")
+            }
+            else -> {
+                Log.w("PlaylistScreen", "LaunchedEffect: No showId or recordingId provided")
+            }
         }
     }
     
@@ -486,12 +528,25 @@ fun PlaylistScreen(
                 val recording = currentRecording
                 if (recording != null) {
                     try {
-                        val allRecordings = viewModel.getAlternativeRecordings()
+                        val allRecordings = if (showId != null) {
+                            // Use showId directly if available
+                            viewModel.getAlternativeRecordingsById(showId)
+                        } else {
+                            // Fallback to the old method
+                            viewModel.getAlternativeRecordings()
+                        }
+                        Log.d("PlaylistScreen", "Recording selection: Found ${allRecordings.size} total recordings")
+                        allRecordings.forEachIndexed { index, rec ->
+                            Log.d("PlaylistScreen", "Recording $index: ${rec.identifier} - ${rec.displayTitle}")
+                        }
+                        
                         alternativeRecordings = recordingSelectionService.getRecordingOptions(
                             recordings = allRecordings,
                             currentRecording = recording,
                             settings = settings
                         )
+                        Log.d("PlaylistScreen", "Recording selection: ${alternativeRecordings.size} alternative recordings after filtering")
+                        Log.d("PlaylistScreen", "Recording selection: Current recording = ${recording.identifier}")
                     } catch (e: Exception) {
                         Log.e("PlaylistScreen", "Error loading alternative recordings", e)
                         alternativeRecordings = emptyList()
@@ -507,10 +562,17 @@ fun PlaylistScreen(
             settings = settings,
             onRecordingSelected = { selectedRecording ->
                 viewModel.loadRecording(selectedRecording.identifier)
+                // Also save as preference when a different recording is selected
+                if (showId != null && selectedRecording.identifier != currentRecording?.identifier) {
+                    viewModel.setRecordingPreference(showId, selectedRecording.identifier)
+                }
                 showRecordingSelection = false
             },
             onSetAsDefault = { recordingId ->
-                // TODO: Store as default recording preference
+                if (showId != null) {
+                    // Store as default recording preference
+                    viewModel.setRecordingPreference(showId, recordingId)
+                }
                 showRecordingSelection = false
             },
             onDismiss = { showRecordingSelection = false }

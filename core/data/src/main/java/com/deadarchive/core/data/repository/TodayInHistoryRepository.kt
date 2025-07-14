@@ -4,8 +4,10 @@ import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.settings.data.SettingsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.firstOrNull
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
@@ -19,7 +21,8 @@ import javax.inject.Singleton
 class TodayInHistoryRepository @Inject constructor(
     private val showDao: ShowDao,
     private val recordingDao: RecordingDao,
-    private val ratingsRepository: RatingsRepository
+    private val ratingsRepository: RatingsRepository,
+    private val settingsRepository: SettingsRepository
 ) {
     
     companion object {
@@ -35,6 +38,10 @@ class TodayInHistoryRepository @Inject constructor(
     suspend fun getTodaysShowsInHistory(): List<Show> {
         val todayMonthDay = getCurrentMonthDay()
         val showEntities = showDao.getShowsByMonthDay(todayMonthDay)
+        
+        // Get user preferences once for all shows
+        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+        
         return showEntities.map { showEntity ->
             // Get recordings for this show
             val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { recordingEntity ->
@@ -58,13 +65,21 @@ class TodayInHistoryRepository @Inject constructor(
                 showEntity.date, showEntity.venue ?: ""
             )
             
+            // Check for user recording preference first
+            val preferredRecordingId = userPreferences[showEntity.showId]
+            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                preferredRecordingId
+            } else {
+                showRating?.bestRecordingId
+            }
+            
             showEntity.toShow(recordings).copy(
                 rating = showRating?.rating,
                 rawRating = showRating?.rawRating,
                 ratingConfidence = showRating?.confidence,
                 totalHighRatings = showRating?.totalHighRatings,
                 totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = showRating?.bestRecordingId
+                bestRecordingId = finalBestRecordingId
             )
         }
     }

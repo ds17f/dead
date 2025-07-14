@@ -129,7 +129,7 @@ fun MainAppScreen(
                         // Navigate to playlist for the best recording of this show
                         show.bestRecording?.let { recording ->
                             android.util.Log.d("MainAppNavigation", "Home navigating to playlist with recordingId: '${recording.identifier}' for show: ${show.displayDate} - ${show.displayVenue}")
-                            navController.navigate("playlist/${recording.identifier}")
+                            navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
                         } ?: run {
                             android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
                         }

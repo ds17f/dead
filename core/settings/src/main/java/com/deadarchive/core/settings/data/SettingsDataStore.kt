@@ -42,6 +42,7 @@ class SettingsDataStore @Inject constructor(
     private val preferredAudioSourceKey = stringPreferencesKey("preferred_audio_source")
     private val minimumRatingKey = stringPreferencesKey("minimum_rating") // Store as string to preserve precision
     private val preferHigherRatedKey = booleanPreferencesKey("prefer_higher_rated")
+    private val recordingPreferencesKey = stringPreferencesKey("recording_preferences") // JSON string of showId -> recordingId map
     
     /**
      * Reactive flow of application settings
@@ -146,6 +147,38 @@ class SettingsDataStore @Inject constructor(
     }
     
     /**
+     * Update recording preference for a specific show
+     */
+    suspend fun updateRecordingPreference(showId: String, recordingId: String) {
+        dataStore.edit { preferences ->
+            // Get current preferences
+            val currentPreferencesString = preferences[recordingPreferencesKey] ?: ""
+            val currentPreferences = if (currentPreferencesString.isBlank()) {
+                emptyMap()
+            } else {
+                try {
+                    currentPreferencesString.split(",")
+                        .mapNotNull { pair ->
+                            val parts = pair.split(":")
+                            if (parts.size == 2) parts[0] to parts[1] else null
+                        }.toMap()
+                } catch (e: Exception) {
+                    emptyMap()
+                }
+            }
+            
+            // Update with new preference
+            val updatedPreferences = currentPreferences + (showId to recordingId)
+            
+            // Convert back to string format
+            val updatedPreferencesString = updatedPreferences.entries
+                .joinToString(",") { "${it.key}:${it.value}" }
+            
+            preferences[recordingPreferencesKey] = updatedPreferencesString
+        }
+    }
+    
+    /**
      * Convert DataStore preferences to AppSettings
      */
     private fun Preferences.toAppSettings(): AppSettings {
@@ -170,6 +203,23 @@ class SettingsDataStore @Inject constructor(
             0f
         }
         
+        // Parse recording preferences from JSON string
+        val recordingPreferencesString = this[recordingPreferencesKey] ?: ""
+        val recordingPreferences = if (recordingPreferencesString.isBlank()) {
+            emptyMap()
+        } else {
+            try {
+                // Simple parsing: "showId1:recordingId1,showId2:recordingId2"
+                recordingPreferencesString.split(",")
+                    .mapNotNull { pair ->
+                        val parts = pair.split(":")
+                        if (parts.size == 2) parts[0] to parts[1] else null
+                    }.toMap()
+            } catch (e: Exception) {
+                emptyMap()
+            }
+        }
+        
         return AppSettings(
             audioFormatPreference = audioFormatPreference,
             themeMode = themeMode,
@@ -177,6 +227,7 @@ class SettingsDataStore @Inject constructor(
             showDebugInfo = this[showDebugInfoKey] ?: false,
             deletionGracePeriodDays = this[deletionGracePeriodKey] ?: 7,
             lowStorageThresholdMB = this[lowStorageThresholdKey] ?: 500L,
+            recordingPreferences = recordingPreferences,
             preferredAudioSource = this[preferredAudioSourceKey] ?: "Any",
             minimumRating = minimumRating,
             preferHigherRated = this[preferHigherRatedKey] ?: true
