@@ -65,19 +65,13 @@ fun PlayerScreen(
     
     // Get current track info from MediaController through ViewModel
     val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
-    val queueMetadata by viewModel.mediaControllerRepository.queueMetadata.collectAsState()
     val queueUrls by viewModel.mediaControllerRepository.queueUrls.collectAsState()
     val queueIndex by viewModel.mediaControllerRepository.queueIndex.collectAsState()
     val currentRecordingIdFromMediaController by viewModel.mediaControllerRepository.currentRecordingIdFlow.collectAsState()
+    val currentTrackInfo by viewModel.mediaControllerRepository.currentTrackInfo.collectAsState()
     
-    // Get track title from MediaController metadata (avoiding direct MediaItem access)
-    val currentTrackTitle = if (currentTrackUrl != null) {
-        queueMetadata.find { it.first == currentTrackUrl }?.second 
-            ?: currentTrackUrl?.substringAfterLast("/")?.substringBeforeLast(".")
-            ?: "Unknown Track"
-    } else {
-        "No track selected"
-    }
+    // Get track title from enriched CurrentTrackInfo (most reliable source)
+    val currentTrackTitle = currentTrackInfo?.displayTitle ?: "No track selected"
     
     val currentArtist = currentRecording?.displayTitle ?: "Unknown Artist"
     
