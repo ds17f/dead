@@ -33,15 +33,7 @@ data class Track(
 ) {
     val displayTitle: String
         get() = title?.takeIf { it.isNotBlank() } 
-            ?: filename.substringBeforeLast('.').let { name ->
-                // Try to extract song name from filename patterns like "gd77-05-08d1t01.flac"
-                val parts = name.split('t', 'd')
-                if (parts.size > 1) {
-                    "Track ${parts.last()}"
-                } else {
-                    name.replace(Regex("[^a-zA-Z0-9\\s]"), " ").trim()
-                }
-            }
+            ?: extractSongFromFilename(filename)
     
     val displayTrackNumber: String
         get() = trackNumber ?: "?"
@@ -59,4 +51,47 @@ data class Track(
     
     val displayPosition: String
         get() = trackNumber?.let { "Track $it" } ?: ""
+    
+    companion object {
+        /**
+         * Extract song name from filename with improved logic
+         */
+        fun extractSongFromFilename(filename: String): String {
+            val nameWithoutExtension = filename.substringBeforeLast('.')
+            
+            // Handle various filename patterns
+            return when {
+                // Pattern: "01-Track Name.flac" or "01 Track Name.flac"
+                nameWithoutExtension.matches(Regex("^\\d+[-\\s](.+)")) -> {
+                    nameWithoutExtension.replace(Regex("^\\d+[-\\s]"), "")
+                        .replace("-", " ")
+                        .split(" ")
+                        .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
+                }
+                
+                // Pattern: "gd77-05-08d1t01.flac" - Archive.org pattern
+                nameWithoutExtension.contains(Regex("d\\d+t\\d+")) -> {
+                    val parts = nameWithoutExtension.split('t', 'd')
+                    if (parts.size > 1) {
+                        "Track ${parts.last()}"
+                    } else {
+                        nameWithoutExtension.replace(Regex("[^a-zA-Z0-9\\s]"), " ")
+                            .trim()
+                            .split(" ")
+                            .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
+                    }
+                }
+                
+                // Generic cleanup for other patterns
+                else -> {
+                    nameWithoutExtension.replace(Regex("[^a-zA-Z0-9\\s]"), " ")
+                        .trim()
+                        .split(" ")
+                        .filter { it.isNotBlank() }
+                        .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
+                        .takeIf { it.isNotBlank() } ?: "Unknown Track"
+                }
+            }
+        }
+    }
 }

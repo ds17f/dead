@@ -25,6 +25,35 @@ data class CurrentTrackInfo(
     val position: Long,             // Current position in milliseconds
     val duration: Long              // Track duration in milliseconds
 ) {
+    companion object {
+        /**
+         * Create CurrentTrackInfo from existing models
+         */
+        fun fromModels(
+            trackUrl: String,
+            show: Show,
+            recording: Recording,
+            track: Track,
+            isPlaying: Boolean = false,
+            position: Long = 0L,
+            duration: Long = 0L
+        ): CurrentTrackInfo {
+            return CurrentTrackInfo(
+                trackUrl = trackUrl,
+                recordingId = recording.identifier,
+                showId = show.showId,
+                showDate = show.displayDate,
+                venue = show.venue,
+                location = show.location,
+                songTitle = track.displayTitle,
+                trackNumber = track.trackNumber?.toIntOrNull(),
+                filename = track.filename,
+                isPlaying = isPlaying,
+                position = position,
+                duration = duration
+            )
+        }
+    }
     /**
      * Formatted display title for notifications - just the song title
      * Format: "Song Title"

@@ -535,11 +535,7 @@ class MediaControllerRepository @Inject constructor(
                             val queueTrackNumber = queueFilename.substringBefore("-")
                                 .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
                             val queueTitle = queueTrackTitles.getOrNull(index) 
-                                ?: queueFilename.substringBeforeLast(".")
-                                    .replace(Regex("^[0-9]+-"), "")
-                                    .replace("-", " ")
-                                    .split(" ")
-                                    .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
+                                ?: com.deadarchive.core.model.Track.extractSongFromFilename(queueFilename)
                             
                             // Create enriched MediaItem for each queue item
                             val mediaItem = createEnrichedMediaItem(
@@ -844,10 +840,17 @@ class MediaControllerRepository @Inject constructor(
                 return null
             }
             
+            // Create Show model to get proper showId
+            val show = com.deadarchive.core.model.Show(
+                date = recording.concertDate,
+                venue = recording.concertVenue,
+                location = recording.concertLocation
+            )
+            
             CurrentTrackInfo(
                 trackUrl = trackUrl,
                 recordingId = recordingId,
-                showId = recording.concertDate, // Use concert date as showId for now
+                showId = show.showId, // Use proper showId from Show model
                 showDate = recording.concertDate,
                 venue = recording.concertVenue,
                 location = recording.concertLocation,
@@ -918,11 +921,7 @@ class MediaControllerRepository @Inject constructor(
         // Extract track info from current queue metadata
         val trackFilename = trackUrl.substringAfterLast("/")
         val songTitle = queueMetadata.value.find { it.first == trackUrl }?.second 
-            ?: trackFilename.substringBeforeLast(".")
-                .replace(Regex("^[0-9]+-"), "")
-                .replace("-", " ")
-                .split(" ")
-                .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
+            ?: com.deadarchive.core.model.Track.extractSongFromFilename(trackFilename)
         
         val trackNumber = trackFilename.substringBefore("-")
             .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
