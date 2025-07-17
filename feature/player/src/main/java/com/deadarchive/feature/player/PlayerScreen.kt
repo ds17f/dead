@@ -57,6 +57,7 @@ fun PlayerScreen(
     // PlayerScreen is a pure view - gets all data from MediaController via viewModel
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
+    val settings by viewModel.settings.collectAsState()
     
     // Create ShareService manually
     val context = LocalContext.current
@@ -208,19 +209,22 @@ fun PlayerScreen(
                                     )
                                 }
                             )
-                            DropdownMenuItem(
-                                text = { Text("Debug Panel") },
-                                onClick = {
-                                    showDropdownMenu = false
-                                    showDebugPanel = true
-                                },
-                                leadingIcon = {
-                                    Icon(
-                                        painter = IconResources.Status.Error(),
-                                        contentDescription = "Debug"
-                                    )
-                                }
-                            )
+                            // Only show debug panel option if debug is enabled in settings
+                            if (settings.showDebugInfo) {
+                                DropdownMenuItem(
+                                    text = { Text("Debug Panel") },
+                                    onClick = {
+                                        showDropdownMenu = false
+                                        showDebugPanel = true
+                                    },
+                                    leadingIcon = {
+                                        Icon(
+                                            painter = IconResources.Status.Error(),
+                                            contentDescription = "Debug"
+                                        )
+                                    }
+                                )
+                            }
                         }
                     }
                 }
@@ -319,8 +323,8 @@ fun PlayerScreen(
             }
         }
         
-        // Debug panel overlay
-        if (showDebugPanel) {
+        // Debug panel overlay - only show if debug is enabled in settings
+        if (showDebugPanel && settings.showDebugInfo) {
             Surface(
                 modifier = Modifier.fillMaxSize(),
                 color = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f)

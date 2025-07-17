@@ -51,6 +51,14 @@ class PlayerViewModel @Inject constructor(
     private val _trackDownloadStates = MutableStateFlow<Map<String, Boolean>>(emptyMap())
     val trackDownloadStates: StateFlow<Map<String, Boolean>> = _trackDownloadStates.asStateFlow()
     
+    // Settings flow for debug panel access
+    val settings = settingsRepository.getSettings()
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5_000),
+            initialValue = com.deadarchive.core.settings.model.AppSettings()
+        )
+    
     // Navigation callbacks for show navigation with showId parameter
     var onNavigateToShow: ((showId: String, recordingId: String) -> Unit)? = null
     
