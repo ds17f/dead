@@ -55,11 +55,20 @@ data class CurrentTrackInfo(
         }
     }
     /**
-     * Formatted display title for notifications - just the song title
-     * Format: "Song Title"
+     * Formatted display title for notifications - parsed song title
+     * Format: "Song Title" (parsed from filename if needed)
      */
     val displayTitle: String
-        get() = songTitle
+        get() = if (songTitle.isNotBlank()) {
+            // If songTitle looks like a raw filename (contains URL encoding or file extensions), parse it
+            if (songTitle.contains("%20") || songTitle.contains(".mp3") || songTitle.contains(".flac")) {
+                Track.extractSongFromFilename(songTitle)
+            } else {
+                songTitle
+            }
+        } else {
+            Track.extractSongFromFilename(filename)
+        }
     
     /**
      * Formatted show date for display

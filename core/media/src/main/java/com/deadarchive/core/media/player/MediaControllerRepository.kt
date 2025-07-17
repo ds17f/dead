@@ -915,10 +915,50 @@ class MediaControllerRepository @Inject constructor(
             return
         }
         
-        // Extract track info from current queue metadata
+        // Extract track info - try multiple sources in order of preference
         val trackFilename = trackUrl.substringAfterLast("/")
-        val songTitle = queueMetadata.value.find { it.first == trackUrl }?.second 
-            ?: com.deadarchive.core.model.Track.extractSongFromFilename(trackFilename)
+        val queueMetadataEntry = queueMetadata.value.find { it.first == trackUrl }
+        
+        // Try to get track title from recording data if queue metadata is stale
+        var songTitle = queueMetadataEntry?.second
+        if (songTitle == null) {
+            // Queue metadata is stale or missing, try to get title from recording data
+            try {
+                val recording = showRepository.getRecordingById(recordingId)
+                if (recording != null) {
+                    // Find matching track in recording data
+                    val matchingTrack = recording.tracks.find { track ->
+                        track.audioFile?.filename == trackFilename
+                    }
+                    songTitle = matchingTrack?.displayTitle
+                    Log.d(TAG, "Found track in recording data: ${matchingTrack?.displayTitle}")
+                }
+            } catch (e: Exception) {
+                Log.w(TAG, "Failed to get track from recording data", e)
+            }
+        }
+        
+        // Final fallback to filename parsing
+        if (songTitle == null) {
+            songTitle = com.deadarchive.core.model.Track.extractSongFromFilename(trackFilename)
+        }
+        
+        Log.d(TAG, "=== TRACK TITLE EXTRACTION DEBUG ===")
+        Log.d(TAG, "Track URL: $trackUrl")
+        Log.d(TAG, "Track filename: $trackFilename")
+        Log.d(TAG, "Queue metadata entries: ${queueMetadata.value.size}")
+        Log.d(TAG, "Found queue metadata entry: ${queueMetadataEntry?.let { "${it.first} -> ${it.second}" } ?: "NONE"}")
+        Log.d(TAG, "Final song title: $songTitle")
+        Log.d(TAG, "Parsed from filename would be: ${com.deadarchive.core.model.Track.extractSongFromFilename(trackFilename)}")
+        queueMetadata.value.take(3).forEach { entry ->
+            Log.d(TAG, "Sample queue entry: ${entry.first} -> ${entry.second}")
+        }
+        
+        // If queue metadata doesn't contain the current track, it's stale and needs to be cleared
+        if (queueMetadataEntry == null && queueMetadata.value.isNotEmpty()) {
+            Log.w(TAG, "Queue metadata is stale! Current track not found in metadata. Clearing stale metadata.")
+            _queueMetadata.value = emptyList()
+        }
         
         // Use queue position as track number (1-based) instead of filename parsing
         val trackNumber = currentQueueUrls.indexOf(trackUrl).let { index ->
@@ -934,6 +974,13 @@ class MediaControllerRepository @Inject constructor(
         )
         
         _currentTrackInfo.value = trackInfo
+        
+        // Update currentRecordingId to keep navigation consistent
+        if (recordingId != _currentRecordingId.value) {
+            Log.d(TAG, "Updating currentRecordingId from ${_currentRecordingId.value} to $recordingId")
+            _currentRecordingId.value = recordingId
+        }
+        
         Log.d(TAG, "Updated CurrentTrackInfo: ${trackInfo?.displayTitle ?: "null"}")
     }
     

@@ -68,6 +68,7 @@ fun PlayerScreen(
     val queueMetadata by viewModel.mediaControllerRepository.queueMetadata.collectAsState()
     val queueUrls by viewModel.mediaControllerRepository.queueUrls.collectAsState()
     val queueIndex by viewModel.mediaControllerRepository.queueIndex.collectAsState()
+    val currentRecordingIdFromMediaController by viewModel.mediaControllerRepository.currentRecordingIdFlow.collectAsState()
     
     // Get track title from MediaController metadata (avoiding direct MediaItem access)
     val currentTrackTitle = if (currentTrackUrl != null) {
@@ -118,9 +119,13 @@ fun PlayerScreen(
                     PlayerTopBarTitle(
                         recording = currentRecording,
                         modifier = Modifier.clickable {
-                            val currentRecordingId = currentRecording?.identifier ?: recordingId
-                            Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $currentRecordingId")
-                            onNavigateToPlaylist(currentRecordingId)
+                            // Use MediaController's recording ID for consistency with what's actually playing
+                            val actualRecordingId = currentRecordingIdFromMediaController ?: currentRecording?.identifier ?: recordingId
+                            Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $actualRecordingId")
+                            Log.d("PlayerScreen", "  - MediaController recording ID: $currentRecordingIdFromMediaController")
+                            Log.d("PlayerScreen", "  - Current recording ID: ${currentRecording?.identifier}")
+                            Log.d("PlayerScreen", "  - Fallback recording ID: $recordingId")
+                            onNavigateToPlaylist(actualRecordingId)
                         }
                     )
                 },
