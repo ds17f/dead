@@ -23,6 +23,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Recording
 import com.deadarchive.feature.player.PlayerUiState
 import com.deadarchive.feature.player.PlayerViewModel
+import com.deadarchive.core.model.CurrentTrackInfo
 
 @Composable
 fun MiniPlayer(
@@ -132,35 +133,145 @@ fun MiniPlayer(
 }
 
 @Composable
+fun EnrichedMiniPlayer(
+    uiState: PlayerUiState,
+    trackInfo: CurrentTrackInfo,
+    onPlayPause: () -> Unit,
+    onTapToExpand: (String?) -> Unit,
+    recordingId: String? = null,
+    modifier: Modifier = Modifier
+) {
+    Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(88.dp) // Increased height for 3 lines
+            .clickable { onTapToExpand(recordingId) },
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+        shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        )
+    ) {
+        Column {
+            // Progress indicator at the very top
+            LinearProgressIndicator(
+                progress = { uiState.progress },
+                modifier = Modifier.fillMaxWidth(),
+                color = MaterialTheme.colorScheme.primary,
+                trackColor = MaterialTheme.colorScheme.surfaceVariant,
+            )
+            
+            // Main content row
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // Album art placeholder
+                Box(
+                    modifier = Modifier
+                        .size(56.dp) // Slightly larger for 3-line layout
+                        .clip(RoundedCornerShape(8.dp))
+                        .background(MaterialTheme.colorScheme.surfaceVariant),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        painter = IconResources.PlayerControls.AlbumArt(),
+                        contentDescription = "Album Art",
+                        modifier = Modifier.size(24.dp),
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                
+                Spacer(modifier = Modifier.width(12.dp))
+                
+                // Track info - 3 lines
+                Column(
+                    modifier = Modifier.weight(1f),
+                    verticalArrangement = Arrangement.SpaceBetween
+                ) {
+                    // Line 1: Track Name
+                    ScrollingText(
+                        text = trackInfo.displayTitle,
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    
+                    // Line 2: Show Date
+                    ScrollingText(
+                        text = trackInfo.displayDate,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    
+                    // Line 3: Venue, City, State
+                    ScrollingText(
+                        text = buildString {
+                            if (!trackInfo.venue.isNullOrBlank()) {
+                                append(trackInfo.venue)
+                                if (!trackInfo.location.isNullOrBlank()) {
+                                    append(" • ")
+                                    append(trackInfo.location)
+                                }
+                            } else {
+                                append(trackInfo.location ?: "Unknown Location")
+                            }
+                        },
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                
+                Spacer(modifier = Modifier.width(8.dp))
+                
+                // Play/Pause button
+                IconButton(
+                    onClick = onPlayPause,
+                    modifier = Modifier
+                        .size(40.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.primary)
+                ) {
+                    if (uiState.isBuffering) {
+                        CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            color = MaterialTheme.colorScheme.onPrimary,
+                            strokeWidth = 2.dp
+                        )
+                    } else {
+                        Icon(
+                            painter = if (uiState.isPlaying) IconResources.PlayerControls.Pause() else IconResources.PlayerControls.Play(),
+                            contentDescription = if (uiState.isPlaying) "Pause" else "Play",
+                            modifier = Modifier.size(20.dp),
+                            tint = MaterialTheme.colorScheme.onPrimary
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
 fun MiniPlayerContainer(
     onTapToExpand: (String?) -> Unit, // Now accepts recording ID
     modifier: Modifier = Modifier,
     viewModel: PlayerViewModel = hiltViewModel()
 ) {
     // Get current playback state directly from MediaController
-    val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
-    val queueMetadata by viewModel.mediaControllerRepository.queueMetadata.collectAsState()
     val isPlaying by viewModel.mediaControllerRepository.isPlaying.collectAsState()
     val currentPosition by viewModel.mediaControllerRepository.currentPosition.collectAsState()
     val duration by viewModel.mediaControllerRepository.duration.collectAsState()
     val playbackState by viewModel.mediaControllerRepository.playbackState.collectAsState()
     val currentRecordingId by viewModel.mediaControllerRepository.currentRecordingIdFlow.collectAsState()
     
-    // Get track title from MediaController metadata
-    val currentTrackTitle = if (currentTrackUrl != null) {
-        queueMetadata.find { it.first == currentTrackUrl }?.second 
-            ?: currentTrackUrl?.substringAfterLast("/")?.substringBeforeLast(".")
-            ?: "Unknown Track"
-    } else {
-        null
-    }
+    // Get enriched track info from MediaController
+    val currentTrackInfo by viewModel.mediaControllerRepository.currentTrackInfo.collectAsState()
     
-    // Get artist name from MediaController metadata - use concert name from metadata
-    val currentArtist = if (currentTrackUrl != null && queueMetadata.isNotEmpty()) {
-        "Unknown Artist" // We could enhance this with proper artist metadata
-    } else {
-        null
-    }
+    // Only show MiniPlayer if there's current track info
+    if (currentTrackInfo == null) return
     
     // Create a minimal UI state for the mini player based on MediaController data
     val miniPlayerUiState = PlayerUiState(
@@ -170,19 +281,9 @@ fun MiniPlayerContainer(
         playbackState = playbackState // Already an Int from MediaController
     )
     
-    // Create a minimal recording object for display
-    val miniPlayerRecording = if (currentArtist != null) {
-        Recording(
-            identifier = "",
-            title = currentArtist,
-            concertDate = ""
-        )
-    } else null
-    
-    MiniPlayer(
+    EnrichedMiniPlayer(
         uiState = miniPlayerUiState,
-        recording = miniPlayerRecording,
-        trackTitle = currentTrackTitle,
+        trackInfo = currentTrackInfo!!,
         onPlayPause = viewModel::playPause,
         onTapToExpand = onTapToExpand,
         recordingId = currentRecordingId,

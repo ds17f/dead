@@ -62,6 +62,13 @@ data class CurrentTrackInfo(
         get() = songTitle
     
     /**
+     * Formatted show date for display
+     * Format: "Jul 17, 1976"
+     */
+    val displayDate: String
+        get() = formatShowDate(showDate)
+    
+    /**
      * Formatted subtitle with date and venue for notifications
      * Format: "Date - Venue"
      */
