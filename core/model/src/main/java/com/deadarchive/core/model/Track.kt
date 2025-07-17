@@ -39,7 +39,7 @@ data class Track(
         get() = trackNumber ?: "?"
     
     val duration: Long
-        get() = durationSeconds?.toDoubleOrNull()?.toLong() ?: 0L
+        get() = audioFile?.duration?.takeIf { it > 0 } ?: parseDuration(durationSeconds) ?: 0L
     
     val formattedDuration: String
         get() {
@@ -91,6 +91,30 @@ data class Track(
                         .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
                         .takeIf { it.isNotBlank() } ?: "Unknown Track"
                 }
+            }
+        }
+        
+        /**
+         * Parse duration from various formats (MM:SS or seconds as string)
+         */
+        fun parseDuration(durationString: String?): Long? {
+            if (durationString.isNullOrBlank()) return null
+            
+            return try {
+                // Try MM:SS format first
+                if (durationString.contains(":")) {
+                    val parts = durationString.split(":")
+                    if (parts.size == 2) {
+                        val minutes = parts[0].toIntOrNull() ?: 0
+                        val seconds = parts[1].toIntOrNull() ?: 0
+                        return (minutes * 60 + seconds).toLong()
+                    }
+                }
+                
+                // Fallback to seconds as string
+                durationString.toDoubleOrNull()?.toLong()
+            } catch (e: Exception) {
+                null
             }
         }
     }
