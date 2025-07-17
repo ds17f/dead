@@ -414,8 +414,7 @@ class MediaControllerRepository @Inject constructor(
                     val resolvedUrl = resolvePlaybackUrl(url) ?: url
                     val title = queueTrackTitles.getOrNull(index) ?: url.substringAfterLast("/").substringBeforeLast(".")
                     val filename = url.substringAfterLast("/")
-                    val trackNumber = filename.substringBefore("-")
-                        .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+                    val trackNumber = extractTrackNumberFromFilename(filename)
                     
                     // Create enriched MediaItem for better notifications
                     val mediaItem = createEnrichedMediaItem(
@@ -532,8 +531,7 @@ class MediaControllerRepository @Inject constructor(
                         for ((index, queueUrl) in currentQueueUrls.withIndex()) {
                             val resolvedUrl = resolvePlaybackUrl(queueUrl) ?: queueUrl
                             val queueFilename = queueUrl.substringAfterLast("/")
-                            val queueTrackNumber = queueFilename.substringBefore("-")
-                                .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+                            val queueTrackNumber = extractTrackNumberFromFilename(queueFilename)
                             val queueTitle = queueTrackTitles.getOrNull(index) 
                                 ?: com.deadarchive.core.model.Track.extractSongFromFilename(queueFilename)
                             
@@ -563,8 +561,7 @@ class MediaControllerRepository @Inject constructor(
             // Fallback to single track playback if no queue context
             Log.d(TAG, "Playing single track without queue context")
             val filename = originalUrl.substringAfterLast("/")
-            val trackNumber = filename.substringBefore("-")
-                .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+            val trackNumber = extractTrackNumberFromFilename(filename)
             
             // Create enriched MediaItem for better notifications
             coroutineScope.launch {
@@ -923,8 +920,7 @@ class MediaControllerRepository @Inject constructor(
         val songTitle = queueMetadata.value.find { it.first == trackUrl }?.second 
             ?: com.deadarchive.core.model.Track.extractSongFromFilename(trackFilename)
         
-        val trackNumber = trackFilename.substringBefore("-")
-            .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+        val trackNumber = extractTrackNumberFromFilename(trackFilename)
         
         val trackInfo = createCurrentTrackInfo(
             trackUrl = trackUrl,
@@ -936,6 +932,34 @@ class MediaControllerRepository @Inject constructor(
         
         _currentTrackInfo.value = trackInfo
         Log.d(TAG, "Updated CurrentTrackInfo: ${trackInfo?.displayTitle ?: "null"}")
+    }
+    
+    /**
+     * Extract track number from filename using various patterns
+     */
+    private fun extractTrackNumberFromFilename(filename: String): Int? {
+        return when {
+            // Archive.org pattern: "gd76-07-17d2t02.mp3" -> extract 02 from "d2t02"
+            filename.contains(Regex("d\\d+t(\\d+)")) -> {
+                Regex("d\\d+t(\\d+)").find(filename)?.groupValues?.get(1)?.toIntOrNull()
+            }
+            
+            // Standard numbered pattern: "01-Track Name.flac" -> extract 01
+            filename.matches(Regex("^(\\d+)[-\\s].*")) -> {
+                Regex("^(\\d+)[-\\s].*").find(filename)?.groupValues?.get(1)?.toIntOrNull()
+            }
+            
+            // Track number at start: "01 Track Name.flac" -> extract 01
+            filename.matches(Regex("^(\\d+)\\s.*")) -> {
+                Regex("^(\\d+)\\s.*").find(filename)?.groupValues?.get(1)?.toIntOrNull()
+            }
+            
+            // Fallback: try to find any digits at the beginning
+            else -> {
+                filename.substringBefore("-")
+                    .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+            }
+        }
     }
     
     /**
