@@ -525,6 +525,7 @@ private fun NowPlayingSection(
                 Column(
                     modifier = Modifier.weight(1f)
                 ) {
+                    // Track title
                     Text(
                         text = currentTrackTitle,
                         style = MaterialTheme.typography.headlineSmall,
@@ -534,13 +535,41 @@ private fun NowPlayingSection(
                         color = MaterialTheme.colorScheme.onSurface
                     )
                     
-                    Text(
-                        text = currentArtist,
-                        style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
-                    )
+                    // Show date
+                    recording?.let { rec ->
+                        if (rec.concertDate.isNotBlank()) {
+                            Text(
+                                text = formatConcertDate(rec.concertDate),
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                        }
+                        
+                        // Venue and location
+                        val venueLocation = buildString {
+                            if (!rec.concertVenue.isNullOrBlank()) {
+                                append(rec.concertVenue)
+                            }
+                            if (!rec.concertLocation.isNullOrBlank()) {
+                                if (!rec.concertVenue.isNullOrBlank()) {
+                                    append(", ")
+                                }
+                                append(rec.concertLocation)
+                            }
+                        }
+                        
+                        if (venueLocation.isNotBlank()) {
+                            Text(
+                                text = venueLocation,
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                        }
+                    }
                 }
                 
                 // Add to playlist button
@@ -754,41 +783,35 @@ private fun PlayerTopBarTitle(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // First line: Artist - Date
-        val firstLine = buildString {
-            append("Grateful Dead")
-            if (recording.concertDate.isNotBlank()) {
-                append(" - ")
-                append(formatConcertDate(recording.concertDate))
-            }
+        // First line: Date only
+        if (recording.concertDate.isNotBlank()) {
+            Text(
+                text = formatConcertDate(recording.concertDate),
+                style = MaterialTheme.typography.titleMedium,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                color = MaterialTheme.colorScheme.onSurface,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth()
+            )
         }
         
-        Text(
-            text = firstLine,
-            style = MaterialTheme.typography.titleMedium,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center,
-            modifier = Modifier.fillMaxWidth()
-        )
-        
-        // Second line: Venue - City, State
-        val secondLine = buildString {
+        // Second line: Venue, City/State
+        val venueLine = buildString {
             if (!recording.concertVenue.isNullOrBlank()) {
                 append(recording.concertVenue)
             }
             if (!recording.concertLocation.isNullOrBlank()) {
                 if (!recording.concertVenue.isNullOrBlank()) {
-                    append(" - ")
+                    append(", ")
                 }
                 append(recording.concertLocation)
             }
         }
         
-        if (secondLine.isNotBlank()) {
+        if (venueLine.isNotBlank()) {
             Text(
-                text = secondLine,
+                text = venueLine,
                 style = MaterialTheme.typography.bodySmall,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,

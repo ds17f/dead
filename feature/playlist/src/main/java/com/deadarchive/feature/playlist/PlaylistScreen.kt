@@ -227,31 +227,51 @@ fun PlaylistScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    ScrollingText(
-                        text = currentRecording?.let { recording ->
-                            buildString {
-                                // Start with artist name
-                                append("Grateful Dead")
-                                
-                                // Add date if available
-                                if (recording.concertDate.isNotBlank()) {
-                                    append(" - ")
-                                    append(formatConcertDate(recording.concertDate))
-                                }
-                                
-                                // Add venue if available
+                    currentRecording?.let { recording ->
+                        Column(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalArrangement = Arrangement.Center,
+                            horizontalAlignment = Alignment.CenterHorizontally
+                        ) {
+                            // First line: Date only
+                            if (recording.concertDate.isNotBlank()) {
+                                Text(
+                                    text = formatConcertDate(recording.concertDate),
+                                    style = MaterialTheme.typography.titleMedium,
+                                    fontWeight = FontWeight.Medium,
+                                    color = MaterialTheme.colorScheme.onSurface,
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis,
+                                    textAlign = TextAlign.Center,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                            }
+                            
+                            // Second line: Venue, City/State
+                            val venueLine = buildString {
                                 if (!recording.concertVenue.isNullOrBlank()) {
-                                    append(" - ")
                                     append(recording.concertVenue)
                                 }
-                                
-                                // Add location (city, state) if available
                                 if (!recording.concertLocation.isNullOrBlank()) {
-                                    append(" - ")
+                                    if (!recording.concertVenue.isNullOrBlank()) {
+                                        append(", ")
+                                    }
                                     append(recording.concertLocation)
                                 }
                             }
-                        } ?: "Playlist"
+                            
+                            if (venueLine.isNotBlank()) {
+                                ScrollingText(
+                                    text = venueLine,
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+                            }
+                        }
+                    } ?: Text(
+                        text = "Playlist",
+                        style = MaterialTheme.typography.titleLarge
                     )
                 },
                 navigationIcon = {
@@ -1033,7 +1053,8 @@ private fun ScrollingText(
             .clip(RectangleShape)
             .onGloballyPositioned { coordinates ->
                 containerWidth = coordinates.size.width
-            }
+            },
+        contentAlignment = if (shouldScroll) Alignment.CenterStart else Alignment.Center
     ) {
         Text(
             text = text,
@@ -1043,11 +1064,15 @@ private fun ScrollingText(
             maxLines = 1,
             overflow = TextOverflow.Visible,
             softWrap = false,
+            textAlign = if (shouldScroll) TextAlign.Start else TextAlign.Center,
             modifier = Modifier
                 .graphicsLayer {
                     translationX = animatedOffset
                 }
-                .wrapContentWidth(Alignment.Start, unbounded = true)
+                .wrapContentWidth(
+                    if (shouldScroll) Alignment.Start else Alignment.CenterHorizontally, 
+                    unbounded = shouldScroll
+                )
                 .onGloballyPositioned { coordinates ->
                     textWidth = coordinates.size.width
                 }
