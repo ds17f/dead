@@ -182,4 +182,23 @@ class LocalFileResolver @Inject constructor(
             null
         }
     }
+    
+    /**
+     * Extract just the recording ID from Archive.org URL.
+     * 
+     * This is a public convenience method that extracts only the recording ID
+     * from an Archive.org URL, which is needed for show metadata lookup.
+     * 
+     * @param url The Archive.org URL
+     * @return The recording ID if successfully extracted, null otherwise
+     */
+    fun extractRecordingIdFromUrl(url: String): String? {
+        return try {
+            val (recordingId, _) = extractRecordingInfoFromUrl(url, null)
+            recordingId
+        } catch (e: Exception) {
+            Log.e(TAG, "Error extracting recording ID from URL: $url", e)
+            null
+        }
+    }
 }

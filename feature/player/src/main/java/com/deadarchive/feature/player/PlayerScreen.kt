@@ -95,206 +95,238 @@ fun PlayerScreen(
     var isNavigatingPlayer by remember { mutableStateOf(false) }
     var navigationDirectionPlayer by remember { mutableIntStateOf(0) }
     
+    // Debug panel state
+    var showDebugPanel by remember { mutableStateOf(false) }
+    
     // Don't reset animation state during navigation - let the finishedListener handle it
     
     // Position updates are handled automatically by MediaControllerRepository
     // No manual position updates needed - service provides real-time position via StateFlow
     
-    Column(
+    Box(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
     ) {
-        // Spotify-style Top App Bar
-        TopAppBar(
-            title = {
-                PlayerTopBarTitle(
-                    recording = currentRecording,
-                    modifier = Modifier.clickable {
-                        val currentRecordingId = currentRecording?.identifier ?: recordingId
-                        Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $currentRecordingId")
-                        onNavigateToPlaylist(currentRecordingId)
-                    }
-                )
-            },
-            navigationIcon = {
-                IconButton(onClick = onNavigateBack) {
-                    Icon(painter = IconResources.Navigation.KeyboardArrowDown(), contentDescription = "Back")
-                }
-            },
-            actions = {
-                // Share button
-                if (currentRecording != null) {
-                    IconButton(
-                        onClick = {
-                            // Get current track from the queue
-                            val currentTrackUrlFilename = currentTrackUrl?.substringAfterLast("/")
-                            Log.d("PlayerScreen", "=== SHARE DEBUG ===")
-                            Log.d("PlayerScreen", "currentTrackUrl: '$currentTrackUrl'")
-                            Log.d("PlayerScreen", "currentTrackUrlFilename: '$currentTrackUrlFilename'")
-                            Log.d("PlayerScreen", "Available tracks:")
-                            uiState.tracks.forEachIndexed { index, track ->
-                                Log.d("PlayerScreen", "  [$index] track.filename: '${track.filename}'")
-                                Log.d("PlayerScreen", "  [$index] track.audioFile?.filename: '${track.audioFile?.filename}'")
-                                Log.d("PlayerScreen", "  [$index] matches: ${track.audioFile?.filename == currentTrackUrlFilename}")
-                            }
-                            
-                            val currentTrack = if (currentTrackUrl != null) {
-                                // Use currently playing track if available
-                                Log.d("PlayerScreen", "Using playing track matching logic")
-                                uiState.tracks.find { track ->
-                                    track.audioFile?.filename == currentTrackUrlFilename
-                                }
-                            } else {
-                                // Fallback to currently selected/focused track when not playing
-                                Log.d("PlayerScreen", "Using selected track fallback (currentTrackIndex: ${uiState.currentTrackIndex})")
-                                uiState.currentTrack
-                            }
-                            
-                            Log.d("PlayerScreen", "Selected currentTrack: ${if (currentTrack != null) "FOUND (${currentTrack?.filename})" else "NULL"}")
-                            
-                            // Create show object from recording data
-                            val show = Show(
-                                date = currentRecording!!.concertDate,
-                                venue = currentRecording!!.concertVenue,
-                                location = currentRecording!!.concertLocation
-                            )
-                            
-                            if (currentTrack != null) {
-                                // Share specific track with playback position
-                                val currentPosition = uiState.currentPosition / 1000 // Convert to seconds
-                                shareService.shareTrack(show, currentRecording!!, currentTrack, currentPosition)
-                            } else {
-                                // Fallback to sharing the show
-                                shareService.shareShow(show, currentRecording!!)
-                            }
+        Column(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            // Spotify-style Top App Bar
+            TopAppBar(
+                title = {
+                    PlayerTopBarTitle(
+                        recording = currentRecording,
+                        modifier = Modifier.clickable {
+                            val currentRecordingId = currentRecording?.identifier ?: recordingId
+                            Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $currentRecordingId")
+                            onNavigateToPlaylist(currentRecordingId)
                         }
-                    ) {
-                        Icon(
-                            painter = IconResources.Content.Share(), 
-                            contentDescription = "Share track",
-                            tint = MaterialTheme.colorScheme.onSurface
-                        )
+                    )
+                },
+                navigationIcon = {
+                    IconButton(onClick = onNavigateBack) {
+                        Icon(painter = IconResources.Navigation.KeyboardArrowDown(), contentDescription = "Back")
                     }
-                }
-                
-                var showDropdownMenu by remember { mutableStateOf(false) }
-                
-                Box {
-                    IconButton(onClick = { showDropdownMenu = true }) {
-                        Icon(painter = IconResources.Navigation.MoreVertical(), contentDescription = "More options")
+                },
+                actions = {
+                    // Share button
+                    if (currentRecording != null) {
+                        IconButton(
+                            onClick = {
+                                // Get current track from the queue
+                                val currentTrackUrlFilename = currentTrackUrl?.substringAfterLast("/")
+                                Log.d("PlayerScreen", "=== SHARE DEBUG ===")
+                                Log.d("PlayerScreen", "currentTrackUrl: '$currentTrackUrl'")
+                                Log.d("PlayerScreen", "currentTrackUrlFilename: '$currentTrackUrlFilename'")
+                                Log.d("PlayerScreen", "Available tracks:")
+                                uiState.tracks.forEachIndexed { index, track ->
+                                    Log.d("PlayerScreen", "  [$index] track.filename: '${track.filename}'")
+                                    Log.d("PlayerScreen", "  [$index] track.audioFile?.filename: '${track.audioFile?.filename}'")
+                                    Log.d("PlayerScreen", "  [$index] matches: ${track.audioFile?.filename == currentTrackUrlFilename}")
+                                }
+                                
+                                val currentTrack = if (currentTrackUrl != null) {
+                                    // Use currently playing track if available
+                                    Log.d("PlayerScreen", "Using playing track matching logic")
+                                    uiState.tracks.find { track ->
+                                        track.audioFile?.filename == currentTrackUrlFilename
+                                    }
+                                } else {
+                                    // Fallback to currently selected/focused track when not playing
+                                    Log.d("PlayerScreen", "Using selected track fallback (currentTrackIndex: ${uiState.currentTrackIndex})")
+                                    uiState.currentTrack
+                                }
+                                
+                                Log.d("PlayerScreen", "Selected currentTrack: ${if (currentTrack != null) "FOUND (${currentTrack?.filename})" else "NULL"}")
+                                
+                                // Create show object from recording data
+                                val show = Show(
+                                    date = currentRecording!!.concertDate,
+                                    venue = currentRecording!!.concertVenue,
+                                    location = currentRecording!!.concertLocation
+                                )
+                                
+                                if (currentTrack != null) {
+                                    // Share specific track with playback position
+                                    val currentPosition = uiState.currentPosition / 1000 // Convert to seconds
+                                    shareService.shareTrack(show, currentRecording!!, currentTrack, currentPosition)
+                                } else {
+                                    // Fallback to sharing the show
+                                    shareService.shareShow(show, currentRecording!!)
+                                }
+                            }
+                        ) {
+                            Icon(
+                                painter = IconResources.Content.Share(), 
+                                contentDescription = "Share track",
+                                tint = MaterialTheme.colorScheme.onSurface
+                            )
+                        }
                     }
                     
-                    DropdownMenu(
-                        expanded = showDropdownMenu,
-                        onDismissRequest = { showDropdownMenu = false }
-                    ) {
-                        DropdownMenuItem(
-                            text = { Text("View Queue") },
-                            onClick = {
-                                showDropdownMenu = false
-                                onNavigateToQueue()
-                            },
-                            leadingIcon = {
-                                Icon(
-                                    painter = IconResources.PlayerControls.Queue(),
-                                    contentDescription = "Queue"
-                                )
-                            }
-                        )
+                    var showDropdownMenu by remember { mutableStateOf(false) }
+                    
+                    Box {
+                        IconButton(onClick = { showDropdownMenu = true }) {
+                            Icon(painter = IconResources.Navigation.MoreVertical(), contentDescription = "More options")
+                        }
+                        
+                        DropdownMenu(
+                            expanded = showDropdownMenu,
+                            onDismissRequest = { showDropdownMenu = false }
+                        ) {
+                            DropdownMenuItem(
+                                text = { Text("View Queue") },
+                                onClick = {
+                                    showDropdownMenu = false
+                                    onNavigateToQueue()
+                                },
+                                leadingIcon = {
+                                    Icon(
+                                        painter = IconResources.PlayerControls.Queue(),
+                                        contentDescription = "Queue"
+                                    )
+                                }
+                            )
+                            DropdownMenuItem(
+                                text = { Text("Debug Panel") },
+                                onClick = {
+                                    showDropdownMenu = false
+                                    showDebugPanel = true
+                                },
+                                leadingIcon = {
+                                    Icon(
+                                        painter = IconResources.Status.Error(),
+                                        contentDescription = "Debug"
+                                    )
+                                }
+                            )
+                        }
                     }
                 }
+            )
+            
+            when {
+                uiState.isLoading -> {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        CircularProgressIndicator()
+                    }
+                }
+                
+                uiState.error != null -> {
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(16.dp)
+                        ) {
+                            Icon(
+                                painter = IconResources.Status.Error(),
+                                contentDescription = "Error",
+                                tint = MaterialTheme.colorScheme.error,
+                                modifier = Modifier.size(48.dp)
+                            )
+                            Text(
+                                text = uiState.error ?: "Unknown error",
+                                style = MaterialTheme.typography.bodyLarge,
+                                textAlign = TextAlign.Center,
+                                color = MaterialTheme.colorScheme.error
+                            )
+                            // PlayerScreen is a pure view - no retry functionality needed
+                            Text(
+                                text = "Please return to the playlist to retry",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                }
+                
+                uiState.tracks.isEmpty() -> {
+                    // Show full-screen player UI even without tracks
+                    NowPlayingSection(
+                        uiState = uiState,
+                        recording = currentRecording,
+                        currentTrackTitle = currentTrackTitle,
+                        currentArtist = currentArtist,
+                        hasNextTrack = hasNextTrack,
+                        hasPreviousTrack = hasPreviousTrack,
+                        queueIndex = queueIndex,
+                        queueSize = queueUrls.size,
+                        isNavigating = isNavigatingPlayer,
+                        navigationDirection = navigationDirectionPlayer,
+                        onNavigationStateChange = { navigating, direction ->
+                            isNavigatingPlayer = navigating
+                            navigationDirectionPlayer = direction
+                        },
+                        onPlayPause = viewModel::playPause,
+                        onNext = { viewModel.mediaControllerRepository.skipToNext() },
+                        onPrevious = { viewModel.mediaControllerRepository.skipToPrevious() },
+                        onSeek = viewModel::seekTo,
+                        modifier = Modifier.fillMaxSize()
+                    )
+                }
+                
+                else -> {
+                    // Full-screen player content
+                    NowPlayingSection(
+                        uiState = uiState,
+                        recording = currentRecording,
+                        currentTrackTitle = currentTrackTitle,
+                        currentArtist = currentArtist,
+                        hasNextTrack = hasNextTrack,
+                        hasPreviousTrack = hasPreviousTrack,
+                        queueIndex = queueIndex,
+                        queueSize = queueUrls.size,
+                        isNavigating = isNavigatingPlayer,
+                        navigationDirection = navigationDirectionPlayer,
+                        onNavigationStateChange = { navigating, direction ->
+                            isNavigatingPlayer = navigating
+                            navigationDirectionPlayer = direction
+                        },
+                        onPlayPause = viewModel::playPause,
+                        onNext = { viewModel.mediaControllerRepository.skipToNext() },
+                        onPrevious = { viewModel.mediaControllerRepository.skipToPrevious() },
+                        onSeek = viewModel::seekTo,
+                        modifier = Modifier.fillMaxSize()
+                    )
+                }
             }
-        )
+        }
         
-        when {
-            uiState.isLoading -> {
-                Box(
-                    modifier = Modifier.fillMaxSize(),
-                    contentAlignment = Alignment.Center
-                ) {
-                    CircularProgressIndicator()
-                }
-            }
-            
-            uiState.error != null -> {
-                Box(
-                    modifier = Modifier.fillMaxSize(),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Column(
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.spacedBy(16.dp)
-                    ) {
-                        Icon(
-                            painter = IconResources.Status.Error(),
-                            contentDescription = "Error",
-                            tint = MaterialTheme.colorScheme.error,
-                            modifier = Modifier.size(48.dp)
-                        )
-                        Text(
-                            text = uiState.error ?: "Unknown error",
-                            style = MaterialTheme.typography.bodyLarge,
-                            textAlign = TextAlign.Center,
-                            color = MaterialTheme.colorScheme.error
-                        )
-                        // PlayerScreen is a pure view - no retry functionality needed
-                        Text(
-                            text = "Please return to the playlist to retry",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                }
-            }
-            
-            uiState.tracks.isEmpty() -> {
-                // Show full-screen player UI even without tracks
-                NowPlayingSection(
-                    uiState = uiState,
-                    recording = currentRecording,
-                    currentTrackTitle = currentTrackTitle,
-                    currentArtist = currentArtist,
-                    hasNextTrack = hasNextTrack,
-                    hasPreviousTrack = hasPreviousTrack,
-                    queueIndex = queueIndex,
-                    queueSize = queueUrls.size,
-                    isNavigating = isNavigatingPlayer,
-                    navigationDirection = navigationDirectionPlayer,
-                    onNavigationStateChange = { navigating, direction ->
-                        isNavigatingPlayer = navigating
-                        navigationDirectionPlayer = direction
-                    },
-                    onPlayPause = viewModel::playPause,
-                    onNext = { viewModel.mediaControllerRepository.skipToNext() },
-                    onPrevious = { viewModel.mediaControllerRepository.skipToPrevious() },
-                    onSeek = viewModel::seekTo,
-                    modifier = Modifier.fillMaxSize()
-                )
-            }
-            
-            else -> {
-                // Full-screen player content
-                NowPlayingSection(
-                    uiState = uiState,
-                    recording = currentRecording,
-                    currentTrackTitle = currentTrackTitle,
-                    currentArtist = currentArtist,
-                    hasNextTrack = hasNextTrack,
-                    hasPreviousTrack = hasPreviousTrack,
-                    queueIndex = queueIndex,
-                    queueSize = queueUrls.size,
-                    isNavigating = isNavigatingPlayer,
-                    navigationDirection = navigationDirectionPlayer,
-                    onNavigationStateChange = { navigating, direction ->
-                        isNavigatingPlayer = navigating
-                        navigationDirectionPlayer = direction
-                    },
-                    onPlayPause = viewModel::playPause,
-                    onNext = { viewModel.mediaControllerRepository.skipToNext() },
-                    onPrevious = { viewModel.mediaControllerRepository.skipToPrevious() },
-                    onSeek = viewModel::seekTo,
-                    modifier = Modifier.fillMaxSize()
+        // Debug panel overlay
+        if (showDebugPanel) {
+            Surface(
+                modifier = Modifier.fillMaxSize(),
+                color = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f)
+            ) {
+                DebugPanel(
+                    onClose = { showDebugPanel = false }
                 )
             }
         }
@@ -764,7 +796,6 @@ private fun PlayerTopBarTitle(
         }
     }
 }
-
 
 private fun formatConcertDate(dateString: String): String {
     return try {

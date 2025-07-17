@@ -12,6 +12,8 @@ import androidx.media3.common.util.UnstableApi
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionToken
 import com.deadarchive.core.media.service.DeadArchivePlaybackService
+import com.deadarchive.core.model.CurrentTrackInfo
+import com.deadarchive.core.data.repository.ShowRepository
 import com.google.common.util.concurrent.ListenableFuture
 import com.google.common.util.concurrent.MoreExecutors
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -41,7 +43,8 @@ import javax.inject.Singleton
 @Singleton
 class MediaControllerRepository @Inject constructor(
     @ApplicationContext private val context: Context,
-    private val localFileResolver: LocalFileResolver
+    private val localFileResolver: LocalFileResolver,
+    private val showRepository: ShowRepository
 ) {
     
     companion object {
@@ -99,6 +102,10 @@ class MediaControllerRepository @Inject constructor(
     // Current concert ID for UI access
     private val _currentRecordingId = MutableStateFlow<String?>(null)
     val currentRecordingIdFlow: StateFlow<String?> = _currentRecordingId.asStateFlow()
+    
+    // Complete current track information
+    private val _currentTrackInfo = MutableStateFlow<CurrentTrackInfo?>(null)
+    val currentTrackInfo: StateFlow<CurrentTrackInfo?> = _currentTrackInfo.asStateFlow()
     
     fun getCurrentRecordingId(): String? = currentRecordingId
     
@@ -159,6 +166,11 @@ class MediaControllerRepository @Inject constructor(
                 Log.d(TAG, "Service isPlaying changed: $isPlaying")
                 _isPlaying.value = isPlaying
                 
+                // Update CurrentTrackInfo with new playing state
+                _currentTrackInfo.value?.let { trackInfo ->
+                    _currentTrackInfo.value = trackInfo.copy(isPlaying = isPlaying)
+                }
+                
                 if (isPlaying) {
                     startPositionUpdates()
                 } else {
@@ -184,6 +196,12 @@ class MediaControllerRepository @Inject constructor(
                 if (playbackState == Player.STATE_READY) {
                     val duration = controller.duration.takeIf { it != C.TIME_UNSET } ?: 0L
                     _duration.value = duration
+                    
+                    // Update CurrentTrackInfo with new duration
+                    _currentTrackInfo.value?.let { trackInfo ->
+                        _currentTrackInfo.value = trackInfo.copy(duration = duration)
+                    }
+                    
                     Log.d(TAG, "Duration updated from service: $duration")
                 }
                 Log.d(TAG, "UI StateFlow updated - playbackState: ${_playbackState.value}")
@@ -206,6 +224,14 @@ class MediaControllerRepository @Inject constructor(
                 
                 _currentTrack.value = mediaItem
                 _currentTrackUrl.value = mediaItem?.mediaId // mediaId is the URL
+                
+                // Update enriched track info when track changes
+                mediaItem?.mediaId?.let { trackUrl ->
+                    coroutineScope.launch {
+                        updateCurrentTrackInfo(trackUrl)
+                    }
+                }
+                
                 Log.d(TAG, "UI StateFlow updated - currentTrack: ${_currentTrack.value?.mediaId}")
                 Log.d(TAG, "Current track URL updated: ${_currentTrackUrl.value}")
             }
@@ -387,18 +413,18 @@ class MediaControllerRepository @Inject constructor(
                 for ((index, url) in currentQueueUrls.withIndex()) {
                     val resolvedUrl = resolvePlaybackUrl(url) ?: url
                     val title = queueTrackTitles.getOrNull(index) ?: url.substringAfterLast("/").substringBeforeLast(".")
-                    val artist = queueTrackArtists.getOrNull(index)
+                    val filename = url.substringAfterLast("/")
+                    val trackNumber = filename.substringBefore("-")
+                        .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
                     
-                    val metadata = MediaMetadata.Builder()
-                        .setTitle(title)
-                        .apply { if (artist != null) setArtist(artist) }
-                        .build()
-                    
-                    val mediaItem = MediaItem.Builder()
-                        .setUri(resolvedUrl)
-                        .setMediaId(url) // Keep original URL as ID for queue management
-                        .setMediaMetadata(metadata)
-                        .build()
+                    // Create enriched MediaItem for better notifications
+                    val mediaItem = createEnrichedMediaItem(
+                        trackUrl = url,
+                        resolvedUrl = resolvedUrl,
+                        songTitle = title,
+                        trackNumber = trackNumber,
+                        filename = filename
+                    )
                     
                     mediaItems.add(mediaItem)
                 }
@@ -505,20 +531,24 @@ class MediaControllerRepository @Inject constructor(
                         
                         for ((index, queueUrl) in currentQueueUrls.withIndex()) {
                             val resolvedUrl = resolvePlaybackUrl(queueUrl) ?: queueUrl
-                            val metadata = if (queueUrl == originalUrl) {
-                                MediaMetadata.Builder()
-                                    .setTitle(title)
-                                    .setArtist(artist)
-                                    .build()
-                            } else {
-                                MediaMetadata.Builder().build()
-                            }
+                            val queueFilename = queueUrl.substringAfterLast("/")
+                            val queueTrackNumber = queueFilename.substringBefore("-")
+                                .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+                            val queueTitle = queueTrackTitles.getOrNull(index) 
+                                ?: queueFilename.substringBeforeLast(".")
+                                    .replace(Regex("^[0-9]+-"), "")
+                                    .replace("-", " ")
+                                    .split(" ")
+                                    .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
                             
-                            val mediaItem = MediaItem.Builder()
-                                .setUri(resolvedUrl)
-                                .setMediaId(queueUrl) // Keep original URL as ID for queue management
-                                .setMediaMetadata(metadata)
-                                .build()
+                            // Create enriched MediaItem for each queue item
+                            val mediaItem = createEnrichedMediaItem(
+                                trackUrl = queueUrl,
+                                resolvedUrl = resolvedUrl,
+                                songTitle = if (queueUrl == originalUrl) title else queueTitle,
+                                trackNumber = queueTrackNumber,
+                                filename = queueFilename
+                            )
                             
                             mediaItems.add(mediaItem)
                         }
@@ -536,41 +566,45 @@ class MediaControllerRepository @Inject constructor(
             
             // Fallback to single track playback if no queue context
             Log.d(TAG, "Playing single track without queue context")
-            val mediaMetadata = MediaMetadata.Builder()
-                .setTitle(title)
-                .setArtist(artist)
-                .build()
+            val filename = originalUrl.substringAfterLast("/")
+            val trackNumber = filename.substringBefore("-")
+                .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
             
-            val mediaItem = MediaItem.Builder()
-                .setUri(finalUrl)
-                .setMediaId(originalUrl) // Keep original URL as ID for consistency
-                .setMediaMetadata(mediaMetadata)
-                .build()
-            
-            Log.d(TAG, "Created MediaItem: ${mediaItem.mediaId} with metadata: ${mediaItem.mediaMetadata.title}")
-            Log.d(TAG, "Using URI: ${mediaItem.localConfiguration?.uri}")
-            
-            // Stop any current playback first
-            if (controller.isPlaying) {
-                Log.d(TAG, "Stopping current playback...")
-                controller.stop()
+            // Create enriched MediaItem for better notifications
+            coroutineScope.launch {
+                val mediaItem = createEnrichedMediaItem(
+                    trackUrl = originalUrl,
+                    resolvedUrl = finalUrl,
+                    songTitle = title,
+                    trackNumber = trackNumber,
+                    filename = filename
+                )
+                
+                Log.d(TAG, "Created MediaItem: ${mediaItem.mediaId} with metadata: ${mediaItem.mediaMetadata.title}")
+                Log.d(TAG, "Using URI: ${mediaItem.localConfiguration?.uri}")
+                
+                // Stop any current playback first
+                if (controller.isPlaying) {
+                    Log.d(TAG, "Stopping current playback...")
+                    controller.stop()
+                }
+                
+                Log.d(TAG, "Calling controller.setMediaItem()...")
+                controller.setMediaItem(mediaItem)
+                
+                Log.d(TAG, "Calling controller.prepare()...")
+                controller.prepare()
+                
+                // Wait a moment for prepare to complete
+                Log.d(TAG, "Calling controller.play()...")
+                controller.play()
+                
+                Log.d(TAG, "=== SINGLE TRACK PLAYBACK STARTED ===")
+                Log.d(TAG, "Controller state after commands: isPlaying=${controller.isPlaying}, playbackState=${controller.playbackState}")
+                
+                // Log the current MediaItem to verify it was set
+                Log.d(TAG, "Current MediaItem after commands: ${controller.currentMediaItem?.mediaId}")
             }
-            
-            Log.d(TAG, "Calling controller.setMediaItem()...")
-            controller.setMediaItem(mediaItem)
-            
-            Log.d(TAG, "Calling controller.prepare()...")
-            controller.prepare()
-            
-            // Wait a moment for prepare to complete
-            Log.d(TAG, "Calling controller.play()...")
-            controller.play()
-            
-            Log.d(TAG, "=== SINGLE TRACK PLAYBACK STARTED ===")
-            Log.d(TAG, "Controller state after commands: isPlaying=${controller.isPlaying}, playbackState=${controller.playbackState}")
-            
-            // Log the current MediaItem to verify it was set
-            Log.d(TAG, "Current MediaItem after commands: ${controller.currentMediaItem?.mediaId}")
             
         } catch (e: Exception) {
             Log.e(TAG, "=== ERROR SENDING COMMANDS ===", e)
@@ -767,6 +801,12 @@ class MediaControllerRepository @Inject constructor(
                 if (controller != null) {
                     val servicePosition = controller.currentPosition
                     _currentPosition.value = servicePosition
+                    
+                    // Update CurrentTrackInfo with new position
+                    _currentTrackInfo.value?.let { trackInfo ->
+                        _currentTrackInfo.value = trackInfo.copy(position = servicePosition)
+                    }
+                    
                     // Log position sync every 5 seconds to avoid spam
                     if (servicePosition % 5000 < 1000) {
                         Log.d(TAG, "Position synced from service: ${servicePosition}ms")
@@ -784,6 +824,119 @@ class MediaControllerRepository @Inject constructor(
     private fun stopPositionUpdates() {
         positionUpdateJob?.cancel()
         positionUpdateJob = null
+    }
+    
+    /**
+     * Create CurrentTrackInfo with enriched metadata from show data
+     */
+    private suspend fun createCurrentTrackInfo(
+        trackUrl: String,
+        recordingId: String,
+        songTitle: String,
+        trackNumber: Int?,
+        filename: String
+    ): CurrentTrackInfo? {
+        return try {
+            // Get recording data to find show information
+            val recording = showRepository.getRecordingById(recordingId)
+            if (recording == null) {
+                Log.w(TAG, "Could not find recording data for ID: $recordingId")
+                return null
+            }
+            
+            CurrentTrackInfo(
+                trackUrl = trackUrl,
+                recordingId = recordingId,
+                showId = recording.concertDate, // Use concert date as showId for now
+                showDate = recording.concertDate,
+                venue = recording.concertVenue,
+                location = recording.concertLocation,
+                songTitle = songTitle,
+                trackNumber = trackNumber,
+                filename = filename,
+                isPlaying = _isPlaying.value,
+                position = _currentPosition.value,
+                duration = _duration.value
+            )
+        } catch (e: Exception) {
+            Log.e(TAG, "Error creating CurrentTrackInfo for recording $recordingId", e)
+            null
+        }
+    }
+    
+    /**
+     * Create MediaItem with enriched metadata for notifications
+     */
+    private suspend fun createEnrichedMediaItem(
+        trackUrl: String,
+        resolvedUrl: String,
+        songTitle: String,
+        trackNumber: Int?,
+        filename: String
+    ): MediaItem {
+        val recordingId = localFileResolver.extractRecordingIdFromUrl(trackUrl)
+        
+        // Try to get enriched metadata
+        val trackInfo = if (recordingId != null) {
+            createCurrentTrackInfo(trackUrl, recordingId, songTitle, trackNumber, filename)
+        } else null
+        
+        val metadata = if (trackInfo != null) {
+            // Use enriched metadata for notifications
+            MediaMetadata.Builder()
+                .setTitle(trackInfo.displayTitle)        // "Song Title"
+                .setArtist(trackInfo.displayArtist)      // "City, State"
+                .setAlbumTitle(trackInfo.displaySubtitle) // "Date - Venue"
+                .setDisplayTitle(trackInfo.songTitle)    // Just the song name
+                .build()
+        } else {
+            // Fallback to basic metadata
+            MediaMetadata.Builder()
+                .setTitle(songTitle)
+                .setArtist("Grateful Dead")
+                .setAlbumTitle("Dead Archive")
+                .build()
+        }
+        
+        return MediaItem.Builder()
+            .setUri(resolvedUrl)
+            .setMediaId(trackUrl)
+            .setMediaMetadata(metadata)
+            .build()
+    }
+    
+    /**
+     * Update the current track info StateFlow when track changes
+     */
+    private suspend fun updateCurrentTrackInfo(trackUrl: String) {
+        val recordingId = localFileResolver.extractRecordingIdFromUrl(trackUrl)
+        if (recordingId == null) {
+            _currentTrackInfo.value = null
+            return
+        }
+        
+        // Extract track info from current queue metadata
+        val trackFilename = trackUrl.substringAfterLast("/")
+        val songTitle = queueMetadata.value.find { it.first == trackUrl }?.second 
+            ?: trackFilename.substringBeforeLast(".")
+                .replace(Regex("^[0-9]+-"), "")
+                .replace("-", " ")
+                .split(" ")
+                .joinToString(" ") { it.replaceFirstChar { char -> char.uppercase() } }
+        
+        val trackNumber = trackFilename.substringBefore("-")
+            .takeIf { it.all { char -> char.isDigit() } }?.toIntOrNull()
+        
+        val trackInfo = createCurrentTrackInfo(
+            trackUrl = trackUrl,
+            recordingId = recordingId,
+            songTitle = songTitle,
+            trackNumber = trackNumber,
+            filename = trackFilename
+        )
+        
+        _currentTrackInfo.value = trackInfo
+        Log.d(TAG, "Updated CurrentTrackInfo: ${trackInfo?.displayTitle ?: "null"}")
     }
     
     /**

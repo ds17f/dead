@@ -73,8 +73,9 @@ object MediaModule {
     @Singleton
     fun provideMediaControllerRepository(
         @ApplicationContext context: Context,
-        localFileResolver: LocalFileResolver
+        localFileResolver: LocalFileResolver,
+        showRepository: com.deadarchive.core.data.repository.ShowRepository
     ): MediaControllerRepository {
-        return MediaControllerRepository(context, localFileResolver)
+        return MediaControllerRepository(context, localFileResolver, showRepository)
     }
 }
