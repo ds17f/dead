@@ -1,11 +1,28 @@
 # Changelog
 
+## [0.24.0] - 2025-07-17
+
+### New Features
+* update header format to show Date then Venue/Location consistently (8396e3e)
+* update mini player format to show Date / Venue•Location (afc5269)
+* gate debug panel visibility based on settings (cf800fa)
+* use queue position for track numbering instead of filename parsing (04dc0d1)
+* improve track number extraction from filenames (8ac884b)
+* implement enriched media notifications with show and track information (3b39d4b)
+
+### Bug Fixes
+* correct track duration display in playlist by parsing MM:SS format (08b544f)
+* use CurrentTrackInfo for player screen track titles (b582603)
+* resolve track title and navigation consistency issues (5b03c05)
+
+### Code Refactoring
+* improve data model structure and relationships (d7ad121)
+
+
 ## [0.23.0] - 2025-07-14
 
 ### New Features
 * add sharing functionality with recording navigation fix (c96cb26)
-
-
 ## [0.22.0] - 2025-07-14
 
 ### New Features
