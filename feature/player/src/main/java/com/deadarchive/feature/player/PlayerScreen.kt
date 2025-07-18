@@ -75,9 +75,9 @@ fun PlayerScreen(
     
     val currentArtist = currentRecording?.displayTitle ?: "Unknown Artist"
     
-    // Determine skip button states from MediaController queue
-    val hasNextTrack = queueUrls.isNotEmpty() && queueIndex < queueUrls.size - 1
-    val hasPreviousTrack = queueUrls.isNotEmpty() && queueIndex > 0
+    // Get navigation state from ViewModel (via QueueStateManager)
+    val hasNextTrack by viewModel.hasNext.collectAsState()
+    val hasPreviousTrack by viewModel.hasPrevious.collectAsState()
     
     // Debug current state
     LaunchedEffect(uiState, currentRecording) {

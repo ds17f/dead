@@ -10,6 +10,7 @@ import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.LocalFileResolver
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.QueueManager
+import com.deadarchive.core.media.player.QueueStateManager
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -91,5 +92,23 @@ object MediaModule {
         localFileResolver: LocalFileResolver
     ): QueueManager {
         return QueueManager(mediaControllerRepository, localFileResolver)
+    }
+    
+    /**
+     * Provides QueueStateManager for exposing queue state flows.
+     * Bridges QueueManager and MediaControllerRepository without circular dependencies.
+     */
+    @Provides
+    @Singleton
+    fun provideQueueStateManager(
+        queueManager: QueueManager,
+        mediaControllerRepository: MediaControllerRepository
+    ): QueueStateManager {
+        val queueStateManager = QueueStateManager(queueManager, mediaControllerRepository)
+        
+        // Wire the flows to avoid circular dependencies
+        mediaControllerRepository.setQueueStateManager(queueStateManager)
+        
+        return queueStateManager
     }
 }

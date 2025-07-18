@@ -8,6 +8,7 @@ import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.QueueManager
+import com.deadarchive.core.media.player.QueueStateManager
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.PlaylistItem
@@ -33,6 +34,7 @@ import javax.inject.Inject
 class PlayerViewModel @Inject constructor(
     val mediaControllerRepository: MediaControllerRepository,
     private val queueManager: QueueManager,
+    private val queueStateManager: QueueStateManager,
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,
@@ -64,6 +66,10 @@ class PlayerViewModel @Inject constructor(
     
     // Navigation callbacks for show navigation with showId parameter
     var onNavigateToShow: ((showId: String, recordingId: String) -> Unit)? = null
+    
+    // Navigation state from QueueStateManager
+    val hasNext = queueStateManager.hasNext.stateIn(viewModelScope, SharingStarted.Lazily, false)
+    val hasPrevious = queueStateManager.hasPrevious.stateIn(viewModelScope, SharingStarted.Lazily, false)
     
     // Playlist management state - now derived from QueueManager
     val currentPlaylist: StateFlow<List<PlaylistItem>> = queueManager.getCurrentQueue()

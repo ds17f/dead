@@ -1,0 +1,1835 @@
+07-17 19:02:51.743 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:51.743 28235 28235 D CurrentTrackInfo: songTitle: 'Tuning'
+07-17 19:02:51.743 28235 28235 D CurrentTrackInfo: filename: 'gd88-07-17d1t01.mp3'
+07-17 19:02:51.743 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Tuning'
+07-17 19:02:51.743 28235 28235 D CurrentTrackInfo: final displayTitle: 'Tuning'
+07-17 19:02:51.833 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:51.833 28235 28235 D CurrentTrackInfo: songTitle: 'Tuning'
+07-17 19:02:51.833 28235 28235 D CurrentTrackInfo: filename: 'gd88-07-17d1t01.mp3'
+07-17 19:02:51.833 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Tuning'
+07-17 19:02:51.833 28235 28235 D CurrentTrackInfo: final displayTitle: 'Tuning'
+07-17 19:02:56.482 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.482 28235 28235 D CurrentTrackInfo: songTitle: 'Tuning'
+07-17 19:02:56.482 28235 28235 D CurrentTrackInfo: filename: 'gd88-07-17d1t01.mp3'
+07-17 19:02:56.482 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Tuning'
+07-17 19:02:56.482 28235 28235 D CurrentTrackInfo: final displayTitle: 'Tuning'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t06 Big River.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Big River'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Big River'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t07 Althea.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Althea >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Althea >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t08 Red Rooster.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Little Red Rooster'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Little Red Rooster'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t09 T Jed.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Tennessee Jed >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Tennessee Jed >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t10 Truckin'.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Truckin''
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Truckin''
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t01 Playin'.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Playin' In The Band >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t02 China Cat.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'China Cat Sunflower >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'China Cat Sunflower >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t03 IKYR.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'I Know You Rider'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'I Know You Rider'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t04 Estimated.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Estimated Prophet >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Estimated Prophet >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t05 Drums.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Drums >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Drums >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t06 Space.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Space >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Space >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t07 Wheel.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'The Wheel >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'The Wheel >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t08 Playin' Reprise.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Playin' In The Band Reprise >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band Reprise >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t09 A & A.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Around & Around >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Around & Around >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t10 OMSN.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'One More Saturday Night'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'One More Saturday Night'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t11 E_Baby Blue.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t06 Big River.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Big River'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Big River'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t07 Althea.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Althea >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Althea >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t08 Red Rooster.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Little Red Rooster'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Little Red Rooster'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t09 T Jed.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Tennessee Jed >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Tennessee Jed >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t10 Truckin'.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Truckin''
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Truckin''
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t01 Playin'.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'Playin' In The Band >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t02 China Cat.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'China Cat Sunflower >'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'China Cat Sunflower >'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t03 IKYR.mp3'
+07-17 19:02:56.502 28235 28235 D TrackModel: title: 'I Know You Rider'
+07-17 19:02:56.502 28235 28235 D TrackModel: displayTitle result: 'I Know You Rider'
+07-17 19:02:56.502 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.502 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t04 Estimated.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Estimated Prophet >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Estimated Prophet >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t05 Drums.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Drums >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Drums >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t06 Space.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Space >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Space >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t07 Wheel.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'The Wheel >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'The Wheel >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t08 Playin' Reprise.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Playin' In The Band Reprise >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band Reprise >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t09 A & A.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Around & Around >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Around & Around >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t10 OMSN.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'One More Saturday Night'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'One More Saturday Night'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t11 E_Baby Blue.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.503 28235 28235 D PlayerViewModel: updateQueueContext: Updating MediaController with 21 filtered queue items (not currently playing)
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:56.503 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.503 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:02:56.503 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:02:56.503 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: === UPDATING QUEUE CONTEXT ===
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: Queue size: 21
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: Track titles: 21
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: Current index: 0
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: Recording ID: gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: === QUEUE STATE UPDATED ===
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: StateFlow queueUrls updated: 21 items
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: StateFlow queueIndex updated: 0
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: StateFlow queueMetadata updated: 21 items
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: === SYNCING QUEUE TO MEDIACONTROLLER ===
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: Queue size: 21
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: Current index: 0
+07-17 19:02:56.503 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:02:56.505 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.505 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:56.505 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:56.505 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:56.505 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:56.505 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:02:56.507 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.507 28235 28235 D CurrentTrackInfo: songTitle: 'Bertha >'
+07-17 19:02:56.507 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:02:56.507 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Bertha >'
+07-17 19:02:56.507 28235 28235 D CurrentTrackInfo: final displayTitle: 'Bertha >'
+07-17 19:02:56.508 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t03%20GSET.mp3
+07-17 19:02:56.509 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.509 28235 28235 D CurrentTrackInfo: songTitle: 'Greatest Story Ever Told'
+07-17 19:02:56.509 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t03%20GSET.mp3'
+07-17 19:02:56.509 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Greatest Story Ever Told'
+07-17 19:02:56.509 28235 28235 D CurrentTrackInfo: final displayTitle: 'Greatest Story Ever Told'
+07-17 19:02:56.509 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t04%20TLEO.mp3
+07-17 19:02:56.510 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.510 28235 28235 D CurrentTrackInfo: songTitle: 'They Love Each Other'
+07-17 19:02:56.510 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t04%20TLEO.mp3'
+07-17 19:02:56.510 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'They Love Each Other'
+07-17 19:02:56.510 28235 28235 D CurrentTrackInfo: final displayTitle: 'They Love Each Other'
+07-17 19:02:56.513 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.513 28235 28235 D CurrentTrackInfo: songTitle: 'Tuning'
+07-17 19:02:56.513 28235 28235 D CurrentTrackInfo: filename: 'gd88-07-17d1t01.mp3'
+07-17 19:02:56.513 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Tuning'
+07-17 19:02:56.513 28235 28235 D CurrentTrackInfo: final displayTitle: 'Tuning'
+07-17 19:02:56.523 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.523 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:56.523 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:56.523 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:56.524 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.524 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:56.524 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:56.524 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:56.532 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t05%20M%20%26%20MU.mp3
+07-17 19:02:56.535 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.535 28235 28235 D CurrentTrackInfo: songTitle: 'Me & My Uncle >'
+07-17 19:02:56.535 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t05%20M%20%26%20MU.mp3'
+07-17 19:02:56.535 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Me & My Uncle >'
+07-17 19:02:56.535 28235 28235 D CurrentTrackInfo: final displayTitle: 'Me & My Uncle >'
+07-17 19:02:56.536 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t06%20Big%20River.mp3
+07-17 19:02:56.537 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.537 28235 28235 D CurrentTrackInfo: songTitle: 'Big River'
+07-17 19:02:56.537 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t06%20Big%20River.mp3'
+07-17 19:02:56.537 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big River'
+07-17 19:02:56.537 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big River'
+07-17 19:02:56.538 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t07%20Althea.mp3
+07-17 19:02:56.539 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.539 28235 28235 D CurrentTrackInfo: songTitle: 'Althea >'
+07-17 19:02:56.539 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t07%20Althea.mp3'
+07-17 19:02:56.539 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Althea >'
+07-17 19:02:56.539 28235 28235 D CurrentTrackInfo: final displayTitle: 'Althea >'
+07-17 19:02:56.539 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t08%20Red%20Rooster.mp3
+07-17 19:02:56.540 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.540 28235 28235 D CurrentTrackInfo: songTitle: 'Little Red Rooster'
+07-17 19:02:56.540 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t08%20Red%20Rooster.mp3'
+07-17 19:02:56.540 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Little Red Rooster'
+07-17 19:02:56.540 28235 28235 D CurrentTrackInfo: final displayTitle: 'Little Red Rooster'
+07-17 19:02:56.541 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t09%20T%20Jed.mp3
+07-17 19:02:56.542 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.542 28235 28235 D CurrentTrackInfo: songTitle: 'Tennessee Jed >'
+07-17 19:02:56.542 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t09%20T%20Jed.mp3'
+07-17 19:02:56.542 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Tennessee Jed >'
+07-17 19:02:56.542 28235 28235 D CurrentTrackInfo: final displayTitle: 'Tennessee Jed >'
+07-17 19:02:56.542 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t10%20Truckin%27.mp3
+07-17 19:02:56.543 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.543 28235 28235 D CurrentTrackInfo: songTitle: 'Truckin''
+07-17 19:02:56.543 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t10%20Truckin%27.mp3'
+07-17 19:02:56.543 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Truckin''
+07-17 19:02:56.543 28235 28235 D CurrentTrackInfo: final displayTitle: 'Truckin''
+07-17 19:02:56.544 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t01%20Playin%27.mp3
+07-17 19:02:56.550 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.550 28235 28235 D CurrentTrackInfo: songTitle: 'Playin' In The Band >'
+07-17 19:02:56.550 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t01%20Playin%27.mp3'
+07-17 19:02:56.550 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Playin' In The Band >'
+07-17 19:02:56.550 28235 28235 D CurrentTrackInfo: final displayTitle: 'Playin' In The Band >'
+07-17 19:02:56.551 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t02%20China%20Cat.mp3
+07-17 19:02:56.552 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.552 28235 28235 D CurrentTrackInfo: songTitle: 'China Cat Sunflower >'
+07-17 19:02:56.552 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t02%20China%20Cat.mp3'
+07-17 19:02:56.552 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'China Cat Sunflower >'
+07-17 19:02:56.552 28235 28235 D CurrentTrackInfo: final displayTitle: 'China Cat Sunflower >'
+07-17 19:02:56.553 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t03%20IKYR.mp3
+07-17 19:02:56.554 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.554 28235 28235 D CurrentTrackInfo: songTitle: 'I Know You Rider'
+07-17 19:02:56.554 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t03%20IKYR.mp3'
+07-17 19:02:56.554 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'I Know You Rider'
+07-17 19:02:56.554 28235 28235 D CurrentTrackInfo: final displayTitle: 'I Know You Rider'
+07-17 19:02:56.554 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t04%20Estimated.mp3
+07-17 19:02:56.555 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.555 28235 28235 D CurrentTrackInfo: songTitle: 'Estimated Prophet >'
+07-17 19:02:56.555 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t04%20Estimated.mp3'
+07-17 19:02:56.555 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Estimated Prophet >'
+07-17 19:02:56.555 28235 28235 D CurrentTrackInfo: final displayTitle: 'Estimated Prophet >'
+07-17 19:02:56.555 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t05%20Drums.mp3
+07-17 19:02:56.556 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.556 28235 28235 D CurrentTrackInfo: songTitle: 'Drums >'
+07-17 19:02:56.556 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t05%20Drums.mp3'
+07-17 19:02:56.556 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Drums >'
+07-17 19:02:56.556 28235 28235 D CurrentTrackInfo: final displayTitle: 'Drums >'
+07-17 19:02:56.557 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t06%20Space.mp3
+07-17 19:02:56.558 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.558 28235 28235 D CurrentTrackInfo: songTitle: 'Space >'
+07-17 19:02:56.558 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t06%20Space.mp3'
+07-17 19:02:56.558 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Space >'
+07-17 19:02:56.558 28235 28235 D CurrentTrackInfo: final displayTitle: 'Space >'
+07-17 19:02:56.558 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t07%20Wheel.mp3
+07-17 19:02:56.559 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.559 28235 28235 D CurrentTrackInfo: songTitle: 'The Wheel >'
+07-17 19:02:56.559 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t07%20Wheel.mp3'
+07-17 19:02:56.559 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'The Wheel >'
+07-17 19:02:56.559 28235 28235 D CurrentTrackInfo: final displayTitle: 'The Wheel >'
+07-17 19:02:56.560 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t08%20Playin%27%20Reprise.mp3
+07-17 19:02:56.562 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.562 28235 28235 D CurrentTrackInfo: songTitle: 'Playin' In The Band Reprise >'
+07-17 19:02:56.562 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t08%20Playin%27%20Reprise.mp3'
+07-17 19:02:56.562 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Playin' In The Band Reprise >'
+07-17 19:02:56.562 28235 28235 D CurrentTrackInfo: final displayTitle: 'Playin' In The Band Reprise >'
+07-17 19:02:56.563 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t09%20A%20%26%20A.mp3
+07-17 19:02:56.565 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.565 28235 28235 D CurrentTrackInfo: songTitle: 'Around & Around >'
+07-17 19:02:56.565 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t09%20A%20%26%20A.mp3'
+07-17 19:02:56.565 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Around & Around >'
+07-17 19:02:56.565 28235 28235 D CurrentTrackInfo: final displayTitle: 'Around & Around >'
+07-17 19:02:56.565 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t10%20OMSN.mp3
+07-17 19:02:56.566 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.566 28235 28235 D CurrentTrackInfo: songTitle: 'One More Saturday Night'
+07-17 19:02:56.566 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t10%20OMSN.mp3'
+07-17 19:02:56.566 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'One More Saturday Night'
+07-17 19:02:56.566 28235 28235 D CurrentTrackInfo: final displayTitle: 'One More Saturday Night'
+07-17 19:02:56.567 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t11%20E_Baby%20Blue.mp3
+07-17 19:02:56.568 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.568 28235 28235 D CurrentTrackInfo: songTitle: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.568 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t11%20E_Baby%20Blue.mp3'
+07-17 19:02:56.568 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.568 28235 28235 D CurrentTrackInfo: final displayTitle: 'E: It's All Over Now, Baby Blue'
+07-17 19:02:56.568 28235 28235 D MediaControllerRepository: Setting MediaItems with 21 items (with local file resolution)
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Position changed from 38642 to 0
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Service track changed to: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Track title: Crowd/Tuning
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Track artist: Jul 17, 1982 - Ventura County Fairgrounds - Ventura, CA
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Transition reason: 3
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Current track URL updated: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Service playbackState changed: 2
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: State name: BUFFERING
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 2
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Queue synced to MediaController successfully
+07-17 19:02:56.569 28235 28235 D MediaController: === songTitle Debug ===
+07-17 19:02:56.569 28235 28235 D MediaController: trackUrl: 'https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:56.569 28235 28235 D MediaController: trackFilename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:56.569 28235 28235 D MediaController: queueMetadataEntry: (https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3, Crowd/Tuning)
+07-17 19:02:56.569 28235 28235 D MediaController: songTitle from queue: 'Crowd/Tuning'
+07-17 19:02:56.569 28235 28235 D MediaController: songTitle after recording lookup: 'Crowd/Tuning'
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: === TRACK TITLE EXTRACTION DEBUG ===
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Track URL: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Track filename: gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Queue metadata entries: 21
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Found queue metadata entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3 -> Crowd/Tuning
+07-17 19:02:56.569 28235 28235 D MediaControllerRepository: Final song title: Crowd/Tuning
+07-17 19:02:56.570 28235 28235 D MediaControllerRepository: Parsed from filename would be: Gd82 07 17 20s1t01 20Crowd Tuning
+07-17 19:02:56.570 28235 28235 D MediaControllerRepository: Sample queue entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3 -> Crowd/Tuning
+07-17 19:02:56.570 28235 28235 D MediaControllerRepository: Sample queue entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3 -> Bertha >
+07-17 19:02:56.570 28235 28235 D MediaControllerRepository: Sample queue entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t03%20GSET.mp3 -> Greatest Story Ever Told
+07-17 19:02:56.571 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.571 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:56.571 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:56.571 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:56.571 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:56.571 28235 28235 D MediaControllerRepository: Updated CurrentTrackInfo: Crowd/Tuning
+07-17 19:02:56.578 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.578 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:56.578 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:56.578 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:56.578 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:56.581 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.581 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:56.581 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:56.581 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:56.581 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.581 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:56.581 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:56.581 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:56.596 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-17 19:02:56.596 28235 28235 D MediaControllerRepository: Position changed from 38642 to 0
+07-17 19:02:56.929 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:02:56.929 28235 28235 D MediaControllerRepository: Service playbackState changed: 3
+07-17 19:02:56.929 28235 28235 D MediaControllerRepository: State name: READY
+07-17 19:02:56.930 28235 28235 D MediaControllerRepository: Duration updated from service: 101831
+07-17 19:02:56.930 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 3
+07-17 19:02:56.930 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-17 19:02:56.930 28235 28235 D MediaControllerRepository: Service isPlaying changed: true
+07-17 19:02:56.930 28235 28235 D MediaControllerRepository: Starting position updates synchronized with service
+07-17 19:02:56.930 28235 28235 D MediaControllerRepository: UI StateFlow updated - isPlaying: true
+07-17 19:02:56.934 28235 28235 D MediaControllerRepository: Position synced from service: 4ms
+07-17 19:02:56.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:56.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:56.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:56.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:56.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:56.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:56.950 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:56.950 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:56.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:56.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:56.950 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:56.950 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:57.934 28235 28235 D MediaControllerRepository: Position synced from service: 895ms
+07-17 19:02:57.946 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:57.946 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:57.946 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:57.946 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:57.946 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:57.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:57.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:57.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:57.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:57.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:57.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:57.949 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:57.949 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:58.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:58.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:58.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:58.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:58.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:58.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:58.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:58.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:58.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:58.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:58.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:58.949 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:58.949 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:02:59.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:02:59.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:02:59.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:02:59.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:02:59.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:02:59.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:59.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:02:59.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:02:59.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:02:59.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:02:59.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:02:59.949 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:02:59.949 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:00.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:00.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:00.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:00.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:00.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:00.947 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:00.947 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:00.947 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:00.947 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:00.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:00.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:00.948 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:00.948 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:01.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:01.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:01.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:01.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:01.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:01.947 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:01.947 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:01.947 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:01.947 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:01.947 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:01.947 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:01.947 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:01.947 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:02.716 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.716 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:02.716 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:02.716 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:02.732 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.732 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:02.732 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:02.732 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:02.816 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.816 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:03:02.816 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:03:02.816 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:03:02.881 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.881 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t06 Big River.mp3'
+07-17 19:03:02.881 28235 28235 D TrackModel: title: 'Big River'
+07-17 19:03:02.881 28235 28235 D TrackModel: displayTitle result: 'Big River'
+07-17 19:03:02.938 28235 28235 D MediaControllerRepository: Position synced from service: 5898ms
+07-17 19:03:02.946 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:02.946 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:02.946 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:02.946 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:02.946 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:02.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:02.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:02.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:02.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:02.949 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:02.949 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:02.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:02.949 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:02.949 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:02.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:02.949 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:02.949 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:02.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:03:02.950 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:03:02.950 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:03:02.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t06 Big River.mp3'
+07-17 19:03:02.950 28235 28235 D TrackModel: title: 'Big River'
+07-17 19:03:02.950 28235 28235 D TrackModel: displayTitle result: 'Big River'
+07-17 19:03:02.952 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.952 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t07 Althea.mp3'
+07-17 19:03:02.952 28235 28235 D TrackModel: title: 'Althea >'
+07-17 19:03:02.952 28235 28235 D TrackModel: displayTitle result: 'Althea >'
+07-17 19:03:02.997 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:02.997 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t08 Red Rooster.mp3'
+07-17 19:03:02.997 28235 28235 D TrackModel: title: 'Little Red Rooster'
+07-17 19:03:02.997 28235 28235 D TrackModel: displayTitle result: 'Little Red Rooster'
+07-17 19:03:03.066 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.066 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t09 T Jed.mp3'
+07-17 19:03:03.066 28235 28235 D TrackModel: title: 'Tennessee Jed >'
+07-17 19:03:03.066 28235 28235 D TrackModel: displayTitle result: 'Tennessee Jed >'
+07-17 19:03:03.613 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.613 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:03.613 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:03.613 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:03.946 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:03.946 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:03.946 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:03.946 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:03.946 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:03.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:03.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:03.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:03.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:03.948 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:03.948 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:03.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:03.949 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:03.949 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:03.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:03.949 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:03.949 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:03.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:03.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:03:03.949 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:03:03.949 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:03:04.946 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:04.946 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:04.946 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:04.946 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:04.946 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:04.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:04.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:04.949 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:04.949 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:04.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:04.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:04.949 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:04.949 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:04.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:04.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:04.950 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:04.950 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:04.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:04.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:04.950 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:04.950 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:05.946 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:05.946 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:05.946 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:05.946 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:05.946 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:05.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:05.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:05.949 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:05.949 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:05.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:05.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:05.950 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:05.950 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:05.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:05.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:05.950 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:05.950 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:05.951 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:05.951 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:05.951 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:05.951 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:06.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:06.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:06.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:06.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:06.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:06.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:06.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:06.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:06.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:06.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:06.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:06.948 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:06.948 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:06.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:06.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:06.949 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:06.949 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:06.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:06.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:06.949 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:06.949 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:07.944 28235 28235 D MediaControllerRepository: Position synced from service: 10904ms
+07-17 19:03:07.947 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:07.947 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:07.947 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:07.947 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:07.947 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:07.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:07.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:07.949 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:07.949 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:07.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:07.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:07.950 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:07.950 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:07.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:07.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:07.950 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:07.950 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:07.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:07.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:07.950 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:07.950 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:08.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:08.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:08.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:08.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:08.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:08.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:08.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:08.948 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:08.948 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:08.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:08.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:08.949 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:08.949 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:08.949 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:08.949 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:08.949 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:08.949 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:08.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:08.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:08.950 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:08.950 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:09.946 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:09.946 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:09.946 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:09.946 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:09.946 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:09.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:09.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:09.950 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:09.950 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:09.950 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:09.950 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:09.950 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:09.950 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:09.951 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:09.951 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:09.951 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:09.951 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:09.952 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:09.952 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:09.952 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:09.952 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:10.945 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:10.945 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:10.945 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:10.945 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:10.945 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:10.947 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:10.947 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:10.947 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:10.947 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:10.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:10.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:10.948 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:10.948 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:10.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:10.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:10.948 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:10.948 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:10.948 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:10.948 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:10.948 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:10.948 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:11.949 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:11.949 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:11.949 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:11.949 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:11.949 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:11.953 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:11.953 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:11.953 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:11.953 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:11.953 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:11.953 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:11.953 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:11.953 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:11.954 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:11.954 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:11.954 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:11.954 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:11.954 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:11.954 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:11.954 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:11.955 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:12.949 28235 28235 D MediaControllerRepository: Position synced from service: 15912ms
+07-17 19:03:12.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:12.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:12.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:12.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:12.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:12.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:12.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:12.966 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:12.966 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:12.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:12.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:12.966 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:12.966 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:12.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:12.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:12.967 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:12.967 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:12.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:12.968 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:12.968 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:12.968 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:13.963 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:13.963 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:13.963 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:13.963 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:13.963 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:13.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:13.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:13.966 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:13.966 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:13.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:13.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:13.966 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:13.967 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:13.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:13.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:13.967 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:13.967 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:13.968 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:13.968 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:13.968 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:13.968 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:14.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:14.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:14.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:14.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:14.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:14.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:14.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:14.965 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:14.965 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:14.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:14.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:14.966 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:14.966 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:14.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:14.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:14.966 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:14.966 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:14.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:14.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:14.967 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:14.967 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:15.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:15.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:15.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:15.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:15.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:15.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:15.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:15.964 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:15.964 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:15.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:15.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:15.964 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:15.964 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:15.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:15.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:15.965 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:15.965 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:15.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:15.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:15.965 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:15.965 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:16.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:16.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:16.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:16.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:16.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:16.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:16.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:16.964 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:16.964 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:16.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:16.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:16.965 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:16.965 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:16.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:16.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:16.965 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:16.965 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:16.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:16.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:16.965 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:16.965 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:17.952 28235 28235 D MediaControllerRepository: Position synced from service: 20921ms
+07-17 19:03:17.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:17.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:17.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:17.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:17.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:17.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:17.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:17.965 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:17.965 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:17.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:17.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:17.965 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:17.965 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:17.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:17.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:17.966 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:17.966 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:17.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:17.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:17.966 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:17.966 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:18.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:18.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:18.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:18.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:18.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:18.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:18.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:18.965 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:18.965 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:18.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:18.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:18.966 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:18.966 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:18.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:18.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:18.966 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:18.966 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:18.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:18.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:18.967 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:18.967 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:19.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:19.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:19.963 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:19.963 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:19.963 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:19.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:19.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:19.967 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:19.967 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:19.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:19.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:19.967 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:19.967 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:19.968 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:19.968 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:19.968 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:19.968 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:19.968 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:19.968 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:19.968 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:19.968 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:20.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:20.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:20.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:20.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:20.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:20.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:20.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:20.965 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:20.965 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:20.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:20.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:20.966 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:20.966 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:20.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:20.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:20.966 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:20.966 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:20.967 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:20.967 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:20.967 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:20.967 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:21.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:21.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:21.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:21.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:21.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:21.963 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:21.963 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:21.963 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:21.963 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:21.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:21.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:21.964 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:21.964 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:21.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:21.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:21.964 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:21.964 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:21.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:21.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:21.964 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:21.964 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:22.956 28235 28235 D MediaControllerRepository: Position synced from service: 25921ms
+07-17 19:03:22.961 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:22.961 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:22.961 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:22.961 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:22.961 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:22.963 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:22.963 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:22.963 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:22.963 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:22.963 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:22.963 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:22.963 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:22.963 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:22.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:22.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:22.964 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:22.964 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:22.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:22.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:22.964 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:22.964 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:23.961 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:23.961 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:23.961 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:23.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:23.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:23.963 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:23.963 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:23.963 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:23.963 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:23.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:23.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:23.964 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:23.964 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:23.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:23.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:23.964 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:23.964 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:23.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:23.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:23.964 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:23.964 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:24.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:24.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:24.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:24.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:24.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:24.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:24.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:24.964 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:24.964 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:24.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:24.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:24.964 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:24.964 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:24.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:24.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:24.964 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:24.964 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:24.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:24.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:24.965 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:24.965 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:25.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:25.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:25.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:25.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:25.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:25.963 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:25.963 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:25.963 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:25.963 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:25.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:25.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:25.964 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:25.964 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:25.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:25.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:25.964 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:25.964 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:25.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:25.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:25.965 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:25.965 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:26.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:26.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:26.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:26.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:26.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:26.963 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:26.963 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:26.963 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:26.963 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:26.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:26.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:26.964 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:26.964 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:26.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:26.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:26.964 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:26.964 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:26.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:26.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:26.965 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:26.965 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:27.960 28235 28235 D MediaControllerRepository: Position synced from service: 30922ms
+07-17 19:03:27.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:27.962 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:27.962 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:27.962 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:27.962 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:27.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:27.964 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:27.964 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:27.964 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:27.964 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:27.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:27.965 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:27.965 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:27.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:27.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:27.965 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:27.965 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:27.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:27.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:27.965 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:27.965 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:28.502 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:28.502 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:28.502 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:28.502 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:28.502 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:28.962 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:28.963 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:28.963 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:28.963 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:28.963 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:28.965 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:28.965 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:28.965 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:28.965 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:28.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:28.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:28.966 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:28.966 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:28.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:28.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:28.966 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:28.966 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:28.966 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:28.966 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:28.966 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:28.966 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:29.645 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:29.645 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:29.645 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:29.645 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:29.645 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t03.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Beat It On Down The Line'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Beat It On Down The Line'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t04.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'In The Pines'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'In The Pines'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t05.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Cardboard Cowboy'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Cardboard Cowboy'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t06.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Noby's Fault But Mine'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Noby's Fault But Mine'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t07.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Next Time You See Me'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Next Time You See Me'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t03.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Beat It On Down The Line'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Beat It On Down The Line'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t04.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'In The Pines'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'In The Pines'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t05.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Cardboard Cowboy'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Cardboard Cowboy'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t06.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Noby's Fault But Mine'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Noby's Fault But Mine'
+07-17 19:03:29.657 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.657 28235 28235 D TrackModel: filename: 'gd66-07-17d1t07.mp3'
+07-17 19:03:29.657 28235 28235 D TrackModel: title: 'Next Time You See Me'
+07-17 19:03:29.657 28235 28235 D TrackModel: displayTitle result: 'Next Time You See Me'
+07-17 19:03:29.672 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.672 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:29.672 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:29.672 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:29.673 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.673 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:29.673 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:29.673 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:29.978 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:29.978 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:29.978 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:29.978 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:29.978 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:29.980 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.980 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:29.980 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:29.980 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:29.980 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:29.980 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:29.980 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:29.980 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:30.798 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:30.798 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.798 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:30.798 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:30.798 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:30.798 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.798 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:30.798 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:30.798 28235 28235 D MediaControllerRepository: === PLAY TRACK COMMAND ===
+07-17 19:03:30.798 28235 28235 D MediaControllerRepository: Original URL: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.798 28235 28235 D MediaControllerRepository: Title: Big Boss Man
+07-17 19:03:30.798 28235 28235 D MediaControllerRepository: Artist: Grateful Dead Live at Fillmore Auditorium on 1966-07-17
+07-17 19:03:30.798 28235 28235 D MediaControllerRepository: Controller connected: true
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: Final URL for playback: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: Original URL (for queue matching): https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: MediaController available, checking state...
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: Controller playback state: 3
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: Controller isPlaying: true
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: Controller available commands: androidx.media3.common.Player$Commands@f49a7715
+07-17 19:03:30.799 28235 28235 D MediaControllerRepository: Playing single track without queue context
+07-17 19:03:30.801 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:30.801 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:30.801 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.801 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:30.801 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Created MediaItem: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3 with metadata: Big Boss Man
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Using URI: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Stopping current playback...
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Service playbackState changed: 1
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: State name: IDLE
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 1
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Calling controller.setMediaItem()...
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Position changed from 33055 to 0
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Service track changed to: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Track title: Big Boss Man
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Track artist: Jul 17, 1966 - Fillmore Auditorium - San Francisco, CA
+07-17 19:03:30.801 28235 28235 D MediaControllerRepository: Transition reason: 3
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Current track URL updated: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Calling controller.prepare()...
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Service playbackState changed: 2
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: State name: BUFFERING
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 2
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Calling controller.play()...
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: === SINGLE TRACK PLAYBACK STARTED ===
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Controller state after commands: isPlaying=false, playbackState=2
+07-17 19:03:30.802 28235 28235 D MediaControllerRepository: Current MediaItem after commands: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.802 28235 28235 D MediaController: === songTitle Debug ===
+07-17 19:03:30.802 28235 28235 D MediaController: trackUrl: 'https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3'
+07-17 19:03:30.802 28235 28235 D MediaController: trackFilename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.802 28235 28235 D MediaController: queueMetadataEntry: null
+07-17 19:03:30.802 28235 28235 D MediaController: songTitle from queue: 'null'
+07-17 19:03:30.803 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:30.803 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.803 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:30.803 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.803 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D MediaController: Found track in recording data: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D MediaController: Updated songTitle: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D MediaController: songTitle after recording lookup: 'Big Boss Man'
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: === TRACK TITLE EXTRACTION DEBUG ===
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Track URL: https://ia801609.us.archive.org/6/items/gd1966-07-17.sbd.serafin.4458.shnf/gd66-07-17d1t01.mp3
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Track filename: gd66-07-17d1t01.mp3
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Queue metadata entries: 21
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Found queue metadata entry: NONE
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Final song title: Big Boss Man
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Parsed from filename would be: Track 01
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Sample queue entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3 -> Crowd/Tuning
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Sample queue entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3 -> Bertha >
+07-17 19:03:30.803 28235 28235 D MediaControllerRepository: Sample queue entry: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t03%20GSET.mp3 -> Greatest Story Ever Told
+07-17 19:03:30.803 28235 28235 W MediaControllerRepository: Queue metadata is stale! Current track not found in metadata. Clearing stale metadata.
+07-17 19:03:30.804 28235 28235 D MediaControllerRepository: Updating currentRecordingId from gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496 to gd1966-07-17.sbd.serafin.4458.shnf
+07-17 19:03:30.804 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:30.804 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:30.804 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.804 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:30.804 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:30.804 28235 28235 D MediaControllerRepository: Updated CurrentTrackInfo: Big Boss Man
+07-17 19:03:30.812 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:30.812 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:30.812 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.812 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:30.812 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:30.814 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:30.814 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:30.814 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:30.814 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:30.814 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:30.814 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:30.814 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:30.814 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:30.834 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-17 19:03:30.834 28235 28235 D MediaControllerRepository: Position changed from 33783 to 0
+07-17 19:03:30.962 28235 28235 D MediaControllerRepository: Position synced from service: 0ms
+07-17 19:03:31.129 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:03:31.129 28235 28235 D MediaControllerRepository: Service playbackState changed: 3
+07-17 19:03:31.129 28235 28235 D MediaControllerRepository: State name: READY
+07-17 19:03:31.130 28235 28235 D MediaControllerRepository: Duration updated from service: 284865
+07-17 19:03:31.130 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 3
+07-17 19:03:31.130 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-17 19:03:31.130 28235 28235 D MediaControllerRepository: Service isPlaying changed: true
+07-17 19:03:31.130 28235 28235 D MediaControllerRepository: Starting position updates synchronized with service
+07-17 19:03:31.130 28235 28235 D MediaControllerRepository: UI StateFlow updated - isPlaying: true
+07-17 19:03:31.133 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:31.133 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:31.133 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:31.133 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:31.133 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:31.135 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:31.135 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:31.135 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:31.135 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:31.135 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:31.135 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:31.135 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:31.135 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:31.138 28235 28235 D MediaControllerRepository: Position synced from service: 9ms
+07-17 19:03:31.146 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:31.146 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:31.146 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:31.146 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:31.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:31.147 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:31.147 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:31.147 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:31.148 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:31.148 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:31.148 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:31.148 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:31.148 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:32.139 28235 28235 D MediaControllerRepository: Position synced from service: 927ms
+07-17 19:03:32.146 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:32.146 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:32.146 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:32.146 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:32.146 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:32.149 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:32.150 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:32.150 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:32.150 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:32.150 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:32.150 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:32.150 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:32.150 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:32.485 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:32.485 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:32.485 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:32.485 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:32.485 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:33.145 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:33.145 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:33.145 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:33.145 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:33.145 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:33.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:33.147 28235 28235 D TrackModel: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:33.147 28235 28235 D TrackModel: title: 'Big Boss Man'
+07-17 19:03:33.147 28235 28235 D TrackModel: displayTitle result: 'Big Boss Man'
+07-17 19:03:33.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:33.147 28235 28235 D TrackModel: filename: 'gd66-07-17d1t02.mp3'
+07-17 19:03:33.147 28235 28235 D TrackModel: title: 'Standing On The Corner'
+07-17 19:03:33.147 28235 28235 D TrackModel: displayTitle result: 'Standing On The Corner'
+07-17 19:03:34.012 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:34.012 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:34.012 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:34.012 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:34.012 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t06 Big River.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Big River'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Big River'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t07 Althea.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Althea >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Althea >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t08 Red Rooster.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Little Red Rooster'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Little Red Rooster'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t09 T Jed.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Tennessee Jed >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Tennessee Jed >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t10 Truckin'.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Truckin''
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Truckin''
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t01 Playin'.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Playin' In The Band >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t02 China Cat.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'China Cat Sunflower >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'China Cat Sunflower >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t03 IKYR.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'I Know You Rider'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'I Know You Rider'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t04 Estimated.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Estimated Prophet >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Estimated Prophet >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t05 Drums.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Drums >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Drums >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t06 Space.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Space >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Space >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t07 Wheel.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'The Wheel >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'The Wheel >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t08 Playin' Reprise.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Playin' In The Band Reprise >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band Reprise >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t09 A & A.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Around & Around >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Around & Around >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t10 OMSN.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'One More Saturday Night'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'One More Saturday Night'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t11 E_Baby Blue.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t03 GSET.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Greatest Story Ever Told'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Greatest Story Ever Told'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t04 TLEO.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'They Love Each Other'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'They Love Each Other'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t05 M & MU.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Me & My Uncle >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Me & My Uncle >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t06 Big River.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Big River'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Big River'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t07 Althea.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Althea >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Althea >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t08 Red Rooster.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Little Red Rooster'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Little Red Rooster'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t09 T Jed.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Tennessee Jed >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Tennessee Jed >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t10 Truckin'.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Truckin''
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Truckin''
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t01 Playin'.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Playin' In The Band >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t02 China Cat.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'China Cat Sunflower >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'China Cat Sunflower >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t03 IKYR.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'I Know You Rider'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'I Know You Rider'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t04 Estimated.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Estimated Prophet >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Estimated Prophet >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t05 Drums.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Drums >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Drums >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t06 Space.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Space >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Space >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t07 Wheel.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'The Wheel >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'The Wheel >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t08 Playin' Reprise.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Playin' In The Band Reprise >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Playin' In The Band Reprise >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t09 A & A.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'Around & Around >'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'Around & Around >'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t10 OMSN.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'One More Saturday Night'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'One More Saturday Night'
+07-17 19:03:34.025 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.025 28235 28235 D TrackModel: filename: 'gd82-07-17 s2t11 E_Baby Blue.mp3'
+07-17 19:03:34.025 28235 28235 D TrackModel: title: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:34.025 28235 28235 D TrackModel: displayTitle result: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:34.037 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.037 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:34.037 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:34.037 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:34.039 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.039 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:34.039 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:34.039 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:34.145 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:34.145 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:34.145 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:34.145 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:34.145 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:34.146 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.146 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:34.146 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:34.146 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:34.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:34.147 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:34.147 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:34.147 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:35.145 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:35.145 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:35.145 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:35.145 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:35.145 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:35.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:35.147 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:35.147 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:35.147 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:35.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:35.147 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:35.147 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:35.147 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:36.145 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.145 28235 28235 D CurrentTrackInfo: songTitle: 'Big Boss Man'
+07-17 19:03:36.145 28235 28235 D CurrentTrackInfo: filename: 'gd66-07-17d1t01.mp3'
+07-17 19:03:36.145 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big Boss Man'
+07-17 19:03:36.145 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big Boss Man'
+07-17 19:03:36.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.147 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:36.147 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:36.147 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:36.147 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.147 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:36.147 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:36.147 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:36.164 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.164 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:36.164 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:36.164 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:36.164 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.164 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:36.164 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:36.164 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:36.164 28235 28235 D MediaControllerRepository: === PLAY TRACK COMMAND ===
+07-17 19:03:36.164 28235 28235 D MediaControllerRepository: Original URL: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.164 28235 28235 D MediaControllerRepository: Title: Bertha >
+07-17 19:03:36.164 28235 28235 D MediaControllerRepository: Artist: Grateful Dead Live at Ventura County Fairgrounds on 1982-07-17
+07-17 19:03:36.164 28235 28235 D MediaControllerRepository: Controller connected: true
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Final URL for playback: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Original URL (for queue matching): https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: MediaController available, checking state...
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Controller playback state: 3
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Controller isPlaying: true
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Controller available commands: androidx.media3.common.Player$Commands@2aab059
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Playing track with queue context (21 items)
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: Track found at queue index: 1
+07-17 19:03:36.166 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t01%20Crowd_Tuning.mp3
+07-17 19:03:36.168 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.168 28235 28235 D CurrentTrackInfo: songTitle: 'Crowd/Tuning'
+07-17 19:03:36.168 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t01%20Crowd_Tuning.mp3'
+07-17 19:03:36.168 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Crowd/Tuning'
+07-17 19:03:36.168 28235 28235 D CurrentTrackInfo: final displayTitle: 'Crowd/Tuning'
+07-17 19:03:36.168 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.169 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.169 28235 28235 D CurrentTrackInfo: songTitle: 'Bertha >'
+07-17 19:03:36.169 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:36.169 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Bertha >'
+07-17 19:03:36.169 28235 28235 D CurrentTrackInfo: final displayTitle: 'Bertha >'
+07-17 19:03:36.170 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t03%20GSET.mp3
+07-17 19:03:36.171 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.171 28235 28235 D CurrentTrackInfo: songTitle: 'Greatest Story Ever Told'
+07-17 19:03:36.171 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t03%20GSET.mp3'
+07-17 19:03:36.171 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Greatest Story Ever Told'
+07-17 19:03:36.171 28235 28235 D CurrentTrackInfo: final displayTitle: 'Greatest Story Ever Told'
+07-17 19:03:36.172 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t04%20TLEO.mp3
+07-17 19:03:36.173 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.173 28235 28235 D CurrentTrackInfo: songTitle: 'They Love Each Other'
+07-17 19:03:36.173 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t04%20TLEO.mp3'
+07-17 19:03:36.173 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'They Love Each Other'
+07-17 19:03:36.173 28235 28235 D CurrentTrackInfo: final displayTitle: 'They Love Each Other'
+07-17 19:03:36.173 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t05%20M%20%26%20MU.mp3
+07-17 19:03:36.174 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.174 28235 28235 D CurrentTrackInfo: songTitle: 'Me & My Uncle >'
+07-17 19:03:36.174 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t05%20M%20%26%20MU.mp3'
+07-17 19:03:36.174 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Me & My Uncle >'
+07-17 19:03:36.174 28235 28235 D CurrentTrackInfo: final displayTitle: 'Me & My Uncle >'
+07-17 19:03:36.175 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t06%20Big%20River.mp3
+07-17 19:03:36.176 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.176 28235 28235 D CurrentTrackInfo: songTitle: 'Big River'
+07-17 19:03:36.176 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t06%20Big%20River.mp3'
+07-17 19:03:36.176 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Big River'
+07-17 19:03:36.176 28235 28235 D CurrentTrackInfo: final displayTitle: 'Big River'
+07-17 19:03:36.176 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t07%20Althea.mp3
+07-17 19:03:36.180 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.180 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:36.180 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:36.180 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:36.180 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.181 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:36.181 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:36.181 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:36.184 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.185 28235 28235 D CurrentTrackInfo: songTitle: 'Althea >'
+07-17 19:03:36.185 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t07%20Althea.mp3'
+07-17 19:03:36.185 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Althea >'
+07-17 19:03:36.185 28235 28235 D CurrentTrackInfo: final displayTitle: 'Althea >'
+07-17 19:03:36.185 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t08%20Red%20Rooster.mp3
+07-17 19:03:36.186 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.186 28235 28235 D CurrentTrackInfo: songTitle: 'Little Red Rooster'
+07-17 19:03:36.186 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t08%20Red%20Rooster.mp3'
+07-17 19:03:36.186 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Little Red Rooster'
+07-17 19:03:36.186 28235 28235 D CurrentTrackInfo: final displayTitle: 'Little Red Rooster'
+07-17 19:03:36.187 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t09%20T%20Jed.mp3
+07-17 19:03:36.189 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.189 28235 28235 D CurrentTrackInfo: songTitle: 'Tennessee Jed >'
+07-17 19:03:36.189 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t09%20T%20Jed.mp3'
+07-17 19:03:36.189 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Tennessee Jed >'
+07-17 19:03:36.189 28235 28235 D CurrentTrackInfo: final displayTitle: 'Tennessee Jed >'
+07-17 19:03:36.189 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t10%20Truckin%27.mp3
+07-17 19:03:36.190 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.190 28235 28235 D CurrentTrackInfo: songTitle: 'Truckin''
+07-17 19:03:36.190 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t10%20Truckin%27.mp3'
+07-17 19:03:36.190 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Truckin''
+07-17 19:03:36.190 28235 28235 D CurrentTrackInfo: final displayTitle: 'Truckin''
+07-17 19:03:36.190 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t01%20Playin%27.mp3
+07-17 19:03:36.192 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.192 28235 28235 D CurrentTrackInfo: songTitle: 'Playin' In The Band >'
+07-17 19:03:36.192 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t01%20Playin%27.mp3'
+07-17 19:03:36.192 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Playin' In The Band >'
+07-17 19:03:36.192 28235 28235 D CurrentTrackInfo: final displayTitle: 'Playin' In The Band >'
+07-17 19:03:36.192 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t02%20China%20Cat.mp3
+07-17 19:03:36.193 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.194 28235 28235 D CurrentTrackInfo: songTitle: 'China Cat Sunflower >'
+07-17 19:03:36.194 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t02%20China%20Cat.mp3'
+07-17 19:03:36.194 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'China Cat Sunflower >'
+07-17 19:03:36.194 28235 28235 D CurrentTrackInfo: final displayTitle: 'China Cat Sunflower >'
+07-17 19:03:36.196 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t03%20IKYR.mp3
+07-17 19:03:36.199 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.199 28235 28235 D CurrentTrackInfo: songTitle: 'I Know You Rider'
+07-17 19:03:36.199 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t03%20IKYR.mp3'
+07-17 19:03:36.199 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'I Know You Rider'
+07-17 19:03:36.199 28235 28235 D CurrentTrackInfo: final displayTitle: 'I Know You Rider'
+07-17 19:03:36.200 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t04%20Estimated.mp3
+07-17 19:03:36.202 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.202 28235 28235 D CurrentTrackInfo: songTitle: 'Estimated Prophet >'
+07-17 19:03:36.202 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t04%20Estimated.mp3'
+07-17 19:03:36.202 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Estimated Prophet >'
+07-17 19:03:36.202 28235 28235 D CurrentTrackInfo: final displayTitle: 'Estimated Prophet >'
+07-17 19:03:36.202 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t05%20Drums.mp3
+07-17 19:03:36.203 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.203 28235 28235 D CurrentTrackInfo: songTitle: 'Drums >'
+07-17 19:03:36.203 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t05%20Drums.mp3'
+07-17 19:03:36.203 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Drums >'
+07-17 19:03:36.203 28235 28235 D CurrentTrackInfo: final displayTitle: 'Drums >'
+07-17 19:03:36.204 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t06%20Space.mp3
+07-17 19:03:36.205 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.206 28235 28235 D CurrentTrackInfo: songTitle: 'Space >'
+07-17 19:03:36.206 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t06%20Space.mp3'
+07-17 19:03:36.206 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Space >'
+07-17 19:03:36.206 28235 28235 D CurrentTrackInfo: final displayTitle: 'Space >'
+07-17 19:03:36.206 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t07%20Wheel.mp3
+07-17 19:03:36.208 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.208 28235 28235 D CurrentTrackInfo: songTitle: 'The Wheel >'
+07-17 19:03:36.208 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t07%20Wheel.mp3'
+07-17 19:03:36.208 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'The Wheel >'
+07-17 19:03:36.208 28235 28235 D CurrentTrackInfo: final displayTitle: 'The Wheel >'
+07-17 19:03:36.209 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t08%20Playin%27%20Reprise.mp3
+07-17 19:03:36.210 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.210 28235 28235 D CurrentTrackInfo: songTitle: 'Playin' In The Band Reprise >'
+07-17 19:03:36.210 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t08%20Playin%27%20Reprise.mp3'
+07-17 19:03:36.210 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Playin' In The Band Reprise >'
+07-17 19:03:36.210 28235 28235 D CurrentTrackInfo: final displayTitle: 'Playin' In The Band Reprise >'
+07-17 19:03:36.212 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t09%20A%20%26%20A.mp3
+07-17 19:03:36.214 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.214 28235 28235 D CurrentTrackInfo: songTitle: 'Around & Around >'
+07-17 19:03:36.214 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t09%20A%20%26%20A.mp3'
+07-17 19:03:36.214 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Around & Around >'
+07-17 19:03:36.214 28235 28235 D CurrentTrackInfo: final displayTitle: 'Around & Around >'
+07-17 19:03:36.214 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t10%20OMSN.mp3
+07-17 19:03:36.216 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.216 28235 28235 D CurrentTrackInfo: songTitle: 'One More Saturday Night'
+07-17 19:03:36.216 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t10%20OMSN.mp3'
+07-17 19:03:36.216 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'One More Saturday Night'
+07-17 19:03:36.216 28235 28235 D CurrentTrackInfo: final displayTitle: 'One More Saturday Night'
+07-17 19:03:36.216 28235 28235 D MediaControllerRepository: 📡 STREAMING PLAYBACK: No local file found for https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s2t11%20E_Baby%20Blue.mp3
+07-17 19:03:36.218 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.218 28235 28235 D CurrentTrackInfo: songTitle: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:36.218 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s2t11%20E_Baby%20Blue.mp3'
+07-17 19:03:36.218 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:36.218 28235 28235 D CurrentTrackInfo: final displayTitle: 'E: It's All Over Now, Baby Blue'
+07-17 19:03:36.218 28235 28235 D MediaControllerRepository: Setting queue with 21 items (with local file resolution), starting at index 1
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Position changed from 3080 to 0
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onMediaItemTransition ===
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Service track changed to: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Track title: Bertha >
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Track artist: Jul 17, 1982 - Ventura County Fairgrounds - Ventura, CA
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Transition reason: 3
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Reason name: PLAYLIST_CHANGED
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: UI StateFlow updated - currentTrack: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Current track URL updated: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Service playbackState changed: 2
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: State name: BUFFERING
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 2
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: Service isPlaying changed: false
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: UI StateFlow updated - isPlaying: false
+07-17 19:03:36.219 28235 28235 D MediaControllerRepository: === QUEUE-BASED PLAYBACK STARTED ===
+07-17 19:03:36.220 28235 28235 D MediaController: === songTitle Debug ===
+07-17 19:03:36.220 28235 28235 D MediaController: trackUrl: 'https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:36.220 28235 28235 D MediaController: trackFilename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:36.220 28235 28235 D MediaController: queueMetadataEntry: null
+07-17 19:03:36.220 28235 28235 D MediaController: songTitle from queue: 'null'
+07-17 19:03:36.221 28235 28235 D MediaController: Found track in recording data: 'null'
+07-17 19:03:36.221 28235 28235 D MediaController: Updated songTitle: 'null'
+07-17 19:03:36.221 28235 28235 D MediaController: songTitle after recording lookup: 'null'
+07-17 19:03:36.221 28235 28235 D MediaController: Final fallback songTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: === TRACK TITLE EXTRACTION DEBUG ===
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: Track URL: https://ia803401.us.archive.org/15/items/gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496/gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: Track filename: gd82-07-17%20s1t02%20Bertha.mp3
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: Queue metadata entries: 0
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: Found queue metadata entry: NONE
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: Final song title: Gd82 07 17 20s1t02 20Bertha
+07-17 19:03:36.221 28235 28235 D MediaControllerRepository: Parsed from filename would be: Gd82 07 17 20s1t02 20Bertha
+07-17 19:03:36.222 28235 28235 D MediaControllerRepository: Updating currentRecordingId from gd1966-07-17.sbd.serafin.4458.shnf to gd1982-07-17.156183.senn421.vita.miller.clugston.flac2496
+07-17 19:03:36.222 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.222 28235 28235 D CurrentTrackInfo: songTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.222 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:36.222 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.222 28235 28235 D CurrentTrackInfo: final displayTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.222 28235 28235 D MediaControllerRepository: Updated CurrentTrackInfo: Gd82 07 17 20s1t02 20Bertha
+07-17 19:03:36.229 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.229 28235 28235 D CurrentTrackInfo: songTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.229 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:36.229 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.229 28235 28235 D CurrentTrackInfo: final displayTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.231 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.231 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:36.231 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:36.231 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:36.232 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.232 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:36.232 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:36.232 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:36.253 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPositionDiscontinuity ===
+07-17 19:03:36.253 28235 28235 D MediaControllerRepository: Position changed from 5022 to 0
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onPlaybackStateChanged ===
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: Service playbackState changed: 3
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: State name: READY
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: Duration updated from service: 413783
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: UI StateFlow updated - playbackState: 3
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: === SERVICE STATE CHANGE: onIsPlayingChanged ===
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: Service isPlaying changed: true
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: Starting position updates synchronized with service
+07-17 19:03:36.470 28235 28235 D MediaControllerRepository: UI StateFlow updated - isPlaying: true
+07-17 19:03:36.475 28235 28235 D MediaControllerRepository: Position synced from service: 6ms
+07-17 19:03:36.479 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:36.479 28235 28235 D CurrentTrackInfo: songTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.479 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:36.479 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.479 28235 28235 D CurrentTrackInfo: final displayTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:36.483 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.483 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:36.483 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:36.483 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:36.484 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:36.484 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:36.484 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:36.484 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:37.476 28235 28235 D MediaControllerRepository: Position synced from service: 859ms
+07-17 19:03:37.478 28235 28235 D CurrentTrackInfo: === DisplayTitle Debug ===
+07-17 19:03:37.478 28235 28235 D CurrentTrackInfo: songTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:37.478 28235 28235 D CurrentTrackInfo: filename: 'gd82-07-17%20s1t02%20Bertha.mp3'
+07-17 19:03:37.478 28235 28235 D CurrentTrackInfo: using songTitle as-is: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:37.478 28235 28235 D CurrentTrackInfo: final displayTitle: 'Gd82 07 17 20s1t02 20Bertha'
+07-17 19:03:37.480 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:37.480 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t01 Crowd_Tuning.mp3'
+07-17 19:03:37.480 28235 28235 D TrackModel: title: 'Crowd/Tuning'
+07-17 19:03:37.480 28235 28235 D TrackModel: displayTitle result: 'Crowd/Tuning'
+07-17 19:03:37.480 28235 28235 D TrackModel: === Track.displayTitle Debug ===
+07-17 19:03:37.480 28235 28235 D TrackModel: filename: 'gd82-07-17 s1t02 Bertha.mp3'
+07-17 19:03:37.480 28235 28235 D TrackModel: title: 'Bertha >'
+07-17 19:03:37.480 28235 28235 D TrackModel: displayTitle result: 'Bertha >'
+07-17 19:03:37.852 28235 28235 D MediaControllerReposit

@@ -88,16 +88,25 @@ class MediaControllerRepository @Inject constructor(
     private var currentQueueUrls: List<String> = emptyList()
     private var currentQueueIndex: Int = 0
     
-    // Queue state exposed to UI
-    private val _queueUrls = MutableStateFlow<List<String>>(emptyList())
+    // Queue state flows - will be wired by QueueStateManager
+    private var _queueUrls = MutableStateFlow<List<String>>(emptyList())
     val queueUrls: StateFlow<List<String>> = _queueUrls.asStateFlow()
     
-    private val _queueIndex = MutableStateFlow(0)
+    private var _queueIndex = MutableStateFlow(0)
     val queueIndex: StateFlow<Int> = _queueIndex.asStateFlow()
     
-    // Queue metadata for proper track title display
-    private val _queueMetadata = MutableStateFlow<List<Pair<String, String>>>(emptyList()) // URL to Title pairs
+    private var _queueMetadata = MutableStateFlow<List<Pair<String, String>>>(emptyList())
     val queueMetadata: StateFlow<List<Pair<String, String>>> = _queueMetadata.asStateFlow()
+    
+    // Navigation state flows
+    private var _hasNext = MutableStateFlow(false)
+    val hasNext: StateFlow<Boolean> = _hasNext.asStateFlow()
+    
+    private var _hasPrevious = MutableStateFlow(false)
+    val hasPrevious: StateFlow<Boolean> = _hasPrevious.asStateFlow()
+    
+    // Queue state manager for bridge pattern
+    private var queueStateManager: QueueStateManager? = null
     
     // Current concert ID for UI access
     private val _currentRecordingId = MutableStateFlow<String?>(null)
@@ -1015,6 +1024,46 @@ class MediaControllerRepository @Inject constructor(
      */
     fun getMediaController(): MediaController? {
         return mediaController
+    }
+    
+    /**
+     * Wire queue state flows to QueueStateManager (called by MediaModule)
+     */
+    fun setQueueStateManager(queueStateManager: QueueStateManager) {
+        this.queueStateManager = queueStateManager
+        
+        // Wire the flows to delegate to QueueStateManager
+        coroutineScope.launch {
+            queueStateManager.queueUrls.collect { urls ->
+                _queueUrls.value = urls
+            }
+        }
+        
+        coroutineScope.launch {
+            queueStateManager.queueIndex.collect { index ->
+                _queueIndex.value = index
+            }
+        }
+        
+        coroutineScope.launch {
+            queueStateManager.queueMetadata.collect { metadata ->
+                _queueMetadata.value = metadata
+            }
+        }
+        
+        coroutineScope.launch {
+            queueStateManager.hasNext.collect { hasNext ->
+                _hasNext.value = hasNext
+            }
+        }
+        
+        coroutineScope.launch {
+            queueStateManager.hasPrevious.collect { hasPrevious ->
+                _hasPrevious.value = hasPrevious
+            }
+        }
+        
+        Log.d(TAG, "QueueStateManager wired to MediaControllerRepository")
     }
     
     /**
