@@ -71,6 +71,30 @@ class PlayerViewModel @Inject constructor(
     val hasNext = queueStateManager.hasNext.stateIn(viewModelScope, SharingStarted.Lazily, false)
     val hasPrevious = queueStateManager.hasPrevious.stateIn(viewModelScope, SharingStarted.Lazily, false)
     
+    // Queue index sync for track highlighting
+    init {
+        viewModelScope.launch {
+            queueStateManager.queueIndex.collect { queueIndex ->
+                // Only sync track index if we're viewing the same recording that's in the queue
+                val currentUrl = mediaControllerRepository.currentTrackUrl.value
+                val currentRecording = _currentRecording.value
+                
+                if (currentUrl != null && currentRecording != null) {
+                    val trackIndex = currentRecording.tracks.indexOfFirst { track ->
+                        track.audioFile?.downloadUrl == currentUrl
+                    }
+                    
+                    if (trackIndex >= 0 && trackIndex != _uiState.value.currentTrackIndex) {
+                        Log.d(TAG, "Queue index changed ($queueIndex), syncing track index to $trackIndex")
+                        Log.d(TAG, "  Recording: ${currentRecording.identifier}")
+                        Log.d(TAG, "  Track: ${currentRecording.tracks[trackIndex].displayTitle}")
+                        _uiState.value = _uiState.value.copy(currentTrackIndex = trackIndex)
+                    }
+                }
+            }
+        }
+    }
+    
     // Playlist management state - now derived from QueueManager
     val currentPlaylist: StateFlow<List<PlaylistItem>> = queueManager.getCurrentQueue()
         .map { queueItems: List<com.deadarchive.core.media.player.QueueItem> ->
@@ -137,7 +161,15 @@ class PlayerViewModel @Inject constructor(
                         }
                         if (trackIndex >= 0 && trackIndex != updatedState.currentTrackIndex) {
                             Log.d(TAG, "Service track changed, syncing UI track index from ${updatedState.currentTrackIndex} to $trackIndex")
+                            Log.d(TAG, "  Current URL: $url")
+                            Log.d(TAG, "  Matched track: ${_uiState.value.tracks.getOrNull(trackIndex)?.displayTitle}")
+                            Log.d(TAG, "  Recording: ${_currentRecording.value?.identifier}")
                             updatedState = updatedState.copy(currentTrackIndex = trackIndex)
+                        } else if (trackIndex < 0) {
+                            Log.d(TAG, "Track not found in current recording tracks - URL: $url")
+                            Log.d(TAG, "  Current recording: ${_currentRecording.value?.identifier}")
+                            Log.d(TAG, "  Available tracks: ${_uiState.value.tracks.size}")
+                            // If track not found in current recording, keep current index
                         }
                     }
                     
@@ -203,9 +235,13 @@ class PlayerViewModel @Inject constructor(
                         }
                         if (trackIndex >= 0) {
                             Log.d(TAG, "loadRecording: Syncing to currently playing track at index $trackIndex")
+                            Log.d(TAG, "  Current URL: $currentTrackUrl")
+                            Log.d(TAG, "  Matched track: ${recording.tracks[trackIndex].displayTitle}")
                             trackIndex
                         } else {
                             Log.d(TAG, "loadRecording: Current playing track not found in this recording, starting from beginning")
+                            Log.d(TAG, "  Current URL: $currentTrackUrl")
+                            Log.d(TAG, "  Recording: ${recording.identifier}")
                             0
                         }
                     } else {
