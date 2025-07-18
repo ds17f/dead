@@ -40,6 +40,7 @@ help:
 	@echo ""
 	@echo "Development:"
 	@echo "  make install     - Install debug APK to connected device"
+	@echo "  make install-quiet - Install debug APK (quiet mode, output to file)"
 	@echo "  make run         - Install and run app on device"  
 	@echo "  make run-emulator - Complete workflow: start emulator + build + install + launch"
 	@echo "  make debug       - Build and install debug APK"
@@ -184,6 +185,15 @@ install:
 	@echo "📱 Installing debug APK to device..."
 	gradle installDebug --console=plain 2>&1 | tee install-output.log
 	@echo "✅ App installed! Output saved to install-output.log"
+
+install-quiet:
+	@echo "📱 Installing debug APK to device (quiet mode)..."
+	@if gradle installDebug --console=plain > install-output.log 2>&1; then \
+		echo "✅ App installed successfully!"; \
+	else \
+		echo "❌ Install failed! Check install-output.log for details"; \
+		exit 1; \
+	fi
 
 run: install
 	@echo "🚀 Launching Dead Archive app..."

@@ -874,12 +874,21 @@ class MediaControllerRepository @Inject constructor(
         trackNumber: Int?,
         filename: String
     ): MediaItem {
+        android.util.Log.d("MediaController", "=== createEnrichedMediaItem Debug ===")
+        android.util.Log.d("MediaController", "trackUrl: '$trackUrl'")
+        android.util.Log.d("MediaController", "songTitle parameter: '$songTitle'")
+        android.util.Log.d("MediaController", "filename: '$filename'")
+        
         val recordingId = localFileResolver.extractRecordingIdFromUrl(trackUrl)
         
         // Try to get enriched metadata
         val trackInfo = if (recordingId != null) {
             createCurrentTrackInfo(trackUrl, recordingId, songTitle, trackNumber, filename)
         } else null
+        
+        android.util.Log.d("MediaController", "trackInfo: $trackInfo")
+        android.util.Log.d("MediaController", "trackInfo.songTitle: '${trackInfo?.songTitle}'")
+        android.util.Log.d("MediaController", "trackInfo.displayTitle: '${trackInfo?.displayTitle}'")
         
         val metadata = if (trackInfo != null) {
             // Use enriched metadata for notifications
@@ -897,6 +906,9 @@ class MediaControllerRepository @Inject constructor(
                 .setAlbumTitle("Dead Archive")
                 .build()
         }
+        
+        android.util.Log.d("MediaController", "MediaItem metadata title: '${metadata.title}'")
+        android.util.Log.d("MediaController", "MediaItem metadata displayTitle: '${metadata.displayTitle}'")
         
         return MediaItem.Builder()
             .setUri(resolvedUrl)
@@ -921,26 +933,40 @@ class MediaControllerRepository @Inject constructor(
         
         // Try to get track title from recording data if queue metadata is stale
         var songTitle = queueMetadataEntry?.second
+        android.util.Log.d("MediaController", "=== songTitle Debug ===")
+        android.util.Log.d("MediaController", "trackUrl: '$trackUrl'")
+        android.util.Log.d("MediaController", "trackFilename: '$trackFilename'")
+        android.util.Log.d("MediaController", "queueMetadataEntry: $queueMetadataEntry")
+        android.util.Log.d("MediaController", "songTitle from queue: '$songTitle'")
+        
         if (songTitle == null) {
             // Queue metadata is stale or missing, try to get title from recording data
             try {
                 val recording = showRepository.getRecordingById(recordingId)
                 if (recording != null) {
+                    // URL-decode the filename for proper matching with recording data
+                    val decodedTrackFilename = java.net.URLDecoder.decode(trackFilename, "UTF-8")
+                    android.util.Log.d("MediaController", "Decoded trackFilename: '$decodedTrackFilename'")
+                    
                     // Find matching track in recording data
                     val matchingTrack = recording.tracks.find { track ->
-                        track.audioFile?.filename == trackFilename
+                        track.audioFile?.filename == decodedTrackFilename
                     }
                     songTitle = matchingTrack?.displayTitle
-                    Log.d(TAG, "Found track in recording data: ${matchingTrack?.displayTitle}")
+                    android.util.Log.d("MediaController", "Found track in recording data: '${matchingTrack?.displayTitle}'")
+                    android.util.Log.d("MediaController", "Updated songTitle: '$songTitle'")
                 }
             } catch (e: Exception) {
                 Log.w(TAG, "Failed to get track from recording data", e)
             }
         }
         
+        android.util.Log.d("MediaController", "songTitle after recording lookup: '$songTitle'")
+        
         // Final fallback to filename parsing
         if (songTitle == null) {
             songTitle = com.deadarchive.core.model.Track.extractSongFromFilename(trackFilename)
+            android.util.Log.d("MediaController", "Final fallback songTitle: '$songTitle'")
         }
         
         Log.d(TAG, "=== TRACK TITLE EXTRACTION DEBUG ===")
