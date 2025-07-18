@@ -338,19 +338,19 @@ jobs:
         body: |
           🎸 Dead Archive Release Build
           
-          **Changes in this release:**
-          - Archive.org API integration complete
-          - Network layer with robust JSON parsing
-          - Modern Android architecture (MVVM, Jetpack Compose)
-          
           **Download:**
-          - **APK**: Direct installation file for Android devices
+          - **APK**: Direct installation file for Android devices  
           - **AAB**: For Google Play Store upload
+          
+          **Changes in this release:**
+          
+          ${{ github.event.head_commit.message }}
           
           **Testing:**
           ```bash
           adb install -r dead-archive-${{ github.ref_name }}-release.apk
           ```
+        generate_release_notes: true
         draft: false
         prerelease: false
       env:
