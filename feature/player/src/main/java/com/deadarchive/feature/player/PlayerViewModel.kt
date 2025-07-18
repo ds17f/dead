@@ -7,6 +7,7 @@ import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.QueueManager
 import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.PlaylistItem
@@ -24,12 +25,14 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 class PlayerViewModel @Inject constructor(
     val mediaControllerRepository: MediaControllerRepository,
+    private val queueManager: QueueManager,
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,
@@ -62,75 +65,37 @@ class PlayerViewModel @Inject constructor(
     // Navigation callbacks for show navigation with showId parameter
     var onNavigateToShow: ((showId: String, recordingId: String) -> Unit)? = null
     
-    // Playlist management state - now derived from MediaControllerRepository
-    val currentPlaylist: StateFlow<List<PlaylistItem>> = combine(
-        mediaControllerRepository.queueUrls,
-        mediaControllerRepository.queueMetadata,
-        _currentRecording
-    ) { queueUrls, queueMetadata, recording ->
-        Log.d(TAG, "=== PLAYLIST COMBINE FLOW ===")
-        Log.d(TAG, "queueUrls.size: ${queueUrls.size}")
-        Log.d(TAG, "queueMetadata.size: ${queueMetadata.size}")
-        Log.d(TAG, "recording: ${recording?.title}")
-        queueUrls.forEachIndexed { index, url ->
-            Log.d(TAG, "queueUrls[$index]: $url")
-        }
-        
-        if (queueUrls.isNotEmpty()) {
-            if (recording != null) {
-                // Map queue URLs back to PlaylistItems using recording tracks (preferred)
-                val playlist = queueUrls.mapIndexedNotNull { index, url ->
-                    val track = recording.tracks.find { it.audioFile?.downloadUrl == url }
-                    track?.let { 
-                        Log.d(TAG, "Mapped URL to track: ${it.displayTitle}")
-                        PlaylistItem(
-                            concertIdentifier = recording.identifier,
-                            track = it,
-                            position = index
-                        )
-                    }
-                }
-                Log.d(TAG, "Final playlist size: ${playlist.size}")
-                playlist
-            } else {
-                // Recording is null, use metadata from MediaControllerRepository (proper track titles)
-                Log.d(TAG, "Recording is null, using metadata from MediaControllerRepository")
-                val playlist = queueUrls.mapIndexed { index, url ->
-                    val filename = url.substringAfterLast("/")
-                    // Use metadata title if available, otherwise extract from filename
-                    val trackTitle = queueMetadata.find { it.first == url }?.second 
-                        ?: filename.substringBeforeLast(".")
-                    
-                    Log.d(TAG, "Using metadata title for index $index: $trackTitle")
-                    
-                    // Create a minimal Track object for display
-                    val fallbackTrack = Track(
-                        filename = filename,
-                        title = trackTitle,
-                        trackNumber = (index + 1).toString(),
-                        durationSeconds = "0",
-                        audioFile = AudioFile(
-                            filename = filename,
-                            format = filename.substringAfterLast(".").uppercase(),
-                            downloadUrl = url,
-                            sizeBytes = "0"
-                        )
+    // Playlist management state - now derived from QueueManager
+    val currentPlaylist: StateFlow<List<PlaylistItem>> = queueManager.getCurrentQueue()
+        .map { queueItems: List<com.deadarchive.core.media.player.QueueItem> ->
+            Log.d(TAG, "=== PLAYLIST FROM QUEUE MANAGER ===")
+            Log.d(TAG, "queueItems.size: ${queueItems.size}")
+            
+            queueItems.mapIndexed { index: Int, queueItem: com.deadarchive.core.media.player.QueueItem ->
+                val recording = _currentRecording.value
+                val concertId = recording?.identifier ?: "unknown"
+                
+                // Create a Track object from QueueItem
+                val track = Track(
+                    filename = queueItem.mediaId.substringAfterLast("/"),
+                    title = queueItem.title,
+                    trackNumber = (index + 1).toString(),
+                    durationSeconds = "0",
+                    audioFile = AudioFile(
+                        filename = queueItem.mediaId.substringAfterLast("/"),
+                        format = queueItem.mediaId.substringAfterLast(".").uppercase(),
+                        downloadUrl = queueItem.mediaId,
+                        sizeBytes = "0"
                     )
-                    
-                    PlaylistItem(
-                        concertIdentifier = "metadata",
-                        track = fallbackTrack,
-                        position = index
-                    )
-                }
-                Log.d(TAG, "Created metadata-based playlist size: ${playlist.size}")
-                playlist
+                )
+                
+                PlaylistItem(
+                    concertIdentifier = concertId,
+                    track = track,
+                    position = index
+                )
             }
-        } else {
-            Log.d(TAG, "Returning empty playlist - queueUrls empty: ${queueUrls.isEmpty()}, recording null: ${recording == null}")
-            emptyList()
-        }
-    }.stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
+        }.stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
     
     private val _playlistTitle = MutableStateFlow<String?>(null)
     val playlistTitle: StateFlow<String?> = _playlistTitle.asStateFlow()
@@ -220,19 +185,9 @@ class PlayerViewModel @Inject constructor(
                     }
                     _playlistTitle.value = recording.displayTitle
                     
-                    // Update queue context for UI synchronization (this populates currentPlaylist via StateFlow)
-                    // Note: This doesn't start playback, it just makes the queue data available
-                    // Only update queue if we're not currently playing this recording to avoid interrupting playback
-                    val currentRecordingId = mediaControllerRepository.currentRecordingIdFlow.value
-                    val isCurrentlyPlaying = mediaControllerRepository.isPlaying.value
-                    val isSameRecording = currentRecordingId == recording.identifier
-                    
-                    if (!isCurrentlyPlaying || !isSameRecording) {
-                        Log.d(TAG, "loadRecording: Updating queue context - playing: $isCurrentlyPlaying, same recording: $isSameRecording")
-                        updateQueueContext(playlist)
-                    } else {
-                        Log.d(TAG, "loadRecording: Skipping queue update - currently playing same recording")
-                    }
+                    // Don't update the queue when loading a recording - the queue should only change
+                    // when explicitly playing a track or show. This prevents browsing from affecting playback.
+                    Log.d(TAG, "loadRecording: Not updating queue - queue only updates on explicit play actions")
                     
                     // Sync track index based on MediaController's current track URL to maintain continuity
                     val currentTrackUrl = mediaControllerRepository.currentTrackUrl.value
@@ -285,33 +240,25 @@ class PlayerViewModel @Inject constructor(
      */
     fun playRecordingFromBeginning() {
         Log.d(TAG, "playRecordingFromBeginning: Starting recording from first track")
-        val tracks = _uiState.value.tracks
-        if (tracks.isNotEmpty()) {
-            // Clear and reset queue with current recording tracks BEFORE playing
-            val currentRecording = _currentRecording.value
-            if (currentRecording != null) {
-                val playlist = tracks.mapIndexed { index, track ->
-                    PlaylistItem(
-                        concertIdentifier = currentRecording.identifier,
-                        track = track,
-                        position = index
-                    )
-                }
-                Log.d(TAG, "playRecordingFromBeginning: Clearing queue and setting fresh playlist with ${playlist.size} tracks")
+        val currentRecording = _currentRecording.value
+        
+        if (currentRecording != null) {
+            Log.d(TAG, "playRecordingFromBeginning: Loading show into queue: ${currentRecording.title} with ${currentRecording.tracks.size} tracks")
+            
+            viewModelScope.launch {
+                // Use QueueManager to load the entire show into the queue and start playback from beginning
+                queueManager.loadShow(currentRecording, 0)
                 
-                // Force update queue context first (even if music is playing)
-                updateQueueContext(playlist, forceUpdate = true)
-                
-                // Set flag to prevent playTrack from overwriting our fresh queue
-                skipQueueUpdate = true
-                
-                // Start playback (will skip queue update)
-                playTrack(0)
-            } else {
-                playTrack(0)
+                // Update UI state
+                _uiState.value = _uiState.value.copy(
+                    currentTrackIndex = 0,
+                    tracks = currentRecording.tracks,
+                    isPlaylistMode = true,
+                    playlistSize = currentRecording.tracks.size
+                )
             }
         } else {
-            Log.w(TAG, "playRecordingFromBeginning: No tracks available to play")
+            Log.w(TAG, "playRecordingFromBeginning: No recording available to play")
         }
     }
     
@@ -352,8 +299,6 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
-    private var skipQueueUpdate = false
-    
     fun playTrack(trackIndex: Int) {
         Log.d(TAG, "playTrack: Attempting to play track at index $trackIndex")
         val tracks = _uiState.value.tracks
@@ -363,46 +308,31 @@ class PlayerViewModel @Inject constructor(
             val track = tracks[trackIndex]
             Log.d(TAG, "playTrack: Selected track - title: ${track.displayTitle}, filename: ${track.filename}")
             
-            val audioFile = track.audioFile
-            Log.d(TAG, "playTrack: AudioFile - ${audioFile?.filename}, downloadUrl: ${audioFile?.downloadUrl}")
+            val recording = _currentRecording.value
             
-            val downloadUrl = audioFile?.downloadUrl
-            
-            if (downloadUrl != null) {
-                Log.d(TAG, "playTrack: Playing track with URL: $downloadUrl")
-                try {
-                    // Update queue context with current track index before playing
-                    // Skip if we just updated the queue (e.g., from playRecordingFromBeginning)
-                    if (!skipQueueUpdate) {
-                        val currentPlaylist = currentPlaylist.value
-                        if (currentPlaylist.isNotEmpty()) {
-                            updateQueueContext(currentPlaylist)
-                        }
-                    } else {
-                        Log.d(TAG, "playTrack: Skipping queue update (already done)")
-                        skipQueueUpdate = false // Reset flag
+            if (recording != null) {
+                Log.d(TAG, "playTrack: Playing track from recording: ${recording.title}")
+                
+                viewModelScope.launch {
+                    try {
+                        // Use QueueManager to play the track (which will load the entire show if needed)
+                        queueManager.playTrack(track, recording)
+                        
+                        _uiState.value = _uiState.value.copy(
+                            currentTrackIndex = trackIndex,
+                            error = null
+                        )
+                    } catch (e: Exception) {
+                        Log.e(TAG, "playTrack: Exception calling queueManager.playTrack", e)
+                        _uiState.value = _uiState.value.copy(
+                            error = "Failed to play track: ${e.localizedMessage}"
+                        )
                     }
-                    
-                    mediaControllerRepository.playTrack(
-                        url = downloadUrl,
-                        title = track.displayTitle,
-                        artist = _currentRecording.value?.title
-                    )
-                    
-                    _uiState.value = _uiState.value.copy(
-                        currentTrackIndex = trackIndex,
-                        error = null
-                    )
-                } catch (e: Exception) {
-                    Log.e(TAG, "playTrack: Exception calling playerRepository.playTrack", e)
-                    _uiState.value = _uiState.value.copy(
-                        error = "Failed to play track: ${e.localizedMessage}"
-                    )
                 }
             } else {
-                Log.w(TAG, "playTrack: No download URL available for track ${track.displayTitle}")
+                Log.w(TAG, "playTrack: No recording available for context")
                 _uiState.value = _uiState.value.copy(
-                    error = "Audio file not available for this track"
+                    error = "Recording context not available"
                 )
             }
         } else {
@@ -430,38 +360,13 @@ class PlayerViewModel @Inject constructor(
     }
     
     fun skipToNext() {
-        val currentIndex = _uiState.value.currentTrackIndex
-        val playlist = currentPlaylist.value
-        
-        if (playlist.isNotEmpty()) {
-            // Use playlist-aware navigation if playlist is available
-            if (currentIndex < playlist.size - 1) {
-                navigateToTrack(currentIndex + 1)
-            }
-        } else {
-            // Fallback to track-based navigation for backward compatibility
-            val tracks = _uiState.value.tracks
-            if (currentIndex < tracks.size - 1) {
-                playTrack(currentIndex + 1)
-            }
-        }
+        Log.d(TAG, "skipToNext: Skipping to next track using QueueManager")
+        queueManager.skipToNext()
     }
     
     fun skipToPrevious() {
-        val currentIndex = _uiState.value.currentTrackIndex
-        val playlist = currentPlaylist.value
-        
-        if (playlist.isNotEmpty()) {
-            // Use playlist-aware navigation if playlist is available
-            if (currentIndex > 0) {
-                navigateToTrack(currentIndex - 1)
-            }
-        } else {
-            // Fallback to track-based navigation for backward compatibility
-            if (currentIndex > 0) {
-                playTrack(currentIndex - 1)
-            }
-        }
+        Log.d(TAG, "skipToPrevious: Skipping to previous track using QueueManager")
+        queueManager.skipToPrevious()
     }
     
     fun seekTo(position: Long) {
@@ -516,22 +421,12 @@ class PlayerViewModel @Inject constructor(
      */
     fun navigateToTrack(playlistIndex: Int) {
         Log.d(TAG, "navigateToTrack: Navigating to playlist index $playlistIndex")
-        val playlist = currentPlaylist.value
         
-        if (playlistIndex in playlist.indices) {
-            val playlistItem = playlist[playlistIndex]
-            val track = playlistItem.track
-            
-            Log.d(TAG, "navigateToTrack: Selected track - title: ${track.displayTitle}")
-            
-            // Update current track index in UI state
-            _uiState.value = _uiState.value.copy(currentTrackIndex = playlistIndex)
-            
-            // Play the track
-            playTrackFromPlaylist(playlistItem)
-        } else {
-            Log.e(TAG, "navigateToTrack: Invalid playlist index $playlistIndex for ${playlist.size} items")
-        }
+        // Use QueueManager to skip to the specified index
+        queueManager.skipToIndex(playlistIndex)
+        
+        // Update UI state to reflect the change
+        _uiState.value = _uiState.value.copy(currentTrackIndex = playlistIndex)
     }
     
     /**

@@ -9,6 +9,7 @@ import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.LocalFileResolver
 import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.QueueManager
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -77,5 +78,18 @@ object MediaModule {
         showRepository: com.deadarchive.core.data.repository.ShowRepository
     ): MediaControllerRepository {
         return MediaControllerRepository(context, localFileResolver, showRepository)
+    }
+    
+    /**
+     * Provides QueueManager for simplified queue operations.
+     * Uses MediaControllerRepository as the single source of truth.
+     */
+    @Provides
+    @Singleton
+    fun provideQueueManager(
+        mediaControllerRepository: MediaControllerRepository,
+        localFileResolver: LocalFileResolver
+    ): QueueManager {
+        return QueueManager(mediaControllerRepository, localFileResolver)
     }
 }

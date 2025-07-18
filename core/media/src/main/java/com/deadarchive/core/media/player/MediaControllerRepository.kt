@@ -1011,6 +1011,13 @@ class MediaControllerRepository @Inject constructor(
     }
     
     /**
+     * Get the current MediaController instance for direct queue operations
+     */
+    fun getMediaController(): MediaController? {
+        return mediaController
+    }
+    
+    /**
      * Release resources and disconnect from service
      */
     fun release() {
