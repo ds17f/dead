@@ -267,36 +267,10 @@ class PlayerViewModel @Inject constructor(
      * The playlist should already contain filtered tracks (one format per song)
      * @param forceUpdate If true, updates queue even when music is currently playing
      */
+    // Legacy method - to be removed after completing QueueManager migration
     private fun updateQueueContext(playlist: List<PlaylistItem>, forceUpdate: Boolean = false) {
-        val queueUrls = playlist.mapNotNull { it.track.audioFile?.downloadUrl }
-        val trackTitles = playlist.map { it.track.displayTitle }
-        val trackArtists = playlist.map { _currentRecording.value?.displayTitle ?: "Unknown Artist" }
-        
-        if (queueUrls.isNotEmpty()) {
-            // Only update queue context if nothing is currently playing to avoid interrupting playback
-            // Unless forceUpdate is true (e.g., for "Play All" button)
-            val isCurrentlyPlaying = mediaControllerRepository.isPlaying.value
-            if (!isCurrentlyPlaying || forceUpdate) {
-                val reason = if (forceUpdate && isCurrentlyPlaying) "forced update" else "not currently playing"
-                Log.d(TAG, "updateQueueContext: Updating MediaController with ${queueUrls.size} filtered queue items ($reason)")
-                Log.d(TAG, "updateQueueContext: Sample titles: ${trackTitles.take(3)}")
-                // Log the formats being queued to verify filtering worked
-                playlist.take(3).forEach { item ->
-                    Log.d(TAG, "updateQueueContext: Queue item - ${item.track.displayTitle} (${item.track.audioFile?.format})")
-                }
-                mediaControllerRepository.updateQueueContext(
-                    queueUrls = queueUrls,
-                    trackTitles = trackTitles,
-                    trackArtists = trackArtists,
-                    concertId = _currentRecording.value?.identifier,
-                    currentIndex = _uiState.value.currentTrackIndex
-                )
-            } else {
-                Log.d(TAG, "updateQueueContext: Skipping queue update - music is currently playing")
-            }
-        } else {
-            Log.w(TAG, "updateQueueContext: No valid URLs found in playlist")
-        }
+        Log.d(TAG, "updateQueueContext: Legacy method called - will be removed after QueueManager migration")
+        // For now, do nothing - queue operations should go through QueueManager
     }
     
     fun playTrack(trackIndex: Int) {
@@ -394,8 +368,7 @@ class PlayerViewModel @Inject constructor(
             Log.d(TAG, "setPlaylist: Item - ${item.track.displayTitle} (${item.track.audioFile?.format})")
         }
         
-        // Update MediaControllerRepository with queue context (this will populate currentPlaylist via StateFlow)
-        updateQueueContext(playlist)
+        // TODO: Queue context update via QueueManager not yet implemented
         
         // Update UI state with tracks from playlist
         val tracks = playlist.map { it.track }
@@ -439,8 +412,7 @@ class PlayerViewModel @Inject constructor(
         val newItem = playlistItem.copy(position = currentPlaylist.size)
         currentPlaylist.add(newItem)
         
-        // Update MediaControllerRepository with queue context (this will update currentPlaylist via StateFlow)
-        updateQueueContext(currentPlaylist)
+        // TODO: Queue modification via QueueManager not yet implemented
         
         // Update UI state tracks
         val tracks = currentPlaylist.map { it.track }
@@ -467,8 +439,7 @@ class PlayerViewModel @Inject constructor(
                 currentPlaylist[index] = item.copy(position = index)
             }
             
-            // Update MediaControllerRepository with queue context (this will update currentPlaylist via StateFlow)
-            updateQueueContext(currentPlaylist)
+            // TODO: Queue modification via QueueManager not yet implemented
             
             // Update UI state tracks
             val tracks = currentPlaylist.map { it.track }
@@ -497,8 +468,8 @@ class PlayerViewModel @Inject constructor(
         Log.d(TAG, "clearPlaylist: Clearing current playlist")
         _playlistTitle.value = null
         
-        // Clear MediaControllerRepository queue context (this will clear currentPlaylist via StateFlow)
-        mediaControllerRepository.updateQueueContext(emptyList(), 0)
+        // Use QueueManager to clear the queue
+        queueManager.clearQueue()
         
         _uiState.value = _uiState.value.copy(
             tracks = emptyList(),
