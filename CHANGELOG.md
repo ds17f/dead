@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.25.0] - 2025-07-18
+
+### New Features
+* enhance track index synchronization for queue-aware playlist highlighting (eb6a21e)
+* wire QueueStateManager to provide queue-aware UI navigation (7165741)
+* implement QueueManager as single source of truth for Media3 queue operations (abd52c1)
+
+### Bug Fixes
+* use commit message and auto-generate release notes for GitHub releases (df539d7)
+* URL decode filename for proper track matching in queue metadata lookup (06b3e4e)
+
+### Code Refactoring
+* complete QueueManager migration and remove legacy queue management (0e0bcb9)
+
+
 ## [0.24.0] - 2025-07-17
 
 ### New Features
@@ -17,8 +32,6 @@
 
 ### Code Refactoring
 * improve data model structure and relationships (d7ad121)
-
-
 ## [0.23.0] - 2025-07-14
 
 ### New Features
