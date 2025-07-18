@@ -128,6 +128,13 @@ fun DebugPanel(
                 }
             }
             
+            // Queue State Section
+            QueueDebugPanel(
+                queueStateManager = viewModel.queueStateManager,
+                isVisible = true,
+                initiallyExpanded = true
+            )
+            
             // Raw MediaController State
             DebugSection(
                 title = "Raw MediaController State",

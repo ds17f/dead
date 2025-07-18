@@ -34,7 +34,7 @@ import javax.inject.Inject
 class PlayerViewModel @Inject constructor(
     val mediaControllerRepository: MediaControllerRepository,
     private val queueManager: QueueManager,
-    private val queueStateManager: QueueStateManager,
+    val queueStateManager: QueueStateManager,
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,

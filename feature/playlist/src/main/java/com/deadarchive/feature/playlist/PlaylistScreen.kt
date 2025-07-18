@@ -34,6 +34,7 @@ import com.deadarchive.core.design.component.DebugPanel
 import com.deadarchive.core.design.component.DebugText
 import com.deadarchive.core.design.component.DebugDivider
 import com.deadarchive.core.design.component.DebugMultilineText
+import com.deadarchive.feature.player.QueueDebugPanel
 import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
@@ -441,6 +442,17 @@ fun PlaylistScreen(
                                 fontWeight = FontWeight.Bold,
                                 modifier = Modifier.padding(bottom = 8.dp)
                             )
+                        }
+                        
+                        // Queue Debug Panel
+                        if (settings.showDebugInfo) {
+                            item {
+                                QueueDebugPanel(
+                                    queueStateManager = viewModel.queueStateManager,
+                                    isVisible = settings.showDebugInfo,
+                                    initiallyExpanded = false
+                                )
+                            }
                         }
                         
                         // Debug panel
