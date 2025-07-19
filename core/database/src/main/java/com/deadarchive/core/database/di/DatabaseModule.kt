@@ -12,6 +12,7 @@ import com.deadarchive.core.database.RatingDao
 import com.deadarchive.core.database.SetlistDao
 import com.deadarchive.core.database.SongDao
 import com.deadarchive.core.database.VenueDao
+import com.deadarchive.core.database.PlaybackHistoryDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -110,5 +111,13 @@ object DatabaseModule {
     @Provides
     fun provideVenueDao(database: DeadArchiveDatabase): VenueDao {
         return database.venueDao()
+    }
+    
+    /**
+     * Provides Playback History DAO for playback tracking operations
+     */
+    @Provides
+    fun providePlaybackHistoryDao(database: DeadArchiveDatabase): PlaybackHistoryDao {
+        return database.playbackHistoryDao()
     }
 }

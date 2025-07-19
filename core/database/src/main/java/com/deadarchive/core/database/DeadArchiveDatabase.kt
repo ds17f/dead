@@ -17,9 +17,10 @@ import android.content.Context
         ShowRatingEntity::class,
         SetlistEntity::class,
         SongEntity::class,
-        VenueEntity::class
+        VenueEntity::class,
+        PlaybackHistoryEntity::class
     ],
-    version = 13,
+    version = 14,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
@@ -33,5 +34,6 @@ abstract class DeadArchiveDatabase : RoomDatabase() {
     abstract fun setlistDao(): SetlistDao
     abstract fun songDao(): SongDao
     abstract fun venueDao(): VenueDao
+    abstract fun playbackHistoryDao(): PlaybackHistoryDao
     
 }
