@@ -1,9 +1,12 @@
 package com.deadarchive.core.settings.api.model
 
+import kotlinx.serialization.Serializable
+
 /**
  * Data class representing all application settings.
  * This is a pure data model that can be shared across modules.
  */
+@Serializable
 data class AppSettings(
     // Audio format preferences
     val audioFormatPreferences: List<String> = defaultAudioFormatPreferences,
@@ -46,6 +49,7 @@ data class AppSettings(
 /**
  * Enum representing theme mode options
  */
+@Serializable
 enum class ThemeMode {
     LIGHT,
     DARK,

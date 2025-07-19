@@ -136,6 +136,7 @@ dependencies {
     implementation(project(":core:media"))
     implementation(project(":core:settings"))
     implementation(project(":core:settings-api"))
+    implementation(project(":core:backup"))
     implementation(project(":feature:browse"))
     implementation(project(":feature:player"))
     implementation(project(":feature:playlist"))

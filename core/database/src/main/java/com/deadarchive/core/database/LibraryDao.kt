@@ -60,4 +60,10 @@ interface LibraryDao {
     
     @Query("SELECT * FROM library_items ORDER BY addedTimestamp DESC")
     suspend fun getAllLibraryItemsSync(): List<LibraryEntity>
+    
+    @Query("SELECT * FROM library_items WHERE type = 'SHOW' ORDER BY addedTimestamp DESC")
+    suspend fun getAllLibraryEntries(): List<LibraryEntity>
+    
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun addToLibrary(libraryEntry: LibraryEntity)
 }

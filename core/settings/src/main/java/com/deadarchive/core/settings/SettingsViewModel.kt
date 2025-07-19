@@ -22,7 +22,8 @@ import javax.inject.Inject
  */
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
-    private val settingsRepository: SettingsRepository
+    private val settingsRepository: SettingsRepository,
+    private val backupService: com.deadarchive.core.backup.BackupService
 ) : ViewModel() {
     
     companion object {
@@ -331,6 +332,67 @@ class SettingsViewModel @Inject constructor(
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
                     errorMessage = "Failed to update higher rated preference: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Backup the user's library and settings
+     */
+    fun backupLibrary() {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Starting library backup...")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                // Create backup
+                val backup = backupService.createBackup(appVersion = "1.0") // TODO: Get actual app version
+                val backupJson = backupService.exportBackup(android.app.Application(), backup)
+                
+                // For now, just log the backup - in a real implementation, 
+                // we would use Android's file picker to let user save the file
+                Log.d(TAG, "Backup created successfully: ${backup.libraryShows.size} shows")
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "Backup created with ${backup.libraryShows.size} library shows"
+                )
+                
+                // TODO: Implement actual file saving with Android file picker
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to create backup", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to create backup: ${e.message}"
+                )
+            }
+        }
+    }
+    
+    /**
+     * Restore library and settings from a backup file
+     */
+    fun restoreLibrary() {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Starting library restore...")
+                _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
+                
+                // TODO: Implement file picker to select backup file
+                // For now, show a placeholder message
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "Restore feature coming soon - will allow selecting backup file"
+                )
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to restore backup", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to restore backup: ${e.message}"
                 )
             }
         }

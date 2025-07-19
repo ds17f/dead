@@ -126,6 +126,12 @@ fun SettingsScreen(
                 onNavigateToDownloads = onNavigateToDownloads
             )
             
+            // Backup & Restore Section
+            BackupRestoreCard(
+                onBackupLibrary = viewModel::backupLibrary,
+                onRestoreLibrary = viewModel::restoreLibrary
+            )
+            
             // About Section
             AboutCard(versionInfo = versionInfo)
             
@@ -577,6 +583,49 @@ private fun FormatPreferenceItem(
                         tint = if (!isLast) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
                     )
                 }
+            }
+        }
+    }
+}
+
+@Composable
+private fun BackupRestoreCard(
+    onBackupLibrary: () -> Unit,
+    onRestoreLibrary: () -> Unit
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(
+                text = "Backup & Restore",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
+            )
+            
+            Text(
+                text = "Backup your library and settings to restore on other devices",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            
+            // Backup Button
+            OutlinedButton(
+                onClick = onBackupLibrary,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Backup Library")
+            }
+            
+            // Restore Button
+            OutlinedButton(
+                onClick = onRestoreLibrary,
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Restore Library")
             }
         }
     }

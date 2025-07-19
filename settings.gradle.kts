@@ -27,6 +27,7 @@ include(":core:media")
 include(":core:design")
 include(":core:common")
 include(":core:settings")
+include(":core:backup")
 
 // Feature modules
 include(":feature:browse")
