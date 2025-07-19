@@ -7,6 +7,7 @@ import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.PlaybackEventTracker
 import com.deadarchive.core.media.player.QueueManager
 import com.deadarchive.core.media.player.QueueStateManager
 import com.deadarchive.core.model.AudioFile
@@ -35,6 +36,7 @@ class PlayerViewModel @Inject constructor(
     val mediaControllerRepository: MediaControllerRepository,
     private val queueManager: QueueManager,
     val queueStateManager: QueueStateManager,
+    val playbackEventTracker: PlaybackEventTracker,
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,

@@ -9,6 +9,7 @@ import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.LocalFileResolver
 import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.PlaybackEventTracker
 import com.deadarchive.core.media.player.QueueManager
 import com.deadarchive.core.media.player.QueueStateManager
 import dagger.Module
@@ -110,5 +111,22 @@ object MediaModule {
         mediaControllerRepository.setQueueStateManager(queueStateManager)
         
         return queueStateManager
+    }
+    
+    /**
+     * Provides PlaybackEventTracker for Media3 event monitoring.
+     * Used for playback history tracking and debugging.
+     */
+    @Provides
+    @Singleton
+    fun providePlaybackEventTracker(
+        mediaControllerRepository: MediaControllerRepository
+    ): PlaybackEventTracker {
+        val eventTracker = PlaybackEventTracker(mediaControllerRepository)
+        
+        // Connect to MediaController when it becomes available
+        eventTracker.connectToMediaController()
+        
+        return eventTracker
     }
 }

@@ -135,6 +135,13 @@ fun DebugPanel(
                 initiallyExpanded = true
             )
             
+            // Media3 Events Section
+            PlaybackEventsDebugPanel(
+                playbackEventTracker = viewModel.playbackEventTracker,
+                isVisible = true,
+                initiallyExpanded = false
+            )
+            
             // Raw MediaController State
             DebugSection(
                 title = "Raw MediaController State",

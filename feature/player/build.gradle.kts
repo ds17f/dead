@@ -50,6 +50,9 @@ dependencies {
     implementation(project(":core:settings"))
     implementation(project(":core:common"))
     
+    // Media3 for playback event constants
+    implementation("androidx.media3:media3-common:1.3.1")
+    
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
