@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.26.0] - 2025-07-19
+
+### New Features
+* implement simple Spotify-like last track restoration (e4ef047)
+* complete playback history tracking system with session management (8c4d1b8)
+* add playback history database schema and entities (abd06fa)
+* implement Media3 event tracking for playback history (b52b6d0)
+* add QueueDebugPanel for real-time queue state visibility (8222ac8)
+
+
 ## [0.25.0] - 2025-07-18
 
 ### New Features
@@ -13,8 +23,6 @@
 
 ### Code Refactoring
 * complete QueueManager migration and remove legacy queue management (0e0bcb9)
-
-
 ## [0.24.0] - 2025-07-17
 
 ### New Features
