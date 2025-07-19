@@ -34,3 +34,8 @@ include(":feature:player")
 include(":feature:playlist")
 include(":feature:downloads")
 include(":feature:library")
+
+// New API modules
+include(":core:settings-api")
+include(":core:data-api")
+include(":core:media-api")
