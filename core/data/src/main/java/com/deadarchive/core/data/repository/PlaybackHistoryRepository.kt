@@ -188,6 +188,18 @@ class PlaybackHistoryRepository @Inject constructor(
     }
     
     // ========================================
+    // Resume Functionality
+    // ========================================
+    
+    /**
+     * Get the last track that was interrupted and could be resumed
+     * Returns null if no suitable track found or last track was completed
+     */
+    suspend fun getLastIncompleteTrack(): PlaybackHistoryEntity? {
+        return playbackHistoryDao.getLastIncompleteTrack()
+    }
+    
+    // ========================================
     // Session Management
     // ========================================
     

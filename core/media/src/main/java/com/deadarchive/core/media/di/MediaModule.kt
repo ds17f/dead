@@ -11,6 +11,9 @@ import com.deadarchive.core.media.player.LocalFileResolver
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.PlaybackEventTracker
 import com.deadarchive.core.media.player.PlaybackHistorySessionManager
+import com.deadarchive.core.media.player.PlaybackResumeService
+import com.deadarchive.core.media.player.LastPlayedTrackService
+import com.deadarchive.core.media.player.LastPlayedTrackMonitor
 import com.deadarchive.core.media.player.QueueManager
 import com.deadarchive.core.media.player.QueueStateManager
 import com.deadarchive.core.data.repository.PlaybackHistoryRepository
@@ -150,5 +153,56 @@ object MediaModule {
         sessionManager.startTracking()
         
         return sessionManager
+    }
+    
+    /**
+     * Provides PlaybackResumeService for restoring interrupted playback sessions.
+     * Allows users to continue where they left off when the app restarts.
+     */
+    @Provides
+    @Singleton
+    fun providePlaybackResumeService(
+        playbackHistoryRepository: PlaybackHistoryRepository,
+        showRepository: com.deadarchive.core.data.repository.ShowRepository,
+        queueManager: QueueManager,
+        mediaControllerRepository: MediaControllerRepository
+    ): PlaybackResumeService {
+        return PlaybackResumeService(
+            playbackHistoryRepository,
+            showRepository,
+            queueManager,
+            mediaControllerRepository
+        )
+    }
+    
+    /**
+     * Provides LastPlayedTrackService for simple last track persistence.
+     * Works like Spotify - just saves and restores the last track and position.
+     */
+    @Provides
+    @Singleton
+    fun provideLastPlayedTrackService(
+        @ApplicationContext context: Context,
+        showRepository: com.deadarchive.core.data.repository.ShowRepository,
+        queueManager: QueueManager,
+        mediaControllerRepository: MediaControllerRepository
+    ): LastPlayedTrackService {
+        return LastPlayedTrackService(context, showRepository, queueManager, mediaControllerRepository)
+    }
+    
+    /**
+     * Provides LastPlayedTrackMonitor for continuously saving current playback state.
+     * Automatically starts monitoring when created.
+     */
+    @Provides
+    @Singleton
+    fun provideLastPlayedTrackMonitor(
+        mediaControllerRepository: MediaControllerRepository,
+        lastPlayedTrackService: LastPlayedTrackService
+    ): LastPlayedTrackMonitor {
+        val monitor = LastPlayedTrackMonitor(mediaControllerRepository, lastPlayedTrackService)
+        // Start monitoring automatically
+        monitor.startMonitoring()
+        return monitor
     }
 }

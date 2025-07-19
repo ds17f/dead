@@ -19,7 +19,9 @@ data class AppSettings(
     // Recording selection criteria preferences
     val preferredAudioSource: String = "Any", // Soundboard, Audience, Any
     val minimumRating: Float = 0f, // Minimum rating filter (0-5)
-    val preferHigherRated: Boolean = true // Prefer higher rated recordings when multiple options
+    val preferHigherRated: Boolean = true, // Prefer higher rated recordings when multiple options
+    // Playback resume preferences
+    val enableResumeLastTrack: Boolean = true // Resume last incomplete track on app startup
 )
 
 /**

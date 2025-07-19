@@ -94,4 +94,10 @@ interface SettingsRepository {
      * @param showId The show identifier
      */
     suspend fun removeRecordingPreference(showId: String)
+    
+    /**
+     * Update the resume last track setting
+     * @param enabled True to enable resuming last track on app startup, false to disable
+     */
+    suspend fun updateEnableResumeLastTrack(enabled: Boolean)
 }

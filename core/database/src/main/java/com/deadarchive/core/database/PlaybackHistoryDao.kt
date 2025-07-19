@@ -178,6 +178,22 @@ interface PlaybackHistoryDao {
     @Query("SELECT COUNT(*) FROM playback_history")
     fun getPlaybackHistoryCount(): Flow<Int>
     
+    /**
+     * Get the last played track that was interrupted (not completed)
+     * Used for resume functionality when app restarts
+     */
+    @Query("""
+        SELECT * FROM playback_history 
+        WHERE (completionTimestamp IS NULL 
+               OR (finalPosition > 30000 
+                   AND finalPosition < COALESCE(trackDuration * 0.9, finalPosition + 1)
+                   AND wasCompleted = 0))
+        AND playbackDuration > 30000
+        ORDER BY playbackTimestamp DESC 
+        LIMIT 1
+    """)
+    suspend fun getLastIncompleteTrack(): PlaybackHistoryEntity?
+    
     // ========================================
     // Data Classes for Query Results
     // ========================================

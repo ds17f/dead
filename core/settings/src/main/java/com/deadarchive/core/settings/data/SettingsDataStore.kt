@@ -43,6 +43,7 @@ class SettingsDataStore @Inject constructor(
     private val minimumRatingKey = stringPreferencesKey("minimum_rating") // Store as string to preserve precision
     private val preferHigherRatedKey = booleanPreferencesKey("prefer_higher_rated")
     private val recordingPreferencesKey = stringPreferencesKey("recording_preferences") // JSON string of showId -> recordingId map
+    private val enableResumeLastTrackKey = booleanPreferencesKey("enable_resume_last_track")
     
     /**
      * Reactive flow of application settings
@@ -214,6 +215,15 @@ class SettingsDataStore @Inject constructor(
     }
     
     /**
+     * Update enable resume last track setting
+     */
+    suspend fun updateEnableResumeLastTrack(enabled: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[enableResumeLastTrackKey] = enabled
+        }
+    }
+    
+    /**
      * Convert DataStore preferences to AppSettings
      */
     private fun Preferences.toAppSettings(): AppSettings {
@@ -265,7 +275,8 @@ class SettingsDataStore @Inject constructor(
             recordingPreferences = recordingPreferences,
             preferredAudioSource = this[preferredAudioSourceKey] ?: "Any",
             minimumRating = minimumRating,
-            preferHigherRated = this[preferHigherRatedKey] ?: true
+            preferHigherRated = this[preferHigherRatedKey] ?: true,
+            enableResumeLastTrack = this[enableResumeLastTrackKey] ?: true
         )
     }
 }

@@ -189,4 +189,15 @@ class SettingsRepositoryImpl @Inject constructor(
             throw e
         }
     }
+    
+    override suspend fun updateEnableResumeLastTrack(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating enable resume last track to: $enabled")
+            settingsDataStore.updateEnableResumeLastTrack(enabled)
+            Log.d(TAG, "Enable resume last track updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update enable resume last track", e)
+            throw e
+        }
+    }
 }
