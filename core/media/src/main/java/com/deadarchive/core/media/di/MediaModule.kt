@@ -10,8 +10,10 @@ import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.LocalFileResolver
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.PlaybackEventTracker
+import com.deadarchive.core.media.player.PlaybackHistorySessionManager
 import com.deadarchive.core.media.player.QueueManager
 import com.deadarchive.core.media.player.QueueStateManager
+import com.deadarchive.core.data.repository.PlaybackHistoryRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -116,17 +118,37 @@ object MediaModule {
     /**
      * Provides PlaybackEventTracker for Media3 event monitoring.
      * Used for playback history tracking and debugging.
+     * The tracker automatically connects when MediaController becomes available.
      */
     @Provides
     @Singleton
     fun providePlaybackEventTracker(
         mediaControllerRepository: MediaControllerRepository
     ): PlaybackEventTracker {
-        val eventTracker = PlaybackEventTracker(mediaControllerRepository)
+        return PlaybackEventTracker(mediaControllerRepository)
+        // No manual connection needed - tracker monitors connection state automatically
+    }
+    
+    /**
+     * Provides PlaybackHistorySessionManager for intelligent playback history tracking.
+     * Coordinates between Media3 events and persistent history storage.
+     */
+    @Provides
+    @Singleton
+    fun providePlaybackHistorySessionManager(
+        playbackEventTracker: PlaybackEventTracker,
+        playbackHistoryRepository: PlaybackHistoryRepository,
+        mediaControllerRepository: MediaControllerRepository
+    ): PlaybackHistorySessionManager {
+        val sessionManager = PlaybackHistorySessionManager(
+            playbackEventTracker,
+            playbackHistoryRepository,
+            mediaControllerRepository
+        )
         
-        // Connect to MediaController when it becomes available
-        eventTracker.connectToMediaController()
+        // Start tracking automatically
+        sessionManager.startTracking()
         
-        return eventTracker
+        return sessionManager
     }
 }

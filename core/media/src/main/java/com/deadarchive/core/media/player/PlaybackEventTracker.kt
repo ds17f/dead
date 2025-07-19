@@ -4,9 +4,14 @@ import android.util.Log
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
 import androidx.media3.session.MediaController
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -87,10 +92,29 @@ class PlaybackEventTracker @Inject constructor(
     
     private var mediaController: MediaController? = null
     private var listener: Player.Listener? = null
+    private val coroutineScope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     
     init {
         Log.d(TAG, "PlaybackEventTracker initializing")
-        // Don't attempt connection immediately - wait for explicit call
+        startMonitoringConnection()
+    }
+    
+    /**
+     * Monitor MediaController connection state and connect automatically when ready
+     */
+    private fun startMonitoringConnection() {
+        coroutineScope.launch {
+            mediaControllerRepository.isConnected.collect { isConnected ->
+                Log.d(TAG, "MediaController connection state changed: $isConnected")
+                if (isConnected && mediaController == null) {
+                    Log.d(TAG, "MediaController became available, attempting to set up listener")
+                    setupMediaControllerListener()
+                } else if (!isConnected && mediaController != null) {
+                    Log.d(TAG, "MediaController disconnected, cleaning up listener")
+                    cleanupListener()
+                }
+            }
+        }
     }
     
     /**
@@ -250,7 +274,7 @@ class PlaybackEventTracker @Inject constructor(
         }
         
         controller.addListener(listener!!)
-        Log.d(TAG, "PlaybackEventTracker listener added to MediaController")
+        Log.d(TAG, "PlaybackEventTracker listener added to MediaController successfully")
     }
     
     /**
@@ -391,13 +415,27 @@ class PlaybackEventTracker @Inject constructor(
     }
     
     /**
-     * Clean up when service is destroyed
+     * Clean up listener when MediaController disconnects
      */
-    fun cleanup() {
-        listener?.let { mediaController?.removeListener(it) }
+    private fun cleanupListener() {
+        listener?.let { 
+            mediaController?.removeListener(it)
+            Log.d(TAG, "PlaybackEventTracker listener removed from MediaController")
+        }
+        mediaController = null
+        listener = null
+        
         if (_isSessionActive.value) {
             endSession()
         }
-        Log.d(TAG, "PlaybackEventTracker cleaned up")
+    }
+    
+    /**
+     * Clean up when service is destroyed
+     */
+    fun cleanup() {
+        cleanupListener()
+        coroutineScope.cancel()
+        Log.d(TAG, "PlaybackEventTracker cleaned up completely")
     }
 }
