@@ -33,13 +33,12 @@ data class AppSettings(
     val enableResumeLastTrack: Boolean = true
 ) {
     companion object {
-        // Default order for audio format preferences
+        // Default order for audio format preferences - matches AppConstants.PREFERRED_AUDIO_FORMATS
         val defaultAudioFormatPreferences = listOf(
-            "flac",
-            "mp3",
-            "ogg",
-            "m4a",
-            "wav"
+            "VBR MP3",
+            "Ogg Vorbis", 
+            "MP3",
+            "Flac"
         )
     }
 }
@@ -50,5 +49,12 @@ data class AppSettings(
 enum class ThemeMode {
     LIGHT,
     DARK,
-    SYSTEM
+    SYSTEM;
+    
+    val displayName: String
+        get() = when(this) {
+            LIGHT -> "Light"
+            DARK -> "Dark"
+            SYSTEM -> "System Default"
+        }
 }

@@ -11,7 +11,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.design.theme.DeadArchiveTheme
-import com.deadarchive.core.settings.data.SettingsRepository
+import com.deadarchive.core.settings.api.SettingsRepository
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlin.OptIn
@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val settings by settingsRepository.getSettings().collectAsState(initial = com.deadarchive.core.settings.model.AppSettings())
+            val settings by settingsRepository.getSettings().collectAsState(initial = com.deadarchive.core.settings.api.model.AppSettings())
             
             DeadArchiveTheme(themeMode = settings.themeMode) {
                 Surface(

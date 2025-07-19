@@ -4,7 +4,7 @@ import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.model.Show
-import com.deadarchive.core.settings.data.SettingsRepository
+import com.deadarchive.core.settings.api.SettingsRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.firstOrNull

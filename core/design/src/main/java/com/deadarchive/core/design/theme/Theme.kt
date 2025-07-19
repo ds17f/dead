@@ -6,7 +6,7 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import com.deadarchive.core.settings.model.ThemeMode
+import com.deadarchive.core.settings.api.model.ThemeMode
 
 // Grateful Dead inspired color palette
 private val DeadRed = Color(0xFFDC143C)      // Crimson red

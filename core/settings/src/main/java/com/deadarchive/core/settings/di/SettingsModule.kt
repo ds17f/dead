@@ -1,6 +1,6 @@
 package com.deadarchive.core.settings.di
 
-import com.deadarchive.core.settings.data.SettingsRepository
+import com.deadarchive.core.settings.api.SettingsRepository
 import com.deadarchive.core.settings.data.SettingsRepositoryImpl
 import dagger.Binds
 import dagger.Module
@@ -28,9 +28,8 @@ import javax.inject.Singleton
 abstract class SettingsModule {
     
     /**
-     * Binds SettingsRepository interface to its implementation.
-     * Provides centralized settings management with DataStore persistence
-     * and reactive updates across the application.
+     * Binds the API SettingsRepository interface to its implementation.
+     * This enables the clean architecture approach with interface-based dependencies.
      */
     @Binds
     @Singleton

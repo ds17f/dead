@@ -47,8 +47,8 @@ dependencies {
     // Model dependency for Show and Recording types
     implementation(project(":core:model"))
     
-    // Settings dependency for ThemeMode
-    implementation(project(":core:settings"))
+    // Settings API dependency for ThemeMode
+    implementation(project(":core:settings-api"))
     
     // Compose BOM
     api(platform("androidx.compose:compose-bom:2024.05.00"))

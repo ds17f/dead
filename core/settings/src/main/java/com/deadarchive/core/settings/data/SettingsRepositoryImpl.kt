@@ -1,8 +1,9 @@
 package com.deadarchive.core.settings.data
 
 import android.util.Log
-import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.ThemeMode
+import com.deadarchive.core.settings.api.SettingsRepository
+import com.deadarchive.core.settings.api.model.AppSettings
+import com.deadarchive.core.settings.api.model.ThemeMode
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.firstOrNull

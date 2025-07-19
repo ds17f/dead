@@ -72,14 +72,8 @@ fun MainAppScreen(
                     if (shouldShowMiniPlayer(currentRoute)) {
                         MiniPlayerContainer(
                             onTapToExpand = { recordingId ->
-                                // Navigate to full player when tapping mini player
-                                if (recordingId != null) {
-                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player/$recordingId'")
-                                    navController.navigate("player/$recordingId")
-                                } else {
-                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to 'player' (no recordingId)")
-                                    navController.navigate("player")
-                                }
+                                android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to player with recordingId: $recordingId")
+                                navController.navigate("player")
                             }
                         )
                     }
@@ -213,9 +207,9 @@ fun MainAppScreen(
             // Playlist screen
             playlistScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToPlayer = { recordingId -> 
-                    android.util.Log.d("MainAppNavigation", "Playlist navigating to player with recordingId: '$recordingId'")
-                    navController.navigate("player/$recordingId") 
+                onNavigateToPlayer = { 
+                    android.util.Log.d("MainAppNavigation", "Playlist navigating to player")
+                    navController.navigate("player") 
                 },
                 onNavigateToShow = { showId, recordingId ->
                     android.util.Log.d("MainAppNavigation", "Playlist navigating to next/prev show with showId: '$showId', recordingId: '$recordingId'")

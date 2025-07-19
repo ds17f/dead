@@ -44,6 +44,7 @@ dependencies {
     implementation(project(":core:design"))
     implementation(project(":core:model"))
     implementation(project(":core:data"))
+    implementation(project(":core:settings-api"))
     implementation(project(":core:settings"))
     
     implementation("androidx.core:core-ktx:1.12.0")

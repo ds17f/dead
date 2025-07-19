@@ -65,7 +65,7 @@ class ShowRepositoryImpl @Inject constructor(
     private val libraryDao: LibraryDao,
     private val audioFormatFilterService: AudioFormatFilterService,
     private val ratingsRepository: RatingsRepository,
-    private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository
+    private val settingsRepository: com.deadarchive.core.settings.api.SettingsRepository
 ) : ShowRepository {
     
     companion object {

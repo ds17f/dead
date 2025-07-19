@@ -41,6 +41,9 @@ android {
 }
 
 dependencies {
+    // API module - new dependency for clean architecture
+    implementation(project(":core:settings-api"))
+    
     implementation(project(":core:model"))
     
     implementation("androidx.core:core-ktx:1.12.0")

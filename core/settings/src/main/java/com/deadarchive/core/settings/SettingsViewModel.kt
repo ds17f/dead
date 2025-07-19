@@ -3,9 +3,9 @@ package com.deadarchive.core.settings
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.core.settings.data.SettingsRepository
-import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.ThemeMode
+import com.deadarchive.core.settings.api.SettingsRepository
+import com.deadarchive.core.settings.api.model.AppSettings
+import com.deadarchive.core.settings.api.model.ThemeMode
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

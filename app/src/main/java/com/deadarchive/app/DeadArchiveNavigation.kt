@@ -1,5 +1,6 @@
 package com.deadarchive.app
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.media3.common.util.UnstableApi
@@ -11,6 +12,9 @@ import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.downloads.navigation.downloadsScreen
 import com.deadarchive.feature.library.navigation.libraryScreen
 import com.deadarchive.feature.player.navigation.playerScreen
+import com.deadarchive.feature.playlist.navigation.playlistScreen
+
+private const val TAG = "Navigation"
 
 @UnstableApi
 @Composable
@@ -19,6 +23,7 @@ fun DeadArchiveNavigation(
     navController: NavHostController = rememberNavController(),
     showSplash: Boolean = false
 ) {
+    Log.d(TAG, "Initializing navigation with showSplash=$showSplash")
     NavHost(
         navController = navController,
         startDestination = if (showSplash) "splash" else "main_app",
@@ -60,5 +65,53 @@ fun DeadArchiveNavigation(
                 }
             }
         )
+        
+        // Playlist screen
+        try {
+            Log.d(TAG, "Setting up playlist screen route")
+            playlistScreen(
+                onNavigateBack = { 
+                    Log.d(TAG, "Playlist: navigating back")
+                    navController.popBackStack() 
+                },
+                onNavigateToPlayer = { 
+                    Log.d(TAG, "Playlist: navigating to player")
+                    navController.navigate("player") 
+                },
+                onNavigateToShow = { showId, recordingId -> 
+                    Log.d(TAG, "Playlist: navigating to player/$recordingId for show $showId")
+                    navController.navigate("player/$recordingId")
+                }
+            )
+            Log.d(TAG, "Playlist screen route setup complete")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error setting up playlist screen route", e)
+        }
+        
+        // Browse screen
+        try {
+            Log.d(TAG, "Setting up browse screen route")
+            browseScreen(
+                onNavigateToPlayer = { recordingId -> 
+                    Log.d(TAG, "Browse: navigating to player/$recordingId")
+                    navController.navigate("player/$recordingId") 
+                },
+                onNavigateToShow = { show ->
+                    Log.d(TAG, "Browse: show has bestRecording: ${show.bestRecording != null}")
+                    show.bestRecording?.let { recording ->
+                        val route = "playlist/${recording.identifier}?showId=${show.showId}"
+                        Log.d(TAG, "Browse: navigating to $route")
+                        try {
+                            navController.navigate(route)
+                        } catch (e: Exception) {
+                            Log.e(TAG, "Failed to navigate to $route", e)
+                        }
+                    }
+                }
+            )
+            Log.d(TAG, "Browse screen route setup complete")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error setting up browse screen route", e)
+        }
     }
 }

@@ -47,7 +47,7 @@ dependencies {
     implementation(project(":core:database"))
     implementation(project(":core:media"))
     implementation(project(":core:network"))
-    implementation(project(":core:settings"))
+    implementation(project(":core:settings-api"))
     implementation(project(":core:common"))
     
     // Media3 for playback event constants

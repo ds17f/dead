@@ -13,7 +13,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.deadarchive.core.model.AppConstants
-import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.api.model.AppSettings
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

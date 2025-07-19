@@ -1,7 +1,7 @@
 package com.deadarchive.feature.playlist.data
 
 import com.deadarchive.core.model.Recording
-import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.feature.playlist.components.RecordingOption
 import javax.inject.Inject
 import javax.inject.Singleton

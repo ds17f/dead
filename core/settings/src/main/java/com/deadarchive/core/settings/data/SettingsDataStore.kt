@@ -11,8 +11,8 @@ import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.deadarchive.core.model.AppConstants
-import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.ThemeMode
+import com.deadarchive.core.settings.api.model.AppSettings
+import com.deadarchive.core.settings.api.model.ThemeMode
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -229,7 +229,7 @@ class SettingsDataStore @Inject constructor(
     private fun Preferences.toAppSettings(): AppSettings {
         val audioFormatString = this[audioFormatPreferenceKey] ?: ""
         val audioFormatPreference = if (audioFormatString.isBlank()) {
-            AppConstants.PREFERRED_AUDIO_FORMATS
+            AppSettings.defaultAudioFormatPreferences
         } else {
             audioFormatString.split(",").filter { it.isNotBlank() }
         }
@@ -266,9 +266,9 @@ class SettingsDataStore @Inject constructor(
         }
         
         return AppSettings(
-            audioFormatPreference = audioFormatPreference,
+            audioFormatPreferences = audioFormatPreference,
             themeMode = themeMode,
-            downloadOnWifiOnly = this[downloadWifiOnlyKey] ?: true,
+            downloadWifiOnly = this[downloadWifiOnlyKey] ?: true,
             showDebugInfo = this[showDebugInfoKey] ?: false,
             deletionGracePeriodDays = this[deletionGracePeriodKey] ?: 7,
             lowStorageThresholdMB = this[lowStorageThresholdKey] ?: 500L,

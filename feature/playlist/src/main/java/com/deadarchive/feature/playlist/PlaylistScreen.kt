@@ -42,7 +42,7 @@ import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
 import com.deadarchive.core.common.service.ShareService
 import androidx.compose.ui.platform.LocalContext
 import com.deadarchive.feature.playlist.data.RecordingSelectionService
-import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
 import com.deadarchive.feature.playlist.ReviewViewModel

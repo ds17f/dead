@@ -29,7 +29,7 @@ import androidx.compose.ui.text.AnnotatedString
 import com.deadarchive.core.design.R
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
-import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.api.model.AppSettings
 
 /**
  * Represents the download state of a recording

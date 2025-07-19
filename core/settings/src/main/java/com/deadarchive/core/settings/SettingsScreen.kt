@@ -14,8 +14,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.settings.model.AppSettings
-import com.deadarchive.core.settings.model.ThemeMode
+import com.deadarchive.core.settings.api.model.AppSettings
+import com.deadarchive.core.settings.api.model.ThemeMode
 import com.deadarchive.core.settings.model.VersionInfo
 
 /**
@@ -176,15 +176,15 @@ private fun AudioFormatSettingsCard(
             Column(
                 verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                settings.audioFormatPreference.forEachIndexed { index, format ->
+                settings.audioFormatPreferences.forEachIndexed { index, format ->
                     FormatPreferenceItem(
                         format = format,
                         position = index + 1,
                         isFirst = index == 0,
-                        isLast = index == settings.audioFormatPreference.size - 1,
+                        isLast = index == settings.audioFormatPreferences.size - 1,
                         onMoveUp = {
                             if (index > 0) {
-                                val newList = settings.audioFormatPreference.toMutableList()
+                                val newList = settings.audioFormatPreferences.toMutableList()
                                 val temp = newList[index]
                                 newList[index] = newList[index - 1]
                                 newList[index - 1] = temp
@@ -192,8 +192,8 @@ private fun AudioFormatSettingsCard(
                             }
                         },
                         onMoveDown = {
-                            if (index < settings.audioFormatPreference.size - 1) {
-                                val newList = settings.audioFormatPreference.toMutableList()
+                            if (index < settings.audioFormatPreferences.size - 1) {
+                                val newList = settings.audioFormatPreferences.toMutableList()
                                 val temp = newList[index]
                                 newList[index] = newList[index + 1]
                                 newList[index + 1] = temp
@@ -297,7 +297,7 @@ private fun DownloadSettingsCard(
                     )
                 }
                 Switch(
-                    checked = settings.downloadOnWifiOnly,
+                    checked = settings.downloadWifiOnly,
                     onCheckedChange = onUpdateDownloadWifiOnly
                 )
             }

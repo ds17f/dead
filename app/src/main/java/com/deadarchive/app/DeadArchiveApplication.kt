@@ -9,7 +9,7 @@ import com.deadarchive.core.data.repository.RatingsRepository
 import com.deadarchive.core.media.player.PlaybackResumeService
 import com.deadarchive.core.media.player.LastPlayedTrackService
 import com.deadarchive.core.media.player.LastPlayedTrackMonitor
-import com.deadarchive.core.settings.data.SettingsRepository
+import com.deadarchive.core.settings.api.SettingsRepository
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope

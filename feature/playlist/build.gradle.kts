@@ -48,6 +48,7 @@ dependencies {
     implementation(project(":core:media")) 
     implementation(project(":core:network"))
     implementation(project(":core:settings"))
+    implementation(project(":core:settings-api"))
     implementation(project(":core:common"))
     implementation(project(":feature:player"))
     

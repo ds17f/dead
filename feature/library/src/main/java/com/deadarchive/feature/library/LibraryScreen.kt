@@ -19,7 +19,7 @@ import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.ConfirmationDialog
-import com.deadarchive.core.settings.model.AppSettings
+import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)

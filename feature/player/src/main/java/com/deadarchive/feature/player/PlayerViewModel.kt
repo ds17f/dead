@@ -40,7 +40,7 @@ class PlayerViewModel @Inject constructor(
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,
-    private val settingsRepository: com.deadarchive.core.settings.data.SettingsRepository,
+    private val settingsRepository: com.deadarchive.core.settings.api.SettingsRepository,
     private val ratingsRepository: com.deadarchive.core.data.repository.RatingsRepository
 ) : ViewModel() {
     
@@ -63,7 +63,7 @@ class PlayerViewModel @Inject constructor(
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5_000),
-            initialValue = com.deadarchive.core.settings.model.AppSettings()
+            initialValue = com.deadarchive.core.settings.api.model.AppSettings()
         )
     
     // Navigation callbacks for show navigation with showId parameter
@@ -184,6 +184,16 @@ class PlayerViewModel @Inject constructor(
             
             // Start monitoring download states
             startDownloadStateMonitoring()
+            
+            // Auto-load current recording from MediaController if available
+            viewModelScope.launch {
+                mediaControllerRepository.currentRecordingIdFlow.collect { recordingId ->
+                    if (recordingId != null && _currentRecording.value?.identifier != recordingId) {
+                        Log.d(TAG, "PlayerViewModel: Auto-loading recording from MediaController: $recordingId")
+                        loadRecording(recordingId)
+                    }
+                }
+            }
         } catch (e: Exception) {
             Log.e(TAG, "PlayerViewModel: Exception in init", e)
         }
@@ -197,7 +207,7 @@ class PlayerViewModel @Inject constructor(
             try {
                 // Get user's audio format preferences
                 val settings = settingsRepository.getSettings().firstOrNull()
-                val formatPreferences = settings?.audioFormatPreference ?: com.deadarchive.core.model.AppConstants.PREFERRED_AUDIO_FORMATS
+                val formatPreferences = settings?.audioFormatPreferences ?: com.deadarchive.core.model.AppConstants.PREFERRED_AUDIO_FORMATS
                 
                 Log.d(TAG, "loadRecording: Using format preferences: $formatPreferences")
                 

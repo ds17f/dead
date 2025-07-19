@@ -6,7 +6,7 @@ import com.deadarchive.feature.playlist.PlaylistScreen
 
 fun NavGraphBuilder.playlistScreen(
     onNavigateBack: () -> Unit,
-    onNavigateToPlayer: (String) -> Unit,
+    onNavigateToPlayer: () -> Unit,
     onNavigateToShow: (String, String) -> Unit // showId, recordingId
 ) {
     composable("playlist/{recordingId}?showId={showId}") { backStackEntry ->
@@ -14,7 +14,7 @@ fun NavGraphBuilder.playlistScreen(
         val showId = backStackEntry.arguments?.getString("showId")
         PlaylistScreen(
             onNavigateBack = onNavigateBack,
-            onNavigateToPlayer = { onNavigateToPlayer(recordingId) },
+            onNavigateToPlayer = onNavigateToPlayer,
             onNavigateToShow = onNavigateToShow,
             recordingId = recordingId,
             showId = showId
