@@ -324,7 +324,7 @@ fun PlaylistScreen(
                                 contentDescription = "Album Art",
                                 contentScale = ContentScale.Crop,
                                 modifier = Modifier
-                                    .size(140.dp)
+                                    .size(220.dp)
                                     .clip(RoundedCornerShape(8.dp))
                             )
                         }
