@@ -24,10 +24,10 @@ import com.deadarchive.core.model.DownloadStatus
 import javax.inject.Inject
 
 enum class LibrarySortOption(val displayName: String) {
-    DATE_ASCENDING("Date ↑"),
-    DATE_DESCENDING("Date ↓"), 
-    ADDED_ASCENDING("Added ↑"),
-    ADDED_DESCENDING("Added ↓")
+    DATE_ASCENDING("Show Date (Oldest First)"),
+    DATE_DESCENDING("Show Date (Newest First)"), 
+    ADDED_ASCENDING("Added (Oldest First)"),
+    ADDED_DESCENDING("Added (Newest First)")
 }
 
 enum class DecadeFilter(val displayName: String, val decade: String?) {
@@ -56,7 +56,7 @@ class LibraryViewModel @Inject constructor(
     val showConfirmationDialog: StateFlow<Show?> = _showConfirmationDialog.asStateFlow()
     
     // Sort option state
-    private val _sortOption = MutableStateFlow(LibrarySortOption.DATE_DESCENDING)
+    private val _sortOption = MutableStateFlow(LibrarySortOption.ADDED_DESCENDING)
     val sortOption: StateFlow<LibrarySortOption> = _sortOption.asStateFlow()
     
     // Decade filter state

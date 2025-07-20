@@ -233,16 +233,21 @@ fun LibraryScreen(
                                 .padding(horizontal = 16.dp, vertical = 4.dp),
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Text(
-                                text = "Sort by:",
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                            
-                            Spacer(modifier = Modifier.width(8.dp))
-                            
                             TextButton(onClick = { showSortBottomSheet = true }) {
-                                Text(sortOption.displayName)
+                                Row(verticalAlignment = Alignment.CenterVertically) {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_swap_vert),
+                                        contentDescription = null,
+                                        modifier = Modifier.size(16.dp)
+                                    )
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                    Text(
+                                        when (sortOption) {
+                                            LibrarySortOption.DATE_ASCENDING, LibrarySortOption.DATE_DESCENDING -> "Show Date"
+                                            LibrarySortOption.ADDED_ASCENDING, LibrarySortOption.ADDED_DESCENDING -> "Added"
+                                        }
+                                    )
+                                }
                             }
                         }
                         
