@@ -73,5 +73,11 @@
     "add_circle_outline",
     "share",
     "trending_up"
+  ],
+  "DataManagement": [
+    "save",
+    "restore",
+    "backup",
+    "settings_backup_restore"
   ]
 }

@@ -44,6 +44,7 @@ dependencies {
     // API module - new dependency for clean architecture
     implementation(project(":core:settings-api"))
     implementation(project(":core:backup"))
+    implementation(project(":core:design"))
     
     implementation(project(":core:model"))
     

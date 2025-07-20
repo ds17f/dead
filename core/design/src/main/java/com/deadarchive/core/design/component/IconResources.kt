@@ -275,6 +275,23 @@ object IconResources {
     }
 
     /**
+     * Data management icons for backup, restore, save operations.
+     */
+    object DataManagement {
+        @Composable
+        fun Save() = customIcon(R.drawable.ic_save)
+        
+        @Composable
+        fun Restore() = customIcon(R.drawable.ic_restore)
+        
+        @Composable
+        fun Backup() = customIcon(R.drawable.ic_backup)
+        
+        @Composable
+        fun SettingsBackupRestore() = customIcon(R.drawable.ic_settings_backup_restore)
+    }
+
+    /**
      * Get a custom icon from drawable resources.
      *
      * @param resId The resource ID of the drawable

@@ -448,7 +448,7 @@ docs:
 download-icons:
 	@echo "🔍 Downloading Material Icons..."
 	@cd scripts && \
-		python3 -m venv .venv || virtualenv .venv && \
+		(test -d .venv || python3 -m venv .venv || virtualenv .venv) && \
 		. .venv/bin/activate && \
 		pip install --upgrade pip && \
 		pip install -r requirements.txt && \

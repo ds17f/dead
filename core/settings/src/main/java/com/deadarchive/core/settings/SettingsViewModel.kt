@@ -17,6 +17,15 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 /**
+ * Information about the latest available backup
+ */
+data class BackupInfo(
+    val showCount: Int,
+    val createdAt: Long,
+    val fileName: String
+)
+
+/**
  * ViewModel for settings screen following established patterns
  * Manages settings state with reactive updates and proper error handling
  */
@@ -40,6 +49,9 @@ class SettingsViewModel @Inject constructor(
     private val _backupFile = MutableStateFlow<java.io.File?>(null)
     val backupFile: StateFlow<java.io.File?> = _backupFile.asStateFlow()
     
+    private val _latestBackupInfo = MutableStateFlow<BackupInfo?>(null)
+    val latestBackupInfo: StateFlow<BackupInfo?> = _latestBackupInfo.asStateFlow()
+    
     /**
      * Reactive settings state that updates UI automatically when settings change
      */
@@ -56,6 +68,11 @@ class SettingsViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5_000),
             initialValue = AppSettings()
         )
+    
+    init {
+        // Load latest backup info on startup
+        loadLatestBackupInfo()
+    }
     
     /**
      * Update the theme mode setting
@@ -376,6 +393,9 @@ class SettingsViewModel @Inject constructor(
                     "Backup created in memory only (${backup.libraryShows.size} shows, ${backupJson.length} chars) - file save failed"
                 }
                 
+                // Refresh backup info after successful backup
+                loadLatestBackupInfo()
+                
                 Log.d(TAG, "Setting success state with message: $successMessage")
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
@@ -448,6 +468,9 @@ class SettingsViewModel @Inject constructor(
                             "Successfully restored ${result.restoredShows} shows and settings from ${latestBackupFile.name}"
                         }
                         
+                        // Refresh backup info after successful restore
+                        loadLatestBackupInfo()
+                        
                         _uiState.value = _uiState.value.copy(
                             isLoading = false,
                             successMessage = message
@@ -472,5 +495,38 @@ class SettingsViewModel @Inject constructor(
                 )
             }
         }
+    }
+    
+    /**
+     * Load information about the latest available backup
+     */
+    private fun loadLatestBackupInfo() {
+        viewModelScope.launch {
+            try {
+                val latestBackupFile = backupService.findLatestBackupFile()
+                if (latestBackupFile != null) {
+                    val backupJson = latestBackupFile.readText()
+                    val backupData = backupService.parseBackup(backupJson)
+                    
+                    if (backupData != null) {
+                        _latestBackupInfo.value = BackupInfo(
+                            showCount = backupData.libraryShows.size,
+                            createdAt = backupData.createdAt,
+                            fileName = latestBackupFile.name
+                        )
+                    }
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to load latest backup info", e)
+                _latestBackupInfo.value = null
+            }
+        }
+    }
+    
+    /**
+     * Check if a backup is available for restore
+     */
+    fun hasBackupAvailable(): Boolean {
+        return latestBackupInfo.value != null
     }
 }

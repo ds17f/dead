@@ -7,6 +7,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.Share
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -629,6 +630,12 @@ private fun BackupRestoreCard(
                 onClick = onBackupLibrary,
                 modifier = Modifier.fillMaxWidth()
             ) {
+                Icon(
+                    painter = IconResources.DataManagement.Save(),
+                    contentDescription = null,
+                    modifier = Modifier.size(18.dp)
+                )
+                Spacer(modifier = Modifier.width(8.dp))
                 Text("Backup Library")
             }
             
@@ -637,6 +644,12 @@ private fun BackupRestoreCard(
                 onClick = { showRestoreDialog = true },
                 modifier = Modifier.fillMaxWidth()
             ) {
+                Icon(
+                    painter = IconResources.DataManagement.Restore(),
+                    contentDescription = null,
+                    modifier = Modifier.size(18.dp)
+                )
+                Spacer(modifier = Modifier.width(8.dp))
                 Text("Restore Library")
             }
             

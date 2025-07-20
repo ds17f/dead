@@ -6,6 +6,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.res.painterResource
 import com.deadarchive.core.design.R
 import androidx.compose.material3.*
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -39,6 +40,8 @@ fun LibraryScreen(
     val uiState by viewModel.uiState.collectAsState()
     val downloadStates by viewModel.downloadStates.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
+    val latestBackupInfo by settingsViewModel.latestBackupInfo.collectAsState()
+    val settingsUiState by settingsViewModel.uiState.collectAsState()
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
@@ -120,10 +123,69 @@ fun LibraryScreen(
                             
                             Text(
                                 text = "Add shows to your library by tapping the library button on any show or recording.",
-                                style = MaterialTheme.typography.bodyMedium,
+                                style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                textAlign = TextAlign.Center
+                                textAlign = TextAlign.Center,
+                                lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
                             )
+                            
+                            Spacer(modifier = Modifier.height(24.dp))
+                            
+                            // Show restore information and button
+                            val backupInfo = latestBackupInfo
+                            val hasValidBackup = backupInfo != null && backupInfo.showCount > 0
+                            val isLoading = settingsUiState.isLoading
+                            
+                            if (backupInfo != null) {
+                                val formattedDate = remember(backupInfo.createdAt) {
+                                    java.text.SimpleDateFormat("MMM d, yyyy 'at' h:mm a", java.util.Locale.getDefault())
+                                        .format(java.util.Date(backupInfo.createdAt))
+                                }
+                                
+                                if (hasValidBackup) {
+                                    Text(
+                                        text = "You have a backup from $formattedDate with ${backupInfo.showCount} shows",
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        color = MaterialTheme.colorScheme.primary,
+                                        textAlign = TextAlign.Center,
+                                        lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
+                                    )
+                                } else {
+                                    Text(
+                                        text = "You have a backup from $formattedDate, but it contains no shows",
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        textAlign = TextAlign.Center,
+                                        lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
+                                    )
+                                }
+                                
+                                Spacer(modifier = Modifier.height(16.dp))
+                            }
+                            
+                            // Always show the restore button
+                            Button(
+                                onClick = { 
+                                    settingsViewModel.restoreLibrary()
+                                },
+                                enabled = hasValidBackup && !isLoading
+                            ) {
+                                if (isLoading) {
+                                    CircularProgressIndicator(
+                                        modifier = Modifier.size(16.dp),
+                                        strokeWidth = 2.dp
+                                    )
+                                    Spacer(modifier = Modifier.width(8.dp))
+                                } else {
+                                    Icon(
+                                        painter = IconResources.DataManagement.Restore(),
+                                        contentDescription = null,
+                                        modifier = Modifier.size(18.dp)
+                                    )
+                                    Spacer(modifier = Modifier.width(8.dp))
+                                }
+                                Text("Restore Library")
+                            }
                         }
                     }
                 } else {
