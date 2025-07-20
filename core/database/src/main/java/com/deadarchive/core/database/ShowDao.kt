@@ -68,6 +68,19 @@ interface ShowDao {
     """)
     suspend fun searchShows(query: String): List<ShowEntity>
     
+    @Query("""
+        SELECT * FROM concerts_new 
+        WHERE venue LIKE '%' || :query || '%' 
+           OR location LIKE '%' || :query || '%'
+           OR setlistRaw LIKE '%' || :query || '%'
+           OR songNames LIKE '%' || :query || '%'
+           OR date LIKE '%' || :query || '%'
+           OR year = :query
+        ORDER BY date DESC
+        LIMIT :limit
+    """)
+    suspend fun searchShowsLimited(query: String, limit: Int): List<ShowEntity>
+    
     // Library
     @Query("SELECT * FROM concerts_new WHERE isInLibrary = 1 ORDER BY date DESC")
     suspend fun getLibraryShows(): List<ShowEntity>

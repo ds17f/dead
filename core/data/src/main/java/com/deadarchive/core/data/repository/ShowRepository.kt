@@ -24,6 +24,7 @@ import javax.inject.Singleton
 interface ShowRepository {
     // Show-based methods
     fun searchShows(query: String): Flow<List<Show>>
+    fun searchShowsLimited(query: String, limit: Int): Flow<List<Show>>
     fun getAllShows(): Flow<List<Show>>
     fun getLibraryShows(): Flow<List<Show>>
     suspend fun getLibraryShowsList(): List<Show>
@@ -253,6 +254,65 @@ class ShowRepositoryImpl @Inject constructor(
         }
     }
     
+    override fun searchShowsLimited(query: String, limit: Int): Flow<List<Show>> = flow {
+        android.util.Log.d("ShowRepository", "🔍 searchShowsLimited called with query: '$query', limit: $limit")
+        
+        // Get user preferences once for all shows
+        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+        
+        // Use limited database search to reduce rating lookup overhead
+        val cachedShows = showDao.searchShowsLimited(query, limit)
+        android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from limited database search")
+        
+        // Process only the limited results with ratings
+        val databaseShows = cachedShows.map { showEntity ->
+            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                val recording = it.toRecording()
+                // Add recording rating
+                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                recording.copy(
+                    rating = recordingRating?.rating,
+                    rawRating = recordingRating?.rawRating,
+                    ratingConfidence = recordingRating?.confidence,
+                    reviewCount = recordingRating?.reviewCount,
+                    sourceType = recordingRating?.sourceType,
+                    ratingDistribution = recordingRating?.ratingDistribution,
+                    highRatings = recordingRating?.highRatings,
+                    lowRatings = recordingRating?.lowRatings
+                )
+            }
+            android.util.Log.d("ShowRepository", "🔍 Limited show '${showEntity.showId}' has ${recordings.size} recordings")
+            
+            // Get show rating
+            val showRating = ratingsRepository.getShowRatingByDateVenue(
+                showEntity.date, showEntity.venue ?: ""
+            )
+            
+            // Check for user recording preference first
+            val preferredRecordingId = userPreferences[showEntity.showId]
+            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                preferredRecordingId
+            } else {
+                showRating?.bestRecordingId
+            }
+            
+            showEntity.toShow(recordings).copy(
+                rating = showRating?.rating,
+                rawRating = showRating?.rawRating,
+                ratingConfidence = showRating?.confidence,
+                totalHighRatings = showRating?.totalHighRatings,
+                totalLowRatings = showRating?.totalLowRatings,
+                bestRecordingId = finalBestRecordingId
+            )
+        }
+        
+        android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} limited shows from database")
+        emit(databaseShows.sortedByDescending { it.date })
+    }.catch { e ->
+        android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchShowsLimited: ${e.message}", e)
+        emit(emptyList())
+    }
+
     override fun searchShows(query: String): Flow<List<Show>> = flow {
         android.util.Log.d("ShowRepository", "🔍 searchShows called with query: '$query'")
         

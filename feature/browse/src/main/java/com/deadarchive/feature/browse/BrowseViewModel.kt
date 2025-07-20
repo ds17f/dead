@@ -23,6 +23,7 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Job
 import javax.inject.Inject
 
 @HiltViewModel
@@ -43,6 +44,9 @@ class BrowseViewModel @Inject constructor(
     
     private val _isSearching = MutableStateFlow(false)
     val isSearching: StateFlow<Boolean> = _isSearching.asStateFlow()
+    
+    // Track current search/filter job to cancel previous operations
+    private var currentSearchJob: Job? = null
     
     // Download state tracking
     private val _downloadStates = MutableStateFlow<Map<String, ShowDownloadState>>(emptyMap())
@@ -83,7 +87,10 @@ class BrowseViewModel @Inject constructor(
             return
         }
         
-        viewModelScope.launch {
+        // Cancel any previous search/filter operation
+        currentSearchJob?.cancel()
+        
+        currentSearchJob = viewModelScope.launch {
             println("📱 VM SEARCH NEW: starting coroutine for '$query'")
             _isSearching.value = true
             _uiState.value = BrowseUiState.Loading
@@ -121,7 +128,11 @@ class BrowseViewModel @Inject constructor(
     fun filterByEra(era: String) {
         println("📱 VM ERA FILTER: filtering by era '$era'")
         android.util.Log.d("BrowseViewModel", "📱 ERA FILTER: Started filtering by era '$era'")
-        viewModelScope.launch {
+        
+        // Cancel any previous search/filter operation
+        currentSearchJob?.cancel()
+        
+        currentSearchJob = viewModelScope.launch {
             _isSearching.value = true
             _uiState.value = BrowseUiState.Loading
             
@@ -136,7 +147,7 @@ class BrowseViewModel @Inject constructor(
                     else -> era.lowercase()
                 }
                 
-                searchShowsUseCase(eraQuery)
+                searchShowsUseCase.searchLimited(eraQuery, 200) // Pre-limit to 200 shows before rating processing
                     .catch { exception ->
                         val filterTime = System.currentTimeMillis() - startTime
                         println("📱 VM ERA FILTER: error after ${filterTime}ms for era '$era': ${exception.message}")
@@ -203,7 +214,10 @@ class BrowseViewModel @Inject constructor(
     }
     
     fun loadPopularShows() {
-        viewModelScope.launch {
+        // Cancel any previous search/filter operation
+        currentSearchJob?.cancel()
+        
+        currentSearchJob = viewModelScope.launch {
             _isSearching.value = true
             _uiState.value = BrowseUiState.Loading
             
@@ -229,7 +243,10 @@ class BrowseViewModel @Inject constructor(
     }
     
     fun loadRecentShows() {
-        viewModelScope.launch {
+        // Cancel any previous search/filter operation
+        currentSearchJob?.cancel()
+        
+        currentSearchJob = viewModelScope.launch {
             _isSearching.value = true
             _uiState.value = BrowseUiState.Loading
             

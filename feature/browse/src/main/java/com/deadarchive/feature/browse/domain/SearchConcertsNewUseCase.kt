@@ -33,6 +33,24 @@ class SearchShowsUseCase @Inject constructor(
     }
     
     /**
+     * Search for shows with intelligent query processing and limit results
+     * Optimized for cases where only top results are needed (like era filtering)
+     */
+    fun searchLimited(query: String, limit: Int): Flow<List<Show>> {
+        android.util.Log.d("SearchShowsUseCase", "🔎 SearchShowsUseCase searchLimited called with query: '$query', limit: $limit")
+        
+        if (query.isBlank()) {
+            android.util.Log.d("SearchShowsUseCase", "🔎 Blank query, using default 'grateful dead'")
+            return showRepository.searchShowsLimited("grateful dead", limit)
+        }
+        
+        val searchQuery = processSearchQuery(query.trim())
+        android.util.Log.d("SearchShowsUseCase", "🔎 Processed limited query: '$query' → '$searchQuery'")
+        android.util.Log.d("SearchShowsUseCase", "🔎 Calling showRepository.searchShowsLimited with '$searchQuery', limit: $limit")
+        return showRepository.searchShowsLimited(searchQuery, limit)
+    }
+    
+    /**
      * Process the search query to handle different search patterns
      */
     private fun processSearchQuery(query: String): String {
