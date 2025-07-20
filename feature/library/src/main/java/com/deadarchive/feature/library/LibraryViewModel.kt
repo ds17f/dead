@@ -32,6 +32,7 @@ enum class LibrarySortOption(val displayName: String) {
 
 enum class DecadeFilter(val displayName: String, val decade: String?) {
     ALL("All", null),
+    SIXTIES("60s", "196"),
     SEVENTIES("70s", "197"),
     EIGHTIES("80s", "198"), 
     NINETIES("90s", "199")

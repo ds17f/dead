@@ -2,8 +2,10 @@ package com.deadarchive.feature.library
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.clickable
 import androidx.compose.ui.res.painterResource
 import com.deadarchive.core.design.R
@@ -50,6 +52,14 @@ fun LibraryScreen(
     val sortOption by viewModel.sortOption.collectAsState()
     val decadeFilter by viewModel.decadeFilter.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
+    
+    // LazyListState for scrolling to top when sort changes
+    val listState = rememberLazyListState()
+    
+    // Scroll to top when sort option changes
+    LaunchedEffect(sortOption) {
+        listState.animateScrollToItem(0)
+    }
     
     // Bottom sheet and confirmation states
     var showBottomSheet by remember { mutableStateOf(false) }
@@ -247,6 +257,17 @@ fun LibraryScreen(
                                             LibrarySortOption.ADDED_ASCENDING, LibrarySortOption.ADDED_DESCENDING -> "Added"
                                         }
                                     )
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                    Icon(
+                                        painter = painterResource(
+                                            when (sortOption) {
+                                                LibrarySortOption.DATE_ASCENDING, LibrarySortOption.ADDED_ASCENDING -> R.drawable.ic_keyboard_arrow_up
+                                                LibrarySortOption.DATE_DESCENDING, LibrarySortOption.ADDED_DESCENDING -> R.drawable.ic_keyboard_arrow_down
+                                            }
+                                        ),
+                                        contentDescription = null,
+                                        modifier = Modifier.size(16.dp)
+                                    )
                                 }
                             }
                         }
@@ -254,6 +275,7 @@ fun LibraryScreen(
                         HorizontalDivider()
                         
                         LazyColumn(
+                            state = listState,
                             modifier = Modifier.fillMaxSize(),
                             contentPadding = PaddingValues(16.dp),
                             verticalArrangement = Arrangement.spacedBy(8.dp)
