@@ -11,6 +11,7 @@ import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.settings.api.SettingsRepository
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.collect
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import java.text.SimpleDateFormat
@@ -223,6 +224,25 @@ class BackupService @Inject constructor(
                         
                         // IMPORTANT: Update the show entity to mark as in library
                         showDao.updateLibraryStatus(backupShow.showId, true)
+                        
+                        // Check if show has recordings, if not, try to fetch them from API
+                        if (existingShow.recordings.isEmpty()) {
+                            android.util.Log.d(TAG, "Show ${backupShow.showId} has no recordings, attempting to fetch from API")
+                            try {
+                                // Extract date from showId (format: YYYY-MM-DD_venue)
+                                val date = backupShow.showId.split("_").firstOrNull()
+                                if (date != null && date.matches(Regex("\\d{4}-\\d{2}-\\d{2}"))) {
+                                    // Use the searchRecordings flow to fetch and cache recordings for this date
+                                    showRepository.searchRecordings(date).collect { recordings ->
+                                        if (recordings.isNotEmpty()) {
+                                            android.util.Log.d(TAG, "Fetched ${recordings.size} recordings for date $date")
+                                        }
+                                    }
+                                }
+                            } catch (e: Exception) {
+                                android.util.Log.w(TAG, "Failed to fetch recordings for show ${backupShow.showId}: ${e.message}")
+                            }
+                        }
                         
                         // Restore preferred recording preference if set
                         backupShow.preferredRecordingId?.let { recordingId ->
