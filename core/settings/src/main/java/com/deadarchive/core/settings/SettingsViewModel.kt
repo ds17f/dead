@@ -23,7 +23,8 @@ import javax.inject.Inject
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
     private val settingsRepository: SettingsRepository,
-    private val backupService: com.deadarchive.core.backup.BackupService
+    private val backupService: com.deadarchive.core.backup.BackupService,
+    @dagger.hilt.android.qualifiers.ApplicationContext private val context: android.content.Context
 ) : ViewModel() {
     
     companion object {
@@ -32,6 +33,12 @@ class SettingsViewModel @Inject constructor(
     
     private val _uiState = MutableStateFlow(SettingsUiState())
     val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()
+    
+    private val _backupJson = MutableStateFlow<String?>(null)
+    val backupJson: StateFlow<String?> = _backupJson.asStateFlow()
+    
+    private val _backupFile = MutableStateFlow<java.io.File?>(null)
+    val backupFile: StateFlow<java.io.File?> = _backupFile.asStateFlow()
     
     /**
      * Reactive settings state that updates UI automatically when settings change
@@ -346,23 +353,45 @@ class SettingsViewModel @Inject constructor(
                 Log.d(TAG, "Starting library backup...")
                 _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
                 
+                Log.d(TAG, "Calling backupService.createBackup...")
                 // Create backup
                 val backup = backupService.createBackup(appVersion = "1.0") // TODO: Get actual app version
-                val backupJson = backupService.exportBackup(android.app.Application(), backup)
+                Log.d(TAG, "Backup created, calling exportBackup...")
                 
-                // For now, just log the backup - in a real implementation, 
-                // we would use Android's file picker to let user save the file
+                val (backupJson, backupFile) = backupService.exportBackup(context, backup)
+                Log.d(TAG, "Export completed, storing backup data...")
+                
+                // Store backup JSON and file for debug display
+                Log.d(TAG, "Setting backup JSON - length: ${backupJson.length}")
+                _backupJson.value = backupJson
+                Log.d(TAG, "Setting backup file: ${backupFile?.absolutePath ?: "null"}")
+                _backupFile.value = backupFile
+                
                 Log.d(TAG, "Backup created successfully: ${backup.libraryShows.size} shows")
+                Log.d(TAG, "Backup JSON length: ${backupJson.length} characters")
                 
+                val successMessage = if (backupFile != null) {
+                    "Backup saved to Downloads: ${backupFile.name} (${backup.libraryShows.size} shows, ${backupJson.length} chars)"
+                } else {
+                    "Backup created in memory only (${backup.libraryShows.size} shows, ${backupJson.length} chars) - file save failed"
+                }
+                
+                Log.d(TAG, "Setting success state with message: $successMessage")
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
-                    successMessage = "Backup created with ${backup.libraryShows.size} library shows"
+                    successMessage = successMessage
                 )
-                
-                // TODO: Implement actual file saving with Android file picker
+                Log.d(TAG, "Backup process completed successfully")
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to create backup", e)
+                Log.e(TAG, "Exception details: ${e.javaClass.simpleName} - ${e.message}")
+                Log.e(TAG, "Stack trace: ${e.stackTraceToString()}")
+                
+                // Clear backup data on error
+                _backupJson.value = null
+                _backupFile.value = null
+                
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
                     errorMessage = "Failed to create backup: ${e.message}"

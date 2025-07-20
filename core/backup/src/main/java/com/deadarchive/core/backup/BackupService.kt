@@ -1,7 +1,9 @@
 package com.deadarchive.core.backup
 
 import android.content.Context
+import android.os.Environment
 import com.deadarchive.core.backup.model.*
+import java.io.File
 import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.RatingsRepository
 import com.deadarchive.core.database.LibraryDao
@@ -82,18 +84,38 @@ class BackupService @Inject constructor(
     }
     
     /**
-     * Exports backup data to a JSON file
+     * Exports backup data to a JSON file in the Downloads directory
      */
-    suspend fun exportBackup(context: Context, backup: BackupData): String {
+    suspend fun exportBackup(context: Context, backup: BackupData): Pair<String, File?> {
         val json = json.encodeToString(backup)
         
         // Generate filename with timestamp
         val timestamp = SimpleDateFormat("yyyy-MM-dd_HH-mm", Locale.getDefault()).format(Date())
         val filename = "${BACKUP_FILE_PREFIX}_${timestamp}.${BACKUP_FILE_EXTENSION}"
         
-        // For now, just return the JSON string - UI will handle file saving
-        android.util.Log.d(TAG, "Backup JSON generated: ${json.length} characters")
-        return json
+        return try {
+            // Save to Downloads directory (accessible to user)
+            val downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+            val backupFile = File(downloadsDir, filename)
+            
+            // Ensure Downloads directory exists
+            if (!downloadsDir.exists()) {
+                downloadsDir.mkdirs()
+            }
+            
+            // Write JSON to file
+            backupFile.writeText(json)
+            
+            android.util.Log.d(TAG, "Backup saved to: ${backupFile.absolutePath}")
+            android.util.Log.d(TAG, "Backup JSON generated: ${json.length} characters")
+            
+            json to backupFile
+            
+        } catch (e: Exception) {
+            android.util.Log.e(TAG, "Failed to save backup file: ${e.message}", e)
+            // Return JSON without file if saving fails
+            json to null
+        }
     }
     
     /**
