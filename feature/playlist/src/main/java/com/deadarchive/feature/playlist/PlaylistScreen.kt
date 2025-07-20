@@ -311,41 +311,40 @@ fun PlaylistScreen(
                 }
                 
                 else -> {
-                    // Album cover image
+                    // Album cover image - fixed size at top
                     item {
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .aspectRatio(1f)
-                                .padding(horizontal = 32.dp, vertical = 16.dp)
+                                .padding(horizontal = 24.dp, vertical = 16.dp),
+                            contentAlignment = Alignment.Center
                         ) {
                             Image(
                                 painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
                                 contentDescription = "Album Art",
                                 contentScale = ContentScale.Crop,
                                 modifier = Modifier
-                                    .fillMaxSize()
+                                    .size(140.dp)
                                     .clip(RoundedCornerShape(8.dp))
                             )
                         }
                     }
                     
-                    // Show info section
+                    // Show info section - left aligned
                     currentRecording?.let { recording ->
                         item {
                             Column(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(horizontal = 24.dp),
-                                horizontalAlignment = Alignment.CenterHorizontally
+                                horizontalAlignment = Alignment.Start
                             ) {
                                 // Show Date
                                 Text(
                                     text = formatConcertDate(recording.concertDate),
                                     style = MaterialTheme.typography.headlineSmall,
                                     fontWeight = FontWeight.Bold,
-                                    color = MaterialTheme.colorScheme.onSurface,
-                                    textAlign = TextAlign.Center
+                                    color = MaterialTheme.colorScheme.onSurface
                                 )
                                 
                                 Spacer(modifier = Modifier.height(8.dp))
@@ -368,23 +367,14 @@ fun PlaylistScreen(
                                         text = venueLine,
                                         style = MaterialTheme.typography.bodyLarge,
                                         color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                        textAlign = TextAlign.Center,
-                                        maxLines = 2,
+                                        maxLines = 3,
                                         overflow = TextOverflow.Ellipsis
                                     )
                                 }
-                            }
-                        }
-                        
-                        // Review stars
-                        if (recording.hasRawRating) {
-                            item {
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .padding(horizontal = 24.dp, vertical = 16.dp),
-                                    horizontalArrangement = Arrangement.Center
-                                ) {
+                                
+                                // Review stars below venue info
+                                if (recording.hasRawRating) {
+                                    Spacer(modifier = Modifier.height(12.dp))
                                     InteractiveRatingDisplay(
                                         rating = recording.rawRating,
                                         reviewCount = recording.reviewCount,
@@ -394,8 +384,10 @@ fun PlaylistScreen(
                                 }
                             }
                         }
+                    }
                         
-                        // Action row with icons
+                    // Action row with icons
+                    currentRecording?.let { recording ->
                         item {
                             Row(
                                 modifier = Modifier
