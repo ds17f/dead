@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.27.0] - 2025-07-20
+
+### New Features
+* consolidate library management into library screen with triple dot menu (e0af6de)
+* enhance backup and restore UX with smart empty library screen (9f8e42b)
+* add debug display for backup functionality (0f20052)
+* implement basic library backup and restore system (676b5e7)
+* create API modules to resolve circular dependencies (e700381)
+
+### Bug Fixes
+* resolve venue normalization inconsistency causing shows with 0 recordings (2fc3b04)
+* ensure restored shows have recordings for navigation (346916e)
+* complete backup and restore functionality (dc9d755)
+* resolve circular dependencies and restore audio playback (bbaf62e)
+
+
 ## [0.26.0] - 2025-07-19
 
 ### New Features
@@ -8,8 +24,6 @@
 * add playback history database schema and entities (abd06fa)
 * implement Media3 event tracking for playback history (b52b6d0)
 * add QueueDebugPanel for real-time queue state visibility (8222ac8)
-
-
 ## [0.25.0] - 2025-07-18
 
 ### New Features
