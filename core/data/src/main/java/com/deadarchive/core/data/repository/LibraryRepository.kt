@@ -129,8 +129,36 @@ class LibraryRepositoryImpl @Inject constructor(
     
     
     override suspend fun removeShowFromLibrary(showId: String) {
-        val libraryItemId = "show_$showId"
-        libraryDao.deleteLibraryItemById(libraryItemId)
+        try {
+            println("DEBUG LibraryRepository: Starting removal of show $showId from library")
+            val libraryItemId = "show_$showId"
+            
+            // Check if it exists before removal
+            val existingLibraryItem = libraryDao.getLibraryItemById(libraryItemId)
+            println("DEBUG LibraryRepository: Existing library item: $existingLibraryItem")
+            
+            // 1. Remove from library table
+            libraryDao.deleteLibraryItemById(libraryItemId)
+            println("DEBUG LibraryRepository: Deleted library item with ID: $libraryItemId")
+            
+            // 2. Update show entity to mark as not in library
+            val currentShow = showDao.getShowById(showId)
+            println("DEBUG LibraryRepository: Current show before update: ${currentShow?.isInLibrary}")
+            currentShow?.let { show ->
+                val updatedShow = show.copy(isInLibrary = false)
+                showDao.insertShow(updatedShow)
+                println("DEBUG LibraryRepository: Updated show isInLibrary to false")
+            } ?: println("DEBUG LibraryRepository: Show $showId not found in database")
+            
+            // Verify removal
+            val afterRemoval = libraryDao.getLibraryItemById(libraryItemId)
+            println("DEBUG LibraryRepository: Library item after removal: $afterRemoval")
+            
+            println("DEBUG LibraryRepository: Successfully removed show $showId from library")
+        } catch (e: Exception) {
+            println("ERROR LibraryRepository: Failed to remove show from library: ${e.message}")
+            e.printStackTrace()
+        }
     }
     
     override suspend fun toggleShowLibrary(show: Show): Boolean {

@@ -22,7 +22,9 @@ import javax.inject.Singleton
 class BackupService @Inject constructor(
     private val showRepository: ShowRepository,
     private val settingsRepository: SettingsRepository,
-    private val libraryDao: LibraryDao
+    private val libraryDao: LibraryDao,
+    private val showDao: ShowDao,
+    @dagger.hilt.android.qualifiers.ApplicationContext private val context: Context
 ) {
     
     companion object {
@@ -94,14 +96,12 @@ class BackupService @Inject constructor(
         val filename = "${BACKUP_FILE_PREFIX}_${timestamp}.${BACKUP_FILE_EXTENSION}"
         
         return try {
-            // Save to Downloads directory (accessible to user)
-            val downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
-            val backupFile = File(downloadsDir, filename)
+            // Save to app's external files directory (accessible to app and visible to user)
+            val appExternalDir = context.getExternalFilesDir(null)
+            val backupFile = File(appExternalDir, filename)
             
-            // Ensure Downloads directory exists
-            if (!downloadsDir.exists()) {
-                downloadsDir.mkdirs()
-            }
+            // Ensure directory exists
+            appExternalDir?.mkdirs()
             
             // Write JSON to file
             backupFile.writeText(json)
@@ -124,6 +124,48 @@ class BackupService @Inject constructor(
     fun getBackupFilename(): String {
         val timestamp = SimpleDateFormat("yyyy-MM-dd_HH-mm", Locale.getDefault()).format(Date())
         return "${BACKUP_FILE_PREFIX}_${timestamp}.${BACKUP_FILE_EXTENSION}"
+    }
+    
+    /**
+     * Finds the most recent backup file in Downloads directory
+     */
+    fun findLatestBackupFile(): File? {
+        return try {
+            // Look in app's external files directory instead of Downloads
+            val appExternalDir = context.getExternalFilesDir(null)
+            android.util.Log.d(TAG, "Looking for backup files in: ${appExternalDir?.absolutePath}")
+            android.util.Log.d(TAG, "App external directory exists: ${appExternalDir?.exists()}")
+            
+            if (appExternalDir?.exists() != true) {
+                android.util.Log.w(TAG, "App external directory does not exist")
+                return null
+            }
+            
+            val allFiles = appExternalDir.listFiles()
+            android.util.Log.d(TAG, "Total files in app directory: ${allFiles?.size ?: 0}")
+            allFiles?.forEach { file ->
+                android.util.Log.d(TAG, "Found file: ${file.name}")
+            }
+            
+            val backupFiles = appExternalDir.listFiles { file ->
+                val matches = file.name.startsWith(BACKUP_FILE_PREFIX) && file.name.endsWith(".$BACKUP_FILE_EXTENSION")
+                android.util.Log.d(TAG, "File ${file.name} matches backup pattern: $matches")
+                matches
+            }
+            
+            android.util.Log.d(TAG, "Found ${backupFiles?.size ?: 0} backup files")
+            backupFiles?.forEach { file ->
+                android.util.Log.d(TAG, "Backup file: ${file.name}, modified: ${file.lastModified()}")
+            }
+            
+            // Return the most recently modified backup file
+            val latestFile = backupFiles?.maxByOrNull { it.lastModified() }
+            android.util.Log.d(TAG, "Latest backup file: ${latestFile?.name}")
+            latestFile
+        } catch (e: Exception) {
+            android.util.Log.e(TAG, "Failed to find latest backup file: ${e.message}", e)
+            null
+        }
     }
     
     /**
@@ -172,12 +214,15 @@ class BackupService @Inject constructor(
                     if (existingShow != null) {
                         // Add to library with original timestamp  
                         val libraryEntry = com.deadarchive.core.database.LibraryEntity(
-                            id = backupShow.showId, // Use showId as the library item ID
+                            id = "show_${backupShow.showId}", // Use consistent ID format with "show_" prefix
                             type = "SHOW",
                             showId = backupShow.showId,
                             addedTimestamp = backupShow.addedAt
                         )
                         libraryDao.addToLibrary(libraryEntry)
+                        
+                        // IMPORTANT: Update the show entity to mark as in library
+                        showDao.updateLibraryStatus(backupShow.showId, true)
                         
                         // Restore preferred recording preference if set
                         backupShow.preferredRecordingId?.let { recordingId ->

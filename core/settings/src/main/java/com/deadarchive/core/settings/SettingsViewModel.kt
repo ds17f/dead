@@ -401,21 +401,68 @@ class SettingsViewModel @Inject constructor(
     }
     
     /**
-     * Restore library and settings from a backup file
+     * Restore library and settings from the latest backup file
      */
     fun restoreLibrary() {
         viewModelScope.launch {
             try {
-                Log.d(TAG, "Starting library restore...")
+                Log.d(TAG, "Starting library restore from latest backup...")
                 _uiState.value = _uiState.value.copy(isLoading = true, errorMessage = null)
                 
-                // TODO: Implement file picker to select backup file
-                // For now, show a placeholder message
+                Log.d(TAG, "About to call backupService.findLatestBackupFile()")
+                // Find the latest backup file
+                val latestBackupFile = backupService.findLatestBackupFile()
+                Log.d(TAG, "findLatestBackupFile() returned: $latestBackupFile")
+                if (latestBackupFile == null) {
+                    _uiState.value = _uiState.value.copy(
+                        isLoading = false,
+                        errorMessage = "No backup files found in Downloads directory"
+                    )
+                    return@launch
+                }
                 
-                _uiState.value = _uiState.value.copy(
-                    isLoading = false,
-                    successMessage = "Restore feature coming soon - will allow selecting backup file"
-                )
+                Log.d(TAG, "Found backup file: ${latestBackupFile.absolutePath}")
+                
+                // Read and parse the backup file
+                val backupJson = latestBackupFile.readText()
+                val backupData = backupService.parseBackup(backupJson)
+                
+                if (backupData == null) {
+                    _uiState.value = _uiState.value.copy(
+                        isLoading = false,
+                        errorMessage = "Failed to parse backup file: ${latestBackupFile.name}"
+                    )
+                    return@launch
+                }
+                
+                Log.d(TAG, "Parsed backup with ${backupData.libraryShows.size} shows")
+                
+                // Restore the backup
+                val result = backupService.restoreFromBackup(backupData)
+                
+                when (result) {
+                    is com.deadarchive.core.backup.RestoreResult.Success -> {
+                        val message = if (result.skippedShows > 0) {
+                            "Restored ${result.restoredShows} shows, skipped ${result.skippedShows} shows not in catalog. Settings: ${if (result.restoredSettings) "restored" else "failed"}"
+                        } else {
+                            "Successfully restored ${result.restoredShows} shows and settings from ${latestBackupFile.name}"
+                        }
+                        
+                        _uiState.value = _uiState.value.copy(
+                            isLoading = false,
+                            successMessage = message
+                        )
+                        Log.d(TAG, "Restore completed successfully - UI message set: $message")
+                    }
+                    
+                    is com.deadarchive.core.backup.RestoreResult.Error -> {
+                        _uiState.value = _uiState.value.copy(
+                            isLoading = false,
+                            errorMessage = "Restore failed: ${result.message}"
+                        )
+                        Log.e(TAG, "Restore failed: ${result.message}")
+                    }
+                }
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to restore backup", e)

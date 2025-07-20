@@ -156,7 +156,7 @@ fun SettingsScreen(
     // Clear messages after a delay
     LaunchedEffect(uiState.errorMessage, uiState.successMessage) {
         if (uiState.errorMessage != null || uiState.successMessage != null) {
-            kotlinx.coroutines.delay(3000)
+            kotlinx.coroutines.delay(5000) // Extended to 5 seconds for better visibility
             viewModel.clearMessage()
         }
     }
@@ -604,6 +604,7 @@ private fun BackupRestoreCard(
     onBackupLibrary: () -> Unit,
     onRestoreLibrary: () -> Unit
 ) {
+    var showRestoreDialog by remember { mutableStateOf(false) }
     Card(
         modifier = Modifier.fillMaxWidth()
     ) {
@@ -633,7 +634,7 @@ private fun BackupRestoreCard(
             
             // Restore Button
             OutlinedButton(
-                onClick = onRestoreLibrary,
+                onClick = { showRestoreDialog = true },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text("Restore Library")
@@ -690,6 +691,32 @@ private fun BackupRestoreCard(
                 android.util.Log.d("SettingsScreen", "DebugBackupJsonDisplay rendered successfully")
             }
         }
+    }
+    
+    // Restore confirmation dialog
+    if (showRestoreDialog) {
+        AlertDialog(
+            onDismissRequest = { showRestoreDialog = false },
+            title = { Text("Restore Library") },
+            text = { 
+                Text("This will restore your library from the most recent backup file in Downloads. This will replace your current library and settings. Are you sure?")
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showRestoreDialog = false
+                        onRestoreLibrary()
+                    }
+                ) {
+                    Text("Restore")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showRestoreDialog = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
     }
 }
 
