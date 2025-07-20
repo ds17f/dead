@@ -60,8 +60,27 @@ fun DeadArchiveNavigation(
         libraryScreen(
             onNavigateToPlayer = { recording -> navController.navigate("player/${recording.identifier}") },
             onNavigateToShow = { show -> 
+                Log.d(TAG, "Library: attempting to navigate to show ${show.showId}")
+                Log.d(TAG, "Library: show has ${show.recordings.size} recordings")
+                Log.d(TAG, "Library: show.bestRecording = ${show.bestRecording?.identifier}")
+                
                 show.bestRecording?.let { recording ->
-                    navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
+                    val route = "playlist/${recording.identifier}?showId=${show.showId}"
+                    Log.d(TAG, "Library: navigating to $route")
+                    navController.navigate(route)
+                } ?: run {
+                    Log.w(TAG, "Library: show ${show.showId} has no bestRecording - cannot navigate to playlist")
+                    if (show.recordings.isNotEmpty()) {
+                        // Fallback: navigate to first recording if no best recording available
+                        val firstRecording = show.recordings.first()
+                        val route = "playlist/${firstRecording.identifier}?showId=${show.showId}"
+                        Log.d(TAG, "Library: fallback navigation to $route")
+                        navController.navigate(route)
+                    } else {
+                        Log.e(TAG, "Library: show ${show.showId} has no recordings at all - cannot navigate")
+                        Log.e(TAG, "Library: show details - date: ${show.date}, venue: ${show.venue}")
+                        Log.e(TAG, "Library: this might be a foreign key relationship issue from the refactor")
+                    }
                 }
             }
         )

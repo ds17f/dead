@@ -1,5 +1,7 @@
 package com.deadarchive.core.model
 
+import com.deadarchive.core.model.util.VenueUtil
+
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -47,7 +49,7 @@ data class Show(
             } else {
                 date
             }
-            return "${dateOnly}_${venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and")?.replace("'", "") ?: "Unknown"}"
+            return "${dateOnly}_${VenueUtil.normalizeVenue(venue)}"
         }
     
     val displayTitle: String

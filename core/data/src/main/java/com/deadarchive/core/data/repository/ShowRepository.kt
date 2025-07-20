@@ -11,6 +11,7 @@ import com.deadarchive.core.model.AudioFile
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.deadarchive.core.network.mapper.*
+import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.data.service.AudioFormatFilterService
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -586,7 +587,7 @@ class ShowRepositoryImpl @Inject constructor(
                         // Save recordings with proper showId associations
                         val recordingEntities = recordings.map { recording ->
                             val normalizedDate = normalizeDate(recording.concertDate)
-                            val showId = "${normalizedDate}_${normalizeVenue(recording.concertVenue)}"
+                            val showId = "${normalizedDate}_${VenueUtil.normalizeVenue(recording.concertVenue)}"
                             android.util.Log.d("ShowRepository", "🌐 Mapping recording ${recording.identifier} to showId '$showId'")
                             RecordingEntity.fromRecording(recording, showId)
                         }
@@ -809,7 +810,7 @@ class ShowRepositoryImpl @Inject constructor(
         // Group recordings by normalized date + venue
         val groupedRecordings = recordings.groupBy { recording ->
             val normalizedDate = normalizeDate(recording.concertDate)
-            val normalizedVenue = normalizeVenue(recording.concertVenue)
+            val normalizedVenue = VenueUtil.normalizeVenue(recording.concertVenue)
             val showId = "${normalizedDate}_${normalizedVenue}"
             android.util.Log.d("ShowRepository", "🔧 Recording ${recording.identifier}: date='${recording.concertDate}' → '$normalizedDate', venue='${recording.concertVenue}' → '$normalizedVenue', showId='$showId'")
             showId
@@ -835,7 +836,7 @@ class ShowRepositoryImpl @Inject constructor(
                     continue
                 }
                 
-                val normalizedVenue = normalizeVenue(firstRecording.concertVenue)
+                val normalizedVenue = VenueUtil.normalizeVenue(firstRecording.concertVenue)
                 val showId = "${normalizedDate}_${normalizedVenue}"
                 
                 // Debug: Show venue normalization in action
@@ -944,50 +945,6 @@ class ShowRepositoryImpl @Inject constructor(
     /**
      * Normalize venue name to eliminate duplicates caused by inconsistent venue names
      */
-    private fun normalizeVenue(venue: String?): String {
-        if (venue.isNullOrBlank()) return "Unknown"
-        
-        return venue
-            // Remove punctuation that causes issues
-            .replace("'", "")      // Veterans' -> Veterans
-            .replace("'", "")      // Smart quote
-            .replace(".", "")      // U.C.S.B. -> UCSB
-            .replace("\"", "")     // Remove quotes
-            .replace("(", "_")     // Convert parens to underscores
-            .replace(")", "_")
-            
-            // Normalize separators
-            .replace(" - ", "_")   // Common separator
-            .replace(" – ", "_")   // Em dash
-            .replace(", ", "_")    // Comma separator
-            .replace(" & ", "_and_")
-            .replace("&", "_and_")
-            
-            // Standardize common word variations
-            .replace("Theatre", "Theater", ignoreCase = true)
-            .replace("Center", "Center", ignoreCase = true)  // Keep consistent
-            .replace("Coliseum", "Coliseum", ignoreCase = true)
-            
-            // University abbreviations (most common cases)
-            .replace(" University", "_U", ignoreCase = true)
-            .replace(" College", "_C", ignoreCase = true)
-            .replace(" State", "_St", ignoreCase = true)
-            .replace("Memorial", "Mem", ignoreCase = true)
-            .replace("Auditorium", "Aud", ignoreCase = true)
-            .replace("Stadium", "Stad", ignoreCase = true)
-            
-            // Remove common filler words
-            .replace(" The ", "_", ignoreCase = true)
-            .replace("The ", "", ignoreCase = true)
-            .replace(" of ", "_", ignoreCase = true)
-            .replace(" at ", "_", ignoreCase = true)
-            
-            // Clean up and normalize
-            .replace(Regex("\\s+"), "_")     // Any whitespace to underscore
-            .replace(Regex("_+"), "_")       // Multiple underscores to single
-            .trim('_')                       // Remove leading/trailing underscores
-            .lowercase()                     // Consistent case
-    }
 
     /**
      * Check if cache entry is expired
