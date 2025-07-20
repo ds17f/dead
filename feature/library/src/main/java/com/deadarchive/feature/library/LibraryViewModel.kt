@@ -23,6 +23,20 @@ import kotlinx.coroutines.launch
 import com.deadarchive.core.model.DownloadStatus
 import javax.inject.Inject
 
+enum class LibrarySortOption(val displayName: String) {
+    DATE_ASCENDING("Date ↑"),
+    DATE_DESCENDING("Date ↓"), 
+    ADDED_ASCENDING("Added ↑"),
+    ADDED_DESCENDING("Added ↓")
+}
+
+enum class DecadeFilter(val displayName: String, val decade: String?) {
+    ALL("All", null),
+    SEVENTIES("70s", "197"),
+    EIGHTIES("80s", "198"), 
+    NINETIES("90s", "199")
+}
+
 @HiltViewModel
 class LibraryViewModel @Inject constructor(
     private val libraryRepository: LibraryRepository,
@@ -41,6 +55,14 @@ class LibraryViewModel @Inject constructor(
     private val _showConfirmationDialog = MutableStateFlow<Show?>(null)
     val showConfirmationDialog: StateFlow<Show?> = _showConfirmationDialog.asStateFlow()
     
+    // Sort option state
+    private val _sortOption = MutableStateFlow(LibrarySortOption.DATE_DESCENDING)
+    val sortOption: StateFlow<LibrarySortOption> = _sortOption.asStateFlow()
+    
+    // Decade filter state
+    private val _decadeFilter = MutableStateFlow(DecadeFilter.ALL)
+    val decadeFilter: StateFlow<DecadeFilter> = _decadeFilter.asStateFlow()
+    
     init {
         loadLibraryItems()
         // Start monitoring download states
@@ -52,22 +74,24 @@ class LibraryViewModel @Inject constructor(
             try {
                 _uiState.value = LibraryUiState.Loading
                 
-                // Use combine to properly handle both flows with exception safety
+                // Use combine to properly handle flows with exception safety, filtering and sorting
                 combine(
                     libraryRepository.getAllLibraryItems(),
-                    showRepository.getLibraryShows()
-                ) { libraryItems, libraryShows ->
+                    showRepository.getLibraryShows(),
+                    _sortOption,
+                    _decadeFilter
+                ) { libraryItems, libraryShows, sortOption, decadeFilter ->
                     println("DEBUG LibraryViewModel: Found ${libraryItems.size} library items")
                     libraryItems.forEach { item ->
                         println("DEBUG LibraryViewModel: Library item - showId: ${item.showId}, type: ${item.type}")
                     }
                     println("DEBUG LibraryViewModel: Found ${libraryShows.size} library shows")
                     
-                    // Find matching shows with recordings - sort by show date for consistency
-                    val matchedLibraryShows = libraryItems.map { libraryItem ->
+                    // Find matching shows with recordings and prepare for sorting
+                    val matchedLibraryShowsWithTimestamp = libraryItems.map { libraryItem ->
                         val matchingShow = libraryShows.find { show -> show.showId == libraryItem.showId }
                         
-                        if (matchingShow != null) {
+                        val show = if (matchingShow != null) {
                             // Use the actual show data with recordings
                             println("DEBUG LibraryViewModel: Found show ${libraryItem.showId} with ${matchingShow.recordings.size} recordings")
                             if (libraryItem.showId.contains("1995-07-09")) {
@@ -97,7 +121,43 @@ class LibraryViewModel @Inject constructor(
                                 isInLibrary = true
                             )
                         }
-                    }.sortedBy { it.date } // Sort by show date for consistent ordering
+                        
+                        // Pair show with its library item for sorting
+                        Pair(show, libraryItem)
+                    }
+                    
+                    // Apply decade filtering first
+                    val filteredShows = if (decadeFilter.decade != null) {
+                        matchedLibraryShowsWithTimestamp.filter { (show, _) ->
+                            show.date.startsWith(decadeFilter.decade)
+                        }
+                    } else {
+                        matchedLibraryShowsWithTimestamp
+                    }
+                    
+                    // Apply sorting based on sort option
+                    val matchedLibraryShows = when (sortOption) {
+                        LibrarySortOption.DATE_ASCENDING -> {
+                            filteredShows
+                                .sortedBy { it.first.date }
+                                .map { it.first }
+                        }
+                        LibrarySortOption.DATE_DESCENDING -> {
+                            filteredShows
+                                .sortedByDescending { it.first.date }
+                                .map { it.first }
+                        }
+                        LibrarySortOption.ADDED_ASCENDING -> {
+                            filteredShows
+                                .sortedBy { it.second.addedTimestamp }
+                                .map { it.first }
+                        }
+                        LibrarySortOption.ADDED_DESCENDING -> {
+                            filteredShows
+                                .sortedByDescending { it.second.addedTimestamp }
+                                .map { it.first }
+                        }
+                    }
                     println("DEBUG LibraryViewModel: Created ${matchedLibraryShows.size} shows for display")
                     LibraryUiState.Success(libraryItems, matchedLibraryShows)
                 }
@@ -368,6 +428,20 @@ class LibraryViewModel @Inject constructor(
                 }
             }
         }
+    }
+    
+    /**
+     * Set the sort option
+     */
+    fun setSortOption(option: LibrarySortOption) {
+        _sortOption.value = option
+    }
+    
+    /**
+     * Set the decade filter
+     */
+    fun setDecadeFilter(filter: DecadeFilter) {
+        _decadeFilter.value = filter
     }
 }
 

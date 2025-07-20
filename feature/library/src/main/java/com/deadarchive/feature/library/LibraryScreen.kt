@@ -2,6 +2,7 @@ package com.deadarchive.feature.library
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.clickable
 import androidx.compose.ui.res.painterResource
@@ -46,10 +47,13 @@ fun LibraryScreen(
     val latestBackupInfo by settingsViewModel.latestBackupInfo.collectAsState()
     val settingsUiState by settingsViewModel.uiState.collectAsState()
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
+    val sortOption by viewModel.sortOption.collectAsState()
+    val decadeFilter by viewModel.decadeFilter.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
     // Bottom sheet and confirmation states
     var showBottomSheet by remember { mutableStateOf(false) }
+    var showSortBottomSheet by remember { mutableStateOf(false) }
     var showBackupConfirmation by remember { mutableStateOf(false) }
     var showClearConfirmation by remember { mutableStateOf(false) }
     var showRestoreConfirmation by remember { mutableStateOf(false) }
@@ -115,7 +119,7 @@ fun LibraryScreen(
             }
             
             is LibraryUiState.Success -> {
-                if (state.shows.isEmpty()) {
+                if (state.libraryItems.isEmpty()) {
                     Box(
                         modifier = Modifier.fillMaxSize(),
                         contentAlignment = Alignment.Center
@@ -206,72 +210,127 @@ fun LibraryScreen(
                         }
                     }
                 } else {
-                    LazyColumn(
-                        modifier = Modifier.fillMaxSize(),
-                        contentPadding = PaddingValues(16.dp),
-                        verticalArrangement = Arrangement.spacedBy(8.dp)
-                    ) {
-                        item {
-                            Card(
-                                modifier = Modifier.fillMaxWidth(),
-                                colors = CardDefaults.cardColors(
-                                    containerColor = MaterialTheme.colorScheme.primaryContainer
+                    Column(modifier = Modifier.fillMaxSize()) {
+                        // Decade filter buttons
+                        LazyRow(
+                            modifier = Modifier.fillMaxWidth(),
+                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                            horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            items(DecadeFilter.values()) { filter ->
+                                FilterChip(
+                                    selected = decadeFilter == filter,
+                                    onClick = { viewModel.setDecadeFilter(filter) },
+                                    label = { Text(filter.displayName) }
                                 )
-                            ) {
-                                Column(
-                                    modifier = Modifier.padding(16.dp)
-                                ) {
-                                    Text(
-                                        text = "Library Summary",
-                                        style = MaterialTheme.typography.titleMedium,
-                                        color = MaterialTheme.colorScheme.onPrimaryContainer
-                                    )
-                                    Spacer(modifier = Modifier.height(8.dp))
-                                    Text(
-                                        text = "${state.shows.size} shows in your library",
-                                        style = MaterialTheme.typography.bodyMedium,
-                                        color = MaterialTheme.colorScheme.onPrimaryContainer
-                                    )
-                                }
                             }
                         }
                         
-                        items(
-                            items = state.shows,
-                            key = { show -> show.showId }
-                        ) { show ->
-                            ExpandableConcertItem(
-                                show = show,
-                                settings = settings,
-                                onShowClick = { clickedShow: Show ->
-                                    // Navigate to show (playlist)
-                                    onNavigateToShow(clickedShow)
-                                },
-                                onRecordingClick = { recording: Recording ->
-                                    onNavigateToRecording(recording)
-                                },
-                                onLibraryClick = { clickedShow: Show ->
-                                    showToRemove = clickedShow
-                                },
-                                onDownloadClick = { recording: Recording ->
-                                    viewModel.downloadRecording(recording)
-                                },
-                                getDownloadState = { recording: Recording ->
-                                    viewModel.getDownloadState(recording)
-                                },
-                                onShowDownloadClick = { show: Show ->
-                                    viewModel.downloadShow(show)
-                                },
-                                onCancelDownloadClick = { show: Show ->
-                                    viewModel.cancelShowDownloads(show)
-                                },
-                                onRemoveDownloadClick = { show: Show ->
-                                    viewModel.showRemoveDownloadConfirmation(show)
-                                },
-                                getShowDownloadState = { show: Show ->
-                                    viewModel.getShowDownloadState(show)
-                                }
+                        // Sort options bar
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = 16.dp, vertical = 4.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = "Sort by:",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
+                            
+                            Spacer(modifier = Modifier.width(8.dp))
+                            
+                            TextButton(onClick = { showSortBottomSheet = true }) {
+                                Text(sortOption.displayName)
+                            }
+                        }
+                        
+                        HorizontalDivider()
+                        
+                        LazyColumn(
+                            modifier = Modifier.fillMaxSize(),
+                            contentPadding = PaddingValues(16.dp),
+                            verticalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            if (state.shows.isEmpty()) {
+                                // No results state - shows exist in library but filtered out
+                                item {
+                                    Box(
+                                        modifier = Modifier.fillParentMaxSize(),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        Column(
+                                            horizontalAlignment = Alignment.CenterHorizontally,
+                                            verticalArrangement = Arrangement.spacedBy(16.dp),
+                                            modifier = Modifier.padding(32.dp)
+                                        ) {
+                                            Icon(
+                                                painter = painterResource(R.drawable.ic_search),
+                                                contentDescription = "No results",
+                                                modifier = Modifier.size(48.dp),
+                                                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                                            )
+                                            
+                                            Text(
+                                                text = "No shows found",
+                                                style = MaterialTheme.typography.titleMedium,
+                                                color = MaterialTheme.colorScheme.onSurface
+                                            )
+                                            
+                                            val filterText = when (decadeFilter) {
+                                                DecadeFilter.ALL -> "Try adjusting your filters"
+                                                else -> "No shows found for the ${decadeFilter.displayName}. Try a different decade or clear filters."
+                                            }
+                                            
+                                            Text(
+                                                text = filterText,
+                                                style = MaterialTheme.typography.bodyMedium,
+                                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                                textAlign = TextAlign.Center
+                                            )
+                                        }
+                                    }
+                                }
+                            } else {
+                                items(
+                                    items = state.shows,
+                                    key = { show -> show.showId }
+                                ) { show ->
+                                    ExpandableConcertItem(
+                                        show = show,
+                                        settings = settings,
+                                        onShowClick = { clickedShow: Show ->
+                                            // Navigate to show (playlist)
+                                            onNavigateToShow(clickedShow)
+                                        },
+                                        onRecordingClick = { recording: Recording ->
+                                            onNavigateToRecording(recording)
+                                        },
+                                        onLibraryClick = { clickedShow: Show ->
+                                            showToRemove = clickedShow
+                                        },
+                                        onDownloadClick = { recording: Recording ->
+                                            viewModel.downloadRecording(recording)
+                                        },
+                                        getDownloadState = { recording: Recording ->
+                                            viewModel.getDownloadState(recording)
+                                        },
+                                        onShowDownloadClick = { show: Show ->
+                                            viewModel.downloadShow(show)
+                                        },
+                                        onCancelDownloadClick = { show: Show ->
+                                            viewModel.cancelShowDownloads(show)
+                                        },
+                                        onRemoveDownloadClick = { show: Show ->
+                                            viewModel.showRemoveDownloadConfirmation(show)
+                                        },
+                                        getShowDownloadState = { show: Show ->
+                                            viewModel.getShowDownloadState(show)
+                                        }
+                                    )
+                                }
+                            }
                         }
                     }
                 }
@@ -432,6 +491,60 @@ fun LibraryScreen(
                 }
             }
         )
+    }
+    
+    // Sort options bottom sheet
+    if (showSortBottomSheet) {
+        ModalBottomSheet(
+            onDismissRequest = { showSortBottomSheet = false }
+        ) {
+            SortOptionsBottomSheet(
+                currentSortOption = sortOption,
+                onSortOptionSelected = { option ->
+                    viewModel.setSortOption(option)
+                    showSortBottomSheet = false
+                }
+            )
+        }
+    }
+}
+
+@Composable
+private fun SortOptionsBottomSheet(
+    currentSortOption: LibrarySortOption,
+    onSortOptionSelected: (LibrarySortOption) -> Unit
+) {
+    Column(
+        modifier = Modifier.padding(16.dp)
+    ) {
+        Text(
+            text = "Sort library by",
+            style = MaterialTheme.typography.titleMedium,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
+        
+        LibrarySortOption.values().forEach { option ->
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clickable { onSortOptionSelected(option) }
+                    .padding(vertical = 12.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                RadioButton(
+                    selected = currentSortOption == option,
+                    onClick = { onSortOptionSelected(option) }
+                )
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = option.displayName,
+                    style = MaterialTheme.typography.bodyLarge
+                )
+            }
+        }
+        
+        // Bottom padding for gesture area
+        Spacer(modifier = Modifier.height(16.dp))
     }
 }
 
