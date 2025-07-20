@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.27.1] - 2025-07-20
+
+### Bug Fixes
+* standardize venue normalization across all data sync paths (71c75a9)
+
+
 ## [0.27.0] - 2025-07-20
 
 ### New Features
@@ -14,8 +20,6 @@
 * ensure restored shows have recordings for navigation (346916e)
 * complete backup and restore functionality (dc9d755)
 * resolve circular dependencies and restore audio playback (bbaf62e)
-
-
 ## [0.26.0] - 2025-07-19
 
 ### New Features
