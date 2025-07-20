@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.28.0] - 2025-07-20
+
+### New Features
+* enhance library sort UI with chevron indicators and scroll behavior (ec3253b)
+* implement Spotify-style sort display in library (27013e4)
+* implement no results state for decade filtering in library (a448502)
+* optimize era loading performance and fix race conditions (2205a33)
+
+
 ## [0.27.1] - 2025-07-20
 
 ### Bug Fixes
 * standardize venue normalization across all data sync paths (71c75a9)
-
-
 ## [0.27.0] - 2025-07-20
 
 ### New Features
