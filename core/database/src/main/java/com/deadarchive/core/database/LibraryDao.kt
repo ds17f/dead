@@ -66,4 +66,7 @@ interface LibraryDao {
     
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addToLibrary(libraryEntry: LibraryEntity)
+    
+    @Query("DELETE FROM library_items")
+    suspend fun clearLibrary()
 }

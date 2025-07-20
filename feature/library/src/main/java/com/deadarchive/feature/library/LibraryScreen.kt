@@ -3,8 +3,11 @@ package com.deadarchive.feature.library
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.clickable
 import androidx.compose.ui.res.painterResource
 import com.deadarchive.core.design.R
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material3.*
 import com.deadarchive.core.design.component.IconResources
 import androidx.compose.runtime.*
@@ -45,12 +48,26 @@ fun LibraryScreen(
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     
+    // Bottom sheet and confirmation states
+    var showBottomSheet by remember { mutableStateOf(false) }
+    var showBackupConfirmation by remember { mutableStateOf(false) }
+    var showClearConfirmation by remember { mutableStateOf(false) }
+    var showRestoreConfirmation by remember { mutableStateOf(false) }
+    
     Column(
         modifier = modifier.fillMaxSize()
     ) {
         // Top App Bar
         TopAppBar(
-            title = { Text("Library") }
+            title = { Text("Library") },
+            actions = {
+                IconButton(onClick = { showBottomSheet = true }) {
+                    Icon(
+                        imageVector = Icons.Default.MoreVert,
+                        contentDescription = "Library options"
+                    )
+                }
+            }
         )
         
         when (val state = uiState) {
@@ -166,7 +183,7 @@ fun LibraryScreen(
                             // Always show the restore button
                             Button(
                                 onClick = { 
-                                    settingsViewModel.restoreLibrary()
+                                    showRestoreConfirmation = true
                                 },
                                 enabled = hasValidBackup && !isLoading
                             ) {
@@ -262,6 +279,119 @@ fun LibraryScreen(
         }
     }
     
+    // Bottom sheet for library options
+    if (showBottomSheet) {
+        ModalBottomSheet(
+            onDismissRequest = { showBottomSheet = false }
+        ) {
+            LibraryOptionsBottomSheet(
+                hasLibraryItems = when (val state = uiState) {
+                    is LibraryUiState.Success -> state.shows.isNotEmpty()
+                    else -> false
+                },
+                hasBackup = latestBackupInfo != null,
+                isLoading = settingsUiState.isLoading,
+                onBackupClick = {
+                    showBottomSheet = false
+                    showBackupConfirmation = true
+                },
+                onClearClick = {
+                    showBottomSheet = false
+                    showClearConfirmation = true
+                },
+                onDismiss = { showBottomSheet = false }
+            )
+        }
+    }
+    
+    // Confirmation dialog for backup
+    if (showBackupConfirmation) {
+        AlertDialog(
+            onDismissRequest = { showBackupConfirmation = false },
+            title = { Text("Backup Library") },
+            text = { 
+                Text("This will create a backup of your current library and save it to app storage. Continue?")
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showBackupConfirmation = false
+                        settingsViewModel.backupLibrary()
+                    }
+                ) {
+                    Text("Backup")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showBackupConfirmation = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+    
+    // Confirmation dialog for clear library
+    if (showClearConfirmation) {
+        AlertDialog(
+            onDismissRequest = { showClearConfirmation = false },
+            title = { Text("Clear Library") },
+            text = { 
+                Text("This will remove all shows from your library. This action cannot be undone. Continue?")
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showClearConfirmation = false
+                        viewModel.clearLibrary()
+                    }
+                ) {
+                    Text("Clear")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showClearConfirmation = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+    
+    // Confirmation dialog for restore
+    if (showRestoreConfirmation) {
+        AlertDialog(
+            onDismissRequest = { showRestoreConfirmation = false },
+            title = { Text("Restore Library") },
+            text = { 
+                val backupInfo = latestBackupInfo
+                val message = if (backupInfo != null) {
+                    val formattedDate = remember(backupInfo.createdAt) {
+                        java.text.SimpleDateFormat("MMM d, yyyy 'at' h:mm a", java.util.Locale.getDefault())
+                            .format(java.util.Date(backupInfo.createdAt))
+                    }
+                    "This will restore your library from the backup created on $formattedDate with ${backupInfo.showCount} shows. Continue?"
+                } else {
+                    "This will restore your library from the most recent backup. Continue?"
+                }
+                Text(message)
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        showRestoreConfirmation = false
+                        settingsViewModel.restoreLibrary()
+                    }
+                ) {
+                    Text("Restore")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showRestoreConfirmation = false }) {
+                    Text("Cancel")
+                }
+            }
+        )
+    }
+    
     // Confirmation dialog for removing downloads
     showConfirmationDialog?.let { show ->
         ConfirmationDialog(
@@ -302,6 +432,120 @@ fun LibraryScreen(
                 }
             }
         )
+    }
+}
+
+@Composable
+private fun LibraryOptionsBottomSheet(
+    hasLibraryItems: Boolean,
+    hasBackup: Boolean,
+    isLoading: Boolean,
+    onBackupClick: () -> Unit,
+    onClearClick: () -> Unit,
+    onDismiss: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ) {
+        Text(
+            text = "Library Options",
+            style = MaterialTheme.typography.titleMedium,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+        
+        // Backup option
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable(enabled = hasLibraryItems && !isLoading) { 
+                    onBackupClick()
+                }
+                .padding(vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                painter = IconResources.DataManagement.Backup(),
+                contentDescription = null,
+                modifier = Modifier.size(24.dp),
+                tint = if (hasLibraryItems && !isLoading) {
+                    MaterialTheme.colorScheme.onSurface
+                } else {
+                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                }
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Backup Library",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = if (hasLibraryItems && !isLoading) {
+                        MaterialTheme.colorScheme.onSurface
+                    } else {
+                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                    }
+                )
+                Text(
+                    text = if (hasLibraryItems) {
+                        "Save your library to app storage"
+                    } else {
+                        "No shows to backup"
+                    },
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+        
+        HorizontalDivider()
+        
+        // Clear option
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable(enabled = hasLibraryItems && !isLoading) { 
+                    onClearClick()
+                }
+                .padding(vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                painter = painterResource(R.drawable.ic_close),
+                contentDescription = null,
+                modifier = Modifier.size(24.dp),
+                tint = if (hasLibraryItems && !isLoading) {
+                    MaterialTheme.colorScheme.error
+                } else {
+                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                }
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Clear Library",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = if (hasLibraryItems && !isLoading) {
+                        MaterialTheme.colorScheme.error
+                    } else {
+                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f)
+                    }
+                )
+                Text(
+                    text = if (hasLibraryItems) {
+                        "Remove all shows from library"
+                    } else {
+                        "Library is already empty"
+                    },
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+        
+        // Bottom padding for gesture area
+        Spacer(modifier = Modifier.height(16.dp))
     }
 }
 

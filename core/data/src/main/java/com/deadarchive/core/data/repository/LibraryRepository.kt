@@ -50,6 +50,11 @@ interface LibraryRepository {
      */
     suspend fun getLibraryItemCount(): Int
     
+    /**
+     * Clear all items from library
+     */
+    suspend fun clearLibrary()
+    
 }
 
 @Singleton
@@ -175,5 +180,30 @@ class LibraryRepositoryImpl @Inject constructor(
     
     override suspend fun getLibraryItemCount(): Int {
         return libraryDao.getLibraryItemCount()
+    }
+    
+    override suspend fun clearLibrary() {
+        try {
+            println("DEBUG LibraryRepository: Starting to clear entire library")
+            
+            // 1. Get all library items to update their show entities
+            val libraryItems = libraryDao.getAllLibraryItemsSync()
+            
+            // 2. Update all shows to mark as not in library
+            libraryItems.forEach { libraryEntity ->
+                if (libraryEntity.type == LibraryItemType.SHOW.name) {
+                    val showId = libraryEntity.id.removePrefix("show_")
+                    showDao.updateLibraryStatus(showId, false)
+                }
+            }
+            
+            // 3. Clear all library items
+            libraryDao.clearLibrary()
+            
+            println("DEBUG LibraryRepository: Successfully cleared library (${libraryItems.size} items)")
+        } catch (e: Exception) {
+            println("ERROR LibraryRepository: Failed to clear library: ${e.message}")
+            e.printStackTrace()
+        }
     }
 }

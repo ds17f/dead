@@ -143,6 +143,16 @@ class LibraryViewModel @Inject constructor(
         }
     }
     
+    fun clearLibrary() {
+        viewModelScope.launch {
+            try {
+                libraryRepository.clearLibrary()
+            } catch (e: Exception) {
+                // TODO: Handle error appropriately
+            }
+        }
+    }
+    
     fun retry() {
         loadLibraryItems()
     }
