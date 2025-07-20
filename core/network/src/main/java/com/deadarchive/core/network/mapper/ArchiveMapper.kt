@@ -5,6 +5,7 @@ import com.deadarchive.core.model.AudioQuality
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Track
+import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.network.model.ArchiveMetadataResponse
 import com.deadarchive.core.network.model.ArchiveSearchResponse
 import java.net.URLEncoder
@@ -139,12 +140,8 @@ object ArchiveMapper {
             // For recordings on the same date, use fuzzy venue matching
             recordings.forEach { recording ->
                 val rawVenue = recording.concertVenue?.trim()
-                // Normalize empty/null venues to a consistent value
-                val venue = when {
-                    rawVenue.isNullOrBlank() -> "Unknown"
-                    rawVenue.equals("null", ignoreCase = true) -> "Unknown"  // Handle string "null" 
-                    else -> rawVenue
-                }
+                // Normalize venue using the canonical venue normalization
+                val venue = VenueUtil.normalizeVenue(rawVenue)
                 
                 // Find existing group with similar venue name
                 val matchingGroupKey = finalGroups.keys.find { existingKey ->

@@ -12,6 +12,7 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.network.ArchiveApiService
 import com.deadarchive.core.network.mapper.ArchiveMapper
 import com.deadarchive.core.network.model.ArchiveSearchResponse
+import com.deadarchive.core.model.util.VenueUtil
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -274,7 +275,7 @@ class DataSyncServiceImpl @Inject constructor(
             groupedShows.forEach { show ->
                 // Create consistent showId from the grouped show
                 val simpleDateFormat = normalizeDate(show.date)
-                val showId = "${simpleDateFormat}_${show.venue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                val showId = "${simpleDateFormat}_${VenueUtil.normalizeVenue(show.venue)}"
                 
                 // Convert all recordings in this show to RecordingEntity with the same showId
                 val recordingEntities = show.recordings.map { recording ->
