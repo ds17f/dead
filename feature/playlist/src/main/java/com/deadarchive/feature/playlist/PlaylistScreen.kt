@@ -23,7 +23,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.zIndex
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.foundation.Image
 import androidx.hilt.navigation.compose.hiltViewModel  
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
@@ -224,227 +227,327 @@ fun PlaylistScreen(
                 "recording: ${currentRecording?.title}")
     }
     
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = {
-                    currentRecording?.let { recording ->
-                        Column(
-                            modifier = Modifier.fillMaxWidth(),
-                            verticalArrangement = Arrangement.Center,
-                            horizontalAlignment = Alignment.CenterHorizontally
-                        ) {
-                            // First line: Date only
-                            if (recording.concertDate.isNotBlank()) {
-                                Text(
-                                    text = formatConcertDate(recording.concertDate),
-                                    style = MaterialTheme.typography.titleMedium,
-                                    fontWeight = FontWeight.Medium,
-                                    color = MaterialTheme.colorScheme.onSurface,
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Ellipsis,
-                                    textAlign = TextAlign.Center,
-                                    modifier = Modifier.fillMaxWidth()
-                                )
-                            }
-                            
-                            // Second line: Venue, City/State
-                            val venueLine = buildString {
-                                if (!recording.concertVenue.isNullOrBlank()) {
-                                    append(recording.concertVenue)
-                                }
-                                if (!recording.concertLocation.isNullOrBlank()) {
-                                    if (!recording.concertVenue.isNullOrBlank()) {
-                                        append(", ")
-                                    }
-                                    append(recording.concertLocation)
-                                }
-                            }
-                            
-                            if (venueLine.isNotBlank()) {
-                                ScrollingText(
-                                    text = venueLine,
-                                    style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                    modifier = Modifier.fillMaxWidth()
-                                )
-                            }
-                        }
-                    } ?: Text(
-                        text = "Playlist",
-                        style = MaterialTheme.typography.titleLarge
-                    )
-                },
-                navigationIcon = {
-                    IconButton(onClick = onNavigateBack) {
-                        Icon(painter = IconResources.Navigation.Back(), contentDescription = "Back")
-                    }
-                },
-                actions = {
-                    // Share button
-                    if (currentRecording != null) {
-                        IconButton(
-                            onClick = {
-                                // Create show object from recording data
-                                val show = Show(
-                                    date = currentRecording!!.concertDate,
-                                    venue = currentRecording!!.concertVenue,
-                                    location = currentRecording!!.concertLocation
-                                )
-                                shareService.shareShow(show, currentRecording!!)
-                            }
-                        ) {
-                            Icon(
-                                painter = IconResources.Content.Share(), 
-                                contentDescription = "Share show",
-                                tint = MaterialTheme.colorScheme.onSurface
-                            )
-                        }
-                    }
-                }
+    Box(modifier = Modifier.fillMaxSize()) {
+        // Back arrow overlay at the top
+        IconButton(
+            onClick = onNavigateBack,
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(16.dp)
+                .size(40.dp)
+                .clip(CircleShape)
+                .background(
+                    MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
+                    CircleShape
+                )
+                .zIndex(1f)
+        ) {
+            Icon(
+                painter = IconResources.Navigation.Back(), 
+                contentDescription = "Back",
+                tint = MaterialTheme.colorScheme.onSurface
             )
         }
-    ) { paddingValues ->
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(paddingValues)
+        
+        // Main content - Spotify-style LazyColumn
+        LazyColumn(
+            modifier = Modifier.fillMaxSize()
         ) {
             when {
                 uiState.isLoading -> {
-                    Box(
-                        modifier = Modifier.fillMaxSize(),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        CircularProgressIndicator()
+                    item {
+                        Box(
+                            modifier = Modifier.fillParentMaxSize(),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            CircularProgressIndicator()
+                        }
                     }
                 }
                 
                 uiState.error != null -> {
-                    Box(
-                        modifier = Modifier.fillMaxSize(),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Column(
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                            verticalArrangement = Arrangement.spacedBy(16.dp)
+                    item {
+                        Box(
+                            modifier = Modifier.fillParentMaxSize(),
+                            contentAlignment = Alignment.Center
                         ) {
-                            Icon(
-                                painter = IconResources.Status.Error(),
-                                contentDescription = "Error",
-                                tint = MaterialTheme.colorScheme.error,
-                                modifier = Modifier.size(48.dp)
-                            )
-                            Text(
-                                text = uiState.error ?: "Unknown error",
-                                style = MaterialTheme.typography.bodyLarge,
-                                textAlign = TextAlign.Center,
-                                color = MaterialTheme.colorScheme.error
-                            )
-                            Button(onClick = { recordingId?.let { viewModel.loadRecording(it) } }) {
-                                Text("Retry")
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally,
+                                verticalArrangement = Arrangement.spacedBy(16.dp)
+                            ) {
+                                Icon(
+                                    painter = IconResources.Status.Error(),
+                                    contentDescription = "Error",
+                                    tint = MaterialTheme.colorScheme.error,
+                                    modifier = Modifier.size(48.dp)
+                                )
+                                Text(
+                                    text = uiState.error ?: "Unknown error",
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    textAlign = TextAlign.Center,
+                                    color = MaterialTheme.colorScheme.error
+                                )
+                                Button(onClick = { recordingId?.let { viewModel.loadRecording(it) } }) {
+                                    Text("Retry")
+                                }
                             }
                         }
                     }
                 }
                 
                 currentRecording == null -> {
-                    Box(
-                        modifier = Modifier.fillMaxSize(),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Text(
-                            text = "Loading recording...",
-                            style = MaterialTheme.typography.bodyLarge,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant
-                        )
-                    }
-                }
-                
-                uiState.tracks.isEmpty() -> {
-                    Column(
-                        modifier = Modifier.fillMaxSize()
-                    ) {
-                        // Recording header
-                        RecordingHeader(
-                            recording = currentRecording,
-                            onPlayRecording = { viewModel.playRecordingFromBeginning() },
-                            onLibraryClick = { viewModel.toggleLibrary() },
-                            onDownloadClick = { viewModel.downloadRecording() },
-                            onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
-                            onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
-                            onShowReviews = { showReviewDetails = true },
-                            onShowRecordingSelection = { showRecordingSelection = true },
-                            onPreviousShow = { viewModel.navigateToPreviousShow() },
-                            onNextShow = { viewModel.navigateToNextShow() },
-                            downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
-                            isInLibrary = false, // TODO: Add library state tracking
-                            hasAlternativeRecordings = hasAlternativeRecordings,
-                            isNavigationLoading = isNavigationLoading,
-                            modifier = Modifier.padding(16.dp)
-                        )
-                        
-                        // Empty tracks message
+                    item {
                         Box(
-                            modifier = Modifier
-                                .fillMaxSize()
-                                .padding(16.dp),
+                            modifier = Modifier.fillParentMaxSize(),
                             contentAlignment = Alignment.Center
                         ) {
-                            Column(
-                                horizontalAlignment = Alignment.CenterHorizontally,
-                                verticalArrangement = Arrangement.spacedBy(8.dp)
-                            ) {
-                                Text(
-                                    text = "No tracks available",
-                                    style = MaterialTheme.typography.bodyLarge,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                                )
-                                if (recordingId != null && !uiState.isLoading) {
-                                    Button(onClick = { viewModel.loadRecording(recordingId) }) {
-                                        Text("Retry")
-                                    }
-                                }
-                            }
+                            Text(
+                                text = "Loading recording...",
+                                style = MaterialTheme.typography.bodyLarge,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
                         }
                     }
                 }
                 
                 else -> {
-                    LazyColumn(
-                        modifier = Modifier.fillMaxSize(),
-                        contentPadding = PaddingValues(16.dp),
-                        verticalArrangement = Arrangement.spacedBy(16.dp)
-                    ) {
-                        item {
-                            RecordingHeader(
-                                recording = currentRecording,
-                                onPlayRecording = { viewModel.playRecordingFromBeginning() },
-                                onLibraryClick = { viewModel.toggleLibrary() },
-                                onDownloadClick = { viewModel.downloadRecording() },
-                                onCancelDownloadClick = { viewModel.cancelRecordingDownloads() },
-                                onRemoveDownloadClick = { viewModel.showRemoveDownloadConfirmation() },
-                                onShowReviews = { showReviewDetails = true },
-                                onShowRecordingSelection = { showRecordingSelection = true },
-                                onPreviousShow = { viewModel.navigateToPreviousShow() },
-                                onNextShow = { viewModel.navigateToNextShow() },
-                                downloadState = currentRecording?.let { downloadStates[it.identifier] } ?: com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded,
-                                isInLibrary = false, // TODO: Add library state tracking
-                                hasAlternativeRecordings = hasAlternativeRecordings,
-                                isNavigationLoading = isNavigationLoading
+                    // Album cover image
+                    item {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .aspectRatio(1f)
+                                .padding(horizontal = 32.dp, vertical = 16.dp)
+                        ) {
+                            Image(
+                                painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
+                                contentDescription = "Album Art",
+                                contentScale = ContentScale.Crop,
+                                modifier = Modifier
+                                    .fillMaxSize()
+                                    .clip(RoundedCornerShape(8.dp))
                             )
                         }
+                    }
+                    
+                    // Show info section
+                    currentRecording?.let { recording ->
+                        item {
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(horizontal = 24.dp),
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                // Show Date
+                                Text(
+                                    text = formatConcertDate(recording.concertDate),
+                                    style = MaterialTheme.typography.headlineSmall,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colorScheme.onSurface,
+                                    textAlign = TextAlign.Center
+                                )
+                                
+                                Spacer(modifier = Modifier.height(8.dp))
+                                
+                                // Venue, City, State
+                                val venueLine = buildString {
+                                    if (!recording.concertVenue.isNullOrBlank()) {
+                                        append(recording.concertVenue)
+                                    }
+                                    if (!recording.concertLocation.isNullOrBlank()) {
+                                        if (!recording.concertVenue.isNullOrBlank()) {
+                                            append(", ")
+                                        }
+                                        append(recording.concertLocation)
+                                    }
+                                }
+                                
+                                if (venueLine.isNotBlank()) {
+                                    Text(
+                                        text = venueLine,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        textAlign = TextAlign.Center,
+                                        maxLines = 2,
+                                        overflow = TextOverflow.Ellipsis
+                                    )
+                                }
+                            }
+                        }
                         
+                        // Review stars
+                        if (recording.hasRawRating) {
+                            item {
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(horizontal = 24.dp, vertical = 16.dp),
+                                    horizontalArrangement = Arrangement.Center
+                                ) {
+                                    InteractiveRatingDisplay(
+                                        rating = recording.rawRating,
+                                        reviewCount = recording.reviewCount,
+                                        confidence = recording.ratingConfidence,
+                                        onShowReviews = { showReviewDetails = true }
+                                    )
+                                }
+                            }
+                        }
+                        
+                        // Action row with icons
+                        item {
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(horizontal = 24.dp, vertical = 16.dp),
+                                horizontalArrangement = Arrangement.SpaceEvenly,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                // Previous show button
+                                IconButton(
+                                    onClick = { viewModel.navigateToPreviousShow() },
+                                    enabled = !isNavigationLoading,
+                                    modifier = Modifier.size(40.dp)
+                                ) {
+                                    if (isNavigationLoading) {
+                                        CircularProgressIndicator(
+                                            modifier = Modifier.size(20.dp),
+                                            strokeWidth = 2.dp
+                                        )
+                                    } else {
+                                        Icon(
+                                            painter = IconResources.Navigation.ChevronLeft(),
+                                            contentDescription = "Previous Show",
+                                            modifier = Modifier.size(24.dp)
+                                        )
+                                    }
+                                }
+                                
+                                // Library button
+                                IconButton(
+                                    onClick = { viewModel.toggleLibrary() },
+                                    modifier = Modifier.size(40.dp)
+                                ) {
+                                    Icon(
+                                        painter = IconResources.Content.LibraryAdd(), // TODO: Toggle based on library state
+                                        contentDescription = "Add to Library",
+                                        modifier = Modifier.size(24.dp)
+                                    )
+                                }
+                                
+                                // Download button
+                                IconButton(
+                                    onClick = { viewModel.downloadRecording() },
+                                    modifier = Modifier.size(40.dp)
+                                ) {
+                                    val downloadState = currentRecording?.let { downloadStates[it.identifier] } 
+                                        ?: ShowDownloadState.NotDownloaded
+                                    
+                                    when (downloadState) {
+                                        is ShowDownloadState.NotDownloaded -> {
+                                            Icon(
+                                                painter = IconResources.Content.FileDownload(),
+                                                contentDescription = "Download Recording",
+                                                modifier = Modifier.size(24.dp)
+                                            )
+                                        }
+                                        is ShowDownloadState.Downloading -> {
+                                            CircularProgressIndicator(
+                                                progress = { downloadState.trackProgress },
+                                                modifier = Modifier.size(24.dp),
+                                                strokeWidth = 2.dp
+                                            )
+                                        }
+                                        is ShowDownloadState.Downloaded -> {
+                                            Icon(
+                                                painter = IconResources.Status.CheckCircle(),
+                                                contentDescription = "Downloaded",
+                                                modifier = Modifier.size(24.dp),
+                                                tint = MaterialTheme.colorScheme.primary
+                                            )
+                                        }
+                                        is ShowDownloadState.Failed -> {
+                                            Icon(
+                                                painter = IconResources.Content.FileDownload(),
+                                                contentDescription = "Download Failed",
+                                                modifier = Modifier.size(24.dp),
+                                                tint = MaterialTheme.colorScheme.error
+                                            )
+                                        }
+                                    }
+                                }
+                                
+                                // Setlist button
+                                IconButton(
+                                    onClick = { /* TODO: Show setlist */ },
+                                    modifier = Modifier.size(40.dp)
+                                ) {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_format_list_bulleted),
+                                        contentDescription = "Show Setlist",
+                                        modifier = Modifier.size(24.dp)
+                                    )
+                                }
+                                
+                                // Menu button
+                                IconButton(
+                                    onClick = { /* TODO: Show menu */ },
+                                    modifier = Modifier.size(40.dp)
+                                ) {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_more_vert),
+                                        contentDescription = "More options",
+                                        modifier = Modifier.size(24.dp)
+                                    )
+                                }
+                                
+                                // Play button (circle with play icon)
+                                IconButton(
+                                    onClick = { viewModel.playRecordingFromBeginning() },
+                                    modifier = Modifier.size(56.dp)
+                                ) {
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_play_circle_filled),
+                                        contentDescription = "Play",
+                                        modifier = Modifier.size(56.dp),
+                                        tint = MaterialTheme.colorScheme.primary
+                                    )
+                                }
+                                
+                                // Next show button
+                                IconButton(
+                                    onClick = { viewModel.navigateToNextShow() },
+                                    enabled = !isNavigationLoading,
+                                    modifier = Modifier.size(40.dp)
+                                ) {
+                                    if (isNavigationLoading) {
+                                        CircularProgressIndicator(
+                                            modifier = Modifier.size(20.dp),
+                                            strokeWidth = 2.dp
+                                        )
+                                    } else {
+                                        Icon(
+                                            painter = IconResources.Navigation.ChevronRight(),
+                                            contentDescription = "Next Show",
+                                            modifier = Modifier.size(24.dp)
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Tracks section
                         item {
                             Text(
                                 text = "Tracks (${uiState.tracks.size})",
                                 style = MaterialTheme.typography.titleMedium,
                                 fontWeight = FontWeight.Bold,
-                                modifier = Modifier.padding(bottom = 8.dp)
+                                modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp)
                             )
                         }
                         
-                        // Queue Debug Panel
+                        // Debug panels (if enabled)
                         if (settings.showDebugInfo) {
                             item {
                                 QueueDebugPanel(
@@ -455,90 +558,7 @@ fun PlaylistScreen(
                             }
                         }
                         
-                        // Debug panel
-                        if (settings.showDebugInfo && currentRecording != null) {
-                            item {
-                                DebugPanel(
-                                    title = "Database Debug Info",
-                                    isVisible = settings.showDebugInfo,
-                                    initiallyExpanded = false
-                                ) {
-                                    currentRecording?.let { recording ->
-                                        // Show basic recording info
-                                        DebugText("Recording ID", recording.identifier)
-                                        DebugText("Title", recording.title ?: "N/A")
-                                        DebugText("Concert Date", recording.concertDate)
-                                        DebugText("Concert Venue", recording.concertVenue ?: "N/A")
-                                        DebugText("Concert Location", recording.concertLocation ?: "N/A")
-                                        DebugText("Source", recording.source ?: "N/A")
-                                        DebugText("Tracks Count", "${recording.tracks.size}")
-                                        
-                                        DebugDivider()
-                                        
-                                        // Show calculated showId
-                                        val normalizedDate = if (recording.concertDate.contains("T")) {
-                                            recording.concertDate.substringBefore("T")
-                                        } else {
-                                            recording.concertDate
-                                        }
-                                        val normalizedVenue = recording.concertVenue
-                                            ?.replace("'", "")
-                                            ?.replace(".", "")
-                                            ?.replace(" - ", "_")
-                                            ?.replace(", ", "_")
-                                            ?.replace(" & ", "_and_")
-                                            ?.replace("&", "_and_")
-                                            ?.replace(" University", "_U", true)
-                                            ?.replace(" College", "_C", true)
-                                            ?.replace("Memorial", "Mem", true)
-                                            ?.replace("\\s+".toRegex(), "_")
-                                            ?.replace("_+".toRegex(), "_")
-                                            ?.trim('_')
-                                            ?.lowercase()
-                                            ?: "unknown"
-                                        val calculatedShowId = "${normalizedDate}_${normalizedVenue}"
-                                        
-                                        DebugText("Calculated ShowID", calculatedShowId)
-                                        DebugText("Normalized Date", normalizedDate)
-                                        DebugText("Normalized Venue", normalizedVenue)
-                                        
-                                        DebugDivider()
-                                        
-                                        // Show entity information if available
-                                        debugShowEntity?.let { entity ->
-                                            DebugText("DB ShowEntity ID", entity.showId)
-                                            DebugText("DB Date", entity.date)
-                                            DebugText("DB Venue", entity.venue ?: "N/A")
-                                            DebugText("DB Location", entity.location ?: "N/A")
-                                            DebugText("DB Year", entity.year ?: "N/A")
-                                            DebugText("DB In Library", entity.isInLibrary.toString())
-                                            DebugText("DB Cache Time", entity.cachedTimestamp.toString())
-                                            entity.setlistRaw?.let { setlist ->
-                                                DebugMultilineText("DB Setlist", setlist, maxLines = 3)
-                                            }
-                                        } ?: run {
-                                            DebugText("DB ShowEntity", "Not found or not loaded")
-                                        }
-                                        
-                                        DebugDivider()
-                                        
-                                        // Show object information if available
-                                        debugShow?.let { show ->
-                                            DebugText("Show Date", show.date)
-                                            DebugText("Show Venue", show.venue ?: "N/A")
-                                            DebugText("Show Location", show.location ?: "N/A")
-                                            DebugText("Show Year", show.year ?: "N/A")
-                                            DebugText("Show In Library", show.isInLibrary.toString())
-                                            DebugText("Show Recordings", "${show.recordings.size}")
-                                            DebugText("Show ID", show.showId)
-                                        } ?: run {
-                                            DebugText("Show Object", "Not found or not loaded")
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
+                        // Tracks
                         itemsIndexed(uiState.tracks) { index, track ->
                             TrackItem(
                                 track = track,

@@ -14,7 +14,9 @@
     "volume_up",
     "volume_down",
     "volume_off",
-    "volume_mute"
+    "volume_mute",
+    "play_circle",
+    "play_circle_filled"
   ],
   "Navigation": [
     "arrow_back",
@@ -73,7 +75,8 @@
     "add_circle",
     "add_circle_outline",
     "share",
-    "trending_up"
+    "trending_up",
+    "format_list_bulleted"
   ],
   "DataManagement": [
     "save",
