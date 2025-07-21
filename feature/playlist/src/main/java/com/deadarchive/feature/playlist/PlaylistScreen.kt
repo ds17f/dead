@@ -140,6 +140,22 @@ fun PlaylistScreen(
     var showSetlist by remember { mutableStateOf(false) }
     val setlistState by viewModel.setlistState.collectAsState()
     
+    // Menu bottom sheet state
+    var showMenu by remember { mutableStateOf(false) }
+    
+    // Library state
+    val isInLibrary by viewModel.isInLibrary.collectAsState()
+    
+    // Current track URL for play state detection
+    val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
+    
+    // Check library status when show changes
+    LaunchedEffect(showId) {
+        showId?.let { id ->
+            viewModel.checkLibraryStatus(id)
+        }
+    }
+    
     // Fetch debug information when recording changes
     LaunchedEffect(currentRecording, settings.showDebugInfo) {
         if (settings.showDebugInfo && currentRecording != null) {
@@ -472,9 +488,18 @@ fun PlaylistScreen(
                                         modifier = Modifier.size(40.dp)
                                     ) {
                                         Icon(
-                                            painter = IconResources.Content.LibraryAdd(), // TODO: Toggle based on library state
-                                            contentDescription = "Add to Library",
-                                            modifier = Modifier.size(24.dp)
+                                            painter = if (isInLibrary) {
+                                                IconResources.Content.LibraryAddCheck()
+                                            } else {
+                                                IconResources.Content.LibraryAdd()
+                                            },
+                                            contentDescription = if (isInLibrary) "Remove from Library" else "Add to Library",
+                                            modifier = Modifier.size(24.dp),
+                                            tint = if (isInLibrary) {
+                                                MaterialTheme.colorScheme.error // Red color when in library
+                                            } else {
+                                                MaterialTheme.colorScheme.onSurface
+                                            }
                                         )
                                     }
                                     
@@ -495,11 +520,18 @@ fun PlaylistScreen(
                                                 )
                                             }
                                             is ShowDownloadState.Downloading -> {
-                                                CircularProgressIndicator(
-                                                    progress = { downloadState.trackProgress },
-                                                    modifier = Modifier.size(24.dp),
-                                                    strokeWidth = 2.dp
-                                                )
+                                                Box(contentAlignment = Alignment.Center) {
+                                                    CircularProgressIndicator(
+                                                        progress = { downloadState.trackProgress },
+                                                        modifier = Modifier.size(24.dp),
+                                                        strokeWidth = 2.dp
+                                                    )
+                                                    Icon(
+                                                        painter = painterResource(R.drawable.ic_stop),
+                                                        contentDescription = "Stop Download",
+                                                        modifier = Modifier.size(16.dp)
+                                                    )
+                                                }
                                             }
                                             is ShowDownloadState.Downloaded -> {
                                                 Icon(
@@ -539,7 +571,7 @@ fun PlaylistScreen(
                                     
                                     // Menu button
                                     IconButton(
-                                        onClick = { /* TODO: Show menu */ },
+                                        onClick = { showMenu = true },
                                         modifier = Modifier.size(40.dp)
                                     ) {
                                         Icon(
@@ -550,14 +582,34 @@ fun PlaylistScreen(
                                     }
                                 }
                                 
-                                // Right side: Play button alone
+                                // Right side: Play/Pause button alone
+                                val isCurrentRecordingPlaying = currentRecording?.tracks?.any { track ->
+                                    track.audioFile?.downloadUrl == currentTrackUrl
+                                } == true && uiState.isPlaying
+                                
                                 IconButton(
-                                    onClick = { viewModel.playRecordingFromBeginning() },
+                                    onClick = { 
+                                        if (isCurrentRecordingPlaying) {
+                                            viewModel.mediaControllerRepository.pause()
+                                        } else if (currentRecording?.tracks?.any { track ->
+                                            track.audioFile?.downloadUrl == currentTrackUrl
+                                        } == true) {
+                                            // Current recording is loaded but paused, resume
+                                            viewModel.mediaControllerRepository.play()
+                                        } else {
+                                            // Play from beginning
+                                            viewModel.playRecordingFromBeginning()
+                                        }
+                                    },
                                     modifier = Modifier.size(56.dp)
                                 ) {
                                     Icon(
-                                        painter = painterResource(R.drawable.ic_play_circle_filled),
-                                        contentDescription = "Play",
+                                        painter = if (isCurrentRecordingPlaying) {
+                                            painterResource(R.drawable.ic_pause_circle_filled)
+                                        } else {
+                                            painterResource(R.drawable.ic_play_circle_filled)
+                                        },
+                                        contentDescription = if (isCurrentRecordingPlaying) "Pause" else "Play",
                                         modifier = Modifier.size(56.dp),
                                         tint = MaterialTheme.colorScheme.primary
                                     )
@@ -731,6 +783,75 @@ fun PlaylistScreen(
                 viewModel.clearSetlist()
             }
         )
+    }
+    
+    // Menu Bottom Sheet
+    if (showMenu) {
+        ModalBottomSheet(
+            onDismissRequest = { showMenu = false }
+        ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp)
+            ) {
+                // Share option
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            currentRecording?.let { recording ->
+                                // Create a minimal show object for sharing
+                                val show = Show(
+                                    date = recording.concertDate,
+                                    venue = recording.concertVenue,
+                                    location = recording.concertLocation
+                                )
+                                shareService.shareShow(show, recording)
+                            }
+                            showMenu = false
+                        }
+                        .padding(vertical = 16.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        painter = IconResources.Content.Share(),
+                        contentDescription = "Share",
+                        modifier = Modifier.size(24.dp)
+                    )
+                    Spacer(modifier = Modifier.width(16.dp))
+                    Text(
+                        text = "Share",
+                        style = MaterialTheme.typography.bodyLarge
+                    )
+                }
+                
+                // Choose Recording option
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clickable {
+                            showRecordingSelection = true
+                            showMenu = false
+                        }
+                        .padding(vertical = 16.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        painter = IconResources.Content.LibraryMusic(),
+                        contentDescription = "Choose Recording",
+                        modifier = Modifier.size(24.dp)
+                    )
+                    Spacer(modifier = Modifier.width(16.dp))
+                    Text(
+                        text = "Choose Recording",
+                        style = MaterialTheme.typography.bodyLarge
+                    )
+                }
+                
+                Spacer(modifier = Modifier.height(16.dp))
+            }
+        }
     }
 }
 

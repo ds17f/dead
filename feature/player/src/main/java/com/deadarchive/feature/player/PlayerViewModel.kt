@@ -143,6 +143,10 @@ class PlayerViewModel @Inject constructor(
     private val _setlistState = MutableStateFlow<SetlistState>(SetlistState.Initial)
     val setlistState: StateFlow<SetlistState> = _setlistState.asStateFlow()
     
+    // Library state management
+    private val _isInLibrary = MutableStateFlow(false)
+    val isInLibrary: StateFlow<Boolean> = _isInLibrary.asStateFlow()
+    
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
         try {
@@ -707,24 +711,6 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
-    /**
-     * Add/remove the current show from library
-     */
-    fun toggleLibrary() {
-        viewModelScope.launch {
-            try {
-                val recording = _currentRecording.value
-                if (recording != null) {
-                    // TODO: Implement library toggle for recordings
-                    // Need to implement a way to get Show from Recording
-                    // or add recording-specific library functionality
-                    println("Library toggle for recording not yet implemented: ${recording.identifier}")
-                }
-            } catch (e: Exception) {
-                println("Failed to toggle library: ${e.message}")
-            }
-        }
-    }
     
     /**
      * Get the current download state for the recording
@@ -1140,6 +1126,77 @@ class PlayerViewModel @Inject constructor(
      */
     fun clearSetlist() {
         _setlistState.value = SetlistState.Initial
+    }
+    
+    /**
+     * Check if show is in library
+     */
+    fun checkLibraryStatus(showId: String) {
+        viewModelScope.launch {
+            try {
+                val isInLib = libraryRepository.isShowInLibrary(showId)
+                _isInLibrary.value = isInLib
+                Log.d(TAG, "Library status for showId $showId: $isInLib")
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to check library status for showId: $showId", e)
+                _isInLibrary.value = false
+            }
+        }
+    }
+    
+    /**
+     * Toggle library status for current show
+     */
+    fun toggleLibrary() {
+        viewModelScope.launch {
+            try {
+                val currentRecording = _currentRecording.value
+                if (currentRecording != null) {
+                    // We need to construct a Show object from the recording
+                    // Let's try to get the show from the repository first
+                    val showId = generateShowId(currentRecording)
+                    val show = showRepository.getShowById(showId)
+                    
+                    if (show != null) {
+                        val wasToggled = libraryRepository.toggleShowLibrary(show)
+                        if (wasToggled) {
+                            _isInLibrary.value = !_isInLibrary.value
+                            Log.d(TAG, "Toggled library for show: $showId, now in library: ${_isInLibrary.value}")
+                        }
+                    } else {
+                        Log.w(TAG, "Could not find show with id: $showId")
+                    }
+                } else {
+                    Log.w(TAG, "No current recording to toggle library status for")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to toggle library status", e)
+            }
+        }
+    }
+    
+    private fun generateShowId(recording: Recording): String {
+        val normalizedDate = if (recording.concertDate.contains("T")) {
+            recording.concertDate.substringBefore("T")
+        } else {
+            recording.concertDate
+        }
+        val normalizedVenue = recording.concertVenue
+            ?.replace("'", "")
+            ?.replace(".", "")
+            ?.replace(" - ", "_")
+            ?.replace(", ", "_")
+            ?.replace(" & ", "_and_")
+            ?.replace("&", "_and_")
+            ?.replace(" University", "_U", true)
+            ?.replace(" College", "_C", true)
+            ?.replace("Memorial", "Mem", true)
+            ?.replace("\\s+".toRegex(), "_")
+            ?.replace("_+".toRegex(), "_")
+            ?.trim('_')
+            ?.lowercase()
+            ?: "unknown"
+        return "${normalizedDate}_${normalizedVenue}"
     }
 }
 
