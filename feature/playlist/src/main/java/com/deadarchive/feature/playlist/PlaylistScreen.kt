@@ -580,6 +580,7 @@ fun PlaylistScreen(
                             TrackItem(
                                 track = track,
                                 isCurrentTrack = index == uiState.currentTrackIndex,
+                                isPlaying = index == uiState.currentTrackIndex && uiState.isPlaying,
                                 isDownloaded = currentRecording?.let { recording ->
                                     val trackKey = "${recording.identifier}_${track.audioFile?.filename}"
                                     trackDownloadStates[trackKey] == true
@@ -952,100 +953,73 @@ private fun RecordingHeader(
 private fun TrackItem(
     track: Track,
     isCurrentTrack: Boolean,
+    isPlaying: Boolean = false,
     isDownloaded: Boolean = false,
     onClick: () -> Unit
 ) {
-    Card(
+    Row(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { onClick() },
-        colors = CardDefaults.cardColors(
-            containerColor = if (isCurrentTrack) {
-                MaterialTheme.colorScheme.primaryContainer
-            } else {
-                MaterialTheme.colorScheme.surface
-            }
-        )
+            .clickable { onClick() }
+            .padding(horizontal = 24.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            // Track number
-            Box(
-                modifier = Modifier
-                    .size(40.dp)
-                    .clip(CircleShape)
-                    .background(
-                        if (isCurrentTrack) {
-                            MaterialTheme.colorScheme.primary
-                        } else {
-                            MaterialTheme.colorScheme.surfaceVariant
-                        }
-                    ),
-                contentAlignment = Alignment.Center
-            ) {
-                if (isCurrentTrack) {
-                    Icon(
-                        painter = IconResources.PlayerControls.Play(),
-                        contentDescription = "Currently playing",
-                        tint = MaterialTheme.colorScheme.onPrimary,
-                        modifier = Modifier.size(20.dp)
-                    )
+        // Play/pause icon (only shown for current track)
+        if (isCurrentTrack) {
+            Icon(
+                painter = if (isPlaying) {
+                    IconResources.PlayerControls.Pause()
                 } else {
-                    Text(
-                        text = track.displayTrackNumber,
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-            
+                    IconResources.PlayerControls.Play()
+                },
+                contentDescription = if (isPlaying) "Playing" else "Paused",
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(20.dp)
+            )
             Spacer(modifier = Modifier.width(16.dp))
+        }
+        
+        // Track info
+        Column(
+            modifier = Modifier.weight(1f),
+            horizontalAlignment = Alignment.Start
+        ) {
+            Text(
+                text = track.displayTitle,
+                style = MaterialTheme.typography.bodyLarge,
+                fontWeight = if (isCurrentTrack) FontWeight.Medium else FontWeight.Normal,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                color = if (isCurrentTrack) {
+                    MaterialTheme.colorScheme.primary
+                } else {
+                    MaterialTheme.colorScheme.onSurface
+                },
+                textAlign = TextAlign.Start
+            )
             
-            // Track info
-            Column(
-                modifier = Modifier.weight(1f)
-            ) {
+            track.audioFile?.let { audioFile ->
                 Text(
-                    text = track.displayTitle,
-                    style = MaterialTheme.typography.bodyLarge,
-                    fontWeight = if (isCurrentTrack) FontWeight.Medium else FontWeight.Normal,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
+                    text = "${audioFile.displayFormat} • ${track.formattedDuration}",
+                    style = MaterialTheme.typography.bodySmall,
                     color = if (isCurrentTrack) {
-                        MaterialTheme.colorScheme.onPrimaryContainer
+                        MaterialTheme.colorScheme.primary.copy(alpha = 0.7f)
                     } else {
-                        MaterialTheme.colorScheme.onSurface
-                    }
-                )
-                
-                track.audioFile?.let { audioFile ->
-                    Text(
-                        text = "${audioFile.displayFormat} • ${track.formattedDuration}",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = if (isCurrentTrack) {
-                            MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.7f)
-                        } else {
-                            MaterialTheme.colorScheme.onSurfaceVariant
-                        }
-                    )
-                }
-            }
-            
-            // Download indicator - only shown if track is downloaded
-            if (isDownloaded) {
-                Spacer(modifier = Modifier.width(8.dp))
-                Icon(
-                    painter = IconResources.Status.CheckCircle(),
-                    contentDescription = "Downloaded",
-                    tint = MaterialTheme.colorScheme.primary,
-                    modifier = Modifier.size(16.dp)
+                        MaterialTheme.colorScheme.onSurfaceVariant
+                    },
+                    textAlign = TextAlign.Start
                 )
             }
+        }
+        
+        // Download indicator - only shown if track is downloaded
+        if (isDownloaded) {
+            Icon(
+                painter = IconResources.Status.CheckCircle(),
+                contentDescription = "Downloaded",
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(16.dp)
+            )
         }
     }
 }
