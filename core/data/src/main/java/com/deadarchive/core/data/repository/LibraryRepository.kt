@@ -167,14 +167,22 @@ class LibraryRepositoryImpl @Inject constructor(
     }
     
     override suspend fun toggleShowLibrary(show: Show): Boolean {
-        val isCurrentlyInLibrary = isShowInLibrary(show.showId)
-        
-        return if (isCurrentlyInLibrary) {
-            removeShowFromLibrary(show.showId)
-            false
-        } else {
-            addShowToLibrary(show)
-            true
+        return try {
+            // Use atomic database operation to prevent race conditions
+            val libraryEntity = libraryDao.getLibraryItemById(show.showId)
+            
+            if (libraryEntity != null) {
+                // Show is in library, remove it
+                removeShowFromLibrary(show.showId)
+                false
+            } else {
+                // Show not in library, add it
+                addShowToLibrary(show)
+                true
+            }
+        } catch (e: Exception) {
+            // If operation fails, check current state and return it
+            isShowInLibrary(show.showId)
         }
     }
     

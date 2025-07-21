@@ -1158,11 +1158,10 @@ class PlayerViewModel @Inject constructor(
                     val show = showRepository.getShowById(showId)
                     
                     if (show != null) {
-                        val wasToggled = libraryRepository.toggleShowLibrary(show)
-                        if (wasToggled) {
-                            _isInLibrary.value = !_isInLibrary.value
-                            Log.d(TAG, "Toggled library for show: $showId, now in library: ${_isInLibrary.value}")
-                        }
+                        val newLibraryState = libraryRepository.toggleShowLibrary(show)
+                        // Update UI state to match the new library state
+                        _isInLibrary.value = newLibraryState
+                        Log.d(TAG, "Toggled library for show: $showId, now in library: $newLibraryState")
                     } else {
                         Log.w(TAG, "Could not find show with id: $showId")
                     }

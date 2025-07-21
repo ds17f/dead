@@ -103,29 +103,26 @@ class LibraryViewModel @Inject constructor(
                             }
                             matchingShow.copy(isInLibrary = true)
                         } else {
-                            // This should never happen now - shows should always have ShowEntity records
-                            println("ERROR LibraryViewModel: Show ${libraryItem.showId} not found in getLibraryShows() - this indicates a bug!")
-                            if (libraryItem.showId.contains("1995-07-09")) {
-                                println("ERROR LibraryViewModel: 1995-07-09 is missing from getLibraryShows()!")
-                                println("ERROR LibraryViewModel: Available library shows: ${libraryShows.map { it.showId }.filter { it.contains("1995") }}")
-                            }
-                            val parts = libraryItem.showId.split("_")
-                            val date = parts.getOrNull(0) ?: "Unknown Date"
-                            val venue = parts.drop(1).joinToString(" ").replace("_", " ") 
+                            // Show exists in library but has no recordings - this indicates an orphaned entry
+                            println("ERROR LibraryViewModel: Orphaned library entry for showId ${libraryItem.showId} - removing from library")
                             
-                            Show(
-                                date = date,
-                                venue = venue,
-                                location = null,
-                                year = date.take(4),
-                                recordings = emptyList(),
-                                isInLibrary = true
-                            )
+                            // Remove the orphaned library entry asynchronously
+                            viewModelScope.launch {
+                                try {
+                                    libraryRepository.removeShowFromLibrary(libraryItem.showId)
+                                    println("LibraryViewModel: Successfully removed orphaned library entry for ${libraryItem.showId}")
+                                } catch (e: Exception) {
+                                    println("LibraryViewModel: Failed to remove orphaned library entry for ${libraryItem.showId}: ${e.message}")
+                                }
+                            }
+                            
+                            // Return null to filter this out
+                            null
                         }
                         
-                        // Pair show with its library item for sorting
-                        Pair(show, libraryItem)
-                    }
+                        // Pair show with its library item for sorting (only if show is not null)
+                        if (show != null) Pair(show, libraryItem) else null
+                    }.filterNotNull() // Remove orphaned entries
                     
                     // Apply decade filtering first
                     val filteredShows = if (decadeFilter.decade != null) {
