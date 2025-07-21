@@ -89,9 +89,11 @@ class LastPlayedTrackMonitor @Inject constructor(
             }
             
             // Save the current state
+            // Convert 1-based trackNumber to 0-based index for queue restoration
+            val trackIndex = (currentTrackInfo.trackNumber ?: 1) - 1
             lastPlayedTrackService.saveCurrentTrack(
                 recordingId = currentRecordingId,
-                trackIndex = currentTrackInfo.trackNumber ?: 0,
+                trackIndex = trackIndex,
                 positionMs = currentPosition,
                 trackTitle = currentTrackInfo.songTitle,
                 trackFilename = currentTrackInfo.filename
