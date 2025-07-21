@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.29.0] - 2025-07-20
+
+### New Features
+* implement setlist bottom sheet functionality (47a6ef7)
+* redesign track items with transparent backgrounds and play state icons (11b2c7d)
+* reorganize playlist layout with full-width reviews and grouped actions (62fe868)
+* increase album cover size to 220dp for enhanced visual prominence (88fe24c)
+* reorganize playlist layout with vertical album cover design (6c45d24)
+* redesign playlist screen with Spotify-style layout (0fea0f8)
+
+
 ## [0.28.0] - 2025-07-20
 
 ### New Features
@@ -7,8 +18,6 @@
 * implement Spotify-style sort display in library (27013e4)
 * implement no results state for decade filtering in library (a448502)
 * optimize era loading performance and fix race conditions (2205a33)
-
-
 ## [0.27.1] - 2025-07-20
 
 ### Bug Fixes
