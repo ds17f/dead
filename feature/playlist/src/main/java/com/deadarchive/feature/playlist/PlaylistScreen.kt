@@ -17,6 +17,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.onGloballyPositioned
@@ -672,10 +673,13 @@ fun PlaylistScreen(
                         
                         // Tracks
                         itemsIndexed(uiState.tracks) { index, track ->
+                            // Check if this specific track is currently playing
+                            val isCurrentTrack = track.audioFile?.downloadUrl == currentTrackUrl
+                            
                             TrackItem(
                                 track = track,
-                                isCurrentTrack = index == uiState.currentTrackIndex,
-                                isPlaying = index == uiState.currentTrackIndex && uiState.isPlaying,
+                                isCurrentTrack = isCurrentTrack,
+                                isPlaying = isCurrentTrack && uiState.isPlaying,
                                 isDownloaded = currentRecording?.let { recording ->
                                     val trackKey = "${recording.identifier}_${track.audioFile?.filename}"
                                     trackDownloadStates[trackKey] == true
@@ -1148,15 +1152,11 @@ private fun TrackItem(
             .padding(horizontal = 24.dp, vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // Play/pause icon (only shown for current track)
-        if (isCurrentTrack) {
+        // Music note icon (only shown for current track that is playing)
+        if (isCurrentTrack && isPlaying) {
             Icon(
-                painter = if (isPlaying) {
-                    IconResources.PlayerControls.Pause()
-                } else {
-                    IconResources.PlayerControls.Play()
-                },
-                contentDescription = if (isPlaying) "Playing" else "Paused",
+                painter = IconResources.PlayerControls.MusicNote(),
+                contentDescription = "Playing",
                 tint = MaterialTheme.colorScheme.primary,
                 modifier = Modifier.size(20.dp)
             )
@@ -1174,9 +1174,14 @@ private fun TrackItem(
                 fontWeight = if (isCurrentTrack) FontWeight.Medium else FontWeight.Normal,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
-                color = if (isCurrentTrack) {
+                color = if (isCurrentTrack && isPlaying) {
+                    // Currently playing track - blue
                     MaterialTheme.colorScheme.primary
+                } else if (isCurrentTrack && !isPlaying) {
+                    // Current track but paused - red highlight
+                    Color.Red
                 } else {
+                    // Normal track
                     MaterialTheme.colorScheme.onSurface
                 },
                 textAlign = TextAlign.Start

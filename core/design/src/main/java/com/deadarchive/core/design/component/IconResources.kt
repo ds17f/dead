@@ -150,7 +150,10 @@ object IconResources {
         
         @Composable
         fun VolumeMute2() = customIcon(R.drawable.ic_volume_mute)
-                                                                            }
+        
+        @Composable
+        fun MusicNote() = customIcon(R.drawable.ic_music_note)
+    }
     
     // Status icons are in the Status object category
     /**
