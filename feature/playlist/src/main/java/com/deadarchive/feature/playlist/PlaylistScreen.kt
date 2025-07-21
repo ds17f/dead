@@ -42,12 +42,14 @@ import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
 import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
+import com.deadarchive.feature.playlist.components.SetlistBottomSheet
 import com.deadarchive.core.common.service.ShareService
 import androidx.compose.ui.platform.LocalContext
 import com.deadarchive.feature.playlist.data.RecordingSelectionService
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
+import com.deadarchive.feature.player.SetlistState
 import com.deadarchive.feature.playlist.ReviewViewModel
 import com.deadarchive.core.design.R
 import kotlinx.coroutines.delay
@@ -133,6 +135,10 @@ fun PlaylistScreen(
     
     // Recording selection modal state
     var showRecordingSelection by remember { mutableStateOf(false) }
+    
+    // Setlist modal state
+    var showSetlist by remember { mutableStateOf(false) }
+    val setlistState by viewModel.setlistState.collectAsState()
     
     // Fetch debug information when recording changes
     LaunchedEffect(currentRecording, settings.showDebugInfo) {
@@ -516,7 +522,12 @@ fun PlaylistScreen(
                                     
                                     // Setlist button
                                     IconButton(
-                                        onClick = { /* TODO: Show setlist */ },
+                                        onClick = { 
+                                            showId?.let { id ->
+                                                viewModel.loadSetlist(id)
+                                                showSetlist = true
+                                            }
+                                        },
                                         modifier = Modifier.size(40.dp)
                                     ) {
                                         Icon(
@@ -699,6 +710,26 @@ fun PlaylistScreen(
                 }
             } else null,
             onDismiss = { showRecordingSelection = false }
+        )
+    }
+    
+    // Setlist Bottom Sheet
+    if (showSetlist) {
+        val currentSetlistState = setlistState
+        SetlistBottomSheet(
+            setlist = when (currentSetlistState) {
+                is SetlistState.Success -> currentSetlistState.setlist
+                else -> null
+            },
+            isLoading = currentSetlistState is SetlistState.Loading,
+            errorMessage = when (currentSetlistState) {
+                is SetlistState.Error -> currentSetlistState.message
+                else -> null
+            },
+            onDismiss = { 
+                showSetlist = false
+                viewModel.clearSetlist()
+            }
         )
     }
 }

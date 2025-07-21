@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.ShowRepository
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.data.repository.SetlistRepository
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.PlaybackEventTracker
 import com.deadarchive.core.media.player.QueueManager
@@ -15,6 +16,7 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.PlaylistItem
 import com.deadarchive.core.model.Track
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.Setlist
 import com.deadarchive.core.model.DownloadStatus
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.design.component.ShowDownloadState
@@ -40,6 +42,7 @@ class PlayerViewModel @Inject constructor(
     private val showRepository: ShowRepository,
     private val libraryRepository: LibraryRepository,
     private val downloadRepository: DownloadRepository,
+    private val setlistRepository: SetlistRepository,
     private val settingsRepository: com.deadarchive.core.settings.api.SettingsRepository,
     private val ratingsRepository: com.deadarchive.core.data.repository.RatingsRepository
 ) : ViewModel() {
@@ -135,6 +138,10 @@ class PlayerViewModel @Inject constructor(
     // Navigation loading state
     private val _isNavigationLoading = MutableStateFlow(false)
     val isNavigationLoading: StateFlow<Boolean> = _isNavigationLoading.asStateFlow()
+    
+    // Setlist state management
+    private val _setlistState = MutableStateFlow<SetlistState>(SetlistState.Initial)
+    val setlistState: StateFlow<SetlistState> = _setlistState.asStateFlow()
     
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
@@ -1108,6 +1115,32 @@ class PlayerViewModel @Inject constructor(
             null
         }
     }
+    
+    /**
+     * Load setlist data for a show
+     */
+    fun loadSetlist(showId: String) {
+        Log.d(TAG, "Loading setlist for showId: $showId")
+        _setlistState.value = SetlistState.Loading
+        
+        viewModelScope.launch {
+            try {
+                val setlist = setlistRepository.getSetlist(showId)
+                Log.d(TAG, "Setlist loaded: ${setlist?.hasSongs == true} (${setlist?.totalSongs ?: 0} songs)")
+                _setlistState.value = SetlistState.Success(setlist)
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to load setlist for showId: $showId", e)
+                _setlistState.value = SetlistState.Error("Failed to load setlist: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Clear setlist state
+     */
+    fun clearSetlist() {
+        _setlistState.value = SetlistState.Initial
+    }
 }
 
 data class PlayerUiState(
@@ -1139,4 +1172,11 @@ data class PlayerUiState(
     
     val isBuffering: Boolean
         get() = playbackState == 2 // Player.STATE_BUFFERING
+}
+
+sealed class SetlistState {
+    object Initial : SetlistState()
+    object Loading : SetlistState()
+    data class Success(val setlist: Setlist?) : SetlistState()
+    data class Error(val message: String) : SetlistState()
 }
