@@ -31,6 +31,11 @@ interface LibraryRepository {
     suspend fun isShowInLibrary(showId: String): Boolean
     
     /**
+     * Observe if a show is in library with real-time updates
+     */
+    fun isShowInLibraryFlow(showId: String): Flow<Boolean>
+    
+    /**
      * Add show to library
      */
     suspend fun addShowToLibrary(show: Show): Boolean
@@ -79,6 +84,10 @@ class LibraryRepositoryImpl @Inject constructor(
     override suspend fun isShowInLibrary(showId: String): Boolean {
         val show = showDao.getShowById(showId)
         return show?.addedToLibraryAt != null
+    }
+    
+    override fun isShowInLibraryFlow(showId: String): Flow<Boolean> {
+        return showDao.isShowInLibraryFlow(showId)
     }
     
     override suspend fun addShowToLibrary(show: Show): Boolean {

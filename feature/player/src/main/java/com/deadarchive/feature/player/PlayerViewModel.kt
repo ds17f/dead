@@ -31,6 +31,8 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.filterNotNull
+import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -144,9 +146,14 @@ class PlayerViewModel @Inject constructor(
     private val _setlistState = MutableStateFlow<SetlistState>(SetlistState.Initial)
     val setlistState: StateFlow<SetlistState> = _setlistState.asStateFlow()
     
-    // Library state management
-    private val _isInLibrary = MutableStateFlow(false)
-    val isInLibrary: StateFlow<Boolean> = _isInLibrary.asStateFlow()
+    // Library state management - reactive flow based on current show
+    private val _currentShowId = MutableStateFlow<String?>(null)
+    val isInLibrary: StateFlow<Boolean> = _currentShowId
+        .filterNotNull()
+        .flatMapLatest { showId ->
+            libraryRepository.isShowInLibraryFlow(showId)
+        }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), false)
     
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
@@ -236,6 +243,10 @@ class PlayerViewModel @Inject constructor(
                     }
                     
                     _currentRecording.value = recording
+                    
+                    // Update library status for this recording's show
+                    val showId = generateShowId(recording)
+                    checkLibraryStatus(showId)
                     
                     // Create playlist from filtered recording tracks
                     val playlist = recording.tracks.mapIndexed { index, track ->
@@ -1131,19 +1142,11 @@ class PlayerViewModel @Inject constructor(
     }
     
     /**
-     * Check if show is in library
+     * Set current show ID for library status observation
      */
     fun checkLibraryStatus(showId: String) {
-        viewModelScope.launch {
-            try {
-                val isInLib = libraryRepository.isShowInLibrary(showId)
-                _isInLibrary.value = isInLib
-                Log.d(TAG, "Library status for showId $showId: $isInLib")
-            } catch (e: Exception) {
-                Log.e(TAG, "Failed to check library status for showId: $showId", e)
-                _isInLibrary.value = false
-            }
-        }
+        Log.d(TAG, "Setting current showId for library observation: $showId")
+        _currentShowId.value = showId
     }
     
     /**
@@ -1161,8 +1164,7 @@ class PlayerViewModel @Inject constructor(
                     
                     if (show != null) {
                         val newLibraryState = libraryRepository.toggleShowLibrary(show)
-                        // Update UI state to match the new library state
-                        _isInLibrary.value = newLibraryState
+                        // State will update automatically via reactive flow
                         Log.d(TAG, "Toggled library for show: $showId, now in library: $newLibraryState")
                     } else {
                         Log.w(TAG, "Could not find show with id: $showId")

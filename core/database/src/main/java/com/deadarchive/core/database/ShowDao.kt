@@ -88,6 +88,9 @@ interface ShowDao {
     @Query("SELECT * FROM concerts_new WHERE addedToLibraryAt IS NOT NULL ORDER BY addedToLibraryAt DESC")
     fun getLibraryShowsFlow(): Flow<List<ShowEntity>>
     
+    @Query("SELECT addedToLibraryAt IS NOT NULL FROM concerts_new WHERE showId = :showId")
+    fun isShowInLibraryFlow(showId: String): Flow<Boolean>
+    
     @Query("UPDATE concerts_new SET addedToLibraryAt = :timestamp WHERE showId = :showId")
     suspend fun addShowToLibrary(showId: String, timestamp: Long)
     
