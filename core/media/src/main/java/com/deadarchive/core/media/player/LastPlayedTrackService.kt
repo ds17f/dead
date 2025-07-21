@@ -107,8 +107,8 @@ class LastPlayedTrackService @Inject constructor(
                 return
             }
             
-            // Load the show into the queue starting at the saved track
-            queueManager.loadShow(recording, lastTrack.trackIndex)
+            // Load the show into the queue starting at the saved track (without auto-playing)
+            queueManager.loadShow(recording, lastTrack.trackIndex, autoPlay = false)
             
             // Wait a moment for the queue to load
             delay(1000)

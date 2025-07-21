@@ -127,8 +127,8 @@ class PlaybackResumeService @Inject constructor(
             
             Log.d(TAG, "Found track at index $trackIndex: ${track.trackTitle}")
             
-            // Load the show into the queue starting at the track
-            queueManager.loadShow(recording, trackIndex)
+            // Load the show into the queue starting at the track (without auto-playing)
+            queueManager.loadShow(recording, trackIndex, autoPlay = false)
             
             // Wait a moment for the queue to load
             delay(1500)

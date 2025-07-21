@@ -32,9 +32,9 @@ class QueueManager @Inject constructor(
     val currentRecording: StateFlow<Recording?> = _currentRecording.asStateFlow()
     
     /**
-     * Load an entire show into the queue and start playback from the specified track.
+     * Load an entire show into the queue and optionally start playback from the specified track.
      */
-    suspend fun loadShow(recording: Recording, startTrackIndex: Int = 0) {
+    suspend fun loadShow(recording: Recording, startTrackIndex: Int = 0, autoPlay: Boolean = true) {
         Log.d(TAG, "Loading show: ${recording.title} with ${recording.tracks.size} tracks, starting at index $startTrackIndex")
         
         _currentRecording.value = recording
@@ -61,9 +61,15 @@ class QueueManager @Inject constructor(
         // Get the MediaController and set the queue
         val controller = mediaControllerRepository.getMediaController()
         if (controller != null) {
-            Log.d(TAG, "Setting MediaItems in controller and starting playback")
+            if (autoPlay) {
+                Log.d(TAG, "Setting MediaItems in controller and starting playback")
+            } else {
+                Log.d(TAG, "Setting MediaItems in controller without auto-playing")
+            }
             controller.setMediaItems(mediaItems, startTrackIndex, 0)
-            controller.play()
+            if (autoPlay) {
+                controller.play()
+            }
         } else {
             Log.e(TAG, "MediaController not available - cannot load show")
         }
