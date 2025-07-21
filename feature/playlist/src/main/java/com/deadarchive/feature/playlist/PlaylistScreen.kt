@@ -330,58 +330,117 @@ fun PlaylistScreen(
                         }
                     }
                     
-                    // Show info section - left aligned
+                    // Show info section - with navigation buttons
                     currentRecording?.let { recording ->
                         item {
-                            Column(
+                            Row(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(horizontal = 24.dp),
-                                horizontalAlignment = Alignment.Start
+                                verticalAlignment = Alignment.Top
                             ) {
-                                // Show Date
-                                Text(
-                                    text = formatConcertDate(recording.concertDate),
-                                    style = MaterialTheme.typography.headlineSmall,
-                                    fontWeight = FontWeight.Bold,
-                                    color = MaterialTheme.colorScheme.onSurface
-                                )
-                                
-                                Spacer(modifier = Modifier.height(8.dp))
-                                
-                                // Venue, City, State
-                                val venueLine = buildString {
-                                    if (!recording.concertVenue.isNullOrBlank()) {
-                                        append(recording.concertVenue)
-                                    }
-                                    if (!recording.concertLocation.isNullOrBlank()) {
-                                        if (!recording.concertVenue.isNullOrBlank()) {
-                                            append(", ")
-                                        }
-                                        append(recording.concertLocation)
-                                    }
-                                }
-                                
-                                if (venueLine.isNotBlank()) {
+                                // Left side: Show info
+                                Column(
+                                    modifier = Modifier.weight(1f),
+                                    horizontalAlignment = Alignment.Start
+                                ) {
+                                    // Show Date
                                     Text(
-                                        text = venueLine,
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                        maxLines = 3,
-                                        overflow = TextOverflow.Ellipsis
+                                        text = formatConcertDate(recording.concertDate),
+                                        style = MaterialTheme.typography.headlineSmall,
+                                        fontWeight = FontWeight.Bold,
+                                        color = MaterialTheme.colorScheme.onSurface
                                     )
+                                    
+                                    Spacer(modifier = Modifier.height(8.dp))
+                                    
+                                    // Venue, City, State
+                                    val venueLine = buildString {
+                                        if (!recording.concertVenue.isNullOrBlank()) {
+                                            append(recording.concertVenue)
+                                        }
+                                        if (!recording.concertLocation.isNullOrBlank()) {
+                                            if (!recording.concertVenue.isNullOrBlank()) {
+                                                append(", ")
+                                            }
+                                            append(recording.concertLocation)
+                                        }
+                                    }
+                                    
+                                    if (venueLine.isNotBlank()) {
+                                        Text(
+                                            text = venueLine,
+                                            style = MaterialTheme.typography.bodyLarge,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                            maxLines = 3,
+                                            overflow = TextOverflow.Ellipsis
+                                        )
+                                    }
+                                    
                                 }
                                 
-                                // Review stars below venue info
-                                if (recording.hasRawRating) {
-                                    Spacer(modifier = Modifier.height(12.dp))
-                                    InteractiveRatingDisplay(
-                                        rating = recording.rawRating,
-                                        reviewCount = recording.reviewCount,
-                                        confidence = recording.ratingConfidence,
-                                        onShowReviews = { showReviewDetails = true }
-                                    )
+                                // Right side: Navigation buttons
+                                Row(
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    // Previous show button
+                                    IconButton(
+                                        onClick = { viewModel.navigateToPreviousShow() },
+                                        enabled = !isNavigationLoading,
+                                        modifier = Modifier.size(40.dp)
+                                    ) {
+                                        if (isNavigationLoading) {
+                                            CircularProgressIndicator(
+                                                modifier = Modifier.size(20.dp),
+                                                strokeWidth = 2.dp
+                                            )
+                                        } else {
+                                            Icon(
+                                                painter = IconResources.Navigation.ChevronLeft(),
+                                                contentDescription = "Previous Show",
+                                                modifier = Modifier.size(24.dp)
+                                            )
+                                        }
+                                    }
+                                    
+                                    // Next show button
+                                    IconButton(
+                                        onClick = { viewModel.navigateToNextShow() },
+                                        enabled = !isNavigationLoading,
+                                        modifier = Modifier.size(40.dp)
+                                    ) {
+                                        if (isNavigationLoading) {
+                                            CircularProgressIndicator(
+                                                modifier = Modifier.size(20.dp),
+                                                strokeWidth = 2.dp
+                                            )
+                                        } else {
+                                            Icon(
+                                                painter = IconResources.Navigation.ChevronRight(),
+                                                contentDescription = "Next Show",
+                                                modifier = Modifier.size(24.dp)
+                                            )
+                                        }
+                                    }
                                 }
+                            }
+                        }
+                    }
+                    
+                    // Review stars - full width
+                    currentRecording?.let { recording ->
+                        if (recording.hasRawRating) {
+                            item {
+                                InteractiveRatingDisplay(
+                                    rating = recording.rawRating,
+                                    reviewCount = recording.reviewCount,
+                                    confidence = recording.ratingConfidence,
+                                    onShowReviews = { showReviewDetails = true },
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .padding(horizontal = 24.dp, vertical = 8.dp)
+                                )
                             }
                         }
                     }
@@ -393,108 +452,94 @@ fun PlaylistScreen(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(horizontal = 24.dp, vertical = 16.dp),
-                                horizontalArrangement = Arrangement.SpaceEvenly,
+                                horizontalArrangement = Arrangement.SpaceBetween,
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
-                                // Previous show button
-                                IconButton(
-                                    onClick = { viewModel.navigateToPreviousShow() },
-                                    enabled = !isNavigationLoading,
-                                    modifier = Modifier.size(40.dp)
+                                // Left side: Grouped action buttons
+                                Row(
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                    verticalAlignment = Alignment.CenterVertically
                                 ) {
-                                    if (isNavigationLoading) {
-                                        CircularProgressIndicator(
-                                            modifier = Modifier.size(20.dp),
-                                            strokeWidth = 2.dp
-                                        )
-                                    } else {
+                                    // Library button
+                                    IconButton(
+                                        onClick = { viewModel.toggleLibrary() },
+                                        modifier = Modifier.size(40.dp)
+                                    ) {
                                         Icon(
-                                            painter = IconResources.Navigation.ChevronLeft(),
-                                            contentDescription = "Previous Show",
+                                            painter = IconResources.Content.LibraryAdd(), // TODO: Toggle based on library state
+                                            contentDescription = "Add to Library",
+                                            modifier = Modifier.size(24.dp)
+                                        )
+                                    }
+                                    
+                                    // Download button
+                                    IconButton(
+                                        onClick = { viewModel.downloadRecording() },
+                                        modifier = Modifier.size(40.dp)
+                                    ) {
+                                        val downloadState = currentRecording?.let { downloadStates[it.identifier] } 
+                                            ?: ShowDownloadState.NotDownloaded
+                                        
+                                        when (downloadState) {
+                                            is ShowDownloadState.NotDownloaded -> {
+                                                Icon(
+                                                    painter = IconResources.Content.FileDownload(),
+                                                    contentDescription = "Download Recording",
+                                                    modifier = Modifier.size(24.dp)
+                                                )
+                                            }
+                                            is ShowDownloadState.Downloading -> {
+                                                CircularProgressIndicator(
+                                                    progress = { downloadState.trackProgress },
+                                                    modifier = Modifier.size(24.dp),
+                                                    strokeWidth = 2.dp
+                                                )
+                                            }
+                                            is ShowDownloadState.Downloaded -> {
+                                                Icon(
+                                                    painter = IconResources.Status.CheckCircle(),
+                                                    contentDescription = "Downloaded",
+                                                    modifier = Modifier.size(24.dp),
+                                                    tint = MaterialTheme.colorScheme.primary
+                                                )
+                                            }
+                                            is ShowDownloadState.Failed -> {
+                                                Icon(
+                                                    painter = IconResources.Content.FileDownload(),
+                                                    contentDescription = "Download Failed",
+                                                    modifier = Modifier.size(24.dp),
+                                                    tint = MaterialTheme.colorScheme.error
+                                                )
+                                            }
+                                        }
+                                    }
+                                    
+                                    // Setlist button
+                                    IconButton(
+                                        onClick = { /* TODO: Show setlist */ },
+                                        modifier = Modifier.size(40.dp)
+                                    ) {
+                                        Icon(
+                                            painter = painterResource(R.drawable.ic_format_list_bulleted),
+                                            contentDescription = "Show Setlist",
+                                            modifier = Modifier.size(24.dp)
+                                        )
+                                    }
+                                    
+                                    // Menu button
+                                    IconButton(
+                                        onClick = { /* TODO: Show menu */ },
+                                        modifier = Modifier.size(40.dp)
+                                    ) {
+                                        Icon(
+                                            painter = painterResource(R.drawable.ic_more_vert),
+                                            contentDescription = "More options",
                                             modifier = Modifier.size(24.dp)
                                         )
                                     }
                                 }
                                 
-                                // Library button
-                                IconButton(
-                                    onClick = { viewModel.toggleLibrary() },
-                                    modifier = Modifier.size(40.dp)
-                                ) {
-                                    Icon(
-                                        painter = IconResources.Content.LibraryAdd(), // TODO: Toggle based on library state
-                                        contentDescription = "Add to Library",
-                                        modifier = Modifier.size(24.dp)
-                                    )
-                                }
-                                
-                                // Download button
-                                IconButton(
-                                    onClick = { viewModel.downloadRecording() },
-                                    modifier = Modifier.size(40.dp)
-                                ) {
-                                    val downloadState = currentRecording?.let { downloadStates[it.identifier] } 
-                                        ?: ShowDownloadState.NotDownloaded
-                                    
-                                    when (downloadState) {
-                                        is ShowDownloadState.NotDownloaded -> {
-                                            Icon(
-                                                painter = IconResources.Content.FileDownload(),
-                                                contentDescription = "Download Recording",
-                                                modifier = Modifier.size(24.dp)
-                                            )
-                                        }
-                                        is ShowDownloadState.Downloading -> {
-                                            CircularProgressIndicator(
-                                                progress = { downloadState.trackProgress },
-                                                modifier = Modifier.size(24.dp),
-                                                strokeWidth = 2.dp
-                                            )
-                                        }
-                                        is ShowDownloadState.Downloaded -> {
-                                            Icon(
-                                                painter = IconResources.Status.CheckCircle(),
-                                                contentDescription = "Downloaded",
-                                                modifier = Modifier.size(24.dp),
-                                                tint = MaterialTheme.colorScheme.primary
-                                            )
-                                        }
-                                        is ShowDownloadState.Failed -> {
-                                            Icon(
-                                                painter = IconResources.Content.FileDownload(),
-                                                contentDescription = "Download Failed",
-                                                modifier = Modifier.size(24.dp),
-                                                tint = MaterialTheme.colorScheme.error
-                                            )
-                                        }
-                                    }
-                                }
-                                
-                                // Setlist button
-                                IconButton(
-                                    onClick = { /* TODO: Show setlist */ },
-                                    modifier = Modifier.size(40.dp)
-                                ) {
-                                    Icon(
-                                        painter = painterResource(R.drawable.ic_format_list_bulleted),
-                                        contentDescription = "Show Setlist",
-                                        modifier = Modifier.size(24.dp)
-                                    )
-                                }
-                                
-                                // Menu button
-                                IconButton(
-                                    onClick = { /* TODO: Show menu */ },
-                                    modifier = Modifier.size(40.dp)
-                                ) {
-                                    Icon(
-                                        painter = painterResource(R.drawable.ic_more_vert),
-                                        contentDescription = "More options",
-                                        modifier = Modifier.size(24.dp)
-                                    )
-                                }
-                                
-                                // Play button (circle with play icon)
+                                // Right side: Play button alone
                                 IconButton(
                                     onClick = { viewModel.playRecordingFromBeginning() },
                                     modifier = Modifier.size(56.dp)
@@ -505,26 +550,6 @@ fun PlaylistScreen(
                                         modifier = Modifier.size(56.dp),
                                         tint = MaterialTheme.colorScheme.primary
                                     )
-                                }
-                                
-                                // Next show button
-                                IconButton(
-                                    onClick = { viewModel.navigateToNextShow() },
-                                    enabled = !isNavigationLoading,
-                                    modifier = Modifier.size(40.dp)
-                                ) {
-                                    if (isNavigationLoading) {
-                                        CircularProgressIndicator(
-                                            modifier = Modifier.size(20.dp),
-                                            strokeWidth = 2.dp
-                                        )
-                                    } else {
-                                        Icon(
-                                            painter = IconResources.Navigation.ChevronRight(),
-                                            contentDescription = "Next Show",
-                                            modifier = Modifier.size(24.dp)
-                                        )
-                                    }
                                 }
                             }
                         }
