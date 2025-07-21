@@ -56,18 +56,8 @@ interface RecordingDao {
     """)
     suspend fun searchRecordings(query: String): List<RecordingEntity>
     
-    // Library
-    @Query("SELECT * FROM recordings WHERE isInLibrary = 1 ORDER BY concertDate DESC, identifier ASC")
-    fun getLibraryRecordings(): Flow<List<RecordingEntity>>
-    
-    @Query("SELECT * FROM recordings WHERE isInLibrary = 1 ORDER BY concertDate DESC, identifier ASC")
-    fun getLibraryRecordingsFlow(): Flow<List<RecordingEntity>>
-    
     @Query("SELECT * FROM recordings ORDER BY concertDate DESC, identifier ASC")
     fun getAllRecordings(): Flow<List<RecordingEntity>>
-    
-    @Query("UPDATE recordings SET isInLibrary = :isInLibrary WHERE identifier = :recordingId")
-    suspend fun updateLibraryStatus(recordingId: String, isInLibrary: Boolean)
     
     @Query("UPDATE recordings SET isDownloaded = :isDownloaded WHERE identifier = :recordingId")
     suspend fun updateDownloadedStatus(recordingId: String, isDownloaded: Boolean)

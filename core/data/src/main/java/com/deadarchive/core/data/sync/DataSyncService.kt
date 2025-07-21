@@ -303,7 +303,7 @@ class DataSyncServiceImpl @Inject constructor(
                     year = simpleDateFormat.take(4),
                     setlistRaw = null, // We don't have setlist data from the recordings
                     setsJson = null,
-                    isInLibrary = false,
+                    addedToLibraryAt = null,
                     cachedTimestamp = System.currentTimeMillis()
                 )
             }
@@ -407,7 +407,7 @@ class DataSyncServiceImpl @Inject constructor(
                     val recording = ArchiveMapper.run { doc.toRecording() }
                     // Fix date format - convert ISO date to simple YYYY-MM-DD format
                     val simpleDateFormat = normalizeDate(recording.concertDate)
-                    val showId = "${simpleDateFormat}_${recording.concertVenue?.replace(" ", "_")?.replace(",", "")?.replace("&", "and") ?: "Unknown"}"
+                    val showId = "${simpleDateFormat}_${VenueUtil.normalizeVenue(recording.concertVenue)}"
                     val entity = RecordingEntity.fromRecording(recording, showId)
                     
                     // Collect new recordings (don't save yet)
@@ -434,7 +434,7 @@ class DataSyncServiceImpl @Inject constructor(
                         year = simpleDateFormat.take(4),
                         setlistRaw = null,
                         setsJson = null,
-                        isInLibrary = false,
+                        addedToLibraryAt = null,
                         cachedTimestamp = System.currentTimeMillis()
                     )
                     showDao.insertShow(showEntity)

@@ -49,7 +49,6 @@ data class Recording(
     val audioFiles: List<AudioFile> = emptyList(),
     
     // UI state
-    val isInLibrary: Boolean = false,
     val isDownloaded: Boolean = false,
     
     // Rating information (optional)  

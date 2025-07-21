@@ -18,46 +18,10 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.flatMapLatest
 import javax.inject.Inject
 import javax.inject.Singleton
 
-interface ShowRepository {
-    // Show-based methods
-    fun searchShows(query: String): Flow<List<Show>>
-    fun searchShowsLimited(query: String, limit: Int): Flow<List<Show>>
-    fun getAllShows(): Flow<List<Show>>
-    fun getLibraryShows(): Flow<List<Show>>
-    suspend fun getLibraryShowsList(): List<Show>
-    suspend fun getRecordingsByShowId(showId: String): List<Recording>
-    
-    // Recording-based methods (individual recordings)
-    fun searchRecordings(query: String): Flow<List<Recording>>
-    suspend fun getRecordingById(id: String): Recording?
-    suspend fun getRecordingByIdWithFormatFilter(id: String, formatPreferences: List<String>): Recording?
-    fun getLibraryRecordings(): Flow<List<Recording>>
-    fun getAllCachedRecordings(): Flow<List<Recording>>
-    
-    // Ratings-enhanced methods
-    suspend fun getTopRatedShows(limit: Int = 50): List<Show>
-    suspend fun getTopRatedRecordings(limit: Int = 50): List<Recording>
-    suspend fun getShowsWithRatings(minRating: Float = 4.0f, limit: Int = 100): List<Show>
-    
-    // Streaming URL generation methods
-    suspend fun getRecordingMetadata(identifier: String): ArchiveMetadataResponse?
-    suspend fun getStreamingUrl(identifier: String, filename: String): String?
-    suspend fun getTrackStreamingUrls(identifier: String): List<Pair<AudioFile, String>>
-    suspend fun getPreferredStreamingUrl(identifier: String): String?
-    suspend fun getTrackStreamingUrl(identifier: String, trackQuery: String): String?
-    
-    // Debug methods
-    suspend fun debugDatabaseState(): String
-    suspend fun getShowEntityById(showId: String): ShowEntity?
-    suspend fun getShowById(showId: String): Show?
-    
-    // Navigation methods for efficient show navigation
-    suspend fun getNextShowByDate(currentDate: String): Show?
-    suspend fun getPreviousShowByDate(currentDate: String): Show?
-}
 
 @Singleton
 class ShowRepositoryImpl @Inject constructor(
@@ -68,7 +32,7 @@ class ShowRepositoryImpl @Inject constructor(
     private val audioFormatFilterService: AudioFormatFilterService,
     private val ratingsRepository: RatingsRepository,
     private val settingsRepository: com.deadarchive.core.settings.api.SettingsRepository
-) : ShowRepository {
+) : com.deadarchive.core.data.api.repository.ShowRepository {
     
     companion object {
         private const val TAG = "ShowRepository"
@@ -134,64 +98,68 @@ class ShowRepositoryImpl @Inject constructor(
         emit(emptyList())
     }
     
-    override fun getLibraryShows(): Flow<List<Show>> = flow {
-        android.util.Log.d("ShowRepository", "📚 getLibraryShows: Starting to retrieve library shows from database")
+    override fun getLibraryShows(): Flow<List<Show>> = 
+        // Use reactive flow that automatically updates when library changes
+        showDao.getLibraryShowsFlow()
+            .flatMapLatest { libraryShowEntities ->
+                flow {
+                    android.util.Log.d("ShowRepository", "📚 getLibraryShows: Starting to retrieve library shows from database")
+                    
+                    // Get user preferences once for all shows
+                    val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+                    
+                    android.util.Log.d("ShowRepository", "📚 Found ${libraryShowEntities.size} library show entities in database")
         
-        // Get user preferences once for all shows
-        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+                    val shows = libraryShowEntities.map { showEntity ->
+                        // Get recordings for this show
+                        val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
+                            val recording = it.toRecording()
+                            // Add recording rating
+                            val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
+                            recording.copy(
+                                rating = recordingRating?.rating,
+                                rawRating = recordingRating?.rawRating,
+                                ratingConfidence = recordingRating?.confidence,
+                                reviewCount = recordingRating?.reviewCount,
+                                sourceType = recordingRating?.sourceType,
+                                ratingDistribution = recordingRating?.ratingDistribution,
+                                highRatings = recordingRating?.highRatings,
+                                lowRatings = recordingRating?.lowRatings
+                            )
+                        }
+                        android.util.Log.d("ShowRepository", "📚 Library show '${showEntity.showId}' has ${recordings.size} recordings from database")
+                        
+                        // Get show rating
+                        val showRating = ratingsRepository.getShowRatingByDateVenue(
+                            showEntity.date, showEntity.venue ?: ""
+                        )
+                        
+                        // Check for user recording preference first
+                        val preferredRecordingId = userPreferences[showEntity.showId]
+                        val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
+                            preferredRecordingId
+                        } else {
+                            showRating?.bestRecordingId
+                        }
+                        
+                        showEntity.toShow(recordings).copy(
+                            rating = showRating?.rating,
+                            rawRating = showRating?.rawRating,
+                            ratingConfidence = showRating?.confidence,
+                            totalHighRatings = showRating?.totalHighRatings,
+                            totalLowRatings = showRating?.totalLowRatings,
+                            bestRecordingId = finalBestRecordingId
+                        )
+                    }
         
-        // Get only library shows from database
-        val libraryShowEntities = showDao.getLibraryShows()
-        android.util.Log.d("ShowRepository", "📚 Found ${libraryShowEntities.size} library show entities in database")
-        
-        val shows = libraryShowEntities.map { showEntity ->
-            // Get recordings for this show
-            val recordings = recordingDao.getRecordingsByConcertId(showEntity.showId).map { 
-                val recording = it.toRecording()
-                // Add recording rating
-                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
-                recording.copy(
-                    rating = recordingRating?.rating,
-                    rawRating = recordingRating?.rawRating,
-                    ratingConfidence = recordingRating?.confidence,
-                    reviewCount = recordingRating?.reviewCount,
-                    sourceType = recordingRating?.sourceType,
-                    ratingDistribution = recordingRating?.ratingDistribution,
-                    highRatings = recordingRating?.highRatings,
-                    lowRatings = recordingRating?.lowRatings
-                )
+                    android.util.Log.d("ShowRepository", "📚 Successfully retrieved ${shows.size} library shows from database")
+                    emit(shows)
+                }
             }
-            android.util.Log.d("ShowRepository", "📚 Library show '${showEntity.showId}' has ${recordings.size} recordings from database")
-            
-            // Get show rating
-            val showRating = ratingsRepository.getShowRatingByDateVenue(
-                showEntity.date, showEntity.venue ?: ""
-            )
-            
-            // Check for user recording preference first
-            val preferredRecordingId = userPreferences[showEntity.showId]
-            val finalBestRecordingId = if (preferredRecordingId != null && recordings.any { it.identifier == preferredRecordingId }) {
-                preferredRecordingId
-            } else {
-                showRating?.bestRecordingId
+            .catch { e ->
+                android.util.Log.e("ShowRepository", "📚 ❌ Failed to get library shows from database: ${e.message}", e)
+                emit(emptyList())
             }
-            
-            showEntity.toShow(recordings).copy(
-                rating = showRating?.rating,
-                rawRating = showRating?.rawRating,
-                ratingConfidence = showRating?.confidence,
-                totalHighRatings = showRating?.totalHighRatings,
-                totalLowRatings = showRating?.totalLowRatings,
-                bestRecordingId = finalBestRecordingId
-            )
-        }
-        
-        android.util.Log.d("ShowRepository", "📚 Successfully retrieved ${shows.size} library shows from database")
-        emit(shows)
-    }.catch { e ->
-        android.util.Log.e("ShowRepository", "📚 ❌ Failed to get library shows from database: ${e.message}", e)
-        emit(emptyList())
-    }
     
     override suspend fun getLibraryShowsList(): List<Show> {
         return try {
@@ -342,6 +310,11 @@ class ShowRepositoryImpl @Inject constructor(
             }
             android.util.Log.d("ShowRepository", "🔍 Database show '${showEntity.showId}' has ${recordings.size} recordings")
             
+            // Log warning for orphaned shows but still return them for debugging
+            if (recordings.isEmpty()) {
+                android.util.Log.w("ShowRepository", "🔍 ⚠️ Found orphaned show '${showEntity.showId}' with 0 recordings")
+            }
+            
             // Get show rating
             val showRating = ratingsRepository.getShowRatingByDateVenue(
                 showEntity.date, showEntity.venue ?: ""
@@ -438,10 +411,8 @@ class ShowRepositoryImpl @Inject constructor(
                 val recording = ArchiveMapper.run { it.toRecording() }
                 println("DEBUG: getRecordingById mapped recording - title: ${recording.title}, tracks: ${recording.tracks.size}")
                 
-                // Cache the result with tracks
-                val isInLibrary = false // Individual recordings don't have library status anymore
+                // Cache the result with tracks  
                 val newEntity = RecordingEntity.fromRecording(recording, cachedEntity?.concertId ?: "unknown").copy(
-                    isInLibrary = isInLibrary,
                     cachedTimestamp = System.currentTimeMillis()
                 )
                 println("DEBUG: getRecordingById caching recording entity with ${recording.tracks.size} tracks")
@@ -450,7 +421,6 @@ class ShowRepositoryImpl @Inject constructor(
                 // Add recording rating
                 val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
                 val finalRecording = recording.copy(
-                    isInLibrary = isInLibrary,
                     rating = recordingRating?.rating,
                     rawRating = recordingRating?.rawRating,
                     ratingConfidence = recordingRating?.confidence,
@@ -507,25 +477,6 @@ class ShowRepositoryImpl @Inject constructor(
         return recording.copy(tracks = filteredTracks)
     }
     
-    override fun getLibraryRecordings(): Flow<List<Recording>> {
-        return recordingDao.getLibraryRecordings().map { entities ->
-            entities.map { 
-                val recording = it.toRecording()
-                // Add recording rating
-                val recordingRating = ratingsRepository.getRecordingRating(recording.identifier)
-                recording.copy(
-                    rating = recordingRating?.rating,
-                    rawRating = recordingRating?.rawRating,
-                    ratingConfidence = recordingRating?.confidence,
-                    reviewCount = recordingRating?.reviewCount,
-                    sourceType = recordingRating?.sourceType,
-                    ratingDistribution = recordingRating?.ratingDistribution,
-                    highRatings = recordingRating?.highRatings,
-                    lowRatings = recordingRating?.lowRatings
-                )
-            }
-        }
-    }
     
     override fun getAllCachedRecordings(): Flow<List<Recording>> {
         return recordingDao.getAllRecordings().map { entities ->
@@ -547,7 +498,7 @@ class ShowRepositoryImpl @Inject constructor(
         }
     }
     
-    override suspend fun getRecordingMetadata(identifier: String): ArchiveMetadataResponse? {
+    suspend fun getRecordingMetadata(identifier: String): ArchiveMetadataResponse? {
         return try {
             val response = archiveApiService.getRecordingMetadata(identifier)
             if (response.isSuccessful) {
@@ -700,7 +651,7 @@ class ShowRepositoryImpl @Inject constructor(
         return report.toString()
     }
     
-    override suspend fun getShowEntityById(showId: String): ShowEntity? {
+    suspend fun getShowEntityById(showId: String): ShowEntity? {
         return try {
             showDao.getShowById(showId)
         } catch (e: Exception) {
@@ -924,7 +875,7 @@ class ShowRepositoryImpl @Inject constructor(
                         year = normalizedDate.take(4),
                         setlistRaw = null,
                         setsJson = null,
-                        isInLibrary = false, // Will be updated when added to library
+                        addedToLibraryAt = null, // Will be updated when added to library
                         cachedTimestamp = System.currentTimeMillis()
                     )
                     newShowEntities.add(showEntity)
@@ -932,8 +883,8 @@ class ShowRepositoryImpl @Inject constructor(
                     android.util.Log.d("ShowRepository", "🔧   ShowEntity details: date='$normalizedDate', venue='${firstRecording.concertVenue}', location='${firstRecording.concertLocation}'")
                 }
                 
-                // Create Show object - use ORIGINAL venue name for display, normalized only for showId
-                val isInLibrary = libraryDao.isShowInLibrary(showId)
+                // Create Show object - use ORIGINAL venue name for display, normalized only for showId  
+                val isInLibrary = false // Shows created from recordings are not initially in library
                 val show = Show(
                     date = normalizedDate,
                     venue = firstRecording.concertVenue, // Keep original readable venue name

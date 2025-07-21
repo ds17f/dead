@@ -1,6 +1,6 @@
 package com.deadarchive.feature.browse.domain
 
-import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.api.repository.ShowRepository
 import com.deadarchive.core.model.Show
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map

@@ -18,6 +18,7 @@ import com.deadarchive.core.model.Track
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Setlist
 import com.deadarchive.core.model.DownloadStatus
+import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.network.mapper.*
@@ -937,7 +938,8 @@ class PlayerViewModel @Inject constructor(
      */
     suspend fun getShowEntityById(showId: String): ShowEntity? {
         return try {
-            showRepository.getShowEntityById(showId)
+            val show = showRepository.getShowById(showId)
+            show?.let { ShowEntity.fromShow(it) }
         } catch (e: Exception) {
             Log.e(TAG, "Error fetching ShowEntity: $showId", e)
             null
@@ -1180,21 +1182,7 @@ class PlayerViewModel @Inject constructor(
         } else {
             recording.concertDate
         }
-        val normalizedVenue = recording.concertVenue
-            ?.replace("'", "")
-            ?.replace(".", "")
-            ?.replace(" - ", "_")
-            ?.replace(", ", "_")
-            ?.replace(" & ", "_and_")
-            ?.replace("&", "_and_")
-            ?.replace(" University", "_U", true)
-            ?.replace(" College", "_C", true)
-            ?.replace("Memorial", "Mem", true)
-            ?.replace("\\s+".toRegex(), "_")
-            ?.replace("_+".toRegex(), "_")
-            ?.trim('_')
-            ?.lowercase()
-            ?: "unknown"
+        val normalizedVenue = VenueUtil.normalizeVenue(recording.concertVenue)
         return "${normalizedDate}_${normalizedVenue}"
     }
 }

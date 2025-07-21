@@ -35,8 +35,8 @@ data class ShowEntity(
     val setsJson: String? = null,
     val songNames: String? = null, // Denormalized comma-separated song names for search
     
-    // UI state
-    val isInLibrary: Boolean = false,
+    // Library state - timestamp when added to library, null if not in library
+    val addedToLibraryAt: Long? = null,
     
     // Cache management
     val cachedTimestamp: Long = System.currentTimeMillis()
@@ -58,7 +58,7 @@ data class ShowEntity(
             setlistRaw = setlistRaw,
             sets = sets,
             recordings = recordings,
-            isInLibrary = isInLibrary
+            isInLibrary = addedToLibraryAt != null
         )
     }
     
@@ -80,7 +80,7 @@ data class ShowEntity(
                 setlistRaw = show.setlistRaw,
                 setsJson = setsJson,
                 songNames = songNames.takeIf { it.isNotEmpty() },
-                isInLibrary = show.isInLibrary
+                addedToLibraryAt = if (show.isInLibrary) System.currentTimeMillis() else null
             )
         }
         

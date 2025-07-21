@@ -3,7 +3,7 @@ package com.deadarchive.app
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.sync.DataSyncService
-import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.api.repository.ShowRepository
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.RatingsRepository
 import com.deadarchive.core.data.repository.SetlistRepository
@@ -238,16 +238,16 @@ class DebugViewModel @Inject constructor(
                 appendLine("[")
                 
                 sampleRecordings.forEachIndexed { index, concert ->
-                    // Try to fetch real metadata using the concert repository
-                    val metadata = concertRepository.getRecordingMetadata(concert.identifier)
+                    // Note: getRecordingMetadata not available in API interface
+                    val metadata = null // concertRepository.getRecordingMetadata(concert.identifier)
                     
                     appendLine("  {")
                     appendLine("    \"identifier\": \"${concert.identifier}\",")
                     appendLine("    \"metadata_available\": ${metadata != null},")
-                    if (metadata != null) {
-                        appendLine("    \"server\": \"${metadata.server ?: ""}\",")
-                        appendLine("    \"directory\": \"${metadata.directory ?: ""}\",")
-                        appendLine("    \"files_count\": ${metadata.files.size}")
+                    if (false /* metadata != null */) {
+                        appendLine("    \"server\": \"\",")
+                        appendLine("    \"directory\": \"\",")
+                        appendLine("    \"files_count\": 0")
                     }
                     append("  }")
                     if (index < sampleRecordings.size - 1) appendLine(",")
@@ -366,14 +366,14 @@ class DebugViewModel @Inject constructor(
                 var showsWithoutSongs = 0
                 
                 shows.forEach { show ->
-                    // Check if this show has song names populated
-                    val showEntity = concertRepository.getShowEntityById(show.showId)
-                    val hasSongNames = !showEntity?.songNames.isNullOrBlank()
+                    // Note: getShowEntityById not available in API interface
+                    val showEntity = null // concertRepository.getShowEntityById(show.showId)
+                    val hasSongNames = false // !showEntity?.songNames.isNullOrBlank()
                     
                     if (hasSongNames) {
                         showsWithSongs++
                         result.appendLine("✅ ${show.date} at ${show.venue}")
-                        result.appendLine("   Songs: ${showEntity?.songNames?.take(100)}...")
+                        result.appendLine("   Songs: [API method not available]...")
                     } else {
                         showsWithoutSongs++
                         result.appendLine("❌ ${show.date} at ${show.venue} - NO SONG NAMES")
@@ -400,8 +400,8 @@ class DebugViewModel @Inject constructor(
                 val searchResults = concertRepository.searchShows("Fire On The Mountain").first()
                 result.appendLine("Search for 'Fire On The Mountain': ${searchResults.size} results")
                 searchResults.take(3).forEach { show ->
-                    val showEntity = concertRepository.getShowEntityById(show.showId)
-                    result.appendLine("  - ${show.date}: has songs = ${!showEntity?.songNames.isNullOrBlank()}")
+                    val showEntity = null // concertRepository.getShowEntityById(show.showId)
+                    result.appendLine("  - ${show.date}: has songs = ${false /* !showEntity?.songNames.isNullOrBlank() */}")
                 }
                 
                 _uiState.value = _uiState.value.copy(

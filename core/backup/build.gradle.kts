@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:data-api"))
     implementation(project(":core:settings-api"))
     implementation(project(":core:data"))
     implementation(project(":core:database"))

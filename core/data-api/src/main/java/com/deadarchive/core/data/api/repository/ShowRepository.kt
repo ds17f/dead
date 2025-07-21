@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.Flow
 interface ShowRepository {
     // Show-based methods
     fun searchShows(query: String): Flow<List<Show>>
+    fun searchShowsLimited(query: String, limit: Int): Flow<List<Show>>
     fun getAllShows(): Flow<List<Show>>
     fun getLibraryShows(): Flow<List<Show>>
     suspend fun getLibraryShowsList(): List<Show>
@@ -19,7 +20,6 @@ interface ShowRepository {
     fun searchRecordings(query: String): Flow<List<Recording>>
     suspend fun getRecordingById(id: String): Recording?
     suspend fun getRecordingByIdWithFormatFilter(id: String, formatPreferences: List<String>): Recording?
-    fun getLibraryRecordings(): Flow<List<Recording>>
     fun getAllCachedRecordings(): Flow<List<Recording>>
     
     // Ratings-enhanced methods

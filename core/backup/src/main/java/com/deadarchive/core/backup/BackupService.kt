@@ -222,8 +222,8 @@ class BackupService @Inject constructor(
                         )
                         libraryDao.addToLibrary(libraryEntry)
                         
-                        // IMPORTANT: Update the show entity to mark as in library
-                        showDao.updateLibraryStatus(backupShow.showId, true)
+                        // IMPORTANT: Update the show entity to mark as in library with timestamp
+                        showDao.addShowToLibrary(backupShow.showId, backupShow.addedAt)
                         
                         // Check if show has recordings, if not, try to fetch them from API
                         if (existingShow.recordings.isEmpty()) {

@@ -20,7 +20,7 @@ import android.content.Context
         VenueEntity::class,
         PlaybackHistoryEntity::class
     ],
-    version = 14,
+    version = 15,
     exportSchema = false
 )
 @TypeConverters(Converters::class)

@@ -27,7 +27,6 @@ object DataMappers {
             concertDate = date ?: "",
             concertVenue = venue,
             concertLocation = coverage,
-            isInLibrary = false,
             isDownloaded = false
         )
     }

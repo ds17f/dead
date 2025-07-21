@@ -1,6 +1,6 @@
 package com.deadarchive.core.data.di
 
-import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.api.repository.ShowRepository
 import com.deadarchive.core.data.repository.ShowRepositoryImpl
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.DownloadRepositoryImpl

@@ -127,6 +127,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:data-api"))
     implementation(project(":core:design"))
     implementation(project(":core:common"))
     implementation(project(":core:model"))

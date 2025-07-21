@@ -29,8 +29,9 @@ data class Show(
     // All recordings of this concert
     val recordings: List<Recording> = emptyList(),
     
-    // UI state
+    // Library status - managed by ShowEntity.toShow()
     val isInLibrary: Boolean = false,
+    
     
     // Rating information (optional)
     val rating: Float? = null,                        // Weighted rating (for internal ranking)

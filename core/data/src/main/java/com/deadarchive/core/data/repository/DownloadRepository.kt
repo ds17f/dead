@@ -19,6 +19,8 @@ import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
 
+typealias ShowRepository = com.deadarchive.core.data.api.repository.ShowRepository
+
 interface DownloadRepository {
     /**
      * Get all downloads with real-time updates

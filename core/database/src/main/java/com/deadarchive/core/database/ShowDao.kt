@@ -81,15 +81,21 @@ interface ShowDao {
     """)
     suspend fun searchShowsLimited(query: String, limit: Int): List<ShowEntity>
     
-    // Library
-    @Query("SELECT * FROM concerts_new WHERE isInLibrary = 1 ORDER BY date DESC")
+    // Library - shows ordered by when they were added to library (most recent first)
+    @Query("SELECT * FROM concerts_new WHERE addedToLibraryAt IS NOT NULL ORDER BY addedToLibraryAt DESC")
     suspend fun getLibraryShows(): List<ShowEntity>
     
-    @Query("SELECT * FROM concerts_new WHERE isInLibrary = 1 ORDER BY date DESC")
+    @Query("SELECT * FROM concerts_new WHERE addedToLibraryAt IS NOT NULL ORDER BY addedToLibraryAt DESC")
     fun getLibraryShowsFlow(): Flow<List<ShowEntity>>
     
-    @Query("UPDATE concerts_new SET isInLibrary = :isInLibrary WHERE showId = :showId")
-    suspend fun updateLibraryStatus(showId: String, isInLibrary: Boolean)
+    @Query("UPDATE concerts_new SET addedToLibraryAt = :timestamp WHERE showId = :showId")
+    suspend fun addShowToLibrary(showId: String, timestamp: Long)
+    
+    @Query("UPDATE concerts_new SET addedToLibraryAt = NULL WHERE showId = :showId")
+    suspend fun removeShowFromLibrary(showId: String)
+    
+    @Query("UPDATE concerts_new SET addedToLibraryAt = NULL WHERE addedToLibraryAt IS NOT NULL")
+    suspend fun clearAllLibraryTimestamps()
     
     // Statistics and utility
     @Query("SELECT COUNT(*) FROM concerts_new")

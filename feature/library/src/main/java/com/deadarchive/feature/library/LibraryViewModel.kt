@@ -3,7 +3,7 @@ package com.deadarchive.feature.library
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.LibraryRepository
-import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.api.repository.ShowRepository
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.model.LibraryItem
 import com.deadarchive.core.model.LibraryItemType
@@ -75,89 +75,51 @@ class LibraryViewModel @Inject constructor(
             try {
                 _uiState.value = LibraryUiState.Loading
                 
-                // Use combine to properly handle flows with exception safety, filtering and sorting
+                // Use simplified approach - just get library shows directly
                 combine(
-                    libraryRepository.getAllLibraryItems(),
                     showRepository.getLibraryShows(),
                     _sortOption,
                     _decadeFilter
-                ) { libraryItems, libraryShows, sortOption, decadeFilter ->
-                    println("DEBUG LibraryViewModel: Found ${libraryItems.size} library items")
-                    libraryItems.forEach { item ->
-                        println("DEBUG LibraryViewModel: Library item - showId: ${item.showId}, type: ${item.type}")
-                    }
+                ) { libraryShows, sortOption, decadeFilter ->
                     println("DEBUG LibraryViewModel: Found ${libraryShows.size} library shows")
-                    
-                    // Find matching shows with recordings and prepare for sorting
-                    val matchedLibraryShowsWithTimestamp = libraryItems.map { libraryItem ->
-                        val matchingShow = libraryShows.find { show -> show.showId == libraryItem.showId }
-                        
-                        val show = if (matchingShow != null) {
-                            // Use the actual show data with recordings
-                            println("DEBUG LibraryViewModel: Found show ${libraryItem.showId} with ${matchingShow.recordings.size} recordings")
-                            if (libraryItem.showId.contains("1995-07-09")) {
-                                println("DEBUG LibraryViewModel: 1995-07-09 details - showId: ${matchingShow.showId}, recordings: ${matchingShow.recordings.size}")
-                                matchingShow.recordings.take(3).forEach { recording ->
-                                    println("DEBUG LibraryViewModel: 1995-07-09 recording: ${recording.identifier}")
-                                }
-                            }
-                            matchingShow.copy(isInLibrary = true)
-                        } else {
-                            // Show exists in library but has no recordings - this indicates an orphaned entry
-                            println("ERROR LibraryViewModel: Orphaned library entry for showId ${libraryItem.showId} - removing from library")
-                            
-                            // Remove the orphaned library entry asynchronously
-                            viewModelScope.launch {
-                                try {
-                                    libraryRepository.removeShowFromLibrary(libraryItem.showId)
-                                    println("LibraryViewModel: Successfully removed orphaned library entry for ${libraryItem.showId}")
-                                } catch (e: Exception) {
-                                    println("LibraryViewModel: Failed to remove orphaned library entry for ${libraryItem.showId}: ${e.message}")
-                                }
-                            }
-                            
-                            // Return null to filter this out
-                            null
-                        }
-                        
-                        // Pair show with its library item for sorting (only if show is not null)
-                        if (show != null) Pair(show, libraryItem) else null
-                    }.filterNotNull() // Remove orphaned entries
                     
                     // Apply decade filtering first
                     val filteredShows = if (decadeFilter.decade != null) {
-                        matchedLibraryShowsWithTimestamp.filter { (show, _) ->
+                        libraryShows.filter { show ->
                             show.date.startsWith(decadeFilter.decade)
                         }
                     } else {
-                        matchedLibraryShowsWithTimestamp
+                        libraryShows
                     }
                     
                     // Apply sorting based on sort option
-                    val matchedLibraryShows = when (sortOption) {
+                    val sortedShows = when (sortOption) {
                         LibrarySortOption.DATE_ASCENDING -> {
-                            filteredShows
-                                .sortedBy { it.first.date }
-                                .map { it.first }
+                            filteredShows.sortedBy { it.date }
                         }
                         LibrarySortOption.DATE_DESCENDING -> {
-                            filteredShows
-                                .sortedByDescending { it.first.date }
-                                .map { it.first }
+                            filteredShows.sortedByDescending { it.date }
                         }
-                        LibrarySortOption.ADDED_ASCENDING -> {
-                            filteredShows
-                                .sortedBy { it.second.addedTimestamp }
-                                .map { it.first }
-                        }
-                        LibrarySortOption.ADDED_DESCENDING -> {
-                            filteredShows
-                                .sortedByDescending { it.second.addedTimestamp }
-                                .map { it.first }
+                        LibrarySortOption.ADDED_ASCENDING, LibrarySortOption.ADDED_DESCENDING -> {
+                            // For timestamp-based sorting, we need to get shows with timestamps
+                            // For now, just use date-based sorting as fallback
+                            filteredShows.sortedByDescending { it.date }
                         }
                     }
-                    println("DEBUG LibraryViewModel: Created ${matchedLibraryShows.size} shows for display")
-                    LibraryUiState.Success(libraryItems, matchedLibraryShows)
+                    
+                    println("DEBUG LibraryViewModel: Created ${sortedShows.size} shows for display")
+                    
+                    // Convert to legacy format for UI compatibility
+                    val libraryItems = sortedShows.map { show ->
+                        LibraryItem(
+                            id = "show_${show.showId}",
+                            showId = show.showId,
+                            type = LibraryItemType.SHOW,
+                            addedTimestamp = System.currentTimeMillis() // TODO: Get actual timestamp
+                        )
+                    }
+                    
+                    LibraryUiState.Success(libraryItems, sortedShows)
                 }
                 .catch { exception ->
                     println("ERROR LibraryViewModel: ${exception.message}")

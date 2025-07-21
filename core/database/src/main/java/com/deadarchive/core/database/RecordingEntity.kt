@@ -53,7 +53,6 @@ data class RecordingEntity(
     val tracksJson: String? = null,
     
     // UI state
-    val isInLibrary: Boolean = false,
     val isDownloaded: Boolean = false,
     
     // Soft delete fields (recording-level)
@@ -88,7 +87,6 @@ data class RecordingEntity(
             concertLocation = concertLocation,
             tracks = tracks,
             audioFiles = emptyList(), // Will be populated from tracks
-            isInLibrary = isInLibrary,
             isDownloaded = isDownloaded,
             isMarkedForDeletion = isMarkedForDeletion,
             deletionTimestamp = deletionTimestamp
@@ -117,7 +115,6 @@ data class RecordingEntity(
                 concertVenue = recording.concertVenue,
                 concertLocation = recording.concertLocation,
                 tracksJson = tracksJson,
-                isInLibrary = recording.isInLibrary,
                 isDownloaded = recording.isDownloaded,
                 isMarkedForDeletion = recording.isMarkedForDeletion,
                 deletionTimestamp = recording.deletionTimestamp
