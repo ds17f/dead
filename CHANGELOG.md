@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.30.0] - 2025-07-21
+
+### New Features
+* add music note icon for playing tracks in playlist (ca8d568)
+* enhance playlist screen with improved controls and menu functionality (68124d7)
+
+### Bug Fixes
+* implement event-driven track restoration with accurate position saving (2d92279)
+* prevent auto-play when app restarts with previous show (f261765)
+* ensure playlist library icon updates automatically when recording loads (130afe7)
+* implement reactive library UI updates and simplify library system (b82658a)
+* resolve library management race conditions and orphaned show entries (f9c48ac)
+
+
 ## [0.29.0] - 2025-07-20
 
 ### New Features
@@ -9,8 +23,6 @@
 * increase album cover size to 220dp for enhanced visual prominence (88fe24c)
 * reorganize playlist layout with vertical album cover design (6c45d24)
 * redesign playlist screen with Spotify-style layout (0fea0f8)
-
-
 ## [0.28.0] - 2025-07-20
 
 ### New Features
