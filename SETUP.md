@@ -6,15 +6,25 @@ Complete setup instructions for developing the Dead Archive Android application.
 
 ### 1. Install Java Development Kit (JDK 17+)
 ```bash
+# Linux (Fedora/RHEL)
+sudo dnf install java-17-openjdk-devel
+
+# Linux (Debian/Ubuntu)
+sudo apt install openjdk-17-jdk
+
 # macOS with Homebrew
 brew install openjdk@17
 
-# Set JAVA_HOME
-export JAVA_HOME="/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
+# Verify installation
+java -version
 ```
 
 ### 2. Install Android Studio
 ```bash
+# Linux - Download from https://developer.android.com/studio
+# Or use flatpak:
+flatpak install flathub com.google.AndroidStudio
+
 # macOS with Homebrew  
 brew install --cask android-studio
 ```
@@ -22,33 +32,30 @@ brew install --cask android-studio
 **First Launch Setup:**
 1. Open Android Studio
 2. Follow setup wizard to install Android SDK
-3. Note your SDK path (usually `~/Library/Android/sdk`)
+3. Note your SDK path (usually `~/Android/Sdk` on Linux, `~/Library/Android/sdk` on macOS)
 
-### 3. Install Gradle
-```bash
-# macOS with Homebrew
-brew install gradle
-
-# Or with SDKMAN (recommended for version management)
-curl -s "https://get.sdkman.io" | bash
-sdk install gradle 8.14.2
-```
-
-### 4. Set Environment Variables
-Add to your `~/.zshrc` or `~/.bash_profile`:
+### 3. Set Environment Variables
+Add to your `~/.bashrc`, `~/.zshrc`, or shell profile:
 
 ```bash
-# Android SDK
-export ANDROID_HOME="$HOME/Library/Android/sdk"
+# Android SDK (Linux)
+export ANDROID_HOME="$HOME/Android/Sdk"
+
+# Android SDK (macOS)  
+# export ANDROID_HOME="$HOME/Library/Android/sdk"
+
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/tools"
 
-# Java (if using Homebrew OpenJDK)
-export JAVA_HOME="/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
+# Java (Linux - usually auto-detected)
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+
+# Java (macOS with Homebrew)
+# export JAVA_HOME="/usr/local/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
 
 # Reload shell
-source ~/.zshrc
+source ~/.bashrc  # or ~/.zshrc
 ```
 
 ## 📱 Create Android Virtual Device (AVD)
@@ -199,18 +206,24 @@ make status
 dead-archive/
 ├── app/                    # Main Android application
 ├── core/
+│   ├── backup/            # Backup and restore functionality
 │   ├── common/            # Shared utilities
 │   ├── data/              # Repository implementations
+│   ├── data-api/          # Repository interfaces
 │   ├── database/          # Room database
 │   ├── design/            # UI theme and components
 │   ├── media/             # ExoPlayer integration
+│   ├── media-api/         # Media player interfaces
 │   ├── model/             # Data models
-│   └── network/           # Archive.org API
+│   ├── network/           # Archive.org API
+│   ├── settings/          # Settings implementation
+│   └── settings-api/      # Settings interfaces
 └── feature/
     ├── browse/            # Concert browsing
     ├── downloads/         # Download management
-    ├── favorites/         # User favorites
-    └── player/            # Audio player
+    ├── library/           # User library management
+    ├── player/            # Audio player
+    └── playlist/          # Playlist and recording selection
 ```
 
 ### Tech Stack
@@ -263,7 +276,7 @@ git push origin main
 git tag v1.0.0 && git push origin v1.0.0
 ```
 
-📖 **[Complete CI/CD Guide](CI-CD.md)** - Detailed workflow documentation
+📖 **[Complete CI/CD Guide](docs/development/CI-CD.md)** - Detailed workflow documentation
 
 ### Quick CI/CD Setup
 1. Push code to GitHub repository
@@ -274,7 +287,7 @@ git tag v1.0.0 && git push origin v1.0.0
 
 ## 📚 Additional Resources
 
-- **[CI/CD Documentation](CI-CD.md)** - Complete automated build guide
+- **[CI/CD Documentation](docs/development/CI-CD.md)** - Complete automated build guide
 - [Android Developer Documentation](https://developer.android.com/)
 - [Jetpack Compose Guide](https://developer.android.com/jetpack/compose)
 - [Archive.org API Documentation](https://archive.org/help/aboutapi.php)

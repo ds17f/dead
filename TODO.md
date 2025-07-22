@@ -1,64 +1,83 @@
-# Dead
+# Dead Archive - Active Development Tasks
 
-- [x] Miniplayer not visible everywhere when playing
-- [x] Home button goes where?
+## Player Enhancements
 
-## Player
-
-- [x] Player shows "Player" at top of screen
-- [x] Top of player should go to show / Recording
-- [x] Swipe for next track on player
 - [ ] Player information enhancements
   - [ ] Add to Library (show)
   - [ ] Download (track or show?)
-  - [ ] Lyrics
-  - [ ] History of show
-  - [ ] Other versions
+  - [ ] Lyrics display
+  - [ ] Show history/information
+  - [ ] Alternative recordings selection
 
-## Global
+## Global Features
 
-- [x] Version ID somewhere (home screen? Settings?, Setting for home screen?)
-- [ ] Play next show when show completes?
-  - [ ] Setting for this
-- [ ] Enrich data set with additional material
-  - [ ] Setlist
-  - [ ] Images of Passes and stuff: https://www.dead.net/archives/
-- [ ] Video
+- [ ] Auto-play next show when current show completes
+  - [ ] Add user setting for this behavior
+- [ ] Enhanced dataset integration
+  - [ ] Additional setlist data sources
+  - [ ] Show images and memorabilia from dead.net archives
+- [ ] Video content support
 
-## Browse
+## Browse Improvements
 
-- [ ] Browse Results List Enhancements
-  - [ ] Change card to be more informative
-  - [x] Down Arrow to expand and show details
-- [ ] Browse date bug 1993-05-16 <- Doesn't work at first
+- [ ] Enhanced search results
+  - [ ] More informative concert cards
+  - [ ] Fix search edge cases (e.g., specific date searches)
+- [ ] Advanced filtering options
 
-## Library
+## Settings & Configuration
 
-- [ ] Library implementation
+- [ ] Database management
+  - [ ] Flush database option
+  - [ ] Persist user data (favorites, preferences) across resets
+- [ ] Playback settings
+  - [ ] Gapless playback option
+  - [ ] Audio format preference enforcement (MP3 over OGG)
+  - [ ] WiFi-only streaming option
+- [ ] Download management
+  - [ ] Show download status in player/track views
+  - [ ] Download progress indicators
 
-## Settings
+## Home Screen Features
 
-- [ ] Settings - Flush Database
-  - [ ] Persist Favorites and other show data
-- [ ] Gapless Playback
-- [x] Downloading
-  - [ ] Respect the file setting type (download MP3 over OGG)
-  - [ ] Show download status on player / track view
-- [ ] Streaming over Wifi only
-
-## Home Screen
-
-- [ ] Home screen enhancements
-  - [ ] Eras
-  - [x] TIGDH
+- [ ] Enhanced home screen content
+  - [ ] Era-based browsing (60s, 70s, 80s, 90s)
+  - [ ] Featured shows and recommendations
 
 ## Media Notifications
 
-- [ ] Media Notifications
-  - [ ] shows garbage between songs on next
-  - [ ] On click, go to player
+- [ ] Notification improvements
+  - [ ] Fix metadata display between tracks
+  - [ ] Ensure notification click navigates to player
 
-## Playlist Page
+## Playlist Management
 
-- Show buttons for MP3, Flac, Ogg
-- Displayed Numbering should be sequential and start at 1
+- [ ] Audio format selection buttons (MP3, FLAC, OGG)
+- [ ] Sequential track numbering starting at 1
+- [ ] Recording comparison and selection tools
+
+## Technical Improvements
+
+- [ ] Performance optimization
+  - [ ] Database query optimization
+  - [ ] UI rendering improvements
+  - [ ] Memory usage optimization
+- [ ] Error handling enhancements
+  - [ ] Better offline behavior
+  - [ ] Improved error messages
+  - [ ] Network failure recovery
+
+## Architecture & Code Quality
+
+- [ ] Complete technical debt resolution
+  - [ ] Split large classes (ShowRepository, MediaControllerRepository, etc.)
+  - [ ] Fix feature dependency violations
+  - [ ] Add comprehensive testing
+- [ ] Documentation updates
+  - [ ] API documentation completion
+  - [ ] Architecture decision records
+
+---
+
+**Last Updated**: January 2025  
+**Priority**: Focus on player enhancements and user experience improvements
