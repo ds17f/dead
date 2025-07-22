@@ -92,7 +92,6 @@ fun PlayerScreen(
     var navigationDirectionPlayer by remember { mutableIntStateOf(0) }
     
     // Debug panel state
-    var showDebugPanel by remember { mutableStateOf(false) }
     
     // Don't reset animation state during navigation - let the finishedListener handle it
     
@@ -208,22 +207,6 @@ fun PlayerScreen(
                                     )
                                 }
                             )
-                            // Only show debug panel option if debug is enabled in settings
-                            if (settings.showDebugInfo) {
-                                DropdownMenuItem(
-                                    text = { Text("Debug Panel") },
-                                    onClick = {
-                                        showDropdownMenu = false
-                                        showDebugPanel = true
-                                    },
-                                    leadingIcon = {
-                                        Icon(
-                                            painter = IconResources.Status.Error(),
-                                            contentDescription = "Debug"
-                                        )
-                                    }
-                                )
-                            }
                         }
                     }
                 }
@@ -322,17 +305,6 @@ fun PlayerScreen(
             }
         }
         
-        // Debug panel overlay - only show if debug is enabled in settings
-        if (showDebugPanel && settings.showDebugInfo) {
-            Surface(
-                modifier = Modifier.fillMaxSize(),
-                color = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f)
-            ) {
-                DebugPanel(
-                    onClose = { showDebugPanel = false }
-                )
-            }
-        }
     }
 }
 

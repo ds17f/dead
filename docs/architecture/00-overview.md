@@ -15,7 +15,7 @@ Dead Archive is a sophisticated Android application for browsing, streaming, and
 - ✅ Reactive programming patterns with StateFlow/Flow
 
 **Areas for Improvement:**
-- ⚠️ Some classes are extremely large (1700+ lines)
+- 🚧 Some classes are extremely large (1700+ lines) - **IN PROGRESS** [See refactoring plan](../plans/large-class-refactoring-plan.md)
 - ⚠️ Complex data flows that are difficult to test
 - ⚠️ Feature-to-feature dependencies that reduce modularity
 - ⚠️ Limited error recovery mechanisms in some areas
@@ -143,7 +143,7 @@ Provide Grateful Dead fans with a mobile-first experience to explore Archive.org
 ### Code Organization
 - **Total Kotlin Files**: ~120 files
 - **Average File Size**: ~320 lines
-- **Largest Files**: DebugViewModel (1702 lines), PlaylistScreen (1393 lines)
+- **Largest Files**: 🚧 DebugViewModel (1702 lines - **REMOVING**), PlaylistScreen (1393 lines), ShowRepositoryImpl (1132 lines)
 - **Test Coverage**: Unit tests for core business logic
 - **Documentation**: Comprehensive inline documentation
 

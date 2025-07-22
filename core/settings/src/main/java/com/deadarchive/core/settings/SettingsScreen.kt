@@ -26,7 +26,6 @@ import com.deadarchive.core.settings.model.VersionInfo
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
-    onNavigateToDebug: () -> Unit,
     onNavigateToDownloads: () -> Unit = {},
     versionInfo: VersionInfo,
     viewModel: SettingsViewModel = hiltViewModel()
@@ -133,10 +132,7 @@ fun SettingsScreen(
             
             // Developer Options Section
             DeveloperOptionsCard(
-                settings = settings,
-                onNavigateToDebug = onNavigateToDebug,
-                onResetSettings = viewModel::resetToDefaults,
-                onUpdateShowDebugInfo = viewModel::updateShowDebugInfo
+                onResetSettings = viewModel::resetToDefaults
             )
         }
     }
@@ -417,10 +413,7 @@ private fun DownloadSettingsCard(
 
 @Composable
 private fun DeveloperOptionsCard(
-    settings: AppSettings,
-    onNavigateToDebug: () -> Unit,
-    onResetSettings: () -> Unit,
-    onUpdateShowDebugInfo: (Boolean) -> Unit
+    onResetSettings: () -> Unit
 ) {
     Card(
         modifier = Modifier.fillMaxWidth()
@@ -435,36 +428,6 @@ private fun DeveloperOptionsCard(
                 fontWeight = FontWeight.Bold
             )
             
-            // Debug Info Toggle
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column(modifier = Modifier.weight(1f)) {
-                    Text(
-                        text = "Show Debug Info",
-                        style = MaterialTheme.typography.bodyLarge,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = "Display debug panels and technical information",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-                Switch(
-                    checked = settings.showDebugInfo,
-                    onCheckedChange = onUpdateShowDebugInfo
-                )
-            }
-            
-            OutlinedButton(
-                onClick = onNavigateToDebug,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Debug & Testing")
-            }
             
             OutlinedButton(
                 onClick = onResetSettings,

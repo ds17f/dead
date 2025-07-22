@@ -170,7 +170,6 @@ fun MainAppScreen(
             
             composable("debug") {
                 SettingsScreen(
-                    onNavigateToDebug = { navController.navigate("debug_screen") },
                     onNavigateToDownloads = { navController.navigate("downloads") },
                     versionInfo = VersionInfo(
                         versionName = BuildConfig.VERSION_NAME,
@@ -189,20 +188,6 @@ fun MainAppScreen(
                 )
             }
             
-            // Debug screen (accessible from Settings)
-            composable("debug_screen") {
-                DebugScreen(
-                    onBackClick = { navController.popBackStack() },
-                    onNavigateToWorkManagerTest = { navController.navigate("workmanager_test") }
-                )
-            }
-            
-            // WorkManager test screen (hidden from bottom nav)
-            composable("workmanager_test") {
-                WorkManagerTestScreen(
-                    onNavigateBack = { navController.popBackStack() }
-                )
-            }
             
             // Playlist screen
             playlistScreen(

@@ -36,11 +36,6 @@ import com.deadarchive.core.model.PlaylistItem
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.database.ShowEntity
-import com.deadarchive.core.design.component.DebugPanel
-import com.deadarchive.core.design.component.DebugText
-import com.deadarchive.core.design.component.DebugDivider
-import com.deadarchive.core.design.component.DebugMultilineText
-import com.deadarchive.feature.player.QueueDebugPanel
 import com.deadarchive.core.design.component.CompactStarRating
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
@@ -130,9 +125,6 @@ fun PlaylistScreen(
     }
     
     // Debug information states
-    var debugShow by remember { mutableStateOf<Show?>(null) }
-    var debugShowEntity by remember { mutableStateOf<ShowEntity?>(null) }
-    var debugSetlistInfo by remember { mutableStateOf<String?>(null) }
     
     // Review modal state
     var showReviewDetails by remember { mutableStateOf(false) }
@@ -160,63 +152,6 @@ fun PlaylistScreen(
         }
     }
     
-    // Fetch debug information when recording changes
-    LaunchedEffect(currentRecording, settings.showDebugInfo) {
-        if (settings.showDebugInfo && currentRecording != null) {
-            try {
-                val showId = currentRecording?.let { recording ->
-                    val normalizedDate = if (recording.concertDate.contains("T")) {
-                        recording.concertDate.substringBefore("T")
-                    } else {
-                        recording.concertDate
-                    }
-                    val normalizedVenue = VenueUtil.normalizeVenue(recording.concertVenue)
-                    "${normalizedDate}_${normalizedVenue}"
-                }
-                
-                if (showId != null) {
-                    debugShowEntity = viewModel.getShowEntityById(showId)
-                    debugShow = viewModel.getShowByRecording(currentRecording!!)
-                    
-                    // Debug setlist information
-                    val setlistDebugInfo = StringBuilder()
-                    setlistDebugInfo.appendLine("=== SETLIST DEBUG INFO ===")
-                    setlistDebugInfo.appendLine("Show ID: $showId")
-                    setlistDebugInfo.appendLine("Recording Date: ${currentRecording!!.concertDate}")
-                    setlistDebugInfo.appendLine("Recording Venue: ${currentRecording!!.concertVenue}")
-                    setlistDebugInfo.appendLine("Setlist State: ${setlistState::class.simpleName}")
-                    
-                    when (val state = setlistState) {
-                        is SetlistState.Success -> {
-                            setlistDebugInfo.appendLine("Setlist Found: YES")
-                            setlistDebugInfo.appendLine("Source: ${state.setlist?.source ?: "null"}")
-                            setlistDebugInfo.appendLine("Song Count: ${state.setlist?.totalSongs ?: 0}")
-                            setlistDebugInfo.appendLine("Sets: ${state.setlist?.sets?.size ?: 0}")
-                            setlistDebugInfo.appendLine("Has Songs: ${state.setlist?.hasSongs ?: false}")
-                        }
-                        is SetlistState.Error -> {
-                            setlistDebugInfo.appendLine("Setlist Found: NO")
-                            setlistDebugInfo.appendLine("Error: ${state.message}")
-                        }
-                        is SetlistState.Loading -> {
-                            setlistDebugInfo.appendLine("Setlist Status: LOADING")
-                        }
-                        is SetlistState.Initial -> {
-                            setlistDebugInfo.appendLine("Setlist Status: NOT LOADED")
-                        }
-                    }
-                    
-                    debugSetlistInfo = setlistDebugInfo.toString()
-                }
-            } catch (e: Exception) {
-                Log.e("PlaylistScreen", "Error fetching debug info", e)
-            }
-        } else {
-            debugShow = null
-            debugShowEntity = null
-            debugSetlistInfo = null
-        }
-    }
     
     // Load best recording for the show (including user preferences)
     LaunchedEffect(showId, recordingId) {
@@ -648,28 +583,6 @@ fun PlaylistScreen(
                             )
                         }
                         
-                        // Debug panels (if enabled)
-                        if (settings.showDebugInfo) {
-                            item {
-                                QueueDebugPanel(
-                                    queueStateManager = viewModel.queueStateManager,
-                                    isVisible = settings.showDebugInfo,
-                                    initiallyExpanded = false
-                                )
-                            }
-                            
-                            // Setlist Debug Panel
-                            if (debugSetlistInfo != null) {
-                                item {
-                                    SetlistDebugPanel(
-                                        debugInfo = debugSetlistInfo!!,
-                                        onLoadSetlist = { 
-                                            showId?.let { viewModel.loadSetlist(it) }
-                                        }
-                                    )
-                                }
-                            }
-                        }
                         
                         // Tracks
                         itemsIndexed(uiState.tracks) { index, track ->
@@ -1326,68 +1239,3 @@ private fun formatDate(dateString: String): String {
     }
 }
 
-@Composable
-private fun SetlistDebugPanel(
-    debugInfo: String,
-    onLoadSetlist: () -> Unit
-) {
-    val clipboardManager = androidx.compose.ui.platform.LocalClipboardManager.current
-    
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp)
-            .background(
-                MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.1f),
-                RoundedCornerShape(8.dp)
-            )
-            .padding(16.dp)
-    ) {
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            Text(
-                text = "🎵 Setlist Debug",
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.error
-            )
-            
-            Row {
-                // Load Setlist Button
-                Button(
-                    onClick = onLoadSetlist,
-                    modifier = Modifier.padding(end = 8.dp)
-                ) {
-                    Text("Load Setlist")
-                }
-                
-                // Copy Button
-                Button(
-                    onClick = {
-                        clipboardManager.setText(androidx.compose.ui.text.AnnotatedString(debugInfo))
-                    }
-                ) {
-                    Text("Copy")
-                }
-            }
-        }
-        
-        Spacer(modifier = Modifier.height(8.dp))
-        
-        Text(
-            text = debugInfo,
-            style = MaterialTheme.typography.bodySmall,
-            fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
-            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f),
-            modifier = Modifier
-                .fillMaxWidth()
-                .background(
-                    MaterialTheme.colorScheme.surface,
-                    RoundedCornerShape(4.dp)
-                )
-                .padding(8.dp)
-        )
-    }
-}

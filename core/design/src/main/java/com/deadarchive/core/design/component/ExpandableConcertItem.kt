@@ -326,41 +326,6 @@ private fun RecordingsSection(
             .fillMaxWidth()
             .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f))
     ) {
-        // Debug panel - moved above recordings list
-        if (settings.showDebugInfo) {
-            Card(
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
-                )
-            ) {
-                Column(
-                    modifier = Modifier.padding(16.dp)
-                ) {
-                    Text(
-                        text = "Debug Info",
-                        style = MaterialTheme.typography.titleSmall,
-                        fontWeight = FontWeight.Bold
-                    )
-                    
-                    Spacer(modifier = Modifier.height(8.dp))
-                    
-                    // Show basic information
-                    SimpleDebugText("Show ID", show.showId ?: "N/A")
-                    SimpleDebugText("Date", show.date)
-                    SimpleDebugText("Venue", show.venue ?: "N/A")
-                    SimpleDebugText("Location", show.location ?: "N/A")
-                    SimpleDebugText("Year", show.year ?: "N/A")
-                    
-                    Divider(modifier = Modifier.padding(vertical = 8.dp))
-                    
-                    // Recording information
-                    SimpleDebugText("Recording Count", recordings.size.toString())
-                    SimpleDebugText("Is In Library", show.isInLibrary.toString())
-                    SimpleDebugText("Available Sources", show.availableSources.joinToString(", "))
-                }
-            }
-        }
         
         // Section header
         Text(
