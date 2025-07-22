@@ -156,7 +156,7 @@ gradle :core:network:test  # Specific module tests
 4. Add migration tests
 
 ### Build Issues
-- **Gradle Wrapper Corrupted:** Use `gradle wrapper --gradle-version=8.7` to regenerate
+- **Gradle Wrapper Corrupted:** Use `gradle wrapper --gradle-version=8.14.2` to regenerate
 - **Java Version:** Ensure `JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64`
 - **Build Failures:** Check `build-output.log` for detailed error information
 
@@ -193,7 +193,7 @@ See `docs/setlist-data-pipeline.md` for complete pipeline documentation.
 ### Build Environment
 - Requires JDK 17+ 
 - Android SDK API 34
-- Gradle 8.14+
+- Gradle 8.14.2
 
 ### Common Fixes
 ```bash
