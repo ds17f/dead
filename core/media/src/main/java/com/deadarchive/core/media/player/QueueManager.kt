@@ -3,6 +3,7 @@ package com.deadarchive.core.media.player
 import android.util.Log
 import androidx.media3.common.MediaItem
 import androidx.media3.common.MediaMetadata
+import androidx.media3.common.Player
 import androidx.media3.session.MediaController
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
@@ -11,6 +12,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -34,8 +39,8 @@ class QueueManager @Inject constructor(
     /**
      * Load an entire show into the queue and optionally start playback from the specified track.
      */
-    suspend fun loadShow(recording: Recording, startTrackIndex: Int = 0, autoPlay: Boolean = true) {
-        Log.d(TAG, "Loading show: ${recording.title} with ${recording.tracks.size} tracks, starting at index $startTrackIndex")
+    suspend fun loadShow(recording: Recording, startTrackIndex: Int = 0, startPositionMs: Long = 0, autoPlay: Boolean = true) {
+        Log.d(TAG, "Loading show: ${recording.title} with ${recording.tracks.size} tracks, starting at index $startTrackIndex, position ${startPositionMs}ms")
         
         _currentRecording.value = recording
         
@@ -66,9 +71,17 @@ class QueueManager @Inject constructor(
             } else {
                 Log.d(TAG, "Setting MediaItems in controller without auto-playing")
             }
-            controller.setMediaItems(mediaItems, startTrackIndex, 0)
+            controller.setMediaItems(mediaItems, startTrackIndex, startPositionMs)
+            controller.prepare()  // Always prepare the media to get into STATE_READY
             if (autoPlay) {
                 controller.play()
+            } else {
+                // For UI restoration, sync position immediately so progress bar shows correct position
+                CoroutineScope(Dispatchers.Main).launch {
+                    delay(200) // Small delay to let MediaController settle
+                    mediaControllerRepository.updatePosition()
+                    Log.d(TAG, "Synced position for UI restoration: ${controller.currentPosition}ms")
+                }
             }
         } else {
             Log.e(TAG, "MediaController not available - cannot load show")
@@ -100,7 +113,7 @@ class QueueManager @Inject constructor(
             val trackIndex = recording.tracks.indexOf(track)
             if (trackIndex >= 0) {
                 Log.d(TAG, "Track not in queue, loading entire show and jumping to track index $trackIndex")
-                loadShow(recording, trackIndex)
+                loadShow(recording, trackIndex, 0, true)
             } else {
                 Log.e(TAG, "Track ${track.displayTitle} not found in recording ${recording.identifier}")
             }

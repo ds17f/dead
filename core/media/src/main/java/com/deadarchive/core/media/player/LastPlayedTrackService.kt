@@ -95,7 +95,14 @@ class LastPlayedTrackService @Inject constructor(
                 return
             }
             
-            Log.d(TAG, "Restoring last played track: ${lastTrack.trackTitle} at ${lastTrack.positionMs}ms")
+            // Validate the saved track data before attempting restore
+            if (!validateLastPlayedTrack(lastTrack)) {
+                Log.w(TAG, "Saved track data failed validation, clearing it")
+                clearLastPlayedTrack()
+                return
+            }
+            
+            Log.d(TAG, "Restoring validated track: ${lastTrack.trackTitle} at index ${lastTrack.trackIndex}, position ${lastTrack.positionMs}ms")
             
             // Wait for MediaController to be ready
             waitForMediaControllerConnection()
@@ -107,14 +114,8 @@ class LastPlayedTrackService @Inject constructor(
                 return
             }
             
-            // Load the show into the queue starting at the saved track (without auto-playing)
-            queueManager.loadShow(recording, lastTrack.trackIndex, autoPlay = false)
-            
-            // Wait a moment for the queue to load
-            delay(1000)
-            
-            // Seek to the saved position
-            mediaControllerRepository.seekTo(lastTrack.positionMs)
+            // Load the show into the queue starting at the saved track and position (without auto-playing)
+            queueManager.loadShow(recording, lastTrack.trackIndex, lastTrack.positionMs, autoPlay = false)
             
             // Don't auto-play - just restore the state so mini player appears
             Log.d(TAG, "Successfully restored last played track: ${lastTrack.trackTitle}")
@@ -150,6 +151,85 @@ class LastPlayedTrackService @Inject constructor(
         }
         
         Log.d(TAG, "MediaController is connected, proceeding with restore")
+    }
+    
+    /**
+     * Validate that saved track data is reasonable before using it
+     */
+    fun validateLastPlayedTrack(lastTrack: LastPlayedTrack): Boolean {
+        try {
+            // Check basic fields are not empty
+            if (lastTrack.recordingId.isBlank() || lastTrack.trackTitle.isBlank()) {
+                Log.w(TAG, "Invalid saved track: empty recordingId or trackTitle")
+                return false
+            }
+            
+            // Check track index is reasonable (not negative)
+            if (lastTrack.trackIndex < 0) {
+                Log.w(TAG, "Invalid saved track: negative track index ${lastTrack.trackIndex}")
+                return false
+            }
+            
+            // Check position is reasonable (not negative, not extremely large)
+            if (lastTrack.positionMs < 0 || lastTrack.positionMs > 24 * 60 * 60 * 1000L) { // > 24 hours
+                Log.w(TAG, "Invalid saved track: unreasonable position ${lastTrack.positionMs}ms")
+                return false
+            }
+            
+            // Check that the save time is recent (within last 7 days)
+            val daysSinceLastSave = (System.currentTimeMillis() - lastTrack.lastSavedTime) / (24 * 60 * 60 * 1000L)
+            if (daysSinceLastSave > 7) {
+                Log.w(TAG, "Saved track is old ($daysSinceLastSave days), may be stale")
+                // Still return true, but log warning
+            }
+            
+            Log.d(TAG, "Saved track validation passed for: ${lastTrack.trackTitle} at index ${lastTrack.trackIndex}")
+            return true
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error validating saved track", e)
+            return false
+        }
+    }
+    
+    /**
+     * Enhanced save with additional validation logging
+     */
+    fun saveCurrentTrackWithValidation(
+        recordingId: String,
+        trackIndex: Int,
+        positionMs: Long,
+        trackTitle: String,
+        trackFilename: String
+    ) {
+        // Log detailed save information for debugging
+        Log.d(TAG, "=== SAVING TRACK STATE ===")
+        Log.d(TAG, "Recording ID: $recordingId")
+        Log.d(TAG, "Track Index: $trackIndex")
+        Log.d(TAG, "Position: ${positionMs}ms (${positionMs / 1000}s)")
+        Log.d(TAG, "Title: '$trackTitle'")
+        Log.d(TAG, "Filename: '$trackFilename'")
+        
+        // Validate inputs before saving
+        if (recordingId.isBlank()) {
+            Log.w(TAG, "Cannot save: empty recordingId")
+            return
+        }
+        
+        if (trackIndex < 0) {
+            Log.w(TAG, "Cannot save: invalid track index $trackIndex")
+            return
+        }
+        
+        if (trackTitle.isBlank()) {
+            Log.w(TAG, "Cannot save: empty track title")
+            return
+        }
+        
+        // Save using the existing method
+        saveCurrentTrack(recordingId, trackIndex, positionMs, trackTitle, trackFilename)
+        
+        Log.d(TAG, "✅ Track state saved successfully")
     }
     
     /**

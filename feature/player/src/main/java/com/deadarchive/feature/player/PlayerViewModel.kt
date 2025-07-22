@@ -324,7 +324,7 @@ class PlayerViewModel @Inject constructor(
             
             viewModelScope.launch {
                 // Use QueueManager to load the entire show into the queue and start playback from beginning
-                queueManager.loadShow(currentRecording, 0)
+                queueManager.loadShow(currentRecording, 0, 0, true)
                 
                 // Update UI state
                 _uiState.value = _uiState.value.copy(
