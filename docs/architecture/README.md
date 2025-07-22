@@ -20,6 +20,24 @@ This directory contains comprehensive architectural documentation for the Dead A
 - Dependency issues and recommendations
 - **Essential** for understanding code organization
 
+### [02-core-systems.md](02-core-systems.md) - Core Systems Architecture
+**Detailed analysis of core system implementations**
+- Data pipeline & setlist processing (4-stage pipeline)
+- Archive.org API integration patterns
+- Rating system architecture with multi-tier calculations
+- Caching & performance strategy (offline-first approach)
+- Media playbook architecture with background services
+- **Key** for understanding system internals
+
+### [03-api-integration.md](03-api-integration.md) - Archive.org API Integration
+**Complete API integration architecture**
+- Endpoint usage and response handling
+- Flexible serialization system for API quirks
+- Error handling with exponential backoff
+- Data mapping and venue normalization
+- Performance optimization and caching
+- **Essential** for API development
+
 ### [05-technical-debt.md](05-technical-debt.md) - Technical Debt Analysis
 **Comprehensive debt analysis with prioritized improvements**
 - Critical, high, medium, and low priority issues
