@@ -9,6 +9,12 @@ import com.deadarchive.core.data.repository.LibraryRepositoryImpl
 import com.deadarchive.core.data.repository.TodayInHistoryRepository
 import com.deadarchive.core.data.sync.DataSyncService
 import com.deadarchive.core.data.sync.DataSyncServiceImpl
+import com.deadarchive.core.data.service.ShowEnrichmentService
+import com.deadarchive.core.data.service.ShowEnrichmentServiceImpl
+import com.deadarchive.core.data.service.ShowCacheService
+import com.deadarchive.core.data.service.ShowCacheServiceImpl
+import com.deadarchive.core.data.service.ShowCreationService
+import com.deadarchive.core.data.service.ShowCreationServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -74,4 +80,34 @@ abstract class DataModule {
     abstract fun bindDataSyncService(
         dataSyncServiceImpl: DataSyncServiceImpl
     ): DataSyncService
+    
+    /**
+     * Binds ShowEnrichmentService interface to its implementation.
+     * Provides rating and recording attachment services for shows.
+     */
+    @Binds
+    @Singleton
+    abstract fun bindShowEnrichmentService(
+        showEnrichmentServiceImpl: ShowEnrichmentServiceImpl
+    ): ShowEnrichmentService
+    
+    /**
+     * Binds ShowCacheService interface to its implementation.
+     * Provides caching and API interaction services.
+     */
+    @Binds
+    @Singleton
+    abstract fun bindShowCacheService(
+        showCacheServiceImpl: ShowCacheServiceImpl
+    ): ShowCacheService
+    
+    /**
+     * Binds ShowCreationService interface to its implementation.
+     * Provides show creation and normalization services.
+     */
+    @Binds
+    @Singleton
+    abstract fun bindShowCreationService(
+        showCreationServiceImpl: ShowCreationServiceImpl
+    ): ShowCreationService
 }
