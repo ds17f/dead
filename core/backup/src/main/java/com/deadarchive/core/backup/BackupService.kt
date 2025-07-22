@@ -5,10 +5,7 @@ import android.os.Environment
 import com.deadarchive.core.backup.model.*
 import java.io.File
 import com.deadarchive.core.data.repository.ShowRepository
-import com.deadarchive.core.data.repository.RatingsRepository
-import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.database.ShowDao
-import com.deadarchive.core.database.RecordingDao
 import com.deadarchive.core.settings.api.SettingsRepository
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.collect
@@ -23,7 +20,6 @@ import javax.inject.Singleton
 class BackupService @Inject constructor(
     private val showRepository: ShowRepository,
     private val settingsRepository: SettingsRepository,
-    private val libraryDao: LibraryDao,
     private val showDao: ShowDao,
     @dagger.hilt.android.qualifiers.ApplicationContext private val context: Context
 ) {
@@ -49,30 +45,26 @@ class BackupService @Inject constructor(
         val settings = settingsRepository.getSettings().firstOrNull() 
             ?: com.deadarchive.core.settings.api.model.AppSettings()
         
-        // Get library entries (not full shows - just the library metadata)
-        val libraryEntries = libraryDao.getAllLibraryEntries()
+        // Get library shows from the actual source used by the app (ShowEntity.addedToLibraryAt)
+        val libraryShows = showDao.getLibraryShows()
         val backupShows = mutableListOf<BackupLibraryShow>()
         
-        for (entry in libraryEntries) {
+        for (showEntity in libraryShows) {
             try {
-                // Get basic show info for backup
-                val show = showRepository.getShowById(entry.showId)
-                show?.let {
-                    // Get user's preferred recording for this show
-                    val preferredRecordingId = settingsRepository.getRecordingPreference(entry.showId)
-                    
-                    val backupShow = BackupLibraryShow(
-                        showId = entry.showId,
-                        date = it.date,
-                        venue = it.venue,
-                        location = it.location,
-                        addedAt = entry.addedTimestamp,
-                        preferredRecordingId = preferredRecordingId
-                    )
-                    backupShows.add(backupShow)
-                }
+                // Get user's preferred recording for this show
+                val preferredRecordingId = settingsRepository.getRecordingPreference(showEntity.showId)
+                
+                val backupShow = BackupLibraryShow(
+                    showId = showEntity.showId,
+                    date = showEntity.date,
+                    venue = showEntity.venue,
+                    location = showEntity.location,
+                    addedAt = showEntity.addedToLibraryAt ?: throw IllegalStateException("Expected non-null addedToLibraryAt from getLibraryShows() query"),
+                    preferredRecordingId = preferredRecordingId
+                )
+                backupShows.add(backupShow)
             } catch (e: Exception) {
-                android.util.Log.w(TAG, "Failed to backup library show ${entry.showId}: ${e.message}")
+                android.util.Log.w(TAG, "Failed to backup library show ${showEntity.showId}: ${e.message}")
             }
         }
         
@@ -213,16 +205,7 @@ class BackupService @Inject constructor(
                     // Check if show exists in the database (from the catalog)
                     val existingShow = showRepository.getShowById(backupShow.showId)
                     if (existingShow != null) {
-                        // Add to library with original timestamp  
-                        val libraryEntry = com.deadarchive.core.database.LibraryEntity(
-                            id = "show_${backupShow.showId}", // Use consistent ID format with "show_" prefix
-                            type = "SHOW",
-                            showId = backupShow.showId,
-                            addedTimestamp = backupShow.addedAt
-                        )
-                        libraryDao.addToLibrary(libraryEntry)
-                        
-                        // IMPORTANT: Update the show entity to mark as in library with timestamp
+                        // Add to library with original timestamp
                         showDao.addShowToLibrary(backupShow.showId, backupShow.addedAt)
                         
                         // Check if show has recordings, if not, try to fetch them from API

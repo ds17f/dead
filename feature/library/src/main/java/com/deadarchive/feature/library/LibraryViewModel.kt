@@ -100,10 +100,11 @@ class LibraryViewModel @Inject constructor(
                         LibrarySortOption.DATE_DESCENDING -> {
                             filteredShows.sortedByDescending { it.date }
                         }
-                        LibrarySortOption.ADDED_ASCENDING, LibrarySortOption.ADDED_DESCENDING -> {
-                            // For timestamp-based sorting, we need to get shows with timestamps
-                            // For now, just use date-based sorting as fallback
-                            filteredShows.sortedByDescending { it.date }
+                        LibrarySortOption.ADDED_ASCENDING -> {
+                            filteredShows.sortedBy { it.addedToLibraryAt ?: 0L }
+                        }
+                        LibrarySortOption.ADDED_DESCENDING -> {
+                            filteredShows.sortedByDescending { it.addedToLibraryAt ?: 0L }
                         }
                     }
                     
@@ -115,7 +116,7 @@ class LibraryViewModel @Inject constructor(
                             id = "show_${show.showId}",
                             showId = show.showId,
                             type = LibraryItemType.SHOW,
-                            addedTimestamp = System.currentTimeMillis() // TODO: Get actual timestamp
+                            addedTimestamp = show.addedToLibraryAt ?: 0L
                         )
                     }
                     

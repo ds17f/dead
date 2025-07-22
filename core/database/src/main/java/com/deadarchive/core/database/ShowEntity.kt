@@ -58,7 +58,8 @@ data class ShowEntity(
             setlistRaw = setlistRaw,
             sets = sets,
             recordings = recordings,
-            isInLibrary = addedToLibraryAt != null
+            isInLibrary = addedToLibraryAt != null,
+            addedToLibraryAt = addedToLibraryAt
         )
     }
     

@@ -3,7 +3,6 @@ package com.deadarchive.core.backup.di
 import android.content.Context
 import com.deadarchive.core.backup.BackupService
 import com.deadarchive.core.data.repository.ShowRepository
-import com.deadarchive.core.database.LibraryDao
 import com.deadarchive.core.database.ShowDao
 import com.deadarchive.core.settings.api.SettingsRepository
 import dagger.Module
@@ -22,10 +21,9 @@ object BackupModule {
     fun provideBackupService(
         showRepository: ShowRepository,
         settingsRepository: SettingsRepository,
-        libraryDao: LibraryDao,
         showDao: ShowDao,
         @ApplicationContext context: Context
     ): BackupService {
-        return BackupService(showRepository, settingsRepository, libraryDao, showDao, context)
+        return BackupService(showRepository, settingsRepository, showDao, context)
     }
 }
