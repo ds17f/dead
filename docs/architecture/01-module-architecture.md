@@ -170,12 +170,13 @@ class ShowRepositoryImpl @Inject constructor(
 - Good offline file resolution
 
 #### core:design → (model, settings-api)
-**Purpose**: UI components and Material 3 theme
+**Purpose**: UI components, Material 3 theme, and debug tools
 **Key Components**:
 - Material 3 theme with Grateful Dead styling
 - Reusable components (`StarRating`, `ExpandableConcertItem`)
 - `IconResources` with 50+ icons
 - Comprehensive design tokens
+- Debug panel system (`DebugBottomSheet`, `DebugActivator`, `DebugLogger`)
 
 **Architecture Grade**: A
 - Excellent Material 3 implementation

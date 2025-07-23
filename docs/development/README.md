@@ -18,6 +18,13 @@ This directory contains operational documentation for Dead Archive development a
 - Release APK and AAB generation
 - Production build troubleshooting
 
+### [debug-panel-system.md](debug-panel-system.md) - Debug Panel System
+**Comprehensive debugging tools for development**
+- Reusable debug UI components across screens
+- Copy-to-clipboard and logcat integration
+- Settings-gated debug functionality
+- Screen-specific debug data collection
+
 ## 🔗 Related Documentation
 
 - **[../SETUP.md](../SETUP.md)** - Development environment setup
@@ -45,6 +52,13 @@ git tag v1.0.0 && git push origin v1.0.0  # Trigger automated release
 - **Every commit**: Automatic build and test
 - **Tagged releases**: APK generation and GitHub release
 - **Pull requests**: Automated quality checks
+
+### Debug Panel System
+```bash
+# Enable debug mode: Settings → Developer Options → Debug Mode
+adb logcat -s DEAD_DEBUG_PANEL   # View debug panel output
+adb logcat -s DEAD_DEBUG_PANEL | grep "ScreenName"  # Filter by screen
+```
 
 ---
 

@@ -43,6 +43,13 @@ make collect-metadata-1977       # Collect 1977 shows (golden year)
 make package-datazip             # Package metadata for app deployment
 ```
 
+### Debug Tools
+```bash
+# Enable debug mode in app: Settings → Developer Options → Debug Mode
+adb logcat -s DEAD_DEBUG_PANEL   # View debug panel output from copy actions
+adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
+```
+
 ## Architecture Overview
 
 ### Module Structure
