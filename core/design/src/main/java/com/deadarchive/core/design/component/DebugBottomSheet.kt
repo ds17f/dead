@@ -71,6 +71,7 @@ fun DebugBottomSheet(
                 itemCount = debugData.getTotalItemCount(),
                 onCopyAll = {
                     clipboardManager.setText(AnnotatedString(debugData.toFormattedText()))
+                    DebugLogger.logDebugData(debugData, "COPY_ALL")
                 }
             )
             
@@ -84,8 +85,10 @@ fun DebugBottomSheet(
                 items(debugData.sections) { section ->
                     DebugSection(
                         section = section,
+                        screenName = debugData.screenName,
                         onCopySection = {
                             clipboardManager.setText(AnnotatedString(section.toFormattedText()))
+                            DebugLogger.logDebugSection(section, debugData.screenName, "COPY_SECTION")
                         }
                     )
                 }
@@ -146,6 +149,7 @@ private fun DebugHeader(
 @Composable
 private fun DebugSection(
     section: DebugSection,
+    screenName: String,
     onCopySection: () -> Unit
 ) {
     var isExpanded by remember { mutableStateOf(true) }

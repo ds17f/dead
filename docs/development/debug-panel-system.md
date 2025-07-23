@@ -43,7 +43,7 @@ sealed class DebugItem {
 #### 3. Debug Activation Component
 **Location**: `core/design/src/main/java/com/deadarchive/core/design/component/DebugActivator.kt`
 
-A floating debug button (🐛) that appears in the corner of screens when debug mode is enabled.
+A floating debug button (🐛) that appears in the bottom-right corner of screens when debug mode is enabled. This component provides consistent activation across all screens.
 
 ## Usage Guide
 
@@ -59,28 +59,32 @@ fun collectPlaylistDebugData(
     viewModel: PlayerViewModel,
     recordingId: String?,
     showId: String?
-): List<DebugSection> {
+): DebugData {
     val uiState by viewModel.uiState.collectAsState()
     val currentRecording by viewModel.currentRecording.collectAsState()
     
-    return listOf(
-        DebugSection(
-            title = "Request Parameters",
-            items = listOf(
-                DebugItem.KeyValue("recordingId", recordingId ?: "null"),
-                DebugItem.KeyValue("showId", showId ?: "null"),
-                DebugItem.Timestamp("Last Load Attempt", System.currentTimeMillis())
+    return DebugData(
+        screenName = "PlaylistScreen",
+        sections = listOf(
+            DebugSection(
+                title = "Request Parameters",
+                items = listOf(
+                    DebugItem.KeyValue("recordingId", recordingId ?: "null"),
+                    DebugItem.KeyValue("showId", showId ?: "null"),
+                    DebugItemFactory.createTimestamp("Last Request")
+                )
+            ),
+            DebugSection(
+                title = "Loading State",
+                items = listOf(
+                    DebugItem.BooleanValue("isLoading", uiState.isLoading),
+                    DebugItem.KeyValue("currentRecording", currentRecording?.identifier ?: "null"),
+                    uiState.error?.let { DebugItemFactory.createErrorItem(it) } 
+                        ?: DebugItem.KeyValue("Last Error", "None")
+                )
             )
-        ),
-        DebugSection(
-            title = "Loading State",
-            items = listOf(
-                DebugItem.KeyValue("isLoading", uiState.isLoading.toString()),
-                DebugItem.KeyValue("currentRecording", currentRecording?.identifier ?: "null"),
-                DebugItem.Error("Last Error", uiState.error)
-            )
+            // Add more sections as needed
         )
-        // Add more sections as needed
     )
 }
 ```
@@ -99,20 +103,34 @@ fun MyScreen(
     val debugData = if (settings.showDebugInfo) {
         collectMyScreenDebugData(viewModel, /* other params */)
     } else {
-        emptyList()
+        null
     }
+    
+    var showDebugPanel by remember { mutableStateOf(false) }
     
     Box(modifier = Modifier.fillMaxSize()) {
         // Your main screen content
         MyScreenContent()
         
-        // Debug panel (only shows if debug enabled)
-        if (settings.showDebugInfo) {
-            DebugBottomSheet(
-                debugSections = debugData,
-                screenName = "MyScreen"
+        // Debug activation button
+        if (settings.showDebugInfo && debugData != null) {
+            DebugActivator(
+                isVisible = true,
+                onClick = { showDebugPanel = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp)
             )
         }
+    }
+    
+    // Debug Bottom Sheet
+    if (settings.showDebugInfo && debugData != null) {
+        DebugBottomSheet(
+            debugData = debugData,
+            isVisible = showDebugPanel,
+            onDismiss = { showDebugPanel = false }
+        )
     }
 }
 ```
@@ -171,6 +189,28 @@ DebugItem.JsonData(
 - **Copy All**: Copies all debug data as formatted text with timestamps
 - **Copy Section**: Copies individual debug sections
 - **Formatted Output**: Includes section headers, timestamps, and proper formatting
+- **Logcat Integration**: Automatically outputs to logcat with searchable tags when copying
+
+### Logcat Integration
+
+All copy actions automatically log the same data to logcat for easy access via `adb logcat`. Use these commands to view debug output:
+
+```bash
+# View all debug panel output
+adb logcat -s DEAD_DEBUG_PANEL
+
+# Filter by specific screen
+adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"
+
+# View in real-time as you copy debug data
+adb logcat -s DEAD_DEBUG_PANEL -v time
+```
+
+The logcat output includes:
+- Searchable headers with screen name and action type
+- Full debug data with consistent formatting
+- Timestamps for correlation with app behavior
+- Visual separators (======) for easy parsing
 
 ### Visual Design
 - **Material 3 Integration**: Uses app theme colors and typography
