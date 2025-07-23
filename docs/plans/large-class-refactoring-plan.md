@@ -137,6 +137,7 @@ This comprehensive plan addresses the "extremely large classes" architectural is
    - ✅ Now a facade coordinator using composition
    - ✅ Maintains existing interface for backward compatibility
    - ✅ Delegates specialized operations to focused services
+   - ✅ Fixed circular dependency bug in `getBestRecordingForShowId()` method
 
 ## 📋 Implementation Timeline
 
@@ -151,6 +152,9 @@ This comprehensive plan addresses the "extremely large classes" architectural is
 **Status**: ✅ **COMPLETED**
 - ✅ Extract ShowCreation, ShowEnrichment, ShowCache services
 - ✅ Refactor ShowRepositoryImpl to use composition
+- ✅ Extract PlayerDataService, PlayerPlaylistService, PlayerDownloadService, PlayerLibraryService
+- ✅ Refactor PlayerViewModel to use service composition
+- ✅ Fix circular dependency bug in recording loading logic
 - ✅ Verified build and functionality
 
 ### 📋 Week 6-8: Media Component Refactoring (Phase 2.2)

@@ -119,4 +119,30 @@ class PlayerDataServiceImpl @Inject constructor(
             null
         }
     }
+    
+    override suspend fun getBestRecordingByShowId(showId: String): Recording? {
+        return try {
+            Log.d(TAG, "getBestRecordingByShowId: Getting best recording for showId: $showId")
+            
+            // Get all recordings for this show
+            val recordings = showRepository.getRecordingsByShowId(showId)
+            Log.d(TAG, "getBestRecordingByShowId: Found ${recordings.size} recordings for show $showId")
+            
+            if (recordings.isEmpty()) {
+                Log.w(TAG, "getBestRecordingByShowId: No recordings found for show $showId")
+                return null
+            }
+            
+            // Use the first recording as "best" (could be enhanced with rating logic later)
+            val bestRecording = recordings.firstOrNull()
+            if (bestRecording != null) {
+                Log.d(TAG, "getBestRecordingByShowId: Selected best recording: ${bestRecording.identifier}")
+            }
+            
+            bestRecording
+        } catch (e: Exception) {
+            Log.e(TAG, "getBestRecordingByShowId: Error getting recordings for show $showId", e)
+            null
+        }
+    }
 }

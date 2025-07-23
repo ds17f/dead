@@ -738,13 +738,8 @@ class PlayerViewModel @Inject constructor(
     
     suspend fun getBestRecordingForShowId(showId: String): Recording? {
         return try {
-            val currentRecording = _currentRecording.value
-            if (currentRecording != null) {
-                val recordings = playerDataService.getAlternativeRecordings(currentRecording)
-                recordings.firstOrNull() // Return first recording as "best"
-            } else {
-                null
-            }
+            Log.d(TAG, "getBestRecordingForShowId: Delegating to playerDataService for showId: $showId")
+            playerDataService.getBestRecordingByShowId(showId)
         } catch (e: Exception) {
             Log.e(TAG, "getBestRecordingForShowId: Error", e)
             null

@@ -253,6 +253,25 @@ The logcat output includes:
 - **State Management**: ViewModel state changes and transitions
 - **Navigation**: Route parameters and navigation events
 - **Media Playback**: Player state, queue management, and audio stream info
+- **Recording Loading**: Service calls, repository queries, and data flow analysis
+
+### Successful Bug Diagnosis Example
+
+The debug panel system successfully diagnosed a critical recording loading bug:
+
+**Issue**: Shows failed to load recordings when clicked, displaying "Loading recording..." indefinitely.
+
+**Debug Data Revealed**:
+- `hasCurrentRecording: false`
+- `isLoading: false` 
+- `Loading Phase: No Recording Loaded`
+- No logging from `PlayerDataServiceImpl.loadRecording()` method
+
+**Root Cause Found**: `PlayerViewModel.getBestRecordingForShowId()` had a circular dependency - it required `currentRecording` to be non-null to find recordings, but `currentRecording` was null because no recording had been loaded yet.
+
+**Fix Applied**: Added `getBestRecordingByShowId()` method to service layer that queries repository directly by showId without depending on existing recording state.
+
+**Result**: ✅ Recording loading now works correctly with proper service delegation architecture.
 
 ## Extension Guide
 

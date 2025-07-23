@@ -51,4 +51,11 @@ interface PlayerDataService {
      * @return Best recording for the show, or null if none found
      */
     suspend fun getBestRecordingForShow(show: Show): Recording?
+    
+    /**
+     * Get the best recording for a show by show ID
+     * @param showId The show identifier
+     * @return Best recording for the show, or null if none found
+     */
+    suspend fun getBestRecordingByShowId(showId: String): Recording?
 }
