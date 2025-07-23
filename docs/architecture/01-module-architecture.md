@@ -100,28 +100,34 @@ This document provides a comprehensive analysis of the 14-module architecture in
 #### core:data → (data-api, model, network, database, settings-api)
 **Purpose**: Repository implementations coordinating all data sources
 **Key Components**:
-- `ShowRepositoryImpl` (1132 lines) - Complex show orchestration
+- `ShowRepositoryImpl` (~960 lines) - Orchestrates data access via dedicated services
+- **Service Architecture** (NEW):
+  - `ShowEnrichmentService` - Rating and recording enrichment logic
+  - `ShowCacheService` - Cache management and API interaction
+  - `ShowCreationService` - Show creation and normalization workflow
 - `LibraryRepository` - User library management
 - `DownloadRepository` - Offline content management
 - `RatingsRepository` - Rating system integration
 
-**Architecture Grade**: B
+**Architecture Grade**: A-
 - Excellent data coordination and caching strategy
 - Single source of truth architecture
-- **Issue**: ShowRepository is extremely large
-- **Issue**: Complex data flows difficult to test
-- Sophisticated rating integration system
+- **RESOLVED**: ShowRepository refactored with service-oriented architecture
+- **IMPROVED**: Complex data flows extracted to testable services
+- Sophisticated rating integration system via dedicated service
 
-**Critical Code Path**:
+**Service Architecture**:
 ```kotlin
-// Show creation with venue normalization
-private suspend fun createAndSaveShowsFromRecordings(recordings: List<Recording>): List<Show> {
-    val groupedRecordings = recordings.groupBy { recording ->
-        val normalizedDate = normalizeDate(recording.concertDate)
-        val normalizedVenue = VenueUtil.normalizeVenue(recording.concertVenue)
-        "${normalizedDate}_${normalizedVenue}"
-    }
-    // Complex show aggregation logic
+// Main repository delegates to focused services
+class ShowRepositoryImpl @Inject constructor(
+    private val showEnrichmentService: ShowEnrichmentService,
+    private val showCacheService: ShowCacheService, 
+    private val showCreationService: ShowCreationService,
+    // ... other dependencies
+) {
+    // Complex operations delegated to appropriate services
+    private suspend fun createAndSaveShowsFromRecordings(recordings: List<Recording>) =
+        showCreationService.createAndSaveShowsFromRecordings(recordings)
 }
 ```
 
@@ -287,12 +293,12 @@ feature:playlist → core:data, core:database, core:network
 - No `core:database-api` - features directly access Room entities
 - No `core:network-api` - features directly access network layer
 
-### 4. Large Class Issue (Critical)
+### 4. Large Class Issue (Partially Resolved)
 Several classes exceed maintainability thresholds:
-- `DebugViewModel` - 1702 lines
+- ~~`DebugViewModel` - 1702 lines~~ **REMOVED**
 - `PlaylistScreen` - 1393 lines  
 - `PlayerViewModel` - 1227 lines
-- `ShowRepositoryImpl` - 1132 lines
+- ~~`ShowRepositoryImpl` - 1132 lines~~ **REFACTORED** to ~960 lines + 3 focused services
 - `MediaControllerRepository` - 1087 lines
 
 ## Architecture Strengths
@@ -353,7 +359,7 @@ core:network-api   // Network layer abstractions
 | core:model | 15 | 1,200 | Medium | A |
 | core:database | 20 | 2,100 | High | A- |
 | core:network | 12 | 800 | Medium | A |
-| core:data | 8 | 3,500 | Very High | B |
+| core:data | 11 | 3,300 | High | A- |
 | core:media | 10 | 2,800 | Very High | B+ |
 | feature:browse | 6 | 1,200 | Medium | B+ |
 | feature:player | 8 | 2,300 | High | B+ |

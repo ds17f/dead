@@ -49,7 +49,7 @@ make package-datazip             # Package metadata for app deployment
 
 **Core Modules:**
 - `:core:model` - Data models and domain entities
-- `:core:data` - Repository implementations and data access
+- `:core:data` - Repository implementations and data access services
 - `:core:database` - Room database with entities and DAOs  
 - `:core:network` - Retrofit networking for Archive.org API
 - `:core:media` - Media3/ExoPlayer integration for audio playback
@@ -77,6 +77,32 @@ make package-datazip             # Package metadata for app deployment
 **Dependency Injection:** Hilt provides scoped dependencies across all modules
 
 **Reactive Data Flow:** Repository pattern with Flow-based data streams
+
+**Service-Oriented Architecture:** Core data operations split into focused services
+
+### Data Services Architecture
+
+The `:core:data` module implements a service-oriented architecture with the main ShowRepository delegating specialized concerns to focused services:
+
+**ShowEnrichmentService** (`com.deadarchive.core.data.service`)
+- **Responsibility:** Rating and recording enrichment
+- **Key Methods:** `enrichShowWithRatings()`, `enrichRecordingWithRating()`, `attachRecordingsToShow()`
+- **Dependencies:** RecordingDao, RatingsRepository
+- **Impact:** Handles all rating lookups and user preference application
+
+**ShowCacheService** (`com.deadarchive.core.data.service`)
+- **Responsibility:** Cache management and API interaction
+- **Key Methods:** `isCacheExpired()`, `getRecordingMetadata()`, `isAudioFile()`
+- **Dependencies:** ArchiveApiService
+- **Impact:** Centralizes cache validation and Archive.org API calls
+
+**ShowCreationService** (`com.deadarchive.core.data.service`)
+- **Responsibility:** Show creation and normalization
+- **Key Methods:** `createAndSaveShowsFromRecordings()`, `normalizeDate()`, `groupRecordingsByShow()`
+- **Dependencies:** ShowDao
+- **Impact:** Handles complex show creation workflow from recordings
+
+This architecture follows Single Responsibility Principle, making the codebase more maintainable and testable by isolating concerns into dedicated services.
 
 ### Entry Points
 
