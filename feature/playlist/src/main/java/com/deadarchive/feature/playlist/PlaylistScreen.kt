@@ -25,6 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -53,6 +54,9 @@ import com.deadarchive.core.design.R
 import kotlinx.coroutines.delay
 import java.text.SimpleDateFormat
 import java.util.Locale
+import com.deadarchive.core.design.component.DebugActivator
+import com.deadarchive.core.design.component.DebugBottomSheet
+import com.deadarchive.feature.playlist.debug.collectPlaylistDebugData
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -66,7 +70,6 @@ fun PlaylistScreen(
     settingsViewModel: SettingsViewModel = hiltViewModel(),
     reviewViewModel: ReviewViewModel = hiltViewModel()
 ) {
-    Log.d("PlaylistScreen", "PlaylistScreen: Composing with recordingId: $recordingId")
     
     // Create RecordingSelectionService manually since it has no dependencies
     val recordingSelectionService = remember { RecordingSelectionService() }
@@ -85,6 +88,17 @@ fun PlaylistScreen(
     val settings by settingsViewModel.settings.collectAsState()
     val reviewState by reviewViewModel.reviewState.collectAsState()
     
+    // Debug data collection - only when debug mode is enabled
+    val debugData = if (settings.showDebugInfo) {
+        collectPlaylistDebugData(
+            viewModel = viewModel,
+            recordingId = recordingId,
+            showId = showId
+        )
+    } else {
+        null
+    }
+    
     // Collect download and library states
     val downloadStates by viewModel.downloadStates.collectAsState()
     val trackDownloadStates by viewModel.trackDownloadStates.collectAsState()
@@ -100,24 +114,16 @@ fun PlaylistScreen(
     LaunchedEffect(currentRecording, showId) {
         if (currentRecording != null) {
             try {
-                Log.d("PlaylistScreen", "Checking alternative recordings for: ${currentRecording?.identifier}")
-                Log.d("PlaylistScreen", "Using showId: $showId")
-                
                 val allRecordings = if (showId != null) {
                     // Use showId directly if available
-                    Log.d("PlaylistScreen", "Using direct showId lookup")
                     viewModel.getAlternativeRecordingsById(showId)
                 } else {
                     // Fallback to the old method
-                    Log.d("PlaylistScreen", "Falling back to venue normalization method")
                     viewModel.getAlternativeRecordings()
                 }
                 
-                Log.d("PlaylistScreen", "Alternative recordings check: found ${allRecordings.size} recordings")
                 hasAlternativeRecordings = allRecordings.size > 1 // More than just current recording
-                Log.d("PlaylistScreen", "Setting hasAlternativeRecordings to: ${allRecordings.size > 1}")
             } catch (e: Exception) {
-                Log.e("PlaylistScreen", "Error checking for alternative recordings", e)
                 hasAlternativeRecordings = false
             }
         } else {
@@ -125,7 +131,8 @@ fun PlaylistScreen(
         }
     }
     
-    // Debug information states
+    // Debug panel state
+    var showDebugPanel by remember { mutableStateOf(false) }
     
     // Review modal state
     var showReviewDetails by remember { mutableStateOf(false) }
@@ -139,6 +146,7 @@ fun PlaylistScreen(
     
     // Menu bottom sheet state
     var showMenu by remember { mutableStateOf(false) }
+    
     
     // Library state
     val isInLibrary by viewModel.isInLibrary.collectAsState()
@@ -156,55 +164,33 @@ fun PlaylistScreen(
     
     // Load best recording for the show (including user preferences)
     LaunchedEffect(showId, recordingId) {
-        Log.d("PlaylistScreen", "LaunchedEffect: showId = $showId, recordingId = $recordingId")
-        Log.d("PlaylistScreen", "LaunchedEffect: currentRecording.identifier = ${currentRecording?.identifier}")
-        
         when {
             // If we have a showId, get the best recording for that show (preferred approach)
             !showId.isNullOrBlank() -> {
-                Log.d("PlaylistScreen", "LaunchedEffect: Loading best recording for showId: $showId")
                 try {
                     val bestRecording = viewModel.getBestRecordingForShowId(showId)
                     if (bestRecording != null) {
                         // Only load if it's different from current recording to avoid disrupting playback
                         if (currentRecording?.identifier != bestRecording.identifier) {
-                            Log.d("PlaylistScreen", "LaunchedEffect: Loading new best recording: ${bestRecording.identifier}")
                             viewModel.loadRecording(bestRecording.identifier)
-                        } else {
-                            Log.d("PlaylistScreen", "LaunchedEffect: Best recording ${bestRecording.identifier} already loaded")
                         }
-                    } else {
-                        Log.w("PlaylistScreen", "LaunchedEffect: No recordings found for showId: $showId")
                     }
                 } catch (e: Exception) {
-                    Log.e("PlaylistScreen", "LaunchedEffect: Exception loading best recording for show", e)
+                    // Log error for recording loading issues
+                    Log.e("PlaylistScreen", "Exception loading best recording for show", e)
                 }
             }
             // Fallback: use specific recordingId if no showId available
             !recordingId.isNullOrBlank() && currentRecording?.identifier != recordingId -> {
-                Log.d("PlaylistScreen", "LaunchedEffect: Fallback - Loading specific recording: $recordingId")
                 try {
                     viewModel.loadRecording(recordingId)
                 } catch (e: Exception) {
-                    Log.e("PlaylistScreen", "LaunchedEffect: Exception in loadRecording", e)
+                    Log.e("PlaylistScreen", "Exception in loadRecording", e)
                 }
-            }
-            currentRecording?.identifier == recordingId -> {
-                Log.d("PlaylistScreen", "LaunchedEffect: Recording $recordingId already loaded")
-            }
-            else -> {
-                Log.w("PlaylistScreen", "LaunchedEffect: No showId or recordingId provided")
             }
         }
     }
     
-    // Debug current state
-    LaunchedEffect(uiState, currentRecording) {
-        Log.d("PlaylistScreen", "State Update - isLoading: ${uiState.isLoading}, " +
-                "tracks.size: ${uiState.tracks.size}, " +
-                "error: ${uiState.error}, " +
-                "recording: ${currentRecording?.title}")
-    }
     
     Box(modifier = Modifier.fillMaxSize()) {
         // Back arrow overlay at the top
@@ -225,6 +211,17 @@ fun PlaylistScreen(
                 painter = IconResources.Navigation.Back(), 
                 contentDescription = "Back",
                 tint = MaterialTheme.colorScheme.onSurface
+            )
+        }
+        
+        // Debug activation button - floating in bottom-right corner
+        if (settings.showDebugInfo && debugData != null) {
+            DebugActivator(
+                isVisible = true,
+                onClick = { showDebugPanel = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp)
             )
         }
         
@@ -651,23 +648,10 @@ fun PlaylistScreen(
                             // Fallback to the old method
                             viewModel.getAlternativeRecordings()
                         }
-                        Log.d("PlaylistScreen", "Recording selection: Found ${allRecordings.size} total recordings")
-                        allRecordings.forEachIndexed { index, rec ->
-                            Log.d("PlaylistScreen", "Recording $index: ${rec.identifier} - ${rec.displayTitle}")
-                        }
-                        
                         // Get the recommended recording ID using show's built-in recommendation
                         val recommendedRecordingId = if (showId != null) {
                             viewModel.getRecommendedRecordingId(showId)
                         } else null
-                        Log.d("PlaylistScreen", "Recording selection: Recommended recording ID = $recommendedRecordingId")
-                        Log.d("PlaylistScreen", "Recording selection: Current recording ID = ${recording.identifier}")
-                        
-                        // Debug: Check if any recording matches the recommended best
-                        allRecordings.forEach { rec ->
-                            val isRecommended = rec.identifier == recommendedRecordingId
-                            Log.d("PlaylistScreen", "Recording ${rec.identifier} - isRecommended: $isRecommended, title: ${rec.displayTitle}")
-                        }
                         
                         alternativeRecordings = recordingSelectionService.getRecordingOptions(
                             recordings = allRecordings,
@@ -675,10 +659,7 @@ fun PlaylistScreen(
                             settings = settings,
                             ratingsBestRecordingId = recommendedRecordingId
                         )
-                        Log.d("PlaylistScreen", "Recording selection: ${alternativeRecordings.size} alternative recordings after filtering")
-                        Log.d("PlaylistScreen", "Recording selection: Current recording = ${recording.identifier}")
                     } catch (e: Exception) {
-                        Log.e("PlaylistScreen", "Error loading alternative recordings", e)
                         alternativeRecordings = emptyList()
                     }
                 }
@@ -802,6 +783,15 @@ fun PlaylistScreen(
                 Spacer(modifier = Modifier.height(16.dp))
             }
         }
+    }
+    
+    // Debug Bottom Sheet - only shown when debug mode is enabled
+    if (settings.showDebugInfo && debugData != null) {
+        DebugBottomSheet(
+            debugData = debugData,
+            isVisible = showDebugPanel,
+            onDismiss = { showDebugPanel = false }
+        )
     }
 }
 

@@ -25,25 +25,20 @@ fun DebugActivator(
 ) {
     if (!isVisible) return
     
-    Box(
-        modifier = modifier.fillMaxSize()
+    // Fixed: Don't create a Box that fills the entire screen - just render the button directly
+    FloatingActionButton(
+        onClick = onClick,
+        modifier = modifier
+            .size(48.dp)
+            .zIndex(999f),
+        containerColor = Color(0xFFFF5722),
+        contentColor = Color.White,
+        shape = CircleShape
     ) {
-        FloatingActionButton(
-            onClick = onClick,
-            modifier = Modifier
-                .align(Alignment.BottomEnd)
-                .padding(16.dp)
-                .size(48.dp)
-                .zIndex(999f),
-            containerColor = Color(0xFFFF5722),
-            contentColor = Color.White,
-            shape = CircleShape
-        ) {
-            Text(
-                text = "🐛",
-                fontSize = 20.sp
-            )
-        }
+        Text(
+            text = "🐛",
+            fontSize = 20.sp
+        )
     }
 }
 
