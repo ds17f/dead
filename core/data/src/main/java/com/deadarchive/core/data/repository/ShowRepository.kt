@@ -39,7 +39,6 @@ class ShowRepositoryImpl @Inject constructor(
     
     companion object {
         private const val TAG = "ShowRepository"
-        private const val CACHE_EXPIRY_HOURS = 24
     }
     
     override fun getAllShows(): Flow<List<Show>> = flow {
@@ -193,7 +192,7 @@ class ShowRepositoryImpl @Inject constructor(
                 println("DEBUG: Entity identifier: '${cachedEntity.identifier}', concertId: '${cachedEntity.concertId}'")
             }
             
-            if (cachedEntity != null && !isCacheExpired(cachedEntity.cachedTimestamp)) {
+            if (cachedEntity != null && !showCacheService.isCacheExpired(cachedEntity.cachedTimestamp)) {
                 val recording = cachedEntity.toRecording()
                 println("DEBUG: getRecordingById cached recording - title: ${recording.title}, tracks: ${recording.tracks.size}")
                 println("DEBUG: getRecordingById entity tracksJson: ${if(cachedEntity.tracksJson != null) "not null" else "null"}")
@@ -207,7 +206,7 @@ class ShowRepositoryImpl @Inject constructor(
                     println("DEBUG: getRecordingById cached recording has no tracks, forcing API refresh")
                 }
             } else {
-                println("DEBUG: getRecordingById cache miss or expired - entity: ${cachedEntity != null}, expired: ${cachedEntity?.let { isCacheExpired(it.cachedTimestamp) }}")
+                println("DEBUG: getRecordingById cache miss or expired - entity: ${cachedEntity != null}, expired: ${cachedEntity?.let { showCacheService.isCacheExpired(it.cachedTimestamp) }}")
             }
             
             // Fetch from API if not cached, expired, or has no tracks
@@ -275,16 +274,7 @@ class ShowRepositoryImpl @Inject constructor(
     }
     
     suspend fun getRecordingMetadata(identifier: String): ArchiveMetadataResponse? {
-        return try {
-            val response = archiveApiService.getRecordingMetadata(identifier)
-            if (response.isSuccessful) {
-                response.body()
-            } else {
-                null
-            }
-        } catch (e: Exception) {
-            null
-        }
+        return showCacheService.getRecordingMetadata(identifier)
     }
     
     override suspend fun getStreamingUrl(identifier: String, filename: String): String? {
@@ -306,7 +296,7 @@ class ShowRepositoryImpl @Inject constructor(
             
             // Filter audio files and create streaming URLs
             val audioFiles = metadata.files.filter { file ->
-                val isAudio = isAudioFile(file.name)
+                val isAudio = showCacheService.isAudioFile(file.name)
                 val hasSize = (file.size?.toLongOrNull() ?: 0) > 0
                 isAudio && hasSize
             }
@@ -373,7 +363,7 @@ class ShowRepositoryImpl @Inject constructor(
                     try {
                         // Save recordings with proper showId associations
                         val recordingEntities = recordings.map { recording ->
-                            val normalizedDate = normalizeDate(recording.concertDate)
+                            val normalizedDate = showCreationService.normalizeDate(recording.concertDate)
                             val showId = "${normalizedDate}_${VenueUtil.normalizeVenue(recording.concertVenue)}"
                             android.util.Log.d("ShowRepository", "🌐 Mapping recording ${recording.identifier} to showId '$showId'")
                             RecordingEntity.fromRecording(recording, showId)
@@ -516,163 +506,7 @@ class ShowRepositoryImpl @Inject constructor(
      * Creates ShowEntity records in database and returns Show objects
      */
     private suspend fun createAndSaveShowsFromRecordings(recordings: List<Recording>): List<Show> {
-        android.util.Log.d("ShowRepository", "🔧 createAndSaveShowsFromRecordings: Processing ${recordings.size} recordings")
-        android.util.Log.d("ShowRepository", "🔧 Recording identifiers: ${recordings.map { it.identifier }}")
-        
-        // Group recordings by normalized date + venue
-        val groupedRecordings = recordings.groupBy { recording ->
-            val normalizedDate = normalizeDate(recording.concertDate)
-            val normalizedVenue = VenueUtil.normalizeVenue(recording.concertVenue)
-            val showId = "${normalizedDate}_${normalizedVenue}"
-            android.util.Log.d("ShowRepository", "🔧 Recording ${recording.identifier}: date='${recording.concertDate}' → '$normalizedDate', venue='${recording.concertVenue}' → '$normalizedVenue', showId='$showId'")
-            showId
-        }
-        
-        android.util.Log.d("ShowRepository", "🔧 Grouped recordings into ${groupedRecordings.size} potential shows:")
-        groupedRecordings.forEach { (showId, recordings) ->
-            android.util.Log.d("ShowRepository", "🔧   Show '$showId': ${recordings.size} recordings [${recordings.map { it.identifier }}]")
-        }
-        
-        val shows = mutableListOf<Show>()
-        val newShowEntities = mutableListOf<ShowEntity>()
-        val failedShows = mutableListOf<String>()
-        
-        for ((_, recordingGroup) in groupedRecordings) {
-            try {
-                val firstRecording = recordingGroup.first()
-                val normalizedDate = normalizeDate(firstRecording.concertDate)
-                
-                // Validate we can create a proper show
-                if (normalizedDate.isBlank()) {
-                    failedShows.add("Invalid date for recordings: ${recordingGroup.map { it.identifier }}")
-                    continue
-                }
-                
-                val normalizedVenue = VenueUtil.normalizeVenue(firstRecording.concertVenue)
-                val showId = "${normalizedDate}_${normalizedVenue}"
-                
-                // Debug: Show venue normalization in action
-                if (firstRecording.concertVenue != normalizedVenue) {
-                    android.util.Log.d("ShowRepository", "Venue normalized: '${firstRecording.concertVenue}' → '$normalizedVenue'")
-                }
-                
-                // Check if ShowEntity already exists
-                val showExists = showDao.showExists(showId)
-                android.util.Log.d("ShowRepository", "🔧 Checking if show '$showId' exists in database: $showExists")
-                
-                if (showExists) {
-                    android.util.Log.d("ShowRepository", "🔧 SKIPPING show creation for '$showId' - already exists in database")
-                } else {
-                    android.util.Log.d("ShowRepository", "🔧 WILL CREATE new show entity for '$showId'")
-                }
-                
-                if (!showExists) {
-                    // Create new ShowEntity - use original venue name for display
-                    val showEntity = ShowEntity(
-                        showId = showId, // Uses normalized venue for deduplication
-                        date = normalizedDate,
-                        venue = firstRecording.concertVenue, // Keep original readable venue name
-                        location = firstRecording.concertLocation,
-                        year = normalizedDate.take(4),
-                        setlistRaw = null,
-                        setsJson = null,
-                        addedToLibraryAt = null, // Will be updated when added to library
-                        cachedTimestamp = System.currentTimeMillis()
-                    )
-                    newShowEntities.add(showEntity)
-                    android.util.Log.d("ShowRepository", "🔧 Added new ShowEntity to creation list: $showId with ${recordingGroup.size} recordings")
-                    android.util.Log.d("ShowRepository", "🔧   ShowEntity details: date='$normalizedDate', venue='${firstRecording.concertVenue}', location='${firstRecording.concertLocation}'")
-                }
-                
-                // Create Show object - use ORIGINAL venue name for display, normalized only for showId  
-                val isInLibrary = false // Shows created from recordings are not initially in library
-                val show = Show(
-                    date = normalizedDate,
-                    venue = firstRecording.concertVenue, // Keep original readable venue name
-                    location = firstRecording.concertLocation,
-                    year = normalizedDate.take(4),
-                    recordings = recordingGroup,
-                    isInLibrary = isInLibrary
-                )
-                shows.add(show)
-                
-            } catch (e: Exception) {
-                failedShows.add("Failed to create show from recordings ${recordingGroup.map { it.identifier }}: ${e.message}")
-                android.util.Log.e("ShowRepository", "Failed to create show from recordings: ${e.message}")
-            }
-        }
-        
-        // Save new ShowEntity records
-        if (newShowEntities.isNotEmpty()) {
-            android.util.Log.d("ShowRepository", "🔧 About to save ${newShowEntities.size} new ShowEntity records to database:")
-            newShowEntities.forEach { entity ->
-                android.util.Log.d("ShowRepository", "🔧   Saving ShowEntity: showId='${entity.showId}', date='${entity.date}', venue='${entity.venue}'")
-            }
-            try {
-                showDao.insertShows(newShowEntities)
-                android.util.Log.d("ShowRepository", "🔧 ✅ Successfully saved ${newShowEntities.size} new ShowEntity records to database")
-                
-                // Verify what we actually saved
-                newShowEntities.forEach { entity ->
-                    val exists = showDao.showExists(entity.showId)
-                    android.util.Log.d("ShowRepository", "🔧 Post-save verification: '${entity.showId}' exists in database: $exists")
-                }
-            } catch (e: Exception) {
-                android.util.Log.e("ShowRepository", "🔧 ❌ CRITICAL: Failed to save ShowEntity records: ${e.message}")
-                android.util.Log.e("ShowRepository", "🔧 Exception details:", e)
-                failedShows.add("Database save failed: ${e.message}")
-            }
-        } else {
-            android.util.Log.d("ShowRepository", "🔧 No new ShowEntity records to save - all shows already exist")
-        }
-        
-        // Log any failures
-        if (failedShows.isNotEmpty()) {
-            android.util.Log.w("ShowRepository", "Failed to create ${failedShows.size} shows:")
-            failedShows.forEach { failure ->
-                android.util.Log.w("ShowRepository", "  - $failure")
-            }
-        }
-        
-        android.util.Log.d("ShowRepository", "🔧 ✅ Successfully created ${shows.size} shows from ${recordings.size} recordings")
-        android.util.Log.d("ShowRepository", "🔧 Final show summary:")
-        shows.forEach { show ->
-            android.util.Log.d("ShowRepository", "🔧   Show: showId='${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings")
-        }
-        return shows.sortedByDescending { it.date }
-    }
-    
-    /**
-     * Normalize date from potentially timestamped format to simple YYYY-MM-DD format
-     */
-    private fun normalizeDate(date: String?): String {
-        if (date.isNullOrBlank()) return ""
-        return if (date.contains("T")) {
-            date.substringBefore("T")
-        } else {
-            date
-        }
-    }
-    
-    /**
-     * Normalize venue name to eliminate duplicates caused by inconsistent venue names
-     */
-
-    /**
-     * Check if cache entry is expired
-     */
-    private fun isCacheExpired(timestamp: Long): Boolean {
-        val expiryTime = timestamp + (CACHE_EXPIRY_HOURS * 60 * 60 * 1000L)
-        return System.currentTimeMillis() > expiryTime
-    }
-    
-    /**
-     * Check if a file is an audio file based on its extension
-     */
-    private fun isAudioFile(filename: String): Boolean {
-        val audioExtensions = setOf("mp3", "flac", "ogg", "m4a", "wav", "aac", "wma")
-        val extension = filename.lowercase().substringAfterLast(".", "")
-        return extension in audioExtensions
+        return showCreationService.createAndSaveShowsFromRecordings(recordings)
     }
     
     /**
