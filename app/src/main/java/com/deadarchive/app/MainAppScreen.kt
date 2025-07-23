@@ -118,7 +118,6 @@ fun MainAppScreen(
         ) {
             composable("home") {
                 HomeScreen(
-                    onNavigateToDebug = { navController.navigate("debug") },
                     onNavigateToBrowse = { navController.navigate("browse") },
                     onNavigateToShow = { show ->
                         // Navigate to playlist for the best recording of this show

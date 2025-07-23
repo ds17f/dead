@@ -21,7 +21,7 @@ import com.deadarchive.core.settings.model.VersionInfo
 
 /**
  * Main settings screen with organized card-based sections
- * Follows established DebugScreen layout patterns and Material3 design system
+ * Follows Material3 design system with organized card-based sections
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

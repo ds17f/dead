@@ -20,7 +20,6 @@ import com.deadarchive.core.model.Show
 
 @Composable
 fun HomeScreen(
-    onNavigateToDebug: () -> Unit,
     onNavigateToBrowse: () -> Unit = {},
     onNavigateToShow: (Show) -> Unit = {},
     onNavigateToEra: (String) -> Unit = {}
@@ -69,14 +68,6 @@ fun HomeScreen(
                         subtitle = "3,000+ shows",
                         icon = IconResources.Navigation.Search(),
                         onClick = onNavigateToBrowse
-                    )
-                }
-                item {
-                    QuickAccessCard(
-                        title = "Settings",
-                        subtitle = "Debug & tools",
-                        icon = IconResources.Navigation.Settings(),
-                        onClick = onNavigateToDebug
                     )
                 }
             }
