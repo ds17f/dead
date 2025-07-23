@@ -132,6 +132,8 @@ fun SettingsScreen(
             
             // Developer Options Section
             DeveloperOptionsCard(
+                settings = settings,
+                onUpdateShowDebugInfo = viewModel::updateShowDebugInfo,
                 onResetSettings = viewModel::resetToDefaults
             )
         }
@@ -413,6 +415,8 @@ private fun DownloadSettingsCard(
 
 @Composable
 private fun DeveloperOptionsCard(
+    settings: AppSettings,
+    onUpdateShowDebugInfo: (Boolean) -> Unit,
     onResetSettings: () -> Unit
 ) {
     Card(
@@ -428,6 +432,33 @@ private fun DeveloperOptionsCard(
                 fontWeight = FontWeight.Bold
             )
             
+            // Debug Mode Toggle
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Debug Mode",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Show debug panels and diagnostic information",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.showDebugInfo,
+                    onCheckedChange = onUpdateShowDebugInfo
+                )
+            }
+            
+            HorizontalDivider()
             
             OutlinedButton(
                 onClick = onResetSettings,

@@ -92,6 +92,7 @@ fun PlaylistScreen(
     // Navigation loading state
     val isNavigationLoading by viewModel.isNavigationLoading.collectAsState()
     
+    
     // Alternative recordings state
     var hasAlternativeRecordings by remember { mutableStateOf(false) }
     
@@ -1047,6 +1048,7 @@ private fun RecordingHeader(
                 }
             }
         }
+        
     }
 }
 

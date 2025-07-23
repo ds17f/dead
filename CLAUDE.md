@@ -102,6 +102,34 @@ The `:core:data` module implements a service-oriented architecture with the main
 - **Dependencies:** ShowDao
 - **Impact:** Handles complex show creation workflow from recordings
 
+### Player Services Architecture
+
+The `:feature:player` module implements service-oriented architecture with PlayerViewModel delegating specialized concerns to focused services:
+
+**PlayerDataService** (`com.deadarchive.feature.player.service`)
+- **Responsibility:** Recording data loading and management
+- **Key Methods:** `loadRecording()`, `getAlternativeRecordings()`, `findNextShowByDate()`, `getBestRecordingForShow()`
+- **Dependencies:** ShowRepository, ArchiveApiService
+- **Impact:** Handles all recording data operations and navigation logic
+
+**PlayerPlaylistService** (`com.deadarchive.feature.player.service`)
+- **Responsibility:** Playlist management and queue operations
+- **Key Methods:** `setPlaylist()`, `navigateToTrack()`, `addToPlaylist()`, `playTrackFromPlaylist()`
+- **Dependencies:** QueueManager, MediaControllerRepository
+- **Impact:** Manages playlist state and track playback operations
+
+**PlayerDownloadService** (`com.deadarchive.feature.player.service`)
+- **Responsibility:** Download state management and monitoring
+- **Key Methods:** `downloadRecording()`, `getRecordingDownloadState()`, `isTrackDownloaded()`
+- **Dependencies:** DownloadRepository
+- **Impact:** Provides reactive download state monitoring and control
+
+**PlayerLibraryService** (`com.deadarchive.feature.player.service`)
+- **Responsibility:** Library integration and status tracking
+- **Key Methods:** `checkLibraryStatus()`, `addToLibrary()`, `removeFromLibrary()`
+- **Dependencies:** LibraryRepository, ShowRepository
+- **Impact:** Manages show library operations and status updates
+
 This architecture follows Single Responsibility Principle, making the codebase more maintainable and testable by isolating concerns into dedicated services.
 
 ### Entry Points

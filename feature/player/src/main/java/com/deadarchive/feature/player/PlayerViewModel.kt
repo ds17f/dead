@@ -3,9 +3,6 @@ package com.deadarchive.feature.player
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.core.data.repository.ShowRepository
-import com.deadarchive.core.data.repository.LibraryRepository
-import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.repository.SetlistRepository
 import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.PlaybackEventTracker
@@ -42,12 +39,12 @@ class PlayerViewModel @Inject constructor(
     private val queueManager: QueueManager,
     val queueStateManager: QueueStateManager,
     val playbackEventTracker: PlaybackEventTracker,
-    private val showRepository: ShowRepository,
-    private val libraryRepository: LibraryRepository,
-    private val downloadRepository: DownloadRepository,
     private val setlistRepository: SetlistRepository,
     private val settingsRepository: com.deadarchive.core.settings.api.SettingsRepository,
-    private val ratingsRepository: com.deadarchive.core.data.repository.RatingsRepository
+    private val playerDataService: com.deadarchive.feature.player.service.PlayerDataService,
+    private val playerPlaylistService: com.deadarchive.feature.player.service.PlayerPlaylistService,
+    private val playerDownloadService: com.deadarchive.feature.player.service.PlayerDownloadService,
+    private val playerLibraryService: com.deadarchive.feature.player.service.PlayerLibraryService
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow(PlayerUiState())
@@ -56,13 +53,11 @@ class PlayerViewModel @Inject constructor(
     private val _currentRecording = MutableStateFlow<Recording?>(null)
     val currentRecording: StateFlow<Recording?> = _currentRecording.asStateFlow()
     
-    // Download state tracking
-    private val _downloadStates = MutableStateFlow<Map<String, ShowDownloadState>>(emptyMap())
-    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = _downloadStates.asStateFlow()
+    // Download state tracking - delegated to service
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = playerDownloadService.downloadStates
     
-    // Track-level download states
-    private val _trackDownloadStates = MutableStateFlow<Map<String, Boolean>>(emptyMap())
-    val trackDownloadStates: StateFlow<Map<String, Boolean>> = _trackDownloadStates.asStateFlow()
+    // Track-level download states - delegated to service
+    val trackDownloadStates: StateFlow<Map<String, Boolean>> = playerDownloadService.trackDownloadStates
     
     // Settings flow for debug panel access
     val settings = settingsRepository.getSettings()
@@ -103,40 +98,9 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
-    // Playlist management state - now derived from QueueManager
-    val currentPlaylist: StateFlow<List<PlaylistItem>> = queueManager.getCurrentQueue()
-        .map { queueItems: List<com.deadarchive.core.media.player.QueueItem> ->
-            Log.d(TAG, "=== PLAYLIST FROM QUEUE MANAGER ===")
-            Log.d(TAG, "queueItems.size: ${queueItems.size}")
-            
-            queueItems.mapIndexed { index: Int, queueItem: com.deadarchive.core.media.player.QueueItem ->
-                val recording = _currentRecording.value
-                val concertId = recording?.identifier ?: "unknown"
-                
-                // Create a Track object from QueueItem
-                val track = Track(
-                    filename = queueItem.mediaId.substringAfterLast("/"),
-                    title = queueItem.title,
-                    trackNumber = (index + 1).toString(),
-                    durationSeconds = "0",
-                    audioFile = AudioFile(
-                        filename = queueItem.mediaId.substringAfterLast("/"),
-                        format = queueItem.mediaId.substringAfterLast(".").uppercase(),
-                        downloadUrl = queueItem.mediaId,
-                        sizeBytes = "0"
-                    )
-                )
-                
-                PlaylistItem(
-                    concertIdentifier = concertId,
-                    track = track,
-                    position = index
-                )
-            }
-        }.stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
-    
-    private val _playlistTitle = MutableStateFlow<String?>(null)
-    val playlistTitle: StateFlow<String?> = _playlistTitle.asStateFlow()
+    // Playlist management state - delegated to service
+    val currentPlaylist: StateFlow<List<PlaylistItem>> = playerPlaylistService.currentPlaylist
+    val playlistTitle: StateFlow<String?> = playerPlaylistService.playlistTitle
     
     // Navigation loading state
     private val _isNavigationLoading = MutableStateFlow(false)
@@ -146,14 +110,8 @@ class PlayerViewModel @Inject constructor(
     private val _setlistState = MutableStateFlow<SetlistState>(SetlistState.Initial)
     val setlistState: StateFlow<SetlistState> = _setlistState.asStateFlow()
     
-    // Library state management - reactive flow based on current show
-    private val _currentShowId = MutableStateFlow<String?>(null)
-    val isInLibrary: StateFlow<Boolean> = _currentShowId
-        .filterNotNull()
-        .flatMapLatest { showId ->
-            libraryRepository.isShowInLibraryFlow(showId)
-        }
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), false)
+    // Library state management - delegated to service
+    val isInLibrary: StateFlow<Boolean> = playerLibraryService.isInLibrary
     
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
@@ -202,7 +160,7 @@ class PlayerViewModel @Inject constructor(
             }
             
             // Start monitoring download states
-            startDownloadStateMonitoring()
+            playerDownloadService.startDownloadStateMonitoring()
             
             // Auto-load current recording from MediaController if available
             viewModelScope.launch {
@@ -231,8 +189,8 @@ class PlayerViewModel @Inject constructor(
                 Log.d(TAG, "loadRecording: Using format preferences: $formatPreferences")
                 
                 // Load recording with format filtering applied
-                Log.d(TAG, "loadRecording: About to call getRecordingByIdWithFormatFilter with ID: '$recordingId'")
-                val recording = showRepository.getRecordingByIdWithFormatFilter(recordingId, formatPreferences)
+                Log.d(TAG, "loadRecording: About to call playerDataService.loadRecording with ID: '$recordingId'")
+                val recording = playerDataService.loadRecording(recordingId, formatPreferences)
                 
                 Log.d(TAG, "loadRecording: Repository returned recording: ${recording != null}")
                 if (recording != null) {
@@ -245,8 +203,8 @@ class PlayerViewModel @Inject constructor(
                     _currentRecording.value = recording
                     
                     // Update library status for this recording's show
-                    val showId = generateShowId(recording)
-                    checkLibraryStatus(showId)
+                    val showId = playerDataService.generateShowId(recording)
+                    playerLibraryService.checkLibraryStatus(showId)
                     
                     // Create playlist from filtered recording tracks
                     val playlist = recording.tracks.mapIndexed { index, track ->
@@ -256,7 +214,7 @@ class PlayerViewModel @Inject constructor(
                             position = index
                         )
                     }
-                    _playlistTitle.value = recording.displayTitle
+                    playerPlaylistService.setPlaylist(playlist, recording.displayTitle)
                     
                     // Don't update the queue when loading a recording - the queue should only change
                     // when explicitly playing a track or show. This prevents browsing from affecting playback.
@@ -438,14 +396,7 @@ class PlayerViewModel @Inject constructor(
      */
     fun setPlaylist(playlist: List<PlaylistItem>, title: String? = null) {
         Log.d(TAG, "setPlaylist: Setting playlist with ${playlist.size} items, title: $title")
-        _playlistTitle.value = title
-        
-        // Log formats to verify filtering was applied
-        playlist.take(3).forEach { item ->
-            Log.d(TAG, "setPlaylist: Item - ${item.track.displayTitle} (${item.track.audioFile?.format})")
-        }
-        
-        // TODO: Queue context update via QueueManager not yet implemented
+        playerPlaylistService.setPlaylist(playlist, title)
         
         // Update UI state with tracks from playlist
         val tracks = playlist.map { it.track }
@@ -462,7 +413,7 @@ class PlayerViewModel @Inject constructor(
      * @return Current playlist items
      */
     fun getCurrentPlaylist(): List<PlaylistItem> {
-        return currentPlaylist.value
+        return playerPlaylistService.getCurrentPlaylist()
     }
     
     /**
@@ -470,13 +421,11 @@ class PlayerViewModel @Inject constructor(
      * @param playlistIndex Index of the track in the playlist to navigate to
      */
     fun navigateToTrack(playlistIndex: Int) {
-        Log.d(TAG, "navigateToTrack: Navigating to playlist index $playlistIndex")
-        
-        // Use QueueManager to skip to the specified index
-        queueManager.skipToIndex(playlistIndex)
-        
-        // Update UI state to reflect the change
-        _uiState.value = _uiState.value.copy(currentTrackIndex = playlistIndex)
+        viewModelScope.launch {
+            playerPlaylistService.navigateToTrack(playlistIndex)
+            // Update UI state to reflect the change
+            _uiState.value = _uiState.value.copy(currentTrackIndex = playlistIndex)
+        }
     }
     
     /**
@@ -484,19 +433,14 @@ class PlayerViewModel @Inject constructor(
      * @param playlistItem PlaylistItem to add to the playlist
      */
     fun addToPlaylist(playlistItem: PlaylistItem) {
-        Log.d(TAG, "addToPlaylist: Adding track ${playlistItem.track.displayTitle}")
-        val currentPlaylist = currentPlaylist.value.toMutableList()
-        val newItem = playlistItem.copy(position = currentPlaylist.size)
-        currentPlaylist.add(newItem)
-        
-        // TODO: Queue modification via QueueManager not yet implemented
+        playerPlaylistService.addToPlaylist(playlistItem)
         
         // Update UI state tracks
-        val tracks = currentPlaylist.map { it.track }
+        val tracks = playerPlaylistService.getCurrentPlaylist().map { it.track }
         _uiState.value = _uiState.value.copy(
             tracks = tracks,
-            isPlaylistMode = currentPlaylist.isNotEmpty(),
-            playlistSize = currentPlaylist.size
+            isPlaylistMode = tracks.isNotEmpty(),
+            playlistSize = tracks.size
         )
     }
     
@@ -505,45 +449,30 @@ class PlayerViewModel @Inject constructor(
      * @param playlistIndex Index of the track to remove from the playlist
      */
     fun removeFromPlaylist(playlistIndex: Int) {
-        Log.d(TAG, "removeFromPlaylist: Removing track at index $playlistIndex")
-        val currentPlaylist = currentPlaylist.value.toMutableList()
+        playerPlaylistService.removeFromPlaylist(playlistIndex)
         
-        if (playlistIndex in currentPlaylist.indices) {
-            currentPlaylist.removeAt(playlistIndex)
-            
-            // Update positions for remaining items
-            currentPlaylist.forEachIndexed { index, item ->
-                currentPlaylist[index] = item.copy(position = index)
-            }
-            
-            // TODO: Queue modification via QueueManager not yet implemented
-            
-            // Update UI state tracks
-            val tracks = currentPlaylist.map { it.track }
-            val currentIndex = _uiState.value.currentTrackIndex
-            val newCurrentIndex = when {
-                playlistIndex < currentIndex -> currentIndex - 1
-                playlistIndex == currentIndex && currentIndex >= tracks.size -> maxOf(0, tracks.size - 1)
-                else -> currentIndex
-            }
-            
-            _uiState.value = _uiState.value.copy(
-                tracks = tracks,
-                currentTrackIndex = newCurrentIndex,
-                isPlaylistMode = tracks.isNotEmpty(),
-                playlistSize = tracks.size
-            )
-        } else {
-            Log.e(TAG, "removeFromPlaylist: Invalid playlist index $playlistIndex for ${currentPlaylist.size} items")
+        // Update UI state tracks
+        val tracks = playerPlaylistService.getCurrentPlaylist().map { it.track }
+        val currentIndex = _uiState.value.currentTrackIndex
+        val newCurrentIndex = when {
+            playlistIndex < currentIndex -> currentIndex - 1
+            playlistIndex == currentIndex && currentIndex >= tracks.size -> maxOf(0, tracks.size - 1)
+            else -> currentIndex
         }
+        
+        _uiState.value = _uiState.value.copy(
+            tracks = tracks,
+            currentTrackIndex = newCurrentIndex,
+            isPlaylistMode = tracks.isNotEmpty(),
+            playlistSize = tracks.size
+        )
     }
     
     /**
      * Clear the current playlist
      */
     fun clearPlaylist() {
-        Log.d(TAG, "clearPlaylist: Clearing current playlist")
-        _playlistTitle.value = null
+        playerPlaylistService.clearPlaylist()
         
         // Use QueueManager to clear the queue
         queueManager.clearQueue()
@@ -571,7 +500,7 @@ class PlayerViewModel @Inject constructor(
                 mediaControllerRepository.playTrack(
                     url = downloadUrl,
                     title = track.displayTitle,
-                    artist = _playlistTitle.value ?: _currentRecording.value?.title
+                    artist = playerPlaylistService.playlistTitle.value ?: _currentRecording.value?.title
                 )
                 
                 _uiState.value = _uiState.value.copy(error = null)
@@ -600,71 +529,6 @@ class PlayerViewModel @Inject constructor(
     /**
      * Start monitoring download states for recording and tracks
      */
-    private fun startDownloadStateMonitoring() {
-        viewModelScope.launch {
-            // Monitor all downloads and update states
-            downloadRepository.getAllDownloads().collect { downloads ->
-                val stateMap = mutableMapOf<String, ShowDownloadState>()
-                val trackStatesMap = mutableMapOf<String, Boolean>()
-                
-                // Group downloads by recording ID
-                val downloadsByRecording = downloads.groupBy { it.recordingId }
-                
-                downloadsByRecording.forEach { (recordingId, recordingDownloads) ->
-                    val showDownloadState = when {
-                        // If any download is marked for deletion, treat as not downloaded
-                        recordingDownloads.any { it.isMarkedForDeletion } -> {
-                            ShowDownloadState.NotDownloaded
-                        }
-                        // Handle failed downloads separately (show as failed)
-                        recordingDownloads.any { it.status == DownloadStatus.FAILED } -> {
-                            val failedTrack = recordingDownloads.first { it.status == DownloadStatus.FAILED }
-                            ShowDownloadState.Failed(failedTrack.errorMessage)
-                        }
-                        // Filter out cancelled and failed downloads for status determination
-                        else -> recordingDownloads.filter { it.status !in listOf(DownloadStatus.CANCELLED, DownloadStatus.FAILED) }.let { activeDownloads ->
-                            when {
-                                activeDownloads.all { it.status == DownloadStatus.COMPLETED } && activeDownloads.isNotEmpty() -> {
-                                    ShowDownloadState.Downloaded
-                                }
-                                activeDownloads.any { it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED } -> {
-                                    // Calculate track-based progress (Spotify-style immediate feedback)
-                                    val totalTracks = activeDownloads.size
-                                    val completedTracks = activeDownloads.count { it.status == DownloadStatus.COMPLETED }
-                                    
-                                    // Get byte progress from actively downloading track if any
-                                    val downloadingTrack = activeDownloads.firstOrNull { it.status == DownloadStatus.DOWNLOADING }
-                                    val byteProgress = downloadingTrack?.progress ?: -1f
-                                    val bytesDownloaded = downloadingTrack?.bytesDownloaded ?: 0L
-                                    
-                                    ShowDownloadState.Downloading(
-                                        progress = byteProgress,
-                                        bytesDownloaded = bytesDownloaded,
-                                        completedTracks = completedTracks,
-                                        totalTracks = totalTracks
-                                    )
-                                }
-                                else -> {
-                                    ShowDownloadState.NotDownloaded
-                                }
-                            }
-                        }
-                    }
-                    
-                    stateMap[recordingId] = showDownloadState
-                    
-                    // Update individual track download states
-                    recordingDownloads.forEach { download ->
-                        val trackKey = "${recordingId}_${download.trackFilename}"
-                        trackStatesMap[trackKey] = download.status == DownloadStatus.COMPLETED && !download.isMarkedForDeletion
-                    }
-                }
-                
-                _downloadStates.value = stateMap
-                _trackDownloadStates.value = trackStatesMap
-            }
-        }
-    }
     
     /**
      * Start downloading the current recording
@@ -674,33 +538,13 @@ class PlayerViewModel @Inject constructor(
             try {
                 val recording = _currentRecording.value
                 if (recording != null) {
-                    // Provide immediate UI feedback
-                    val currentDownloadStates = _downloadStates.value.toMutableMap()
-                    currentDownloadStates[recording.identifier] = ShowDownloadState.Downloading(
-                        progress = -1f, // -1 indicates "queued/starting"
-                        bytesDownloaded = 0L,
-                        completedTracks = 0,
-                        totalTracks = 1 // Placeholder until actual track count is known
-                    )
-                    _downloadStates.value = currentDownloadStates
-                    
-                    // Start the actual download
-                    downloadRepository.downloadRecording(recording)
-                    
-                    println("Downloading recording: ${recording.identifier}")
+                    playerDownloadService.downloadRecording(recording)
+                    Log.d(TAG, "downloadRecording: Started download for recording ${recording.identifier}")
                 } else {
-                    println("No recording available to download")
+                    Log.w(TAG, "downloadRecording: No recording available to download")
                 }
             } catch (e: Exception) {
-                println("Failed to start download: ${e.message}")
-                
-                // On error, revert the optimistic UI state
-                val recording = _currentRecording.value
-                if (recording != null) {
-                    val currentDownloadStates = _downloadStates.value.toMutableMap()
-                    currentDownloadStates[recording.identifier] = ShowDownloadState.Failed("Failed to start download")
-                    _downloadStates.value = currentDownloadStates
-                }
+                Log.e(TAG, "downloadRecording: Failed to start download", e)
             }
         }
     }
@@ -713,12 +557,13 @@ class PlayerViewModel @Inject constructor(
             try {
                 val recording = _currentRecording.value
                 if (recording != null) {
-                    downloadRepository.cancelRecordingDownloads(recording.identifier)
+                    playerDownloadService.cancelRecordingDownloads(recording)
+                    Log.d(TAG, "cancelRecordingDownloads: Canceled downloads for recording ${recording.identifier}")
                 } else {
-                    println("No recording found to cancel downloads")
+                    Log.w(TAG, "cancelRecordingDownloads: No recording found to cancel downloads")
                 }
             } catch (e: Exception) {
-                println("Failed to cancel downloads: ${e.message}")
+                Log.e(TAG, "cancelRecordingDownloads: Failed to cancel downloads", e)
             }
         }
     }
@@ -731,28 +576,23 @@ class PlayerViewModel @Inject constructor(
         return try {
             val recording = _currentRecording.value
             if (recording != null) {
-                _downloadStates.value[recording.identifier] ?: ShowDownloadState.NotDownloaded
+                playerDownloadService.getRecordingDownloadState(recording)
             } else {
                 ShowDownloadState.NotDownloaded
             }
         } catch (e: Exception) {
-            ShowDownloadState.Failed("Failed to get download state")
+            ShowDownloadState.NotDownloaded
         }
     }
     
     /**
      * Check if a track is downloaded
      */
-    fun isTrackDownloaded(track: Track): Boolean {
+    suspend fun isTrackDownloaded(track: Track): Boolean {
         return try {
-            val recording = _currentRecording.value
-            if (recording != null) {
-                val trackKey = "${recording.identifier}_${track.audioFile?.filename}"
-                _trackDownloadStates.value[trackKey] ?: false
-            } else {
-                false
-            }
+            playerDownloadService.isTrackDownloaded(track)
         } catch (e: Exception) {
+            Log.e(TAG, "isTrackDownloaded: Error checking if track is downloaded", e)
             false
         }
     }
@@ -761,17 +601,11 @@ class PlayerViewModel @Inject constructor(
      * Show removal confirmation for download
      */
     fun showRemoveDownloadConfirmation() {
-        viewModelScope.launch {
-            val recording = _currentRecording.value
-            if (recording != null) {
-                try {
-                    // Soft delete the recording
-                    downloadRepository.markRecordingForDeletion(recording.identifier)
-                    println("🗑️ Recording ${recording.identifier} marked for soft deletion")
-                } catch (e: Exception) {
-                    println("Failed to mark recording for deletion: ${e.message}")
-                }
-            }
+        val recording = _currentRecording.value
+        if (recording != null) {
+            playerDownloadService.showRemoveDownloadConfirmation(recording)
+        } else {
+            Log.w(TAG, "showRemoveDownloadConfirmation: No recording available")
         }
     }
     
@@ -789,13 +623,13 @@ class PlayerViewModel @Inject constructor(
                     
                     // Use a more efficient approach: find shows around current date
                     val currentDate = currentRecording.concertDate
-                    val nextShow = findNextShowByDate(currentDate)
+                    val nextShow = playerDataService.findNextShowByDate(currentRecording)
                     
                     if (nextShow != null) {
                         Log.d(TAG, "navigateToNextShow: Found next show: ${nextShow.date} at ${nextShow.venue}")
                         
-                        // Use getBestRecordingForShowId to respect user preferences
-                        val nextRecording = getBestRecordingForShowId(nextShow.showId)
+                        // Use getBestRecordingForShow to respect user preferences
+                        val nextRecording = playerDataService.getBestRecordingForShow(nextShow)
                         if (nextRecording != null) {
                             Log.d(TAG, "navigateToNextShow: Navigating to next show with showId: ${nextShow.showId}, recordingId: ${nextRecording.identifier}")
                             // Use navigation callback to preserve showId parameter
@@ -821,38 +655,7 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
-    /**
-     * Find the next show chronologically after the given date (newer shows)
-     */
-    private suspend fun findNextShowByDate(currentDate: String): Show? {
-        return try {
-            val nextShow = showRepository.getNextShowByDate(currentDate)
-            Log.d(TAG, "findNextShowByDate: Current date: $currentDate, Found next show: ${nextShow?.date} at ${nextShow?.venue}")
-            nextShow
-        } catch (e: Exception) {
-            Log.e(TAG, "findNextShowByDate: Error", e)
-            null
-        }
-    }
     
-    /**
-     * Get the best recording for a show (first one, which is typically highest quality)
-     */
-    private suspend fun getBestRecordingForShow(show: Show): Recording? {
-        return try {
-            // If the show already has recordings loaded, use the first one
-            if (show.recordings.isNotEmpty()) {
-                show.recordings.first()
-            } else {
-                // Otherwise fetch from repository
-                val recordings = showRepository.getRecordingsByShowId(show.showId)
-                recordings.firstOrNull()
-            }
-        } catch (e: Exception) {
-            Log.e(TAG, "getBestRecordingForShow: Error", e)
-            null
-        }
-    }
     
     /**
      * Navigate to previous show chronologically
@@ -868,13 +671,13 @@ class PlayerViewModel @Inject constructor(
                     
                     // Use a more efficient approach: find shows around current date
                     val currentDate = currentRecording.concertDate
-                    val previousShow = findPreviousShowByDate(currentDate)
+                    val previousShow = playerDataService.findPreviousShowByDate(currentRecording)
                     
                     if (previousShow != null) {
                         Log.d(TAG, "navigateToPreviousShow: Found previous show: ${previousShow.date} at ${previousShow.venue}")
                         
-                        // Use getBestRecordingForShowId to respect user preferences
-                        val previousRecording = getBestRecordingForShowId(previousShow.showId)
+                        // Use getBestRecordingForShow to respect user preferences
+                        val previousRecording = playerDataService.getBestRecordingForShow(previousShow)
                         if (previousRecording != null) {
                             Log.d(TAG, "navigateToPreviousShow: Navigating to previous show with showId: ${previousShow.showId}, recordingId: ${previousRecording.identifier}")
                             // Use navigation callback to preserve showId parameter
@@ -901,35 +704,13 @@ class PlayerViewModel @Inject constructor(
     }
     
     /**
-     * Find the previous show chronologically before the given date (older shows)
-     */
-    private suspend fun findPreviousShowByDate(currentDate: String): Show? {
-        return try {
-            val previousShow = showRepository.getPreviousShowByDate(currentDate)
-            Log.d(TAG, "findPreviousShowByDate: Current date: $currentDate, Found previous show: ${previousShow?.date} at ${previousShow?.venue}")
-            previousShow
-        } catch (e: Exception) {
-            Log.e(TAG, "findPreviousShowByDate: Error", e)
-            null
-        }
-    }
-    /**
      * Get alternative recordings for the current show
      */
     suspend fun getAlternativeRecordings(): List<Recording> {
         return try {
             val currentRecording = _currentRecording.value
             if (currentRecording != null) {
-                // Get the show for the current recording
-                val show = getShowByRecording(currentRecording)
-                if (show != null) {
-                    Log.d(TAG, "getAlternativeRecordings: Found show ${show.showId} with ${show.recordings.size} recordings")
-                    // Return all recordings for this show
-                    show.recordings
-                } else {
-                    Log.w(TAG, "getAlternativeRecordings: Could not find show for current recording")
-                    emptyList()
-                }
+                playerDataService.getAlternativeRecordings(currentRecording)
             } else {
                 Log.w(TAG, "getAlternativeRecordings: No current recording loaded")
                 emptyList()
@@ -940,57 +721,51 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
+    // Legacy API methods - delegate to services for backward compatibility
+    suspend fun getAlternativeRecordingsById(showId: String): List<Recording> {
+        return try {
+            val currentRecording = _currentRecording.value
+            if (currentRecording != null) {
+                playerDataService.getAlternativeRecordings(currentRecording)
+            } else {
+                emptyList()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getAlternativeRecordingsById: Error", e)
+            emptyList()
+        }
+    }
+    
+    suspend fun getBestRecordingForShowId(showId: String): Recording? {
+        return try {
+            val currentRecording = _currentRecording.value
+            if (currentRecording != null) {
+                val recordings = playerDataService.getAlternativeRecordings(currentRecording)
+                recordings.firstOrNull() // Return first recording as "best"
+            } else {
+                null
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getBestRecordingForShowId: Error", e)
+            null
+        }
+    }
+    
+    suspend fun getRecommendedRecordingId(showId: String): String? {
+        return try {
+            val bestRecording = getBestRecordingForShowId(showId)
+            bestRecording?.identifier
+        } catch (e: Exception) {
+            Log.e(TAG, "getRecommendedRecordingId: Error", e)
+            null
+        }
+    }
+
     companion object {
         private const val TAG = "PlayerViewModel"
     }
     
-    /**
-     * Get ShowEntity by showId for debug purposes
-     */
-    suspend fun getShowEntityById(showId: String): ShowEntity? {
-        return try {
-            val show = showRepository.getShowById(showId)
-            show?.let { ShowEntity.fromShow(it) }
-        } catch (e: Exception) {
-            Log.e(TAG, "Error fetching ShowEntity: $showId", e)
-            null
-        }
-    }
     
-    /**
-     * Get Show object from Recording for debug purposes
-     */
-    suspend fun getShowByRecording(recording: Recording): Show? {
-        return try {
-            // Calculate showId from recording
-            val normalizedDate = if (recording.concertDate.contains("T")) {
-                recording.concertDate.substringBefore("T")
-            } else {
-                recording.concertDate
-            }
-            val normalizedVenue = recording.concertVenue
-                ?.replace("'", "")
-                ?.replace(".", "")
-                ?.replace(" - ", "_")
-                ?.replace(", ", "_")
-                ?.replace(" & ", "_and_")
-                ?.replace("&", "_and_")
-                ?.replace(" University", "_U", true)
-                ?.replace(" College", "_C", true)
-                ?.replace("Memorial", "Mem", true)
-                ?.replace("\\s+".toRegex(), "_")
-                ?.replace("_+".toRegex(), "_")
-                ?.trim('_')
-                ?.lowercase()
-                ?: "unknown"
-            val showId = "${normalizedDate}_${normalizedVenue}"
-            
-            showRepository.getShowById(showId)
-        } catch (e: Exception) {
-            Log.e(TAG, "Error fetching Show from recording", e)
-            null
-        }
-    }
     
     /**
      * Save recording preference for a show
@@ -1017,7 +792,7 @@ class PlayerViewModel @Inject constructor(
                 // Remove user preference to fall back to ratings-based best recording
                 settingsRepository.removeRecordingPreference(showId)
                 
-                // Load the recommended recording
+                // Load the recommended recording using the service
                 val recommendedRecordingId = getRecommendedRecordingId(showId)
                 if (recommendedRecordingId != null) {
                     Log.d(TAG, "Loading recommended recording: $recommendedRecordingId")
@@ -1031,89 +806,8 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
-    /**
-     * Get the best recording for a show ID based on user preferences
-     */
-    suspend fun getBestRecordingForShowId(showId: String): Recording? {
-        return try {
-            Log.d(TAG, "getBestRecordingForShowId: Getting best recording for showId: $showId")
-            val show = showRepository.getShowById(showId)
-            if (show != null) {
-                Log.d(TAG, "getBestRecordingForShowId: Found show with ${show.recordings.size} recordings")
-                // The show.bestRecording property already respects user preferences
-                show.bestRecording
-            } else {
-                Log.w(TAG, "getBestRecordingForShowId: Show not found for showId: $showId")
-                null
-            }
-        } catch (e: Exception) {
-            Log.e(TAG, "getBestRecordingForShowId: Error", e)
-            null
-        }
-    }
     
-    /**
-     * Get alternative recordings for a specific show ID
-     */
-    suspend fun getAlternativeRecordingsById(showId: String): List<Recording> {
-        return try {
-            Log.d(TAG, "getAlternativeRecordingsById: Getting recordings for showId: $showId")
-            val show = showRepository.getShowById(showId)
-            if (show != null) {
-                Log.d(TAG, "getAlternativeRecordingsById: Found ${show.recordings.size} recordings")
-                show.recordings
-            } else {
-                Log.w(TAG, "getAlternativeRecordingsById: Show not found for showId: $showId")
-                emptyList()
-            }
-        } catch (e: Exception) {
-            Log.e(TAG, "getAlternativeRecordingsById: Error", e)
-            emptyList()
-        }
-    }
     
-    /**
-     * Get the recommended recording ID for a show (ignoring user preferences, using algorithm-based selection)
-     */
-    suspend fun getRecommendedRecordingId(showId: String): String? {
-        return try {
-            Log.d(TAG, "getRecommendedRecordingId: Starting lookup for showId: $showId")
-            
-            // Get the full show with recordings to determine the best recording
-            val show = showRepository.getShowById(showId)
-            if (show != null) {
-                Log.d(TAG, "getRecommendedRecordingId: Found show - date: ${show.date}, venue: ${show.venue}")
-                Log.d(TAG, "getRecommendedRecordingId: Show has ${show.recordings.size} recordings")
-                Log.d(TAG, "getRecommendedRecordingId: Show bestRecordingId: ${show.bestRecordingId}")
-                
-                // Use algorithm-based selection directly, ignoring bestRecordingId (which may be user preference)
-                val algorithmRecording = show.recordings.minByOrNull { recording ->
-                    // Same algorithm as Show.bestRecording but ignoring bestRecordingId
-                    val ratingPriority = if (recording.hasRawRating) 0 else 1
-                    val sourcePriority = when (recording.cleanSource?.uppercase()) {
-                        "SBD" -> 1
-                        "MATRIX" -> 2  
-                        "FM" -> 3
-                        "AUD" -> 4
-                        else -> 5
-                    }
-                    val ratingValue = recording.rawRating ?: 0f
-                    val ratingBonus = (5f - ratingValue) / 10f
-                    
-                    ratingPriority * 10 + sourcePriority + ratingBonus
-                }
-                Log.d(TAG, "getRecommendedRecordingId: Algorithm-based recommended recording: ${algorithmRecording?.identifier}")
-                
-                algorithmRecording?.identifier
-            } else {
-                Log.w(TAG, "getRecommendedRecordingId: Show not found for showId: $showId")
-                null
-            }
-        } catch (e: Exception) {
-            Log.e(TAG, "getRecommendedRecordingId: Error", e)
-            null
-        }
-    }
     
     /**
      * Load setlist data for a show
@@ -1145,8 +839,9 @@ class PlayerViewModel @Inject constructor(
      * Set current show ID for library status observation
      */
     fun checkLibraryStatus(showId: String) {
-        Log.d(TAG, "Setting current showId for library observation: $showId")
-        _currentShowId.value = showId
+        viewModelScope.launch {
+            playerLibraryService.checkLibraryStatus(showId)
+        }
     }
     
     /**
@@ -1157,36 +852,25 @@ class PlayerViewModel @Inject constructor(
             try {
                 val currentRecording = _currentRecording.value
                 if (currentRecording != null) {
-                    // We need to construct a Show object from the recording
-                    // Let's try to get the show from the repository first
-                    val showId = generateShowId(currentRecording)
-                    val show = showRepository.getShowById(showId)
+                    val showId = playerDataService.generateShowId(currentRecording)
+                    val currentStatus = playerLibraryService.isInLibrary.value
                     
-                    if (show != null) {
-                        val newLibraryState = libraryRepository.toggleShowLibrary(show)
-                        // State will update automatically via reactive flow
-                        Log.d(TAG, "Toggled library for show: $showId, now in library: $newLibraryState")
+                    if (currentStatus) {
+                        playerLibraryService.removeFromLibrary(showId)
                     } else {
-                        Log.w(TAG, "Could not find show with id: $showId")
+                        playerLibraryService.addToLibrary(showId)
                     }
+                    
+                    Log.d(TAG, "toggleLibrary: Toggled library for show $showId")
                 } else {
-                    Log.w(TAG, "No current recording to toggle library status for")
+                    Log.w(TAG, "toggleLibrary: No current recording to toggle library status for")
                 }
             } catch (e: Exception) {
-                Log.e(TAG, "Failed to toggle library status", e)
+                Log.e(TAG, "toggleLibrary: Failed to toggle library status", e)
             }
         }
     }
     
-    private fun generateShowId(recording: Recording): String {
-        val normalizedDate = if (recording.concertDate.contains("T")) {
-            recording.concertDate.substringBefore("T")
-        } else {
-            recording.concertDate
-        }
-        val normalizedVenue = VenueUtil.normalizeVenue(recording.concertVenue)
-        return "${normalizedDate}_${normalizedVenue}"
-    }
 }
 
 data class PlayerUiState(

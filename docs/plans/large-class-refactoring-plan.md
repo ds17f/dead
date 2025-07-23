@@ -111,27 +111,32 @@ This comprehensive plan addresses the "extremely large classes" architectural is
    - Main coordinator, simplified structure, state management
    - Preserves existing ViewModel integration
 
-### Priority 4: PlayerViewModel Domain Separation (1,227 lines → 4 Focused ViewModels)
+### Priority 4: PlayerViewModel Service-Based Refactoring (1,227 lines → Service Architecture)
 
-**Current Status**: 📋 **PLANNED**
-**Approach**: Split by domain while preserving existing StateFlow patterns
+**Current Status**: ✅ **COMPLETED**
+**Approach**: Extract services while preserving existing ViewModel interface and StateFlow patterns
 
-#### ViewModel Structure:
-1. **`PlaybackControlViewModel`** (300-400 lines)
-   - Core playback, track navigation, media controller integration
-   - **Uses existing** `MediaControllerRepository` StateFlows
+#### Service Architecture:
+1. **`PlayerDataService`** (96 lines)
+   - Recording data loading, show navigation, alternative recordings
+   - **Uses existing** `ShowRepository`, `ArchiveApiService`
 
-2. **`ShowDataViewModel`** (300-400 lines)
-   - Show/recording loading, metadata, alternative recordings
-   - **Leverages existing** `ShowRepositoryImpl`
+2. **`PlayerPlaylistService`** (118 lines)
+   - Playlist management, queue operations, track playback
+   - **Integrates with** `QueueManager`, `MediaControllerRepository`
 
-3. **`LibraryIntegrationViewModel`** (250-300 lines)
-   - Library operations, download management
-   - **Uses existing** `LibraryRepository` and `DownloadRepository`
+3. **`PlayerDownloadService`** (117 lines)
+   - Download state monitoring, recording downloads
+   - **Uses existing** `DownloadRepository`
 
-4. **`PlayerCoordinatorViewModel`** (300-400 lines)
-   - Main player screen state, coordinates between ViewModels
-   - Event-driven communication between components
+4. **`PlayerLibraryService`** (60 lines)
+   - Library status tracking, show library operations
+   - **Uses existing** `LibraryRepository`, `ShowRepository`
+
+5. **Enhanced PlayerViewModel** (~650 lines)
+   - ✅ Now a facade coordinator using composition
+   - ✅ Maintains existing interface for backward compatibility
+   - ✅ Delegates specialized operations to focused services
 
 ## 📋 Implementation Timeline
 
@@ -154,11 +159,11 @@ This comprehensive plan addresses the "extremely large classes" architectural is
 - Maintain existing StateFlow contracts
 - Integration testing with existing UI
 
-### 📋 Week 9-11: ViewModel Decomposition (Phase 2.3)
-**Status**: 📋 **PLANNED**
-- Create focused ViewModels with clear boundaries
-- Use existing dependency injection patterns
-- Gradual UI migration to new ViewModels
+### ✅ Week 9-11: PlayerViewModel Service Extraction (Phase 2.3)
+**Status**: ✅ **COMPLETED**
+- ✅ Extract PlayerData, PlayerPlaylist, PlayerDownload, PlayerLibrary services
+- ✅ Maintain existing StateFlow contracts for UI compatibility
+- ✅ Preserve all existing functionality while improving maintainability
 
 ### 📋 Week 12-13: UI Component Extraction (Phase 2.4)
 **Status**: 📋 **PLANNED**
@@ -222,12 +227,16 @@ This comprehensive plan addresses the "extremely large classes" architectural is
 - [x] Extract ShowEnrichmentService ✅
 - [x] Extract ShowCacheService ✅
 - [x] Refactor ShowRepositoryImpl ✅
+- [x] Extract PlayerDataService ✅
+- [x] Extract PlayerPlaylistService ✅
+- [x] Extract PlayerDownloadService ✅
+- [x] Extract PlayerLibraryService ✅
+- [x] Refactor PlayerViewModel ✅
 - [ ] Extract MediaServiceConnector
 - [ ] Extract PlaybackStateSync
 - [ ] Extract PlaybackCommandProcessor
 - [ ] Refactor MediaControllerRepository
 - [ ] Decompose PlaylistScreen components
-- [ ] Split PlayerViewModel domains
 
 ## 📚 Related Documentation
 

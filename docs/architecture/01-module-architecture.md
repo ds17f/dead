@@ -219,11 +219,29 @@ class ShowRepositoryImpl @Inject constructor(
 - MediaController integration
 - Queue management UI
 
-**Architecture Grade**: B+
+**Architecture Grade**: A-
 - Excellent UI/UX design
 - Good MediaController integration
-- **Issue**: Complex PlayerViewModel (1227 lines)
+- **RESOLVED**: PlayerViewModel refactored with service-oriented architecture
+- **IMPROVED**: Complex player logic extracted to focused services
 - **Issue**: Direct dependencies on implementation modules
+
+**Service Architecture**:
+```kotlin
+// PlayerViewModel delegates to focused services
+class PlayerViewModel @Inject constructor(
+    private val playerDataService: PlayerDataService,
+    private val playerPlaylistService: PlayerPlaylistService,
+    private val playerDownloadService: PlayerDownloadService,
+    private val playerLibraryService: PlayerLibraryService,
+    // ... other dependencies
+) {
+    // State management delegated to services
+    val currentPlaylist: StateFlow<List<PlaylistItem>> = playerPlaylistService.currentPlaylist
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = playerDownloadService.downloadStates
+    val isInLibrary: StateFlow<Boolean> = playerLibraryService.isInLibrary
+}
+```
 
 #### feature:playlist → (design, model, data, database, media, network, settings, common, player)
 **Purpose**: Recording selection and playlist management
@@ -297,7 +315,7 @@ feature:playlist → core:data, core:database, core:network
 Several classes exceed maintainability thresholds:
 - ~~`DebugViewModel` - 1702 lines~~ **REMOVED**
 - `PlaylistScreen` - 1393 lines  
-- `PlayerViewModel` - 1227 lines
+- ~~`PlayerViewModel` - 1227 lines~~ **REFACTORED** to ~650 lines + 4 focused services
 - ~~`ShowRepositoryImpl` - 1132 lines~~ **REFACTORED** to ~960 lines + 3 focused services
 - `MediaControllerRepository` - 1087 lines
 
@@ -362,7 +380,7 @@ core:network-api   // Network layer abstractions
 | core:data | 11 | 3,300 | High | A- |
 | core:media | 10 | 2,800 | Very High | B+ |
 | feature:browse | 6 | 1,200 | Medium | B+ |
-| feature:player | 8 | 2,300 | High | B+ |
+| feature:player | 12 | 2,800 | Medium | A- |
 | feature:playlist | 12 | 2,800 | High | B |
 | app | 8 | 3,200 | High | B |
 
