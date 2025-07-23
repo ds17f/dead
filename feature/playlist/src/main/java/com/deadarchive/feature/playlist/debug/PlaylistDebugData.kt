@@ -83,19 +83,9 @@ private fun createPlayerServicesSection(): DebugSection {
     return DebugSection(
         title = "Player Services",
         items = listOf(
-            // Mock service call data for UI testing
-            DebugItem.KeyValue("PlayerDataService", "Ready"),
-            DebugItem.KeyValue("Last loadRecording() Call", "2024-01-23 10:30:15"),
-            DebugItem.KeyValue("loadRecording() Result", "SUCCESS"),
-            DebugItem.NumericValue("Service Call Duration", 245, "ms"),
-            DebugItem.Multiline(
-                "Recent Service Calls",
-                """loadRecording(gd1977-05-08.sbd.hicks.4982.sbeok.shnf) -> SUCCESS [10:30:15]
-getBestRecordingForShowId(1977-05-08_Barton_Hall) -> SUCCESS [10:29:58]
-getAlternativeRecordings() -> 3 recordings [10:29:45]"""
-            ),
-            DebugItem.BooleanValue("ShowRepository Available", true),
-            DebugItem.KeyValue("Repository Method", "getRecordingByIdWithFormatFilter()"),
+            DebugItem.KeyValue("PlayerDataService", "Available"),
+            DebugItemFactory.createTimestamp("Debug Panel Generated"),
+            DebugItem.KeyValue("Service Status", "Real-time data collection needed")
         )
     )
 }
@@ -173,20 +163,9 @@ private fun createErrorSection(): DebugSection {
     return DebugSection(
         title = "Error Tracking",
         items = listOf(
-            // Mock error for UI testing
-            DebugItemFactory.createErrorItem(
-                "Missing getRecordingById() method in ShowRepositoryImpl",
-                RuntimeException("Method not implemented")
-            ),
-            DebugItem.Multiline(
-                "Error Context",
-                """PlayerDataService.loadRecording() calls:
-1. showRepository.getRecordingByIdWithFormatFilter(id, formats)
-2. getRecordingByIdWithFormatFilter() calls getRecordingById(id)
-3. getRecordingById() method is MISSING from ShowRepositoryImpl
-4. This causes recording loading to fail"""
-            ),
-            DebugItemFactory.createTimestamp("Error First Detected")
+            DebugItem.KeyValue("Last Error", "None captured yet"),
+            DebugItem.KeyValue("Error Collection", "Real-time tracking needed"),
+            DebugItemFactory.createTimestamp("Debug Session Started")
         )
     )
 }
