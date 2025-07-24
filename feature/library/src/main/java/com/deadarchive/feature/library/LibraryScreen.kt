@@ -16,6 +16,7 @@ import com.deadarchive.core.design.component.IconResources
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -548,6 +549,7 @@ fun LibraryScreen(
             DownloadsPanel(
                 downloadStates = downloadStates,
                 settings = settings,
+                settingsViewModel = settingsViewModel,
                 onDismiss = { showDownloadsBottomSheet = false }
             )
         }
@@ -743,6 +745,7 @@ private fun LibraryOptionsBottomSheet(
 private fun DownloadsPanel(
     downloadStates: Map<String, ShowDownloadState>,
     settings: AppSettings,
+    settingsViewModel: SettingsViewModel,
     onDismiss: () -> Unit
 ) {
     Column(
@@ -842,13 +845,152 @@ private fun DownloadsPanel(
             }
         }
         
-        // Placeholder for future functionality
+        HorizontalDivider()
+        
+        // Download Settings Section
         Text(
-            text = "Full download management features coming soon...",
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.padding(vertical = 8.dp)
+            text = "Download Settings",
+            style = MaterialTheme.typography.titleSmall,
+            color = MaterialTheme.colorScheme.primary
         )
+        
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
+            )
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                // WiFi Only Setting
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        Text(
+                            text = "Download on WiFi only",
+                            style = MaterialTheme.typography.bodyMedium,
+                            fontWeight = FontWeight.Medium
+                        )
+                        Text(
+                            text = "Restrict downloads to WiFi connections",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    Switch(
+                        checked = settings.downloadWifiOnly,
+                        onCheckedChange = settingsViewModel::updateDownloadWifiOnly
+                    )
+                }
+                
+                HorizontalDivider()
+                
+                // Deletion Grace Period Setting
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        Text(
+                            text = "Grace period: ${settings.deletionGracePeriodDays} days",
+                            style = MaterialTheme.typography.bodyMedium,
+                            fontWeight = FontWeight.Medium
+                        )
+                        Text(
+                            text = "How long to keep removed downloads before cleanup",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    
+                    Row {
+                        IconButton(
+                            onClick = { 
+                                if (settings.deletionGracePeriodDays > 1) {
+                                    settingsViewModel.updateDeletionGracePeriod(settings.deletionGracePeriodDays - 1)
+                                }
+                            },
+                            enabled = settings.deletionGracePeriodDays > 1
+                        ) {
+                            Text(
+                                text = "−",
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                        }
+                        IconButton(
+                            onClick = { 
+                                settingsViewModel.updateDeletionGracePeriod(settings.deletionGracePeriodDays + 1)
+                            }
+                        ) {
+                            Text(
+                                text = "+",
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                        }
+                    }
+                }
+                
+                HorizontalDivider()
+                
+                // Storage Threshold Setting
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(
+                        modifier = Modifier.weight(1f)
+                    ) {
+                        Text(
+                            text = "Storage threshold: ${settings.lowStorageThresholdMB}MB",
+                            style = MaterialTheme.typography.bodyMedium,
+                            fontWeight = FontWeight.Medium
+                        )
+                        Text(
+                            text = "Trigger cleanup when free space falls below this",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    
+                    Row {
+                        IconButton(
+                            onClick = { 
+                                if (settings.lowStorageThresholdMB > 100L) {
+                                    settingsViewModel.updateLowStorageThreshold(settings.lowStorageThresholdMB - 100L)
+                                }
+                            },
+                            enabled = settings.lowStorageThresholdMB > 100L
+                        ) {
+                            Text(
+                                text = "−",
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                        }
+                        IconButton(
+                            onClick = { 
+                                settingsViewModel.updateLowStorageThreshold(settings.lowStorageThresholdMB + 100L)
+                            }
+                        ) {
+                            Text(
+                                text = "+",
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                        }
+                    }
+                }
+            }
+        }
         
         // Bottom padding for gesture area
         Spacer(modifier = Modifier.height(16.dp))

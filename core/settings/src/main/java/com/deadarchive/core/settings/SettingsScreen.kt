@@ -26,7 +26,6 @@ import com.deadarchive.core.settings.model.VersionInfo
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
-    onNavigateToDownloads: () -> Unit = {},
     versionInfo: VersionInfo,
     viewModel: SettingsViewModel = hiltViewModel()
 ) {
@@ -117,14 +116,6 @@ fun SettingsScreen(
                 onUpdateThemeMode = viewModel::updateThemeMode
             )
             
-            // Download Settings Section
-            DownloadSettingsCard(
-                settings = settings,
-                onUpdateDownloadWifiOnly = viewModel::updateDownloadWifiOnly,
-                onUpdateDeletionGracePeriod = viewModel::updateDeletionGracePeriod,
-                onUpdateLowStorageThreshold = viewModel::updateLowStorageThreshold,
-                onNavigateToDownloads = onNavigateToDownloads
-            )
             
             
             // About Section
@@ -255,162 +246,6 @@ private fun AppearanceSettingsCard(
     }
 }
 
-@Composable
-private fun DownloadSettingsCard(
-    settings: AppSettings,
-    onUpdateDownloadWifiOnly: (Boolean) -> Unit,
-    onUpdateDeletionGracePeriod: (Int) -> Unit,
-    onUpdateLowStorageThreshold: (Long) -> Unit,
-    onNavigateToDownloads: () -> Unit
-) {
-    Card(
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
-            Text(
-                text = "Downloads",
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold
-            )
-            
-            // WiFi Only Setting
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column(
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Text(
-                        text = "Download on WiFi only",
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = "Restrict downloads to WiFi connections",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-                Switch(
-                    checked = settings.downloadWifiOnly,
-                    onCheckedChange = onUpdateDownloadWifiOnly
-                )
-            }
-            
-            HorizontalDivider()
-            
-            // Deletion Grace Period Setting
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column(
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Text(
-                        text = "Grace period: ${settings.deletionGracePeriodDays} days",
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = "How long to keep removed downloads before cleanup",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-                
-                Row {
-                    IconButton(
-                        onClick = { 
-                            if (settings.deletionGracePeriodDays > 1) {
-                                onUpdateDeletionGracePeriod(settings.deletionGracePeriodDays - 1)
-                            }
-                        },
-                        enabled = settings.deletionGracePeriodDays > 1
-                    ) {
-                        Text(
-                            text = "−",
-                            style = MaterialTheme.typography.titleLarge
-                        )
-                    }
-                    IconButton(
-                        onClick = { 
-                            onUpdateDeletionGracePeriod(settings.deletionGracePeriodDays + 1)
-                        }
-                    ) {
-                        Text(
-                            text = "+",
-                            style = MaterialTheme.typography.titleLarge
-                        )
-                    }
-                }
-            }
-            
-            // Storage Threshold Setting
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Column(
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Text(
-                        text = "Storage threshold: ${settings.lowStorageThresholdMB}MB",
-                        style = MaterialTheme.typography.bodyMedium,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = "Trigger cleanup when free space falls below this",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-                
-                Row {
-                    IconButton(
-                        onClick = { 
-                            if (settings.lowStorageThresholdMB > 100L) {
-                                onUpdateLowStorageThreshold(settings.lowStorageThresholdMB - 100L)
-                            }
-                        },
-                        enabled = settings.lowStorageThresholdMB > 100L
-                    ) {
-                        Text(
-                            text = "−",
-                            style = MaterialTheme.typography.titleLarge
-                        )
-                    }
-                    IconButton(
-                        onClick = { 
-                            onUpdateLowStorageThreshold(settings.lowStorageThresholdMB + 100L)
-                        }
-                    ) {
-                        Text(
-                            text = "+",
-                            style = MaterialTheme.typography.titleLarge
-                        )
-                    }
-                }
-            }
-            
-            Spacer(modifier = Modifier.height(8.dp))
-            
-            OutlinedButton(
-                onClick = onNavigateToDownloads,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Manage Downloads")
-            }
-        }
-    }
-}
 
 
 @Composable
