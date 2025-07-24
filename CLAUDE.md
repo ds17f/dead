@@ -89,6 +89,7 @@ adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
   - **Data operations:** ShowRepository → ShowEnrichmentService, ShowCacheService, ShowCreationService
   - **Media operations:** MediaControllerRepository → MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor
   - **Browse operations:** BrowseViewModel → BrowseSearchService, BrowseLibraryService, BrowseDownloadService, BrowseDataService
+  - **Library operations:** LibraryViewModel → LibraryDataService, LibraryDownloadService, LibraryManagementService
 
 ### Data Services Architecture
 
@@ -210,6 +211,40 @@ The `:feature:browse` module implements service-oriented architecture with the B
 - **Impact:** 80% reduction in size while maintaining full backward compatibility
 
 This service extraction follows the successful MediaControllerRepository pattern, transforming a monolithic ViewModel into a clean coordination layer.
+
+### Library Feature Services Architecture
+
+The `:feature:library` module implements service-oriented architecture with the LibraryViewModel coordinating between focused services:
+
+**LibraryDataService** (`com.deadarchive.feature.library.service`)
+- **Responsibility:** Data loading and filtering operations (~120 lines)
+- **Key Methods:** `loadLibraryItems()`, `setSortOption()`, `setDecadeFilter()`
+- **Dependencies:** ShowRepository for library data access
+- **State Management:** Sort options and decade filters via StateFlow with reactive updates
+- **Impact:** Complex reactive data loading with combine() for filtering, sorting, and legacy format conversion
+
+**LibraryDownloadService** (`com.deadarchive.feature.library.service`)
+- **Responsibility:** Download management and state monitoring (~220 lines)
+- **Key Methods:** `downloadShow()`, `downloadRecording()`, `cancelShowDownloads()`, `startDownloadStateMonitoring()`
+- **Dependencies:** DownloadRepository for download operations
+- **Pattern:** Consistent with BrowseDownloadService for code reusability
+- **Impact:** Comprehensive download handling with optimistic UI updates and confirmation dialogs
+
+**LibraryManagementService** (`com.deadarchive.feature.library.service`)
+- **Responsibility:** Library operations (add, remove, clear) (~60 lines)
+- **Key Methods:** `removeFromLibrary()`, `removeShowFromLibrary()`, `clearLibrary()`
+- **Dependencies:** LibraryRepository for persistence
+- **Pattern:** Simple coroutine-based operations with error handling
+- **Impact:** Clean separation of library management logic from UI concerns
+
+**LibraryViewModel** (refactored coordinator ~120 lines, reduced from 407 lines)
+- **Responsibility:** UI coordination using service composition
+- **Key Methods:** All public methods delegate to appropriate services
+- **Dependencies:** LibraryDataService, LibraryDownloadService, LibraryManagementService
+- **Pattern:** Facade pattern with callback-based service coordination
+- **Impact:** 70% reduction in size while maintaining full backward compatibility
+
+This service extraction maintains consistency with the BrowseViewModel pattern, enabling code reuse and establishing clear architectural patterns.
 
 ### Entry Points
 
