@@ -25,7 +25,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class QueueManager @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepository,
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored,
     private val localFileResolver: LocalFileResolver
 ) {
     
@@ -73,6 +73,22 @@ class QueueManager @Inject constructor(
             }
             controller.setMediaItems(mediaItems, startTrackIndex, startPositionMs)
             controller.prepare()  // Always prepare the media to get into STATE_READY
+            
+            // Update queue context with Recording data for enriched metadata
+            val queueUrls = recording.tracks.mapNotNull { it.audioFile?.downloadUrl }
+            val queueMetadata = recording.tracks.map { track ->
+                Pair(track.audioFile?.downloadUrl ?: "", track.displayTitle)
+            }.filter { it.first.isNotEmpty() }
+            
+            mediaControllerRepository.updateQueueContext(
+                queueUrls = queueUrls,
+                currentIndex = startTrackIndex,
+                queueMetadata = queueMetadata,
+                recording = recording
+            )
+            
+            Log.d(TAG, "Updated queue context with Recording data: ${recording.identifier}")
+            
             if (autoPlay) {
                 controller.play()
             } else {

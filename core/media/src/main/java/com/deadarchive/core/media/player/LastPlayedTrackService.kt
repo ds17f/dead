@@ -3,7 +3,7 @@ package com.deadarchive.core.media.player
 import android.content.Context
 import android.content.SharedPreferences
 import android.util.Log
-import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.api.repository.ShowRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.delay
 import javax.inject.Inject
@@ -20,7 +20,7 @@ class LastPlayedTrackService @Inject constructor(
     @ApplicationContext private val context: Context,
     private val showRepository: ShowRepository,
     private val queueManager: QueueManager,
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored
 ) {
     
     companion object {

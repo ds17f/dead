@@ -8,7 +8,10 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.LocalFileResolver
-import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
+import com.deadarchive.core.media.player.service.MediaServiceConnector
+import com.deadarchive.core.media.player.service.PlaybackCommandProcessor
+import com.deadarchive.core.media.player.service.PlaybackStateSync
 import com.deadarchive.core.media.player.PlaybackEventTracker
 import com.deadarchive.core.media.player.PlaybackHistorySessionManager
 import com.deadarchive.core.media.player.PlaybackResumeService
@@ -73,18 +76,56 @@ object MediaModule {
     }
     
     /**
-     * Provides MediaControllerRepository for service-based media playback.
-     * This replaces direct ExoPlayer access in UI components.
-     * Now includes LocalFileResolver for offline playback support.
+     * Provides MediaServiceConnector for MediaController connection lifecycle
+     */
+    @Provides
+    @Singleton
+    fun provideMediaServiceConnector(
+        @ApplicationContext context: Context
+    ): MediaServiceConnector {
+        return MediaServiceConnector(context)
+    }
+    
+    /**
+     * Provides PlaybackStateSync for StateFlow synchronization
+     */
+    @Provides
+    @Singleton
+    fun providePlaybackStateSync(
+        showRepository: com.deadarchive.core.data.api.repository.ShowRepository
+    ): PlaybackStateSync {
+        return PlaybackStateSync(showRepository)
+    }
+    
+    /**
+     * Provides PlaybackCommandProcessor for command handling
+     */
+    @Provides
+    @Singleton
+    fun providePlaybackCommandProcessor(
+        localFileResolver: LocalFileResolver
+    ): PlaybackCommandProcessor {
+        return PlaybackCommandProcessor(localFileResolver)
+    }
+    
+    /**
+     * Provides refactored MediaControllerRepository using service composition.
+     * Maintains identical interface for backward compatibility while using focused services.
      */
     @Provides
     @Singleton
     fun provideMediaControllerRepository(
         @ApplicationContext context: Context,
-        localFileResolver: LocalFileResolver,
-        showRepository: com.deadarchive.core.data.repository.ShowRepository
-    ): MediaControllerRepository {
-        return MediaControllerRepository(context, localFileResolver, showRepository)
+        mediaServiceConnector: MediaServiceConnector,
+        playbackStateSync: PlaybackStateSync,
+        playbackCommandProcessor: PlaybackCommandProcessor
+    ): MediaControllerRepositoryRefactored {
+        return MediaControllerRepositoryRefactored(
+            context, 
+            mediaServiceConnector, 
+            playbackStateSync, 
+            playbackCommandProcessor
+        )
     }
     
     /**
@@ -94,7 +135,7 @@ object MediaModule {
     @Provides
     @Singleton
     fun provideQueueManager(
-        mediaControllerRepository: MediaControllerRepository,
+        mediaControllerRepository: MediaControllerRepositoryRefactored,
         localFileResolver: LocalFileResolver
     ): QueueManager {
         return QueueManager(mediaControllerRepository, localFileResolver)
@@ -108,7 +149,7 @@ object MediaModule {
     @Singleton
     fun provideQueueStateManager(
         queueManager: QueueManager,
-        mediaControllerRepository: MediaControllerRepository
+        mediaControllerRepository: MediaControllerRepositoryRefactored
     ): QueueStateManager {
         val queueStateManager = QueueStateManager(queueManager, mediaControllerRepository)
         
@@ -126,7 +167,7 @@ object MediaModule {
     @Provides
     @Singleton
     fun providePlaybackEventTracker(
-        mediaControllerRepository: MediaControllerRepository
+        mediaControllerRepository: MediaControllerRepositoryRefactored
     ): PlaybackEventTracker {
         return PlaybackEventTracker(mediaControllerRepository)
         // No manual connection needed - tracker monitors connection state automatically
@@ -141,7 +182,7 @@ object MediaModule {
     fun providePlaybackHistorySessionManager(
         playbackEventTracker: PlaybackEventTracker,
         playbackHistoryRepository: PlaybackHistoryRepository,
-        mediaControllerRepository: MediaControllerRepository
+        mediaControllerRepository: MediaControllerRepositoryRefactored
     ): PlaybackHistorySessionManager {
         val sessionManager = PlaybackHistorySessionManager(
             playbackEventTracker,
@@ -163,9 +204,9 @@ object MediaModule {
     @Singleton
     fun providePlaybackResumeService(
         playbackHistoryRepository: PlaybackHistoryRepository,
-        showRepository: com.deadarchive.core.data.repository.ShowRepository,
+        showRepository: com.deadarchive.core.data.api.repository.ShowRepository,
         queueManager: QueueManager,
-        mediaControllerRepository: MediaControllerRepository
+        mediaControllerRepository: MediaControllerRepositoryRefactored
     ): PlaybackResumeService {
         return PlaybackResumeService(
             playbackHistoryRepository,
@@ -183,9 +224,9 @@ object MediaModule {
     @Singleton
     fun provideLastPlayedTrackService(
         @ApplicationContext context: Context,
-        showRepository: com.deadarchive.core.data.repository.ShowRepository,
+        showRepository: com.deadarchive.core.data.api.repository.ShowRepository,
         queueManager: QueueManager,
-        mediaControllerRepository: MediaControllerRepository
+        mediaControllerRepository: MediaControllerRepositoryRefactored
     ): LastPlayedTrackService {
         return LastPlayedTrackService(context, showRepository, queueManager, mediaControllerRepository)
     }
@@ -197,7 +238,7 @@ object MediaModule {
     @Provides
     @Singleton
     fun provideLastPlayedTrackMonitor(
-        mediaControllerRepository: MediaControllerRepository,
+        mediaControllerRepository: MediaControllerRepositoryRefactored,
         lastPlayedTrackService: LastPlayedTrackService
     ): LastPlayedTrackMonitor {
         val monitor = LastPlayedTrackMonitor(mediaControllerRepository, lastPlayedTrackService)

@@ -67,7 +67,7 @@ fun PlayerScreen(
     val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
     val queueUrls by viewModel.mediaControllerRepository.queueUrls.collectAsState()
     val queueIndex by viewModel.mediaControllerRepository.queueIndex.collectAsState()
-    val currentRecordingIdFromMediaController by viewModel.mediaControllerRepository.currentRecordingIdFlow.collectAsState()
+    val currentRecordingIdFromMediaController by viewModel.mediaControllerRepository.currentRecordingId.collectAsState()
     val currentTrackInfo by viewModel.mediaControllerRepository.currentTrackInfo.collectAsState()
     
     // Get track title from enriched CurrentTrackInfo (most reliable source)

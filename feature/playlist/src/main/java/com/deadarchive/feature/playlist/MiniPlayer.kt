@@ -265,7 +265,7 @@ fun MiniPlayerContainer(
     val currentPosition by viewModel.mediaControllerRepository.currentPosition.collectAsState()
     val duration by viewModel.mediaControllerRepository.duration.collectAsState()
     val playbackState by viewModel.mediaControllerRepository.playbackState.collectAsState()
-    val currentRecordingId by viewModel.mediaControllerRepository.currentRecordingIdFlow.collectAsState()
+    val currentRecordingId by viewModel.mediaControllerRepository.currentRecordingId.collectAsState()
     
     // Get enriched track info from MediaController
     val currentTrackInfo by viewModel.mediaControllerRepository.currentTrackInfo.collectAsState()

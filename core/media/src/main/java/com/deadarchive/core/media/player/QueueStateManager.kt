@@ -15,7 +15,7 @@ import javax.inject.Singleton
 @Singleton
 class QueueStateManager @Inject constructor(
     private val queueManager: QueueManager,
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored
 ) {
     
     companion object {

@@ -24,13 +24,13 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import com.deadarchive.core.model.PlaylistItem
-import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
 import javax.inject.Inject
 
-// Simple ViewModel for MediaControllerRepository access
+// Simple ViewModel for MediaControllerRepositoryRefactored access
 @HiltViewModel
 class QueueViewModel @Inject constructor(
-    val mediaControllerRepository: MediaControllerRepository
+    val mediaControllerRepository: MediaControllerRepositoryRefactored
 ) : ViewModel()
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -42,7 +42,7 @@ fun QueueScreen(
 ) {
     Log.d("QueueScreen", "QueueScreen: Composing")
     
-    // MediaControllerRepository is the single source of truth
+    // MediaControllerRepositoryRefactored is the single source of truth
     val currentQueueIndex by queueViewModel.mediaControllerRepository.queueIndex.collectAsState()
     val queueUrls by queueViewModel.mediaControllerRepository.queueUrls.collectAsState()
     val queueMetadata by queueViewModel.mediaControllerRepository.queueMetadata.collectAsState()

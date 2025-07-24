@@ -2,7 +2,7 @@ package com.deadarchive.core.media.player
 
 import android.util.Log
 import com.deadarchive.core.data.repository.PlaybackHistoryRepository
-import com.deadarchive.core.data.repository.ShowRepository
+import com.deadarchive.core.data.api.repository.ShowRepository
 import com.deadarchive.core.database.PlaybackHistoryEntity
 import kotlinx.coroutines.delay
 import javax.inject.Inject
@@ -26,7 +26,7 @@ class PlaybackResumeService @Inject constructor(
     private val playbackHistoryRepository: PlaybackHistoryRepository,
     private val showRepository: ShowRepository,
     private val queueManager: QueueManager,
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored
 ) {
     
     companion object {

@@ -2,7 +2,7 @@ package com.deadarchive.feature.player.service
 
 import android.util.Log
 import com.deadarchive.core.media.player.QueueManager
-import com.deadarchive.core.media.player.MediaControllerRepository
+import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
 import com.deadarchive.core.model.PlaylistItem
 import com.deadarchive.core.model.Track
 import com.deadarchive.core.model.Recording
@@ -15,7 +15,7 @@ import javax.inject.Singleton
 @Singleton
 class PlayerPlaylistServiceImpl @Inject constructor(
     private val queueManager: QueueManager,
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored
 ) : PlayerPlaylistService {
     
     companion object {

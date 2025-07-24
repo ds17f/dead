@@ -25,7 +25,7 @@ import javax.inject.Singleton
 class PlaybackHistorySessionManager @Inject constructor(
     private val playbackEventTracker: PlaybackEventTracker,
     private val playbackHistoryRepository: PlaybackHistoryRepository,
-    private val mediaControllerRepository: MediaControllerRepository
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored
 ) {
     
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
@@ -328,7 +328,7 @@ class PlaybackHistorySessionManager @Inject constructor(
         
         // Try to extract from current track info
         return try {
-            mediaControllerRepository.currentRecordingIdFlow.value
+            mediaControllerRepository.currentRecordingId.value
         } catch (e: Exception) {
             null
         }

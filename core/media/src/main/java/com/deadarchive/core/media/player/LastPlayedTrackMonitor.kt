@@ -21,7 +21,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class LastPlayedTrackMonitor @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepository,
+    private val mediaControllerRepository: MediaControllerRepositoryRefactored,
     private val lastPlayedTrackService: LastPlayedTrackService
 ) {
     
@@ -142,7 +142,7 @@ class LastPlayedTrackMonitor @Inject constructor(
             }
             
             // Get current recording ID
-            val currentRecordingId = mediaControllerRepository.currentRecordingIdFlow.value
+            val currentRecordingId = mediaControllerRepository.currentRecordingId.value
             if (currentRecordingId == null) {
                 Log.w(TAG, "No current recording ID, skipping save")
                 return
