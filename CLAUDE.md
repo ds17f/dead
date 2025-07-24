@@ -88,58 +88,48 @@ adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
 **Service-Oriented Architecture:** Large components split into focused services following Single Responsibility Principle:
   - **Data operations:** ShowRepository → ShowEnrichmentService, ShowCacheService, ShowCreationService
   - **Media operations:** MediaControllerRepository → MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor
-  - **Browse operations:** BrowseViewModel → BrowseSearchService, BrowseLibraryService, BrowseDownloadService, BrowseDataService
-  - **Library operations:** LibraryViewModel → LibraryDataService, LibraryDownloadService, LibraryManagementService
+  - **Download operations:** Centralized DownloadService shared across all features
+  - **Browse operations:** BrowseViewModel → BrowseSearchService, BrowseLibraryService, BrowseDataService
+  - **Library operations:** LibraryViewModel → LibraryDataService, LibraryManagementService
 
 ### Data Services Architecture
 
 The `:core:data` module implements a service-oriented architecture with the main ShowRepository delegating specialized concerns to focused services:
 
-**ShowEnrichmentService** (`com.deadarchive.core.data.service`)
-- **Responsibility:** Rating and recording enrichment
+**ShowEnrichmentService** (`core/data/src/main/java/com/deadarchive/core/data/service/ShowEnrichmentService.kt`)
 - **Key Methods:** `enrichShowWithRatings()`, `enrichRecordingWithRating()`, `attachRecordingsToShow()`
 - **Dependencies:** RecordingDao, RatingsRepository
-- **Impact:** Handles all rating lookups and user preference application
 
-**ShowCacheService** (`com.deadarchive.core.data.service`)
-- **Responsibility:** Cache management and API interaction
+**ShowCacheService** (`core/data/src/main/java/com/deadarchive/core/data/service/ShowCacheService.kt`)
 - **Key Methods:** `isCacheExpired()`, `getRecordingMetadata()`, `isAudioFile()`
 - **Dependencies:** ArchiveApiService
-- **Impact:** Centralizes cache validation and Archive.org API calls
 
-**ShowCreationService** (`com.deadarchive.core.data.service`)
-- **Responsibility:** Show creation and normalization
+**ShowCreationService** (`core/data/src/main/java/com/deadarchive/core/data/service/ShowCreationService.kt`)
 - **Key Methods:** `createAndSaveShowsFromRecordings()`, `normalizeDate()`, `groupRecordingsByShow()`
 - **Dependencies:** ShowDao
-- **Impact:** Handles complex show creation workflow from recordings
 
-### Player Services Architecture
+### Download Architecture
 
-The `:feature:player` module implements service-oriented architecture with PlayerViewModel delegating specialized concerns to focused services:
+**DownloadService** (`core/data/src/main/java/com/deadarchive/core/data/download/DownloadService.kt`)
+- **Singleton service** shared across all ViewModels (Player, Browse, Library)
+- **State Flows:** `downloadStates: StateFlow<Map<String, ShowDownloadState>>`, `trackDownloadStates: StateFlow<Map<String, Boolean>>`
+- **Key Methods:** `downloadRecording(recording)`, `downloadShow(show)`, `cancelShowDownloads(show)`, `getDownloadState(recording)`
+- **Progress Aggregation:** Groups individual track downloads by `recordingId` to calculate `completedTracks/totalTracks`
+- **Auto-monitoring:** Observes `DownloadRepository.getAllDownloads()` flow and updates UI states in real-time
 
-**PlayerDataService** (`com.deadarchive.feature.player.service`)
-- **Responsibility:** Recording data loading and management
+### Player Services
+
+**PlayerDataService** (`feature/player/src/main/java/com/deadarchive/feature/player/service/PlayerDataService.kt`)
 - **Key Methods:** `loadRecording()`, `getAlternativeRecordings()`, `findNextShowByDate()`, `getBestRecordingForShow()`
 - **Dependencies:** ShowRepository, ArchiveApiService
-- **Impact:** Handles all recording data operations and navigation logic
 
-**PlayerPlaylistService** (`com.deadarchive.feature.player.service`)
-- **Responsibility:** Playlist management and queue operations
+**PlayerPlaylistService** (`feature/player/src/main/java/com/deadarchive/feature/player/service/PlayerPlaylistService.kt`)
 - **Key Methods:** `setPlaylist()`, `navigateToTrack()`, `addToPlaylist()`, `playTrackFromPlaylist()`
 - **Dependencies:** QueueManager, MediaControllerRepository
-- **Impact:** Manages playlist state and track playback operations
 
-**PlayerDownloadService** (`com.deadarchive.feature.player.service`)
-- **Responsibility:** Download state management and monitoring
-- **Key Methods:** `downloadRecording()`, `getRecordingDownloadState()`, `isTrackDownloaded()`
-- **Dependencies:** DownloadRepository
-- **Impact:** Provides reactive download state monitoring and control
-
-**PlayerLibraryService** (`com.deadarchive.feature.player.service`)
-- **Responsibility:** Library integration and status tracking
+**PlayerLibraryService** (`feature/player/src/main/java/com/deadarchive/feature/player/service/PlayerLibraryService.kt`)
 - **Key Methods:** `checkLibraryStatus()`, `addToLibrary()`, `removeFromLibrary()`
 - **Dependencies:** LibraryRepository, ShowRepository
-- **Impact:** Manages show library operations and status updates
 
 ### Media Services Architecture
 
@@ -175,76 +165,31 @@ This architecture follows Single Responsibility Principle, making the codebase m
 
 The `:feature:browse` module implements service-oriented architecture with the BrowseViewModel coordinating between focused services:
 
-**BrowseSearchService** (`com.deadarchive.feature.browse.service`)
-- **Responsibility:** Search functionality and era filtering (~185 lines)
+### Browse Services
+
+**BrowseSearchService** (`feature/browse/src/main/java/com/deadarchive/feature/browse/service/BrowseSearchService.kt`)
 - **Key Methods:** `updateSearchQuery()`, `searchShows()`, `filterByEra()`, `cancelCurrentSearch()`
-- **Dependencies:** SearchShowsUseCase for data operations
-- **State Management:** Internal search query and loading state with StateFlow
-- **Impact:** Handles all search operations with proper cancellation and debouncing
+- **State Flows:** `searchQuery`, `isSearching`
+- **Dependencies:** SearchShowsUseCase
 
-**BrowseLibraryService** (`com.deadarchive.feature.browse.service`)
-- **Responsibility:** Library operations with local UI updates (~40 lines)
+**BrowseLibraryService** (`feature/browse/src/main/java/com/deadarchive/feature/browse/service/BrowseLibraryService.kt`)
 - **Key Methods:** `toggleLibrary()` with optimistic UI updates
-- **Dependencies:** LibraryRepository for persistence
-- **Pattern:** Callback-based UI state updates for immediate user feedback
-- **Impact:** Clean separation of library logic from UI concerns
+- **Dependencies:** LibraryRepository
 
-**BrowseDownloadService** (`com.deadarchive.feature.browse.service`)
-- **Responsibility:** Download management and state monitoring (~220 lines)
-- **Key Methods:** `downloadShow()`, `downloadRecording()`, `cancelShowDownloads()`, `startDownloadStateMonitoring()`
-- **Dependencies:** DownloadRepository, WorkManager for background downloads
-- **State Management:** Download states map and confirmation dialogs via StateFlow
-- **Impact:** Comprehensive download handling with real-time progress tracking
-
-**BrowseDataService** (`com.deadarchive.feature.browse.service`)
-- **Responsibility:** Data loading operations (~120 lines)
+**BrowseDataService** (`feature/browse/src/main/java/com/deadarchive/feature/browse/service/BrowseDataService.kt`)
 - **Key Methods:** `loadPopularShows()`, `loadRecentShows()`, `loadInitialData()`
-- **Dependencies:** SearchShowsUseCase for various data queries
-- **Pattern:** Coroutine-based data loading with proper cancellation
-- **Impact:** Separates data loading logic from search operations
+- **Dependencies:** SearchShowsUseCase
 
-**BrowseViewModel** (refactored coordinator ~100 lines, reduced from 486 lines)
-- **Responsibility:** UI coordination using service composition
-- **Key Methods:** All public methods delegate to appropriate services
-- **Dependencies:** All four browse services above
-- **Pattern:** Facade pattern with callback-based service coordination
-- **Impact:** 80% reduction in size while maintaining full backward compatibility
+### Library Services
 
-This service extraction follows the successful MediaControllerRepository pattern, transforming a monolithic ViewModel into a clean coordination layer.
-
-### Library Feature Services Architecture
-
-The `:feature:library` module implements service-oriented architecture with the LibraryViewModel coordinating between focused services:
-
-**LibraryDataService** (`com.deadarchive.feature.library.service`)
-- **Responsibility:** Data loading and filtering operations (~120 lines)
+**LibraryDataService** (`feature/library/src/main/java/com/deadarchive/feature/library/service/LibraryDataService.kt`)
 - **Key Methods:** `loadLibraryItems()`, `setSortOption()`, `setDecadeFilter()`
-- **Dependencies:** ShowRepository for library data access
-- **State Management:** Sort options and decade filters via StateFlow with reactive updates
-- **Impact:** Complex reactive data loading with combine() for filtering, sorting, and legacy format conversion
+- **State Flows:** `sortOption`, `decadeFilter`
+- **Dependencies:** ShowRepository
 
-**LibraryDownloadService** (`com.deadarchive.feature.library.service`)
-- **Responsibility:** Download management and state monitoring (~220 lines)
-- **Key Methods:** `downloadShow()`, `downloadRecording()`, `cancelShowDownloads()`, `startDownloadStateMonitoring()`
-- **Dependencies:** DownloadRepository for download operations
-- **Pattern:** Consistent with BrowseDownloadService for code reusability
-- **Impact:** Comprehensive download handling with optimistic UI updates and confirmation dialogs
-
-**LibraryManagementService** (`com.deadarchive.feature.library.service`)
-- **Responsibility:** Library operations (add, remove, clear) (~60 lines)
+**LibraryManagementService** (`feature/library/src/main/java/com/deadarchive/feature/library/service/LibraryManagementService.kt`)
 - **Key Methods:** `removeFromLibrary()`, `removeShowFromLibrary()`, `clearLibrary()`
-- **Dependencies:** LibraryRepository for persistence
-- **Pattern:** Simple coroutine-based operations with error handling
-- **Impact:** Clean separation of library management logic from UI concerns
-
-**LibraryViewModel** (refactored coordinator ~120 lines, reduced from 407 lines)
-- **Responsibility:** UI coordination using service composition
-- **Key Methods:** All public methods delegate to appropriate services
-- **Dependencies:** LibraryDataService, LibraryDownloadService, LibraryManagementService
-- **Pattern:** Facade pattern with callback-based service coordination
-- **Impact:** 70% reduction in size while maintaining full backward compatibility
-
-This service extraction maintains consistency with the BrowseViewModel pattern, enabling code reuse and establishing clear architectural patterns.
+- **Dependencies:** LibraryRepository
 
 ### Entry Points
 
@@ -327,13 +272,12 @@ gradle :core:network:test  # Specific module tests
 
 When creating new ViewModels or refactoring existing ones, follow the established service-oriented architecture pattern:
 
-**Service Extraction Pattern:**
-1. **Analyze responsibilities** - Identify distinct functional areas (search, downloads, library, data loading)
-2. **Create focused services** - Each service handles one specific responsibility (~40-220 lines)
-3. **Use @Singleton @Inject** - All services are Hilt singletons with constructor injection
-4. **StateFlow for reactive state** - Services expose state via StateFlow when needed
-5. **Callback coordination** - ViewModel coordinates via callbacks: `onStateChange: (UiState) -> Unit`
-6. **Maintain public interface** - ViewModel facade delegates to services, preserving backward compatibility
+**Service Architecture Rules:**
+1. **Use existing shared services** - `DownloadService` is centralized, don't duplicate it
+2. **Create focused feature services** - One responsibility per service (search, library, data loading)
+3. **@Singleton @Inject pattern** - All services are Hilt singletons with constructor injection
+4. **StateFlow for state** - Services expose reactive state via StateFlow when needed
+5. **Callback coordination** - ViewModels coordinate via `onStateChange: (UiState) -> Unit` callbacks
 
 **Service Structure Template:**
 ```kotlin
