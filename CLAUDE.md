@@ -85,10 +85,10 @@ adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
 
 **Reactive Data Flow:** Repository pattern with Flow-based data streams
 
-**Service-Oriented Architecture:** Core operations split into focused services:
-  - Data operations (ShowRepository → ShowEnrichmentService, ShowCacheService, ShowCreationService)
-  - Player operations (PlayerViewModel → PlayerDataService, PlayerPlaylistService, PlayerDownloadService, PlayerLibraryService)  
-  - Media operations (MediaControllerRepository → MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor)
+**Service-Oriented Architecture:** Large components split into focused services following Single Responsibility Principle:
+  - **Data operations:** ShowRepository → ShowEnrichmentService, ShowCacheService, ShowCreationService
+  - **Media operations:** MediaControllerRepository → MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor
+  - **Browse operations:** BrowseViewModel → BrowseSearchService, BrowseLibraryService, BrowseDownloadService, BrowseDataService
 
 ### Data Services Architecture
 
@@ -170,6 +170,47 @@ The `:core:media` module has been refactored from a monolithic 1,087-line MediaC
 
 This architecture follows Single Responsibility Principle, making the codebase more maintainable and testable by isolating concerns into dedicated services.
 
+### Browse Feature Services Architecture
+
+The `:feature:browse` module implements service-oriented architecture with the BrowseViewModel coordinating between focused services:
+
+**BrowseSearchService** (`com.deadarchive.feature.browse.service`)
+- **Responsibility:** Search functionality and era filtering (~185 lines)
+- **Key Methods:** `updateSearchQuery()`, `searchShows()`, `filterByEra()`, `cancelCurrentSearch()`
+- **Dependencies:** SearchShowsUseCase for data operations
+- **State Management:** Internal search query and loading state with StateFlow
+- **Impact:** Handles all search operations with proper cancellation and debouncing
+
+**BrowseLibraryService** (`com.deadarchive.feature.browse.service`)
+- **Responsibility:** Library operations with local UI updates (~40 lines)
+- **Key Methods:** `toggleLibrary()` with optimistic UI updates
+- **Dependencies:** LibraryRepository for persistence
+- **Pattern:** Callback-based UI state updates for immediate user feedback
+- **Impact:** Clean separation of library logic from UI concerns
+
+**BrowseDownloadService** (`com.deadarchive.feature.browse.service`)
+- **Responsibility:** Download management and state monitoring (~220 lines)
+- **Key Methods:** `downloadShow()`, `downloadRecording()`, `cancelShowDownloads()`, `startDownloadStateMonitoring()`
+- **Dependencies:** DownloadRepository, WorkManager for background downloads
+- **State Management:** Download states map and confirmation dialogs via StateFlow
+- **Impact:** Comprehensive download handling with real-time progress tracking
+
+**BrowseDataService** (`com.deadarchive.feature.browse.service`)
+- **Responsibility:** Data loading operations (~120 lines)
+- **Key Methods:** `loadPopularShows()`, `loadRecentShows()`, `loadInitialData()`
+- **Dependencies:** SearchShowsUseCase for various data queries
+- **Pattern:** Coroutine-based data loading with proper cancellation
+- **Impact:** Separates data loading logic from search operations
+
+**BrowseViewModel** (refactored coordinator ~100 lines, reduced from 486 lines)
+- **Responsibility:** UI coordination using service composition
+- **Key Methods:** All public methods delegate to appropriate services
+- **Dependencies:** All four browse services above
+- **Pattern:** Facade pattern with callback-based service coordination
+- **Impact:** 80% reduction in size while maintaining full backward compatibility
+
+This service extraction follows the successful MediaControllerRepository pattern, transforming a monolithic ViewModel into a clean coordination layer.
+
 ### Entry Points
 
 **Application Class:** `DeadArchiveApplication.kt`
@@ -246,6 +287,69 @@ gradle :core:network:test  # Specific module tests
 2. Create migration in `DeadArchiveDatabase.kt`
 3. Update corresponding DAOs
 4. Add migration tests
+
+### Service-Oriented ViewModel Development
+
+When creating new ViewModels or refactoring existing ones, follow the established service-oriented architecture pattern:
+
+**Service Extraction Pattern:**
+1. **Analyze responsibilities** - Identify distinct functional areas (search, downloads, library, data loading)
+2. **Create focused services** - Each service handles one specific responsibility (~40-220 lines)
+3. **Use @Singleton @Inject** - All services are Hilt singletons with constructor injection
+4. **StateFlow for reactive state** - Services expose state via StateFlow when needed
+5. **Callback coordination** - ViewModel coordinates via callbacks: `onStateChange: (UiState) -> Unit`
+6. **Maintain public interface** - ViewModel facade delegates to services, preserving backward compatibility
+
+**Service Structure Template:**
+```kotlin
+@Singleton
+class FeatureOperationService @Inject constructor(
+    private val dependency: SomeRepository
+) {
+    companion object {
+        private const val TAG = "FeatureOperationService"
+    }
+    
+    fun performOperation(
+        parameters: InputType,
+        coroutineScope: CoroutineScope,
+        onStateChange: (UiState) -> Unit
+    ) {
+        coroutineScope.launch {
+            // Business logic here
+            onStateChange(UiState.Success(result))
+        }
+    }
+}
+```
+
+**ViewModel Facade Template:**
+```kotlin
+@HiltViewModel
+class FeatureViewModel @Inject constructor(
+    private val operationService: FeatureOperationService,
+    private val dataService: FeatureDataService
+) : ViewModel() {
+    
+    private val _uiState = MutableStateFlow<UiState>(UiState.Idle)
+    val uiState: StateFlow<UiState> = _uiState.asStateFlow()
+    
+    fun performOperation(input: InputType) {
+        operationService.performOperation(
+            parameters = input,
+            coroutineScope = viewModelScope,
+            onStateChange = { _uiState.value = it }
+        )
+    }
+}
+```
+
+**Benefits of this pattern:**
+- **Single Responsibility** - Each service has one clear purpose
+- **Testability** - Services can be unit tested in isolation  
+- **Reusability** - Services can be shared across ViewModels
+- **Maintainability** - Smaller, focused components are easier to modify
+- **Backward Compatibility** - Facade pattern preserves existing interfaces
 
 ### Build Issues
 - **Gradle Wrapper Corrupted:** Use `gradle wrapper --gradle-version=8.14.2` to regenerate
