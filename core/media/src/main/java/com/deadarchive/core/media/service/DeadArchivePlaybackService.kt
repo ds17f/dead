@@ -17,6 +17,11 @@ import androidx.media3.session.MediaSessionService
 import androidx.media3.session.SessionCommand
 import androidx.media3.session.SessionResult
 import com.deadarchive.core.media.player.PlayerNotificationManager
+import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import com.google.common.collect.ImmutableList
 import com.google.common.util.concurrent.Futures
 import com.google.common.util.concurrent.ListenableFuture
@@ -47,6 +52,9 @@ class DeadArchivePlaybackService : MediaSessionService() {
     
     @Inject
     lateinit var notificationManager: PlayerNotificationManager
+    
+    @Inject
+    lateinit var mediaControllerRepository: MediaControllerRepositoryRefactored
     
     private var mediaSession: MediaSession? = null
     
@@ -135,8 +143,13 @@ class DeadArchivePlaybackService : MediaSessionService() {
             
             override fun onMediaItemTransition(mediaItem: MediaItem?, reason: Int) {
                 Log.d(TAG, "Media item transition: ${mediaItem?.mediaId}")
-                updateMediaMetadata(mediaItem)
-                updateNotification()
+                
+                // Add delay to allow CurrentTrackInfo to be updated by PlaybackStateSync
+                CoroutineScope(Dispatchers.Main).launch {
+                    delay(500) // Wait for CurrentTrackInfo to be updated
+                    updateMediaMetadata(mediaItem)
+                    updateNotification()
+                }
             }
         })
     }
@@ -176,25 +189,64 @@ class DeadArchivePlaybackService : MediaSessionService() {
     }
     
     /**
-     * Update MediaMetadata for current track
+     * Update MediaMetadata for current track using rich CurrentTrackInfo
      */
     private fun updateMediaMetadata(mediaItem: MediaItem?) {
         mediaItem?.let { item ->
-            val metadata = MediaMetadata.Builder()
-                .setTitle(item.mediaMetadata.title ?: "Unknown Track")
-                .setArtist(item.mediaMetadata.artist ?: "Grateful Dead")
-                .setAlbumTitle(item.mediaMetadata.albumTitle ?: "Dead Archive")
-                .setDisplayTitle(item.mediaMetadata.displayTitle ?: item.mediaMetadata.title)
-                .build()
+            // Get rich track info from MediaControllerRepository
+            val currentTrackInfo = mediaControllerRepository.currentTrackInfo.value
             
-            // Update the MediaSession's metadata
-            mediaSession?.let { session ->
-                // Create updated MediaItem with enhanced metadata
-                val updatedItem = item.buildUpon()
-                    .setMediaMetadata(metadata)
+            if (currentTrackInfo != null) {
+                Log.d(TAG, "Using CurrentTrackInfo for rich metadata: ${currentTrackInfo.songTitle}")
+                
+                // Use rich metadata from CurrentTrackInfo
+                val metadata = MediaMetadata.Builder()
+                    .setTitle(currentTrackInfo.displayTitle)  // Proper track name
+                    .setArtist(currentTrackInfo.displayArtist) // Date + venue + location
+                    .setAlbumTitle(currentTrackInfo.albumTitle) // Show date + venue
+                    .setDisplayTitle(currentTrackInfo.displayTitle)
                     .build()
                 
-                Log.d(TAG, "Updated metadata for: ${metadata.title}")
+                // Update the MediaSession's metadata
+                mediaSession?.let { session ->
+                    // Set the metadata directly on the player's current MediaItem
+                    val currentIndex = player.currentMediaItemIndex
+                    if (currentIndex >= 0) {
+                        val updatedItem = item.buildUpon()
+                            .setMediaMetadata(metadata)
+                            .build()
+                        
+                        // Replace the current MediaItem with updated metadata
+                        player.replaceMediaItem(currentIndex, updatedItem)
+                    }
+                    
+                    Log.d(TAG, "Updated rich metadata - Title: ${metadata.title}, Artist: ${metadata.artist}")
+                }
+            } else {
+                Log.d(TAG, "No CurrentTrackInfo available, using basic metadata")
+                
+                // Fallback to basic metadata
+                val metadata = MediaMetadata.Builder()
+                    .setTitle(item.mediaMetadata.title ?: "Unknown Track")
+                    .setArtist(item.mediaMetadata.artist ?: "Grateful Dead")
+                    .setAlbumTitle(item.mediaMetadata.albumTitle ?: "Dead Archive")
+                    .setDisplayTitle(item.mediaMetadata.displayTitle ?: item.mediaMetadata.title)
+                    .build()
+                
+                mediaSession?.let { session ->
+                    // Set the metadata directly on the player's current MediaItem
+                    val currentIndex = player.currentMediaItemIndex
+                    if (currentIndex >= 0) {
+                        val updatedItem = item.buildUpon()
+                            .setMediaMetadata(metadata)
+                            .build()
+                        
+                        // Replace the current MediaItem with updated metadata
+                        player.replaceMediaItem(currentIndex, updatedItem)
+                    }
+                    
+                    Log.d(TAG, "Updated basic metadata for: ${metadata.title}")
+                }
             }
         }
     }
