@@ -25,7 +25,7 @@ import javax.inject.Singleton
 class PlaybackHistorySessionManager @Inject constructor(
     private val playbackEventTracker: PlaybackEventTracker,
     private val playbackHistoryRepository: PlaybackHistoryRepository,
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored
+    private val mediaControllerRepository: MediaControllerRepository
 ) {
     
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())

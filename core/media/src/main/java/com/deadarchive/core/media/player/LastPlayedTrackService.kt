@@ -20,7 +20,7 @@ class LastPlayedTrackService @Inject constructor(
     @ApplicationContext private val context: Context,
     private val showRepository: ShowRepository,
     private val queueManager: QueueManager,
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored
+    private val mediaControllerRepository: MediaControllerRepository
 ) {
     
     companion object {

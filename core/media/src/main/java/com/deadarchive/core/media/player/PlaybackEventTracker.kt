@@ -17,7 +17,7 @@ import javax.inject.Singleton
 
 /**
  * Dedicated tracker for Media3 playback events, focused on capturing data needed
- * for playback history tracking. This complements MediaControllerRepositoryRefactored by
+ * for playback history tracking. This complements MediaControllerRepository by
  * providing specialized event monitoring for history purposes.
  * 
  * Key events tracked:
@@ -32,7 +32,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class PlaybackEventTracker @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored
+    private val mediaControllerRepository: MediaControllerRepository
 ) {
     
     companion object {

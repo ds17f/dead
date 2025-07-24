@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.SetlistRepository
-import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
+import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.PlaybackEventTracker
 import com.deadarchive.core.media.player.QueueManager
 import com.deadarchive.core.media.player.QueueStateManager
@@ -35,7 +35,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PlayerViewModel @Inject constructor(
-    val mediaControllerRepository: MediaControllerRepositoryRefactored,
+    val mediaControllerRepository: MediaControllerRepository,
     private val queueManager: QueueManager,
     val queueStateManager: QueueStateManager,
     val playbackEventTracker: PlaybackEventTracker,
@@ -298,7 +298,7 @@ class PlayerViewModel @Inject constructor(
     }
     
     /**
-     * Update MediaControllerRepositoryRefactored with current queue context
+     * Update MediaControllerRepository with current queue context
      * The playlist should already contain filtered tracks (one format per song)
      * @param forceUpdate If true, updates queue even when music is currently playing
      */
@@ -522,7 +522,7 @@ class PlayerViewModel @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         Log.d(TAG, "onCleared: PlayerViewModel cleared")
-        // Don't release MediaControllerRepositoryRefactored - it should persist for background playback
+        // Don't release MediaControllerRepository - it should persist for background playback
         // The service should continue running independently of UI lifecycle
     }
     

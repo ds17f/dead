@@ -3,7 +3,7 @@ package com.deadarchive.core.media
 import androidx.media3.common.Player
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.util.UnstableApi
-import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
+import com.deadarchive.core.media.player.MediaControllerRepository
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -15,7 +15,7 @@ import javax.inject.Singleton
 @UnstableApi
 @Singleton
 class MediaPlayer @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored
+    private val mediaControllerRepository: MediaControllerRepository
 ) {
     
     val isPlaying: StateFlow<Boolean> = mediaControllerRepository.isPlaying

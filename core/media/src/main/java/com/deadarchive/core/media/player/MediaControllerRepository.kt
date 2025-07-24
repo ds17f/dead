@@ -31,7 +31,7 @@ import javax.inject.Singleton
  */
 @UnstableApi
 @Singleton
-class MediaControllerRepositoryRefactored @Inject constructor(
+class MediaControllerRepository @Inject constructor(
     @ApplicationContext private val context: Context,
     private val mediaServiceConnector: MediaServiceConnector,
     private val playbackStateSync: PlaybackStateSync,

@@ -21,7 +21,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class LastPlayedTrackMonitor @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored,
+    private val mediaControllerRepository: MediaControllerRepository,
     private val lastPlayedTrackService: LastPlayedTrackService
 ) {
     

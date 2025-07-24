@@ -8,7 +8,7 @@ import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.media.player.LocalFileResolver
-import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
+import com.deadarchive.core.media.player.MediaControllerRepository
 import com.deadarchive.core.media.player.service.MediaServiceConnector
 import com.deadarchive.core.media.player.service.PlaybackCommandProcessor
 import com.deadarchive.core.media.player.service.PlaybackStateSync
@@ -119,8 +119,8 @@ object MediaModule {
         mediaServiceConnector: MediaServiceConnector,
         playbackStateSync: PlaybackStateSync,
         playbackCommandProcessor: PlaybackCommandProcessor
-    ): MediaControllerRepositoryRefactored {
-        return MediaControllerRepositoryRefactored(
+    ): MediaControllerRepository {
+        return MediaControllerRepository(
             context, 
             mediaServiceConnector, 
             playbackStateSync, 
@@ -135,7 +135,7 @@ object MediaModule {
     @Provides
     @Singleton
     fun provideQueueManager(
-        mediaControllerRepository: MediaControllerRepositoryRefactored,
+        mediaControllerRepository: MediaControllerRepository,
         localFileResolver: LocalFileResolver
     ): QueueManager {
         return QueueManager(mediaControllerRepository, localFileResolver)
@@ -149,7 +149,7 @@ object MediaModule {
     @Singleton
     fun provideQueueStateManager(
         queueManager: QueueManager,
-        mediaControllerRepository: MediaControllerRepositoryRefactored
+        mediaControllerRepository: MediaControllerRepository
     ): QueueStateManager {
         val queueStateManager = QueueStateManager(queueManager, mediaControllerRepository)
         
@@ -167,7 +167,7 @@ object MediaModule {
     @Provides
     @Singleton
     fun providePlaybackEventTracker(
-        mediaControllerRepository: MediaControllerRepositoryRefactored
+        mediaControllerRepository: MediaControllerRepository
     ): PlaybackEventTracker {
         return PlaybackEventTracker(mediaControllerRepository)
         // No manual connection needed - tracker monitors connection state automatically
@@ -182,7 +182,7 @@ object MediaModule {
     fun providePlaybackHistorySessionManager(
         playbackEventTracker: PlaybackEventTracker,
         playbackHistoryRepository: PlaybackHistoryRepository,
-        mediaControllerRepository: MediaControllerRepositoryRefactored
+        mediaControllerRepository: MediaControllerRepository
     ): PlaybackHistorySessionManager {
         val sessionManager = PlaybackHistorySessionManager(
             playbackEventTracker,
@@ -206,7 +206,7 @@ object MediaModule {
         playbackHistoryRepository: PlaybackHistoryRepository,
         showRepository: com.deadarchive.core.data.api.repository.ShowRepository,
         queueManager: QueueManager,
-        mediaControllerRepository: MediaControllerRepositoryRefactored
+        mediaControllerRepository: MediaControllerRepository
     ): PlaybackResumeService {
         return PlaybackResumeService(
             playbackHistoryRepository,
@@ -226,7 +226,7 @@ object MediaModule {
         @ApplicationContext context: Context,
         showRepository: com.deadarchive.core.data.api.repository.ShowRepository,
         queueManager: QueueManager,
-        mediaControllerRepository: MediaControllerRepositoryRefactored
+        mediaControllerRepository: MediaControllerRepository
     ): LastPlayedTrackService {
         return LastPlayedTrackService(context, showRepository, queueManager, mediaControllerRepository)
     }
@@ -238,7 +238,7 @@ object MediaModule {
     @Provides
     @Singleton
     fun provideLastPlayedTrackMonitor(
-        mediaControllerRepository: MediaControllerRepositoryRefactored,
+        mediaControllerRepository: MediaControllerRepository,
         lastPlayedTrackService: LastPlayedTrackService
     ): LastPlayedTrackMonitor {
         val monitor = LastPlayedTrackMonitor(mediaControllerRepository, lastPlayedTrackService)

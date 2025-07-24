@@ -17,7 +17,7 @@ import androidx.media3.session.MediaSessionService
 import androidx.media3.session.SessionCommand
 import androidx.media3.session.SessionResult
 import com.deadarchive.core.media.player.PlayerNotificationManager
-import com.deadarchive.core.media.player.MediaControllerRepositoryRefactored
+import com.deadarchive.core.media.player.MediaControllerRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -54,7 +54,7 @@ class DeadArchivePlaybackService : MediaSessionService() {
     lateinit var notificationManager: PlayerNotificationManager
     
     @Inject
-    lateinit var mediaControllerRepository: MediaControllerRepositoryRefactored
+    lateinit var mediaControllerRepository: MediaControllerRepository
     
     private var mediaSession: MediaSession? = null
     

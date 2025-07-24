@@ -26,7 +26,7 @@ class PlaybackResumeService @Inject constructor(
     private val playbackHistoryRepository: PlaybackHistoryRepository,
     private val showRepository: ShowRepository,
     private val queueManager: QueueManager,
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored
+    private val mediaControllerRepository: MediaControllerRepository
 ) {
     
     companion object {

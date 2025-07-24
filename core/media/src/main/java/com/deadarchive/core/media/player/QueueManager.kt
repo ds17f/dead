@@ -25,7 +25,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class QueueManager @Inject constructor(
-    private val mediaControllerRepository: MediaControllerRepositoryRefactored,
+    private val mediaControllerRepository: MediaControllerRepository,
     private val localFileResolver: LocalFileResolver
 ) {
     
