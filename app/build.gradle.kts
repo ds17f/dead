@@ -141,7 +141,6 @@ dependencies {
     implementation(project(":feature:browse"))
     implementation(project(":feature:player"))
     implementation(project(":feature:playlist"))
-    implementation(project(":feature:downloads"))
     implementation(project(":feature:library"))
 
     // Core Android

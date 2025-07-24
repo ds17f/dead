@@ -64,6 +64,7 @@ fun LibraryScreen(
     // Bottom sheet and confirmation states
     var showBottomSheet by remember { mutableStateOf(false) }
     var showSortBottomSheet by remember { mutableStateOf(false) }
+    var showDownloadsBottomSheet by remember { mutableStateOf(false) }
     var showBackupConfirmation by remember { mutableStateOf(false) }
     var showClearConfirmation by remember { mutableStateOf(false) }
     var showRestoreConfirmation by remember { mutableStateOf(false) }
@@ -385,6 +386,10 @@ fun LibraryScreen(
                     showBottomSheet = false
                     showClearConfirmation = true
                 },
+                onDownloadsClick = {
+                    showBottomSheet = false
+                    showDownloadsBottomSheet = true
+                },
                 onDismiss = { showBottomSheet = false }
             )
         }
@@ -534,6 +539,19 @@ fun LibraryScreen(
             )
         }
     }
+    
+    // Downloads panel bottom sheet
+    if (showDownloadsBottomSheet) {
+        ModalBottomSheet(
+            onDismissRequest = { showDownloadsBottomSheet = false }
+        ) {
+            DownloadsPanel(
+                downloadStates = downloadStates,
+                settings = settings,
+                onDismiss = { showDownloadsBottomSheet = false }
+            )
+        }
+    }
 }
 
 @Composable
@@ -582,6 +600,7 @@ private fun LibraryOptionsBottomSheet(
     isLoading: Boolean,
     onBackupClick: () -> Unit,
     onClearClick: () -> Unit,
+    onDownloadsClick: () -> Unit,
     onDismiss: () -> Unit
 ) {
     Column(
@@ -641,6 +660,37 @@ private fun LibraryOptionsBottomSheet(
         
         HorizontalDivider()
         
+        // Downloads option
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable { onDownloadsClick() }
+                .padding(vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Icon(
+                painter = painterResource(R.drawable.ic_file_download),
+                contentDescription = null,
+                modifier = Modifier.size(24.dp),
+                tint = MaterialTheme.colorScheme.onSurface
+            )
+            Spacer(modifier = Modifier.width(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Manage Downloads",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+                Text(
+                    text = "View and manage downloaded shows",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        }
+        
+        HorizontalDivider()
+        
         // Clear option
         Row(
             modifier = Modifier
@@ -683,6 +733,122 @@ private fun LibraryOptionsBottomSheet(
                 )
             }
         }
+        
+        // Bottom padding for gesture area
+        Spacer(modifier = Modifier.height(16.dp))
+    }
+}
+
+@Composable
+private fun DownloadsPanel(
+    downloadStates: Map<String, ShowDownloadState>,
+    settings: AppSettings,
+    onDismiss: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
+    ) {
+        Text(
+            text = "Downloads",
+            style = MaterialTheme.typography.titleMedium,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+        
+        // Downloads summary
+        val activeDownloads = downloadStates.values.count { it is ShowDownloadState.Downloading }
+        val completedDownloads = downloadStates.values.count { it is ShowDownloadState.Downloaded }
+        
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
+            )
+        ) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(
+                        text = "Active Downloads:",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Text(
+                        text = "$activeDownloads",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.primary
+                    )
+                }
+                
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(
+                        text = "Completed Downloads:",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Text(
+                        text = "$completedDownloads",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                }
+            }
+        }
+        
+        // Debug section (if debug mode is enabled)
+        if (settings.showDebugInfo) {
+            HorizontalDivider()
+            
+            Text(
+                text = "Debug Information",
+                style = MaterialTheme.typography.titleSmall,
+                color = MaterialTheme.colorScheme.primary
+            )
+            
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.3f)
+                )
+            ) {
+                Column(
+                    modifier = Modifier.padding(12.dp),
+                    verticalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    Text(
+                        text = "Total download states tracked: ${downloadStates.size}",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onErrorContainer
+                    )
+                    
+                    downloadStates.forEach { (recordingId, state) ->
+                        Text(
+                            text = "$recordingId: ${state::class.simpleName}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onErrorContainer
+                        )
+                    }
+                }
+            }
+        }
+        
+        // Placeholder for future functionality
+        Text(
+            text = "Full download management features coming soon...",
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(vertical = 8.dp)
+        )
         
         // Bottom padding for gesture area
         Spacer(modifier = Modifier.height(16.dp))

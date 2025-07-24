@@ -31,7 +31,6 @@ import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
 import com.deadarchive.feature.playlist.MiniPlayerContainer
-import com.deadarchive.feature.downloads.DownloadsScreen
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.model.Show
 import com.deadarchive.feature.library.navigation.libraryScreen
@@ -169,7 +168,6 @@ fun MainAppScreen(
             
             composable("debug") {
                 SettingsScreen(
-                    onNavigateToDownloads = { navController.navigate("downloads") },
                     versionInfo = VersionInfo(
                         versionName = BuildConfig.VERSION_NAME,
                         versionCode = BuildConfig.VERSION_CODE,
@@ -180,12 +178,6 @@ fun MainAppScreen(
                 )
             }
             
-            // Downloads screen (accessible from Settings)
-            composable("downloads") {
-                DownloadsScreen(
-                    onNavigateToPlayer = { navController.navigate("player") }
-                )
-            }
             
             
             // Playlist screen
@@ -219,7 +211,7 @@ private fun shouldShowBottomNavigation(currentRoute: String?): Boolean {
         currentRoute.startsWith("player") -> false
         currentRoute.startsWith("playlist") -> true
         currentRoute.startsWith("browse") -> true  // Handle browse with parameters like "browse?era=1990s"
-        currentRoute in listOf("home", "library", "debug", "downloads") -> true
+        currentRoute in listOf("home", "library", "debug") -> true
         else -> false
     }
 }
@@ -233,7 +225,7 @@ private fun shouldShowMiniPlayer(currentRoute: String?): Boolean {
         currentRoute == null -> false
         currentRoute.startsWith("player") -> false  // Hide on full player screen
         currentRoute.startsWith("playlist") -> true
-        currentRoute in listOf("home", "browse", "library", "debug", "downloads") -> true
+        currentRoute in listOf("home", "browse", "library", "debug") -> true
         else -> false
     }
 }
