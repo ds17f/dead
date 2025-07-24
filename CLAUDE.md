@@ -85,7 +85,10 @@ adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
 
 **Reactive Data Flow:** Repository pattern with Flow-based data streams
 
-**Service-Oriented Architecture:** Core data operations split into focused services
+**Service-Oriented Architecture:** Core operations split into focused services:
+  - Data operations (ShowRepository → ShowEnrichmentService, ShowCacheService, ShowCreationService)
+  - Player operations (PlayerViewModel → PlayerDataService, PlayerPlaylistService, PlayerDownloadService, PlayerLibraryService)  
+  - Media operations (MediaControllerRepository → MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor)
 
 ### Data Services Architecture
 
@@ -136,6 +139,34 @@ The `:feature:player` module implements service-oriented architecture with Playe
 - **Key Methods:** `checkLibraryStatus()`, `addToLibrary()`, `removeFromLibrary()`
 - **Dependencies:** LibraryRepository, ShowRepository
 - **Impact:** Manages show library operations and status updates
+
+### Media Services Architecture
+
+The `:core:media` module has been refactored from a monolithic 1,087-line MediaControllerRepository into a service-oriented architecture:
+
+**MediaServiceConnector** (`com.deadarchive.core.media.player.service`)
+- **Responsibility:** Connection lifecycle and service binding management (~150 lines)
+- **Key Methods:** `connectToService()`, `onControllerConnected()`, `disconnect()`
+- **Dependencies:** DeadArchivePlaybackService
+- **Impact:** Handles Media3 service connection state and callbacks
+
+**PlaybackStateSync** (`com.deadarchive.core.media.player.service`)  
+- **Responsibility:** StateFlow synchronization and position updates (~300 lines)
+- **Key Methods:** `setupMediaControllerListener()`, `updateCurrentTrackInfo()`, `updateQueueState()`
+- **Dependencies:** ShowRepository for rich metadata
+- **Impact:** Replaces URL parsing with Recording/Track metadata system
+
+**PlaybackCommandProcessor** (`com.deadarchive.core.media.player.service`)
+- **Responsibility:** Command processing and queue operations (~200 lines)
+- **Key Methods:** `playTrack()`, `playPlaylist()`, `skipToNext()`, `updateQueueContext()`
+- **Dependencies:** LocalFileResolver for offline support
+- **Impact:** Handles all playback commands and MediaController synchronization
+
+**MediaControllerRepository** (refactored coordinator ~400 lines)
+- **Responsibility:** Facade using service composition
+- **Key Methods:** All public methods delegate to appropriate services
+- **Dependencies:** All three media services above
+- **Impact:** Maintains full backward compatibility with cleaner architecture
 
 This architecture follows Single Responsibility Principle, making the codebase more maintainable and testable by isolating concerns into dedicated services.
 
@@ -270,18 +301,52 @@ gradle build --refresh-dependencies
 
 ## Media Playback Architecture
 
+### Service-Oriented Media Architecture
+
+The `:core:media` module implements a service-oriented architecture with MediaControllerRepository coordinating three focused services:
+
+**MediaServiceConnector** (`com.deadarchive.core.media.player.service`)
+- **Responsibility:** MediaController connection lifecycle and service binding
+- **Key Methods:** `connectToService()`, `onControllerConnected()`, `disconnect()`
+- **Dependencies:** DeadArchivePlaybackService
+- **Impact:** Manages Media3 service connection state and handles connection callbacks
+
+**PlaybackStateSync** (`com.deadarchive.core.media.player.service`)
+- **Responsibility:** StateFlow synchronization and position updates
+- **Key Methods:** `setupMediaControllerListener()`, `updateStateFromController()`, `updateCurrentTrackInfo()`
+- **Dependencies:** ShowRepository for track metadata enrichment
+- **Impact:** Provides reactive state flows with rich Recording/Track metadata instead of URL parsing
+
+**PlaybackCommandProcessor** (`com.deadarchive.core.media.player.service`)
+- **Responsibility:** Command processing and queue operations
+- **Key Methods:** `playTrack()`, `playPlaylist()`, `skipToNext()`, `updateQueueContext()`
+- **Dependencies:** LocalFileResolver for offline playback support
+- **Impact:** Handles all playback commands and MediaController synchronization
+
+**MediaControllerRepository** (`com.deadarchive.core.media.player`)
+- **Responsibility:** Facade coordinator using service composition (~400 lines, down from 1,087)
+- **Key Methods:** All public methods delegate to appropriate services
+- **Dependencies:** MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor
+- **Impact:** Maintains identical public interface while providing cleaner internal architecture
+
 ### Key Components
-- **MediaPlayer:** Core playback interface (`core/media-api`)
-- **PlaybackService:** Background service for continuous playback
-- **QueueManager:** Manages playback queue and track progression
-- **MediaController:** Repository for UI state and control commands
+- **QueueManager:** Manages playback queue and track progression with Recording metadata
+- **CurrentTrackInfo:** Rich metadata system with concert date, venue, track titles
 - **LastPlayedTrackService:** Spotify-like resume functionality
+- **PlaybackEventTracker:** Media3 event monitoring for history tracking
+- **DeadArchivePlaybackService:** Background MediaSessionService with rich notifications
 
 ### Playback Flow
-1. User selects track → QueueManager builds playlist
-2. MediaController sends commands to PlaybackService  
-3. ExoPlayer handles actual audio streaming
-4. MediaSession provides notification controls
-5. PlaybackEventTracker logs history for recommendations
+1. User selects track → QueueManager loads Recording with full metadata
+2. MediaControllerRepository updates queue context with Recording data
+3. PlaybackStateSync enriches CurrentTrackInfo with concert details
+4. DeadArchivePlaybackService displays proper track names and show info in notifications
+5. ExoPlayer handles actual audio streaming with Media3 integration
+6. PlaybackEventTracker logs history for recommendations
 
-The media system supports background playback, queue management, and automatic resume of last played track on app restart.
+### Rich Metadata System
+- **Before:** URL parsing like `gd1975.07.23.studio.bershaw.t01-BosBlues1.mp3`
+- **After:** Proper metadata like "Scarlet Begonias" by "May 8, 1977 - Barton Hall"
+- **Benefits:** Professional music app experience, MiniPlayer visibility, accurate notifications
+
+The media system supports background playback, queue management, offline file resolution, and automatic resume of last played track on app restart.
