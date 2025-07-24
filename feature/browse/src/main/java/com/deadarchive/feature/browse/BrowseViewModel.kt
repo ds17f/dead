@@ -2,13 +2,14 @@ package com.deadarchive.feature.browse
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.feature.browse.service.BrowseSearchService
 import com.deadarchive.feature.browse.service.BrowseLibraryService
-import com.deadarchive.feature.browse.service.BrowseDownloadService
+import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.feature.browse.service.BrowseDataService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -24,7 +25,7 @@ import javax.inject.Inject
 class BrowseViewModel @Inject constructor(
     private val searchService: BrowseSearchService,
     private val libraryService: BrowseLibraryService,
-    private val downloadService: BrowseDownloadService,
+    private val downloadService: DownloadService,
     private val dataService: BrowseDataService
 ) : ViewModel() {
     
@@ -45,8 +46,7 @@ class BrowseViewModel @Inject constructor(
             onStateChange = { _uiState.value = it },
             onSearchingStateChange = { /* handled by searchService */ }
         )
-        // Start monitoring download states via service
-        downloadService.startDownloadStateMonitoring(viewModelScope)
+        // Download state monitoring is automatically handled by shared DownloadService
     }
     
     fun updateSearchQuery(query: String) {
@@ -102,22 +102,26 @@ class BrowseViewModel @Inject constructor(
      * Start downloading a recording
      */
     fun downloadRecording(recording: Recording) {
-        downloadService.downloadRecording(
-            recording = recording,
-            coroutineScope = viewModelScope,
-            onStateChange = { _uiState.value = it },
-            currentState = _uiState.value
-        )
+        viewModelScope.launch {
+            try {
+                downloadService.downloadRecording(recording)
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to start download: ${e.message}")
+            }
+        }
     }
     
     /**
      * Cancel all downloads for a show (best recording)
      */
     fun cancelShowDownloads(show: Show) {
-        downloadService.cancelShowDownloads(
-            show = show,
-            coroutineScope = viewModelScope
-        )
+        viewModelScope.launch {
+            try {
+                downloadService.cancelShowDownloads(show)
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to cancel downloads: ${e.message}")
+            }
+        }
     }
     
     // Download state monitoring is now handled by BrowseDownloadService in init{}
@@ -133,12 +137,13 @@ class BrowseViewModel @Inject constructor(
      * Start downloading the best recording of a show
      */
     fun downloadShow(show: Show) {
-        downloadService.downloadShow(
-            show = show,
-            coroutineScope = viewModelScope,
-            onStateChange = { _uiState.value = it },
-            currentState = _uiState.value
-        )
+        viewModelScope.launch {
+            try {
+                downloadService.downloadShow(show)
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to start download: ${e.message}")
+            }
+        }
     }
     
     /**
@@ -166,7 +171,13 @@ class BrowseViewModel @Inject constructor(
      * Confirm removal of download (soft delete)
      */
     fun confirmRemoveDownload() {
-        downloadService.confirmRemoveDownload(viewModelScope)
+        viewModelScope.launch {
+            try {
+                downloadService.confirmRemoveDownload()
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to remove download: ${e.message}")
+            }
+        }
     }
 }
 

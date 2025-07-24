@@ -153,7 +153,7 @@ class DownloadQueueManagerWorker @AssistedInject constructor(
         return try {
             val workManager = WorkManager.getInstance(applicationContext)
             val runningWork = workManager.getWorkInfosByTag(AUDIO_DOWNLOAD_TAG).get()
-                .filter { it.state == WorkInfo.State.RUNNING || it.state == WorkInfo.State.ENQUEUED }
+                .filter { it.state == WorkInfo.State.RUNNING }
             
             runningWork.size
         } catch (e: Exception) {

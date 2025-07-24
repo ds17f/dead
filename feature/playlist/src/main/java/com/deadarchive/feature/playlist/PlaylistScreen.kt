@@ -591,9 +591,8 @@ fun PlaylistScreen(
                                 track = track,
                                 isCurrentTrack = isCurrentTrack,
                                 isPlaying = isCurrentTrack && uiState.isPlaying,
-                                isDownloaded = currentRecording?.let { recording ->
-                                    val trackKey = "${recording.identifier}_${track.audioFile?.filename}"
-                                    trackDownloadStates[trackKey] == true
+                                isDownloaded = track.audioFile?.filename?.let { filename ->
+                                    trackDownloadStates[filename] == true
                                 } ?: false,
                                 onClick = { viewModel.playTrack(index) }
                             )

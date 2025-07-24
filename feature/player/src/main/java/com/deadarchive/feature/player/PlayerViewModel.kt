@@ -18,6 +18,7 @@ import com.deadarchive.core.model.DownloadStatus
 import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.design.component.ShowDownloadState
+import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.core.network.mapper.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -41,9 +42,9 @@ class PlayerViewModel @Inject constructor(
     val playbackEventTracker: PlaybackEventTracker,
     private val setlistRepository: SetlistRepository,
     private val settingsRepository: com.deadarchive.core.settings.api.SettingsRepository,
+    private val downloadService: DownloadService,
     private val playerDataService: com.deadarchive.feature.player.service.PlayerDataService,
     private val playerPlaylistService: com.deadarchive.feature.player.service.PlayerPlaylistService,
-    private val playerDownloadService: com.deadarchive.feature.player.service.PlayerDownloadService,
     private val playerLibraryService: com.deadarchive.feature.player.service.PlayerLibraryService
 ) : ViewModel() {
     
@@ -53,11 +54,11 @@ class PlayerViewModel @Inject constructor(
     private val _currentRecording = MutableStateFlow<Recording?>(null)
     val currentRecording: StateFlow<Recording?> = _currentRecording.asStateFlow()
     
-    // Download state tracking - delegated to service
-    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = playerDownloadService.downloadStates
+    // Download state tracking - delegated to shared service
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = downloadService.downloadStates
     
-    // Track-level download states - delegated to service
-    val trackDownloadStates: StateFlow<Map<String, Boolean>> = playerDownloadService.trackDownloadStates
+    // Track-level download states - delegated to shared service
+    val trackDownloadStates: StateFlow<Map<String, Boolean>> = downloadService.trackDownloadStates
     
     // Settings flow for debug panel access
     val settings = settingsRepository.getSettings()
@@ -159,8 +160,7 @@ class PlayerViewModel @Inject constructor(
                 }
             }
             
-            // Start monitoring download states
-            playerDownloadService.startDownloadStateMonitoring()
+            // Download state monitoring starts automatically in shared DownloadService
             
             // Auto-load current recording from MediaController if available
             viewModelScope.launch {
@@ -538,7 +538,7 @@ class PlayerViewModel @Inject constructor(
             try {
                 val recording = _currentRecording.value
                 if (recording != null) {
-                    playerDownloadService.downloadRecording(recording)
+                    downloadService.downloadRecording(recording)
                     Log.d(TAG, "downloadRecording: Started download for recording ${recording.identifier}")
                 } else {
                     Log.w(TAG, "downloadRecording: No recording available to download")
@@ -557,7 +557,7 @@ class PlayerViewModel @Inject constructor(
             try {
                 val recording = _currentRecording.value
                 if (recording != null) {
-                    playerDownloadService.cancelRecordingDownloads(recording)
+                    downloadService.cancelRecordingDownloads(recording)
                     Log.d(TAG, "cancelRecordingDownloads: Canceled downloads for recording ${recording.identifier}")
                 } else {
                     Log.w(TAG, "cancelRecordingDownloads: No recording found to cancel downloads")
@@ -576,7 +576,7 @@ class PlayerViewModel @Inject constructor(
         return try {
             val recording = _currentRecording.value
             if (recording != null) {
-                playerDownloadService.getRecordingDownloadState(recording)
+                downloadService.getRecordingDownloadState(recording)
             } else {
                 ShowDownloadState.NotDownloaded
             }
@@ -590,7 +590,7 @@ class PlayerViewModel @Inject constructor(
      */
     suspend fun isTrackDownloaded(track: Track): Boolean {
         return try {
-            playerDownloadService.isTrackDownloaded(track)
+            downloadService.isTrackDownloaded(track)
         } catch (e: Exception) {
             Log.e(TAG, "isTrackDownloaded: Error checking if track is downloaded", e)
             false
@@ -599,14 +599,11 @@ class PlayerViewModel @Inject constructor(
     
     /**
      * Show removal confirmation for download
+     * TODO: Implement show-based confirmation dialog
      */
     fun showRemoveDownloadConfirmation() {
-        val recording = _currentRecording.value
-        if (recording != null) {
-            playerDownloadService.showRemoveDownloadConfirmation(recording)
-        } else {
-            Log.w(TAG, "showRemoveDownloadConfirmation: No recording available")
-        }
+        Log.d(TAG, "showRemoveDownloadConfirmation: Feature temporarily disabled during refactoring")
+        // TODO: Need to get Show from Recording to call downloadService.showRemoveDownloadConfirmation(show)
     }
     
     /**

@@ -4,8 +4,6 @@ import com.deadarchive.feature.player.service.PlayerDataService
 import com.deadarchive.feature.player.service.PlayerDataServiceImpl
 import com.deadarchive.feature.player.service.PlayerPlaylistService
 import com.deadarchive.feature.player.service.PlayerPlaylistServiceImpl
-import com.deadarchive.feature.player.service.PlayerDownloadService
-import com.deadarchive.feature.player.service.PlayerDownloadServiceImpl
 import com.deadarchive.feature.player.service.PlayerLibraryService
 import com.deadarchive.feature.player.service.PlayerLibraryServiceImpl
 import dagger.Binds
@@ -44,15 +42,6 @@ abstract class PlayerServiceModule {
         playerPlaylistServiceImpl: PlayerPlaylistServiceImpl
     ): PlayerPlaylistService
     
-    /**
-     * Binds PlayerDownloadService interface to its implementation.
-     * Provides download management and monitoring services.
-     */
-    @Binds
-    @Singleton
-    abstract fun bindPlayerDownloadService(
-        playerDownloadServiceImpl: PlayerDownloadServiceImpl
-    ): PlayerDownloadService
     
     /**
      * Binds PlayerLibraryService interface to its implementation.

@@ -38,6 +38,7 @@ dependencies {
     implementation(project(":core:network"))
     implementation(project(":core:database"))
     implementation(project(":core:settings-api"))
+    implementation(project(":core:design"))
     
     implementation("androidx.core:core-ktx:1.12.0")
     

@@ -8,7 +8,8 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.feature.library.service.LibraryDataService
-import com.deadarchive.feature.library.service.LibraryDownloadService
+import com.deadarchive.core.data.download.DownloadService
+import kotlinx.coroutines.launch
 import com.deadarchive.feature.library.service.LibraryManagementService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -38,7 +39,7 @@ enum class DecadeFilter(val displayName: String, val decade: String?) {
 @HiltViewModel
 class LibraryViewModel @Inject constructor(
     private val dataService: LibraryDataService,
-    private val downloadService: LibraryDownloadService,
+    private val downloadService: DownloadService,
     private val managementService: LibraryManagementService
 ) : ViewModel() {
     
@@ -58,8 +59,7 @@ class LibraryViewModel @Inject constructor(
             coroutineScope = viewModelScope,
             onStateChange = { _uiState.value = it }
         )
-        // Start monitoring download states via service
-        downloadService.startDownloadStateMonitoring(viewModelScope)
+        // Download state monitoring is automatically handled by shared DownloadService
     }
     
     // Data loading is now handled by LibraryDataService
@@ -93,12 +93,13 @@ class LibraryViewModel @Inject constructor(
      * Start downloading a recording
      */
     fun downloadRecording(recording: Recording) {
-        downloadService.downloadRecording(
-            recording = recording,
-            coroutineScope = viewModelScope,
-            onStateChange = { _uiState.value = it },
-            currentState = _uiState.value
-        )
+        viewModelScope.launch {
+            try {
+                downloadService.downloadRecording(recording)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to start download: ${e.message}")
+            }
+        }
     }
     
     /**
@@ -112,22 +113,26 @@ class LibraryViewModel @Inject constructor(
      * Start downloading the best recording of a show
      */
     fun downloadShow(show: Show) {
-        downloadService.downloadShow(
-            show = show,
-            coroutineScope = viewModelScope,
-            onStateChange = { _uiState.value = it },
-            currentState = _uiState.value
-        )
+        viewModelScope.launch {
+            try {
+                downloadService.downloadShow(show)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to start download: ${e.message}")
+            }
+        }
     }
     
     /**
      * Cancel all downloads for a show (best recording)
      */
     fun cancelShowDownloads(show: Show) {
-        downloadService.cancelShowDownloads(
-            show = show,
-            coroutineScope = viewModelScope
-        )
+        viewModelScope.launch {
+            try {
+                downloadService.cancelShowDownloads(show)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to cancel downloads: ${e.message}")
+            }
+        }
     }
     
     // Download state monitoring is now handled by LibraryDownloadService
@@ -157,7 +162,13 @@ class LibraryViewModel @Inject constructor(
      * Confirm removal of download (soft delete)
      */
     fun confirmRemoveDownload() {
-        downloadService.confirmRemoveDownload(viewModelScope)
+        viewModelScope.launch {
+            try {
+                downloadService.confirmRemoveDownload()
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to remove download: ${e.message}")
+            }
+        }
     }
     
     /**
