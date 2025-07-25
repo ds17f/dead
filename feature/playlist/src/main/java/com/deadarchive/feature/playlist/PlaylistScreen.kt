@@ -44,7 +44,8 @@ import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
 import com.deadarchive.feature.playlist.components.SetlistBottomSheet
 import com.deadarchive.core.common.service.ShareService
 import androidx.compose.ui.platform.LocalContext
-import com.deadarchive.feature.playlist.data.RecordingSelectionService
+import com.deadarchive.core.data.service.RecordingSelectionService
+import com.deadarchive.core.model.RecordingOption
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.player.PlayerViewModel
@@ -632,7 +633,7 @@ fun PlaylistScreen(
     
     // Recording Selection Modal
     if (showRecordingSelection && currentRecording != null) {
-        var alternativeRecordings by remember { mutableStateOf<List<com.deadarchive.feature.playlist.components.RecordingOption>>(emptyList()) }
+        var alternativeRecordings by remember { mutableStateOf<List<RecordingOption>>(emptyList()) }
         
         // Load alternative recordings when modal opens
         LaunchedEffect(showRecordingSelection, currentRecording) {

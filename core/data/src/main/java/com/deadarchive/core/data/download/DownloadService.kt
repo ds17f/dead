@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.data.service.RecordingSelectionService
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Track
@@ -23,11 +24,19 @@ import javax.inject.Singleton
  * Shared download service that manages all download operations across the app.
  * Replaces individual feature download services with a single source of truth.
  * Provides real-time download state synchronization across all screens.
+ * 
+ * DATA MODEL CLARIFICATION:
+ * - We download individual RECORDINGS (specific taper's version of a show)
+ * - UI shows SHOWS (concerts) with download buttons
+ * - Clicking "download show" downloads the BEST RECORDING for that show  
+ * - Download state is tracked per RECORDING but displayed per SHOW
+ * - Unchecking "removes" the RECORDING downloads but UI shows it as "show undownloaded"
  */
 @Singleton
 class DownloadService @Inject constructor(
     private val downloadRepository: DownloadRepository,
-    private val showRepository: com.deadarchive.core.data.api.repository.ShowRepository
+    private val showRepository: com.deadarchive.core.data.api.repository.ShowRepository,
+    private val recordingSelectionService: RecordingSelectionService
 ) {
     
     companion object {
@@ -142,8 +151,8 @@ class DownloadService @Inject constructor(
         Log.d(TAG, "Starting download for show ${show.showId}")
         
         try {
-            // Get the best recording for this show
-            val bestRecording = show.bestRecording
+            // Get the best recording for this show using centralized service
+            val bestRecording = recordingSelectionService.getBestRecording(show)
             if (bestRecording != null) {
                 Log.d(TAG, "Downloading best recording for show ${show.showId}: ${bestRecording.identifier}")
                 downloadRepository.downloadRecording(bestRecording)
@@ -180,15 +189,47 @@ class DownloadService @Inject constructor(
         Log.d(TAG, "Canceling downloads for show ${show.showId}")
         
         try {
-            val bestRecording = show.bestRecording
+            val bestRecording = recordingSelectionService.getBestRecording(show)
             if (bestRecording != null) {
-                downloadRepository.cancelDownload(bestRecording.identifier)
+                downloadRepository.cancelRecordingDownloads(bestRecording.identifier)
                 Log.d(TAG, "Downloads canceled successfully for show ${show.showId}")
             } else {
                 Log.w(TAG, "No best recording to cancel for show ${show.showId}")
             }
         } catch (e: Exception) {
             Log.e(TAG, "Error canceling downloads for show ${show.showId}", e)
+            throw e
+        }
+    }
+    
+    /**
+     * Clear/remove all downloads for a show (completely delete from system)
+     * This is what users expect when they "uncheck" a downloaded show
+     */
+    suspend fun clearShowDownloads(show: Show) {
+        Log.d(TAG, "Clearing downloads for show ${show.showId}")
+        
+        try {
+            val bestRecording = recordingSelectionService.getBestRecording(show)
+            if (bestRecording != null) {
+                // Get all downloads for this recording and delete them completely
+                val downloads = downloadRepository.getAllDownloads().first()
+                val recordingDownloads = downloads.filter { it.recordingId == bestRecording.identifier }
+                
+                Log.d(TAG, "Found ${recordingDownloads.size} downloads to clear for recording ${bestRecording.identifier}")
+                
+                // Delete each download completely from the system
+                recordingDownloads.forEach { download ->
+                    downloadRepository.deleteDownload(download.id)
+                    Log.d(TAG, "Deleted download: ${download.trackFilename}")
+                }
+                
+                Log.d(TAG, "Downloads cleared successfully for show ${show.showId}")
+            } else {
+                Log.w(TAG, "No best recording to clear for show ${show.showId}")
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error clearing downloads for show ${show.showId}", e)
             throw e
         }
     }
@@ -206,7 +247,7 @@ class DownloadService @Inject constructor(
      * Get the current download state for a show (based on its best recording)
      */
     fun getShowDownloadState(show: Show): ShowDownloadState {
-        val bestRecording = show.bestRecording
+        val bestRecording = recordingSelectionService.getBestRecording(show)
         return if (bestRecording != null) {
             getRecordingDownloadState(bestRecording)
         } else {
@@ -228,14 +269,72 @@ class DownloadService @Inject constructor(
     }
     
     /**
+     * Smart handler for download button clicks that determines the appropriate action
+     * based on current download state. This centralizes the business logic that was
+     * previously scattered across UI components.
+     */
+    fun handleDownloadButtonClick(
+        show: Show,
+        coroutineScope: CoroutineScope,
+        onError: (String) -> Unit = {}
+    ) {
+        val currentState = getShowDownloadState(show)
+        Log.d(TAG, "Handling download button click for show ${show.showId}, current state: $currentState")
+        
+        when (currentState) {
+            is ShowDownloadState.NotDownloaded -> {
+                // Start download
+                Log.d(TAG, "Starting download for show ${show.showId}")
+                coroutineScope.launch {
+                    try {
+                        downloadShow(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error starting download for show ${show.showId}", e)
+                        onError("Failed to start download: ${e.message}")
+                    }
+                }
+            }
+            is ShowDownloadState.Downloading -> {
+                // Cancel in-progress download
+                Log.d(TAG, "Canceling in-progress download for show ${show.showId}")
+                coroutineScope.launch {
+                    try {
+                        cancelShowDownloads(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error canceling download for show ${show.showId}", e)
+                        onError("Failed to cancel download: ${e.message}")
+                    }
+                }
+            }
+            is ShowDownloadState.Downloaded -> {
+                // Show confirmation dialog for removal
+                Log.d(TAG, "Showing removal confirmation for downloaded show ${show.showId}")
+                showRemoveDownloadConfirmation(show)
+            }
+            is ShowDownloadState.Failed -> {
+                // Retry failed download
+                Log.d(TAG, "Retrying failed download for show ${show.showId}")
+                coroutineScope.launch {
+                    try {
+                        downloadShow(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error retrying download for show ${show.showId}", e)
+                        onError("Failed to retry download: ${e.message}")
+                    }
+                }
+            }
+        }
+    }
+    
+    /**
      * Check if a track is downloaded
      */
     suspend fun isTrackDownloaded(track: Track): Boolean {
-        val isDownloaded = track.audioFile?.downloadUrl?.let { url ->
-            _trackDownloadStates.value[url] ?: false
+        val isDownloaded = track.audioFile?.filename?.let { filename ->
+            _trackDownloadStates.value[filename] ?: false
         } ?: false
         
-        Log.d(TAG, "Track '${track.displayTitle}' downloaded: $isDownloaded")
+        Log.d(TAG, "Track '${track.displayTitle}' (filename: ${track.audioFile?.filename}) downloaded: $isDownloaded")
         return isDownloaded
     }
     
@@ -256,14 +355,14 @@ class DownloadService @Inject constructor(
     }
     
     /**
-     * Confirm removal of download (soft delete)
+     * Confirm removal of download (completely delete from system)
      */
     suspend fun confirmRemoveDownload() {
         val show = _showConfirmationDialog.value
         if (show != null) {
             Log.d(TAG, "Confirming removal of download for show ${show.showId}")
             try {
-                cancelShowDownloads(show)
+                clearShowDownloads(show)
                 hideConfirmationDialog()
                 Log.d(TAG, "Download removal confirmed for show ${show.showId}")
             } catch (e: Exception) {

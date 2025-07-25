@@ -68,9 +68,7 @@ fun ExpandableConcertItem(
     onLibraryClick: (Show) -> Unit,
     onDownloadClick: (Recording) -> Unit = { },
     getDownloadState: (Recording) -> DownloadState = { DownloadState.Available },
-    onShowDownloadClick: (Show) -> Unit = { },
-    onCancelDownloadClick: (Show) -> Unit = { },
-    onRemoveDownloadClick: (Show) -> Unit = { },
+    onDownloadButtonClick: (Show) -> Unit = { },
     getShowDownloadState: (Show) -> ShowDownloadState = { ShowDownloadState.NotDownloaded },
     modifier: Modifier = Modifier
 ) {
@@ -96,9 +94,7 @@ fun ExpandableConcertItem(
                 onExpandClick = { isExpanded = !isExpanded },
                 onShowClick = onShowClick,
                 onLibraryClick = onLibraryClick,
-                onShowDownloadClick = onShowDownloadClick,
-                onCancelDownloadClick = onCancelDownloadClick,
-                onRemoveDownloadClick = onRemoveDownloadClick,
+                onDownloadButtonClick = onDownloadButtonClick,
                 getShowDownloadState = getShowDownloadState
             )
             
@@ -128,9 +124,7 @@ private fun ShowHeader(
     onExpandClick: () -> Unit,
     onShowClick: (Show) -> Unit,
     onLibraryClick: (Show) -> Unit,
-    onShowDownloadClick: (Show) -> Unit,
-    onCancelDownloadClick: (Show) -> Unit,
-    onRemoveDownloadClick: (Show) -> Unit,
+    onDownloadButtonClick: (Show) -> Unit,
     getShowDownloadState: (Show) -> ShowDownloadState,
     modifier: Modifier = Modifier
 ) {
@@ -230,7 +224,7 @@ private fun ShowHeader(
             val downloadState = getShowDownloadState(show)
             Box {
                 IconButton(
-                    onClick = { onShowDownloadClick(show) }
+                    onClick = { onDownloadButtonClick(show) }
                 ) {
                     when (downloadState) {
                         is ShowDownloadState.NotDownloaded -> {
@@ -261,16 +255,12 @@ private fun ShowHeader(
                                     trackColor = Color(0xFFE0E0E0) // Light gray track
                                 )
                                 
-                                // Stop icon in center - clickable to cancel
+                                // Stop icon in center
                                 Icon(
                                     painter = painterResource(R.drawable.ic_stop),
                                     contentDescription = "Cancel download",
                                     tint = MaterialTheme.colorScheme.primary, // Theme primary color to match progress
-                                    modifier = Modifier
-                                        .size(14.dp)
-                                        .clickable {
-                                            onCancelDownloadClick(show)
-                                        }
+                                    modifier = Modifier.size(14.dp)
                                 )
                             }
                         }
@@ -278,10 +268,7 @@ private fun ShowHeader(
                             Icon(
                                 painter = painterResource(R.drawable.ic_check_circle),
                                 contentDescription = "Downloaded - Click to remove",
-                                tint = MaterialTheme.colorScheme.primary, // Theme primary color for success
-                                modifier = Modifier.clickable {
-                                    onRemoveDownloadClick(show)
-                                }
+                                tint = MaterialTheme.colorScheme.primary // Theme primary color for success
                             )
                         }
                         is ShowDownloadState.Failed -> {

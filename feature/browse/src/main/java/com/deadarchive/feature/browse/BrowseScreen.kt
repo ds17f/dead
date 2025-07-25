@@ -204,17 +204,9 @@ fun BrowseScreen(
                                 getDownloadState = { recording: Recording ->
                                     viewModel.getDownloadState(recording)
                                 },
-                                onShowDownloadClick = { show: Show ->
-                                    Log.d("BrowseScreen", "Download requested for show: ${show.showId}")
-                                    viewModel.downloadShow(show)
-                                },
-                                onCancelDownloadClick = { show: Show ->
-                                    Log.d("BrowseScreen", "Cancel download requested for show: ${show.showId}")
-                                    viewModel.cancelShowDownloads(show)
-                                },
-                                onRemoveDownloadClick = { show: Show ->
-                                    Log.d("BrowseScreen", "Remove download requested for show: ${show.showId}")
-                                    viewModel.showRemoveDownloadConfirmation(show)
+                                onDownloadButtonClick = { show: Show ->
+                                    Log.d("BrowseScreen", "Download button clicked for show: ${show.showId}")
+                                    viewModel.handleDownloadButtonClick(show)
                                 },
                                 getShowDownloadState = { show: Show ->
                                     // Use the observed download states for real-time updates

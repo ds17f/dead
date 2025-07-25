@@ -3,6 +3,7 @@ package com.deadarchive.feature.player.service
 import android.util.Log
 import com.deadarchive.core.data.api.repository.ShowRepository
 import com.deadarchive.core.data.repository.RatingsRepository
+import com.deadarchive.core.data.service.RecordingSelectionService
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.util.VenueUtil
@@ -12,7 +13,8 @@ import javax.inject.Singleton
 @Singleton
 class PlayerDataServiceImpl @Inject constructor(
     private val showRepository: ShowRepository,
-    private val ratingsRepository: RatingsRepository
+    private val ratingsRepository: RatingsRepository,
+    private val recordingSelectionService: RecordingSelectionService
 ) : PlayerDataService {
     
     companion object {
@@ -93,27 +95,16 @@ class PlayerDataServiceImpl @Inject constructor(
     
     override suspend fun getBestRecordingForShow(show: Show): Recording? {
         return try {
-            Log.d(TAG, "getBestRecordingForShow: Getting best recording for show ${show.showId}")
+            Log.d(TAG, "getBestRecordingForShow: Getting best recording for show ${show.showId} using centralized service")
             
-            // First try user's preferred recording
-            val preferredRecordingId = show.bestRecordingId
-            if (preferredRecordingId != null) {
-                val preferredRecording = show.recordings.find { it.identifier == preferredRecordingId }
-                if (preferredRecording != null) {
-                    Log.d(TAG, "getBestRecordingForShow: Found preferred recording: ${preferredRecording.identifier}")
-                    return preferredRecording
-                }
-            }
-            
-            // Fall back to first recording
-            val firstRecording = show.recordings.firstOrNull()
-            if (firstRecording != null) {
-                Log.d(TAG, "getBestRecordingForShow: Using first recording: ${firstRecording.identifier}")
+            val bestRecording = recordingSelectionService.getBestRecording(show)
+            if (bestRecording != null) {
+                Log.d(TAG, "getBestRecordingForShow: Selected best recording: ${bestRecording.identifier}")
             } else {
-                Log.w(TAG, "getBestRecordingForShow: No recordings found for show ${show.showId}")
+                Log.w(TAG, "getBestRecordingForShow: No best recording found for show ${show.showId}")
             }
             
-            firstRecording
+            bestRecording
         } catch (e: Exception) {
             Log.e(TAG, "getBestRecordingForShow: Error getting best recording", e)
             null
@@ -122,21 +113,22 @@ class PlayerDataServiceImpl @Inject constructor(
     
     override suspend fun getBestRecordingByShowId(showId: String): Recording? {
         return try {
-            Log.d(TAG, "getBestRecordingByShowId: Getting best recording for showId: $showId")
+            Log.d(TAG, "getBestRecordingByShowId: Getting best recording for showId: $showId using centralized service")
             
-            // Get all recordings for this show
-            val recordings = showRepository.getRecordingsByShowId(showId)
-            Log.d(TAG, "getBestRecordingByShowId: Found ${recordings.size} recordings for show $showId")
-            
-            if (recordings.isEmpty()) {
-                Log.w(TAG, "getBestRecordingByShowId: No recordings found for show $showId")
+            // Get show data for the showId 
+            val show = showRepository.getShowById(showId)
+            if (show == null) {
+                Log.w(TAG, "getBestRecordingByShowId: No show found for showId $showId")
                 return null
             }
             
-            // Use the first recording as "best" (could be enhanced with rating logic later)
-            val bestRecording = recordings.firstOrNull()
+            Log.d(TAG, "getBestRecordingByShowId: Found show with ${show.recordings.size} recordings")
+            
+            val bestRecording = recordingSelectionService.getBestRecording(show)
             if (bestRecording != null) {
                 Log.d(TAG, "getBestRecordingByShowId: Selected best recording: ${bestRecording.identifier}")
+            } else {
+                Log.w(TAG, "getBestRecordingByShowId: No best recording found for show $showId")
             }
             
             bestRecording

@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.core.data.repository.LibraryRepository
 import com.deadarchive.core.data.repository.DownloadRepository
+import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.DownloadState
@@ -18,7 +19,8 @@ import javax.inject.Inject
 @HiltViewModel
 class ConcertListViewModel @Inject constructor(
     private val libraryRepository: LibraryRepository,
-    private val downloadRepository: DownloadRepository
+    private val downloadRepository: DownloadRepository,
+    private val downloadService: DownloadService
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow<ConcertListUiState>(ConcertListUiState.Loading)
@@ -184,13 +186,7 @@ class ConcertListViewModel @Inject constructor(
      * Get the current download state for a recording
      */
     fun getDownloadState(recording: Recording): DownloadState {
-        return try {
-            // For now, return Available state as a placeholder
-            // In Task 5, we'll implement proper download progress tracking
-            DownloadState.Available
-        } catch (e: Exception) {
-            DownloadState.Error("Failed to get download state")
-        }
+        return downloadService.getDownloadState(recording)
     }
     
     /**
@@ -214,16 +210,24 @@ class ConcertListViewModel @Inject constructor(
     }
     
     /**
+     * Handle download button click with smart state-based logic
+     */
+    fun handleDownloadButtonClick(show: Show) {
+        downloadService.handleDownloadButtonClick(
+            show = show,
+            coroutineScope = viewModelScope,
+            onError = { errorMessage ->
+                // Handle error appropriately for playlist context
+                println("Download button error for show ${show.showId}: $errorMessage")
+            }
+        )
+    }
+    
+    /**
      * Get the current download state for a show (based on its best recording)
      */
     fun getShowDownloadState(show: Show): ShowDownloadState {
-        return try {
-            // For now, return NotDownloaded state as a placeholder
-            // In Task 5, we'll implement proper download progress tracking
-            ShowDownloadState.NotDownloaded
-        } catch (e: Exception) {
-            ShowDownloadState.Failed("Failed to get download state")
-        }
+        return downloadService.getShowDownloadState(show)
     }
 }
 

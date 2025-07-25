@@ -151,6 +151,20 @@ class BrowseViewModel @Inject constructor(
         }
     }
     
+    /**
+     * Clear/remove all downloads for a show (completely delete from system)
+     * This is what users expect when they "uncheck" a downloaded show
+     */
+    fun clearShowDownloads(show: Show) {
+        viewModelScope.launch {
+            try {
+                downloadService.clearShowDownloads(show)
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to clear downloads: ${e.message}")
+            }
+        }
+    }
+    
     // Download state monitoring is now handled by BrowseDownloadService in init{}
     
     /**
@@ -171,6 +185,19 @@ class BrowseViewModel @Inject constructor(
                 _uiState.value = BrowseUiState.Error("Failed to start download: ${e.message}")
             }
         }
+    }
+    
+    /**
+     * Handle download button click with smart state-based logic
+     */
+    fun handleDownloadButtonClick(show: Show) {
+        downloadService.handleDownloadButtonClick(
+            show = show,
+            coroutineScope = viewModelScope,
+            onError = { errorMessage ->
+                _uiState.value = BrowseUiState.Error(errorMessage)
+            }
+        )
     }
     
     /**

@@ -364,14 +364,8 @@ fun LibraryScreen(
                                         getDownloadState = { recording: Recording ->
                                             viewModel.getDownloadState(recording)
                                         },
-                                        onShowDownloadClick = { show: Show ->
-                                            viewModel.downloadShow(show)
-                                        },
-                                        onCancelDownloadClick = { show: Show ->
-                                            viewModel.cancelShowDownloads(show)
-                                        },
-                                        onRemoveDownloadClick = { show: Show ->
-                                            viewModel.showRemoveDownloadConfirmation(show)
+                                        onDownloadButtonClick = { show: Show ->
+                                            viewModel.handleDownloadButtonClick(show)
                                         },
                                         getShowDownloadState = { show: Show ->
                                             viewModel.getShowDownloadState(show)

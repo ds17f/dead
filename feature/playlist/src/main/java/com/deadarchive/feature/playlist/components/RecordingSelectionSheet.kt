@@ -16,14 +16,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.deadarchive.core.model.Recording
+import com.deadarchive.core.model.RecordingOption
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.design.component.CompactStarRating
-
-data class RecordingOption(
-    val recording: Recording,
-    val isRecommended: Boolean = false,
-    val matchReason: String? = null
-)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

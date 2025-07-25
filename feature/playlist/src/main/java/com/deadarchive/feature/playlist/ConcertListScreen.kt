@@ -183,8 +183,8 @@ fun ConcertListScreen(
                                 getDownloadState = { recording: Recording ->
                                     viewModel.getDownloadState(recording)
                                 },
-                                onShowDownloadClick = { show: Show ->
-                                    viewModel.downloadShow(show)
+                                onDownloadButtonClick = { show: Show ->
+                                    viewModel.handleDownloadButtonClick(show)
                                 },
                                 getShowDownloadState = { show: Show ->
                                     viewModel.getShowDownloadState(show)

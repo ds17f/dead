@@ -131,6 +131,19 @@ class LibraryViewModel @Inject constructor(
     }
     
     /**
+     * Handle download button click with smart state-based logic
+     */
+    fun handleDownloadButtonClick(show: Show) {
+        downloadService.handleDownloadButtonClick(
+            show = show,
+            coroutineScope = viewModelScope,
+            onError = { errorMessage ->
+                _uiState.value = LibraryUiState.Error(errorMessage)
+            }
+        )
+    }
+    
+    /**
      * Cancel all downloads for a show (best recording)
      */
     fun cancelShowDownloads(show: Show) {
@@ -139,6 +152,20 @@ class LibraryViewModel @Inject constructor(
                 downloadService.cancelShowDownloads(show)
             } catch (e: Exception) {
                 _uiState.value = LibraryUiState.Error("Failed to cancel downloads: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Clear/remove all downloads for a show (completely delete from system)
+     * This is what users expect when they "uncheck" a downloaded show
+     */
+    fun clearShowDownloads(show: Show) {
+        viewModelScope.launch {
+            try {
+                downloadService.clearShowDownloads(show)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to clear downloads: ${e.message}")
             }
         }
     }
