@@ -481,7 +481,9 @@ fun PlaylistScreen(
                                                     CircularProgressIndicator(
                                                         progress = { downloadState.trackProgress },
                                                         modifier = Modifier.size(24.dp),
-                                                        strokeWidth = 2.dp
+                                                        strokeWidth = 2.dp,
+                                                        color = Color.Red,
+                                                        trackColor = Color.White
                                                     )
                                                     Icon(
                                                         painter = painterResource(R.drawable.ic_stop),
