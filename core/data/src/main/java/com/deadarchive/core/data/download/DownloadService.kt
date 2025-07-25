@@ -248,9 +248,13 @@ class DownloadService @Inject constructor(
      */
     fun getShowDownloadState(show: Show): ShowDownloadState {
         val bestRecording = recordingSelectionService.getBestRecording(show)
+        Log.d(TAG, "getShowDownloadState: show=${show.showId}, bestRecording=${bestRecording?.identifier}")
         return if (bestRecording != null) {
-            getRecordingDownloadState(bestRecording)
+            val state = getRecordingDownloadState(bestRecording)
+            Log.d(TAG, "getShowDownloadState: final state for show ${show.showId} = $state")
+            state
         } else {
+            Log.w(TAG, "getShowDownloadState: No best recording found for show ${show.showId}")
             ShowDownloadState.NotDownloaded
         }
     }

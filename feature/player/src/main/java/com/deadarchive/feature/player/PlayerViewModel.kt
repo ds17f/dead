@@ -60,6 +60,9 @@ class PlayerViewModel @Inject constructor(
     // Track-level download states - delegated to shared service
     val trackDownloadStates: StateFlow<Map<String, Boolean>> = downloadService.trackDownloadStates
     
+    // Download confirmation dialog state (passthrough to DownloadService)
+    val showConfirmationDialog: StateFlow<Show?> = downloadService.showConfirmationDialog
+    
     // Settings flow for debug panel access
     val settings = settingsRepository.getSettings()
         .stateIn(
@@ -538,8 +541,40 @@ class PlayerViewModel @Inject constructor(
             try {
                 val recording = _currentRecording.value
                 if (recording != null) {
-                    downloadService.downloadRecording(recording)
-                    Log.d(TAG, "downloadRecording: Started download for recording ${recording.identifier}")
+                    Log.d(TAG, "downloadRecording: Starting download for recording ${recording.identifier}")
+                    
+                    // Check current download state
+                    val currentState = downloadService.getRecordingDownloadState(recording)
+                    Log.d(TAG, "downloadRecording: Current state: $currentState")
+                    
+                    when (currentState) {
+                        is ShowDownloadState.NotDownloaded -> {
+                            // Start new download
+                            downloadService.downloadRecording(recording)
+                            Log.d(TAG, "downloadRecording: Started download for recording ${recording.identifier}")
+                        }
+                        is ShowDownloadState.Downloaded -> {
+                            // Show confirmation dialog for removal - use the centralized confirmation system
+                            Log.d(TAG, "downloadRecording: Recording already downloaded, showing confirmation dialog")
+                            // Create a minimal Show object for the confirmation dialog
+                            val show = Show(
+                                date = recording.title?.substringBefore(" ") ?: "Unknown Date",
+                                venue = "Recording: ${recording.identifier}",
+                                recordings = listOf(recording)
+                            )
+                            downloadService.showRemoveDownloadConfirmation(show)
+                        }
+                        is ShowDownloadState.Downloading -> {
+                            // Cancel in-progress download
+                            Log.d(TAG, "downloadRecording: Canceling in-progress download")
+                            downloadService.cancelRecordingDownloads(recording)
+                        }
+                        is ShowDownloadState.Failed -> {
+                            // Retry failed download
+                            Log.d(TAG, "downloadRecording: Retrying failed download")
+                            downloadService.downloadRecording(recording)
+                        }
+                    }
                 } else {
                     Log.w(TAG, "downloadRecording: No recording available to download")
                 }
@@ -860,6 +895,22 @@ class PlayerViewModel @Inject constructor(
             } catch (e: Exception) {
                 Log.e(TAG, "toggleLibrary: Failed to toggle library status", e)
             }
+        }
+    }
+    
+    /**
+     * Hide download confirmation dialog (passthrough to DownloadService)
+     */
+    fun hideConfirmationDialog() {
+        downloadService.hideConfirmationDialog()
+    }
+    
+    /**
+     * Confirm removal of download (passthrough to DownloadService)
+     */
+    fun confirmRemoveDownload() {
+        viewModelScope.launch {
+            downloadService.confirmRemoveDownload()
         }
     }
     

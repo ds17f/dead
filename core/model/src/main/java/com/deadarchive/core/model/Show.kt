@@ -86,12 +86,13 @@ data class Show(
             if (!bestRecordingId.isNullOrEmpty()) {
                 val preferredRecording = recordings.find { it.identifier == bestRecordingId }
                 if (preferredRecording != null) {
+                    android.util.Log.d("Show.bestRecording", "Using database bestRecordingId: $bestRecordingId for show $showId")
                     return preferredRecording
                 }
             }
             
             // Fall back to algorithm-based selection
-            return recordings.minByOrNull { recording ->
+            val selectedRecording = recordings.minByOrNull { recording ->
                 // Multi-tier priority system for selecting the best recording:
                 //
                 // Tier 1: Rating Status (most important)
@@ -123,6 +124,8 @@ data class Show(
                 // Combined score: rating status dominates, then source, then rating value
                 ratingPriority * 10 + sourcePriority + ratingBonus
             }
+            android.util.Log.d("Show.bestRecording", "Algorithm selected recording: ${selectedRecording?.identifier} for show $showId")
+            return selectedRecording
         }
         
     val hasMultipleRecordings: Boolean

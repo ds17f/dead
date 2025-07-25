@@ -38,6 +38,7 @@ import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.design.component.CompactStarRating
+import com.deadarchive.core.design.component.ConfirmationDialog
 import com.deadarchive.feature.playlist.components.InteractiveRatingDisplay
 import com.deadarchive.feature.playlist.components.ReviewDetailsSheet
 import com.deadarchive.feature.playlist.components.RecordingSelectionSheet
@@ -103,6 +104,7 @@ fun PlaylistScreen(
     // Collect download and library states
     val downloadStates by viewModel.downloadStates.collectAsState()
     val trackDownloadStates by viewModel.trackDownloadStates.collectAsState()
+    val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     
     // Navigation loading state
     val isNavigationLoading by viewModel.isNavigationLoading.collectAsState()
@@ -791,6 +793,20 @@ fun PlaylistScreen(
             debugData = debugData,
             isVisible = showDebugPanel,
             onDismiss = { showDebugPanel = false }
+        )
+    }
+    
+    // Confirmation dialog for removing downloads
+    showConfirmationDialog?.let { show ->
+        ConfirmationDialog(
+            title = "Remove Download",
+            message = "Are you sure you want to remove the download for \"${show.displayDate} - ${show.displayVenue}\"?",
+            onConfirm = {
+                viewModel.confirmRemoveDownload()
+            },
+            onCancel = {
+                viewModel.hideConfirmationDialog()
+            }
         )
     }
 }

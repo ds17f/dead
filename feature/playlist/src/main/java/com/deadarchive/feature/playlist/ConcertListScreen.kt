@@ -16,6 +16,7 @@ import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
+import com.deadarchive.core.design.component.ConfirmationDialog
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.settings.SettingsViewModel
@@ -32,6 +33,7 @@ fun ConcertListScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
+    val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     
     Column(
         modifier = modifier.fillMaxSize()
@@ -195,6 +197,20 @@ fun ConcertListScreen(
                 }
             }
         }
+    }
+    
+    // Confirmation dialog for removing downloads
+    showConfirmationDialog?.let { show ->
+        ConfirmationDialog(
+            title = "Remove Download",
+            message = "Are you sure you want to remove the download for \"${show.displayDate} - ${show.displayVenue}\"?",
+            onConfirm = {
+                viewModel.confirmRemoveDownload()
+            },
+            onCancel = {
+                viewModel.hideConfirmationDialog()
+            }
+        )
     }
 }
 

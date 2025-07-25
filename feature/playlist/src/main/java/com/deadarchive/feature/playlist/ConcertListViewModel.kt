@@ -26,6 +26,9 @@ class ConcertListViewModel @Inject constructor(
     private val _uiState = MutableStateFlow<ConcertListUiState>(ConcertListUiState.Loading)
     val uiState: StateFlow<ConcertListUiState> = _uiState.asStateFlow()
     
+    // Download confirmation dialog state (passthrough to DownloadService)
+    val showConfirmationDialog: StateFlow<Show?> = downloadService.showConfirmationDialog
+    
     init {
         loadConcerts()
     }
@@ -213,6 +216,7 @@ class ConcertListViewModel @Inject constructor(
      * Handle download button click with smart state-based logic
      */
     fun handleDownloadButtonClick(show: Show) {
+        android.util.Log.d("ConcertListViewModel", "handleDownloadButtonClick called for show: ${show.showId}")
         downloadService.handleDownloadButtonClick(
             show = show,
             coroutineScope = viewModelScope,
@@ -228,6 +232,22 @@ class ConcertListViewModel @Inject constructor(
      */
     fun getShowDownloadState(show: Show): ShowDownloadState {
         return downloadService.getShowDownloadState(show)
+    }
+    
+    /**
+     * Hide download confirmation dialog (passthrough to DownloadService)
+     */
+    fun hideConfirmationDialog() {
+        downloadService.hideConfirmationDialog()
+    }
+    
+    /**
+     * Confirm removal of download (passthrough to DownloadService)
+     */
+    fun confirmRemoveDownload() {
+        viewModelScope.launch {
+            downloadService.confirmRemoveDownload()
+        }
     }
 }
 
