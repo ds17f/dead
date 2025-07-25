@@ -7,6 +7,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.model.Show
@@ -25,7 +26,8 @@ import javax.inject.Singleton
  */
 @Singleton
 class DownloadService @Inject constructor(
-    private val downloadRepository: DownloadRepository
+    private val downloadRepository: DownloadRepository,
+    private val showRepository: com.deadarchive.core.data.api.repository.ShowRepository
 ) {
     
     companion object {
@@ -270,6 +272,145 @@ class DownloadService @Inject constructor(
             }
         } else {
             Log.w(TAG, "No show selected for download removal")
+        }
+    }
+    
+    /**
+     * Get all individual downloads as a Flow for the download queue UI
+     */
+    fun getAllDownloads() = downloadRepository.getAllDownloads()
+    
+    /**
+     * Cancel an individual download by ID
+     */
+    suspend fun cancelDownload(downloadId: String) {
+        Log.d(TAG, "Cancelling download: $downloadId")
+        downloadRepository.cancelDownload(downloadId)
+    }
+    
+    /**
+     * Retry a failed download by ID
+     */
+    suspend fun retryDownload(downloadId: String) {
+        Log.d(TAG, "Retrying download: $downloadId")
+        downloadRepository.retryDownload(downloadId)
+    }
+    
+    /**
+     * Force start a queued download by setting high priority
+     */
+    suspend fun forceDownload(downloadId: String) {
+        Log.d(TAG, "Force starting download: $downloadId")
+        downloadRepository.setDownloadPriority(downloadId, Int.MAX_VALUE)
+        downloadRepository.resumeDownload(downloadId)
+    }
+    
+    /**
+     * Remove a download completely from the system (for failed/canceled downloads)
+     */
+    suspend fun removeDownload(downloadId: String) {
+        Log.d(TAG, "Removing download from system: $downloadId")
+        try {
+            downloadRepository.deleteDownload(downloadId)
+            Log.d(TAG, "Download removed successfully: $downloadId")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error removing download: $downloadId", e)
+            throw e
+        }
+    }
+    
+    /**
+     * Pause a download
+     */
+    suspend fun pauseDownload(downloadId: String) {
+        Log.d(TAG, "Pausing download: $downloadId")
+        downloadRepository.pauseDownload(downloadId)
+    }
+    
+    /**
+     * Resume a paused download
+     */
+    suspend fun resumeDownload(downloadId: String) {
+        Log.d(TAG, "Resuming download: $downloadId")
+        downloadRepository.resumeDownload(downloadId)
+    }
+    
+    /**
+     * Get all downloads enriched with show and track metadata
+     */
+    suspend fun getEnrichedDownloads(): List<EnrichedDownloadState> {
+        return try {
+            val downloads = downloadRepository.getAllDownloads().first()
+            downloads.map { download ->
+                val recording = showRepository.getRecordingById(download.recordingId)
+                val track = recording?.tracks?.find { it.filename == download.trackFilename }
+                val show = recording?.let { 
+                    // Try to find show by date extracted from recording
+                    val dateFromRecording = extractDateFromRecordingId(recording.identifier)
+                    // For now, use the recording's concert info
+                    Show(
+                        date = recording.concertDate ?: dateFromRecording ?: "Unknown",
+                        venue = recording.concertVenue ?: "Unknown Venue",
+                        location = recording.concertLocation ?: "",
+                        recordings = listOf(recording)
+                    )
+                }
+                
+                EnrichedDownloadState(
+                    downloadState = download,
+                    recording = recording,
+                    track = track,
+                    show = show
+                )
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Error enriching downloads", e)
+            emptyList()
+        }
+    }
+    
+    private fun extractDateFromRecordingId(recordingId: String): String? {
+        // Extract date from Archive.org identifiers like "gd1977-05-08.sbd.hicks.4982.sbeok.shnf"
+        val dateRegex = Regex("""(\d{4}-\d{2}-\d{2})""")
+        return dateRegex.find(recordingId)?.value
+    }
+}
+
+/**
+ * Download state enriched with recording and track metadata
+ */
+data class EnrichedDownloadState(
+    val downloadState: com.deadarchive.core.model.DownloadState,
+    val recording: Recording?,
+    val track: Track?,
+    val show: Show?
+) {
+    val displayShowName: String
+        get() = show?.let { "${it.date} - ${it.venue}" } 
+            ?: recording?.let { "${it.concertDate ?: "Unknown Date"} - ${it.concertVenue ?: "Unknown Venue"}" }
+            ?: formatShowName(downloadState.recordingId)
+    
+    val displayTrackTitle: String
+        get() = track?.displayTitle ?: Track.extractSongFromFilename(downloadState.trackFilename)
+    
+    val displayTrackNumber: String
+        get() = track?.displayTrackNumber ?: extractTrackNumberFromFilename(downloadState.trackFilename)
+    
+    val downloadUrl: String
+        get() = "https://archive.org/download/${downloadState.recordingId}/${downloadState.trackFilename}"
+    
+    private fun extractTrackNumberFromFilename(filename: String): String {
+        val trackRegex = Regex("""t(\d+)""")
+        return trackRegex.find(filename)?.groupValues?.get(1) ?: "?"
+    }
+    
+    private fun formatShowName(recordingId: String): String {
+        val dateRegex = Regex("""(\d{4}-\d{2}-\d{2})""")
+        val dateMatch = dateRegex.find(recordingId)
+        return if (dateMatch != null) {
+            "Show: ${dateMatch.value}"
+        } else {
+            "Recording: ${recordingId.take(20)}..."
         }
     }
 }

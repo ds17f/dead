@@ -1,5 +1,6 @@
 package com.deadarchive.feature.browse
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
@@ -28,6 +29,10 @@ class BrowseViewModel @Inject constructor(
     private val downloadService: DownloadService,
     private val dataService: BrowseDataService
 ) : ViewModel() {
+    
+    companion object {
+        private const val TAG = "BrowseViewModel"
+    }
     
     // UI State (managed by ViewModel, updated by services)
     private val _uiState = MutableStateFlow<BrowseUiState>(BrowseUiState.Idle)
@@ -74,12 +79,14 @@ class BrowseViewModel @Inject constructor(
     }
     
     fun toggleLibrary(show: Show) {
-        libraryService.toggleLibrary(
-            show = show,
-            coroutineScope = viewModelScope,
-            onStateChange = { _uiState.value = it },
-            currentState = _uiState.value
-        )
+        viewModelScope.launch {
+            try {
+                libraryService.toggleLibrary(show)
+                // UI updates automatically via reactive search results
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to update library: ${e.message}")
+            }
+        }
     }
     
     fun loadPopularShows() {
@@ -99,13 +106,33 @@ class BrowseViewModel @Inject constructor(
     }
     
     /**
-     * Start downloading a recording
+     * Start downloading a recording and automatically add its show to library
      */
     fun downloadRecording(recording: Recording) {
+        Log.d(TAG, "Starting download for recording ${recording.identifier}")
         viewModelScope.launch {
             try {
+                // Start the download
                 downloadService.downloadRecording(recording)
+                
+                // Find the show this recording belongs to and add it to library automatically
+                val currentState = _uiState.value
+                if (currentState is BrowseUiState.Success) {
+                    val showForRecording = currentState.shows.find { show ->
+                        show.recordings.any { it.identifier == recording.identifier }
+                    }
+                    
+                    // Add show to library if not already there
+                    showForRecording?.let { show ->
+                        if (!show.isInLibrary) {
+                            Log.d(TAG, "Download started - adding show ${show.showId} to library")
+                            libraryService.toggleLibrary(show)
+                            // UI updates automatically via reactive search results
+                        }
+                    }
+                }
             } catch (e: Exception) {
+                Log.e(TAG, "Error in downloadRecording: ${e.message}", e)
                 _uiState.value = BrowseUiState.Error("Failed to start download: ${e.message}")
             }
         }

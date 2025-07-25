@@ -115,59 +115,67 @@ class ShowRepositoryImpl @Inject constructor(
         }
     }
     
-    override fun searchShowsLimited(query: String, limit: Int): Flow<List<Show>> = flow {
-        android.util.Log.d("ShowRepository", "🔍 searchShowsLimited called with query: '$query', limit: $limit")
-        
-        // Get user preferences once for all shows
-        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
-        
-        // Use limited database search to reduce rating lookup overhead
-        val cachedShows = showDao.searchShowsLimited(query, limit)
-        android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from limited database search")
-        
-        // Process only the limited results with ratings
-        val databaseShows = cachedShows.map { showEntity ->
-            showEnrichmentService.enrichShowWithRatings(showEntity, userPreferences)
-        }
-        
-        android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} limited shows from database")
-        emit(databaseShows.sortedByDescending { it.date })
-    }.catch { e ->
-        android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchShowsLimited: ${e.message}", e)
-        emit(emptyList())
-    }
-
-    override fun searchShows(query: String): Flow<List<Show>> = flow {
-        android.util.Log.d("ShowRepository", "🔍 searchShows called with query: '$query'")
-        
-        // Get user preferences once for all shows
-        val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
-        
-        // ONLY search shows from database - shows should already exist from initial setup
-        val cachedShows = showDao.searchShows(query)
-        android.util.Log.d("ShowRepository", "🔍 Found ${cachedShows.size} show entities from database search")
-        
-        // Use actual Show entities with their recordings
-        val databaseShows = cachedShows.map { showEntity ->
-            val enrichedShow = showEnrichmentService.enrichShowWithRatings(showEntity, userPreferences)
-            
-            // Log warning for orphaned shows but still return them for debugging
-            if (enrichedShow.recordings.isEmpty()) {
-                android.util.Log.w("ShowRepository", "🔍 ⚠️ Found orphaned show '${showEntity.showId}' with 0 recordings")
+    override fun searchShowsLimited(query: String, limit: Int): Flow<List<Show>> = 
+        // Use reactive flow that automatically updates when library changes
+        showDao.searchShowsLimitedFlow(query, limit)
+            .flatMapLatest { limitedSearchEntities ->
+                flow {
+                    android.util.Log.d("ShowRepository", "🔍 searchShowsLimited called with query: '$query', limit: $limit")
+                    
+                    // Get user preferences once for all shows
+                    val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+                    
+                    android.util.Log.d("ShowRepository", "🔍 Found ${limitedSearchEntities.size} show entities from reactive limited database search")
+                    
+                    // Process only the limited results with ratings
+                    val databaseShows = limitedSearchEntities.map { showEntity ->
+                        showEnrichmentService.enrichShowWithRatings(showEntity, userPreferences)
+                    }
+                    
+                    android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} limited shows from reactive database")
+                    emit(databaseShows.sortedByDescending { it.date })
+                }
             }
-            
-            enrichedShow
-        }
-        
-        android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} shows from database")
-        databaseShows.forEach { show ->
-            android.util.Log.d("ShowRepository", "🔍   Show: '${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings")
-        }
-        emit(databaseShows.sortedByDescending { it.date })
-    }.catch { e ->
-        android.util.Log.e("ShowRepository", "🔍 ❌ Error in searchShows: ${e.message}", e)
-        emit(emptyList())
-    }
+            .catch { e ->
+                android.util.Log.e("ShowRepository", "🔍 ❌ Error in reactive searchShowsLimited: ${e.message}", e)
+                emit(emptyList())
+            }
+
+    override fun searchShows(query: String): Flow<List<Show>> = 
+        // Use reactive flow that automatically updates when library changes
+        showDao.searchShowsFlow(query)
+            .flatMapLatest { searchResultEntities ->
+                flow {
+                    android.util.Log.d("ShowRepository", "🔍 searchShows called with query: '$query'")
+                    
+                    // Get user preferences once for all shows
+                    val userPreferences = settingsRepository.getSettings().firstOrNull()?.recordingPreferences ?: emptyMap()
+                    
+                    android.util.Log.d("ShowRepository", "🔍 Found ${searchResultEntities.size} show entities from reactive database search")
+                    
+                    // Use actual Show entities with their recordings
+                    val databaseShows = searchResultEntities.map { showEntity ->
+                        val enrichedShow = showEnrichmentService.enrichShowWithRatings(showEntity, userPreferences)
+                        
+                        // Log warning for orphaned shows but still return them for debugging
+                        if (enrichedShow.recordings.isEmpty()) {
+                            android.util.Log.w("ShowRepository", "🔍 ⚠️ Found orphaned show '${showEntity.showId}' with 0 recordings")
+                        }
+                        
+                        enrichedShow
+                    }
+                    
+                    android.util.Log.d("ShowRepository", "🔍 ✅ Emitting ${databaseShows.size} shows from reactive database")
+                    databaseShows.take(3).forEach { show ->
+                        android.util.Log.d("ShowRepository", "🔍   Show: '${show.showId}', date='${show.date}', venue='${show.venue}', ${show.recordings.size} recordings, isInLibrary='${show.isInLibrary}'")
+                    }
+                    emit(databaseShows.sortedByDescending { it.date })
+                }
+            }
+            .catch { e ->
+                android.util.Log.e("ShowRepository", "🔍 ❌ Error in reactive searchShows: ${e.message}", e)
+                emit(emptyList())
+            }
     
     override fun searchRecordings(query: String): Flow<List<Recording>> = flow {
         // ONLY search locally cached recordings - no API fallback

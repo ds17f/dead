@@ -11,6 +11,9 @@ import androidx.compose.ui.res.painterResource
 import com.deadarchive.core.design.R
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material3.*
 import com.deadarchive.core.design.component.IconResources
 import androidx.compose.runtime.*
@@ -18,17 +21,33 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.material3.ButtonDefaults
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.LibraryItem
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.DownloadState
+import com.deadarchive.core.model.DownloadStatus
+import com.deadarchive.core.data.download.EnrichedDownloadState
 import com.deadarchive.core.design.component.ExpandableConcertItem
-import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.ConfirmationDialog
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
+
+enum class DownloadSortOption(val displayName: String) {
+    SHOW("Show"),
+    TRACK("Track"),
+    STATUS("Status"),
+    PROGRESS("Progress")
+}
+
+enum class DownloadTab(val displayName: String) {
+    ACTIVE("Active Downloads"),
+    STORAGE("Storage Browser")
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -550,7 +569,9 @@ fun LibraryScreen(
                 downloadStates = downloadStates,
                 settings = settings,
                 settingsViewModel = settingsViewModel,
-                onDismiss = { showDownloadsBottomSheet = false }
+                onDismiss = { showDownloadsBottomSheet = false },
+                onNavigateToShow = onNavigateToShow,
+                libraryViewModel = viewModel
             )
         }
     }
@@ -746,8 +767,18 @@ private fun DownloadsPanel(
     downloadStates: Map<String, ShowDownloadState>,
     settings: AppSettings,
     settingsViewModel: SettingsViewModel,
-    onDismiss: () -> Unit
+    onDismiss: () -> Unit,
+    onNavigateToShow: (Show) -> Unit,
+    libraryViewModel: LibraryViewModel = hiltViewModel()
 ) {
+    val allDownloads by libraryViewModel.allDownloads.collectAsState(initial = emptyList())
+    var enrichedDownloads by remember { mutableStateOf<List<EnrichedDownloadState>>(emptyList()) }
+    
+    // Load enriched downloads when regular downloads change
+    LaunchedEffect(allDownloads) {
+        enrichedDownloads = libraryViewModel.getEnrichedDownloads()
+    }
+    
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -761,8 +792,8 @@ private fun DownloadsPanel(
         )
         
         // Downloads summary
-        val activeDownloads = downloadStates.values.count { it is ShowDownloadState.Downloading }
-        val completedDownloads = downloadStates.values.count { it is ShowDownloadState.Downloaded }
+        val activeDownloadCount = downloadStates.values.count { it is ShowDownloadState.Downloading }
+        val completedDownloadCount = downloadStates.values.count { it is ShowDownloadState.Downloaded }
         
         Card(
             modifier = Modifier.fillMaxWidth(),
@@ -784,7 +815,7 @@ private fun DownloadsPanel(
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Text(
-                        text = "$activeDownloads",
+                        text = "$activeDownloadCount",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.primary
                     )
@@ -800,7 +831,7 @@ private fun DownloadsPanel(
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Text(
-                        text = "$completedDownloads",
+                        text = "$completedDownloadCount",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurface
                     )
@@ -808,40 +839,74 @@ private fun DownloadsPanel(
             }
         }
         
-        // Debug section (if debug mode is enabled)
-        if (settings.showDebugInfo) {
-            HorizontalDivider()
-            
-            Text(
-                text = "Debug Information",
-                style = MaterialTheme.typography.titleSmall,
-                color = MaterialTheme.colorScheme.primary
-            )
-            
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.errorContainer.copy(alpha = 0.3f)
-                )
-            ) {
-                Column(
-                    modifier = Modifier.padding(12.dp),
-                    verticalArrangement = Arrangement.spacedBy(4.dp)
+        // Download Queue Management Section
+        HorizontalDivider()
+        
+        // Tab-like interface for active downloads vs storage browser
+        var selectedTab by remember { mutableStateOf(DownloadTab.ACTIVE) }
+        
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center
+        ) {
+            DownloadTab.values().forEach { tab ->
+                TextButton(
+                    onClick = { selectedTab = tab },
+                    colors = ButtonDefaults.textButtonColors(
+                        contentColor = if (selectedTab == tab) {
+                            MaterialTheme.colorScheme.primary
+                        } else {
+                            MaterialTheme.colorScheme.onSurfaceVariant
+                        }
+                    )
                 ) {
                     Text(
-                        text = "Total download states tracked: ${downloadStates.size}",
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onErrorContainer
+                        text = when (tab) {
+                            DownloadTab.ACTIVE -> "Active Downloads"
+                            DownloadTab.STORAGE -> "Storage Browser"
+                        },
+                        fontWeight = if (selectedTab == tab) FontWeight.Bold else FontWeight.Normal
                     )
-                    
-                    downloadStates.forEach { (recordingId, state) ->
-                        Text(
-                            text = "$recordingId: ${state::class.simpleName}",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onErrorContainer
-                        )
-                    }
                 }
+            }
+        }
+        
+        // Active downloads only (exclude completed) - use stable key based on content hash
+        val activeDownloads = remember(enrichedDownloads.map { "${it.downloadState.id}-${it.downloadState.status}" }.hashCode()) {
+            enrichedDownloads.filter { 
+                it.downloadState.status != DownloadStatus.COMPLETED
+            }.sortedWith(compareBy<EnrichedDownloadState> {
+                when (it.downloadState.status) {
+                    DownloadStatus.DOWNLOADING -> 0
+                    DownloadStatus.FAILED -> 1
+                    DownloadStatus.PAUSED -> 2
+                    DownloadStatus.QUEUED -> 3
+                    DownloadStatus.CANCELLED -> 4
+                    else -> 5
+                }
+            }.thenBy { it.displayShowName })
+        }
+        
+        // Completed downloads for storage browser - use stable key based on completed items
+        val completedDownloads = remember(enrichedDownloads.count { it.downloadState.status == DownloadStatus.COMPLETED }) {
+            enrichedDownloads.filter { 
+                it.downloadState.status == DownloadStatus.COMPLETED
+            }.groupBy { it.show?.showId ?: it.downloadState.recordingId }
+        }
+        
+        when (selectedTab) {
+            DownloadTab.ACTIVE -> {
+                ActiveDownloadsView(
+                    activeDownloads = activeDownloads,
+                    libraryViewModel = libraryViewModel,
+                    onNavigateToShow = onNavigateToShow
+                )
+            }
+            DownloadTab.STORAGE -> {
+                StorageBrowserView(
+                    completedDownloads = completedDownloads,
+                    onNavigateToShow = onNavigateToShow
+                )
             }
         }
         
@@ -994,6 +1059,168 @@ private fun DownloadsPanel(
         
         // Bottom padding for gesture area
         Spacer(modifier = Modifier.height(16.dp))
+    }
+}
+
+@Composable
+private fun ActiveDownloadsView(
+    activeDownloads: List<EnrichedDownloadState>,
+    libraryViewModel: LibraryViewModel,
+    onNavigateToShow: (Show) -> Unit
+) {
+    if (activeDownloads.isNotEmpty()) {
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surface
+            )
+        ) {
+            LazyColumn(
+                modifier = Modifier.heightIn(max = 400.dp),
+                contentPadding = PaddingValues(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                items(
+                    items = activeDownloads,
+                    key = { it.downloadState.id }
+                ) { enrichedDownload ->
+                    ActiveDownloadItem(
+                        enrichedDownload = enrichedDownload,
+                        onCancel = { 
+                            when (enrichedDownload.downloadState.status) {
+                                DownloadStatus.FAILED, DownloadStatus.CANCELLED -> {
+                                    // Remove failed/cancelled downloads from the system
+                                    libraryViewModel.removeDownload(enrichedDownload.downloadState.id)
+                                }
+                                else -> {
+                                    // Cancel active downloads
+                                    libraryViewModel.cancelDownload(enrichedDownload.downloadState.id)
+                                }
+                            }
+                        },
+                        onRetry = { libraryViewModel.retryDownload(enrichedDownload.downloadState.id) },
+                        onForceStart = { libraryViewModel.forceDownload(enrichedDownload.downloadState.id) },
+                        onPause = { libraryViewModel.pauseDownload(enrichedDownload.downloadState.id) },
+                        onResume = { libraryViewModel.resumeDownload(enrichedDownload.downloadState.id) },
+                        onNavigateToShow = {
+                            enrichedDownload.show?.let { show ->
+                                onNavigateToShow(show)
+                            }
+                        }
+                    )
+                }
+            }
+        }
+    } else {
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
+            )
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(32.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Text(
+                        text = "No active downloads",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Text(
+                        text = "Download shows from the library or browse screens",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
+                        textAlign = TextAlign.Center
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun StorageBrowserView(
+    completedDownloads: Map<String, List<EnrichedDownloadState>>,
+    onNavigateToShow: (Show) -> Unit
+) {
+    if (completedDownloads.isNotEmpty()) {
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surface
+            )
+        ) {
+            LazyColumn(
+                modifier = Modifier.heightIn(max = 400.dp),
+                contentPadding = PaddingValues(8.dp),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                items(
+                    items = completedDownloads.toList(),
+                    key = { it.first }
+                ) { (showId, downloads) ->
+                    val firstDownload = downloads.first()
+                    StoredShowItem(
+                        showName = firstDownload.displayShowName,
+                        trackCount = downloads.size,
+                        totalSize = downloads.sumOf { it.downloadState.totalBytes },
+                        recordingId = firstDownload.downloadState.recordingId,
+                        downloads = downloads,
+                        onNavigateToShow = {
+                            firstDownload.show?.let { show ->
+                                onNavigateToShow(show)
+                            }
+                        },
+                        onExport = { 
+                            // TODO: Implement export to device storage
+                            // This would copy files to Downloads folder or Music folder
+                        },
+                        onViewFiles = {
+                            // TODO: Implement file browser view
+                            // This would show a dialog with all track files for this show
+                        }
+                    )
+                }
+            }
+        }
+    } else {
+        Card(
+            modifier = Modifier.fillMaxWidth(),
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
+            )
+        ) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(32.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Text(
+                        text = "No downloaded shows",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Text(
+                        text = "Complete some downloads to see them here",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
+                        textAlign = TextAlign.Center
+                    )
+                }
+            }
+        }
     }
 }
 

@@ -81,6 +81,32 @@ interface ShowDao {
     """)
     suspend fun searchShowsLimited(query: String, limit: Int): List<ShowEntity>
     
+    // Reactive Flow versions for real-time updates
+    @Query("""
+        SELECT * FROM concerts_new 
+        WHERE venue LIKE '%' || :query || '%' 
+           OR location LIKE '%' || :query || '%'
+           OR setlistRaw LIKE '%' || :query || '%'
+           OR songNames LIKE '%' || :query || '%'
+           OR date LIKE '%' || :query || '%'
+           OR year = :query
+        ORDER BY date DESC
+    """)
+    fun searchShowsFlow(query: String): Flow<List<ShowEntity>>
+    
+    @Query("""
+        SELECT * FROM concerts_new 
+        WHERE venue LIKE '%' || :query || '%' 
+           OR location LIKE '%' || :query || '%'
+           OR setlistRaw LIKE '%' || :query || '%'
+           OR songNames LIKE '%' || :query || '%'
+           OR date LIKE '%' || :query || '%'
+           OR year = :query
+        ORDER BY date DESC
+        LIMIT :limit
+    """)
+    fun searchShowsLimitedFlow(query: String, limit: Int): Flow<List<ShowEntity>>
+    
     // Library - shows ordered by when they were added to library (most recent first)
     @Query("SELECT * FROM concerts_new WHERE addedToLibraryAt IS NOT NULL ORDER BY addedToLibraryAt DESC")
     suspend fun getLibraryShows(): List<ShowEntity>

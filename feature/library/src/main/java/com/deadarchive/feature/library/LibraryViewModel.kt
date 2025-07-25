@@ -53,6 +53,14 @@ class LibraryViewModel @Inject constructor(
     val sortOption: StateFlow<LibrarySortOption> = dataService.sortOption
     val decadeFilter: StateFlow<DecadeFilter> = dataService.decadeFilter
     
+    // Individual downloads for queue management
+    val allDownloads = downloadService.getAllDownloads()
+    
+    /**
+     * Get enriched downloads with show and track metadata
+     */
+    suspend fun getEnrichedDownloads() = downloadService.getEnrichedDownloads()
+    
     init {
         // Load library data via service
         dataService.loadLibraryItems(
@@ -183,6 +191,86 @@ class LibraryViewModel @Inject constructor(
      */
     fun setDecadeFilter(filter: DecadeFilter) {
         dataService.setDecadeFilter(filter)
+    }
+    
+    // Download Queue Management Methods
+    
+    /**
+     * Cancel an individual download
+     */
+    fun cancelDownload(downloadId: String) {
+        viewModelScope.launch {
+            try {
+                downloadService.cancelDownload(downloadId)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to cancel download: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Retry a failed download
+     */
+    fun retryDownload(downloadId: String) {
+        viewModelScope.launch {
+            try {
+                downloadService.retryDownload(downloadId)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to retry download: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Force start a queued download
+     */
+    fun forceDownload(downloadId: String) {
+        viewModelScope.launch {
+            try {
+                downloadService.forceDownload(downloadId)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to force download: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Remove a download completely from the system
+     */
+    fun removeDownload(downloadId: String) {
+        viewModelScope.launch {
+            try {
+                downloadService.removeDownload(downloadId)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to remove download: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Pause a download
+     */
+    fun pauseDownload(downloadId: String) {
+        viewModelScope.launch {
+            try {
+                downloadService.pauseDownload(downloadId)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to pause download: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Resume a paused download
+     */
+    fun resumeDownload(downloadId: String) {
+        viewModelScope.launch {
+            try {
+                downloadService.resumeDownload(downloadId)
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to resume download: ${e.message}")
+            }
+        }
     }
 }
 
