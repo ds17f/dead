@@ -12,6 +12,8 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.component.ShowDownloadState
+import com.deadarchive.core.design.component.DownloadButton
+import com.deadarchive.core.design.component.DownloadAction
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -460,56 +462,21 @@ fun PlaylistScreen(
                                         )
                                     }
                                     
-                                    // Download button
-                                    IconButton(
-                                        onClick = { viewModel.downloadRecording() },
+                                    // Download button - using unified component
+                                    val downloadState = currentRecording?.let { downloadStates[it.identifier] } 
+                                        ?: ShowDownloadState.NotDownloaded
+                                    
+                                    DownloadButton(
+                                        downloadState = downloadState,
+                                        onClick = { viewModel.handleDownloadButtonClick() },
+                                        onLongClick = { action ->
+                                            // Handle long-press actions through ViewModel
+                                            viewModel.handleDownloadAction(action)
+                                        },
+                                        showLongPressMenu = true, // Enable long-press in playlist view
+                                        size = 24.dp,
                                         modifier = Modifier.size(40.dp)
-                                    ) {
-                                        val downloadState = currentRecording?.let { downloadStates[it.identifier] } 
-                                            ?: ShowDownloadState.NotDownloaded
-                                        
-                                        when (downloadState) {
-                                            is ShowDownloadState.NotDownloaded -> {
-                                                Icon(
-                                                    painter = IconResources.Content.FileDownload(),
-                                                    contentDescription = "Download Recording",
-                                                    modifier = Modifier.size(24.dp)
-                                                )
-                                            }
-                                            is ShowDownloadState.Downloading -> {
-                                                Box(contentAlignment = Alignment.Center) {
-                                                    CircularProgressIndicator(
-                                                        progress = { downloadState.trackProgress },
-                                                        modifier = Modifier.size(24.dp),
-                                                        strokeWidth = 2.dp,
-                                                        color = Color.Red,
-                                                        trackColor = Color.White
-                                                    )
-                                                    Icon(
-                                                        painter = painterResource(R.drawable.ic_stop),
-                                                        contentDescription = "Stop Download",
-                                                        modifier = Modifier.size(16.dp)
-                                                    )
-                                                }
-                                            }
-                                            is ShowDownloadState.Downloaded -> {
-                                                Icon(
-                                                    painter = IconResources.Status.CheckCircle(),
-                                                    contentDescription = "Downloaded",
-                                                    modifier = Modifier.size(24.dp),
-                                                    tint = MaterialTheme.colorScheme.primary
-                                                )
-                                            }
-                                            is ShowDownloadState.Failed -> {
-                                                Icon(
-                                                    painter = IconResources.Content.FileDownload(),
-                                                    contentDescription = "Download Failed",
-                                                    modifier = Modifier.size(24.dp),
-                                                    tint = MaterialTheme.colorScheme.error
-                                                )
-                                            }
-                                        }
-                                    }
+                                    )
                                     
                                     // Setlist button
                                     IconButton(
@@ -960,6 +927,66 @@ private fun RecordingHeader(
                                     tint = MaterialTheme.colorScheme.primary,
                                     modifier = Modifier.clickable { onRemoveDownloadClick() }
                                 )
+                            }
+                            is com.deadarchive.core.design.component.ShowDownloadState.Paused -> {
+                                // Similar to downloading but with pause icon and orange color
+                                val progressValue = when {
+                                    downloadState.totalTracks > 0 -> downloadState.trackProgress
+                                    downloadState.progress >= 0f -> downloadState.progress
+                                    else -> 0f
+                                }
+                                
+                                Box(
+                                    contentAlignment = Alignment.Center,
+                                    modifier = Modifier.size(24.dp)
+                                ) {
+                                    // Background progress ring in orange
+                                    CircularProgressIndicator(
+                                        progress = { progressValue },
+                                        modifier = Modifier.size(24.dp),
+                                        color = MaterialTheme.colorScheme.secondary,
+                                        strokeWidth = 2.dp,
+                                        trackColor = MaterialTheme.colorScheme.surfaceVariant
+                                    )
+                                    
+                                    // Pause icon in center
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_pause),
+                                        contentDescription = "Paused - Click to resume",
+                                        tint = MaterialTheme.colorScheme.secondary,
+                                        modifier = Modifier.size(14.dp)
+                                    )
+                                }
+                            }
+                            is com.deadarchive.core.design.component.ShowDownloadState.Cancelled -> {
+                                // Similar to paused but with refresh icon and gray color
+                                val progressValue = when {
+                                    downloadState.totalTracks > 0 -> downloadState.trackProgress
+                                    downloadState.progress >= 0f -> downloadState.progress
+                                    else -> 0f
+                                }
+                                
+                                Box(
+                                    contentAlignment = Alignment.Center,
+                                    modifier = Modifier.size(24.dp)
+                                ) {
+                                    // Background progress ring in gray
+                                    CircularProgressIndicator(
+                                        progress = { progressValue },
+                                        modifier = Modifier.size(24.dp),
+                                        color = MaterialTheme.colorScheme.outline,
+                                        strokeWidth = 2.dp,
+                                        trackColor = MaterialTheme.colorScheme.surfaceVariant
+                                    )
+                                    
+                                    // Refresh icon in center
+                                    Icon(
+                                        painter = painterResource(R.drawable.ic_refresh),
+                                        contentDescription = "Cancelled - Click to retry",
+                                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        modifier = Modifier.size(14.dp)
+                                    )
+                                }
                             }
                             is com.deadarchive.core.design.component.ShowDownloadState.Failed -> {
                                 Icon(

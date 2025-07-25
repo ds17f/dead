@@ -55,6 +55,24 @@ sealed class ShowDownloadState {
         val trackProgress: Float
             get() = if (totalTracks > 0) completedTracks.toFloat() / totalTracks.toFloat() else 0f
     }
+    data class Paused(
+        val progress: Float = -1f,
+        val bytesDownloaded: Long = 0L,
+        val completedTracks: Int = 0,
+        val totalTracks: Int = 0
+    ) : ShowDownloadState() {
+        val trackProgress: Float
+            get() = if (totalTracks > 0) completedTracks.toFloat() / totalTracks.toFloat() else 0f
+    }
+    data class Cancelled(
+        val progress: Float = -1f,
+        val bytesDownloaded: Long = 0L,
+        val completedTracks: Int = 0,
+        val totalTracks: Int = 0
+    ) : ShowDownloadState() {
+        val trackProgress: Float
+            get() = if (totalTracks > 0) completedTracks.toFloat() / totalTracks.toFloat() else 0f
+    }
     object Downloaded : ShowDownloadState()
     data class Failed(val errorMessage: String? = null) : ShowDownloadState()
 }
@@ -220,69 +238,14 @@ private fun ShowHeader(
                 )
             }
             
-            // Download button (for best recording)
+            // Download button (for best recording) - using unified component
             val downloadState = getShowDownloadState(show)
-            Box {
-                IconButton(
-                    onClick = { onDownloadButtonClick(show) }
-                ) {
-                    when (downloadState) {
-                        is ShowDownloadState.NotDownloaded -> {
-                            Icon(
-                                painter = painterResource(R.drawable.ic_file_download),
-                                contentDescription = "Download Show",
-                                tint = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                        }
-                        is ShowDownloadState.Downloading -> {
-                            // Spotify-style: Stop icon with circular progress ring
-                            val progressValue = when {
-                                downloadState.totalTracks > 0 -> downloadState.trackProgress
-                                downloadState.progress >= 0f -> downloadState.progress
-                                else -> 0f
-                            }
-                            
-                            Box(
-                                contentAlignment = Alignment.Center,
-                                modifier = Modifier.size(24.dp)
-                            ) {
-                                // Background progress ring
-                                CircularProgressIndicator(
-                                    progress = { progressValue },
-                                    modifier = Modifier.size(24.dp),
-                                    color = MaterialTheme.colorScheme.primary, // Theme primary color
-                                    strokeWidth = 2.dp,
-                                    trackColor = Color(0xFFE0E0E0) // Light gray track
-                                )
-                                
-                                // Stop icon in center
-                                Icon(
-                                    painter = painterResource(R.drawable.ic_stop),
-                                    contentDescription = "Cancel download",
-                                    tint = MaterialTheme.colorScheme.primary, // Theme primary color to match progress
-                                    modifier = Modifier.size(14.dp)
-                                )
-                            }
-                        }
-                        is ShowDownloadState.Downloaded -> {
-                            Icon(
-                                painter = painterResource(R.drawable.ic_check_circle),
-                                contentDescription = "Downloaded - Click to remove",
-                                tint = MaterialTheme.colorScheme.primary // Theme primary color for success
-                            )
-                        }
-                        is ShowDownloadState.Failed -> {
-                            Icon(
-                                painter = painterResource(R.drawable.ic_file_download),
-                                contentDescription = "Download Failed - ${downloadState.errorMessage ?: "Unknown error"}",
-                                tint = MaterialTheme.colorScheme.error // Red for error
-                            )
-                        }
-                    }
-                }
-                
-                // Spotify-style: Clean progress ring with stop icon, no text overlay
-            }
+            DownloadButton(
+                downloadState = downloadState,
+                onClick = { onDownloadButtonClick(show) },
+                showLongPressMenu = false, // No long-press in browse view
+                size = 24.dp
+            )
             
             // Expand/collapse button
             IconButton(onClick = onExpandClick) {

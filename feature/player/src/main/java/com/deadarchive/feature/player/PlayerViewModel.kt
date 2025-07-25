@@ -18,6 +18,7 @@ import com.deadarchive.core.model.DownloadStatus
 import com.deadarchive.core.model.util.VenueUtil
 import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.design.component.ShowDownloadState
+import com.deadarchive.core.design.component.DownloadAction
 import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.core.network.mapper.*
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -569,6 +570,16 @@ class PlayerViewModel @Inject constructor(
                             Log.d(TAG, "downloadRecording: Canceling in-progress download")
                             downloadService.cancelRecordingDownloads(recording)
                         }
+                        is ShowDownloadState.Paused -> {
+                            // Resume paused download
+                            Log.d(TAG, "downloadRecording: Resuming paused download")
+                            downloadService.resumeRecordingDownloads(recording.identifier)
+                        }
+                        is ShowDownloadState.Cancelled -> {
+                            // Restart cancelled download
+                            Log.d(TAG, "downloadRecording: Restarting cancelled download")
+                            downloadService.downloadRecording(recording)
+                        }
                         is ShowDownloadState.Failed -> {
                             // Retry failed download
                             Log.d(TAG, "downloadRecording: Retrying failed download")
@@ -603,6 +614,62 @@ class PlayerViewModel @Inject constructor(
         }
     }
     
+    /**
+     * Handle download button click with smart state-based logic using centralized DownloadService
+     */
+    fun handleDownloadButtonClick() {
+        val recording = _currentRecording.value
+        if (recording != null) {
+            // Create a minimal Show object for the DownloadService
+            val show = Show(
+                date = recording.title?.substringBefore(" ") ?: "Unknown Date",
+                venue = "Recording: ${recording.identifier}",
+                recordings = listOf(recording)
+            )
+            
+            downloadService.handleDownloadButtonClick(
+                show = show,
+                coroutineScope = viewModelScope,
+                onError = { errorMessage ->
+                    Log.e(TAG, "handleDownloadButtonClick: $errorMessage")
+                }
+            )
+        } else {
+            Log.w(TAG, "handleDownloadButtonClick: No recording available")
+        }
+    }
+    
+    /**
+     * Handle long-press actions from the unified DownloadButton component
+     */
+    fun handleDownloadAction(action: DownloadAction) {
+        viewModelScope.launch {
+            try {
+                val recording = _currentRecording.value
+                if (recording != null) {
+                    // Create a minimal Show object for the DownloadService
+                    val show = Show(
+                        date = recording.title?.substringBefore(" ") ?: "Unknown Date",
+                        venue = "Recording: ${recording.identifier}",
+                        recordings = listOf(recording)
+                    )
+                    
+                    downloadService.handleDownloadAction(
+                        show = show,
+                        action = action,
+                        coroutineScope = viewModelScope,
+                        onError = { errorMessage ->
+                            Log.e(TAG, "handleDownloadAction: $errorMessage")
+                        }
+                    )
+                } else {
+                    Log.w(TAG, "handleDownloadAction: No recording available")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "handleDownloadAction: Failed to handle action $action", e)
+            }
+        }
+    }
     
     /**
      * Get the current download state for the recording

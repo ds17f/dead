@@ -82,17 +82,53 @@ class DownloadService @Inject constructor(
                         val completedTracks = recordingDownloads.count { it.status == DownloadStatus.COMPLETED }
                         val totalTracks = recordingDownloads.size
                         val failedTracks = recordingDownloads.count { it.status == DownloadStatus.FAILED }
+                        val pausedTracks = recordingDownloads.count { it.status == DownloadStatus.PAUSED }
+                        val cancelledTracks = recordingDownloads.count { it.status == DownloadStatus.CANCELLED }
+                        val downloadingTracks = recordingDownloads.count { it.status == DownloadStatus.DOWNLOADING }
+                        val queuedTracks = recordingDownloads.count { it.status == DownloadStatus.QUEUED }
                         val hasActiveDownloads = recordingDownloads.any { 
                             it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED 
                         }
                         
+                        // Debug logging for state calculation
+                        if (recordingDownloads.isNotEmpty()) {
+                            Log.d(TAG, "STATE DEBUG: Recording $recordingId - Total: $totalTracks, Completed: $completedTracks, " +
+                                "Downloading: $downloadingTracks, Queued: $queuedTracks, Paused: $pausedTracks, " +
+                                "Failed: $failedTracks, Cancelled: $cancelledTracks, HasActive: $hasActiveDownloads")
+                        }
+                        
                         val state = when {
-                            completedTracks == totalTracks -> ShowDownloadState.Downloaded
-                            failedTracks > 0 && !hasActiveDownloads -> {
+                            completedTracks == totalTracks -> {
+                                Log.d(TAG, "STATE DEBUG: Recording $recordingId -> Downloaded (all completed)")
+                                ShowDownloadState.Downloaded
+                            }
+                            failedTracks > 0 && !hasActiveDownloads && pausedTracks == 0 && cancelledTracks == 0 -> {
+                                Log.d(TAG, "STATE DEBUG: Recording $recordingId -> Failed (has failures, no active/paused/cancelled)")
                                 val firstError = recordingDownloads.find { it.status == DownloadStatus.FAILED }?.errorMessage
                                 ShowDownloadState.Failed(firstError ?: "Download failed")
                             }
+                            pausedTracks > 0 && !hasActiveDownloads -> {
+                                Log.d(TAG, "STATE DEBUG: Recording $recordingId -> Paused (has paused, no active)")
+                                // Calculate progress for paused downloads
+                                val avgProgress = recordingDownloads.map { it.progress }.average().toFloat()
+                                ShowDownloadState.Paused(
+                                    progress = avgProgress,
+                                    completedTracks = completedTracks,
+                                    totalTracks = totalTracks
+                                )
+                            }
+                            cancelledTracks > 0 && !hasActiveDownloads && pausedTracks == 0 -> {
+                                Log.d(TAG, "STATE DEBUG: Recording $recordingId -> Cancelled (has cancelled, no active/paused)")
+                                // Calculate progress for cancelled downloads
+                                val avgProgress = recordingDownloads.map { it.progress }.average().toFloat()
+                                ShowDownloadState.Cancelled(
+                                    progress = avgProgress,
+                                    completedTracks = completedTracks,
+                                    totalTracks = totalTracks
+                                )
+                            }
                             hasActiveDownloads || completedTracks > 0 -> {
+                                Log.d(TAG, "STATE DEBUG: Recording $recordingId -> Downloading (has active or completed)")
                                 // Calculate average progress of active downloads
                                 val activeDownloads = recordingDownloads.filter { 
                                     it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED 
@@ -107,7 +143,10 @@ class DownloadService @Inject constructor(
                                     totalTracks = totalTracks
                                 )
                             }
-                            else -> ShowDownloadState.NotDownloaded
+                            else -> {
+                                Log.d(TAG, "STATE DEBUG: Recording $recordingId -> NotDownloaded (default)")
+                                ShowDownloadState.NotDownloaded
+                            }
                         }
                         
                         states[recordingId] = state
@@ -178,6 +217,93 @@ class DownloadService @Inject constructor(
             Log.d(TAG, "Downloads canceled successfully for recording ${recording.identifier}")
         } catch (e: Exception) {
             Log.e(TAG, "Error canceling downloads for recording ${recording.identifier}", e)
+            throw e
+        }
+    }
+    
+    /**
+     * Pause all downloads for a recording
+     */
+    suspend fun pauseRecordingDownloads(recordingId: String) {
+        Log.d(TAG, "=== PAUSE DEBUG START: Pausing downloads for recording $recordingId ===")
+        
+        try {
+            // Get all downloads and log total count
+            val allDownloads = downloadRepository.getAllDownloads().first()
+            Log.d(TAG, "PAUSE DEBUG: Total downloads in system: ${allDownloads.size}")
+            
+            // Log all downloads for this recording (regardless of status)
+            val allRecordingDownloads = allDownloads.filter { it.recordingId == recordingId }
+            Log.d(TAG, "PAUSE DEBUG: Total downloads for recording $recordingId: ${allRecordingDownloads.size}")
+            allRecordingDownloads.forEach { download ->
+                Log.d(TAG, "PAUSE DEBUG: Recording download: ${download.trackFilename} - Status: ${download.status} - Progress: ${download.progress}")
+            }
+            
+            // Filter both downloading and queued downloads (anything "active")
+            val recordingDownloads = allRecordingDownloads.filter { 
+                it.status == DownloadStatus.DOWNLOADING || it.status == DownloadStatus.QUEUED 
+            }
+            Log.d(TAG, "PAUSE DEBUG: Active tracks to pause (downloading + queued): ${recordingDownloads.size}")
+            
+            if (recordingDownloads.isEmpty()) {
+                Log.w(TAG, "PAUSE DEBUG: No active downloads (DOWNLOADING/QUEUED) found to pause for recording $recordingId")
+                // Check if there are any other statuses
+                allRecordingDownloads.groupBy { it.status }.forEach { (status, downloads) ->
+                    Log.d(TAG, "PAUSE DEBUG: Found ${downloads.size} downloads with status: $status")
+                }
+                return
+            }
+            
+            // Pause each download and verify the result
+            recordingDownloads.forEach { download ->
+                Log.d(TAG, "PAUSE DEBUG: Attempting to pause download ID: ${download.id}, Track: ${download.trackFilename}")
+                downloadRepository.pauseDownload(download.id)
+                Log.d(TAG, "PAUSE DEBUG: Called pauseDownload for: ${download.trackFilename}")
+            }
+            
+            // Small delay to let pause operations settle
+            kotlinx.coroutines.delay(100)
+            
+            // Verify the pause operations worked
+            val updatedDownloads = downloadRepository.getAllDownloads().first()
+            val updatedRecordingDownloads = updatedDownloads.filter { it.recordingId == recordingId }
+            Log.d(TAG, "PAUSE DEBUG: After pause operations, download statuses:")
+            updatedRecordingDownloads.forEach { download ->
+                Log.d(TAG, "PAUSE DEBUG: Post-pause: ${download.trackFilename} - Status: ${download.status}")
+            }
+            
+            val nowPaused = updatedRecordingDownloads.count { it.status == DownloadStatus.PAUSED }
+            val stillDownloading = updatedRecordingDownloads.count { it.status == DownloadStatus.DOWNLOADING }
+            Log.d(TAG, "PAUSE DEBUG: Results - Paused: $nowPaused, Still downloading: $stillDownloading")
+            
+            Log.d(TAG, "=== PAUSE DEBUG END: Downloads paused successfully for recording $recordingId ===")
+        } catch (e: Exception) {
+            Log.e(TAG, "PAUSE DEBUG ERROR: Error pausing downloads for recording $recordingId", e)
+            throw e
+        }
+    }
+    
+    /**
+     * Resume all downloads for a recording
+     */
+    suspend fun resumeRecordingDownloads(recordingId: String) {
+        Log.d(TAG, "Resuming downloads for recording $recordingId")
+        
+        try {
+            // Get all downloads for this recording and resume them
+            val downloads = downloadRepository.getAllDownloads().first()
+            val recordingDownloads = downloads.filter { it.recordingId == recordingId && it.status == DownloadStatus.PAUSED }
+            
+            Log.d(TAG, "Found ${recordingDownloads.size} paused downloads to resume for recording $recordingId")
+            
+            recordingDownloads.forEach { download ->
+                downloadRepository.resumeDownload(download.id)
+                Log.d(TAG, "Resumed download: ${download.trackFilename}")
+            }
+            
+            Log.d(TAG, "Downloads resumed successfully for recording $recordingId")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error resuming downloads for recording $recordingId", e)
             throw e
         }
     }
@@ -267,6 +393,8 @@ class DownloadService @Inject constructor(
         return when (showState) {
             is ShowDownloadState.NotDownloaded -> DownloadState.Available
             is ShowDownloadState.Downloading -> DownloadState.Downloading(showState.progress)
+            is ShowDownloadState.Paused -> DownloadState.Downloading(showState.progress) // Map to Downloading for backward compatibility
+            is ShowDownloadState.Cancelled -> DownloadState.Error("Download cancelled")
             is ShowDownloadState.Downloaded -> DownloadState.Downloaded
             is ShowDownloadState.Failed -> DownloadState.Error(showState.errorMessage ?: "Download failed")
         }
@@ -299,14 +427,44 @@ class DownloadService @Inject constructor(
                 }
             }
             is ShowDownloadState.Downloading -> {
-                // Cancel in-progress download
-                Log.d(TAG, "Canceling in-progress download for show ${show.showId}")
+                // Pause in-progress download
+                Log.d(TAG, "Pausing in-progress download for show ${show.showId}")
                 coroutineScope.launch {
                     try {
-                        cancelShowDownloads(show)
+                        val bestRecording = recordingSelectionService.getBestRecording(show)
+                        if (bestRecording != null) {
+                            pauseRecordingDownloads(bestRecording.identifier)
+                        }
                     } catch (e: Exception) {
-                        Log.e(TAG, "Error canceling download for show ${show.showId}", e)
-                        onError("Failed to cancel download: ${e.message}")
+                        Log.e(TAG, "Error pausing download for show ${show.showId}", e)
+                        onError("Failed to pause download: ${e.message}")
+                    }
+                }
+            }
+            is ShowDownloadState.Paused -> {
+                // Resume paused download
+                Log.d(TAG, "Resuming paused download for show ${show.showId}")
+                coroutineScope.launch {
+                    try {
+                        val bestRecording = recordingSelectionService.getBestRecording(show)
+                        if (bestRecording != null) {
+                            resumeRecordingDownloads(bestRecording.identifier)
+                        }
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error resuming download for show ${show.showId}", e)
+                        onError("Failed to resume download: ${e.message}")
+                    }
+                }
+            }
+            is ShowDownloadState.Cancelled -> {
+                // Restart cancelled download
+                Log.d(TAG, "Restarting cancelled download for show ${show.showId}")
+                coroutineScope.launch {
+                    try {
+                        downloadShow(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error restarting download for show ${show.showId}", e)
+                        onError("Failed to restart download: ${e.message}")
                     }
                 }
             }
@@ -324,6 +482,77 @@ class DownloadService @Inject constructor(
                     } catch (e: Exception) {
                         Log.e(TAG, "Error retrying download for show ${show.showId}", e)
                         onError("Failed to retry download: ${e.message}")
+                    }
+                }
+            }
+        }
+    }
+    
+    /**
+     * Handle long-press actions from the unified DownloadButton component
+     */
+    fun handleDownloadAction(
+        show: Show,
+        action: com.deadarchive.core.design.component.DownloadAction,
+        coroutineScope: CoroutineScope,
+        onError: (String) -> Unit = {}
+    ) {
+        Log.d(TAG, "Handling download action $action for show ${show.showId}")
+        
+        when (action) {
+            com.deadarchive.core.design.component.DownloadAction.RETRY -> {
+                coroutineScope.launch {
+                    try {
+                        downloadShow(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error retrying download for show ${show.showId}", e)
+                        onError("Failed to retry download: ${e.message}")
+                    }
+                }
+            }
+            com.deadarchive.core.design.component.DownloadAction.REMOVE -> {
+                coroutineScope.launch {
+                    try {
+                        clearShowDownloads(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error removing download for show ${show.showId}", e)
+                        onError("Failed to remove download: ${e.message}")
+                    }
+                }
+            }
+            com.deadarchive.core.design.component.DownloadAction.PAUSE -> {
+                coroutineScope.launch {
+                    try {
+                        val bestRecording = recordingSelectionService.getBestRecording(show)
+                        if (bestRecording != null) {
+                            pauseRecordingDownloads(bestRecording.identifier)
+                        }
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error pausing download for show ${show.showId}", e)
+                        onError("Failed to pause download: ${e.message}")
+                    }
+                }
+            }
+            com.deadarchive.core.design.component.DownloadAction.RESUME -> {
+                coroutineScope.launch {
+                    try {
+                        val bestRecording = recordingSelectionService.getBestRecording(show)
+                        if (bestRecording != null) {
+                            resumeRecordingDownloads(bestRecording.identifier)
+                        }
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error resuming download for show ${show.showId}", e)
+                        onError("Failed to resume download: ${e.message}")
+                    }
+                }
+            }
+            com.deadarchive.core.design.component.DownloadAction.CANCEL -> {
+                coroutineScope.launch {
+                    try {
+                        cancelShowDownloads(show)
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error canceling download for show ${show.showId}", e)
+                        onError("Failed to cancel download: ${e.message}")
                     }
                 }
             }
