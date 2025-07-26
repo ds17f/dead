@@ -89,8 +89,8 @@ adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
   - **Data operations:** ShowRepository → ShowEnrichmentService, ShowCacheService, ShowCreationService
   - **Media operations:** MediaControllerRepository → MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor
   - **Download operations:** Centralized DownloadService shared across all features
-  - **Browse operations:** BrowseViewModel → BrowseSearchService, BrowseLibraryService, BrowseDataService
-  - **Library operations:** LibraryViewModel → LibraryDataService, LibraryManagementService
+  - **Browse operations:** BrowseViewModel → BrowseSearchService, BrowseDataService
+  - **Library operations:** Unified LibraryService shared across all ViewModels (Browse, Library, Player, Playlist)
 
 ### Data Services Architecture
 
@@ -127,9 +127,10 @@ The `:core:data` module implements a service-oriented architecture with the main
 - **Key Methods:** `setPlaylist()`, `navigateToTrack()`, `addToPlaylist()`, `playTrackFromPlaylist()`
 - **Dependencies:** QueueManager, MediaControllerRepository
 
-**PlayerLibraryService** (`feature/player/src/main/java/com/deadarchive/feature/player/service/PlayerLibraryService.kt`)
-- **Key Methods:** `checkLibraryStatus()`, `addToLibrary()`, `removeFromLibrary()`
-- **Dependencies:** LibraryRepository, ShowRepository
+**Unified LibraryService Integration**
+- **Migration:** PlayerViewModel now uses centralized LibraryService instead of PlayerLibraryService  
+- **Key Methods:** `isShowInLibrary()`, `addToLibrary()`, `removeFromLibrary()`
+- **Benefits:** Consistent library behavior across all features, eliminated service duplication
 
 ### Media Services Architecture
 
@@ -172,9 +173,10 @@ The `:feature:browse` module implements service-oriented architecture with the B
 - **State Flows:** `searchQuery`, `isSearching`
 - **Dependencies:** SearchShowsUseCase
 
-**BrowseLibraryService** (`feature/browse/src/main/java/com/deadarchive/feature/browse/service/BrowseLibraryService.kt`)
-- **Key Methods:** `toggleLibrary()` with optimistic UI updates
-- **Dependencies:** LibraryRepository
+**Unified LibraryService** (`core/data/src/main/java/com/deadarchive/core/data/service/LibraryService.kt`)
+- **Key Methods:** `addToLibrary()`, `removeFromLibrary()`, `removeShowWithDownloadCleanup()`, `isShowInLibrary()`
+- **Dependencies:** LibraryRepository, DownloadService
+- **Impact:** Centralized library operations shared across all features with download cleanup support
 
 **BrowseDataService** (`feature/browse/src/main/java/com/deadarchive/feature/browse/service/BrowseDataService.kt`)
 - **Key Methods:** `loadPopularShows()`, `loadRecentShows()`, `loadInitialData()`
@@ -187,9 +189,11 @@ The `:feature:browse` module implements service-oriented architecture with the B
 - **State Flows:** `sortOption`, `decadeFilter`
 - **Dependencies:** ShowRepository
 
-**LibraryManagementService** (`feature/library/src/main/java/com/deadarchive/feature/library/service/LibraryManagementService.kt`)
-- **Key Methods:** `removeFromLibrary()`, `removeShowFromLibrary()`, `clearLibrary()`
-- **Dependencies:** LibraryRepository
+**Unified LibraryService** (`core/data/src/main/java/com/deadarchive/core/data/service/LibraryService.kt`)
+- **Key Methods:** `addToLibrary()`, `removeFromLibrary()`, `clearLibrary()`, `removeShowWithDownloadCleanup()`
+- **Dependencies:** LibraryRepository, DownloadService
+- **Impact:** Replaces feature-specific library management services with centralized implementation
+- **Download Integration:** Supports removing shows with optional download cleanup
 
 ### Entry Points
 
@@ -261,6 +265,13 @@ gradle :core:network:test  # Specific module tests
 2. Follow existing Material3 theming patterns
 3. Add to `IconResources.kt` if new icons are needed
 4. Use existing design tokens from `Theme.kt`
+
+### Unified UI Components
+**LibraryButton** (`core/design/src/main/java/com/deadarchive/core/design/component/LibraryButton.kt`)
+- **Purpose:** Centralized library management component used across all features
+- **Actions:** Add to library, remove from library, remove with download cleanup
+- **Integration:** Works with unified LibraryService for consistent behavior
+- **Features:** Automatic icon state, confirmation dialogs, download cleanup options
 
 ### Database Schema Changes
 1. Update entities in `core/database/src/main/java/com/deadarchive/core/database/`
@@ -382,6 +393,17 @@ gradle --stop && gradle wrapper
 gradle build --refresh-dependencies
 ```
 
+### Media Player Issues
+- **Looping Bug:** Fixed by preventing MediaItem conflicts between QueueManager and PlaybackCommandProcessor
+- **Track Highlighting:** Uses MediaId-based matching instead of URL comparison for downloaded content
+- **Feedback Loops:** QueueStateManager flows use distinctUntilChanged to prevent duplicate emissions
+- **Debug Logging:** Check `DEAD_DEBUG_PANEL` logs for detailed track matching information
+
+### Library Service Migration
+- **Service Duplication:** All features now use unified LibraryService instead of feature-specific services
+- **Download Integration:** Library removal supports optional download cleanup via DownloadService
+- **Consistent Behavior:** LibraryButton component provides unified library actions across all screens
+
 ## Media Playback Architecture
 
 ### Service-Oriented Media Architecture
@@ -398,7 +420,8 @@ The `:core:media` module implements a service-oriented architecture with MediaCo
 - **Responsibility:** StateFlow synchronization and position updates
 - **Key Methods:** `setupMediaControllerListener()`, `updateStateFromController()`, `updateCurrentTrackInfo()`
 - **Dependencies:** ShowRepository for track metadata enrichment
-- **Impact:** Provides reactive state flows with rich Recording/Track metadata instead of URL parsing
+- **Impact:** Provides reactive state flows with rich Recording/Track metadata and stable MediaId tracking
+- **State Flows:** `currentTrackUrl`, `currentTrackMediaId`, `currentTrackInfo`, `playbackState`
 
 **PlaybackCommandProcessor** (`com.deadarchive.core.media.player.service`)
 - **Responsibility:** Command processing and queue operations
@@ -408,12 +431,14 @@ The `:core:media` module implements a service-oriented architecture with MediaCo
 
 **MediaControllerRepository** (`com.deadarchive.core.media.player`)
 - **Responsibility:** Facade coordinator using service composition (~400 lines, down from 1,087)
-- **Key Methods:** All public methods delegate to appropriate services
+- **Key Methods:** All public methods delegate to appropriate services, `updatePlaybackStateSyncOnly()`
 - **Dependencies:** MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor
 - **Impact:** Maintains identical public interface while providing cleaner internal architecture
+- **Anti-Pattern Prevention:** `updatePlaybackStateSyncOnly()` prevents MediaItem conflicts between services
 
 ### Key Components
 - **QueueManager:** Manages playback queue and track progression with Recording metadata
+- **QueueStateManager:** Queue index and navigation state with feedback loop prevention
 - **CurrentTrackInfo:** Rich metadata system with concert date, venue, track titles
 - **LastPlayedTrackService:** Spotify-like resume functionality
 - **PlaybackEventTracker:** Media3 event monitoring for history tracking
@@ -421,15 +446,27 @@ The `:core:media` module implements a service-oriented architecture with MediaCo
 
 ### Playback Flow
 1. User selects track → QueueManager loads Recording with full metadata
-2. MediaControllerRepository updates queue context with Recording data
-3. PlaybackStateSync enriches CurrentTrackInfo with concert details
-4. DeadArchivePlaybackService displays proper track names and show info in notifications
-5. ExoPlayer handles actual audio streaming with Media3 integration
-6. PlaybackEventTracker logs history for recommendations
+2. QueueManager creates MediaItems with resolved URLs and calls `updatePlaybackStateSyncOnly()`
+3. PlaybackStateSync enriches CurrentTrackInfo with concert details and exposes MediaId
+4. PlayerViewModel matches tracks using stable MediaId instead of URL parsing
+5. DeadArchivePlaybackService displays proper track names and show info in notifications
+6. ExoPlayer handles actual audio streaming with Media3 integration
+7. PlaybackEventTracker logs history for recommendations
 
 ### Rich Metadata System
 - **Before:** URL parsing like `gd1975.07.23.studio.bershaw.t01-BosBlues1.mp3`
 - **After:** Proper metadata like "Scarlet Begonias" by "May 8, 1977 - Barton Hall"
 - **Benefits:** Professional music app experience, MiniPlayer visibility, accurate notifications
 
-The media system supports background playback, queue management, offline file resolution, and automatic resume of last played track on app restart.
+### Track Highlighting System
+- **MediaId-based Matching:** Uses `MediaItem.mediaId` (original downloadUrl) for stable track identification
+- **Streaming vs Downloaded:** MediaId remains consistent regardless of playback source
+- **Fail-fast Debugging:** Throws detailed exceptions when track matching fails
+- **Safety Checks:** Prevents crashes during app startup when no recording data is loaded
+
+### Critical Bug Fixes
+- **Media Player Looping:** Fixed MediaItem conflicts between QueueManager and PlaybackCommandProcessor
+- **Downloaded Track Highlighting:** Resolved URL mismatch issues using MediaId-based matching
+- **Feedback Loop Prevention:** Added distinctUntilChanged to QueueStateManager flows
+
+The media system supports background playback, queue management, offline file resolution, automatic resume of last played track on app restart, and robust track highlighting for both streaming and downloaded content.
