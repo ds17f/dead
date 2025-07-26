@@ -9,16 +9,23 @@ Dead Archive is a sophisticated Android application for browsing, streaming, and
 **Strengths:**
 - ✅ Modern Android development stack (Compose, Media3, Hilt DI)
 - ✅ Clean modular architecture with proper separation of concerns
-- ✅ Sophisticated media playback system with background support
+- ✅ **Service-oriented architecture** with focused, testable services
+- ✅ Sophisticated media playback system with **resolved conflicts and bug fixes**
+- ✅ **Unified library operations** across all features eliminating service duplication
 - ✅ Comprehensive data layer with offline-first approach
 - ✅ Well-structured dependency injection with Hilt
 - ✅ Reactive programming patterns with StateFlow/Flow
 
-**Areas for Improvement:**
-- 🚧 Some classes are extremely large (1700+ lines) - **IN PROGRESS** [See refactoring plan](../plans/large-class-refactoring-plan.md)
-- ⚠️ Complex data flows that are difficult to test
+**Recent Architectural Improvements:**
+- ✅ **Large class refactoring completed** - Major classes broken down into focused services
+- ✅ **Media player bugs resolved** - Fixed looping and track highlighting issues
+- ✅ **MediaItem conflicts eliminated** - Service composition prevents architectural conflicts
+- ✅ **Centralized library management** - Unified LibraryService across all features
+
+**Remaining Areas for Improvement:**
 - ⚠️ Feature-to-feature dependencies that reduce modularity
-- ⚠️ Limited error recovery mechanisms in some areas
+- ⚠️ Some large UI classes still exist (PlaylistScreen: 1393 lines)
+- ⚠️ Limited comprehensive testing coverage
 
 ## Project Overview
 
@@ -88,6 +95,8 @@ Provide Grateful Dead fans with a mobile-first experience to explore Archive.org
 
 ### 4. Service-Oriented Architecture
 - **Background Services**: Media playback and download processing
+- **Service Composition**: MediaController with focused services (MediaServiceConnector, PlaybackStateSync, PlaybackCommandProcessor)
+- **Unified Services**: Centralized LibraryService eliminating feature-specific service duplication
 - **WorkManager Integration**: Reliable background task execution
 - **Service Communication**: MediaController pattern for UI-service interaction
 
@@ -122,8 +131,10 @@ Provide Grateful Dead fans with a mobile-first experience to explore Archive.org
 
 ### 2. Media Playback System
 - **Background Service**: Foreground service for continuous playback
+- **Service-Oriented Architecture**: MediaController composed of focused services
 - **MediaSession Integration**: System media controls and notifications
-- **Queue Management**: Sophisticated playlist handling with track progression
+- **Queue Management**: Sophisticated playlist handling with MediaItem conflict resolution
+- **Track Highlighting**: MediaId-based matching for consistent UI state (streaming/downloaded)
 - **Offline Support**: Local file resolution for downloaded content
 
 ### 3. Download Management
@@ -141,9 +152,14 @@ Provide Grateful Dead fans with a mobile-first experience to explore Archive.org
 ## Quality Metrics
 
 ### Code Organization
-- **Total Kotlin Files**: ~120 files
-- **Average File Size**: ~320 lines
-- **Largest Files**: 🚧 DebugViewModel (1702 lines - **REMOVING**), PlaylistScreen (1393 lines), ShowRepositoryImpl (1132 lines)
+- **Total Kotlin Files**: ~130 files
+- **Average File Size**: ~280 lines
+- **Large Class Resolution**: ✅ Major classes successfully broken down
+  - ~~DebugViewModel (1702 lines)~~ → **REMOVED**
+  - ~~ShowRepositoryImpl (1132 lines)~~ → **REFACTORED** to ~960 lines + 4 focused services
+  - ~~MediaControllerRepository (1087 lines)~~ → **REFACTORED** to ~400 lines + 3 focused services
+  - ~~PlayerViewModel (1227 lines)~~ → **REFACTORED** to ~650 lines + focused services
+- **Remaining**: PlaylistScreen (1393 lines) - UI class requiring different approach
 - **Test Coverage**: Unit tests for core business logic
 - **Documentation**: Comprehensive inline documentation
 
