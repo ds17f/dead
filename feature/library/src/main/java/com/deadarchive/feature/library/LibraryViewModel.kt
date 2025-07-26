@@ -9,8 +9,8 @@ import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.feature.library.service.LibraryDataService
 import com.deadarchive.core.data.download.DownloadService
+import com.deadarchive.core.data.service.LibraryService
 import kotlinx.coroutines.launch
-import com.deadarchive.feature.library.service.LibraryManagementService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -40,7 +40,7 @@ enum class DecadeFilter(val displayName: String, val decade: String?) {
 class LibraryViewModel @Inject constructor(
     private val dataService: LibraryDataService,
     private val downloadService: DownloadService,
-    private val managementService: LibraryManagementService
+    private val libraryService: LibraryService
 ) : ViewModel() {
     
     // UI State (managed by ViewModel, updated by services)
@@ -73,21 +73,39 @@ class LibraryViewModel @Inject constructor(
     // Data loading is now handled by LibraryDataService
     
     fun removeFromLibrary(libraryItem: LibraryItem) {
-        managementService.removeFromLibrary(
-            libraryItem = libraryItem,
-            coroutineScope = viewModelScope
-        )
+        viewModelScope.launch {
+            try {
+                libraryService.removeFromLibrary(libraryItem.showId)
+                // UI updates automatically via reactive flows
+            } catch (e: Exception) {
+                // Handle error - could show snackbar or error state
+                android.util.Log.e("LibraryViewModel", "Failed to remove library item ${libraryItem.id}: ${e.message}")
+            }
+        }
     }
     
     fun removeShowFromLibrary(showId: String) {
-        managementService.removeShowFromLibrary(
-            showId = showId,
-            coroutineScope = viewModelScope
-        )
+        viewModelScope.launch {
+            try {
+                libraryService.removeFromLibrary(showId)
+                // UI updates automatically via reactive flows
+            } catch (e: Exception) {
+                // Handle error - could show snackbar or error state
+                android.util.Log.e("LibraryViewModel", "Failed to remove show $showId from library: ${e.message}")
+            }
+        }
     }
     
     fun clearLibrary() {
-        managementService.clearLibrary(viewModelScope)
+        viewModelScope.launch {
+            try {
+                libraryService.clearLibrary()
+                // UI updates automatically via reactive flows
+            } catch (e: Exception) {
+                // Handle error - could show snackbar or error state
+                android.util.Log.e("LibraryViewModel", "Failed to clear library: ${e.message}")
+            }
+        }
     }
     
     fun retry() {
@@ -203,6 +221,58 @@ class LibraryViewModel @Inject constructor(
             } catch (e: Exception) {
                 _uiState.value = LibraryUiState.Error("Failed to remove download: ${e.message}")
             }
+        }
+    }
+    
+    /**
+     * Handle library button actions from unified LibraryButton component
+     */
+    fun handleLibraryAction(action: com.deadarchive.core.design.component.LibraryAction, show: Show) {
+        viewModelScope.launch {
+            try {
+                when (action) {
+                    com.deadarchive.core.design.component.LibraryAction.ADD_TO_LIBRARY -> {
+                        libraryService.addToLibrary(show)
+                    }
+                    com.deadarchive.core.design.component.LibraryAction.REMOVE_FROM_LIBRARY -> {
+                        libraryService.removeFromLibrary(show)
+                    }
+                    com.deadarchive.core.design.component.LibraryAction.REMOVE_WITH_DOWNLOADS -> {
+                        libraryService.removeShowWithDownloadCleanup(show, alsoRemoveDownloads = true)
+                    }
+                }
+                // UI updates automatically via reactive flows
+            } catch (e: Exception) {
+                _uiState.value = LibraryUiState.Error("Failed to update library: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Get download information for library removal confirmation dialog
+     */
+    fun getLibraryRemovalInfo(show: Show): com.deadarchive.core.design.component.LibraryRemovalDialogInfo {
+        return try {
+            viewModelScope.launch {
+                val info = libraryService.getDownloadInfoForShow(show)
+                com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                    show = show,
+                    hasDownloads = info.hasDownloads,
+                    downloadInfo = info.downloadInfo
+                )
+            }
+            // Return default while async operation completes
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = "Checking..."
+            )
+        } catch (e: Exception) {
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = "Error checking downloads"
+            )
         }
     }
     

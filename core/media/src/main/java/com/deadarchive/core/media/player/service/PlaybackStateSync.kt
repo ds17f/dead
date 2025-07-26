@@ -58,6 +58,9 @@ class PlaybackStateSync @Inject constructor(
     private val _currentTrackUrl = MutableStateFlow<String?>(null)
     val currentTrackUrl: StateFlow<String?> = _currentTrackUrl.asStateFlow()
     
+    private val _currentTrackMediaId = MutableStateFlow<String?>(null)
+    val currentTrackMediaId: StateFlow<String?> = _currentTrackMediaId.asStateFlow()
+    
     private val _playbackState = MutableStateFlow(Player.STATE_IDLE)
     val playbackState: StateFlow<Int> = _playbackState.asStateFlow()
     
@@ -149,14 +152,23 @@ class PlaybackStateSync @Inject constructor(
                 
                 mediaItem?.let { item ->
                     val trackUrl = item.localConfiguration?.uri?.toString()
+                    val mediaId = item.mediaId
+                    
+                    Log.d(TAG, "MediaItem details - URL: $trackUrl, MediaId: $mediaId")
+                    
                     if (trackUrl != null) {
                         _currentTrackUrl.value = trackUrl
+                        _currentTrackMediaId.value = mediaId
                         
                         // Launch coroutine to update track info
                         coroutineScope.launch {
                             updateCurrentTrackInfo(trackUrl)
                         }
                     }
+                } ?: run {
+                    // MediaItem is null, clear both URL and MediaId
+                    _currentTrackUrl.value = null
+                    _currentTrackMediaId.value = null
                 }
                 Log.d(TAG, "UI StateFlow updated - currentTrack: ${_currentTrack.value?.localConfiguration?.uri}")
             }
@@ -201,17 +213,26 @@ class PlaybackStateSync @Inject constructor(
         _duration.value = duration
         _currentPosition.value = position
         
-        // Update track URL and info
+        // Update track URL, MediaId and info
         currentTrack?.let { item ->
             val trackUrl = item.localConfiguration?.uri?.toString()
+            val mediaId = item.mediaId
+            
+            Log.d(TAG, "Manual sync - URL: $trackUrl, MediaId: $mediaId")
+            
             if (trackUrl != null) {
                 _currentTrackUrl.value = trackUrl
+                _currentTrackMediaId.value = mediaId
                 
                 // Launch coroutine to update track info
                 coroutineScope.launch {
                     updateCurrentTrackInfo(trackUrl)
                 }
             }
+        } ?: run {
+            // No current track, clear both URL and MediaId
+            _currentTrackUrl.value = null
+            _currentTrackMediaId.value = null
         }
         
         // Start position updates if playing

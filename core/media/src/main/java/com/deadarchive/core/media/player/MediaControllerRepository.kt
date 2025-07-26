@@ -58,6 +58,7 @@ class MediaControllerRepository @Inject constructor(
     val duration: StateFlow<Long> = playbackStateSync.duration
     val currentTrack: StateFlow<MediaItem?> = playbackStateSync.currentTrack
     val currentTrackUrl: StateFlow<String?> = playbackStateSync.currentTrackUrl
+    val currentTrackMediaId: StateFlow<String?> = playbackStateSync.currentTrackMediaId
     val playbackState: StateFlow<Int> = playbackStateSync.playbackState
     val lastError: StateFlow<PlaybackException?> = playbackStateSync.lastError
     val isConnected: StateFlow<Boolean> = mediaServiceConnector.isConnected
@@ -110,6 +111,19 @@ class MediaControllerRepository @Inject constructor(
         recording: Recording?
     ) {
         playbackCommandProcessor.updateQueueContext(queueUrls, currentIndex, queueMetadata)
+        playbackStateSync.updateQueueState(queueUrls, currentIndex, queueMetadata, recording)
+    }
+    
+    /**
+     * Update only PlaybackStateSync without triggering PlaybackCommandProcessor sync
+     * This prevents overwriting MediaItems that are already correctly loaded
+     */
+    fun updatePlaybackStateSyncOnly(
+        queueUrls: List<String>, 
+        currentIndex: Int = 0,
+        queueMetadata: List<Pair<String, String>> = emptyList(),
+        recording: Recording?
+    ) {
         playbackStateSync.updateQueueState(queueUrls, currentIndex, queueMetadata, recording)
     }
     

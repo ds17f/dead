@@ -2,7 +2,7 @@ package com.deadarchive.feature.playlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.core.data.repository.LibraryRepository
+import com.deadarchive.core.data.service.LibraryService
 import com.deadarchive.core.data.repository.DownloadRepository
 import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.core.model.Show
@@ -18,7 +18,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ConcertListViewModel @Inject constructor(
-    private val libraryRepository: LibraryRepository,
+    private val libraryService: LibraryService,
     private val downloadRepository: DownloadRepository,
     private val downloadService: DownloadService
 ) : ViewModel() {
@@ -61,7 +61,7 @@ class ConcertListViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 // Add/remove the show to/from library
-                libraryRepository.toggleShowLibrary(show)
+                libraryService.toggleLibrary(show)
                 
                 // Update the state locally
                 val currentState = _uiState.value
@@ -247,6 +247,75 @@ class ConcertListViewModel @Inject constructor(
     fun confirmRemoveDownload() {
         viewModelScope.launch {
             downloadService.confirmRemoveDownload()
+        }
+    }
+    
+    /**
+     * Handle library button actions from unified LibraryButton component
+     */
+    fun handleLibraryAction(action: com.deadarchive.core.design.component.LibraryAction, show: Show) {
+        viewModelScope.launch {
+            try {
+                when (action) {
+                    com.deadarchive.core.design.component.LibraryAction.ADD_TO_LIBRARY -> {
+                        libraryService.addToLibrary(show)
+                    }
+                    com.deadarchive.core.design.component.LibraryAction.REMOVE_FROM_LIBRARY -> {
+                        libraryService.removeFromLibrary(show)
+                    }
+                    com.deadarchive.core.design.component.LibraryAction.REMOVE_WITH_DOWNLOADS -> {
+                        libraryService.removeShowWithDownloadCleanup(show, alsoRemoveDownloads = true)
+                    }
+                }
+                
+                // Update the state locally for immediate UI feedback
+                val currentState = _uiState.value
+                if (currentState is ConcertListUiState.Success) {
+                    val updatedShows = currentState.shows.map { existingShow ->
+                        if (existingShow.showId == show.showId) {
+                            existingShow.copy(isInLibrary = when (action) {
+                                com.deadarchive.core.design.component.LibraryAction.ADD_TO_LIBRARY -> true
+                                com.deadarchive.core.design.component.LibraryAction.REMOVE_FROM_LIBRARY,
+                                com.deadarchive.core.design.component.LibraryAction.REMOVE_WITH_DOWNLOADS -> false
+                            })
+                        } else {
+                            existingShow
+                        }
+                    }
+                    _uiState.value = ConcertListUiState.Success(updatedShows)
+                }
+            } catch (e: Exception) {
+                // TODO: Handle error appropriately (could show snackbar)
+                println("Library action error for show ${show.showId}: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Get download information for library removal confirmation dialog
+     */
+    fun getLibraryRemovalInfo(show: Show): com.deadarchive.core.design.component.LibraryRemovalDialogInfo {
+        return try {
+            viewModelScope.launch {
+                val info = libraryService.getDownloadInfoForShow(show)
+                com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                    show = show,
+                    hasDownloads = info.hasDownloads,
+                    downloadInfo = info.downloadInfo
+                )
+            }
+            // Return default while async operation completes
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = "Checking..."
+            )
+        } catch (e: Exception) {
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = "Error checking downloads"
+            )
         }
     }
 }

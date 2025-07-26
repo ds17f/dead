@@ -74,20 +74,21 @@ class QueueManager @Inject constructor(
             controller.setMediaItems(mediaItems, startTrackIndex, startPositionMs)
             controller.prepare()  // Always prepare the media to get into STATE_READY
             
-            // Update queue context with Recording data for enriched metadata
+            // Update only PlaybackStateSync with Recording data for enriched metadata (skip PlaybackCommandProcessor sync)
             val queueUrls = recording.tracks.mapNotNull { it.audioFile?.downloadUrl }
             val queueMetadata = recording.tracks.map { track ->
                 Pair(track.audioFile?.downloadUrl ?: "", track.displayTitle)
             }.filter { it.first.isNotEmpty() }
             
-            mediaControllerRepository.updateQueueContext(
+            // Only update PlaybackStateSync, not PlaybackCommandProcessor (which would overwrite MediaItems)
+            mediaControllerRepository.updatePlaybackStateSyncOnly(
                 queueUrls = queueUrls,
                 currentIndex = startTrackIndex,
                 queueMetadata = queueMetadata,
                 recording = recording
             )
             
-            Log.d(TAG, "Updated queue context with Recording data: ${recording.identifier}")
+            Log.d(TAG, "Updated PlaybackStateSync with Recording data: ${recording.identifier}")
             
             if (autoPlay) {
                 controller.play()

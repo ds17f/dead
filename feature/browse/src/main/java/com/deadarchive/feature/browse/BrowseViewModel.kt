@@ -9,7 +9,7 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.feature.browse.service.BrowseSearchService
-import com.deadarchive.feature.browse.service.BrowseLibraryService
+import com.deadarchive.core.data.service.LibraryService
 import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.feature.browse.service.BrowseDataService
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -25,7 +25,7 @@ import javax.inject.Inject
 @HiltViewModel
 class BrowseViewModel @Inject constructor(
     private val searchService: BrowseSearchService,
-    private val libraryService: BrowseLibraryService,
+    private val libraryService: LibraryService,
     private val downloadService: DownloadService,
     private val dataService: BrowseDataService
 ) : ViewModel() {
@@ -126,7 +126,7 @@ class BrowseViewModel @Inject constructor(
                     showForRecording?.let { show ->
                         if (!show.isInLibrary) {
                             Log.d(TAG, "Download started - adding show ${show.showId} to library")
-                            libraryService.toggleLibrary(show)
+                            libraryService.addToLibrary(show)
                             // UI updates automatically via reactive search results
                         }
                     }
@@ -231,6 +231,58 @@ class BrowseViewModel @Inject constructor(
             } catch (e: Exception) {
                 _uiState.value = BrowseUiState.Error("Failed to remove download: ${e.message}")
             }
+        }
+    }
+    
+    /**
+     * Handle library button actions from unified LibraryButton component
+     */
+    fun handleLibraryAction(action: com.deadarchive.core.design.component.LibraryAction, show: Show) {
+        viewModelScope.launch {
+            try {
+                when (action) {
+                    com.deadarchive.core.design.component.LibraryAction.ADD_TO_LIBRARY -> {
+                        libraryService.addToLibrary(show)
+                    }
+                    com.deadarchive.core.design.component.LibraryAction.REMOVE_FROM_LIBRARY -> {
+                        libraryService.removeFromLibrary(show)
+                    }
+                    com.deadarchive.core.design.component.LibraryAction.REMOVE_WITH_DOWNLOADS -> {
+                        libraryService.removeShowWithDownloadCleanup(show, alsoRemoveDownloads = true)
+                    }
+                }
+                // UI updates automatically via reactive search results
+            } catch (e: Exception) {
+                _uiState.value = BrowseUiState.Error("Failed to update library: ${e.message}")
+            }
+        }
+    }
+    
+    /**
+     * Get download information for library removal confirmation dialog
+     */
+    fun getLibraryRemovalInfo(show: Show): com.deadarchive.core.design.component.LibraryRemovalDialogInfo {
+        return try {
+            viewModelScope.launch {
+                val info = libraryService.getDownloadInfoForShow(show)
+                com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                    show = show,
+                    hasDownloads = info.hasDownloads,
+                    downloadInfo = info.downloadInfo
+                )
+            }
+            // Return default while async operation completes
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = "Checking..."
+            )
+        } catch (e: Exception) {
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = "Error checking downloads"
+            )
         }
     }
 }

@@ -20,6 +20,7 @@ import com.deadarchive.core.database.ShowEntity
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.DownloadAction
 import com.deadarchive.core.data.download.DownloadService
+import com.deadarchive.core.data.service.LibraryService
 import com.deadarchive.core.network.mapper.*
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -46,7 +47,7 @@ class PlayerViewModel @Inject constructor(
     private val downloadService: DownloadService,
     private val playerDataService: com.deadarchive.feature.player.service.PlayerDataService,
     private val playerPlaylistService: com.deadarchive.feature.player.service.PlayerPlaylistService,
-    private val playerLibraryService: com.deadarchive.feature.player.service.PlayerLibraryService
+    private val libraryService: LibraryService
 ) : ViewModel() {
     
     private val _uiState = MutableStateFlow(PlayerUiState())
@@ -79,29 +80,7 @@ class PlayerViewModel @Inject constructor(
     val hasNext = queueStateManager.hasNext.stateIn(viewModelScope, SharingStarted.Lazily, false)
     val hasPrevious = queueStateManager.hasPrevious.stateIn(viewModelScope, SharingStarted.Lazily, false)
     
-    // Queue index sync for track highlighting
-    init {
-        viewModelScope.launch {
-            queueStateManager.queueIndex.collect { queueIndex ->
-                // Only sync track index if we're viewing the same recording that's in the queue
-                val currentUrl = mediaControllerRepository.currentTrackUrl.value
-                val currentRecording = _currentRecording.value
-                
-                if (currentUrl != null && currentRecording != null) {
-                    val trackIndex = currentRecording.tracks.indexOfFirst { track ->
-                        track.audioFile?.downloadUrl == currentUrl
-                    }
-                    
-                    if (trackIndex >= 0 && trackIndex != _uiState.value.currentTrackIndex) {
-                        Log.d(TAG, "Queue index changed ($queueIndex), syncing track index to $trackIndex")
-                        Log.d(TAG, "  Recording: ${currentRecording.identifier}")
-                        Log.d(TAG, "  Track: ${currentRecording.tracks[trackIndex].displayTitle}")
-                        _uiState.value = _uiState.value.copy(currentTrackIndex = trackIndex)
-                    }
-                }
-            }
-        }
-    }
+    // Track UI sync handled by MediaController combine flow below - removed duplicate QueueStateManager flow
     
     // Playlist management state - delegated to service
     val currentPlaylist: StateFlow<List<PlaylistItem>> = playerPlaylistService.currentPlaylist
@@ -116,7 +95,9 @@ class PlayerViewModel @Inject constructor(
     val setlistState: StateFlow<SetlistState> = _setlistState.asStateFlow()
     
     // Library state management - delegated to service
-    val isInLibrary: StateFlow<Boolean> = playerLibraryService.isInLibrary
+    // Library status state flow - managed locally since unified service doesn't provide this
+    private val _isInLibrary = MutableStateFlow(false)
+    val isInLibrary: StateFlow<Boolean> = _isInLibrary.asStateFlow()
     
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
@@ -129,8 +110,8 @@ class PlayerViewModel @Inject constructor(
                     mediaControllerRepository.currentPosition,
                     mediaControllerRepository.duration,
                     mediaControllerRepository.playbackState,
-                    mediaControllerRepository.currentTrackUrl
-                ) { isPlaying, position, duration, state, currentTrackUrl ->
+                    mediaControllerRepository.currentTrackMediaId
+                ) { isPlaying, position, duration, state, currentMediaId ->
                     var updatedState = _uiState.value.copy(
                         isPlaying = isPlaying,
                         currentPosition = position,
@@ -138,22 +119,58 @@ class PlayerViewModel @Inject constructor(
                         playbackState = state
                     )
                     
-                    // Sync track index based on service's current track URL
-                    currentTrackUrl?.let { url ->
-                        val trackIndex = _uiState.value.tracks.indexOfFirst { track ->
-                            track.audioFile?.downloadUrl == url
+                    // SAFE TRACK MATCHING USING MEDIAID
+                    currentMediaId?.let { mediaId ->
+                        // SAFETY CHECK: Only try to match if we have a recording and tracks loaded
+                        val currentRecording = _currentRecording.value
+                        val availableTracks = _uiState.value.tracks
+                        
+                        if (currentRecording == null || availableTracks.isEmpty()) {
+                            Log.d(TAG, "=== SKIPPING TRACK MATCHING (NO DATA) ===")
+                            Log.d(TAG, "MediaId: $mediaId")
+                            Log.d(TAG, "Recording loaded: ${currentRecording != null}")
+                            Log.d(TAG, "Tracks available: ${availableTracks.size}")
+                            Log.d(TAG, "Reason: App startup or no recording loaded yet")
+                            return@let // Skip matching, don't crash
                         }
-                        if (trackIndex >= 0 && trackIndex != updatedState.currentTrackIndex) {
-                            Log.d(TAG, "Service track changed, syncing UI track index from ${updatedState.currentTrackIndex} to $trackIndex")
-                            Log.d(TAG, "  Current URL: $url")
-                            Log.d(TAG, "  Matched track: ${_uiState.value.tracks.getOrNull(trackIndex)?.displayTitle}")
-                            Log.d(TAG, "  Recording: ${_currentRecording.value?.identifier}")
-                            updatedState = updatedState.copy(currentTrackIndex = trackIndex)
-                        } else if (trackIndex < 0) {
-                            Log.d(TAG, "Track not found in current recording tracks - URL: $url")
-                            Log.d(TAG, "  Current recording: ${_currentRecording.value?.identifier}")
-                            Log.d(TAG, "  Available tracks: ${_uiState.value.tracks.size}")
-                            // If track not found in current recording, keep current index
+                        
+                        Log.d(TAG, "=== TRACK MATCHING WITH MEDIAID ===")
+                        Log.d(TAG, "MediaId to match: $mediaId")
+                        Log.d(TAG, "Current recording: ${currentRecording.identifier}")
+                        Log.d(TAG, "Available tracks: ${availableTracks.size}")
+                        
+                        // Log all available track URLs for debugging
+                        availableTracks.forEachIndexed { i, track ->
+                            Log.d(TAG, "  Track[$i]: ${track.displayTitle} -> ${track.audioFile?.downloadUrl}")
+                        }
+                        
+                        // Find track by exact MediaId match (MediaId should be the original downloadUrl)
+                        val trackIndex = availableTracks.indexOfFirst { track ->
+                            track.audioFile?.downloadUrl == mediaId
+                        }
+                        
+                        if (trackIndex >= 0) {
+                            if (trackIndex != updatedState.currentTrackIndex) {
+                                Log.d(TAG, "✅ TRACK MATCH SUCCESS: syncing UI track index from ${updatedState.currentTrackIndex} to $trackIndex")
+                                Log.d(TAG, "  Matched track: ${availableTracks[trackIndex].displayTitle}")
+                                updatedState = updatedState.copy(currentTrackIndex = trackIndex)
+                            }
+                        } else {
+                            // FAIL-FAST: Only crash if we definitely should have found a match
+                            val errorMessage = buildString {
+                                appendLine("❌ TRACK MATCHING FAILED WITH VALID DATA!")
+                                appendLine("MediaId: $mediaId")  
+                                appendLine("Recording: ${currentRecording.identifier}")
+                                appendLine("Available tracks: ${availableTracks.size}")
+                                availableTracks.forEachIndexed { i, track ->
+                                    appendLine("  [$i] ${track.displayTitle} -> ${track.audioFile?.downloadUrl}")
+                                }
+                                appendLine("DEBUGGING INFO:")
+                                appendLine("  - MediaId should match one of the downloadUrls above")
+                                appendLine("  - If no match found, MediaId/downloadUrl mismatch exists")
+                            }
+                            Log.e(TAG, errorMessage)
+                            throw IllegalStateException("Track matching failed with valid data: $errorMessage")
                         }
                     }
                     
@@ -208,7 +225,7 @@ class PlayerViewModel @Inject constructor(
                     
                     // Update library status for this recording's show
                     val showId = playerDataService.generateShowId(recording)
-                    playerLibraryService.checkLibraryStatus(showId)
+                    checkLibraryStatus(showId)
                     
                     // Create playlist from filtered recording tracks
                     val playlist = recording.tracks.mapIndexed { index, track ->
@@ -934,7 +951,13 @@ class PlayerViewModel @Inject constructor(
      */
     fun checkLibraryStatus(showId: String) {
         viewModelScope.launch {
-            playerLibraryService.checkLibraryStatus(showId)
+            try {
+                val isInLib = libraryService.isShowInLibrary(showId)
+                _isInLibrary.value = isInLib
+            } catch (e: Exception) {
+                Log.e(TAG, "checkLibraryStatus: Failed to check library status for show $showId", e)
+                _isInLibrary.value = false
+            }
         }
     }
     
@@ -947,12 +970,22 @@ class PlayerViewModel @Inject constructor(
                 val currentRecording = _currentRecording.value
                 if (currentRecording != null) {
                     val showId = playerDataService.generateShowId(currentRecording)
-                    val currentStatus = playerLibraryService.isInLibrary.value
+                    val currentStatus = _isInLibrary.value
+                    
+                    // Create a minimal Show object for the LibraryService
+                    val show = Show(
+                        date = currentRecording.concertDate ?: "Unknown Date",
+                        venue = currentRecording.concertVenue ?: "Unknown Venue",
+                        location = currentRecording.concertLocation ?: "",
+                        recordings = listOf(currentRecording)
+                    )
                     
                     if (currentStatus) {
-                        playerLibraryService.removeFromLibrary(showId)
+                        libraryService.removeFromLibrary(showId)
+                        _isInLibrary.value = false
                     } else {
-                        playerLibraryService.addToLibrary(showId)
+                        libraryService.addToLibrary(show)
+                        _isInLibrary.value = true
                     }
                     
                     Log.d(TAG, "toggleLibrary: Toggled library for show $showId")
