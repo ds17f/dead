@@ -92,6 +92,13 @@ class LibraryRepositoryImpl @Inject constructor(
     
     override suspend fun addShowToLibrary(show: Show): Boolean {
         return try {
+            // Check if show is already in library to preserve original timestamp
+            val alreadyInLibrary = isShowInLibrary(show.showId)
+            if (alreadyInLibrary) {
+                println("DEBUG LibraryRepository: Show ${show.showId} already in library, preserving original timestamp")
+                return false // Return false to indicate it wasn't newly added
+            }
+            
             val timestamp = System.currentTimeMillis()
             showDao.addShowToLibrary(show.showId, timestamp)
             println("DEBUG LibraryRepository: Added show ${show.showId} to library at $timestamp")
