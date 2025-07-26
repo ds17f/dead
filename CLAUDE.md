@@ -446,12 +446,13 @@ The `:core:media` module implements a service-oriented architecture with MediaCo
 
 ### Playback Flow
 1. User selects track → QueueManager loads Recording with full metadata
-2. QueueManager creates MediaItems with resolved URLs and calls `updatePlaybackStateSyncOnly()`
-3. PlaybackStateSync enriches CurrentTrackInfo with concert details and exposes MediaId
-4. PlayerViewModel matches tracks using stable MediaId instead of URL parsing
-5. DeadArchivePlaybackService displays proper track names and show info in notifications
-6. ExoPlayer handles actual audio streaming with Media3 integration
-7. PlaybackEventTracker logs history for recommendations
+2. QueueManager creates MediaItems with stable `recordingId_filename` MediaId format
+3. LocalFileResolver resolves download URLs to `file://` paths for offline content
+4. PlaybackStateSync matches tracks using smart URL/filename matching for rich metadata
+5. PlayerViewModel syncs UI highlighting using MediaId matching against loaded tracks
+6. DeadArchivePlaybackService displays proper track names and show info in notifications
+7. ExoPlayer handles actual audio streaming/playback with Media3 integration
+8. PlaybackEventTracker logs history for recommendations
 
 ### Rich Metadata System
 - **Before:** URL parsing like `gd1975.07.23.studio.bershaw.t01-BosBlues1.mp3`
@@ -459,14 +460,17 @@ The `:core:media` module implements a service-oriented architecture with MediaCo
 - **Benefits:** Professional music app experience, MiniPlayer visibility, accurate notifications
 
 ### Track Highlighting System
-- **MediaId-based Matching:** Uses `MediaItem.mediaId` (original downloadUrl) for stable track identification
-- **Streaming vs Downloaded:** MediaId remains consistent regardless of playback source
-- **Fail-fast Debugging:** Throws detailed exceptions when track matching fails
-- **Safety Checks:** Prevents crashes during app startup when no recording data is loaded
+- **Stable MediaId Format:** Uses `recordingId_filename` pattern (e.g., `gd1977-05-08_d1t01.mp3`) for reliable track identification
+- **Unified Streaming/Downloaded Support:** Same MediaId works for both streaming and downloaded content
+- **Smart URL Matching:** PlaybackStateSync handles both `https://` and `file://` URLs for track metadata lookup
+- **Cross-Component Synchronization:** Consistent highlighting across PlayerViewModel, MiniPlayer, and notifications
 
 ### Critical Bug Fixes
 - **Media Player Looping:** Fixed MediaItem conflicts between QueueManager and PlaybackCommandProcessor
-- **Downloaded Track Highlighting:** Resolved URL mismatch issues using MediaId-based matching
+- **Downloaded Track Highlighting:** Resolved with stable MediaId format and smart URL matching in PlaybackStateSync
+- **Media State Synchronization:** Fixed PlaybackStateSync track lookup to work with downloaded files
+- **Library Timestamp Preservation:** Downloading existing library shows preserves original "added" date
+- **Navigation Interference:** Disabled aggressive auto-loading that overwrote user show selections
 - **Feedback Loop Prevention:** Added distinctUntilChanged to QueueStateManager flows
 
 The media system supports background playback, queue management, offline file resolution, automatic resume of last played track on app restart, and robust track highlighting for both streaming and downloaded content.
