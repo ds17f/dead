@@ -107,6 +107,20 @@ class LibraryService @Inject constructor(
     }
     
     /**
+     * Get reactive library status for a show.
+     * Returns a Flow that emits true/false whenever the show's library status changes.
+     * This enables UI components to automatically update when library changes occur.
+     */
+    fun isShowInLibraryFlow(showId: String): kotlinx.coroutines.flow.Flow<Boolean> {
+        return try {
+            libraryRepository.isShowInLibraryFlow(showId)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to create library status flow for show $showId: ${e.message}")
+            kotlinx.coroutines.flow.flowOf(false)
+        }
+    }
+    
+    /**
      * Check if a show has any downloads (completed, in-progress, or paused).
      * Used for smart library removal with download cleanup.
      */

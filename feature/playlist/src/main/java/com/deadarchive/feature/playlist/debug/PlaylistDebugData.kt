@@ -24,7 +24,7 @@ fun collectPlaylistDebugData(
     val currentRecording by viewModel.currentRecording.collectAsState()
     val downloadStates by viewModel.downloadStates.collectAsState()
     val isNavigationLoading by viewModel.isNavigationLoading.collectAsState()
-    val isInLibrary by viewModel.isInLibrary.collectAsState()
+    val isInLibrary by viewModel.isInLibraryFlow.collectAsState()
     
     // For now, create mock data to test the UI
     return DebugData(

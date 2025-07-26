@@ -34,6 +34,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import javax.inject.Inject
 
 @HiltViewModel
@@ -94,10 +95,19 @@ class PlayerViewModel @Inject constructor(
     private val _setlistState = MutableStateFlow<SetlistState>(SetlistState.Initial)
     val setlistState: StateFlow<SetlistState> = _setlistState.asStateFlow()
     
-    // Library state management - delegated to service
-    // Library status state flow - managed locally since unified service doesn't provide this
-    private val _isInLibrary = MutableStateFlow(false)
-    val isInLibrary: StateFlow<Boolean> = _isInLibrary.asStateFlow()
+    // Library state management - reactive flow from LibraryService
+    // This automatically updates when library status changes (e.g., when downloads add shows to library)
+    val isInLibraryFlow: StateFlow<Boolean> = currentRecording
+        .filterNotNull()
+        .flatMapLatest { recording ->
+            val showId = playerDataService.generateShowId(recording)
+            libraryService.isShowInLibraryFlow(showId)
+        }
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = false
+        )
     
     init {
         Log.d(TAG, "PlayerViewModel: Initializing")
@@ -223,9 +233,7 @@ class PlayerViewModel @Inject constructor(
                     
                     _currentRecording.value = recording
                     
-                    // Update library status for this recording's show
-                    val showId = playerDataService.generateShowId(recording)
-                    checkLibraryStatus(showId)
+                    // Library status will be automatically updated via reactive flow
                     
                     // Create playlist from filtered recording tracks
                     val playlist = recording.tracks.mapIndexed { index, track ->
@@ -639,8 +647,9 @@ class PlayerViewModel @Inject constructor(
         if (recording != null) {
             // Create a minimal Show object for the DownloadService
             val show = Show(
-                date = recording.title?.substringBefore(" ") ?: "Unknown Date",
-                venue = "Recording: ${recording.identifier}",
+                date = recording.concertDate,
+                venue = recording.concertVenue,
+                location = recording.concertLocation,
                 recordings = listOf(recording)
             )
             
@@ -651,6 +660,8 @@ class PlayerViewModel @Inject constructor(
                     Log.e(TAG, "handleDownloadButtonClick: $errorMessage")
                 }
             )
+            
+            // Library status will be automatically updated via reactive flow when downloads add shows to library
         } else {
             Log.w(TAG, "handleDownloadButtonClick: No recording available")
         }
@@ -946,20 +957,6 @@ class PlayerViewModel @Inject constructor(
         _setlistState.value = SetlistState.Initial
     }
     
-    /**
-     * Set current show ID for library status observation
-     */
-    fun checkLibraryStatus(showId: String) {
-        viewModelScope.launch {
-            try {
-                val isInLib = libraryService.isShowInLibrary(showId)
-                _isInLibrary.value = isInLib
-            } catch (e: Exception) {
-                Log.e(TAG, "checkLibraryStatus: Failed to check library status for show $showId", e)
-                _isInLibrary.value = false
-            }
-        }
-    }
     
     /**
      * Toggle library status for current show
@@ -970,7 +967,7 @@ class PlayerViewModel @Inject constructor(
                 val currentRecording = _currentRecording.value
                 if (currentRecording != null) {
                     val showId = playerDataService.generateShowId(currentRecording)
-                    val currentStatus = _isInLibrary.value
+                    val currentStatus = libraryService.isShowInLibrary(showId)
                     
                     // Create a minimal Show object for the LibraryService
                     val show = Show(
@@ -982,10 +979,8 @@ class PlayerViewModel @Inject constructor(
                     
                     if (currentStatus) {
                         libraryService.removeFromLibrary(showId)
-                        _isInLibrary.value = false
                     } else {
                         libraryService.addToLibrary(show)
-                        _isInLibrary.value = true
                     }
                     
                     Log.d(TAG, "toggleLibrary: Toggled library for show $showId")
@@ -1011,6 +1006,68 @@ class PlayerViewModel @Inject constructor(
     fun confirmRemoveDownload() {
         viewModelScope.launch {
             downloadService.confirmRemoveDownload()
+        }
+    }
+    
+    /**
+     * Handle library actions from LibraryButton component
+     */
+    fun handleLibraryAction(action: com.deadarchive.core.design.component.LibraryAction) {
+        viewModelScope.launch {
+            try {
+                val currentRecording = _currentRecording.value
+                if (currentRecording != null) {
+                    val showId = playerDataService.generateShowId(currentRecording)
+                    // Create a minimal show object from recording
+                    val show = Show(
+                        date = currentRecording.concertDate,
+                        venue = currentRecording.concertVenue,
+                        location = currentRecording.concertLocation,
+                        recordings = listOf(currentRecording)
+                    )
+                    
+                    when (action) {
+                        com.deadarchive.core.design.component.LibraryAction.ADD_TO_LIBRARY -> {
+                            libraryService.addToLibrary(show)
+                        }
+                        com.deadarchive.core.design.component.LibraryAction.REMOVE_FROM_LIBRARY -> {
+                            libraryService.removeFromLibrary(show)
+                        }
+                        com.deadarchive.core.design.component.LibraryAction.REMOVE_WITH_DOWNLOADS -> {
+                            libraryService.removeShowWithDownloadCleanup(show, alsoRemoveDownloads = true)
+                        }
+                    }
+                    Log.d(TAG, "handleLibraryAction: Handled action $action for show $showId")
+                } else {
+                    Log.w(TAG, "handleLibraryAction: No current recording to handle library action for")
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "handleLibraryAction: Failed to handle library action $action", e)
+            }
+        }
+    }
+    
+    /**
+     * Get library removal info for LibraryButton component
+     */
+    fun getLibraryRemovalInfo(show: com.deadarchive.core.model.Show): com.deadarchive.core.design.component.LibraryRemovalDialogInfo {
+        return try {
+            // Use the shared library service to get download info
+            runBlocking {
+                val info = libraryService.getDownloadInfoForShow(show)
+                com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                    show = show,
+                    hasDownloads = info.hasDownloads,
+                    downloadInfo = info.downloadInfo
+                )
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "getLibraryRemovalInfo: Error getting download info", e)
+            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
+                show = show,
+                hasDownloads = false,
+                downloadInfo = ""
+            )
         }
     }
     

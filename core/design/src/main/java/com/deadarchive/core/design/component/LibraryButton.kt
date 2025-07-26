@@ -39,11 +39,11 @@ data class LibraryRemovalDialogInfo(
 
 /**
  * Unified library button component that handles all library operations consistently
- * across the entire application. Features built-in optimistic state management
- * for immediate visual feedback and automatic download integration.
+ * across the entire application. Features reactive state management that automatically
+ * updates when library status changes (e.g., when downloads add shows to library).
  * 
  * @param show Show object to add/remove from library
- * @param isInLibrary Current library status
+ * @param isInLibraryFlow Reactive Flow of library status that automatically updates
  * @param onClick Action handler for library operations
  * @param onRemovalInfoNeeded Callback to get download info for removal confirmation
  * @param showDownloadConfirmation Whether to show download confirmation dialogs
@@ -54,35 +54,20 @@ data class LibraryRemovalDialogInfo(
 @Composable
 fun LibraryButton(
     show: Show,
-    isInLibrary: Boolean,
+    isInLibraryFlow: kotlinx.coroutines.flow.Flow<Boolean>,
     onClick: (LibraryAction) -> Unit,
     onRemovalInfoNeeded: (Show) -> LibraryRemovalDialogInfo = { LibraryRemovalDialogInfo(it, false, "") },
     showDownloadConfirmation: Boolean = true,
     size: Dp = 24.dp,
     modifier: Modifier = Modifier
 ) {
-    // Internal optimistic state management
-    var internalOptimisticState by remember { mutableStateOf<Boolean?>(null) }
+    // Reactive state management - automatically updates when library status changes
+    val isInLibrary by isInLibraryFlow.collectAsState(initial = false)
     var showRemovalDialog by remember { mutableStateOf(false) }
     var removalDialogInfo by remember { mutableStateOf<LibraryRemovalDialogInfo?>(null) }
     
-    // Clear optimistic state when actual state catches up
-    LaunchedEffect(isInLibrary) {
-        if (internalOptimisticState != null && internalOptimisticState == isInLibrary) {
-            internalOptimisticState = null
-        }
-    }
-    
-    // Auto-clear optimistic state after timeout to prevent stuck states
-    LaunchedEffect(internalOptimisticState) {
-        if (internalOptimisticState != null) {
-            kotlinx.coroutines.delay(3000) // 3 second timeout
-            internalOptimisticState = null
-        }
-    }
-    
-    // Use optimistic state if available, otherwise use actual state
-    val displayState = internalOptimisticState ?: isInLibrary
+    // Use reactive state directly - no need for optimistic state since this is truly reactive
+    val displayState = isInLibrary
     
     Box(
         contentAlignment = Alignment.Center,
@@ -98,18 +83,15 @@ fun LibraryButton(
                                 removalDialogInfo = info
                                 showRemovalDialog = true
                             } else {
-                                // No downloads, remove immediately with optimistic state
-                                internalOptimisticState = false
+                                // No downloads, remove immediately - reactive state will update automatically
                                 onClick(LibraryAction.REMOVE_FROM_LIBRARY)
                             }
                         } else {
-                            // No confirmation, remove immediately with optimistic state
-                            internalOptimisticState = false
+                            // No confirmation, remove immediately - reactive state will update automatically
                             onClick(LibraryAction.REMOVE_FROM_LIBRARY)
                         }
                     } else {
-                        // Adding to library - immediate optimistic state
-                        internalOptimisticState = true
+                        // Adding to library - reactive state will update automatically
                         onClick(LibraryAction.ADD_TO_LIBRARY)
                     }
                 }
@@ -136,7 +118,6 @@ fun LibraryButton(
                 info = removalDialogInfo!!,
                 onConfirm = { removeDownloads ->
                     showRemovalDialog = false
-                    internalOptimisticState = false
                     val action = if (removeDownloads) {
                         LibraryAction.REMOVE_WITH_DOWNLOADS
                     } else {

@@ -14,6 +14,8 @@ import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.DownloadButton
 import com.deadarchive.core.design.component.DownloadAction
+import com.deadarchive.core.design.component.LibraryButton
+import com.deadarchive.core.design.component.LibraryAction
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -153,18 +155,12 @@ fun PlaylistScreen(
     var showMenu by remember { mutableStateOf(false) }
     
     
-    // Library state
-    val isInLibrary by viewModel.isInLibrary.collectAsState()
+    // Library state is now handled reactively inside LibraryButton - no longer needed here
     
     // Current track URL for play state detection
     val currentTrackUrl by viewModel.mediaControllerRepository.currentTrackUrl.collectAsState()
     
-    // Check library status when show changes
-    LaunchedEffect(showId) {
-        showId?.let { id ->
-            viewModel.checkLibraryStatus(id)
-        }
-    }
+    // Library status is now handled reactively by LibraryButton component
     
     
     // Load best recording for the show (including user preferences)
@@ -441,24 +437,25 @@ fun PlaylistScreen(
                                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                                     verticalAlignment = Alignment.CenterVertically
                                 ) {
-                                    // Library button
-                                    IconButton(
-                                        onClick = { viewModel.toggleLibrary() },
-                                        modifier = Modifier.size(40.dp)
-                                    ) {
-                                        Icon(
-                                            painter = if (isInLibrary) {
-                                                IconResources.Content.LibraryAddCheck()
-                                            } else {
-                                                IconResources.Content.LibraryAdd()
+                                    // Library button - using unified reactive component
+                                    currentRecording?.let { recording ->
+                                        val show = Show(
+                                            date = recording.concertDate,
+                                            venue = recording.concertVenue,
+                                            location = recording.concertLocation,
+                                            recordings = listOf(recording)
+                                        )
+                                        LibraryButton(
+                                            show = show,
+                                            isInLibraryFlow = viewModel.isInLibraryFlow,
+                                            onClick = { action: LibraryAction ->
+                                                viewModel.handleLibraryAction(action)
                                             },
-                                            contentDescription = if (isInLibrary) "Remove from Library" else "Add to Library",
-                                            modifier = Modifier.size(24.dp),
-                                            tint = if (isInLibrary) {
-                                                MaterialTheme.colorScheme.error // Red color when in library
-                                            } else {
-                                                MaterialTheme.colorScheme.onSurface
-                                            }
+                                            onRemovalInfoNeeded = { showToRemove ->
+                                                viewModel.getLibraryRemovalInfo(showToRemove)
+                                            },
+                                            size = 24.dp,
+                                            modifier = Modifier.size(40.dp)
                                         )
                                     }
                                     
