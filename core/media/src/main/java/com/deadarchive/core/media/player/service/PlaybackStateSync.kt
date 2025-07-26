@@ -317,9 +317,15 @@ class PlaybackStateSync @Inject constructor(
                 return
             }
             
-            // Find the track in the recording by matching URL
+            // Find the track in the recording by matching URL (handle both streaming and downloaded)
             val track = recording.tracks.find { track ->
-                track.audioFile?.downloadUrl == trackUrl
+                val downloadUrl = track.audioFile?.downloadUrl
+                if (downloadUrl != null) {
+                    // For downloaded tracks, trackUrl is file:// but we need to match against original downloadUrl
+                    downloadUrl == trackUrl || trackUrl.endsWith(track.filename)
+                } else {
+                    false
+                }
             }
             
             if (track == null) {

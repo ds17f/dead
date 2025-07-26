@@ -229,7 +229,7 @@ class QueueManager @Inject constructor(
         
         return MediaItem.Builder()
             .setUri(android.net.Uri.parse(resolvedUrl))
-            .setMediaId(downloadUrl) // Use original URL as mediaId for queue matching
+            .setMediaId("${recording.identifier}_${track.filename}") // Use stable recordingId_filename
             .setMediaMetadata(metadata)
             .build()
     }

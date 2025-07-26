@@ -149,38 +149,68 @@ class PlayerViewModel @Inject constructor(
                         Log.d(TAG, "Current recording: ${currentRecording.identifier}")
                         Log.d(TAG, "Available tracks: ${availableTracks.size}")
                         
-                        // Log all available track URLs for debugging
+                        // Log all available tracks with new MediaId format for debugging
                         availableTracks.forEachIndexed { i, track ->
-                            Log.d(TAG, "  Track[$i]: ${track.displayTitle} -> ${track.audioFile?.downloadUrl}")
+                            val expectedMediaId = "${currentRecording.identifier}_${track.filename}"
+                            Log.d(TAG, "  Track[$i]: ${track.displayTitle}")
+                            Log.d(TAG, "    Expected MediaId: $expectedMediaId")
+                            Log.d(TAG, "    Filename: ${track.filename}")
+                            Log.d(TAG, "    DownloadURL: ${track.audioFile?.downloadUrl}")
                         }
                         
-                        // Find track by exact MediaId match (MediaId should be the original downloadUrl)
+                        // Find track by exact MediaId match (MediaId is recordingId_filename)
                         val trackIndex = availableTracks.indexOfFirst { track ->
-                            track.audioFile?.downloadUrl == mediaId
+                            "${currentRecording.identifier}_${track.filename}" == mediaId
                         }
                         
                         if (trackIndex >= 0) {
                             if (trackIndex != updatedState.currentTrackIndex) {
-                                Log.d(TAG, "✅ TRACK MATCH SUCCESS: syncing UI track index from ${updatedState.currentTrackIndex} to $trackIndex")
-                                Log.d(TAG, "  Matched track: ${availableTracks[trackIndex].displayTitle}")
+                                Log.w(TAG, "✅ TRACK MATCH SUCCESS: syncing UI track index from ${updatedState.currentTrackIndex} to $trackIndex")
+                                Log.w(TAG, "  Matched track: ${availableTracks[trackIndex].displayTitle}")
+                                Log.w(TAG, "  Setting currentTrackIndex to: $trackIndex")
                                 updatedState = updatedState.copy(currentTrackIndex = trackIndex)
+                                Log.w(TAG, "  Updated state currentTrackIndex: ${updatedState.currentTrackIndex}")
+                            } else {
+                                Log.d(TAG, "✅ Track already matched at index $trackIndex: ${availableTracks[trackIndex].displayTitle}")
                             }
                         } else {
-                            // FAIL-FAST: Only crash if we definitely should have found a match
-                            val errorMessage = buildString {
-                                appendLine("❌ TRACK MATCHING FAILED WITH VALID DATA!")
-                                appendLine("MediaId: $mediaId")  
-                                appendLine("Recording: ${currentRecording.identifier}")
-                                appendLine("Available tracks: ${availableTracks.size}")
+                            // LOG WARNING: Track matching failed - likely during show transition
+                            Log.w(TAG, "⚠️ Track matching failed - likely during show transition")
+                            Log.w(TAG, "MediaId: $mediaId")  
+                            Log.w(TAG, "Recording: ${currentRecording.identifier}")
+                            Log.w(TAG, "Available tracks: ${availableTracks.size}")
+                            Log.w(TAG, "ENTERING TRACK MATCHING FAILURE LOGIC")
+                            
+                            // Check if MediaId contains current recording identifier
+                            val mediaIdBelongsToCurrentRecording = mediaId.contains(currentRecording.identifier)
+                            Log.w(TAG, "MediaId belongs to current recording: $mediaIdBelongsToCurrentRecording")
+                            
+                            if (mediaIdBelongsToCurrentRecording) {
+                                // MediaId belongs to current recording but no match found - genuine issue
+                                Log.e(TAG, "❌ GENUINE TRACK MATCHING FAILURE!")
                                 availableTracks.forEachIndexed { i, track ->
-                                    appendLine("  [$i] ${track.displayTitle} -> ${track.audioFile?.downloadUrl}")
+                                    Log.e(TAG, "  [$i] ${track.displayTitle} -> ${track.audioFile?.downloadUrl}")
                                 }
-                                appendLine("DEBUGGING INFO:")
-                                appendLine("  - MediaId should match one of the downloadUrls above")
-                                appendLine("  - If no match found, MediaId/downloadUrl mismatch exists")
+                                // Reset track index only for genuine failures
+                                updatedState = updatedState.copy(currentTrackIndex = -1)
+                            } else {
+                                // MediaId is from different recording - need to load the correct recording
+                                Log.w(TAG, "📱 Different recording detected - extracting recording ID from MediaId")
+                                val recordingIdFromMediaId = mediaId.substringBefore("_")
+                                Log.w(TAG, "  Extracted recording ID: $recordingIdFromMediaId")
+                                Log.w(TAG, "  Current recording ID: ${currentRecording.identifier}")
+                                Log.w(TAG, "  Are they different? ${recordingIdFromMediaId != currentRecording.identifier}")
+                                Log.w(TAG, "  Is extracted ID not blank? ${recordingIdFromMediaId.isNotBlank()}")
+                                
+                                if (recordingIdFromMediaId != currentRecording.identifier && recordingIdFromMediaId.isNotBlank()) {
+                                    Log.w(TAG, "🚨 Different recording playing but NOT auto-loading to avoid navigation interference")
+                                    Log.w(TAG, "  Playing: $recordingIdFromMediaId")
+                                    Log.w(TAG, "  UI showing: ${currentRecording.identifier}")
+                                    // Don't auto-load - let user navigate freely
+                                } else {
+                                    Log.w(TAG, "📱 Show transition in progress - keeping current track index")
+                                }
                             }
-                            Log.e(TAG, errorMessage)
-                            throw IllegalStateException("Track matching failed with valid data: $errorMessage")
                         }
                     }
                     
