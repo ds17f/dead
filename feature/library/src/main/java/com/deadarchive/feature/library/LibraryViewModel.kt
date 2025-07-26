@@ -249,29 +249,35 @@ class LibraryViewModel @Inject constructor(
     }
     
     /**
+     * Get reactive library status for a specific show.
+     * Returns a Flow that automatically updates when library status changes.
+     */
+    fun getLibraryStatusFlow(show: Show): kotlinx.coroutines.flow.Flow<Boolean> {
+        return libraryService.isShowInLibraryFlow(show.showId)
+    }
+    
+    /**
      * Get download information for library removal confirmation dialog
      */
-    fun getLibraryRemovalInfo(show: Show): com.deadarchive.core.design.component.LibraryRemovalDialogInfo {
+    fun getLibraryRemovalInfo(show: Show): com.deadarchive.core.data.service.LibraryRemovalInfo {
         return try {
-            viewModelScope.launch {
-                val info = libraryService.getDownloadInfoForShow(show)
-                com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
-                    show = show,
-                    hasDownloads = info.hasDownloads,
-                    downloadInfo = info.downloadInfo
-                )
-            }
-            // Return default while async operation completes
-            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
-                show = show,
+            var result = com.deadarchive.core.data.service.LibraryRemovalInfo(
                 hasDownloads = false,
-                downloadInfo = "Checking..."
+                downloadInfo = "Checking...",
+                downloadState = com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded
             )
+            
+            viewModelScope.launch {
+                result = libraryService.getDownloadInfoForShow(show)
+            }
+            
+            // Return default while async operation completes
+            result
         } catch (e: Exception) {
-            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
-                show = show,
+            com.deadarchive.core.data.service.LibraryRemovalInfo(
                 hasDownloads = false,
-                downloadInfo = "Error checking downloads"
+                downloadInfo = "Error checking downloads",
+                downloadState = com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded
             )
         }
     }

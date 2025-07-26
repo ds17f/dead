@@ -83,7 +83,10 @@ fun ExpandableConcertItem(
     settings: AppSettings,
     onShowClick: (Show) -> Unit,
     onRecordingClick: (Recording) -> Unit,
-    onLibraryClick: (Show) -> Unit,
+    isInLibraryFlow: kotlinx.coroutines.flow.Flow<Boolean>,
+    onLibraryAction: (LibraryAction) -> Unit,
+    onLibraryConfirmationNeeded: (LibraryRemovalDialogConfig) -> Unit = { },
+    alwaysConfirmLibraryRemoval: Boolean = false,
     onDownloadClick: (Recording) -> Unit = { },
     getDownloadState: (Recording) -> DownloadState = { DownloadState.Available },
     onDownloadButtonClick: (Show) -> Unit = { },
@@ -111,7 +114,10 @@ fun ExpandableConcertItem(
                 isExpanded = isExpanded,
                 onExpandClick = { isExpanded = !isExpanded },
                 onShowClick = onShowClick,
-                onLibraryClick = onLibraryClick,
+                isInLibraryFlow = isInLibraryFlow,
+                onLibraryAction = onLibraryAction,
+                onLibraryConfirmationNeeded = onLibraryConfirmationNeeded,
+                alwaysConfirmLibraryRemoval = alwaysConfirmLibraryRemoval,
                 onDownloadButtonClick = onDownloadButtonClick,
                 getShowDownloadState = getShowDownloadState
             )
@@ -141,7 +147,10 @@ private fun ShowHeader(
     isExpanded: Boolean,
     onExpandClick: () -> Unit,
     onShowClick: (Show) -> Unit,
-    onLibraryClick: (Show) -> Unit,
+    isInLibraryFlow: kotlinx.coroutines.flow.Flow<Boolean>,
+    onLibraryAction: (LibraryAction) -> Unit,
+    onLibraryConfirmationNeeded: (LibraryRemovalDialogConfig) -> Unit,
+    alwaysConfirmLibraryRemoval: Boolean,
     onDownloadButtonClick: (Show) -> Unit,
     getShowDownloadState: (Show) -> ShowDownloadState,
     modifier: Modifier = Modifier
@@ -227,14 +236,18 @@ private fun ShowHeader(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(4.dp)
         ) {
-            // Library button
-            IconButton(
-                onClick = { onLibraryClick(show) }
+            // Library button - using unified reactive component with IconButton sizing
+            Box(
+                modifier = Modifier.size(48.dp), // Standard IconButton size
+                contentAlignment = Alignment.Center
             ) {
-                Icon(
-                    painter = if (show.isInLibrary) painterResource(R.drawable.ic_library_add_check) else painterResource(R.drawable.ic_library_add),
-                    contentDescription = if (show.isInLibrary) "Remove from Library" else "Add to Library",
-                    tint = if (show.isInLibrary) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
+                LibraryButton(
+                    show = show,
+                    isInLibraryFlow = isInLibraryFlow,
+                    onClick = onLibraryAction,
+                    onConfirmationNeeded = onLibraryConfirmationNeeded,
+                    alwaysConfirmRemoval = alwaysConfirmLibraryRemoval,
+                    size = 24.dp
                 )
             }
             

@@ -47,7 +47,9 @@ import com.deadarchive.core.model.Recording
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
-// import com.deadarchive.core.design.component.ConfirmationDialog // Temporarily removed
+import com.deadarchive.core.design.component.LibraryAction
+import com.deadarchive.core.design.component.LibraryRemovalConfirmationDialog
+import com.deadarchive.core.design.component.LibraryRemovalDialogConfig
 import com.deadarchive.core.settings.SettingsViewModel
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -77,6 +79,7 @@ fun BrowseScreen(
     val settings by settingsViewModel.settings.collectAsState()
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
+    var removalDialogConfig by remember { mutableStateOf<LibraryRemovalDialogConfig?>(null) }
     
     // Handle era filtering
     LaunchedEffect(initialEra) {
@@ -188,14 +191,17 @@ fun BrowseScreen(
                                     Log.d("BrowseScreen", "onRecordingClick: Navigating to player for recording ${recording.identifier} - ${recording.title}")
                                     onNavigateToRecording(recording)
                                 },
-                                onLibraryClick = { clickedShow: Show ->
-                                    if (clickedShow.isInLibrary) {
-                                        // Show confirmation for removal
-                                        showToRemove = clickedShow
-                                    } else {
-                                        // Add to library immediately
-                                        viewModel.toggleLibrary(clickedShow)
-                                    }
+                                isInLibraryFlow = viewModel.getLibraryStatusFlow(show),
+                                onLibraryAction = { action ->
+                                    viewModel.handleLibraryAction(action, show)
+                                },
+                                onLibraryConfirmationNeeded = { config ->
+                                    // Get actual download info and show dialog
+                                    val info = viewModel.getLibraryRemovalInfo(config.show)
+                                    removalDialogConfig = config.copy(
+                                        hasDownloads = info.hasDownloads,
+                                        downloadInfo = info.downloadInfo
+                                    )
                                 },
                                 onDownloadClick = { recording: Recording ->
                                     Log.d("BrowseScreen", "Download requested for recording: ${recording.identifier}")
@@ -247,7 +253,26 @@ fun BrowseScreen(
         }
     }
     
-    // Confirmation dialog for removing shows from library
+    // Add confirmation dialog for library removal
+    removalDialogConfig?.let { config ->
+        LibraryRemovalConfirmationDialog(
+            config = config,
+            onConfirm = { removeDownloads ->
+                val action = if (removeDownloads) {
+                    LibraryAction.REMOVE_WITH_DOWNLOADS
+                } else {
+                    LibraryAction.REMOVE_FROM_LIBRARY
+                }
+                viewModel.handleLibraryAction(action, config.show)
+                removalDialogConfig = null
+            },
+            onDismiss = {
+                removalDialogConfig = null
+            }
+        )
+    }
+    
+    // Confirmation dialog for removing shows from library (old logic - can be removed later)
     showToRemove?.let { show ->
         AlertDialog(
             onDismissRequest = { showToRemove = null },

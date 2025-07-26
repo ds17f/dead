@@ -34,6 +34,9 @@ import com.deadarchive.core.data.download.EnrichedDownloadState
 import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.ConfirmationDialog
+import com.deadarchive.core.design.component.LibraryAction
+import com.deadarchive.core.design.component.LibraryRemovalConfirmationDialog
+import com.deadarchive.core.design.component.LibraryRemovalDialogConfig
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.SettingsViewModel
 
@@ -72,6 +75,7 @@ fun LibraryScreen(
     val sortOption by viewModel.sortOption.collectAsState()
     val decadeFilter by viewModel.decadeFilter.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
+    var removalDialogConfig by remember { mutableStateOf<LibraryRemovalDialogConfig?>(null) }
     
     // LazyListState for scrolling to top when sort changes
     val listState = rememberLazyListState()
@@ -355,9 +359,19 @@ fun LibraryScreen(
                                         onRecordingClick = { recording: Recording ->
                                             onNavigateToRecording(recording)
                                         },
-                                        onLibraryClick = { clickedShow: Show ->
-                                            showToRemove = clickedShow
+                                        isInLibraryFlow = viewModel.getLibraryStatusFlow(show),
+                                        onLibraryAction = { action ->
+                                            viewModel.handleLibraryAction(action, show)
                                         },
+                                        onLibraryConfirmationNeeded = { config ->
+                                            // Get actual download info and show dialog
+                                            val info = viewModel.getLibraryRemovalInfo(config.show)
+                                            removalDialogConfig = config.copy(
+                                                hasDownloads = info.hasDownloads,
+                                                downloadInfo = info.downloadInfo
+                                            )
+                                        },
+                                        alwaysConfirmLibraryRemoval = true, // Always confirm in library since removal is jarring
                                         onDownloadClick = { recording: Recording ->
                                             viewModel.downloadRecording(recording)
                                         },
@@ -568,6 +582,25 @@ fun LibraryScreen(
                 libraryViewModel = viewModel
             )
         }
+    }
+    
+    // Add confirmation dialog for library removal
+    removalDialogConfig?.let { config ->
+        LibraryRemovalConfirmationDialog(
+            config = config,
+            onConfirm = { removeDownloads ->
+                val action = if (removeDownloads) {
+                    LibraryAction.REMOVE_WITH_DOWNLOADS
+                } else {
+                    LibraryAction.REMOVE_FROM_LIBRARY
+                }
+                viewModel.handleLibraryAction(action, config.show)
+                removalDialogConfig = null
+            },
+            onDismiss = {
+                removalDialogConfig = null
+            }
+        )
     }
 }
 

@@ -3,17 +3,12 @@ package com.deadarchive.core.design.component
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.deadarchive.core.design.R
@@ -28,14 +23,6 @@ enum class LibraryAction {
     REMOVE_WITH_DOWNLOADS
 }
 
-/**
- * Information about downloads when removing from library
- */
-data class LibraryRemovalDialogInfo(
-    val show: Show,
-    val hasDownloads: Boolean,
-    val downloadInfo: String
-)
 
 /**
  * Unified library button component that handles all library operations consistently
@@ -45,8 +32,9 @@ data class LibraryRemovalDialogInfo(
  * @param show Show object to add/remove from library
  * @param isInLibraryFlow Reactive Flow of library status that automatically updates
  * @param onClick Action handler for library operations
- * @param onRemovalInfoNeeded Callback to get download info for removal confirmation
- * @param showDownloadConfirmation Whether to show download confirmation dialogs
+ * @param onConfirmationNeeded Callback when confirmation dialog is needed (show, hasDownloads, downloadInfo) -> Unit
+ * @param showDownloadConfirmation Whether to show download confirmation dialogs when there are downloads
+ * @param alwaysConfirmRemoval Whether to always show confirmation dialog when removing from library
  * @param size Button size (icon size)
  * @param modifier Compose modifier
  */
@@ -56,18 +44,14 @@ fun LibraryButton(
     show: Show,
     isInLibraryFlow: kotlinx.coroutines.flow.Flow<Boolean>,
     onClick: (LibraryAction) -> Unit,
-    onRemovalInfoNeeded: (Show) -> LibraryRemovalDialogInfo = { LibraryRemovalDialogInfo(it, false, "") },
+    onConfirmationNeeded: (LibraryRemovalDialogConfig) -> Unit = { },
     showDownloadConfirmation: Boolean = true,
+    alwaysConfirmRemoval: Boolean = false,
     size: Dp = 24.dp,
     modifier: Modifier = Modifier
 ) {
     // Reactive state management - automatically updates when library status changes
     val isInLibrary by isInLibraryFlow.collectAsState(initial = false)
-    var showRemovalDialog by remember { mutableStateOf(false) }
-    var removalDialogInfo by remember { mutableStateOf<LibraryRemovalDialogInfo?>(null) }
-    
-    // Use reactive state directly - no need for optimistic state since this is truly reactive
-    val displayState = isInLibrary
     
     Box(
         contentAlignment = Alignment.Center,
@@ -75,134 +59,43 @@ fun LibraryButton(
             .size(size)
             .combinedClickable(
                 onClick = {
-                    if (displayState) {
-                        // Removing from library - check for downloads if confirmation enabled
-                        if (showDownloadConfirmation) {
-                            val info = onRemovalInfoNeeded(show)
-                            if (info.hasDownloads) {
-                                removalDialogInfo = info
-                                showRemovalDialog = true
-                            } else {
-                                // No downloads, remove immediately - reactive state will update automatically
-                                onClick(LibraryAction.REMOVE_FROM_LIBRARY)
-                            }
+                    if (isInLibrary) {
+                        // Removing from library - check if confirmation is needed
+                        if (alwaysConfirmRemoval || showDownloadConfirmation) {
+                            // Delegate to parent to show confirmation dialog
+                            // Parent will determine download info and show appropriate dialog
+                            onConfirmationNeeded(
+                                LibraryRemovalDialogConfig(
+                                    show = show,
+                                    hasDownloads = false, // Parent will update this
+                                    downloadInfo = "",     // Parent will update this
+                                    alwaysConfirm = alwaysConfirmRemoval
+                                )
+                            )
                         } else {
-                            // No confirmation, remove immediately - reactive state will update automatically
+                            // No confirmation needed, remove immediately
                             onClick(LibraryAction.REMOVE_FROM_LIBRARY)
                         }
                     } else {
-                        // Adding to library - reactive state will update automatically
+                        // Adding to library - no confirmation needed
                         onClick(LibraryAction.ADD_TO_LIBRARY)
                     }
                 }
             )
     ) {
         Icon(
-            painter = if (displayState) {
+            painter = if (isInLibrary) {
                 painterResource(R.drawable.ic_library_add_check)
             } else {
                 painterResource(R.drawable.ic_library_add)
             },
-            contentDescription = if (displayState) "Remove from Library" else "Add to Library",
+            contentDescription = if (isInLibrary) "Remove from Library" else "Add to Library",
             modifier = Modifier.size(size),
-            tint = if (displayState) {
+            tint = if (isInLibrary) {
                 MaterialTheme.colorScheme.primary
             } else {
                 MaterialTheme.colorScheme.onSurfaceVariant
             }
         )
-        
-        // Removal confirmation dialog with download options
-        if (showRemovalDialog && removalDialogInfo != null) {
-            LibraryRemovalConfirmationDialog(
-                info = removalDialogInfo!!,
-                onConfirm = { removeDownloads ->
-                    showRemovalDialog = false
-                    val action = if (removeDownloads) {
-                        LibraryAction.REMOVE_WITH_DOWNLOADS
-                    } else {
-                        LibraryAction.REMOVE_FROM_LIBRARY
-                    }
-                    onClick(action)
-                    removalDialogInfo = null
-                },
-                onCancel = {
-                    showRemovalDialog = false
-                    removalDialogInfo = null
-                }
-            )
-        }
     }
-}
-
-/**
- * Confirmation dialog for removing shows from library with download cleanup options
- */
-@Composable
-private fun LibraryRemovalConfirmationDialog(
-    info: LibraryRemovalDialogInfo,
-    onConfirm: (removeDownloads: Boolean) -> Unit,
-    onCancel: () -> Unit
-) {
-    var removeDownloads by remember { mutableStateOf(false) }
-    
-    AlertDialog(
-        onDismissRequest = onCancel,
-        title = {
-            Text(
-                text = "Remove from Library",
-                style = MaterialTheme.typography.headlineSmall
-            )
-        },
-        text = {
-            Column {
-                Text(
-                    text = "Are you sure you want to remove \"${info.show.displayDate} - ${info.show.displayVenue}\" from your library?",
-                    style = MaterialTheme.typography.bodyMedium
-                )
-                
-                if (info.hasDownloads) {
-                    Text(
-                        text = "\nThis show has downloads: ${info.downloadInfo}",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        modifier = Modifier.padding(top = 8.dp)
-                    )
-                    
-                    Row(
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(top = 16.dp)
-                    ) {
-                        Checkbox(
-                            checked = removeDownloads,
-                            onCheckedChange = { removeDownloads = it }
-                        )
-                        Text(
-                            text = "Also remove downloads",
-                            style = MaterialTheme.typography.bodyMedium,
-                            modifier = Modifier.padding(start = 8.dp)
-                        )
-                    }
-                }
-            }
-        },
-        confirmButton = {
-            TextButton(
-                onClick = { onConfirm(removeDownloads) }
-            ) {
-                Text(
-                    text = "Remove",
-                    color = MaterialTheme.colorScheme.error,
-                    fontWeight = FontWeight.Medium
-                )
-            }
-        },
-        dismissButton = {
-            TextButton(onClick = onCancel) {
-                Text("Cancel")
-            }
-        }
-    )
 }

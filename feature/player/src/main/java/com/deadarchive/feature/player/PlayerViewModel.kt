@@ -1050,23 +1050,18 @@ class PlayerViewModel @Inject constructor(
     /**
      * Get library removal info for LibraryButton component
      */
-    fun getLibraryRemovalInfo(show: com.deadarchive.core.model.Show): com.deadarchive.core.design.component.LibraryRemovalDialogInfo {
+    fun getLibraryRemovalInfo(show: com.deadarchive.core.model.Show): com.deadarchive.core.data.service.LibraryRemovalInfo {
         return try {
             // Use the shared library service to get download info
             runBlocking {
-                val info = libraryService.getDownloadInfoForShow(show)
-                com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
-                    show = show,
-                    hasDownloads = info.hasDownloads,
-                    downloadInfo = info.downloadInfo
-                )
+                libraryService.getDownloadInfoForShow(show)
             }
         } catch (e: Exception) {
             Log.e(TAG, "getLibraryRemovalInfo: Error getting download info", e)
-            com.deadarchive.core.design.component.LibraryRemovalDialogInfo(
-                show = show,
+            com.deadarchive.core.data.service.LibraryRemovalInfo(
                 hasDownloads = false,
-                downloadInfo = ""
+                downloadInfo = "",
+                downloadState = com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded
             )
         }
     }

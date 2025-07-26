@@ -17,6 +17,9 @@ import com.deadarchive.core.design.component.ExpandableConcertItem
 import com.deadarchive.core.design.component.DownloadState
 import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.ConfirmationDialog
+import com.deadarchive.core.design.component.LibraryAction
+import com.deadarchive.core.design.component.LibraryRemovalConfirmationDialog
+import com.deadarchive.core.design.component.LibraryRemovalDialogConfig
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.settings.SettingsViewModel
@@ -34,6 +37,7 @@ fun ConcertListScreen(
     val uiState by viewModel.uiState.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
+    var removalDialogConfig by remember { mutableStateOf<LibraryRemovalDialogConfig?>(null) }
     
     Column(
         modifier = modifier.fillMaxSize()
@@ -176,8 +180,17 @@ fun ConcertListScreen(
                                     onRecordingSelected(recording)
                                     onNavigateToPlayer()
                                 },
-                                onLibraryClick = { showToToggle ->
-                                    viewModel.toggleLibrary(showToToggle)
+                                isInLibraryFlow = viewModel.getLibraryStatusFlow(show),
+                                onLibraryAction = { action ->
+                                    viewModel.handleLibraryAction(action, show)
+                                },
+                                onLibraryConfirmationNeeded = { config ->
+                                    // Get actual download info and show dialog
+                                    val info = viewModel.getLibraryRemovalInfo(config.show)
+                                    removalDialogConfig = config.copy(
+                                        hasDownloads = info.hasDownloads,
+                                        downloadInfo = info.downloadInfo
+                                    )
                                 },
                                 onDownloadClick = { recording: Recording ->
                                     viewModel.downloadRecording(recording)
@@ -197,6 +210,25 @@ fun ConcertListScreen(
                 }
             }
         }
+    }
+    
+    // Add confirmation dialog for library removal
+    removalDialogConfig?.let { config ->
+        LibraryRemovalConfirmationDialog(
+            config = config,
+            onConfirm = { removeDownloads ->
+                val action = if (removeDownloads) {
+                    LibraryAction.REMOVE_WITH_DOWNLOADS
+                } else {
+                    LibraryAction.REMOVE_FROM_LIBRARY
+                }
+                viewModel.handleLibraryAction(action, config.show)
+                removalDialogConfig = null
+            },
+            onDismiss = {
+                removalDialogConfig = null
+            }
+        )
     }
     
     // Confirmation dialog for removing downloads

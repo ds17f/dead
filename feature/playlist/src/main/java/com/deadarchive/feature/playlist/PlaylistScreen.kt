@@ -16,6 +16,8 @@ import com.deadarchive.core.design.component.DownloadButton
 import com.deadarchive.core.design.component.DownloadAction
 import com.deadarchive.core.design.component.LibraryButton
 import com.deadarchive.core.design.component.LibraryAction
+import com.deadarchive.core.design.component.LibraryRemovalConfirmationDialog
+import com.deadarchive.core.design.component.LibraryRemovalDialogConfig
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -93,6 +95,7 @@ fun PlaylistScreen(
     val currentRecording by viewModel.currentRecording.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
     val reviewState by reviewViewModel.reviewState.collectAsState()
+    var removalDialogConfig by remember { mutableStateOf<LibraryRemovalDialogConfig?>(null) }
     
     // Debug data collection - only when debug mode is enabled
     val debugData = if (settings.showDebugInfo) {
@@ -451,8 +454,13 @@ fun PlaylistScreen(
                                             onClick = { action: LibraryAction ->
                                                 viewModel.handleLibraryAction(action)
                                             },
-                                            onRemovalInfoNeeded = { showToRemove ->
-                                                viewModel.getLibraryRemovalInfo(showToRemove)
+                                            onConfirmationNeeded = { config ->
+                                                // Get actual download info and show dialog
+                                                val info = viewModel.getLibraryRemovalInfo(config.show)
+                                                removalDialogConfig = config.copy(
+                                                    hasDownloads = info.hasDownloads,
+                                                    downloadInfo = info.downloadInfo
+                                                )
                                             },
                                             size = 24.dp,
                                             modifier = Modifier.size(40.dp)
@@ -772,6 +780,25 @@ fun PlaylistScreen(
             },
             onCancel = {
                 viewModel.hideConfirmationDialog()
+            }
+        )
+    }
+    
+    // Add confirmation dialog for library removal
+    removalDialogConfig?.let { config ->
+        LibraryRemovalConfirmationDialog(
+            config = config,
+            onConfirm = { removeDownloads ->
+                val action = if (removeDownloads) {
+                    LibraryAction.REMOVE_WITH_DOWNLOADS
+                } else {
+                    LibraryAction.REMOVE_FROM_LIBRARY
+                }
+                viewModel.handleLibraryAction(action)
+                removalDialogConfig = null
+            },
+            onDismiss = {
+                removalDialogConfig = null
             }
         )
     }
