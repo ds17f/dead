@@ -106,12 +106,25 @@ CREATE INDEX idx_concerts_year ON concerts(year);        -- Year filtering
 
 ## Media Playback Architecture
 
-### Service-Based Architecture
+### Service-Oriented Media Architecture
+The `:core:media` module implements a service-oriented architecture with MediaControllerRepository coordinating three focused services:
+
 ```
-UI Components → MediaControllerRepository → MediaController ↔ DeadArchivePlaybackService
-                                                           ↓
-                                                    ExoPlayer + MediaSession
+UI Components → MediaControllerRepository → Service Composition:
+                   ↓                       • MediaServiceConnector (connection)
+                   ↓                       • PlaybackStateSync (state flows)  
+                   ↓                       • PlaybackCommandProcessor (commands)
+                   ↓                                ↓
+               MediaController ↔ DeadArchivePlaybackService
+                                          ↓
+                                   ExoPlayer + MediaSession
 ```
+
+#### Media Service Components
+- **MediaServiceConnector**: Connection lifecycle and service binding management
+- **PlaybackStateSync**: StateFlow synchronization with MediaId tracking for UI highlighting
+- **PlaybackCommandProcessor**: Command processing and queue operations
+- **MediaControllerRepository**: Facade coordinator maintaining clean public interface
 
 #### Background Service Management
 - **Foreground Service**: Continuous playback with rich notifications
@@ -121,7 +134,8 @@ UI Components → MediaControllerRepository → MediaController ↔ DeadArchiveP
 
 #### Queue Management System
 - **Native Media3 Queue**: Leverages Media3's native playlist management
-- **Smart Queue Building**: Complete show loading with track progression
+- **Smart Queue Building**: Complete show loading with track progression via QueueManager
+- **MediaItem Conflict Resolution**: QueueManager uses `updatePlaybackStateSyncOnly()` to prevent service conflicts
 - **Position Tracking**: Periodic position updates with service synchronization
 - **Queue Context**: Metadata enrichment for notifications and controls
 
@@ -140,10 +154,30 @@ private suspend fun resolvePlaybackUrl(originalUrl: String): String? {
 ```
 
 #### State Management
-- **Single Source of Truth**: All UI state flows from MediaController
+- **Single Source of Truth**: All UI state flows from MediaController via PlaybackStateSync
 - **Reactive Architecture**: StateFlow-based UI updates across the application
+- **MediaId-Based Track Matching**: Stable track identification using MediaItem.mediaId instead of URL parsing
 - **Position Synchronization**: Regular sync between service and UI state
 - **Error Recovery**: Graceful handling of service disconnection and reconnection
+- **Feedback Loop Prevention**: QueueStateManager uses distinctUntilChanged to prevent duplicate emissions
+
+### Critical Bug Fixes
+**Media Player Looping Resolution**:
+- **Root Cause**: QueueManager and PlaybackCommandProcessor both creating MediaItems
+- **Solution**: QueueManager calls `updatePlaybackStateSyncOnly()` to bypass conflicting sync
+- **Impact**: Eliminates rapid URL switching that caused start/stop looping behavior
+
+**Downloaded Track Highlighting Fix**:
+- **Root Cause**: URL mismatch between local file paths and download URLs in track matching
+- **Solution**: MediaId-based matching using stable `MediaItem.mediaId` (original downloadUrl)
+- **Impact**: Consistent track highlighting for both streaming and downloaded content
+
+### Unified Library Service Architecture
+**Centralized Library Management**:
+- **LibraryService**: Single service for all library operations across features
+- **LibraryButton**: Reusable UI component with unified add/remove/cleanup actions
+- **Download Integration**: Library removal supports optional download cleanup
+- **Feature Migration**: All ViewModels (Browse, Library, Player, Playlist) use unified service
 
 ### Last Played Track System
 **Spotify-like Resume Functionality**:

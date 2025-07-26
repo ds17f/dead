@@ -105,6 +105,7 @@ This document provides a comprehensive analysis of the 14-module architecture in
   - `ShowEnrichmentService` - Rating and recording enrichment logic
   - `ShowCacheService` - Cache management and API interaction
   - `ShowCreationService` - Show creation and normalization workflow
+  - `LibraryService` - Unified library operations across all features (NEW)
 - `LibraryRepository` - User library management
 - `DownloadRepository` - Offline content management
 - `RatingsRepository` - Rating system integration
@@ -158,15 +159,21 @@ class ShowRepositoryImpl @Inject constructor(
 **Purpose**: Media3/ExoPlayer audio playback system
 **Key Components**:
 - `DeadArchivePlaybackService` - Background media service
-- `MediaControllerRepository` (1087 lines) - Service communication
-- `QueueManager` - Playlist management
+- `MediaControllerRepository` (~400 lines) - Service composition facade
+- **Service Architecture** (NEW):
+  - `MediaServiceConnector` - Connection lifecycle management
+  - `PlaybackStateSync` - StateFlow synchronization with MediaId tracking
+  - `PlaybackCommandProcessor` - Command processing and queue operations
+- `QueueManager` - Playlist management with MediaItem conflict resolution
+- `QueueStateManager` - Queue state with feedback loop prevention
 - `PlaybackEventTracker` - Usage analytics
 
-**Architecture Grade**: B+
+**Architecture Grade**: A-
 - Excellent modern Media3 integration
 - Sophisticated background playback
-- **Issue**: MediaControllerRepository is extremely large
-- **Issue**: Complex async state synchronization
+- **RESOLVED**: MediaControllerRepository refactored with service-oriented architecture (1087→400 lines)
+- **IMPROVED**: Service composition eliminates complex async state synchronization
+- **FIXED**: MediaItem conflicts between services resolved
 - Good offline file resolution
 
 #### core:design → (model, settings-api)
@@ -174,6 +181,7 @@ class ShowRepositoryImpl @Inject constructor(
 **Key Components**:
 - Material 3 theme with Grateful Dead styling
 - Reusable components (`StarRating`, `ExpandableConcertItem`)
+- **LibraryButton** - Unified library management component (NEW)
 - `IconResources` with 50+ icons
 - Comprehensive design tokens
 - Debug panel system (`DebugBottomSheet`, `DebugActivator`, `DebugLogger`)
@@ -181,6 +189,7 @@ class ShowRepositoryImpl @Inject constructor(
 **Architecture Grade**: A
 - Excellent Material 3 implementation
 - Good component reusability
+- **NEW**: Unified LibraryButton with download cleanup actions
 - Clean theme organization
 
 #### core:settings → (settings-api, backup, design, model)
@@ -229,18 +238,18 @@ class ShowRepositoryImpl @Inject constructor(
 
 **Service Architecture**:
 ```kotlin
-// PlayerViewModel delegates to focused services
+// PlayerViewModel delegates to focused services + unified LibraryService
 class PlayerViewModel @Inject constructor(
     private val playerDataService: PlayerDataService,
     private val playerPlaylistService: PlayerPlaylistService,
-    private val playerDownloadService: PlayerDownloadService,
-    private val playerLibraryService: PlayerLibraryService,
+    private val libraryService: LibraryService, // Unified library service
+    private val downloadService: DownloadService, // Shared download service
     // ... other dependencies
 ) {
     // State management delegated to services
     val currentPlaylist: StateFlow<List<PlaylistItem>> = playerPlaylistService.currentPlaylist
-    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = playerDownloadService.downloadStates
-    val isInLibrary: StateFlow<Boolean> = playerLibraryService.isInLibrary
+    val downloadStates: StateFlow<Map<String, ShowDownloadState>> = downloadService.downloadStates
+    // Library status managed locally with unified service
 }
 ```
 
@@ -312,13 +321,13 @@ feature:playlist → core:data, core:database, core:network
 - No `core:database-api` - features directly access Room entities
 - No `core:network-api` - features directly access network layer
 
-### 4. Large Class Issue (Partially Resolved)
+### 4. Large Class Issue (Significantly Resolved)
 Several classes exceed maintainability thresholds:
 - ~~`DebugViewModel` - 1702 lines~~ **REMOVED**
 - `PlaylistScreen` - 1393 lines  
-- ~~`PlayerViewModel` - 1227 lines~~ **REFACTORED** to ~650 lines + 4 focused services
-- ~~`ShowRepositoryImpl` - 1132 lines~~ **REFACTORED** to ~960 lines + 3 focused services
-- `MediaControllerRepository` - 1087 lines
+- ~~`PlayerViewModel` - 1227 lines~~ **REFACTORED** to ~650 lines + focused services + unified LibraryService
+- ~~`ShowRepositoryImpl` - 1132 lines~~ **REFACTORED** to ~960 lines + 4 focused services (including LibraryService)
+- ~~`MediaControllerRepository` - 1087 lines~~ **REFACTORED** to ~400 lines + 3 focused services
 
 ## Architecture Strengths
 
@@ -340,14 +349,21 @@ Several classes exceed maintainability thresholds:
 - ✅ Testable architecture with DI
 - ✅ Good build performance with parallel compilation
 
+### 4. Service-Oriented Architecture (NEW)
+- ✅ Large classes broken down into focused services following Single Responsibility Principle
+- ✅ Unified LibraryService eliminates feature-specific service duplication
+- ✅ MediaController service composition resolves architectural conflicts
+- ✅ Centralized download and library operations with consistent behavior
+
 ## Recommendations for Improvement
 
-### Priority 1: Reduce Class Complexity
+### Priority 1: Reduce Class Complexity ✅ COMPLETED
 ```kotlin
-// Split large classes:
-ShowRepositoryImpl → ShowRepository + ShowOrchestrator + ShowCache
-MediaControllerRepository → MediaController + StateManager + ServiceBridge
-DebugViewModel → Multiple focused debug ViewModels
+// ✅ COMPLETED: Large classes successfully refactored
+ShowRepositoryImpl → ShowRepository + ShowEnrichmentService + ShowCacheService + ShowCreationService + LibraryService
+MediaControllerRepository → MediaController + MediaServiceConnector + PlaybackStateSync + PlaybackCommandProcessor  
+DebugViewModel → Removed (1702 lines eliminated)
+PlayerViewModel → PlayerViewModel + PlayerDataService + PlayerPlaylistService + LibraryService integration
 ```
 
 ### Priority 2: Fix Feature Dependencies
@@ -387,20 +403,28 @@ core:network-api   // Network layer abstractions
 
 ## Overall Architecture Assessment
 
-**Grade: B+**
+**Grade: A-** (Upgraded from B+)
 
-The Dead Archive project demonstrates a well-structured modular architecture that follows modern Android development practices. The use of API modules shows good architectural thinking, and the separation of concerns is generally well-executed.
+The Dead Archive project demonstrates an excellently structured modular architecture that follows modern Android development practices. The recent service-oriented refactoring has significantly improved maintainability and resolved critical architectural issues.
 
 **Key Strengths**:
 - Modern tech stack with consistent patterns
-- Good use of clean architecture principles  
-- Excellent UI/UX implementation
-- Sophisticated media and data systems
+- Excellent use of clean architecture principles with service-oriented improvements
+- Sophisticated media and data systems with resolved conflicts
+- **NEW**: Service composition eliminates large class maintainability issues
+- **NEW**: Unified library operations across all features
+- **NEW**: Critical media player bugs resolved with architectural improvements
 
-**Priority Improvements**:
-1. Break down large classes for better maintainability
-2. Strengthen API boundaries to improve testability
-3. Reduce feature coupling for better modularity
-4. Add comprehensive unit and integration tests
+**Recent Architectural Improvements** ✅:
+1. ✅ **Large classes broken down** - Major reduction in complexity via service composition
+2. ✅ **MediaItem conflicts resolved** - Service composition prevents queue management conflicts  
+3. ✅ **Unified library services** - Eliminates feature-specific service duplication
+4. ✅ **MediaId-based track matching** - Consistent UI highlighting for downloaded content
 
-The architecture provides a solid foundation for a complex Android application, with clear paths for improvement that would elevate it from good to excellent.
+**Remaining Priority Improvements**:
+1. Strengthen API boundaries to improve testability
+2. Reduce feature coupling for better modularity  
+3. Add comprehensive unit and integration tests
+4. Consider splitting remaining large UI classes (PlaylistScreen)
+
+The architecture now provides an excellent foundation for a complex Android application, with sophisticated service-oriented patterns that significantly improve maintainability and resolve critical runtime issues.
