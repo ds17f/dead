@@ -40,3 +40,8 @@ include(":core:settings-api")
 include(":core:data-api")
 include(":core:media-api")
 include(":core:download-api")
+include(":core:library-api")
+
+// V2 Service modules
+include(":core:library")
+include(":core:download")

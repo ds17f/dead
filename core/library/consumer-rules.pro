@@ -1,0 +1,1 @@
+# Library V2 - No specific proguard rules needed

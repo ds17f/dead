@@ -48,6 +48,12 @@ dependencies {
     implementation(project(":core:settings-api"))
     implementation(project(":core:settings"))
     
+    // Library V2 dependencies
+    implementation(project(":core:library-api"))
+    implementation(project(":core:library"))
+    implementation(project(":core:download-api"))
+    implementation(project(":core:download"))
+    
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
