@@ -125,6 +125,7 @@ fun SettingsScreen(
             DeveloperOptionsCard(
                 settings = settings,
                 onUpdateShowDebugInfo = viewModel::updateShowDebugInfo,
+                onUpdateUseLibraryV2 = viewModel::updateUseLibraryV2,
                 onResetSettings = viewModel::resetToDefaults
             )
         }
@@ -252,6 +253,7 @@ private fun AppearanceSettingsCard(
 private fun DeveloperOptionsCard(
     settings: AppSettings,
     onUpdateShowDebugInfo: (Boolean) -> Unit,
+    onUpdateUseLibraryV2: (Boolean) -> Unit,
     onResetSettings: () -> Unit
 ) {
     Card(
@@ -290,6 +292,34 @@ private fun DeveloperOptionsCard(
                 Switch(
                     checked = settings.showDebugInfo,
                     onCheckedChange = onUpdateShowDebugInfo
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // Library V2 Toggle
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Use Library V2 (Preview)",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Enable the redesigned library interface",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.useLibraryV2,
+                    onCheckedChange = onUpdateUseLibraryV2
                 )
             }
             

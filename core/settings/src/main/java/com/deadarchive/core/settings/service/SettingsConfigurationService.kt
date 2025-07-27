@@ -342,6 +342,38 @@ class SettingsConfigurationService @Inject constructor(
     }
     
     /**
+     * Update the use Library V2 setting
+     */
+    fun updateUseLibraryV2(
+        enabled: Boolean,
+        coroutineScope: CoroutineScope,
+        onStateChange: (SettingsUiState) -> Unit,
+        currentState: SettingsUiState
+    ) {
+        coroutineScope.launch {
+            try {
+                Log.d(TAG, "Updating use Library V2 to: $enabled")
+                onStateChange(currentState.copy(isLoading = true, errorMessage = null))
+                
+                settingsRepository.updateUseLibraryV2(enabled)
+                
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    successMessage = if (enabled) "Library V2 enabled" else "Library V2 disabled"
+                ))
+                Log.d(TAG, "Use Library V2 updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update use Library V2", e)
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update Library V2 setting: ${e.message}"
+                ))
+            }
+        }
+    }
+    
+    /**
      * Set drag state for audio format reordering
      */
     fun setDraggingFormats(

@@ -100,4 +100,10 @@ interface SettingsRepository {
      * @param enabled True to enable resuming last track on app startup, false to disable
      */
     suspend fun updateEnableResumeLastTrack(enabled: Boolean)
+    
+    /**
+     * Update the Library V2 interface setting
+     * @param enabled True to use Library V2 interface, false to use legacy library
+     */
+    suspend fun updateUseLibraryV2(enabled: Boolean)
 }

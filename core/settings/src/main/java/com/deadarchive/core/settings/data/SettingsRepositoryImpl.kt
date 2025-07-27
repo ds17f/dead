@@ -201,4 +201,15 @@ class SettingsRepositoryImpl @Inject constructor(
             throw e
         }
     }
+    
+    override suspend fun updateUseLibraryV2(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating use Library V2 to: $enabled")
+            settingsDataStore.updateUseLibraryV2(enabled)
+            Log.d(TAG, "Use Library V2 updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update use Library V2", e)
+            throw e
+        }
+    }
 }

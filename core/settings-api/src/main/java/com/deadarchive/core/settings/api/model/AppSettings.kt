@@ -33,7 +33,10 @@ data class AppSettings(
     val preferHigherRated: Boolean = true,
     
     // Playback settings
-    val enableResumeLastTrack: Boolean = true
+    val enableResumeLastTrack: Boolean = true,
+    
+    // UI settings
+    val useLibraryV2: Boolean = false
 ) {
     companion object {
         // Default order for audio format preferences - matches AppConstants.PREFERRED_AUDIO_FORMATS
