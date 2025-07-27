@@ -16,7 +16,11 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.library.api.LibraryStats
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.design.component.DebugBottomSheet
+import com.deadarchive.core.design.component.DebugActivator
+import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.library.formatBytes
+import com.deadarchive.feature.library.debug.collectLibraryV2DebugData
 
 /**
  * Library V2 Screen with stub testing UI.
@@ -28,30 +32,39 @@ import com.deadarchive.feature.library.formatBytes
 @Composable
 fun LibraryV2Screen(
     viewModel: LibraryV2ViewModel = hiltViewModel(),
+    settingsViewModel: SettingsViewModel = hiltViewModel(),
     onNavigateToShow: (String) -> Unit = {},
     onNavigateToPlayer: (String) -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val libraryStats by viewModel.libraryStats.collectAsState()
+    val settings by settingsViewModel.settings.collectAsState()
     
-    Column(modifier = Modifier.fillMaxSize()) {
-        // Stub Development Banner
-        StubDevelopmentBanner(
-            modifier = Modifier.fillMaxWidth()
-        )
-        
-        // Stats Display (will show 0s from stub)
-        libraryStats?.let { stats ->
-            StatsCard(
-                stats = stats,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp)
+    // Debug panel state and data collection - only when debug mode is enabled
+    var showDebugPanel by remember { mutableStateOf(false) }
+    val debugData = if (settings.showDebugInfo) {
+        collectLibraryV2DebugData(viewModel)
+    } else null
+    
+    Box(modifier = Modifier.fillMaxSize()) {
+        Column(modifier = Modifier.fillMaxSize()) {
+            // Stub Development Banner
+            StubDevelopmentBanner(
+                modifier = Modifier.fillMaxWidth()
             )
-        }
-        
-        // Main Content
-        when (val state = uiState) {
+            
+            // Stats Display (will show 0s from stub)
+            libraryStats?.let { stats ->
+                StatsCard(
+                    stats = stats,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp)
+                )
+            }
+            
+            // Main Content
+            when (val state = uiState) {
             is LibraryV2UiState.Loading -> {
                 Box(
                     modifier = Modifier.fillMaxSize(),
@@ -90,7 +103,28 @@ fun LibraryV2Screen(
                     modifier = Modifier.fillMaxSize()
                 )
             }
+        } // End when
+        } // End Column
+        
+        // Debug activation button - floating in bottom-right corner
+        if (settings.showDebugInfo && debugData != null) {
+            DebugActivator(
+                isVisible = true,
+                onClick = { showDebugPanel = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp)
+            )
         }
+    }
+    
+    // Debug Bottom Sheet - only shown when debug mode is enabled
+    if (settings.showDebugInfo && debugData != null) {
+        DebugBottomSheet(
+            debugData = debugData,
+            isVisible = showDebugPanel,
+            onDismiss = { showDebugPanel = false }
+        )
     }
 }
 
