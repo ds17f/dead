@@ -1,5 +1,59 @@
 # Changelog
 
+## [0.31.0] - 2025-07-26
+
+### New Features
+* implement unified library removal confirmation with download cleanup (eb91358)
+* implement download confirmation dialog for PlaylistScreen (e6f2249)
+* implement reactive search results for immediate library icon updates (f1a08a5)
+* add downloads panel to Library screen options (2ee0567)
+* add logcat integration to debug panel copy functionality (16c0c18)
+* implement comprehensive debug panel system with settings integration (a0b1a8b)
+
+### Bug Fixes
+* resolve downloaded track highlighting and media state synchronization (875a518)
+* preserve original library timestamp when downloading existing shows (7a7757a)
+* implement reactive library state management for immediate UI updates (d2dd275)
+* implement unified download button with pause/resume functionality (fcd3382)
+* improve download progress indicator visibility in playlist screen (7a90a78)
+* notification shows proper track metadata instead of URLs (9e77c0f)
+* resolve recording loading circular dependency bug (483ea8f)
+* remove mock data from debug panel to prevent misleading results (93771c8)
+* resolve debug panel button click detection issue and clean up logging (c43336f)
+* implement proper library Date Added sorting functionality (02f9583)
+
+### Code Refactoring
+* implement unified library services and fix critical media player issues (d6ddff4)
+* centralize recording selection logic to fix download/viewing inconsistency (5296d82)
+* remove duplicate download settings from Settings screen (6e6f8d7)
+* centralize download management with shared DownloadService (0197d2e)
+* extract SettingsViewModel into service-oriented architecture (52d8f1c)
+* extract LibraryViewModel into service-oriented architecture (618b332)
+* extract BrowseViewModel into service-oriented architecture (8318efe)
+* rename MediaControllerRepositoryRefactored back to MediaControllerRepository (adfda44)
+* extract MediaControllerRepository into focused services with rich metadata (bcb0c6a)
+* extract ShowCacheService and ShowCreationService from ShowRepositoryImpl (f84072c)
+* extract ShowEnrichmentService from ShowRepositoryImpl (dea3c0c)
+* remove debug components and panels from application (a9f9170)
+
+### Documentation Updates
+* update CLAUDE.md to reflect downloaded track highlighting fixes (0dcc369)
+* update architecture documentation with completed progress checkoffs (28bfe43)
+* update architecture documentation for service-oriented improvements (dd7b0f3)
+* update CLAUDE.md to reflect unified library services and media player fixes (487bf81)
+* update CLAUDE.md to reflect current centralized download architecture (7edbb1c)
+* update CLAUDE.md with MediaControllerRepository service architecture (a04c7fe)
+* update project documentation to include debug panel system (9fa3a52)
+* update architecture documentation for service-oriented refactoring (0c5cfa0)
+* validate and complete project documentation (1723812)
+* clean up and reorganize root-level documentation (a89eb8e)
+* consolidate and cleanup project documentation (7a8cede)
+* add comprehensive architecture documentation and analysis (a56ae27)
+
+### Other Changes
+* clean: remove obsolete debug navigation and references (36b4314)
+
+
 ## [0.30.0] - 2025-07-21
 
 ### New Features
@@ -12,8 +66,6 @@
 * ensure playlist library icon updates automatically when recording loads (130afe7)
 * implement reactive library UI updates and simplify library system (b82658a)
 * resolve library management race conditions and orphaned show entries (f9c48ac)
-
-
 ## [0.29.0] - 2025-07-20
 
 ### New Features
