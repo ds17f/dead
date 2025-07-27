@@ -195,6 +195,35 @@ The `:feature:browse` module implements service-oriented architecture with the B
 - **Impact:** Replaces feature-specific library management services with centralized implementation
 - **Download Integration:** Supports removing shows with optional download cleanup
 
+### UI Component Decomposition
+
+**LibraryScreen Component Extraction** (`feature/library/src/main/java/com/deadarchive/feature/library/LibraryScreen.kt`)
+- **Status:** ✅ **COMPLETED** - Reduced from 1,253 lines to 1,170 lines
+- **Approach:** Extract focused Composable components while maintaining existing state management
+
+#### Extracted Components:
+1. **`LibraryTopBar`** (15 lines)
+   - TopAppBar with library options menu
+   - Uses Material3 design system with proper OptIn annotations
+   - Cleanly separated navigation controls
+
+2. **`LibraryEmptyState`** (26 lines) 
+   - Empty state display with decade filter messaging
+   - Responsive layout with Material3 theming
+   - Context-aware messaging based on filter state
+
+3. **`LibraryItemsList`** (42 lines)
+   - LazyListScope extension for show items rendering
+   - Integrates with existing ExpandableConcertItem component
+   - Maintains all existing library actions and download state
+
+#### Component Architecture Benefits:
+- **Single Responsibility:** Each component has one clear purpose
+- **Testability:** Components can be unit tested in isolation  
+- **Reusability:** Components follow established design patterns
+- **Maintainability:** Smaller, focused components are easier to modify
+- **Backward Compatibility:** Main LibraryScreen preserves existing interfaces
+
 ### Entry Points
 
 **Application Class:** `DeadArchiveApplication.kt`

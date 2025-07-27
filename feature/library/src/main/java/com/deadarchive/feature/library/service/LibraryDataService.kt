@@ -87,8 +87,8 @@ class LibraryDataService @Inject constructor(
                     
                     Log.d(TAG, "Created ${sortedShows.size} shows for display after filtering by ${decadeFilter.displayName} and sorting by ${sortOption.displayName}")
                     
-                    // Convert to legacy format for UI compatibility
-                    val libraryItems = sortedShows.map { show ->
+                    // Convert ALL library shows to libraryItems (not filtered) so decade bar always shows when library has items
+                    val libraryItems = libraryShows.map { show ->
                         LibraryItem(
                             id = "show_${show.showId}",
                             showId = show.showId,

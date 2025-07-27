@@ -2,6 +2,7 @@ package com.deadarchive.feature.library
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -97,16 +98,8 @@ fun LibraryScreen(
         modifier = modifier.fillMaxSize()
     ) {
         // Top App Bar
-        TopAppBar(
-            title = { Text("Library") },
-            actions = {
-                IconButton(onClick = { showBottomSheet = true }) {
-                    Icon(
-                        imageVector = Icons.Default.MoreVert,
-                        contentDescription = "Library options"
-                    )
-                }
-            }
+        LibraryTopBar(
+            onOptionsClick = { showBottomSheet = true }
         )
         
         when (val state = uiState) {
@@ -154,99 +147,9 @@ fun LibraryScreen(
             }
             
             is LibraryUiState.Success -> {
-                if (state.libraryItems.isEmpty()) {
-                    Box(
-                        modifier = Modifier.fillMaxSize(),
-                        contentAlignment = Alignment.Center
-                    ) {
-                        Column(
-                            horizontalAlignment = Alignment.CenterHorizontally,
-                            verticalArrangement = Arrangement.spacedBy(16.dp),
-                            modifier = Modifier.padding(32.dp)
-                        ) {
-                            Icon(
-                                painter = painterResource(R.drawable.ic_library_add),
-                                contentDescription = "Empty library",
-                                modifier = Modifier.size(64.dp),
-                                tint = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                            
-                            Text(
-                                text = "Your library is empty",
-                                style = MaterialTheme.typography.titleLarge,
-                                color = MaterialTheme.colorScheme.onSurface
-                            )
-                            
-                            Text(
-                                text = "Add shows to your library by tapping the library button on any show or recording.",
-                                style = MaterialTheme.typography.bodyLarge,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                textAlign = TextAlign.Center,
-                                lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
-                            )
-                            
-                            Spacer(modifier = Modifier.height(24.dp))
-                            
-                            // Show restore information and button
-                            val backupInfo = latestBackupInfo
-                            val hasValidBackup = backupInfo != null && backupInfo.showCount > 0
-                            val isLoading = settingsUiState.isLoading
-                            
-                            if (backupInfo != null) {
-                                val formattedDate = remember(backupInfo.createdAt) {
-                                    java.text.SimpleDateFormat("MMM d, yyyy 'at' h:mm a", java.util.Locale.getDefault())
-                                        .format(java.util.Date(backupInfo.createdAt))
-                                }
-                                
-                                if (hasValidBackup) {
-                                    Text(
-                                        text = "You have a backup from $formattedDate with ${backupInfo.showCount} shows",
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        color = MaterialTheme.colorScheme.primary,
-                                        textAlign = TextAlign.Center,
-                                        lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
-                                    )
-                                } else {
-                                    Text(
-                                        text = "You have a backup from $formattedDate, but it contains no shows",
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                        textAlign = TextAlign.Center,
-                                        lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
-                                    )
-                                }
-                                
-                                Spacer(modifier = Modifier.height(16.dp))
-                            }
-                            
-                            // Always show the restore button
-                            Button(
-                                onClick = { 
-                                    showRestoreConfirmation = true
-                                },
-                                enabled = hasValidBackup && !isLoading
-                            ) {
-                                if (isLoading) {
-                                    CircularProgressIndicator(
-                                        modifier = Modifier.size(16.dp),
-                                        strokeWidth = 2.dp
-                                    )
-                                    Spacer(modifier = Modifier.width(8.dp))
-                                } else {
-                                    Icon(
-                                        painter = IconResources.DataManagement.Restore(),
-                                        contentDescription = null,
-                                        modifier = Modifier.size(18.dp)
-                                    )
-                                    Spacer(modifier = Modifier.width(8.dp))
-                                }
-                                Text("Restore Library")
-                            }
-                        }
-                    }
-                } else {
-                    Column(modifier = Modifier.fillMaxSize()) {
-                        // Decade filter buttons
+                Column(modifier = Modifier.fillMaxSize()) {
+                    // Always show decade filter buttons when library has items
+                    if (state.libraryItems.isNotEmpty()) {
                         LazyRow(
                             modifier = Modifier.fillMaxWidth(),
                             contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
@@ -260,7 +163,99 @@ fun LibraryScreen(
                                 )
                             }
                         }
-                        
+                    }
+                    
+                    if (state.libraryItems.isEmpty()) {
+                        Box(
+                            modifier = Modifier.fillMaxSize(),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally,
+                                verticalArrangement = Arrangement.spacedBy(16.dp),
+                                modifier = Modifier.padding(32.dp)
+                            ) {
+                                Icon(
+                                    painter = painterResource(R.drawable.ic_library_add),
+                                    contentDescription = "Empty library",
+                                    modifier = Modifier.size(64.dp),
+                                    tint = MaterialTheme.colorScheme.onSurfaceVariant
+                                )
+                                
+                                Text(
+                                    text = "Your library is empty",
+                                    style = MaterialTheme.typography.titleLarge,
+                                    color = MaterialTheme.colorScheme.onSurface
+                                )
+                                
+                                Text(
+                                    text = "Add shows to your library by tapping the library button on any show or recording.",
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    textAlign = TextAlign.Center,
+                                    lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
+                                )
+                                
+                                Spacer(modifier = Modifier.height(24.dp))
+                                
+                                // Show restore information and button
+                                val backupInfo = latestBackupInfo
+                                val hasValidBackup = backupInfo != null && backupInfo.showCount > 0
+                                val isLoading = settingsUiState.isLoading
+                                
+                                if (backupInfo != null) {
+                                    val formattedDate = remember(backupInfo.createdAt) {
+                                        java.text.SimpleDateFormat("MMM d, yyyy 'at' h:mm a", java.util.Locale.getDefault())
+                                            .format(java.util.Date(backupInfo.createdAt))
+                                    }
+                                    
+                                    if (hasValidBackup) {
+                                        Text(
+                                            text = "You have a backup from $formattedDate with ${backupInfo.showCount} shows",
+                                            style = MaterialTheme.typography.bodyLarge,
+                                            color = MaterialTheme.colorScheme.primary,
+                                            textAlign = TextAlign.Center,
+                                            lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
+                                        )
+                                    } else {
+                                        Text(
+                                            text = "You have a backup from $formattedDate, but it contains no shows",
+                                            style = MaterialTheme.typography.bodyLarge,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                            textAlign = TextAlign.Center,
+                                            lineHeight = MaterialTheme.typography.bodyLarge.lineHeight * 1.2
+                                        )
+                                    }
+                                    
+                                    Spacer(modifier = Modifier.height(16.dp))
+                                }
+                                
+                                // Always show the restore button
+                                Button(
+                                    onClick = { 
+                                        showRestoreConfirmation = true
+                                    },
+                                    enabled = hasValidBackup && !isLoading
+                                ) {
+                                    if (isLoading) {
+                                        CircularProgressIndicator(
+                                            modifier = Modifier.size(16.dp),
+                                            strokeWidth = 2.dp
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                    } else {
+                                        Icon(
+                                            painter = IconResources.DataManagement.Restore(),
+                                            contentDescription = null,
+                                            modifier = Modifier.size(18.dp)
+                                        )
+                                        Spacer(modifier = Modifier.width(8.dp))
+                                    }
+                                    Text("Restore Library")
+                                }
+                            }
+                        }
+                    } else {
                         // Sort options bar
                         Row(
                             modifier = Modifier
@@ -308,84 +303,24 @@ fun LibraryScreen(
                             if (state.shows.isEmpty()) {
                                 // No results state - shows exist in library but filtered out
                                 item {
-                                    Box(
-                                        modifier = Modifier.fillParentMaxSize(),
-                                        contentAlignment = Alignment.Center
-                                    ) {
-                                        Column(
-                                            horizontalAlignment = Alignment.CenterHorizontally,
-                                            verticalArrangement = Arrangement.spacedBy(16.dp),
-                                            modifier = Modifier.padding(32.dp)
-                                        ) {
-                                            Icon(
-                                                painter = painterResource(R.drawable.ic_search),
-                                                contentDescription = "No results",
-                                                modifier = Modifier.size(48.dp),
-                                                tint = MaterialTheme.colorScheme.onSurfaceVariant
-                                            )
-                                            
-                                            Text(
-                                                text = "No shows found",
-                                                style = MaterialTheme.typography.titleMedium,
-                                                color = MaterialTheme.colorScheme.onSurface
-                                            )
-                                            
-                                            val filterText = when (decadeFilter) {
-                                                DecadeFilter.ALL -> "Try adjusting your filters"
-                                                else -> "No shows found for the ${decadeFilter.displayName}. Try a different decade or clear filters."
-                                            }
-                                            
-                                            Text(
-                                                text = filterText,
-                                                style = MaterialTheme.typography.bodyMedium,
-                                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                                textAlign = TextAlign.Center
-                                            )
-                                        }
-                                    }
+                                    LibraryEmptyState(decadeFilter = decadeFilter)
                                 }
                             } else {
-                                items(
-                                    items = state.shows,
-                                    key = { show -> show.showId }
-                                ) { show ->
-                                    ExpandableConcertItem(
-                                        show = show,
-                                        settings = settings,
-                                        onShowClick = { clickedShow: Show ->
-                                            // Navigate to show (playlist)
-                                            onNavigateToShow(clickedShow)
-                                        },
-                                        onRecordingClick = { recording: Recording ->
-                                            onNavigateToRecording(recording)
-                                        },
-                                        isInLibraryFlow = viewModel.getLibraryStatusFlow(show),
-                                        onLibraryAction = { action ->
-                                            viewModel.handleLibraryAction(action, show)
-                                        },
-                                        onLibraryConfirmationNeeded = { config ->
-                                            // Get actual download info and show dialog
-                                            val info = viewModel.getLibraryRemovalInfo(config.show)
-                                            removalDialogConfig = config.copy(
-                                                hasDownloads = info.hasDownloads,
-                                                downloadInfo = info.downloadInfo
-                                            )
-                                        },
-                                        alwaysConfirmLibraryRemoval = true, // Always confirm in library since removal is jarring
-                                        onDownloadClick = { recording: Recording ->
-                                            viewModel.downloadRecording(recording)
-                                        },
-                                        getDownloadState = { recording: Recording ->
-                                            viewModel.getDownloadState(recording)
-                                        },
-                                        onDownloadButtonClick = { show: Show ->
-                                            viewModel.handleDownloadButtonClick(show)
-                                        },
-                                        getShowDownloadState = { show: Show ->
-                                            viewModel.getShowDownloadState(show)
-                                        }
-                                    )
-                                }
+                                LibraryItemsList(
+                                    shows = state.shows,
+                                    settings = settings,
+                                    viewModel = viewModel,
+                                    onNavigateToShow = onNavigateToShow,
+                                    onNavigateToRecording = onNavigateToRecording,
+                                    onLibraryConfirmationNeeded = { config ->
+                                        // Get actual download info and show dialog
+                                        val info = viewModel.getLibraryRemovalInfo(config.show)
+                                        removalDialogConfig = config.copy(
+                                            hasDownloads = info.hasDownloads,
+                                            downloadInfo = info.downloadInfo
+                                        )
+                                    }
+                                )
                             }
                         }
                     }
@@ -1248,6 +1183,116 @@ private fun StorageBrowserView(
                 }
             }
         }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun LibraryTopBar(
+    onOptionsClick: () -> Unit
+) {
+    TopAppBar(
+        title = { Text("Library") },
+        actions = {
+            IconButton(onClick = onOptionsClick) {
+                Icon(
+                    imageVector = Icons.Default.MoreVert,
+                    contentDescription = "Library options"
+                )
+            }
+        }
+    )
+}
+
+@Composable
+private fun LibraryEmptyState(
+    decadeFilter: DecadeFilter
+) {
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+            modifier = Modifier.padding(32.dp)
+        ) {
+            Icon(
+                painter = painterResource(R.drawable.ic_search),
+                contentDescription = "No results",
+                modifier = Modifier.size(48.dp),
+                tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            
+            Text(
+                text = "No shows found",
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+            
+            val filterText = when (decadeFilter) {
+                DecadeFilter.ALL -> "Try adjusting your filters"
+                else -> "No shows found for the ${decadeFilter.displayName}. Try a different decade or clear filters."
+            }
+            
+            Text(
+                text = filterText,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = TextAlign.Center
+            )
+        }
+    }
+}
+
+private fun LazyListScope.LibraryItemsList(
+    shows: List<Show>,
+    settings: AppSettings,
+    viewModel: LibraryViewModel,
+    onNavigateToShow: (Show) -> Unit,
+    onNavigateToRecording: (Recording) -> Unit,
+    onLibraryConfirmationNeeded: (LibraryRemovalDialogConfig) -> Unit
+) {
+    items(
+        items = shows,
+        key = { show -> show.showId }
+    ) { show ->
+        ExpandableConcertItem(
+            show = show,
+            settings = settings,
+            onShowClick = { clickedShow: Show ->
+                // Navigate to show (playlist)
+                onNavigateToShow(clickedShow)
+            },
+            onRecordingClick = { recording: Recording ->
+                onNavigateToRecording(recording)
+            },
+            isInLibraryFlow = viewModel.getLibraryStatusFlow(show),
+            onLibraryAction = { action ->
+                viewModel.handleLibraryAction(action, show)
+            },
+            onLibraryConfirmationNeeded = { config ->
+                // Get actual download info and show dialog
+                val info = viewModel.getLibraryRemovalInfo(config.show)
+                onLibraryConfirmationNeeded(config.copy(
+                    hasDownloads = info.hasDownloads,
+                    downloadInfo = info.downloadInfo
+                ))
+            },
+            alwaysConfirmLibraryRemoval = true, // Always confirm in library since removal is jarring
+            onDownloadClick = { recording: Recording ->
+                viewModel.downloadRecording(recording)
+            },
+            getDownloadState = { recording: Recording ->
+                viewModel.getDownloadState(recording)
+            },
+            onDownloadButtonClick = { show: Show ->
+                viewModel.handleDownloadButtonClick(show)
+            },
+            getShowDownloadState = { show: Show ->
+                viewModel.getShowDownloadState(show)
+            }
+        )
     }
 }
 
