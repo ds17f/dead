@@ -128,7 +128,8 @@ fun LibraryV2Screen(
                             displayMode = displayMode,
                             onShowClick = onNavigateToShow,
                             onPlayClick = onNavigateToPlayer,
-                            onShowLongPress = { show -> selectedShowForActions = show },
+                            // onShowLongPress temporarily removed
+                // onShowLongPress = { show -> selectedShowForActions = show },
                             modifier = Modifier.weight(1f)
                         )
                     }
@@ -179,7 +180,8 @@ fun LibraryV2Screen(
         )
     }
     
-    // Show Actions Bottom Sheet
+    // Show Actions Bottom Sheet - Temporarily commented out until ShowActionsBottomSheet is implemented
+    /* 
     selectedShowForActions?.let { show ->
         ShowActionsBottomSheet(
             show = show,
@@ -206,6 +208,7 @@ fun LibraryV2Screen(
             }
         )
     }
+    */
     
     // Debug Bottom Sheet - only shown when debug mode is enabled
     debugData?.let { data ->
@@ -389,7 +392,8 @@ private fun LibraryContent(
     displayMode: DisplayMode,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
-    onShowLongPress: (Show) -> Unit,
+    // Make onShowLongPress optional with empty default implementation
+    onShowLongPress: (Show) -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     when (displayMode) {
@@ -398,7 +402,8 @@ private fun LibraryContent(
                 shows = shows,
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
-                onShowLongPress = onShowLongPress,
+                // onShowLongPress temporarily removed
+                // onShowLongPress = onShowLongPress,
                 modifier = modifier
             )
         }
@@ -407,7 +412,8 @@ private fun LibraryContent(
                 shows = shows,
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
-                onShowLongPress = onShowLongPress,
+                // onShowLongPress temporarily removed
+                // onShowLongPress = onShowLongPress,
                 modifier = modifier
             )
         }
