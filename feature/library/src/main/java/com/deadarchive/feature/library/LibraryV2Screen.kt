@@ -27,6 +27,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.DebugBottomSheet
 import com.deadarchive.core.design.component.DebugActivator
+import com.deadarchive.core.design.component.HierarchicalFilter
+import com.deadarchive.core.design.component.FilterPath
+import com.deadarchive.core.design.component.FilterTrees
 import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.settings.SettingsViewModel
@@ -54,7 +57,7 @@ fun LibraryV2Screen(
     val settings by settingsViewModel.settings.collectAsState()
     
     // UI State
-    var selectedDecade by remember { mutableStateOf<String?>(null) }
+    var filterPath by remember { mutableStateOf(FilterPath()) }
     var sortBy by remember { mutableStateOf(SortOption.DATE_OF_SHOW) }
     var displayMode by remember { mutableStateOf(DisplayMode.LIST) }
     var showAddBottomSheet by remember { mutableStateOf(false) }
@@ -63,7 +66,9 @@ fun LibraryV2Screen(
     var showDebugPanel by remember { mutableStateOf(false) }
     val debugData = if (settings.showDebugInfo) {
         collectLibraryV2DebugData(viewModel)
-    } else null
+    } else {
+        null
+    }
     
     Box(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.fillMaxSize()) {
@@ -73,11 +78,11 @@ fun LibraryV2Screen(
                 onAddClick = { showAddBottomSheet = true }
             )
             
-            // Decade Filters
-            DecadeFilters(
-                selectedDecade = selectedDecade,
-                onDecadeSelected = { selectedDecade = it },
-                modifier = Modifier.padding(horizontal = 16.dp)
+            // Hierarchical Filters
+            HierarchicalFilter(
+                filterTree = FilterTrees.buildDeadToursTree(),
+                selectedPath = filterPath,
+                onSelectionChanged = { filterPath = it }
             )
             
             // Sort Controls and Display Toggle
@@ -144,9 +149,9 @@ fun LibraryV2Screen(
     }
     
     // Debug Bottom Sheet - only shown when debug mode is enabled
-    if (settings.showDebugInfo && debugData != null) {
+    debugData?.let { data ->
         DebugBottomSheet(
-            debugData = debugData,
+            debugData = data,
             isVisible = showDebugPanel,
             onDismiss = { showDebugPanel = false }
         )
@@ -210,55 +215,6 @@ private fun LibraryHeader(
             containerColor = MaterialTheme.colorScheme.surface
         )
     )
-}
-
-/**
- * Decade filter chips (60s, 70s, 80s, 90s) with clear button
- */
-@Composable
-private fun DecadeFilters(
-    selectedDecade: String?,
-    onDecadeSelected: (String?) -> Unit,
-    modifier: Modifier = Modifier
-) {
-    val decades = listOf("60s", "70s", "80s", "90s")
-    
-    LazyRow(
-        modifier = modifier,
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        contentPadding = PaddingValues(vertical = 8.dp)
-    ) {
-        items(decades) { decade ->
-            FilterChip(
-                onClick = {
-                    onDecadeSelected(if (selectedDecade == decade) null else decade)
-                },
-                label = { Text(decade) },
-                selected = selectedDecade == decade,
-                colors = FilterChipDefaults.filterChipColors(
-                    selectedContainerColor = MaterialTheme.colorScheme.primary,
-                    selectedLabelColor = MaterialTheme.colorScheme.onPrimary
-                )
-            )
-        }
-        
-        // Clear button - only show if a decade is selected
-        if (selectedDecade != null) {
-            item {
-                OutlinedButton(
-                    onClick = { onDecadeSelected(null) },
-                    modifier = Modifier.height(32.dp),
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 0.dp),
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline)
-                ) {
-                    Text(
-                        text = "Clear",
-                        style = MaterialTheme.typography.labelSmall
-                    )
-                }
-            }
-        }
-    }
 }
 
 /**
