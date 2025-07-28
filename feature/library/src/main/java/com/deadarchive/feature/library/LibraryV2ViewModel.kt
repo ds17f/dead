@@ -161,6 +161,24 @@ class LibraryV2ViewModel @Inject constructor(
         }
     }
     
+    fun populateTestData() {
+        viewModelScope.launch {
+            Log.d(TAG, "ViewModel: populateTestData() -> calling stub")
+            addServiceLog("populateTestData() -> calling libraryV2Service.populateTestData()")
+            libraryV2Service.populateTestData()
+                .onSuccess { 
+                    Log.d(TAG, "ViewModel: populateTestData succeeded")
+                    addServiceLog("populateTestData() succeeded - test data populated")
+                    // Refresh stats after populating data
+                    loadLibraryStats()
+                }
+                .onFailure { 
+                    Log.e(TAG, "ViewModel: populateTestData failed: ${it.message}")
+                    addServiceLog("ERROR: populateTestData() failed: ${it.message}")
+                }
+        }
+    }
+    
     fun retry() {
         Log.d(TAG, "ViewModel: retry() -> reloading with stubs")
         addServiceLog("retry() -> reloading library and stats")

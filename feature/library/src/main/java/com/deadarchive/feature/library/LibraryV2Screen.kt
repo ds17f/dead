@@ -110,8 +110,18 @@ fun LibraryV2Screen(
                             modifier = Modifier.weight(1f)
                         )
                     } else {
+                        // Apply filtering and sorting
+                        val filteredAndSortedShows = remember(state.shows, filterPath, sortBy, sortDirection) {
+                            applyFiltersAndSorting(
+                                shows = state.shows,
+                                filterPath = filterPath,
+                                sortBy = sortBy,
+                                sortDirection = sortDirection
+                            )
+                        }
+                        
                         LibraryContent(
-                            shows = state.shows,
+                            shows = filteredAndSortedShows,
                             displayMode = displayMode,
                             onShowClick = onNavigateToShow,
                             onPlayClick = onNavigateToPlayer,
@@ -607,7 +617,7 @@ private fun EmptyLibraryContent(
         )
         
         Text(
-            text = "Add some shows to get started. In stub mode, use the test buttons below to verify the integration.",
+            text = "Add some shows to get started. In stub mode, use \"Populate Test Data\" to load realistic test data for UI development.",
             style = MaterialTheme.typography.bodyMedium,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -618,6 +628,13 @@ private fun EmptyLibraryContent(
         // Test buttons to verify stub integration
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Button(
+                onClick = { onTestStubs.populateTestData() },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Populate Test Data")
+            }
+            
+            OutlinedButton(
                 onClick = { onTestStubs.addToLibrary("test-show-1") },
                 modifier = Modifier.fillMaxWidth()
             ) {
@@ -827,6 +844,98 @@ private fun SortOptionsBottomSheet(
             // Bottom padding for gesture area
             Spacer(modifier = Modifier.height(16.dp))
         }
+    }
+}
+
+/**
+ * Apply filtering and sorting to the shows list
+ */
+private fun applyFiltersAndSorting(
+    shows: List<Show>,
+    filterPath: FilterPath,
+    sortBy: SortOption,
+    sortDirection: SortDirection
+): List<Show> {
+    // Step 1: Apply decade and seasonal filtering
+    val filteredShows = if (filterPath.isNotEmpty) {
+        val selectedDecadeNode = filterPath.nodes.firstOrNull()
+        val selectedSeasonNode = filterPath.nodes.getOrNull(1) // Second level is season
+        
+        if (selectedDecadeNode != null) {
+            shows.filter { show ->
+                // Parse year from show data
+                val year = show.year?.toIntOrNull() ?: 0
+                
+                // First filter by decade
+                val decadeMatches = when (selectedDecadeNode.id) {
+                    "60s" -> year in 1960..1969
+                    "70s" -> year in 1970..1979
+                    "80s" -> year in 1980..1989
+                    "90s" -> year in 1990..1999
+                    else -> true // Show all if unknown decade
+                }
+                
+                // If decade matches and we have a season filter, also check season
+                if (decadeMatches && selectedSeasonNode != null) {
+                    val month = extractMonthFromDate(show.date)
+                    if (month != null) {
+                        when (selectedSeasonNode.id.substringAfter("_")) { // Extract season from ID like "70s_spring"
+                            "spring" -> month in 3..5   // March, April, May
+                            "summer" -> month in 6..8   // June, July, August  
+                            "fall" -> month in 9..11    // September, October, November
+                            "winter" -> month == 12 || month in 1..2  // December, January, February
+                            else -> true
+                        }
+                    } else {
+                        true // If we can't parse month, include the show
+                    }
+                } else {
+                    decadeMatches
+                }
+            }
+        } else {
+            shows
+        }
+    } else {
+        shows // No filter applied
+    }
+    
+    // Step 2: Apply sorting
+    val sortedShows = when (sortBy) {
+        SortOption.DATE_OF_SHOW -> {
+            if (sortDirection == SortDirection.ASCENDING) {
+                filteredShows.sortedBy { it.date }
+            } else {
+                filteredShows.sortedByDescending { it.date }
+            }
+        }
+        SortOption.DATE_ADDED -> {
+            if (sortDirection == SortDirection.ASCENDING) {
+                filteredShows.sortedBy { it.addedToLibraryAt ?: 0L }
+            } else {
+                filteredShows.sortedByDescending { it.addedToLibraryAt ?: 0L }
+            }
+        }
+    }
+    
+    return sortedShows
+}
+
+/**
+ * Extract month number from date string (YYYY-MM-DD format)
+ * @param date Date string in YYYY-MM-DD format
+ * @return Month number (1-12) or null if parsing fails
+ */
+private fun extractMonthFromDate(date: String): Int? {
+    return try {
+        val parts = date.split("-")
+        if (parts.size >= 2) {
+            parts[1].toIntOrNull()
+        } else {
+            null
+        }
+    } catch (e: Exception) {
+        null
     }
 }
 

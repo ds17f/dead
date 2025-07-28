@@ -49,6 +49,16 @@ interface LibraryV2Service {
      * @return LibraryStats containing counts and storage information
      */
     suspend fun getLibraryStats(): LibraryStats
+    
+    /**
+     * Populate library with test data for UI development.
+     * Only implemented in stub - no-op in real implementations.
+     * @return Result indicating success or failure
+     */
+    suspend fun populateTestData(): Result<Unit> {
+        // Default no-op implementation for real services
+        return Result.success(Unit)
+    }
 }
 
 /**
