@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.32.0] - 2025-07-28
+
+### New Features
+* implement hierarchical seasonal filtering for LibraryV2 (2412c55)
+* add sort selector with bottom sheet and fix grid/list icons (a658a43)
+* add hierarchical filter component with configurable spacing (4e6280c)
+* implement Spotify-like LibraryV2 UI with decade filters and scrollable logs (31b73ff)
+* add LibraryV2 debug panel with proper settings integration (d121ade)
+* implement LibraryV2 with minimal stub-first architecture (46ad5a0)
+* add Library V2 preview feature flag with toggle in settings (31ad2db)
+
+### Bug Fixes
+* ensure decade filter bar remains visible when filtered results are empty (c30d234)
+
+
 ## [0.31.0] - 2025-07-26
 
 ### New Features
@@ -52,8 +67,6 @@
 
 ### Other Changes
 * clean: remove obsolete debug navigation and references (36b4314)
-
-
 ## [0.30.0] - 2025-07-21
 
 ### New Features

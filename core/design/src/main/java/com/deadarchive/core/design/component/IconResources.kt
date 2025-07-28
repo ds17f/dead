@@ -284,6 +284,18 @@ object IconResources {
         @Composable
         fun GridView() = customIcon(R.drawable.ic_grid_view)
         
+        @Composable
+        fun Remove() = customIcon(R.drawable.ic_remove)
+        
+        @Composable
+        fun Delete() = customIcon(R.drawable.ic_delete)
+        
+        @Composable
+        fun PushPin() = customIcon(R.drawable.ic_push_pin)
+        
+        @Composable
+        fun QrCode() = customIcon(R.drawable.ic_qr_code)
+        
     }
 
     /**

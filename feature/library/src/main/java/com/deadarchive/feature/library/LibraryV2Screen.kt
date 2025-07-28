@@ -1,9 +1,11 @@
 package com.deadarchive.feature.library
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
@@ -63,6 +65,7 @@ fun LibraryV2Screen(
     var displayMode by remember { mutableStateOf(DisplayMode.LIST) }
     var showAddBottomSheet by remember { mutableStateOf(false) }
     var showSortBottomSheet by remember { mutableStateOf(false) }
+    var selectedShowForActions by remember { mutableStateOf<Show?>(null) }
     
     // Debug panel state and data collection - only when debug mode is enabled
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -125,6 +128,7 @@ fun LibraryV2Screen(
                             displayMode = displayMode,
                             onShowClick = onNavigateToShow,
                             onPlayClick = onNavigateToPlayer,
+                            onShowLongPress = { show -> selectedShowForActions = show },
                             modifier = Modifier.weight(1f)
                         )
                     }
@@ -172,6 +176,34 @@ fun LibraryV2Screen(
                 showSortBottomSheet = false
             },
             onDismiss = { showSortBottomSheet = false }
+        )
+    }
+    
+    // Show Actions Bottom Sheet
+    selectedShowForActions?.let { show ->
+        ShowActionsBottomSheet(
+            show = show,
+            onDismiss = { selectedShowForActions = null },
+            onShare = { 
+                // TODO: Implement share functionality
+                selectedShowForActions = null
+            },
+            onRemoveFromLibrary = { 
+                viewModel.removeFromLibrary(show.showId)
+                selectedShowForActions = null
+            },
+            onDownload = {
+                viewModel.downloadShow(show)
+                selectedShowForActions = null
+            },
+            onPin = {
+                // TODO: Implement pin functionality
+                selectedShowForActions = null
+            },
+            onShowQRCode = {
+                // TODO: Implement QR code functionality
+                selectedShowForActions = null
+            }
         )
     }
     
@@ -357,6 +389,7 @@ private fun LibraryContent(
     displayMode: DisplayMode,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
+    onShowLongPress: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     when (displayMode) {
@@ -365,6 +398,7 @@ private fun LibraryContent(
                 shows = shows,
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
+                onShowLongPress = onShowLongPress,
                 modifier = modifier
             )
         }
@@ -373,6 +407,7 @@ private fun LibraryContent(
                 shows = shows,
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
+                onShowLongPress = onShowLongPress,
                 modifier = modifier
             )
         }
