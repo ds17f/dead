@@ -99,6 +99,9 @@ object IconResources {
         
         @Composable
         fun Menu() = customIcon(R.drawable.ic_menu)
+        
+        @Composable
+        fun SwapVert() = customIcon(R.drawable.ic_swap_vert)
     }
     
     // Player control icons are accessed via the PlayerControls object
@@ -274,6 +277,12 @@ object IconResources {
         
         @Composable
         fun TrendingUp() = customIcon(R.drawable.ic_trending_up)
+        
+        @Composable
+        fun FormatListBulleted() = customIcon(R.drawable.ic_format_list_bulleted)
+        
+        @Composable
+        fun GridView() = customIcon(R.drawable.ic_grid_view)
         
     }
 

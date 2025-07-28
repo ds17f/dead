@@ -59,8 +59,10 @@ fun LibraryV2Screen(
     // UI State
     var filterPath by remember { mutableStateOf(FilterPath()) }
     var sortBy by remember { mutableStateOf(SortOption.DATE_OF_SHOW) }
+    var sortDirection by remember { mutableStateOf(SortDirection.DESCENDING) }
     var displayMode by remember { mutableStateOf(DisplayMode.LIST) }
     var showAddBottomSheet by remember { mutableStateOf(false) }
+    var showSortBottomSheet by remember { mutableStateOf(false) }
     
     // Debug panel state and data collection - only when debug mode is enabled
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -88,8 +90,9 @@ fun LibraryV2Screen(
             // Sort Controls and Display Toggle
             SortAndDisplayControls(
                 sortBy = sortBy,
+                sortDirection = sortDirection,
                 displayMode = displayMode,
-                onSortChanged = { sortBy = it },
+                onSortSelectorClick = { showSortBottomSheet = true },
                 onDisplayModeChanged = { displayMode = it },
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
             )
@@ -148,6 +151,20 @@ fun LibraryV2Screen(
         )
     }
     
+    // Sort Bottom Sheet
+    if (showSortBottomSheet) {
+        SortOptionsBottomSheet(
+            currentSortOption = sortBy,
+            currentSortDirection = sortDirection,
+            onSortOptionSelected = { option, direction ->
+                sortBy = option
+                sortDirection = direction
+                showSortBottomSheet = false
+            },
+            onDismiss = { showSortBottomSheet = false }
+        )
+    }
+    
     // Debug Bottom Sheet - only shown when debug mode is enabled
     debugData?.let { data ->
         DebugBottomSheet(
@@ -159,9 +176,14 @@ fun LibraryV2Screen(
 }
 
 // Enums for UI state
-enum class SortOption {
-    DATE_OF_SHOW,
-    DATE_ADDED
+enum class SortOption(val displayName: String) {
+    DATE_OF_SHOW("Show Date"),
+    DATE_ADDED("Date Added")
+}
+
+enum class SortDirection(val displayName: String) {
+    ASCENDING("Ascending"),
+    DESCENDING("Descending")
 }
 
 enum class DisplayMode {
@@ -223,8 +245,9 @@ private fun LibraryHeader(
 @Composable
 private fun SortAndDisplayControls(
     sortBy: SortOption,
+    sortDirection: SortDirection,
     displayMode: DisplayMode,
-    onSortChanged: (SortOption) -> Unit,
+    onSortSelectorClick: () -> Unit,
     onDisplayModeChanged: (DisplayMode) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -233,44 +256,14 @@ private fun SortAndDisplayControls(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // Sort options
-        Row(
-            horizontalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            TextButton(
-                onClick = { onSortChanged(SortOption.DATE_OF_SHOW) },
-                colors = ButtonDefaults.textButtonColors(
-                    contentColor = if (sortBy == SortOption.DATE_OF_SHOW) {
-                        MaterialTheme.colorScheme.primary
-                    } else {
-                        MaterialTheme.colorScheme.onSurfaceVariant
-                    }
-                )
-            ) {
-                Text(
-                    text = "Date of Show",
-                    fontWeight = if (sortBy == SortOption.DATE_OF_SHOW) FontWeight.Bold else FontWeight.Normal
-                )
-            }
-            
-            TextButton(
-                onClick = { onSortChanged(SortOption.DATE_ADDED) },
-                colors = ButtonDefaults.textButtonColors(
-                    contentColor = if (sortBy == SortOption.DATE_ADDED) {
-                        MaterialTheme.colorScheme.primary
-                    } else {
-                        MaterialTheme.colorScheme.onSurfaceVariant
-                    }
-                )
-            ) {
-                Text(
-                    text = "Date Added",
-                    fontWeight = if (sortBy == SortOption.DATE_ADDED) FontWeight.Bold else FontWeight.Normal
-                )
-            }
-        }
+        // Sort selector button (like old library)
+        SortSelectorButton(
+            sortBy = sortBy,
+            sortDirection = sortDirection,
+            onClick = onSortSelectorClick
+        )
         
-        // Display mode toggle 
+        // Display mode toggle with proper icons
         IconButton(
             onClick = {
                 onDisplayModeChanged(
@@ -280,11 +273,43 @@ private fun SortAndDisplayControls(
         ) {
             Icon(
                 painter = if (displayMode == DisplayMode.LIST) {
-                    IconResources.Navigation.Menu() // Grid icon
+                    IconResources.Content.GridView() // Grid icon when in list mode
                 } else {
-                    IconResources.Content.Queue() // List icon  
+                    IconResources.Content.FormatListBulleted() // List icon when in grid mode
                 },
                 contentDescription = if (displayMode == DisplayMode.LIST) "Grid View" else "List View"
+            )
+        }
+    }
+}
+
+/**
+ * Sort selector button following the old library pattern
+ */
+@Composable
+private fun SortSelectorButton(
+    sortBy: SortOption,
+    sortDirection: SortDirection,
+    onClick: () -> Unit
+) {
+    TextButton(onClick = onClick) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Icon(
+                painter = IconResources.Navigation.SwapVert(),
+                contentDescription = null,
+                modifier = Modifier.size(16.dp)
+            )
+            Spacer(modifier = Modifier.width(4.dp))
+            Text(text = sortBy.displayName)
+            Spacer(modifier = Modifier.width(4.dp))
+            Icon(
+                painter = if (sortDirection == SortDirection.ASCENDING) {
+                    IconResources.Navigation.KeyboardArrowUp()
+                } else {
+                    IconResources.Navigation.KeyboardArrowDown()
+                },
+                contentDescription = null,
+                modifier = Modifier.size(16.dp)
             )
         }
     }
@@ -721,6 +746,86 @@ private fun ErrorContent(
         
         Button(onClick = onRetry) {
             Text("Retry")
+        }
+    }
+}
+
+/**
+ * Sort options bottom sheet following the old library pattern
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun SortOptionsBottomSheet(
+    currentSortOption: SortOption,
+    currentSortDirection: SortDirection,
+    onSortOptionSelected: (SortOption, SortDirection) -> Unit,
+    onDismiss: () -> Unit
+) {
+    ModalBottomSheet(
+        onDismissRequest = onDismiss
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Text(
+                text = "Sort library by",
+                style = MaterialTheme.typography.titleMedium,
+                modifier = Modifier.padding(bottom = 8.dp)
+            )
+            
+            // Sort by options
+            SortOption.values().forEach { option ->
+                Column {
+                    // Sort option header
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = option.displayName,
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = FontWeight.Medium
+                        )
+                    }
+                    
+                    // Direction options for this sort type
+                    SortDirection.values().forEach { direction ->
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { 
+                                    onSortOptionSelected(option, direction)
+                                }
+                                .padding(vertical = 8.dp, horizontal = 16.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = currentSortOption == option && currentSortDirection == direction,
+                                onClick = { 
+                                    onSortOptionSelected(option, direction) 
+                                }
+                            )
+                            Spacer(modifier = Modifier.width(12.dp))
+                            Text(
+                                text = direction.displayName,
+                                style = MaterialTheme.typography.bodyMedium
+                            )
+                        }
+                    }
+                    
+                    if (option != SortOption.values().last()) {
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
+                    }
+                }
+            }
+            
+            // Bottom padding for gesture area
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }
