@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.32.1] - 2025-07-28
+
+### Bug Fixes
+* make LibraryV2Screen build by making onShowLongPress optional and commenting out unimplemented component (5a5f752)
+
+
 ## [0.32.0] - 2025-07-28
 
 ### New Features
@@ -13,8 +19,6 @@
 
 ### Bug Fixes
 * ensure decade filter bar remains visible when filtered results are empty (c30d234)
-
-
 ## [0.31.0] - 2025-07-26
 
 ### New Features
