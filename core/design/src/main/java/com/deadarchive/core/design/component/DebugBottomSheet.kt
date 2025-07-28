@@ -5,6 +5,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -266,7 +267,13 @@ private fun DebugItem(item: DebugItem) {
             DebugKeyValueItem(key = item.label, value = item.getFormattedTime())
         }
         is DebugItem.JsonData -> {
-            DebugMultilineItem(key = item.key, value = item.json)
+            // Special handling for scrollable logs
+            if (item.key == "SCROLLABLE_LOGS") {
+                val logs = if (item.json.isBlank()) emptyList() else item.json.split("\n")
+                DebugScrollableLogItem(logs = logs)
+            } else {
+                DebugMultilineItem(key = item.key, value = item.json)
+            }
         }
     }
 }
@@ -415,5 +422,77 @@ private fun DebugErrorItem(error: DebugItem.Error) {
                 }
             }
         }
+    }
+}
+
+/**
+ * Scrollable log item for debug panel - shows logs with auto-scroll and proper scrolling
+ */
+@Composable
+private fun DebugScrollableLogItem(logs: List<String>) {
+    val listState = rememberLazyListState()
+    
+    // Auto-scroll to bottom when new logs are added
+    LaunchedEffect(logs.size) {
+        if (logs.isNotEmpty()) {
+            listState.animateScrollToItem(logs.size - 1)
+        }
+    }
+    
+    Column(modifier = Modifier.fillMaxWidth()) {
+        Text(
+            text = "Live Service Logs:",
+            style = MaterialTheme.typography.bodySmall,
+            fontWeight = FontWeight.Medium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        Spacer(modifier = Modifier.height(4.dp))
+        
+        Surface(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(200.dp), // Fixed height for scrolling
+            shape = RoundedCornerShape(4.dp),
+            color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
+        ) {
+            if (logs.isEmpty()) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(16.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = "💡 Tap test buttons below to see live logs appear here!",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            } else {
+                LazyColumn(
+                    state = listState,
+                    modifier = Modifier.fillMaxSize(),
+                    contentPadding = PaddingValues(8.dp),
+                    verticalArrangement = Arrangement.spacedBy(2.dp)
+                ) {
+                    items(logs) { log ->
+                        Text(
+                            text = "• $log",
+                            style = MaterialTheme.typography.bodySmall,
+                            fontFamily = FontFamily.Monospace,
+                            color = MaterialTheme.colorScheme.onSurface,
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                    }
+                }
+            }
+        }
+        
+        Spacer(modifier = Modifier.height(4.dp))
+        Text(
+            text = "${logs.size} service calls • Auto-scrolls to latest",
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
     }
 }

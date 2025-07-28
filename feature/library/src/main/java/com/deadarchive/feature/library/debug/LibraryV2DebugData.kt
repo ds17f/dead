@@ -24,8 +24,8 @@ fun collectLibraryV2DebugData(
     return DebugData(
         screenName = "LibraryV2",
         sections = listOf(
+            createLiveServiceLogsSection(serviceLogs),
             createStubModeSection(),
-            createServiceCallsSection(serviceLogs),
             createUiStateSection(uiState),
             createLibraryStatsSection(libraryStats),
             createServiceIntegrationSection(),
@@ -49,25 +49,17 @@ private fun createStubModeSection(): DebugSection {
     )
 }
 
-private fun createServiceCallsSection(serviceLogs: List<String>): DebugSection {
+private fun createLiveServiceLogsSection(serviceLogs: List<String>): DebugSection {
     return DebugSection(
-        title = "Real-Time Service Logs",
+        title = "🟢 Live Service Logs (Tap buttons below to test!)",
         items = listOf(
-            DebugItem.NumericValue("Total Log Entries", serviceLogs.size),
-            DebugItem.BooleanValue("Has Recent Activity", serviceLogs.isNotEmpty()),
-            DebugItemFactory.createTimestamp("Last Log Update"),
-            DebugItem.Multiline(
-                "Recent Service Calls",
-                if (serviceLogs.isEmpty()) {
-                    "No service calls logged yet.\nTap test buttons below to generate logs."
-                } else {
-                    serviceLogs.takeLast(10).joinToString("\n") { log ->
-                        "• $log"
-                    }
-                }
-            ),
-            DebugItem.KeyValue("Log Collection", "Real-time via ViewModel.serviceLogs StateFlow"),
-            DebugItem.KeyValue("Log Source", "LibraryV2ServiceStub + DownloadV2ServiceStub")
+            DebugItem.BooleanValue("Service Integration Working", serviceLogs.isNotEmpty()),
+            DebugItem.NumericValue("Total Service Calls", serviceLogs.size),
+            // Use a special debug item that contains scrollable logs data
+            DebugItem.JsonData("SCROLLABLE_LOGS", serviceLogs.joinToString("\n")),
+            DebugItem.KeyValue("Update Frequency", "Real-time (immediate)"),
+            DebugItem.KeyValue("Log Source", "LibraryV2ServiceStub + DownloadV2ServiceStub"),
+            DebugItemFactory.createTimestamp("Last Checked")
         )
     )
 }
