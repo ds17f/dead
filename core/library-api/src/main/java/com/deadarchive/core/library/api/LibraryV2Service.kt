@@ -1,6 +1,6 @@
 package com.deadarchive.core.library.api
 
-import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.LibraryV2Show
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -13,9 +13,9 @@ import kotlinx.coroutines.flow.Flow
 interface LibraryV2Service {
     
     /**
-     * Get all shows in the user's library as a reactive Flow
+     * Get all shows in the user's library as a reactive Flow with library metadata
      */
-    fun getLibraryShows(): Flow<List<Show>>
+    fun getLibraryV2Shows(): Flow<List<LibraryV2Show>>
     
     /**
      * Add a show to the user's library

@@ -8,12 +8,16 @@ import com.deadarchive.core.library.api.LibraryStats
 import com.deadarchive.core.download.api.DownloadV2Service
 import com.deadarchive.core.download.api.DownloadStatus
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.LibraryV2Show
 import com.deadarchive.core.common.service.ShareService
 import com.deadarchive.core.model.Recording
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Named
@@ -64,13 +68,43 @@ class LibraryV2ViewModel @Inject constructor(
     private fun loadLibrary() {
         viewModelScope.launch {
             Log.d(TAG, "Loading library via stub service...")
-            addServiceLog("loadLibrary() -> calling libraryV2Service.getLibraryShows()")
+            addServiceLog("loadLibrary() -> calling libraryV2Service.getLibraryV2Shows()")
             try {
-                libraryV2Service.getLibraryShows()
-                    .collect { shows ->
-                        Log.d(TAG, "Received ${shows.size} shows from stub service")
-                        addServiceLog("getLibraryShows() returned ${shows.size} shows")
-                        _uiState.value = LibraryV2UiState.Success(shows)
+                // Combine library shows with real-time download status
+                libraryV2Service.getLibraryV2Shows()
+                    .flatMapLatest { libraryShows ->
+                        if (libraryShows.isEmpty()) {
+                            flowOf(emptyList<LibraryV2Show>())
+                        } else {
+                            // For each show, combine with its real download status
+                            val showFlows = libraryShows.map { libraryShow ->
+                                combine(
+                                    flowOf(libraryShow),
+                                    downloadV2Service.getDownloadStatus(libraryShow.show)
+                                ) { show, downloadApiStatus ->
+                                    // Convert API DownloadStatus to model DownloadStatus
+                                    val modelDownloadStatus = when (downloadApiStatus) {
+                                        com.deadarchive.core.download.api.DownloadStatus.NOT_DOWNLOADED -> com.deadarchive.core.model.DownloadStatus.QUEUED
+                                        com.deadarchive.core.download.api.DownloadStatus.DOWNLOADING -> com.deadarchive.core.model.DownloadStatus.DOWNLOADING
+                                        com.deadarchive.core.download.api.DownloadStatus.COMPLETED -> com.deadarchive.core.model.DownloadStatus.COMPLETED
+                                        com.deadarchive.core.download.api.DownloadStatus.FAILED -> com.deadarchive.core.model.DownloadStatus.FAILED
+                                    }
+                                    
+                                    // Update the LibraryV2Show with real download status
+                                    show.copy(downloadStatus = modelDownloadStatus)
+                                }
+                            }
+                            
+                            // Combine all show flows into a single list flow
+                            combine(showFlows) { showArray ->
+                                showArray.toList()
+                            }
+                        }
+                    }
+                    .collect { libraryShows ->
+                        Log.d(TAG, "Received ${libraryShows.size} library shows with real download status")
+                        addServiceLog("getLibraryV2Shows() returned ${libraryShows.size} shows with real download status")
+                        _uiState.value = LibraryV2UiState.Success(libraryShows)
                     }
             } catch (e: Exception) {
                 Log.e(TAG, "Error loading library from stub", e)
@@ -128,11 +162,11 @@ class LibraryV2ViewModel @Inject constructor(
         }
     }
     
-    fun downloadShow(show: Show) {
+    fun downloadShow(show: LibraryV2Show) {
         viewModelScope.launch {
             Log.d(TAG, "ViewModel: downloadShow('${show.showId}') -> calling stub")
             addServiceLog("downloadShow('${show.showId}') -> calling downloadV2Service.downloadShow()")
-            downloadV2Service.downloadShow(show)
+            downloadV2Service.downloadShow(show.show)
                 .onSuccess { 
                     Log.d(TAG, "ViewModel: downloadShow succeeded")
                     addServiceLog("downloadShow('${show.showId}') succeeded")
@@ -144,17 +178,37 @@ class LibraryV2ViewModel @Inject constructor(
         }
     }
     
-    fun getDownloadStatus(show: Show) = downloadV2Service.getDownloadStatus(show).also {
+    fun cancelShowDownloads(show: LibraryV2Show) {
+        viewModelScope.launch {
+            Log.d(TAG, "ViewModel: cancelShowDownloads('${show.showId}') -> calling stub")
+            addServiceLog("cancelShowDownloads('${show.showId}') -> calling downloadV2Service.cancelShowDownloads()")
+            downloadV2Service.cancelShowDownloads(show.show)
+                .onSuccess { 
+                    Log.d(TAG, "ViewModel: cancelShowDownloads succeeded")
+                    addServiceLog("cancelShowDownloads('${show.showId}') succeeded")
+                }
+                .onFailure { 
+                    Log.e(TAG, "ViewModel: cancelShowDownloads failed: ${it.message}")
+                    addServiceLog("ERROR: cancelShowDownloads('${show.showId}') failed: ${it.message}")
+                }
+        }
+    }
+    
+    fun getDownloadStatus(show: LibraryV2Show) = downloadV2Service.getDownloadStatus(show.show).also {
         Log.d(TAG, "ViewModel: getDownloadStatus('${show.showId}') -> calling stub")
     }
     
-    fun shareShow(show: Show) {
+    fun getPinStatus(show: LibraryV2Show) = libraryV2Service.isShowPinned(show.showId).also {
+        Log.d(TAG, "ViewModel: getPinStatus('${show.showId}') -> calling stub")
+    }
+    
+    fun shareShow(show: LibraryV2Show) {
         viewModelScope.launch {
             Log.d(TAG, "ViewModel: shareShow('${show.showId}')")
             addServiceLog("shareShow('${show.showId}') -> finding best recording")
             
             // Get the best recording to share
-            val recording = show.recordings.firstOrNull()
+            val recording = show.show.recordings.firstOrNull()
             if (recording == null) {
                 Log.e(TAG, "ViewModel: shareShow failed - no recording found")
                 addServiceLog("ERROR: shareShow('${show.showId}') failed - no recording found")
@@ -164,7 +218,7 @@ class LibraryV2ViewModel @Inject constructor(
             // Share the show using ShareService
             addServiceLog("shareShow('${show.showId}') -> calling shareService.shareShow()")
             try {
-                shareService.shareShow(show, recording)
+                shareService.shareShow(show.show, recording)
                 Log.d(TAG, "ViewModel: shareShow succeeded")
                 addServiceLog("shareShow('${show.showId}') succeeded")
             } catch (e: Exception) {
@@ -200,7 +254,7 @@ class LibraryV2ViewModel @Inject constructor(
         }
     }
     
-    fun pinShow(show: Show) {
+    fun pinShow(show: LibraryV2Show) {
         viewModelScope.launch {
             Log.d(TAG, "ViewModel: pinShow('${show.showId}') -> calling stub")
             addServiceLog("pinShow('${show.showId}') -> calling libraryV2Service.pinShow()")
@@ -216,7 +270,7 @@ class LibraryV2ViewModel @Inject constructor(
         }
     }
     
-    fun unpinShow(show: Show) {
+    fun unpinShow(show: LibraryV2Show) {
         viewModelScope.launch {
             Log.d(TAG, "ViewModel: unpinShow('${show.showId}') -> calling stub")
             addServiceLog("unpinShow('${show.showId}') -> calling libraryV2Service.unpinShow()")
@@ -283,6 +337,6 @@ class LibraryV2ViewModel @Inject constructor(
  */
 sealed class LibraryV2UiState {
     object Loading : LibraryV2UiState()
-    data class Success(val shows: List<Show>) : LibraryV2UiState()
+    data class Success(val shows: List<LibraryV2Show>) : LibraryV2UiState()
     data class Error(val message: String) : LibraryV2UiState()
 }

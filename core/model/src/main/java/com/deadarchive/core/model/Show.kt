@@ -35,7 +35,6 @@ data class Show(
     // Library timestamp - when this show was added to library
     val addedToLibraryAt: Long? = null,
     
-    
     // Rating information (optional)
     val rating: Float? = null,                        // Weighted rating (for internal ranking)
     val rawRating: Float? = null,                     // Simple average (for display)

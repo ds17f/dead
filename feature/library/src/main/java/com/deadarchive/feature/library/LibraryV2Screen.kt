@@ -36,8 +36,10 @@ import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.feature.library.component.ShowActionsBottomSheet
 import com.deadarchive.feature.library.component.QrCodeBottomSheet
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.LibraryV2Show
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.library.debug.collectLibraryV2DebugData
+import com.deadarchive.core.download.api.DownloadStatus
 
 /**
  * Spotify-like Library V2 Screen.
@@ -67,7 +69,7 @@ fun LibraryV2Screen(
     var displayMode by remember { mutableStateOf(DisplayMode.LIST) }
     var showAddBottomSheet by remember { mutableStateOf(false) }
     var showSortBottomSheet by remember { mutableStateOf(false) }
-    var selectedShowForActions by remember { mutableStateOf<Show?>(null) }
+    var selectedShowForActions by remember { mutableStateOf<LibraryV2Show?>(null) }
     var selectedShowForQrCode by remember { mutableStateOf<Show?>(null) }
     
     // Debug panel state and data collection - only when debug mode is enabled
@@ -132,6 +134,7 @@ fun LibraryV2Screen(
                             onShowClick = onNavigateToShow,
                             onPlayClick = onNavigateToPlayer,
                             onShowLongPress = { show -> selectedShowForActions = show },
+                            viewModel = viewModel,
                             modifier = Modifier.weight(1f)
                         )
                     }
@@ -182,29 +185,51 @@ fun LibraryV2Screen(
         )
     }
     
-    // Show Actions Bottom Sheet
-    selectedShowForActions?.let { show ->
+    // Show Actions Bottom Sheet - access current shows from uiState
+    selectedShowForActions?.let { libraryShow ->
+        // Now we have the LibraryV2Show directly
+        // Convert model DownloadStatus to API DownloadStatus for the component
+        val downloadStatus = when (libraryShow.downloadStatus) {
+            com.deadarchive.core.model.DownloadStatus.QUEUED -> com.deadarchive.core.download.api.DownloadStatus.NOT_DOWNLOADED  
+            com.deadarchive.core.model.DownloadStatus.DOWNLOADING -> com.deadarchive.core.download.api.DownloadStatus.DOWNLOADING
+            com.deadarchive.core.model.DownloadStatus.PAUSED -> com.deadarchive.core.download.api.DownloadStatus.DOWNLOADING
+            com.deadarchive.core.model.DownloadStatus.COMPLETED -> com.deadarchive.core.download.api.DownloadStatus.COMPLETED
+            com.deadarchive.core.model.DownloadStatus.FAILED -> com.deadarchive.core.download.api.DownloadStatus.FAILED
+            com.deadarchive.core.model.DownloadStatus.CANCELLED -> com.deadarchive.core.download.api.DownloadStatus.NOT_DOWNLOADED
+        }
+        val isPinned = libraryShow.isPinned
+        
         ShowActionsBottomSheet(
-            show = show,
+            show = libraryShow.show,
+            downloadStatus = downloadStatus,
+            isPinned = isPinned,
             onDismiss = { selectedShowForActions = null },
             onShare = { 
-                viewModel.shareShow(show)
+                viewModel.shareShow(libraryShow)
                 selectedShowForActions = null
             },
             onRemoveFromLibrary = { 
-                viewModel.removeFromLibrary(show.showId)
+                viewModel.removeFromLibrary(libraryShow.showId)
                 selectedShowForActions = null
             },
             onDownload = {
-                viewModel.downloadShow(show)
+                viewModel.downloadShow(libraryShow)
+                selectedShowForActions = null
+            },
+            onRemoveDownload = {
+                viewModel.cancelShowDownloads(libraryShow)
                 selectedShowForActions = null
             },
             onPin = {
-                viewModel.pinShow(show)
+                viewModel.pinShow(libraryShow)
+                selectedShowForActions = null
+            },
+            onUnpin = {
+                viewModel.unpinShow(libraryShow)
                 selectedShowForActions = null
             },
             onShowQRCode = {
-                selectedShowForQrCode = show
+                selectedShowForQrCode = libraryShow.show
                 selectedShowForActions = null
             }
         )
@@ -404,12 +429,13 @@ private fun LoadingContent(
  */
 @Composable
 private fun LibraryContent(
-    shows: List<Show>,
+    shows: List<LibraryV2Show>,
     displayMode: DisplayMode,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
     // Make onShowLongPress optional with empty default implementation
-    onShowLongPress: (Show) -> Unit = {},
+    onShowLongPress: (LibraryV2Show) -> Unit = {},
+    viewModel: LibraryV2ViewModel,
     modifier: Modifier = Modifier
 ) {
     when (displayMode) {
@@ -419,6 +445,7 @@ private fun LibraryContent(
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
                 onShowLongPress = onShowLongPress,
+                viewModel = viewModel,
                 modifier = modifier
             )
         }
@@ -428,6 +455,7 @@ private fun LibraryContent(
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
                 onShowLongPress = onShowLongPress,
+                viewModel = viewModel,
                 modifier = modifier
             )
         }
@@ -439,10 +467,11 @@ private fun LibraryContent(
  */
 @Composable
 private fun LibraryListView(
-    shows: List<Show>,
+    shows: List<LibraryV2Show>,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
-    onShowLongPress: (Show) -> Unit,
+    onShowLongPress: (LibraryV2Show) -> Unit,
+    viewModel: LibraryV2ViewModel,
     modifier: Modifier = Modifier
 ) {
     LazyColumn(
@@ -454,8 +483,8 @@ private fun LibraryListView(
             ShowListItem(
                 show = show,
                 onShowClick = { onShowClick(show.showId) },
-                onPlayClick = { onPlayClick(show.showId) },
-                onShowLongPress = { onShowLongPress(show) }
+                onShowLongPress = { onShowLongPress(show) },
+                viewModel = viewModel
             )
         }
     }
@@ -466,14 +495,15 @@ private fun LibraryListView(
  */
 @Composable
 private fun LibraryGridView(
-    shows: List<Show>,
+    shows: List<LibraryV2Show>,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
-    onShowLongPress: (Show) -> Unit,
+    onShowLongPress: (LibraryV2Show) -> Unit,
+    viewModel: LibraryV2ViewModel,
     modifier: Modifier = Modifier
 ) {
     LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
+        columns = GridCells.Fixed(3),
         modifier = modifier,
         contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 88.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -483,8 +513,8 @@ private fun LibraryGridView(
             ShowGridItem(
                 show = show,
                 onShowClick = { onShowClick(show.showId) },
-                onPlayClick = { onPlayClick(show.showId) },
-                onShowLongPress = { onShowLongPress(show) }
+                onShowLongPress = { onShowLongPress(show) },
+                viewModel = viewModel
             )
         }
     }
@@ -496,11 +526,15 @@ private fun LibraryGridView(
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 private fun ShowListItem(
-    show: Show,
+    show: LibraryV2Show,
     onShowClick: () -> Unit,
-    onPlayClick: () -> Unit,
-    onShowLongPress: () -> Unit
+    onShowLongPress: () -> Unit,
+    viewModel: LibraryV2ViewModel
 ) {
+    // Pin and download status now come directly from the LibraryV2Show object
+    val downloadStatus = show.downloadStatus
+    val isPinned = show.isPinned
+    
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -509,19 +543,19 @@ private fun ShowListItem(
                 onLongClick = onShowLongPress
             ),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
+            containerColor = Color.Transparent
         )
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(12.dp),
+                .padding(8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Album cover placeholder
+            // Album cover placeholder - smaller
             Box(
                 modifier = Modifier
-                    .size(56.dp)
+                    .size(60.dp)
                     .clip(RoundedCornerShape(8.dp))
                     .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)),
                 contentAlignment = Alignment.Center
@@ -529,42 +563,60 @@ private fun ShowListItem(
                 Icon(
                     painter = IconResources.PlayerControls.AlbumArt(),
                     contentDescription = null,
-                    modifier = Modifier.size(24.dp),
+                    modifier = Modifier.size(30.dp),
                     tint = MaterialTheme.colorScheme.primary
                 )
             }
             
             Spacer(modifier = Modifier.width(12.dp))
             
-            // Show info
+            // Show info - 2 line layout
             Column(
                 modifier = Modifier.weight(1f)
             ) {
+                // Line 1: Date • City, State with icons
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    // Pin indicator - positioned to the left of download icon
+                    if (isPinned) {
+                        Icon(
+                            painter = IconResources.Content.PushPin(),
+                            contentDescription = "Pinned",
+                            modifier = Modifier.size(12.dp),
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                    }
+                    
+                    // Download indicator
+                    if (downloadStatus == com.deadarchive.core.model.DownloadStatus.COMPLETED) {
+                        Icon(
+                            painter = IconResources.Status.CheckCircle(),
+                            contentDescription = "Downloaded",
+                            modifier = Modifier.size(12.dp),
+                            tint = MaterialTheme.colorScheme.error
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                    }
+                    
+                    Text(
+                        text = "${show.date} • ${show.displayLocation}",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f)
+                    )
+                }
+                
+                // Line 2: Venue
                 Text(
-                    text = show.date,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-                Text(
-                    text = "${show.displayVenue}, ${show.displayLocation}",
-                    style = MaterialTheme.typography.bodyMedium,
+                    text = show.displayVenue,
+                    style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis
-                )
-            }
-            
-            // Play button
-            IconButton(
-                onClick = onPlayClick,
-                modifier = Modifier.size(40.dp)
-            ) {
-                Icon(
-                    painter = IconResources.PlayerControls.Play(),
-                    contentDescription = "Play Show",
-                    modifier = Modifier.size(20.dp)
                 )
             }
         }
@@ -577,32 +629,35 @@ private fun ShowListItem(
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 private fun ShowGridItem(
-    show: Show,
+    show: LibraryV2Show,
     onShowClick: () -> Unit,
-    onPlayClick: () -> Unit,
-    onShowLongPress: () -> Unit
+    onShowLongPress: () -> Unit,
+    viewModel: LibraryV2ViewModel
 ) {
+    // Pin and download status now come directly from the LibraryV2Show object
+    val downloadStatus = show.downloadStatus
+    val isPinned = show.isPinned
+    
     Card(
         modifier = Modifier
-            .aspectRatio(1f)
+            .aspectRatio(0.8f)
             .combinedClickable(
                 onClick = onShowClick,
                 onLongClick = onShowLongPress
             ),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
+            containerColor = Color.Transparent
         )
     ) {
         Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(12.dp)
+            modifier = Modifier.fillMaxSize()
         ) {
-            // Album cover placeholder
+            // Album cover - weight-based instead of aspectRatio to leave room for text
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
+                    .padding(8.dp)
                     .clip(RoundedCornerShape(8.dp))
                     .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)),
                 contentAlignment = Alignment.Center
@@ -613,44 +668,69 @@ private fun ShowGridItem(
                     modifier = Modifier.size(32.dp),
                     tint = MaterialTheme.colorScheme.primary
                 )
+            }
+            
+            // Text section with fixed height allocation
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 4.dp, vertical = 4.dp),
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
+                // Line 1: Date (smaller text)
+                Text(
+                    text = show.date,
+                    style = MaterialTheme.typography.labelSmall,
+                    fontWeight = FontWeight.Medium,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
                 
-                // Play button overlay
-                IconButton(
-                    onClick = onPlayClick,
-                    modifier = Modifier
-                        .align(Alignment.BottomEnd)
-                        .size(32.dp)
-                        .background(
-                            MaterialTheme.colorScheme.primary,
-                            CircleShape
-                        )
+                // Line 2: Venue
+                Text(
+                    text = show.displayVenue,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                
+                // Line 3: City/State with icons
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Icon(
-                        painter = IconResources.PlayerControls.Play(),
-                        contentDescription = "Play Show",
-                        modifier = Modifier.size(16.dp),
-                        tint = MaterialTheme.colorScheme.onPrimary
+                    // Pin indicator - positioned to the left of download icon
+                    if (isPinned) {
+                        Icon(
+                            painter = IconResources.Content.PushPin(),
+                            contentDescription = "Pinned",
+                            modifier = Modifier.size(8.dp),
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                        Spacer(modifier = Modifier.width(2.dp))
+                    }
+                    
+                    // Download indicator
+                    if (downloadStatus == com.deadarchive.core.model.DownloadStatus.COMPLETED) {
+                        Icon(
+                            painter = IconResources.Status.CheckCircle(),
+                            contentDescription = "Downloaded",
+                            modifier = Modifier.size(8.dp),
+                            tint = MaterialTheme.colorScheme.error
+                        )
+                        Spacer(modifier = Modifier.width(2.dp))
+                    }
+                    
+                    Text(
+                        text = show.displayLocation,
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier.weight(1f)
                     )
                 }
             }
-            
-            Spacer(modifier = Modifier.height(8.dp))
-            
-            // Show info
-            Text(
-                text = show.date,
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Bold,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis
-            )
-            Text(
-                text = show.displayVenue,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                maxLines = 1,
-                overflow = TextOverflow.Ellipsis
-            )
         }
     }
 }
@@ -720,18 +800,67 @@ private fun EmptyLibraryContent(
             OutlinedButton(
                 onClick = { 
                     onTestStubs.downloadShow(
-                        Show(
-                            date = "1977-05-08",
-                            venue = "Test Venue",
-                            location = "Test City, NY",
-                            recordings = emptyList(),
-                            isInLibrary = false
+                        LibraryV2Show(
+                            show = Show(
+                                date = "1977-05-08",
+                                venue = "Test Venue",
+                                location = "Test City, NY",
+                                recordings = emptyList(),
+                                isInLibrary = false
+                            ),
+                            addedToLibraryAt = System.currentTimeMillis(),
+                            isPinned = false,
+                            downloadStatus = com.deadarchive.core.model.DownloadStatus.QUEUED
                         )
                     )
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text("Test Download Show")
+            }
+            
+            OutlinedButton(
+                onClick = { 
+                    onTestStubs.pinShow(
+                        LibraryV2Show(
+                            show = Show(
+                                date = "1977-05-08",
+                                venue = "Barton Hall, Cornell University",
+                                location = "Ithaca, NY",
+                                recordings = emptyList(),
+                                isInLibrary = true
+                            ),
+                            addedToLibraryAt = System.currentTimeMillis(),
+                            isPinned = false,
+                            downloadStatus = com.deadarchive.core.model.DownloadStatus.QUEUED
+                        )
+                    )
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Test Pin Show")
+            }
+            
+            OutlinedButton(
+                onClick = { 
+                    onTestStubs.unpinShow(
+                        LibraryV2Show(
+                            show = Show(
+                                date = "1977-05-08",
+                                venue = "Barton Hall, Cornell University",
+                                location = "Ithaca, NY",
+                                recordings = emptyList(),
+                                isInLibrary = true
+                            ),
+                            addedToLibraryAt = System.currentTimeMillis(),
+                            isPinned = true,
+                            downloadStatus = com.deadarchive.core.model.DownloadStatus.QUEUED
+                        )
+                    )
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text("Test Unpin Show")
             }
             
             FilledTonalButton(
@@ -920,11 +1049,11 @@ private fun SortOptionsBottomSheet(
  * Apply filtering and sorting to the shows list
  */
 private fun applyFiltersAndSorting(
-    shows: List<Show>,
+    shows: List<LibraryV2Show>,
     filterPath: FilterPath,
     sortBy: SortOption,
     sortDirection: SortDirection
-): List<Show> {
+): List<LibraryV2Show> {
     // Step 1: Apply decade and seasonal filtering
     val filteredShows = if (filterPath.isNotEmpty) {
         val selectedDecadeNode = filterPath.nodes.firstOrNull()
@@ -933,7 +1062,7 @@ private fun applyFiltersAndSorting(
         if (selectedDecadeNode != null) {
             shows.filter { show ->
                 // Parse year from show data
-                val year = show.year?.toIntOrNull() ?: 0
+                val year = show.show.year?.toIntOrNull() ?: 0
                 
                 // First filter by decade
                 val decadeMatches = when (selectedDecadeNode.id) {
@@ -946,7 +1075,7 @@ private fun applyFiltersAndSorting(
                 
                 // If decade matches and we have a season filter, also check season
                 if (decadeMatches && selectedSeasonNode != null) {
-                    val month = extractMonthFromDate(show.date)
+                    val month = extractMonthFromDate(show.show.date)
                     if (month != null) {
                         when (selectedSeasonNode.id.substringAfter("_")) { // Extract season from ID like "70s_spring"
                             "spring" -> month in 3..5   // March, April, May
@@ -969,20 +1098,20 @@ private fun applyFiltersAndSorting(
         shows // No filter applied
     }
     
-    // Step 2: Apply sorting
+    // Step 2: Apply sorting with pin priority
     val sortedShows = when (sortBy) {
         SortOption.DATE_OF_SHOW -> {
             if (sortDirection == SortDirection.ASCENDING) {
-                filteredShows.sortedBy { it.date }
+                filteredShows.sortedWith(compareBy<LibraryV2Show> { it.sortablePinStatus }.thenBy { it.show.date })
             } else {
-                filteredShows.sortedByDescending { it.date }
+                filteredShows.sortedWith(compareBy<LibraryV2Show> { it.sortablePinStatus }.thenByDescending { it.show.date })
             }
         }
         SortOption.DATE_ADDED -> {
             if (sortDirection == SortDirection.ASCENDING) {
-                filteredShows.sortedBy { it.addedToLibraryAt ?: 0L }
+                filteredShows.sortedWith(compareBy<LibraryV2Show> { it.sortablePinStatus }.thenBy { it.addedToLibraryAt })
             } else {
-                filteredShows.sortedByDescending { it.addedToLibraryAt ?: 0L }
+                filteredShows.sortedWith(compareBy<LibraryV2Show> { it.sortablePinStatus }.thenByDescending { it.addedToLibraryAt })
             }
         }
     }

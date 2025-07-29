@@ -4,12 +4,15 @@ import android.util.Log
 import com.deadarchive.core.library.api.LibraryV2Service
 import com.deadarchive.core.library.api.LibraryStats
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.model.LibraryV2Show
 import com.deadarchive.core.model.Recording
 import com.deadarchive.core.model.ConcertSet
 import com.deadarchive.core.model.Track
+import com.deadarchive.core.model.DownloadStatus
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.combine
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -39,9 +42,21 @@ class LibraryV2ServiceStub @Inject constructor() : LibraryV2Service {
     // In-memory pinned shows (just store IDs for simplicity)
     private val _pinnedShowIds = MutableStateFlow<Set<String>>(emptySet())
     
-    override fun getLibraryShows(): Flow<List<Show>> {
-        Log.d(TAG, "STUB: getLibraryShows() called - returning ${_libraryShows.value.size} shows")
-        return _libraryShows
+    override fun getLibraryV2Shows(): Flow<List<LibraryV2Show>> {
+        Log.d(TAG, "STUB: getLibraryV2Shows() called - returning ${_libraryShows.value.size} shows with library metadata")
+        return combine(
+            _libraryShows,
+            _pinnedShowIds
+        ) { shows, pinnedIds ->
+            shows.map { show ->
+                LibraryV2Show(
+                    show = show,
+                    addedToLibraryAt = show.addedToLibraryAt ?: System.currentTimeMillis(),
+                    isPinned = pinnedIds.contains(show.showId),
+                    downloadStatus = DownloadStatus.QUEUED // Placeholder - ViewModel will overlay real download status
+                )
+            }
+        }
     }
     
     override suspend fun addShowToLibrary(showId: String): Result<Unit> {
@@ -161,6 +176,21 @@ class LibraryV2ServiceStub @Inject constructor() : LibraryV2Service {
     override suspend fun populateTestData(): Result<Unit> {
         Log.d(TAG, "STUB: populateTestData() called")
         _libraryShows.value = createTestLibraryShows()
+        
+        // Pin a couple of shows for testing pin functionality
+        val testShows = _libraryShows.value
+        if (testShows.isNotEmpty()) {
+            val pinnedIds = mutableSetOf<String>()
+            // Pin the Cornell '77 show (always first in test data)
+            pinnedIds.add(testShows[0].showId)
+            // Pin one more show for testing
+            if (testShows.size > 3) {
+                pinnedIds.add(testShows[3].showId)
+            }
+            _pinnedShowIds.value = pinnedIds
+            Log.d(TAG, "STUB: Pinned test shows: $pinnedIds")
+        }
+        
         return Result.success(Unit)
     }
     
