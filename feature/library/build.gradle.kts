@@ -47,6 +47,7 @@ dependencies {
     implementation(project(":core:data"))
     implementation(project(":core:settings-api"))
     implementation(project(":core:settings"))
+    implementation(project(":core:common"))
     
     // Library V2 dependencies
     implementation(project(":core:library-api"))
@@ -68,6 +69,9 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-compiler:2.51.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    
+    // QR code generation
+    implementation("com.google.zxing:core:3.5.3")
     
     testImplementation("junit:junit:4.13.2")
 }
