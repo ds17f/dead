@@ -45,6 +45,27 @@ interface LibraryV2Service {
     fun isShowInLibrary(showId: String): Flow<Boolean>
     
     /**
+     * Pin a show for quick access
+     * @param showId The unique identifier for the show to pin
+     * @return Result indicating success or failure with error details
+     */
+    suspend fun pinShow(showId: String): Result<Unit>
+    
+    /**
+     * Unpin a previously pinned show
+     * @param showId The unique identifier for the show to unpin
+     * @return Result indicating success or failure with error details
+     */
+    suspend fun unpinShow(showId: String): Result<Unit>
+    
+    /**
+     * Check if a show is pinned (reactive)
+     * @param showId The unique identifier for the show
+     * @return Flow of boolean indicating if the show is pinned
+     */
+    fun isShowPinned(showId: String): Flow<Boolean>
+    
+    /**
      * Get library statistics and metadata
      * @return LibraryStats containing counts and storage information
      */
@@ -67,5 +88,6 @@ interface LibraryV2Service {
 data class LibraryStats(
     val totalShows: Int,
     val totalDownloaded: Int,
-    val totalStorageUsed: Long
+    val totalStorageUsed: Long,
+    val totalPinned: Int = 0
 )

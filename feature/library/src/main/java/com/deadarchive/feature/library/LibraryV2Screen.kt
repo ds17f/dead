@@ -33,6 +33,8 @@ import com.deadarchive.core.design.component.HierarchicalFilter
 import com.deadarchive.core.design.component.FilterPath
 import com.deadarchive.core.design.component.FilterTrees
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.feature.library.component.ShowActionsBottomSheet
+import com.deadarchive.feature.library.component.QrCodeBottomSheet
 import com.deadarchive.core.model.Show
 import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.library.debug.collectLibraryV2DebugData
@@ -66,6 +68,7 @@ fun LibraryV2Screen(
     var showAddBottomSheet by remember { mutableStateOf(false) }
     var showSortBottomSheet by remember { mutableStateOf(false) }
     var selectedShowForActions by remember { mutableStateOf<Show?>(null) }
+    var selectedShowForQrCode by remember { mutableStateOf<Show?>(null) }
     
     // Debug panel state and data collection - only when debug mode is enabled
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -128,8 +131,7 @@ fun LibraryV2Screen(
                             displayMode = displayMode,
                             onShowClick = onNavigateToShow,
                             onPlayClick = onNavigateToPlayer,
-                            // onShowLongPress temporarily removed
-                // onShowLongPress = { show -> selectedShowForActions = show },
+                            onShowLongPress = { show -> selectedShowForActions = show },
                             modifier = Modifier.weight(1f)
                         )
                     }
@@ -180,14 +182,13 @@ fun LibraryV2Screen(
         )
     }
     
-    // Show Actions Bottom Sheet - Temporarily commented out until ShowActionsBottomSheet is implemented
-    /* 
+    // Show Actions Bottom Sheet
     selectedShowForActions?.let { show ->
         ShowActionsBottomSheet(
             show = show,
             onDismiss = { selectedShowForActions = null },
             onShare = { 
-                // TODO: Implement share functionality
+                viewModel.shareShow(show)
                 selectedShowForActions = null
             },
             onRemoveFromLibrary = { 
@@ -199,16 +200,31 @@ fun LibraryV2Screen(
                 selectedShowForActions = null
             },
             onPin = {
-                // TODO: Implement pin functionality
+                viewModel.pinShow(show)
                 selectedShowForActions = null
             },
             onShowQRCode = {
-                // TODO: Implement QR code functionality
+                selectedShowForQrCode = show
                 selectedShowForActions = null
             }
         )
     }
-    */
+    
+    // QR Code Bottom Sheet
+    selectedShowForQrCode?.let { show ->
+        // Get best recording for QR code
+        val recording = show.recordings.firstOrNull()
+        if (recording != null) {
+            QrCodeBottomSheet(
+                recording = recording,
+                onDismiss = { selectedShowForQrCode = null },
+                onShare = {
+                    viewModel.shareRecordingUrl(recording)
+                    selectedShowForQrCode = null
+                }
+            )
+        }
+    }
     
     // Debug Bottom Sheet - only shown when debug mode is enabled
     debugData?.let { data ->
@@ -402,8 +418,7 @@ private fun LibraryContent(
                 shows = shows,
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
-                // onShowLongPress temporarily removed
-                // onShowLongPress = onShowLongPress,
+                onShowLongPress = onShowLongPress,
                 modifier = modifier
             )
         }
@@ -412,8 +427,7 @@ private fun LibraryContent(
                 shows = shows,
                 onShowClick = onShowClick,
                 onPlayClick = onPlayClick,
-                // onShowLongPress temporarily removed
-                // onShowLongPress = onShowLongPress,
+                onShowLongPress = onShowLongPress,
                 modifier = modifier
             )
         }
@@ -428,6 +442,7 @@ private fun LibraryListView(
     shows: List<Show>,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
+    onShowLongPress: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyColumn(
@@ -439,7 +454,8 @@ private fun LibraryListView(
             ShowListItem(
                 show = show,
                 onShowClick = { onShowClick(show.showId) },
-                onPlayClick = { onPlayClick(show.showId) }
+                onPlayClick = { onPlayClick(show.showId) },
+                onShowLongPress = { onShowLongPress(show) }
             )
         }
     }
@@ -453,6 +469,7 @@ private fun LibraryGridView(
     shows: List<Show>,
     onShowClick: (String) -> Unit,
     onPlayClick: (String) -> Unit,
+    onShowLongPress: (Show) -> Unit,
     modifier: Modifier = Modifier
 ) {
     LazyVerticalGrid(
@@ -466,7 +483,8 @@ private fun LibraryGridView(
             ShowGridItem(
                 show = show,
                 onShowClick = { onShowClick(show.showId) },
-                onPlayClick = { onPlayClick(show.showId) }
+                onPlayClick = { onPlayClick(show.showId) },
+                onShowLongPress = { onShowLongPress(show) }
             )
         }
     }
@@ -475,16 +493,21 @@ private fun LibraryGridView(
 /**
  * Individual show item in list view
  */
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 private fun ShowListItem(
     show: Show,
     onShowClick: () -> Unit,
-    onPlayClick: () -> Unit
+    onPlayClick: () -> Unit,
+    onShowLongPress: () -> Unit
 ) {
     Card(
-        onClick = onShowClick,
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .combinedClickable(
+                onClick = onShowClick,
+                onLongClick = onShowLongPress
+            ),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
         )
@@ -551,16 +574,21 @@ private fun ShowListItem(
 /**
  * Individual show item in grid view
  */
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 private fun ShowGridItem(
     show: Show,
     onShowClick: () -> Unit,
-    onPlayClick: () -> Unit
+    onPlayClick: () -> Unit,
+    onShowLongPress: () -> Unit
 ) {
     Card(
-        onClick = onShowClick,
-        modifier = Modifier.aspectRatio(1f),
+        modifier = Modifier
+            .aspectRatio(1f)
+            .combinedClickable(
+                onClick = onShowClick,
+                onLongClick = onShowLongPress
+            ),
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.3f)
         )

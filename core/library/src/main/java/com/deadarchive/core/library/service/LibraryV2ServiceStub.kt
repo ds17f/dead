@@ -36,6 +36,9 @@ class LibraryV2ServiceStub @Inject constructor() : LibraryV2Service {
     // In-memory library state with reactive updates
     private val _libraryShows = MutableStateFlow<List<Show>>(emptyList())
     
+    // In-memory pinned shows (just store IDs for simplicity)
+    private val _pinnedShowIds = MutableStateFlow<Set<String>>(emptySet())
+    
     override fun getLibraryShows(): Flow<List<Show>> {
         Log.d(TAG, "STUB: getLibraryShows() called - returning ${_libraryShows.value.size} shows")
         return _libraryShows
@@ -96,13 +99,58 @@ class LibraryV2ServiceStub @Inject constructor() : LibraryV2Service {
         }
     }
     
+    override suspend fun pinShow(showId: String): Result<Unit> {
+        Log.d(TAG, "STUB: pinShow(showId='$showId') called")
+        
+        // Check if the show exists in the library
+        if (!_libraryShows.value.any { it.showId == showId }) {
+            Log.w(TAG, "STUB: Cannot pin show '$showId', not in library")
+            return Result.failure(Exception("Show not in library"))
+        }
+        
+        // Add to pinned set
+        val currentPinned = _pinnedShowIds.value.toMutableSet()
+        currentPinned.add(showId)
+        _pinnedShowIds.value = currentPinned
+        
+        Log.d(TAG, "STUB: Show '$showId' pinned successfully")
+        return Result.success(Unit)
+    }
+    
+    override suspend fun unpinShow(showId: String): Result<Unit> {
+        Log.d(TAG, "STUB: unpinShow(showId='$showId') called")
+        
+        // Remove from pinned set
+        val currentPinned = _pinnedShowIds.value.toMutableSet()
+        val removed = currentPinned.remove(showId)
+        
+        if (removed) {
+            _pinnedShowIds.value = currentPinned
+            Log.d(TAG, "STUB: Show '$showId' unpinned successfully")
+        } else {
+            Log.d(TAG, "STUB: Show '$showId' was not pinned")
+        }
+        
+        return Result.success(Unit)
+    }
+    
+    override fun isShowPinned(showId: String): Flow<Boolean> {
+        Log.d(TAG, "STUB: isShowPinned(showId='$showId') called")
+        return _pinnedShowIds.map { pinnedIds ->
+            pinnedIds.contains(showId)
+        }
+    }
+    
     override suspend fun getLibraryStats(): LibraryStats {
         Log.d(TAG, "STUB: getLibraryStats() called")
         val showCount = _libraryShows.value.size
+        val pinnedCount = _pinnedShowIds.value.size
+        
         return LibraryStats(
             totalShows = showCount,
             totalDownloaded = showCount / 2, // Simulate half downloaded
-            totalStorageUsed = showCount * 250L * 1024 * 1024 // ~250MB per show
+            totalStorageUsed = showCount * 250L * 1024 * 1024, // ~250MB per show
+            totalPinned = pinnedCount
         )
     }
     

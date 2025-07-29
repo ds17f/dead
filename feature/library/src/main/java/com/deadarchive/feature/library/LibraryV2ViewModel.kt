@@ -8,6 +8,8 @@ import com.deadarchive.core.library.api.LibraryStats
 import com.deadarchive.core.download.api.DownloadV2Service
 import com.deadarchive.core.download.api.DownloadStatus
 import com.deadarchive.core.model.Show
+import com.deadarchive.core.common.service.ShareService
+import com.deadarchive.core.model.Recording
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -26,7 +28,8 @@ import javax.inject.Named
 @HiltViewModel
 class LibraryV2ViewModel @Inject constructor(
     @Named("stub") private val libraryV2Service: LibraryV2Service,
-    @Named("stub") private val downloadV2Service: DownloadV2Service
+    @Named("stub") private val downloadV2Service: DownloadV2Service,
+    private val shareService: ShareService
 ) : ViewModel() {
     
     companion object {
@@ -143,6 +146,94 @@ class LibraryV2ViewModel @Inject constructor(
     
     fun getDownloadStatus(show: Show) = downloadV2Service.getDownloadStatus(show).also {
         Log.d(TAG, "ViewModel: getDownloadStatus('${show.showId}') -> calling stub")
+    }
+    
+    fun shareShow(show: Show) {
+        viewModelScope.launch {
+            Log.d(TAG, "ViewModel: shareShow('${show.showId}')")
+            addServiceLog("shareShow('${show.showId}') -> finding best recording")
+            
+            // Get the best recording to share
+            val recording = show.recordings.firstOrNull()
+            if (recording == null) {
+                Log.e(TAG, "ViewModel: shareShow failed - no recording found")
+                addServiceLog("ERROR: shareShow('${show.showId}') failed - no recording found")
+                return@launch
+            }
+            
+            // Share the show using ShareService
+            addServiceLog("shareShow('${show.showId}') -> calling shareService.shareShow()")
+            try {
+                shareService.shareShow(show, recording)
+                Log.d(TAG, "ViewModel: shareShow succeeded")
+                addServiceLog("shareShow('${show.showId}') succeeded")
+            } catch (e: Exception) {
+                Log.e(TAG, "ViewModel: shareShow failed", e)
+                addServiceLog("ERROR: shareShow('${show.showId}') failed: ${e.message}")
+            }
+        }
+    }
+    
+    fun shareRecordingUrl(recording: Recording) {
+        viewModelScope.launch {
+            Log.d(TAG, "ViewModel: shareRecordingUrl('${recording.identifier}')")
+            addServiceLog("shareRecordingUrl('${recording.identifier}')")
+            
+            // We don't have direct access to the ShareService's ability to share just a URL
+            // So we'll use the basic Android Intent approach by creating a fake Show
+            val fakeShow = Show(
+                date = recording.concertDate,
+                venue = recording.concertVenue ?: "Unknown Venue",
+                location = recording.concertLocation ?: "Unknown Location",
+                recordings = listOf(recording),
+                isInLibrary = true
+            )
+            
+            try {
+                shareService.shareShow(fakeShow, recording)
+                Log.d(TAG, "ViewModel: shareRecordingUrl succeeded")
+                addServiceLog("shareRecordingUrl('${recording.identifier}') succeeded")
+            } catch (e: Exception) {
+                Log.e(TAG, "ViewModel: shareRecordingUrl failed", e)
+                addServiceLog("ERROR: shareRecordingUrl('${recording.identifier}') failed: ${e.message}")
+            }
+        }
+    }
+    
+    fun pinShow(show: Show) {
+        viewModelScope.launch {
+            Log.d(TAG, "ViewModel: pinShow('${show.showId}') -> calling stub")
+            addServiceLog("pinShow('${show.showId}') -> calling libraryV2Service.pinShow()")
+            libraryV2Service.pinShow(show.showId)
+                .onSuccess { 
+                    Log.d(TAG, "ViewModel: pinShow succeeded")
+                    addServiceLog("pinShow('${show.showId}') succeeded")
+                }
+                .onFailure { 
+                    Log.e(TAG, "ViewModel: pinShow failed: ${it.message}")
+                    addServiceLog("ERROR: pinShow('${show.showId}') failed: ${it.message}")
+                }
+        }
+    }
+    
+    fun unpinShow(show: Show) {
+        viewModelScope.launch {
+            Log.d(TAG, "ViewModel: unpinShow('${show.showId}') -> calling stub")
+            addServiceLog("unpinShow('${show.showId}') -> calling libraryV2Service.unpinShow()")
+            libraryV2Service.unpinShow(show.showId)
+                .onSuccess { 
+                    Log.d(TAG, "ViewModel: unpinShow succeeded")
+                    addServiceLog("unpinShow('${show.showId}') succeeded")
+                }
+                .onFailure { 
+                    Log.e(TAG, "ViewModel: unpinShow failed: ${it.message}")
+                    addServiceLog("ERROR: unpinShow('${show.showId}') failed: ${it.message}")
+                }
+        }
+    }
+    
+    fun isShowPinned(showId: String) = libraryV2Service.isShowPinned(showId).also {
+        Log.d(TAG, "ViewModel: isShowPinned('$showId') -> calling stub")
     }
     
     fun clearLibrary() {
