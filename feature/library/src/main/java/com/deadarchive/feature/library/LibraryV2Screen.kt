@@ -640,7 +640,6 @@ private fun ShowGridItem(
     
     Card(
         modifier = Modifier
-            .aspectRatio(0.8f)
             .combinedClickable(
                 onClick = onShowClick,
                 onLongClick = onShowLongPress
@@ -652,11 +651,11 @@ private fun ShowGridItem(
         Column(
             modifier = Modifier.fillMaxSize()
         ) {
-            // Album cover - weight-based instead of aspectRatio to leave room for text
+            // Album cover - full square aspect ratio
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .weight(1f)
+                    .aspectRatio(1f) // Perfect square for album art
                     .padding(8.dp)
                     .clip(RoundedCornerShape(8.dp))
                     .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.1f)),
@@ -665,7 +664,7 @@ private fun ShowGridItem(
                 Icon(
                     painter = IconResources.PlayerControls.AlbumArt(),
                     contentDescription = null,
-                    modifier = Modifier.size(32.dp),
+                    modifier = Modifier.size(40.dp), // Slightly larger icon
                     tint = MaterialTheme.colorScheme.primary
                 )
             }
@@ -677,25 +676,7 @@ private fun ShowGridItem(
                     .padding(horizontal = 4.dp, vertical = 4.dp),
                 verticalArrangement = Arrangement.spacedBy(2.dp)
             ) {
-                // Line 1: Date (smaller text)
-                Text(
-                    text = show.date,
-                    style = MaterialTheme.typography.labelSmall,
-                    fontWeight = FontWeight.Medium,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-                
-                // Line 2: Venue
-                Text(
-                    text = show.displayVenue,
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis
-                )
-                
-                // Line 3: City/State with icons
+                // Line 1: Date with icons
                 Row(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
@@ -722,14 +703,32 @@ private fun ShowGridItem(
                     }
                     
                     Text(
-                        text = show.displayLocation,
+                        text = show.date,
                         style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        fontWeight = FontWeight.Medium,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
                         modifier = Modifier.weight(1f)
                     )
                 }
+                
+                // Line 2: Venue
+                Text(
+                    text = show.displayVenue,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
+                
+                // Line 3: City/State (no icons here anymore)
+                Text(
+                    text = show.displayLocation,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
+                )
             }
         }
     }
