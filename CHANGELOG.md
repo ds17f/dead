@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.33.0] - 2025-07-28
+
+### New Features
+* implement show actions bottom sheet (cb2ce22)
+
+### Other Changes
+* Merge branch 'break-up-classes' (e111949)
+
+
 ## [0.32.1] - 2025-07-28
 
 ### Bug Fixes
 * make LibraryV2Screen build by making onShowLongPress optional and commenting out unimplemented component (5a5f752)
-
-
 ## [0.32.0] - 2025-07-28
 
 ### New Features
