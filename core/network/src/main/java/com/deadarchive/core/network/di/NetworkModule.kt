@@ -1,12 +1,14 @@
 package com.deadarchive.core.network.di
 
 import com.deadarchive.core.network.ArchiveApiService
+import com.deadarchive.core.network.GitHubApiService
 import com.deadarchive.core.network.interceptor.ArchiveInterceptor
 import com.deadarchive.core.network.interceptor.ErrorHandlingInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import javax.inject.Qualifier
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
@@ -15,6 +17,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class GitHubRetrofit
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -111,5 +117,35 @@ object NetworkModule {
         retrofit: Retrofit
     ): ArchiveApiService {
         return retrofit.create(ArchiveApiService::class.java)
+    }
+    
+    /**
+     * Provides GitHub API Retrofit instance configured for GitHub API
+     */
+    @Provides
+    @Singleton
+    @GitHubRetrofit
+    fun provideGitHubRetrofit(
+        okHttpClient: OkHttpClient,
+        json: Json
+    ): Retrofit {
+        val contentType = "application/json".toMediaType()
+        
+        return Retrofit.Builder()
+            .baseUrl("https://api.github.com/")
+            .client(okHttpClient)
+            .addConverterFactory(json.asConverterFactory(contentType))
+            .build()
+    }
+    
+    /**
+     * Provides GitHub API service implementation
+     */
+    @Provides
+    @Singleton
+    fun provideGitHubApiService(
+        @GitHubRetrofit gitHubRetrofit: Retrofit
+    ): GitHubApiService {
+        return gitHubRetrofit.create(GitHubApiService::class.java)
     }
 }

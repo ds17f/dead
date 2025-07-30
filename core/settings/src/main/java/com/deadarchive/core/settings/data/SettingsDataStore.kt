@@ -46,6 +46,11 @@ class SettingsDataStore @Inject constructor(
     private val enableResumeLastTrackKey = booleanPreferencesKey("enable_resume_last_track")
     private val useLibraryV2Key = booleanPreferencesKey("use_library_v2")
     
+    // Update-related preference keys
+    private val autoUpdateCheckEnabledKey = booleanPreferencesKey("auto_update_check_enabled")
+    private val lastUpdateCheckTimestampKey = longPreferencesKey("last_update_check_timestamp")
+    private val skippedVersionsKey = stringPreferencesKey("skipped_versions") // Comma-separated string
+    
     /**
      * Reactive flow of application settings
      */
@@ -233,6 +238,52 @@ class SettingsDataStore @Inject constructor(
         }
     }
     
+    // Update-related methods
+    
+    /**
+     * Update the timestamp of the last update check
+     */
+    suspend fun updateLastUpdateCheck(timestamp: Long) {
+        dataStore.edit { preferences ->
+            preferences[lastUpdateCheckTimestampKey] = timestamp
+        }
+    }
+    
+    /**
+     * Add a version to the skipped versions set
+     */
+    suspend fun addSkippedVersion(version: String) {
+        dataStore.edit { preferences ->
+            val currentVersionsString = preferences[skippedVersionsKey] ?: ""
+            val currentVersions = if (currentVersionsString.isBlank()) {
+                emptySet()
+            } else {
+                currentVersionsString.split(",").toSet()
+            }
+            
+            val updatedVersions = currentVersions + version
+            preferences[skippedVersionsKey] = updatedVersions.joinToString(",")
+        }
+    }
+    
+    /**
+     * Clear all skipped versions
+     */
+    suspend fun clearSkippedVersions() {
+        dataStore.edit { preferences ->
+            preferences[skippedVersionsKey] = ""
+        }
+    }
+    
+    /**
+     * Set whether automatic update checking is enabled
+     */
+    suspend fun setAutoUpdateCheckEnabled(enabled: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[autoUpdateCheckEnabledKey] = enabled
+        }
+    }
+    
     /**
      * Convert DataStore preferences to AppSettings
      */
@@ -275,6 +326,14 @@ class SettingsDataStore @Inject constructor(
             }
         }
         
+        // Parse skipped versions from comma-separated string
+        val skippedVersionsString = this[skippedVersionsKey] ?: ""
+        val skippedVersions = if (skippedVersionsString.isBlank()) {
+            emptySet()
+        } else {
+            skippedVersionsString.split(",").toSet()
+        }
+        
         return AppSettings(
             audioFormatPreferences = audioFormatPreference,
             themeMode = themeMode,
@@ -287,7 +346,10 @@ class SettingsDataStore @Inject constructor(
             minimumRating = minimumRating,
             preferHigherRated = this[preferHigherRatedKey] ?: true,
             enableResumeLastTrack = this[enableResumeLastTrackKey] ?: true,
-            useLibraryV2 = this[useLibraryV2Key] ?: false
+            useLibraryV2 = this[useLibraryV2Key] ?: false,
+            autoUpdateCheckEnabled = this[autoUpdateCheckEnabledKey] ?: true, 
+            lastUpdateCheckTimestamp = this[lastUpdateCheckTimestampKey] ?: 0L,
+            skippedVersions = skippedVersions
         )
     }
 }

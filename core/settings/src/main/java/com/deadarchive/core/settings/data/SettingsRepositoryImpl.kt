@@ -7,6 +7,7 @@ import com.deadarchive.core.settings.api.model.ThemeMode
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -211,5 +212,78 @@ class SettingsRepositoryImpl @Inject constructor(
             Log.e(TAG, "Failed to update use Library V2", e)
             throw e
         }
+    }
+    
+    // Update-related methods
+    
+    override suspend fun updateLastUpdateCheck(timestamp: Long) {
+        try {
+            Log.d(TAG, "Updating last update check timestamp to: $timestamp")
+            settingsDataStore.updateLastUpdateCheck(timestamp)
+            Log.d(TAG, "Last update check timestamp updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update last update check timestamp", e)
+            throw e
+        }
+    }
+    
+    override fun getLastUpdateCheck(): Flow<Long> {
+        return settingsDataStore.settingsFlow
+            .catch { exception ->
+                Log.e(TAG, "Error reading last update check", exception)
+                emit(AppSettings())
+            }
+            .map { it.lastUpdateCheckTimestamp }
+    }
+    
+    override suspend fun addSkippedVersion(version: String) {
+        try {
+            Log.d(TAG, "Adding skipped version: $version")
+            settingsDataStore.addSkippedVersion(version)
+            Log.d(TAG, "Skipped version added successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to add skipped version", e)
+            throw e
+        }
+    }
+    
+    override fun getSkippedVersions(): Flow<Set<String>> {
+        return settingsDataStore.settingsFlow
+            .catch { exception ->
+                Log.e(TAG, "Error reading skipped versions", exception)
+                emit(AppSettings())
+            }
+            .map { it.skippedVersions }
+    }
+    
+    override suspend fun clearSkippedVersions() {
+        try {
+            Log.d(TAG, "Clearing all skipped versions")
+            settingsDataStore.clearSkippedVersions()
+            Log.d(TAG, "All skipped versions cleared successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to clear skipped versions", e)
+            throw e
+        }
+    }
+    
+    override suspend fun setAutoUpdateCheckEnabled(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Setting auto update check enabled to: $enabled")
+            settingsDataStore.setAutoUpdateCheckEnabled(enabled)
+            Log.d(TAG, "Auto update check enabled setting updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to set auto update check enabled", e)
+            throw e
+        }
+    }
+    
+    override fun isAutoUpdateCheckEnabled(): Flow<Boolean> {
+        return settingsDataStore.settingsFlow
+            .catch { exception ->
+                Log.e(TAG, "Error reading auto update check enabled", exception)
+                emit(AppSettings())
+            }
+            .map { it.autoUpdateCheckEnabled }
     }
 }

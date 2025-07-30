@@ -18,6 +18,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.core.settings.api.model.ThemeMode
 import com.deadarchive.core.settings.model.VersionInfo
+import com.deadarchive.core.design.component.UpdateAvailableDialog
 
 /**
  * Main settings screen with organized card-based sections
@@ -31,6 +32,9 @@ fun SettingsScreen(
 ) {
     val settings by viewModel.settings.collectAsState()
     val uiState by viewModel.uiState.collectAsState()
+    val updateStatus by viewModel.updateStatus.collectAsState()
+    val currentUpdate by viewModel.currentUpdate.collectAsState()
+    val downloadState by viewModel.downloadState.collectAsState()
     
     Scaffold(
         topBar = {
@@ -116,7 +120,13 @@ fun SettingsScreen(
                 onUpdateThemeMode = viewModel::updateThemeMode
             )
             
-            
+            // Update Settings Section
+            UpdateSettingsCard(
+                settings = settings,
+                updateStatus = updateStatus,
+                onCheckForUpdates = viewModel::checkForUpdates,
+                onSetAutoUpdateEnabled = viewModel::setAutoUpdateCheckEnabled
+            )
             
             // About Section
             AboutCard(versionInfo = versionInfo)
@@ -129,6 +139,18 @@ fun SettingsScreen(
                 onResetSettings = viewModel::resetToDefaults
             )
         }
+    }
+    
+    // Show update dialog if update is available
+    currentUpdate?.let { update ->
+        UpdateAvailableDialog(
+            update = update,
+            downloadState = downloadState,
+            onDownload = viewModel::downloadUpdate,
+            onSkip = viewModel::skipUpdate,
+            onInstall = viewModel::installUpdate,
+            onDismiss = viewModel::clearUpdateState
+        )
     }
     
     // Clear messages after a delay
@@ -539,3 +561,122 @@ private fun AboutCard(versionInfo: VersionInfo) {
     }
 }
 
+@Composable
+private fun UpdateSettingsCard(
+    settings: AppSettings,
+    updateStatus: com.deadarchive.core.model.UpdateStatus?,
+    onCheckForUpdates: () -> Unit,
+    onSetAutoUpdateEnabled: (Boolean) -> Unit
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
+            Text(
+                text = "App Updates",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
+            )
+            
+            // Auto Update Check Toggle
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Auto Check for Updates",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Automatically check for app updates on startup",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.autoUpdateCheckEnabled,
+                    onCheckedChange = onSetAutoUpdateEnabled
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // Manual Check Button and Status
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Check for Updates",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    
+                    when {
+                        updateStatus?.isUpdateAvailable == true -> {
+                            Text(
+                                text = "Update available: ${updateStatus.update?.version}",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.primary
+                            )
+                        }
+                        updateStatus?.isUpdateAvailable == false -> {
+                            Text(
+                                text = "App is up to date",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        settings.lastUpdateCheckTimestamp > 0 -> {
+                            Text(
+                                text = "Last checked: ${formatTimestamp(settings.lastUpdateCheckTimestamp)}",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                        else -> {
+                            Text(
+                                text = "Tap to check for updates",
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+                }
+                
+                Button(
+                    onClick = onCheckForUpdates,
+                    enabled = updateStatus?.isUpdateAvailable != true // Disable if already showing update
+                ) {
+                    Text(
+                        text = if (updateStatus?.isUpdateAvailable == true) "Update Available" else "Check Now"
+                    )
+                }
+            }
+        }
+    }
+}
+
+private fun formatTimestamp(timestamp: Long): String {
+    val now = System.currentTimeMillis()
+    val diff = now - timestamp
+    
+    return when {
+        diff < 60_000 -> "Just now"
+        diff < 3600_000 -> "${diff / 60_000}m ago"
+        diff < 86400_000 -> "${diff / 3600_000}h ago"
+        else -> "${diff / 86400_000}d ago"
+    }
+}

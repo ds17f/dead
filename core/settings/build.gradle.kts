@@ -45,6 +45,7 @@ dependencies {
     implementation(project(":core:settings-api"))
     implementation(project(":core:backup"))
     implementation(project(":core:design"))
+    implementation(project(":core:data"))
     
     implementation(project(":core:model"))
     

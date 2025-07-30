@@ -106,4 +106,47 @@ interface SettingsRepository {
      * @param enabled True to use Library V2 interface, false to use legacy library
      */
     suspend fun updateUseLibraryV2(enabled: Boolean)
+    
+    // Update-related methods
+    
+    /**
+     * Update the timestamp of the last update check
+     * @param timestamp Unix timestamp of the last check
+     */
+    suspend fun updateLastUpdateCheck(timestamp: Long)
+    
+    /**
+     * Get the timestamp of the last update check
+     * @return Flow of the last check timestamp (0L if never checked)
+     */
+    fun getLastUpdateCheck(): Flow<Long>
+    
+    /**
+     * Add a version to the skipped versions set
+     * @param version Version string to skip (e.g., "1.2.3")
+     */
+    suspend fun addSkippedVersion(version: String)
+    
+    /**
+     * Get the set of skipped versions
+     * @return Flow of skipped version strings
+     */
+    fun getSkippedVersions(): Flow<Set<String>>
+    
+    /**
+     * Clear all skipped versions
+     */
+    suspend fun clearSkippedVersions()
+    
+    /**
+     * Set whether automatic update checking is enabled
+     * @param enabled True to enable automatic update checking on startup
+     */
+    suspend fun setAutoUpdateCheckEnabled(enabled: Boolean)
+    
+    /**
+     * Get whether automatic update checking is enabled
+     * @return Flow of automatic update check preference
+     */
+    fun isAutoUpdateCheckEnabled(): Flow<Boolean>
 }

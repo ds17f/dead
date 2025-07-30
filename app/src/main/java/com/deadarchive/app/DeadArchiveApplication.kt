@@ -10,6 +10,7 @@ import com.deadarchive.core.media.player.PlaybackResumeService
 import com.deadarchive.core.media.player.LastPlayedTrackService
 import com.deadarchive.core.media.player.LastPlayedTrackMonitor
 import com.deadarchive.core.settings.api.SettingsRepository
+import com.deadarchive.core.data.service.UpdateService
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope
@@ -41,6 +42,9 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
     
     @Inject
     lateinit var settingsRepository: SettingsRepository
+    
+    @Inject
+    lateinit var updateService: UpdateService
     
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
@@ -83,6 +87,20 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
         
         // Ensure the monitor is started (it should auto-start via DI, but just to be safe)
         lastPlayedTrackMonitor.startMonitoring()
+        
+        // Check for app updates on startup if enabled
+        applicationScope.launch {
+            try {
+                val settings = settingsRepository.getSettings().firstOrNull()
+                if (settings?.autoUpdateCheckEnabled == true) {
+                    android.util.Log.d("DeadArchiveApplication", "Checking for app updates on startup")
+                    updateService.checkForUpdates()
+                    android.util.Log.d("DeadArchiveApplication", "✅ Startup update check completed")
+                }
+            } catch (e: Exception) {
+                android.util.Log.e("DeadArchiveApplication", "❌ Failed to check for updates on startup", e)
+            }
+        }
     }
     
     override val workManagerConfiguration: Configuration

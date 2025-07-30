@@ -15,6 +15,8 @@ import com.deadarchive.core.data.service.ShowCacheService
 import com.deadarchive.core.data.service.ShowCacheServiceImpl
 import com.deadarchive.core.data.service.ShowCreationService
 import com.deadarchive.core.data.service.ShowCreationServiceImpl
+import com.deadarchive.core.data.service.UpdateService
+import com.deadarchive.core.data.service.UpdateServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -110,4 +112,14 @@ abstract class DataModule {
     abstract fun bindShowCreationService(
         showCreationServiceImpl: ShowCreationServiceImpl
     ): ShowCreationService
+    
+    /**
+     * Binds UpdateService interface to its implementation.
+     * Provides app update checking, downloading, and installation services.
+     */
+    @Binds
+    @Singleton
+    abstract fun bindUpdateService(
+        updateServiceImpl: UpdateServiceImpl
+    ): UpdateService
 }

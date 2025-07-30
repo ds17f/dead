@@ -36,7 +36,12 @@ data class AppSettings(
     val enableResumeLastTrack: Boolean = true,
     
     // UI settings
-    val useLibraryV2: Boolean = false
+    val useLibraryV2: Boolean = false,
+    
+    // Update settings
+    val autoUpdateCheckEnabled: Boolean = true,
+    val lastUpdateCheckTimestamp: Long = 0L,
+    val skippedVersions: Set<String> = emptySet()
 ) {
     companion object {
         // Default order for audio format preferences - matches AppConstants.PREFERRED_AUDIO_FORMATS
