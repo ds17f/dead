@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.35.0] - 2025-07-29
+
+### New Features
+* implement comprehensive app update system with GitHub integration (ba62e98)
+
+
 ## [0.34.0] - 2025-07-29
 
 ### New Features
@@ -7,8 +13,6 @@
 
 ### Bug Fixes
 * improve grid display with proper album covers and icon alignment (2e3cfcd)
-
-
 ## [0.33.0] - 2025-07-28
 
 ### New Features
