@@ -1,11 +1,19 @@
 # Changelog
 
+## [0.36.0] - 2025-07-30
+
+### New Features
+* implement complete UI redesign with professional music player interface (3d0f54a)
+* implement complete feature flag infrastructure with UI-first development foundation (f91d9a5)
+
+### Bug Fixes
+* correct MiniPlayer navigation to use PlayerV2 when feature flag enabled (56a2721)
+
+
 ## [0.35.0] - 2025-07-29
 
 ### New Features
 * implement comprehensive app update system with GitHub integration (ba62e98)
-
-
 ## [0.34.0] - 2025-07-29
 
 ### New Features
