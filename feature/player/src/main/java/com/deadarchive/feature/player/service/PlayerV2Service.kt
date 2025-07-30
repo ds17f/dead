@@ -85,6 +85,48 @@ interface PlayerV2Service {
      */
     suspend fun getProgressInfo(): ProgressDisplayInfo?
     
+    // Professional UI Data Operations (discovered through UI design)
+    
+    /**
+     * Get playing context information for top navigation
+     */
+    suspend fun getPlayingContext(): PlayingContextInfo?
+    
+    /**
+     * Get extended track information for professional display
+     */
+    suspend fun getExtendedTrackInfo(): ExtendedTrackInfo?
+    
+    /**
+     * Get control states for all player buttons
+     */
+    suspend fun getControlState(): PlayerV2ControlState
+    
+    /**
+     * Toggle shuffle mode
+     */
+    suspend fun toggleShuffle()
+    
+    /**
+     * Cycle through repeat modes
+     */
+    suspend fun toggleRepeatMode()
+    
+    /**
+     * Get venue information for extended content
+     */
+    suspend fun getVenueInfo(): VenueInfo?
+    
+    /**
+     * Get track lyrics (placeholder for future)
+     */
+    suspend fun getLyrics(): String?
+    
+    /**
+     * Get credits information
+     */
+    suspend fun getCreditsInfo(): CreditsInfo?
+    
     // State Management
     
     /**
@@ -117,4 +159,63 @@ data class ProgressDisplayInfo(
     val currentTime: String,        // Formatted as "MM:SS"
     val totalTime: String,          // Formatted as "MM:SS"
     val progress: Float             // 0.0 to 1.0
+)
+
+/**
+ * Enhanced data classes discovered through professional UI design
+ */
+
+/**
+ * Playing context information for top navigation
+ */
+data class PlayingContextInfo(
+    val context: String,            // "Show", "Playlist", "Queue", "Library"
+    val contextDetails: String      // Additional context like playlist name
+)
+
+/**
+ * Control states for player buttons
+ */
+data class PlayerV2ControlState(
+    val isPlaying: Boolean,
+    val shuffleEnabled: Boolean,
+    val repeatMode: RepeatMode
+)
+
+enum class RepeatMode {
+    NORMAL,
+    REPEAT_ALL, 
+    REPEAT_ONE
+}
+
+/**
+ * Extended track information for professional display
+ */
+data class ExtendedTrackInfo(
+    val title: String,
+    val showDate: String,
+    val venue: String,
+    val city: String,
+    val state: String,
+    val fullLocation: String        // Combined city, state
+)
+
+/**
+ * Venue information for extended content
+ */
+data class VenueInfo(
+    val name: String,
+    val description: String,
+    val capacity: String,
+    val notableShows: List<String>
+)
+
+/**
+ * Credits information
+ */
+data class CreditsInfo(
+    val performers: List<String>,
+    val recordingDetails: String,
+    val source: String,
+    val transferredBy: String
 )

@@ -1,7 +1,7 @@
 package com.deadarchive.feature.player.di
 
 import com.deadarchive.feature.player.service.PlayerV2Service
-import com.deadarchive.feature.player.service.PlayerV2ServiceImpl
+import com.deadarchive.feature.player.service.PlayerV2ServiceStub
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -19,6 +19,6 @@ abstract class PlayerV2Module {
     @Binds
     @Singleton
     abstract fun bindPlayerV2Service(
-        playerV2ServiceImpl: PlayerV2ServiceImpl
+        playerV2ServiceStub: PlayerV2ServiceStub
     ): PlayerV2Service
 }
