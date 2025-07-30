@@ -13,16 +13,22 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.compose.runtime.collectAsState
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.foundation.clickable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.Dp
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedCard
 import com.deadarchive.core.design.component.IconResources
 
 enum class RepeatMode { NORMAL, REPEAT_ALL, REPEAT_ONE }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 fun PlayerV2Screen(
     recordingId: String? = null,
@@ -39,6 +45,7 @@ fun PlayerV2Screen(
     // Bottom sheet state
     var showTrackActionsBottomSheet by remember { mutableStateOf(false) }
     var showConnectBottomSheet by remember { mutableStateOf(false) }
+    var showQueueBottomSheet by remember { mutableStateOf(false) }
     
     // Load recording when recordingId changes
     LaunchedEffect(recordingId) {
@@ -52,80 +59,89 @@ fun PlayerV2Screen(
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
     ) {
-        Column(
-            modifier = Modifier.fillMaxSize()
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.spacedBy(0.dp)
         ) {
-            // Custom transparent top navigation bar
-            PlayerV2TopBar(
-                contextText = "Playing from Show", // TODO: Make dynamic
-                onNavigateBack = onNavigateBack,
-                onMoreOptionsClick = { showTrackActionsBottomSheet = true }
-            )
+            // Top navigation bar - sticky header
+            stickyHeader {
+                PlayerV2TopBar(
+                    contextText = "Playing from Show", // TODO: Make dynamic
+                    onNavigateBack = onNavigateBack,
+                    onMoreOptionsClick = { showTrackActionsBottomSheet = true }
+                )
+            }
             
-            // Large cover art section (~40% of screen height)
-            PlayerV2CoverArt(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(0.4f)
-                    .padding(horizontal = 24.dp)
-            )
+            // Large cover art section
+            item {
+                PlayerV2CoverArt(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(350.dp) // Fixed height instead of weight
+                        .padding(horizontal = 24.dp, vertical = 16.dp)
+                )
+            }
             
             // Track information with add to playlist button
-            PlayerV2TrackInfoRow(
-                trackTitle = uiState.trackInfo?.trackTitle ?: "Scarlet Begonias",
-                showDate = uiState.trackInfo?.showDate ?: "May 8, 1977",
-                venue = uiState.trackInfo?.venue ?: "Barton Hall, Cornell University, Ithaca, NY",
-                onAddToPlaylist = {
-                    // TODO: Show snackbar "Playlists are coming soon"
-                },
-                modifier = Modifier.padding(horizontal = 24.dp)
-            )
+            item {
+                PlayerV2TrackInfoRow(
+                    trackTitle = uiState.trackInfo?.trackTitle ?: "Scarlet Begonias",
+                    showDate = uiState.trackInfo?.showDate ?: "May 8, 1977",
+                    venue = uiState.trackInfo?.venue ?: "Barton Hall, Cornell University, Ithaca, NY",
+                    onAddToPlaylist = {
+                        // TODO: Show snackbar "Playlists are coming soon"
+                    },
+                    modifier = Modifier.padding(horizontal = 24.dp)
+                )
+            }
             
-            Spacer(modifier = Modifier.height(24.dp))
+            // Progress control section  
+            item {
+                PlayerV2ProgressControl(
+                    currentTime = uiState.progressInfo?.currentTime ?: "2:34",
+                    totalTime = uiState.progressInfo?.totalTime ?: "8:15",
+                    progress = uiState.progressInfo?.progress ?: 0.31f,
+                    onSeek = viewModel::onSeek,
+                    modifier = Modifier.padding(horizontal = 24.dp, vertical = 24.dp)
+                )
+            }
             
-            // Progress control section
-            PlayerV2ProgressControl(
-                currentTime = uiState.progressInfo?.currentTime ?: "2:34",
-                totalTime = uiState.progressInfo?.totalTime ?: "8:15",
-                progress = uiState.progressInfo?.progress ?: 0.31f,
-                onSeek = viewModel::onSeek,
-                modifier = Modifier.padding(horizontal = 24.dp)
-            )
+            // Enhanced primary controls row
+            item {
+                PlayerV2EnhancedControls(
+                    isPlaying = uiState.isPlaying,
+                    shuffleEnabled = false, // TODO: Make dynamic
+                    repeatMode = RepeatMode.NORMAL, // TODO: Make dynamic
+                    onPlayPause = viewModel::onPlayPauseClicked,
+                    onPrevious = viewModel::onPreviousClicked,
+                    onNext = viewModel::onNextClicked,
+                    onShuffleToggle = { /* TODO */ },
+                    onRepeatModeChange = { /* TODO */ },
+                    modifier = Modifier.padding(horizontal = 24.dp)
+                )
+            }
             
-            Spacer(modifier = Modifier.height(24.dp))
+            // Secondary controls row (updated for queue sheet)
+            item {
+                PlayerV2SecondaryControls(
+                    onConnectClick = { showConnectBottomSheet = true },
+                    onShareClick = { /* TODO: Share track */ },
+                    onQueueClick = { showQueueBottomSheet = true }, // Changed to show bottom sheet
+                    modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp)
+                )
+            }
             
-            // Primary controls row
-            PlayerV2PrimaryControls(
-                isPlaying = uiState.isPlaying,
-                shuffleEnabled = false, // TODO: Make dynamic
-                repeatMode = RepeatMode.NORMAL, // TODO: Make dynamic
-                onPlayPause = viewModel::onPlayPauseClicked,
-                onPrevious = viewModel::onPreviousClicked,
-                onNext = viewModel::onNextClicked,
-                onShuffleToggle = { /* TODO */ },
-                onRepeatModeChange = { /* TODO */ },
-                modifier = Modifier.padding(horizontal = 24.dp)
-            )
+            // Extended content as Material panels
+            item {
+                PlayerV2MaterialPanels(
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+                )
+            }
             
-            Spacer(modifier = Modifier.height(16.dp))
-            
-            // Secondary controls row
-            PlayerV2SecondaryControls(
-                onConnectClick = { showConnectBottomSheet = true },
-                onShareClick = { /* TODO: Share track */ },
-                onQueueClick = onNavigateToQueue,
-                modifier = Modifier.padding(horizontal = 24.dp)
-            )
-            
-            Spacer(modifier = Modifier.height(24.dp))
-            
-            // Extended content sections (scrollable)
-            PlayerV2ExtendedContent(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .weight(0.6f)
-                    .padding(horizontal = 24.dp)
-            )
+            // Bottom padding for last item
+            item {
+                Spacer(modifier = Modifier.height(32.dp))
+            }
         }
         
         // Bottom Sheets
@@ -146,11 +162,17 @@ fun PlayerV2Screen(
                 onDismiss = { showConnectBottomSheet = false }
             )
         }
+        
+        if (showQueueBottomSheet) {
+            QueueBottomSheet(
+                onDismiss = { showQueueBottomSheet = false }
+            )
+        }
     }
 }
 
 /**
- * Custom transparent top navigation bar
+ * Custom top navigation bar with background for visibility
  */
 @Composable
 private fun PlayerV2TopBar(
@@ -159,37 +181,43 @@ private fun PlayerV2TopBar(
     onMoreOptionsClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Row(
-        modifier = modifier
-            .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
+    Surface(
+        modifier = modifier.fillMaxWidth(),
+        color = MaterialTheme.colorScheme.background,
+        shadowElevation = 1.dp
     ) {
-        // Down chevron
-        IconButton(onClick = onNavigateBack) {
-            Icon(
-                painter = IconResources.Navigation.KeyboardArrowDown(),
-                contentDescription = "Back",
-                tint = MaterialTheme.colorScheme.onSurface
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // Down chevron
+            IconButton(onClick = onNavigateBack) {
+                Icon(
+                    painter = IconResources.Navigation.KeyboardArrowDown(),
+                    contentDescription = "Back",
+                    tint = MaterialTheme.colorScheme.onSurface
+                )
+            }
+            
+            // Context text
+            Text(
+                text = contextText,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurface,
+                textAlign = TextAlign.Center
             )
-        }
-        
-        // Context text
-        Text(
-            text = contextText,
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurface,
-            textAlign = TextAlign.Center
-        )
-        
-        // 3-dot menu
-        IconButton(onClick = onMoreOptionsClick) {
-            Icon(
-                painter = IconResources.Navigation.MoreVertical(),
-                contentDescription = "More options",
-                tint = MaterialTheme.colorScheme.onSurface
-            )
+            
+            // 3-dot menu
+            IconButton(onClick = onMoreOptionsClick) {
+                Icon(
+                    painter = IconResources.Navigation.MoreVertical(),
+                    contentDescription = "More options",
+                    tint = MaterialTheme.colorScheme.onSurface
+                )
+            }
         }
     }
 }
@@ -326,10 +354,10 @@ private fun PlayerV2ProgressControl(
 }
 
 /**
- * Primary controls row (shuffle, prev, play/pause, next, repeat)
+ * Enhanced primary controls with larger buttons and proper layout
  */
 @Composable
-private fun PlayerV2PrimaryControls(
+private fun PlayerV2EnhancedControls(
     isPlaying: Boolean,
     shuffleEnabled: Boolean,
     repeatMode: RepeatMode,
@@ -342,10 +370,9 @@ private fun PlayerV2PrimaryControls(
 ) {
     Row(
         modifier = modifier.fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // Shuffle
+        // Shuffle - Far left
         IconButton(
             onClick = onShuffleToggle,
             modifier = Modifier.size(40.dp)
@@ -361,22 +388,30 @@ private fun PlayerV2PrimaryControls(
             )
         }
         
-        // Previous
+        // Spacer to push center controls
+        Spacer(modifier = Modifier.weight(1f))
+        
+        // Previous - Larger
         IconButton(
             onClick = onPrevious,
-            modifier = Modifier.size(48.dp)
+            modifier = Modifier.size(56.dp)
         ) {
             Icon(
                 painter = IconResources.PlayerControls.SkipPrevious(),
                 contentDescription = "Previous",
-                modifier = Modifier.size(32.dp)
+                modifier = Modifier.size(36.dp),
+                tint = MaterialTheme.colorScheme.onSurface
             )
         }
         
-        // Play/Pause (larger)
-        IconButton(
+        Spacer(modifier = Modifier.width(16.dp))
+        
+        // Play/Pause - Large circular FAB-style button
+        FloatingActionButton(
             onClick = onPlayPause,
-            modifier = Modifier.size(64.dp)
+            modifier = Modifier.size(72.dp),
+            containerColor = MaterialTheme.colorScheme.primary,
+            contentColor = MaterialTheme.colorScheme.onPrimary
         ) {
             Icon(
                 painter = if (isPlaying) {
@@ -385,24 +420,29 @@ private fun PlayerV2PrimaryControls(
                     IconResources.PlayerControls.Play()
                 },
                 contentDescription = if (isPlaying) "Pause" else "Play",
-                modifier = Modifier.size(40.dp),
-                tint = MaterialTheme.colorScheme.primary
+                modifier = Modifier.size(36.dp)
             )
         }
         
-        // Next
+        Spacer(modifier = Modifier.width(16.dp))
+        
+        // Next - Larger
         IconButton(
             onClick = onNext,
-            modifier = Modifier.size(48.dp)
+            modifier = Modifier.size(56.dp)
         ) {
             Icon(
                 painter = IconResources.PlayerControls.SkipNext(),
                 contentDescription = "Next",
-                modifier = Modifier.size(32.dp)
+                modifier = Modifier.size(36.dp),
+                tint = MaterialTheme.colorScheme.onSurface
             )
         }
         
-        // Repeat
+        // Spacer to push repeat to far right
+        Spacer(modifier = Modifier.weight(1f))
+        
+        // Repeat - Far right
         IconButton(
             onClick = onRepeatModeChange,
             modifier = Modifier.size(40.dp)
@@ -479,66 +519,66 @@ private fun PlayerV2SecondaryControls(
 }
 
 /**
- * Extended content sections (scrollable)
+ * Always-expanded Material3 panels for extended content
  */
 @Composable
-private fun PlayerV2ExtendedContent(
+private fun PlayerV2MaterialPanels(
     modifier: Modifier = Modifier
 ) {
-    LazyColumn(
-        modifier = modifier,
-        verticalArrangement = Arrangement.spacedBy(24.dp)
+    Column(
+        modifier = modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        item {
-            ExtendedContentSection(
-                title = "About the Venue",
-                content = "Barton Hall at Cornell University in Ithaca, New York, is legendary among Deadheads for hosting one of the greatest Grateful Dead concerts of all time on May 8, 1977. The show is often cited as the pinnacle of the band's creative peak during their spring 1977 tour."
-            )
-        }
+        // About the Venue Panel
+        MaterialPanel(
+            title = "About the Venue",
+            content = "Barton Hall at Cornell University in Ithaca, New York, is legendary among Deadheads for hosting one of the greatest Grateful Dead concerts of all time on May 8, 1977. The show is often cited as the pinnacle of the band's creative peak during their spring 1977 tour."
+        )
         
-        item {
-            ExtendedContentSection(
-                title = "Lyrics",
-                content = "Scarlet begonias tucked into her curls\nI knew right away she was not like other girls\nOther girls\nWell I ain't often right but I've never been wrong\nSeldom turns out the way it does in a song\nOnce in a while you get shown the light\nIn the strangest of places if you look at it right"
-            )
-        }
+        // Lyrics Panel
+        MaterialPanel(
+            title = "Lyrics",
+            content = "Scarlet begonias tucked into her curls\nI knew right away she was not like other girls\nOther girls\nWell I ain't often right but I've never been wrong\nSeldom turns out the way it does in a song\nOnce in a while you get shown the light\nIn the strangest of places if you look at it right"
+        )
         
-        item {
-            ExtendedContentSection(
-                title = "Similar Shows",
-                content = "Other standout shows from Spring 1977 include Boston Music Hall (May 7), Buffalo Memorial Auditorium (May 9), and Hartford Civic Center (May 28). This tour is considered the creative peak of the Grateful Dead."
-            )
-        }
+        // Similar Shows Panel
+        MaterialPanel(
+            title = "Similar Shows",
+            content = "Other standout shows from Spring 1977 include Boston Music Hall (May 7), Buffalo Memorial Auditorium (May 9), and Hartford Civic Center (May 28). This tour is considered the creative peak of the Grateful Dead."
+        )
         
-        item {
-            ExtendedContentSection(
-                title = "Credits",
-                content = "Jerry Garcia - Lead Guitar, Vocals\nBob Weir - Rhythm Guitar, Vocals\nPhil Lesh - Bass, Vocals\nBill Kreutzmann - Drums\nMickey Hart - Drums\nKeith Godchaux - Piano\nDonna Jean Godchaux - Vocals"
-            )
-        }
+        // Credits Panel
+        MaterialPanel(
+            title = "Credits",
+            content = "Jerry Garcia - Lead Guitar, Vocals\nBob Weir - Rhythm Guitar, Vocals\nPhil Lesh - Bass, Vocals\nBill Kreutzmann - Drums\nMickey Hart - Drums\nKeith Godchaux - Piano\nDonna Jean Godchaux - Vocals"
+        )
     }
 }
 
 /**
- * Expandable content section
+ * Beautiful Material3 panel component
  */
 @Composable
-private fun ExtendedContentSection(
+private fun MaterialPanel(
     title: String,
     content: String,
     modifier: Modifier = Modifier
 ) {
-    var expanded by remember { mutableStateOf(false) }
-    
-    Column(
-        modifier = modifier.fillMaxWidth()
+    ElevatedCard(
+        modifier = modifier.fillMaxWidth(),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.elevatedCardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceContainer
+        ),
+        elevation = CardDefaults.elevatedCardElevation(
+            defaultElevation = 2.dp
+        )
     ) {
-        Row(
+        Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .clickable { expanded = !expanded },
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
+                .padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             Text(
                 text = title,
@@ -546,23 +586,12 @@ private fun ExtendedContentSection(
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface
             )
-            Icon(
-                painter = if (expanded) {
-                    IconResources.Navigation.ExpandLess()
-                } else {
-                    IconResources.Navigation.ExpandMore()
-                },
-                contentDescription = if (expanded) "Collapse" else "Expand",
-                tint = MaterialTheme.colorScheme.onSurfaceVariant
-            )
-        }
-        
-        if (expanded) {
-            Spacer(modifier = Modifier.height(8.dp))
+            
             Text(
                 text = content,
                 style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                lineHeight = MaterialTheme.typography.bodyMedium.lineHeight * 1.2
             )
         }
     }
@@ -710,6 +739,146 @@ private fun ConnectBottomSheet(
         }
     }
 }
+
+/**
+ * Queue Bottom Sheet
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun QueueBottomSheet(
+    onDismiss: () -> Unit
+) {
+    ModalBottomSheet(
+        onDismissRequest = onDismiss,
+        dragHandle = {
+            Surface(
+                modifier = Modifier
+                    .padding(vertical = 8.dp)
+                    .width(32.dp)
+                    .height(4.dp),
+                shape = RoundedCornerShape(2.dp),
+                color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f)
+            ) {}
+        }
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(16.dp)
+        ) {
+            // Header
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 8.dp, vertical = 16.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "Queue",
+                    style = MaterialTheme.typography.titleLarge,
+                    fontWeight = FontWeight.Bold
+                )
+                
+                Text(
+                    text = "3 tracks",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            
+            Divider(modifier = Modifier.padding(horizontal = 8.dp))
+            
+            // Mock queue items
+            LazyColumn(
+                modifier = Modifier.fillMaxWidth(),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                items(mockQueueItems) { item ->
+                    QueueItem(
+                        trackTitle = item.title,
+                        isCurrentTrack = item.isPlaying,
+                        duration = item.duration
+                    )
+                }
+                
+                // Bottom padding
+                item {
+                    Spacer(modifier = Modifier.height(32.dp))
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Individual queue item
+ */
+@Composable
+private fun QueueItem(
+    trackTitle: String,
+    isCurrentTrack: Boolean,
+    duration: String,
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 8.dp, vertical = 12.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Row(
+            modifier = Modifier.weight(1f),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            // Play indicator for current track
+            if (isCurrentTrack) {
+                Icon(
+                    painter = IconResources.PlayerControls.Play(),
+                    contentDescription = "Currently playing",
+                    modifier = Modifier.size(16.dp),
+                    tint = MaterialTheme.colorScheme.primary
+                )
+                Spacer(modifier = Modifier.width(12.dp))
+            } else {
+                Spacer(modifier = Modifier.width(28.dp))
+            }
+            
+            Text(
+                text = trackTitle,
+                style = MaterialTheme.typography.bodyMedium,
+                color = if (isCurrentTrack) {
+                    MaterialTheme.colorScheme.primary
+                } else {
+                    MaterialTheme.colorScheme.onSurface
+                },
+                fontWeight = if (isCurrentTrack) FontWeight.Medium else FontWeight.Normal,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
+            )
+        }
+        
+        Text(
+            text = duration,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+    }
+}
+
+// Mock data for queue
+private data class QueueItemData(
+    val title: String,
+    val isPlaying: Boolean,
+    val duration: String
+)
+
+private val mockQueueItems = listOf(
+    QueueItemData("Scarlet Begonias", true, "7:32"),
+    QueueItemData("Fire on the Mountain", false, "12:05"),
+    QueueItemData("Estimated Prophet", false, "9:18")
+)
 
 /**
  * Action button for bottom sheets
