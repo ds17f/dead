@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.34.0] - 2025-07-29
+
+### New Features
+* implement LibraryV2Show domain model with pin functionality and real-time download status (b53ea85)
+
+### Bug Fixes
+* improve grid display with proper album covers and icon alignment (2e3cfcd)
+
+
 ## [0.33.0] - 2025-07-28
 
 ### New Features
@@ -7,8 +16,6 @@
 
 ### Other Changes
 * Merge branch 'break-up-classes' (e111949)
-
-
 ## [0.32.1] - 2025-07-28
 
 ### Bug Fixes
