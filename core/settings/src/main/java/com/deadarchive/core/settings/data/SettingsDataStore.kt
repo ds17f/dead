@@ -45,6 +45,7 @@ class SettingsDataStore @Inject constructor(
     private val recordingPreferencesKey = stringPreferencesKey("recording_preferences") // JSON string of showId -> recordingId map
     private val enableResumeLastTrackKey = booleanPreferencesKey("enable_resume_last_track")
     private val useLibraryV2Key = booleanPreferencesKey("use_library_v2")
+    private val usePlayerV2Key = booleanPreferencesKey("use_player_v2")
     
     // Update-related preference keys
     private val autoUpdateCheckEnabledKey = booleanPreferencesKey("auto_update_check_enabled")
@@ -238,6 +239,15 @@ class SettingsDataStore @Inject constructor(
         }
     }
     
+    /**
+     * Update use Player V2 setting
+     */
+    suspend fun updateUsePlayerV2(enabled: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[usePlayerV2Key] = enabled
+        }
+    }
+    
     // Update-related methods
     
     /**
@@ -347,6 +357,7 @@ class SettingsDataStore @Inject constructor(
             preferHigherRated = this[preferHigherRatedKey] ?: true,
             enableResumeLastTrack = this[enableResumeLastTrackKey] ?: true,
             useLibraryV2 = this[useLibraryV2Key] ?: false,
+            usePlayerV2 = this[usePlayerV2Key] ?: false,
             autoUpdateCheckEnabled = this[autoUpdateCheckEnabledKey] ?: true, 
             lastUpdateCheckTimestamp = this[lastUpdateCheckTimestampKey] ?: 0L,
             skippedVersions = skippedVersions

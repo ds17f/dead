@@ -136,6 +136,7 @@ fun SettingsScreen(
                 settings = settings,
                 onUpdateShowDebugInfo = viewModel::updateShowDebugInfo,
                 onUpdateUseLibraryV2 = viewModel::updateUseLibraryV2,
+                onUpdateUsePlayerV2 = viewModel::updateUsePlayerV2,
                 onResetSettings = viewModel::resetToDefaults
             )
         }
@@ -276,6 +277,7 @@ private fun DeveloperOptionsCard(
     settings: AppSettings,
     onUpdateShowDebugInfo: (Boolean) -> Unit,
     onUpdateUseLibraryV2: (Boolean) -> Unit,
+    onUpdateUsePlayerV2: (Boolean) -> Unit,
     onResetSettings: () -> Unit
 ) {
     Card(
@@ -342,6 +344,34 @@ private fun DeveloperOptionsCard(
                 Switch(
                     checked = settings.useLibraryV2,
                     onCheckedChange = onUpdateUseLibraryV2
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // Player V2 Toggle
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(
+                    modifier = Modifier.weight(1f)
+                ) {
+                    Text(
+                        text = "Use Player V2 (Preview) 🚀",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Enable the redesigned player interface (UI-first development)",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.usePlayerV2,
+                    onCheckedChange = onUpdateUsePlayerV2
                 )
             }
             

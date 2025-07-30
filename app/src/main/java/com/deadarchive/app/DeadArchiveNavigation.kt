@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.library.navigation.libraryScreen
 import com.deadarchive.feature.player.navigation.playerScreen
@@ -20,7 +21,8 @@ private const val TAG = "Navigation"
 fun DeadArchiveNavigation(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    showSplash: Boolean = false
+    showSplash: Boolean = false,
+    settings: AppSettings = AppSettings()
 ) {
     Log.d(TAG, "Initializing navigation with showSplash=$showSplash")
     NavHost(
@@ -49,7 +51,8 @@ fun DeadArchiveNavigation(
         // Player screens (full screen, no bottom nav)
         playerScreen(
             onNavigateBack = { navController.popBackStack() },
-            navController = navController
+            navController = navController,
+            usePlayerV2 = settings.usePlayerV2
         )
         
         

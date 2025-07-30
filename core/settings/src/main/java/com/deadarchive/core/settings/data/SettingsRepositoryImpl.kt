@@ -214,6 +214,17 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
+    override suspend fun updateUsePlayerV2(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating use Player V2 to: $enabled")
+            settingsDataStore.updateUsePlayerV2(enabled)
+            Log.d(TAG, "Use Player V2 updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update use Player V2", e)
+            throw e
+        }
+    }
+    
     // Update-related methods
     
     override suspend fun updateLastUpdateCheck(timestamp: Long) {

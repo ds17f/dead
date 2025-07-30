@@ -374,6 +374,38 @@ class SettingsConfigurationService @Inject constructor(
     }
     
     /**
+     * Update the use Player V2 setting
+     */
+    fun updateUsePlayerV2(
+        enabled: Boolean,
+        coroutineScope: CoroutineScope,
+        onStateChange: (SettingsUiState) -> Unit,
+        currentState: SettingsUiState
+    ) {
+        coroutineScope.launch {
+            try {
+                Log.d(TAG, "Updating use Player V2 to: $enabled")
+                onStateChange(currentState.copy(isLoading = true, errorMessage = null))
+                
+                settingsRepository.updateUsePlayerV2(enabled)
+                
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    successMessage = if (enabled) "Player V2 enabled 🚀" else "Player V2 disabled"
+                ))
+                Log.d(TAG, "Use Player V2 updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update use Player V2", e)
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update Player V2 setting: ${e.message}"
+                ))
+            }
+        }
+    }
+    
+    /**
      * Set drag state for audio format reordering
      */
     fun setDraggingFormats(

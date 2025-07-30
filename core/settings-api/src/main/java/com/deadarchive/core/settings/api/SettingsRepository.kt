@@ -107,6 +107,12 @@ interface SettingsRepository {
      */
     suspend fun updateUseLibraryV2(enabled: Boolean)
     
+    /**
+     * Update the Player V2 interface setting
+     * @param enabled True to use Player V2 interface, false to use legacy player
+     */
+    suspend fun updateUsePlayerV2(enabled: Boolean)
+    
     // Update-related methods
     
     /**

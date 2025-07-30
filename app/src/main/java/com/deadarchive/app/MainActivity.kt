@@ -34,7 +34,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DeadArchiveNavigation(showSplash = true)
+                    DeadArchiveNavigation(
+                        showSplash = true,
+                        settings = settings
+                    )
                 }
             }
         }
