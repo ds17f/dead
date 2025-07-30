@@ -34,6 +34,7 @@ import com.deadarchive.feature.playlist.MiniPlayerContainer
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.model.Show
 import com.deadarchive.feature.library.navigation.libraryScreen
+import com.deadarchive.core.settings.api.model.AppSettings
 
 /**
  * Bottom navigation destinations
@@ -57,7 +58,8 @@ private enum class BottomNavDestination(
 @Composable
 fun MainAppScreen(
     navController: NavHostController = rememberNavController(),
-    onNavigateToPlayer: (String) -> Unit = {}
+    onNavigateToPlayer: (String) -> Unit = {},
+    settings: AppSettings = AppSettings()
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
@@ -71,8 +73,12 @@ fun MainAppScreen(
                     if (shouldShowMiniPlayer(currentRoute)) {
                         MiniPlayerContainer(
                             onTapToExpand = { recordingId ->
-                                android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to player with recordingId: $recordingId")
-                                navController.navigate("player")
+                                android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to player with recordingId: $recordingId, usePlayerV2: ${settings.usePlayerV2}")
+                                if (recordingId != null) {
+                                    navController.navigate("player/$recordingId")
+                                } else {
+                                    navController.navigate("player")
+                                }
                             }
                         )
                     }
@@ -196,7 +202,8 @@ fun MainAppScreen(
             // Player screen
             playerScreen(
                 onNavigateBack = { navController.popBackStack() },
-                navController = navController
+                navController = navController,
+                usePlayerV2 = settings.usePlayerV2
             )
         }
     }

@@ -44,7 +44,8 @@ fun DeadArchiveNavigation(
             MainAppScreen(
                 onNavigateToPlayer = { concertId -> 
                     navController.navigate("player/$concertId") 
-                }
+                },
+                settings = settings
             )
         }
         
