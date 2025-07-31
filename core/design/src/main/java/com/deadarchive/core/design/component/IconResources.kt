@@ -276,6 +276,9 @@ object IconResources {
         fun Share() = customIcon(R.drawable.ic_share)
         
         @Composable
+        fun Cast() = customIcon(R.drawable.ic_cast)
+        
+        @Composable
         fun TrendingUp() = customIcon(R.drawable.ic_trending_up)
         
         @Composable

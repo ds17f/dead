@@ -15,12 +15,15 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.foundation.clickable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.DpSize
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
@@ -42,7 +45,7 @@ private val DeadGreen = Color(0xFF228B22)    // Forest green
 private val DeadBlue = Color(0xFF4169E1)     // Royal blue
 private val DeadPurple = Color(0xFF8A2BE2)   // Blue violet
 
-private val GradientColors = listOf(DeadRed, DeadGold, DeadGreen, DeadBlue, DeadPurple)
+private val GradientColors = listOf(DeadGreen, DeadGold, DeadRed, DeadBlue, DeadPurple)
 
 /**
  * Convert recordingId to a consistent base color using hash function
@@ -116,15 +119,20 @@ fun PlayerV2Screen(
                             contextText = "Playing from Show", // TODO: Make dynamic
                             onNavigateBack = onNavigateBack,
                             onMoreOptionsClick = { showTrackActionsBottomSheet = true },
-                            recordingId = recordingId
+                            recordingId = recordingId,
+                            // modifier = Modifier.padding(vertical = 24.dp)
+                            // modifier = Modifier.padding(top = 24.dp)
                         )
                         
-                        // Large cover art section
+                        // Large cover art section with generous vertical padding
                         PlayerV2CoverArt(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .height(350.dp) // Fixed height instead of weight
-                                .padding(horizontal = 24.dp, vertical = 16.dp)
+                                .height(450.dp) // Increased height for the row
+                                //.background(Color.Blue.copy(alpha = 0.2f)) // Debug: Show padding area
+                                //.padding(/*vertical = 48.dp,*/ top = 24.dp)
+                                .padding(horizontal = 24.dp)
+                                //.padding(vertical = 24.dp, horizontal = 24.dp)
                         )
                         
                         // Track information with add to playlist button
@@ -135,7 +143,7 @@ fun PlayerV2Screen(
                             onAddToPlaylist = {
                                 // TODO: Show snackbar "Playlists are coming soon"
                             },
-                            modifier = Modifier.padding(horizontal = 24.dp)
+                            modifier = Modifier.padding(horizontal = 24.dp, /*vertical = 16.dp */)
                         )
                         
                         // Progress control section  
@@ -144,7 +152,8 @@ fun PlayerV2Screen(
                             totalTime = uiState.progressInfo?.totalTime ?: "8:15",
                             progress = uiState.progressInfo?.progress ?: 0.31f,
                             onSeek = viewModel::onSeek,
-                            modifier = Modifier.padding(horizontal = 24.dp, vertical = 24.dp)
+                            modifier = Modifier.padding(horizontal = 24.dp) // Reduced from 24dp
+                            //modifier = Modifier.padding(horizontal = 24.dp, vertical = 12.dp) // Reduced from 24dp
                         )
                         
                         // Enhanced primary controls row
@@ -157,7 +166,8 @@ fun PlayerV2Screen(
                             onNext = viewModel::onNextClicked,
                             onShuffleToggle = { /* TODO */ },
                             onRepeatModeChange = { /* TODO */ },
-                            modifier = Modifier.padding(horizontal = 24.dp)
+                            //modifier = Modifier.padding(horizontal = 24.dp, vertical = 8.dp) // Added minimal vertical padding
+                            modifier = Modifier.padding(horizontal = 24.dp) // Added minimal vertical padding
                         )
                     }
                 }
@@ -235,6 +245,7 @@ private fun PlayerV2TopBar(
                 Icon(
                     painter = IconResources.Navigation.KeyboardArrowDown(),
                     contentDescription = "Back",
+                    modifier = Modifier.size(34.dp),
                     tint = MaterialTheme.colorScheme.onSurface
                 )
             }
@@ -252,6 +263,7 @@ private fun PlayerV2TopBar(
                 Icon(
                     painter = IconResources.Navigation.MoreVertical(),
                     contentDescription = "More options",
+                    modifier = Modifier.size(28.dp),
                     tint = MaterialTheme.colorScheme.onSurface
                 )
             }
@@ -271,8 +283,8 @@ private fun PlayerV2CoverArt(
     ) {
         Card(
             modifier = Modifier
-                .fillMaxWidth()
-                .aspectRatio(1f)
+                .fillMaxHeight() // Fill available height
+                .aspectRatio(1f) // Maintain square aspect ratio
                 .clip(RoundedCornerShape(16.dp)),
             colors = CardDefaults.cardColors(
                 containerColor = MaterialTheme.colorScheme.primaryContainer
@@ -285,7 +297,7 @@ private fun PlayerV2CoverArt(
                 Icon(
                     painter = IconResources.PlayerControls.AlbumArt(),
                     contentDescription = "Album Art",
-                    modifier = Modifier.size(120.dp),
+                    modifier = Modifier.size(160.dp), // Scaled up for larger card
                     tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
             }
@@ -339,12 +351,12 @@ private fun PlayerV2TrackInfoRow(
         // Add to playlist button
         IconButton(
             onClick = onAddToPlaylist,
-            modifier = Modifier.size(32.dp)
+            modifier = Modifier.size(36.dp)
         ) {
             Icon(
                 painter = IconResources.Content.AddCircle(),
                 contentDescription = "Add to playlist",
-                modifier = Modifier.size(32.dp),
+                modifier = Modifier.size(36.dp),
                 tint = MaterialTheme.colorScheme.primary
             )
         }
@@ -352,8 +364,9 @@ private fun PlayerV2TrackInfoRow(
 }
 
 /**
- * Progress control section with slider and time displays
+ * Compact progress control section with smaller drag handle and minimal spacing
  */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun PlayerV2ProgressControl(
     currentTime: String,
@@ -364,12 +377,25 @@ private fun PlayerV2ProgressControl(
 ) {
     Column(
         modifier = modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        verticalArrangement = Arrangement.spacedBy(2.dp) // Reduced from 8dp
     ) {
         Slider(
             value = progress,
             onValueChange = onSeek,
             modifier = Modifier.fillMaxWidth()
+                               .padding(vertical = 2.dp)
+            ,
+            colors = SliderDefaults.colors(
+                thumbColor = MaterialTheme.colorScheme.primary,
+                activeTrackColor = MaterialTheme.colorScheme.primary,
+                inactiveTrackColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.24f)
+            ),
+            // thumb = {
+            //     SliderDefaults.Thumb(
+            //         interactionSource = remember { MutableInteractionSource() },
+            //         thumbSize = DpSize(width = 8.dp, height = 8.dp)
+            //     )
+            // }
         )
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -519,7 +545,7 @@ private fun PlayerV2SecondaryControls(
             modifier = Modifier.size(40.dp)
         ) {
             Icon(
-                painter = IconResources.Content.Share(), // Using Share as placeholder for Cast
+                painter = IconResources.Content.Cast(),
                 contentDescription = "Connect",
                 tint = MaterialTheme.colorScheme.onSurfaceVariant
             )
