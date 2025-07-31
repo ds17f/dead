@@ -64,19 +64,35 @@ private fun recordingIdToColor(recordingId: String?): Color {
 }
 
 /**
+ * Get the complete color stack for a recording
+ * Returns list of colors that can be used by different components consistently
+ */
+@Composable
+private fun getRecordingColorStack(recordingId: String?): List<Color> {
+    val baseColor = recordingIdToColor(recordingId)
+    return listOf(
+        baseColor.copy(alpha = 0.8f),               // Index 0: Strong color
+        baseColor.copy(alpha = 0.4f),               // Index 1: Medium color  
+        baseColor.copy(alpha = 0.1f),               // Index 2: Faint color
+        MaterialTheme.colorScheme.background,       // Index 3: Background
+        MaterialTheme.colorScheme.background        // Index 4: Background
+    )
+}
+
+/**
  * Create a beautiful vertical gradient brush for the given recordingId
  * Uses alpha transparency to maintain readability and Material3 compatibility
  */
 @Composable
 private fun createRecordingGradient(recordingId: String?): Brush {
-    val baseColor = recordingIdToColor(recordingId)
+    val colors = getRecordingColorStack(recordingId)
     
     return Brush.verticalGradient(
-        0f to baseColor.copy(alpha = 0.8f),               // Strong color at top
-        0.3f to baseColor.copy(alpha = 0.4f),             // Medium color at 30%
-        0.6f to baseColor.copy(alpha = 0.1f),             // Faint color at 60%
-        0.8f to MaterialTheme.colorScheme.background,     // Background at 80%
-        1f to MaterialTheme.colorScheme.background        // Full background at bottom
+        0f to colors[0],      // Strong color at top
+        0.3f to colors[1],    // Medium color at 30%
+        0.6f to colors[2],    // Faint color at 60%
+        0.8f to colors[3],    // Background at 80%
+        1f to colors[4]       // Full background at bottom
     )
 }
 
@@ -114,11 +130,11 @@ fun PlayerV2Screen(
     }
     
     // Mini player visibility based on scroll position
-    // Show mini player when the user scrolls past the media controls (approximately item 0 with large offset)
+    // Show mini player only when player controls are completely off screen
     val showMiniPlayer by remember {
         derivedStateOf {
             scrollState.firstVisibleItemIndex > 0 || 
-            (scrollState.firstVisibleItemIndex == 0 && scrollState.firstVisibleItemScrollOffset > 800)
+            (scrollState.firstVisibleItemIndex == 0 && scrollState.firstVisibleItemScrollOffset > 1200)
         }
     }
     
@@ -264,7 +280,7 @@ fun PlayerV2Screen(
                     }
                 },
                 modifier = Modifier
-                    .align(Alignment.BottomCenter)
+                    .align(Alignment.TopCenter)
                     .fillMaxWidth()
             )
         }
@@ -1076,16 +1092,16 @@ private fun PlayerV2MiniPlayer(
     onTapToExpand: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // Get darker gradient color for background
-    val baseColor = recordingIdToColor(recordingId)
-    val backgroundColor = baseColor.copy(alpha = 0.9f)
+    // Use the medium color from the recording's color stack for consistency
+    val colors = getRecordingColorStack(recordingId)
+    val backgroundColor = colors[1] // Index 1: Medium color (alpha 0.4f)
     
     Card(
         modifier = modifier
             .height(72.dp)
             .clickable { onTapToExpand() },
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-        shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp),
+        shape = RoundedCornerShape(0.dp),
         colors = CardDefaults.cardColors(
             containerColor = backgroundColor
         )
