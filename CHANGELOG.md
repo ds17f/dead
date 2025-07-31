@@ -1,13 +1,25 @@
 # Changelog
 
+## [0.38.0] - 2025-07-31
+
+### New Features
+* implement shared color system for gradient and mini player consistency (30d395a)
+* implement debug panel and bottom mini player (5010cdc)
+
+### Bug Fixes
+* resolve enum redeclaration conflicts blocking CI builds (849cb32)
+* replace alpha transparency with solid color blending (a8a18fe)
+
+### Other Changes
+* Merge branch 'player-v2' (4dd5641)
+
+
 ## [0.37.0] - 2025-07-30
 
 ### New Features
 * add Material Design cast icon for connect button (c0d011d)
 * implement scrolling gradient architecture with status bar transparency (a1ba680)
 * fix major UI layout and design issues (678f87c)
-
-
 ## [0.36.0] - 2025-07-30
 
 ### New Features
