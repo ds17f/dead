@@ -15,11 +15,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.foundation.clickable
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.Dp
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.CardDefaults
@@ -28,7 +28,51 @@ import com.deadarchive.core.design.component.IconResources
 
 enum class RepeatMode { NORMAL, REPEAT_ALL, REPEAT_ONE }
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+/**
+ * UI Color Generation Utilities for Recording-Based Gradients
+ * 
+ * These utilities generate consistent visual identities per recording
+ * by hashing recordingId to select from the Grateful Dead color palette.
+ */
+
+// Grateful Dead inspired color palette for gradients (from Theme.kt)
+private val DeadRed = Color(0xFFDC143C)      // Crimson red
+private val DeadGold = Color(0xFFFFD700)     // Golden yellow  
+private val DeadGreen = Color(0xFF228B22)    // Forest green
+private val DeadBlue = Color(0xFF4169E1)     // Royal blue
+private val DeadPurple = Color(0xFF8A2BE2)   // Blue violet
+
+private val GradientColors = listOf(DeadRed, DeadGold, DeadGreen, DeadBlue, DeadPurple)
+
+/**
+ * Convert recordingId to a consistent base color using hash function
+ */
+private fun recordingIdToColor(recordingId: String?): Color {
+    if (recordingId.isNullOrEmpty()) return DeadRed
+    
+    val hash = recordingId.hashCode()
+    val index = kotlin.math.abs(hash) % GradientColors.size
+    return GradientColors[index]
+}
+
+/**
+ * Create a beautiful vertical gradient brush for the given recordingId
+ * Uses alpha transparency to maintain readability and Material3 compatibility
+ */
+@Composable
+private fun createRecordingGradient(recordingId: String?): Brush {
+    val baseColor = recordingIdToColor(recordingId)
+    
+    return Brush.verticalGradient(
+        0f to baseColor.copy(alpha = 0.8f),               // Strong color at top
+        0.3f to baseColor.copy(alpha = 0.4f),             // Medium color at 30%
+        0.6f to baseColor.copy(alpha = 0.1f),             // Faint color at 60%
+        0.8f to MaterialTheme.colorScheme.background,     // Background at 80%
+        1f to MaterialTheme.colorScheme.background        // Full background at bottom
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PlayerV2Screen(
     recordingId: String? = null,
@@ -54,71 +98,69 @@ fun PlayerV2Screen(
         }
     }
     
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
+    // Scrollable content with gradient as part of the scrolling items
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.spacedBy(0.dp)
     ) {
-        LazyColumn(
-            modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.spacedBy(0.dp)
-        ) {
-            // Top navigation bar - sticky header
-            stickyHeader {
-                PlayerV2TopBar(
-                    contextText = "Playing from Show", // TODO: Make dynamic
-                    onNavigateBack = onNavigateBack,
-                    onMoreOptionsClick = { showTrackActionsBottomSheet = true }
-                )
-            }
-            
-            // Large cover art section
+            // Gradient section containing top navigation, cover art, track info, progress, and controls
             item {
-                PlayerV2CoverArt(
+                Box(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(350.dp) // Fixed height instead of weight
-                        .padding(horizontal = 24.dp, vertical = 16.dp)
-                )
-            }
-            
-            // Track information with add to playlist button
-            item {
-                PlayerV2TrackInfoRow(
-                    trackTitle = uiState.trackInfo?.trackTitle ?: "Scarlet Begonias",
-                    showDate = uiState.trackInfo?.showDate ?: "May 8, 1977",
-                    venue = uiState.trackInfo?.venue ?: "Barton Hall, Cornell University, Ithaca, NY",
-                    onAddToPlaylist = {
-                        // TODO: Show snackbar "Playlists are coming soon"
-                    },
-                    modifier = Modifier.padding(horizontal = 24.dp)
-                )
-            }
-            
-            // Progress control section  
-            item {
-                PlayerV2ProgressControl(
-                    currentTime = uiState.progressInfo?.currentTime ?: "2:34",
-                    totalTime = uiState.progressInfo?.totalTime ?: "8:15",
-                    progress = uiState.progressInfo?.progress ?: 0.31f,
-                    onSeek = viewModel::onSeek,
-                    modifier = Modifier.padding(horizontal = 24.dp, vertical = 24.dp)
-                )
-            }
-            
-            // Enhanced primary controls row
-            item {
-                PlayerV2EnhancedControls(
-                    isPlaying = uiState.isPlaying,
-                    shuffleEnabled = false, // TODO: Make dynamic
-                    repeatMode = RepeatMode.NORMAL, // TODO: Make dynamic
-                    onPlayPause = viewModel::onPlayPauseClicked,
-                    onPrevious = viewModel::onPreviousClicked,
-                    onNext = viewModel::onNextClicked,
-                    onShuffleToggle = { /* TODO */ },
-                    onRepeatModeChange = { /* TODO */ },
-                    modifier = Modifier.padding(horizontal = 24.dp)
-                )
+                        .background(createRecordingGradient(recordingId))
+                ) {
+                    Column {
+                        // Top navigation bar
+                        PlayerV2TopBar(
+                            contextText = "Playing from Show", // TODO: Make dynamic
+                            onNavigateBack = onNavigateBack,
+                            onMoreOptionsClick = { showTrackActionsBottomSheet = true },
+                            recordingId = recordingId
+                        )
+                        
+                        // Large cover art section
+                        PlayerV2CoverArt(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(350.dp) // Fixed height instead of weight
+                                .padding(horizontal = 24.dp, vertical = 16.dp)
+                        )
+                        
+                        // Track information with add to playlist button
+                        PlayerV2TrackInfoRow(
+                            trackTitle = uiState.trackInfo?.trackTitle ?: "Scarlet Begonias",
+                            showDate = uiState.trackInfo?.showDate ?: "May 8, 1977",
+                            venue = uiState.trackInfo?.venue ?: "Barton Hall, Cornell University, Ithaca, NY",
+                            onAddToPlaylist = {
+                                // TODO: Show snackbar "Playlists are coming soon"
+                            },
+                            modifier = Modifier.padding(horizontal = 24.dp)
+                        )
+                        
+                        // Progress control section  
+                        PlayerV2ProgressControl(
+                            currentTime = uiState.progressInfo?.currentTime ?: "2:34",
+                            totalTime = uiState.progressInfo?.totalTime ?: "8:15",
+                            progress = uiState.progressInfo?.progress ?: 0.31f,
+                            onSeek = viewModel::onSeek,
+                            modifier = Modifier.padding(horizontal = 24.dp, vertical = 24.dp)
+                        )
+                        
+                        // Enhanced primary controls row
+                        PlayerV2EnhancedControls(
+                            isPlaying = uiState.isPlaying,
+                            shuffleEnabled = false, // TODO: Make dynamic
+                            repeatMode = RepeatMode.NORMAL, // TODO: Make dynamic
+                            onPlayPause = viewModel::onPlayPauseClicked,
+                            onPrevious = viewModel::onPreviousClicked,
+                            onNext = viewModel::onNextClicked,
+                            onShuffleToggle = { /* TODO */ },
+                            onRepeatModeChange = { /* TODO */ },
+                            modifier = Modifier.padding(horizontal = 24.dp)
+                        )
+                    }
+                }
             }
             
             // Secondary controls row (updated for queue sheet)
@@ -131,7 +173,7 @@ fun PlayerV2Screen(
                 )
             }
             
-            // Extended content as Material panels
+            // Extended content as Material panels - let gradient show through
             item {
                 PlayerV2MaterialPanels(
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
@@ -142,10 +184,10 @@ fun PlayerV2Screen(
             item {
                 Spacer(modifier = Modifier.height(32.dp))
             }
-        }
-        
-        // Bottom Sheets
-        if (showTrackActionsBottomSheet) {
+    }
+    
+    // Bottom Sheets
+    if (showTrackActionsBottomSheet) {
             TrackActionsBottomSheet(
                 trackTitle = uiState.trackInfo?.trackTitle ?: "Scarlet Begonias",
                 showDate = uiState.trackInfo?.showDate ?: "May 8, 1977", 
@@ -169,30 +211,25 @@ fun PlayerV2Screen(
             )
         }
     }
-}
 
 /**
- * Custom top navigation bar with background for visibility
+ * Custom top navigation bar with transparent background (gradient applied by parent)
  */
 @Composable
 private fun PlayerV2TopBar(
     contextText: String,
     onNavigateBack: () -> Unit,
     onMoreOptionsClick: () -> Unit,
+    recordingId: String?,
     modifier: Modifier = Modifier
 ) {
-    Surface(
-        modifier = modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.background,
-        shadowElevation = 1.dp
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically
     ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 8.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
-        ) {
             // Down chevron
             IconButton(onClick = onNavigateBack) {
                 Icon(
@@ -218,7 +255,6 @@ private fun PlayerV2TopBar(
                     tint = MaterialTheme.colorScheme.onSurface
                 )
             }
-        }
     }
 }
 

@@ -3,12 +3,14 @@ package com.deadarchive.app
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.core.view.WindowCompat
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.design.theme.DeadArchiveTheme
 import com.deadarchive.core.settings.api.SettingsRepository
@@ -26,6 +28,10 @@ class MainActivity : ComponentActivity() {
     @OptIn(UnstableApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        
+        // Ensure status bar is transparent
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
             val settings by settingsRepository.getSettings().collectAsState(initial = com.deadarchive.core.settings.api.model.AppSettings())
             
