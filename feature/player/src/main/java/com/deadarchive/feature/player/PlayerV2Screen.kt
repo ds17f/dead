@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import kotlinx.coroutines.launch
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -14,6 +15,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.compose.runtime.collectAsState
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.draw.clip
@@ -24,12 +26,14 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import com.deadarchive.core.design.component.DebugActivator
+import com.deadarchive.core.design.component.DebugBottomSheet
+import com.deadarchive.core.settings.SettingsViewModel
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import com.deadarchive.core.design.component.IconResources
-
-enum class RepeatMode { NORMAL, REPEAT_ALL, REPEAT_ONE }
+import com.deadarchive.core.model.PlayerV2RepeatMode
 
 /**
  * UI Color Generation Utilities for Recording-Based Gradients
@@ -59,19 +63,38 @@ private fun recordingIdToColor(recordingId: String?): Color {
 }
 
 /**
+ * Get the complete color stack for a recording
+ * Returns list of solid colors that can be used by different components consistently
+ * Uses color blending instead of alpha transparency for better UI visibility
+ */
+@Composable
+private fun getRecordingColorStack(recordingId: String?): List<Color> {
+    val baseColor = recordingIdToColor(recordingId)
+    val background = MaterialTheme.colorScheme.background
+    
+    return listOf(
+        androidx.compose.ui.graphics.lerp(background, baseColor, 0.8f),  // Index 0: Strong blend
+        androidx.compose.ui.graphics.lerp(background, baseColor, 0.4f),  // Index 1: Medium blend  
+        androidx.compose.ui.graphics.lerp(background, baseColor, 0.1f),  // Index 2: Faint blend
+        background,                                                      // Index 3: Background
+        background                                                       // Index 4: Background
+    )
+}
+
+/**
  * Create a beautiful vertical gradient brush for the given recordingId
  * Uses alpha transparency to maintain readability and Material3 compatibility
  */
 @Composable
 private fun createRecordingGradient(recordingId: String?): Brush {
-    val baseColor = recordingIdToColor(recordingId)
+    val colors = getRecordingColorStack(recordingId)
     
     return Brush.verticalGradient(
-        0f to baseColor.copy(alpha = 0.8f),               // Strong color at top
-        0.3f to baseColor.copy(alpha = 0.4f),             // Medium color at 30%
-        0.6f to baseColor.copy(alpha = 0.1f),             // Faint color at 60%
-        0.8f to MaterialTheme.colorScheme.background,     // Background at 80%
-        1f to MaterialTheme.colorScheme.background        // Full background at bottom
+        0f to colors[0],      // Strong color at top
+        0.3f to colors[1],    // Medium color at 30%
+        0.6f to colors[2],    // Faint color at 60%
+        0.8f to colors[3],    // Background at 80%
+        1f to colors[4]       // Full background at bottom
     )
 }
 
@@ -82,17 +105,40 @@ fun PlayerV2Screen(
     onNavigateBack: () -> Unit,
     onNavigateToQueue: () -> Unit = {},
     onNavigateToPlaylist: (String?) -> Unit = {},
-    viewModel: PlayerV2ViewModel = hiltViewModel()
+    viewModel: PlayerV2ViewModel = hiltViewModel(),
+    settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     Log.d("PlayerV2Screen", "=== PLAYERV2 SCREEN LOADED === recordingId: $recordingId")
     
     // Collect UI state from ViewModel
     val uiState by viewModel.uiState.collectAsState()
+    val settings by settingsViewModel.settings.collectAsState()
+    
+    // Scroll state for mini player detection
+    val scrollState = rememberLazyListState()
+    val coroutineScope = rememberCoroutineScope()
     
     // Bottom sheet state
     var showTrackActionsBottomSheet by remember { mutableStateOf(false) }
     var showConnectBottomSheet by remember { mutableStateOf(false) }
     var showQueueBottomSheet by remember { mutableStateOf(false) }
+    
+    // Debug panel state - only when debug mode is enabled
+    var showDebugPanel by remember { mutableStateOf(false) }
+    val debugData = if (settings.showDebugInfo) {
+        collectPlayerV2DebugData(uiState, recordingId)
+    } else {
+        null
+    }
+    
+    // Mini player visibility based on scroll position
+    // Show mini player only when player controls are completely off screen
+    val showMiniPlayer by remember {
+        derivedStateOf {
+            scrollState.firstVisibleItemIndex > 0 || 
+            (scrollState.firstVisibleItemIndex == 0 && scrollState.firstVisibleItemScrollOffset > 1200)
+        }
+    }
     
     // Load recording when recordingId changes
     LaunchedEffect(recordingId) {
@@ -101,11 +147,13 @@ fun PlayerV2Screen(
         }
     }
     
-    // Scrollable content with gradient as part of the scrolling items
-    LazyColumn(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.spacedBy(0.dp)
-    ) {
+    Box(modifier = Modifier.fillMaxSize()) {
+        // Scrollable content with gradient as part of the scrolling items
+        LazyColumn(
+            state = scrollState,
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.spacedBy(0.dp)
+        ) {
             // Gradient section containing top navigation, cover art, track info, progress, and controls
             item {
                 Box(
@@ -160,7 +208,7 @@ fun PlayerV2Screen(
                         PlayerV2EnhancedControls(
                             isPlaying = uiState.isPlaying,
                             shuffleEnabled = false, // TODO: Make dynamic
-                            repeatMode = RepeatMode.NORMAL, // TODO: Make dynamic
+                            repeatMode = PlayerV2RepeatMode.NONE, // TODO: Make dynamic
                             onPlayPause = viewModel::onPlayPauseClicked,
                             onPrevious = viewModel::onPreviousClicked,
                             onNext = viewModel::onNextClicked,
@@ -220,7 +268,46 @@ fun PlayerV2Screen(
                 onDismiss = { showQueueBottomSheet = false }
             )
         }
+        
+        // Mini Player overlay
+        if (showMiniPlayer && uiState.trackInfo != null) {
+            PlayerV2MiniPlayer(
+                uiState = uiState,
+                recordingId = recordingId,
+                onPlayPause = viewModel::onPlayPauseClicked,
+                onTapToExpand = {
+                    // Use a coroutine scope to handle the scroll
+                    coroutineScope.launch {
+                        scrollState.animateScrollToItem(0)
+                    }
+                },
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .fillMaxWidth()
+            )
+        }
+        
+        // Debug Activator (only when debug mode is enabled)
+        if (settings.showDebugInfo && debugData != null) {
+            DebugActivator(
+                isVisible = true,
+                onClick = { showDebugPanel = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp)
+            )
+        }
+    } // Close Box
+    
+    // Debug Bottom Sheet
+    debugData?.let { data ->
+        DebugBottomSheet(
+            debugData = data,
+            isVisible = showDebugPanel,
+            onDismiss = { showDebugPanel = false }
+        )
     }
+}
 
 /**
  * Custom top navigation bar with transparent background (gradient applied by parent)
@@ -422,7 +509,7 @@ private fun PlayerV2ProgressControl(
 private fun PlayerV2EnhancedControls(
     isPlaying: Boolean,
     shuffleEnabled: Boolean,
-    repeatMode: RepeatMode,
+    repeatMode: PlayerV2RepeatMode,
     onPlayPause: () -> Unit,
     onPrevious: () -> Unit,
     onNext: () -> Unit,
@@ -511,13 +598,13 @@ private fun PlayerV2EnhancedControls(
         ) {
             Icon(
                 painter = when (repeatMode) {
-                    RepeatMode.REPEAT_ONE -> IconResources.PlayerControls.RepeatOne()
+                    PlayerV2RepeatMode.ONE -> IconResources.PlayerControls.RepeatOne()
                     else -> IconResources.PlayerControls.Repeat()
                 },
                 contentDescription = "Repeat mode",
                 tint = when (repeatMode) {
-                    RepeatMode.NORMAL -> MaterialTheme.colorScheme.onSurfaceVariant
-                    RepeatMode.REPEAT_ALL, RepeatMode.REPEAT_ONE -> MaterialTheme.colorScheme.primary
+                    PlayerV2RepeatMode.NONE -> MaterialTheme.colorScheme.onSurfaceVariant
+                    PlayerV2RepeatMode.ALL, PlayerV2RepeatMode.ONE -> MaterialTheme.colorScheme.primary
                 }
             )
         }
@@ -969,6 +1056,116 @@ private fun ActionButton(
             Text(
                 text = text,
                 style = MaterialTheme.typography.bodyLarge
+            )
+        }
+    }
+}
+
+/**
+ * Minimal debug data for PlayerV2Screen - ready for future population
+ */
+@Composable
+private fun collectPlayerV2DebugData(
+    uiState: PlayerV2UiState,
+    recordingId: String?
+): com.deadarchive.core.design.component.DebugData {
+    return com.deadarchive.core.design.component.DebugData(
+        screenName = "PlayerV2Screen",
+        sections = listOf(
+            com.deadarchive.core.design.component.DebugSection(
+                title = "PlayerV2 Debug",
+                items = listOf(
+                    com.deadarchive.core.design.component.DebugItem.KeyValue("Status", "Debug panel ready - add items as needed")
+                )
+            )
+        )
+    )
+}
+
+/**
+ * Mini Player component that appears when scrolling past media controls
+ * Shows current track, play/pause button, and progress bar
+ */
+@Composable
+private fun PlayerV2MiniPlayer(
+    uiState: PlayerV2UiState,
+    recordingId: String?,
+    onPlayPause: () -> Unit,
+    onTapToExpand: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    // Use the medium color from the recording's color stack for consistency
+    val colors = getRecordingColorStack(recordingId)
+    val backgroundColor = colors[1] // Index 1: Medium color (alpha 0.4f)
+    
+    Card(
+        modifier = modifier
+            .height(72.dp)
+            .clickable { onTapToExpand() },
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+        shape = RoundedCornerShape(0.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = backgroundColor
+        )
+    ) {
+        Column {
+            // Main content row
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                // Track info (clickable area for expand)
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .clickable { onTapToExpand() }
+                ) {
+                    Text(
+                        text = uiState.trackInfo?.trackTitle ?: "Unknown Track",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium,
+                        color = Color.White,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Text(
+                        text = uiState.trackInfo?.showDate ?: "Unknown Date",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = Color.White.copy(alpha = 0.8f),
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+                
+                // Play/Pause button (NOT clickable for expansion)
+                IconButton(
+                    onClick = onPlayPause,
+                    modifier = Modifier.size(48.dp)
+                ) {
+                    Icon(
+                        painter = if (uiState.isPlaying) {
+                            IconResources.PlayerControls.Pause()
+                        } else {
+                            IconResources.PlayerControls.Play()
+                        },
+                        contentDescription = if (uiState.isPlaying) "Pause" else "Play",
+                        tint = Color.White,
+                        modifier = Modifier.size(24.dp)
+                    )
+                }
+            }
+            
+            // Progress bar at bottom (without thumb)
+            LinearProgressIndicator(
+                progress = uiState.progressInfo?.progress ?: 0f,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(3.dp),
+                color = Color.White,
+                trackColor = Color.White.copy(alpha = 0.3f)
             )
         }
     }

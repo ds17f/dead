@@ -16,7 +16,7 @@ data class PlayerV2Queue(
     val title: String? = null,                           // Queue title/description
     val createdAt: Long = System.currentTimeMillis(),    // When queue was created
     val shuffle: Boolean = false,                        // Shuffle mode state
-    val repeatMode: RepeatMode = RepeatMode.NONE,        // Repeat mode
+    val repeatMode: PlayerV2RepeatMode = PlayerV2RepeatMode.NONE,        // Repeat mode
     val originalOrder: List<Int> = emptyList()           // Original indices for shuffle
 ) {
     // Queue state computed properties
@@ -34,29 +34,29 @@ data class PlayerV2Queue(
     
     val hasNext: Boolean 
         get() = when (repeatMode) {
-            RepeatMode.ALL -> size > 1
-            RepeatMode.ONE -> false
-            RepeatMode.NONE -> currentIndex < items.size - 1
+            PlayerV2RepeatMode.ALL -> size > 1
+            PlayerV2RepeatMode.ONE -> false
+            PlayerV2RepeatMode.NONE -> currentIndex < items.size - 1
         }
     
     val hasPrevious: Boolean 
         get() = when (repeatMode) {
-            RepeatMode.ALL -> size > 1
-            RepeatMode.ONE -> false
-            RepeatMode.NONE -> currentIndex > 0
+            PlayerV2RepeatMode.ALL -> size > 1
+            PlayerV2RepeatMode.ONE -> false
+            PlayerV2RepeatMode.NONE -> currentIndex > 0
         }
     
     val nextItem: PlayerV2QueueItem?
         get() = when {
             !hasNext -> null
-            repeatMode == RepeatMode.ALL && currentIndex == items.size - 1 -> items.firstOrNull()
+            repeatMode == PlayerV2RepeatMode.ALL && currentIndex == items.size - 1 -> items.firstOrNull()
             else -> items.getOrNull(currentIndex + 1)
         }
     
     val previousItem: PlayerV2QueueItem?
         get() = when {
             !hasPrevious -> null
-            repeatMode == RepeatMode.ALL && currentIndex == 0 -> items.lastOrNull()
+            repeatMode == PlayerV2RepeatMode.ALL && currentIndex == 0 -> items.lastOrNull()
             else -> items.getOrNull(currentIndex - 1)
         }
     
@@ -100,7 +100,7 @@ data class PlayerV2Queue(
     fun getNextIndex(): Int? {
         return when {
             !hasNext -> null
-            repeatMode == RepeatMode.ALL && currentIndex == items.size - 1 -> 0
+            repeatMode == PlayerV2RepeatMode.ALL && currentIndex == items.size - 1 -> 0
             else -> currentIndex + 1
         }
     }
@@ -108,7 +108,7 @@ data class PlayerV2Queue(
     fun getPreviousIndex(): Int? {
         return when {
             !hasPrevious -> null
-            repeatMode == RepeatMode.ALL && currentIndex == 0 -> items.size - 1
+            repeatMode == PlayerV2RepeatMode.ALL && currentIndex == 0 -> items.size - 1
             else -> currentIndex - 1
         }
     }
@@ -208,7 +208,7 @@ data class PlayerV2Queue(
         }
     }
     
-    fun updateRepeatMode(mode: RepeatMode): PlayerV2Queue =
+    fun updateRepeatMode(mode: PlayerV2RepeatMode): PlayerV2Queue =
         copy(repeatMode = mode)
     
     companion object {
@@ -302,9 +302,9 @@ data class QueueRecordingSummary(
 )
 
 /**
- * Repeat modes for queue playback
+ * Repeat modes for PlayerV2 queue playback
  */
-enum class RepeatMode {
+enum class PlayerV2RepeatMode {
     NONE,     // No repeat
     ONE,      // Repeat current track
     ALL       // Repeat entire queue
