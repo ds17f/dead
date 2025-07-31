@@ -33,8 +33,7 @@ import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
 import com.deadarchive.core.design.component.IconResources
-
-enum class RepeatMode { NORMAL, REPEAT_ALL, REPEAT_ONE }
+import com.deadarchive.core.model.PlayerV2RepeatMode
 
 /**
  * UI Color Generation Utilities for Recording-Based Gradients
@@ -209,7 +208,7 @@ fun PlayerV2Screen(
                         PlayerV2EnhancedControls(
                             isPlaying = uiState.isPlaying,
                             shuffleEnabled = false, // TODO: Make dynamic
-                            repeatMode = RepeatMode.NORMAL, // TODO: Make dynamic
+                            repeatMode = PlayerV2RepeatMode.NONE, // TODO: Make dynamic
                             onPlayPause = viewModel::onPlayPauseClicked,
                             onPrevious = viewModel::onPreviousClicked,
                             onNext = viewModel::onNextClicked,
@@ -510,7 +509,7 @@ private fun PlayerV2ProgressControl(
 private fun PlayerV2EnhancedControls(
     isPlaying: Boolean,
     shuffleEnabled: Boolean,
-    repeatMode: RepeatMode,
+    repeatMode: PlayerV2RepeatMode,
     onPlayPause: () -> Unit,
     onPrevious: () -> Unit,
     onNext: () -> Unit,
@@ -599,13 +598,13 @@ private fun PlayerV2EnhancedControls(
         ) {
             Icon(
                 painter = when (repeatMode) {
-                    RepeatMode.REPEAT_ONE -> IconResources.PlayerControls.RepeatOne()
+                    PlayerV2RepeatMode.ONE -> IconResources.PlayerControls.RepeatOne()
                     else -> IconResources.PlayerControls.Repeat()
                 },
                 contentDescription = "Repeat mode",
                 tint = when (repeatMode) {
-                    RepeatMode.NORMAL -> MaterialTheme.colorScheme.onSurfaceVariant
-                    RepeatMode.REPEAT_ALL, RepeatMode.REPEAT_ONE -> MaterialTheme.colorScheme.primary
+                    PlayerV2RepeatMode.NONE -> MaterialTheme.colorScheme.onSurfaceVariant
+                    PlayerV2RepeatMode.ALL, PlayerV2RepeatMode.ONE -> MaterialTheme.colorScheme.primary
                 }
             )
         }

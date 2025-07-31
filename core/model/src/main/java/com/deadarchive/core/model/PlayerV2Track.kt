@@ -18,7 +18,7 @@ data class PlayerV2Track(
     val playbackPosition: Duration = Duration.ZERO,       // Current playback position
     val isCurrentlyPlaying: Boolean = false,              // Active playback state
     val isLoading: Boolean = false,                       // Track loading/buffering state
-    val playbackQuality: AudioQuality = AudioQuality.AUTO, // Audio quality preference
+    val playbackQuality: PlayerV2AudioQuality = PlayerV2AudioQuality.AUTO, // Audio quality preference
     val queuePosition: Int = 0,                           // Position in queue
     val addedToQueueAt: Long = System.currentTimeMillis(), // When added to queue
     val downloadStatus: DownloadStatus = DownloadStatus.QUEUED // Download state
@@ -125,9 +125,9 @@ data class PlayerV2Track(
 }
 
 /**
- * Audio quality preferences for playback
+ * Audio quality preferences for PlayerV2 playback
  */
-enum class AudioQuality {
+enum class PlayerV2AudioQuality {
     AUTO,       // Let system decide based on connection
     LOW,        // Prefer smaller file sizes
     MEDIUM,     // Balanced quality/size

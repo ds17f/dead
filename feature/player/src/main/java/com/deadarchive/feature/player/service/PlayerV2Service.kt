@@ -1,6 +1,7 @@
 package com.deadarchive.feature.player.service
 
 import com.deadarchive.core.model.PlayerV2State
+import com.deadarchive.core.model.PlayerV2RepeatMode
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -179,14 +180,9 @@ data class PlayingContextInfo(
 data class PlayerV2ControlState(
     val isPlaying: Boolean,
     val shuffleEnabled: Boolean,
-    val repeatMode: RepeatMode
+    val repeatMode: PlayerV2RepeatMode
 )
 
-enum class RepeatMode {
-    NORMAL,
-    REPEAT_ALL, 
-    REPEAT_ONE
-}
 
 /**
  * Extended track information for professional display

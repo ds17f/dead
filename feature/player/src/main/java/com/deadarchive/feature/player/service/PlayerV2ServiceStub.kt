@@ -39,7 +39,7 @@ class PlayerV2ServiceStub @Inject constructor() : PlayerV2Service {
     private var isPlaying = false
     private var currentPosition = 0.3f // Mock 30% progress
     private var shuffleEnabled = false
-    private var repeatMode = RepeatMode.NORMAL
+    private var repeatMode = com.deadarchive.core.model.PlayerV2RepeatMode.NONE
     private var currentRecordingInfo: MockRecordingInfo? = null
     
     override suspend fun loadRecording(recordingId: String) {
@@ -70,8 +70,8 @@ class PlayerV2ServiceStub @Inject constructor() : PlayerV2Service {
         
         // Update the state with new playing status using proper domain model method
         _playerState.value = _playerState.value.updatePlaybackState(
-            if (isPlaying) com.deadarchive.core.model.PlaybackState.PLAYING 
-            else com.deadarchive.core.model.PlaybackState.PAUSED
+            if (isPlaying) com.deadarchive.core.model.PlayerV2PlaybackState.PLAYING 
+            else com.deadarchive.core.model.PlayerV2PlaybackState.PAUSED
         )
         
         Log.d(TAG, "Playback state updated - now playing: $isPlaying")
@@ -152,9 +152,9 @@ class PlayerV2ServiceStub @Inject constructor() : PlayerV2Service {
     override suspend fun toggleRepeatMode() {
         Log.d(TAG, "Toggle repeat mode - currently: $repeatMode")
         repeatMode = when (repeatMode) {
-            RepeatMode.NORMAL -> RepeatMode.REPEAT_ALL
-            RepeatMode.REPEAT_ALL -> RepeatMode.REPEAT_ONE
-            RepeatMode.REPEAT_ONE -> RepeatMode.NORMAL
+            com.deadarchive.core.model.PlayerV2RepeatMode.NONE -> com.deadarchive.core.model.PlayerV2RepeatMode.ALL
+            com.deadarchive.core.model.PlayerV2RepeatMode.ALL -> com.deadarchive.core.model.PlayerV2RepeatMode.ONE
+            com.deadarchive.core.model.PlayerV2RepeatMode.ONE -> com.deadarchive.core.model.PlayerV2RepeatMode.NONE
         }
         updateState()
     }
@@ -214,8 +214,8 @@ In the strangest of places if you look at it right"""
             isLoading = false
         )
         return initialState.updatePlaybackState(
-            if (isPlaying) com.deadarchive.core.model.PlaybackState.PLAYING 
-            else com.deadarchive.core.model.PlaybackState.PAUSED
+            if (isPlaying) com.deadarchive.core.model.PlayerV2PlaybackState.PLAYING 
+            else com.deadarchive.core.model.PlayerV2PlaybackState.PAUSED
         )
     }
     
@@ -231,8 +231,8 @@ In the strangest of places if you look at it right"""
     
     private fun updateState() {
         _playerState.value = _playerState.value.updatePlaybackState(
-            if (isPlaying) com.deadarchive.core.model.PlaybackState.PLAYING 
-            else com.deadarchive.core.model.PlaybackState.PAUSED
+            if (isPlaying) com.deadarchive.core.model.PlayerV2PlaybackState.PLAYING 
+            else com.deadarchive.core.model.PlayerV2PlaybackState.PAUSED
         )
     }
     

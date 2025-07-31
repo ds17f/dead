@@ -15,7 +15,7 @@ import kotlin.time.Duration
 data class PlayerV2State(
     val currentRecording: PlayerV2Recording? = null,      // Currently loaded recording
     val queue: PlayerV2Queue = PlayerV2Queue.empty(),    // Queue state
-    val playbackState: PlaybackState = PlaybackState.IDLE, // Current playback state
+    val playbackState: PlayerV2PlaybackState = PlayerV2PlaybackState.IDLE, // Current playback state
     val currentPosition: Duration = Duration.ZERO,        // Current playback position
     val isLoading: Boolean = false,                       // Loading state
     val error: String? = null,                           // Error message
@@ -31,13 +31,13 @@ data class PlayerV2State(
     
     // Playback state computed properties
     val isPlaying: Boolean
-        get() = playbackState == PlaybackState.PLAYING
+        get() = playbackState == PlayerV2PlaybackState.PLAYING
     
     val isPaused: Boolean
-        get() = playbackState == PlaybackState.PAUSED
+        get() = playbackState == PlayerV2PlaybackState.PAUSED
     
     val isBuffering: Boolean
-        get() = playbackState == PlaybackState.BUFFERING
+        get() = playbackState == PlayerV2PlaybackState.BUFFERING
     
     val canPlay: Boolean
         get() = currentTrack?.canPlay == true && !isLoading
@@ -139,7 +139,7 @@ data class PlayerV2State(
         )
     }
     
-    fun updatePlaybackState(state: PlaybackState): PlayerV2State =
+    fun updatePlaybackState(state: PlayerV2PlaybackState): PlayerV2State =
         copy(playbackState = state)
     
     fun updateCurrentPosition(position: Duration): PlayerV2State {
@@ -165,7 +165,7 @@ data class PlayerV2State(
         val updatedRecording = currentRecording?.markTrackAsPlaying(trackIndex)
         return copy(
             currentRecording = updatedRecording,
-            playbackState = PlaybackState.PLAYING
+            playbackState = PlayerV2PlaybackState.PLAYING
         )
     }
     
@@ -215,9 +215,9 @@ data class PlayerV2State(
 }
 
 /**
- * Playback state enumeration
+ * Playback state enumeration for PlayerV2
  */
-enum class PlaybackState {
+enum class PlayerV2PlaybackState {
     IDLE,        // Not playing, no content
     BUFFERING,   // Loading/buffering content
     PLAYING,     // Actively playing
