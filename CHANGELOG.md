@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.37.0] - 2025-07-30
+
+### New Features
+* add Material Design cast icon for connect button (c0d011d)
+* implement scrolling gradient architecture with status bar transparency (a1ba680)
+* fix major UI layout and design issues (678f87c)
+
+
 ## [0.36.0] - 2025-07-30
 
 ### New Features
@@ -8,8 +16,6 @@
 
 ### Bug Fixes
 * correct MiniPlayer navigation to use PlayerV2 when feature flag enabled (56a2721)
-
-
 ## [0.35.0] - 2025-07-29
 
 ### New Features
