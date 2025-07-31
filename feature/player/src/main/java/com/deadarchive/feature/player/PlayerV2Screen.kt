@@ -65,17 +65,20 @@ private fun recordingIdToColor(recordingId: String?): Color {
 
 /**
  * Get the complete color stack for a recording
- * Returns list of colors that can be used by different components consistently
+ * Returns list of solid colors that can be used by different components consistently
+ * Uses color blending instead of alpha transparency for better UI visibility
  */
 @Composable
 private fun getRecordingColorStack(recordingId: String?): List<Color> {
     val baseColor = recordingIdToColor(recordingId)
+    val background = MaterialTheme.colorScheme.background
+    
     return listOf(
-        baseColor.copy(alpha = 0.8f),               // Index 0: Strong color
-        baseColor.copy(alpha = 0.4f),               // Index 1: Medium color  
-        baseColor.copy(alpha = 0.1f),               // Index 2: Faint color
-        MaterialTheme.colorScheme.background,       // Index 3: Background
-        MaterialTheme.colorScheme.background        // Index 4: Background
+        androidx.compose.ui.graphics.lerp(background, baseColor, 0.8f),  // Index 0: Strong blend
+        androidx.compose.ui.graphics.lerp(background, baseColor, 0.4f),  // Index 1: Medium blend  
+        androidx.compose.ui.graphics.lerp(background, baseColor, 0.1f),  // Index 2: Faint blend
+        background,                                                      // Index 3: Background
+        background                                                       // Index 4: Background
     )
 }
 
