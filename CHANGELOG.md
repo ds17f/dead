@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.38.1] - 2025-07-31
+
+### Other Changes
+* bump the gradle version (b74fe21)
+
+
 ## [0.35.1] - 2025-07-31
 
 ### Bug Fixes
 * handle null values in Archive.org API response parameters (e45cbac)
-
-
 ## [0.38.0] - 2025-07-31
 
 ### New Features
