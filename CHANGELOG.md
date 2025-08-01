@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.35.1] - 2025-07-31
+
+### Bug Fixes
+* handle null values in Archive.org API response parameters (e45cbac)
+
+
 ## [0.38.0] - 2025-07-31
 
 ### New Features
@@ -12,8 +18,6 @@
 
 ### Other Changes
 * Merge branch 'player-v2' (4dd5641)
-
-
 ## [0.37.0] - 2025-07-30
 
 ### New Features
