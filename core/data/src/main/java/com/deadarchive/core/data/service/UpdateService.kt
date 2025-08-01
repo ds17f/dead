@@ -3,8 +3,10 @@ package com.deadarchive.core.data.service
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateDownloadState
 import com.deadarchive.core.model.UpdateStatus
+import com.deadarchive.core.model.UpdateInstallationState
 import kotlinx.coroutines.flow.Flow
 import java.io.File
+
 
 /**
  * Service interface for app update functionality.
@@ -44,6 +46,13 @@ interface UpdateService {
      * @return Result indicating success or failure
      */
     suspend fun installUpdate(apkFile: File): Result<Unit>
+    
+    /**
+     * Get real-time installation status updates.
+     * 
+     * @return Flow of installation state updates
+     */
+    fun getInstallationStatus(): Flow<UpdateInstallationState>
     
     /**
      * Mark a specific version as skipped by the user.

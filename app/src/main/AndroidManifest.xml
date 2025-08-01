@@ -55,6 +55,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- FileProvider for sharing APK files securely -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        
+        <!-- App update installation receiver -->
+        <receiver
+            android:name="com.deadarchive.core.data.service.UpdateInstallReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.content.pm.action.SESSION_COMMITTED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

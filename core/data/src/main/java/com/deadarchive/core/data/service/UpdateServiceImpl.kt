@@ -4,11 +4,14 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageInstaller
+import android.net.Uri
 import android.os.Build
+import android.provider.Settings
 import android.util.Log
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateDownloadState
 import com.deadarchive.core.model.UpdateStatus
+import com.deadarchive.core.model.UpdateInstallationState
 import com.deadarchive.core.network.GitHubApiService
 import com.deadarchive.core.settings.api.SettingsRepository
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -37,7 +40,8 @@ class UpdateServiceImpl @Inject constructor(
     @ApplicationContext private val context: Context,
     private val gitHubApiService: GitHubApiService,
     private val settingsRepository: SettingsRepository,
-    private val okHttpClient: OkHttpClient
+    private val okHttpClient: OkHttpClient,
+    private val installationStateManager: InstallationStateManager
 ) : UpdateService {
     
     companion object {
@@ -240,52 +244,86 @@ class UpdateServiceImpl @Inject constructor(
             try {
                 Log.d(TAG, "Installing update: ${apkFile.absolutePath}")
                 
-                if (!apkFile.exists()) {
-                    return@withContext Result.failure(Exception("APK file not found"))
-                }
+                // Detailed file validation and logging
+                Log.d(TAG, "📁 File validation:")
+                Log.d(TAG, "  Absolute path: ${apkFile.absolutePath}")
+                Log.d(TAG, "  File exists: ${apkFile.exists()}")
+                Log.d(TAG, "  File size: ${if (apkFile.exists()) apkFile.length() else "N/A"} bytes")
+                Log.d(TAG, "  File readable: ${apkFile.canRead()}")
+                Log.d(TAG, "  Parent directory: ${apkFile.parent}")
+                Log.d(TAG, "  Parent exists: ${apkFile.parentFile?.exists()}")
                 
-                val packageInstaller = context.packageManager.packageInstaller
-                val params = PackageInstaller.SessionParams(
-                    PackageInstaller.SessionParams.MODE_FULL_INSTALL
-                )
+                // Update installation state to installing
+                installationStateManager.updateState(UpdateInstallationState(
+                    isInstalling = true,
+                    statusMessage = "Validating APK file at ${apkFile.absolutePath}..."
+                ))
                 
-                val sessionId = packageInstaller.createSession(params)
-                val session = packageInstaller.openSession(sessionId)
-                
-                try {
-                    session.openWrite("package", 0, -1).use { output ->
-                        apkFile.inputStream().use { input ->
-                            input.copyTo(output)
+                // Check if we can install packages (Android 8.0+)
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    if (!context.packageManager.canRequestPackageInstalls()) {
+                        Log.w(TAG, "App does not have permission to install packages, opening settings")
+                        
+                        // Open the "Install from unknown sources" settings screen
+                        try {
+                            val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
+                                data = Uri.parse("package:${context.packageName}")
+                                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            }
+                            context.startActivity(intent)
+                            
+                            installationStateManager.updateState(UpdateInstallationState(
+                                isError = true,
+                                errorMessage = "Please enable 'Install from unknown sources' for Dead Archive in the settings that just opened, then try installing the update again."
+                            ))
+                        } catch (e: Exception) {
+                            Log.e(TAG, "Failed to open unknown sources settings", e)
+                            installationStateManager.updateState(UpdateInstallationState(
+                                isError = true,
+                                errorMessage = "Please enable 'Install from unknown sources' in Settings > Apps > Dead Archive > Advanced > Install unknown apps."
+                            ))
                         }
+                        
+                        return@withContext Result.failure(Exception("Permission required"))
                     }
-                    
-                    // Create install intent
-                    val intent = Intent(context, UpdateInstallReceiver::class.java)
-                    val pendingIntent = PendingIntent.getBroadcast(
-                        context,
-                        INSTALL_REQUEST_CODE,
-                        intent,
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-                        } else {
-                            PendingIntent.FLAG_UPDATE_CURRENT
-                        }
-                    )
-                    
-                    Log.d(TAG, "Committing installation session")
-                    session.commit(pendingIntent.intentSender)
-                    
-                    Result.success(Unit)
-                    
-                } finally {
-                    session.close()
                 }
+                
+                if (!apkFile.exists()) {
+                    val error = "APK file not found: ${apkFile.absolutePath}"
+                    Log.e(TAG, error)
+                    installationStateManager.updateState(UpdateInstallationState(
+                        isError = true,
+                        errorMessage = error
+                    ))
+                    return@withContext Result.failure(Exception(error))
+                }
+                
+                if (!apkFile.canRead()) {
+                    val error = "Cannot read APK file: ${apkFile.absolutePath}"
+                    Log.e(TAG, error)
+                    installationStateManager.updateState(UpdateInstallationState(
+                        isError = true,
+                        errorMessage = error
+                    ))
+                    return@withContext Result.failure(Exception(error))
+                }
+                
+                // Focus on making system installer work properly
+                return@withContext installWithSystemUI(apkFile)
                 
             } catch (e: Exception) {
                 Log.e(TAG, "Error installing update", e)
+                installationStateManager.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "Installation failed: ${e.message}"
+                ))
                 Result.failure(e)
             }
         }
+    }
+    
+    override fun getInstallationStatus(): Flow<UpdateInstallationState> {
+        return installationStateManager.installationState
     }
     
     override suspend fun skipUpdate(version: String) {
@@ -325,6 +363,102 @@ class UpdateServiceImpl @Inject constructor(
         }
     }
     
+    private suspend fun installWithSystemUI(apkFile: File): Result<Unit> {
+        return withContext(Dispatchers.Main) {
+            try {
+                Log.d(TAG, "🚀 Attempting system installer UI for: ${apkFile.absolutePath}")
+                
+                // Check permissions first
+                Log.d(TAG, "🔐 Permission checks:")
+                Log.d(TAG, "  Android version: ${Build.VERSION.SDK_INT}")
+                Log.d(TAG, "  Can request package installs: ${if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) context.packageManager.canRequestPackageInstalls() else "N/A (< API 26)"}")
+                
+                // For Android 8.0+, ensure we can install packages
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    if (!context.packageManager.canRequestPackageInstalls()) {
+                        Log.w(TAG, "❌ Cannot install packages - opening settings")
+                        // Open settings instead of failing
+                        try {
+                            val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
+                                data = Uri.parse("package:${context.packageName}")
+                                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            }
+                            context.startActivity(intent)
+                            Log.d(TAG, "Opened unknown sources settings")
+                        } catch (e: Exception) {
+                            Log.e(TAG, "Failed to open unknown sources settings", e)
+                        }
+                        
+                        installationStateManager.updateState(UpdateInstallationState(
+                            isError = true,
+                            errorMessage = "Please enable 'Install from unknown sources' for Dead Archive in the settings that opened, then try installing again."
+                        ))
+                        return@withContext Result.failure(SecurityException("Need REQUEST_INSTALL_PACKAGES permission"))
+                    }
+                }
+                
+                // Use FileProvider to create content:// URI for better compatibility
+                val uri = try {
+                    androidx.core.content.FileProvider.getUriForFile(
+                        context,
+                        "${context.packageName}.fileprovider",
+                        apkFile
+                    )
+                } catch (e: Exception) {
+                    Log.w(TAG, "FileProvider failed, falling back to file:// URI", e)
+                    android.net.Uri.fromFile(apkFile)
+                }
+                Log.d(TAG, "📁 Using URI: $uri")
+                
+                val intent = Intent(Intent.ACTION_VIEW).apply {
+                    setDataAndType(uri, "application/vnd.android.package-archive")
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
+                
+                Log.d(TAG, "🎯 Intent details:")
+                Log.d(TAG, "  Action: ${intent.action}")
+                Log.d(TAG, "  Data: ${intent.data}")
+                Log.d(TAG, "  Type: ${intent.type}")
+                Log.d(TAG, "  Flags: ${intent.flags}")
+                
+                // Check if any app can handle this intent
+                val resolveInfos = context.packageManager.queryIntentActivities(intent, 0)
+                Log.d(TAG, "📱 Available handlers: ${resolveInfos.size}")
+                resolveInfos.forEach { resolveInfo ->
+                    Log.d(TAG, "  - ${resolveInfo.activityInfo.packageName}/${resolveInfo.activityInfo.name}")
+                }
+                
+                if (resolveInfos.isEmpty()) {
+                    throw Exception("No app can handle APK installation intent")
+                }
+                
+                installationStateManager.updateState(UpdateInstallationState(
+                    isInstalling = true,
+                    statusMessage = "Launching system installer..."
+                ))
+                
+                context.startActivity(intent)
+                Log.d(TAG, "✅ System installer intent launched successfully")
+                
+                installationStateManager.updateState(UpdateInstallationState(
+                    isInstalling = true,
+                    statusMessage = "System installer launched. Please follow the prompts to complete installation."
+                ))
+                
+                Result.success(Unit)
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "❌ System installer failed: ${e.message}", e)
+                installationStateManager.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "Failed to launch system installer: ${e.message}"
+                ))
+                Result.failure(e)
+            }
+        }
+    }
+    
     private fun getCurrentAppVersion(): String {
         return try {
             val packageInfo = context.packageManager.getPackageInfo(context.packageName, 0)
@@ -344,31 +478,283 @@ class UpdateServiceImpl @Inject constructor(
 
 /**
  * Broadcast receiver for handling PackageInstaller results.
- * This would need to be implemented as a separate class and registered in AndroidManifest.xml
+ * Registered in AndroidManifest.xml to receive installation status callbacks.
  */
 class UpdateInstallReceiver : android.content.BroadcastReceiver() {
+    
+    companion object {
+        private const val TAG = "UpdateInstallReceiver"
+        private const val NOTIFICATION_ID = 1002
+        private const val CHANNEL_ID = "app_updates"
+    }
+    
     override fun onReceive(context: Context, intent: Intent) {
+        Log.d(TAG, "🔔 BroadcastReceiver triggered!")
+        Log.d(TAG, "Intent action: ${intent.action}")
+        Log.d(TAG, "Intent extras: ${intent.extras?.keySet()?.joinToString(", ")}")
+        
         val status = intent.getIntExtra(PackageInstaller.EXTRA_STATUS, PackageInstaller.STATUS_FAILURE)
+        val message = intent.getStringExtra(PackageInstaller.EXTRA_STATUS_MESSAGE)
+        val otherPackageName = intent.getStringExtra(PackageInstaller.EXTRA_OTHER_PACKAGE_NAME)
+        val sessionId = intent.getIntExtra(PackageInstaller.EXTRA_SESSION_ID, -1)
+        val legacyStatus = intent.getStringExtra("android.content.pm.extra.LEGACY_STATUS")
+        
+        Log.d(TAG, "📦 Installation callback details:")
+        Log.d(TAG, "  Status: $status")
+        Log.d(TAG, "  Message: $message")
+        Log.d(TAG, "  Other package name: $otherPackageName")
+        Log.d(TAG, "  Session ID: $sessionId")
+        Log.d(TAG, "  Legacy status: $legacyStatus")
+        
+        // Log all extras for debugging
+        intent.extras?.let { extras ->
+            Log.d(TAG, "  All extras:")
+            for (key in extras.keySet()) {
+                try {
+                    val value = extras.get(key)
+                    Log.d(TAG, "    $key = $value (${value?.javaClass?.simpleName})")
+                } catch (e: Exception) {
+                    Log.d(TAG, "    $key = <error reading value>")
+                }
+            }
+        }
+        
+        // Check if the status extra actually exists
+        val hasStatusExtra = intent.hasExtra(PackageInstaller.EXTRA_STATUS)
+        Log.d(TAG, "Intent has STATUS extra: $hasStatusExtra")
+        
+        // If no STATUS extra, we might still have a valid status from getIntExtra with the default
+        // Let's process it anyway if it's a known status code
+        Log.d(TAG, "Processing status: $status (hasExtra: $hasStatusExtra)")
+        Log.d(TAG, "Status constants for reference:")
+        Log.d(TAG, "  STATUS_SUCCESS = ${PackageInstaller.STATUS_SUCCESS}")
+        Log.d(TAG, "  STATUS_FAILURE = ${PackageInstaller.STATUS_FAILURE}")
+        Log.d(TAG, "  STATUS_PENDING_USER_ACTION = ${PackageInstaller.STATUS_PENDING_USER_ACTION}")
+        Log.d(TAG, "  STATUS_FAILURE_ABORTED = ${PackageInstaller.STATUS_FAILURE_ABORTED}")
+        Log.d(TAG, "  STATUS_FAILURE_BLOCKED = ${PackageInstaller.STATUS_FAILURE_BLOCKED}")
+        Log.d(TAG, "  STATUS_FAILURE_CONFLICT = ${PackageInstaller.STATUS_FAILURE_CONFLICT}")
+        Log.d(TAG, "  STATUS_FAILURE_INCOMPATIBLE = ${PackageInstaller.STATUS_FAILURE_INCOMPATIBLE}")
+        Log.d(TAG, "  STATUS_FAILURE_INVALID = ${PackageInstaller.STATUS_FAILURE_INVALID}")
+        Log.d(TAG, "  STATUS_FAILURE_STORAGE = ${PackageInstaller.STATUS_FAILURE_STORAGE}")
+        
+        // Get the installation state manager from the application context
+        val stateManager = try {
+            val applicationContext = context.applicationContext
+            dagger.hilt.EntryPoints.get(applicationContext, InstallationStateManagerEntryPoint::class.java).installationStateManager()
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to get InstallationStateManager", e)
+            null
+        }
+        
         when (status) {
             PackageInstaller.STATUS_SUCCESS -> {
-                Log.d("UpdateInstallReceiver", "Installation successful")
-                // Could show notification or trigger app restart
+                Log.d(TAG, "✅ Installation successful")
+                stateManager?.updateState(UpdateInstallationState(
+                    isSuccess = true,
+                    statusMessage = "Update installed successfully! Please restart the app to use the new version."
+                ))
+                showNotification(
+                    context, 
+                    "Update Installed", 
+                    "Dead Archive has been updated successfully. Restart the app to use the new version.",
+                    isSuccess = true
+                )
             }
-            PackageInstaller.STATUS_FAILURE,
-            PackageInstaller.STATUS_FAILURE_ABORTED,
-            PackageInstaller.STATUS_FAILURE_BLOCKED,
-            PackageInstaller.STATUS_FAILURE_CONFLICT,
-            PackageInstaller.STATUS_FAILURE_INCOMPATIBLE,
-            PackageInstaller.STATUS_FAILURE_INVALID,
-            PackageInstaller.STATUS_FAILURE_STORAGE -> {
-                val message = intent.getStringExtra(PackageInstaller.EXTRA_STATUS_MESSAGE)
-                Log.e("UpdateInstallReceiver", "Installation failed: $message")
-                // Could show error notification
-            }
+            
             PackageInstaller.STATUS_PENDING_USER_ACTION -> {
-                Log.d("UpdateInstallReceiver", "Installation pending user action")
-                // User confirmation required - this is expected for non-system apps
+                Log.d(TAG, "⏳ Installation pending user action")
+                stateManager?.updateState(UpdateInstallationState(
+                    isInstalling = true,
+                    statusMessage = "Waiting for user approval... Check your notifications or recent apps for the installation prompt."
+                ))
+                
+                val confirmIntent = intent.getParcelableExtra<Intent>(Intent.EXTRA_INTENT)
+                if (confirmIntent != null) {
+                    try {
+                        confirmIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        context.startActivity(confirmIntent)
+                        Log.d(TAG, "Started confirmation activity")
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Failed to start confirmation activity", e)
+                        stateManager?.updateState(UpdateInstallationState(
+                            isError = true,
+                            errorMessage = "Please check your notifications or recent apps for the installation prompt, or enable 'Install from unknown sources' in Settings."
+                        ))
+                        showNotification(
+                            context,
+                            "Update Installation",
+                            "Please check your notifications or recent apps for the installation prompt, or enable 'Install from unknown sources' in Settings.",
+                            isSuccess = false
+                        )
+                    }
+                } else {
+                    Log.w(TAG, "No confirmation intent provided - user needs to manually approve")
+                    stateManager?.updateState(UpdateInstallationState(
+                        isInstalling = true,
+                        statusMessage = "Please check your notifications, recent apps, or system dialogs for the installation approval prompt."
+                    ))
+                    showNotification(
+                        context,
+                        "Update Installation",
+                        "Please check your notifications, recent apps, or system dialogs for the installation approval prompt.",
+                        isSuccess = false
+                    )
+                }
+            }
+            
+            PackageInstaller.STATUS_FAILURE_ABORTED -> {
+                Log.e(TAG, "❌ Installation aborted by user")
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "Installation was cancelled by user. You can try installing the update again."
+                ))
+                showNotification(
+                    context,
+                    "Update Cancelled",
+                    "App update was cancelled. You can try again from Settings.",
+                    isSuccess = false
+                )
+            }
+            
+            PackageInstaller.STATUS_FAILURE_BLOCKED -> {
+                Log.e(TAG, "❌ Installation blocked")
+                
+                // Try to open settings automatically
+                openUnknownSourcesSettings(context)
+                
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "Installation was blocked. Please enable 'Install from unknown sources' for Dead Archive in the settings that opened, then try installing again."
+                ))
+                showNotification(
+                    context,
+                    "Update Blocked",
+                    "Installation was blocked. The settings screen should have opened - please enable 'Install from unknown sources' for Dead Archive.",
+                    isSuccess = false
+                )
+            }
+            
+            PackageInstaller.STATUS_FAILURE_CONFLICT -> {
+                Log.e(TAG, "❌ Installation conflict: $message")
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "Installation failed due to version conflict. Please try downloading the update again."
+                ))
+                showNotification(
+                    context,
+                    "Update Failed",
+                    "Installation failed due to version conflict. Please try downloading the update again.",
+                    isSuccess = false
+                )
+            }
+            
+            PackageInstaller.STATUS_FAILURE_INCOMPATIBLE -> {
+                Log.e(TAG, "❌ Installation incompatible: $message")
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "This update is not compatible with your device."
+                ))
+                showNotification(
+                    context,
+                    "Update Failed",
+                    "This update is not compatible with your device.",
+                    isSuccess = false
+                )
+            }
+            
+            PackageInstaller.STATUS_FAILURE_INVALID -> {
+                Log.e(TAG, "❌ Installation invalid: $message")
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "The update file is corrupted. Please try downloading again."
+                ))
+                showNotification(
+                    context,
+                    "Update Failed",
+                    "The update file is corrupted. Please try downloading again.",
+                    isSuccess = false
+                )
+            }
+            
+            PackageInstaller.STATUS_FAILURE_STORAGE -> {
+                Log.e(TAG, "❌ Installation storage failure: $message")
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = "Not enough storage space to install the update. Please free up space and try again."
+                ))
+                showNotification(
+                    context,
+                    "Update Failed",
+                    "Not enough storage space to install the update. Please free up space and try again.",
+                    isSuccess = false
+                )
+            }
+            
+            else -> {
+                Log.e(TAG, "❌ Installation failed with unknown status: $status, message: $message")
+                stateManager?.updateState(UpdateInstallationState(
+                    isError = true,
+                    errorMessage = message ?: "Installation failed for unknown reason. Please try again."
+                ))
+                showNotification(
+                    context,
+                    "Update Failed",
+                    message ?: "Installation failed for unknown reason. Please try again.",
+                    isSuccess = false
+                )
             }
         }
     }
+    
+    private fun showNotification(context: Context, title: String, content: String, isSuccess: Boolean) {
+        try {
+            val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as android.app.NotificationManager
+            
+            // Create notification channel for Android 8.0+
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+                val channel = android.app.NotificationChannel(
+                    CHANNEL_ID,
+                    "App Updates",
+                    android.app.NotificationManager.IMPORTANCE_DEFAULT
+                ).apply {
+                    description = "Notifications about app updates"
+                }
+                notificationManager.createNotificationChannel(channel)
+            }
+            
+            val notification = android.app.Notification.Builder(context, CHANNEL_ID)
+                .setContentTitle(title)
+                .setContentText(content)
+                .setSmallIcon(android.R.drawable.stat_sys_download_done)
+                .setAutoCancel(true)
+                .setStyle(android.app.Notification.BigTextStyle().bigText(content))
+                .build()
+            
+            notificationManager.notify(NOTIFICATION_ID, notification)
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to show notification", e)
+        }
+    }
+    
+    private fun openUnknownSourcesSettings(context: Context) {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
+                    data = Uri.parse("package:${context.packageName}")
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
+                context.startActivity(intent)
+                Log.d(TAG, "Opened unknown sources settings")
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to open unknown sources settings", e)
+        }
+    }
+}
+
+@dagger.hilt.InstallIn(dagger.hilt.components.SingletonComponent::class)
+@dagger.hilt.EntryPoint
+interface InstallationStateManagerEntryPoint {
+    fun installationStateManager(): InstallationStateManager
 }

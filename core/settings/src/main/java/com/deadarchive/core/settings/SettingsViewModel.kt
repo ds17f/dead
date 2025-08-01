@@ -13,6 +13,7 @@ import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateStatus
 import com.deadarchive.core.model.UpdateDownloadState
+import com.deadarchive.core.model.UpdateInstallationState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.launch
@@ -66,6 +67,14 @@ class SettingsViewModel @Inject constructor(
     
     private val _downloadState = MutableStateFlow(UpdateDownloadState())
     val downloadState: StateFlow<UpdateDownloadState> = _downloadState.asStateFlow()
+    
+    // Installation status tracking
+    val installationStatus: StateFlow<UpdateInstallationState> = updateService.getInstallationStatus()
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5_000),
+            initialValue = UpdateInstallationState()
+        )
     
     // Expose service state flows
     val backupJson: StateFlow<String?> = backupService.backupJson

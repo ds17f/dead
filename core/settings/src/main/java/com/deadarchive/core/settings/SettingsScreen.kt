@@ -35,6 +35,7 @@ fun SettingsScreen(
     val updateStatus by viewModel.updateStatus.collectAsState()
     val currentUpdate by viewModel.currentUpdate.collectAsState()
     val downloadState by viewModel.downloadState.collectAsState()
+    val installationStatus by viewModel.installationStatus.collectAsState()
     
     Scaffold(
         topBar = {
@@ -147,6 +148,7 @@ fun SettingsScreen(
         UpdateAvailableDialog(
             update = update,
             downloadState = downloadState,
+            installationStatus = installationStatus,
             onDownload = viewModel::downloadUpdate,
             onSkip = viewModel::skipUpdate,
             onInstall = viewModel::installUpdate,
