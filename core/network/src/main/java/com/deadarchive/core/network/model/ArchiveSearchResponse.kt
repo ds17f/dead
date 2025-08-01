@@ -113,6 +113,6 @@ data class ArchiveSearchResponse(
         val queryTime: Int,
         
         @SerialName("params")
-        val params: Map<String, String>? = null
+        val params: Map<String, String?>? = null
     )
 }
