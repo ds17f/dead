@@ -26,7 +26,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.deadarchive.core.settings.SettingsScreen
+import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.core.settings.model.VersionInfo
+import com.deadarchive.core.design.component.UpdateAvailableDialog
+import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
@@ -59,10 +62,17 @@ private enum class BottomNavDestination(
 fun MainAppScreen(
     navController: NavHostController = rememberNavController(),
     onNavigateToPlayer: (String) -> Unit = {},
-    settings: AppSettings = AppSettings()
+    settings: AppSettings = AppSettings(),
+    settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
+    
+    // Observe update status from SettingsViewModel
+    val updateStatus by settingsViewModel.updateStatus.collectAsState()
+    val currentUpdate by settingsViewModel.currentUpdate.collectAsState()
+    val downloadState by settingsViewModel.downloadState.collectAsState()
+    val installationStatus by settingsViewModel.installationStatus.collectAsState()
     
     Scaffold(
         bottomBar = {
@@ -205,6 +215,33 @@ fun MainAppScreen(
                 navController = navController,
                 usePlayerV2 = settings.usePlayerV2
             )
+        }
+    }
+    
+    // Update available dialog - shows on top of any screen
+    updateStatus?.let { status ->
+        if (status.isUpdateAvailable) {
+            currentUpdate?.let { update ->
+                UpdateAvailableDialog(
+                    update = update,
+                    downloadState = downloadState,
+                    installationStatus = installationStatus,
+                    onDownload = {
+                        // Download update directly without navigation - don't clear state
+                        settingsViewModel.downloadUpdate()
+                    },
+                    onSkip = {
+                        settingsViewModel.skipUpdate()
+                    },
+                    onInstall = {
+                        // Install update directly without navigation - don't clear state
+                        settingsViewModel.installUpdate()
+                    },
+                    onDismiss = {
+                        settingsViewModel.clearUpdateState()
+                    }
+                )
+            }
         }
     }
 }

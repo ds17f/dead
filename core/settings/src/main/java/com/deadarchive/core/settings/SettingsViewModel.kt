@@ -10,6 +10,7 @@ import com.deadarchive.core.settings.api.model.ThemeMode
 import com.deadarchive.core.settings.service.SettingsConfigurationService
 import com.deadarchive.core.settings.service.SettingsBackupService
 import com.deadarchive.core.data.service.UpdateService
+import com.deadarchive.core.data.service.GlobalUpdateManager
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateStatus
 import com.deadarchive.core.model.UpdateDownloadState
@@ -48,7 +49,8 @@ class SettingsViewModel @Inject constructor(
     private val settingsRepository: SettingsRepository,
     private val configurationService: SettingsConfigurationService,
     private val backupService: SettingsBackupService,
-    private val updateService: UpdateService
+    private val updateService: UpdateService,
+    private val globalUpdateManager: GlobalUpdateManager
 ) : ViewModel() {
     
     companion object {
@@ -99,6 +101,24 @@ class SettingsViewModel @Inject constructor(
         )
     
     // Service initialization happens automatically via their constructors
+    
+    init {
+        // Observe global update manager for startup-detected updates
+        viewModelScope.launch {
+            globalUpdateManager.updateStatus.collect { globalStatus ->
+                if (globalStatus != null && globalStatus.isUpdateAvailable) {
+                    Log.d(TAG, "🎉 Global update detected, updating SettingsViewModel state")
+                    _updateStatus.value = globalStatus
+                    _currentUpdate.value = globalStatus.update
+                    
+                    // Clear the global state after we've received it
+                    globalUpdateManager.clearUpdateStatus()
+                } else {
+                    Log.d(TAG, "No global update status or not available")
+                }
+            }
+        }
+    }
     
     /**
      * Update the theme mode setting

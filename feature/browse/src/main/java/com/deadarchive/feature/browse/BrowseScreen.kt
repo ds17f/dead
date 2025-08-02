@@ -50,6 +50,7 @@ import com.deadarchive.core.design.component.ShowDownloadState
 import com.deadarchive.core.design.component.LibraryAction
 import com.deadarchive.core.design.component.LibraryRemovalConfirmationDialog
 import com.deadarchive.core.design.component.LibraryRemovalDialogConfig
+import com.deadarchive.core.design.component.UpdateAvailableDialog
 import com.deadarchive.core.settings.SettingsViewModel
 import java.text.SimpleDateFormat
 import java.util.Locale
@@ -78,6 +79,8 @@ fun BrowseScreen(
     val downloadStates by viewModel.downloadStates.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
     val showConfirmationDialog by viewModel.showConfirmationDialog.collectAsState()
+    val updateStatus by viewModel.updateStatus.collectAsState()
+    val currentUpdate by viewModel.currentUpdate.collectAsState()
     var showToRemove by remember { mutableStateOf<Show?>(null) }
     var removalDialogConfig by remember { mutableStateOf<LibraryRemovalDialogConfig?>(null) }
     
@@ -332,6 +335,31 @@ fun BrowseScreen(
                 }
             }
         )
+    }
+    
+    // Update available dialog
+    updateStatus?.let { status ->
+        if (status.isUpdateAvailable) {
+            currentUpdate?.let { update ->
+                UpdateAvailableDialog(
+                    update = update,
+                    onDownload = {
+                        // Clear state - user should go to Settings to download
+                        viewModel.clearUpdateState()
+                    },
+                    onSkip = {
+                        viewModel.skipUpdate()
+                    },
+                    onInstall = {
+                        // Clear state - user should go to Settings to install
+                        viewModel.clearUpdateState()
+                    },
+                    onDismiss = {
+                        viewModel.clearUpdateState()
+                    }
+                )
+            }
+        }
     }
 }
 

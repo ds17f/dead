@@ -11,6 +11,7 @@ import com.deadarchive.core.media.player.LastPlayedTrackService
 import com.deadarchive.core.media.player.LastPlayedTrackMonitor
 import com.deadarchive.core.settings.api.SettingsRepository
 import com.deadarchive.core.data.service.UpdateService
+import com.deadarchive.core.data.service.GlobalUpdateManager
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope
@@ -45,6 +46,9 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
     
     @Inject
     lateinit var updateService: UpdateService
+    
+    @Inject
+    lateinit var globalUpdateManager: GlobalUpdateManager
     
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
@@ -94,7 +98,20 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
                 val settings = settingsRepository.getSettings().firstOrNull()
                 if (settings?.autoUpdateCheckEnabled == true) {
                     android.util.Log.d("DeadArchiveApplication", "Checking for app updates on startup")
-                    updateService.checkForUpdates()
+                    val result = updateService.checkForUpdates()
+                    result.fold(
+                        onSuccess = { status ->
+                            if (status.isUpdateAvailable && !status.isSkipped) {
+                                android.util.Log.d("DeadArchiveApplication", "🎉 Update available on startup: ${status.update?.version}")
+                                globalUpdateManager.setUpdateStatus(status)
+                            } else {
+                                android.util.Log.d("DeadArchiveApplication", "✅ No updates available on startup")
+                            }
+                        },
+                        onFailure = { error ->
+                            android.util.Log.e("DeadArchiveApplication", "❌ Startup update check failed", error)
+                        }
+                    )
                     android.util.Log.d("DeadArchiveApplication", "✅ Startup update check completed")
                 }
             } catch (e: Exception) {

@@ -12,6 +12,9 @@ import com.deadarchive.feature.browse.service.BrowseSearchService
 import com.deadarchive.core.data.service.LibraryService
 import com.deadarchive.core.data.download.DownloadService
 import com.deadarchive.feature.browse.service.BrowseDataService
+import com.deadarchive.core.data.service.GlobalUpdateManager
+import com.deadarchive.core.model.UpdateStatus
+import com.deadarchive.core.model.AppUpdate
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -27,7 +30,8 @@ class BrowseViewModel @Inject constructor(
     private val searchService: BrowseSearchService,
     private val libraryService: LibraryService,
     private val downloadService: DownloadService,
-    private val dataService: BrowseDataService
+    private val dataService: BrowseDataService,
+    private val globalUpdateManager: GlobalUpdateManager
 ) : ViewModel() {
     
     companion object {
@@ -44,6 +48,13 @@ class BrowseViewModel @Inject constructor(
     val downloadStates: StateFlow<Map<String, ShowDownloadState>> = downloadService.downloadStates
     val showConfirmationDialog: StateFlow<Show?> = downloadService.showConfirmationDialog
     
+    // Update-related state
+    private val _updateStatus = MutableStateFlow<UpdateStatus?>(null)
+    val updateStatus: StateFlow<UpdateStatus?> = _updateStatus.asStateFlow()
+    
+    private val _currentUpdate = MutableStateFlow<AppUpdate?>(null)
+    val currentUpdate: StateFlow<AppUpdate?> = _currentUpdate.asStateFlow()
+    
     init {
         // Load initial data on startup
         dataService.loadInitialData(
@@ -52,6 +63,22 @@ class BrowseViewModel @Inject constructor(
             onSearchingStateChange = { /* handled by searchService */ }
         )
         // Download state monitoring is automatically handled by shared DownloadService
+        
+        // Observe global update manager for startup-detected updates
+        viewModelScope.launch {
+            globalUpdateManager.updateStatus.collect { globalStatus ->
+                if (globalStatus != null && globalStatus.isUpdateAvailable) {
+                    Log.d(TAG, "🎉 Global update detected in Browse screen, updating state")
+                    _updateStatus.value = globalStatus
+                    _currentUpdate.value = globalStatus.update
+                    
+                    // Clear the global state after we've received it
+                    globalUpdateManager.clearUpdateStatus()
+                } else {
+                    Log.d(TAG, "No global update status or not available in Browse")
+                }
+            }
+        }
     }
     
     fun updateSearchQuery(query: String) {
@@ -289,6 +316,33 @@ class BrowseViewModel @Inject constructor(
                 downloadInfo = "Error checking downloads",
                 downloadState = com.deadarchive.core.design.component.ShowDownloadState.NotDownloaded
             )
+        }
+    }
+    
+    // Update-related methods for in-app update dialog
+    
+    /**
+     * Clear update-related state
+     */
+    fun clearUpdateState() {
+        _currentUpdate.value = null
+        _updateStatus.value = null
+    }
+    
+    /**
+     * Skip the current update version
+     */
+    fun skipUpdate() {
+        val update = _currentUpdate.value ?: return
+        
+        viewModelScope.launch {
+            try {
+                // Clear local state immediately
+                clearUpdateState()
+                Log.d(TAG, "Update skipped from Browse screen")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error skipping update", e)
+            }
         }
     }
 }
