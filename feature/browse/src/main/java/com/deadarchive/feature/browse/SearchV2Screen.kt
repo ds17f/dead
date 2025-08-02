@@ -266,7 +266,7 @@ private fun SearchV2SearchBox(
 }
 
 /**
- * Rows 3 & 4: Browse section with decade buttons
+ * Rows 3 & 4: Browse section with 2x2 decade grid
  */
 @Composable
 private fun SearchV2BrowseSection(
@@ -291,8 +291,11 @@ private fun SearchV2BrowseSection(
             modifier = Modifier.padding(bottom = 12.dp)
         )
         
-        LazyRow(
-            horizontalArrangement = Arrangement.spacedBy(12.dp)
+        LazyVerticalGrid(
+            columns = GridCells.Fixed(2),
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier.height(180.dp) // Fixed height for 2x2 grid
         ) {
             items(decades) { decade ->
                 DecadeCard(
