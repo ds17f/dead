@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.39.0] - 2025-08-01
+
+### New Features
+* implement working in-app auto updater with proper state management (509d208)
+
+### Bug Fixes
+* implement working in-app update installer with FileProvider (9be5c8d)
+
+
 ## [0.38.1] - 2025-07-31
 
 ### Other Changes
 * bump the gradle version (b74fe21)
-
-
 ## [0.35.1] - 2025-07-31
 
 ### Bug Fixes
