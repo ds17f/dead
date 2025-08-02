@@ -66,7 +66,7 @@ adb logcat -s DEAD_DEBUG_PANEL | grep "PlaylistScreen"  # Filter by screen
 - `:core:backup` - Backup and restore functionality
 
 **Feature Modules:**
-- `:feature:browse` - Concert browsing and search
+- `:feature:browse` - Concert browsing and search (includes SearchV2 implementation)
 - `:feature:player` - Audio player with playback controls
 - `:feature:playlist` - Playlist management and recording selection
 - `:feature:downloads` - Download management for offline listening
@@ -670,11 +670,125 @@ adb logcat -s PlayerV2Service | grep "Recording loaded\|Playback state"
 - **ViewModel Scoping**: Proper cleanup in `onCleared()`
 - **Service Cleanup**: `playerV2Service.cleanup()` on navigation
 
+## SearchV2 Architecture (V2 Implementation)
+
+### SearchV2 Implementation
+
+**Status**: Foundation Complete - Professional search UI with transparent design patterns  
+**Architecture**: V2 UI-first development following PlayerV2 patterns  
+**Feature Flag**: `useSearchV2: Boolean` in AppSettings for safe deployment
+
+SearchV2 represents the third major V2 architecture implementation, establishing new patterns for search interfaces while following proven V2 development methodologies.
+
+### SearchV2 Implementation Structure
+
+**Core Files**:
+```
+feature/browse/src/main/java/com/deadarchive/feature/browse/
+├── SearchV2Screen.kt                 # 540 lines - Complete main search UI
+├── SearchResultsV2Screen.kt          # 393 lines - Full-screen search interface
+├── SearchV2ViewModel.kt              # Service coordination
+└── di/SearchV2Module.kt              # Hilt dependency injection
+```
+
+### Key UI Innovations
+
+#### 1. Transparent Search Interface
+- **Innovation**: Completely invisible search input that users type directly into
+- **Implementation**: `Color.Transparent` for all container and border colors
+- **Foundation**: Creates seamless search experience without visible UI boundaries
+
+#### 2. Smart Text Positioning
+```kotlin
+OutlinedTextField(
+    modifier = Modifier
+        .fillMaxWidth()
+        .offset(x = (-8).dp), // Position text close to back arrow
+    colors = OutlinedTextFieldDefaults.colors(
+        focusedContainerColor = Color.Transparent,
+        unfocusedContainerColor = Color.Transparent,
+        focusedBorderColor = Color.Transparent,
+        unfocusedBorderColor = Color.Transparent
+    )
+)
+```
+- **Positioning**: Text positioned precisely 8dp closer to navigation arrow
+- **Transparency**: Full container and border transparency for invisible interface
+
+#### 3. Enhanced Icon Design
+```kotlin
+Icon(
+    imageVector = Icons.Outlined.Search,
+    contentDescription = "Search",
+    tint = Color.Black,
+    modifier = Modifier.size(28.dp) // 28dp for better visibility
+)
+```
+- **Visibility**: Black icons and text for maximum readability
+- **Scale**: 28dp icons for improved touch targets and visibility
+
+### SearchV2 Component Architecture
+```kotlin
+SearchV2Screen(
+    SearchV2TopBar,           // SYF logo + title + QR scanner
+    SearchV2SearchBox,        # Large search input with enhanced icons
+    SearchV2BrowseSection,    # 2x2 decade browsing grid
+    SearchV2DiscoverSection,  # Discovery recommendations
+    SearchV2BrowseAllSection  # Category-based browsing
+)
+
+SearchResultsV2Screen(
+    SearchResultsTopBar,      // Back arrow + transparent search
+    RecentSearchesSection,    # Recent search history
+    SuggestedSearchesSection, # Dynamic search suggestions
+    SearchResultsSection      # Search results (ready for LibraryV2 cards)
+)
+```
+
+### Development Patterns
+
+#### 1. UI-First Development
+```kotlin
+// Build search interface first
+SearchV2SearchBox(
+    searchQuery = uiState.searchQuery,
+    onSearchQueryChange = viewModel::onSearchQueryChanged,
+    onFocusReceived = onNavigateToSearchResults
+)
+
+// Discover navigation requirements
+LaunchedEffect(isFocused) {
+    if (isFocused) {
+        onFocusReceived() // Navigate to full search screen
+    }
+}
+```
+
+#### 2. Feature Flag Integration
+```kotlin
+// Navigation routing with feature flag
+browseScreen(
+    useSearchV2 = settings.useSearchV2,
+    onNavigateToSearchResults = { navController.navigate("search_results") }
+)
+
+// Settings toggle
+Switch(
+    checked = settings.useSearchV2,
+    onCheckedChange = viewModel::updateUseSearchV2
+)
+```
+
 ### V2 Service Integration Readiness
 
 **Existing V2 Services**:
 - ✅ **DownloadV2Service**: Ready for download status integration
 - ✅ **LibraryV2Service**: Ready for library action integration
+
+**SearchV2 Services** (Ready for Week 3):
+- 📋 **SearchV2Service**: Search query processing and results
+- 📋 **BrowseV2Service**: Browse and discovery functionality
+- 📋 **SearchV2ServiceImpl**: Coordinate search and browse services
 
 **Planned V2 Services** (Week 3):
 - 📋 **MediaV2Service**: Wrap MediaControllerRepository

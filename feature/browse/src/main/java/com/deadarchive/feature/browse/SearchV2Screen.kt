@@ -264,14 +264,15 @@ private fun SearchV2SearchBox(
         placeholder = { 
             Text(
                 text = "What do you want to listen to",
-                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f) // Darker text
+                color = Color.Black
             )
         },
         leadingIcon = {
             Icon(
                 imageVector = Icons.Outlined.Search,
                 contentDescription = "Search",
-                tint = MaterialTheme.colorScheme.onSurfaceVariant
+                tint = Color.Black,
+                modifier = Modifier.size(28.dp)
             )
         },
         modifier = modifier.fillMaxWidth(),
@@ -279,7 +280,9 @@ private fun SearchV2SearchBox(
         shape = RoundedCornerShape(12.dp),
         colors = OutlinedTextFieldDefaults.colors(
             focusedContainerColor = Color.White,
-            unfocusedContainerColor = Color.White
+            unfocusedContainerColor = Color.White,
+            focusedTextColor = MaterialTheme.colorScheme.onSurface,
+            unfocusedTextColor = MaterialTheme.colorScheme.onSurface
         )
     )
 }
