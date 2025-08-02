@@ -384,13 +384,15 @@ private fun SearchV2DiscoverSection(
             modifier = Modifier.padding(bottom = 12.dp)
         )
         
-        LazyRow(
+        Row(
+            modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            items(discoverItems) { item ->
+            discoverItems.forEach { item ->
                 DiscoverCard(
                     item = item,
-                    onClick = { onDiscoverClick(item) }
+                    onClick = { onDiscoverClick(item) },
+                    modifier = Modifier.weight(1f) // Each card takes equal width
                 )
             }
         }
@@ -398,19 +400,20 @@ private fun SearchV2DiscoverSection(
 }
 
 /**
- * Individual discover card component
+ * Individual discover card component - taller design
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun DiscoverCard(
     item: DiscoverItem,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Card(
         onClick = onClick,
-        modifier = Modifier
-            .width(140.dp)
-            .height(100.dp),
+        modifier = modifier
+            .fillMaxWidth()
+            .height(220.dp), // Flexible width, tall height
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.tertiaryContainer
         )
