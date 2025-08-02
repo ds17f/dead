@@ -126,7 +126,8 @@ fun DeadArchiveNavigation(
                             Log.e(TAG, "Failed to navigate to $route", e)
                         }
                     }
-                }
+                },
+                useSearchV2 = settings.useSearchV2
             )
             Log.d(TAG, "Browse screen route setup complete")
         } catch (e: Exception) {

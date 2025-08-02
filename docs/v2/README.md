@@ -37,10 +37,23 @@ The V2 pattern was established with the successful **LibraryV2** implementation 
 - **Performance**: Eliminated N separate queries per show
 - **UI**: Grid/list views with proper album cover display
 
+### ✅ **PlayerV2** - UI Complete
+- **Status**: Week 2 complete, professional UI with comprehensive stub
+- **Key Achievement**: Modern music player interface with V2 architecture
+- **Innovation**: Scrolling gradient system, recording-based theming
+- **Architecture**: Component composition, 83% ViewModel reduction (184 vs 1,099 lines)
+- **UI**: Enhanced controls, mini-player, Material3 design excellence
+
+### ✅ **SearchV2** - Foundation Complete
+- **Status**: Foundation ready for UI-first development
+- **Key Achievement**: Rapid V2 implementation using `/new-v2-ui` template
+- **Innovation**: Standardized V2 scaffolding with feature flag safety
+- **Architecture**: Clean service abstraction, debug integration
+- **UI**: Material3 scaffold ready for enhanced search and discovery
+
 ### 📋 **Planned V2 Features**
-- **PlayerV2**: Media player redesign with service composition
-- **PlaylistV2**: Playlist management with clean architecture  
-- **BrowseV2**: Search and discovery improvements
+- **PlaylistV2**: Playlist management with clean architecture
+- **DownloadsV2**: Enhanced download experience and management
 
 ## Quick Navigation
 

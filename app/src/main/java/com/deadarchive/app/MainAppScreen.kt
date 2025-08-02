@@ -164,7 +164,8 @@ fun MainAppScreen(
                     } ?: run {
                         android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
                     }
-                }
+                },
+                useSearchV2 = settings.useSearchV2
             )
             
             // Library screen

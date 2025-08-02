@@ -3,11 +3,13 @@ package com.deadarchive.feature.browse.navigation
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.deadarchive.feature.browse.BrowseScreen
+import com.deadarchive.feature.browse.SearchV2Screen
 import com.deadarchive.core.model.Show
 
 fun NavGraphBuilder.browseScreen(
     onNavigateToPlayer: (String) -> Unit,
-    onNavigateToShow: (Show) -> Unit
+    onNavigateToShow: (Show) -> Unit,
+    useSearchV2: Boolean = false
 ) {
     // Handle both "browse" and "browse?era=..." routes
     composable(
@@ -21,19 +23,35 @@ fun NavGraphBuilder.browseScreen(
         )
     ) { backStackEntry ->
         val era = backStackEntry.arguments?.getString("era")
-        BrowseScreen(
-            onNavigateToPlayer = onNavigateToPlayer,
-            onNavigateToShow = onNavigateToShow,
-            initialEra = era
-        )
+        if (useSearchV2) {
+            SearchV2Screen(
+                onNavigateToPlayer = onNavigateToPlayer,
+                onNavigateToShow = onNavigateToShow,
+                initialEra = era
+            )
+        } else {
+            BrowseScreen(
+                onNavigateToPlayer = onNavigateToPlayer,
+                onNavigateToShow = onNavigateToShow,
+                initialEra = era
+            )
+        }
     }
     
     // Handle simple "browse" route without parameters
     composable("browse") {
-        BrowseScreen(
-            onNavigateToPlayer = onNavigateToPlayer,
-            onNavigateToShow = onNavigateToShow,
-            initialEra = null
-        )
+        if (useSearchV2) {
+            SearchV2Screen(
+                onNavigateToPlayer = onNavigateToPlayer,
+                onNavigateToShow = onNavigateToShow,
+                initialEra = null
+            )
+        } else {
+            BrowseScreen(
+                onNavigateToPlayer = onNavigateToPlayer,
+                onNavigateToShow = onNavigateToShow,
+                initialEra = null
+            )
+        }
     }
 }

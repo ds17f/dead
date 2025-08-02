@@ -406,6 +406,38 @@ class SettingsConfigurationService @Inject constructor(
     }
     
     /**
+     * Update the use Search V2 setting
+     */
+    fun updateUseSearchV2(
+        enabled: Boolean,
+        coroutineScope: CoroutineScope,
+        onStateChange: (SettingsUiState) -> Unit,
+        currentState: SettingsUiState
+    ) {
+        coroutineScope.launch {
+            try {
+                Log.d(TAG, "Updating use Search V2 to: $enabled")
+                onStateChange(currentState.copy(isLoading = true, errorMessage = null))
+                
+                settingsRepository.updateUseSearchV2(enabled)
+                
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    successMessage = if (enabled) "Search V2 enabled 🚀" else "Search V2 disabled"
+                ))
+                Log.d(TAG, "Use Search V2 updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update use Search V2", e)
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update Search V2 setting: ${e.message}"
+                ))
+            }
+        }
+    }
+    
+    /**
      * Set drag state for audio format reordering
      */
     fun setDraggingFormats(

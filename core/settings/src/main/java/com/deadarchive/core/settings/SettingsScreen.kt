@@ -138,6 +138,7 @@ fun SettingsScreen(
                 onUpdateShowDebugInfo = viewModel::updateShowDebugInfo,
                 onUpdateUseLibraryV2 = viewModel::updateUseLibraryV2,
                 onUpdateUsePlayerV2 = viewModel::updateUsePlayerV2,
+                onUpdateUseSearchV2 = viewModel::updateUseSearchV2,
                 onResetSettings = viewModel::resetToDefaults
             )
         }
@@ -280,6 +281,7 @@ private fun DeveloperOptionsCard(
     onUpdateShowDebugInfo: (Boolean) -> Unit,
     onUpdateUseLibraryV2: (Boolean) -> Unit,
     onUpdateUsePlayerV2: (Boolean) -> Unit,
+    onUpdateUseSearchV2: (Boolean) -> Unit,
     onResetSettings: () -> Unit
 ) {
     Card(
@@ -374,6 +376,34 @@ private fun DeveloperOptionsCard(
                 Switch(
                     checked = settings.usePlayerV2,
                     onCheckedChange = onUpdateUsePlayerV2
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // SearchV2 Setting
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "SearchV2",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Enable the redesigned search interface (UI-first development)",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.useSearchV2,
+                    onCheckedChange = onUpdateUseSearchV2
                 )
             }
             

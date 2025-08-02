@@ -113,6 +113,12 @@ interface SettingsRepository {
      */
     suspend fun updateUsePlayerV2(enabled: Boolean)
     
+    /**
+     * Update the Search V2 interface setting
+     * @param enabled True to use Search V2 interface, false to use legacy search
+     */
+    suspend fun updateUseSearchV2(enabled: Boolean)
+    
     // Update-related methods
     
     /**

@@ -225,6 +225,17 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
+    override suspend fun updateUseSearchV2(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating use Search V2 to: $enabled")
+            settingsDataStore.updateUseSearchV2(enabled)
+            Log.d(TAG, "Use Search V2 updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update use Search V2", e)
+            throw e
+        }
+    }
+    
     // Update-related methods
     
     override suspend fun updateLastUpdateCheck(timestamp: Long) {
