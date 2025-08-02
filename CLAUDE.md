@@ -503,3 +503,212 @@ The `:core:media` module implements a service-oriented architecture with MediaCo
 - **Feedback Loop Prevention:** Added distinctUntilChanged to QueueStateManager flows
 
 The media system supports background playback, queue management, offline file resolution, automatic resume of last played track on app restart, and robust track highlighting for both streaming and downloaded content.
+
+## PlayerV2 Architecture (V2 Implementation)
+
+### V2 Player Development
+
+**Status**: Week 2 Complete - Professional UI with comprehensive stub implementation  
+**Architecture**: V2 UI-first development with service composition  
+**Feature Flag**: `usePlayerV2: Boolean` in AppSettings for safe deployment
+
+PlayerV2 represents the second major V2 architecture implementation, following LibraryV2 patterns while establishing new innovations for music player interfaces.
+
+### PlayerV2 Implementation Structure
+
+**Core Files**:
+```
+feature/player/src/main/java/com/deadarchive/feature/player/
+├── PlayerV2Screen.kt                 # 1,173 lines - Complete UI
+├── PlayerV2ViewModel.kt              # 184 lines - State coordination  
+├── service/
+│   ├── PlayerV2Service.kt            # Service interface
+│   └── PlayerV2ServiceStub.kt        # Comprehensive stub
+└── di/PlayerV2Module.kt              # Hilt dependency injection
+```
+
+### Key Architecture Innovations
+
+#### 1. Scrolling Gradient System
+- **Innovation**: Gradient integrated as LazyColumn content item, not fixed background
+- **Implementation**: `createRecordingGradient(recordingId)` with recording-based color consistency
+- **Foundation**: Enables natural mini-player transitions and visual hierarchy
+
+#### 2. Recording-Based Visual Identity
+```kotlin
+private val GradientColors = listOf(DeadGreen, DeadGold, DeadRed, DeadBlue, DeadPurple)
+
+private fun recordingIdToColor(recordingId: String?): Color {
+    val hash = recordingId.hashCode()
+    val index = kotlin.math.abs(hash) % GradientColors.size
+    return GradientColors[index]
+}
+```
+- **Consistency**: Same recording always generates same visual identity across app
+- **Palette**: Grateful Dead-inspired color scheme
+
+#### 3. Component Architecture
+```kotlin
+PlayerV2Screen(
+    PlayerV2TopBar,           // Navigation and context
+    PlayerV2CoverArt,         # Large album art (450dp)
+    PlayerV2TrackInfoRow,     # Track metadata with actions
+    PlayerV2ProgressControl,  # Seek bar and time display
+    PlayerV2EnhancedControls, # 72dp FAB play button + media controls
+    PlayerV2SecondaryControls,# Share, queue, connect actions
+    PlayerV2MaterialPanels    # Extended content (venue, lyrics, credits)
+)
+```
+
+#### 4. Mini-Player Implementation
+- **Scroll-Based Visibility**: Appears when main controls scroll off screen
+- **Smart Interactions**: Tap track info to expand, separate play/pause button
+- **Color Consistency**: Uses recording color stack for visual continuity
+
+### PlayerV2 Service Architecture
+
+#### Service Interface (UI-Discovered)
+```kotlin
+interface PlayerV2Service {
+    val playerState: Flow<PlayerV2State>
+    
+    // Discovered from UI component requirements
+    suspend fun getCurrentTrackInfo(): TrackDisplayInfo?
+    suspend fun getProgressInfo(): ProgressDisplayInfo?
+    suspend fun togglePlayPause()
+    suspend fun skipToPrevious()
+    suspend fun skipToNext()
+    suspend fun seekToPosition(position: Float)
+}
+```
+
+#### Stub Implementation Features
+- **Rich Mock Data**: Realistic Dead show information (Cornell 5/8/77)
+- **State Management**: Proper PlayerV2State with domain model updates
+- **Complete Functionality**: All UI interactions working with stub data
+- **Extended Content**: Venue info, lyrics, credits, similar shows
+
+### Development Patterns
+
+#### 1. UI-First Development
+```kotlin
+// Build UI component first
+PlayerV2ProgressControl(
+    currentTime = "2:34",
+    totalTime = "8:15", 
+    progress = 0.31f,
+    onSeek = { position -> /* discovered need */ }
+)
+
+// Extract service requirement
+suspend fun seekToPosition(position: Float)
+
+// Implement in stub
+override suspend fun seekToPosition(position: Float) {
+    currentPosition = position.coerceIn(0f, 1f)
+    updateState()
+}
+```
+
+#### 2. Component Isolation Pattern
+- **Single Responsibility**: Each component handles one UI concern
+- **Clean Dependencies**: Props-based data flow, callback-based actions
+- **Testability**: Components testable in isolation with mock data
+
+#### 3. Feature Flag Safety
+```kotlin
+// Navigation routing with feature flag
+playerScreen(
+    usePlayerV2 = settings.usePlayerV2,
+    onNavigateBack = { navController.popBackStack() }
+)
+
+// Settings toggle
+Switch(
+    checked = settings.usePlayerV2,
+    onCheckedChange = viewModel::updateUsePlayerV2
+)
+```
+
+### Debug Integration
+
+#### PlayerV2 Debug Support
+```kotlin
+// Debug panel activation (when settings.showDebugInfo enabled)
+if (settings.showDebugInfo && debugData != null) {
+    DebugActivator(
+        onClick = { showDebugPanel = true },
+        modifier = Modifier.align(Alignment.BottomEnd)
+    )
+}
+
+// Debug data collection
+private fun collectPlayerV2DebugData(uiState: PlayerV2UiState, recordingId: String?): DebugData
+```
+
+#### Debug Commands
+```bash
+# View PlayerV2 debug output
+adb logcat -s PlayerV2Screen PlayerV2ViewModel PlayerV2Service
+
+# Filter PlayerV2 interactions  
+adb logcat -s PlayerV2Screen | grep "=== PLAYERV2"
+
+# Monitor service state changes
+adb logcat -s PlayerV2Service | grep "Recording loaded\|Playback state"
+```
+
+### Performance Characteristics
+
+#### LazyColumn Optimization
+- **Gradient Performance**: Color generation cached with `remember(recordingId)`
+- **Scroll Performance**: Efficient item composition with proper spacing
+- **State Updates**: Single StateFlow source with scoped collection
+
+#### Memory Management
+- **Component Lifecycle**: Automatic Compose disposal
+- **ViewModel Scoping**: Proper cleanup in `onCleared()`
+- **Service Cleanup**: `playerV2Service.cleanup()` on navigation
+
+### V2 Service Integration Readiness
+
+**Existing V2 Services**:
+- ✅ **DownloadV2Service**: Ready for download status integration
+- ✅ **LibraryV2Service**: Ready for library action integration
+
+**Planned V2 Services** (Week 3):
+- 📋 **MediaV2Service**: Wrap MediaControllerRepository
+- 📋 **QueueV2Service**: Wrap QueueManager
+- 📋 **PlayerV2ServiceImpl**: Coordinate all V2 services
+
+```kotlin
+// Future real implementation
+class PlayerV2ServiceImpl @Inject constructor(
+    private val mediaV2Service: MediaV2Service,
+    private val queueV2Service: QueueV2Service,
+    private val downloadV2Service: DownloadV2Service,
+    private val libraryV2Service: LibraryV2Service
+) : PlayerV2Service {
+    // Real implementation coordinating V2 services
+    // No direct V1 dependencies - maintains V2 isolation
+}
+```
+
+### Success Metrics
+
+**Code Quality**: 
+- ViewModel: 184 lines vs V1's 1,099 lines (83% reduction)
+- Single service dependency vs V1's 8+ injected services
+- Component architecture: 8 focused components vs monolithic structure
+
+**User Experience**:
+- Professional music player interface exceeding V1 design
+- Recording-based visual identity system
+- Mini-player for background playback context
+- Enhanced controls with 72dp FAB play button
+
+**Development Experience**:
+- Immediate UI development with comprehensive stub
+- Feature flag enables risk-free deployment
+- Component boundaries enable focused testing
+- V2 service isolation maintains architectural cleanliness
