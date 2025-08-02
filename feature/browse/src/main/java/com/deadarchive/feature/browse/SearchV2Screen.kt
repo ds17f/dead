@@ -12,8 +12,8 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.Settings
 import androidx.compose.material.icons.outlined.Search
+import com.deadarchive.core.design.component.IconResources
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -92,7 +92,10 @@ fun SearchV2Screen(
         ) {
             // Row 1: Top bar with SYF, Search title, and camera icon
             item {
-                SearchV2TopBar(onCameraClick = { /* TODO: QR code scanning */ })
+                SearchV2TopBar(onCameraClick = { 
+                    // TODO: Implement QR code scanner
+                    // Will scan Archive.org URLs and navigate appropriately
+                })
             }
             
             // Row 2: Search box
@@ -221,7 +224,7 @@ private fun SearchV2TopBar(
             // Right side: Camera icon for QR code scanning
             IconButton(onClick = onCameraClick) {
                 Icon(
-                    imageVector = Icons.Outlined.Settings,
+                    painter = IconResources.Content.QrCodeScanner(),
                     contentDescription = "QR Code Scanner",
                     tint = MaterialTheme.colorScheme.onSurface
                 )

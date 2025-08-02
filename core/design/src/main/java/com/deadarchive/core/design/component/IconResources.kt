@@ -300,6 +300,9 @@ object IconResources {
         fun QrCode() = customIcon(R.drawable.ic_qr_code)
         
         @Composable
+        fun QrCodeScanner() = customIcon(R.drawable.ic_qr_code_scanner)
+        
+        @Composable
         fun ArrowCircleDown() = customIcon(R.drawable.ic_arrow_circle_down)
         
     }
