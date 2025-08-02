@@ -127,6 +127,7 @@ fun DeadArchiveNavigation(
                         }
                     }
                 },
+                navController = navController,
                 useSearchV2 = settings.useSearchV2
             )
             Log.d(TAG, "Browse screen route setup complete")

@@ -165,6 +165,7 @@ fun MainAppScreen(
                         android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
                     }
                 },
+                navController = navController,
                 useSearchV2 = settings.useSearchV2
             )
             

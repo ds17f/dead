@@ -65,14 +65,22 @@ class SearchV2ViewModel @Inject constructor(
         }
     }
     
+    /**
+     * Handle search query changes from UI
+     * Discovered through UI development - SearchV2SearchBox needs this handler
+     */
+    fun onSearchQueryChanged(query: String) {
+        Log.d(TAG, "Search query changed: $query")
+        _uiState.value = _uiState.value.copy(searchQuery = query)
+        
+        // Future: Trigger search service
+        // viewModelScope.launch {
+        //     searchV2Service.updateSearchQuery(query)
+        // }
+    }
+    
     // Future UI command handlers will be discovered through UI development
     // Following the PlayerV2 pattern:
-    //
-    // fun onSearchQueryChanged(query: String) {
-    //     viewModelScope.launch {
-    //         searchV2Service.updateSearchQuery(query)
-    //     }
-    // }
     //
     // fun onFilterSelected(filter: SearchFilter) {
     //     viewModelScope.launch {
@@ -95,10 +103,10 @@ class SearchV2ViewModel @Inject constructor(
  */
 data class SearchV2UiState(
     val isLoading: Boolean = false,
-    val error: String? = null
+    val error: String? = null,
+    val searchQuery: String = ""
     
     // Future state properties will be discovered through UI development:
-    // val searchQuery: String = "",
     // val searchResults: List<Show> = emptyList(),
     // val selectedFilters: Set<SearchFilter> = emptySet(),
     // val isSearching: Boolean = false

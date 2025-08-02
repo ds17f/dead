@@ -4,6 +4,8 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.interaction.collectIsFocusedAsState
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.grid.GridCells
@@ -71,6 +73,7 @@ data class BrowseAllItem(
 fun SearchV2Screen(
     onNavigateToPlayer: (String) -> Unit,
     onNavigateToShow: (Show) -> Unit,
+    onNavigateToSearchResults: () -> Unit,
     initialEra: String? = null,
     viewModel: SearchV2ViewModel = hiltViewModel(),
     settingsViewModel: SettingsViewModel = hiltViewModel()
@@ -101,8 +104,9 @@ fun SearchV2Screen(
             // Row 2: Search box
             item {
                 SearchV2SearchBox(
-                    searchQuery = "",
-                    onSearchQueryChange = { /* TODO: Handle search */ },
+                    searchQuery = uiState.searchQuery,
+                    onSearchQueryChange = viewModel::onSearchQueryChanged,
+                    onFocusReceived = onNavigateToSearchResults,
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
                 )
             }
@@ -240,15 +244,27 @@ private fun SearchV2TopBar(
 private fun SearchV2SearchBox(
     searchQuery: String,
     onSearchQueryChange: (String) -> Unit,
+    onFocusReceived: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val interactionSource = remember { MutableInteractionSource() }
+    val isFocused by interactionSource.collectIsFocusedAsState()
+    
+    // Navigate to search results when field receives focus
+    LaunchedEffect(isFocused) {
+        if (isFocused) {
+            onFocusReceived()
+        }
+    }
+    
     OutlinedTextField(
         value = searchQuery,
         onValueChange = onSearchQueryChange,
+        interactionSource = interactionSource,
         placeholder = { 
             Text(
                 text = "What do you want to listen to",
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.8f) // Darker text
             )
         },
         leadingIcon = {
