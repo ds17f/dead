@@ -1,0 +1,1 @@
+# Consumer rules for search module

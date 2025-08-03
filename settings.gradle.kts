@@ -41,7 +41,9 @@ include(":core:data-api")
 include(":core:media-api")
 include(":core:download-api")
 include(":core:library-api")
+include(":core:search-api")
 
 // V2 Service modules
 include(":core:library")
 include(":core:download")
+include(":core:search")
