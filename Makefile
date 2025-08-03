@@ -68,6 +68,9 @@ help:
 	@echo "  make modules     - List all project modules"
 	@echo "  make deps-tree   - Show dependency tree"
 	@echo ""
+	@echo "Documentation:"
+	@echo "  make view-db-schema - Generate and view V2 database schema diagram"
+	@echo ""
 	@echo "Cleanup:"
 	@echo "  make deep-clean  - Clean everything including Gradle cache"
 	@echo "  make reset       - Reset project to clean state"
@@ -766,3 +769,13 @@ view-test-data:
 		echo "  No test data directory found"; \
 		echo "  💡 Use 'make capture-test-data' after exporting from Debug screen"; \
 	fi
+
+# Documentation
+view-db-schema:
+	@echo "📊 Generating database schema diagram..."
+	@npx -p @mermaid-js/mermaid-cli mmdc -i docs/v2/database/database-schema-diagram.md -o docs/v2/database/schema-diagram.png
+	@echo "✅ Schema diagram generated"
+	@if [ -f "docs/v2/database/schema-diagram-1.png" ]; then \
+		mv docs/v2/database/schema-diagram-1.png docs/v2/database/schema-diagram.png; \
+	fi
+	@open docs/v2/database/schema-diagram.png
