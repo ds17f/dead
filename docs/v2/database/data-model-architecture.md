@@ -34,6 +34,10 @@ data class ShowV2Entity(
     // Multiple shows same date/venue
     val showSequence: Int = 1,    // 1, 2, 3... for multiple shows
     
+    // Library status (no separate table needed)
+    val isInLibrary: Boolean = false,
+    val libraryAddedAt: Long?,        // When added to library
+    
     // Computed/cached stats
     val recordingCount: Int = 0,
     val bestRecordingId: String?,
@@ -185,26 +189,20 @@ data class CollectionShowV2Entity(
 
 ### User Data
 
-#### Library
+#### User Reviews (MVP - eventually sync to Archive)
 ```kotlin
-@Entity(tableName = "library_v2")
-data class LibraryV2Entity(
+@Entity(tableName = "user_reviews_v2")
+data class UserReviewV2Entity(
     @PrimaryKey
-    val libraryId: String,        // UUID
+    val reviewId: String,         // UUID
     
     // Show relationship
     val showId: String,           // FK to shows_v2
     
-    // User metadata
-    val addedAt: Long,            // When added to library
-    val userRating: Int?,         // User's personal rating (1-5)
-    val userNotes: String?,       // User's personal notes
-    val tags: String?,            // JSON array of user tags
-    
-    // Listening statistics
-    val timesPlayed: Int = 0,
-    val lastPlayedAt: Long?,
-    val totalListenTime: Long = 0, // Seconds
+    // Review content
+    val rating: Int?,             // 1-5 stars
+    val notes: String?,           // User's review text
+    val tags: String?,            // User tags
     
     // Timestamps
     val createdAt: Long,

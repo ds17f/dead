@@ -35,6 +35,8 @@ erDiagram
         string setlistRaw
         string songList
         int showSequence
+        boolean isInLibrary
+        long libraryAddedAt
         int recordingCount
         string bestRecordingId FK
         float averageRating
@@ -99,16 +101,12 @@ erDiagram
     }
 
     %% User Data
-    LIBRARY_V2 {
-        string libraryId PK 
-        string showId FK 
-        long addedAt 
-        int userRating 
-        string userNotes 
-        string tags 
-        int timesPlayed 
-        long lastPlayedAt
-        long totalListenTime 
+    USER_REVIEWS_V2 {
+        string reviewId PK
+        string showId FK
+        int rating
+        string notes
+        string tags
         long createdAt
         long updatedAt
     }
@@ -171,7 +169,7 @@ erDiagram
     COLLECTIONS_V2 ||--o{ COLLECTION_SHOWS_V2 : includes
     SHOWS_V2 ||--o{ COLLECTION_SHOWS_V2 : belongs_to
     
-    SHOWS_V2 ||--o{ LIBRARY_V2 : saved_in
+    SHOWS_V2 ||--o{ USER_REVIEWS_V2 : reviewed_in
     
     LISTEN_SESSIONS_V2 ||--o{ TRACK_PLAYS_V2 : contains
     TRACKS_V2 ||--o{ TRACK_PLAYS_V2 : played_in
@@ -195,10 +193,11 @@ erDiagram
 5. Collections are pre-populated at build time from JSON definitions
 
 ### User Data
-6. **Library** → references **Shows** (user's personal collection)
-7. **Listen Session** → contains multiple **Track Plays**
-8. **Track Play** → references specific **Track**, **Recording**, **Show**
-9. **Resume Point** → singleton pointing to current **Track**
+6. **Shows** → contain library status (isInLibrary, libraryAddedAt fields)
+7. **User Reviews** → references **Shows** (ratings, notes, tags)
+8. **Listen Session** → contains multiple **Track Plays**
+9. **Track Play** → references specific **Track**, **Recording**, **Show**
+10. **Resume Point** → singleton pointing to current **Track**
 
 ### Search & Performance Indices
 - **Shows**: Indexed by year, yearMonth, date, city, state, venue, songList
