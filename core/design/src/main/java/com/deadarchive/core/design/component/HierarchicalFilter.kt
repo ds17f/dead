@@ -411,4 +411,24 @@ object FilterTrees {
             )
         )
     }
+    
+    /**
+     * Build simple home filter tree starting with "All"
+     * Future expansion ready for "Recent", "Popular", "Your Library", etc.
+     */
+    fun buildHomeFiltersTree(): List<FilterNode> {
+        return listOf(
+            FilterNode(
+                id = "all",
+                label = "All"
+                // Future expansion:
+                // FilterNode("recent", "Recent", children = listOf(
+                //     FilterNode("recent_week", "This Week"),
+                //     FilterNode("recent_month", "This Month")
+                // )),
+                // FilterNode("popular", "Popular"),
+                // FilterNode("your_library", "Your Library")
+            )
+        )
+    }
 }

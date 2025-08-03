@@ -26,7 +26,8 @@ import com.deadarchive.core.design.R
  */
 @Composable
 fun V2TopBar(
-    title: String,
+    title: String? = null,
+    titleContent: @Composable (() -> Unit)? = null,
     actions: @Composable RowScope.() -> Unit = {},
     modifier: Modifier = Modifier
 ) {
@@ -41,7 +42,7 @@ fun V2TopBar(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            // Left side: SYF logo + title
+            // Left side: SYF logo + (title OR titleContent)
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
@@ -51,11 +52,20 @@ fun V2TopBar(
                     contentDescription = "Dead Archive",
                     modifier = Modifier.size(32.dp)
                 )
-                Text(
-                    text = title,
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold
-                )
+                
+                // Backward compatible: title string or custom content
+                when {
+                    title != null -> {
+                        Text(
+                            text = title,
+                            style = MaterialTheme.typography.headlineSmall,
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
+                    titleContent != null -> {
+                        titleContent()
+                    }
+                }
             }
             
             // Right side: Action buttons (customizable)

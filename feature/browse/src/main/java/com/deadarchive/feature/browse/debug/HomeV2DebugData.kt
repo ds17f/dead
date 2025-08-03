@@ -46,8 +46,9 @@ object HomeV2DebugDataFactory {
                 DebugItem.BooleanValue("Has Error", uiState.hasError),
                 DebugItem.KeyValue("Error Message", uiState.errorMessage ?: "None"),
                 DebugItem.KeyValue("Welcome Text", uiState.welcomeText),
-                DebugItem.NumericValue("Featured Shows Count", uiState.featuredShows.size),
-                DebugItem.NumericValue("Quick Actions Count", uiState.quickActions.size)
+                DebugItem.NumericValue("Recent Shows Count", uiState.recentShows.size),
+                DebugItem.NumericValue("Today In History Count", uiState.todayInHistory.size),
+                DebugItem.NumericValue("Collections Count", uiState.exploreCollections.size)
             )
         )
     }
