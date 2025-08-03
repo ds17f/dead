@@ -4,9 +4,10 @@
 
 This document provides a comprehensive technical deep-dive into the SearchV2 implementation, covering the actual code structure, architectural patterns, and development approaches used to build the third V2 feature in the Dead Archive app.
 
-**Implementation Status**: UI Complete - Professional Material3 interface with comprehensive component architecture  
-**Architecture Pattern**: V2 UI-first development with component composition  
-**File Count**: 2 core files, 511 total lines of implementation code
+**Implementation Status**: ✅ Complete V2 Architecture with Service Integration  
+**Architecture Pattern**: V2 UI-first development with comprehensive service layer  
+**File Count**: 4 core files, 900+ total lines of implementation code
+**Service Status**: Production-ready SearchV2ServiceStub with realistic data
 
 ## File Structure & Organization
 
@@ -14,14 +15,25 @@ This document provides a comprehensive technical deep-dive into the SearchV2 imp
 
 ```
 feature/browse/src/main/java/com/deadarchive/feature/browse/
-├── SearchV2Screen.kt                 # 511 lines - Complete UI implementation
-├── SearchV2ViewModel.kt              # 94 lines - State management foundation
+├── SearchV2Screen.kt                 # 540 lines - Complete main UI implementation
+├── SearchResultsV2Screen.kt          # 566 lines - Full-screen search interface  
+├── SearchV2ViewModel.kt              # 199 lines - Comprehensive state management
 └── navigation/BrowseNavigation.kt    # Modified for SearchV2 routing
 ```
 
 ### Supporting Infrastructure
 
 ```
+core/search-api/src/main/java/com/deadarchive/core/search/api/
+└── SearchV2Service.kt                # 124 lines - Clean service interface
+
+core/search/src/main/java/com/deadarchive/core/search/
+├── service/SearchV2ServiceStub.kt    # 493 lines - Production-ready stub
+└── di/SearchV2StubModule.kt          # 35 lines - Hilt dependency injection
+
+core/model/src/main/java/com/deadarchive/core/model/
+└── SearchV2Models.kt                 # Domain models for search functionality
+
 core/settings-api/src/main/java/com/deadarchive/core/settings/api/model/
 └── AppSettings.kt                    # Feature flag: useSearchV2: Boolean
 
@@ -36,21 +48,42 @@ app/src/main/java/com/deadarchive/app/
 ┌─────────────────────────────────────────────────────────────────┐
 │                        SearchV2 Architecture                    │
 ├─────────────────────────────────────────────────────────────────┤
-│  UI Layer (Compose - 511 lines)                               │
-│  ├── SearchV2Screen.kt (LazyColumn layout)                     │
-│  ├── SearchV2TopBar (SYF + title + camera)                     │
-│  ├── SearchV2SearchBox (Material3 text field)                  │
-│  ├── SearchV2BrowseSection (4 decade cards)                    │
-│  ├── SearchV2DiscoverSection (3 discovery cards)               │
-│  ├── SearchV2BrowseAllSection (2-column grid)                  │
+│  UI Layer (Compose - 1100+ lines)                             │
+│  ├── SearchV2Screen.kt (Main search interface)                 │
+│  │   ├── SearchV2TopBar (SYF + title + camera)                 │
+│  │   ├── SearchV2SearchBox (Material3 text field)              │
+│  │   ├── SearchV2BrowseSection (4 decade cards)                │
+│  │   ├── SearchV2DiscoverSection (3 discovery cards)           │
+│  │   └── SearchV2BrowseAllSection (2-column grid)              │
+│  ├── SearchResultsV2Screen.kt (Full-screen search)             │
+│  │   ├── SearchResultsTopBar (transparent search input)        │
+│  │   ├── RecentSearchesSection (search history)                │
+│  │   ├── SuggestedSearchesSection (dynamic suggestions)        │
+│  │   └── SearchResultsSection (LibraryV2-style cards)          │
 │  └── Individual components (DecadeCard, DiscoverCard, etc.)    │
 ├─────────────────────────────────────────────────────────────────┤
-│  State Management (94 lines)                                   │
-│  ├── SearchV2ViewModel (Hilt + StateFlow)                      │
-│  ├── SearchV2UiState (Basic state model)                       │
-│  └── Ready for SearchV2Service injection                       │
+│  State Management (199 lines)                                  │
+│  ├── SearchV2ViewModel (Service coordination)                  │
+│  ├── SearchV2UiState (Comprehensive state model)               │
+│  └── Active SearchV2Service integration                        │
+├─────────────────────────────────────────────────────────────────┤
+│  Service Layer (617 lines)                                     │
+│  ├── SearchV2Service (Clean interface)                         │
+│  │   ├── Reactive flows (search results, status, suggestions)  │
+│  │   ├── Result types for error handling                       │
+│  │   └── Comprehensive search operations                       │
+│  ├── SearchV2ServiceStub (Production-ready implementation)     │
+│  │   ├── 8 realistic Dead shows (Cornell, Europe '72, etc.)    │
+│  │   ├── Smart relevance scoring and filtering                 │
+│  │   ├── Dynamic search suggestions                            │
+│  │   └── Recent search history management                      │
+│  └── SearchV2StubModule (Hilt dependency injection)            │
 ├─────────────────────────────────────────────────────────────────┤
 │  Data Layer (Domain Models)                                    │
+│  ├── SearchV2UiState (comprehensive state model)               │
+│  ├── SearchResultShow (search result with relevance)           │
+│  ├── RecentSearch / SuggestedSearch (search history)           │
+│  ├── SearchMatchType / SearchStatus (search metadata)          │
 │  ├── DecadeBrowse (title, gradient, era)                       │
 │  ├── DiscoverItem (title, subtitle)                            │
 │  └── BrowseAllItem (title, subtitle, searchQuery)              │
@@ -496,36 +529,132 @@ debugData?.let { data ->
 }
 ```
 
-## Next Phase: Service Integration
+## Service Layer Implementation
 
-### Service Interface Discovery
-
-UI implementation naturally revealed service requirements:
+### SearchV2Service Interface
+**Location**: `core/search-api/src/main/java/com/deadarchive/core/search/api/SearchV2Service.kt`
 
 ```kotlin
+/**
+ * Clean API interface for SearchV2 operations.
+ * Follows V2 architecture pattern with reactive flows and Result types.
+ */
 interface SearchV2Service {
-    // Search functionality
-    suspend fun searchShows(query: String): Flow<List<Show>>
+    // Reactive state flows
+    val currentQuery: Flow<String>
+    val searchResults: Flow<List<SearchResultShow>>
+    val searchStatus: Flow<SearchStatus>
+    val recentSearches: Flow<List<RecentSearch>>
+    val suggestedSearches: Flow<List<SuggestedSearch>>
+    val searchStats: Flow<SearchStats>
     
-    // Decade browsing
-    suspend fun getShowsByEra(era: String): Flow<List<Show>>
+    // Search operations with Result types
+    suspend fun updateSearchQuery(query: String): Result<Unit>
+    suspend fun clearSearch(): Result<Unit>
+    suspend fun addRecentSearch(query: String): Result<Unit>
+    suspend fun clearRecentSearches(): Result<Unit>
+    suspend fun selectSuggestion(suggestion: SuggestedSearch): Result<Unit>
+    suspend fun applyFilters(filters: List<SearchFilter>): Result<Unit>
+    suspend fun getSuggestions(partialQuery: String): Result<List<SuggestedSearch>>
     
-    // Discovery content
-    suspend fun getDiscoveryContent(): Flow<List<DiscoverItem>>
-    
-    // Browse categories
-    suspend fun getBrowseCategories(): Flow<List<BrowseAllItem>>
-    suspend fun getShowsByCategory(searchQuery: String): Flow<List<Show>>
+    // Stub-specific method for UI development
+    suspend fun populateTestData(): Result<Unit>
 }
 ```
 
-### Service Integration Strategy
+### SearchV2ServiceStub Implementation
+**Location**: `core/search/src/main/java/com/deadarchive/core/search/service/SearchV2ServiceStub.kt`
 
-1. **Stub Implementation**: Create SearchV2ServiceStub with realistic mock data
-2. **Real Implementation**: Wrap existing Archive.org API calls
-3. **StateFlow Wiring**: Connect service flows to ViewModel state
-4. **Navigation Integration**: Wire click handlers to actual screen navigation
-5. **Error Handling**: Add proper loading states and error recovery
+**Key Features**:
+- **493 lines of production-ready stub implementation**
+- **8 realistic Grateful Dead shows** spanning 1969-1995
+- **Smart search algorithm** with relevance scoring (0.1f-1.0f range)
+- **Match type detection** (TITLE, VENUE, YEAR, LOCATION, SETLIST, GENERAL)
+- **Search filters** (HAS_DOWNLOADS, SOUNDBOARD, AUDIENCE, POPULAR)
+- **Dynamic suggestions** based on query patterns
+- **Recent search history** management (max 10, FIFO)
+
+**Mock Data Examples**:
+```kotlin
+private val mockShows = listOf(
+    // Cornell 5/8/77 - The legendary show
+    Show(
+        date = "1977-05-08",
+        venue = "Barton Hall",
+        location = "Ithaca, NY",
+        recordings = listOf(/* Soundboard recording */)
+    ),
+    // Europe '72 Classic
+    Show(
+        date = "1972-05-03", 
+        venue = "Olympia Theatre",
+        location = "Paris, France",
+        recordings = listOf(/* Soundboard recording */)
+    ),
+    // Woodstock 1969, Dick's Picks, Jerry's last show, etc.
+    // ... 6 more realistic shows
+)
+```
+
+**Smart Search Logic**:
+```kotlin
+private fun calculateRelevanceScore(show: Show, query: String, matchType: SearchMatchType): Float {
+    var score = 0f
+    
+    // Base scoring by match type
+    when (matchType) {
+        SearchMatchType.TITLE -> score += 1.0f
+        SearchMatchType.VENUE -> score += 0.9f
+        SearchMatchType.YEAR -> score += 0.8f
+        SearchMatchType.LOCATION -> score += 0.7f
+        SearchMatchType.SETLIST -> score += 0.6f
+        SearchMatchType.GENERAL -> score += 0.5f
+    }
+    
+    // Bonus for exact matches and popular shows
+    if (show.venue?.lowercase() == query) score += 0.5f
+    if (show.date.contains(query)) score += 0.3f
+    
+    // Popular show bonuses (Cornell gets +0.3, Europe '72 gets +0.2, etc.)
+    return score.coerceIn(0f, 1f)
+}
+```
+
+### Dependency Injection Architecture
+**Location**: `core/search/src/main/java/com/deadarchive/core/search/di/SearchV2StubModule.kt`
+
+```kotlin
+@Module
+@InstallIn(SingletonComponent::class)  
+abstract class SearchV2StubModule {
+    
+    @Binds
+    @Singleton
+    @Named("stub")
+    abstract fun bindSearchV2ServiceStub(
+        impl: SearchV2ServiceStub
+    ): SearchV2Service
+}
+```
+
+**ViewModel Integration**:
+```kotlin
+@HiltViewModel
+class SearchV2ViewModel @Inject constructor(
+    @Named("stub") private val searchV2Service: SearchV2Service
+) : ViewModel() {
+    
+    // Reactive flow observation
+    private fun observeServiceFlows() {
+        viewModelScope.launch {
+            searchV2Service.searchResults.collect { results ->
+                _uiState.value = _uiState.value.copy(searchResults = results)
+            }
+        }
+        // ... other flow observations
+    }
+}
+```
 
 ## Code Quality Metrics
 
@@ -536,10 +665,13 @@ interface SearchV2Service {
 - **Memory Efficiency**: Lazy composition prevents performance issues
 
 **Line Count Analysis**:
-- **SearchV2Screen**: 511 lines (comprehensive UI implementation)
-- **SearchV2ViewModel**: 94 lines (clean state management)
-- **Component Average**: ~35 lines per component (focused, maintainable)
-- **Total Implementation**: 605 lines (UI + ViewModel + data classes)
+- **SearchV2Screen**: 540 lines (comprehensive main UI implementation)
+- **SearchResultsV2Screen**: 566 lines (full-screen search interface)
+- **SearchV2ViewModel**: 199 lines (comprehensive state management)
+- **SearchV2Service**: 124 lines (clean interface definition)
+- **SearchV2ServiceStub**: 493 lines (production-ready stub)
+- **Component Average**: ~40 lines per component (focused, maintainable)
+- **Total Implementation**: 1,900+ lines (complete V2 architecture)
 
 **Maintainability Features**:
 - **Component Isolation**: Each UI section is independently testable
@@ -549,9 +681,10 @@ interface SearchV2Service {
 
 ---
 
-**Implementation Status**: ✅ **Complete UI with Component Architecture**  
-**Next Milestone**: SearchV2Service integration and real data implementation  
-**Architecture Achievement**: Clean V2 patterns with professional Material3 design  
+**Implementation Status**: ✅ **Complete V2 Architecture with Service Integration**  
+**Architecture Achievement**: Full V2 compliance with production-ready stub service  
+**Service Quality**: Comprehensive SearchV2ServiceStub with realistic search logic  
+**Next Milestone**: Real Archive.org API integration and deployment  
 **Created**: January 2025
 
-SearchV2 implementation successfully demonstrates the effectiveness of V2 UI-first development, creating a maintainable, performant, and visually excellent search interface ready for service integration.
+SearchV2 implementation successfully demonstrates the maturity of V2 architecture, delivering a complete search and discovery system with professional UI, comprehensive service layer, and production-ready stub implementation that validates all V2 architectural principles.
