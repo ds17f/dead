@@ -119,6 +119,12 @@ interface SettingsRepository {
      */
     suspend fun updateUseSearchV2(enabled: Boolean)
     
+    /**
+     * Update the Home V2 interface setting
+     * @param enabled True to use Home V2 interface, false to use legacy home
+     */
+    suspend fun updateUseHomeV2(enabled: Boolean)
+    
     // Update-related methods
     
     /**

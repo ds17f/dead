@@ -438,6 +438,38 @@ class SettingsConfigurationService @Inject constructor(
     }
     
     /**
+     * Update the use Home V2 setting
+     */
+    fun updateUseHomeV2(
+        enabled: Boolean,
+        coroutineScope: CoroutineScope,
+        onStateChange: (SettingsUiState) -> Unit,
+        currentState: SettingsUiState
+    ) {
+        coroutineScope.launch {
+            try {
+                Log.d(TAG, "Updating use Home V2 to: $enabled")
+                onStateChange(currentState.copy(isLoading = true, errorMessage = null))
+                
+                settingsRepository.updateUseHomeV2(enabled)
+                
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    successMessage = if (enabled) "Home V2 enabled 🚀" else "Home V2 disabled"
+                ))
+                Log.d(TAG, "Use Home V2 updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update use Home V2", e)
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update Home V2 setting: ${e.message}"
+                ))
+            }
+        }
+    }
+    
+    /**
      * Set drag state for audio format reordering
      */
     fun setDraggingFormats(

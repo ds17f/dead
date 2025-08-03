@@ -26,37 +26,43 @@ fun NavGraphBuilder.browseScreen(
         )
     ) { backStackEntry ->
         val era = backStackEntry.arguments?.getString("era")
-        if (useSearchV2) {
-            SearchV2Screen(
-                onNavigateToPlayer = onNavigateToPlayer,
-                onNavigateToShow = onNavigateToShow,
-                onNavigateToSearchResults = { navController.navigate("search_results") },
-                initialEra = era
-            )
-        } else {
-            BrowseScreen(
-                onNavigateToPlayer = onNavigateToPlayer,
-                onNavigateToShow = onNavigateToShow,
-                initialEra = era
-            )
+        when {
+            useSearchV2 -> {
+                SearchV2Screen(
+                    onNavigateToPlayer = onNavigateToPlayer,
+                    onNavigateToShow = onNavigateToShow,
+                    onNavigateToSearchResults = { navController.navigate("search_results") },
+                    initialEra = era
+                )
+            }
+            else -> {
+                BrowseScreen(
+                    onNavigateToPlayer = onNavigateToPlayer,
+                    onNavigateToShow = onNavigateToShow,
+                    initialEra = era
+                )
+            }
         }
     }
     
     // Handle simple "browse" route without parameters
     composable("browse") {
-        if (useSearchV2) {
-            SearchV2Screen(
-                onNavigateToPlayer = onNavigateToPlayer,
-                onNavigateToShow = onNavigateToShow,
-                onNavigateToSearchResults = { navController.navigate("search_results") },
-                initialEra = null
-            )
-        } else {
-            BrowseScreen(
-                onNavigateToPlayer = onNavigateToPlayer,
-                onNavigateToShow = onNavigateToShow,
-                initialEra = null
-            )
+        when {
+            useSearchV2 -> {
+                SearchV2Screen(
+                    onNavigateToPlayer = onNavigateToPlayer,
+                    onNavigateToShow = onNavigateToShow,
+                    onNavigateToSearchResults = { navController.navigate("search_results") },
+                    initialEra = null
+                )
+            }
+            else -> {
+                BrowseScreen(
+                    onNavigateToPlayer = onNavigateToPlayer,
+                    onNavigateToShow = onNavigateToShow,
+                    initialEra = null
+                )
+            }
         }
     }
     

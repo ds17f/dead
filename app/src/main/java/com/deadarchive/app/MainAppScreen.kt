@@ -132,22 +132,40 @@ fun MainAppScreen(
             modifier = Modifier.padding(paddingValues)
         ) {
             composable("home") {
-                HomeScreen(
-                    onNavigateToBrowse = { navController.navigate("browse") },
-                    onNavigateToShow = { show ->
-                        // Navigate to playlist for the best recording of this show
-                        show.bestRecording?.let { recording ->
-                            android.util.Log.d("MainAppNavigation", "Home navigating to playlist with recordingId: '${recording.identifier}' for show: ${show.displayDate} - ${show.displayVenue}")
-                            navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
-                        } ?: run {
-                            android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
+                if (settings.useHomeV2) {
+                    com.deadarchive.feature.browse.HomeV2Screen(
+                        onNavigateToPlayer = { recordingId -> 
+                            android.util.Log.d("MainAppNavigation", "HomeV2 navigating to playlist with recordingId: '$recordingId'")
+                            navController.navigate("playlist/$recordingId")
+                        },
+                        onNavigateToShow = { show ->
+                            // Navigate to playlist for the best recording of this show
+                            show.bestRecording?.let { recording ->
+                                android.util.Log.d("MainAppNavigation", "HomeV2 navigating to playlist with recordingId: '${recording.identifier}' for show: ${show.displayDate} - ${show.displayVenue}")
+                                navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
+                            } ?: run {
+                                android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
+                            }
                         }
-                    },
-                    onNavigateToEra = { era ->
-                        // Navigate to browse with era filter
-                        navController.navigate("browse?era=$era")
-                    }
-                )
+                    )
+                } else {
+                    HomeScreen(
+                        onNavigateToBrowse = { navController.navigate("browse") },
+                        onNavigateToShow = { show ->
+                            // Navigate to playlist for the best recording of this show
+                            show.bestRecording?.let { recording ->
+                                android.util.Log.d("MainAppNavigation", "Home navigating to playlist with recordingId: '${recording.identifier}' for show: ${show.displayDate} - ${show.displayVenue}")
+                                navController.navigate("playlist/${recording.identifier}?showId=${show.showId}")
+                            } ?: run {
+                                android.util.Log.w("MainAppNavigation", "No best recording found for show: ${show.displayDate} - ${show.displayVenue}")
+                            }
+                        },
+                        onNavigateToEra = { era ->
+                            // Navigate to browse with era filter
+                            navController.navigate("browse?era=$era")
+                        }
+                    )
+                }
             }
             
             // Browse/Search functionality
