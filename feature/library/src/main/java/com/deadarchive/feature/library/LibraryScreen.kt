@@ -1,6 +1,7 @@
 package com.deadarchive.feature.library
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.foundation.lazy.LazyListState
@@ -1192,7 +1193,15 @@ private fun LibraryTopBar(
     onOptionsClick: () -> Unit
 ) {
     TopAppBar(
-        title = { Text("Library") },
+        title = { 
+            Box(
+                modifier = Modifier.fillMaxHeight(),
+                contentAlignment = Alignment.Center
+            ) {
+                Text("Library")
+            }
+        },
+        windowInsets = WindowInsets(0.dp),
         actions = {
             IconButton(onClick = onOptionsClick) {
                 Icon(

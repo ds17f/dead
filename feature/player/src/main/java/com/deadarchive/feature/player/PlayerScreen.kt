@@ -6,6 +6,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import com.deadarchive.core.design.component.IconResources
@@ -109,19 +110,25 @@ fun PlayerScreen(
             // Spotify-style Top App Bar
             TopAppBar(
                 title = {
-                    PlayerTopBarTitle(
-                        recording = currentRecording,
-                        modifier = Modifier.clickable {
-                            // Use MediaController's recording ID for consistency with what's actually playing
-                            val actualRecordingId = currentRecordingIdFromMediaController ?: currentRecording?.identifier ?: recordingId
-                            Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $actualRecordingId")
-                            Log.d("PlayerScreen", "  - MediaController recording ID: $currentRecordingIdFromMediaController")
-                            Log.d("PlayerScreen", "  - Current recording ID: ${currentRecording?.identifier}")
-                            Log.d("PlayerScreen", "  - Fallback recording ID: $recordingId")
-                            onNavigateToPlaylist(actualRecordingId)
-                        }
-                    )
+                    Box(
+                        modifier = Modifier.fillMaxHeight(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        PlayerTopBarTitle(
+                            recording = currentRecording,
+                            modifier = Modifier.clickable {
+                                // Use MediaController's recording ID for consistency with what's actually playing
+                                val actualRecordingId = currentRecordingIdFromMediaController ?: currentRecording?.identifier ?: recordingId
+                                Log.d("PlayerScreen", "Title tapped! Navigating to playlist with recordingId: $actualRecordingId")
+                                Log.d("PlayerScreen", "  - MediaController recording ID: $currentRecordingIdFromMediaController")
+                                Log.d("PlayerScreen", "  - Current recording ID: ${currentRecording?.identifier}")
+                                Log.d("PlayerScreen", "  - Fallback recording ID: $recordingId")
+                                onNavigateToPlaylist(actualRecordingId)
+                            }
+                        )
+                    }
                 },
+                windowInsets = WindowInsets(0.dp),
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(painter = IconResources.Navigation.KeyboardArrowDown(), contentDescription = "Back")
