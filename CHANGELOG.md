@@ -1,11 +1,15 @@
 # Changelog
 
+## [0.42.0] - 2025-08-03
+
+### New Features
+* implement compact TopAppBar design across all screens (f6287f7)
+
+
 ## [0.41.0] - 2025-08-02
 
 ### New Features
 * create reusable V2TopBar component for consistent V2 screen headers (c2e4e31)
-
-
 ## [0.40.0] - 2025-08-02
 
 ### New Features
