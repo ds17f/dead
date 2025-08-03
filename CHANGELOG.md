@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.41.0] - 2025-08-02
+
+### New Features
+* create reusable V2TopBar component for consistent V2 screen headers (c2e4e31)
+
+
 ## [0.40.0] - 2025-08-02
 
 ### New Features
@@ -23,8 +29,6 @@
 
 ### Other Changes
 * Merge branch 'player-v2' (edfa691)
-
-
 ## [0.39.0] - 2025-08-01
 
 ### New Features
