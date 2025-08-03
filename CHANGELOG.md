@@ -1,11 +1,22 @@
 # Changelog
 
+## [0.43.0] - 2025-08-03
+
+### New Features
+* implement complete layout with compact Recent Shows and enhanced collections (8f31eaa)
+* implement complete HomeV2 foundation with corrected navigation (b02a10c)
+
+### Documentation Updates
+* add comprehensive HomeV2 documentation following V2 patterns (9c60b16)
+
+### Other Changes
+* micro: reduce V2TopBar and HierarchicalFilter padding for tighter layout (4f3c411)
+
+
 ## [0.42.0] - 2025-08-03
 
 ### New Features
 * implement compact TopAppBar design across all screens (f6287f7)
-
-
 ## [0.41.0] - 2025-08-02
 
 ### New Features
