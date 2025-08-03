@@ -43,53 +43,88 @@ fun HomeV2Screen(
 
 ## UI Implementation
 
-### Material3 Design System
-HomeV2 uses complete Material3 theming with proper color schemes:
+### Enhanced V2TopBar with Filter Integration
+HomeV2 introduces the enhanced V2TopBar with backward-compatible titleContent support:
 
 ```kotlin
-// Welcome card with primary container theming
-Card(
-    modifier = Modifier.fillMaxWidth(),
-    colors = CardDefaults.cardColors(
-        containerColor = MaterialTheme.colorScheme.primaryContainer
-    )
+V2TopBar(
+    titleContent = {
+        HierarchicalFilter(
+            filterTree = FilterTrees.buildHomeFiltersTree(),
+            selectedPath = filterPath,
+            onSelectionChanged = { filterPath = it }
+        )
+    },
+    actions = {
+        IconButton(onClick = { /* Settings */ }) {
+            Icon(Icons.Default.Settings, contentDescription = "Settings")
+        }
+    }
+)
+```
+
+### Production Layout Structure
+The interface uses three main sections optimized for discovery and browsing:
+
+#### 1. Recent Shows Grid (2x4 Layout)
+Ultra-compact horizontal cards for recently played shows:
+- **Layout**: LazyVerticalGrid with 2 columns, 4 rows (8 total cards)
+- **Card Design**: 64dp height horizontal cards with minimal 4dp padding
+- **Album Art**: 56dp prominent placement just 4dp from card edge
+- **Non-scrolling**: Grid holds its position in main scroll flow
+- **Metadata**: Date and location with proper typography hierarchy
+
+```kotlin
+LazyVerticalGrid(
+    columns = GridCells.Fixed(2),
+    modifier = modifier.height(268.dp), // Compact fixed height
+    userScrollEnabled = false, // Non-scrolling grid
+    horizontalArrangement = Arrangement.spacedBy(8.dp),
+    verticalArrangement = Arrangement.spacedBy(4.dp)
 ) {
-    Text(
-        text = "Welcome to HomeV2 🚀",
-        style = MaterialTheme.typography.headlineSmall,
-        fontWeight = FontWeight.Bold,
-        color = MaterialTheme.colorScheme.onPrimaryContainer
-    )
+    items(shows.take(8)) { show ->
+        RecentShowCard(show = show, ...)
+    }
 }
 ```
 
-### Card-Based Layout
-The interface uses three main content cards:
+#### 2. Today In Grateful Dead History
+Horizontal scrolling collection for historical concerts:
+- **Design**: 160dp square cards with large album art placeholders
+- **Content**: Shows from today's date in Dead history
+- **Layout**: Left-aligned text with generous spacing for visual impact
 
-#### 1. Welcome Card
-- **Purpose**: Introduction to HomeV2 and V2 architecture
-- **Theming**: Primary container with proper color contrast
-- **Content**: V2 architecture explanation and development approach
+#### 3. Explore Collections
+Discovery section for curated content categories:
+- **Categories**: Greatest Shows, Rare Recordings, Europe '72, Wall of Sound, Dick's Picks, Acoustic Sets
+- **Design**: 160dp square cards matching history section
+- **Purpose**: Future expansion for collection-based browsing
 
-#### 2. Development Status Card
-- **Purpose**: Real-time V2 implementation progress
-- **Features**: Checkmark indicators for completed features
-- **Status Items**: Foundation, Settings, Navigation, Debug integration
+### Material3 Design Integration
+```kotlin
+// Compact show cards with proper theming
+Card(
+    modifier = Modifier.height(64.dp),
+    colors = CardDefaults.cardColors(
+        containerColor = MaterialTheme.colorScheme.surface
+    ),
+    elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)
+) {
+    Row(modifier = Modifier.padding(4.dp)) {
+        // Ultra-minimal padding for maximum content density
+    }
+}
+```
 
-#### 3. Foundation Card
-- **Purpose**: Technical architecture highlights
-- **Content**: Material3, Service-Oriented Architecture, Debug integration
-- **Theming**: Surface variant with proper contrast
-
-### Spacing and Layout
+### Responsive Layout Spacing
 ```kotlin
 LazyColumn(
     modifier = Modifier.fillMaxSize(),
-    contentPadding = PaddingValues(16.dp),
+    contentPadding = PaddingValues(bottom = 16.dp),
     verticalArrangement = Arrangement.spacedBy(24.dp)
 ) {
-    // 24dp spacing between cards
-    // 16dp content padding around entire column
+    // Optimized spacing between major sections
+    // No top content padding for maximum screen usage
 }
 ```
 
@@ -99,32 +134,58 @@ LazyColumn(
 ```kotlin
 data class HomeV2UiState(
     val isLoading: Boolean = false,
-    val isInitialized: Boolean = true,
-    val hasError: Boolean = false,
+    val isInitialized: Boolean = false,
     val errorMessage: String? = null,
-    val welcomeText: String = "Welcome to Dead Archive V2",
-    val featuredShows: List<Show> = emptyList(),
-    val quickActions: List<String> = emptyList()
-)
+    val welcomeText: String = "Welcome to Dead Archive",
+    val recentShows: List<Show> = emptyList(),
+    val todayInHistory: List<Show> = emptyList(),
+    val exploreCollections: List<String> = emptyList()
+) {
+    val hasError: Boolean get() = errorMessage != null
+}
 ```
 
 ### ViewModel Implementation
 ```kotlin
 @HiltViewModel
 class HomeV2ViewModel @Inject constructor(
-    // Ready for service injection when needed
+    // TODO: Add V2 services as they're discovered through UI development
+    // private val homeV2Service: HomeV2Service
 ) : ViewModel() {
     
-    private val _uiState = MutableStateFlow(HomeV2UiState())
+    private val _uiState = MutableStateFlow(HomeV2UiState.initial())
     val uiState: StateFlow<HomeV2UiState> = _uiState.asStateFlow()
     
     init {
-        // Initialize with foundation state
-        _uiState.value = HomeV2UiState(isInitialized = true)
+        loadInitialData()
     }
     
-    // Ready for future service integration
-    // fun loadFeaturedContent() = viewModelScope.launch { ... }
+    private fun loadInitialData() {
+        _uiState.value = _uiState.value.copy(
+            isLoading = false,
+            isInitialized = true,
+            recentShows = generateMockRecentShows(),
+            todayInHistory = generateMockTodayInHistory(),
+            exploreCollections = generateMockCollections()
+        )
+    }
+    
+    private fun generateMockRecentShows(): List<Show> {
+        // Returns 16 realistic Dead shows for 2x4 grid + overflow
+        return listOf(/* Cornell '77, Fillmore shows, etc. */)
+    }
+    
+    private fun generateMockTodayInHistory(): List<Show> {
+        // Returns shows from today's date in Dead history
+        return listOf(/* Date-matched historical shows */)
+    }
+    
+    private fun generateMockCollections(): List<String> {
+        return listOf(
+            "Greatest Shows", "Rare Recordings", "Europe '72",
+            "Wall of Sound", "Dick's Picks", "Acoustic Sets"
+        )
+    }
 }
 ```
 
@@ -216,9 +277,24 @@ object HomeV2DebugDataFactory {
             screenName = "HomeV2Screen",
             sections = listOf(
                 createGeneralSection(initialEra),
-                createUiStateSection(uiState),
+                createUiStateSection(uiState), // Shows recent shows count, history count, collections count
                 createArchitectureSection(),
                 createDevelopmentStatusSection()
+            )
+        )
+    }
+    
+    private fun createUiStateSection(uiState: HomeV2UiState): DebugSection {
+        return DebugSection(
+            title = "UI State",
+            items = listOf(
+                DebugItem.BooleanValue("Is Loading", uiState.isLoading),
+                DebugItem.BooleanValue("Is Initialized", uiState.isInitialized),
+                DebugItem.BooleanValue("Has Error", uiState.hasError),
+                DebugItem.KeyValue("Error Message", uiState.errorMessage ?: "None"),
+                DebugItem.NumericValue("Recent Shows Count", uiState.recentShows.size),
+                DebugItem.NumericValue("Today In History Count", uiState.todayInHistory.size),
+                DebugItem.NumericValue("Collections Count", uiState.exploreCollections.size)
             )
         )
     }
@@ -363,29 +439,36 @@ private fun createNewSection(): DebugSection {
 
 ## Future Enhancement Opportunities
 
-### Content Features
-1. **Featured Shows**: Popular Archive.org concerts
-2. **Recent Additions**: Latest concerts added
-3. **Quick Actions**: Search, Library, Recent plays
-4. **User Recommendations**: Personalized discovery
+### Interactive Features
+1. **Progress Bars**: Show playback progress on Recent Shows cards
+2. **Context Menus**: Long-press actions (Share, Library, Download, Go To Show)
+3. **Real-time Updates**: Live sync with playback state
+4. **Quick Actions**: Direct navigation to player/library
 
 ### Service Integration
-1. **HomeV2Service**: Content loading and caching
-2. **BrowseV2Service**: Search and discovery integration
-3. **LibraryV2Service**: Recent library content
-4. **MediaV2Service**: Recently played shows
+1. **HomeV2Service**: Content loading and personalization
+2. **MediaV2Service**: Recently played shows integration
+3. **LibraryV2Service**: Library status and recent additions
+4. **DownloadV2Service**: Download status indicators
 
-### UI Enhancements
-1. **Dynamic Content**: Real-time Archive.org integration
-2. **Personalization**: User-specific recommendations
-3. **Quick Actions**: Direct navigation shortcuts
-4. **Visual Polish**: Enhanced Material3 animations
+### Content Enhancement
+1. **Dynamic Collections**: Real-time Archive.org integration
+2. **Personalized Recommendations**: User-specific discovery
+3. **Seasonal Content**: Date-based historical shows
+4. **Featured Content**: Popular and trending concerts
+
+### Performance Optimizations
+1. **Image Loading**: Album art from Archive.org
+2. **Data Caching**: Offline-first content strategy
+3. **Lazy Loading**: Progressive content discovery
+4. **State Persistence**: Resume on app restart
 
 ---
 
-**Implementation Status**: Foundation Complete ✅  
-**Service Integration**: Ready for Future Development  
-**Debug Support**: Fully Functional  
-**Production Safety**: Feature Flag Protected
+**Implementation Status**: Production Layout Complete ✅  
+**UI Architecture**: Fully Developed with Material3 Design  
+**Service Integration**: Ready for V2 Service Composition  
+**Debug Support**: Comprehensive Development Tools  
+**Production Safety**: Feature Flag Protected with Safe Rollback  
 
-HomeV2 implementation demonstrates the maturity and reliability of the V2 architecture pattern, providing a solid foundation for future home screen development.
+HomeV2 represents the culmination of V2 architecture maturity, delivering a production-ready home screen with ultra-compact Recent Shows, prominent discovery collections, and seamless integration points for future service development.
