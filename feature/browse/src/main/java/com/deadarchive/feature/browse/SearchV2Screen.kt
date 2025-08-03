@@ -89,6 +89,9 @@ fun SearchV2Screen(
         null
     }
     
+    // QR Scanner coming soon dialog state
+    var showQrComingSoonDialog by remember { mutableStateOf(false) }
+    
     Box(modifier = Modifier.fillMaxSize()) {
         LazyColumn(
             modifier = Modifier.fillMaxSize()
@@ -96,8 +99,7 @@ fun SearchV2Screen(
             // Row 1: Top bar with SYF, Search title, and camera icon
             item {
                 SearchV2TopBar(onCameraClick = { 
-                    // TODO: Implement QR code scanner
-                    // Will scan Archive.org URLs and navigate appropriately
+                    showQrComingSoonDialog = true
                 })
             }
             
@@ -151,6 +153,13 @@ fun SearchV2Screen(
             debugData = data,
             isVisible = showDebugPanel,
             onDismiss = { showDebugPanel = false }
+        )
+    }
+    
+    // QR Scanner coming soon dialog
+    if (showQrComingSoonDialog) {
+        QrScannerComingSoonDialog(
+            onDismiss = { showQrComingSoonDialog = false }
         )
     }
 }
@@ -538,4 +547,51 @@ private fun BrowseAllCard(
             )
         }
     }
+}
+
+/**
+ * QR Scanner Coming Soon Dialog
+ * Shows when user taps camera icon before QrScannerV2 is implemented
+ */
+@Composable
+private fun QrScannerComingSoonDialog(
+    onDismiss: () -> Unit
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = {
+            Text(
+                text = "QR Scanner",
+                style = MaterialTheme.typography.headlineSmall,
+                fontWeight = FontWeight.Bold
+            )
+        },
+        text = {
+            Column {
+                Text(
+                    text = "QR code scanning is coming soon!",
+                    style = MaterialTheme.typography.bodyLarge,
+                    modifier = Modifier.padding(bottom = 8.dp)
+                )
+                Text(
+                    text = "This feature will let you scan QR codes to instantly discover and play Grateful Dead recordings shared by other users.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = onDismiss) {
+                Text("Got it")
+            }
+        },
+        icon = {
+            Icon(
+                painter = IconResources.Content.QrCodeScanner(),
+                contentDescription = "QR Code Scanner",
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(32.dp)
+            )
+        }
+    )
 }
