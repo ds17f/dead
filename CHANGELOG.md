@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.40.0] - 2025-08-02
+
+### New Features
+* implement comprehensive search UX improvements (d42cf6b)
+* implement comprehensive V2 service architecture with UI integration (6e908b0)
+* implement SearchV2 professional UI with transparent design patterns (1badd36)
+* implement full-screen search results navigation and UI (742a262)
+* implement QR code scanner icon and foundation (3e8bedb)
+* implement flexible discover cards with full-width layout (033b204)
+* change decade browse component to 2x2 grid layout (f5debac)
+* implement complete UI design with Material3 components (ac480e1)
+* implement complete SearchV2 foundation with V2 architecture (28978d9)
+
+### Documentation Updates
+* complete comprehensive QrScannerV2 documentation and placeholder implementation (549033e)
+* update documentation with verified V2 architecture compliance (7b37f1a)
+* align documentation structure with PlayerV2 patterns (9216172)
+* restructure documentation following V2 pattern standards (9d52140)
+* add comprehensive in-app auto updater implementation documentation (af6f199)
+* complete comprehensive documentation for V2 player implementation (bc728b9)
+
+### Other Changes
+* Merge branch 'player-v2' (edfa691)
+
+
 ## [0.39.0] - 2025-08-01
 
 ### New Features
@@ -7,8 +32,6 @@
 
 ### Bug Fixes
 * implement working in-app update installer with FileProvider (9be5c8d)
-
-
 ## [0.38.1] - 2025-07-31
 
 ### Other Changes
