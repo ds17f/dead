@@ -97,7 +97,7 @@ fun HierarchicalFilter(
     LazyRow(
         modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
-        contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
+        //contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
     ) {
         // Clear button - always show first
         item {
