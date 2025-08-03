@@ -33,6 +33,8 @@ import com.deadarchive.core.design.component.HierarchicalFilter
 import com.deadarchive.core.design.component.FilterPath
 import com.deadarchive.core.design.component.FilterTrees
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.core.design.component.V2TopBar
+import com.deadarchive.core.design.component.V2TopBarDefaults
 import com.deadarchive.feature.library.component.ShowActionsBottomSheet
 import com.deadarchive.feature.library.component.QrCodeBottomSheet
 import com.deadarchive.core.model.Show
@@ -83,9 +85,12 @@ fun LibraryV2Screen(
     Box(modifier = Modifier.fillMaxSize()) {
         Column(modifier = Modifier.fillMaxSize()) {
             // Spotify-like Header
-            LibraryHeader(
-                onSearchClick = { /* TODO: Implement search */ },
-                onAddClick = { showAddBottomSheet = true }
+            V2TopBar(
+                title = "Your Library",
+                actions = V2TopBarDefaults.LibraryActions(
+                    onSearchClick = { /* TODO: Implement search */ },
+                    onAddClick = { showAddBottomSheet = true }
+                )
             )
             
             // Hierarchical Filters
@@ -277,53 +282,6 @@ enum class DisplayMode {
     GRID
 }
 
-/**
- * Spotify-like header with logo, title, and action buttons
- */
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun LibraryHeader(
-    onSearchClick: () -> Unit,
-    onAddClick: () -> Unit
-) {
-    TopAppBar(
-        title = {
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                // Steal Your Face icon
-                Image(
-                    painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
-                    contentDescription = "Dead Archive",
-                    modifier = Modifier.size(24.dp)
-                )
-                Spacer(modifier = Modifier.width(12.dp))
-                Text(
-                    text = "Your Library",
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold
-                )
-            }
-        },
-        actions = {
-            IconButton(onClick = onSearchClick) {
-                Icon(
-                    painter = IconResources.Content.Search(),
-                    contentDescription = "Search"
-                )
-            }
-            IconButton(onClick = onAddClick) {
-                Icon(
-                    painter = IconResources.Navigation.Add(),
-                    contentDescription = "Add to Library"
-                )
-            }
-        },
-        colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = MaterialTheme.colorScheme.surface
-        )
-    )
-}
 
 /**
  * Sort controls and grid/list display toggle

@@ -16,6 +16,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Search
 import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.core.design.component.V2TopBar
+import com.deadarchive.core.design.component.V2TopBarDefaults
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -98,9 +100,12 @@ fun SearchV2Screen(
         ) {
             // Row 1: Top bar with SYF, Search title, and camera icon
             item {
-                SearchV2TopBar(onCameraClick = { 
-                    showQrComingSoonDialog = true
-                })
+                V2TopBar(
+                    title = "Search",
+                    actions = V2TopBarDefaults.SearchActions(
+                        onCameraClick = { showQrComingSoonDialog = true }
+                    )
+                )
             }
             
             // Row 2: Search box
@@ -198,53 +203,6 @@ private fun collectSearchV2DebugData(
     )
 }
 
-/**
- * Row 1: Top bar with Steal Your Face logo, Search title, and camera icon
- */
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun SearchV2TopBar(
-    onCameraClick: () -> Unit
-) {
-    Surface(
-        modifier = Modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.surface
-    ) {
-        Row(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            // Left side: SYF logo + Search title
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(12.dp)
-            ) {
-                Image(
-                    painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
-                    contentDescription = "Dead Archive",
-                    modifier = Modifier.size(32.dp)
-                )
-                Text(
-                    text = "Search",
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold
-                )
-            }
-            
-            // Right side: Camera icon for QR code scanning
-            IconButton(onClick = onCameraClick) {
-                Icon(
-                    painter = IconResources.Content.QrCodeScanner(),
-                    contentDescription = "QR Code Scanner",
-                    tint = MaterialTheme.colorScheme.onSurface
-                )
-            }
-        }
-    }
-}
 
 /**
  * Row 2: Search box with search icon and placeholder text
