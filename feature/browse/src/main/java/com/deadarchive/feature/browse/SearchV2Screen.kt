@@ -258,13 +258,15 @@ private fun SearchV2SearchBox(
     }
     
     OutlinedTextField(
-        value = searchQuery,
-        onValueChange = onSearchQueryChange,
+        value = "", // Always empty so placeholder always shows
+        onValueChange = { /* No-op - this is just a button */ },
         interactionSource = interactionSource,
+        readOnly = true, // Make it clear this isn't for typing
         placeholder = { 
             Text(
-                text = "What do you want to listen to",
-                color = Color.Black
+                text = "What do you want to listen to?",
+                color = Color.Black,
+                fontWeight = FontWeight.Bold
             )
         },
         leadingIcon = {
@@ -277,7 +279,7 @@ private fun SearchV2SearchBox(
         },
         modifier = modifier.fillMaxWidth(),
         singleLine = true,
-        shape = RoundedCornerShape(12.dp),
+        //shape = RoundedCornerShape(12.dp),
         colors = OutlinedTextFieldDefaults.colors(
             focusedContainerColor = Color.White,
             unfocusedContainerColor = Color.White,

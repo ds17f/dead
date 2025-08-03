@@ -9,7 +9,12 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.filterNot
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -39,10 +44,15 @@ class SearchV2ViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(SearchV2UiState())
     val uiState: StateFlow<SearchV2UiState> = _uiState.asStateFlow()
     
+    // Debounced search query flow
+    private val _searchQueryFlow = MutableStateFlow("")
+    private var searchJob: Job? = null
+    
     init {
         Log.d(TAG, "SearchV2ViewModel initialized with SearchV2Service")
         loadInitialState()
         observeServiceFlows()
+        setupDebouncedSearch()
     }
     
     /**
@@ -62,40 +72,85 @@ class SearchV2ViewModel @Inject constructor(
     }
     
     /**
-     * Handle search query changes from UI
+     * Handle search query changes from UI with debounced search execution
      */
     fun onSearchQueryChanged(query: String) {
         Log.d(TAG, "Search query changed: $query")
+        
+        // Update the debounced flow which will trigger search after delay
+        _searchQueryFlow.value = query
+    }
+    
+    /**
+     * Setup debounced search to avoid hammering the search service
+     */
+    private fun setupDebouncedSearch() {
+        viewModelScope.launch {
+            _searchQueryFlow
+                .debounce(500) // Wait 500ms after typing stops
+                .distinctUntilChanged() // Only trigger if query actually changed
+                .collect { query ->
+                    performDebouncedSearch(query)
+                }
+        }
+    }
+    
+    /**
+     * Perform the actual search after debounce delay
+     */
+    private suspend fun performDebouncedSearch(query: String) {
+        Log.d(TAG, "Performing debounced search for: '$query'")
+        
+        try {
+            // Cancel any previous search job
+            searchJob?.cancel()
+            
+            // Start new search job
+            searchJob = viewModelScope.launch {
+                // Trigger search in service (this will update currentQuery and perform search)
+                searchV2Service.updateSearchQuery(query)
+                
+                // Add to recent searches only if it's a meaningful query (3+ chars)
+                // and only after the search has been "committed" by the delay
+                if (query.length >= 3) {
+                    searchV2Service.addRecentSearch(query)
+                    Log.d(TAG, "Added '$query' to recent searches")
+                }
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to perform debounced search for '$query'", e)
+        }
+    }
+    
+    /**
+     * Handle recent search selection - execute immediately without debounce
+     */
+    fun onRecentSearchSelected(recentSearch: RecentSearch) {
+        Log.d(TAG, "Recent search selected: ${recentSearch.query}")
+        
+        // Execute search immediately (no debounce for deliberate selections)
         viewModelScope.launch {
             try {
-                // Add to recent searches if not empty
-                if (query.isNotBlank()) {
-                    searchV2Service.addRecentSearch(query)
-                }
-                // Trigger search
-                searchV2Service.updateSearchQuery(query)
+                searchV2Service.updateSearchQuery(recentSearch.query)
+                // Don't re-add to recent searches since it's already there
             } catch (e: Exception) {
-                Log.e(TAG, "Failed to update search query", e)
+                Log.e(TAG, "Failed to execute recent search", e)
             }
         }
     }
     
     /**
-     * Handle recent search selection
-     */
-    fun onRecentSearchSelected(recentSearch: RecentSearch) {
-        Log.d(TAG, "Recent search selected: ${recentSearch.query}")
-        onSearchQueryChanged(recentSearch.query)
-    }
-    
-    /**
-     * Handle suggested search selection
+     * Handle suggested search selection - execute immediately without debounce
      */
     fun onSuggestionSelected(suggestion: SuggestedSearch) {
         Log.d(TAG, "Suggestion selected: ${suggestion.query}")
+        
+        // Execute search immediately (no debounce for deliberate selections)
         viewModelScope.launch {
             try {
                 searchV2Service.selectSuggestion(suggestion)
+                // Add to recent searches since this is a deliberate action
+                searchV2Service.addRecentSearch(suggestion.query)
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to select suggestion", e)
             }
@@ -178,6 +233,9 @@ class SearchV2ViewModel @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         Log.d(TAG, "SearchV2ViewModel cleared")
+        
+        // Cancel any pending search jobs
+        searchJob?.cancel()
     }
 }
 

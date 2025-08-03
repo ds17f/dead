@@ -19,8 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -116,6 +121,27 @@ private fun SearchResultsTopBar(
     onSearchQueryChange: (String) -> Unit,
     onNavigateBack: () -> Unit
 ) {
+    val focusRequester = remember { FocusRequester() }
+    val keyboardController = LocalSoftwareKeyboardController.current
+    
+    // Manage TextFieldValue state for proper cursor positioning
+    var textFieldValue by remember { mutableStateOf(TextFieldValue()) }
+    
+    // Update textFieldValue when searchQuery changes from external sources (like suggestions)
+    LaunchedEffect(searchQuery) {
+        if (textFieldValue.text != searchQuery) {
+            textFieldValue = TextFieldValue(
+                text = searchQuery,
+                selection = TextRange(searchQuery.length) // Place cursor at end
+            )
+        }
+    }
+    
+    // Auto-focus when this composable is first shown
+    LaunchedEffect(Unit) {
+        focusRequester.requestFocus()
+        keyboardController?.show()
+    }
     Surface(
         modifier = Modifier.fillMaxWidth(),
         color = MaterialTheme.colorScheme.surface,
@@ -141,8 +167,11 @@ private fun SearchResultsTopBar(
             
             // Search input - transparent background, compact vertical design with clear button
             OutlinedTextField(
-                value = searchQuery,
-                onValueChange = onSearchQueryChange,
+                value = textFieldValue,
+                onValueChange = { newValue ->
+                    textFieldValue = newValue
+                    onSearchQueryChange(newValue.text)
+                },
                 placeholder = { 
                     Text(
                         text = "What do you want to listen to?",
@@ -150,10 +179,13 @@ private fun SearchResultsTopBar(
                     )
                 },
                 // No leading icon (removed magnifying glass)
-                trailingIcon = if (searchQuery.isNotEmpty()) {
+                trailingIcon = if (textFieldValue.text.isNotEmpty()) {
                     @Composable {
                         IconButton(
-                            onClick = { onSearchQueryChange("") }
+                            onClick = { 
+                                textFieldValue = TextFieldValue()
+                                onSearchQueryChange("")
+                            }
                         ) {
                             Icon(
                                 imageVector = Icons.Outlined.Clear,
@@ -165,7 +197,8 @@ private fun SearchResultsTopBar(
                 } else null,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .offset(x = (-8).dp), // Move the entire text field 8dp to the left
+                    .offset(x = (-8).dp) // Move the entire text field 8dp to the left
+                    .focusRequester(focusRequester), // Auto-focus support
                 singleLine = true,
                 // More compact shape
                 shape = RoundedCornerShape(8.dp),
