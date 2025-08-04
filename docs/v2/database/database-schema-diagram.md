@@ -112,52 +112,53 @@ erDiagram
     }
 
     %% User Activity Tracking
-    LISTEN_SESSIONS_V2 {
-        string sessionId PK 
-        long startedAt 
-        long endedAt 
-        string deviceType 
-        string platform 
-        string contextType 
-        string contextId 
-        long totalDuration 
-        int tracksPlayed 
-        int showsPlayed 
-        float completionRate 
+    CURRENT_PLAYBACK_V2 {
+        string id PK
+        string showId FK
+        string recordingId FK
+        int trackNumber
+        string format
+        int positionSeconds
+        string queueJson
+        int queuePosition
+        boolean shuffleMode
+        string repeatMode
+        string contextType
+        string contextId
+        boolean isActuallyPlaying
+        long lastUpdatedAt
+        long createdAt
+    }
+
+    SHOW_PLAYTHROUGHS_V2 {
+        string playthroughId PK
+        string showId FK
+        string recordingId FK
+        long startedAt
+        long completedAt
+        long totalListenTime
+        int furthestTrack
+        int tracksCompleted
+        float completionPercentage
+        boolean isCompleted
+        string startedFrom
+        string startedFromId
         long createdAt
         long updatedAt
     }
 
     TRACK_PLAYS_V2 {
-        string playId PK 
-        string sessionId FK 
-        string trackId 
-        string recordingId FK 
-        string showId FK 
-        long startedAt 
-        long endedAt 
-        int startPosition 
-        int endPosition 
-        boolean wasCompleted 
-        string playSource 
-        int queuePosition 
-        long createdAt
-        long updatedAt
-    }
-
-    RESUME_POINTS_V2 {
-        string resumeId PK 
-        string trackId 
-        string recordingId FK 
-        string showId FK 
-        int position 
-        string queueJson 
-        int queuePosition 
-        boolean shuffleMode 
-        string repeatMode 
-        string contextType 
-        string contextId 
-        long lastUpdatedAt
+        string playId PK
+        string playthroughId FK
+        int trackNumber
+        string recordingId FK
+        string showId FK
+        long startedAt
+        long endedAt
+        int startPosition
+        int endPosition
+        boolean wasCompleted
+        string playSource
         long createdAt
     }
 
@@ -171,14 +172,15 @@ erDiagram
     
     SHOWS_V2 ||--o{ USER_REVIEWS_V2 : reviewed_in
     
-    LISTEN_SESSIONS_V2 ||--o{ TRACK_PLAYS_V2 : contains
-    TRACKS_V2 ||--o{ TRACK_PLAYS_V2 : played_in
-    SHOWS_V2 ||--o{ TRACK_PLAYS_V2 : played_from
-    RECORDINGS_V2 ||--o{ TRACK_PLAYS_V2 : played_from
+    SHOWS_V2 ||--o| CURRENT_PLAYBACK_V2 : current_show
+    RECORDINGS_V2 ||--o| CURRENT_PLAYBACK_V2 : current_recording
     
-    TRACKS_V2 ||--o| RESUME_POINTS_V2 : current_track
-    SHOWS_V2 ||--o| RESUME_POINTS_V2 : current_show
-    RECORDINGS_V2 ||--o| RESUME_POINTS_V2 : current_recording 
+    SHOWS_V2 ||--o{ SHOW_PLAYTHROUGHS_V2 : listened_to
+    RECORDINGS_V2 ||--o{ SHOW_PLAYTHROUGHS_V2 : played_from
+    
+    SHOW_PLAYTHROUGHS_V2 ||--o{ TRACK_PLAYS_V2 : contains
+    RECORDINGS_V2 ||--o{ TRACK_PLAYS_V2 : played_from
+    SHOWS_V2 ||--o{ TRACK_PLAYS_V2 : played_from 
 ```
 
 ## Key Relationships Summary
@@ -195,9 +197,9 @@ erDiagram
 ### User Data
 6. **Shows** → contain library status (isInLibrary, libraryAddedAt fields)
 7. **User Reviews** → references **Shows** (ratings, notes, tags)
-8. **Listen Session** → contains multiple **Track Plays**
-9. **Track Play** → references specific **Track**, **Recording**, **Show**
-10. **Resume Point** → singleton pointing to current **Track**
+8. **Current Playback** → singleton state for resume functionality
+9. **Show Playthrough** → analytics for each show listening session
+10. **Track Play** → optional detailed tracking per track (linked to playthrough)
 
 ### Search & Performance Indices
 - **Shows**: Indexed by year, yearMonth, date, city, state, venue, songList

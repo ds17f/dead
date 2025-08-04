@@ -212,95 +212,138 @@ data class UserReviewV2Entity(
 
 #### User Activity Tracking
 
-##### Listen Session
-```kotlin
-@Entity(tableName = "listen_sessions_v2")
-data class ListenSessionV2Entity(
-    @PrimaryKey
-    val sessionId: String,        // UUID
-    
-    // Session metadata
-    val startedAt: Long,          // Session start timestamp
-    val endedAt: Long?,           // Session end timestamp (null if ongoing)
-    val deviceType: String?,      // "PHONE", "TABLET", "CAR"
-    val platform: String = "ANDROID",
-    
-    // Context
-    val contextType: String?,     // "SHOW", "COLLECTION", "LIBRARY", "SEARCH"
-    val contextId: String?,       // ID of what triggered the session
-    
-    // Statistics (computed on session end)
-    val totalDuration: Long = 0,  // Total session length in seconds
-    val tracksPlayed: Int = 0,    // Number of tracks played
-    val showsPlayed: Int = 0,     // Number of different shows
-    val completionRate: Float = 0f, // Average completion rate of tracks
-    
-    // Timestamps
-    val createdAt: Long,
-    val updatedAt: Long
-)
-```
+The V2 user activity tracking system provides Spotify-like resume functionality and comprehensive listening analytics. It's designed around intent-based sessions and non-invasive state restoration.
 
-##### Track Play Event
+##### Current Playback State (Resume System)
 ```kotlin
-@Entity(tableName = "track_plays_v2")
-data class TrackPlayV2Entity(
-    @PrimaryKey
-    val playId: String,           // UUID
+@Entity(tableName = "current_playback_v2")
+data class CurrentPlaybackV2Entity(
+    @PrimaryKey 
+    val id: String = "singleton",        // Always "singleton" - one record only
     
-    // Session relationship
-    val sessionId: String,        // FK to listen_sessions_v2
+    // Current position
+    val showId: String?,                 // FK to shows_v2
+    val recordingId: String?,            // FK to recordings_v2  
+    val trackNumber: Int?,               // Current track (1, 2, 3...)
+    val format: String?,                 // "mp3", "flac", "ogg" - critical for track lookup
+    val positionSeconds: Int = 0,        // Position within track
     
-    // Track relationship
-    val trackId: String,          // FK to tracks_v2
-    val recordingId: String,      // FK to recordings_v2 (denormalized for queries)
-    val showId: String,           // FK to shows_v2 (denormalized for queries)
-    
-    // Playback metadata
-    val startedAt: Long,          // When track playback started
-    val endedAt: Long?,           // When track playback ended
-    val startPosition: Int = 0,   // Starting position in seconds
-    val endPosition: Int?,        // Ending position in seconds
-    val wasCompleted: Boolean = false, // Did user listen to >80% of track?
-    
-    // Context
-    val playSource: String,       // "MANUAL", "AUTO_NEXT", "SHUFFLE", "RESUME"
-    val queuePosition: Int?,      // Position in queue when played
-    
-    // Timestamps
-    val createdAt: Long,
-    val updatedAt: Long
-)
-```
-
-##### Resume Points
-```kotlin
-@Entity(tableName = "resume_points_v2")
-data class ResumePointV2Entity(
-    @PrimaryKey
-    val resumeId: String,         // One per user (singleton-like)
-    
-    // Current playback state
-    val trackId: String?,         // FK to tracks_v2
-    val recordingId: String?,     // FK to recordings_v2
-    val showId: String?,          // FK to shows_v2
-    val position: Int = 0,        // Position in seconds
-    
-    // Queue state
-    val queueJson: String?,       // JSON of current queue
-    val queuePosition: Int = 0,   // Current position in queue
+    // Queue state for UI restore
+    val queueJson: String?,              // JSON snapshot of queue
+    val queuePosition: Int = 0,          // Current position in queue
     val shuffleMode: Boolean = false,
-    val repeatMode: String = "NONE", // "NONE", "ONE", "ALL"
+    val repeatMode: String = "NONE",     // "NONE", "ONE", "ALL"
     
-    // Context for resume
-    val contextType: String?,     // How user got to this track
-    val contextId: String?,       // ID of context (show, collection, etc.)
+    // Context for resume (enables app state restoration)
+    val contextType: String?,            // "SHOW", "COLLECTION", "LIBRARY"  
+    val contextId: String?,              // ID of what triggered session
     
-    // Timestamps
+    // State tracking
+    val isActuallyPlaying: Boolean = false, // vs just UI state
     val lastUpdatedAt: Long,
     val createdAt: Long
 )
 ```
+
+##### Show Listening Analytics
+```kotlin
+@Entity(tableName = "show_playthroughs_v2")
+data class ShowPlaythroughV2Entity(
+    @PrimaryKey
+    val playthroughId: String,           // UUID
+    
+    // Show/recording being played
+    val showId: String,                  // FK to shows_v2
+    val recordingId: String,             // FK to recordings_v2
+    
+    // Playthrough session
+    val startedAt: Long,                 // When user started this listen
+    val completedAt: Long?,              // When finished or switched shows
+    val totalListenTime: Long = 0,       // Actual seconds listened (excluding pauses)
+    
+    // Progress tracking
+    val furthestTrack: Int = 1,          // Highest track number reached
+    val tracksCompleted: Int = 0,        // Tracks listened to >80%
+    val completionPercentage: Float = 0f, // Overall show completion
+    val isCompleted: Boolean = false,    // Finished entire show
+    
+    // Context
+    val startedFrom: String?,            // "LIBRARY", "SEARCH", "COLLECTION", etc.
+    val startedFromId: String?,          // ID of starting context
+    
+    // Timestamps
+    val createdAt: Long,
+    val updatedAt: Long
+)
+```
+
+##### Track Play Events (Optional - for detailed analytics)
+```kotlin
+@Entity(tableName = "track_plays_v2")  
+data class TrackPlayV2Entity(
+    @PrimaryKey
+    val playId: String,                  // UUID
+    
+    // Track being played
+    val playthroughId: String,           // FK to show_playthroughs_v2
+    val trackNumber: Int,                // Which track (1, 2, 3...)
+    val recordingId: String,             // FK to recordings_v2 (denormalized)
+    val showId: String,                  // FK to shows_v2 (denormalized)
+    
+    // Play event
+    val startedAt: Long,                 // When track play started
+    val endedAt: Long?,                  // When track play ended
+    val startPosition: Int = 0,          // Starting position in seconds
+    val endPosition: Int?,               // Ending position in seconds
+    val wasCompleted: Boolean = false,   // Listened to >80% of track
+    
+    // Play context
+    val playSource: String,              // "AUTO_NEXT", "USER_SKIP", "RESUME"
+    
+    // Timestamps
+    val createdAt: Long
+)
+```
+
+### User Activity Tracking Architecture
+
+#### Resume System Design
+The resume system uses an intent-based approach rather than time-based sessions:
+
+**Resume vs New Playthrough Triggers:**
+- **Resume**: User hits play on mini-player, clicks resume UI, restarts current track
+- **New Playthrough**: User selects different show, picks specific track of same show
+
+**App Lifecycle Flow:**
+1. **App Start**: Load current state, restore UI (mini-player shows paused at correct position)
+2. **During Playback**: Position updates every 5-10 seconds, immediate updates on track changes
+3. **Queue Changes**: Event-driven updates to queueJson (rare)
+4. **App Background**: Save current state without interfering with other apps
+
+#### Media3 Integration Strategy
+```
+User Actions: UI → QueueManager → Media3
+Media3 Events: Media3 → QueueManager → Database Updates
+
+Queue Management:
+- QueueManager handles business logic (recording selection, format preference)
+- Media3 handles actual playback queue and audio
+- Bidirectional sync keeps both in alignment
+```
+
+#### Analytics Foundation
+The system tracks:
+- **Show completion patterns**: Which shows get finished vs abandoned
+- **Listening preferences**: Preferred years, venues, recording sources
+- **Progress insights**: User's completion rate, favorite songs
+- **Context analysis**: How users discover and navigate content
+
+#### Performance Characteristics
+- **CurrentPlaybackV2Entity**: 1 record (singleton pattern)
+- **ShowPlaythroughV2Entity**: ~1 per show listen session
+- **TrackPlayV2Entity**: Optional detailed tracking (can be disabled for performance)
+
+Position updates are batched (every 5-10 seconds) while critical state changes (track transitions, queue modifications) update immediately.
 
 ## Relationships and Indices
 
