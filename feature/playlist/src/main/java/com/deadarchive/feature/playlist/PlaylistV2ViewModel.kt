@@ -3,6 +3,7 @@ package com.deadarchive.feature.playlist
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.deadarchive.core.design.component.LibraryAction
 import com.deadarchive.feature.playlist.model.PlaylistShowViewModel
 import com.deadarchive.feature.playlist.model.PlaylistTrackViewModel
 import com.deadarchive.feature.playlist.service.PlaylistV2Service
@@ -187,6 +188,115 @@ class PlaylistV2ViewModel @Inject constructor(
                 Log.e(TAG, "Error downloading show", e)
             }
         }
+    }
+    
+    /**
+     * Handle library actions from LibraryButton
+     */
+    fun handleLibraryAction(action: LibraryAction) {
+        when (action) {
+            LibraryAction.ADD_TO_LIBRARY -> addToLibrary()
+            LibraryAction.REMOVE_FROM_LIBRARY -> removeFromLibrary()
+            LibraryAction.REMOVE_WITH_DOWNLOADS -> removeFromLibraryWithDownloads()
+        }
+    }
+    
+    /**
+     * Remove from library
+     */
+    private fun removeFromLibrary() {
+        viewModelScope.launch {
+            try {
+                // In real implementation, would call service method
+                _uiState.value = _uiState.value.copy(isInLibrary = false)
+                Log.d(TAG, "Removed from library")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error removing from library", e)
+            }
+        }
+    }
+    
+    /**
+     * Remove from library with downloads
+     */
+    private fun removeFromLibraryWithDownloads() {
+        viewModelScope.launch {
+            try {
+                // In real implementation, would call service method to remove downloads too
+                _uiState.value = _uiState.value.copy(isInLibrary = false)
+                Log.d(TAG, "Removed from library with downloads")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error removing from library with downloads", e)
+            }
+        }
+    }
+    
+    /**
+     * Share show
+     */
+    fun shareShow() {
+        viewModelScope.launch {
+            try {
+                playlistV2Service.shareShow()
+                Log.d(TAG, "Shared show")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error sharing show", e)
+            }
+        }
+    }
+    
+    /**
+     * Show reviews
+     */
+    fun showReviews() {
+        Log.d(TAG, "Show reviews requested")
+        // In real implementation, would navigate to reviews screen
+    }
+    
+    /**
+     * Play track
+     */
+    fun playTrack(track: PlaylistTrackViewModel) {
+        viewModelScope.launch {
+            try {
+                Log.d(TAG, "Playing track: ${track.title}")
+                playlistV2Service.playTrack(track.number - 1) // Convert to 0-based index
+                
+                // Update UI state to reflect current track
+                val updatedTracks = _uiState.value.trackData.map { existingTrack ->
+                    existingTrack.copy(
+                        isCurrentTrack = existingTrack.number == track.number,
+                        isPlaying = existingTrack.number == track.number
+                    )
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    trackData = updatedTracks,
+                    currentTrackIndex = track.number - 1,
+                    isPlaying = true
+                )
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error playing track", e)
+            }
+        }
+    }
+    
+    /**
+     * Download individual track
+     */
+    fun downloadTrack(track: PlaylistTrackViewModel) {
+        Log.d(TAG, "Download track requested: ${track.title}")
+        // In real implementation, would start track download
+        // For now, just update the track to show downloading state
+        val updatedTracks = _uiState.value.trackData.map { existingTrack ->
+            if (existingTrack.number == track.number) {
+                existingTrack.copy(downloadProgress = 0.1f) // Start downloading
+            } else {
+                existingTrack
+            }
+        }
+        _uiState.value = _uiState.value.copy(trackData = updatedTracks)
     }
 }
 

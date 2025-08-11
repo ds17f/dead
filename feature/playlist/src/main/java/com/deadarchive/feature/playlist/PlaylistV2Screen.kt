@@ -15,6 +15,8 @@ import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.playlist.components.PlaylistV2Header
 import com.deadarchive.feature.playlist.components.PlaylistV2AlbumArt
 import com.deadarchive.feature.playlist.components.PlaylistV2ShowInfo
+import com.deadarchive.feature.playlist.components.PlaylistV2RatingRow
+import com.deadarchive.feature.playlist.components.PlaylistV2TrackList
 import com.deadarchive.feature.playlist.debug.collectPlaylistV2DebugData
 
 /**
@@ -117,36 +119,26 @@ fun PlaylistV2Screen(
                                 onNextShow = viewModel::navigateToNextShow
                             )
                         }
-                    }
-                    
-                    // Placeholder for more components
-                    item {
-                        Card(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(24.dp),
-                            colors = CardDefaults.cardColors(
-                                containerColor = MaterialTheme.colorScheme.primaryContainer
+                        
+                        // Rating and action buttons row
+                        item {
+                            PlaylistV2RatingRow(
+                                showData = showData,
+                                onLibraryAction = viewModel::handleLibraryAction,
+                                onDownloadClick = viewModel::downloadShow,
+                                onShareClick = viewModel::shareShow,
+                                onShowReviews = viewModel::showReviews,
+                                modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp)
                             )
-                        ) {
-                            Column(
-                                modifier = Modifier.padding(16.dp),
-                                horizontalAlignment = Alignment.CenterHorizontally
-                            ) {
-                                Text(
-                                    text = "More components coming soon...",
-                                    style = MaterialTheme.typography.bodyLarge,
-                                    color = MaterialTheme.colorScheme.onPrimaryContainer
-                                )
-                                Spacer(modifier = Modifier.height(8.dp))
-                                Text(
-                                    text = "Tracks: ${uiState.trackData.size}",
-                                    style = MaterialTheme.typography.bodyMedium,
-                                    color = MaterialTheme.colorScheme.onPrimaryContainer
-                                )
-                            }
                         }
                     }
+                    
+                    // Track list
+                    PlaylistV2TrackList(
+                        tracks = uiState.trackData,
+                        onPlayClick = viewModel::playTrack,
+                        onDownloadClick = viewModel::downloadTrack
+                    )
                 }
             }
         }
