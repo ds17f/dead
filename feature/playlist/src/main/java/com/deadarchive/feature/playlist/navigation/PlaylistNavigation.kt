@@ -1,8 +1,13 @@
 package com.deadarchive.feature.playlist.navigation
 
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
+import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.playlist.PlaylistScreen
+import com.deadarchive.feature.playlist.PlaylistV2Screen
 
 fun NavGraphBuilder.playlistScreen(
     onNavigateBack: () -> Unit,
@@ -12,12 +17,29 @@ fun NavGraphBuilder.playlistScreen(
     composable("playlist/{recordingId}?showId={showId}") { backStackEntry ->
         val recordingId = backStackEntry.arguments?.getString("recordingId") ?: ""
         val showId = backStackEntry.arguments?.getString("showId")
-        PlaylistScreen(
-            onNavigateBack = onNavigateBack,
-            onNavigateToPlayer = onNavigateToPlayer,
-            onNavigateToShow = onNavigateToShow,
-            recordingId = recordingId,
-            showId = showId
-        )
+        
+        // Read settings at navigation time, not setup time
+        val settingsViewModel: SettingsViewModel = hiltViewModel()
+        val settings by settingsViewModel.settings.collectAsState()
+        
+        android.util.Log.d("PlaylistNavigation", "=== NAVIGATION TIME === usePlaylistV2: ${settings.usePlaylistV2}, recordingId: $recordingId, showId: $showId")
+        
+        if (settings.usePlaylistV2) {
+            PlaylistV2Screen(
+                onNavigateBack = onNavigateBack,
+                onNavigateToPlayer = onNavigateToPlayer,
+                onNavigateToShow = onNavigateToShow,
+                recordingId = recordingId,
+                showId = showId
+            )
+        } else {
+            PlaylistScreen(
+                onNavigateBack = onNavigateBack,
+                onNavigateToPlayer = onNavigateToPlayer,
+                onNavigateToShow = onNavigateToShow,
+                recordingId = recordingId,
+                showId = showId
+            )
+        }
     }
 }

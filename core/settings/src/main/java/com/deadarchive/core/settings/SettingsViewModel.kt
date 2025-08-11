@@ -309,6 +309,18 @@ class SettingsViewModel @Inject constructor(
     }
     
     /**
+     * Update the use Playlist V2 setting
+     */
+    fun updateUsePlaylistV2(enabled: Boolean) {
+        configurationService.updateUsePlaylistV2(
+            enabled = enabled,
+            coroutineScope = viewModelScope,
+            onStateChange = { _uiState.value = it },
+            currentState = _uiState.value
+        )
+    }
+    
+    /**
      * Backup the user's library and settings
      */
     fun backupLibrary() {

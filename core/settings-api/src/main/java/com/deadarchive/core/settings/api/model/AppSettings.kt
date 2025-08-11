@@ -40,6 +40,7 @@ data class AppSettings(
     val usePlayerV2: Boolean = false,
     val useSearchV2: Boolean = false,
     val useHomeV2: Boolean = false,
+    val usePlaylistV2: Boolean = false,
     
     // Update settings
     val autoUpdateCheckEnabled: Boolean = true,

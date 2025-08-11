@@ -149,6 +149,7 @@ fun SettingsScreen(
                 onUpdateUsePlayerV2 = viewModel::updateUsePlayerV2,
                 onUpdateUseSearchV2 = viewModel::updateUseSearchV2,
                 onUpdateUseHomeV2 = viewModel::updateUseHomeV2,
+                onUpdateUsePlaylistV2 = viewModel::updateUsePlaylistV2,
                 onResetSettings = viewModel::resetToDefaults
             )
         }
@@ -293,6 +294,7 @@ private fun DeveloperOptionsCard(
     onUpdateUsePlayerV2: (Boolean) -> Unit,
     onUpdateUseSearchV2: (Boolean) -> Unit,
     onUpdateUseHomeV2: (Boolean) -> Unit,
+    onUpdateUsePlaylistV2: (Boolean) -> Unit,
     onResetSettings: () -> Unit
 ) {
     Card(
@@ -443,6 +445,34 @@ private fun DeveloperOptionsCard(
                 Switch(
                     checked = settings.useHomeV2,
                     onCheckedChange = onUpdateUseHomeV2
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // PlaylistV2 Setting
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "PlaylistV2 (Preview)",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Enable the redesigned playlist interface (UI-first development)",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.usePlaylistV2,
+                    onCheckedChange = onUpdateUsePlaylistV2
                 )
             }
             

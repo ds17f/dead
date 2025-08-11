@@ -247,6 +247,17 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
+    override suspend fun updateUsePlaylistV2(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating use Playlist V2 to: $enabled")
+            settingsDataStore.updateUsePlaylistV2(enabled)
+            Log.d(TAG, "Use Playlist V2 updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update use Playlist V2", e)
+            throw e
+        }
+    }
+    
     // Update-related methods
     
     override suspend fun updateLastUpdateCheck(timestamp: Long) {

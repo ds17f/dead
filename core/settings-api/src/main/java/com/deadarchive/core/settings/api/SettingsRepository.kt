@@ -125,6 +125,12 @@ interface SettingsRepository {
      */
     suspend fun updateUseHomeV2(enabled: Boolean)
     
+    /**
+     * Update the Playlist V2 interface setting
+     * @param enabled True to use Playlist V2 interface, false to use legacy playlist
+     */
+    suspend fun updateUsePlaylistV2(enabled: Boolean)
+    
     // Update-related methods
     
     /**

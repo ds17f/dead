@@ -87,7 +87,7 @@ fun DeadArchiveNavigation(
         
         // Playlist screen
         try {
-            Log.d(TAG, "Setting up playlist screen route")
+            Log.d(TAG, "Setting up playlist screen route - usePlaylistV2: ${settings.usePlaylistV2}")
             playlistScreen(
                 onNavigateBack = { 
                     Log.d(TAG, "Playlist: navigating back")

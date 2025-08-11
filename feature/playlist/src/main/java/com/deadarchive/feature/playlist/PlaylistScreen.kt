@@ -78,6 +78,7 @@ fun PlaylistScreen(
     settingsViewModel: SettingsViewModel = hiltViewModel(),
     reviewViewModel: ReviewViewModel = hiltViewModel()
 ) {
+    Log.d("PlaylistScreen", "=== ORIGINAL PLAYLIST SCREEN LOADED === recordingId: $recordingId, showId: $showId")
     
     // Create RecordingSelectionService manually since it has no dependencies
     val recordingSelectionService = remember { RecordingSelectionService() }
