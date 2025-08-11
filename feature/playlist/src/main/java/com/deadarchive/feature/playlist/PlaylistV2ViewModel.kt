@@ -251,6 +251,61 @@ class PlaylistV2ViewModel @Inject constructor(
     fun showReviews() {
         Log.d(TAG, "Show reviews requested")
         // In real implementation, would navigate to reviews screen
+        // For V2 integration, this would coordinate with review service
+    }
+    
+    /**
+     * Show setlist
+     */
+    fun showSetlist() {
+        Log.d(TAG, "Show setlist requested")
+        // In real implementation, would open setlist bottom sheet
+        viewModelScope.launch {
+            try {
+                playlistV2Service.loadSetlist()
+                Log.d(TAG, "Setlist loaded")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading setlist", e)
+            }
+        }
+    }
+    
+    /**
+     * Show menu (for dropdown actions)
+     */
+    fun showMenu() {
+        Log.d(TAG, "Show menu requested")
+        // In real implementation, would show dropdown menu state
+        // This would typically update a showMenu boolean in UiState
+    }
+    
+    /**
+     * Toggle playback (for main play/pause button)
+     */
+    fun togglePlayback() {
+        val currentState = _uiState.value
+        Log.d(TAG, "Toggle playback - currently playing: ${currentState.isPlaying}")
+        
+        viewModelScope.launch {
+            try {
+                if (currentState.isPlaying) {
+                    playlistV2Service.pause()
+                    _uiState.value = currentState.copy(isPlaying = false)
+                } else {
+                    if (currentState.currentTrackIndex >= 0) {
+                        // Resume current track
+                        playlistV2Service.resume()
+                    } else {
+                        // Start playing first track
+                        playlistV2Service.playTrack(0)
+                        _uiState.value = currentState.copy(currentTrackIndex = 0)
+                    }
+                    _uiState.value = _uiState.value.copy(isPlaying = true)
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Error toggling playback", e)
+            }
+        }
     }
     
     /**

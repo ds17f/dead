@@ -15,7 +15,8 @@ import com.deadarchive.core.settings.SettingsViewModel
 import com.deadarchive.feature.playlist.components.PlaylistV2Header
 import com.deadarchive.feature.playlist.components.PlaylistV2AlbumArt
 import com.deadarchive.feature.playlist.components.PlaylistV2ShowInfo
-import com.deadarchive.feature.playlist.components.PlaylistV2RatingRow
+import com.deadarchive.feature.playlist.components.PlaylistV2InteractiveRating
+import com.deadarchive.feature.playlist.components.PlaylistV2ActionRow
 import com.deadarchive.feature.playlist.components.PlaylistV2TrackList
 import com.deadarchive.feature.playlist.debug.collectPlaylistV2DebugData
 
@@ -120,15 +121,27 @@ fun PlaylistV2Screen(
                             )
                         }
                         
-                        // Rating and action buttons row
+                        // Interactive rating display - always show
                         item {
-                            PlaylistV2RatingRow(
+                            PlaylistV2InteractiveRating(
                                 showData = showData,
-                                onLibraryAction = viewModel::handleLibraryAction,
-                                onDownloadClick = viewModel::downloadShow,
-                                onShareClick = viewModel::shareShow,
                                 onShowReviews = viewModel::showReviews,
-                                modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp)
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(horizontal = 24.dp, vertical = 8.dp)
+                            )
+                        }
+                        
+                        // Action buttons row
+                        item {
+                            PlaylistV2ActionRow(
+                                showData = showData,
+                                isPlaying = uiState.isPlaying,
+                                onLibraryAction = viewModel::handleLibraryAction,
+                                onDownload = viewModel::downloadShow,
+                                onShowSetlist = viewModel::showSetlist,
+                                onShowMenu = viewModel::showMenu,
+                                onTogglePlayback = viewModel::togglePlayback
                             )
                         }
                     }

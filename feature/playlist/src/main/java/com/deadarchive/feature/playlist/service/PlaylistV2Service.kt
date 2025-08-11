@@ -57,4 +57,19 @@ interface PlaylistV2Service {
      * Share current show
      */
     suspend fun shareShow()
+    
+    /**
+     * Load setlist for current show
+     */
+    suspend fun loadSetlist()
+    
+    /**
+     * Pause playback
+     */
+    suspend fun pause()
+    
+    /**
+     * Resume playback
+     */
+    suspend fun resume()
 }

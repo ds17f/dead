@@ -156,6 +156,12 @@ object IconResources {
         
         @Composable
         fun MusicNote() = customIcon(R.drawable.ic_music_note)
+        
+        @Composable
+        fun PlayCircleFilled() = customIcon(R.drawable.ic_play_circle_filled)
+        
+        @Composable
+        fun PauseCircleFilled() = customIcon(R.drawable.ic_pause_circle_filled)
     }
     
     // Status icons are in the Status object category

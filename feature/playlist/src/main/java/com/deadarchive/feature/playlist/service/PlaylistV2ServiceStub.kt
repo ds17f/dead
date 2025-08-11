@@ -175,4 +175,22 @@ class PlaylistV2ServiceStub @Inject constructor() : PlaylistV2Service {
             PlaylistTrackViewModel(18, "Morning Dew", "13:05", "FLAC", isDownloaded = true)
         )
     }
+    
+    override suspend fun loadSetlist() {
+        Log.d(TAG, "Loading setlist for show: $currentShowDate")
+        // In real implementation, would load setlist data
+        // Stub just logs the action
+    }
+    
+    override suspend fun pause() {
+        Log.d(TAG, "Pausing playback")
+        // In real implementation, would pause media player
+        // Stub just logs the action
+    }
+    
+    override suspend fun resume() {
+        Log.d(TAG, "Resuming playback")
+        // In real implementation, would resume media player
+        // Stub just logs the action
+    }
 }
