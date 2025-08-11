@@ -15,6 +15,17 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 /**
+ * Review data for V2 architecture
+ */
+data class Review(
+    val username: String,
+    val rating: Int,
+    val stars: Double,
+    val reviewText: String,
+    val reviewDate: String
+)
+
+/**
  * PlaylistV2ViewModel - Clean ViewModel for PlaylistV2 UI
  * 
  * Coordinates between UI components and the PlaylistV2Service.
@@ -246,12 +257,58 @@ class PlaylistV2ViewModel @Inject constructor(
     }
     
     /**
-     * Show reviews
+     * Show reviews (opens review details modal)
      */
     fun showReviews() {
         Log.d(TAG, "Show reviews requested")
-        // In real implementation, would navigate to reviews screen
-        // For V2 integration, this would coordinate with review service
+        _uiState.value = _uiState.value.copy(showReviewDetails = true)
+        loadReviews()
+    }
+    
+    /**
+     * Hide reviews (closes review details modal)
+     */
+    fun hideReviewDetails() {
+        Log.d(TAG, "Hide reviews requested")
+        _uiState.value = _uiState.value.copy(
+            showReviewDetails = false,
+            reviews = emptyList(),
+            ratingDistribution = emptyMap(),
+            reviewsError = null
+        )
+    }
+    
+    /**
+     * Load reviews from service
+     */
+    private fun loadReviews() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    reviewsLoading = true,
+                    reviewsError = null
+                )
+                
+                // Get reviews from service
+                val reviews = playlistV2Service.getCurrentReviews()
+                val ratingDistribution = playlistV2Service.getRatingDistribution()
+                
+                _uiState.value = _uiState.value.copy(
+                    reviewsLoading = false,
+                    reviews = reviews,
+                    ratingDistribution = ratingDistribution
+                )
+                
+                Log.d(TAG, "Reviews loaded: ${reviews.size} reviews")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading reviews", e)
+                _uiState.value = _uiState.value.copy(
+                    reviewsLoading = false,
+                    reviewsError = "Failed to load reviews: ${e.message}"
+                )
+            }
+        }
     }
     
     /**
@@ -366,5 +423,11 @@ data class PlaylistV2UiState(
     val currentTrackIndex: Int = -1,
     val isPlaying: Boolean = false,
     val isInLibrary: Boolean = false,
-    val isNavigationLoading: Boolean = false
+    val isNavigationLoading: Boolean = false,
+    // Review details modal state
+    val showReviewDetails: Boolean = false,
+    val reviewsLoading: Boolean = false,
+    val reviews: List<Review> = emptyList(),
+    val ratingDistribution: Map<Int, Int> = emptyMap(),
+    val reviewsError: String? = null
 )

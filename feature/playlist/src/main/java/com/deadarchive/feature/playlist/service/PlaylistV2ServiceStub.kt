@@ -193,4 +193,61 @@ class PlaylistV2ServiceStub @Inject constructor() : PlaylistV2Service {
         // In real implementation, would resume media player
         // Stub just logs the action
     }
+    
+    override suspend fun getCurrentReviews(): List<com.deadarchive.feature.playlist.Review> {
+        Log.d(TAG, "Getting current reviews")
+        // Simulate loading delay
+        kotlinx.coroutines.delay(800)
+        
+        // Return mock review data for Cornell '77
+        return listOf(
+            com.deadarchive.feature.playlist.Review(
+                username = "DeadHead87",
+                rating = 5,
+                stars = 5.0,
+                reviewText = "This is the holy grail of Dead shows! The 'Fire on the Mountain' from this show is absolutely transcendent. Jerry's guitar work throughout the entire concert is some of his finest. If you're new to the Dead, start here.",
+                reviewDate = "March 15, 2023"
+            ),
+            com.deadarchive.feature.playlist.Review(
+                username = "GratefulListener",
+                rating = 5,
+                stars = 5.0,
+                reviewText = "Cornell '77 - need I say more? The sound quality is pristine, the performance is legendary. Every song flows perfectly into the next. This recording captures lightning in a bottle.",
+                reviewDate = "January 8, 2023"
+            ),
+            com.deadarchive.feature.playlist.Review(
+                username = "ArchiveFan",
+                rating = 4,
+                stars = 4.0,
+                reviewText = "Fantastic show with incredible energy. The 'Scarlet > Fire' is worth the price of admission alone. Some minor sound issues during the first set, but overall this is essential listening.",
+                reviewDate = "November 22, 2022"
+            ),
+            com.deadarchive.feature.playlist.Review(
+                username = "TaperTom",
+                rating = 5,
+                stars = 5.0,
+                reviewText = "I was actually there that night in Barton Hall! This recording brings back all the magic from that incredible evening. The band was absolutely on fire - pun intended!",
+                reviewDate = "May 8, 2022"
+            ),
+            com.deadarchive.feature.playlist.Review(
+                username = "MusicLover42",
+                rating = 4,
+                stars = 4.0,
+                reviewText = "Beautiful recording of a legendary show. The 'Morning Dew' encore gives me chills every time. This is why the Grateful Dead were so special - they could create pure magic on stage.",
+                reviewDate = "September 14, 2022"
+            )
+        )
+    }
+    
+    override suspend fun getRatingDistribution(): Map<Int, Int> {
+        Log.d(TAG, "Getting rating distribution")
+        // Return mock rating distribution for Cornell '77 (heavily skewed toward 5 stars)
+        return mapOf(
+            5 to 156,  // Most reviews are 5 stars
+            4 to 23,   // Some 4 stars
+            3 to 4,    // Very few 3 stars
+            2 to 1,    // Almost no 2 stars
+            1 to 0     // No 1 star reviews
+        )
+    }
 }

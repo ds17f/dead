@@ -72,4 +72,14 @@ interface PlaylistV2Service {
      * Resume playback
      */
     suspend fun resume()
+    
+    /**
+     * Get current reviews for the loaded show/recording
+     */
+    suspend fun getCurrentReviews(): List<com.deadarchive.feature.playlist.Review>
+    
+    /**
+     * Get rating distribution for the current show/recording
+     */
+    suspend fun getRatingDistribution(): Map<Int, Int>
 }

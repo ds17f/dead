@@ -18,6 +18,7 @@ import com.deadarchive.feature.playlist.components.PlaylistV2ShowInfo
 import com.deadarchive.feature.playlist.components.PlaylistV2InteractiveRating
 import com.deadarchive.feature.playlist.components.PlaylistV2ActionRow
 import com.deadarchive.feature.playlist.components.PlaylistV2TrackList
+import com.deadarchive.feature.playlist.components.PlaylistV2ReviewDetailsSheet
 import com.deadarchive.feature.playlist.debug.collectPlaylistV2DebugData
 
 /**
@@ -174,6 +175,18 @@ fun PlaylistV2Screen(
             debugData = debugData,
             isVisible = showDebugPanel,
             onDismiss = { showDebugPanel = false }
+        )
+    }
+    
+    // Review Details Modal
+    if (uiState.showReviewDetails) {
+        PlaylistV2ReviewDetailsSheet(
+            showData = uiState.showData,
+            reviews = uiState.reviews,
+            ratingDistribution = uiState.ratingDistribution,
+            isLoading = uiState.reviewsLoading,
+            errorMessage = uiState.reviewsError,
+            onDismiss = viewModel::hideReviewDetails
         )
     }
 }
