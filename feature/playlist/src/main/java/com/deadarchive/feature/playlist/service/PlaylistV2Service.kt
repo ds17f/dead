@@ -82,4 +82,24 @@ interface PlaylistV2Service {
      * Get rating distribution for the current show/recording
      */
     suspend fun getRatingDistribution(): Map<Int, Int>
+    
+    /**
+     * Get recording options for the current show
+     */
+    suspend fun getRecordingOptions(): com.deadarchive.feature.playlist.RecordingOptionsV2Result
+    
+    /**
+     * Select a different recording for the current show
+     */
+    suspend fun selectRecording(recordingId: String)
+    
+    /**
+     * Set a recording as the default for this show
+     */
+    suspend fun setRecordingAsDefault(recordingId: String)
+    
+    /**
+     * Reset to the recommended recording for this show
+     */
+    suspend fun resetToRecommended()
 }

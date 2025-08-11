@@ -19,6 +19,8 @@ import com.deadarchive.feature.playlist.components.PlaylistV2InteractiveRating
 import com.deadarchive.feature.playlist.components.PlaylistV2ActionRow
 import com.deadarchive.feature.playlist.components.PlaylistV2TrackList
 import com.deadarchive.feature.playlist.components.PlaylistV2ReviewDetailsSheet
+import com.deadarchive.feature.playlist.components.PlaylistV2MenuSheet
+import com.deadarchive.feature.playlist.components.PlaylistV2RecordingSelectionSheet
 import com.deadarchive.feature.playlist.debug.collectPlaylistV2DebugData
 
 /**
@@ -187,6 +189,35 @@ fun PlaylistV2Screen(
             isLoading = uiState.reviewsLoading,
             errorMessage = uiState.reviewsError,
             onDismiss = viewModel::hideReviewDetails
+        )
+    }
+    
+    // Menu Bottom Sheet
+    if (uiState.showMenu) {
+        uiState.showData?.let { showData ->
+            PlaylistV2MenuSheet(
+                showDate = showData.displayDate,
+                venue = showData.venue,
+                location = showData.location,
+                onShareClick = { 
+                    // Share will be implemented in future iteration with proper model conversion
+                },
+                onChooseRecordingClick = viewModel::chooseRecording,
+                onDismiss = viewModel::hideMenu
+            )
+        }
+    }
+    
+    // Recording Selection Modal
+    if (uiState.recordingSelection.isVisible) {
+        PlaylistV2RecordingSelectionSheet(
+            state = uiState.recordingSelection,
+            onRecordingSelected = viewModel::selectRecording,
+            onSetAsDefault = viewModel::setRecordingAsDefault,
+            onResetToRecommended = if (uiState.recordingSelection.hasRecommended) {
+                { viewModel.resetToRecommended() }
+            } else null,
+            onDismiss = viewModel::hideRecordingSelection
         )
     }
 }

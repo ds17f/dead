@@ -26,6 +26,43 @@ data class Review(
 )
 
 /**
+ * RecordingOptionV2ViewModel - UI representation of recording option
+ * V2 View Model (UI-specific) without V1 domain model dependencies
+ */
+data class RecordingOptionV2ViewModel(
+    val identifier: String,
+    val source: String,
+    val title: String,
+    val rating: Float?,
+    val reviewCount: Int?,
+    val isSelected: Boolean,
+    val isRecommended: Boolean,
+    val matchReason: String?
+)
+
+/**
+ * RecordingSelectionV2State - UI state for recording selection modal
+ */
+data class RecordingSelectionV2State(
+    val isVisible: Boolean = false,
+    val showTitle: String = "",
+    val currentRecording: RecordingOptionV2ViewModel? = null,
+    val alternativeRecordings: List<RecordingOptionV2ViewModel> = emptyList(),
+    val hasRecommended: Boolean = false,
+    val isLoading: Boolean = false,
+    val errorMessage: String? = null
+)
+
+/**
+ * RecordingOptionsV2Result - Result from service containing recording options
+ */
+data class RecordingOptionsV2Result(
+    val currentRecording: RecordingOptionV2ViewModel?,
+    val alternativeRecordings: List<RecordingOptionV2ViewModel>,
+    val hasRecommended: Boolean
+)
+
+/**
  * PlaylistV2ViewModel - Clean ViewModel for PlaylistV2 UI
  * 
  * Coordinates between UI components and the PlaylistV2Service.
@@ -332,8 +369,139 @@ class PlaylistV2ViewModel @Inject constructor(
      */
     fun showMenu() {
         Log.d(TAG, "Show menu requested")
-        // In real implementation, would show dropdown menu state
-        // This would typically update a showMenu boolean in UiState
+        _uiState.value = _uiState.value.copy(showMenu = true)
+    }
+    
+    /**
+     * Hide menu
+     */
+    fun hideMenu() {
+        Log.d(TAG, "Hide menu requested")
+        _uiState.value = _uiState.value.copy(showMenu = false)
+    }
+    
+    /**
+     * Choose recording (opens recording selection modal)
+     */
+    fun chooseRecording() {
+        Log.d(TAG, "Choose recording requested")
+        hideMenu()
+        showRecordingSelection()
+    }
+    
+    /**
+     * Show recording selection modal
+     */
+    fun showRecordingSelection() {
+        Log.d(TAG, "Show recording selection requested")
+        viewModelScope.launch {
+            try {
+                // Set loading state
+                _uiState.value = _uiState.value.copy(
+                    recordingSelection = _uiState.value.recordingSelection.copy(
+                        isVisible = true,
+                        isLoading = true,
+                        errorMessage = null
+                    )
+                )
+                
+                // Load recording options from service
+                val showTitle = _uiState.value.showData?.displayDate ?: "Unknown Show"
+                val recordingOptions = playlistV2Service.getRecordingOptions()
+                
+                _uiState.value = _uiState.value.copy(
+                    recordingSelection = _uiState.value.recordingSelection.copy(
+                        showTitle = showTitle,
+                        currentRecording = recordingOptions.currentRecording,
+                        alternativeRecordings = recordingOptions.alternativeRecordings,
+                        hasRecommended = recordingOptions.hasRecommended,
+                        isLoading = false
+                    )
+                )
+                
+                Log.d(TAG, "Recording selection loaded: ${recordingOptions.alternativeRecordings.size} alternatives")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error loading recording options", e)
+                _uiState.value = _uiState.value.copy(
+                    recordingSelection = _uiState.value.recordingSelection.copy(
+                        isLoading = false,
+                        errorMessage = "Failed to load recordings: ${e.message}"
+                    )
+                )
+            }
+        }
+    }
+    
+    /**
+     * Hide recording selection modal
+     */
+    fun hideRecordingSelection() {
+        Log.d(TAG, "Hide recording selection requested")
+        _uiState.value = _uiState.value.copy(
+            recordingSelection = RecordingSelectionV2State()
+        )
+    }
+    
+    /**
+     * Select a recording
+     */
+    fun selectRecording(recordingId: String) {
+        Log.d(TAG, "Recording selected: $recordingId")
+        viewModelScope.launch {
+            try {
+                playlistV2Service.selectRecording(recordingId)
+                
+                // Update selection state
+                val currentSelection = _uiState.value.recordingSelection
+                val updatedCurrent = currentSelection.currentRecording?.copy(isSelected = false)
+                val updatedAlternatives = currentSelection.alternativeRecordings.map { option ->
+                    option.copy(isSelected = option.identifier == recordingId)
+                }
+                
+                _uiState.value = _uiState.value.copy(
+                    recordingSelection = currentSelection.copy(
+                        currentRecording = updatedCurrent,
+                        alternativeRecordings = updatedAlternatives
+                    )
+                )
+                
+                Log.d(TAG, "Recording selection updated")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Error selecting recording", e)
+            }
+        }
+    }
+    
+    /**
+     * Set recording as default
+     */
+    fun setRecordingAsDefault(recordingId: String) {
+        Log.d(TAG, "Set recording as default: $recordingId")
+        viewModelScope.launch {
+            try {
+                playlistV2Service.setRecordingAsDefault(recordingId)
+                Log.d(TAG, "Recording set as default successfully")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error setting recording as default", e)
+            }
+        }
+    }
+    
+    /**
+     * Reset to recommended recording
+     */
+    fun resetToRecommended() {
+        Log.d(TAG, "Reset to recommended recording requested")
+        viewModelScope.launch {
+            try {
+                playlistV2Service.resetToRecommended()
+                Log.d(TAG, "Reset to recommended successfully")
+            } catch (e: Exception) {
+                Log.e(TAG, "Error resetting to recommended", e)
+            }
+        }
     }
     
     /**
@@ -429,5 +597,9 @@ data class PlaylistV2UiState(
     val reviewsLoading: Boolean = false,
     val reviews: List<Review> = emptyList(),
     val ratingDistribution: Map<Int, Int> = emptyMap(),
-    val reviewsError: String? = null
+    val reviewsError: String? = null,
+    // Menu state
+    val showMenu: Boolean = false,
+    // Recording selection modal state
+    val recordingSelection: RecordingSelectionV2State = RecordingSelectionV2State()
 )

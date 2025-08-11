@@ -250,4 +250,92 @@ class PlaylistV2ServiceStub @Inject constructor() : PlaylistV2Service {
             1 to 0     // No 1 star reviews
         )
     }
+    
+    override suspend fun getRecordingOptions(): com.deadarchive.feature.playlist.RecordingOptionsV2Result {
+        Log.d(TAG, "Getting recording options for Cornell '77")
+        kotlinx.coroutines.delay(600) // Simulate loading
+        
+        // Current recording (the one currently playing)
+        val currentRecording = com.deadarchive.feature.playlist.RecordingOptionV2ViewModel(
+            identifier = "gd1977-05-08.sbd.miller.97065.flac16",
+            source = "Miller SBD",
+            title = "16-bit FLAC • Soundboard • Excellent quality",
+            rating = 4.8f,
+            reviewCount = 184,
+            isSelected = true,
+            isRecommended = false,
+            matchReason = "Currently Playing"
+        )
+        
+        // Alternative recordings
+        val alternatives = listOf(
+            com.deadarchive.feature.playlist.RecordingOptionV2ViewModel(
+                identifier = "gd1977-05-08.aud.bershaw.97066.flac16",
+                source = "Bershaw AUD",
+                title = "16-bit FLAC • Audience • Very good quality",
+                rating = 4.2f,
+                reviewCount = 67,
+                isSelected = false,
+                isRecommended = true,
+                matchReason = "Recommended"
+            ),
+            com.deadarchive.feature.playlist.RecordingOptionV2ViewModel(
+                identifier = "gd1977-05-08.mtx.seamons.1285.flac16",
+                source = "Seamons MTX",
+                title = "16-bit FLAC • Matrix • Excellent soundstage",
+                rating = 4.6f,
+                reviewCount = 92,
+                isSelected = false,
+                isRecommended = false,
+                matchReason = "High Rating (4.6)"
+            ),
+            com.deadarchive.feature.playlist.RecordingOptionV2ViewModel(
+                identifier = "gd1977-05-08.sbd.unknown.12083.flac24",
+                source = "Unknown SBD",
+                title = "24-bit FLAC • Soundboard • Pristine quality",
+                rating = 3.9f,
+                reviewCount = 31,
+                isSelected = false,
+                isRecommended = false,
+                matchReason = "24-bit Quality"
+            ),
+            com.deadarchive.feature.playlist.RecordingOptionV2ViewModel(
+                identifier = "gd1977-05-08.aud.kotton.97067.shnf",
+                source = "Kotton AUD",
+                title = "SHN • Audience • Good quality with crowd energy",
+                rating = 3.7f,
+                reviewCount = 23,
+                isSelected = false,
+                isRecommended = false,
+                matchReason = "Crowd Energy"
+            )
+        )
+        
+        return com.deadarchive.feature.playlist.RecordingOptionsV2Result(
+            currentRecording = currentRecording,
+            alternativeRecordings = alternatives,
+            hasRecommended = true
+        )
+    }
+    
+    override suspend fun selectRecording(recordingId: String) {
+        Log.d(TAG, "Selecting recording: $recordingId")
+        kotlinx.coroutines.delay(200) // Simulate processing
+        // In real implementation, this would switch to the new recording
+        // For stub, just log the action
+    }
+    
+    override suspend fun setRecordingAsDefault(recordingId: String) {
+        Log.d(TAG, "Setting recording as default: $recordingId")
+        kotlinx.coroutines.delay(300) // Simulate saving preference
+        // In real implementation, this would save user preference for this show
+        // For stub, just log the action
+    }
+    
+    override suspend fun resetToRecommended() {
+        Log.d(TAG, "Resetting to recommended recording")
+        kotlinx.coroutines.delay(200) // Simulate processing
+        // In real implementation, this would clear user preferences and use recommended recording
+        // For stub, just log the action
+    }
 }
