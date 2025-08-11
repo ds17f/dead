@@ -2,26 +2,26 @@ package com.deadarchive.feature.playlist
 
 import android.util.Log
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.DebugActivator
 import com.deadarchive.core.design.component.DebugBottomSheet
 import com.deadarchive.core.settings.SettingsViewModel
+import com.deadarchive.feature.playlist.components.PlaylistV2Header
+import com.deadarchive.feature.playlist.components.PlaylistV2AlbumArt
+import com.deadarchive.feature.playlist.components.PlaylistV2ShowInfo
 import com.deadarchive.feature.playlist.debug.collectPlaylistV2DebugData
 
 /**
- * PlaylistV2Screen - Minimal V2 playlist interface
+ * PlaylistV2Screen - Clean V2 playlist interface
  * 
- * Following V2 architecture patterns established by PlayerV2 and SearchV2.
- * This is the foundation for the new playlist interface.
+ * Recreation of PlaylistV1 using V2 architecture patterns with
+ * focused components and clean service integration.
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -31,11 +31,18 @@ fun PlaylistV2Screen(
     onNavigateToShow: (String, String) -> Unit = { _, _ -> },
     recordingId: String? = null,
     showId: String? = null,
+    viewModel: PlaylistV2ViewModel = hiltViewModel(),
     settingsViewModel: SettingsViewModel = hiltViewModel()
 ) {
     Log.d("PlaylistV2Screen", "=== PLAYLISTV2 SCREEN LOADED === recordingId: $recordingId, showId: $showId")
     
+    val uiState by viewModel.uiState.collectAsState()
     val settings by settingsViewModel.settings.collectAsState()
+    
+    // Load show data when screen opens
+    LaunchedEffect(showId) {
+        viewModel.loadShow(showId)
+    }
     
     // Debug panel state - only when debug mode is enabled
     var showDebugPanel by remember { mutableStateOf(false) }
@@ -47,96 +54,99 @@ fun PlaylistV2Screen(
     
     Box(modifier = Modifier.fillMaxSize()) {
         
-        // Main content
-        Scaffold(
-            topBar = {
-                TopAppBar(
-                    title = { 
-                        Text(
-                            text = "PlaylistV2 (Preview)",
-                            fontWeight = FontWeight.Medium
-                        )
-                    },
-                    navigationIcon = {
-                        IconButton(onClick = onNavigateBack) {
-                            Icon(
-                                imageVector = Icons.Default.ArrowBack,
-                                contentDescription = "Back"
-                            )
-                        }
-                    }
-                )
-            }
-        ) { paddingValues ->
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(paddingValues)
-                    .padding(16.dp),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                
-                // Placeholder content
-                Card(
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = CardDefaults.cardColors(
-                        containerColor = MaterialTheme.colorScheme.primaryContainer
-                    )
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(24.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
-                        Text(
-                            text = "🎵",
-                            style = MaterialTheme.typography.displayMedium
-                        )
-                        Spacer(modifier = Modifier.height(16.dp))
-                        Text(
-                            text = "PlaylistV2",
-                            style = MaterialTheme.typography.headlineMedium,
-                            fontWeight = FontWeight.Bold
-                        )
-                        Spacer(modifier = Modifier.height(8.dp))
-                        Text(
-                            text = "New playlist interface coming soon!",
-                            style = MaterialTheme.typography.bodyLarge,
-                            textAlign = TextAlign.Center,
-                            color = MaterialTheme.colorScheme.onPrimaryContainer
-                        )
-                        
-                        if (recordingId != null || showId != null) {
-                            Spacer(modifier = Modifier.height(16.dp))
-                            Text(
-                                text = "Recording ID: ${recordingId ?: "None"}\nShow ID: ${showId ?: "None"}",
-                                style = MaterialTheme.typography.bodySmall,
-                                textAlign = TextAlign.Center,
-                                color = MaterialTheme.colorScheme.onPrimaryContainer
-                            )
+        // Back arrow overlay at the top
+        PlaylistV2Header(
+            onNavigateBack = onNavigateBack,
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(16.dp)
+        )
+        
+        // Main content - Spotify-style LazyColumn
+        LazyColumn(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            when {
+                uiState.isLoading -> {
+                    item {
+                        Box(
+                            modifier = Modifier.fillParentMaxSize(),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            CircularProgressIndicator()
                         }
                     }
                 }
                 
-                Spacer(modifier = Modifier.height(24.dp))
-                
-                // Action buttons (placeholders)
-                OutlinedButton(
-                    onClick = onNavigateToPlayer,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Text("Go to Player")
+                uiState.error != null -> {
+                    item {
+                        Box(
+                            modifier = Modifier.fillParentMaxSize(),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Column(
+                                horizontalAlignment = Alignment.CenterHorizontally,
+                                verticalArrangement = Arrangement.spacedBy(16.dp)
+                            ) {
+                                Text(
+                                    text = "Error: ${uiState.error}",
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    color = MaterialTheme.colorScheme.error
+                                )
+                                Button(onClick = { viewModel.loadShow(showId) }) {
+                                    Text("Retry")
+                                }
+                            }
+                        }
+                    }
                 }
                 
-                Spacer(modifier = Modifier.height(8.dp))
-                
-                OutlinedButton(
-                    onClick = onNavigateBack,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Text("Back to V1 Playlist")
+                else -> {
+                    // Album cover image - fixed size at top
+                    item {
+                        PlaylistV2AlbumArt()
+                    }
+                    
+                    // Show info section - with navigation buttons
+                    uiState.showData?.let { showData ->
+                        item {
+                            PlaylistV2ShowInfo(
+                                showData = showData,
+                                isNavigationLoading = uiState.isNavigationLoading,
+                                onPreviousShow = viewModel::navigateToPreviousShow,
+                                onNextShow = viewModel::navigateToNextShow
+                            )
+                        }
+                    }
+                    
+                    // Placeholder for more components
+                    item {
+                        Card(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(24.dp),
+                            colors = CardDefaults.cardColors(
+                                containerColor = MaterialTheme.colorScheme.primaryContainer
+                            )
+                        ) {
+                            Column(
+                                modifier = Modifier.padding(16.dp),
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Text(
+                                    text = "More components coming soon...",
+                                    style = MaterialTheme.typography.bodyLarge,
+                                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                                )
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Text(
+                                    text = "Tracks: ${uiState.trackData.size}",
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                                )
+                            }
+                        }
+                    }
                 }
             }
         }
