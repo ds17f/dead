@@ -255,6 +255,148 @@ The `:feature:browse` module implements service-oriented architecture with the B
 - **Maintainability:** Smaller, focused components are easier to modify
 - **Backward Compatibility:** Main LibraryScreen preserves existing interfaces
 
+### MiniPlayerV2 Implementation (V2 Architecture)
+
+**Status**: ✅ **COMPLETED** - Global V2 mini-player with proper V2 architecture  
+**Architecture**: Complete V2 service abstraction with visual V1 parity  
+**Feature Flag**: `useMiniPlayerV2: Boolean` in AppSettings for safe deployment
+
+MiniPlayerV2 represents the fourth major V2 architecture implementation, following established patterns while implementing proper service abstraction for the global mini-player.
+
+#### MiniPlayerV2 Implementation Structure
+
+**Core Files**:
+
+```
+feature/playlist/src/main/java/com/deadarchive/feature/playlist/
+├── MiniPlayerV2.kt                   # 283 lines - V1 visual parity UI
+├── MiniPlayerV2ViewModel.kt          # 154 lines - V2 service coordination
+├── model/MiniPlayerV2UiState.kt      # 50 lines - Clean V2 UI state
+├── service/
+│   ├── MiniPlayerV2Service.kt        # 64 lines - V2 service interface
+│   └── MiniPlayerV2ServiceStub.kt    # 162 lines - Comprehensive stub
+└── di/MiniPlayerV2Module.kt          # 32 lines - Hilt dependency injection
+```
+
+#### Key Architecture Achievements
+
+##### 1. Complete V2 Service Abstraction
+
+- **Interface Design**: Clean service contract following PlayerV2Service patterns
+- **Stub Implementation**: Realistic Cornell '77 mock data with position updates
+- **Hilt Integration**: Proper @Singleton service binding with @InstallIn(SingletonComponent::class)
+- **Zero V1 Dependencies**: No direct access to V1 services or ViewModels
+
+##### 2. Visual V1 Parity Implementation
+
+```kotlin
+MiniPlayerV2(
+    height = 88.dp,                  // Matches V1 EnrichedMiniPlayer
+    colors = MaterialTheme.colorScheme.surface,  // Matches V1 colors
+    layout = ThreeLineLayout,        // Track name, date, venue
+    scrollingText = V1ScrollingBehavior  // 8-second animation with pauses
+)
+```
+
+- **Exact Visual Match**: Same heights, colors, fonts, and spacing as V1
+- **ScrollingText Component**: Complete replication of V1 scrolling behavior
+- **Material3 Integration**: Proper color scheme and typography usage
+
+##### 3. Service-Oriented Architecture
+
+```kotlin
+interface MiniPlayerV2Service {
+    val isPlaying: Flow<Boolean>
+    val currentTrackInfo: Flow<CurrentTrackInfo?>
+    val progress: Flow<Float>
+    
+    suspend fun togglePlayPause()
+    suspend fun expandToPlayer(recordingId: String?)
+    suspend fun initialize()
+    suspend fun cleanup()
+}
+```
+
+##### 4. MiniPlayerV2Container Integration
+
+- **Feature Flag Support**: Conditional rendering based on `useMiniPlayerV2` setting
+- **Global Placement**: Integrated in `MainAppScreen.kt` with proper navigation callbacks
+- **Error Handling**: Graceful error display and automatic recovery
+- **Loading States**: Proper loading indicator during service initialization
+
+#### Development Patterns Established
+
+##### 1. V2 Service Architecture
+
+```kotlin
+@Singleton
+class MiniPlayerV2ServiceStub @Inject constructor() : MiniPlayerV2Service {
+    private val _isPlaying = MutableStateFlow(false)
+    override val isPlaying: Flow<Boolean> = _isPlaying.asStateFlow()
+    
+    override suspend fun togglePlayPause() {
+        _isPlaying.value = !_isPlaying.value
+        // Mock implementation with logging
+    }
+}
+```
+
+##### 2. V2 ViewModel Coordination
+
+```kotlin
+@HiltViewModel
+class MiniPlayerV2ViewModel @Inject constructor(
+    private val miniPlayerV2Service: MiniPlayerV2Service
+) : ViewModel() {
+    
+    private fun observeServiceState() {
+        viewModelScope.launch {
+            combine(/* multiple service flows */) { values ->
+                MiniPlayerV2UiState(/* aggregate state */)
+            }.collect { _uiState.value = it }
+        }
+    }
+}
+```
+
+##### 3. Feature Flag Integration
+
+```kotlin
+// MainAppScreen.kt integration
+if (settings.useMiniPlayerV2) {
+    MiniPlayerV2Container(
+        onTapToExpand = onNavigateToPlayer,
+        modifier = Modifier.align(Alignment.BottomCenter)
+    )
+} else {
+    MiniPlayerContainer(/* V1 implementation */)
+}
+```
+
+#### Success Metrics
+
+**Architecture Quality**:
+- ✅ Complete V2 service abstraction with zero V1 dependencies
+- ✅ Proper Hilt dependency injection with @Singleton scoping
+- ✅ Clean separation of concerns (Service → ViewModel → UI)
+- ✅ Feature flag integration for safe deployment
+
+**Visual Compliance**:
+- ✅ Exact V1 visual parity (88dp height, Material3 colors, 3-line layout)
+- ✅ ScrollingText component matching V1 animation behavior
+- ✅ Progress indicator and play/pause button styling identical to V1
+
+**Development Experience**:
+- ✅ Comprehensive stub service enabling immediate UI development
+- ✅ Realistic mock data (Cornell '77) with proper metadata
+- ✅ Position updates and playback state simulation
+- ✅ Clean build success with proper compilation
+
+**Integration Readiness**:
+- ✅ Ready for real service implementation in Week 3
+- ✅ Compatible with future MediaV2Service and QueueV2Service integration
+- ✅ Maintains V2 architecture isolation principles
+
 ### Entry Points
 
 **Application Class:** `DeadArchiveApplication.kt`
@@ -1121,11 +1263,11 @@ The track section now provides V1's clean, minimal user experience while maintai
 
 ### MiniPlayerV2 Global Implementation
 
-**Status**: Global V2 Mini-Player Complete - Recording-based visual identity across all screens  
+**Status**: Global V2 Mini-Player Complete - Visual parity with V1 achieved while maintaining V2 architecture  
 **Architecture**: V2 UI-first development with global state management  
 **Feature Flag**: `useMiniPlayerV2: Boolean` in AppSettings for safe deployment
 
-MiniPlayerV2 represents the fifth major V2 architecture implementation, bringing recording-based visual identity and enhanced Material3 design to the global mini-player experience.
+MiniPlayerV2 represents the fifth major V2 architecture implementation, achieving exact visual parity with V1's EnrichedMiniPlayer while preserving all V2 architectural benefits.
 
 ### MiniPlayerV2 Implementation Structure
 
@@ -1138,60 +1280,84 @@ app/src/main/java/com/deadarchive/app/
 └── MainAppScreen.kt                 # Feature flag integration
 ```
 
-### Key V2 Innovations
+### Key Visual Parity Achievements
 
-#### 1. Recording-Based Visual Identity
+#### 1. Exact V1 Layout Replication
 
-**Color System**:
+**Card Properties**:
 ```kotlin
-private fun getRecordingColorStack(recordingId: String?): List<Color> {
-    val baseColor = recordingIdToColor(recordingId)
-    
-    return listOf(
-        baseColor.copy(alpha = 0.8f), // Strong
-        baseColor.copy(alpha = 0.4f), // Medium (used for background)
-        baseColor.copy(alpha = 0.2f), // Light
-        baseColor.copy(alpha = 0.1f)  // Very Light
+Card(
+    modifier = modifier
+        .fillMaxWidth()
+        .height(88.dp) // Matches V1 EnrichedMiniPlayer height
+        .clickable { onTapToExpand(recordingId) },
+    elevation = CardDefaults.cardElevation(defaultElevation = 8.dp), // Matches V1
+    shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp), // Matches V1
+    colors = CardDefaults.cardColors(
+        containerColor = MaterialTheme.colorScheme.surface // Matches V1
     )
-}
+)
 ```
 
-- **Consistency**: Same recording always generates same color across app
-- **Palette**: Grateful Dead-inspired color scheme (Green, Gold, Red, Blue, Purple)
-- **Background**: Uses medium alpha color for mini-player container
+- **Height**: 88dp (matches V1 EnrichedMiniPlayer exactly)
+- **Elevation**: 8dp shadow elevation (matches V1)
+- **Shape**: 12dp rounded top corners (matches V1)
+- **Colors**: MaterialTheme.colorScheme.surface (matches V1)
 
-#### 2. Enhanced Material3 Design
+#### 2. Component-Level V1 Matching
 
-**Visual Improvements**:
-- Elevated card with 12dp shadow elevation
-- Rounded top corners (16dp) for modern appearance
-- 80dp height for enhanced content (vs V1's 72dp)
-- White text on colored background for high contrast
-- Enhanced album art with color-themed background
+**Album Art**:
+- 56dp size, 8dp rounded corners, MaterialTheme.colorScheme.surfaceVariant background
+- 24dp icon with MaterialTheme.colorScheme.onSurfaceVariant tint
 
-#### 3. Improved Information Architecture
+**Progress Bar**:
+- MaterialTheme.colorScheme.primary and surfaceVariant colors (matches V1)
+- Standard LinearProgressIndicator without customization
+
+**Play Button**:
+- 40dp IconButton with CircleShape and MaterialTheme.colorScheme.primary background
+- 20dp icon with MaterialTheme.colorScheme.onPrimary tint
+
+#### 3. Typography and Color Matching
 
 **Content Structure**:
 ```kotlin
-// Track title (primary)
-Text(
+// Line 1: Track Name - matches V1
+ScrollingText(
     text = trackInfo.displayTitle,
     style = MaterialTheme.typography.bodyMedium,
     fontWeight = FontWeight.Medium,
-    color = Color.White
+    color = MaterialTheme.colorScheme.onSurface
 )
 
-// Show date and venue (secondary)
-Text(
-    text = "${trackInfo.displayDate} • ${trackInfo.venue}",
+// Line 2: Show Date - matches V1
+ScrollingText(
+    text = trackInfo.displayDate,
     style = MaterialTheme.typography.bodySmall,
-    color = Color.White.copy(alpha = 0.8f)
+    color = MaterialTheme.colorScheme.onSurfaceVariant
+)
+
+// Line 3: Venue, City, State - matches V1 exactly
+ScrollingText(
+    text = buildString {
+        if (!trackInfo.venue.isNullOrBlank()) {
+            append(trackInfo.venue)
+            if (!trackInfo.location.isNullOrBlank()) {
+                append(" • ")
+                append(trackInfo.location)
+            }
+        } else {
+            append(trackInfo.location ?: "Unknown Location")
+        }
+    },
+    style = MaterialTheme.typography.bodySmall,
+    color = MaterialTheme.colorScheme.onSurfaceVariant
 )
 ```
 
-- **Enhanced Context**: Shows venue alongside date
-- **Typography**: Improved hierarchy with proper weights
-- **Accessibility**: High contrast white text on colored backgrounds
+- **Typography**: Exact V1 Material3 typography scale
+- **Colors**: Exact V1 MaterialTheme color scheme
+- **ScrollingText**: Identical V1 scrolling behavior with 8-second animation and pauses
 
 ### Architecture Benefits
 
@@ -1252,11 +1418,11 @@ if (settings.useMiniPlayerV2) {
 
 ### Success Metrics
 
-**Visual Enhancement**:
-- ✅ Recording-based color theming across all screens
-- ✅ Enhanced Material3 design with improved elevation and spacing
-- ✅ Better information architecture with venue context
-- ✅ High-contrast accessibility with white text on colored backgrounds
+**Visual Parity**:
+- ✅ Height, elevation, and shape match V1 EnrichedMiniPlayer exactly
+- ✅ Typography and color scheme identical to V1
+- ✅ Album art, progress bar, and play button match V1 specifications
+- ✅ ScrollingText behavior replicates V1's animation system exactly
 
 **Architecture Quality**:
 - ✅ Feature flag integration for safe deployment
@@ -1265,19 +1431,19 @@ if (settings.useMiniPlayerV2) {
 - ✅ Future-ready for V2 service integration
 
 **User Experience**:
-- ✅ Consistent visual identity maintains context across navigation
-- ✅ Enhanced content provides better track and show information
-- ✅ Improved touch targets and visual hierarchy
+- ✅ Identical user experience to V1 with no visual differences
+- ✅ Same 3-line information layout as V1 EnrichedMiniPlayer
+- ✅ Identical scrolling text behavior and timing
 - ✅ Seamless integration with existing navigation patterns
 
 ### Development Pattern Success
 
-This implementation demonstrates the V2 architecture's capability for global component enhancement:
+This implementation demonstrates the V2 architecture's flexibility in achieving exact visual parity with V1 while preserving all architectural benefits:
 
-1. **Recording-Based Theming**: Extends PlayerV2's color system globally
-2. **Container Pattern**: Abstracts state management for future service integration
-3. **Feature Flag Safety**: Enables gradual rollout with zero risk
-4. **Settings Integration**: Complete configuration chain from UI to storage
+1. **UI-First Approach**: Analyzed V1 visual requirements and implemented exact match
+2. **Data Preservation**: Maintained V2 container patterns and state management
+3. **Component Isolation**: Mini-player remains separate, testable component
+4. **Feature Flag Safety**: Enables gradual rollout with zero visual risk
 
-MiniPlayerV2 provides a superior global mini-player experience while maintaining backward compatibility and preparing the foundation for future V2 service integration.
+MiniPlayerV2 now provides the exact same user experience as V1 while maintaining V2's superior architecture, demonstrating successful visual parity without architectural compromise.
 

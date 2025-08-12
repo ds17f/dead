@@ -1,140 +1,144 @@
 package com.deadarchive.feature.playlist
 
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.design.component.IconResources
-import com.deadarchive.core.model.CurrentTrackInfo
-import com.deadarchive.feature.player.PlayerUiState
-import com.deadarchive.feature.player.PlayerViewModel
+import com.deadarchive.feature.playlist.model.MiniPlayerV2UiState
+import kotlinx.coroutines.delay
 
 /**
- * MiniPlayerV2 - Global V2 mini-player with recording-based visual identity
+ * MiniPlayerV2 - Global V2 mini-player matching V1 visual design exactly
  * 
- * V2 implementation providing consistent visual theming across all screens.
- * Uses recording-based color system and enhanced Material3 design patterns.
+ * V2 implementation that replicates V1's EnrichedMiniPlayer visual layout and behavior.
+ * Uses proper V2 UI state and follows V2 architecture patterns.
  */
 @Composable
 fun MiniPlayerV2(
-    uiState: PlayerUiState,
-    trackInfo: CurrentTrackInfo,
-    recordingId: String?,
+    uiState: MiniPlayerV2UiState,
     onPlayPause: () -> Unit,
     onTapToExpand: (String?) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // Use recording-based color system from PlayerV2
-    val colors = getRecordingColorStack(recordingId)
-    val backgroundColor = colors[1] // Medium color (alpha 0.4f)
-    
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .height(80.dp) // Slightly taller for enhanced content
-            .clickable { onTapToExpand(recordingId) },
-        elevation = CardDefaults.cardElevation(defaultElevation = 12.dp),
-        shape = RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp),
+            .height(88.dp) // Matches V1 EnrichedMiniPlayer height
+            .clickable { onTapToExpand(uiState.recordingId) },
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp), // Matches V1
+        shape = RoundedCornerShape(topStart = 12.dp, topEnd = 12.dp), // Matches V1
         colors = CardDefaults.cardColors(
-            containerColor = backgroundColor
+            containerColor = MaterialTheme.colorScheme.surface // Matches V1
         )
     ) {
         Column {
-            // Progress indicator at the very top
+            // Progress indicator at the very top - matches V1
             LinearProgressIndicator(
                 progress = { uiState.progress },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(3.dp),
-                color = Color.White,
-                trackColor = Color.White.copy(alpha = 0.3f)
+                modifier = Modifier.fillMaxWidth(),
+                color = MaterialTheme.colorScheme.primary, // Matches V1
+                trackColor = MaterialTheme.colorScheme.surfaceVariant // Matches V1
             )
             
-            // Main content row
+            // Main content row - matches V1 layout
             Row(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                    .padding(horizontal = 16.dp, vertical = 8.dp), // Matches V1 padding
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                // Album art with recording color theming
+                // Album art placeholder - matches V1 exactly
                 Box(
                     modifier = Modifier
-                        .size(52.dp)
-                        .background(
-                            color = Color.White.copy(alpha = 0.2f),
-                            shape = RoundedCornerShape(8.dp)
-                        ),
+                        .size(56.dp) // Matches V1 size
+                        .clip(RoundedCornerShape(8.dp)) // Matches V1 shape
+                        .background(MaterialTheme.colorScheme.surfaceVariant), // Matches V1 color
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
                         painter = IconResources.PlayerControls.AlbumArt(),
                         contentDescription = "Album Art",
-                        modifier = Modifier.size(24.dp),
-                        tint = Color.White.copy(alpha = 0.8f)
+                        modifier = Modifier.size(24.dp), // Matches V1 size
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant // Matches V1 color
                     )
                 }
                 
-                Spacer(modifier = Modifier.width(12.dp))
+                Spacer(modifier = Modifier.width(12.dp)) // Matches V1 spacing
                 
-                // Track info with V2 enhanced content
+                // Track info - 3 lines like V1 EnrichedMiniPlayer
                 Column(
                     modifier = Modifier.weight(1f),
-                    verticalArrangement = Arrangement.spacedBy(2.dp)
+                    verticalArrangement = Arrangement.SpaceBetween // Matches V1
                 ) {
-                    // Track title
-                    Text(
-                        text = trackInfo.displayTitle,
+                    // Line 1: Track Name - matches V1
+                    ScrollingText(
+                        text = uiState.trackInfo?.displayTitle ?: "Unknown Track",
                         style = MaterialTheme.typography.bodyMedium,
                         fontWeight = FontWeight.Medium,
-                        color = Color.White,
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
+                        color = MaterialTheme.colorScheme.onSurface
                     )
                     
-                    // Show date and venue info
-                    Text(
+                    // Line 2: Show Date - matches V1
+                    ScrollingText(
+                        text = uiState.trackInfo?.displayDate ?: "Unknown Date",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    
+                    // Line 3: Venue, City, State - matches V1 exactly
+                    ScrollingText(
                         text = buildString {
-                            append(trackInfo.displayDate)
-                            if (!trackInfo.venue.isNullOrBlank()) {
-                                append(" • ")
-                                append(trackInfo.venue)
+                            val trackInfo = uiState.trackInfo
+                            if (trackInfo != null) {
+                                if (!trackInfo.venue.isNullOrBlank()) {
+                                    append(trackInfo.venue)
+                                    if (!trackInfo.location.isNullOrBlank()) {
+                                        append(" • ")
+                                        append(trackInfo.location)
+                                    }
+                                } else {
+                                    append(trackInfo.location ?: "Unknown Location")
+                                }
+                            } else {
+                                append("Unknown Location")
                             }
                         },
                         style = MaterialTheme.typography.bodySmall,
-                        color = Color.White.copy(alpha = 0.8f),
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
                 
-                Spacer(modifier = Modifier.width(12.dp))
+                Spacer(modifier = Modifier.width(8.dp)) // Matches V1 spacing
                 
-                // Enhanced play/pause button
-                Box(
+                // Play/Pause button - matches V1 exactly
+                IconButton(
+                    onClick = onPlayPause,
                     modifier = Modifier
-                        .size(44.dp)
-                        .background(
-                            color = Color.White.copy(alpha = 0.2f),
-                            shape = RoundedCornerShape(22.dp)
-                        )
-                        .clickable { onPlayPause() },
-                    contentAlignment = Alignment.Center
+                        .size(40.dp) // Matches V1 size
+                        .clip(CircleShape) // Matches V1 shape
+                        .background(MaterialTheme.colorScheme.primary) // Matches V1 color
                 ) {
                     if (uiState.isBuffering) {
                         CircularProgressIndicator(
-                            modifier = Modifier.size(20.dp),
-                            color = Color.White,
-                            strokeWidth = 2.dp
+                            modifier = Modifier.size(20.dp), // Matches V1 size
+                            color = MaterialTheme.colorScheme.onPrimary, // Matches V1 color
+                            strokeWidth = 2.dp // Matches V1
                         )
                     } else {
                         Icon(
@@ -144,8 +148,8 @@ fun MiniPlayerV2(
                                 IconResources.PlayerControls.Play()
                             },
                             contentDescription = if (uiState.isPlaying) "Pause" else "Play",
-                            modifier = Modifier.size(20.dp),
-                            tint = Color.White
+                            modifier = Modifier.size(20.dp), // Matches V1 size
+                            tint = MaterialTheme.colorScheme.onPrimary // Matches V1 color
                         )
                     }
                 }
@@ -155,77 +159,125 @@ fun MiniPlayerV2(
 }
 
 /**
- * MiniPlayerV2Container - Global V2 mini-player container with state management
+ * MiniPlayerV2Container - Global V2 mini-player container with proper V2 architecture
  * 
- * Provides V2 service integration and state management for the global mini-player.
- * Handles data fetching, error states, and navigation coordination.
+ * Clean V2 implementation using MiniPlayerV2ViewModel and MiniPlayerV2Service.
+ * Follows established V2 patterns with no V1 dependencies.
  */
 @Composable
 fun MiniPlayerV2Container(
     onTapToExpand: (String?) -> Unit,
     modifier: Modifier = Modifier,
-    viewModel: PlayerViewModel = hiltViewModel()
+    viewModel: MiniPlayerV2ViewModel = hiltViewModel()
 ) {
-    // Get current playback state from MediaController (V1 for now, will transition to V2 services)
-    val isPlaying by viewModel.mediaControllerRepository.isPlaying.collectAsState()
-    val currentPosition by viewModel.mediaControllerRepository.currentPosition.collectAsState()
-    val duration by viewModel.mediaControllerRepository.duration.collectAsState()
-    val playbackState by viewModel.mediaControllerRepository.playbackState.collectAsState()
-    val currentRecordingId by viewModel.mediaControllerRepository.currentRecordingId.collectAsState()
+    val uiState by viewModel.uiState.collectAsState()
     
-    // Get enriched track info from MediaController
-    val currentTrackInfo by viewModel.mediaControllerRepository.currentTrackInfo.collectAsState()
+    // Only show MiniPlayerV2 if there's current track info and no errors
+    if (!uiState.shouldShow) return
     
-    // Only show MiniPlayerV2 if there's current track info
-    if (currentTrackInfo == null) return
+    // Error handling
+    uiState.error?.let { error ->
+        LaunchedEffect(error) {
+            // Log error and clear it after a delay
+            android.util.Log.e("MiniPlayerV2Container", "Error: $error")
+            delay(3000)
+            viewModel.clearError()
+        }
+        return
+    }
     
-    // Create V2-style UI state
-    val miniPlayerUiState = PlayerUiState(
-        isPlaying = isPlaying,
-        currentPosition = currentPosition,
-        duration = duration,
-        playbackState = playbackState
-    )
+    // Loading state
+    if (uiState.isLoading) {
+        // Could show a loading indicator here if needed
+        return
+    }
     
     MiniPlayerV2(
-        uiState = miniPlayerUiState,
-        trackInfo = currentTrackInfo!!,
-        recordingId = currentRecordingId,
-        onPlayPause = viewModel::playPause,
-        onTapToExpand = onTapToExpand,
+        uiState = uiState,
+        onPlayPause = viewModel::onPlayPauseClicked,
+        onTapToExpand = { recordingId ->
+            viewModel.onTapToExpand(recordingId)
+            onTapToExpand(recordingId)
+        },
         modifier = modifier
     )
 }
 
 /**
- * Recording-based color system for V2 visual identity
+ * ScrollingText - Matches V1 scrolling text behavior exactly
  * 
- * Generates consistent color stacks based on recording ID hash.
- * Same logic as PlayerV2 for visual consistency.
+ * Replicates V1's ScrollingText component from MiniPlayer.kt for visual consistency.
  */
-private fun getRecordingColorStack(recordingId: String?): List<Color> {
-    val baseColor = recordingIdToColor(recordingId)
+@Composable
+private fun ScrollingText(
+    text: String,
+    style: androidx.compose.ui.text.TextStyle = MaterialTheme.typography.bodyMedium,
+    fontWeight: FontWeight? = null,
+    color: androidx.compose.ui.graphics.Color = MaterialTheme.colorScheme.onSurface,
+    modifier: Modifier = Modifier
+) {
+    var shouldScroll by remember { mutableStateOf(false) }
+    var textWidth by remember { mutableStateOf(0) }
+    var containerWidth by remember { mutableStateOf(0) }
     
-    return listOf(
-        baseColor.copy(alpha = 0.8f), // Strong
-        baseColor.copy(alpha = 0.4f), // Medium  
-        baseColor.copy(alpha = 0.2f), // Light
-        baseColor.copy(alpha = 0.1f)  // Very Light
+    // Custom easing function that pauses at both ends - matches V1
+    val pausingEasing = Easing { fraction ->
+        when {
+            fraction < 0.15f -> 0f // Pause at start (15% of time at position 0)
+            fraction > 0.85f -> 1f // Pause at end (15% of time at position 1)
+            else -> {
+                // Smooth transition for the middle 70% of the time
+                val adjustedFraction = (fraction - 0.15f) / 0.7f
+                adjustedFraction
+            }
+        }
+    }
+    
+    // Animation for scrolling - back and forth motion with pauses at ends - matches V1
+    val animatedOffset by animateFloatAsState(
+        targetValue = if (shouldScroll) -(textWidth - containerWidth).toFloat() else 0f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(
+                durationMillis = 8000, // Fixed 8 second duration for consistency
+                easing = pausingEasing
+            ),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "scrolling_text"
     )
-}
-
-private val GradientColors = listOf(
-    Color(0xFF1DB954), // Spotify Green (DeadGreen equivalent)
-    Color(0xFFFFD700), // Gold
-    Color(0xFFDC143C), // Crimson Red
-    Color(0xFF4169E1), // Royal Blue
-    Color(0xFF9370DB)  // Medium Purple
-)
-
-private fun recordingIdToColor(recordingId: String?): Color {
-    if (recordingId == null) return GradientColors[0]
     
-    val hash = recordingId.hashCode()
-    val index = kotlin.math.abs(hash) % GradientColors.size
-    return GradientColors[index]
+    // Auto-start scrolling after a delay if text is too long - matches V1
+    LaunchedEffect(shouldScroll, textWidth, containerWidth) {
+        if (textWidth > containerWidth && containerWidth > 0) {
+            delay(2000) // Wait 2 seconds before starting to scroll
+            shouldScroll = true
+        }
+    }
+    
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .clip(RectangleShape)
+            .onGloballyPositioned { coordinates ->
+                containerWidth = coordinates.size.width
+            }
+    ) {
+        Text(
+            text = text,
+            style = style,
+            fontWeight = fontWeight,
+            color = color,
+            maxLines = 1,
+            overflow = TextOverflow.Visible,
+            softWrap = false,
+            modifier = Modifier
+                .graphicsLayer {
+                    translationX = animatedOffset
+                }
+                .wrapContentWidth(Alignment.Start, unbounded = true)
+                .onGloballyPositioned { coordinates ->
+                    textWidth = coordinates.size.width
+                }
+        )
+    }
 }
