@@ -321,6 +321,18 @@ class SettingsViewModel @Inject constructor(
     }
     
     /**
+     * Update the use MiniPlayer V2 setting
+     */
+    fun updateUseMiniPlayerV2(enabled: Boolean) {
+        configurationService.updateUseMiniPlayerV2(
+            enabled = enabled,
+            coroutineScope = viewModelScope,
+            onStateChange = { _uiState.value = it },
+            currentState = _uiState.value
+        )
+    }
+    
+    /**
      * Backup the user's library and settings
      */
     fun backupLibrary() {

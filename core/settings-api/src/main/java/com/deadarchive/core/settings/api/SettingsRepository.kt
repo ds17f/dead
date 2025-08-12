@@ -131,6 +131,12 @@ interface SettingsRepository {
      */
     suspend fun updateUsePlaylistV2(enabled: Boolean)
     
+    /**
+     * Update the MiniPlayer V2 interface setting
+     * @param enabled True to use MiniPlayer V2 interface, false to use legacy mini-player
+     */
+    suspend fun updateUseMiniPlayerV2(enabled: Boolean)
+    
     // Update-related methods
     
     /**

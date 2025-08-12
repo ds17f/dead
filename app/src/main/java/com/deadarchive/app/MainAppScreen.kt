@@ -34,6 +34,7 @@ import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.player.navigation.playerScreen
 import com.deadarchive.feature.playlist.navigation.playlistScreen
 import com.deadarchive.feature.playlist.MiniPlayerContainer
+import com.deadarchive.feature.playlist.MiniPlayerV2Container
 import androidx.media3.common.util.UnstableApi
 import com.deadarchive.core.model.Show
 import com.deadarchive.feature.library.navigation.libraryScreen
@@ -81,16 +82,29 @@ fun MainAppScreen(
                 Column {
                     // Global MiniPlayer - shows above bottom navigation
                     if (shouldShowMiniPlayer(currentRoute)) {
-                        MiniPlayerContainer(
-                            onTapToExpand = { recordingId ->
-                                android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to player with recordingId: $recordingId, usePlayerV2: ${settings.usePlayerV2}")
-                                if (recordingId != null) {
-                                    navController.navigate("player/$recordingId")
-                                } else {
-                                    navController.navigate("player")
+                        if (settings.useMiniPlayerV2) {
+                            MiniPlayerV2Container(
+                                onTapToExpand = { recordingId ->
+                                    android.util.Log.d("MainAppNavigation", "MiniPlayerV2 tapped - navigating to player with recordingId: $recordingId, usePlayerV2: ${settings.usePlayerV2}")
+                                    if (recordingId != null) {
+                                        navController.navigate("player/$recordingId")
+                                    } else {
+                                        navController.navigate("player")
+                                    }
                                 }
-                            }
-                        )
+                            )
+                        } else {
+                            MiniPlayerContainer(
+                                onTapToExpand = { recordingId ->
+                                    android.util.Log.d("MainAppNavigation", "MiniPlayer tapped - navigating to player with recordingId: $recordingId, usePlayerV2: ${settings.usePlayerV2}")
+                                    if (recordingId != null) {
+                                        navController.navigate("player/$recordingId")
+                                    } else {
+                                        navController.navigate("player")
+                                    }
+                                }
+                            )
+                        }
                     }
                     
                     // Bottom Navigation

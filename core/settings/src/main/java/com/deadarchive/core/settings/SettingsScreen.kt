@@ -150,6 +150,7 @@ fun SettingsScreen(
                 onUpdateUseSearchV2 = viewModel::updateUseSearchV2,
                 onUpdateUseHomeV2 = viewModel::updateUseHomeV2,
                 onUpdateUsePlaylistV2 = viewModel::updateUsePlaylistV2,
+                onUpdateUseMiniPlayerV2 = viewModel::updateUseMiniPlayerV2,
                 onResetSettings = viewModel::resetToDefaults
             )
         }
@@ -295,6 +296,7 @@ private fun DeveloperOptionsCard(
     onUpdateUseSearchV2: (Boolean) -> Unit,
     onUpdateUseHomeV2: (Boolean) -> Unit,
     onUpdateUsePlaylistV2: (Boolean) -> Unit,
+    onUpdateUseMiniPlayerV2: (Boolean) -> Unit,
     onResetSettings: () -> Unit
 ) {
     Card(
@@ -473,6 +475,34 @@ private fun DeveloperOptionsCard(
                 Switch(
                     checked = settings.usePlaylistV2,
                     onCheckedChange = onUpdateUsePlaylistV2
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // MiniPlayerV2 Setting
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "MiniPlayerV2 (Preview)",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Enable the redesigned global mini-player with recording-based visual identity",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.useMiniPlayerV2,
+                    onCheckedChange = onUpdateUseMiniPlayerV2
                 )
             }
             

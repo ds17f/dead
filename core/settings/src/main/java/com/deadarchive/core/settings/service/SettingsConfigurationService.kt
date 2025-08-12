@@ -502,6 +502,38 @@ class SettingsConfigurationService @Inject constructor(
     }
     
     /**
+     * Update the use MiniPlayer V2 setting
+     */
+    fun updateUseMiniPlayerV2(
+        enabled: Boolean,
+        coroutineScope: CoroutineScope,
+        onStateChange: (SettingsUiState) -> Unit,
+        currentState: SettingsUiState
+    ) {
+        coroutineScope.launch {
+            try {
+                Log.d(TAG, "Updating use MiniPlayer V2 to: $enabled")
+                onStateChange(currentState.copy(isLoading = true, errorMessage = null))
+                
+                settingsRepository.updateUseMiniPlayerV2(enabled)
+                
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    successMessage = if (enabled) "MiniPlayer V2 enabled 🚀" else "MiniPlayer V2 disabled"
+                ))
+                Log.d(TAG, "Use MiniPlayer V2 updated successfully")
+                
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to update use MiniPlayer V2", e)
+                onStateChange(currentState.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to update MiniPlayer V2 setting: ${e.message}"
+                ))
+            }
+        }
+    }
+    
+    /**
      * Set drag state for audio format reordering
      */
     fun setDraggingFormats(

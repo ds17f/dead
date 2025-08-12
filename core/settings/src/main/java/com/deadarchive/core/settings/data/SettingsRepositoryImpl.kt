@@ -258,6 +258,17 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
+    override suspend fun updateUseMiniPlayerV2(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating use MiniPlayer V2 to: $enabled")
+            settingsDataStore.updateUseMiniPlayerV2(enabled)
+            Log.d(TAG, "Use MiniPlayer V2 updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update use MiniPlayer V2", e)
+            throw e
+        }
+    }
+    
     // Update-related methods
     
     override suspend fun updateLastUpdateCheck(timestamp: Long) {

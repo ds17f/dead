@@ -49,6 +49,7 @@ class SettingsDataStore @Inject constructor(
     private val useSearchV2Key = booleanPreferencesKey("use_search_v2")
     private val useHomeV2Key = booleanPreferencesKey("use_home_v2")
     private val usePlaylistV2Key = booleanPreferencesKey("use_playlist_v2")
+    private val useMiniPlayerV2Key = booleanPreferencesKey("use_mini_player_v2")
     
     // Update-related preference keys
     private val autoUpdateCheckEnabledKey = booleanPreferencesKey("auto_update_check_enabled")
@@ -278,6 +279,15 @@ class SettingsDataStore @Inject constructor(
         }
     }
     
+    /**
+     * Update use MiniPlayer V2 setting
+     */
+    suspend fun updateUseMiniPlayerV2(enabled: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[useMiniPlayerV2Key] = enabled
+        }
+    }
+    
     // Update-related methods
     
     /**
@@ -391,6 +401,7 @@ class SettingsDataStore @Inject constructor(
             useSearchV2 = this[useSearchV2Key] ?: false,
             useHomeV2 = this[useHomeV2Key] ?: false,
             usePlaylistV2 = this[usePlaylistV2Key] ?: false,
+            useMiniPlayerV2 = this[useMiniPlayerV2Key] ?: false,
             autoUpdateCheckEnabled = this[autoUpdateCheckEnabledKey] ?: true, 
             lastUpdateCheckTimestamp = this[lastUpdateCheckTimestampKey] ?: 0L,
             skippedVersions = skippedVersions

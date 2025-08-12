@@ -1117,3 +1117,167 @@ This implementation demonstrates the V2 architecture's flexibility in achieving 
 
 The track section now provides V1's clean, minimal user experience while maintaining V2's superior architecture, demonstrating successful visual parity without architectural compromise.
 
+## MiniPlayerV2 Architecture (V2 Implementation)
+
+### MiniPlayerV2 Global Implementation
+
+**Status**: Global V2 Mini-Player Complete - Recording-based visual identity across all screens  
+**Architecture**: V2 UI-first development with global state management  
+**Feature Flag**: `useMiniPlayerV2: Boolean` in AppSettings for safe deployment
+
+MiniPlayerV2 represents the fifth major V2 architecture implementation, bringing recording-based visual identity and enhanced Material3 design to the global mini-player experience.
+
+### MiniPlayerV2 Implementation Structure
+
+**Core Files**:
+
+```
+feature/playlist/src/main/java/com/deadarchive/feature/playlist/
+├── MiniPlayerV2.kt                  # Global V2 mini-player component and container
+app/src/main/java/com/deadarchive/app/
+└── MainAppScreen.kt                 # Feature flag integration
+```
+
+### Key V2 Innovations
+
+#### 1. Recording-Based Visual Identity
+
+**Color System**:
+```kotlin
+private fun getRecordingColorStack(recordingId: String?): List<Color> {
+    val baseColor = recordingIdToColor(recordingId)
+    
+    return listOf(
+        baseColor.copy(alpha = 0.8f), // Strong
+        baseColor.copy(alpha = 0.4f), // Medium (used for background)
+        baseColor.copy(alpha = 0.2f), // Light
+        baseColor.copy(alpha = 0.1f)  // Very Light
+    )
+}
+```
+
+- **Consistency**: Same recording always generates same color across app
+- **Palette**: Grateful Dead-inspired color scheme (Green, Gold, Red, Blue, Purple)
+- **Background**: Uses medium alpha color for mini-player container
+
+#### 2. Enhanced Material3 Design
+
+**Visual Improvements**:
+- Elevated card with 12dp shadow elevation
+- Rounded top corners (16dp) for modern appearance
+- 80dp height for enhanced content (vs V1's 72dp)
+- White text on colored background for high contrast
+- Enhanced album art with color-themed background
+
+#### 3. Improved Information Architecture
+
+**Content Structure**:
+```kotlin
+// Track title (primary)
+Text(
+    text = trackInfo.displayTitle,
+    style = MaterialTheme.typography.bodyMedium,
+    fontWeight = FontWeight.Medium,
+    color = Color.White
+)
+
+// Show date and venue (secondary)
+Text(
+    text = "${trackInfo.displayDate} • ${trackInfo.venue}",
+    style = MaterialTheme.typography.bodySmall,
+    color = Color.White.copy(alpha = 0.8f)
+)
+```
+
+- **Enhanced Context**: Shows venue alongside date
+- **Typography**: Improved hierarchy with proper weights
+- **Accessibility**: High contrast white text on colored backgrounds
+
+### Architecture Benefits
+
+#### 1. Global State Management
+
+**V2 Container**:
+```kotlin
+@Composable
+fun MiniPlayerV2Container(
+    onTapToExpand: (String?) -> Unit,
+    modifier: Modifier = Modifier,
+    viewModel: PlayerViewModel = hiltViewModel()
+) {
+    // Current implementation uses V1 MediaController
+    // Ready for V2 service migration when available
+}
+```
+
+- **Future-Ready**: Container abstraction prepared for V2 service integration
+- **State Isolation**: Clean separation between UI and business logic
+- **Global Access**: Available across all main screens via MainAppScreen
+
+#### 2. Feature Flag Integration
+
+**MainAppScreen Integration**:
+```kotlin
+if (settings.useMiniPlayerV2) {
+    MiniPlayerV2Container(onTapToExpand = { recordingId -> ... })
+} else {
+    MiniPlayerContainer(onTapToExpand = { recordingId -> ... })
+}
+```
+
+- **Safe Deployment**: Feature flag enables risk-free rollout
+- **A/B Testing**: Easy switching between V1 and V2 implementations
+- **Settings Control**: User can enable/disable via Developer Options
+
+#### 3. Visual Consistency
+
+**Cross-Screen Experience**:
+- Same recording color appears in PlayerV2 and MiniPlayerV2
+- Consistent visual identity maintained during navigation
+- Enhanced continuity between screens
+
+### Settings Integration
+
+**Developer Options**:
+- Toggle: "MiniPlayerV2 (Preview)"
+- Description: "Enable the redesigned global mini-player with recording-based visual identity"
+- Storage: DataStore persistence with `use_mini_player_v2` key
+
+**Configuration Chain**:
+1. **UI**: SettingsScreen toggle
+2. **ViewModel**: `updateUseMiniPlayerV2(enabled: Boolean)`
+3. **Service**: `SettingsConfigurationService.updateUseMiniPlayerV2()`
+4. **Repository**: `SettingsRepository.updateUseMiniPlayerV2()`
+5. **Storage**: `SettingsDataStore.updateUseMiniPlayerV2()`
+
+### Success Metrics
+
+**Visual Enhancement**:
+- ✅ Recording-based color theming across all screens
+- ✅ Enhanced Material3 design with improved elevation and spacing
+- ✅ Better information architecture with venue context
+- ✅ High-contrast accessibility with white text on colored backgrounds
+
+**Architecture Quality**:
+- ✅ Feature flag integration for safe deployment
+- ✅ Clean component separation with container pattern
+- ✅ Full settings integration with Developer Options
+- ✅ Future-ready for V2 service integration
+
+**User Experience**:
+- ✅ Consistent visual identity maintains context across navigation
+- ✅ Enhanced content provides better track and show information
+- ✅ Improved touch targets and visual hierarchy
+- ✅ Seamless integration with existing navigation patterns
+
+### Development Pattern Success
+
+This implementation demonstrates the V2 architecture's capability for global component enhancement:
+
+1. **Recording-Based Theming**: Extends PlayerV2's color system globally
+2. **Container Pattern**: Abstracts state management for future service integration
+3. **Feature Flag Safety**: Enables gradual rollout with zero risk
+4. **Settings Integration**: Complete configuration chain from UI to storage
+
+MiniPlayerV2 provides a superior global mini-player experience while maintaining backward compatibility and preparing the foundation for future V2 service integration.
+
