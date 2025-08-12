@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.44.0] - 2025-08-11
+
+### New Features
+* implement complete MiniPlayerV2 with proper V2 architecture (8372a19)
+* implement global MiniPlayerV2 with recording-based visual identity (1e7175c)
+* fix track section UI to match V1 visual design exactly (35a93d1)
+* implement complete menu system with triple dot menu and choose recording UI (0f406d1)
+* implement review details modal with V1-style design (af526cf)
+* fix library icons and rating component clickable behavior (c16aa40)
+* implement core UI components with V1 functionality parity (b70f762)
+* implement clean architecture with functional navigation (53a9bfd)
+* implement PlaylistV2 foundation with feature flag support (92724cc)
+* Remove scripts for metadata (ac298fe)
+* implement comprehensive V2 user activity tracking system (01971cf)
+* add comprehensive V2 database documentation and schema visualization (ee8c6a8)
+
+### Code Refactoring
+* simplify library to embedded fields, separate user reviews (01bf74b)
+
+### Documentation Updates
+* playlist v2 docs (a04ae8e)
+* add implementation status and realistic next steps documentation (72372d7)
+* update implementation guide for production layout completion (21723cd)
+
+
 ## [0.43.0] - 2025-08-03
 
 ### New Features
@@ -11,8 +36,6 @@
 
 ### Other Changes
 * micro: reduce V2TopBar and HierarchicalFilter padding for tighter layout (4f3c411)
-
-
 ## [0.42.0] - 2025-08-03
 
 ### New Features
