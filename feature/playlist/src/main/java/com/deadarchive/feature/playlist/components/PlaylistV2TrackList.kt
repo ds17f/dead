@@ -22,78 +22,26 @@ fun LazyListScope.PlaylistV2TrackList(
     onPlayClick: (PlaylistTrackViewModel) -> Unit,
     onDownloadClick: (PlaylistTrackViewModel) -> Unit
 ) {
-    // Section header
+    // Section header - matches V1 format exactly
     item {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 24.dp, vertical = 16.dp)
-        ) {
-            Text(
-                text = "Tracks",
-                style = MaterialTheme.typography.headlineSmall,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onSurface
-            )
-            
-            if (tracks.isNotEmpty()) {
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = "${tracks.size} tracks",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            }
-        }
+        Text(
+            text = "Tracks (${tracks.size})",
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp)
+        )
     }
     
-    // Track items
-    if (tracks.isEmpty()) {
-        item {
-            Card(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(24.dp),
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.surfaceVariant
-                )
-            ) {
-                Column(
-                    modifier = Modifier.padding(24.dp)
-                ) {
-                    Text(
-                        text = "No tracks available",
-                        style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text(
-                        text = "Track information will appear here when available.",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-        }
-    } else {
-        items(
-            items = tracks,
-            key = { track -> track.number }
-        ) { track ->
-            PlaylistV2TrackItem(
-                track = track,
-                onPlayClick = onPlayClick,
-                onDownloadClick = onDownloadClick
-            )
-            
-            // Divider between tracks (except last)
-            if (track != tracks.last()) {
-                HorizontalDivider(
-                    modifier = Modifier.padding(horizontal = 56.dp),
-                    color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f)
-                )
-            }
-        }
+    // Track items - simple list like V1
+    items(
+        items = tracks,
+        key = { track -> track.number }
+    ) { track ->
+        PlaylistV2TrackItem(
+            track = track,
+            onPlayClick = onPlayClick,
+            onDownloadClick = onDownloadClick
+        )
     }
     
     // Bottom spacing
