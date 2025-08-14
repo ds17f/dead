@@ -11,6 +11,7 @@ import com.deadarchive.core.settings.service.SettingsConfigurationService
 import com.deadarchive.core.settings.service.SettingsBackupService
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
+import com.deadarchive.core.database.v2.service.V2DatabaseManager
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateStatus
 import com.deadarchive.core.model.UpdateDownloadState
@@ -50,7 +51,8 @@ class SettingsViewModel @Inject constructor(
     private val configurationService: SettingsConfigurationService,
     private val backupService: SettingsBackupService,
     private val updateService: UpdateService,
-    private val globalUpdateManager: GlobalUpdateManager
+    private val globalUpdateManager: GlobalUpdateManager,
+    private val v2DatabaseManager: V2DatabaseManager
 ) : ViewModel() {
     
     companion object {
@@ -177,6 +179,37 @@ class SettingsViewModel @Inject constructor(
             onStateChange = { _uiState.value = it },
             currentState = _uiState.value
         )
+    }
+    
+    /**
+     * Clear V2 database and trigger re-import on next app restart
+     */
+    fun clearV2Database() {
+        viewModelScope.launch {
+            try {
+                _uiState.value = _uiState.value.copy(
+                    isLoading = true,
+                    errorMessage = null,
+                    successMessage = null
+                )
+                
+                Log.d(TAG, "Clearing V2 database...")
+                v2DatabaseManager.clearV2Database()
+                
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    successMessage = "V2 database cleared. Restart the app to re-import data."
+                )
+                
+                Log.d(TAG, "✅ V2 database cleared successfully")
+            } catch (e: Exception) {
+                Log.e(TAG, "❌ Failed to clear V2 database", e)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    errorMessage = "Failed to clear V2 database: ${e.message}"
+                )
+            }
+        }
     }
     
     /**

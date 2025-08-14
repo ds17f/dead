@@ -133,6 +133,7 @@ dependencies {
     implementation(project(":core:model"))
     implementation(project(":core:data"))
     implementation(project(":core:database"))
+    implementation(project(":core:database-v2"))
     implementation(project(":core:network"))
     implementation(project(":core:media"))
     implementation(project(":core:settings"))

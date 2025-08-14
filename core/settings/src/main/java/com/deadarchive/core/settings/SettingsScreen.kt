@@ -151,7 +151,8 @@ fun SettingsScreen(
                 onUpdateUseHomeV2 = viewModel::updateUseHomeV2,
                 onUpdateUsePlaylistV2 = viewModel::updateUsePlaylistV2,
                 onUpdateUseMiniPlayerV2 = viewModel::updateUseMiniPlayerV2,
-                onResetSettings = viewModel::resetToDefaults
+                onResetSettings = viewModel::resetToDefaults,
+                onClearV2Database = viewModel::clearV2Database
             )
         }
     }
@@ -297,7 +298,8 @@ private fun DeveloperOptionsCard(
     onUpdateUseHomeV2: (Boolean) -> Unit,
     onUpdateUsePlaylistV2: (Boolean) -> Unit,
     onUpdateUseMiniPlayerV2: (Boolean) -> Unit,
-    onResetSettings: () -> Unit
+    onResetSettings: () -> Unit,
+    onClearV2Database: () -> Unit
 ) {
     Card(
         modifier = Modifier.fillMaxWidth()
@@ -507,6 +509,19 @@ private fun DeveloperOptionsCard(
             }
             
             HorizontalDivider()
+            
+            // V2 Database Management
+            OutlinedButton(
+                onClick = onClearV2Database,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.outlinedButtonColors(
+                    contentColor = MaterialTheme.colorScheme.secondary
+                )
+            ) {
+                Text("Clear V2 Database")
+            }
+            
+            Spacer(modifier = Modifier.height(8.dp))
             
             OutlinedButton(
                 onClick = onResetSettings,

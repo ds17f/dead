@@ -46,6 +46,7 @@ dependencies {
     implementation(project(":core:backup"))
     implementation(project(":core:design"))
     implementation(project(":core:data"))
+    implementation(project(":core:database-v2"))
     
     implementation(project(":core:model"))
     
