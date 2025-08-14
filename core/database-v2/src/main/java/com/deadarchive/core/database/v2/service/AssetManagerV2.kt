@@ -36,7 +36,7 @@ class AssetManagerV2 @Inject constructor(
 ) {
     companion object {
         private const val TAG = "AssetManagerV2"
-        private const val DATA_ZIP_FILENAME = "data-v2.0.0.zip"
+        private const val DATA_ZIP_FILENAME = "data-v2.0.2.zip"
         private const val TEMP_DIR_NAME = "v2_data_import"
         private const val MANIFEST_FILENAME = "manifest.json"
     }
