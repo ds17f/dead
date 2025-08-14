@@ -42,6 +42,7 @@ data class AppSettings(
     val useHomeV2: Boolean = false,
     val usePlaylistV2: Boolean = false,
     val useMiniPlayerV2: Boolean = false,
+    val useSplashV2: Boolean = false,
     
     // Update settings
     val autoUpdateCheckEnabled: Boolean = true,

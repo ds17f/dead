@@ -52,7 +52,7 @@ case "$1" in
         else
             echo "🔍 Showing V2 database import logs (${TIMEOUT}s)..."
         fi
-        run_with_timeout adb logcat -s V2AssetManager V2DataImportService V2DatabaseManager
+        run_with_timeout adb logcat -s AssetManagerV2 DataImportServiceV2 DatabaseManagerV2
         ;;
     "v2"|"v2db")
         if [ "$TIMEOUT" -eq 0 ]; then

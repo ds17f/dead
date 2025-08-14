@@ -38,5 +38,5 @@ object DatabaseV2Module {
     }
     
     // Services and repositories are automatically provided by @Singleton @Inject constructor
-    // V2AssetManager, V2DataImportService, V2DatabaseManager, ShowV2Repository will be available via Hilt
+    // AssetManagerV2, DataImportServiceV2, DatabaseManagerV2, ShowV2Repository will be available via Hilt
 }

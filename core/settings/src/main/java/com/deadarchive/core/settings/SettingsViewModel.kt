@@ -11,7 +11,7 @@ import com.deadarchive.core.settings.service.SettingsConfigurationService
 import com.deadarchive.core.settings.service.SettingsBackupService
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
-import com.deadarchive.core.database.v2.service.V2DatabaseManager
+import com.deadarchive.core.database.v2.service.DatabaseManagerV2
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateStatus
 import com.deadarchive.core.model.UpdateDownloadState
@@ -52,7 +52,7 @@ class SettingsViewModel @Inject constructor(
     private val backupService: SettingsBackupService,
     private val updateService: UpdateService,
     private val globalUpdateManager: GlobalUpdateManager,
-    private val v2DatabaseManager: V2DatabaseManager
+    private val v2DatabaseManager: DatabaseManagerV2
 ) : ViewModel() {
     
     companion object {
@@ -358,6 +358,18 @@ class SettingsViewModel @Inject constructor(
      */
     fun updateUseMiniPlayerV2(enabled: Boolean) {
         configurationService.updateUseMiniPlayerV2(
+            enabled = enabled,
+            coroutineScope = viewModelScope,
+            onStateChange = { _uiState.value = it },
+            currentState = _uiState.value
+        )
+    }
+    
+    /**
+     * Update the use Splash V2 setting
+     */
+    fun updateUseSplashV2(enabled: Boolean) {
+        configurationService.updateUseSplashV2(
             enabled = enabled,
             coroutineScope = viewModelScope,
             onStateChange = { _uiState.value = it },

@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.deadarchive.app.v2.splash.SplashV2
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.library.navigation.libraryScreen
@@ -31,13 +32,23 @@ fun DeadArchiveNavigation(
         modifier = modifier
     ) {
         composable("splash") {
-            SplashScreen(
-                onSplashComplete = { 
-                    navController.navigate("main_app") {
-                        popUpTo("splash") { inclusive = true }
+            if (settings.useSplashV2) {
+                SplashV2(
+                    onSplashComplete = { 
+                        navController.navigate("main_app") {
+                            popUpTo("splash") { inclusive = true }
+                        }
                     }
-                }
-            )
+                )
+            } else {
+                SplashScreen(
+                    onSplashComplete = { 
+                        navController.navigate("main_app") {
+                            popUpTo("splash") { inclusive = true }
+                        }
+                    }
+                )
+            }
         }
         
         composable("main_app") {

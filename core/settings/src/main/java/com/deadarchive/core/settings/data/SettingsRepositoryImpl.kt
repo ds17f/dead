@@ -269,6 +269,17 @@ class SettingsRepositoryImpl @Inject constructor(
         }
     }
     
+    override suspend fun updateUseSplashV2(enabled: Boolean) {
+        try {
+            Log.d(TAG, "Updating use Splash V2 to: $enabled")
+            settingsDataStore.updateUseSplashV2(enabled)
+            Log.d(TAG, "Use Splash V2 updated successfully")
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to update use Splash V2", e)
+            throw e
+        }
+    }
+    
     // Update-related methods
     
     override suspend fun updateLastUpdateCheck(timestamp: Long) {

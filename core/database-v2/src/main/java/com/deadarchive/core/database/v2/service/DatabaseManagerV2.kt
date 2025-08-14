@@ -6,21 +6,34 @@ import com.deadarchive.core.database.v2.dao.DataVersionDao
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class V2DatabaseManager @Inject constructor(
+class DatabaseManagerV2 @Inject constructor(
     private val database: DeadArchiveV2Database,
     private val showDao: ShowV2Dao,
     private val venueDao: VenueV2Dao,
     private val dataVersionDao: DataVersionDao,
-    private val importService: V2DataImportService
+    private val importService: DataImportServiceV2
 ) {
     companion object {
-        private const val TAG = "V2DatabaseManager"
+        private const val TAG = "DatabaseManagerV2"
     }
+    
+    private val _progress = MutableStateFlow(
+        ProgressV2(
+            phase = "IDLE",
+            totalItems = 0,
+            processedItems = 0,
+            currentItem = ""
+        )
+    )
+    val progress: StateFlow<ProgressV2> = _progress.asStateFlow()
     
     /**
      * Check if V2 data has been initialized
@@ -39,15 +52,70 @@ class V2DatabaseManager @Inject constructor(
      */
     suspend fun initializeV2DataIfNeeded(): ImportResult = withContext(Dispatchers.IO) {
         try {
+            _progress.value = ProgressV2(
+                phase = "CHECKING",
+                totalItems = 0,
+                processedItems = 0,
+                currentItem = "Checking existing data..."
+            )
+            
             if (isV2DataInitialized()) {
                 Log.d(TAG, "V2 data already initialized")
+                _progress.value = ProgressV2(
+                    phase = "COMPLETED",
+                    totalItems = 1,
+                    processedItems = 1,
+                    currentItem = "Data already initialized",
+                    isComplete = true
+                )
                 return@withContext ImportResult.success(0, 0)
             }
             
             Log.d(TAG, "Initializing V2 data...")
-            importService.importFromAssetsIfNeeded()
+            _progress.value = ProgressV2(
+                phase = "EXTRACTING",
+                totalItems = 0,
+                processedItems = 0,
+                currentItem = "Extracting data files..."
+            )
+            
+            val result = importService.importFromAssetsIfNeeded { phase, total, processed, current ->
+                _progress.value = ProgressV2(
+                    phase = phase,
+                    totalItems = total,
+                    processedItems = processed,
+                    currentItem = current
+                )
+            }
+            
+            if (result.success) {
+                _progress.value = ProgressV2(
+                    phase = "COMPLETED",
+                    totalItems = result.showsImported,
+                    processedItems = result.showsImported,
+                    currentItem = "Import completed: ${result.showsImported} shows, ${result.venuesImported} venues",
+                    isComplete = true
+                )
+            } else {
+                _progress.value = ProgressV2(
+                    phase = "ERROR",
+                    totalItems = 0,
+                    processedItems = 0,
+                    currentItem = "Import failed",
+                    error = result.error
+                )
+            }
+            
+            result
         } catch (e: Exception) {
             Log.e(TAG, "Failed to initialize V2 data", e)
+            _progress.value = ProgressV2(
+                phase = "ERROR",
+                totalItems = 0,
+                processedItems = 0,
+                currentItem = "Initialization failed",
+                error = e.message
+            )
             ImportResult.error("Failed to initialize V2 data: ${e.message}")
         }
     }

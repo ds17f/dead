@@ -12,7 +12,7 @@ import com.deadarchive.core.media.player.LastPlayedTrackMonitor
 import com.deadarchive.core.settings.api.SettingsRepository
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
-import com.deadarchive.core.database.v2.service.V2DatabaseManager
+import com.deadarchive.core.database.v2.service.DatabaseManagerV2
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope
@@ -52,7 +52,7 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
     lateinit var globalUpdateManager: GlobalUpdateManager
     
     @Inject
-    lateinit var v2DatabaseManager: V2DatabaseManager
+    lateinit var v2DatabaseManager: DatabaseManagerV2
     
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
@@ -72,15 +72,20 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
             }
         }
         
-        // Initialize V2 database
+        // Initialize V2 database (only if SplashV2 is not enabled)
         applicationScope.launch {
             try {
-                android.util.Log.d("DeadArchiveApplication", "Initializing V2 database...")
-                val result = v2DatabaseManager.initializeV2DataIfNeeded()
-                if (result.success) {
-                    android.util.Log.d("DeadArchiveApplication", "✅ V2 database initialized: ${result.showsImported} shows, ${result.venuesImported} venues")
+                val settings = settingsRepository.getSettings().firstOrNull()
+                if (settings?.useSplashV2 != true) {
+                    android.util.Log.d("DeadArchiveApplication", "Initializing V2 database in background...")
+                    val result = v2DatabaseManager.initializeV2DataIfNeeded()
+                    if (result.success) {
+                        android.util.Log.d("DeadArchiveApplication", "✅ V2 database initialized: ${result.showsImported} shows, ${result.venuesImported} venues")
+                    } else {
+                        android.util.Log.e("DeadArchiveApplication", "❌ V2 database initialization failed: ${result.error}")
+                    }
                 } else {
-                    android.util.Log.e("DeadArchiveApplication", "❌ V2 database initialization failed: ${result.error}")
+                    android.util.Log.d("DeadArchiveApplication", "SplashV2 enabled - skipping background V2 database initialization")
                 }
             } catch (e: Exception) {
                 android.util.Log.e("DeadArchiveApplication", "❌ Failed to initialize V2 database", e)

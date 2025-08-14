@@ -137,6 +137,12 @@ interface SettingsRepository {
      */
     suspend fun updateUseMiniPlayerV2(enabled: Boolean)
     
+    /**
+     * Update the use Splash V2 setting
+     * @param enabled True to enable Splash V2, false to use standard splash
+     */
+    suspend fun updateUseSplashV2(enabled: Boolean)
+    
     // Update-related methods
     
     /**

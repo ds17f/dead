@@ -31,11 +31,11 @@ data class PackageInfo(
 )
 
 @Singleton
-class V2AssetManager @Inject constructor(
+class AssetManagerV2 @Inject constructor(
     @ApplicationContext private val context: Context
 ) {
     companion object {
-        private const val TAG = "V2AssetManager"
+        private const val TAG = "AssetManagerV2"
         private const val DATA_ZIP_FILENAME = "data-v2.0.0.zip"
         private const val TEMP_DIR_NAME = "v2_data_import"
         private const val MANIFEST_FILENAME = "manifest.json"

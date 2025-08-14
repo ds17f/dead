@@ -151,6 +151,7 @@ fun SettingsScreen(
                 onUpdateUseHomeV2 = viewModel::updateUseHomeV2,
                 onUpdateUsePlaylistV2 = viewModel::updateUsePlaylistV2,
                 onUpdateUseMiniPlayerV2 = viewModel::updateUseMiniPlayerV2,
+                onUpdateUseSplashV2 = viewModel::updateUseSplashV2,
                 onResetSettings = viewModel::resetToDefaults,
                 onClearV2Database = viewModel::clearV2Database
             )
@@ -298,6 +299,7 @@ private fun DeveloperOptionsCard(
     onUpdateUseHomeV2: (Boolean) -> Unit,
     onUpdateUsePlaylistV2: (Boolean) -> Unit,
     onUpdateUseMiniPlayerV2: (Boolean) -> Unit,
+    onUpdateUseSplashV2: (Boolean) -> Unit,
     onResetSettings: () -> Unit,
     onClearV2Database: () -> Unit
 ) {
@@ -505,6 +507,34 @@ private fun DeveloperOptionsCard(
                 Switch(
                     checked = settings.useMiniPlayerV2,
                     onCheckedChange = onUpdateUseMiniPlayerV2
+                )
+            }
+            
+            HorizontalDivider()
+            
+            // SplashV2 Setting
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "SplashV2 (Preview)",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    Text(
+                        text = "Enable the redesigned splash screen with V2 database progress tracking",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+                Switch(
+                    checked = settings.useSplashV2,
+                    onCheckedChange = onUpdateUseSplashV2
                 )
             }
             

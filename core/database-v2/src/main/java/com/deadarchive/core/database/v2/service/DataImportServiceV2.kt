@@ -62,14 +62,14 @@ data class ImportResult(
 }
 
 @Singleton
-class V2DataImportService @Inject constructor(
-    private val assetManager: V2AssetManager,
+class DataImportServiceV2 @Inject constructor(
+    private val assetManager: AssetManagerV2,
     private val showDao: ShowV2Dao,
     private val venueDao: VenueV2Dao,
     private val dataVersionDao: DataVersionDao
 ) {
     companion object {
-        private const val TAG = "V2DataImportService"
+        private const val TAG = "DataImportServiceV2"
         private const val SHOWS_DIR = "shows"
     }
     
@@ -81,7 +81,9 @@ class V2DataImportService @Inject constructor(
     /**
      * Main import orchestrator - imports from assets if needed
      */
-    suspend fun importFromAssetsIfNeeded(): ImportResult = withContext(Dispatchers.IO) {
+    suspend fun importFromAssetsIfNeeded(
+        progressCallback: ((phase: String, total: Int, processed: Int, current: String) -> Unit)? = null
+    ): ImportResult = withContext(Dispatchers.IO) {
         try {
             // Check if we already have data
             val currentVersion = dataVersionDao.getCurrentVersion()
@@ -92,6 +94,7 @@ class V2DataImportService @Inject constructor(
             }
             
             // Extract zip to temp directory
+            progressCallback?.invoke("EXTRACTING", 0, 0, "Extracting data files...")
             val tempDir = assetManager.extractDataZip()
             val zipVersion = assetManager.getDataVersion(tempDir)
             
@@ -105,7 +108,7 @@ class V2DataImportService @Inject constructor(
                 Log.d(TAG, "Importing data version $zipVersion (current: $currentVersion)")
                 
                 // Import shows and venues
-                val result = importShowsAndVenues(tempDir)
+                val result = importShowsAndVenues(tempDir, progressCallback)
                 
                 if (result.success) {
                     // Update version tracking
@@ -128,7 +131,10 @@ class V2DataImportService @Inject constructor(
     /**
      * Memory-efficient import using select-then-insert pattern
      */
-    private suspend fun importShowsAndVenues(tempDir: File): ImportResult {
+    private suspend fun importShowsAndVenues(
+        tempDir: File,
+        progressCallback: ((phase: String, total: Int, processed: Int, current: String) -> Unit)? = null
+    ): ImportResult {
         val showsDir = File(tempDir, SHOWS_DIR)
         if (!showsDir.exists() || !showsDir.isDirectory) {
             return ImportResult.error("Shows directory not found in extracted data")
@@ -144,6 +150,7 @@ class V2DataImportService @Inject constructor(
         var showCount = 0
         var venueCount = 0
         var failedCount = 0
+        val totalShows = showFiles.size
         
         showFiles.forEach { showFile ->
             try {
@@ -166,8 +173,11 @@ class V2DataImportService @Inject constructor(
                 showDao.insert(show)
                 showCount++
                 
-                if (showCount % 100 == 0) {
-                    Log.d(TAG, "Processed $showCount shows, $venueCount venues")
+                // Progress callback every 10 shows for more responsive UI
+                if (showCount % 10 == 0 || showCount == totalShows) {
+                    val currentShowName = "${showData.date} - ${showData.venue}"
+                    progressCallback?.invoke("IMPORTING_SHOWS", totalShows, showCount, currentShowName)
+                    Log.d(TAG, "Processed $showCount/$totalShows shows, $venueCount venues")
                 }
                 
             } catch (e: Exception) {
@@ -182,7 +192,9 @@ class V2DataImportService @Inject constructor(
         
         // Update venue statistics after all shows are imported
         Log.d(TAG, "Computing venue statistics...")
+        progressCallback?.invoke("COMPUTING_VENUES", venueCount, 0, "Computing venue statistics...")
         updateVenueStatistics()
+        progressCallback?.invoke("COMPUTING_VENUES", venueCount, venueCount, "Venue statistics completed")
         
         return ImportResult.success(showCount, venueCount)
     }
