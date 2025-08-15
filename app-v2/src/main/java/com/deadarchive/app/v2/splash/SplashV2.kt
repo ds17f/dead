@@ -119,6 +119,14 @@ fun SplashV2(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         when (uiState.progress.phase) {
+                            PhaseV2.RESTORING_DATABASE -> {
+                                // Show indeterminate progress for database restoration
+                                CircularProgressIndicator(
+                                    modifier = Modifier.size(32.dp),
+                                    strokeWidth = 3.dp
+                                )
+                            }
+                            
                             PhaseV2.IMPORTING_SHOWS -> {
                                 if (uiState.progress.totalShows > 0) {
                                     LinearProgressIndicator(
@@ -221,6 +229,16 @@ fun SplashV2(
                                 textAlign = TextAlign.Center,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
                             )
+                        }
+                        
+                        // Abort button to skip V2 initialization
+                        Spacer(modifier = Modifier.height(16.dp))
+                        
+                        OutlinedButton(
+                            onClick = { viewModel.abortInitialization() },
+                            modifier = Modifier.padding(horizontal = 32.dp)
+                        ) {
+                            Text("Skip V2 Import")
                         }
                     }
                 }

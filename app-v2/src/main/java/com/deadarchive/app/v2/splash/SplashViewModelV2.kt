@@ -28,18 +28,8 @@ class SplashViewModelV2 @Inject constructor(
     private fun initializeV2Database() {
         viewModelScope.launch {
             try {
-                // Check if already initialized
-                val isInitialized = splashV2Service.isV2DataInitialized()
-                
-                if (isInitialized) {
-                    // Already initialized, proceed to app
-                    splashV2Service.updateUiState(
-                        isReady = true,
-                        showProgress = false,
-                        message = "V2 database ready"
-                    )
-                    return@launch
-                }
+                // Always show progress first and let the service handle restoration/import
+                // The service will check for database ZIP, existing data, etc.
                 
                 // Show progress and start initialization
                 splashV2Service.updateUiState(
@@ -53,6 +43,7 @@ class SplashViewModelV2 @Inject constructor(
                         val message = when (progress.phase) {
                             PhaseV2.IDLE -> "Preparing V2 database..."
                             PhaseV2.CHECKING -> "Checking existing data..."
+                            PhaseV2.RESTORING_DATABASE -> "Restoring database from ZIP file..."
                             PhaseV2.EXTRACTING -> "Extracting data files..."
                             PhaseV2.IMPORTING_SHOWS -> "Importing shows (${progress.processedShows}/${progress.totalShows})"
                             PhaseV2.COMPUTING_VENUES -> "Computing venue statistics..."
@@ -109,5 +100,9 @@ class SplashViewModelV2 @Inject constructor(
     
     fun skipInitialization() {
         splashV2Service.skipInitialization()
+    }
+    
+    fun abortInitialization() {
+        splashV2Service.abortInitialization()
     }
 }
