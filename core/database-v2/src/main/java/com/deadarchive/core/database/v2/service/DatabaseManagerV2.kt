@@ -1,5 +1,6 @@
 package com.deadarchive.core.database.v2.service
 
+import android.content.Context
 import android.util.Log
 import com.deadarchive.core.database.v2.DeadArchiveV2Database
 import com.deadarchive.core.database.v2.dao.DataVersionDao
@@ -16,11 +17,16 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.withContext
+import dagger.hilt.android.qualifiers.ApplicationContext
+import java.io.File
+import java.io.FileOutputStream
+import java.util.zip.ZipInputStream
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
 class DatabaseManagerV2 @Inject constructor(
+    @ApplicationContext private val context: Context,
     private val database: DeadArchiveV2Database,
     private val showDao: ShowV2Dao,
     private val venueDao: VenueV2Dao,
@@ -35,6 +41,7 @@ class DatabaseManagerV2 @Inject constructor(
 ) {
     companion object {
         private const val TAG = "DatabaseManagerV2"
+        private const val DB_ZIP_FILENAME = "dead_archive_v2_database.db.zip"
     }
     
     // Track initialization timing
@@ -78,8 +85,32 @@ class DatabaseManagerV2 @Inject constructor(
                 currentItem = "Checking existing data..."
             )
             
-            if (isV2DataInitialized()) {
-                Log.d(TAG, "V2 data already initialized")
+            // Check if database file exists, if not try to extract from ZIP
+            val dbFile = context.getDatabasePath(DeadArchiveV2Database.DATABASE_NAME)
+            if (!dbFile.exists()) {
+                Log.d(TAG, "Database file doesn't exist, trying to extract from ZIP")
+                val extractSuccess = extractDatabaseFromZip()
+                if (extractSuccess) {
+                    Log.i(TAG, "Database extracted from ZIP successfully")
+                    // Database now exists, we can return success
+                    _progress.value = ProgressV2(
+                        phase = "COMPLETED",
+                        totalItems = 1,
+                        processedItems = 1,
+                        currentItem = "Database restored from ZIP file",
+                        isComplete = true
+                    )
+                    return@withContext ImportResult.success(0, 0)
+                } else {
+                    Log.d(TAG, "ZIP extraction failed or ZIP not available, proceeding with normal import")
+                }
+            }
+            
+            val isInitialized = isV2DataInitialized()
+            Log.d(TAG, "V2 data initialization check: $isInitialized")
+            
+            if (isInitialized) {
+                Log.d(TAG, "V2 data already initialized, skipping initialization")
                 _progress.value = ProgressV2(
                     phase = "COMPLETED",
                     totalItems = 1,
@@ -90,7 +121,7 @@ class DatabaseManagerV2 @Inject constructor(
                 return@withContext ImportResult.success(0, 0)
             }
             
-            Log.d(TAG, "Initializing V2 data...")
+            Log.d(TAG, "Initializing V2 data from assets...")
             _progress.value = ProgressV2(
                 phase = "EXTRACTING",
                 totalItems = 0,
@@ -175,44 +206,103 @@ class DatabaseManagerV2 @Inject constructor(
     }
     
     /**
-     * Clear all V2 database data
+     * Clear all V2 database data by deleting the database file
      */
     suspend fun clearV2Database(): Unit = withContext(Dispatchers.IO) {
         try {
-            Log.d(TAG, "Clearing V2 database...")
+            Log.d(TAG, "Clearing V2 database by deleting database file...")
             
-            // Delete in reverse foreign key order (child tables first)
-            // Track formats depend on tracks
-            trackFormatDao.deleteAllTrackFormats()
+            // Close the database first
+            database.close()
             
-            // Tracks depend on recordings
-            trackDao.deleteAllTracks()
+            // Get the database file path
+            val dbFile = context.getDatabasePath(DeadArchiveV2Database.DATABASE_NAME)
             
-            // Recordings depend on shows
-            recordingDao.deleteAllRecordings()
+            if (dbFile.exists()) {
+                val deleted = dbFile.delete()
+                if (deleted) {
+                    Log.i(TAG, "V2 database file deleted successfully: ${dbFile.absolutePath}")
+                } else {
+                    Log.e(TAG, "Failed to delete V2 database file: ${dbFile.absolutePath}")
+                    throw RuntimeException("Failed to delete database file")
+                }
+            } else {
+                Log.d(TAG, "V2 database file does not exist: ${dbFile.absolutePath}")
+            }
             
-            // Setlist songs depend on setlists and songs
-            setlistSongDao.deleteAllSetlistSongs()
+            // Also delete any associated files (WAL, SHM)
+            val walFile = context.getDatabasePath("${DeadArchiveV2Database.DATABASE_NAME}-wal")
+            val shmFile = context.getDatabasePath("${DeadArchiveV2Database.DATABASE_NAME}-shm")
             
-            // Setlists depend on shows
-            setlistDao.deleteAllSetlists()
+            if (walFile.exists()) {
+                walFile.delete()
+                Log.d(TAG, "Deleted WAL file: ${walFile.absolutePath}")
+            }
             
-            // Shows depend on venues
-            showDao.deleteAll()
+            if (shmFile.exists()) {
+                shmFile.delete()
+                Log.d(TAG, "Deleted SHM file: ${shmFile.absolutePath}")
+            }
             
-            // Songs are independent
-            songDao.deleteAllSongs()
-            
-            // Venues are independent
-            venueDao.deleteAll()
-            
-            // Data version is independent
-            dataVersionDao.deleteAll()
-            
-            Log.i(TAG, "V2 database cleared successfully - all tables emptied")
         } catch (e: Exception) {
             Log.e(TAG, "Failed to clear V2 database", e)
             throw e
+        }
+    }
+    
+    /**
+     * Extract database from ZIP file in assets if available
+     */
+    private suspend fun extractDatabaseFromZip(): Boolean = withContext(Dispatchers.IO) {
+        try {
+            // Check if ZIP file exists in assets
+            val zipExists = try {
+                context.assets.open(DB_ZIP_FILENAME).use { true }
+            } catch (e: Exception) {
+                Log.d(TAG, "ZIP file not found in assets: $DB_ZIP_FILENAME")
+                false
+            }
+            
+            if (!zipExists) {
+                return@withContext false
+            }
+            
+            Log.d(TAG, "Extracting database from $DB_ZIP_FILENAME")
+            
+            // Get the database file path
+            val dbFile = context.getDatabasePath(DeadArchiveV2Database.DATABASE_NAME)
+            
+            // Ensure parent directory exists
+            dbFile.parentFile?.mkdirs()
+            
+            // Extract database file from ZIP
+            context.assets.open(DB_ZIP_FILENAME).use { assetStream ->
+                ZipInputStream(assetStream).use { zipStream ->
+                    var entry = zipStream.nextEntry
+                    
+                    while (entry != null) {
+                        if (!entry.isDirectory && entry.name.endsWith(".db")) {
+                            // Found the database file, extract it directly
+                            FileOutputStream(dbFile).use { outputStream ->
+                                zipStream.copyTo(outputStream)
+                            }
+                            
+                            Log.d(TAG, "Extracted database to: ${dbFile.absolutePath} (${dbFile.length()} bytes)")
+                            return@withContext true
+                        }
+                        
+                        zipStream.closeEntry()
+                        entry = zipStream.nextEntry
+                    }
+                }
+            }
+            
+            Log.e(TAG, "No database file found in ZIP")
+            false
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to extract database from ZIP", e)
+            false
         }
     }
     
