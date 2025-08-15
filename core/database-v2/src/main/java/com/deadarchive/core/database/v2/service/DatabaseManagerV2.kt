@@ -25,6 +25,9 @@ class DatabaseManagerV2 @Inject constructor(
         private const val TAG = "DatabaseManagerV2"
     }
     
+    // Track initialization timing
+    private var initStartTimeMs: Long = 0L
+    
     private val _progress = MutableStateFlow(
         ProgressV2(
             phase = "IDLE",
@@ -52,6 +55,10 @@ class DatabaseManagerV2 @Inject constructor(
      */
     suspend fun initializeV2DataIfNeeded(): ImportResult = withContext(Dispatchers.IO) {
         try {
+            // Record start time
+            initStartTimeMs = System.currentTimeMillis()
+            Log.d(TAG, "Starting V2 database initialization at $initStartTimeMs")
+            
             _progress.value = ProgressV2(
                 phase = "CHECKING",
                 totalItems = 0,
@@ -89,6 +96,10 @@ class DatabaseManagerV2 @Inject constructor(
             }
             
             if (result.success) {
+                val endTimeMs = System.currentTimeMillis()
+                val elapsedMs = endTimeMs - initStartTimeMs
+                val elapsedSeconds = elapsedMs / 1000.0
+                
                 val completionMessage = buildString {
                     append("Import completed: ")
                     append("${result.showsImported} shows, ")
@@ -100,6 +111,11 @@ class DatabaseManagerV2 @Inject constructor(
                         append(", ${result.tracksImported} tracks")
                     }
                 }
+                
+                // Log completion with timing information
+                Log.i(TAG, "V2 database initialization completed successfully!")
+                Log.i(TAG, "Total time: ${String.format("%.2f", elapsedSeconds)} seconds")
+                Log.i(TAG, "Results: ${result.showsImported} shows, ${result.venuesImported} venues, ${result.recordingsImported} recordings, ${result.tracksImported} tracks")
                 
                 _progress.value = ProgressV2(
                     phase = "COMPLETED",

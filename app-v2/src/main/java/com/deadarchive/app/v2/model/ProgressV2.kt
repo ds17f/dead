@@ -15,6 +15,7 @@ data class ProgressV2(
     val currentRecording: String = "",
     val totalTracks: Int = 0,
     val processedTracks: Int = 0,
+    val startTimeMs: Long = 0L,
     val error: String? = null
 ) {
     val progressPercentage: Float
@@ -34,4 +35,18 @@ data class ProgressV2(
         
     val isInProgress: Boolean
         get() = phase in listOf(PhaseV2.CHECKING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS, PhaseV2.COMPUTING_VENUES, PhaseV2.IMPORTING_RECORDINGS)
+        
+    /**
+     * Get elapsed time since start in a human-readable format
+     */
+    fun getElapsedTimeString(currentTimeMs: Long = System.currentTimeMillis()): String {
+        if (startTimeMs == 0L) return "00:00"
+        
+        val elapsedMs = currentTimeMs - startTimeMs
+        val totalSeconds = elapsedMs / 1000
+        val minutes = totalSeconds / 60
+        val seconds = totalSeconds % 60
+        
+        return String.format("%02d:%02d", minutes, seconds)
+    }
 }

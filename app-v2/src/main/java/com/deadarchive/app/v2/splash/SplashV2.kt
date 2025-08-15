@@ -20,6 +20,17 @@ fun SplashV2(
     viewModel: SplashViewModelV2 = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    var currentTime by remember { mutableLongStateOf(System.currentTimeMillis()) }
+    
+    // Update timer every second while progress is showing
+    LaunchedEffect(uiState.showProgress) {
+        if (uiState.showProgress) {
+            while (true) {
+                delay(1000)
+                currentTime = System.currentTimeMillis()
+            }
+        }
+    }
     
     // Navigate when ready
     LaunchedEffect(uiState.isReady) {
@@ -199,6 +210,16 @@ fun SplashV2(
                                 textAlign = TextAlign.Center,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 maxLines = 2
+                            )
+                        }
+                        
+                        // Show elapsed time
+                        if (uiState.progress.startTimeMs > 0L) {
+                            Text(
+                                text = "Elapsed: ${uiState.progress.getElapsedTimeString(currentTime)}",
+                                style = MaterialTheme.typography.bodySmall,
+                                textAlign = TextAlign.Center,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f)
                             )
                         }
                     }

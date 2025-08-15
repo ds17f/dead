@@ -28,6 +28,9 @@ class SplashV2Service @Inject constructor(
     private val _uiState = MutableStateFlow(SplashV2UiState())
     val uiState: StateFlow<SplashV2UiState> = _uiState.asStateFlow()
     
+    // Track the start time of the initialization process
+    private var initStartTimeMs: Long = 0L
+    
     /**
      * Convert DatabaseManagerV2 progress to V2 splash progress
      */
@@ -45,6 +48,12 @@ class SplashV2Service @Inject constructor(
                 else -> PhaseV2.IDLE
             }
             
+            // Initialize start time when we begin processing
+            if (initStartTimeMs == 0L && phase in listOf(PhaseV2.CHECKING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS)) {
+                initStartTimeMs = System.currentTimeMillis()
+                Log.d(TAG, "Database initialization started at ${initStartTimeMs}")
+            }
+            
             // Map progress based on phase type
             when (phase) {
                 PhaseV2.IMPORTING_RECORDINGS -> ProgressV2(
@@ -55,6 +64,7 @@ class SplashV2Service @Inject constructor(
                     totalRecordings = v2Progress.totalItems,
                     processedRecordings = v2Progress.processedItems,
                     currentRecording = v2Progress.currentItem,
+                    startTimeMs = initStartTimeMs,
                     error = v2Progress.error
                 )
                 PhaseV2.COMPUTING_VENUES -> ProgressV2(
@@ -64,6 +74,7 @@ class SplashV2Service @Inject constructor(
                     currentShow = "",
                     totalVenues = v2Progress.totalItems,
                     processedVenues = v2Progress.processedItems,
+                    startTimeMs = initStartTimeMs,
                     error = v2Progress.error
                 )
                 else -> ProgressV2(
@@ -71,6 +82,7 @@ class SplashV2Service @Inject constructor(
                     totalShows = v2Progress.totalItems,
                     processedShows = v2Progress.processedItems,
                     currentShow = v2Progress.currentItem,
+                    startTimeMs = initStartTimeMs,
                     error = v2Progress.error
                 )
             }
