@@ -5,6 +5,12 @@ import com.deadarchive.core.database.v2.DeadArchiveV2Database
 import com.deadarchive.core.database.v2.dao.DataVersionDao
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
+import com.deadarchive.core.database.v2.dao.SongV2Dao
+import com.deadarchive.core.database.v2.dao.SetlistV2Dao
+import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
+import com.deadarchive.core.database.v2.dao.RecordingV2Dao
+import com.deadarchive.core.database.v2.dao.TrackV2Dao
+import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -19,6 +25,12 @@ class DatabaseManagerV2 @Inject constructor(
     private val showDao: ShowV2Dao,
     private val venueDao: VenueV2Dao,
     private val dataVersionDao: DataVersionDao,
+    private val songDao: SongV2Dao,
+    private val setlistDao: SetlistV2Dao,
+    private val setlistSongDao: SetlistSongV2Dao,
+    private val recordingDao: RecordingV2Dao,
+    private val trackDao: TrackV2Dao,
+    private val trackFormatDao: TrackFormatV2Dao,
     private val importService: DataImportServiceV2
 ) {
     companion object {
@@ -169,12 +181,35 @@ class DatabaseManagerV2 @Inject constructor(
         try {
             Log.d(TAG, "Clearing V2 database...")
             
-            // Delete in reverse foreign key order
+            // Delete in reverse foreign key order (child tables first)
+            // Track formats depend on tracks
+            trackFormatDao.deleteAllTrackFormats()
+            
+            // Tracks depend on recordings
+            trackDao.deleteAllTracks()
+            
+            // Recordings depend on shows
+            recordingDao.deleteAllRecordings()
+            
+            // Setlist songs depend on setlists and songs
+            setlistSongDao.deleteAllSetlistSongs()
+            
+            // Setlists depend on shows
+            setlistDao.deleteAllSetlists()
+            
+            // Shows depend on venues
             showDao.deleteAll()
+            
+            // Songs are independent
+            songDao.deleteAllSongs()
+            
+            // Venues are independent
             venueDao.deleteAll()
+            
+            // Data version is independent
             dataVersionDao.deleteAll()
             
-            Log.d(TAG, "V2 database cleared successfully")
+            Log.i(TAG, "V2 database cleared successfully - all tables emptied")
         } catch (e: Exception) {
             Log.e(TAG, "Failed to clear V2 database", e)
             throw e
