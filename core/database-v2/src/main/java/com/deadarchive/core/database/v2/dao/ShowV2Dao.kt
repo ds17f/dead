@@ -39,6 +39,7 @@ interface ShowV2Dao {
     @Query("SELECT * FROM shows_v2 WHERE date = :date ORDER BY showSequence")
     suspend fun getShowsByDate(date: String): List<ShowV2Entity>
     
+    
     // Location queries
     @Query("SELECT * FROM shows_v2 WHERE venueId = :venueId ORDER BY date")
     suspend fun getShowsByVenue(venueId: String): List<ShowV2Entity>

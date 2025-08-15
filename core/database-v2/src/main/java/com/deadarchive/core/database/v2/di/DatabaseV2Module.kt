@@ -13,6 +13,9 @@ import com.deadarchive.core.database.v2.dao.DataVersionDao
 import com.deadarchive.core.database.v2.dao.SongV2Dao
 import com.deadarchive.core.database.v2.dao.SetlistV2Dao
 import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
+import com.deadarchive.core.database.v2.dao.RecordingV2Dao
+import com.deadarchive.core.database.v2.dao.TrackV2Dao
+import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
 import javax.inject.Singleton
 
 @Module
@@ -53,6 +56,21 @@ object DatabaseV2Module {
     @Provides
     fun provideSetlistSongV2Dao(database: DeadArchiveV2Database): SetlistSongV2Dao {
         return database.setlistSongDao()
+    }
+    
+    @Provides
+    fun provideRecordingV2Dao(database: DeadArchiveV2Database): RecordingV2Dao {
+        return database.recordingDao()
+    }
+    
+    @Provides
+    fun provideTrackV2Dao(database: DeadArchiveV2Database): TrackV2Dao {
+        return database.trackDao()
+    }
+    
+    @Provides
+    fun provideTrackFormatV2Dao(database: DeadArchiveV2Database): TrackFormatV2Dao {
+        return database.trackFormatDao()
     }
     
     // Services and repositories are automatically provided by @Singleton @Inject constructor

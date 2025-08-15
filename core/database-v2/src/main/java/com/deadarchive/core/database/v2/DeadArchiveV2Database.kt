@@ -10,12 +10,18 @@ import com.deadarchive.core.database.v2.entities.DataVersionEntity
 import com.deadarchive.core.database.v2.entities.SongV2Entity
 import com.deadarchive.core.database.v2.entities.SetlistV2Entity
 import com.deadarchive.core.database.v2.entities.SetlistSongV2Entity
+import com.deadarchive.core.database.v2.entities.RecordingV2Entity
+import com.deadarchive.core.database.v2.entities.TrackV2Entity
+import com.deadarchive.core.database.v2.entities.TrackFormatV2Entity
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
 import com.deadarchive.core.database.v2.dao.DataVersionDao
 import com.deadarchive.core.database.v2.dao.SongV2Dao
 import com.deadarchive.core.database.v2.dao.SetlistV2Dao
 import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
+import com.deadarchive.core.database.v2.dao.RecordingV2Dao
+import com.deadarchive.core.database.v2.dao.TrackV2Dao
+import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
 
 @Database(
     entities = [
@@ -24,9 +30,12 @@ import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
         DataVersionEntity::class,
         SongV2Entity::class,
         SetlistV2Entity::class,
-        SetlistSongV2Entity::class
+        SetlistSongV2Entity::class,
+        RecordingV2Entity::class,
+        TrackV2Entity::class,
+        TrackFormatV2Entity::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = false
 )
 abstract class DeadArchiveV2Database : RoomDatabase() {
@@ -37,6 +46,9 @@ abstract class DeadArchiveV2Database : RoomDatabase() {
     abstract fun songDao(): SongV2Dao
     abstract fun setlistDao(): SetlistV2Dao
     abstract fun setlistSongDao(): SetlistSongV2Dao
+    abstract fun recordingDao(): RecordingV2Dao
+    abstract fun trackDao(): TrackV2Dao
+    abstract fun trackFormatDao(): TrackFormatV2Dao
     
     companion object {
         const val DATABASE_NAME = "dead_archive_v2_database"

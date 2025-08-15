@@ -7,11 +7,17 @@ import com.deadarchive.core.database.v2.dao.SetlistV2Dao
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.SongV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
+import com.deadarchive.core.database.v2.dao.RecordingV2Dao
+import com.deadarchive.core.database.v2.dao.TrackV2Dao
+import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
 import com.deadarchive.core.database.v2.entities.DataVersionEntity
 import com.deadarchive.core.database.v2.entities.SetlistSongV2Entity
 import com.deadarchive.core.database.v2.entities.SetlistV2Entity
 import com.deadarchive.core.database.v2.entities.ShowV2Entity
 import com.deadarchive.core.database.v2.entities.VenueV2Entity
+import com.deadarchive.core.database.v2.entities.RecordingV2Entity
+import com.deadarchive.core.database.v2.entities.TrackV2Entity
+import com.deadarchive.core.database.v2.entities.TrackFormatV2Entity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.SerialName
@@ -54,6 +60,41 @@ data class SongDataV2(
     val segueIntoNext: Boolean = false
 )
 
+@Serializable
+data class RecordingJsonData(
+    val rating: Double = 0.0,
+    @SerialName("review_count")
+    val reviewCount: Int = 0,
+    @SerialName("source_type")
+    val sourceType: String? = null,
+    val confidence: Double = 0.0,
+    val date: String,
+    val venue: String,
+    val location: String? = null,
+    @SerialName("raw_rating")
+    val rawRating: Double = 0.0,
+    @SerialName("high_ratings")
+    val highRatings: Int = 0,
+    @SerialName("low_ratings")
+    val lowRatings: Int = 0,
+    val tracks: List<TrackJsonData> = emptyList()
+)
+
+@Serializable
+data class TrackJsonData(
+    val track: String, // Track number like "01", "02"
+    val title: String,
+    val duration: Double? = null,
+    val formats: List<FormatJsonData> = emptyList()
+)
+
+@Serializable
+data class FormatJsonData(
+    val format: String, // "Flac", "VBR MP3", etc.
+    val filename: String,
+    val bitrate: String? = null
+)
+
 data class ImportResult(
     val success: Boolean,
     val showsImported: Int,
@@ -61,12 +102,16 @@ data class ImportResult(
     val songsImported: Int = 0,
     val setlistsImported: Int = 0,
     val setlistSongsImported: Int = 0,
+    val recordingsImported: Int = 0,
+    val tracksImported: Int = 0,
+    val trackFormatsImported: Int = 0,
     val error: String? = null
 ) {
     companion object {
-        fun success(shows: Int, venues: Int, songs: Int = 0, setlists: Int = 0, setlistSongs: Int = 0) = 
-            ImportResult(true, shows, venues, songs, setlists, setlistSongs)
-        fun error(message: String) = ImportResult(false, 0, 0, 0, 0, 0, message)
+        fun success(shows: Int, venues: Int, songs: Int = 0, setlists: Int = 0, setlistSongs: Int = 0, 
+                   recordings: Int = 0, tracks: Int = 0, trackFormats: Int = 0) = 
+            ImportResult(true, shows, venues, songs, setlists, setlistSongs, recordings, tracks, trackFormats)
+        fun error(message: String) = ImportResult(false, 0, 0, 0, 0, 0, 0, 0, 0, message)
     }
 }
 
@@ -78,11 +123,15 @@ class DataImportServiceV2 @Inject constructor(
     private val dataVersionDao: DataVersionDao,
     private val songDao: SongV2Dao,
     private val setlistDao: SetlistV2Dao,
-    private val setlistSongDao: SetlistSongV2Dao
+    private val setlistSongDao: SetlistSongV2Dao,
+    private val recordingDao: RecordingV2Dao,
+    private val trackDao: TrackV2Dao,
+    private val trackFormatDao: TrackFormatV2Dao
 ) {
     companion object {
         private const val TAG = "DataImportServiceV2"
         private const val SHOWS_DIR = "shows"
+        private const val RECORDINGS_DIR = "recordings"
     }
     
     private val json = Json { 
@@ -120,15 +169,32 @@ class DataImportServiceV2 @Inject constructor(
                 Log.d(TAG, "Importing data version $zipVersion (current: $currentVersion)")
                 
                 // Import shows, venues, and setlists
-                val result = importShowsVenuesAndSetlists(tempDir, progressCallback)
+                val showResult = importShowsVenuesAndSetlists(tempDir, progressCallback)
                 
-                if (result.success) {
+                if (showResult.success) {
+                    // Import recordings and tracks
+                    val recordingResult = importRecordingsAndTracks(tempDir, progressCallback)
+                    
+                    // Combine results
+                    val combinedResult = ImportResult.success(
+                        shows = showResult.showsImported,
+                        venues = showResult.venuesImported,
+                        songs = showResult.songsImported,
+                        setlists = showResult.setlistsImported,
+                        setlistSongs = showResult.setlistSongsImported,
+                        recordings = recordingResult.recordingsImported,
+                        tracks = recordingResult.tracksImported,
+                        trackFormats = recordingResult.trackFormatsImported
+                    )
+                    
                     // Update version tracking
-                    updateDataVersion(tempDir, result.showsImported, result.venuesImported)
-                    Log.d(TAG, "Import completed: ${result.showsImported} shows, ${result.venuesImported} venues, ${result.songsImported} songs, ${result.setlistsImported} setlists, ${result.setlistSongsImported} song performances")
+                    updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
+                    Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats")
+                    
+                    combinedResult
+                } else {
+                    showResult
                 }
-                
-                result
                 
             } finally {
                 assetManager.cleanupTempFiles(tempDir)
@@ -412,5 +478,173 @@ class DataImportServiceV2 @Inject constructor(
         }
         
         return Triple(songCount, setlistCount, setlistSongCount)
+    }
+    
+    /**
+     * Import recordings and tracks data from JSON files
+     */
+    private suspend fun importRecordingsAndTracks(
+        tempDir: File,
+        progressCallback: ((phase: String, total: Int, processed: Int, current: String) -> Unit)? = null
+    ): ImportResult {
+        val recordingsDir = File(tempDir, RECORDINGS_DIR)
+        if (!recordingsDir.exists() || !recordingsDir.isDirectory) {
+            Log.w(TAG, "Recordings directory not found, skipping recording import")
+            return ImportResult.success(0, 0) // No recordings is not a failure
+        }
+        
+        val recordingFiles = recordingsDir.listFiles { file -> file.name.endsWith(".json") }
+        if (recordingFiles.isNullOrEmpty()) {
+            Log.w(TAG, "No recording JSON files found")
+            return ImportResult.success(0, 0)
+        }
+        
+        Log.d(TAG, "Processing ${recordingFiles.size} recording files")
+        
+        var recordingCount = 0
+        var trackCount = 0
+        var trackFormatCount = 0
+        var failedCount = 0
+        val totalRecordings = recordingFiles.size
+        
+        recordingFiles.forEach { recordingFile ->
+            try {
+                // Extract recording identifier from filename
+                val identifier = recordingFile.nameWithoutExtension
+                
+                // Parse recording JSON
+                val recordingContent = recordingFile.readText()
+                val recordingData = json.decodeFromString<RecordingJsonData>(recordingContent)
+                
+                // Map recording to show_id via date/venue matching
+                val showId = findShowIdForRecording(recordingData)
+                if (showId == null) {
+                    Log.w(TAG, "Could not map recording $identifier to show (${recordingData.date} - ${recordingData.venue})")
+                    failedCount++
+                    return@forEach
+                }
+                
+                // Create and insert recording entity
+                val recording = RecordingV2Entity(
+                    identifier = identifier,
+                    showId = showId,
+                    title = null, // Not available in current JSON structure
+                    sourceType = recordingData.sourceType,
+                    date = recordingData.date,
+                    venue = recordingData.venue,
+                    location = recordingData.location,
+                    rating = recordingData.rating,
+                    rawRating = recordingData.rawRating,
+                    reviewCount = recordingData.reviewCount,
+                    confidence = recordingData.confidence,
+                    highRatings = recordingData.highRatings,
+                    lowRatings = recordingData.lowRatings
+                )
+                
+                recordingDao.insertRecording(recording)
+                recordingCount++
+                
+                // Import tracks for this recording
+                val trackResults = importTracksForRecording(identifier, recordingData.tracks)
+                trackCount += trackResults.first
+                trackFormatCount += trackResults.second
+                
+                // Progress callback every 100 recordings for performance
+                if (recordingCount % 100 == 0 || recordingCount == totalRecordings) {
+                    val currentRecordingName = "${recordingData.date} - ${recordingData.venue} ($identifier)"
+                    progressCallback?.invoke("IMPORTING_RECORDINGS", totalRecordings, recordingCount, currentRecordingName)
+                    Log.d(TAG, "Processed $recordingCount/$totalRecordings recordings, $trackCount tracks, $trackFormatCount formats")
+                }
+                
+            } catch (e: Exception) {
+                failedCount++
+                Log.e(TAG, "Failed to process recording file: ${recordingFile.name} (${e.message})")
+                Log.d(TAG, "Error details for ${recordingFile.name}", e)
+                // Continue processing other files
+            }
+        }
+        
+        Log.d(TAG, "Recording import completed: $recordingCount recordings, $trackCount tracks, $trackFormatCount formats imported, $failedCount failed")
+        
+        return ImportResult.success(
+            shows = 0, venues = 0, songs = 0, setlists = 0, setlistSongs = 0,
+            recordings = recordingCount, tracks = trackCount, trackFormats = trackFormatCount
+        )
+    }
+    
+    /**
+     * Find show_id for a recording based on date and venue matching
+     */
+    private suspend fun findShowIdForRecording(recordingData: RecordingJsonData): String? {
+        try {
+            // Get all shows for this date
+            val dateMatches = showDao.getShowsByDate(recordingData.date)
+            
+            if (dateMatches.isEmpty()) {
+                Log.w(TAG, "No shows found for date: ${recordingData.date}")
+                return null
+            }
+            
+            if (dateMatches.size == 1) {
+                // Single show on this date - use it
+                Log.d(TAG, "Using single show match for recording: ${recordingData.date} - ${recordingData.venue}")
+                return dateMatches.first().showId
+            }
+            
+            // Multiple shows on same date - try to match by venue
+            // For now, just use the first one since venue matching is complex
+            // In a production system, we'd need more sophisticated venue normalization
+            Log.d(TAG, "Multiple shows found for ${recordingData.date}, using first match. Recording venue: ${recordingData.venue}")
+            return dateMatches.first().showId
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error finding show for recording: ${recordingData.date} - ${recordingData.venue}", e)
+            return null
+        }
+    }
+    
+    /**
+     * Import tracks for a single recording
+     * Returns Pair(trackCount, trackFormatCount)
+     */
+    private suspend fun importTracksForRecording(
+        recordingId: String, 
+        tracksData: List<TrackJsonData>
+    ): Pair<Int, Int> {
+        var trackCount = 0
+        var trackFormatCount = 0
+        
+        try {
+            tracksData.forEach { trackData ->
+                // Create and insert track entity
+                val track = TrackV2Entity(
+                    recordingId = recordingId,
+                    trackNumber = trackData.track,
+                    title = trackData.title,
+                    duration = trackData.duration
+                )
+                
+                val trackId = trackDao.insertTrack(track)
+                trackCount++
+                
+                // Import formats for this track
+                trackData.formats.forEach { formatData ->
+                    val trackFormat = TrackFormatV2Entity(
+                        trackId = trackId,
+                        format = formatData.format,
+                        filename = formatData.filename,
+                        bitrate = formatData.bitrate
+                    )
+                    
+                    trackFormatDao.insertTrackFormat(trackFormat)
+                    trackFormatCount++
+                }
+            }
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to import tracks for recording: $recordingId", e)
+        }
+        
+        return Pair(trackCount, trackFormatCount)
     }
 }
