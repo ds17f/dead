@@ -128,6 +128,54 @@ fun SplashV2(
                                 }
                             }
                             
+                            PhaseV2.IMPORTING_RECORDINGS -> {
+                                if (uiState.progress.totalRecordings > 0) {
+                                    LinearProgressIndicator(
+                                        progress = { uiState.progress.progressPercentage / 100f },
+                                        modifier = Modifier.fillMaxWidth()
+                                    )
+                                    
+                                    Text(
+                                        text = "${uiState.progress.processedRecordings} / ${uiState.progress.totalRecordings} recordings",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                    
+                                    if (uiState.progress.totalTracks > 0) {
+                                        Text(
+                                            text = "${uiState.progress.processedTracks} tracks processed",
+                                            style = MaterialTheme.typography.bodySmall,
+                                            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
+                                        )
+                                    }
+                                } else {
+                                    CircularProgressIndicator(
+                                        modifier = Modifier.size(32.dp),
+                                        strokeWidth = 3.dp
+                                    )
+                                }
+                            }
+                            
+                            PhaseV2.COMPUTING_VENUES -> {
+                                if (uiState.progress.totalVenues > 0) {
+                                    LinearProgressIndicator(
+                                        progress = { uiState.progress.progressPercentage / 100f },
+                                        modifier = Modifier.fillMaxWidth()
+                                    )
+                                    
+                                    Text(
+                                        text = "${uiState.progress.processedVenues} / ${uiState.progress.totalVenues} venues",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                } else {
+                                    CircularProgressIndicator(
+                                        modifier = Modifier.size(32.dp),
+                                        strokeWidth = 3.dp
+                                    )
+                                }
+                            }
+                            
                             else -> {
                                 CircularProgressIndicator(
                                     modifier = Modifier.size(32.dp),
@@ -143,13 +191,14 @@ fun SplashV2(
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                         
-                        if (uiState.progress.currentShow.isNotBlank() && uiState.progress.phase == PhaseV2.IMPORTING_SHOWS) {
+                        // Show current item being processed
+                        if (uiState.progress.currentItem.isNotBlank()) {
                             Text(
-                                text = uiState.progress.currentShow,
+                                text = uiState.progress.currentItem,
                                 style = MaterialTheme.typography.bodySmall,
                                 textAlign = TextAlign.Center,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                maxLines = 1
+                                maxLines = 2
                             )
                         }
                     }

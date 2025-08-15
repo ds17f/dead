@@ -39,18 +39,41 @@ class SplashV2Service @Inject constructor(
                 "EXTRACTING" -> PhaseV2.EXTRACTING
                 "IMPORTING_SHOWS" -> PhaseV2.IMPORTING_SHOWS
                 "COMPUTING_VENUES" -> PhaseV2.COMPUTING_VENUES
+                "IMPORTING_RECORDINGS" -> PhaseV2.IMPORTING_RECORDINGS
                 "COMPLETED" -> PhaseV2.COMPLETED
                 "ERROR" -> PhaseV2.ERROR
                 else -> PhaseV2.IDLE
             }
             
-            ProgressV2(
-                phase = phase,
-                totalShows = v2Progress.totalItems,
-                processedShows = v2Progress.processedItems,
-                currentShow = v2Progress.currentItem,
-                error = v2Progress.error
-            )
+            // Map progress based on phase type
+            when (phase) {
+                PhaseV2.IMPORTING_RECORDINGS -> ProgressV2(
+                    phase = phase,
+                    totalShows = 0,
+                    processedShows = 0,
+                    currentShow = "",
+                    totalRecordings = v2Progress.totalItems,
+                    processedRecordings = v2Progress.processedItems,
+                    currentRecording = v2Progress.currentItem,
+                    error = v2Progress.error
+                )
+                PhaseV2.COMPUTING_VENUES -> ProgressV2(
+                    phase = phase,
+                    totalShows = 0,
+                    processedShows = 0,
+                    currentShow = "",
+                    totalVenues = v2Progress.totalItems,
+                    processedVenues = v2Progress.processedItems,
+                    error = v2Progress.error
+                )
+                else -> ProgressV2(
+                    phase = phase,
+                    totalShows = v2Progress.totalItems,
+                    processedShows = v2Progress.processedItems,
+                    currentShow = v2Progress.currentItem,
+                    error = v2Progress.error
+                )
+            }
         }
     }
     

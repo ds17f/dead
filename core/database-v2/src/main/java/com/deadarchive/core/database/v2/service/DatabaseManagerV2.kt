@@ -89,11 +89,23 @@ class DatabaseManagerV2 @Inject constructor(
             }
             
             if (result.success) {
+                val completionMessage = buildString {
+                    append("Import completed: ")
+                    append("${result.showsImported} shows, ")
+                    append("${result.venuesImported} venues")
+                    if (result.recordingsImported > 0) {
+                        append(", ${result.recordingsImported} recordings")
+                    }
+                    if (result.tracksImported > 0) {
+                        append(", ${result.tracksImported} tracks")
+                    }
+                }
+                
                 _progress.value = ProgressV2(
                     phase = "COMPLETED",
-                    totalItems = result.showsImported,
-                    processedItems = result.showsImported,
-                    currentItem = "Import completed: ${result.showsImported} shows, ${result.venuesImported} venues",
+                    totalItems = result.showsImported + result.recordingsImported,
+                    processedItems = result.showsImported + result.recordingsImported,
+                    currentItem = completionMessage,
                     isComplete = true
                 )
             } else {

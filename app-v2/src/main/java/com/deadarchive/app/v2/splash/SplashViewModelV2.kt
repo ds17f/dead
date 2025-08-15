@@ -56,6 +56,7 @@ class SplashViewModelV2 @Inject constructor(
                             PhaseV2.EXTRACTING -> "Extracting data files..."
                             PhaseV2.IMPORTING_SHOWS -> "Importing shows (${progress.processedShows}/${progress.totalShows})"
                             PhaseV2.COMPUTING_VENUES -> "Computing venue statistics..."
+                            PhaseV2.IMPORTING_RECORDINGS -> "Importing recordings (${progress.processedRecordings}/${progress.totalRecordings})"
                             PhaseV2.COMPLETED -> "V2 database ready!"
                             PhaseV2.ERROR -> "V2 database error"
                         }
