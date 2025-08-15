@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.45.0] - 2025-08-14
+
+### New Features
+* upgrade V2 data package to version 2.0.2 (c3cb92d)
+* add SplashV2 with progress tracking and settings toggle (605d1c4)
+* add V2 database MVP with shows and venues tracer bullet (48b3169)
+
+
 ## [0.44.0] - 2025-08-11
 
 ### New Features
@@ -23,8 +31,6 @@
 * playlist v2 docs (a04ae8e)
 * add implementation status and realistic next steps documentation (72372d7)
 * update implementation guide for production layout completion (21723cd)
-
-
 ## [0.43.0] - 2025-08-03
 
 ### New Features
