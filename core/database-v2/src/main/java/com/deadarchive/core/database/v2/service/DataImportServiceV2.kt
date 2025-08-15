@@ -2,9 +2,14 @@ package com.deadarchive.core.database.v2.service
 
 import android.util.Log
 import com.deadarchive.core.database.v2.dao.DataVersionDao
+import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
+import com.deadarchive.core.database.v2.dao.SetlistV2Dao
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
+import com.deadarchive.core.database.v2.dao.SongV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
 import com.deadarchive.core.database.v2.entities.DataVersionEntity
+import com.deadarchive.core.database.v2.entities.SetlistSongV2Entity
+import com.deadarchive.core.database.v2.entities.SetlistV2Entity
 import com.deadarchive.core.database.v2.entities.ShowV2Entity
 import com.deadarchive.core.database.v2.entities.VenueV2Entity
 import kotlinx.coroutines.Dispatchers
@@ -31,18 +36,18 @@ data class ShowJsonData(
     val url: String? = null,
     @SerialName("setlist_status")
     val setlistStatus: String? = null,
-    val setlist: List<SetData>? = null
+    val setlist: List<SetDataV2>? = null
 )
 
 @Serializable
-data class SetData(
+data class SetDataV2(
     @SerialName("set_name")
     val setName: String,
-    val songs: List<SongData>
+    val songs: List<SongDataV2>
 )
 
 @Serializable
-data class SongData(
+data class SongDataV2(
     val name: String,
     val url: String? = null,
     @SerialName("segue_into_next")
@@ -53,11 +58,15 @@ data class ImportResult(
     val success: Boolean,
     val showsImported: Int,
     val venuesImported: Int,
+    val songsImported: Int = 0,
+    val setlistsImported: Int = 0,
+    val setlistSongsImported: Int = 0,
     val error: String? = null
 ) {
     companion object {
-        fun success(shows: Int, venues: Int) = ImportResult(true, shows, venues)
-        fun error(message: String) = ImportResult(false, 0, 0, message)
+        fun success(shows: Int, venues: Int, songs: Int = 0, setlists: Int = 0, setlistSongs: Int = 0) = 
+            ImportResult(true, shows, venues, songs, setlists, setlistSongs)
+        fun error(message: String) = ImportResult(false, 0, 0, 0, 0, 0, message)
     }
 }
 
@@ -66,7 +75,10 @@ class DataImportServiceV2 @Inject constructor(
     private val assetManager: AssetManagerV2,
     private val showDao: ShowV2Dao,
     private val venueDao: VenueV2Dao,
-    private val dataVersionDao: DataVersionDao
+    private val dataVersionDao: DataVersionDao,
+    private val songDao: SongV2Dao,
+    private val setlistDao: SetlistV2Dao,
+    private val setlistSongDao: SetlistSongV2Dao
 ) {
     companion object {
         private const val TAG = "DataImportServiceV2"
@@ -107,13 +119,13 @@ class DataImportServiceV2 @Inject constructor(
                 
                 Log.d(TAG, "Importing data version $zipVersion (current: $currentVersion)")
                 
-                // Import shows and venues
-                val result = importShowsAndVenues(tempDir, progressCallback)
+                // Import shows, venues, and setlists
+                val result = importShowsVenuesAndSetlists(tempDir, progressCallback)
                 
                 if (result.success) {
                     // Update version tracking
                     updateDataVersion(tempDir, result.showsImported, result.venuesImported)
-                    Log.d(TAG, "Import completed: ${result.showsImported} shows, ${result.venuesImported} venues")
+                    Log.d(TAG, "Import completed: ${result.showsImported} shows, ${result.venuesImported} venues, ${result.songsImported} songs, ${result.setlistsImported} setlists, ${result.setlistSongsImported} song performances")
                 }
                 
                 result
@@ -131,7 +143,7 @@ class DataImportServiceV2 @Inject constructor(
     /**
      * Memory-efficient import using select-then-insert pattern
      */
-    private suspend fun importShowsAndVenues(
+    private suspend fun importShowsVenuesAndSetlists(
         tempDir: File,
         progressCallback: ((phase: String, total: Int, processed: Int, current: String) -> Unit)? = null
     ): ImportResult {
@@ -149,6 +161,9 @@ class DataImportServiceV2 @Inject constructor(
         
         var showCount = 0
         var venueCount = 0
+        var songCount = 0
+        var setlistCount = 0
+        var setlistSongCount = 0
         var failedCount = 0
         val totalShows = showFiles.size
         
@@ -173,11 +188,19 @@ class DataImportServiceV2 @Inject constructor(
                 showDao.insert(show)
                 showCount++
                 
+                // Import setlist data if available
+                if (showData.setlistStatus == "found" && !showData.setlist.isNullOrEmpty()) {
+                    val setlistResults = importSetlistsForShow(showData)
+                    songCount += setlistResults.first
+                    setlistCount += setlistResults.second
+                    setlistSongCount += setlistResults.third
+                }
+                
                 // Progress callback every 10 shows for more responsive UI
                 if (showCount % 10 == 0 || showCount == totalShows) {
                     val currentShowName = "${showData.date} - ${showData.venue}"
                     progressCallback?.invoke("IMPORTING_SHOWS", totalShows, showCount, currentShowName)
-                    Log.d(TAG, "Processed $showCount/$totalShows shows, $venueCount venues")
+                    Log.d(TAG, "Processed $showCount/$totalShows shows, $venueCount venues, $songCount songs, $setlistCount setlists, $setlistSongCount performances")
                 }
                 
             } catch (e: Exception) {
@@ -188,7 +211,7 @@ class DataImportServiceV2 @Inject constructor(
             }
         }
         
-        Log.d(TAG, "Import completed: $showCount shows, $venueCount venues imported, $failedCount failed")
+        Log.d(TAG, "Import completed: $showCount shows, $venueCount venues, $songCount songs, $setlistCount setlists, $setlistSongCount performances imported, $failedCount failed")
         
         // Update venue statistics after all shows are imported
         Log.d(TAG, "Computing venue statistics...")
@@ -196,7 +219,7 @@ class DataImportServiceV2 @Inject constructor(
         updateVenueStatistics()
         progressCallback?.invoke("COMPUTING_VENUES", venueCount, venueCount, "Venue statistics completed")
         
-        return ImportResult.success(showCount, venueCount)
+        return ImportResult.success(showCount, venueCount, songCount, setlistCount, setlistSongCount)
     }
     
     /**
@@ -258,7 +281,7 @@ class DataImportServiceV2 @Inject constructor(
             country = showData.country ?: "USA", // Default to USA if null
             locationRaw = showData.locationRaw,
             setlistStatus = showData.setlistStatus,
-            setlistRaw = showData.setlist?.let { json.encodeToString(SetData.serializer(), it.first()) }, // For now, just first set
+            setlistRaw = showData.setlist?.let { json.encodeToString(SetDataV2.serializer(), it.first()) }, // For now, just first set
             songList = songList,
             showSequence = 1, // Default, could be improved later
             recordingCount = 0,
@@ -342,5 +365,52 @@ class DataImportServiceV2 @Inject constructor(
         } catch (e: Exception) {
             Log.e(TAG, "Failed to update venue statistics", e)
         }
+    }
+    
+    /**
+     * Import setlists for a single show
+     * Returns Triple(songCount, setlistCount, setlistSongCount)
+     */
+    private suspend fun importSetlistsForShow(showData: ShowJsonData): Triple<Int, Int, Int> {
+        var songCount = 0
+        var setlistCount = 0
+        var setlistSongCount = 0
+        
+        try {
+            showData.setlist?.forEachIndexed { setIndex, setData ->
+                // Create or get setlist
+                val setlist = setlistDao.getOrCreateSetlist(
+                    showId = showData.showId,
+                    setName = setData.setName,
+                    setOrder = setIndex
+                )
+                setlistCount++
+                
+                // Process songs in this set
+                setData.songs.forEachIndexed { songIndex, songData ->
+                    // Check if song exists first
+                    val existingSong = songDao.getSongByName(songData.name)
+                    if (existingSong == null) songCount++ // New song will be created
+                    
+                    // Create or get song
+                    val song = songDao.getOrCreateSong(songData.name, songData.url)
+                    
+                    // Create setlist-song relationship
+                    val setlistSong = SetlistSongV2Entity(
+                        setlistId = setlist.id,
+                        songId = song.id,
+                        position = songIndex + 1, // 1-based position
+                        segueIntoNext = songData.segueIntoNext
+                    )
+                    setlistSongDao.insertSetlistSong(setlistSong)
+                    setlistSongCount++
+                }
+            }
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to import setlists for show: ${showData.showId}", e)
+        }
+        
+        return Triple(songCount, setlistCount, setlistSongCount)
     }
 }

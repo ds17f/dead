@@ -10,6 +10,9 @@ import com.deadarchive.core.database.v2.DeadArchiveV2Database
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
 import com.deadarchive.core.database.v2.dao.DataVersionDao
+import com.deadarchive.core.database.v2.dao.SongV2Dao
+import com.deadarchive.core.database.v2.dao.SetlistV2Dao
+import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
 import javax.inject.Singleton
 
 @Module
@@ -35,6 +38,21 @@ object DatabaseV2Module {
     @Provides
     fun provideDataVersionDao(database: DeadArchiveV2Database): DataVersionDao {
         return database.dataVersionDao()
+    }
+    
+    @Provides
+    fun provideSongV2Dao(database: DeadArchiveV2Database): SongV2Dao {
+        return database.songDao()
+    }
+    
+    @Provides
+    fun provideSetlistV2Dao(database: DeadArchiveV2Database): SetlistV2Dao {
+        return database.setlistDao()
+    }
+    
+    @Provides
+    fun provideSetlistSongV2Dao(database: DeadArchiveV2Database): SetlistSongV2Dao {
+        return database.setlistSongDao()
     }
     
     // Services and repositories are automatically provided by @Singleton @Inject constructor
