@@ -43,7 +43,6 @@ class SplashViewModelV2 @Inject constructor(
                         val message = when (progress.phase) {
                             PhaseV2.IDLE -> "Preparing V2 database..."
                             PhaseV2.CHECKING -> "Checking existing data..."
-                            PhaseV2.RESTORING_DATABASE -> "Restoring database from ZIP file..."
                             PhaseV2.EXTRACTING -> "Extracting data files..."
                             PhaseV2.IMPORTING_SHOWS -> "Importing shows (${progress.processedShows}/${progress.totalShows})"
                             PhaseV2.COMPUTING_VENUES -> "Computing venue statistics..."

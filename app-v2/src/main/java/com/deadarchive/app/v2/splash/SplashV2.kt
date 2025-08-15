@@ -119,14 +119,6 @@ fun SplashV2(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         when (uiState.progress.phase) {
-                            PhaseV2.RESTORING_DATABASE -> {
-                                // Show indeterminate progress for database restoration
-                                CircularProgressIndicator(
-                                    modifier = Modifier.size(32.dp),
-                                    strokeWidth = 3.dp
-                                )
-                            }
-                            
                             PhaseV2.IMPORTING_SHOWS -> {
                                 if (uiState.progress.totalShows > 0) {
                                     LinearProgressIndicator(

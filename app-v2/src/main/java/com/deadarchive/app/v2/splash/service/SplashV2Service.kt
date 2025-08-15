@@ -39,7 +39,6 @@ class SplashV2Service @Inject constructor(
             val phase = when (v2Progress.phase) {
                 "IDLE" -> PhaseV2.IDLE
                 "CHECKING" -> PhaseV2.CHECKING
-                "RESTORING_DATABASE" -> PhaseV2.RESTORING_DATABASE
                 "EXTRACTING" -> PhaseV2.EXTRACTING
                 "IMPORTING_SHOWS" -> PhaseV2.IMPORTING_SHOWS
                 "COMPUTING_VENUES" -> PhaseV2.COMPUTING_VENUES
@@ -50,7 +49,7 @@ class SplashV2Service @Inject constructor(
             }
             
             // Initialize start time when we begin processing
-            if (initStartTimeMs == 0L && phase in listOf(PhaseV2.CHECKING, PhaseV2.RESTORING_DATABASE, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS)) {
+            if (initStartTimeMs == 0L && phase in listOf(PhaseV2.CHECKING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS)) {
                 initStartTimeMs = System.currentTimeMillis()
                 Log.d(TAG, "Database initialization started at ${initStartTimeMs}")
             }
