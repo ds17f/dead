@@ -17,6 +17,10 @@ import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
 import com.deadarchive.core.database.v2.dao.RecordingV2Dao
 import com.deadarchive.core.database.v2.dao.TrackV2Dao
 import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
+import com.deadarchive.core.database.v2.dao.SongSearchV2Dao
+import com.deadarchive.core.database.v2.dao.VenueSearchV2Dao
+import com.deadarchive.core.database.v2.dao.ShowSearchV2Dao
+import com.deadarchive.core.database.v2.dao.MemberSearchV2Dao
 import javax.inject.Singleton
 
 @Module
@@ -74,6 +78,27 @@ object DatabaseV2Module {
         return database.trackFormatDao()
     }
     
+    // Search DAOs
+    @Provides
+    fun provideSongSearchV2Dao(database: DeadArchiveV2Database): SongSearchV2Dao {
+        return database.songSearchDao()
+    }
+    
+    @Provides
+    fun provideVenueSearchV2Dao(database: DeadArchiveV2Database): VenueSearchV2Dao {
+        return database.venueSearchDao()
+    }
+    
+    @Provides
+    fun provideShowSearchV2Dao(database: DeadArchiveV2Database): ShowSearchV2Dao {
+        return database.showSearchDao()
+    }
+    
+    @Provides
+    fun provideMemberSearchV2Dao(database: DeadArchiveV2Database): MemberSearchV2Dao {
+        return database.memberSearchDao()
+    }
+    
     // Services and repositories are automatically provided by @Singleton @Inject constructor
-    // AssetManagerV2, DataImportServiceV2, DatabaseManagerV2, ShowV2Repository will be available via Hilt
+    // AssetManagerV2, DataImportServiceV2, DatabaseManagerV2, ShowV2Repository, SearchServiceV2, SearchRepositoryV2, SearchTableProcessorV2 will be available via Hilt
 }

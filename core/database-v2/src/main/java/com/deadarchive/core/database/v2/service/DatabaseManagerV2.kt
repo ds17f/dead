@@ -470,6 +470,7 @@ class DatabaseManagerV2 @Inject constructor(
             )
         }
     }
+    
 }
 
 data class DatabaseStats(

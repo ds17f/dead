@@ -104,7 +104,11 @@ sealed class ImportResult {
         val setlistSongsImported: Int = 0,
         val recordingsImported: Int = 0,
         val tracksImported: Int = 0,
-        val trackFormatsImported: Int = 0
+        val trackFormatsImported: Int = 0,
+        val songSearchImported: Int = 0,
+        val venueSearchImported: Int = 0,
+        val showSearchImported: Int = 0,
+        val memberSearchImported: Int = 0
     ) : ImportResult() {
         val success: Boolean = true
     }
@@ -121,8 +125,10 @@ sealed class ImportResult {
     
     companion object {
         fun success(shows: Int, venues: Int, songs: Int = 0, setlists: Int = 0, setlistSongs: Int = 0, 
-                   recordings: Int = 0, tracks: Int = 0, trackFormats: Int = 0) = 
-            Success(shows, venues, songs, setlists, setlistSongs, recordings, tracks, trackFormats)
+                   recordings: Int = 0, tracks: Int = 0, trackFormats: Int = 0,
+                   songSearch: Int = 0, venueSearch: Int = 0, showSearch: Int = 0, memberSearch: Int = 0) = 
+            Success(shows, venues, songs, setlists, setlistSongs, recordings, tracks, trackFormats,
+                   songSearch, venueSearch, showSearch, memberSearch)
         fun error(message: String) = Error(message)
         fun requiresUserChoice(sources: com.deadarchive.core.database.v2.service.DatabaseManagerV2.AvailableSources) = 
             RequiresUserChoice(sources)
@@ -140,12 +146,14 @@ class DataImportServiceV2 @Inject constructor(
     private val setlistSongDao: SetlistSongV2Dao,
     private val recordingDao: RecordingV2Dao,
     private val trackDao: TrackV2Dao,
-    private val trackFormatDao: TrackFormatV2Dao
+    private val trackFormatDao: TrackFormatV2Dao,
+    private val searchTableProcessor: SearchTableProcessorV2
 ) {
     companion object {
         private const val TAG = "DataImportServiceV2"
         private const val SHOWS_DIR = "shows"
         private const val RECORDINGS_DIR = "recordings"
+        private const val SEARCH_DIR = "search"
     }
     
     private val json = Json { 
@@ -205,23 +213,36 @@ class DataImportServiceV2 @Inject constructor(
                         
                         when (recordingResult) {
                             is ImportResult.Success -> {
-                                // Combine results
-                                val combinedResult = ImportResult.success(
-                                    shows = showResult.showsImported,
-                                    venues = showResult.venuesImported,
-                                    songs = showResult.songsImported,
-                                    setlists = showResult.setlistsImported,
-                                    setlistSongs = showResult.setlistSongsImported,
-                                    recordings = recordingResult.recordingsImported,
-                                    tracks = recordingResult.tracksImported,
-                                    trackFormats = recordingResult.trackFormatsImported
-                                )
+                                // Import search tables
+                                val searchResult = importSearchTables(tempDir, progressCallback)
                                 
-                                // Update version tracking
-                                updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
-                                Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats")
-                                
-                                combinedResult
+                                when (searchResult) {
+                                    is ImportResult.Success -> {
+                                        // Combine all results
+                                        val combinedResult = ImportResult.success(
+                                            shows = showResult.showsImported,
+                                            venues = showResult.venuesImported,
+                                            songs = showResult.songsImported,
+                                            setlists = showResult.setlistsImported,
+                                            setlistSongs = showResult.setlistSongsImported,
+                                            recordings = recordingResult.recordingsImported,
+                                            tracks = recordingResult.tracksImported,
+                                            trackFormats = recordingResult.trackFormatsImported,
+                                            songSearch = searchResult.songSearchImported,
+                                            venueSearch = searchResult.venueSearchImported,
+                                            showSearch = searchResult.showSearchImported,
+                                            memberSearch = searchResult.memberSearchImported
+                                        )
+                                        
+                                        // Update version tracking
+                                        updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
+                                        Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats, ${combinedResult.songSearchImported} song searches, ${combinedResult.venueSearchImported} venue searches, ${combinedResult.showSearchImported} show searches, ${combinedResult.memberSearchImported} member searches")
+                                        
+                                        combinedResult
+                                    }
+                                    is ImportResult.Error -> searchResult
+                                    is ImportResult.RequiresUserChoice -> searchResult
+                                }
                             }
                             is ImportResult.Error -> recordingResult
                             is ImportResult.RequiresUserChoice -> recordingResult
@@ -682,4 +703,108 @@ class DataImportServiceV2 @Inject constructor(
         
         return Pair(trackCount, trackFormatCount)
     }
+    
+    /**
+     * Import search tables data from JSON files
+     */
+    private suspend fun importSearchTables(
+        tempDir: File,
+        progressCallback: ((phase: String, total: Int, processed: Int, current: String) -> Unit)? = null
+    ): ImportResult {
+        val searchDir = File(tempDir, SEARCH_DIR)
+        if (!searchDir.exists() || !searchDir.isDirectory) {
+            Log.w(TAG, "Search directory not found, skipping search table import")
+            return ImportResult.success(0, 0) // No search tables is not a failure
+        }
+        
+        Log.d(TAG, "Processing search tables from directory: ${searchDir.absolutePath}")
+        
+        var songSearchCount = 0
+        var venueSearchCount = 0
+        var showSearchCount = 0
+        var memberSearchCount = 0
+        var processedTables = 0
+        val totalTables = 4 // songs, venues, shows_index, members
+        
+        try {
+            // Process songs.json
+            val songsFile = File(searchDir, "songs.json")
+            if (songsFile.exists()) {
+                progressCallback?.invoke("IMPORTING_SEARCH", totalTables, processedTables, "Processing song search data...")
+                val songsContent = songsFile.readText()
+                if (searchTableProcessor.processSongsJson(songsContent)) {
+                    songSearchCount = 1 // Represents successful processing
+                    Log.d(TAG, "Successfully processed songs search table")
+                } else {
+                    Log.w(TAG, "Failed to process songs search table")
+                }
+                processedTables++
+            } else {
+                Log.w(TAG, "songs.json not found in search directory")
+            }
+            
+            // Process venues.json
+            val venuesFile = File(searchDir, "venues.json")
+            if (venuesFile.exists()) {
+                progressCallback?.invoke("IMPORTING_SEARCH", totalTables, processedTables, "Processing venue search data...")
+                val venuesContent = venuesFile.readText()
+                if (searchTableProcessor.processVenuesJson(venuesContent)) {
+                    venueSearchCount = 1
+                    Log.d(TAG, "Successfully processed venues search table")
+                } else {
+                    Log.w(TAG, "Failed to process venues search table")
+                }
+                processedTables++
+            } else {
+                Log.w(TAG, "venues.json not found in search directory")
+            }
+            
+            // Process shows_index.json
+            val showsIndexFile = File(searchDir, "shows_index.json")
+            if (showsIndexFile.exists()) {
+                progressCallback?.invoke("IMPORTING_SEARCH", totalTables, processedTables, "Processing show search data...")
+                val showsIndexContent = showsIndexFile.readText()
+                if (searchTableProcessor.processShowsIndexJson(showsIndexContent)) {
+                    showSearchCount = 1
+                    Log.d(TAG, "Successfully processed shows index search table")
+                } else {
+                    Log.w(TAG, "Failed to process shows index search table")
+                }
+                processedTables++
+            } else {
+                Log.w(TAG, "shows_index.json not found in search directory")
+            }
+            
+            // Process members.json
+            val membersFile = File(searchDir, "members.json")
+            if (membersFile.exists()) {
+                progressCallback?.invoke("IMPORTING_SEARCH", totalTables, processedTables, "Processing member search data...")
+                val membersContent = membersFile.readText()
+                if (searchTableProcessor.processMembersJson(membersContent)) {
+                    memberSearchCount = 1
+                    Log.d(TAG, "Successfully processed members search table")
+                } else {
+                    Log.w(TAG, "Failed to process members search table")
+                }
+                processedTables++
+            } else {
+                Log.w(TAG, "members.json not found in search directory")
+            }
+            
+            progressCallback?.invoke("IMPORTING_SEARCH", totalTables, processedTables, "Search tables import completed")
+            Log.d(TAG, "Search tables import completed: $songSearchCount song tables, $venueSearchCount venue tables, $showSearchCount show tables, $memberSearchCount member tables")
+            
+            return ImportResult.success(
+                shows = 0, venues = 0, songs = 0, setlists = 0, setlistSongs = 0,
+                recordings = 0, tracks = 0, trackFormats = 0,
+                songSearch = songSearchCount, venueSearch = venueSearchCount, 
+                showSearch = showSearchCount, memberSearch = memberSearchCount
+            )
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error importing search tables", e)
+            return ImportResult.error("Search tables import failed: ${e.message}")
+        }
+    }
+    
 }

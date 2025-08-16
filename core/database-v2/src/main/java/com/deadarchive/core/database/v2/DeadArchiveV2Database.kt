@@ -13,6 +13,10 @@ import com.deadarchive.core.database.v2.entities.SetlistSongV2Entity
 import com.deadarchive.core.database.v2.entities.RecordingV2Entity
 import com.deadarchive.core.database.v2.entities.TrackV2Entity
 import com.deadarchive.core.database.v2.entities.TrackFormatV2Entity
+import com.deadarchive.core.database.v2.entities.SongSearchV2Entity
+import com.deadarchive.core.database.v2.entities.VenueSearchV2Entity
+import com.deadarchive.core.database.v2.entities.ShowSearchV2Entity
+import com.deadarchive.core.database.v2.entities.MemberSearchV2Entity
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
 import com.deadarchive.core.database.v2.dao.DataVersionDao
@@ -22,6 +26,10 @@ import com.deadarchive.core.database.v2.dao.SetlistSongV2Dao
 import com.deadarchive.core.database.v2.dao.RecordingV2Dao
 import com.deadarchive.core.database.v2.dao.TrackV2Dao
 import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
+import com.deadarchive.core.database.v2.dao.SongSearchV2Dao
+import com.deadarchive.core.database.v2.dao.VenueSearchV2Dao
+import com.deadarchive.core.database.v2.dao.ShowSearchV2Dao
+import com.deadarchive.core.database.v2.dao.MemberSearchV2Dao
 
 @Database(
     entities = [
@@ -33,9 +41,13 @@ import com.deadarchive.core.database.v2.dao.TrackFormatV2Dao
         SetlistSongV2Entity::class,
         RecordingV2Entity::class,
         TrackV2Entity::class,
-        TrackFormatV2Entity::class
+        TrackFormatV2Entity::class,
+        SongSearchV2Entity::class,
+        VenueSearchV2Entity::class,
+        ShowSearchV2Entity::class,
+        MemberSearchV2Entity::class
     ],
-    version = 3,
+    version = 4,
     exportSchema = false
 )
 abstract class DeadArchiveV2Database : RoomDatabase() {
@@ -49,6 +61,10 @@ abstract class DeadArchiveV2Database : RoomDatabase() {
     abstract fun recordingDao(): RecordingV2Dao
     abstract fun trackDao(): TrackV2Dao
     abstract fun trackFormatDao(): TrackFormatV2Dao
+    abstract fun songSearchDao(): SongSearchV2Dao
+    abstract fun venueSearchDao(): VenueSearchV2Dao
+    abstract fun showSearchDao(): ShowSearchV2Dao
+    abstract fun memberSearchDao(): MemberSearchV2Dao
     
     companion object {
         const val DATABASE_NAME = "dead_archive_v2_database"
