@@ -53,6 +53,9 @@ dependencies {
     implementation(project(":core:search"))
     implementation(project(":feature:playlist"))
     
+    // V2 dependencies for feature flag routing
+    implementation(project(":v2:feature:search"))
+    
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
