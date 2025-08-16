@@ -95,23 +95,37 @@ data class FormatJsonData(
     val bitrate: String? = null
 )
 
-data class ImportResult(
-    val success: Boolean,
-    val showsImported: Int,
-    val venuesImported: Int,
-    val songsImported: Int = 0,
-    val setlistsImported: Int = 0,
-    val setlistSongsImported: Int = 0,
-    val recordingsImported: Int = 0,
-    val tracksImported: Int = 0,
-    val trackFormatsImported: Int = 0,
-    val error: String? = null
-) {
+sealed class ImportResult {
+    data class Success(
+        val showsImported: Int,
+        val venuesImported: Int,
+        val songsImported: Int = 0,
+        val setlistsImported: Int = 0,
+        val setlistSongsImported: Int = 0,
+        val recordingsImported: Int = 0,
+        val tracksImported: Int = 0,
+        val trackFormatsImported: Int = 0
+    ) : ImportResult() {
+        val success: Boolean = true
+    }
+    
+    data class Error(val error: String) : ImportResult() {
+        val success: Boolean = false
+    }
+    
+    data class RequiresUserChoice(
+        val availableSources: com.deadarchive.core.database.v2.service.DatabaseManagerV2.AvailableSources
+    ) : ImportResult() {
+        val success: Boolean = false
+    }
+    
     companion object {
         fun success(shows: Int, venues: Int, songs: Int = 0, setlists: Int = 0, setlistSongs: Int = 0, 
                    recordings: Int = 0, tracks: Int = 0, trackFormats: Int = 0) = 
-            ImportResult(true, shows, venues, songs, setlists, setlistSongs, recordings, tracks, trackFormats)
-        fun error(message: String) = ImportResult(false, 0, 0, 0, 0, 0, 0, 0, 0, message)
+            Success(shows, venues, songs, setlists, setlistSongs, recordings, tracks, trackFormats)
+        fun error(message: String) = Error(message)
+        fun requiresUserChoice(sources: com.deadarchive.core.database.v2.service.DatabaseManagerV2.AvailableSources) = 
+            RequiresUserChoice(sources)
     }
 }
 
@@ -137,6 +151,19 @@ class DataImportServiceV2 @Inject constructor(
     private val json = Json { 
         ignoreUnknownKeys = true 
         isLenient = true 
+    }
+    
+    /**
+     * Check if data-v2 files are available for import
+     */
+    fun hasDataFiles(): Boolean {
+        return try {
+            // Check if data.zip exists in assets
+            assetManager.isDataZipAvailable()
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to check data files availability", e)
+            false
+        }
     }
     
     /**
@@ -171,29 +198,37 @@ class DataImportServiceV2 @Inject constructor(
                 // Import shows, venues, and setlists
                 val showResult = importShowsVenuesAndSetlists(tempDir, progressCallback)
                 
-                if (showResult.success) {
-                    // Import recordings and tracks
-                    val recordingResult = importRecordingsAndTracks(tempDir, progressCallback)
-                    
-                    // Combine results
-                    val combinedResult = ImportResult.success(
-                        shows = showResult.showsImported,
-                        venues = showResult.venuesImported,
-                        songs = showResult.songsImported,
-                        setlists = showResult.setlistsImported,
-                        setlistSongs = showResult.setlistSongsImported,
-                        recordings = recordingResult.recordingsImported,
-                        tracks = recordingResult.tracksImported,
-                        trackFormats = recordingResult.trackFormatsImported
-                    )
-                    
-                    // Update version tracking
-                    updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
-                    Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats")
-                    
-                    combinedResult
-                } else {
-                    showResult
+                when (showResult) {
+                    is ImportResult.Success -> {
+                        // Import recordings and tracks
+                        val recordingResult = importRecordingsAndTracks(tempDir, progressCallback)
+                        
+                        when (recordingResult) {
+                            is ImportResult.Success -> {
+                                // Combine results
+                                val combinedResult = ImportResult.success(
+                                    shows = showResult.showsImported,
+                                    venues = showResult.venuesImported,
+                                    songs = showResult.songsImported,
+                                    setlists = showResult.setlistsImported,
+                                    setlistSongs = showResult.setlistSongsImported,
+                                    recordings = recordingResult.recordingsImported,
+                                    tracks = recordingResult.tracksImported,
+                                    trackFormats = recordingResult.trackFormatsImported
+                                )
+                                
+                                // Update version tracking
+                                updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
+                                Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats")
+                                
+                                combinedResult
+                            }
+                            is ImportResult.Error -> recordingResult
+                            is ImportResult.RequiresUserChoice -> recordingResult
+                        }
+                    }
+                    is ImportResult.Error -> showResult
+                    is ImportResult.RequiresUserChoice -> showResult
                 }
                 
             } finally {

@@ -6,6 +6,7 @@ import com.deadarchive.app.v2.model.PhaseV2
 import com.deadarchive.app.v2.splash.service.SplashV2Service
 import com.deadarchive.app.v2.splash.service.SplashV2UiState
 import com.deadarchive.app.v2.splash.service.V2InitResult
+import com.deadarchive.core.database.v2.service.DatabaseManagerV2
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -103,5 +104,9 @@ class SplashViewModelV2 @Inject constructor(
     
     fun abortInitialization() {
         splashV2Service.abortInitialization()
+    }
+    
+    fun selectDatabaseSource(source: DatabaseManagerV2.DatabaseSource) {
+        splashV2Service.selectDatabaseSource(source, viewModelScope)
     }
 }

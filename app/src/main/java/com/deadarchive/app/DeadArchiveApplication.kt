@@ -79,10 +79,16 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
                 if (settings?.useSplashV2 != true) {
                     android.util.Log.d("DeadArchiveApplication", "Initializing V2 database in background...")
                     val result = v2DatabaseManager.initializeV2DataIfNeeded()
-                    if (result.success) {
-                        android.util.Log.d("DeadArchiveApplication", "✅ V2 database initialized: ${result.showsImported} shows, ${result.venuesImported} venues")
-                    } else {
-                        android.util.Log.e("DeadArchiveApplication", "❌ V2 database initialization failed: ${result.error}")
+                    when (result) {
+                        is com.deadarchive.core.database.v2.service.ImportResult.Success -> {
+                            android.util.Log.d("DeadArchiveApplication", "✅ V2 database initialized: ${result.showsImported} shows, ${result.venuesImported} venues")
+                        }
+                        is com.deadarchive.core.database.v2.service.ImportResult.Error -> {
+                            android.util.Log.e("DeadArchiveApplication", "❌ V2 database initialization failed: ${result.error}")
+                        }
+                        is com.deadarchive.core.database.v2.service.ImportResult.RequiresUserChoice -> {
+                            android.util.Log.d("DeadArchiveApplication", "V2 database requires user choice - will be handled by splash screen")
+                        }
                     }
                 } else {
                     android.util.Log.d("DeadArchiveApplication", "SplashV2 enabled - skipping background V2 database initialization")

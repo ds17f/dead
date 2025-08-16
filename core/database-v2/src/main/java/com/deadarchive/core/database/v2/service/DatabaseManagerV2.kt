@@ -44,6 +44,29 @@ class DatabaseManagerV2 @Inject constructor(
         private const val DB_ZIP_FILENAME = "dead_archive_v2_database.db.zip"
     }
     
+    /**
+     * Available database sources for initialization
+     */
+    enum class DatabaseSource {
+        ZIP_BACKUP,    // Fast restoration from pre-built database
+        DATA_IMPORT    // Full import from data-v2 JSON files
+    }
+    
+    /**
+     * Result of checking available database sources
+     */
+    data class AvailableSources(
+        val hasZipBackup: Boolean,
+        val hasDataFiles: Boolean
+    ) {
+        val sources: List<DatabaseSource> get() = buildList {
+            if (hasZipBackup) add(DatabaseSource.ZIP_BACKUP)
+            if (hasDataFiles) add(DatabaseSource.DATA_IMPORT)
+        }
+        
+        val requiresUserChoice: Boolean get() = sources.size > 1
+    }
+    
     // Track initialization timing
     private var initStartTimeMs: Long = 0L
     
@@ -58,6 +81,28 @@ class DatabaseManagerV2 @Inject constructor(
     val progress: StateFlow<ProgressV2> = _progress.asStateFlow()
     
     /**
+     * Check what database sources are available for initialization
+     */
+    suspend fun checkAvailableSources(): AvailableSources = withContext(Dispatchers.IO) {
+        val hasZipBackup = try {
+            context.assets.open(DB_ZIP_FILENAME).use { true }
+        } catch (e: Exception) {
+            Log.d(TAG, "ZIP backup not available: $DB_ZIP_FILENAME")
+            false
+        }
+        
+        val hasDataFiles = try {
+            importService.hasDataFiles()
+        } catch (e: Exception) {
+            Log.d(TAG, "Data files not available for import")
+            false
+        }
+        
+        Log.d(TAG, "Available sources - ZIP backup: $hasZipBackup, Data files: $hasDataFiles")
+        AvailableSources(hasZipBackup, hasDataFiles)
+    }
+    
+    /**
      * Check if V2 data has been initialized
      */
     suspend fun isV2DataInitialized(): Boolean = withContext(Dispatchers.IO) {
@@ -70,44 +115,14 @@ class DatabaseManagerV2 @Inject constructor(
     }
     
     /**
-     * Initialize V2 data if needed
+     * Initialize V2 data if needed - checks sources and may require user choice
      */
     suspend fun initializeV2DataIfNeeded(): ImportResult = withContext(Dispatchers.IO) {
-        try {
-            // Record start time
-            initStartTimeMs = System.currentTimeMillis()
-            Log.d(TAG, "Starting V2 database initialization at $initStartTimeMs")
-            
-            _progress.value = ProgressV2(
-                phase = "CHECKING",
-                totalItems = 0,
-                processedItems = 0,
-                currentItem = "Checking existing data..."
-            )
-            
-            // Check if database file exists, if not try to extract from ZIP
-            val dbFile = context.getDatabasePath(DeadArchiveV2Database.DATABASE_NAME)
-            if (!dbFile.exists()) {
-                Log.d(TAG, "Database file doesn't exist, trying to extract from ZIP")
-                val extractSuccess = extractDatabaseFromZip()
-                if (extractSuccess) {
-                    Log.i(TAG, "Database extracted from ZIP successfully")
-                    // Database now exists, we can return success
-                    _progress.value = ProgressV2(
-                        phase = "COMPLETED",
-                        totalItems = 1,
-                        processedItems = 1,
-                        currentItem = "Database restored from ZIP file",
-                        isComplete = true
-                    )
-                    return@withContext ImportResult.success(0, 0)
-                } else {
-                    Log.d(TAG, "ZIP extraction failed or ZIP not available, proceeding with normal import")
-                }
-            }
-            
+        // Check if database already exists
+        val dbFile = context.getDatabasePath(DeadArchiveV2Database.DATABASE_NAME)
+        if (dbFile.exists()) {
             val isInitialized = isV2DataInitialized()
-            Log.d(TAG, "V2 data initialization check: $isInitialized")
+            Log.d(TAG, "Database file exists, initialization check: $isInitialized")
             
             if (isInitialized) {
                 Log.d(TAG, "V2 data already initialized, skipping initialization")
@@ -120,25 +135,110 @@ class DatabaseManagerV2 @Inject constructor(
                 )
                 return@withContext ImportResult.success(0, 0)
             }
+        }
+        
+        // Database doesn't exist or is empty, check available sources
+        val availableSources = checkAvailableSources()
+        
+        return@withContext when {
+            availableSources.sources.isEmpty() -> {
+                Log.e(TAG, "No database sources available for initialization")
+                ImportResult.error("No database sources available")
+            }
+            availableSources.requiresUserChoice -> {
+                Log.d(TAG, "Multiple sources available, requiring user choice")
+                ImportResult.requiresUserChoice(availableSources)
+            }
+            availableSources.hasZipBackup -> {
+                Log.d(TAG, "Only ZIP backup available, proceeding with restoration")
+                initializeFromSource(DatabaseSource.ZIP_BACKUP)
+            }
+            availableSources.hasDataFiles -> {
+                Log.d(TAG, "Only data files available, proceeding with import")
+                initializeFromSource(DatabaseSource.DATA_IMPORT)
+            }
+            else -> {
+                ImportResult.error("No valid database sources found")
+            }
+        }
+    }
+    
+    /**
+     * Initialize V2 data from a specific source
+     */
+    suspend fun initializeFromSource(source: DatabaseSource): ImportResult = withContext(Dispatchers.IO) {
+        try {
+            // Record start time
+            initStartTimeMs = System.currentTimeMillis()
+            Log.d(TAG, "Starting V2 database initialization from source: $source at $initStartTimeMs")
             
-            Log.d(TAG, "Initializing V2 data from assets...")
+            when (source) {
+                DatabaseSource.ZIP_BACKUP -> {
+                    _progress.value = ProgressV2(
+                        phase = "CHECKING",
+                        totalItems = 0,
+                        processedItems = 0,
+                        currentItem = "Restoring from backup..."
+                    )
+                    
+                    val extractSuccess = extractDatabaseFromZip()
+                    if (extractSuccess) {
+                        Log.i(TAG, "Database extracted from ZIP successfully")
+                        _progress.value = ProgressV2(
+                            phase = "COMPLETED",
+                            totalItems = 1,
+                            processedItems = 1,
+                            currentItem = "Database restored from backup",
+                            isComplete = true
+                        )
+                        return@withContext ImportResult.success(0, 0)
+                    } else {
+                        Log.e(TAG, "Failed to extract database from ZIP")
+                        return@withContext ImportResult.error("Failed to restore from backup")
+                    }
+                }
+                
+                DatabaseSource.DATA_IMPORT -> {
+                    _progress.value = ProgressV2(
+                        phase = "EXTRACTING",
+                        totalItems = 0,
+                        processedItems = 0,
+                        currentItem = "Importing from data files..."
+                    )
+                    
+                    return@withContext performDataImport()
+                }
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to initialize V2 data from source: $source", e)
             _progress.value = ProgressV2(
-                phase = "EXTRACTING",
+                phase = "ERROR",
                 totalItems = 0,
                 processedItems = 0,
-                currentItem = "Extracting data files..."
+                currentItem = "Initialization failed",
+                error = e.message
             )
-            
-            val result = importService.importFromAssetsIfNeeded { phase, total, processed, current ->
-                _progress.value = ProgressV2(
-                    phase = phase,
-                    totalItems = total,
-                    processedItems = processed,
-                    currentItem = current
-                )
-            }
-            
-            if (result.success) {
+            ImportResult.error("Failed to initialize V2 data: ${e.message}")
+        }
+    }
+    
+    /**
+     * Perform the actual data import from JSON files
+     */
+    private suspend fun performDataImport(): ImportResult = withContext(Dispatchers.IO) {
+        Log.d(TAG, "Performing data import from JSON files...")
+        
+        val result = importService.importFromAssetsIfNeeded { phase, total, processed, current ->
+            _progress.value = ProgressV2(
+                phase = phase,
+                totalItems = total,
+                processedItems = processed,
+                currentItem = current
+            )
+        }
+        
+        when (result) {
+            is ImportResult.Success -> {
                 val endTimeMs = System.currentTimeMillis()
                 val elapsedMs = endTimeMs - initStartTimeMs
                 val elapsedSeconds = elapsedMs / 1000.0
@@ -167,7 +267,10 @@ class DatabaseManagerV2 @Inject constructor(
                     currentItem = completionMessage,
                     isComplete = true
                 )
-            } else {
+                
+                return@withContext result
+            }
+            is ImportResult.Error -> {
                 _progress.value = ProgressV2(
                     phase = "ERROR",
                     totalItems = 0,
@@ -175,19 +278,13 @@ class DatabaseManagerV2 @Inject constructor(
                     currentItem = "Import failed",
                     error = result.error
                 )
+                
+                return@withContext result
             }
-            
-            result
-        } catch (e: Exception) {
-            Log.e(TAG, "Failed to initialize V2 data", e)
-            _progress.value = ProgressV2(
-                phase = "ERROR",
-                totalItems = 0,
-                processedItems = 0,
-                currentItem = "Initialization failed",
-                error = e.message
-            )
-            ImportResult.error("Failed to initialize V2 data: ${e.message}")
+            is ImportResult.RequiresUserChoice -> {
+                // This shouldn't happen in performDataImport, but handle it
+                return@withContext result
+            }
         }
     }
     

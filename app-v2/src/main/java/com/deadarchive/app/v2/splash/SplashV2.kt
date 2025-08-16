@@ -72,8 +72,81 @@ fun SplashV2(
             
             Spacer(modifier = Modifier.height(32.dp))
             
-            // Show initialization progress or error state
+            // Show initialization progress, source selection, or error state
             when {
+                uiState.showSourceSelection -> {
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(24.dp)
+                    ) {
+                        Text(
+                            text = "Choose Database Source",
+                            style = MaterialTheme.typography.titleLarge,
+                            textAlign = TextAlign.Center
+                        )
+                        
+                        Text(
+                            text = "Multiple initialization options are available",
+                            style = MaterialTheme.typography.bodyMedium,
+                            textAlign = TextAlign.Center,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        
+                        Column(
+                            verticalArrangement = Arrangement.spacedBy(12.dp)
+                        ) {
+                            uiState.availableSources.forEach { source ->
+                                when (source) {
+                                    com.deadarchive.core.database.v2.service.DatabaseManagerV2.DatabaseSource.ZIP_BACKUP -> {
+                                        Button(
+                                            onClick = { viewModel.selectDatabaseSource(source) },
+                                            modifier = Modifier.fillMaxWidth()
+                                        ) {
+                                            Column(
+                                                horizontalAlignment = Alignment.CenterHorizontally
+                                            ) {
+                                                Text("Restore from Backup")
+                                                Text(
+                                                    "Fast - uses pre-built database",
+                                                    style = MaterialTheme.typography.bodySmall,
+                                                    color = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.8f)
+                                                )
+                                            }
+                                        }
+                                    }
+                                    com.deadarchive.core.database.v2.service.DatabaseManagerV2.DatabaseSource.DATA_IMPORT -> {
+                                        OutlinedButton(
+                                            onClick = { viewModel.selectDatabaseSource(source) },
+                                            modifier = Modifier.fillMaxWidth()
+                                        ) {
+                                            Column(
+                                                horizontalAlignment = Alignment.CenterHorizontally
+                                            ) {
+                                                Text("Import Fresh Data")
+                                                Text(
+                                                    "Complete - builds from latest data files",
+                                                    style = MaterialTheme.typography.bodySmall,
+                                                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f)
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Skip option
+                        Spacer(modifier = Modifier.height(8.dp))
+                        
+                        OutlinedButton(
+                            onClick = { viewModel.abortInitialization() },
+                            modifier = Modifier.padding(horizontal = 32.dp)
+                        ) {
+                            Text("Skip V2 Database")
+                        }
+                    }
+                }
+                
                 uiState.showError -> {
                     Column(
                         horizontalAlignment = Alignment.CenterHorizontally,

@@ -4,6 +4,7 @@ import android.util.Log
 import com.deadarchive.app.v2.model.PhaseV2
 import com.deadarchive.app.v2.model.ProgressV2
 import com.deadarchive.core.database.v2.service.DatabaseManagerV2
+import com.deadarchive.core.database.v2.service.ImportResult
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -97,12 +98,26 @@ class SplashV2Service @Inject constructor(
             Log.d(TAG, "Starting V2 database initialization")
             val result = v2DatabaseManager.initializeV2DataIfNeeded()
             
-            if (result.success) {
-                Log.d(TAG, "V2 database initialization completed: ${result.showsImported} shows, ${result.venuesImported} venues")
-                V2InitResult.Success(result.showsImported, result.venuesImported)
-            } else {
-                Log.e(TAG, "V2 database initialization failed: ${result.error}")
-                V2InitResult.Error(result.error ?: "Unknown error")
+            when (result) {
+                is ImportResult.Success -> {
+                    Log.d(TAG, "V2 database initialization completed: ${result.showsImported} shows, ${result.venuesImported} venues")
+                    V2InitResult.Success(result.showsImported, result.venuesImported)
+                }
+                is ImportResult.Error -> {
+                    Log.e(TAG, "V2 database initialization failed: ${result.error}")
+                    V2InitResult.Error(result.error)
+                }
+                is ImportResult.RequiresUserChoice -> {
+                    Log.d(TAG, "Multiple database sources available, requiring user choice")
+                    // Update UI to show source selection
+                    updateUiState(
+                        showProgress = false,
+                        showSourceSelection = true,
+                        availableSources = result.availableSources.sources,
+                        message = "Choose database source"
+                    )
+                    V2InitResult.Error("User choice required") // Will be handled by source selection UI
+                }
             }
         } catch (e: Exception) {
             Log.e(TAG, "V2 database initialization exception", e)
@@ -129,6 +144,8 @@ class SplashV2Service @Inject constructor(
         isReady: Boolean = _uiState.value.isReady,
         showError: Boolean = _uiState.value.showError,
         showProgress: Boolean = _uiState.value.showProgress,
+        showSourceSelection: Boolean = _uiState.value.showSourceSelection,
+        availableSources: List<DatabaseManagerV2.DatabaseSource> = _uiState.value.availableSources,
         message: String = _uiState.value.message,
         errorMessage: String? = _uiState.value.errorMessage,
         progress: ProgressV2 = _uiState.value.progress
@@ -137,6 +154,8 @@ class SplashV2Service @Inject constructor(
             isReady = isReady,
             showError = showError,
             showProgress = showProgress,
+            showSourceSelection = showSourceSelection,
+            availableSources = availableSources,
             message = message,
             errorMessage = errorMessage,
             progress = progress
@@ -196,8 +215,70 @@ class SplashV2Service @Inject constructor(
             isReady = true,
             showError = false,
             showProgress = false,
+            showSourceSelection = false,
             message = "V2 database import aborted"
         )
+    }
+    
+    /**
+     * User selected a database source for initialization
+     */
+    fun selectDatabaseSource(source: DatabaseManagerV2.DatabaseSource, coroutineScope: CoroutineScope) {
+        coroutineScope.launch {
+            Log.d(TAG, "User selected database source: $source")
+            
+            // Hide source selection and show progress
+            updateUiState(
+                showSourceSelection = false,
+                showProgress = true,
+                message = when (source) {
+                    DatabaseManagerV2.DatabaseSource.ZIP_BACKUP -> "Restoring from backup..."
+                    DatabaseManagerV2.DatabaseSource.DATA_IMPORT -> "Importing fresh data..."
+                }
+            )
+            
+            try {
+                val result = v2DatabaseManager.initializeFromSource(source)
+                
+                when (result) {
+                    is ImportResult.Success -> {
+                        updateUiState(
+                            isReady = true,
+                            showProgress = false,
+                            message = when (source) {
+                                DatabaseManagerV2.DatabaseSource.ZIP_BACKUP -> "Database restored from backup"
+                                DatabaseManagerV2.DatabaseSource.DATA_IMPORT -> "V2 database ready: ${result.showsImported} shows loaded"
+                            }
+                        )
+                    }
+                    is ImportResult.Error -> {
+                        updateUiState(
+                            showError = true,
+                            showProgress = false,
+                            message = "Database initialization failed",
+                            errorMessage = result.error
+                        )
+                    }
+                    is ImportResult.RequiresUserChoice -> {
+                        // This shouldn't happen when selecting a specific source
+                        updateUiState(
+                            showError = true,
+                            showProgress = false,
+                            message = "Unexpected error: user choice required again",
+                            errorMessage = "Internal error"
+                        )
+                    }
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Failed to initialize from selected source: $source", e)
+                updateUiState(
+                    showError = true,
+                    showProgress = false,
+                    message = "Database initialization failed",
+                    errorMessage = e.message
+                )
+            }
+        }
     }
 }
 
@@ -208,6 +289,8 @@ data class SplashV2UiState(
     val isReady: Boolean = false,
     val showError: Boolean = false,
     val showProgress: Boolean = false,
+    val showSourceSelection: Boolean = false,
+    val availableSources: List<com.deadarchive.core.database.v2.service.DatabaseManagerV2.DatabaseSource> = emptyList(),
     val message: String = "Loading V2 database...",
     val errorMessage: String? = null,
     val progress: ProgressV2 = ProgressV2(
