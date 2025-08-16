@@ -127,14 +127,14 @@ android {
 }
 
 dependencies {
-    implementation(project(":app-v2"))
+    implementation(project(":v2:app"))
     implementation(project(":core:data-api"))
     implementation(project(":core:design"))
     implementation(project(":core:common"))
     implementation(project(":core:model"))
     implementation(project(":core:data"))
     implementation(project(":core:database"))
-    implementation(project(":core:database-v2"))
+    implementation(project(":v2:core:database"))
     implementation(project(":core:network"))
     implementation(project(":core:media"))
     implementation(project(":core:settings"))

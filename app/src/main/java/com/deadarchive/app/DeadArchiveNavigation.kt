@@ -8,7 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.deadarchive.app.v2.splash.SplashV2
+import com.deadarchive.v2.app.splash.SplashV2
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.library.navigation.libraryScreen

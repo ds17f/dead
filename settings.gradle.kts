@@ -17,13 +17,15 @@ dependencyResolutionManagement {
 rootProject.name = "DeadArchive"
 
 include(":app")
-include(":app-v2")
+
+// V2 modules
+include(":v2:app")
+include(":v2:core:database")
 
 // Core modules
 include(":core:model")
 include(":core:data")
 include(":core:database")
-include(":core:database-v2")
 include(":core:network")
 include(":core:media")
 include(":core:design")

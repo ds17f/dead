@@ -12,7 +12,7 @@ import com.deadarchive.core.media.player.LastPlayedTrackMonitor
 import com.deadarchive.core.settings.api.SettingsRepository
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
-import com.deadarchive.core.database.v2.service.DatabaseManagerV2
+import com.deadarchive.v2.core.database.service.DatabaseManagerV2
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope
@@ -80,13 +80,13 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
                     android.util.Log.d("DeadArchiveApplication", "Initializing V2 database in background...")
                     val result = v2DatabaseManager.initializeV2DataIfNeeded()
                     when (result) {
-                        is com.deadarchive.core.database.v2.service.ImportResult.Success -> {
+                        is com.deadarchive.v2.core.database.service.ImportResult.Success -> {
                             android.util.Log.d("DeadArchiveApplication", "✅ V2 database initialized: ${result.showsImported} shows, ${result.venuesImported} venues")
                         }
-                        is com.deadarchive.core.database.v2.service.ImportResult.Error -> {
+                        is com.deadarchive.v2.core.database.service.ImportResult.Error -> {
                             android.util.Log.e("DeadArchiveApplication", "❌ V2 database initialization failed: ${result.error}")
                         }
-                        is com.deadarchive.core.database.v2.service.ImportResult.RequiresUserChoice -> {
+                        is com.deadarchive.v2.core.database.service.ImportResult.RequiresUserChoice -> {
                             android.util.Log.d("DeadArchiveApplication", "V2 database requires user choice - will be handled by splash screen")
                         }
                     }

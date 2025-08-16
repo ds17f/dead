@@ -11,7 +11,7 @@ import com.deadarchive.core.settings.service.SettingsConfigurationService
 import com.deadarchive.core.settings.service.SettingsBackupService
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
-import com.deadarchive.core.database.v2.service.DatabaseManagerV2
+import com.deadarchive.v2.core.database.service.DatabaseManagerV2
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateStatus
 import com.deadarchive.core.model.UpdateDownloadState
