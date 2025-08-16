@@ -21,6 +21,8 @@ import com.deadarchive.core.database.v2.dao.SongSearchV2Dao
 import com.deadarchive.core.database.v2.dao.VenueSearchV2Dao
 import com.deadarchive.core.database.v2.dao.ShowSearchV2Dao
 import com.deadarchive.core.database.v2.dao.MemberSearchV2Dao
+import com.deadarchive.core.database.v2.dao.CollectionV2Dao
+import com.deadarchive.core.database.v2.dao.CollectionShowV2Dao
 import javax.inject.Singleton
 
 @Module
@@ -99,6 +101,17 @@ object DatabaseV2Module {
         return database.memberSearchDao()
     }
     
+    // Collection DAOs
+    @Provides
+    fun provideCollectionV2Dao(database: DeadArchiveV2Database): CollectionV2Dao {
+        return database.collectionDao()
+    }
+    
+    @Provides
+    fun provideCollectionShowV2Dao(database: DeadArchiveV2Database): CollectionShowV2Dao {
+        return database.collectionShowDao()
+    }
+    
     // Services and repositories are automatically provided by @Singleton @Inject constructor
-    // AssetManagerV2, DataImportServiceV2, DatabaseManagerV2, ShowV2Repository, SearchServiceV2, SearchRepositoryV2, SearchTableProcessorV2 will be available via Hilt
+    // AssetManagerV2, DataImportServiceV2, DatabaseManagerV2, ShowV2Repository, SearchServiceV2, SearchRepositoryV2, SearchTableProcessorV2, CollectionProcessorV2 will be available via Hilt
 }

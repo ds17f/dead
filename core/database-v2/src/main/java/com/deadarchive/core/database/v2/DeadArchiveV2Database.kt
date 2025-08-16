@@ -17,6 +17,8 @@ import com.deadarchive.core.database.v2.entities.SongSearchV2Entity
 import com.deadarchive.core.database.v2.entities.VenueSearchV2Entity
 import com.deadarchive.core.database.v2.entities.ShowSearchV2Entity
 import com.deadarchive.core.database.v2.entities.MemberSearchV2Entity
+import com.deadarchive.core.database.v2.entities.CollectionV2Entity
+import com.deadarchive.core.database.v2.entities.CollectionShowV2Entity
 import com.deadarchive.core.database.v2.dao.ShowV2Dao
 import com.deadarchive.core.database.v2.dao.VenueV2Dao
 import com.deadarchive.core.database.v2.dao.DataVersionDao
@@ -30,6 +32,8 @@ import com.deadarchive.core.database.v2.dao.SongSearchV2Dao
 import com.deadarchive.core.database.v2.dao.VenueSearchV2Dao
 import com.deadarchive.core.database.v2.dao.ShowSearchV2Dao
 import com.deadarchive.core.database.v2.dao.MemberSearchV2Dao
+import com.deadarchive.core.database.v2.dao.CollectionV2Dao
+import com.deadarchive.core.database.v2.dao.CollectionShowV2Dao
 
 @Database(
     entities = [
@@ -45,9 +49,11 @@ import com.deadarchive.core.database.v2.dao.MemberSearchV2Dao
         SongSearchV2Entity::class,
         VenueSearchV2Entity::class,
         ShowSearchV2Entity::class,
-        MemberSearchV2Entity::class
+        MemberSearchV2Entity::class,
+        CollectionV2Entity::class,
+        CollectionShowV2Entity::class
     ],
-    version = 4,
+    version = 5,
     exportSchema = false
 )
 abstract class DeadArchiveV2Database : RoomDatabase() {
@@ -65,6 +71,8 @@ abstract class DeadArchiveV2Database : RoomDatabase() {
     abstract fun venueSearchDao(): VenueSearchV2Dao
     abstract fun showSearchDao(): ShowSearchV2Dao
     abstract fun memberSearchDao(): MemberSearchV2Dao
+    abstract fun collectionDao(): CollectionV2Dao
+    abstract fun collectionShowDao(): CollectionShowV2Dao
     
     companion object {
         const val DATABASE_NAME = "dead_archive_v2_database"

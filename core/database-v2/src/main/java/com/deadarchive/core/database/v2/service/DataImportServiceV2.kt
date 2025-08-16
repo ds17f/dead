@@ -108,7 +108,9 @@ sealed class ImportResult {
         val songSearchImported: Int = 0,
         val venueSearchImported: Int = 0,
         val showSearchImported: Int = 0,
-        val memberSearchImported: Int = 0
+        val memberSearchImported: Int = 0,
+        val collectionsImported: Int = 0,
+        val collectionShowsImported: Int = 0
     ) : ImportResult() {
         val success: Boolean = true
     }
@@ -126,9 +128,10 @@ sealed class ImportResult {
     companion object {
         fun success(shows: Int, venues: Int, songs: Int = 0, setlists: Int = 0, setlistSongs: Int = 0, 
                    recordings: Int = 0, tracks: Int = 0, trackFormats: Int = 0,
-                   songSearch: Int = 0, venueSearch: Int = 0, showSearch: Int = 0, memberSearch: Int = 0) = 
+                   songSearch: Int = 0, venueSearch: Int = 0, showSearch: Int = 0, memberSearch: Int = 0,
+                   collections: Int = 0, collectionShows: Int = 0) = 
             Success(shows, venues, songs, setlists, setlistSongs, recordings, tracks, trackFormats,
-                   songSearch, venueSearch, showSearch, memberSearch)
+                   songSearch, venueSearch, showSearch, memberSearch, collections, collectionShows)
         fun error(message: String) = Error(message)
         fun requiresUserChoice(sources: com.deadarchive.core.database.v2.service.DatabaseManagerV2.AvailableSources) = 
             RequiresUserChoice(sources)
@@ -147,13 +150,15 @@ class DataImportServiceV2 @Inject constructor(
     private val recordingDao: RecordingV2Dao,
     private val trackDao: TrackV2Dao,
     private val trackFormatDao: TrackFormatV2Dao,
-    private val searchTableProcessor: SearchTableProcessorV2
+    private val searchTableProcessor: SearchTableProcessorV2,
+    private val collectionProcessor: CollectionProcessorV2
 ) {
     companion object {
         private const val TAG = "DataImportServiceV2"
         private const val SHOWS_DIR = "shows"
         private const val RECORDINGS_DIR = "recordings"
         private const val SEARCH_DIR = "search"
+        private const val COLLECTIONS_FILE = "collections.json"
     }
     
     private val json = Json { 
@@ -218,27 +223,38 @@ class DataImportServiceV2 @Inject constructor(
                                 
                                 when (searchResult) {
                                     is ImportResult.Success -> {
-                                        // Combine all results
-                                        val combinedResult = ImportResult.success(
-                                            shows = showResult.showsImported,
-                                            venues = showResult.venuesImported,
-                                            songs = showResult.songsImported,
-                                            setlists = showResult.setlistsImported,
-                                            setlistSongs = showResult.setlistSongsImported,
-                                            recordings = recordingResult.recordingsImported,
-                                            tracks = recordingResult.tracksImported,
-                                            trackFormats = recordingResult.trackFormatsImported,
-                                            songSearch = searchResult.songSearchImported,
-                                            venueSearch = searchResult.venueSearchImported,
-                                            showSearch = searchResult.showSearchImported,
-                                            memberSearch = searchResult.memberSearchImported
-                                        )
+                                        // Import collections
+                                        val collectionsResult = importCollections(tempDir, progressCallback)
                                         
-                                        // Update version tracking
-                                        updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
-                                        Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats, ${combinedResult.songSearchImported} song searches, ${combinedResult.venueSearchImported} venue searches, ${combinedResult.showSearchImported} show searches, ${combinedResult.memberSearchImported} member searches")
-                                        
-                                        combinedResult
+                                        when (collectionsResult) {
+                                            is ImportResult.Success -> {
+                                                // Combine all results
+                                                val combinedResult = ImportResult.success(
+                                                    shows = showResult.showsImported,
+                                                    venues = showResult.venuesImported,
+                                                    songs = showResult.songsImported,
+                                                    setlists = showResult.setlistsImported,
+                                                    setlistSongs = showResult.setlistSongsImported,
+                                                    recordings = recordingResult.recordingsImported,
+                                                    tracks = recordingResult.tracksImported,
+                                                    trackFormats = recordingResult.trackFormatsImported,
+                                                    songSearch = searchResult.songSearchImported,
+                                                    venueSearch = searchResult.venueSearchImported,
+                                                    showSearch = searchResult.showSearchImported,
+                                                    memberSearch = searchResult.memberSearchImported,
+                                                    collections = collectionsResult.collectionsImported,
+                                                    collectionShows = collectionsResult.collectionShowsImported
+                                                )
+                                                
+                                                // Update version tracking
+                                                updateDataVersion(tempDir, combinedResult.showsImported, combinedResult.venuesImported)
+                                                Log.d(TAG, "Import completed: ${combinedResult.showsImported} shows, ${combinedResult.venuesImported} venues, ${combinedResult.songsImported} songs, ${combinedResult.setlistsImported} setlists, ${combinedResult.setlistSongsImported} song performances, ${combinedResult.recordingsImported} recordings, ${combinedResult.tracksImported} tracks, ${combinedResult.trackFormatsImported} formats, ${combinedResult.songSearchImported} song searches, ${combinedResult.venueSearchImported} venue searches, ${combinedResult.showSearchImported} show searches, ${combinedResult.memberSearchImported} member searches, ${combinedResult.collectionsImported} collections, ${combinedResult.collectionShowsImported} collection relationships")
+                                                
+                                                combinedResult
+                                            }
+                                            is ImportResult.Error -> collectionsResult
+                                            is ImportResult.RequiresUserChoice -> collectionsResult
+                                        }
                                     }
                                     is ImportResult.Error -> searchResult
                                     is ImportResult.RequiresUserChoice -> searchResult
@@ -804,6 +820,59 @@ class DataImportServiceV2 @Inject constructor(
         } catch (e: Exception) {
             Log.e(TAG, "Error importing search tables", e)
             return ImportResult.error("Search tables import failed: ${e.message}")
+        }
+    }
+    
+    /**
+     * Import collections data from collections.json
+     */
+    private suspend fun importCollections(
+        tempDir: File,
+        progressCallback: ((phase: String, total: Int, processed: Int, current: String) -> Unit)? = null
+    ): ImportResult {
+        try {
+            Log.d(TAG, "Starting collections import...")
+            progressCallback?.invoke("IMPORTING_COLLECTIONS", 0, 0, "Loading collections data...")
+            
+            val collectionsFile = File(tempDir, COLLECTIONS_FILE)
+            if (!collectionsFile.exists()) {
+                Log.w(TAG, "collections.json not found, skipping collections import")
+                return ImportResult.success(
+                    shows = 0, venues = 0, songs = 0, setlists = 0, setlistSongs = 0,
+                    recordings = 0, tracks = 0, trackFormats = 0,
+                    songSearch = 0, venueSearch = 0, showSearch = 0, memberSearch = 0,
+                    collections = 0, collectionShows = 0
+                )
+            }
+            
+            progressCallback?.invoke("IMPORTING_COLLECTIONS", 1, 0, "Processing collections.json...")
+            
+            val collectionsContent = collectionsFile.readText()
+            Log.d(TAG, "Read collections.json file (${collectionsContent.length} characters)")
+            
+            val success = collectionProcessor.processCollectionsJson(collectionsContent)
+            
+            if (success) {
+                // Get stats to report counts
+                val stats = collectionProcessor.getCollectionStats()
+                
+                progressCallback?.invoke("IMPORTING_COLLECTIONS", 1, 1, "Collections import completed")
+                Log.d(TAG, "Collections import completed: ${stats.collectionCount} collections, ${stats.relationshipCount} relationships")
+                
+                return ImportResult.success(
+                    shows = 0, venues = 0, songs = 0, setlists = 0, setlistSongs = 0,
+                    recordings = 0, tracks = 0, trackFormats = 0,
+                    songSearch = 0, venueSearch = 0, showSearch = 0, memberSearch = 0,
+                    collections = stats.collectionCount, collectionShows = stats.relationshipCount
+                )
+            } else {
+                Log.e(TAG, "Failed to process collections.json")
+                return ImportResult.error("Collections processing failed")
+            }
+            
+        } catch (e: Exception) {
+            Log.e(TAG, "Error importing collections", e)
+            return ImportResult.error("Collections import failed: ${e.message}")
         }
     }
     
