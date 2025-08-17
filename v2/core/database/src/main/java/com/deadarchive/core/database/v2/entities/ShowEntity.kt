@@ -42,10 +42,16 @@ data class ShowEntity(
     val setlistRaw: String?,      // JSON string of full setlist for UI display
     val songList: String?,        // "Scarlet Begonias,Fire on the Mountain" (comma-separated for FTS)
     
+    // Band lineup data
+    val lineupStatus: String?,    // "found", "missing", etc.
+    val lineupRaw: String?,       // JSON string of full lineup for UI display
+    val memberList: String?,      // "Jerry Garcia,Bob Weir,Phil Lesh" (comma-separated for FTS)
+    
     // Multiple shows same date/venue (rare but happens)
     val showSequence: Int = 1,    // 1, 2, 3... for multiple shows
     
-    // Computed/cached stats (will be populated later)
+    // Recording data
+    val recordingsRaw: String?,       // JSON array string of recording IDs ["rec1", "rec2"]
     val recordingCount: Int = 0,
     val bestRecordingId: String?,
     val averageRating: Float?,
