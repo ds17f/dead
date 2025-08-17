@@ -126,6 +126,18 @@ case "$1" in
   fi
   run_with_timeout adb logcat -s AwesomeBarService ShowFtsDao BrowseSearchService
   ;;
+"splash" | "splash-v2")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing SplashV2 service logs (no timeout)..."
+  else
+    echo "🔍 Showing SplashV2 service logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s SplashV2Service SplashViewModelV2 DatabaseHealthService
+  ;;
+"health" | "database-health")
+  echo "📊 Current Database Health Check:"
+  adb logcat -d | grep -E "DatabaseHealthService.*health check|Database health check" | tail -5
+  ;;
 *)
   echo "📱 Dead Archive Logging Utility"
   echo ""
@@ -136,6 +148,8 @@ case "$1" in
   echo "  dataimport    - Show V2 database import logs"
   echo "  database/db   - Show all V2 database related logs"
   echo "  startup/init  - Show startup and database initialization logs"
+  echo "  splash        - Show SplashV2 service logs"
+  echo "  health        - Show current database health status"
   echo "  awesome/search- Show Awesome Bar and search logs"
   echo "  app           - Show application startup logs"
   echo "  player        - Show media player logs"

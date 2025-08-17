@@ -37,4 +37,28 @@ class DatabaseHealthService @Inject constructor(
             false
         }
     }
+    
+    /**
+     * Get database record counts
+     */
+    suspend fun getDatabaseCounts(): DatabaseCounts {
+        return try {
+            val showCount = showDao.getShowCount()
+            val recordingCount = recordingDao.getRecordingCount()
+            
+            Log.d(TAG, "Database counts: $showCount shows, $recordingCount recordings")
+            DatabaseCounts(showCount, recordingCount)
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to get database counts", e)
+            DatabaseCounts(0, 0)
+        }
+    }
 }
+
+/**
+ * Database count information
+ */
+data class DatabaseCounts(
+    val showCount: Int,
+    val recordingCount: Int
+)

@@ -23,7 +23,9 @@ class DatabaseManager @Inject constructor(
     private val gitHubDataService: GitHubDataService,
     private val databaseHealthService: DatabaseHealthService,
     private val fileDiscoveryService: FileDiscoveryService,
-    private val downloadService: DownloadService
+    private val downloadService: DownloadService,
+    private val zipExtractionService: ZipExtractionService,
+    private val databaseRestoreService: DatabaseRestoreService
 ) {
     
     companion object {
@@ -70,7 +72,9 @@ class DatabaseManager @Inject constructor(
         return try {
             if (isV2DataInitialized()) {
                 Log.i(TAG, "V2 data already initialized")
-                return DatabaseImportResult.Success(0, 0)
+                // Get actual counts from database
+                val healthInfo = databaseHealthService.getDatabaseCounts()
+                return DatabaseImportResult.Success(healthInfo.showCount, healthInfo.recordingCount)
             }
             
             // Check for available data sources
@@ -119,7 +123,7 @@ class DatabaseManager @Inject constructor(
     suspend fun initializeFromSource(source: DatabaseSource): DatabaseImportResult {
         return try {
             Log.i(TAG, "Initializing from source: $source")
-            _progress.value = DatabaseProgress(phase = "CHECKING", currentItem = "Checking data source...")
+            _progress.value = DatabaseProgress(phase = "CHECKING", currentItem = "Checking data sources...")
             
             when (source) {
                 DatabaseSource.DATA_IMPORT -> {
@@ -130,18 +134,18 @@ class DatabaseManager @Inject constructor(
                     
                     if (dataFile != null) {
                         Log.i(TAG, "✅ Using local data file: ${dataFile.name} (${dataFile.length()} bytes)")
-                        _progress.value = DatabaseProgress(phase = "USING_LOCAL", currentItem = "Using local data file...")
+                        _progress.value = DatabaseProgress(phase = "USING_LOCAL", currentItem = "Using local data...")
                     } else {
                         // No local file, download from remote
                         Log.i(TAG, "No local data file found, downloading from remote...")
-                        _progress.value = DatabaseProgress(phase = "DOWNLOADING", currentItem = "Downloading data.zip...")
+                        _progress.value = DatabaseProgress(phase = "DOWNLOADING", currentItem = "Downloading data...")
                         
                         val downloadResult = downloadService.downloadFileByType(
                             FileDiscoveryService.FileType.DATA_ZIP
                         ) { progress ->
                             _progress.value = DatabaseProgress(
                                 phase = "DOWNLOADING",
-                                currentItem = "Downloading ${progress.fileName}... ${(progress.progressPercent * 100).toInt()}%",
+                                currentItem = "Downloading... ${(progress.progressPercent * 100).toInt()}%",
                                 totalItems = (progress.totalBytes / 1024 / 1024).toInt(), // MB
                                 processedItems = (progress.downloadedBytes / 1024 / 1024).toInt() // MB
                             )
@@ -158,11 +162,52 @@ class DatabaseManager @Inject constructor(
                         }
                     }
                     
-                    // TODO: Extract and import data from ZIP file
-                    // For now, just mark as completed to test download flow
-                    _progress.value = DatabaseProgress(phase = "COMPLETED", currentItem = "Data file ready (import not implemented yet)")
-                    Log.i(TAG, "✅ Data file ready for import: ${dataFile.absolutePath}")
-                    DatabaseImportResult.Success(0, 0)
+                    // Extract ZIP file
+                    Log.i(TAG, "Extracting data.zip file...")
+                    _progress.value = DatabaseProgress(phase = "EXTRACTING", currentItem = "Extracting data...")
+                    
+                    val extractionResult = zipExtractionService.extractDataZip(dataFile) { progress ->
+                        _progress.value = DatabaseProgress(
+                            phase = "EXTRACTING",
+                            totalItems = progress.totalEntries,
+                            processedItems = progress.extractedEntries,
+                            currentItem = progress.currentItem
+                        )
+                    }
+                    
+                    when (extractionResult) {
+                        is DataExtractionResult.Success -> {
+                            Log.i(TAG, "✅ Data extraction successful")
+                            
+                            // Import the extracted data
+                            Log.i(TAG, "Importing extracted data...")
+                            val importResult = dataImportService.importFromExtractedFiles(
+                                showsDirectory = extractionResult.showsDirectory,
+                                recordingsDirectory = extractionResult.recordingsDirectory
+                            ) { progress ->
+                                _progress.value = DatabaseProgress(
+                                    phase = progress.phase,
+                                    totalItems = progress.totalItems,
+                                    processedItems = progress.processedItems,
+                                    currentItem = progress.currentItem
+                                )
+                            }
+                            
+                            // Cleanup extraction directory
+                            zipExtractionService.cleanupExtractions()
+                            
+                            if (importResult.success) {
+                                _progress.value = DatabaseProgress(phase = "COMPLETED", currentItem = "Import completed successfully")
+                                Log.i(TAG, "✅ Data import completed: ${importResult.importedShows} shows, ${importResult.importedRecordings} recordings")
+                                DatabaseImportResult.Success(importResult.importedShows, importResult.importedRecordings)
+                            } else {
+                                DatabaseImportResult.Error("Data import failed: ${importResult.message}")
+                            }
+                        }
+                        is DataExtractionResult.Error -> {
+                            DatabaseImportResult.Error("Data extraction failed: ${extractionResult.error}")
+                        }
+                    }
                 }
                 
                 DatabaseSource.ZIP_BACKUP -> {
@@ -173,18 +218,18 @@ class DatabaseManager @Inject constructor(
                     
                     if (dbFile != null) {
                         Log.i(TAG, "✅ Using local database file: ${dbFile.name} (${dbFile.length()} bytes)")
-                        _progress.value = DatabaseProgress(phase = "USING_LOCAL", currentItem = "Using local database file...")
+                        _progress.value = DatabaseProgress(phase = "USING_LOCAL", currentItem = "Using local database...")
                     } else {
                         // No local file, download from remote
                         Log.i(TAG, "No local database file found, downloading from remote...")
-                        _progress.value = DatabaseProgress(phase = "DOWNLOADING", currentItem = "Downloading database backup...")
+                        _progress.value = DatabaseProgress(phase = "DOWNLOADING", currentItem = "Downloading backup...")
                         
                         val downloadResult = downloadService.downloadFileByType(
                             FileDiscoveryService.FileType.DATABASE_ZIP
                         ) { progress ->
                             _progress.value = DatabaseProgress(
                                 phase = "DOWNLOADING",
-                                currentItem = "Downloading ${progress.fileName}... ${(progress.progressPercent * 100).toInt()}%",
+                                currentItem = "Downloading... ${(progress.progressPercent * 100).toInt()}%",
                                 totalItems = (progress.totalBytes / 1024 / 1024).toInt(), // MB
                                 processedItems = (progress.downloadedBytes / 1024 / 1024).toInt() // MB
                             )
@@ -201,11 +246,54 @@ class DatabaseManager @Inject constructor(
                         }
                     }
                     
-                    // TODO: Extract and restore database from ZIP file
-                    // For now, just mark as completed to test download flow
-                    _progress.value = DatabaseProgress(phase = "COMPLETED", currentItem = "Database file ready (restore not implemented yet)")
-                    Log.i(TAG, "✅ Database file ready for restore: ${dbFile.absolutePath}")
-                    DatabaseImportResult.Success(0, 0)
+                    // Extract ZIP file containing database
+                    Log.i(TAG, "Extracting database backup ZIP file...")
+                    _progress.value = DatabaseProgress(phase = "EXTRACTING", currentItem = "Extracting backup...")
+                    
+                    val extractionResult = zipExtractionService.extractDatabaseZip(dbFile) { progress ->
+                        _progress.value = DatabaseProgress(
+                            phase = "EXTRACTING",
+                            totalItems = progress.totalEntries,
+                            processedItems = progress.extractedEntries,
+                            currentItem = progress.currentItem
+                        )
+                    }
+                    
+                    when (extractionResult) {
+                        is DatabaseExtractionResult.Success -> {
+                            Log.i(TAG, "✅ Database extraction successful")
+                            
+                            // Restore the extracted database
+                            Log.i(TAG, "Restoring database from backup...")
+                            val restoreResult = databaseRestoreService.restoreFromBackup(
+                                extractedDatabaseFile = extractionResult.databaseFile
+                            ) { progress ->
+                                _progress.value = DatabaseProgress(
+                                    phase = "RESTORING",
+                                    totalItems = progress.total,
+                                    processedItems = progress.progress,
+                                    currentItem = progress.currentItem
+                                )
+                            }
+                            
+                            // Cleanup extraction directory
+                            zipExtractionService.cleanupExtractions()
+                            
+                            when (restoreResult) {
+                                is RestoreResult.Success -> {
+                                    _progress.value = DatabaseProgress(phase = "COMPLETED", currentItem = "Restore completed successfully")
+                                    Log.i(TAG, "✅ Database restore completed: ${restoreResult.showCount} shows, ${restoreResult.recordingCount} recordings")
+                                    DatabaseImportResult.Success(restoreResult.showCount, restoreResult.recordingCount)
+                                }
+                                is RestoreResult.Error -> {
+                                    DatabaseImportResult.Error("Database restore failed: ${restoreResult.error}")
+                                }
+                            }
+                        }
+                        is DatabaseExtractionResult.Error -> {
+                            DatabaseImportResult.Error("Database extraction failed: ${extractionResult.error}")
+                        }
+                    }
                 }
             }
         } catch (e: Exception) {

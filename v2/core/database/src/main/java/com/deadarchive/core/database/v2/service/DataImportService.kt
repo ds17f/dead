@@ -206,9 +206,38 @@ class DataImportService @Inject constructor(
             
             Log.i(TAG, "Show parsing summary: $showParseSuccessCount successful, $showParseFailureCount failed out of ${showFiles.size} total files")
             
-            // TEMPORARILY DISABLED: Parse recording files (focusing on shows first)
-            Log.i(TAG, "🚫 Recording parsing temporarily disabled - focusing on show parsing only")
-            val recordingsMap = mutableMapOf<String, RecordingV2ImportData>() // Empty map
+            // Parse recording files
+            val recordingsMap = mutableMapOf<String, RecordingV2ImportData>()
+            var recordingParseSuccessCount = 0
+            var recordingParseFailureCount = 0
+            
+            recordingFiles.forEachIndexed { index, file ->
+                progressCallback?.invoke(
+                    ImportProgress(
+                        "READING_RECORDINGS", 
+                        index + 1, 
+                        recordingFiles.size, 
+                        "Processing recording data..."
+                    )
+                )
+                
+                Log.d(TAG, "Processing recording file ${index + 1}/${recordingFiles.size}: ${file.name}")
+                
+                try {
+                    val recordingJson = file.readText()
+                    val json = Json { ignoreUnknownKeys = true }
+                    val recordingData = json.decodeFromString<RecordingV2ImportData>(recordingJson)
+                    val recordingId = file.nameWithoutExtension // Use filename as recording ID
+                    recordingsMap[recordingId] = recordingData
+                    recordingParseSuccessCount++
+                    Log.d(TAG, "✅ Successfully parsed recording: $recordingId")
+                } catch (e: Exception) {
+                    recordingParseFailureCount++
+                    Log.e(TAG, "❌ Failed to parse recording file: ${file.name}", e)
+                }
+            }
+            
+            Log.i(TAG, "Recording parsing summary: $recordingParseSuccessCount successful, $recordingParseFailureCount failed out of ${recordingFiles.size} total files")
             
             Log.d(TAG, "Parsed ${showsMap.size} shows and ${recordingsMap.size} recordings")
             
@@ -249,11 +278,54 @@ class DataImportService @Inject constructor(
             
             Log.i(TAG, "Show database insertion summary: $showDbSuccessCount successful, $showDbFailureCount failed out of ${showsMap.size} parsed shows")
             
-            // TEMPORARILY DISABLED: Import recordings (focusing on shows first)
-            Log.i(TAG, "🚫 Recording import temporarily disabled - focusing on show import only")
+            // Import recordings (only those referenced by shows)
+            var recordingDbSuccessCount = 0
+            var recordingDbFailureCount = 0
+            var recordingsNotInShows = 0
             
-            // Set recording counts to 0 since we're skipping them
-            importedRecordings = 0
+            recordingsMap.entries.forEachIndexed { index, (recordingId, recordingData) ->
+                progressCallback?.invoke(
+                    ImportProgress(
+                        "IMPORTING_RECORDINGS", 
+                        index + 1, 
+                        recordingsMap.size, 
+                        "Creating recording entries..."
+                    )
+                )
+                
+                Log.d(TAG, "Processing recording ${index + 1}/${recordingsMap.size}: $recordingId")
+                
+                // Find which show(s) reference this recording
+                val referencingShows = showsMap.values.filter { show ->
+                    show.recordings.contains(recordingId)
+                }
+                
+                if (referencingShows.isNotEmpty()) {
+                    // Recording is referenced by at least one show, import it
+                    referencingShows.forEach { show ->
+                        try {
+                            val recordingEntity = createRecordingEntityFromV2(recordingId, recordingData, show.showId)
+                            recordingDao.insertRecording(recordingEntity)
+                            importedRecordings++
+                            recordingDbSuccessCount++
+                            Log.d(TAG, "✅ Successfully inserted recording: $recordingId for show: ${show.showId}")
+                        } catch (e: Exception) {
+                            recordingDbFailureCount++
+                            Log.e(TAG, "❌ Failed to insert recording: $recordingId for show: ${show.showId}", e)
+                        }
+                    }
+                } else {
+                    // Recording not referenced by any show
+                    recordingsNotInShows++
+                    Log.d(TAG, "⚠️ Recording $recordingId not referenced by any show, skipping")
+                }
+            }
+            
+            Log.i(TAG, "Recording database insertion summary: $recordingDbSuccessCount successful, $recordingDbFailureCount failed, $recordingsNotInShows not referenced by shows")
+            
+            if (recordingsNotInShows > 0) {
+                Log.w(TAG, "⚠️ Found $recordingsNotInShows recordings not referenced by any show - this may indicate data inconsistency")
+            }
             
             progressCallback?.invoke(ImportProgress("FINALIZING", importedShows + importedRecordings, importedShows + importedRecordings, "Finalizing database..."))
             
