@@ -1,0 +1,126 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-04-25",
+  "venue": "Electric Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hard to Handle",
+      "duration": 149.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Doin' That Rag",
+      "duration": 238.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt02.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 372.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt03.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Morning Dew",
+      "duration": 229.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Yellow Dog Story",
+      "duration": 59.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt05.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Sitting on Top of the World",
+      "duration": 126.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Turn On Your Lovelight",
+      "duration": 741.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25dt07.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-25dt07.shn"
+        }
+      ]
+    }
+  ]
+}

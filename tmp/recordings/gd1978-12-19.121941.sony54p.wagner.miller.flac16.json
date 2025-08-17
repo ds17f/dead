@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-12-19",
+  "venue": "Memorial Coliseum, Mississippi State Fairgrounds",
+  "location": "Jackson, MS",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 348.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 776.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 385.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 495.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle ->",
+      "duration": 178.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 381.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 523.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "El Paso",
+      "duration": 348.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 835.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Lazy Lightnin' ->",
+      "duration": 218.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Supplication",
+      "duration": 362.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t02.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias ->",
+      "duration": 689.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t03.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain",
+      "duration": 778.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Promised Land",
+      "duration": 401.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t05.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Stagger Lee",
+      "duration": 533.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin' ->",
+      "duration": 869.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t07.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 527.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t08.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space ->",
+      "duration": 64.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d3t01.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Other One ->",
+      "duration": 804.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d3t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue ->",
+      "duration": 663.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d3t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away ->",
+      "duration": 694.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d3t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around And Around",
+      "duration": 593.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d3t05.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Casey Jones",
+      "duration": 380.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d3t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

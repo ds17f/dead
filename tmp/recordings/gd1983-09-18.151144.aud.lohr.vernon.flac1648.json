@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-09-18",
+  "venue": "Nevada County Fairgrounds",
+  "location": "Grass Valley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "01. Crowd",
+      "duration": 164.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01. Crowd.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "02. Jack Straw",
+      "duration": 460.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02. Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02. Jack Straw.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "03. They Love Each Other",
+      "duration": 560.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03. They Love Each Other.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03. They Love Each Other.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "04. New Minglewood Blues",
+      "duration": 581.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04. New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04. New Minglewood Blues.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "05. Friend Of The Devil",
+      "duration": 685.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05. Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05. Friend Of The Devil.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "06. Hell In A Bucket",
+      "duration": 489.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06. Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06. Hell In A Bucket.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "07. Ramble On Rose",
+      "duration": 491.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07. Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07. Ramble On Rose.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "08. Let It Grow",
+      "duration": 791.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08. Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08. Let It Grow.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "09. Crowd",
+      "duration": 17.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09. Crowd.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "10. Touch Of Grey >",
+      "duration": 404.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10. Touch Of Grey >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10. Touch Of Grey >.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "11. Samson & Delilah",
+      "duration": 475.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11. Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11. Samson & Delilah.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "12. Terrapin Station >",
+      "duration": 971.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12. Terrapin Station >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12. Terrapin Station >.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "13. Drums >",
+      "duration": 500.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13. Drums >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13. Drums >.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "14. Space >",
+      "duration": 516.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14. Space >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14. Space >.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "15. The Other One >",
+      "duration": 859.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15. The Other One >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15. The Other One >.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "16. Wharf Rat >",
+      "duration": 638.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16. Wharf Rat >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16. Wharf Rat >.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "17. Around & Around >",
+      "duration": 233.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17. Around & Around >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17. Around & Around >.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "18. Sugar Magnolia",
+      "duration": 557.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18. Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18. Sugar Magnolia.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "19. It's All Over Now Baby Blue",
+      "duration": 452.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19. It's All Over Now Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19. It's All Over Now Baby Blue.mp3",
+          "bitrate": "171"
+        }
+      ]
+    }
+  ]
+}

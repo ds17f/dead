@@ -1,0 +1,142 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-01-24",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 218.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One ->",
+      "duration": 988.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Potato Caboose",
+      "duration": 824.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dupree's Diamond Blues",
+      "duration": 247.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Doin' That Rag",
+      "duration": 412.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star",
+      "duration": 1196.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Turn On Your Lovelight ->",
+      "duration": 764.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums",
+      "duration": 407.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-24d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d2t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

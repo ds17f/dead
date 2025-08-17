@@ -1,0 +1,110 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1968-08-28",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "DARK STAR >",
+      "duration": 648.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-28.davmar77.01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-28.davmar77.01.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "ST. STEPHEN >",
+      "duration": 275.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-28.davmar77.02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-28.davmar77.02.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "THE ELEVEN >",
+      "duration": 581.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-28.davmar77.03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-28.davmar77.03.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "DEATH DON'T HAVE NO MERCY",
+      "duration": 511.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-28.davmar77.04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-28.davmar77.04.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "TURN ON YOUR LOVELIGHT",
+      "duration": 731.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-28.davmar77.05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-28.davmar77.05.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "GOOD MORNING LITTLE SCHOOL GIRL",
+      "duration": 961.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-28.davmar77.06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-28.davmar77.06.mp3",
+          "bitrate": "170"
+        }
+      ]
+    }
+  ]
+}

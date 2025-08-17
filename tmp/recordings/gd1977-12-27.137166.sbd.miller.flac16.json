@@ -1,0 +1,414 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1977-12-27",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 353.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Good Lovin'",
+      "duration": 371.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GoodLovin.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Brown Eyed Women",
+      "duration": 419.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03BrownEyedWomen.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 361.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Cassidy.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 473.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Peggy-o.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Looks Like Rain",
+      "duration": 485.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LooksLikeRain.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dire Wolf",
+      "duration": 338.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DireWolf.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Passenger",
+      "duration": 320.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Passenger.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Candyman",
+      "duration": 567.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Candyman.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "El Paso",
+      "duration": 320.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ElPaso.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Friend Of The Devil",
+      "duration": 568.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FriendOfTheDevil.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Music Never Stopped",
+      "duration": 434.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TheMusicNeverStopped.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Set Break",
+      "duration": 157.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SetBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SetBreak.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Cold Rain And Snow",
+      "duration": 489.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ColdRainAndSnow.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Lazy Lightning",
+      "duration": 206.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15LazyLightning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Supplication",
+      "duration": 503.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Supplication.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Scarlet Begonias",
+      "duration": 499.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ScarletBegonias.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Fire On The Mountain",
+      "duration": 567.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18FireOnTheMountain.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Estimated Prophet",
+      "duration": 613.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19EstimatedProphet.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "He's Gone",
+      "duration": 765.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20HesGone.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truckin'",
+      "duration": 588.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Truckin.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Wharf Rat",
+      "duration": 745.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22WharfRat.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around And Around",
+      "duration": 483.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23AroundAndAround.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Tuning",
+      "duration": 87.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24Tuning.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Samson And Delilah",
+      "duration": 440.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25SamsonAndDelilah.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

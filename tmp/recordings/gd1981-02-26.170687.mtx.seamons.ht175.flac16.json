@@ -1,0 +1,275 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-02-26",
+  "venue": "Uptown Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Feel Like A Stranger",
+      "duration": 686.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d2t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Althea >",
+      "duration": 707.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t02.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d2t02.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Little Red Rooster",
+      "duration": 753.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d2t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Bird Song",
+      "duration": 105.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d2t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Me And My Uncle >",
+      "duration": 467.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d2t05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Big River",
+      "duration": 563.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t06.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Peggy-O",
+      "duration": 459.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Passenger",
+      "duration": 331.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d1t08.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "U.S. Blues",
+      "duration": 321.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-02-26d3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-02-26d3t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

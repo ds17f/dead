@@ -1,0 +1,126 @@
+{
+  "rating": 2.0416666666666665,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-07-03",
+  "venue": "Reed's Ranch",
+  "location": "Colorado Springs, CO",
+  "raw_rating": 4.083333333333333,
+  "high_ratings": 10,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Green Green Grass Of Home ->",
+      "duration": 312.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Slewfoot",
+      "duration": 195.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sittin' On Top Of The World",
+      "duration": 221.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Morning Dew",
+      "duration": 620.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 394.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle//",
+      "duration": 112.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "He Was A Friend Of Mine",
+      "duration": 796.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-07-03d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-07-03d1t07.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

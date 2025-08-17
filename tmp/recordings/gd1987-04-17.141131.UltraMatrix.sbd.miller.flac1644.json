@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-04-17",
+  "venue": "Irvine Meadows",
+  "location": "Irvine, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 358.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ColdRainAndSnow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 581.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02LittleRedRooster.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 532.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FriendOfTheDevil.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now",
+      "duration": 496.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItsAllOverNow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When Push Comes To Shove",
+      "duration": 321.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WhenPushComesToShove.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Desolation Row",
+      "duration": 618.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06DesolationRow.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 435.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Deal.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bill Graham Announcement's",
+      "duration": 31.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BillGrahamAnnouncements.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BillGrahamAnnouncements.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 35.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch Of Grey",
+      "duration": 369.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TouchOfGrey.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson And Delilah",
+      "duration": 399.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SamsonAndDelilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship Of Fools",
+      "duration": 563.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ShipOfFools.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Estimated Prophet",
+      "duration": 586.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13EstimatedProphet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World",
+      "duration": 471.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14EyesOfTheWorld.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 440.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 380.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 270.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Truckin'",
+      "duration": 425.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Truckin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue",
+      "duration": 513.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StellaBlue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around",
+      "duration": 229.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20AroundAndAround.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Good Lovin'",
+      "duration": 514.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21GoodLovin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 125.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 306.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

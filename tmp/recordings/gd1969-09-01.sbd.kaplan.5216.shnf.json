@@ -1,0 +1,206 @@
+{
+  "rating": 2.025,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1969-09-01",
+  "venue": "Baton Rouge International Speedway",
+  "location": "Baton Rouge, LA",
+  "raw_rating": 4.5,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Intro",
+      "duration": 57.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d1t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Casey Jones",
+      "duration": 213.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Morning Dew ->",
+      "duration": 315.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d1t03.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried ->",
+      "duration": 78.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d1t04.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 196.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d1t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Easy Wind",
+      "duration": 220.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d1t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Yellow Dog STory",
+      "duration": 75.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d2t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dark Star->",
+      "duration": 519.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d2t02.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "St. Stephen ->",
+      "duration": 187.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d2t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "William Tell ->",
+      "duration": 34.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d2t04.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Eleven >",
+      "duration": 330.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d2t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Turn On Your Lovelight",
+      "duration": 278.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-01d2t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-01d2t06.shn"
+        }
+      ]
+    }
+  ]
+}

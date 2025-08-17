@@ -1,0 +1,142 @@
+{
+  "rating": 1.9285714285714286,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-04",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.857142857142857,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hard to Handle",
+      "duration": 245.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "China Cat Sunflower",
+      "duration": 193.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t02.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "I Know You Rider",
+      "duration": 153.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t03.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "St. Stephen",
+      "duration": 83.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t04.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Not Fade Away",
+      "duration": 252.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t05.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "St. Stephen",
+      "duration": 87.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t06.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "In the Midnight Hour",
+      "duration": 283.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t07.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Jam",
+      "duration": 375.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04t08.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04t08.shn"
+        }
+      ]
+    }
+  ]
+}

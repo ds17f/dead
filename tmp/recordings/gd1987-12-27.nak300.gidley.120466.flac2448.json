@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-12-27",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch of Grey >",
+      "duration": 420.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 431.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O >",
+      "duration": 359.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 384.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ramble on Rose",
+      "duration": 417.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "crowd & tuning",
+      "duration": 209.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t06.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me & My Uncle >",
+      "duration": 180.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big River",
+      "duration": 366.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "It Must Have Been the Roses",
+      "duration": 348.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Desolation Row >",
+      "duration": 567.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t10.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 224.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s1t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "crowd & tuning",
+      "duration": 140.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' in the Band >",
+      "duration": 545.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band >",
+      "duration": 481.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet >",
+      "duration": 626.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes of the World >",
+      "duration": 513.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums >",
+      "duration": 549.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space >",
+      "duration": 544.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t07.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dear Mister Fantasy >",
+      "duration": 408.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue >",
+      "duration": 457.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Throwing Stones >",
+      "duration": 563.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Turn on Your Lovelight",
+      "duration": 318.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t11.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Encore: The Mighty Quinn",
+      "duration": 319.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-27s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-27s2t12.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1982-07-29",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "201",
+      "title": "Crazy Fingers >",
+      "duration": 515.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t01 Crazy Fingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t01 Crazy Fingers.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Need A Miracle > Crazy Fingers Jam > Jam >",
+      "duration": 639.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t02 Miracle_Crazy Fingers Jam_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t02 Miracle_Crazy Fingers Jam_Jam.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Drums >",
+      "duration": 500.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t03 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t03 Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Space > Other One Space//",
+      "duration": 329.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t04 Space_Other One Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t04 Space_Other One Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

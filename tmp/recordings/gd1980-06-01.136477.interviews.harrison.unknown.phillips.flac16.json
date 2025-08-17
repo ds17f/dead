@@ -1,0 +1,46 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-06-01",
+  "venue": "Unknown",
+  "location": "Unknown",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Side A",
+      "duration": 1799.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "SideA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "SideA.mp3",
+          "bitrate": "150"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Side B",
+      "duration": 1782.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "SideB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "SideB.mp3",
+          "bitrate": "141"
+        }
+      ]
+    }
+  ]
+}

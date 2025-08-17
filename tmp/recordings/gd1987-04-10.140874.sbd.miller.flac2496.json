@@ -1,0 +1,366 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-04-10",
+  "venue": "UIC Pavilion",
+  "location": "Chicago, IL",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 55.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 606.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ShakedownStreet.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 572.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LittleRedRooster.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 539.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Candyman.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 175.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 391.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown Eyed Women",
+      "duration": 292.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BrownEyedWomen.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 378.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Cassidy.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 223.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 42.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Iko Iko",
+      "duration": 364.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11IkoIko.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain",
+      "duration": 506.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12LooksLikeRain.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Box Of Rain",
+      "duration": 306.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13BoxOfRain.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone",
+      "duration": 664.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14HesGone.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 693.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 458.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One",
+      "duration": 336.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheOtherOne.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 513.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BlackPeter.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Around And Around",
+      "duration": 215.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19AroundAndAround.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn On Your Lovelight",
+      "duration": 298.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TurnOnYourLovelight.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 142.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 502.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

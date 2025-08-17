@@ -1,0 +1,110 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-12-28",
+  "venue": "International Speedway",
+  "location": "Hollywood, FL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Lovin'",
+      "duration": 138.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-28t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-28t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow",
+      "duration": 300.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-28t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-28t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tuning and Banter",
+      "duration": 259.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-28t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-28t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Hard To Handle",
+      "duration": 469.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-28t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-28t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mason's Children",
+      "duration": 691.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-28t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-28t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Lovelight",
+      "duration": 1019.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-28t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-28t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

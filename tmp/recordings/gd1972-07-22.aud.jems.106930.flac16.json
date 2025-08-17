@@ -1,0 +1,446 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1972-07-22",
+  "venue": "Paramount Northwest Theater",
+  "location": "Seattle, WA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 396.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me & My Uncle",
+      "duration": 259.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "You Win Again",
+      "duration": 323.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack Straw",
+      "duration": 319.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 646.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line",
+      "duration": 208.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "125"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Sugaree",
+      "duration": 502.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Black Throated Wind",
+      "duration": 409.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "124"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Big Railroad Blues",
+      "duration": 418.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09.mp3",
+          "bitrate": "121"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Cumberland Blues",
+      "duration": 505.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10.mp3",
+          "bitrate": "121"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playin' In The Band",
+      "duration": 848.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Brown-Eyed Woman",
+      "duration": 287.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "El Paso",
+      "duration": 290.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t13.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Tennessee Jed",
+      "duration": 536.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t14.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Cat Sunflower ->",
+      "duration": 375.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t15.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Know You Rider",
+      "duration": 355.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t16.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Mexicali Blues",
+      "duration": 233.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t17.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Deal",
+      "duration": 332.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t18.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Promised Land",
+      "duration": 260.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t19.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue",
+      "duration": 452.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t20.mp3",
+          "bitrate": "115"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Yellow Dog Story",
+      "duration": 187.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t21.mp3",
+          "bitrate": "115"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Mississippi Half Step",
+      "duration": 467.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t22.mp3",
+          "bitrate": "124"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Me And Bobby McGee",
+      "duration": 341.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t23.mp3",
+          "bitrate": "124"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Ramble On Rose",
+      "duration": 422.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t24.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Truckin'(cut in middle) ->",
+      "duration": 711.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t25.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t25.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "He's Gone",
+      "duration": 601.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t26.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t26.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Sugar Magnolia (cuts out)",
+      "duration": 177.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t27.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t27.mp3",
+          "bitrate": "124"
+        }
+      ]
+    }
+  ]
+}

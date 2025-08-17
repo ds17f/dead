@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-03-22",
+  "venue": "Copps Coliseum",
+  "location": "Hamilton, ON",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 260.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 510.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FeelLikeAStranger.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West LA Fadeaway",
+      "duration": 458.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WestLaFadeaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Easy To Love You",
+      "duration": 413.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04EasyToLoveYou.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04EasyToLoveYou.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 231.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BeatItOnDownTheLine.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It Must Have Been The Roses",
+      "duration": 450.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Last Time",
+      "duration": 512.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TheLastTime.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Picasso Moon",
+      "duration": 424.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PicassoMoon.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 218.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 122.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 477.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 730.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson And Delilah",
+      "duration": 412.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SamsonAndDelilah.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Believe It Or Not",
+      "duration": 396.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14BelieveItOrNot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14BelieveItOrNot.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin'",
+      "duration": 659.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Truckin.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 618.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 447.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One",
+      "duration": 503.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheOtherOne.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Hey Jude",
+      "duration": 292.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19HeyJude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19HeyJude.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Dear Mr Fantasy",
+      "duration": 238.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20DearMrFantasy.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Hey Jude",
+      "duration": 270.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21HeyJude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21HeyJude.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sugar Magnolia",
+      "duration": 467.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22SugarMagnolia.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Encore Break",
+      "duration": 184.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23EncoreBreak.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 430.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

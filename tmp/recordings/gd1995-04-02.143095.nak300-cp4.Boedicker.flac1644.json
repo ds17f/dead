@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-04-02",
+  "venue": "Pyramid Arena",
+  "location": "Memphis, TN",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTuning",
+      "duration": 91.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01Tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackShakedown Street",
+      "duration": 736.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02ShakedownStreet.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackThe Same Thing",
+      "duration": 438.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03TheSameThing.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackAlthea",
+      "duration": 599.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04Althea.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackMemphis Blues",
+      "duration": 479.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05MemphisBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05MemphisBlues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackTenesee Jed",
+      "duration": 490.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06TeneseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06TeneseeJed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackPromised Land",
+      "duration": 321.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07PromisedLand.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc02,Track01 Tuning",
+      "duration": 140.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc02,Track02 Here Comes Sunshine",
+      "duration": 395.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02HereComesSunshine.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc02,Track03 Eternity",
+      "duration": 603.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03Eternity.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track04 Crazy Fingers",
+      "duration": 601.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04CrazyFingers.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track05 Estiamted Prophet",
+      "duration": 876.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05EstiamtedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05EstiamtedProphet.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track06 Drums",
+      "duration": 688.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc03,Track01 Space",
+      "duration": 968.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track01Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc03,Track02 The Last Time",
+      "duration": 375.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track02TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track02TheLastTime.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc03,Track03 Wharf Rat",
+      "duration": 746.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track03WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track03WharfRat.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc03,Track04 Not Fade Away",
+      "duration": 652.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track04NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track04NotFadeAway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc03,Track05 Unbroken Chain",
+      "duration": 404.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track05UnbrokenChain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track05UnbrokenChain.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

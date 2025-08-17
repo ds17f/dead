@@ -1,0 +1,94 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-06-06",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 29.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-06-06d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-06d1t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Don't Ease Me In",
+      "duration": 226.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-06-06d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-06d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Frozen Logger",
+      "duration": 234.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-06-06d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-06d1t03.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend Of The Devil",
+      "duration": 314.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-06-06d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-06d1t04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Candyman",
+      "duration": 338.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-06-06d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-06d1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

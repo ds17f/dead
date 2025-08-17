@@ -1,0 +1,202 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-05-02-frost-amphitheatre-palo-alto-ca-usa/",
+  "show_id": "1987-05-02-frost-amphitheatre-palo-alto-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Frost Amphitheatre",
+  "location_raw": "Palo Alto, CA",
+  "city": "Palo Alto",
+  "state": "CA",
+  "country": "USA",
+  "date": "1987-05-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "When Push Comes To Shove",
+          "url": "https://jerrygarcia.com/song/when-push-comes-to-shove/",
+          "segue_into_next": false
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:57:52.703185",
+  "show_time": null,
+  "recordings": [
+    "gd1987-05-02.schoeps.grace.gems.105509.flac16",
+    "gd1987-05-02.148780.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1987-05-02.148779.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1987-05-02.sbd.walker-scotton.miller.83737.sbeok.flac16",
+    "gd87-05-02.sbd.hinko.18847.sbeok.shnf",
+    "gd1987-05-02.166935.Frost.PaloAltoCA.Ultramatrix.sbd.cm.miller.t-flac1648",
+    "gd1987-05-02.166841.ultramatrix.miller.flac2496",
+    "gd1987-05-02.141909.ultramatrix.pcm.dalton.miller.clugston.flac1644",
+    "gd1987-05-02.nak700.unknown.cousinit.24492.shnf",
+    "gd1987-05-02.nak700.unknown.cousinit.remaster-24492.98158.flac16"
+  ],
+  "best_recording": "gd1987-05-02.schoeps.grace.gems.105509.flac16",
+  "avg_rating": 2.236633663366337,
+  "raw_rating": 4.181818181818182,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 0,
+  "source_types": {
+    "FM": 3,
+    "SBD": 3,
+    "MATRIX": 2,
+    "UNKNOWN": 1,
+    "REMASTER": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

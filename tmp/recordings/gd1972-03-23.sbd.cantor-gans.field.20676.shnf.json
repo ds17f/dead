@@ -1,0 +1,158 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-03-23",
+  "venue": "Academy of Music",
+  "location": "New York, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin'",
+      "duration": 389.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ramble On Rose",
+      "duration": 206.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Two Souls In Communion",
+      "duration": 220.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 119.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big Boss Man",
+      "duration": 208.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star",
+      "duration": 758.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Not Fade Away >",
+      "duration": 192.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t07.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 253.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t08.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away",
+      "duration": 122.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-03-23t09.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-03-23t09.shn"
+        }
+      ]
+    }
+  ]
+}

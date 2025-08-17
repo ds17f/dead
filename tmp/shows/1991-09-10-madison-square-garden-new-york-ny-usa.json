@@ -1,0 +1,213 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-09-10-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1991-09-10-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1991-09-10",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It Takes A Lot To Laugh, It Takes A Train To Cry",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:09:50.806949",
+  "show_time": null,
+  "recordings": [
+    "gd91-09-10.sbd.dan.30755.sbexx.flacf",
+    "gd91-09-10.sbd.sacks.511.sbeok.shnf",
+    "gd1991-09-10.sbd.waddell.89085.sbeok.flac16",
+    "gd1991-09-10.sbd.sacks.tetzeli.fix-511.34678.reflac.flac16",
+    "gd1991-09-10.149509.sbd.person-healy.miller.flac2496",
+    "gd1991-09-10.157119.dsbd.miller.flac1644",
+    "gd1991-09-10.149650.sbd.cm.miller.flac16",
+    "gd1991-09-10.mtx.amdig.gems.98132.flac16",
+    "gd1991-09-10.fob.brennecke-young.GEMS.96422.flac16",
+    "gd1991-09-10.167383.5-1.tobin.flac1648",
+    "gd1991-09-10.Nak300CP4.JB.Keo.117024.Flac1644",
+    "gd1991-09-10.167377.PandP-aud.tobin.flac16",
+    "gd1991-09-10.167381.mtx.tobin.flac16",
+    "gd1991-09-10.dts.mtx.haugh.gems.98655.flac16",
+    "gd1991-09-10.151921.FOB.Schoeps.Master.DAT.ONeill.Mahoney.Noel.t-flac1648",
+    "gd1991-09-10.167376.PandP-aud.tobin.flac24",
+    "gd1991-09-10.167442.me88.mc.rogosa.flac1644",
+    "gd1991-09-10.167379.mtx.tobin.flac24",
+    "gd1991-09-10.167443.me88.mc.rogosa.flac2496",
+    "gd1991-09-10.nak300.gidley.122424.flac2448",
+    "gd1991-09-10.153418.mtx.photoleon.flac1644",
+    "gd1991-09-10.dts.mtx.haugh.gems.98701.flac24",
+    "gd1991-09-10.138917.cmc34.flac16",
+    "gd1991-09-10.150558.senn-me88.rogosa.miller.sirmick.flac1648",
+    "gd1991-09-10.Nak300CP4.JB.Keo.117023.Flac2496",
+    "gd1991-09-10.167382.dts.tobin.flac16"
+  ],
+  "best_recording": "gd91-09-10.sbd.dan.30755.sbexx.flacf",
+  "avg_rating": 2.2814942528735638,
+  "raw_rating": 4.6568627450980395,
+  "recording_count": 26,
+  "confidence": 1.0,
+  "total_high_ratings": 97,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 7,
+    "UNKNOWN": 17,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun",
+    "bruce-hornsby-shows",
+    "vince-welnick-years"
+  ]
+}

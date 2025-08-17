@@ -1,0 +1,46 @@
+{
+  "rating": 2.2857142857142856,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-08-05",
+  "venue": "O'Keefe Center",
+  "location": "Toronto, ON",
+  "raw_rating": 4.571428571428571,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Turn On Your Lovelight [",
+      "duration": 240.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-08-05t01.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-08-05t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alligator",
+      "duration": 381.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-08-05t02.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-08-05t02.shn"
+        }
+      ]
+    }
+  ]
+}

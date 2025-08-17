@@ -1,0 +1,78 @@
+{
+  "rating": 3.36,
+  "review_count": 10,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1967-07-01",
+  "venue": "710 Haight Street House",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.8,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jerry Garcia commentary with Acid Test audio",
+      "duration": 171.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_03.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jerry Garcia Interview - Part A",
+      "duration": 609.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_04a.mp3",
+          "bitrate": "131"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_04a.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jerry Garcia Interview - Part B",
+      "duration": 579.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_04b.mp3",
+          "bitrate": "130"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_04b.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jerry Garcia Interview - Part C",
+      "duration": 684.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_04c.mp3",
+          "bitrate": "132"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_04c.shn"
+        }
+      ]
+    }
+  ]
+}

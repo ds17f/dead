@@ -1,0 +1,126 @@
+{
+  "rating": 2.38,
+  "review_count": 15,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1969-12-20",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.4,
+  "high_ratings": 7,
+  "low_ratings": 4,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Mason's Children",
+      "duration": 341.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "China Cat Sunflower",
+      "duration": 289.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t02.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "I Know You Rider",
+      "duration": 253.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "High Time",
+      "duration": 278.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "The Eleven",
+      "duration": 540.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "New Speedway Boogie",
+      "duration": 376.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Turn On Your Lovelight",
+      "duration": 930.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-20d1t07.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-20d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-06-18",
+  "venue": "Giants Stadium",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd & tuning",
+      "duration": 114.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t01_vbr.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feel Like A Stranger",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t02_split_vbr.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bertha",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t03_split_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Same Thing",
+      "duration": 477.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t04_vbr.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tuning",
+      "duration": 63.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t05_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stagger Lee",
+      "duration": 490.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t06_vbr.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Eternity",
+      "duration": 609.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t07_patched.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t07_patched.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t07_patched_vbr.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 616.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t08_patched.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t08_patched.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t08_patched_vbr.mp3",
+          "bitrate": "221"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower ->",
+      "duration": 406.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t09_patched.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t09_patched.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t09_patched_vbr.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 339.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t10_patched.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t10_patched.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t10_patched_vbr.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Long Way to go Home",
+      "duration": 428.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t11_patched.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d1t11_patched.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d1t11_patched_vbr.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson & Delilah",
+      "duration": 502.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t01_vbr.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World ->",
+      "duration": 675.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t02.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t02_vbr.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 551.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t03_vbr.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 910.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t04.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t04_vbr.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Spanish Jam ->",
+      "duration": 229.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t05.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t05_vbr.mp3",
+          "bitrate": "227"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle ->",
+      "duration": 331.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t06_vbr.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat ->",
+      "duration": 683.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t07_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 498.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t08.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t08_vbr.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 324.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t09.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-18d2t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-18d2t09_vbr.mp3",
+          "bitrate": "207"
+        }
+      ]
+    }
+  ]
+}

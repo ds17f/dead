@@ -1,0 +1,462 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-08-31",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd80-08-31 s1tCrowd",
+      "duration": 97.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t01Crowd.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd80-08-31 s1tAlabama Getaway",
+      "duration": 304.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t02AlabamaGetaway.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd80-08-31 s1tPromised Land",
+      "duration": 267.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t03PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t03PromisedLand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd80-08-31 s1tThey Love Each Other",
+      "duration": 464.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t04TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t04TheyLoveEachOther.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd80-08-31 s1tMama Tried",
+      "duration": 157.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t05MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t05MamaTried.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd80-08-31 s1tMexicali Blues",
+      "duration": 339.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t06MexicaliBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd80-08-31 s1tAlthea",
+      "duration": 514.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t07Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t07Althea.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd80-08-31 s1tLittle Red Rooster",
+      "duration": 513.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t08LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t08LittleRedRooster.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd80-08-31 s1tTennessee Jed",
+      "duration": 642.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t09TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t09TennesseeJed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd80-08-31 s1tFar From Me",
+      "duration": 302.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t10FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t10FarFromMe.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd80-08-31 s1tLazy Lightning",
+      "duration": 202.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t11LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t11LazyLightning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd80-08-31 s1tSupplication",
+      "duration": 426.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t12Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t12Supplication.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd80-08-31 s1tDeal",
+      "duration": 288.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S1t13Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S1t13Deal.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd80-08-31 s2t01 Crowd",
+      "duration": 64.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t01Crowd.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd80-08-31 s2t02 Greatest Story Ever Told",
+      "duration": 231.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t02GreatestStoryEverTold.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd80-08-31 s2t03 Uncle John's Band",
+      "duration": 532.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t03UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t03UncleJohnsBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd80-08-31 s2t04 Lost Sailor",
+      "duration": 402.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t04LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t04LostSailor.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd80-08-31 s2t05 Saint Of Circumstance",
+      "duration": 413.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t05SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t05SaintOfCircumstance.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd80-08-31 s2t06 Comes A Time",
+      "duration": 551.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t06ComesATime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t06ComesATime.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd80-08-31 s2t07 Truckin'",
+      "duration": 520.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t07Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t07Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd80-08-31 s2t08 Drums",
+      "duration": 684.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t08Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t08Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd80-08-31 s2t09 Space",
+      "duration": 266.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t09Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t09Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd80-08-31 s2t10 The Other One",
+      "duration": 489.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t10TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t10TheOtherOne.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd80-08-31 s2t11 Stella Blue",
+      "duration": 557.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t11StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t11StellaBlue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd80-08-31 s2t12 I Need A Miracle",
+      "duration": 237.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t12INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t12INeedAMiracle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "gd80-08-31 s2t13 Good Lovin'",
+      "duration": 442.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t13GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t13GoodLovin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "gd80-08-31 s2t14 Encore Break",
+      "duration": 197.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t14EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t14EncoreBreak.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "gd80-08-31 s2t15 Brokedown Palace",
+      "duration": 405.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-08-31S2t15BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-08-31S2t15BrokedownPalace.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

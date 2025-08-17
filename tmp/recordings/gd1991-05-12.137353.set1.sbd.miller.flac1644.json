@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-05-12",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Picasso Moon",
+      "duration": 449.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01PicassoMoon.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Althea",
+      "duration": 547.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "CC Rider",
+      "duration": 212.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03CcRider.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It Takes A Lot To Laugh, It Takes A Train To Cry",
+      "duration": 289.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04ItTakesALotToLaughItTakesATrainToCry.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItTakesALotToLaughItTakesATrainToCry.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 320.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ElPaso.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "High Time",
+      "duration": 438.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06HighTime.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Throated Wind",
+      "duration": 365.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BlackThroatedWind.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 655.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Deal.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

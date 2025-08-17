@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-10-21",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Music Never Stopped",
+      "duration": 543.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01MusicNeverStopped.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Loser",
+      "duration": 425.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Loser.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "CC Rider",
+      "duration": 530.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03CcRider.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cumberland Blues",
+      "duration": 456.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04CumberlandBlues.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 357.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Cassidy.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 441.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06RambleOnRose.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "My Brother Esau",
+      "duration": 309.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MyBrotherEsau.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big Railraod Blues",
+      "duration": 458.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BigRailraodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BigRailraodBlues.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 280.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PromisedLand.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias",
+      "duration": 786.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ScarletBegonias.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain",
+      "duration": 1012.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FireOnTheMountain.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 505.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12UncleJohnsBand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 707.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingInTheBand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 531.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 914.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin'",
+      "duration": 477.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Truckin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 595.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17WharfRat.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 217.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18INeedAMiracle.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Touch Of Grey",
+      "duration": 379.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TouchOfGrey.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Johnny B Goode",
+      "duration": 239.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20JohnnyBGoode.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

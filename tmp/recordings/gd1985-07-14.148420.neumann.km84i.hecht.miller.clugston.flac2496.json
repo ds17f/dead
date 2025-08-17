@@ -1,0 +1,407 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-07-14",
+  "venue": "Ventura County Fairgrounds",
+  "location": "Ventura, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 85.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t01 Crowd.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Hell In A Bucket",
+      "duration": 465.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t02 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t02 Hell In A Bucket.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "They Love Each Other",
+      "duration": 522.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t03 They Love Each Other.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t03 They Love Each Other.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "My Brother Esau",
+      "duration": 296.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t04 My Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t04 My Brother Esau.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Althea",
+      "duration": 491.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t05 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t05 Althea.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Cassidy",
+      "duration": 276.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t06 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t06 Cassidy.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t07 Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t07 Big Railroad Blues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Looks Like Rain >",
+      "duration": 540.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t08 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t08 Looks Like Rain.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Might As well",
+      "duration": 266.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s1t09 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s1t09 Might As Well.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 50.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t01 Crowd.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 346.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t02 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t02 China Cat Sunflower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 325.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t03 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t03 I Know You Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Samson & Delilah",
+      "duration": 481.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t04 Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t04 Samson & Delilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Ship Of Fools",
+      "duration": 458.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t05 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t05 Ship Of Fools.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Estimated Prophet >",
+      "duration": 634.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t06 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t06 Estimated Prophet.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Eyes Of The World >",
+      "duration": 576.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t07 Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t07 Eyes Of The World.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Drums >",
+      "duration": 542.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t08 Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space >",
+      "duration": 553.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t09 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Truckin' >",
+      "duration": 392.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t10 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t10 Truckin'.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Smokestack Lightning >",
+      "duration": 262.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t11 Smokestack Lightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t11 Smokestack Lightning.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Black Peter >",
+      "duration": 463.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t12 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t12 Black Peter.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Throwing Stones >",
+      "duration": 553.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t13 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t13 Throwing Stones.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Not Fade Away",
+      "duration": 363.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t14 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t14 Not Fade Away.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "Encore Break",
+      "duration": 42.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t15 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t15 Encore Break.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "216",
+      "title": "Keep Your Day Job",
+      "duration": 268.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-07-14 s2t16 Keep Your Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-14 s2t16 Keep Your Day Job.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

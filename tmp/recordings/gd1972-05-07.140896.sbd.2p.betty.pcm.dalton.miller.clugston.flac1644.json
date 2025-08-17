@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-05-07",
+  "venue": "Bickershaw Festival",
+  "location": "Wigan, England",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd72-05-07 2p tThe Other One",
+      "duration": 1218.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT01TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT01TheOtherOne.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd72-05-07 2p tSing Me Back Home",
+      "duration": 687.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT02SingMeBackHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT02SingMeBackHome.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd72-05-07 2p tTuning_Banter",
+      "duration": 231.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT03Tuning_banter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT03Tuning_banter.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd72-05-07 2p tSugar Magnolia",
+      "duration": 447.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT04SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT04SugarMagnolia.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd72-05-07 2p tTurn On Your Lovelight",
+      "duration": 815.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT05TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT05TurnOnYourLovelight.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd72-05-07 2p tGoin' Down The Road Feeling Bad",
+      "duration": 534.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT06GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT06GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd72-05-2p tNot Fade Away",
+      "duration": 280.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT07NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT07NotFadeAway.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd72-05-07 2p tOne More Saturday Night",
+      "duration": 285.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd72-05-072pT08OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-05-072pT08OneMoreSaturdayNight.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

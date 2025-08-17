@@ -1,0 +1,126 @@
+{
+  "rating": 2.176470588235294,
+  "review_count": 17,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-05-00",
+  "venue": "Unknown",
+  "location": "Unknown, Unknown",
+  "raw_rating": 4.352941176470588,
+  "high_ratings": 15,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "St Stephen ->",
+      "duration": 102.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cryptical Envelopment >",
+      "duration": 67.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One>",
+      "duration": 175.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t03.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cryptical Envelopment ->",
+      "duration": 242.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "New Potato Caboose",
+      "duration": 411.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t05.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator>",
+      "duration": 352.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Caution",
+      "duration": 451.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05d1t07.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

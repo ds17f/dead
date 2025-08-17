@@ -1,0 +1,78 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1975-06-17",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Peggy-o",
+      "duration": 293.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD75-06-17D1T01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD75-06-17D1T01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Me And My Uncle",
+      "duration": 100.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD75-06-17D1T02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD75-06-17D1T02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Help On The Way->Slipknot",
+      "duration": 391.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD75-06-17D1T03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD75-06-17D1T03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Franklin's Tower",
+      "duration": 289.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD75-06-17D1T04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD75-06-17D1T04.shn"
+        }
+      ]
+    }
+  ]
+}

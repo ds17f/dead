@@ -1,0 +1,211 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-10-19-the-spectrum-philadelphia-pa-usa/",
+  "show_id": "1989-10-19-the-spectrum-philadelphia-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "The Spectrum",
+  "location_raw": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "USA",
+  "date": "1989-10-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Built To Last",
+          "url": "https://jerrygarcia.com/song/built-to-last/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude Finale",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Death Don't Have No Mercy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:04:51.212134",
+  "show_time": null,
+  "recordings": [
+    "gd1989-10-19.sbd.walker-scotton.miller.83305.sbeok.flac16",
+    "gd89-10-19.dsbd.eD.7640.sbeok.shnf",
+    "gd1989-10-19.sbd.eD.tetzeli.fix-7640.34571.shnf",
+    "gd1989-10-19.147722.ultramatrix.sbd.miller.flac24",
+    "gd1989-10-19.147729.UltraMatrix.sbd.cm.miller.flac16",
+    "gd89-10-19.nak.rob_r.7595.sbefail.shnf",
+    "gd1989-10-19.120498.mk21.sbeok.flac16",
+    "gd1989-10-19.mtx.hansokolow.96967.flac16",
+    "gd1989-10-19.fob.sennme80.wklitz.101809.flac16",
+    "gd1989-10-19.nak300.s1.juteau.116663.flac",
+    "gd1989-10-19.149634.DAK.boedicker.flac1644",
+    "gd1989-10-19.sennME80.wklitz.94274.flac16",
+    "gd1989-10-19.099977",
+    "gd1989-10-19.164826.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1989-10-19.sennME80.wklitz.94273.flac1648",
+    "gd1989-10-19.164825.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1989-10-19.120497.mk21.48khz.flac16"
+  ],
+  "best_recording": "gd1989-10-19.sbd.walker-scotton.miller.83305.sbeok.flac16",
+  "avg_rating": 2.145,
+  "raw_rating": 4.431818181818182,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 39,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 12
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

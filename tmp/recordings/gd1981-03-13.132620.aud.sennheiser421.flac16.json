@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1981-03-13",
+  "venue": "Utica Memorial Auditorium",
+  "location": "Utica, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Set Up",
+      "duration": 84.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 786.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 447.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 433.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 290.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack-A-Roe",
+      "duration": 304.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Little Red Rooster",
+      "duration": 577.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "High Time",
+      "duration": 530.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 350.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Althea",
+      "duration": 525.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Music Never Stopped",
+      "duration": 547.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Set Up",
+      "duration": 16.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cold Rain And Snow",
+      "duration": 365.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samson And Delilah",
+      "duration": 520.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t14.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "It Must Have Been The Roses",
+      "duration": 485.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t15.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Estimated Prophet",
+      "duration": 820.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t16.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Eyes Of The World",
+      "duration": 722.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t17.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 436.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t18.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 145.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t19.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Lost Sailor",
+      "duration": 399.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t20.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Saint Of Circumstance",
+      "duration": 401.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t21.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Wharf Rat",
+      "duration": 611.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t22.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sugar Magnolia",
+      "duration": 547.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t23.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Encore:Don't Ease Me In",
+      "duration": 205.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t24.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

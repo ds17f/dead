@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-05-09",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Mississippi Half-Step Uptown Toodeloo >",
+      "duration": 469.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t01 Half-Step.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t01 Half-Step.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Franklin's Tower >",
+      "duration": 598.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t02 Franklin's Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t02 Franklin's Tower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Feel Like A Stranger",
+      "duration": 541.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t03 Feel Like A Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t03 Feel Like A Stranger.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Bird Song",
+      "duration": 567.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t04 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t04 Bird Song.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Little Red Rooster",
+      "duration": 522.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t05 Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t05 Red Rooster.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Candyman",
+      "duration": 412.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t06 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t06 Candyman.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Mama Tried >",
+      "duration": 145.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t07 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t07 Mama Tried.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Mexicali Blues",
+      "duration": 320.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t08 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t08 Mexicali Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Looks Like Rain >",
+      "duration": 503.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t09 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t09 LLR.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "China Cat Sunflower >",
+      "duration": 386.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t10 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t10 China Cat.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "I Know You Rider",
+      "duration": 332.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s1t10 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s1t10 IKYR.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 112.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t01 Crowd.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Lost Sailor >",
+      "duration": 397.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t02 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t02 Lost Sailor.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Saint Of Circumstance >",
+      "duration": 405.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t03 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t03 Saint Of Circumstance.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Ship Of Fools",
+      "duration": 509.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t04 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t04 Ship Of Fools.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Estimated Prophet >",
+      "duration": 700.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t05 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t05 Estimated.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Eyes Of The World >",
+      "duration": 852.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t06 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t06 Eyes.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 609.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t07 Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 255.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t08 Space.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Truckin' >",
+      "duration": 709.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t09 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t09 Truckin'.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Black Peter >",
+      "duration": 585.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t10 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t10 Black Peter.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Around & Around >",
+      "duration": 230.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t11 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t11 A & A.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "One More Saturday Night",
+      "duration": 260.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t12 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t12 OMSN.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Encore Break",
+      "duration": 97.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t13 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t13 Encore Break.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Brokedown Palace",
+      "duration": 389.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-09 s2t14 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-09 s2t14 Brokedown Palace.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

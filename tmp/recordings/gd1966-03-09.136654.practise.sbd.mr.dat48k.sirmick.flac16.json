@@ -1,0 +1,94 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1966-03-09",
+  "venue": "unknown",
+  "location": "unknown, unknown",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "unknown song - Pigpen vocal",
+      "duration": 203.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-03-09t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-03-09t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Who Do You Love - several instrumental takes",
+      "duration": 194.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-03-09t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-03-09t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Who Do You Love *",
+      "duration": 365.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-03-09t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-03-09t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "jam with short burst of vocal improvisation",
+      "duration": 545.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-03-09t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-03-09t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "jam",
+      "duration": 262.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-03-09t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-03-09t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

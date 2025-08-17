@@ -1,0 +1,142 @@
+{
+  "rating": 2.15,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-05-08",
+  "venue": "Barton Hall, Cornell University",
+  "location": "Ithaca, NY",
+  "raw_rating": 4.3,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Take A Step Back",
+      "duration": 103.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias >",
+      "duration": 581.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Mountain",
+      "duration": 865.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet",
+      "duration": 538.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "St Stephen >",
+      "duration": 255.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Not Fade Away >",
+      "duration": 883.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "St Stephen >",
+      "duration": 101.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Morning Dew",
+      "duration": 738.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-05-08-set2.dts.t08.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1977-05-08-set2.dts.t08.shn"
+        }
+      ]
+    }
+  ]
+}

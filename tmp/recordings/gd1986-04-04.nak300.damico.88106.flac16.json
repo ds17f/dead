@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1986-04-04",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 129.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 366.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 192.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C.C. Rider",
+      "duration": 416.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Candyman",
+      "duration": 389.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now",
+      "duration": 445.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Crazy Fingers >",
+      "duration": 470.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Greatest Story Ever Told",
+      "duration": 217.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Keep Your Day Job",
+      "duration": 246.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch Of Grey >",
+      "duration": 343.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain >",
+      "duration": 562.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone >",
+      "duration": 630.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Smokestack Lightnin' >",
+      "duration": 441.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 608.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 495.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc301.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel >",
+      "duration": 266.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc302.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Stella Blue >",
+      "duration": 467.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc303.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones >",
+      "duration": 522.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc304.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Turn On Your Lovelight",
+      "duration": 367.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc305.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Box Of Rain",
+      "duration": 319.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc306.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

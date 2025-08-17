@@ -1,0 +1,558 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1977-05-26",
+  "venue": "Baltimore Civic Center",
+  "location": "Baltimore, MD",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tune Up",
+      "duration": 39.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt01.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Music Never Stopped",
+      "duration": 422.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tune Up",
+      "duration": 135.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt03.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 909.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tune Up",
+      "duration": 169.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt05.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 156.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tune Up",
+      "duration": 72.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sunrise (SBD source)",
+      "duration": 241.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 323.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt09.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Passenger (SBD source)",
+      "duration": 221.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt10.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Brown-eyed Women",
+      "duration": 332.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt11.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tune Up",
+      "duration": 111.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt12.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 532.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt13.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Jack A Roe (Start patched with SBD)",
+      "duration": 338.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt14.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "New Minglewood Blues (SBD source)",
+      "duration": 322.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt15.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Tune Up",
+      "duration": 68.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt16.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt16.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Bertha",
+      "duration": 449.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt17.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt17.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Tune Up",
+      "duration": 37.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt18.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt18.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sampson and Delilah",
+      "duration": 426.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt19.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt19.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Tune Up",
+      "duration": 122.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt20.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt20.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "High Time",
+      "duration": 456.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt21.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt21.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tune Up",
+      "duration": 38.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt22.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt22.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Big River",
+      "duration": 394.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt23.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt23.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Tune Up",
+      "duration": 116.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt24.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt24.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Fade Out",
+      "duration": 11.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt24a.mp3",
+          "bitrate": "150"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt24a.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Fade In",
+      "duration": 12.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt24b.mp3",
+          "bitrate": "148"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt24b.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Terrapin Station ->",
+      "duration": 644.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt25.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt25.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Estimated Prophet ->",
+      "duration": 521.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt26.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt26.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Eyes Of The World ->",
+      "duration": 724.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt27.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt27.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Drums ->",
+      "duration": 58.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt28.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt28.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Around And AroundNot Fade Away ->",
+      "duration": 983.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt29.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt29.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Goin' Down The Road Feelin' Bad ->",
+      "duration": 509.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt30.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt30.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Around And Around",
+      "duration": 452.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt31.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt31.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Uncle John's Band",
+      "duration": 472.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-26audt32.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-26audt32.shn"
+        }
+      ]
+    }
+  ]
+}

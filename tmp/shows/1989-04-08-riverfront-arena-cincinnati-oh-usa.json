@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-04-08-riverfront-arena-cincinnati-oh-usa/",
+  "show_id": "1989-04-08-riverfront-arena-cincinnati-oh-usa",
+  "band": "Grateful Dead",
+  "venue": "Riverfront Arena",
+  "location_raw": "Cincinnati, OH",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "USA",
+  "date": "1989-04-08",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude Finale",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:03:17.379236",
+  "show_time": null,
+  "recordings": [
+    "gd1989-04-08.sbd.walker-scotton.miller.83510.sbeok.flac16",
+    "gd89-04-08.sbd.26348.sbeok.shnf",
+    "gd1989-04-08.147895.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-04-08.147838.sbd.ultramatrix.miller.flac24",
+    "gd89-04-08.beyer-fob.conner.7857.sbeok.shnf",
+    "gd1989-04-08.mtx.seamons.94166.sbeok.flac16",
+    "gd1989-04-08.135469.upg-aud.tobin.flac16",
+    "gd1989-04-08.fob.nawrocki.84175.sbeok.flac16",
+    "gd1989-04-08.135470.mtx.tobin.flac16",
+    "gd1989-04-08.111975.aud.dak5245-pzm.cincinnati-oh.flac16",
+    "gd1989-04-08.135472.5-1.bhp.tobin.flac1648",
+    "gd1989-04-08.149284.nak300.ebel.flac16",
+    "gd1989-04-08.140807.s1.FOB.Schoeps.Gastwirt.Miller.Noel.t-flac1644",
+    "gd1989-04-08.131015.kmr81.deal.jwpetty.flac16",
+    "gd1989-04-08.135471.dts.tobin.flac16",
+    "gd1989-04-08.aud.bleich.sirmick.83802.sbeok.flac16",
+    "gd1989-04-08.141804.schoeps.cmc4.mk4.pcm.mattes.miller.clugston.flac1644"
+  ],
+  "best_recording": "gd1989-04-08.sbd.walker-scotton.miller.83510.sbeok.flac16",
+  "avg_rating": 1.9687499999999998,
+  "raw_rating": 4.018518518518518,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 43,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 10,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

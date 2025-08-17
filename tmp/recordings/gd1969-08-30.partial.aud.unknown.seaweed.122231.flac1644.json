@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-08-30",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 853.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-30t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-30t01.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint Stephen >",
+      "duration": 390.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-30t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-30t02.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven >",
+      "duration": 384.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-30t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-30t03.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums >",
+      "duration": 347.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-30t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-30t04.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time//",
+      "duration": 209.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-30t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-30t05.mp3",
+          "bitrate": "125"
+        }
+      ]
+    }
+  ]
+}

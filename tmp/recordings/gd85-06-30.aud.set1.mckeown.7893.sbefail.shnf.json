@@ -1,0 +1,158 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-06-30",
+  "venue": "Merriweather Post Pavilion",
+  "location": "Columbia, MD",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Mississippi Half Step",
+      "duration": 459.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "CC Rider",
+      "duration": 476.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Brown Eyed Women",
+      "duration": 338.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mama Tried",
+      "duration": 165.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mexicalli Blues",
+      "duration": 300.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Keep on Growing",
+      "duration": 311.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Big Railroad Blues",
+      "duration": 253.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Looks Like Rain",
+      "duration": 467.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it08.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Don't Ease Me In",
+      "duration": 190.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-30it09.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-06-30it09.shn"
+        }
+      ]
+    }
+  ]
+}

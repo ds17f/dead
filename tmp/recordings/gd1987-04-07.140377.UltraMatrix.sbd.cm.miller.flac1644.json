@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-04-07",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 97.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 369.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TouchOfGrey.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 456.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend Of The Devil",
+      "duration": 611.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04FriendOfTheDevil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 205.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BeatItOnDownTheLine.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 427.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06StaggerLee.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mama Tried",
+      "duration": 156.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MamaTried.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big River",
+      "duration": 317.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BigRiver.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "West LA Fadeaway",
+      "duration": 526.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09WestLaFadeaway.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Hell In A Bucket",
+      "duration": 449.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10HellInABucket.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 242.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11DontEaseMeIn.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 77.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Box Of Rain",
+      "duration": 307.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13BoxOfRain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Need A Miracle",
+      "duration": 195.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14INeedAMiracle.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Bertha",
+      "duration": 379.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Bertha.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Ship Of Fools",
+      "duration": 566.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ShipOfFools.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 431.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ManSmartwomanSmarter.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 600.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 668.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Gimme Some Lovin'",
+      "duration": 289.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20GimmeSomeLovin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Morning Dew",
+      "duration": 628.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21MorningDew.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Throwing Stones",
+      "duration": 505.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22ThrowingStones.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away",
+      "duration": 308.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23NotFadeAway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Tuning",
+      "duration": 50.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 342.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

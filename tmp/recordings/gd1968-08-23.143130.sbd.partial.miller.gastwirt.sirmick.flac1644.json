@@ -1,0 +1,62 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1968-08-23",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alligator (includes \"Once There Was A Moutain Jam\">",
+      "duration": 1123.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-23t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-23t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Caution (Do Not Stop On Tracks) >",
+      "duration": 697.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-23t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-23t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feedback",
+      "duration": 239.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-08-23t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-08-23t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

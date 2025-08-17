@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-05-10",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 97.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t01 Crowd_Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "New Minglewood Blues",
+      "duration": 468.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t02 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t02 Minglewood.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Peggy O",
+      "duration": 392.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t03 Peggy O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t03 Peggy O.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Mexicali Blues >",
+      "duration": 255.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t04 Mexicali.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t04 Mexicali.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "El Paso",
+      "duration": 307.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t05 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t05 El Paso.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Althea",
+      "duration": 549.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t06 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t06 Althea.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Passenger",
+      "duration": 411.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t07 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t07 Passenger.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Far From Me",
+      "duration": 377.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t08 Far From Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t08 Far From Me.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Lost Sailor >",
+      "duration": 373.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t09 Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t09 Sailor.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Saint Of Circumstance >",
+      "duration": 349.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t10 Saint.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t10 Saint.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Deal",
+      "duration": 290.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s1t11 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s1t11 Deal.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 180.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 394.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t02 China Cat.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 589.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t03 IKYR.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Feel Like A Stranger >",
+      "duration": 461.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t04 Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t04 Stranger.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Comes A Time >",
+      "duration": 521.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t05 Comes A Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t05 Comes A Time.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Estimated Prophet >",
+      "duration": 638.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t06 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t06 Estimated.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "He's Gone >",
+      "duration": 879.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t07 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t07 He's Gone.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Uncle John's Band >",
+      "duration": 685.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t08 UJB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t08 UJB.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Drums >",
+      "duration": 605.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t09 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t09 Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Space >",
+      "duration": 140.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t10 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t10 Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Not Fade Away >",
+      "duration": 448.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t11 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t11 NFA.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Sugar Magnolia",
+      "duration": 519.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t12 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t12 Sugar Mag.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "E1: Alabama Getaway >",
+      "duration": 262.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t13 E1_Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t13 E1_Alabama Getaway.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "E2: One More Saturday Night",
+      "duration": 306.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-05-10 s2t14 E2_OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-10 s2t14 E2_OMSN.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

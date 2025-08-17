@@ -1,0 +1,110 @@
+{
+  "rating": 4.38,
+  "review_count": 15,
+  "source_type": "MATRIX",
+  "confidence": 1.0,
+  "date": "1970-12-17",
+  "venue": "The Matrix",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.866666666666666,
+  "high_ratings": 15,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hard to Handle",
+      "duration": 434.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-12-17t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-12-17t01-fixed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Candyman",
+      "duration": 447.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-12-17t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-12-17t02-fixed.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me and My Uncle",
+      "duration": 248.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-12-17t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-12-17t03-fixed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cold Rain and Snow",
+      "duration": 337.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-12-17t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-12-17t04-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dancing in the Street",
+      "duration": 732.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-12-17t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-12-17t05-fixed.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Uncle John's Band",
+      "duration": 443.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-12-17t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-12-17t06-fixed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

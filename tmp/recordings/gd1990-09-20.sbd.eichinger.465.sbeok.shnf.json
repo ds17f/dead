@@ -1,0 +1,206 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-09-20",
+  "venue": "Madison Square Garden",
+  "location": "New York City, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin' ->",
+      "duration": 371.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d1t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower ->",
+      "duration": 326.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d1t02.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider ->",
+      "duration": 278.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Women Are Smarter ->",
+      "duration": 250.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d1t04.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ->",
+      "duration": 465.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d1t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space ->",
+      "duration": 338.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star ->",
+      "duration": 456.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t02.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Playin' In The Band Reprise ->",
+      "duration": 177.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t03.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Dark Star ->",
+      "duration": 585.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t04.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Throwin' Stones->",
+      "duration": 406.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Touch Of Grey",
+      "duration": 302.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t06.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Turn On Your Love Light",
+      "duration": 264.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-20d2t07.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-20d2t07.shn"
+        }
+      ]
+    }
+  ]
+}

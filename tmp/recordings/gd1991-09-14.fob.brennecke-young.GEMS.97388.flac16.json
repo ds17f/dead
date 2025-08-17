@@ -1,0 +1,382 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1991-09-14",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning and Crowd",
+      "duration": 85.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Let The Good Times Roll",
+      "duration": 265.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack Straw",
+      "duration": 416.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend of the Devil",
+      "duration": 544.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 641.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack-A-Roe",
+      "duration": 290.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Desolation Row",
+      "duration": 733.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed >",
+      "duration": 470.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Promised Land",
+      "duration": 301.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d1t09.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning and Crowd",
+      "duration": 125.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Chinacat Sunflower >",
+      "duration": 363.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 324.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Ship of Fools",
+      "duration": 474.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin' >",
+      "duration": 499.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Spoonful >",
+      "duration": 280.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "He's Gone >",
+      "duration": 561.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums >",
+      "duration": 403.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d2t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space>",
+      "duration": 1117.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "All Along The Watchtower >",
+      "duration": 348.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d3t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "China Doll >",
+      "duration": 372.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d3t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night",
+      "duration": 311.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d3t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Crowd",
+      "duration": 150.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d3t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Weight",
+      "duration": 334.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-14.GEMS.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-14.GEMS.d3t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

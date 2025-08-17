@@ -1,0 +1,318 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-06-04",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 480.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Wang Dang Doodle",
+      "duration": 403.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02WangDangDoodle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy' O",
+      "duration": 439.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03PeggyO.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane",
+      "duration": 423.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04QueenJane.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04QueenJane.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loose Lucy",
+      "duration": 556.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LooseLucy.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 157.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MamaTried.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 407.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MexicaliBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Lazy River Road",
+      "duration": 423.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LazyRiverRoad.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 464.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Cassidy.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Here Comes Sunshine",
+      "duration": 547.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10HereComesSunshine.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Victim Or The Crime",
+      "duration": 482.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11VictimOrTheCrime.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Unbroken Chain",
+      "duration": 386.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12UnbrokenChain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12UnbrokenChain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Eyes Of The World",
+      "duration": 651.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13EyesOfTheWorld.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drumz",
+      "duration": 1050.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drumz.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 876.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 276.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16INeedAMiracle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Days Between",
+      "duration": 751.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheDaysBetween.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheDaysBetween.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 680.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18NotFadeAway.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Brokedown",
+      "duration": 365.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Brokedown.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

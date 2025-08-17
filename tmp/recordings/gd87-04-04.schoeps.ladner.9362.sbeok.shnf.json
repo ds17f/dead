@@ -1,0 +1,94 @@
+{
+  "rating": 2.2,
+  "review_count": 20,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1987-04-04",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 4.4,
+  "high_ratings": 16,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Greatest Story Ever Told",
+      "duration": 385.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-04d1t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "192Kbps MP3",
+          "filename": "gd87-04-04d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cassidy",
+      "duration": 282.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-04d1t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-04-04d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Iko Iko",
+      "duration": 467.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-04d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-04-04d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Drums >",
+      "duration": 403.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-04d1t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-04-04d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Morning Dew",
+      "duration": 601.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-04d1t05.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-04-04d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

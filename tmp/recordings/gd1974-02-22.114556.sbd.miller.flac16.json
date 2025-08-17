@@ -1,0 +1,638 @@
+{
+  "rating": 2.4,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-02-22",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.8,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let It Grow",
+      "duration": 291.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 422.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "U.S. Blues",
+      "duration": 368.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "U.S. Blues",
+      "duration": 352.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Attics Of My Life",
+      "duration": 242.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It Must Have Been The Roses",
+      "duration": 810.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Estimated Prophet Jam",
+      "duration": 156.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22ckh07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22ckh07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "U.S. Blues",
+      "duration": 338.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t01.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Beat It On Down The Line",
+      "duration": 252.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Brown Eyed Women",
+      "duration": 304.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mexicali Blues",
+      "duration": 231.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t04.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "It Must Have Been The Roses",
+      "duration": 279.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Black Throated Wind",
+      "duration": 405.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t06.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "They Love Each Other",
+      "duration": 344.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t07.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Big River",
+      "duration": 315.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t08.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Loose Lucy",
+      "duration": 442.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t09.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "El Paso",
+      "duration": 289.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Row Jimmy",
+      "duration": 501.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Tico Tico",
+      "duration": 53.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t12.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playing In The Band",
+      "duration": 1244.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s1t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s1t13.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Tennessee Jed",
+      "duration": 507.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Me And My Uncle",
+      "duration": 214.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Ship Of Fools",
+      "duration": 404.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "The Race Is On",
+      "duration": 196.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "China Cat Sunflower ->",
+      "duration": 529.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "I Know You Rider",
+      "duration": 331.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Truckin' ->",
+      "duration": 447.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Nobody's Fault But Mine ->",
+      "duration": 315.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 385.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s2t09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Tuning",
+      "duration": 44.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 488.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Promised Land",
+      "duration": 215.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Brokedown Palace",
+      "duration": 330.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Jack Straw",
+      "duration": 287.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Eyes Of The World ->",
+      "duration": 769.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "China Doll",
+      "duration": 416.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Wharf Rat ->",
+      "duration": 574.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Sugar Magnolia",
+      "duration": 564.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t09.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Uncle John's Band",
+      "duration": 404.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-02-22s3t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22s3t10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

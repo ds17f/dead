@@ -1,0 +1,302 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-03-17",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 35.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Box Of Rain",
+      "duration": 303.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Box Of Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Box Of Rain.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 546.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 New Minglewood Blues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 434.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Loser.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 663.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Stuck Inside Of Mobile With The Memphis Blues Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Stuck Inside Of Mobile With The Memphis Blues Again.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 543.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Tennessee Jed.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 466.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Cassidy.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 32.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Tuning.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Way To Go Home",
+      "duration": 363.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Way To Go Home.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Way To Go Home.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Truckin'",
+      "duration": 469.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Truckin'.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Spoonful",
+      "duration": 330.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Spoonful.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone",
+      "duration": 618.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 He's Gone.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 746.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 747.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Need A Miracle",
+      "duration": 303.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 I Need A Miracle.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "So Many Roads",
+      "duration": 401.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 So Many Roads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 So Many Roads.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Sugar Magnolia",
+      "duration": 615.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Sugar Magnola.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Sugar Magnola.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Weight",
+      "duration": 331.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 The Weight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 The Weight.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

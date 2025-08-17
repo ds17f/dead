@@ -1,0 +1,286 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-01-08",
+  "venue": "Golden Hall, Community Concourse",
+  "location": "San Diego, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jack Straw",
+      "duration": 422.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 - Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 - Jack Straw.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mama Tried",
+      "duration": 178.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 - Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 - Mama Tried.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Big River",
+      "duration": 395.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 - Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 - Big River.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Sunrise",
+      "duration": 239.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 - Sunrise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 - Sunrise.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "It's All Over Now",
+      "duration": 505.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 - It's All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 - It's All Over Now.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Looks Like Rain",
+      "duration": 480.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 - Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 - Looks Like Rain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Lazy Lightning",
+      "duration": 205.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 - Lazy Lightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 - Lazy Lightning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Supplication",
+      "duration": 388.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 - Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 - Supplication.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Samson And Delilah",
+      "duration": 462.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 - Samson And Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 - Samson And Delilah.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 393.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 - Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 - Good Lovin'.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Happy Birthday Uncle Bobo",
+      "duration": 111.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 - Happy Birthday Uncle Bobo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 - Happy Birthday Uncle Bobo.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Estimated Prophet",
+      "duration": 820.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 - Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 - Estimated Prophet.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 500.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 - Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 - Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Other One",
+      "duration": 929.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 - The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 - The Other One.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin'",
+      "duration": 485.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 - Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 - Truckin'.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Sugar Magnolia",
+      "duration": 699.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 - Sugar Magnolia.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Johnny B. Goode",
+      "duration": 289.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 - Johnny B. Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 - Johnny B. Goode.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

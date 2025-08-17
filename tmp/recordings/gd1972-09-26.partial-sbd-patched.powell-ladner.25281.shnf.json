@@ -1,0 +1,46 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-09-26",
+  "venue": "Stanley Theatre",
+  "location": "Jersey City, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cumberland Blues",
+      "duration": 209.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-26d1t07spliced.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-26d1t07spliced.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Truckin' > Other One Jam",
+      "duration": 1145.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-26d3t01spliced.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-26d3t01spliced.shn"
+        }
+      ]
+    }
+  ]
+}

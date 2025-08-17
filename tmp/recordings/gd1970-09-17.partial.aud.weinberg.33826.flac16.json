@@ -1,0 +1,62 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-09-17",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star ->",
+      "duration": 1503.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-17d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-17d1t01.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St. Stephen ->",
+      "duration": 360.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-17d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-17d1t02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Lovin'",
+      "duration": 875.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-17d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-17d1t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    }
+  ]
+}

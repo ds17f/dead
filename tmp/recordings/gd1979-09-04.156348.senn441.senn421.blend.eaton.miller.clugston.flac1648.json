@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-09-04",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Jack Straw",
+      "duration": 398.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t01 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t01 Jack Straw.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Sugaree",
+      "duration": 855.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t02 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t02 Sugaree.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Me & My Uncle >",
+      "duration": 178.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t03 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t03 M & MU.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Big River",
+      "duration": 409.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t04 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t04 Big River.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Candyman",
+      "duration": 406.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t05 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t05 Candyman.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "New Minglewood Blues",
+      "duration": 486.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t06 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t06 Minglewood.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Tennessee Jed",
+      "duration": 574.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t07 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t07 T Jed.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Lost Sailor >",
+      "duration": 432.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t08 Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t08 Sailor.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Saint Of Circumstance >",
+      "duration": 375.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t09 Saint.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t09 Saint.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Deal",
+      "duration": 339.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s1t10 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s1t10 Deal.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 80.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 486.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t02 China Cat.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 458.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t03 IKYR.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Looks Like Rain",
+      "duration": 572.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t04 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t04 LLR.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "He's Gone >",
+      "duration": 1215.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t05 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t05 He's Gone.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 796.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t06 Drums.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 451.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t07 Space.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Wharf Rat >",
+      "duration": 683.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t08 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t08 Wharf Rat.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Around & Around",
+      "duration": 450.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t09 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t09 A & A.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Encore Break",
+      "duration": 65.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t10 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t10 Encore Break.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E: Shakedown Street",
+      "duration": 698.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-04 s2t11 E_Shakedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-04 s2t11 E_Shakedown.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "rating": 2.024390243902439,
+  "review_count": 41,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-01-14",
+  "venue": "Polo Field, Golden Gate Park",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.048780487804878,
+  "high_ratings": 30,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Morning Dew",
+      "duration": 349.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-14d1t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-14d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Viola Lee Blues",
+      "duration": 394.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-14d1t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-14d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 358.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-14d1t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-14d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

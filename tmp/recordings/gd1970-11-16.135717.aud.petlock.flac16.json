@@ -1,0 +1,30 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-11-16",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "GD1970-11-16 FE-Good Lovin w Hot Tuna",
+      "duration": 576.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1970-11-16Fe-goodLovinWHotTuna.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1970-11-16Fe-goodLovinWHotTuna.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-11-10",
+  "venue": "Action House",
+  "location": "Island Park, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Not Fade Away",
+      "duration": 840.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-10t01.mp3",
+          "bitrate": "156"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-10t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Other One",
+      "duration": 716.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-10t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-10t02.shn"
+        }
+      ]
+    }
+  ]
+}

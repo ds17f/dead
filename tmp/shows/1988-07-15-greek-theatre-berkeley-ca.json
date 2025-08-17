@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-07-15-greek-theatre-berkeley-ca/",
+  "show_id": "1988-07-15-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1988-07-15",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Never Trust A Woman",
+          "url": "https://jerrygarcia.com/song/good-time-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:01:23.281329",
+  "show_time": null,
+  "recordings": [
+    "gd1988-07-15.143091.preFM.beta.miller.flac2496",
+    "gd1988-07-15.141960.mtx.tobin.flac1644",
+    "gd1988-07-15.141961.dts.tobin.flac1644",
+    "gd1988-07-15.138064.prefm.hale.flac24",
+    "gd1988-07-15.138063.HealyFM.hale.flac16",
+    "gd1988-07-15.140749.schoeps.cmc3.mk41.mattes.miller.clugston.flac1644",
+    "gd1988-07-15.142014.5-1.tobin.flac1648",
+    "gd1988-07-15.160873.akgck61-beyerm201.hollbrook.flac2448",
+    "gd1988-07-15.137888.dbx.hale.flac16",
+    "gd1988-07-15.143155.pre-fm.bm.miller.flac1644",
+    "gd1988-07-15.143187.OTS.Schoeps.Weber-Small-Ammons-PhiilyCrew-Noel.t-flac1644",
+    "gd1988-07-15.160871.akgck61-beyerm201.hollbrook.flac1644",
+    "gd1988-07-15.141962.5-1.tobin.flac1648",
+    "gd88-07-15.sbd.clugston.10343.sbeok.shnf",
+    "gd1988-07-15.141964.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1988-07-15.141922.sbd.miller.flac2496",
+    "gd1988-07-15.sbd.braverman.10079.sbeok.shnf",
+    "gd1988-07-15.sbd.clugston.braverman.tetzeli.fix-10343.34751.flac16",
+    "gd88-07-15.schoeps-weber-small.gardner.9244.sbefail.shnf",
+    "gd1988-07-15.141959.pp-aud.tobin.flac1644"
+  ],
+  "best_recording": "gd1988-07-15.143091.preFM.beta.miller.flac2496",
+  "avg_rating": 2.0093693693693693,
+  "raw_rating": 4.15625,
+  "recording_count": 20,
+  "confidence": 1.0,
+  "total_high_ratings": 30,
+  "total_low_ratings": 1,
+  "source_types": {
+    "FM": 13,
+    "SBD": 5,
+    "UNKNOWN": 1,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years",
+    "return-and-recovery"
+  ]
+}

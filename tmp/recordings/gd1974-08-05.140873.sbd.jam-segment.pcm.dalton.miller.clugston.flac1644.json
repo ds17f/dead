@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1974-08-05",
+  "venue": "Philadelphia Civic Arena",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd74-06-22 soundcheck",
+      "duration": 1362.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd74-06-22Soundcheck.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd74-06-22Soundcheck.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

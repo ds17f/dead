@@ -1,0 +1,141 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-08-30-family-dog-at-the-great-highway-san-francisco-ca-usa/",
+  "show_id": "1969-08-30-family-dog-at-the-great-highway-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Family Dog at The Great Highway",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1969-08-30",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Doin' That Rag",
+          "url": "https://jerrygarcia.com/song/doin-that-rag/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Easy Wind",
+          "url": "https://jerrygarcia.com/song/easy-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Commander Cody & His Lost Planet Airmen",
+    "New Riders of the Purple Sage",
+    "Phoenix"
+  ],
+  "collection_timestamp": "2025-08-10T08:15:01.770731",
+  "show_time": null,
+  "recordings": [
+    "gd69-08-30.sbd.barbella.8594.sbeok.shnf",
+    "gd1969-08-30.122267.upg.sbd.tobin.flac16",
+    "gd1969-08-30.123076.sbd.miller.flac16",
+    "gd1969-08-30.153186.5-1.tobin.flac1644",
+    "gd1969-08-30.153185.dts.tobin.flac16",
+    "gd1969-08-30.partial.aud.unknown.seaweed.122231.flac1644",
+    "gd1969-08-30.122268.dts.tobin.flac16",
+    "gd1969-08-30.153150.aud.martin.tobin.flac1644",
+    "gd1969-08-30.153183.PandP-aud.martin.tobin.flac16",
+    "gd1969-08-30.122265.mtx.tobin.flac16",
+    "gd1969-08-30.153184.mtx.tobin.flac16",
+    "gd1969-08-30.122266.upg-aud.tobin.flac16"
+  ],
+  "best_recording": "gd69-08-30.sbd.barbella.8594.sbeok.shnf",
+  "avg_rating": 2.1923076923076925,
+  "raw_rating": 4.538461538461538,
+  "recording_count": 12,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 5,
+    "AUD": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

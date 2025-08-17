@@ -1,0 +1,110 @@
+{
+  "rating": 2.357142857142857,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-08-21",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.714285714285714,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "cryptical>>other one>>cryptical",
+      "duration": 1306.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-21d1t101.mp3",
+          "bitrate": "205"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-21d1t101.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "good morning little school girl",
+      "duration": 654.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-21d1t102.mp3",
+          "bitrate": "206"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-21d1t102.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "alligator>>feedback",
+      "duration": 934.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-21d1t103.mp3",
+          "bitrate": "208"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-21d1t103.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "dark star>>st stephen>>the eleven>>death don't have no mercy",
+      "duration": 1628.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-21d2t201.mp3",
+          "bitrate": "205"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-21d2t201.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "turn on you lovelight",
+      "duration": 466.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-21d2t202.mp3",
+          "bitrate": "208"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-21d2t202.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "midnight hour",
+      "duration": 490.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-21d2t203.mp3",
+          "bitrate": "209"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-21d2t203.shn"
+        }
+      ]
+    }
+  ]
+}

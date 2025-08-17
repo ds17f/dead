@@ -1,0 +1,398 @@
+{
+  "rating": 2.4,
+  "review_count": 1,
+  "source_type": "FM",
+  "confidence": 0.2,
+  "date": "1987-05-02",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "- Tuning",
+      "duration": 153.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "- Hell In A Bucket",
+      "duration": 358.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Hell In A Bucket.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "- West L.A. Fadeaway",
+      "duration": 571.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 West LA Fadeaway.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "- Beat It On Down The Line",
+      "duration": 194.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Beat It On Down The Line.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Beat It On Down The Line.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "- Stagger Lee",
+      "duration": 390.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Stagger Lee.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "- Little Red Rooster",
+      "duration": 647.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Little Red Rooster.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "- Dire Wolf >",
+      "duration": 199.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Dire Wolf.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "- Far From Me",
+      "duration": 341.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Far From Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Far From Me.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "- Jack Straw >",
+      "duration": 393.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Jack Straw.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "- When Push Comes To Shove",
+      "duration": 371.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 When Push Comes To Shove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 When Push Comes To Shove.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "- One More Saturday Night",
+      "duration": 342.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 One More Saturday Night.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "- Tuning",
+      "duration": 77.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "- China Cat Sunflower >",
+      "duration": 367.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 China Cat Sunflower.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "- I Know You Rider",
+      "duration": 443.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 I Know You Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "- Playing In The Band >",
+      "duration": 482.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Playing In The Band.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "- Terrapin Station >",
+      "duration": 693.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Terrapin Station.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "- Drums >",
+      "duration": 613.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "- Space >",
+      "duration": 525.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "- Truckin' >",
+      "duration": 384.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Truckin'.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "- Morning Dew >",
+      "duration": 676.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Morning Dew.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "- Around And Around >",
+      "duration": 223.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 Around And Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Around And Around.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "- Turn On Your Lovelight",
+      "duration": 345.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 Turn On Your Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Turn On Your Lovelight.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "- Encore Break",
+      "duration": 175.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 Encore Break.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "- Black Muddy River",
+      "duration": 416.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24 Black Muddy River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 Black Muddy River.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-04-03",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "hell in a bucket",
+      "duration": 386.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "sugaree",
+      "duration": 534.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "c.c. rider",
+      "duration": 498.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "it must have been the roses",
+      "duration": 451.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "it's all over now",
+      "duration": 492.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "big railroad blues",
+      "duration": 319.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "let it grow",
+      "duration": 723.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "don't ease me in",
+      "duration": 207.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "chinacat sunflower",
+      "duration": 345.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "i know you rider",
+      "duration": 344.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "women are smarter",
+      "duration": 393.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "crazy fingers",
+      "duration": 541.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "samson & delilah",
+      "duration": 391.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "drums",
+      "duration": 279.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "space",
+      "duration": 276.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "the other one",
+      "duration": 324.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc208.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "wharf rat",
+      "duration": 500.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc209.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "throwing stones",
+      "duration": 488.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc210.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc210.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "not fade away",
+      "duration": 336.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc211.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc211.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "u.s. blues",
+      "duration": 334.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc212.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc212.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

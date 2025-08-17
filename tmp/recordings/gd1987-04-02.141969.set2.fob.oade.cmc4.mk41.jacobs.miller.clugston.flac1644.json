@@ -1,0 +1,238 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-04-02",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd87-04-02 s2 tCrowd",
+      "duration": 85.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T01Crowd.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd87-04-s2 tScarlet Begonias",
+      "duration": 494.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T02ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T02ScarletBegonias.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd87-04-02 s2 tFire On The Mountain",
+      "duration": 575.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T03FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T03FireOnTheMountain.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd87-04-02 s2 tLooks Like Rain",
+      "duration": 472.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T04LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T04LooksLikeRain.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd87-04-02 s2 tEyes Of The World",
+      "duration": 425.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T05EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T05EyesOfTheWorld.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd87-04-02 s2 tDrums",
+      "duration": 609.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T06Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd87-04-02 s2 tSpace",
+      "duration": 368.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T07Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd87-04-02 s2 tGimme Some Lovin'",
+      "duration": 275.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T08GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T08GimmeSomeLovin.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd87-04-02 s2 tThe Wheel",
+      "duration": 246.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T09TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T09TheWheel.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd87-04-02 s2 tBlack Peter",
+      "duration": 568.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T10BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T10BlackPeter.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd87-04-02 s2 tAround & Around",
+      "duration": 217.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T11AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T11AroundAround.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd87-04-02 s2 tGood Lovin'",
+      "duration": 494.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T12GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T12GoodLovin.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd87-04-02 s2 tEncore Break",
+      "duration": 124.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T13EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T13EncoreBreak.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd87-04-02 s2 tBlack Muddy River",
+      "duration": 428.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-04-02S2T14BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-04-02S2T14BlackMuddyRiver.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

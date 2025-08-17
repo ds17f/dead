@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-09-12",
+  "venue": "Greek Theatre, University Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Shakedown Street",
+      "duration": 847.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t01 Shakedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t01 Shakedown.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Greatest Story Ever Told",
+      "duration": 235.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t02 GSET.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t02 GSET.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Friend Of The Devil >",
+      "duration": 521.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t03 FOTD.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t03 FOTD.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "El Paso",
+      "duration": 317.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t04 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t04 El Paso.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Bird Song",
+      "duration": 641.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t05 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t05 Bird Song.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Cassidy",
+      "duration": 333.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t06 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t06 Cassidy.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Tennessee Jed >",
+      "duration": 476.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t07 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t07 T Jed.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Looks Like Rain",
+      "duration": 517.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t08 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t08 LLR.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "China Cat Sunflower >",
+      "duration": 427.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t09 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t09 China Cat.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "I Know You Rider",
+      "duration": 355.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s1t10 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s1t10 IKYR.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Scarlet Begonias >",
+      "duration": 734.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t01 Scarlet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t01 Scarlet.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Fire On The Mountain",
+      "duration": 805.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t02 Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t02 Fire.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "CC Rider",
+      "duration": 513.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t03 CC Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t03 CC Rider.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 665.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t04 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t04 Estimated.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Eyes Of The World > Space >",
+      "duration": 1164.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t05 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t05 Eyes.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 582.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t06 Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Not Fade Away >",
+      "duration": 611.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t07 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t07 NFA.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Wharf Rat >",
+      "duration": 568.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t08 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t08 Wharf Rat.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Around & Around >",
+      "duration": 240.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t09 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t09 A & A.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "One More Saturday Night",
+      "duration": 283.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t10 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t10 OMSN.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E1: It's All Over Now, Baby Blue",
+      "duration": 570.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t11 E1_ Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t11 E1_ Baby Blue.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E2: Good Lovin'",
+      "duration": 486.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-12 s2t12 E2_Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-12 s2t12 E2_Good Lovin'.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

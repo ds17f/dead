@@ -1,0 +1,194 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-12-12",
+  "venue": "Santa Rosa Fairgrounds",
+  "location": "",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain and Snow",
+      "duration": 217.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t01 - Cold Rain and Snow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t01 - Cold Rain and Snow.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t01 - Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t01 - Big Railroad Blues.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me and My Uncle",
+      "duration": 118.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t02 - Me and My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t02 - Me and My Uncle.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t02 - King Bee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t02 - King Bee.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Looney Tunes",
+      "duration": 332.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t03 - Looney Tunes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t03 - Looney Tunes.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t03 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t03 - Sugar Magnolia.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Truckin'",
+      "duration": 273.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t04 - Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t04 - Truckin'.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t04 - Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t04 - Casey Jones.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Brokedown Palace",
+      "duration": 351.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t05 - Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t05 - Brokedown Palace.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hard to Handle",
+      "duration": 259.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t06 - Hard to Handle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t06 - Hard to Handle.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mama Tried",
+      "duration": 144.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t07 - Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t07 - Mama Tried.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower",
+      "duration": 216.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t08 - China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t08 - China Cat Sunflower.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 288.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t09 - I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t09 - I Know You Rider.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

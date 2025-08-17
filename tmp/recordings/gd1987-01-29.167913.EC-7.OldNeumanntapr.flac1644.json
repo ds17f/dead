@@ -1,0 +1,246 @@
+{
+  "rating": 1.68,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1987-01-29",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hell In A Bucket > (start set 1)",
+      "duration": 511.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugaree",
+      "duration": 639.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "El Paso",
+      "duration": 455.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Loser",
+      "duration": 675.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Little Red Rooster",
+      "duration": 513.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Brown Eyed Women",
+      "duration": 233.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Cassidy >",
+      "duration": 452.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Don't Ease Me In",
+      "duration": 352.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d1t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Johnny B. Goode",
+      "duration": 309.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "It's All Over Now, Baby Blue (encore)",
+      "duration": 492.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-01-29d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-01-29d2t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

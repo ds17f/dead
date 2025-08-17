@@ -1,0 +1,94 @@
+{
+  "rating": 0.5249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-08-30",
+  "venue": "KQED Studios",
+  "location": "San Francisco, CA",
+  "raw_rating": 1.5,
+  "high_ratings": 0,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Easy Wind",
+      "duration": 306.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Candyman",
+      "duration": 303.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Casey Jones",
+      "duration": 200.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brokedown Palace ->",
+      "duration": 159.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Uncle John's Band",
+      "duration": 237.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t05.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t05.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-25",
+  "venue": "Radio City Music Hall",
+  "location": "New York City, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "To Lay Me Down (Mix 1)",
+      "duration": 556.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 To Lay Me Down (Mix 1).flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "To Lay Me Down (Mix 2)",
+      "duration": 552.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 To Lay Me Down (Mix 2).flac"
+        }
+      ]
+    }
+  ]
+}

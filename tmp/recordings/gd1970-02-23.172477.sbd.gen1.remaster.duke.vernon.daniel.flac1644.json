@@ -1,0 +1,222 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1970-02-23",
+  "venue": "The Auditorium",
+  "location": "Austin, TX",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "I Know You Rider >",
+      "duration": 160.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01 I Know You Rider.mp3",
+          "bitrate": "110"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "High Time",
+      "duration": 430.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02 High Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02 High Time.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dire Wolf (false start)",
+      "duration": 77.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03 Dire Wolf (false start).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03 Dire Wolf (false start).mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dire Wolf",
+      "duration": 244.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04 Dire Wolf.mp3",
+          "bitrate": "106"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "tuning / banter (incl. Yellow Dog Story)",
+      "duration": 345.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05 tuning ~ banter ~ yellow dog story.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05 tuning ~ banter ~ yellow dog story.mp3",
+          "bitrate": "106"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Monkey & The Engineer",
+      "duration": 116.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06 The Monkey And The Engineer.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06 The Monkey And The Engineer.mp3",
+          "bitrate": "106"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Little Sadie",
+      "duration": 185.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07 Little Sadie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07 Little Sadie.mp3",
+          "bitrate": "105"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Me And My Uncle",
+      "duration": 239.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08 Me And My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08 Me And My Uncle.mp3",
+          "bitrate": "110"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Black Peter",
+      "duration": 543.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09 Black Peter.mp3",
+          "bitrate": "106"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Seasons Of My Heart",
+      "duration": 231.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10 Seasons Of My Heart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10 Seasons Of My Heart.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 347.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11 Uncle John's Band.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Not Fade Away >",
+      "duration": 809.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12 Not Fade Away.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Mason's Children",
+      "duration": 218.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t13 Mason's Children.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t13 Mason's Children.mp3",
+          "bitrate": "106"
+        }
+      ]
+    }
+  ]
+}

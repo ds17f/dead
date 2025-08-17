@@ -1,0 +1,158 @@
+{
+  "rating": 1.6875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-12-31",
+  "venue": "Home Recordings",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.375,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Friend Of The Devil",
+      "duration": 284.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Trumpet Solo (Robert Hunter)",
+      "duration": 50.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dead Or Alive",
+      "duration": 68.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Train Song",
+      "duration": 144.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "No Eggs Today",
+      "duration": 35.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jam",
+      "duration": 462.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Uncle John's Band Jam",
+      "duration": 536.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track07.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "quick, the baby is crying",
+      "duration": 123.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track08.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "unidentified guitar",
+      "duration": 28.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track09.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track09.shn"
+        }
+      ]
+    }
+  ]
+}

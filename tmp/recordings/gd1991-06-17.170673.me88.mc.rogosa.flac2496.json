@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-06-17",
+  "venue": "Giants Stadium",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "intro",
+      "duration": 104.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t01_intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t01_intro.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Eyes Of The World",
+      "duration": 901.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t02_Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t02_Eyes Of The World.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 421.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t03_Walkin' Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t03_Walkin' Blues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brown Eyed Women",
+      "duration": 463.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t04_Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t04_Brown Eyed Women.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint My Masterpiece",
+      "duration": 341.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t05_When I Paint My Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t05_When I Paint My Masterpiece.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 554.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t06_Loose Lucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t06_Loose Lucy.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 432.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t07_Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t07_Cassidy.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Might As Well",
+      "duration": 388.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t08_Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t08_Might As Well.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Set II intro",
+      "duration": 184.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t09_Set II intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t09_Set II intro.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Saint Of Circumstance >",
+      "duration": 422.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t10_Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t10_Saint Of Circumstance.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Ship Of Fools >",
+      "duration": 475.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t11_Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t11_Ship Of Fools.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Dark Star tease >",
+      "duration": 79.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t12_Dark Star tease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t12_Dark Star tease.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin' >",
+      "duration": 415.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t13_Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t13_Truckin'.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "New Speedway Boogie >",
+      "duration": 610.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t14_New Speedway Boogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t14_New Speedway Boogie.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Uncle John's Band >",
+      "duration": 1159.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t15_Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t15_Uncle John's Band.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 755.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t16_Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t16_Drums.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 481.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t17_Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t17_Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "China Doll >",
+      "duration": 320.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t18_China Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t18_China Doll.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playing In The Band >",
+      "duration": 274.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t19_Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t19_Playing In The Band.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia >",
+      "duration": 361.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t20_Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t20_Sugar Magnolia.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sunshine Daydream",
+      "duration": 203.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t21_Sunshine Daydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t21_Sunshine Daydream.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "crowd",
+      "duration": 69.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t22_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t22_crowd.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Weight",
+      "duration": 368.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1991-06-17t23_The Weight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-17t23_The Weight.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

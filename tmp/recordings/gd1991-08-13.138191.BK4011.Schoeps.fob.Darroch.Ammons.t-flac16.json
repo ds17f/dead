@@ -1,0 +1,238 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-08-13",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Sugaree",
+      "duration": 720.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s1t02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Candyman",
+      "duration": 415.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s1t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "High Time",
+      "duration": 558.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s1t06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "tuning",
+      "duration": 70.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Foolish Heart ->",
+      "duration": 604.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Saint Of Circumstance ->",
+      "duration": 405.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eyes Of The World ->",
+      "duration": 826.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums ->",
+      "duration": 1153.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Space ->",
+      "duration": 406.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t06.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "All Along The Watchtower ->",
+      "duration": 529.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Black Peter ->",
+      "duration": 597.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Sugar Magnolia",
+      "duration": 595.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t09.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "encore break",
+      "duration": 80.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t10.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Black Muddy River",
+      "duration": 363.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-08-13.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-08-13.s2t11.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

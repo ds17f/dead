@@ -1,0 +1,110 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-04-06",
+  "venue": "Miami Arena",
+  "location": "Miami, FL",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 227.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-04-06d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-04-06d1t01.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Comes A Time >",
+      "duration": 286.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-04-06d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-04-06d1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Days Between Intro",
+      "duration": 39.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-04-06d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-04-06d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jerry, there might be something in there",
+      "duration": 96.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-04-06d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-04-06d1t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy Answers x 3",
+      "duration": 878.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-04-06d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-04-06d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jerry MIDI Noodle, f*ck this lets eat",
+      "duration": 224.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-04-06d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-04-06d1t06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-04-07",
+  "venue": "Brendan Byrne Arena",
+  "location": "East Rutherford , NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "touch of grey",
+      "duration": 444.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "minglewood blues",
+      "duration": 450.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "friend of the devil",
+      "duration": 551.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "beat it on down the line",
+      "duration": 206.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "stagger lee",
+      "duration": 386.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "mama tried",
+      "duration": 157.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "big river",
+      "duration": 307.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "west l.a. fadeaway",
+      "duration": 508.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "hell in a bucket",
+      "duration": 448.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "don't ease me in",
+      "duration": 212.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc110.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "box of rain",
+      "duration": 316.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc111.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "i need a miracle",
+      "duration": 195.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "bertha",
+      "duration": 378.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "ship of fools",
+      "duration": 564.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "women are smarter",
+      "duration": 433.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "drums",
+      "duration": 602.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "space",
+      "duration": 626.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gimme some lovin'",
+      "duration": 285.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "morning dew",
+      "duration": 628.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc208.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "throwing stones",
+      "duration": 502.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc209.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "not fade away",
+      "duration": 303.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc210.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc210.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "mighty quinn",
+      "duration": 263.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc211.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc211.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

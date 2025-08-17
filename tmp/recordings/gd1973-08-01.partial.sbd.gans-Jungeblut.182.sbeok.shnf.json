@@ -1,0 +1,78 @@
+{
+  "rating": 2.3076923076923075,
+  "review_count": 13,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-08-01",
+  "venue": "Roosevelt Stadium",
+  "location": "Jersey City, NJ",
+  "raw_rating": 4.615384615384615,
+  "high_ratings": 12,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 926.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-08-01d1t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-08-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "El Paso >",
+      "duration": 176.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-08-01d1t02.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-08-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Eyes of the World >",
+      "duration": 849.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-08-01d1t03.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-08-01d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Morning Dew",
+      "duration": 484.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-08-01d1t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-08-01d1t04.shn"
+        }
+      ]
+    }
+  ]
+}

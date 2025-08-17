@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-12-08",
+  "venue": "Sports Arena",
+  "location": "Los Angeles, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Rain",
+      "duration": 329.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Rain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Let The Good Times Roll",
+      "duration": 236.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02LetTheGoodTimesRoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02LetTheGoodTimesRoll.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "King Bee",
+      "duration": 482.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03KingBee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03KingBee.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stagger Lee",
+      "duration": 581.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04StaggerLee.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me & My Uncle",
+      "duration": 182.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeMyUncle.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 408.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lazy River Road",
+      "duration": 468.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LazyRiverRoad.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Masterpiece",
+      "duration": 390.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Masterpiece.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 496.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09RowJimmy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Picasso Moon",
+      "duration": 438.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10PicassoMoon.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Iko-Iko",
+      "duration": 488.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Iko-iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Iko-iko.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Way To Go Home",
+      "duration": 425.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12WayToGoHome.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 522.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingInTheBand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 957.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14UncleJohnsBand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drumz",
+      "duration": 694.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drumz.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 1016.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Last Time",
+      "duration": 675.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheLastTime.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Morning Dew",
+      "duration": 575.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18MorningDew.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 723.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19SugarMagnolia.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "I Fought The Law",
+      "duration": 200.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20IFoughtTheLaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20IFoughtTheLaw.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

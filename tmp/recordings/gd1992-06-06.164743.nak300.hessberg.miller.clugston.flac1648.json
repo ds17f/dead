@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-06-06",
+  "venue": "Rich Stadium",
+  "location": "Orchard Park, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Touch Of Grey >",
+      "duration": 425.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t01 Touch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t01 Touch.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Greatest Story Ever Told",
+      "duration": 315.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t02 GSET.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t02 GSET.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Althea",
+      "duration": 515.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t03 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t03 Althea.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "It's All Over Now",
+      "duration": 505.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t04 All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t04 All Over Now.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Friend Of the Devil",
+      "duration": 487.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t05 FOTD.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t05 FOTD.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "When I Paint My Masterpiece",
+      "duration": 316.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t06 Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t06 Masterpiece.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Take A Step Back",
+      "duration": 100.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t07 Take A Step Back.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t07 Take A Step Back.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Ramble On Rose",
+      "duration": 490.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t08 RoR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t08 RoR.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Let It Grow",
+      "duration": 774.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s1t09 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s1t09 Let It Grow.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Iko Iko",
+      "duration": 429.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t01 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t01 Iko Iko.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Estimated Prophet >",
+      "duration": 820.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t02 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t02 Estimated.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "The Same Thing",
+      "duration": 425.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t03 Same Thing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t03 Same Thing.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "He's Gone >",
+      "duration": 559.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t04 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t04 He's Gone.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums >",
+      "duration": 803.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t05 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t05 Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space >",
+      "duration": 525.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t06 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t06 Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "The Other One >",
+      "duration": 457.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t07 Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t07 Other One.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "The Wheel >",
+      "duration": 315.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t08 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t08 Wheel.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Throwing Stones >",
+      "duration": 549.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t09 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t09 Throwing Stones.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "One More Saturday Night",
+      "duration": 293.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t10 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t10 OMSN.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Encore Break",
+      "duration": 57.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t11 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t11 Encore Break.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E1: Baba O'Riley >",
+      "duration": 190.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t12 E1_Baba O'Riley.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t12 E1_Baba O'Riley.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "E2: Tomorrow Never Knows",
+      "duration": 230.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-06-06 s2t13 E2_Tomorrow Never Knows.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-06-06 s2t13 E2_Tomorrow Never Knows.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

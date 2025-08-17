@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-05-15",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd80-05-15.16 KBFH tKBFH ID_Tuning",
+      "duration": 51.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT01KbfhId_tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT01KbfhId_tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd80-05-15.16 KBFH tAlabama Getaway",
+      "duration": 262.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT02AlabamaGetaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd80-05-15.16 KBFH tPromised Land",
+      "duration": 265.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT03PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT03PromisedLand.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd80-05-15.16 KBFH tTerrapin Station",
+      "duration": 743.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT04TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT04TerrapinStation.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd80-05-15.16 KBFH tPlayin' In The Band",
+      "duration": 487.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT05PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT05PlayinInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd80-05-15.16 KBFH tUncle John's Band",
+      "duration": 505.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT06UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT06UncleJohnsBand.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd80-05-15.16 KBFH tFeel Like A Stranger",
+      "duration": 512.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT07FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT07FeelLikeAStranger.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd80-05-15.16 KBFH tAlthea",
+      "duration": 509.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT08Althea.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd80-05-15.16 KBFH tNew Minglewood Blues",
+      "duration": 477.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT09NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT09NewMinglewoodBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd80-05-15.16 KBFH tBrokedown Palace",
+      "duration": 370.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-05-15.16KbfhT10BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-05-15.16KbfhT10BrokedownPalace.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

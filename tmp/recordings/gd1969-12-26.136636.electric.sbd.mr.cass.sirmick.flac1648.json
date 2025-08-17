@@ -1,0 +1,174 @@
+{
+  "rating": 1.68,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1969-12-26",
+  "venue": "McFarlin Auditorium, Southern Methodist Univ.",
+  "location": "Dallas, TX",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 318.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hard To Handle",
+      "duration": 308.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain And Snow//",
+      "duration": 247.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "China Cat Sunflower >",
+      "duration": 246.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t04.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I Know You Rider >",
+      "duration": 338.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t05.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "High Time",
+      "duration": 460.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t06.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me And My Uncle",
+      "duration": 207.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t07.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dark Star//",
+      "duration": 1444.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "New Speedway Boogie",
+      "duration": 262.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t09.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Turn On Your Love Light",
+      "duration": 882.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-12-26t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-12-26t10.mp3",
+          "bitrate": "166"
+        }
+      ]
+    }
+  ]
+}

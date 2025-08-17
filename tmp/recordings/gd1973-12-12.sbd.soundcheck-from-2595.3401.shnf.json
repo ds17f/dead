@@ -1,0 +1,110 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1973-12-12",
+  "venue": "Omni Coliseum",
+  "location": "Atlanta, GA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Rip It Up",
+      "duration": 197.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-12d1t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1973-12-12d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Blue Suede Shoes",
+      "duration": 63.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-12d1t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1973-12-12d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tuning",
+      "duration": 29.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-12d1t03.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1973-12-12d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 136.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-12d1t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1973-12-12d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack Straw, Cumberland Blues",
+      "duration": 181.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-12d1t05.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1973-12-12d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Thirty Days",
+      "duration": 37.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-12d1t06.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1973-12-12d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

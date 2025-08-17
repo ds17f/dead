@@ -1,0 +1,30 @@
+{
+  "rating": 2.0833333333333335,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-11-25",
+  "venue": "Veterans Coliseum",
+  "location": "New Haven, CT",
+  "raw_rating": 4.166666666666667,
+  "high_ratings": 5,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bob Weir - Jerry's sick",
+      "duration": 73.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

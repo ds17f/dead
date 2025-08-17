@@ -1,0 +1,510 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-09-06",
+  "venue": "State Fairgrounds",
+  "location": "Lewiston, ME",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd80-09-06 s1tCrowd",
+      "duration": 169.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t01Crowd.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd80-09-06 s1tAlabama Getaway",
+      "duration": 316.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t02AlabamaGetaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd80-09-06 s1tGreatest Story Ever Told",
+      "duration": 316.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t03GreatestStoryEverTold.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd80-09-06 s1tSugaree",
+      "duration": 937.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t04Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t04Sugaree.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd80-09-06 s1tMe & My Uncle",
+      "duration": 179.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t05MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t05MeMyUncle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd80-09-s1tMexicali Blues",
+      "duration": 319.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t06MexicaliBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd80-09-06 s1tTennessee Jed",
+      "duration": 595.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t07TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t07TennesseeJed.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd80-09-06 s1tFeel Like A Stranger",
+      "duration": 744.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t08FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t08FeelLikeAStranger.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd80-09-06 s1tFriend Of The Devil",
+      "duration": 619.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t09FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t09FriendOfTheDevil.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd80-09-06 s1tFar From Me",
+      "duration": 249.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t10FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t10FarFromMe.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd80-09-06 s1tLittle Red Rooster",
+      "duration": 595.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t11LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t11LittleRedRooster.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd80-09-06 s1tChina Cat Sunflower",
+      "duration": 364.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t12ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t12ChinaCatSunflower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd80-09-06 s1tI Know You Rider",
+      "duration": 324.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t13IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t13IKnowYouRider.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd80-09-06 s1tPromised Land",
+      "duration": 262.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S1t14PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S1t14PromisedLand.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd80-09-06 s2t01 Crowd",
+      "duration": 74.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t01Crowd.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd80-09-06 s2t02 Shakedown Street",
+      "duration": 710.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t02ShakedownStreet.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd80-09-06 s2t03 Lost Sailor",
+      "duration": 358.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t03LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t03LostSailor.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd80-09-06 s2t04 Saint Of Circumstance",
+      "duration": 391.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t04SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t04SaintOfCircumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd80-09-06 s2t05 Althea",
+      "duration": 797.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t05Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t05Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd80-09-06 s2t06 Playin' In The Band",
+      "duration": 578.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t06PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t06PlayinInTheBand.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd80-09-06 s2t07 Uncle John's Band",
+      "duration": 470.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t07UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t07UncleJohnsBand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd80-09-06 s2t08 Drums",
+      "duration": 816.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t08Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t08Drums.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd80-09-06 s2t09 Space",
+      "duration": 193.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t09Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t09Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd80-09-06 s2t10 Not Fade Away",
+      "duration": 396.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t10NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t10NotFadeAway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd80-09-06 s2t11 The Wheel",
+      "duration": 316.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t11TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t11TheWheel.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "gd80-09-06 s2t12 Uncle John's Band Reprise",
+      "duration": 200.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t12UncleJohnsBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t12UncleJohnsBandReprise.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "gd80-09-06 s2t13 Playin' In The Band Reprise",
+      "duration": 177.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t13PlayinInTheBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t13PlayinInTheBandReprise.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "gd80-09-06 s2t14 Sugar Magnolia",
+      "duration": 556.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t14SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t14SugarMagnolia.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "gd80-09-06 s2t15 Encore Break",
+      "duration": 54.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t15EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t15EncoreBreak.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "gd80-09-06 s2t16 One More Saturday Night",
+      "duration": 287.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t16OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t16OneMoreSaturdayNight.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "gd80-09-06 s2t17 Brokedown Palace",
+      "duration": 327.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd80-09-06S2t17BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-09-06S2t17BrokedownPalace.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

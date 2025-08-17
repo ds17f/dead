@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-06-03",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 397.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01HellInABucket.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Althea",
+      "duration": 477.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Althea.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 601.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LittleRedRooster.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brown-Eyed Women",
+      "duration": 384.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Brown-eyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Brown-eyedWomen.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Broken Arrow",
+      "duration": 341.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BrokenArrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BrokenArrow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 412.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06StaggerLee.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 602.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Eternity.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower",
+      "duration": 490.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ChinaCatSunflower.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 399.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09IKnowYouRider.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samba In The Rain",
+      "duration": 452.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SambaInTheRain.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band",
+      "duration": 391.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11PlayingInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 488.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12UncleJohnsBand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drumz",
+      "duration": 927.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drumz.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 852.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Box Of Rain",
+      "duration": 324.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15BoxOfRain.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue",
+      "duration": 598.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16StellaBlue.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 577.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ThrowingStones.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "One More Saturday Night",
+      "duration": 429.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18OneMoreSaturdayNight.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Liberty",
+      "duration": 348.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19Liberty.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Liberty.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

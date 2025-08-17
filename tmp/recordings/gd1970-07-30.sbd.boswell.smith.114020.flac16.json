@@ -1,0 +1,142 @@
+{
+  "rating": 1.62,
+  "review_count": 1,
+  "source_type": "MATRIX",
+  "confidence": 0.2,
+  "date": "1970-07-30",
+  "venue": "The Matrix",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "To Lay Me Down",
+      "duration": 432.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 246.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Candyman",
+      "duration": 401.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tuning/Talk",
+      "duration": 147.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Rosalie McFall*",
+      "duration": 220.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tuning/Talk**",
+      "duration": 136.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "A Voice From On High**",
+      "duration": 235.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Swing Low, Sweet Chariot**",
+      "duration": 189.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-07-30d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-07-30d1t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

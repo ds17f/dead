@@ -1,0 +1,91 @@
+{
+  "rating": 1.68,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1966-11-18",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Track Tape (Pioneer HR-99) > Focusrite 2i2 >",
+      "duration": 538.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 The Same Thing.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Same Thing",
+      "duration": 241.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 New Minglewood Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 266.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Nobody's Fault But Mine.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Nobody's Fault But Mine",
+      "duration": 166.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Beat It On Down The Line.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down the Line",
+      "duration": 241.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Next Time You See Me.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Next Time You See Me",
+      "duration": 357.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 It's All Over Now, Baby Blue.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 70.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Viola Lee Blues.flac"
+        }
+      ]
+    }
+  ]
+}

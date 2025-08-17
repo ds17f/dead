@@ -1,0 +1,158 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-02-13",
+  "venue": "Fillmore East",
+  "location": "New York City, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 211.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Beat It On Down The Line",
+      "duration": 110.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Lovin'",
+      "duration": 326.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 91.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Peter",
+      "duration": 286.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hard To Handle",
+      "duration": 244.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Saint Stephen ->",
+      "duration": 230.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 333.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t08.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Casey Jones",
+      "duration": 177.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_2-13-70_early_t09.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_2-13-70_early_t09.shn"
+        }
+      ]
+    }
+  ]
+}

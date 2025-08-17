@@ -1,0 +1,126 @@
+{
+  "rating": 2.2777777777777777,
+  "review_count": 27,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-05-03",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.555555555555555,
+  "high_ratings": 26,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "He was a Friend of Mine",
+      "duration": 368.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t1.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cryptical Envelopment",
+      "duration": 70.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t2.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Drums",
+      "duration": 19.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t3.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "The Other One",
+      "duration": 453.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t4.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Cryptical Envelopment",
+      "duration": 245.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t5.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Doin' That Rag",
+      "duration": 249.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t6.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Me and My Uncle",
+      "duration": 131.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03t7.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-03t7.shn"
+        }
+      ]
+    }
+  ]
+}

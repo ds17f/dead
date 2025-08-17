@@ -1,0 +1,266 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-05-11",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning / Broken String Announcement (start set 1)",
+      "duration": 432.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t01.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d2t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d3t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Gimme Some Lovin' >",
+      "duration": 426.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d2t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d3t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dancin' In The Streets",
+      "duration": 238.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d2t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d3t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Never Trust A Woman",
+      "duration": 719.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t04.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d2t04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d3t04.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Iko Iko",
+      "duration": 195.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d2t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d3t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "My Brother Esau",
+      "duration": 345.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t06.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d2t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d3t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "It Must Have Been The Roses",
+      "duration": 345.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Cassidy >",
+      "duration": 347.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Might // As Well (tape flip)",
+      "duration": 247.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-05-11d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-05-11d1t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

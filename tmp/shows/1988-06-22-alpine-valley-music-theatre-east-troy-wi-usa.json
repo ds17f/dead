@@ -1,0 +1,182 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-06-22-alpine-valley-music-theatre-east-troy-wi-usa/",
+  "show_id": "1988-06-22-alpine-valley-music-theatre-east-troy-wi-usa",
+  "band": "Grateful Dead",
+  "venue": "Alpine Valley Music Theatre",
+  "location_raw": "East Troy, WI",
+  "city": "East Troy",
+  "state": "WI",
+  "country": "USA",
+  "date": "1988-06-22",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "When Push Comes To Shove",
+          "url": "https://jerrygarcia.com/song/when-push-comes-to-shove/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Will Take You Home",
+          "url": "https://jerrygarcia.com/song/i-will-take-you-home/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Mighty Quinn (Quinn The Eskimo)",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:01:07.339382",
+  "show_time": null,
+  "recordings": [
+    "gd1988-06-22.s2.sbd.miller.119780.flac16",
+    "gd88-06-22.sennheiser.ladner.17349.sbeok.shnf",
+    "gd88-06-22.akg.omalley.31633.sbeok.flacf",
+    "gd1988-06-22.Set2.AKG451.Darby.119340.Flac2448",
+    "gd1988-06-22.Set2.AKG451.Darby.119341.Flac1644",
+    "gd1988-06-22.127252.shureSM57.chuckm.flac16",
+    "gd1988-06-22.111276.NeumannKMF4.daweez.d5scott.flac16"
+  ],
+  "best_recording": "gd1988-06-22.s2.sbd.miller.119780.flac16",
+  "avg_rating": 1.2433070866141733,
+  "raw_rating": 2.608695652173913,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 6,
+  "total_low_ratings": 13,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years",
+    "return-and-recovery"
+  ]
+}

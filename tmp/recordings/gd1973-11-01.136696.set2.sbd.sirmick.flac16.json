@@ -1,0 +1,158 @@
+{
+  "rating": 2.25,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1973-11-01",
+  "venue": "McGaw Memorial Hall, Northwestern U.",
+  "location": "Evanston, IL",
+  "raw_rating": 5.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew >",
+      "duration": 818.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Playing In The Band >",
+      "duration": 893.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Uncle John's Band > *",
+      "duration": 575.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band (reprise)",
+      "duration": 356.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t04.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mississippi Half-Step Uptown Toodeloo >",
+      "duration": 478.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "He's Gone > *",
+      "duration": 628.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t06.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Truckin' >",
+      "duration": 618.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat",
+      "duration": 594.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugar Magnolia",
+      "duration": 600.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-01s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-01s2t09.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

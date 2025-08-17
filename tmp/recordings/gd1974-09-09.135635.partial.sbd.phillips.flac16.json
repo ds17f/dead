@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1974-09-09",
+  "venue": "Alexandra Palace",
+  "location": "London, England",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Ship Of Fools",
+      "duration": 363.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track14.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tennessee Jed",
+      "duration": 519.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track15.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Uncle John's Band",
+      "duration": 385.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track20.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Johnny B. Goode",
+      "duration": 244.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track21.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "US Blues",
+      "duration": 321.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track22.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "One More Saturday Night",
+      "duration": 283.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track23.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

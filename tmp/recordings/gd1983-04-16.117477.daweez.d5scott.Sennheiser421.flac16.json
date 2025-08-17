@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-04-16",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Minglewood Blues",
+      "duration": 471.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "238"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tennessee Jed",
+      "duration": 477.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me & My Uncle",
+      "duration": 204.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "228"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 291.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "233"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 643.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "229"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau",
+      "duration": 333.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "227"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West L.A. Fade Away",
+      "duration": 474.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Maybe You Know",
+      "duration": 278.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "229"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain",
+      "duration": 496.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t09.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch Of Grey",
+      "duration": 360.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t10.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Chinacat Sunflower",
+      "duration": 430.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 345.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band",
+      "duration": 613.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin'",
+      "duration": 521.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "\"Weir with Drummers\"",
+      "duration": 210.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 452.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Queen *",
+      "duration": 428.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Iko Iko *",
+      "duration": 457.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Other One **",
+      "duration": 470.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter",
+      "duration": 499.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night *",
+      "duration": 294.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B. Goode *",
+      "duration": 250.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "233"
+        }
+      ]
+    }
+  ]
+}

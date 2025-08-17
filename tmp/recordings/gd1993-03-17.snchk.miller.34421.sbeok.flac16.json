@@ -1,0 +1,62 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-03-17",
+  "venue": "Capital Centre",
+  "location": "Landover, Md",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Wave To The Wind",
+      "duration": 467.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-17snchk1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-17snchk1.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 463.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-17snchk2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-17snchk2.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Fought The Law",
+      "duration": 206.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-17snchk3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-17snchk3.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "rating": 1.9125,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1978-11-20",
+  "venue": "Cleveland Music Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.25,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jam",
+      "duration": 595.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums",
+      "duration": 172.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Jam",
+      "duration": 204.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jack A Roe",
+      "duration": 286.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit04.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Playin'",
+      "duration": 572.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit05.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Shakedown> Drums",
+      "duration": 670.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit06.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "If I Had The World To Give",
+      "duration": 473.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit07.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Playin'",
+      "duration": 376.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit08.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Around & Around",
+      "duration": 525.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20iit09.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20iit09.shn"
+        }
+      ]
+    }
+  ]
+}

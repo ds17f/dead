@@ -1,0 +1,110 @@
+{
+  "rating": 2.442857142857143,
+  "review_count": 35,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-02-02",
+  "venue": "Crystal Ballroom",
+  "location": "Portland, OR",
+  "raw_rating": 4.885714285714286,
+  "high_ratings": 35,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Viola Lee Blues Feedback",
+      "duration": 529.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02t1.mp3",
+          "bitrate": "167"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-02-02t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cryptical Envelopment",
+      "duration": 66.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02t2.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-02-02t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Other One",
+      "duration": 124.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02t3.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-02-02t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cryptical Envelopment",
+      "duration": 149.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02t4.mp3",
+          "bitrate": "167"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-02-02t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Clementine",
+      "duration": 278.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02t5.mp3",
+          "bitrate": "157"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-02-02t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Morning, Little Schoolgirl",
+      "duration": 544.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02t6.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-02-02t6.shn"
+        }
+      ]
+    }
+  ]
+}

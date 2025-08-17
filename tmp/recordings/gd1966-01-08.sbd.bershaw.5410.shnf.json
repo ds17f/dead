@@ -1,0 +1,110 @@
+{
+  "rating": 3.15,
+  "review_count": 12,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1966-01-08",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Stage Chaos/More Power Rap",
+      "duration": 94.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid1_01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid1_01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "King Bee",
+      "duration": 222.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid1_02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid1_02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I'm A Hog For You Baby",
+      "duration": 112.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid1_03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid1_03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Caution: Do Not Step On Tracks ->",
+      "duration": 287.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid1_04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid1_04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Death Don't Have No Mercy",
+      "duration": 302.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid1_05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid1_05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Star Spangled Banner / closing remarks",
+      "duration": 149.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid1_06.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid1_06.shn"
+        }
+      ]
+    }
+  ]
+}

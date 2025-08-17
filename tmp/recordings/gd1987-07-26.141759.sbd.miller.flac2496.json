@@ -1,0 +1,558 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1987-07-26",
+  "venue": "Anaheim Stadium",
+  "location": "Anaheim, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 373.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01IkoIko.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 508.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02NewMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tons Of Steel",
+      "duration": 331.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03TonsOfSteel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TonsOfSteel.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West LA Fadeaway",
+      "duration": 501.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WestLaFadeaway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint My Masterpiece",
+      "duration": 222.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 291.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song",
+      "duration": 520.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BirdSong.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 264.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PromisedLand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 31.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Shakedown Street",
+      "duration": 707.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ShakedownStreet.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain",
+      "duration": 506.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11LooksLikeRain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Terrapin Station",
+      "duration": 701.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TerrapinStation.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 524.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 384.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Other One",
+      "duration": 401.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15TheOtherOne.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue",
+      "duration": 435.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16StellaBlue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 526.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ThrowingStones.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 538.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18NotFadeAway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Mr Tambourine Man",
+      "duration": 304.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19MrTambourineMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MrTambourineMan.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Dead Man, Dead Man",
+      "duration": 380.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20DeadManDeadMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20DeadManDeadMan.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Maggie's Farm",
+      "duration": 315.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21MaggiesFarm.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Simple Twist Of Fate",
+      "duration": 376.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22SimpleTwistOfFate.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22SimpleTwistOfFate.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Watching The River Flow",
+      "duration": 272.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23WatchingTheRiverFlow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23WatchingTheRiverFlow.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 384.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Chimes Of Freedom",
+      "duration": 430.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25ChimesOfFreedom.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25ChimesOfFreedom.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Queen Jane Approximately",
+      "duration": 255.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "26QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26QueenJaneApproximately.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 449.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "27StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Ballad Of A Thin Man",
+      "duration": 412.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "28BalladOfAThinMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28BalladOfAThinMan.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Rainy Day Women #12 And #35",
+      "duration": 319.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "29RainyDayWomen12And35.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29RainyDayWomen12And35.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Gotta Serve Somebody",
+      "duration": 363.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "30GottaServeSomebody.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30GottaServeSomebody.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "All Along The Watchtower",
+      "duration": 389.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "31AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31AllAlongTheWatchtower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Encore Break",
+      "duration": 238.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "32EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32EncoreBreak.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Touch Of Grey",
+      "duration": 381.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "33TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33TouchOfGrey.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 664.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "34KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34KnockinOnHeavensDoor.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "url": "https://jerrygarcia.com/show/1976-07-13-orpheum-theatre-san-francisco-ca-usa/",
+  "show_id": "1976-07-13-orpheum-theatre-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Orpheum Theatre",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1976-07-13",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sunshine Daydream",
+          "url": "https://jerrygarcia.com/song/sunshine-daydream/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:31:56.240630",
+  "show_time": null,
+  "recordings": [
+    "gd76-07-13.sbd.vernon.18480.sbeok.shnf",
+    "gd76-07-13.sbd.ashley-bertha.9978.sbeok.shnf",
+    "gd1976-07-13.150754.sbd.miller.flac1644",
+    "gd1976-07-13.150753.sbd.koda.miller.flac2496",
+    "gd1976-07-13.150753.sbd.miller.fixed.flac2448",
+    "gd1976-07-13.150958.SBD.reMaster.Ackerman.Noel.t-flac1644",
+    "gd1976-07-13.150754.sbd.miller.fixed.flac1644",
+    "gd1976-07-13.152157.sbd.1stGen.miller.version2-dolby-decoded.t.flac16",
+    "gd1976-07-13.150867.sbd.v2.dolby.miller.flac2496",
+    "gd1976-07-13.150948.SBD.reMaster.Ackerman.Noel.t-flac2448",
+    "gd1976-07-13.150847.sbd.v2.miller.flac2496",
+    "gd1976-07-13.152150.sbd.1stGen.miller.version2.t.flac16",
+    "gd76-07-13.menke.minches.18427.sbeok.shnf",
+    "gd1976-07-13.123475.ecm270.menke.miller.flac16",
+    "gd1976-07-13.157454.mtx.motb.0199.flac16"
+  ],
+  "best_recording": "gd76-07-13.sbd.vernon.18480.sbeok.shnf",
+  "avg_rating": 1.860970464135022,
+  "raw_rating": 3.9310344827586206,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 12,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "donna-years",
+    "keith-godchaux-years"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "rating": 1.575,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1969-06-22",
+  "venue": "Central Park",
+  "location": "NYC, NY",
+  "raw_rating": 3.5,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dancin' in the Streets",
+      "duration": 428.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-22pt01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-06-22pt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Casey Jones",
+      "duration": 337.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-22pt02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-06-22pt02.shn"
+        }
+      ]
+    }
+  ]
+}

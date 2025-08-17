@@ -1,0 +1,366 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1981-05-15",
+  "venue": "Rutgers Athletic Center",
+  "location": "New Brunswick, NJ",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half Step Uptown Toodleloo",
+      "duration": 556.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower >",
+      "duration": 589.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 450.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 207.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 442.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Candyman >",
+      "duration": 417.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Little Red Rooster",
+      "duration": 557.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jack-A-Roe",
+      "duration": 305.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t08.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "El Paso",
+      "duration": 326.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced1t09.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Ramble On Rose >",
+      "duration": 482.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain >",
+      "duration": 514.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Don't Ease Me In",
+      "duration": 197.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias >",
+      "duration": 725.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire On The Mountain >",
+      "duration": 505.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet >",
+      "duration": 763.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes Of The World >",
+      "duration": 508.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums >",
+      "duration": 322.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced2t08.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space >",
+      "duration": 373.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced3t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away >",
+      "duration": 418.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced3t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter >",
+      "duration": 534.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced3t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia",
+      "duration": 546.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced3t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 309.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-05-15manced3t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-05-15manced3t05.shn"
+        }
+      ]
+    }
+  ]
+}

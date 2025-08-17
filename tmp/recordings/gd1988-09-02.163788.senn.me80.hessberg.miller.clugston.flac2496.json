@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-02",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 111.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t01 Crowd_Tuning.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Hell In A Bucket",
+      "duration": 411.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t02 Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t02 Bucket.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "They Love Each Other",
+      "duration": 457.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t03 TLEO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t03 TLEO.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "New Minglewood Blues",
+      "duration": 506.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t04 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t04 Minglewood.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Dire Wolf",
+      "duration": 282.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t05 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t05 Dire Wolf.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Queen Jane Approximately",
+      "duration": 369.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t06 Queen Jane.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t06 Queen Jane.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Althea",
+      "duration": 507.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t07 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t07 Althea.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Let It Grow",
+      "duration": 747.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s1t08 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s1t08 Let It Grow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 94.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Scarlet Begonias >",
+      "duration": 498.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t02 Scarlet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t02 Scarlet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Fire On The Mountain",
+      "duration": 636.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t03 Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t03 Fire.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Looks Like Rain >",
+      "duration": 522.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t04 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t04 LLR.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Terrapin Station >",
+      "duration": 667.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t05 Terrapin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t05 Terrapin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 480.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t06 Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 498.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t07 Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "The Wheel >",
+      "duration": 291.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t08 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t08 Wheel.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "All Along The Watchtower >",
+      "duration": 321.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t09 Watchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t09 Watchtower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Stella Blue >",
+      "duration": 495.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t10 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t10 Stella Blue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Sugar Magnolia",
+      "duration": 553.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t11 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t11 Sugar Mag.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E: Black Muddy River",
+      "duration": 409.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-09-02 s2t12 E_Black Muddy River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-02 s2t12 E_Black Muddy River.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

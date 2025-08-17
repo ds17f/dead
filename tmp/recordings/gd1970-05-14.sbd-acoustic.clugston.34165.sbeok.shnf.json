@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-05-14",
+  "venue": "Merramec Community College",
+  "location": "Kirkwood, MO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Banter / Tuning",
+      "duration": 89.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Don't Ease Me In",
+      "duration": 100.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tuning / Banter",
+      "duration": 40.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend of the Devil",
+      "duration": 125.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Deep Elem Blues",
+      "duration": 193.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Silver Threads & Golden Needles",
+      "duration": 116.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Banter / Tuning",
+      "duration": 47.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic07.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Candyman",
+      "duration": 206.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-14Acoustic08.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-14Acoustic08.shn"
+        }
+      ]
+    }
+  ]
+}

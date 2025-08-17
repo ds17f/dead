@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-11-08",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 80.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias",
+      "duration": 652.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Scarlet Begonias.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Mountain",
+      "duration": 741.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Fire On The Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Fire On The Mountain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "tuning",
+      "duration": 237.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Lost Sailor",
+      "duration": 385.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Lost Sailor.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Saint Of Circumstance",
+      "duration": 345.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Saint Of Circumstance.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jam",
+      "duration": 407.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Jam.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums",
+      "duration": 523.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Space",
+      "duration": 217.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Not Fade Away",
+      "duration": 534.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Not Fade Away.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Morning Dew",
+      "duration": 631.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Morning Dew.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Johnny B Goode",
+      "duration": 292.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Johnny B Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Johnny B Goode.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

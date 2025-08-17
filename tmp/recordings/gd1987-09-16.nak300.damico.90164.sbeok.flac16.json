@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-09-16",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "olatunji",
+      "duration": 285.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "olatunji",
+      "duration": 301.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "olatunji",
+      "duration": 396.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "olatunji",
+      "duration": 422.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "olatunji",
+      "duration": 334.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Touch Of Grey",
+      "duration": 442.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Scarclet Begonias",
+      "duration": 556.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Little Red Rooster",
+      "duration": 625.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Dire Wolf",
+      "duration": 302.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "My Brother Esau",
+      "duration": 266.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "High Time",
+      "duration": 429.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Let It Grow",
+      "duration": 744.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Don't Ease Me In",
+      "duration": 213.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc208.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Bertha",
+      "duration": 554.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc301.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Greatest Story Ever Told",
+      "duration": 230.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc302.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "devil with the blue dress on",
+      "duration": 237.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc303.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "He's Gone ->",
+      "duration": 817.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc304.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums ->",
+      "duration": 611.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc305.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space ->",
+      "duration": 536.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc401.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc401.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Truckin' ->",
+      "duration": 415.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc402.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc402.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Wharf Rat ->",
+      "duration": 629.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc403.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc403.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Throwing Stones ->",
+      "duration": 566.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc404.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc404.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away ->",
+      "duration": 590.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc405.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc405.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Goin' Down The Road Feelin' Bad",
+      "duration": 74.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc406.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc406.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Black Muddy River",
+      "duration": 399.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc407.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc407.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-08-16",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "02 Jack Straw",
+      "duration": 373.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02JackStraw.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "03 Bertha",
+      "duration": 548.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Bertha.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "04 It's All Over Now",
+      "duration": 516.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItsAllOverNow.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "05 Ramble On Rose",
+      "duration": 451.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RambleOnRose.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "06 Desolation Row",
+      "duration": 832.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06DesolationRow.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "07 Dark Star",
+      "duration": 611.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DarkStar.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "08 Promised Land",
+      "duration": 271.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PromisedLand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "09 Tuning",
+      "duration": 68.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "10 Scarlet Begonias",
+      "duration": 457.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ScarletBegonias.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "11 Victim Or The Crime",
+      "duration": 511.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11VictimOrTheCrime.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "12 Fire On The Mountain",
+      "duration": 755.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "13 Truckin'",
+      "duration": 576.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Truckin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "14 Drums",
+      "duration": 863.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "15 Space",
+      "duration": 742.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "16 Playing In The Band Reprise",
+      "duration": 431.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16PlayingInTheBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16PlayingInTheBandReprise.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "17 Standing On The Moon",
+      "duration": 589.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17StandingOnTheMoon.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "18 Good Lovin'",
+      "duration": 416.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GoodLovin.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "19 Encore Break",
+      "duration": 164.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19EncoreBreak.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "20 US Blues",
+      "duration": 304.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20UsBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

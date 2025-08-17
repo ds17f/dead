@@ -1,0 +1,574 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1974-10-19",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "intro",
+      "duration": 48.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 intro.mp3",
+          "bitrate": "152"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 572.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me and My Uncle",
+      "duration": 249.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Me and My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Me and My Uncle.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend of the Devil",
+      "duration": 318.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Friend of the Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Friend of the Devil.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down the Line",
+      "duration": 193.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Beat It On Down the Line.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Beat It On Down the Line.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tuning",
+      "duration": 123.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 tuning.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It Must Have Been the Roses",
+      "duration": 449.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 It Must Have Been the Roses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 It Must Have Been the Roses.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "El Paso",
+      "duration": 293.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 El Paso.mp3",
+          "bitrate": "149"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Loose Lucy",
+      "duration": 368.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Loose Lucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Loose Lucy.mp3",
+          "bitrate": "150"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Black Throated Wind",
+      "duration": 506.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Black Throated Wind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Black Throated Wind.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 814.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Scarlet Begonias.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "To Lay Me Down",
+      "duration": 528.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12 To Lay Me Down.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 To Lay Me Down.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Mama Tried",
+      "duration": 255.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Mama Tried.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes of the World >",
+      "duration": 1089.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14 Eyes of the World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Eyes of the World.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Doll",
+      "duration": 365.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15 China Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 China Doll.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Big River",
+      "duration": 293.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Big River.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Seastones",
+      "duration": 921.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17 Seastones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Seastones.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Uncle John's Band",
+      "duration": 519.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Uncle John's Band.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Big Railroad Blues",
+      "duration": 271.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19 Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Big Railroad Blues.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Race Is On",
+      "duration": 193.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20 The Race Is On.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 The Race Is On.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Tomorrow Is Forever",
+      "duration": 382.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21 Tomorrow Is Forever.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Tomorrow Is Forever.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Mexicali Blues",
+      "duration": 203.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Mexicali Blues.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Dire Wolf",
+      "duration": 267.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 Dire Wolf.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Sugar Magnolia >",
+      "duration": 344.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 Sugar Magnolia.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "He's Gone >",
+      "duration": 724.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25 He's Gone.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Truckin' Jam >",
+      "duration": 96.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "26 Truckin' Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26 Truckin' Jam.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Caution Jam >",
+      "duration": 265.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "27 Caution Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27 Caution Jam.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Drums >",
+      "duration": 74.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "28 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28 Drums.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Jam >",
+      "duration": 659.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "29 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29 Jam.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Truckin' >",
+      "duration": 481.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "30 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30 Truckin'.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Black Peter",
+      "duration": 625.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "31 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31 Black Peter.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Sunshine Daydream",
+      "duration": 177.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "32 Sunshine Daydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32 Sunshine Daydream.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "encore break",
+      "duration": 66.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "33 encore break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33 encore break.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "One More Saturday Night",
+      "duration": 310.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "34 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34 One More Saturday Night.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "U.S. Blues",
+      "duration": 327.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "35 U.S. Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "35 U.S. Blues.mp3",
+          "bitrate": "166"
+        }
+      ]
+    }
+  ]
+}

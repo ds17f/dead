@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-06-15",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 148.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t01 Crowd.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Touch Of Grey",
+      "duration": 420.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t02 Touch Of Grey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t02 Touch Of Grey.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "New Minglewood Blues",
+      "duration": 441.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t03 Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t03 Minglewood Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Friend Of The Devil",
+      "duration": 573.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t04 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t04 Friend Of The Devil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Cassidy",
+      "duration": 357.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t05 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t05 Cassidy.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Dupree's Diamond Blues",
+      "duration": 474.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t06 Dupree's Diamond Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t06 Dupree's Diamond Blues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Me & My Uncle >",
+      "duration": 179.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t07 Me & My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t07 Me & My Uncle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Big River >",
+      "duration": 321.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t08 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t08 Big River.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Might As Well",
+      "duration": 263.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s1t09 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s1t09 Might As Well.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 99.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t01 Crowd.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 346.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t02 China Cat.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider >",
+      "duration": 335.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t03 IKYR.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Lost Sailor >",
+      "duration": 399.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t04 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t04 Lost Sailor.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Saint Of Circumstance>",
+      "duration": 366.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t05 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t05 Saint Of Circumstance.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Terrapin Station >",
+      "duration": 763.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t06 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t06 Terrapin Station.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 667.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t07 Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 398.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t08 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "The Wheel >",
+      "duration": 272.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t09 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t09 The Wheel.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Gimme Some Lovin' >",
+      "duration": 253.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t10 Gimme Some Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t10 Gimme Some Lovin'.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Throwing Stones >",
+      "duration": 469.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t11 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t11 Throwing Stones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Not Fade Away",
+      "duration": 378.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t12 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t12 NFA.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "E1: She Belongs To Me",
+      "duration": 537.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t13 She Belongs To Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t13 She Belongs To Me.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "E2: US Blues",
+      "duration": 315.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15 s2t14 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15 s2t14 US Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

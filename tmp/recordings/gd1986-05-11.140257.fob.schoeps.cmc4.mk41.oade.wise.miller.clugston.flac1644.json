@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-05-11",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd86-05-11 Crowd_Let Phil Sing_Tuning",
+      "duration": 419.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1101Crowd_letPhilSing_tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1101Crowd_letPhilSing_tuning.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd86-05-11 Gimme Some Lovin'",
+      "duration": 306.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1102GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1102GimmeSomeLovin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd86-05-11 Dancin' In The Streets",
+      "duration": 515.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1103DancinInTheStreets.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1103DancinInTheStreets.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd86-05-11 Never Trust A Woman",
+      "duration": 414.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1104NeverTrustAWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1104NeverTrustAWoman.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd86-05-11 Iko Iko",
+      "duration": 479.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1105IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1105IkoIko.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd86-05-11 My Brother Esau",
+      "duration": 296.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1106MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1106MyBrotherEsau.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd86-05-11 It Must Have Been The Roses",
+      "duration": 414.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1107ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1107ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd86-05-11 Cassidy",
+      "duration": 341.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1108Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1108Cassidy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd86-05-11 Might As Well",
+      "duration": 320.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1109MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1109MightAsWell.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd86-05-11 Samson & Delilah",
+      "duration": 445.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1110SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1110SamsonDelilah.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd86-05-Crazy Fingers",
+      "duration": 498.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1111CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1111CrazyFingers.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd86-05-11 He's Gone",
+      "duration": 700.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1112HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1112HesGone.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd86-05-11 Smokestack Lightnin'",
+      "duration": 304.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1113SmokestackLightnin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1113SmokestackLightnin.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd86-05-11 Drums",
+      "duration": 764.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1114Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1114Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd86-05-11 Space",
+      "duration": 260.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1115Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1115Space.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd86-05-11 The Other One",
+      "duration": 508.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1116TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1116TheOtherOne.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd86-05-11 Comes A Time",
+      "duration": 416.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1117ComesATime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1117ComesATime.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd86-05-11 Around & Around",
+      "duration": 237.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1118AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1118AroundAround.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd86-05-11 Not Fade Away",
+      "duration": 498.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1119NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1119NotFadeAway.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd86-05-11 Not Fade Away Chant",
+      "duration": 225.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1120NotFadeAwayChant.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1120NotFadeAwayChant.mp3",
+          "bitrate": "242"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd86-05-11 I Need A Miracle",
+      "duration": 184.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1121INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1121INeedAMiracle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd86-05-11 US Blues",
+      "duration": 355.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd86-05-1122UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd86-05-1122UsBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

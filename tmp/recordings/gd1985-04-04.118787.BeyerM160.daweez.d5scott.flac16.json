@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-04",
+  "venue": "Providence Civic Center",
+  "location": "Providence, RI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 338.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 408.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 199.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 318.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "She Belongs To Me",
+      "duration": 425.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau",
+      "duration": 365.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Friend Of The Devil",
+      "duration": 527.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Lost Sailor",
+      "duration": 411.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Saint Of Circumstance",
+      "duration": 432.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t09.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 463.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t10.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Need A Miracle",
+      "duration": 231.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crazy Fingers",
+      "duration": 474.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson & Delilah",
+      "duration": 485.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone",
+      "duration": 547.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Goin' Down The Road",
+      "duration": 569.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 419.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 325.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 327.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter",
+      "duration": 466.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around & Around",
+      "duration": 227.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 531.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 304.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "213"
+        }
+      ]
+    }
+  ]
+}

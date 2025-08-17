@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-09-05",
+  "venue": "Richfield Coliseum",
+  "location": "Richfield, OH",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 66.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 509.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 653.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Little Red Rooster.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stagger Lee",
+      "duration": 364.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Stagger Lee.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Queen Jane Approximately",
+      "duration": 431.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Queen Jane Approximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Queen Jane Approximately.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 509.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Ramble On Rose.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 422.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Cassidy.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease Me In",
+      "duration": 203.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Don't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Don't Ease Me In.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower",
+      "duration": 432.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 China Cat Sunflower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 304.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 I Know You Rider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 531.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Man Smart (Woman Smarter).mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship Of Fools",
+      "duration": 478.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Ship Of Fools.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 590.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Truckin'.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Smokestack Lightning",
+      "duration": 375.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Smokestack Lightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Smokestack Lightning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 801.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 705.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 294.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 I Need A Miracle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 564.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Black Peter.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 660.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Sugar Magnolia.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "US Blues",
+      "duration": 323.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 US Blues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

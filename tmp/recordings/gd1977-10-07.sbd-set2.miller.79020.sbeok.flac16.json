@@ -1,0 +1,174 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-10-07",
+  "venue": "University Arena (aka The Pit') - University Of New Mexico",
+  "location": "Albuquerque, NM",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Ramble On Rose",
+      "duration": 556.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Passenger",
+      "duration": 256.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d2t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Terrapin Station ->",
+      "duration": 893.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band ->",
+      "duration": 643.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ->",
+      "duration": 290.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d3t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Iko Iko ->",
+      "duration": 432.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d3t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Wheel ->",
+      "duration": 332.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat ->",
+      "duration": 810.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d3t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugar Magnolia",
+      "duration": 650.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d3t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "One More Saturday Night",
+      "duration": 344.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-10-07d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-10-07d3t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-06-16",
+  "venue": "Freedom Hall",
+  "location": "Louisville, KY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "walk on",
+      "duration": 98.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow",
+      "duration": 360.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Same Thing",
+      "duration": 436.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 387.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tom Thumb's Blues",
+      "duration": 358.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 535.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t06.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 611.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brown Eyed Women",
+      "duration": 365.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Easy Answers",
+      "duration": 398.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-16d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-16d1t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

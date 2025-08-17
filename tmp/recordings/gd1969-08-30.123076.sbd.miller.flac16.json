@@ -1,0 +1,158 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-08-30",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "China Cat Sunflower ->",
+      "duration": 337.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Doin' That Rag",
+      "duration": 505.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Morning Dew",
+      "duration": 666.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Easy Wind",
+      "duration": 506.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Star ->",
+      "duration": 1731.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Saint Stephen ->",
+      "duration": 385.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Eleven ->",
+      "duration": 385.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums ->",
+      "duration": 348.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d2t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "High Time",
+      "duration": 392.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-30d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-30d2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

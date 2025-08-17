@@ -1,0 +1,430 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-07-17",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTuning",
+      "duration": 78.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackLet The Good Times Roll",
+      "duration": 243.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02LetTheGoodTimesRoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02LetTheGoodTimesRoll.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackFeel Like A Stranger",
+      "duration": 501.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03FeelLikeAStranger.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackBuilt To Last",
+      "duration": 388.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04BuiltToLast.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04BuiltToLast.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackMe And My Uncle",
+      "duration": 190.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05MeAndMyUncle.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackCumberland Blues",
+      "duration": 406.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06CumberlandBlues.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackIts All Over Now",
+      "duration": 548.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07ItsAllOverNow.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc01,TrackRow Jimmy",
+      "duration": 666.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track08RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track08RowJimmy.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc01,TrackMasterpiece",
+      "duration": 412.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track09Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track09Masterpiece.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc01,TrackPush Comes To Shove",
+      "duration": 313.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track10PushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track10PushComesToShove.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc01,TrackMusic Never Stopped",
+      "duration": 536.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track11MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track11MusicNeverStopped.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track01 Tuning",
+      "duration": 53.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track02 China Cat Sunflower",
+      "duration": 401.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02ChinaCatSunflower.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track03 I Know You Rider",
+      "duration": 335.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03IKnowYouRider.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc02,Track04 Playing In The Band",
+      "duration": 515.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04PlayingInTheBand.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc02,Track05 Uncle Johns Band",
+      "duration": 519.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05UncleJohnsBand.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc02,Track06 Standing On The Moon",
+      "duration": 546.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06StandingOnTheMoon.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc02,Track07 Drums",
+      "duration": 677.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track07Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Disc02,Track08 Space",
+      "duration": 58.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track08Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Disc03,Track01 Space Con't",
+      "duration": 565.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track01SpaceCont.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track01SpaceCont.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Disc03,Track02 The Wheel",
+      "duration": 275.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track02TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track02TheWheel.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Disc03,Track03 Gimme Some Lovin",
+      "duration": 270.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track03GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track03GimmeSomeLovin.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Disc03,Track04 Goin Down The Road",
+      "duration": 372.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track04GoinDownTheRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track04GoinDownTheRoad.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Disc03,Track05 Not Fade Away",
+      "duration": 665.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track05NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track05NotFadeAway.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Disc03,Track06 We Bid You Goodnight",
+      "duration": 292.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track06WeBidYouGoodnight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track06WeBidYouGoodnight.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Disc03,Track07 Johnny B Goode",
+      "duration": 254.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track07JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track07JohnnyBGoode.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

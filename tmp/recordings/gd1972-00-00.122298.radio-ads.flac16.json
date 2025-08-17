@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-00-00",
+  "venue": "Compilation -- 1972 Radio Promos",
+  "location": "Unknown, Unknown",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Europe '72 #1",
+      "duration": 63.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01-fixed.mp3",
+          "bitrate": "105"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Europe '72 #2",
+      "duration": 64.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02-fixed.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Europe '72 #3",
+      "duration": 64.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03-fixed.mp3",
+          "bitrate": "106"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Radio appology for missing",
+      "duration": 104.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04-fixed.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "History of the Grateful Dead",
+      "duration": 67.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05-fixed.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

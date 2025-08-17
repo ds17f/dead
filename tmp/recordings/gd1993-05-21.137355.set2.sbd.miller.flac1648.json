@@ -1,0 +1,222 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1993-05-21",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 120.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower",
+      "duration": 446.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ChinaCatSunflower.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 427.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Way To Go Home",
+      "duration": 497.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WayToGoHome.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Estimated Prophet",
+      "duration": 798.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05EstimatedProphet.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "He's Gone",
+      "duration": 843.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06HesGone.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums",
+      "duration": 963.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Drums.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space",
+      "duration": 716.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "All Along The Watchtower",
+      "duration": 445.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09AllAlongTheWatchtower.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Morning Dew",
+      "duration": 753.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10MorningDew.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Encore Break",
+      "duration": 47.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EncoreBreak.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Baba O'Riley",
+      "duration": 216.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12BabaOriley.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12BabaOriley.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tomorrow Never Knows",
+      "duration": 340.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13TomorrowNeverKnows.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13TomorrowNeverKnows.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

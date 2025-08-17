@@ -1,0 +1,110 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1973-03-28",
+  "venue": "Springfield Civic Center Arena",
+  "location": "Springfield, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Weather Report Suite Prelude >",
+      "duration": 58.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-28iip-t1.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-03-28iip-t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star >",
+      "duration": 990.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-28iip-t2.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-03-28iip-t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Eyes Of The World >",
+      "duration": 443.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-28iip-t3.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-03-28iip-t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band",
+      "duration": 527.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-28iip-t4.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-03-28iip-t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Johnny B. Goode",
+      "duration": 126.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-28iip-t5.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-03-28iip-t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "See y'all later, bye\"",
+      "duration": 2.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-28iip-t6.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-03-28iip-t6.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-12-30",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc101-Hell In A Bucket",
+      "duration": 444.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc101-hellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc101-hellInABucket.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Althea",
+      "duration": 489.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc102-Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc102-Althea.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc103-CC Rider",
+      "duration": 430.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc103-ccRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc103-ccRider.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc104-Cumberland Blues",
+      "duration": 378.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc104-cumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc104-cumberlandBlues.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc105-My Brother Esau",
+      "duration": 261.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc105-myBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc105-myBrotherEsau.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc106-When Push Comes To Shove",
+      "duration": 348.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc106-whenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc106-whenPushComesToShove.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc107-Beat It On Down The Line",
+      "duration": 200.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc107-beatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc107-beatItOnDownTheLine.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc108-Greatest Story Ever Told",
+      "duration": 245.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc108-greatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc108-greatestStoryEverTold.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc109-Don't Ease Me In",
+      "duration": 208.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc109-dontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc109-dontEaseMeIn.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc110-Music Never Stopped",
+      "duration": 436.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc110-musicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc110-musicNeverStopped.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc201-China Cat Sunflower",
+      "duration": 324.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc201-chinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc201-chinaCatSunflower.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc202-I Know You Rider",
+      "duration": 342.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc202-iKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc202-iKnowYouRider.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc203-Saint Of Circumstance",
+      "duration": 411.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc203-saintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc203-saintOfCircumstance.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc204-Ship Of Fools",
+      "duration": 534.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc204-shipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc204-shipOfFools.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc205-Estimated Prophet",
+      "duration": 636.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc205-estimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc205-estimatedProphet.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc206-Eyes Of The World",
+      "duration": 521.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc206-eyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc206-eyesOfTheWorld.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums*",
+      "duration": 1090.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc207-Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc207-Drums.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc301-Iko Iko",
+      "duration": 449.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc301-ikoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc301-ikoIko.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Disc302-Women Are Smarter",
+      "duration": 272.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc302-womenAreSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc302-womenAreSmarter.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Disc303-Stella Blue",
+      "duration": 599.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc303-stellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc303-stellaBlue.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Disc304-Throwing Stones",
+      "duration": 548.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc304-throwingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc304-throwingStones.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Disc305-Not Fade Away",
+      "duration": 510.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc305-notFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc305-notFadeAway.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Disc306-Johnny B Goode",
+      "duration": 240.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc306-johnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc306-johnnyBGoode.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

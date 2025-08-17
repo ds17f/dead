@@ -1,0 +1,366 @@
+{
+  "rating": 2.025,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1987-03-26",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 4.5,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 69.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "In The Midnight Hour",
+      "duration": 257.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02InTheMidnightHour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02InTheMidnightHour.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain And Snow",
+      "duration": 416.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ColdRainAndSnow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "CC Rider",
+      "duration": 522.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04CcRider.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 790.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RowJimmy.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau",
+      "duration": 287.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MyBrotherEsau.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When Push Comes To Shove",
+      "duration": 279.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07WhenPushComesToShove.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Desolation Row",
+      "duration": 534.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08DesolationRow.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 624.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BirdSong.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Promised Land",
+      "duration": 279.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10PromisedLand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 363.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ChinaCatSunflower.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 325.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12IKnowYouRider.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 505.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone",
+      "duration": 802.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14HesGone.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 512.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 467.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 263.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17INeedAMiracle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 557.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BlackPeter.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Around And Around",
+      "duration": 227.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19AroundAndAround.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Good Lovin'",
+      "duration": 457.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20GoodLovin.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 96.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 317.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

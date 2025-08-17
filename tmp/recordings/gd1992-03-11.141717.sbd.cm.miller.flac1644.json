@@ -1,0 +1,318 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-03-11",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 395.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ColdRainAndSnow.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Wang Dang Doodle",
+      "duration": 517.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02WangDangDoodle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 206.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03DireWolf.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane Approximately",
+      "duration": 479.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04QueenJaneApproximately.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 485.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Althea.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now",
+      "duration": 438.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ItsAllOverNow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "So Many Roads",
+      "duration": 491.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07SoManyRoads.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Picasso Moon",
+      "duration": 387.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PicassoMoon.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower",
+      "duration": 378.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ChinaCatSunflower.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 341.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band",
+      "duration": 435.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11PlayingInTheBand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Terrapin Station",
+      "duration": 935.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TerrapinStation.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 725.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 647.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Last Time",
+      "duration": 361.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15TheLastTime.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter",
+      "duration": 553.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16BlackPeter.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Around And Around",
+      "duration": 458.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17AroundAndAround.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Encore Break",
+      "duration": 155.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18EncoreBreak.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 377.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19KnockinOnHeavensDoor.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

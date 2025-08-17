@@ -1,0 +1,318 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-06-25",
+  "venue": "Robert F. Kennedy Stadium",
+  "location": "Washington DC",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 22.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 504.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Mississppi Half-Step Uptown Toodleloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Mississppi Half-Step Uptown Toodleloo.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 586.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Little Red Rooster.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 388.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Just Like Tom Thumb's Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Just Like Tom Thumb's Blues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 522.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Althea.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 536.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Cassidy.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cumberland Blues",
+      "duration": 393.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Cumberland Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Cumberland Blues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 318.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Promised Land.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower",
+      "duration": 471.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 China Cat Sunflower.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 353.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 I Know You Rider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Saint Of Circumstance",
+      "duration": 481.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Saint Of Circumstance.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 727.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Uncle John's Band.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Corrina",
+      "duration": 709.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Corrina.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 826.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 991.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 248.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 I Need A Miracle.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 661.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Wharf Rat.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia",
+      "duration": 784.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Sugar Magnolia.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Weight",
+      "duration": 371.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 The Weight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 The Weight.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

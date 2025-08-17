@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-04-18",
+  "venue": "Irvine Meadows",
+  "location": "Irvine, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 63.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 342.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 667.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 182.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MeAndMyUncle.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 322.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MexicaliBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "West LA Fadeaway",
+      "duration": 475.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06WestLaFadeaway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Far From Me",
+      "duration": 294.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07FarFromMe.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Row Jimmy",
+      "duration": 731.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08RowJimmy.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning Medley",
+      "duration": 66.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09TuningMedley.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TuningMedley.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Let It Grow",
+      "duration": 739.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10LetItGrow.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 292.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11DontEaseMeIn.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 24.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Iko Iko",
+      "duration": 377.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13IkoIko.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band",
+      "duration": 456.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14PlayingInTheBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Terrapin Station",
+      "duration": 715.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15TerrapinStation.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 605.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 386.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Gimme Some Lovin'",
+      "duration": 297.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GimmeSomeLovin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Morning Dew",
+      "duration": 590.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MorningDew.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 514.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ThrowingStones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 389.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21TurnOnYourLovelight.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 111.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Black Muddy River",
+      "duration": 450.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23BlackMuddyRiver.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

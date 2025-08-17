@@ -1,0 +1,120 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-08-16-max-yasgurs-farm-bethel-ny-usa/",
+  "show_id": "1969-08-16-max-yasgurs-farm-bethel-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Max Yasgur's Farm",
+  "location_raw": "Bethel, NY",
+  "city": "Bethel",
+  "state": "NY",
+  "country": "USA",
+  "date": "1969-08-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Canned Heat",
+    "Creedence Clearwater Revival",
+    "Keef Hartley Band",
+    "Janis Joplin",
+    "Jefferson Airplane",
+    "Mountain",
+    "Quill",
+    "Santana",
+    "The Who"
+  ],
+  "collection_timestamp": "2025-08-10T08:14:50.138160",
+  "show_time": null,
+  "recordings": [
+    "gd69-08-16.sbd.cotsman.15205.sbeok.shnf",
+    "gd1969-08-16.sbd.gmb.95857.flac24",
+    "gd1969-08-16.sbd.gmb.95856.flac16",
+    "gd1969-08-16.sbd.dfinney.6103.shnf",
+    "gd1969-08-16.139807.sbd.gastwirt.miller.sirmick.flac1644",
+    "gd1969-08-16.sbd.gmb.fixed.95917.flac24",
+    "gd1969-08-16.sbd.gmb.fixed.95918.flac16"
+  ],
+  "best_recording": "gd69-08-16.sbd.cotsman.15205.sbeok.shnf",
+  "avg_rating": 1.9200000000000004,
+  "raw_rating": 3.9066666666666667,
+  "recording_count": 7,
+  "confidence": 1.0,
+  "total_high_ratings": 48,
+  "total_low_ratings": 6,
+  "source_types": {
+    "SBD": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

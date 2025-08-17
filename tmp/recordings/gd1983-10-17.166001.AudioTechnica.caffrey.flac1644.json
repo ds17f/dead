@@ -1,0 +1,285 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-10-17",
+  "venue": "Olympic Center",
+  "location": "Lake Placid, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Sugaree",
+      "duration": 68.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t01 - Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t01 - Sugaree.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t01 - Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t01 - Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 409.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t02 - Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t02 - Little Red Rooster.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t02 - Touch Of Grey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t02 - Touch Of Grey.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 584.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t03 - Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t03 - Friend Of The Devil.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t03 - Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t03 - Samson & Delilah.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brother Esau",
+      "duration": 544.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t04 - Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t04 - Brother Esau.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t04 - To Lay Me Down.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t04 - To Lay Me Down.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 480.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t05 - Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t05 - Bird Song.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t05 - Man Smart Women Smarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t05 - Man Smart Women Smarter.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hell In A Bucket",
+      "duration": 752.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t06 - Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t06 - Hell In A Bucket.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t06 - Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t06 - Terrapin Station.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 610.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s01t07 - Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t07 - Deal.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "s02t07 - Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t07 - Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space",
+      "duration": 647.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s02t08 - Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t08 - Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Wheel",
+      "duration": 420.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s02t09 - The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t09 - The Wheel.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Need A Miracle",
+      "duration": 277.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s02t10 - I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t10 - I Need A Miracle.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 434.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s02t11 - Goin' Down The Road Feeling Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t11 - Goin' Down The Road Feeling Bad.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Good Lovin'",
+      "duration": 494.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s02t12 - Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t12 - Good Lovin'.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Revolution",
+      "duration": 334.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s02t13 - Revolution.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t13 - Revolution.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

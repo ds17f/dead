@@ -1,0 +1,78 @@
+{
+  "rating": 2.5,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-09-11",
+  "venue": "Alexandra Palace",
+  "location": "London, England",
+  "raw_rating": 5.0,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Phil & Ned -> Jam ->",
+      "duration": 1608.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-11d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-11d1t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Eyes Of The World -> Jam ->",
+      "duration": 1851.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-11d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-11d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Wharf Rat",
+      "duration": 699.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-11d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-11d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Around And Around",
+      "duration": 274.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-11d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-11d1t04.mp3",
+          "bitrate": "203"
+        }
+      ]
+    }
+  ]
+}

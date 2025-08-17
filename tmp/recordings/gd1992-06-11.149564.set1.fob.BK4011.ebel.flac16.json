@@ -1,0 +1,113 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-06-11",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 112.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 421.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Bertha.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Minglewood Blues",
+      "duration": 493.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Minglewood Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 694.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Row Jimmy.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Queen Jane",
+      "duration": 438.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Queen Jane.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dire Wolf",
+      "duration": 274.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Dire Wolf.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Beat It On Down The Line",
+      "duration": 214.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Beat It On Down The Line.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Loose Lucy",
+      "duration": 463.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Loose Lucy.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Music Never Stopped",
+      "duration": 483.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Music Never Stopped.flac"
+        }
+      ]
+    }
+  ]
+}

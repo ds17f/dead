@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1982-10-10",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "New Minglewood Blues ->",
+      "duration": 448.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree ->",
+      "duration": 611.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 461.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tennessee Jed",
+      "duration": 535.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 361.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 440.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Far From Me ->",
+      "duration": 250.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain ->",
+      "duration": 536.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower ->",
+      "duration": 353.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 373.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d1t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 47.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band ->",
+      "duration": 431.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Crazy Fingers ->",
+      "duration": 668.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Lost Sailor ->",
+      "duration": 444.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Saint Of Circumstance ->",
+      "duration": 421.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t05.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Touch Of Grey ->",
+      "duration": 437.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 501.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space ->",
+      "duration": 403.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Wheel ->",
+      "duration": 315.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones ->",
+      "duration": 465.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away ->",
+      "duration": 279.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Black Peter ->",
+      "duration": 495.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sugar Magnolia",
+      "duration": 649.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t06.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "(I Can't Get No) Satisfaction",
+      "duration": 379.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t07.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 405.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-10-10d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-10-10d3t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

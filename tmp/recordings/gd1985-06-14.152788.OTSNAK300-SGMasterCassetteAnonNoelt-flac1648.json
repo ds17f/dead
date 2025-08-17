@@ -1,0 +1,289 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-06-14",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Stg Pepper's intro - tuning",
+      "duration": 99.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t01.mp3",
+          "bitrate": "206"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dancin' in the Streets",
+      "duration": 691.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t02.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "West L.A. Fadeaway",
+      "duration": 640.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t03.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "C.C. Rider",
+      "duration": 571.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t04.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Peggy-O",
+      "duration": 525.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t05.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t05.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Hell in a Bucket",
+      "duration": 497.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t06.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "[technical difficulties]",
+      "duration": 410.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t07.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Keep On Growing ->",
+      "duration": 250.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t08.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t08.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Stagger Lee ->",
+      "duration": 344.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t09.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Let It Grow ->",
+      "duration": 573.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t10.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t10.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Deal",
+      "duration": 290.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t11.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t11.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

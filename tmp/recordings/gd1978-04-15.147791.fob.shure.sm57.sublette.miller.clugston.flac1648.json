@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-04-15",
+  "venue": "William & Mary Hall",
+  "location": "Williamsburg, VA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 250.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t01 Crowd.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 613.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t02 Mississippi Half-Step.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t02 Mississippi Half-Step.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Passenger",
+      "duration": 390.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t03 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t03 Passenger.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Friend Of The Devil",
+      "duration": 529.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t04 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t04 Friend Of The Devil.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "El Paso",
+      "duration": 368.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t05 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t05 El Paso.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Brown Eyed Women",
+      "duration": 442.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t06 Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t06 Brown Eyed Women.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Let It Grow",
+      "duration": 900.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t07 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t07 Let It Grow.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Deal",
+      "duration": 424.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s1t08 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s1t08 Deal.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 152.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t01 Crowd.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Bertha >",
+      "duration": 349.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t02 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t02 Bertha.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Good Lovin'",
+      "duration": 588.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t03 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t03 Good Lovin'.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Candyman",
+      "duration": 691.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t04 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t04 Candyman.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Sunrise >",
+      "duration": 233.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t05 Sunrise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t05 Sunrise.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "PLayin' In The Band >",
+      "duration": 872.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t06 Playin' In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t06 Playin' In The Band.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 689.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t07 Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Not Fade Away >",
+      "duration": 828.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t08 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t08 Not Fade Away.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Morning Dew",
+      "duration": 646.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t09 Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t09 Morning Dew.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Around & Around",
+      "duration": 483.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t10 Around & Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t10 Around & Around.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Encore Break",
+      "duration": 141.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t11 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t11 Encore Break.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "One More Saturday Night",
+      "duration": 287.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-15 s2t12 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-15 s2t12 One More Saturday Night.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

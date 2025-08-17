@@ -1,0 +1,62 @@
+{
+  "rating": 1.4625000000000001,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1972-10-28",
+  "venue": "Cleveland Public Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 3.25,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dick Latvala Source Intro",
+      "duration": 85.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-28t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-28t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star >",
+      "duration": 924.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-28t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-28t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugar Magnolia",
+      "duration": 303.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-28t03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-28t03.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 2.4,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-10-24",
+  "venue": "Milwaukee Performing Arts Center",
+  "location": "Milwaukee, WI",
+  "raw_rating": 4.8,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin' ->",
+      "duration": 681.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums ->",
+      "duration": 182.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One ->",
+      "duration": 1396.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "He's Gone ->",
+      "duration": 767.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One",
+      "duration": 103.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Casey Jones",
+      "duration": 373.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t06.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Johnny B. Goode",
+      "duration": 229.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-24d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24d3t07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

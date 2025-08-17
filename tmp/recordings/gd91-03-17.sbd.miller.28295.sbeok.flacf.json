@@ -1,0 +1,350 @@
+{
+  "rating": 2.0,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1991-03-17",
+  "venue": "Capitol Centre",
+  "location": "Landover, MD",
+  "raw_rating": 4.0,
+  "high_ratings": 9,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 84.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hell In A Bucket ->",
+      "duration": 371.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Sugaree",
+      "duration": 845.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Walkin' Blues",
+      "duration": 432.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Peggy-O",
+      "duration": 433.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Queen Jane Approximately",
+      "duration": 423.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Rubin And Cherise",
+      "duration": 632.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Let It Grow",
+      "duration": 787.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d1t08.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "China Cat Sunflower ->",
+      "duration": 371.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider ->",
+      "duration": 423.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Man Smart (Woman Smarter) ->",
+      "duration": 546.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crazy Fingers ->",
+      "duration": 535.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin' ->",
+      "duration": 484.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "New Speedway Boogie ->",
+      "duration": 619.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 436.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d2t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 757.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d3t01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel ->",
+      "duration": 347.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d3t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All Along The Watchtower ->",
+      "duration": 514.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d3t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter ->",
+      "duration": 591.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d3t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around ->",
+      "duration": 513.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d3t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "U. S. Blues",
+      "duration": 317.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-17d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-17d3t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

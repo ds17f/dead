@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-05-24",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "01. Crowd",
+      "duration": 137.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01. Crowd.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "02. Shakedown Street",
+      "duration": 865.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02. Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02. Shakedown Street.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "03. The Same Thing",
+      "duration": 554.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03. The Same Thing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03. The Same Thing.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "04. Dire Wolf",
+      "duration": 251.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04. Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04. Dire Wolf.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "05. When I Paint My Masterpiece",
+      "duration": 355.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05. When I Paint My Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05. When I Paint My Masterpiece.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "06. Loser",
+      "duration": 475.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06. Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06. Loser.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "07. It's All Over Now",
+      "duration": 438.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07. It's All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07. It's All Over Now.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "08. Foolish Heart",
+      "duration": 521.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08. Foolish Heart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08. Foolish Heart.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "09. Eyes Of The World >",
+      "duration": 964.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09. Eyes Of The World >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09. Eyes Of The World >.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "10. Samson & Delilah",
+      "duration": 570.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10. Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10. Samson & Delilah.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "11. So Many Roads",
+      "duration": 433.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11. So Many Roads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11. So Many Roads.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "12. Way To Go Home >",
+      "duration": 367.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12. Way To Go Home >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12. Way To Go Home >.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "13. Corrina >",
+      "duration": 661.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13. Corrina >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13. Corrina >.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "14. Drums >",
+      "duration": 636.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14. Drums >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14. Drums >.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "15. Space >",
+      "duration": 817.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15. Space >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15. Space >.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "16. The Last Time >",
+      "duration": 374.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16. The Last Time >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16. The Last Time >.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "17. Morning Dew",
+      "duration": 681.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17. Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17. Morning Dew.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "18. Johnny B. Goode",
+      "duration": 278.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18. Johnny B. Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18. Johnny B. Goode.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

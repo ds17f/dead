@@ -1,0 +1,126 @@
+{
+  "rating": 2.0833333333333335,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-02-22",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.166666666666667,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let It Grow >",
+      "duration": 149.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 189.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "U.S. Blues (Take 1) >",
+      "duration": 198.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "U.S. Blues (Take 2)",
+      "duration": 178.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Attics Of My Life >",
+      "duration": 94.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It Must Have Been The Roses >",
+      "duration": 316.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jam",
+      "duration": 70.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-02-22sc-d1t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-02-22sc-d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

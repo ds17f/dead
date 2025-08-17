@@ -1,0 +1,942 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1975-03-01",
+  "venue": "Bob Weir's Studio",
+  "location": "Mill Valley, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "banter",
+      "duration": 2517.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t01.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "tuning/changes (Phil/acoustic)",
+      "duration": 586.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "changes/banter (multiple takes)",
+      "duration": 914.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Habanera/banter",
+      "duration": 266.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "changes/jam",
+      "duration": 178.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "changes/banter (multiple takes)",
+      "duration": 494.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "changes/banter (multiple takes)",
+      "duration": 390.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s1t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "tuning/changes (Phil/acoustic)",
+      "duration": 791.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "tuning/banter/Distorto (multiple takes)",
+      "duration": 1020.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "banter/tuning/Distorto/banter/noodling (multiple takes)",
+      "duration": 978.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "banter over joint",
+      "duration": 759.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t04.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "tuning/changes/banter (Phil/acoustic)",
+      "duration": 386.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "jam/banter",
+      "duration": 772.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t06.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "banter/changes (Phil/acoustic)",
+      "duration": 206.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t07.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "banter (He's Gone)",
+      "duration": 545.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t08.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "banter (Jerry's got an idea)",
+      "duration": 147.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s2.t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s2.t09.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "301",
+      "title": "jam/banter (multiple takes)",
+      "duration": 538.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "302",
+      "title": "Blues for Allah/banter (multiple takes)",
+      "duration": 300.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "303",
+      "title": "Blues for Allah/banter",
+      "duration": 379.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "304",
+      "title": "Blues for Allah/banter",
+      "duration": 107.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "305",
+      "title": "drums/jam/banter",
+      "duration": 215.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "306",
+      "title": "drums/jam/banter",
+      "duration": 132.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "307",
+      "title": "drums/banter/drums (multiple takes)",
+      "duration": 882.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "308",
+      "title": "banter",
+      "duration": 265.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t08.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "309",
+      "title": "Help on the Way (multiple takes w/banter)",
+      "duration": 681.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t09.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "310",
+      "title": "Help on the Way (multiple takes w/banter)",
+      "duration": 834.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t10.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "311",
+      "title": "Help on the Way (multiple takes w/banter)",
+      "duration": 585.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t11.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "312",
+      "title": "banter/tuning/jam -> Blues for Allah",
+      "duration": 527.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s3.t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s3.t12.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "401",
+      "title": "tuning -> jam -> Blues for Allah -> jam -> banter",
+      "duration": 636.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "402",
+      "title": "banter -> tuning -> Blues for Allah (melody)",
+      "duration": 162.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "403",
+      "title": "tuning -> Blues for Allah/banter",
+      "duration": 64.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "404",
+      "title": "Blues for Allah -> jam -> Blues for Allah",
+      "duration": 676.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "405",
+      "title": "tuning/banter",
+      "duration": 429.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "406",
+      "title": "Blues for Allah",
+      "duration": 172.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t06.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "407",
+      "title": "banter/jam/banter/tuning",
+      "duration": 663.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t07.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "408",
+      "title": "banter/tuning (Phil/solo/electric guitar) (fades out)",
+      "duration": 388.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t08.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "409",
+      "title": "tuning/changes (Phil/solo/electric guitar) (fades in)",
+      "duration": 396.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t09.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "410",
+      "title": "banter/whistling/dead air/piano/dead air",
+      "duration": 279.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t10.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "411",
+      "title": "Slipknot! (demo playback) banter/dead air/banter",
+      "duration": 880.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t11.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "412",
+      "title": "tuning/Phil practicing changes on electric guitar (fades out)",
+      "duration": 626.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t12.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "413",
+      "title": "tuning/dead air/banter/tuning(Phil, bass)/banter (fades in)",
+      "duration": 615.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t13.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "414",
+      "title": "coffee brewing/tuning/Sage & Spirit/banter/tuning",
+      "duration": 407.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t14.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "415",
+      "title": "tuning/noodling (Garcia - the hip kind)",
+      "duration": 324.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t15.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "416",
+      "title": "banter/tuning/banter",
+      "duration": 532.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t16.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "417",
+      "title": "tuning/The Music Never Stopped/tuning/banter",
+      "duration": 339.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t17.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "418",
+      "title": "The Music Never Stopped/banter/tuning",
+      "duration": 258.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t18.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "419",
+      "title": "The Music Never Stopped (blues jam)",
+      "duration": 183.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t19.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "420",
+      "title": "The Music Never Stopped jam",
+      "duration": 674.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t20.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "421",
+      "title": "banter/tuning/playback/dead air",
+      "duration": 198.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t21.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "422",
+      "title": "playback/Otis/drums",
+      "duration": 205.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t22.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "423",
+      "title": "piano/banter/Otis",
+      "duration": 293.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t23.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "424",
+      "title": "Otis dropping dimes",
+      "duration": 161.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t24.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "425",
+      "title": "banter/tuning",
+      "duration": 204.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t25.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t25.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "426",
+      "title": "tuning/jam (multiple takes)",
+      "duration": 278.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t26.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t26.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "427",
+      "title": "Lazy Lightnin' (early progressions, multiple takes)",
+      "duration": 316.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t27.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t27.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "428",
+      "title": "tuning/banter/Lazy Lightnin'",
+      "duration": 152.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t28.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t28.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "429",
+      "title": "banter/tuning/Phil's tune",
+      "duration": 241.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t29.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t29.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "430",
+      "title": "tuning/Phil's tune",
+      "duration": 390.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75.xx.xx.s4.t30.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75.xx.xx.s4.t30.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

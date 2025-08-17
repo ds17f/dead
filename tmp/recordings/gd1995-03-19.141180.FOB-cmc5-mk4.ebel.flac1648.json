@@ -1,0 +1,318 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-03-19",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 202.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway",
+      "duration": 333.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02AlabamaGetaway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walking Blues",
+      "duration": 443.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WalkingBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WalkingBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "So Many Roads",
+      "duration": 513.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04SoManyRoads.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy Answers",
+      "duration": 410.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05EasyAnswers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05EasyAnswers.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Don't Ease Me In",
+      "duration": 242.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06DontEaseMeIn.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Unbroken Chain",
+      "duration": 383.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07UnbrokenChain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07UnbrokenChain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 103.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Samson & Delilah",
+      "duration": 518.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09SamsonDelilah.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Long Way To Go Home",
+      "duration": 417.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10LongWayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10LongWayToGoHome.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Fingers",
+      "duration": 572.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11CrazyFingers.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Corrina",
+      "duration": 662.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Corrina.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Matilda",
+      "duration": 302.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Matilda.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Matilda.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drumz",
+      "duration": 896.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drumz.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 751.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 326.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16INeedAMiracle.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Stella Blue",
+      "duration": 477.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17StellaBlue.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 629.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Brokedown Palace",
+      "duration": 285.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BrokedownPalace.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

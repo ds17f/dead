@@ -1,0 +1,174 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-06-10",
+  "venue": "RFK Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 67.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t01.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "El Paso",
+      "duration": 270.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bird Song",
+      "duration": 717.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band",
+      "duration": 1069.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tuning",
+      "duration": 21.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t05.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eyes Of The World ->",
+      "duration": 1264.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stella Blue",
+      "duration": 491.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t07.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big River",
+      "duration": 305.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d1t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Here Comes Sunshine",
+      "duration": 713.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d2t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around And Around",
+      "duration": 316.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-06-10d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-10d2t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

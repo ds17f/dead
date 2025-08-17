@@ -1,0 +1,217 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-04-04-providence-civic-center-providence-ri-usa/",
+  "show_id": "1985-04-04-providence-civic-center-providence-ri-usa",
+  "band": "Grateful Dead",
+  "venue": "Providence Civic Center",
+  "location_raw": "Providence, RI",
+  "city": "Providence",
+  "state": "RI",
+  "country": "USA",
+  "date": "1985-04-04",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "She Belongs To Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:30.566256",
+  "show_time": null,
+  "recordings": [
+    "gd85-04-04.sbd.willy.11704.sbeok.shnf",
+    "gd1985-04-04.126237.sbd.unknown.bzlrbi.flac16",
+    "gd1985-04-04.sbd.tetzeli-orig-fix-11704.33816.shnf",
+    "gd1985-04-04.149449.sbd.miller.clugston.flac16",
+    "gd1985-04-04.152459.sbd.pcm.miller.flac1644",
+    "gd85-04-04.oade-schoeps.sacks.23848.sbeok.flacf",
+    "gd1985-04-04.senn421.mccue.ford.77029.sbeok.flac",
+    "gd1985-04-04.140939.unknown.bryant.miller.clugston.flac1644",
+    "gd1985-04-04.nak100.holtz.jaz.95626.flac16",
+    "gd1985-04-04.nak300.damico.87352.sbeok.flac16",
+    "gd1985-04-04.145469.aud.lamarre.berger.flac16",
+    "gd1985-04-04.149316.senn441.hunt.mattes.miller.clugston.flac2496",
+    "gd1985-04-04.145468.aud.lamarre.berger.flac24",
+    "gd1985-04-04.149315.senn441.hunt.mattes.miller.clugston.flac1648",
+    "gd1985-04-04.140940.unknown.bryant.miller.clugston.flac2496",
+    "gd1985-04-04.152127.beyerm88.holbrook.flac1644",
+    "gd1985-04-04.118787.BeyerM160.daweez.d5scott.flac16",
+    "gd1985-04-04.151191.nak701s.barnum.miller.flac16",
+    "gd1985-04-04.152128.beyerm88.holbrook.flac2448",
+    "gd1985-04-04.124813.chasingwilma.flac24",
+    "gd1985-04-04.151192.nak701s.barnum.miller.flac2496",
+    "gd1985-04-04.132860.at-akg.ackerman.flac1644"
+  ],
+  "best_recording": "gd85-04-04.sbd.willy.11704.sbeok.shnf",
+  "avg_rating": 1.8677966101694916,
+  "raw_rating": 4.148936170212766,
+  "recording_count": 22,
+  "confidence": 1.0,
+  "total_high_ratings": 39,
+  "total_low_ratings": 5,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 15,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

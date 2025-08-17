@@ -1,0 +1,374 @@
+{
+  "rating": 1.25,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1988-09-30",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 2.5,
+  "high_ratings": 1,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 50.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Iko Iko",
+      "duration": 241.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Walkin' Blues",
+      "duration": 277.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Stagger Lee",
+      "duration": 225.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Me And My Uncle ->",
+      "duration": 128.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Big River",
+      "duration": 238.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "When Push Comes To Shove",
+      "duration": 236.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t07.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Let It Grow",
+      "duration": 448.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d1t08.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Bertha",
+      "duration": 250.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playin' In The Band ->",
+      "duration": 249.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Terrapin Station ->",
+      "duration": 360.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums ->",
+      "duration": 257.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space ->",
+      "duration": 202.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t05.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Wheel ->",
+      "duration": 172.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "All Along The Watchtower ->",
+      "duration": 208.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t07.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter ->",
+      "duration": 271.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t08.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Sugar Magnolia",
+      "duration": 316.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t09.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "U.S. Blues",
+      "duration": 181.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-30d2t10.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd88-09-30d2t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd88-09-30d2t10.shn"
+        }
+      ]
+    }
+  ]
+}

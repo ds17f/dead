@@ -1,0 +1,158 @@
+{
+  "rating": 3.6799999999999997,
+  "review_count": 5,
+  "source_type": "FM",
+  "confidence": 1.0,
+  "date": "1968-10-13",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.6,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star ->",
+      "duration": 788.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint Stephen ->",
+      "duration": 222.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven ->",
+      "duration": 829.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Death Don't Have No Mercy",
+      "duration": 542.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "That's It For The Other One ->",
+      "duration": 1075.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "New Potato Caboose ->",
+      "duration": 188.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums ->",
+      "duration": 261.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Caution Jam ->",
+      "duration": 129.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t08.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Feedback",
+      "duration": 331.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-13d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-13d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

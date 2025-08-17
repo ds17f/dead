@@ -1,0 +1,350 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-03-17",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTuning",
+      "duration": 159.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackHere Comes Sunshine",
+      "duration": 376.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02HereComesSunshine.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackWang Dang Doodle",
+      "duration": 499.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03WangDangDoodle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackPeggy-O",
+      "duration": 460.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04Peggy-o.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackQueen Jane Approximately",
+      "duration": 457.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05QueenJaneApproximately.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackLazy River Road",
+      "duration": 521.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06LazyRiverRoad.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackEternity",
+      "duration": 579.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07Eternity.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc01,TrackLoose lucy",
+      "duration": 442.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track08LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track08LooseLucy.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc02,Track01 Tuning",
+      "duration": 69.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc02,Track02 China Cat Sunflower",
+      "duration": 364.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02ChinaCatSunflower.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track03 I Know You Rider",
+      "duration": 343.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03IKnowYouRider.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track04 Samba In The Rain",
+      "duration": 431.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04SambaInTheRain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track05 Truckin",
+      "duration": 570.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track06 New Speedway Boogie",
+      "duration": 761.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06NewSpeedwayBoogie.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc02,Track07 Jerry Jam With Drums",
+      "duration": 343.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track07JerryJamWithDrums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track07JerryJamWithDrums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc02,Track08 Drums",
+      "duration": 478.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track08Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track08Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc03,Track01 Space",
+      "duration": 1197.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track01Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc03,Track02 All Along The Watchtower",
+      "duration": 494.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track02AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track02AllAlongTheWatchtower.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Disc03,Track03 Standing On The Moon",
+      "duration": 502.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track03StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track03StandingOnTheMoon.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Disc03,Track04 Sugar Magnolia",
+      "duration": 608.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track04SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track04SugarMagnolia.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Disc03,Track05 Lucy In The Sky With Diamonds",
+      "duration": 485.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track05LucyInTheSkyWithDiamonds.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track05LucyInTheSkyWithDiamonds.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

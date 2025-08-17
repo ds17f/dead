@@ -1,0 +1,190 @@
+{
+  "rating": 2.1375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1982-08-03",
+  "venue": "Starlight Theater",
+  "location": "Kansas City, MO",
+  "raw_rating": 4.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street >",
+      "duration": 849.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d02t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson and Delilah",
+      "duration": 572.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d02t02.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "To Lay Me Down",
+      "duration": 618.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d02t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Let It Grow >",
+      "duration": 784.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d02t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 533.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d02t05.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space >",
+      "duration": 573.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d03t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "He's Gone >",
+      "duration": 737.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d03t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One >",
+      "duration": 507.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d03t03.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Stella Blue >",
+      "duration": 596.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d03t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 598.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d03t05.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "KC Jones",
+      "duration": 301.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-08-03d03t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-03d03t06.mp3",
+          "bitrate": "203"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-06-10",
+  "venue": "Robert F. Kennedy Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Playing\u2019 In The Band",
+      "duration": 797.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Eyes Of The World >",
+      "duration": 1288.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stella Blue",
+      "duration": 489.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big/River",
+      "duration": 341.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Here Comes Sunshine",
+      "duration": 712.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Around And Around",
+      "duration": 384.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star",
+      "duration": 1347.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-06-10.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-06-10.t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

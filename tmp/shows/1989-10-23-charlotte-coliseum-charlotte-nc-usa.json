@@ -1,0 +1,204 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-10-23-charlotte-coliseum-charlotte-nc-usa/",
+  "show_id": "1989-10-23-charlotte-coliseum-charlotte-nc-usa",
+  "band": "Grateful Dead",
+  "venue": "Charlotte Coliseum",
+  "location_raw": "Charlotte, NC",
+  "city": "Charlotte",
+  "state": "NC",
+  "country": "USA",
+  "date": "1989-10-23",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "California Earthquake (Whole lotta Shakin' Goin' On)",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "We Can Run",
+          "url": "https://jerrygarcia.com/song/we-can-run/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Will Take You Home",
+          "url": "https://jerrygarcia.com/song/i-will-take-you-home/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:04:57.246630",
+  "show_time": null,
+  "recordings": [
+    "gd89-10-23.sbd.jeffm.2223.sbeok.shnf",
+    "gd1989-10-23.sbd.walker-scotton.miller.83327.sbeok.flac16",
+    "gd1989-10-23.147762.sbd.miller.flac24",
+    "gd1989-10-23.148155.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-10-23.mtx.seamons.102771.sbeok.flac16",
+    "gd1989-10-23.Nak300CP4.JB.Keo.116205.Flac1644",
+    "gd1989-10-23.nak300.holtz.lmpp.96922.flac16",
+    "gd1989-10-23.131026.schoeps.deal.jwpetty.flac16",
+    "gd1989-10-23.170503.akg.c522.hessberg.miller.clugston.flac2496",
+    "gd1989-10-23.147916.mtx.tobin.flac16",
+    "gd1989-10-23.147913.mtx.tobin.flac24",
+    "gd1989-10-23.147645.nak300CP4.ebel.flac2496",
+    "gd1989-10-23.147918.5-1.tobin.flac1648",
+    "gd1989-10-23.173236.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1989-10-23.142577.fob.schoeps.cmc4.mk4.mattes.miller.clugston.flac1648",
+    "gd1989-10-23.147917.dts.tobin.flac16",
+    "gd1989-10-23.149694.boedicker.flac1644",
+    "gd1989-10-23.170502.akg.c522.hessberg.miller.clugston.flac1648",
+    "gd1989-10-23.Nak300CP4.JB.Keo.116206.Flac2496",
+    "gd1989-10-23.173235.beyer.m160.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd89-10-23.sbd.jeffm.2223.sbeok.shnf",
+  "avg_rating": 1.9728260869565217,
+  "raw_rating": 4.03125,
+  "recording_count": 20,
+  "confidence": 1.0,
+  "total_high_ratings": 22,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 16
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

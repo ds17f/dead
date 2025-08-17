@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-06",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Space ->",
+      "duration": 370.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-06.s2t06.filler.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-06.s2t06.filler.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One ->",
+      "duration": 847.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-06.s2t07.filler.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-06.s2t07.filler.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Throwing Stones ->",
+      "duration": 553.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-06.s2t08.filler.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-06.s2t08.filler.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Not Fade Away",
+      "duration": 432.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-06.s2t09.filler.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-06.s2t09.filler.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "One More Saturday Night",
+      "duration": 304.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-06.s2t10.filler.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-06.s2t10.filler.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "rating": 1.9285714285714286,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-08-16",
+  "venue": "Woodstock Music",
+  "location": "Bethel, NY",
+  "raw_rating": 3.857142857142857,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Stage Announcements, Introduction",
+      "duration": 188.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t01.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint Stephen >",
+      "duration": 124.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried >",
+      "duration": 162.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time false start",
+      "duration": 38.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t04.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stage Banter. Technical Difficulties",
+      "duration": 628.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t05.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star >",
+      "duration": 1145.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "High Time",
+      "duration": 370.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d1t07.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn On Your Lovelight",
+      "duration": 2876.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d2t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Applause, Stage Announcements",
+      "duration": 112.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16d2t02.mp3",
+          "bitrate": "149"
+        }
+      ]
+    }
+  ]
+}

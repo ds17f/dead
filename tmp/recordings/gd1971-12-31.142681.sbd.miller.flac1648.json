@@ -1,0 +1,574 @@
+{
+  "rating": 2.8,
+  "review_count": 2,
+  "source_type": "FM",
+  "confidence": 0.4,
+  "date": "1971-12-31",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 23.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Introduction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Introduction.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dancing In The Street",
+      "duration": 554.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02DancingInTheStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02DancingInTheStreet.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mr Charlie",
+      "duration": 234.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03MrCharlie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03MrCharlie.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brown Eyed Women",
+      "duration": 288.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BrownEyedWomen.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 209.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BeatItOnDownTheLine.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "You Win Again",
+      "duration": 225.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06YouWinAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06YouWinAgain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jack Straw",
+      "duration": 284.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07JackStraw.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sugaree",
+      "duration": 438.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Sugaree.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "El Paso",
+      "duration": 264.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ElPaso.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Chinatown Shuffle",
+      "duration": 164.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ChinatownShuffle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ChinatownShuffle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tennessee Jed",
+      "duration": 416.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11TennesseeJed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Mexicali Blues",
+      "duration": 207.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12MexicaliBlues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "China Cat Sunflower",
+      "duration": 284.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ChinaCatSunflower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Know You Rider",
+      "duration": 407.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14IKnowYouRider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Next Time You See Me",
+      "duration": 389.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15NextTimeYouSeeMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15NextTimeYouSeeMe.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Playing In The Band",
+      "duration": 461.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16PlayingInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Loser",
+      "duration": 468.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Loser.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "One More Saturday Night",
+      "duration": 306.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18OneMoreSaturdayNight.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Bill Graham Intro",
+      "duration": 65.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BillGrahamIntro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BillGrahamIntro.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stars And Stripes Forever",
+      "duration": 110.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20StarsAndStripesForever.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20StarsAndStripesForever.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truckin'",
+      "duration": 531.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Truckin.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Drums",
+      "duration": 186.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Other One",
+      "duration": 357.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23TheOtherOne.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Me And My Uncle",
+      "duration": 175.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24MeAndMyUncle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "The Other One",
+      "duration": 850.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25TheOtherOne.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Black Peter",
+      "duration": 525.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26BlackPeter.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Big River",
+      "duration": 243.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27BigRiver.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "The Same Thing",
+      "duration": 455.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "28TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28TheSameThing.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Ramble On Rose",
+      "duration": 371.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "29RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29RambleOnRose.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Sugar Magnolia",
+      "duration": 427.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "30SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30SugarMagnolia.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Not Fade Away",
+      "duration": 362.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "31NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31NotFadeAway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 418.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "32GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Not Fade Away",
+      "duration": 191.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "33NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33NotFadeAway.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Encore Break",
+      "duration": 307.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "34EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34EncoreBreak.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Casey Jones",
+      "duration": 335.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "35CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "35CaseyJones.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

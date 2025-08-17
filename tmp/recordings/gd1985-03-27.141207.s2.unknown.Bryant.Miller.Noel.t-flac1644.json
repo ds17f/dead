@@ -1,0 +1,158 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-03-27",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 33.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street ->",
+      "duration": 818.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Uncle John's Band ->",
+      "duration": 479.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing in the Band",
+      "duration": 851.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ->",
+      "duration": 396.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space ->",
+      "duration": 460.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stella Blue ->",
+      "duration": 555.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn On Your Love Light",
+      "duration": 535.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Touch of Grey",
+      "duration": 423.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-27.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-27.s2t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-07-13-ventura-county-fairgrounds-ventura-ca-usa/",
+  "show_id": "1985-07-13-ventura-county-fairgrounds-ventura-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Ventura County Fairgrounds",
+  "location_raw": "Ventura, CA",
+  "city": "Ventura",
+  "state": "CA",
+  "country": "USA",
+  "date": "1985-07-13",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Comes A Time",
+          "url": "https://jerrygarcia.com/song/comes-a-time/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:54:12.579580",
+  "show_time": null,
+  "recordings": [
+    "gd85-07-13.sbd.georges.372.sbefail.shnf",
+    "gd1985-07-13.sbd.walker-scotton.miller.106193.flac16",
+    "gd1985-07-13.152522.sbd.cm.miller.t.flac16",
+    "gd1985-07-13.152473.sbd.walker-scotton.miller.flac2496",
+    "gd1985-07-13.nak300.tonys.77489.sbeok.flac16",
+    "gd1985-07-13.BeyerM160.connor.76913.sbeok.flac16",
+    "gd1985-07-13.senn441.mccue.ford.89032.sbeok.flac16",
+    "gd1985-07-13.152076.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1985-07-13.150524.FOB.Nak.700.Dsd.Mow.Miller.Noel.t.flac2496",
+    "gd1985-07-13.152825.beyerm88-pinney-holbrook.flac1644",
+    "gd1985-07-13.150578.FOB.Nak.700.Dsd.Mow.Miller.Noel.t.flac1644",
+    "gd1985-07-13.152075.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1985-07-13.133534.aud.Holtz.NakCM104.flac2496",
+    "gd1985-07-13.152826.beyerm88-pinney-holbrook.flac2448"
+  ],
+  "best_recording": "gd85-07-13.sbd.georges.372.sbefail.shnf",
+  "avg_rating": 2.1911134903640255,
+  "raw_rating": 4.454545454545454,
+  "recording_count": 14,
+  "confidence": 1.0,
+  "total_high_ratings": 49,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 9,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

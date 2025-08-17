@@ -1,0 +1,430 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-08-12",
+  "venue": "Salt Palace",
+  "location": "Salt Lake City, UT",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 291.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01AlabamaGetaway.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 265.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 652.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FriendOfTheDevil.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 149.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MamaTried.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 392.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MexicaliBlues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack-A-Roe",
+      "duration": 286.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Jack-a-roe.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "CC Rider",
+      "duration": 548.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07CcRider.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Althea",
+      "duration": 578.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Althea.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Lost Sailor",
+      "duration": 401.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LostSailor.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Saint Of Circumstance",
+      "duration": 415.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SaintOfCircumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 78.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Might As Well",
+      "duration": 255.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12MightAsWell.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 408.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ManSmartwomanSmarter.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Scarlet Begonias",
+      "duration": 680.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ScarletBegonias.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Fire On The Mountain",
+      "duration": 748.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15FireOnTheMountain.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Estimated Prophet",
+      "duration": 667.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16EstimatedProphet.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Eyes Of The World",
+      "duration": 616.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17EyesOfTheWorld.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 614.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 180.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Space.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Spanish Jam",
+      "duration": 189.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20SpanishJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SpanishJam.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truckin'",
+      "duration": 470.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Truckin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Morning Dew",
+      "duration": 685.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22MorningDew.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around And Around",
+      "duration": 238.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23AroundAndAround.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Good Lovin'",
+      "duration": 460.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24GoodLovin.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Encore Break",
+      "duration": 85.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "US Blues",
+      "duration": 308.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26UsBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

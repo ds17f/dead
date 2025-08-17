@@ -1,0 +1,126 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1967-09-03",
+  "venue": "Dance Hall",
+  "location": "Rio Nido, CA",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancin' In The Streets",
+      "duration": 337.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 137.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t02.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain and Snow",
+      "duration": 111.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 338.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Viola Lee Blues",
+      "duration": 822.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t05.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big Boss Man",
+      "duration": 149.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t06.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Alligator",
+      "duration": 509.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-03d1t07.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-03d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

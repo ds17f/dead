@@ -1,0 +1,334 @@
+{
+  "rating": 2.3,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-12-13",
+  "venue": "Long Beach Arena",
+  "location": "Long Beach, CA",
+  "raw_rating": 4.6,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning and dead air",
+      "duration": 96.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like a Stranger >",
+      "duration": 423.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree >",
+      "duration": 674.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C.C. Rider (audience section edited)",
+      "duration": 502.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "To Lay Me Down > (tape flip)",
+      "duration": 581.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "All New Minglewood Blues (some music lost in the flip-spliced) (audience section edited)",
+      "duration": 431.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Ramble On Rose (audience section edited)",
+      "duration": 476.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Lost Sailor >",
+      "duration": 368.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Saint of Circumstance >",
+      "duration": 399.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 422.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1tr10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1tr10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias > (missing the beginning of the song-fades in to avoid abrupt start)",
+      "duration": 465.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire on the Mountain (audience section edited)",
+      "duration": 691.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing in the Band >",
+      "duration": 705.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drum Break (w/ guest artists: Airto Moreira and Flora Purim) (tape flip-spliced @ 13:33) >",
+      "duration": 866.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space Jam >",
+      "duration": 238.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Not Fade Away >",
+      "duration": 419.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Peter >",
+      "duration": 551.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia >",
+      "duration": 352.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sunshine Daydream",
+      "duration": 171.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night",
+      "duration": 289.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2tr10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2tr10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1982-02-20",
+  "venue": "Golden Hall, Community Concourse",
+  "location": "San Diego, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 359.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 490.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "C.C. Rider",
+      "duration": 475.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tennessee Jed",
+      "duration": 503.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried >",
+      "duration": 183.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 292.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "To Lay Me Down >",
+      "duration": 528.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let it Grow",
+      "duration": 726.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-02-20s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-02-20s1t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

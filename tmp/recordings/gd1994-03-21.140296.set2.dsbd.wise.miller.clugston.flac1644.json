@@ -1,0 +1,206 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1994-03-21",
+  "venue": "Richfield Coliseum",
+  "location": "Richfield, OH",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd94-03-21 Tuning",
+      "duration": 59.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2101Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2101Tuning.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd94-03-21 Picasso Moon",
+      "duration": 426.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2102PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2102PicassoMoon.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd94-03-21 New Speedway Boogie",
+      "duration": 473.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2103NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2103NewSpeedwayBoogie.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd94-03-21 Victim Or The Crime",
+      "duration": 563.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2104VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2104VictimOrTheCrime.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd94-03-21 He's Gone",
+      "duration": 1430.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2105HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2105HesGone.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd94-03-21 Drums",
+      "duration": 752.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2106Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2106Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd94-03-21 Space",
+      "duration": 732.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2107Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2107Space.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd94-03-21 Turn On Your Lovelight",
+      "duration": 327.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2108TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2108TurnOnYourLovelight.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd94-03-21 Stella Blue",
+      "duration": 483.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2109StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2109StellaBlue.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd94-03-21 Turn On Your Lovelight",
+      "duration": 175.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2110TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2110TurnOnYourLovelight.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd94-03-21 Encore Break",
+      "duration": 37.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2111EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2111EncoreBreak.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd94-03-21 Liberty",
+      "duration": 490.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd94-03-2112Liberty.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd94-03-2112Liberty.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

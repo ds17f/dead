@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-05-26",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd/tuning",
+      "duration": 138.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson And Delilah",
+      "duration": 506.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Here Comes Sunshine",
+      "duration": 387.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 500.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Broken Arrow",
+      "duration": 407.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 488.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again >",
+      "duration": 504.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 601.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-05-26s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-05-26s1t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1972-03-01",
+  "venue": "Alembic Studios",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "One More Saturday Night 1 (inc)",
+      "duration": 171.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "One More Saturday Night 1 (inc).flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "One More Saturday Night 2",
+      "duration": 267.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "One More Saturday Night 2.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "One More Saturday Night 3",
+      "duration": 267.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "One More Saturday Night 3.flac"
+        }
+      ]
+    }
+  ]
+}

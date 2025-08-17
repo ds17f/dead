@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-12-30",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 398.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Bertha.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Good Lovin'",
+      "duration": 247.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Good Lovin'.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 664.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Sugaree.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 481.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Walkin' Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Walkin' Blues.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack-A-Roe",
+      "duration": 264.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Jack-A-Roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Jack-A-Roe.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 396.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 When I Paint My Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 When I Paint My Masterpiece.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West LA Fadeaway",
+      "duration": 457.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 West LA Fadeaway.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Music Never Stopped",
+      "duration": 480.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 The Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 The Music Never Stopped.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 105.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Tuning.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 364.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Jack Straw.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 328.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 China Cat Sunflower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 322.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 I Know You Rider.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Estimated Prophet",
+      "duration": 760.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Estimated Prophet.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 995.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Terrapin Station.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 706.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 465.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Space.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Will Take You Home",
+      "duration": 271.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 I Will Take You Home.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 I Will Take You Home.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One",
+      "duration": 622.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 The Other One.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Standing On The Moon",
+      "duration": 482.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Standing On The Moon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Standing On The Moon.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night",
+      "duration": 379.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 One More Saturday Night.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 412.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 It's All Over Now, Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 It's All Over Now, Baby Blue.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

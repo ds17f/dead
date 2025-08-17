@@ -1,0 +1,110 @@
+{
+  "rating": 1.7916666666666667,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-11-09",
+  "venue": "Action House",
+  "location": "Island Park, NY",
+  "raw_rating": 3.5833333333333335,
+  "high_ratings": 7,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Attics Of My Life",
+      "duration": 201.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-09t01.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-09t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mama Tried",
+      "duration": 87.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-09t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-09t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Walkin' The Dog",
+      "duration": 171.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-09t03.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-09t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Minglewood Blues",
+      "duration": 132.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-09t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-09t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Morning Dew",
+      "duration": 307.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-09t05.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-09t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Deep Elem Blues",
+      "duration": 209.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-09t06.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-09t06.shn"
+        }
+      ]
+    }
+  ]
+}

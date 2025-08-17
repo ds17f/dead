@@ -1,0 +1,174 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1983-04-13",
+  "venue": "Patrick Gymnasium, U of Vermont",
+  "location": "Burlington, VT",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Scarlet Begonias",
+      "duration": 851.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Fire on the Mountain",
+      "duration": 695.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Estimated Prophet",
+      "duration": 710.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Eyes of the World",
+      "duration": 483.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Baby, You Know How I'm Feelin'",
+      "duration": 233.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space",
+      "duration": 631.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Morning Dew",
+      "duration": 681.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Throwin' Stones",
+      "duration": 531.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Good Lovin'",
+      "duration": 531.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch of Grey",
+      "duration": 378.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-13.2nd.aud-venezia.d2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "rating": 1.68,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1967-11-10",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 915.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbds1t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 290.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbds1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Morning Dew",
+      "duration": 446.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbds1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 646.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbds1t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical >",
+      "duration": 86.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbds1t05.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One >",
+      "duration": 227.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbds1t06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical > crowd",
+      "duration": 363.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1967-11-10.sbds1t07.flac"
+        }
+      ]
+    }
+  ]
+}

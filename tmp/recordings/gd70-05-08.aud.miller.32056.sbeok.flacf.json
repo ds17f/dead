@@ -1,0 +1,78 @@
+{
+  "rating": 1.55,
+  "review_count": 20,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-05-08",
+  "venue": "Farrell Hall (SUNY)",
+  "location": "Delhi, NY",
+  "raw_rating": 3.1,
+  "high_ratings": 9,
+  "low_ratings": 8,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star >",
+      "duration": 1084.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-05-08d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-08d1t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dancin' In The street",
+      "duration": 591.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-05-08d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-08d1t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Lovin'",
+      "duration": 1055.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-05-08d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-08d1t03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Uncle John's Band",
+      "duration": 402.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-05-08d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-08d1t04.mp3",
+          "bitrate": "171"
+        }
+      ]
+    }
+  ]
+}

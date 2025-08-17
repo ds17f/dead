@@ -1,0 +1,334 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1993-03-20",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd intro",
+      "duration": 132.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d101.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 598.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d102.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's All Over Now",
+      "duration": 500.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d103.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "So Many Roads",
+      "duration": 475.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d104.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me & My Uncle >",
+      "duration": 196.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d105.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Maggie's Farm",
+      "duration": 372.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d106.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song >",
+      "duration": 908.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d107.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 310.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d108.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Eyes Of The World >",
+      "duration": 861.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d201.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Looks Like Rain",
+      "duration": 553.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d202.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Lazy River Road",
+      "duration": 447.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d203.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin' >",
+      "duration": 511.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d204.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Smokestack Lightning >",
+      "duration": 436.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d205.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "rums >",
+      "duration": 871.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d206.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 504.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d301.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel >",
+      "duration": 317.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d302.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "All Along The Watchtower >",
+      "duration": 401.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d303.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Standing On the Moon >",
+      "duration": 536.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d304.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 450.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d305.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Liberty",
+      "duration": 455.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d306.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

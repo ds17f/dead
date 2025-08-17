@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "FM",
+  "confidence": 0.0,
+  "date": "1990-03-28",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 190.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow *",
+      "duration": 385.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Minglewood Blues",
+      "duration": 490.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Easy To Love You",
+      "duration": 398.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 434.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T05.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Queen Jane Approximately",
+      "duration": 373.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tuning",
+      "duration": 32.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T07.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Loose Lucy",
+      "duration": 464.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 366.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 490.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T10.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 81.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Foolish Heart",
+      "duration": 633.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 493.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Cumberland Blues",
+      "duration": 350.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Weight **",
+      "duration": 355.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Hey Pockey Way",
+      "duration": 419.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 675.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 439.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Intro",
+      "duration": 229.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Other One",
+      "duration": 248.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Wharf Rat",
+      "duration": 655.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Good Lovin'",
+      "duration": 621.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Revolution ***",
+      "duration": 294.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

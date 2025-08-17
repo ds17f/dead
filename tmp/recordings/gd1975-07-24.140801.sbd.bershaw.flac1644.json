@@ -1,0 +1,30 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1975-07-24",
+  "venue": "Club Front Studio",
+  "location": "San Rafael, CA",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd1975.07.24.studio.bershaw.t01-Bo'sBlues2",
+      "duration": 364.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1975.07.24.studio.bershaw.t01-BosBlues2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975.07.24.studio.bershaw.t01-BosBlues2.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 2.25,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-07-16",
+  "venue": "Euphoria Ballroom",
+  "location": "San Rafael, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "//China Cat Sunflower ->",
+      "duration": 116.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "I Know You Rider ->",
+      "duration": 291.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Candyman",
+      "duration": 506.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Turn On Your Lovelight",
+      "duration": 1069.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d1t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

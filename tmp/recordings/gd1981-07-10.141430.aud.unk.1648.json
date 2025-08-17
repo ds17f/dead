@@ -1,0 +1,446 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-07-10",
+  "venue": "St. Paul Civic Center",
+  "location": "St. Paul, MN",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "- Jack Straw",
+      "duration": 360.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-JackStraw.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "- Sugaree",
+      "duration": 726.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-Sugaree.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "- Mama Tried",
+      "duration": 150.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03-MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03-MamaTried.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "- Mexicali Blues",
+      "duration": 288.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04-MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04-MexicaliBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "- Loser",
+      "duration": 429.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05-Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05-Loser.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "- -tuning-",
+      "duration": 115.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06--tuning-.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06--tuning-.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "- Cassidy",
+      "duration": 306.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07-Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07-Cassidy.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "- Brown Eyed Women",
+      "duration": 330.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08-BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08-BrownEyedWomen.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "- CC Rider",
+      "duration": 478.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09-CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09-CcRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "- Ramble On Rose",
+      "duration": 472.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10-RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10-RambleOnRose.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "- Let It Grow",
+      "duration": 709.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11-LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11-LetItGrow.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "- Don't Ease Me In",
+      "duration": 201.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12-DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12-DontEaseMeIn.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "- Samson And Delilah",
+      "duration": 403.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13-SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13-SamsonAndDelilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "- Althea",
+      "duration": 519.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14-Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14-Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "- -tuning-",
+      "duration": 97.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15--tuning-.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15--tuning-.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "- Estimated Prophet",
+      "duration": 648.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16-EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16-EstimatedProphet.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "- Eyes Of The World",
+      "duration": 889.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17-EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17-EyesOfTheWorld.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "- Drums",
+      "duration": 701.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18-Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18-Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "- Space",
+      "duration": 343.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19-Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19-Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "- Uncle John's Band",
+      "duration": 447.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20-UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20-UncleJohnsBand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "- Playin' In The Band",
+      "duration": 394.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21-PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21-PlayinInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "- China Doll",
+      "duration": 336.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22-ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22-ChinaDoll.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "- Uncle John's Band",
+      "duration": 114.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23-UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23-UncleJohnsBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "- Playin' In The Band",
+      "duration": 108.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24-PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24-PlayinInTheBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "- Around And Around",
+      "duration": 225.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25-AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25-AroundAndAround.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "- Good Lovin'",
+      "duration": 450.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26-GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26-GoodLovin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "- Casey Jones",
+      "duration": 338.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27-CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27-CaseyJones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

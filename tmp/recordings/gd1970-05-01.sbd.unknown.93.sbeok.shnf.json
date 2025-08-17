@@ -1,0 +1,62 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-05-01",
+  "venue": "Alfred College",
+  "location": "Alfred, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Race Is On",
+      "duration": 96.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-01d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Wake Up Little Suzie",
+      "duration": 97.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-01d1t02.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Uncle John's Band",
+      "duration": 221.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-01d1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-01d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

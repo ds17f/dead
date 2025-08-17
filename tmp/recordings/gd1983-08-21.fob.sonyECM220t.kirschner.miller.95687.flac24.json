@@ -1,0 +1,158 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1983-08-21",
+  "venue": "Frost Amphitheatre - Stanford University",
+  "location": "Palo Alto, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cassidy",
+      "duration": 329.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t01.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 191.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t02.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle ->",
+      "duration": 168.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big River",
+      "duration": 408.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t04.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 488.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t05.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Little Red Rooster",
+      "duration": 516.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t06.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 360.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t07.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 758.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s1t08.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Samson and Delilah ->",
+      "duration": 464.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-21s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-21s2t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1966-03-09",
+  "venue": "unknown",
+  "location": "unknown, unknown",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Who Do You Love",
+      "duration": 356.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd66-03-09.Who.Do.You.Love.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-03-09.Who.Do.You.Love.mp3",
+          "bitrate": "163"
+        }
+      ]
+    }
+  ]
+}

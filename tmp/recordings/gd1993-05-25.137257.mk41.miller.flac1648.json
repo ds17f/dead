@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-05-25",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 100.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 415.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Bertha.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 313.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03GreatestStoryEverTold.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack-A-Roe",
+      "duration": 314.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Jack-a-roe.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Wang Dang Doodle",
+      "duration": 486.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WangDangDoodle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 499.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LooseLucy.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Queen Jane Approximately",
+      "duration": 404.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07QueenJaneApproximately.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Lazy River Road",
+      "duration": 452.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LazyRiverRoad.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 837.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 203.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 116.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes Of The World",
+      "duration": 950.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12EyesOfTheWorld.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 611.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Way To Go Home",
+      "duration": 382.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14WayToGoHome.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin'",
+      "duration": 537.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Truckin.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 1005.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 615.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 340.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheWheel.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 628.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ThrowingStones.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Going Down The Road Feeling Bad",
+      "duration": 423.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20GoingDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20GoingDownTheRoadFeelingBad.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Johnny B Goode",
+      "duration": 235.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21JohnnyBGoode.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 133.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Rain",
+      "duration": 330.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23Rain.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

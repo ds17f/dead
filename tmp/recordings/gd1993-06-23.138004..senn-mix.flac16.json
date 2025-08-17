@@ -1,0 +1,382 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1993-06-23",
+  "venue": "Deer Creek Music Center",
+  "location": "Noblesville, IN",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd (01:16)",
+      "duration": 76.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Let the Good Times Roll (05:04)",
+      "duration": 304.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Hell in a Bucket (07:35)",
+      "duration": 455.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t03.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy River Road (07:11)",
+      "duration": 431.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Memphis Blues (10:10)",
+      "duration": 610.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser (07:45)",
+      "duration": 465.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t06.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Broken Arrow (06:12)",
+      "duration": 372.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t07.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Easy Answers (06:39)",
+      "duration": 399.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Samson & Delilah (06:25)",
+      "duration": 489.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t09.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Way To Go Home (07:35)",
+      "duration": 385.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t10.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Wave To The Wind (08:09)",
+      "duration": 455.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d01t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d01t11.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Terrapin Station > (12:18)",
+      "duration": 738.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t01.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam > (12:26)",
+      "duration": 746.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t02.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums > (04:09)",
+      "duration": 249.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Chimes > (02:44)",
+      "duration": 164.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Beam > (08:31)",
+      "duration": 511.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums/Space > (06:37)",
+      "duration": 397.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t06.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space > (07:56)",
+      "duration": 476.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t07.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dark Star > (06:30)",
+      "duration": 390.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t08.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Wheel > (05:30)",
+      "duration": 330.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t09.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Good Lovin (06:52)",
+      "duration": 412.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t10.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "crowd (00:39)",
+      "duration": 39.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t11.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "L.S.D. (04:20)",
+      "duration": 260.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-23d02t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-23d02t12.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

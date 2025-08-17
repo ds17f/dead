@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-09-04",
+  "venue": "Park West Ski Resort",
+  "location": "Park City, UT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha->",
+      "duration": 397.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track001.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land,",
+      "duration": 251.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track002.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil,",
+      "duration": 523.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track003.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster,",
+      "duration": 498.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track004.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed,",
+      "duration": 489.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track005.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau,",
+      "duration": 322.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track006.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Althea->",
+      "duration": 503.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track007.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Hell In A Bucket,",
+      "duration": 425.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track008.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track008.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower-> I Know You Rider",
+      "duration": 663.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track009.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track009.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias->",
+      "duration": 749.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track010.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track010.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain,",
+      "duration": 846.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track011.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track011.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "dead air",
+      "duration": 9.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track012.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track012.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Women Are Smarter->",
+      "duration": 463.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track013.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track013.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums->",
+      "duration": 586.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track014.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track014.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Spanish Jam->",
+      "duration": 661.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track015.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track015.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel->",
+      "duration": 382.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track016.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track016.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One->",
+      "duration": 450.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track017.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track017.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat->",
+      "duration": 621.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track018.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track018.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Around & Around->",
+      "duration": 233.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track019.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track019.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night*,",
+      "duration": 270.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track020.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track020.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "E: U.S. Blues",
+      "duration": 320.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track021.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track021.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

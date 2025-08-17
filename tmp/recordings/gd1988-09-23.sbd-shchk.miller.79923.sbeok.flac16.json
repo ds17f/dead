@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-23",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 300.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk1.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Every time You Go",
+      "duration": 115.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk2.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Every Time You Go",
+      "duration": 163.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk3.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tuning",
+      "duration": 343.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk4.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "What's Goin' On",
+      "duration": 92.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk5.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "What's Goin' On",
+      "duration": 308.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk6.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "What's Goin' On",
+      "duration": 307.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-23snchk7.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-23snchk7.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

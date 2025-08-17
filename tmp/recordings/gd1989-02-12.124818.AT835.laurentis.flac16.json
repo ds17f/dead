@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-02-12",
+  "venue": "Great Western LA Forum",
+  "location": "Inglewood, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 77.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow",
+      "duration": 350.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Hell In A Bucket",
+      "duration": 559.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 737.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 197.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Promised Land",
+      "duration": 308.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West L A Fadeway",
+      "duration": 525.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "How Long Blues*",
+      "duration": 313.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Gimme Some Lovin'*",
+      "duration": 487.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 142.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Iko Iko",
+      "duration": 458.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Monkey and The Engineer",
+      "duration": 215.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Alabama Getaway",
+      "duration": 312.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Direwolf",
+      "duration": 261.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Cassidy",
+      "duration": 448.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stuck In Mobile With The Memphis Blues Again**",
+      "duration": 512.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 655.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 487.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Other One",
+      "duration": 368.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue",
+      "duration": 470.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Foolish Heart",
+      "duration": 478.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Crowd",
+      "duration": 175.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away**",
+      "duration": 534.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Knockin' on Heaven's Door**",
+      "duration": 430.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

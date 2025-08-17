@@ -1,0 +1,257 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-03-27",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hell In A Bucket",
+      "duration": 546.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d2t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d3t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Bertha",
+      "duration": 262.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d2t02.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d3t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Same Thing",
+      "duration": 351.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d2t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d3t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Peggy-O",
+      "duration": 589.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d2t04.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d3t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Queen Jane Approximately",
+      "duration": 406.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t05.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d2t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d3t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Broken Arrow",
+      "duration": 177.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t06.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d3t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Loose Lucy",
+      "duration": 436.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Cassidy",
+      "duration": 437.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Casey Jones",
+      "duration": 355.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-27d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-27d1t09.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

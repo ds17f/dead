@@ -1,0 +1,158 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1985-03-28",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 159.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t01.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Truckin' ->",
+      "duration": 437.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Smokestack Lightning* ->",
+      "duration": 336.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 488.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 288.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Peggy-O",
+      "duration": 461.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 369.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower ->",
+      "duration": 344.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 340.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

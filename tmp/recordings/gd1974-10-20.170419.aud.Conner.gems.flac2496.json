@@ -1,0 +1,622 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1974-10-20",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "intro",
+      "duration": 52.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 intro.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow",
+      "duration": 401.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Cold Rain and Snow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Cold Rain and Snow.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried",
+      "duration": 175.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Mama Tried.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Deal",
+      "duration": 326.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Deal.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down the Line",
+      "duration": 194.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Beat It On Down the Line.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Beat It On Down the Line.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tuning",
+      "duration": 120.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 tuning.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 417.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Loser.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "tuning",
+      "duration": 134.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 tuning.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Jack Straw",
+      "duration": 375.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Jack Straw.mp3",
+          "bitrate": "149"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tennessee Jed",
+      "duration": 497.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Tennessee Jed.mp3",
+          "bitrate": "150"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "El Paso",
+      "duration": 330.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 El Paso.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Brokedown Palace",
+      "duration": 378.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Brokedown Palace.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "tuning",
+      "duration": 126.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 tuning.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Cat Sunflower >",
+      "duration": 529.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 China Cat Sunflower.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Know You Rider",
+      "duration": 333.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 I Know You Rider.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Around and Around",
+      "duration": 328.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16 Around and Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Around and Around.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Seastones",
+      "duration": 1671.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17 Seastones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Seastones.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "tuning",
+      "duration": 185.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 tuning.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playing in the Band >",
+      "duration": 786.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19 Playing in the Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Playing in the Band.mp3",
+          "bitrate": "150"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Drums >",
+      "duration": 250.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Drums.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away >",
+      "duration": 883.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Not Fade Away.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Drums >",
+      "duration": 287.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Drums.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Other One >",
+      "duration": 660.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 The Other One.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Wharf Rat >",
+      "duration": 778.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 Wharf Rat.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Playing in the Band",
+      "duration": 213.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25 Playing in the Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25 Playing in the Band.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "tuning",
+      "duration": 140.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "26 tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26 tuning.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Good Lovin'",
+      "duration": 762.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "27 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27 Good Lovin'.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "It Must Have Been the Roses",
+      "duration": 389.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "28 It Must Have Been the Roses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28 It Must Have Been the Roses.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Promised Land",
+      "duration": 196.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "29 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29 Promised Land.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "tuning and technical difficulties",
+      "duration": 192.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "30 tuning and technical difficulties.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30 tuning and technical difficulties.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Eyes of the World >",
+      "duration": 900.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "31 Eyes of the World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31 Eyes of the World.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Stella Blue",
+      "duration": 556.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "32 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32 Stella Blue.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Sugar Magnolia",
+      "duration": 557.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "33 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33 Sugar Magnolia.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Bill Graham crew intro, Phil welcomes Mickey Hart",
+      "duration": 158.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "34 Bill Graham crew intro, Phil welcomes Mickey Hart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34 Bill Graham crew intro, Phil welcomes Mickey Hart.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Johnny B. Goode",
+      "duration": 242.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "35 Johnny B. Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "35 Johnny B. Goode.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "break",
+      "duration": 168.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "36 break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "36 break.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Mississippi Half Step Uptown Toodeloo >",
+      "duration": 450.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "37 Mississippi Half Step Uptown Toodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "37 Mississippi Half Step Uptown Toodeloo.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "And We Bid You Good Night",
+      "duration": 117.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "38 And We Bid You Good Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "38 And We Bid You Good Night.mp3",
+          "bitrate": "168"
+        }
+      ]
+    }
+  ]
+}

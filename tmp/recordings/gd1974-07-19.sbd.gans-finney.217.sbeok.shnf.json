@@ -1,0 +1,126 @@
+{
+  "rating": 2.4285714285714284,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-07-19",
+  "venue": "Selland Arena",
+  "location": "Fresno, CA",
+  "raw_rating": 4.857142857142857,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "He's Gone",
+      "duration": 516.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "U.S. Blues",
+      "duration": 222.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Weather Report Prelude/Part 1",
+      "duration": 183.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Let It Grow",
+      "duration": 459.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t04.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Spanish Jam",
+      "duration": 199.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eyes Of The World",
+      "duration": 535.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Doll",
+      "duration": 171.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-07-19t07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-07-19t07.shn"
+        }
+      ]
+    }
+  ]
+}

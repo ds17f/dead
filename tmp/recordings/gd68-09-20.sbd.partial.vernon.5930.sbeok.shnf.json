@@ -1,0 +1,62 @@
+{
+  "rating": 2.4,
+  "review_count": 7,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-09-20",
+  "venue": "Eagle's Auditorium",
+  "location": "Seattle, WA",
+  "raw_rating": 3.4285714285714284,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "St. Stephen ->",
+      "duration": 188.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-09-20d1t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD68-09-20d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Eleven ->",
+      "duration": 154.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-09-20d1t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD68-09-20d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Drums",
+      "duration": 686.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-09-20d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD68-09-20d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

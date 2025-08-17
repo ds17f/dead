@@ -1,0 +1,334 @@
+{
+  "rating": 2.1,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1985-11-07",
+  "venue": "Community War Memorial Auditorium",
+  "location": "Rochester, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancin' In The Street",
+      "duration": 463.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 273.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "C.C. Rider",
+      "duration": 431.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 439.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried >",
+      "duration": 151.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 300.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cumberland Blues",
+      "duration": 285.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Beat It On Down The Line",
+      "duration": 177.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 416.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch Of Grey >",
+      "duration": 368.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc110.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson & Delilah",
+      "duration": 404.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc111.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "High Time",
+      "duration": 510.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Let It Grow >",
+      "duration": 745.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 549.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 381.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Gimme Some Lovin' >",
+      "duration": 294.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Stella Blue >",
+      "duration": 420.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones >",
+      "duration": 543.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 472.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc208.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "In The Midnight Hour",
+      "duration": 312.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc209.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

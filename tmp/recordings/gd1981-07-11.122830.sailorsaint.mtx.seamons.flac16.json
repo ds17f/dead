@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-07-11",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "LOST SAILOR -> SAINT OF CIRCUMSTANCE",
+      "duration": 827.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-11.sailorsaint.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-11.sailorsaint.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-11-29",
+  "venue": "Civic Arena",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Shakedown Street >",
+      "duration": 742.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t01 Shakedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t01 Shakedown.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Greatest Story Ever Told",
+      "duration": 240.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t02 GSET.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t02 GSET.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Friend Of The Devil >",
+      "duration": 515.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t03 FOTD.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t03 FOTD.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "CC Rider",
+      "duration": 511.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t04 CC Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t04 CC Rider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Candyman",
+      "duration": 394.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t05 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t05 Candyman.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Me & My Uncle >",
+      "duration": 176.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t06 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t06 M & MU.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Big River",
+      "duration": 366.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t07 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t07 Big River.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Althea >",
+      "duration": 446.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t08 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t08 Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Looks Like Rain",
+      "duration": 506.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t09 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t09 LLR.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Might As Well",
+      "duration": 275.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s1t10 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s1t10 Might As Well.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 64.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Samson & Delilah",
+      "duration": 422.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t02 Samson.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t02 Samson.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Ship Of Fools",
+      "duration": 519.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t03 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t03 Ship Of Fools.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Lost Sailor >",
+      "duration": 547.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t04 Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t04 Sailor.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Saint Of Circumstance >",
+      "duration": 321.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t05 Saint.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t05 Saint.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "He's Gone > Jam >",
+      "duration": 1302.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t06 He's Gone_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t06 He's Gone_Jam.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 518.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t07 Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 311.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t08 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Truckin' >",
+      "duration": 543.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t09 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t09 Truckin'.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Black Peter >",
+      "duration": 483.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t10 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t10 Black Peter.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Satisfaction",
+      "duration": 420.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t11 Satisfaction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t11 Satisfaction.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E: US Blues",
+      "duration": 325.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-29 s2t12 E_US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-29 s2t12 E_US Blues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

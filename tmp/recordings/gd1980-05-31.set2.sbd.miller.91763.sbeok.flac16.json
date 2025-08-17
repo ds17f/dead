@@ -1,0 +1,222 @@
+{
+  "rating": 2.2857142857142856,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-05-31",
+  "venue": "Metropolitan Sports Center",
+  "location": "Bloomington, MN",
+  "raw_rating": 4.571428571428571,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 481.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ship Of Fools",
+      "duration": 487.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Lost Sailor ->",
+      "duration": 365.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Saint Of Circumstance ->",
+      "duration": 533.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Wharf Rat ->",
+      "duration": 664.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One ->",
+      "duration": 487.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums ->",
+      "duration": 493.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t07.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space ->",
+      "duration": 179.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Need A Miracle ->",
+      "duration": 229.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Bertha ->",
+      "duration": 362.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia",
+      "duration": 496.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d2t11.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "U.S. Blues",
+      "duration": 315.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d3t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Brokedown Palace",
+      "duration": 422.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-31d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-31d3t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

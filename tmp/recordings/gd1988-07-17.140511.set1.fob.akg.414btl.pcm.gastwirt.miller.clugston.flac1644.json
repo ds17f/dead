@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-07-17",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd88-07-17 s1 Tuning",
+      "duration": 136.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S101Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S101Tuning.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd88-07-17 s1 Foolish Heart",
+      "duration": 476.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S102FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S102FoolishHeart.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd88-07-17 s1 Greatest Story Ever Told",
+      "duration": 291.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S103GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S103GreatestStoryEverTold.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd88-07-17 s1 Althea",
+      "duration": 564.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S104Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S104Althea.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd88-07-17 s1 Me & My Uncle",
+      "duration": 170.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S105MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S105MeMyUncle.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd88-07-17 s1 Big River",
+      "duration": 501.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S106BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S106BigRiver.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd88-07-17 s1 Candyman",
+      "duration": 444.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S107Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S107Candyman.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd88-07-17 s1 Let It Grow",
+      "duration": 811.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd88-07-17S108LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd88-07-17S108LetItGrow.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

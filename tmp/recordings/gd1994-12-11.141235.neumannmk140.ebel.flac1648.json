@@ -1,0 +1,350 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-12-11",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 188.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Help On The Way",
+      "duration": 525.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HelpOnTheWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HelpOnTheWay.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Slip Knot!",
+      "duration": 90.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03SlipKnot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03SlipKnot.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Franklins Tower",
+      "duration": 794.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04FranklinsTower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 528.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LittleRedRooster.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Lazy River Road",
+      "duration": 513.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LazyRiverRoad.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Throated Wind",
+      "duration": 476.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BlackThroatedWind.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "If The Shoe Fits",
+      "duration": 435.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08IfTheShoeFits.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08IfTheShoeFits.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tennessee Jed",
+      "duration": 518.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TennesseeJed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Promised Land",
+      "duration": 290.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10PromisedLand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 118.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Here Comes Sunshine",
+      "duration": 454.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12HereComesSunshine.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson & Delilah",
+      "duration": 671.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SamsonDelilah.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samba In The Rain",
+      "duration": 427.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14SambaInTheRain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Eyes Of The World",
+      "duration": 861.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15EyesOfTheWorld.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drumz",
+      "duration": 915.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drumz.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 805.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All Along The Watchtower",
+      "duration": 414.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AllAlongTheWatchtower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Days Between",
+      "duration": 800.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19TheDaysBetween.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TheDaysBetween.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 667.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SugarMagnolia.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Liberty",
+      "duration": 361.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Liberty.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Liberty.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

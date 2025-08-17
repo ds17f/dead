@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-06-10",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 407.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 346.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "[a bullshit lie]",
+      "duration": 144.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 277.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Wang Dang Doodle",
+      "duration": 442.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Row Jimmy",
+      "duration": 691.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Picasso Moon",
+      "duration": 529.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed ->",
+      "duration": 466.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 285.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s1t09.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "crowd - tuning",
+      "duration": 169.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Box of Rain ->",
+      "duration": 305.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes of the World ->",
+      "duration": 900.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing in the Band ->",
+      "duration": 507.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Crazy Fingers -> Playin' Jam ->",
+      "duration": 621.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 443.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 527.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 409.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Standing on the Moon ->",
+      "duration": 629.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones ->",
+      "duration": 546.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t10.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away ->",
+      "duration": 450.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t11.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "NFA chant",
+      "duration": 137.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t12.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Last Time",
+      "duration": 348.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-06-10.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-06-10.s2t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

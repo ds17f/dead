@@ -1,0 +1,78 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-09-13",
+  "venue": "Gizah Sound and Light Theater",
+  "location": "Giza, Egypt",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Ollin Arageed instrumental",
+      "duration": 498.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-13d1t1.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-09-13d1t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Instrumental Jam",
+      "duration": 900.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-13d1t2.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-09-13d1t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Voice and Instrumental Jam",
+      "duration": 379.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-13d1t3.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-09-13d1t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Voice and Instrumental Jam",
+      "duration": 195.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-13d1t4.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-09-13d1t4.shn"
+        }
+      ]
+    }
+  ]
+}

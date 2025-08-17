@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-03-27",
+  "venue": "Irvine Meadows",
+  "location": "Irvine, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd83-03-27 s1tCrowd",
+      "duration": 35.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t01Crowd.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd83-03-27 s1tShakedown Street",
+      "duration": 822.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t02ShakedownStreet.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd83-03-27 s1tNew Minglewood Blues",
+      "duration": 484.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t03NewMinglewoodBlues.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd83-03-27 s1tThey Love Each Other",
+      "duration": 508.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t04TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t04TheyLoveEachOther.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd83-03-27 s1tCassidy",
+      "duration": 337.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t05Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t05Cassidy.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd83-03-27 s1tLoser",
+      "duration": 466.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t06Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t06Loser.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd83-03-27 s1tMy Brother Esau",
+      "duration": 424.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t07MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t07MyBrotherEsau.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd83-03-27 s1tDeal",
+      "duration": 514.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S1t08Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S1t08Deal.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd83-03-27 s2t01 Crowd",
+      "duration": 16.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t01Crowd.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd83-03-27 s2t02 China Cat Sunflower",
+      "duration": 409.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t02ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t02ChinaCatSunflower.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd83-03-27 s2t03 I Know You Rider",
+      "duration": 308.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t03IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t03IKnowYouRider.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd83-03-27 s2t04 Samson & Delilah",
+      "duration": 515.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t04SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t04SamsonDelilah.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd83-03-27 s2t05 He's Gone",
+      "duration": 727.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t05HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t05HesGone.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd83-03-27 s2t06 Truckin'",
+      "duration": 556.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t06Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t06Truckin.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd83-03-27 s2t07 Drums",
+      "duration": 138.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t07Drums.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd83-03-27 s2t08 Space",
+      "duration": 499.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t08Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd83-03-27 s2t09 Throwing Stones",
+      "duration": 523.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t09ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t09ThrowingStones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd83-03-27 s2t10 Wharf Rat",
+      "duration": 555.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t10WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t10WharfRat.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd83-03-27 s2t11 Good Lovin'",
+      "duration": 515.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t11GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t11GoodLovin.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd83-03-27 s2t12 US Blues",
+      "duration": 308.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd83-03-27S2t12UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd83-03-27S2t12UsBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

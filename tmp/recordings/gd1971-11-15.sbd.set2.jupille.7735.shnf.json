@@ -1,0 +1,142 @@
+{
+  "rating": 3.0333333333333328,
+  "review_count": 9,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1971-11-15",
+  "venue": "The Austin Municipal Auditorium",
+  "location": "Austin, TX",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star-->",
+      "duration": 404.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "El Paso ->",
+      "duration": 162.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t02.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jam ->",
+      "duration": 257.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Casey Jones",
+      "duration": 198.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Not Fade Away ->",
+      "duration": 258.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jam ->",
+      "duration": 171.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Goin' Down The Road Feelin' Bad ->",
+      "duration": 284.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t07.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 119.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-11-15t08.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1971-11-15t08.shn"
+        }
+      ]
+    }
+  ]
+}

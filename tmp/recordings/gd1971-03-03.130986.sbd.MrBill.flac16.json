@@ -1,0 +1,302 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1971-03-03",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 362.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hard To Handle",
+      "duration": 502.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Playin' In The Band",
+      "duration": 286.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 408.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And Bobby McGee",
+      "duration": 372.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t05.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Next Time You See Me",
+      "duration": 234.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t06.mp3",
+          "bitrate": "113"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Beat It On Down The Line",
+      "duration": 197.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t07.mp3",
+          "bitrate": "113"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bertha",
+      "duration": 364.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t08.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Me And My Uncle",
+      "duration": 204.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d1t09.mp3",
+          "bitrate": "115"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Truckin' >",
+      "duration": 502.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t01.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums >",
+      "duration": 265.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t02.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Other One >",
+      "duration": 820.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t03.mp3",
+          "bitrate": "110"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Wharf Rat >",
+      "duration": 550.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t04.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Sugar Magnolia",
+      "duration": 250.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t05.mp3",
+          "bitrate": "113"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I'm A King Bee",
+      "duration": 449.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t06.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Greatest Story Ever Told >",
+      "duration": 268.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t07.mp3",
+          "bitrate": "109"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Johnny B. Goode",
+      "duration": 222.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t08.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Good Lovin'",
+      "duration": 863.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-03-03d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-03-03d2t09.mp3",
+          "bitrate": "109"
+        }
+      ]
+    }
+  ]
+}

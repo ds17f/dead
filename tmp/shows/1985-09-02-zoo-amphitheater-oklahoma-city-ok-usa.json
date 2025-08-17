@@ -1,0 +1,218 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-09-02-zoo-amphitheater-oklahoma-city-ok-usa/",
+  "show_id": "1985-09-02-zoo-amphitheater-oklahoma-city-ok-usa",
+  "band": "Grateful Dead",
+  "venue": "Zoo Amphitheater",
+  "location_raw": "Oklahoma City, OK",
+  "city": "Oklahoma City",
+  "state": "OK",
+  "country": "USA",
+  "date": "1985-09-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Stagger Lee",
+          "url": "https://jerrygarcia.com/song/stagger-lee/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:54:22.605522",
+  "show_time": null,
+  "recordings": [
+    "gd85-09-02.sbd.hinko.19475.sbeok.shnf",
+    "gd1985-09-02.138386.sbd.miller.flac24",
+    "gd1985-09-02.138397.sbd.miller.flac16",
+    "gd85-09-02.schoeps-oade.sacks.26077.sbeok.flacf",
+    "gd1985-09-02.aud.steinkamp.2373.sbeok.shnf",
+    "gd85-09-02.aud.leeds.17431.sbeok.shnf",
+    "gd1985-09-02.154367.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1985-09-02.154368.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1985-09-02.142181.mtx.tobin.flac2448",
+    "gd1985-09-02.Senn421.Darby.117762.Flac2448",
+    "gd1985-09-02.Senn421.Darby.117763.Flac1644",
+    "gd1985-09-02.153040.beyerm201.holbrook.flac1644",
+    "gd1985-09-02.153038.akgc422.davis-holbrook.flac1644",
+    "gd1985-09-02.153039.akgc422.davis-holbrook.flac2448",
+    "gd1985-09-02.153041.beyerm201.holbrook.flac2448",
+    "gd1985-09-02.142183.dts.tobin.flac1644",
+    "gd1985-09-02.169128.nak700.wagner.miller.clugston.flac2496",
+    "gd1985-09-02.142184.5-1.tobin.flac1648",
+    "gd1985-09-02.169127.nak700.wagner.miller.clugston.flac1648",
+    "gd1985-09-02.142179.pp-aud.darby.tobin.flac2448",
+    "gd1985-09-02.142182.mtx.tobin.flac1644",
+    "gd1985-09-02.142180.pp-aud.darby.tobin.flac1644",
+    "gd1985-09-02.senn441.adam-justin-monica.ford.85981.sbeok.flac16"
+  ],
+  "best_recording": "gd85-09-02.sbd.hinko.19475.sbeok.shnf",
+  "avg_rating": 2.0122857142857145,
+  "raw_rating": 4.238095238095238,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 16,
+    "AUD": 4
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

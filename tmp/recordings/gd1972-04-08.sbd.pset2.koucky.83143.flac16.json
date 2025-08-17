@@ -1,0 +1,94 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1972-04-08",
+  "venue": "Wembley Empire Pool",
+  "location": "London, England",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 1650.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-08end01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-08end01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mind Left Body Jam >",
+      "duration": 238.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-08end02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-08end02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugar Magnolia >",
+      "duration": 435.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-08end03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-08end03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Caution",
+      "duration": 1012.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-08end04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-08end04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "One More Saturday Night",
+      "duration": 290.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-08end05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-08end05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

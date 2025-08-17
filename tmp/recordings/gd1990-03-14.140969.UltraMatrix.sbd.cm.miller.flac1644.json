@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-03-14",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 85.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow",
+      "duration": 439.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ColdRainAndSnow.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feel Like A Stranger",
+      "duration": 511.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FeelLikeAStranger.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Never Trust A Woman",
+      "duration": 455.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04NeverTrustAWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NeverTrustAWoman.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried",
+      "duration": 152.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MamaTried.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 396.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BigRiver.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loose Lucy",
+      "duration": 428.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LooseLucy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 642.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 656.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09RowJimmy.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Let It Grow",
+      "duration": 710.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10LetItGrow.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 71.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crazy Fingers",
+      "duration": 484.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12CrazyFingers.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 627.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingInTheBand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 486.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14UncleJohnsBand.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing Jam",
+      "duration": 437.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15PlayingJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15PlayingJam.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 456.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 396.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dear Mr Fantasy",
+      "duration": 346.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18DearMrFantasy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Need A Miracle",
+      "duration": 256.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19INeedAMiracle.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter",
+      "duration": 475.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20BlackPeter.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 305.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21TurnOnYourLovelight.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 83.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Black Muddy River",
+      "duration": 366.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23BlackMuddyRiver.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

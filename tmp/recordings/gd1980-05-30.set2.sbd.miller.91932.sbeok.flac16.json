@@ -1,0 +1,174 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1980-05-30",
+  "venue": "Milwaukee Auditorium",
+  "location": "Milwaukee, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Scarlet Begonias ->",
+      "duration": 552.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Fire On The Mountain",
+      "duration": 609.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Playing In The Band ->",
+      "duration": 822.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums ->",
+      "duration": 457.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Space ->",
+      "duration": 147.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Not Fade Away ->",
+      "duration": 337.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Peter ->",
+      "duration": 524.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t07.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 434.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Good Lovin'",
+      "duration": 418.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t09.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Alabama Getaway",
+      "duration": 272.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-30d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-30d2t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

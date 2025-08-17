@@ -1,0 +1,30 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1967-07-23",
+  "venue": "Straight Theater, Haight Street",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Neal Cassady Raps (backed by The Dead)",
+      "duration": 64.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_02.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_02.shn"
+        }
+      ]
+    }
+  ]
+}

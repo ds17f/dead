@@ -1,0 +1,670 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1980-12-31",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 211.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 - Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 - Dire Wolf.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "On the Road Again",
+      "duration": 233.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 - On the Road Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 - On the Road Again.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "To Lay Me Down",
+      "duration": 537.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 - To Lay Me Down.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 - To Lay Me Down.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "tuning",
+      "duration": 110.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 - tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Monkey and the Engineer",
+      "duration": 160.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 - Monkey and the Engineer.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 - Monkey and the Engineer.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tuning",
+      "duration": 64.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 - tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jack-a-Roe",
+      "duration": 280.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 - Jack-a-Roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 - Jack-a-Roe.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "tuning",
+      "duration": 92.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 - tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 363.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 - Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 - Cassidy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I've Been All Around This World",
+      "duration": 305.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 - I've Been All Around This World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 - I've Been All Around This World.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "tuning",
+      "duration": 84.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 - tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Race Is On",
+      "duration": 139.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 - The Race Is On.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 - The Race Is On.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Bird Song >",
+      "duration": 603.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 - Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 - Bird Song.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ripple",
+      "duration": 286.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 - Ripple.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 - Ripple.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Alabama Getaway >",
+      "duration": 345.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 - Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 - Alabama Getaway.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Greatest Story Ever Told",
+      "duration": 241.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 - Greatest Story Ever Told.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 - Greatest Story Ever Told.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "tuning",
+      "duration": 76.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 - tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "They Love Each Other",
+      "duration": 466.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 - They Love Each Other.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 - They Love Each Other.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "tuning",
+      "duration": 87.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 - tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Little Red Rooster",
+      "duration": 592.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 - Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 - Little Red Rooster.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "tuning",
+      "duration": 67.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 - tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "China Cat Sunflower >",
+      "duration": 420.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 - China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 - China Cat Sunflower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "I Know You Rider",
+      "duration": 348.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 - I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 - I Know You Rider.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Looks Like Rain",
+      "duration": 479.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24 - Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 - Looks Like Rain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Althea >",
+      "duration": 529.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25 - Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25 - Althea.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Lost Sailor >",
+      "duration": 401.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26 - Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26 - Lost Sailor.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Saint of Circumstance >",
+      "duration": 382.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27 - Saint of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27 - Saint of Circumstance.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Deal",
+      "duration": 439.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "28 - Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28 - Deal.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Sugar Magnolia >",
+      "duration": 421.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "29 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29 - Sugar Magnolia.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Scarlet Begonias >",
+      "duration": 600.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "30 - Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30 - Scarlet Begonias.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Fire on the Mountain",
+      "duration": 568.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "31 - Fire on the Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31 - Fire on the Mountain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "tuning",
+      "duration": 146.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "32 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32 - tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Estimated Prophet >",
+      "duration": 887.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "33 - Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33 - Estimated Prophet.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Drums >",
+      "duration": 471.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "34 - Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34 - Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Space >",
+      "duration": 523.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "35 - Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "35 - Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "The Other One >",
+      "duration": 515.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "36 - The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "36 - The Other One.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Wharf Rat >",
+      "duration": 587.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "37 - Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "37 - Wharf Rat.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Around and Around >",
+      "duration": 291.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "38 - Around and Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "38 - Around and Around.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Sunshine Daydream",
+      "duration": 241.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "39 - Sunshine Daydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "39 - Sunshine Daydream.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Satisfaction >",
+      "duration": 373.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "40 - Satisfaction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "40 - Satisfaction.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Brokedown Palace",
+      "duration": 408.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "41 - Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "41 - Brokedown Palace.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

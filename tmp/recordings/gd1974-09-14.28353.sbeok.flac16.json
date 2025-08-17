@@ -1,0 +1,222 @@
+{
+  "rating": 1.6875,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1974-09-14",
+  "venue": "Olympia Halle",
+  "location": "Munich, Germany",
+  "raw_rating": 3.75,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Phil And Ned",
+      "duration": 1120.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Big River",
+      "duration": 299.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Mexicali Blues",
+      "duration": 443.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Sugaree",
+      "duration": 217.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 465.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "It Must Have Been The Roses",
+      "duration": 330.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Truckin' ->",
+      "duration": 862.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Mind Left Body Jam ->",
+      "duration": 103.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Wharf Rat ->",
+      "duration": 581.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 527.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes Of The World ->",
+      "duration": 856.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "One More Saturday Night",
+      "duration": 284.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "U.S. Blues",
+      "duration": 336.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-14d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

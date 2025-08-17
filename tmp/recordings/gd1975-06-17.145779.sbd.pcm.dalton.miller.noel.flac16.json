@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1975-06-17",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "106",
+      "title": "Peggy-O (fades in)",
+      "duration": 594.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-17s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-17s1t06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Me and My Uncle",
+      "duration": 190.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-17s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-17s1t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Help on the Way ->",
+      "duration": 201.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-17s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-17s1t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Slipknot! ->",
+      "duration": 550.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-17s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-17s1t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Franklin's Tower",
+      "duration": 573.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-17s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-17s1t10.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

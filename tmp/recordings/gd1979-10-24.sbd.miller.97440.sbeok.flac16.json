@@ -1,0 +1,174 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1979-10-24",
+  "venue": "Springfield Civic Center Arena",
+  "location": "Springfield, MA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Scarlet Begonias ->",
+      "duration": 579.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d2t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Fire On The Mountain",
+      "duration": 782.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d2t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Samson And Delilah",
+      "duration": 424.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d2t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Terrapin Station ->",
+      "duration": 804.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playing In The Band ->",
+      "duration": 622.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums ->",
+      "duration": 400.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space ->",
+      "duration": 305.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d3t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat ->",
+      "duration": 619.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d3t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Playing In The Band",
+      "duration": 308.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d3t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Johnny B. Goode",
+      "duration": 250.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-24d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-24d3t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

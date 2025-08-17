@@ -1,0 +1,102 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-02-26",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "- Cold Rain And Snow",
+      "duration": 415.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Cold Rain And Snow.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "- Wang Dang Doodle",
+      "duration": 517.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Wang Dang Doodle.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "- Althea",
+      "duration": 580.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Althea.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "- Black Throated Wind",
+      "duration": 375.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Black Throated Wind.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "- Loose Lucy",
+      "duration": 554.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Loose Lucy.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "- Broken Arrow",
+      "duration": 348.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Broken Arrow.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "- The Music Never Stopped",
+      "duration": 537.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 The Music Never Stopped.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "- Liberty",
+      "duration": 423.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Liberty.flac"
+        }
+      ]
+    }
+  ]
+}

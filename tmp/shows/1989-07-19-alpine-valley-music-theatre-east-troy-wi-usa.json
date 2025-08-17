@@ -1,0 +1,195 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-07-19-alpine-valley-music-theatre-east-troy-wi-usa/",
+  "show_id": "1989-07-19-alpine-valley-music-theatre-east-troy-wi-usa",
+  "band": "Grateful Dead",
+  "venue": "Alpine Valley Music Theatre",
+  "location_raw": "East Troy, WI",
+  "city": "East Troy",
+  "state": "WI",
+  "country": "USA",
+  "date": "1989-07-19",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:04:13.356056",
+  "show_time": null,
+  "recordings": [
+    "gd89-07-19.sbd.437.sbeok.shnf",
+    "gd1989-07-19.upg-sbd.tobin.125854.flac16",
+    "gd1989-07-19.138808.sbd.miller.fixed.flac24",
+    "gd1989-07-19.138818.UltraMatrix.sbd.miller.flac16",
+    "gd1989-07-19.mtx.hansokolow.96232.flac16",
+    "gd1989-07-19.senn441.coniff.gmb.92447.flac16",
+    "gd1989-07-19.Nak300CP4.Baker.Keo.125505.Flac2496",
+    "gd1989-07-19.mat.tobin.125861.flac16",
+    "gd1989-07-19.fob.nak300.holtz.jaz.106492.flac16",
+    "gd1989-07-19.Nak300CP4.Baker.Keo.125506.Flac1644",
+    "gd1989-07-19.fob.set2.seaweed.130697.flac16",
+    "gd1989-07-19.upg-aud.tobin.125855.flac16",
+    "gd1989-07-19.141076.TSBeyerCM101.ebel.flac2496",
+    "gd1989-07-19.dts.tobin.125862.flac16",
+    "gd1989-07-19.142299.Lawn.Schoeps.Mattes.Miller.Noel.t-flac1648"
+  ],
+  "best_recording": "gd89-07-19.sbd.437.sbeok.shnf",
+  "avg_rating": 2.3476585365853655,
+  "raw_rating": 4.768595041322314,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 118,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 10,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

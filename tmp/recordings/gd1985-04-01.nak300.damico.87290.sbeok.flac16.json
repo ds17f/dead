@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-01",
+  "venue": "Cumberland County Civic Center",
+  "location": "Portland, ME",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 377.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 250.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West L.A. Fadeaway",
+      "duration": 450.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 486.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 542.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 371.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Looks Like Rain >",
+      "duration": 489.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Might As Well",
+      "duration": 248.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower >",
+      "duration": 398.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 366.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet >",
+      "duration": 644.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes Of The World >",
+      "duration": 596.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums >",
+      "duration": 497.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space >",
+      "duration": 526.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc301.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Other One >",
+      "duration": 352.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc302.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue >",
+      "duration": 424.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc303.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Around & Around >",
+      "duration": 232.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc304.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 490.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc305.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 429.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc306.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

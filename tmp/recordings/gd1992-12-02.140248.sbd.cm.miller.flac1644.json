@@ -1,0 +1,334 @@
+{
+  "rating": 1.0499999999999998,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1992-12-02",
+  "venue": "McNichols Sports Arena",
+  "location": "Denver, CO",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 456.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01FeelLikeAStranger.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 403.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TheyLoveEachOther.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Same Thing",
+      "duration": 471.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheSameThing.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack-A-Roe",
+      "duration": 276.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Jack-a-roe.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It's All Over Now",
+      "duration": 417.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ItsAllOverNow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "So Many Roads",
+      "duration": 412.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06SoManyRoads.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Let It Grow",
+      "duration": 708.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LetItGrow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 107.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower",
+      "duration": 377.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ChinaCatSunflower.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 347.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Way To Go Home",
+      "duration": 368.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11WayToGoHome.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin'",
+      "duration": 395.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Truckin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 582.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13HesGone.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 806.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 637.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 253.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16INeedAMiracle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 653.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17WharfRat.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Turn On Your Lovelight",
+      "duration": 455.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TurnOnYourLovelight.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Encore Break",
+      "duration": 199.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19EncoreBreak.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Rain",
+      "duration": 353.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20Rain.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

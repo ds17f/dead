@@ -1,0 +1,94 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1969-04-15",
+  "venue": "The Music Box",
+  "location": "Omaha, NB",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 396.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-15t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-15t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 211.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-15t02.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-15t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "China Cat Sunflower ->",
+      "duration": 232.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-15t03.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-15t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Doin' That Rag",
+      "duration": 272.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-15t04.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-15t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It's A Sin",
+      "duration": 18.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-15t05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-15t05.shn"
+        }
+      ]
+    }
+  ]
+}

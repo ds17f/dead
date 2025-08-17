@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-05-03",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 398.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story",
+      "duration": 227.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West L.A. Fade Away",
+      "duration": 451.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane",
+      "duration": 428.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack-A-Roe",
+      "duration": 300.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "All Over Now",
+      "duration": 441.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 463.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 742.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Chinacat Sunflower",
+      "duration": 441.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 359.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet",
+      "duration": 857.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone",
+      "duration": 808.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 347.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 660.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel",
+      "duration": 322.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "All Along The Watchtower",
+      "duration": 458.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Stella Blue",
+      "duration": 586.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Turn On Your Lovelight",
+      "duration": 398.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "U.S. Blues",
+      "duration": 326.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "210"
+        }
+      ]
+    }
+  ]
+}

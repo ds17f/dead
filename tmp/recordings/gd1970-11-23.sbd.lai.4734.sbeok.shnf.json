@@ -1,0 +1,222 @@
+{
+  "rating": 2.0,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-11-23",
+  "venue": "Anderson Theatre",
+  "location": "New York, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 6,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 162.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t101.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t101.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend of the Devil",
+      "duration": 75.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t102.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t102.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain and Snow",
+      "duration": 207.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t103.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t103.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "King Bee",
+      "duration": 230.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t104.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t104.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I Know You Rider",
+      "duration": 194.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t105.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t105.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hard to Handle",
+      "duration": 175.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t106.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t106.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 193.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t107.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t107.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Mama Tried",
+      "duration": 106.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t108.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t108.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fadeaway -> **",
+      "duration": 343.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t109.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t109.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Goin' Down the Road -> **",
+      "duration": 223.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t110.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t110.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Not Fadeaway **",
+      "duration": 99.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t111.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t111.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin' -> *",
+      "duration": 343.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t112.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t112.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "The Other One *",
+      "duration": 293.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-23d1t113.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-23d1t113.shn"
+        }
+      ]
+    }
+  ]
+}

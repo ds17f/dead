@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-03-31",
+  "venue": "Cumberland County Civic Center",
+  "location": "Portland, ME",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 483.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01IkoIko.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson And Delilah",
+      "duration": 485.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02SamsonAndDelilah.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "He's Gone",
+      "duration": 769.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03HesGone.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Need A Miracle",
+      "duration": 335.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04INeedAMiracle.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "China Doll",
+      "duration": 983.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ChinaDoll.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 294.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drums.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 190.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Wheel",
+      "duration": 335.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TheWheel.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Playing In The Band",
+      "duration": 395.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PlayingInTheBand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Day Tripper",
+      "duration": 222.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10DayTripper.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DayTripper.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Encore Break",
+      "duration": 45.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EncoreBreak.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "US Blues",
+      "duration": 297.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12UsBlues.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1994-07-02",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Music Never Stopped >",
+      "duration": 185.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t01_vbr.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree >",
+      "duration": 443.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t02_vbr.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Music Never Stopped",
+      "duration": 187.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t03_vbr.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend Of The Devil",
+      "duration": 328.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t04_vbr.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Desolation Row",
+      "duration": 380.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t05_vbr.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 273.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t06.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t06_vbr.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 334.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d1t07_vbr.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Help On The Way >",
+      "duration": 152.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t01_vbr.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Slipknot! >",
+      "duration": 247.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t02_vbr.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Franklin's Tower",
+      "duration": 388.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t03_vbr.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "If The Shoe Fits",
+      "duration": 254.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t04_vbr.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin' >",
+      "duration": 263.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t05_vbr.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Smokestack Lightnin' >",
+      "duration": 144.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t06.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t06_vbr.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone >",
+      "duration": 312.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t07.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t07_vbr.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 255.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t08.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t08_vbr.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 312.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t09.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d2t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d2t09_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 200.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t01.mp3",
+          "bitrate": "147"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t01_vbr.mp3",
+          "bitrate": "150"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue >",
+      "duration": 239.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t02_vbr.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones >",
+      "duration": 297.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t03_vbr.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night",
+      "duration": 217.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1994-07-02d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-07-02d3t04_vbr.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

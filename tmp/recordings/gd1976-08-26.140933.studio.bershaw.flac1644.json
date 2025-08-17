@@ -1,0 +1,78 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1976-08-26",
+  "venue": "Club Front Studio",
+  "location": "San Rafael, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancing In The Streets (instrumental - false start #1)",
+      "duration": 41.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1976.08.26.studio.bershaw.t01-DancingInTheStreets-falsestart1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1976.08.26.studio.bershaw.t01-DancingInTheStreets-falsestart1.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dancing In The Streets (instrumental - false start #2)",
+      "duration": 64.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1976.08.26.studio.bershaw.t02-DancingInTheStreets-falsestart2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1976.08.26.studio.bershaw.t02-DancingInTheStreets-falsestart2.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dancing In The Streets (instrumental #1)",
+      "duration": 292.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1976.08.26.studio.bershaw.t03-DancingInTheStreets-Instrumental1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1976.08.26.studio.bershaw.t03-DancingInTheStreets-Instrumental1.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dancing In The Streets (instrumental #2)",
+      "duration": 288.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1976.08.26.studio.bershaw.t03-DancingInTheStreets-Instrumental2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1976.08.26.studio.bershaw.t03-DancingInTheStreets-Instrumental2.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

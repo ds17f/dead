@@ -1,0 +1,94 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1972-04-16",
+  "venue": "Aarhus University",
+  "location": "Aarhus, Denmark",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Lovin' ;",
+      "duration": 680.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-16d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-16d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cumberland Blues ;",
+      "duration": 220.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-16d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-16d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "El Paso ;",
+      "duration": 157.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-16d1t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-16d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Deal ;",
+      "duration": 174.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-16d1t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-16d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Truckin' > Jam > The Other One Jam //",
+      "duration": 530.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-16d1t05.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-16d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

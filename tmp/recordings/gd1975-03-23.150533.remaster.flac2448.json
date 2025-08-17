@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "FM",
+  "confidence": 0.0,
+  "date": "1975-03-23",
+  "venue": "Kezar Stadium",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Blues For Allah >",
+      "duration": 573.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "1. Blues For Allah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1. Blues For Allah.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Stronger Than Dirt >",
+      "duration": 411.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "2. Stronger Than Dirt.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2. Stronger Than Dirt.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Drums >",
+      "duration": 202.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "3. Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3. Drums.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Stronger Than Dirt >",
+      "duration": 562.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "4. Stronger Than Dirt.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "4. Stronger Than Dirt.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Blues For Allah",
+      "duration": 229.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "5. Blues For Allah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5. Blues For Allah.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Johnny B. Goode",
+      "duration": 246.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "6. Johnny B Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "6. Johnny B Goode.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

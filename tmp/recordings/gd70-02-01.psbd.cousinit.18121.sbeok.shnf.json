@@ -1,0 +1,46 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-01",
+  "venue": "The Warehouse",
+  "location": "New Orleans, LA",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "The Other One",
+      "duration": 108.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-01d1t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Turn On Your Lovelight",
+      "duration": 1263.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-01d1t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-01d1t02.shn"
+        }
+      ]
+    }
+  ]
+}

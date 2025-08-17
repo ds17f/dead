@@ -1,0 +1,193 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-12-29-san-francisco-civic-auditorium-san-francisco-ca-usa/",
+  "show_id": "1984-12-29-san-francisco-civic-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "S.F Civic Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1984-12-29",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:50.190994",
+  "show_time": null,
+  "recordings": [
+    "gd1984-12-29.142761.sbd.miller.flac1648",
+    "gd1984-12-29.sbd.walker-scotton.miller.106169.flac16",
+    "gd84-12-29.oade-schoeps.ladner.24294.sbeok.shnf",
+    "gd1984-12-29.nak100.holtz-bolton.jaz.105032.flac16",
+    "gd1984-12-29.senn421.mccue.ford.81758.sbeok.flac16",
+    "gd84-12-29.aud.12926.sbefail.shnf",
+    "gd1984-12-29.132520.fob-schoeps.Oade.BCE.flac16",
+    "gd1984-12-29.fob.sonyECM220t.kirschner.miller.95694.sbeok.flac16",
+    "gd1984-12-29.148399.fob.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1984-12-29.152535.nak700.severson.miller.clugston.flac1648",
+    "gd1984-12-29.167180.nak700.wagner.miller.clugston.flac1648",
+    "gd1984-12-29.148400.fob.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1984-12-29.167181.nak700.wagner.miller.clugston.flac2496",
+    "gd1984-12-29.150895.fm.waddell.haines.clugston.flac2448",
+    "gd1984-12-29.167388.naks.mossa.flac2496",
+    "gd1984-12-29.Senn421.Darby.118252.Flac1644",
+    "gd1984-12-29.140187.fob.cmc4-mk41.oade.bryant.wise.miller.clugston.flac1644",
+    "gd1984-12-29.150894.fm.waddell.haines.clugston.flac1648",
+    "gd1984-12-29.Senn421.Darby.118251.Flac2448",
+    "gd1984-12-29.152536.nak700.severson.miller.clugston.flac2496",
+    "gd1984-12-29.aud.unknown.laddner.87705.sbeok.shnf",
+    "gd1984-12-29.151201.mke2002.holbrook.flac1644",
+    "gd1984-12-29.151202.mke2002.holbrook.flac2448"
+  ],
+  "best_recording": "gd1984-12-29.142761.sbd.miller.flac1648",
+  "avg_rating": 1.97921875,
+  "raw_rating": 3.888888888888889,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "AUD": 19,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

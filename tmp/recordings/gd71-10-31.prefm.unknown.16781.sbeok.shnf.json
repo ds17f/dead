@@ -1,0 +1,78 @@
+{
+  "rating": 1.9125,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1971-10-31",
+  "venue": "Ohio Theatre",
+  "location": "Columbus, OH",
+  "raw_rating": 4.25,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Deal",
+      "duration": 153.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-31t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-10-31t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Playing in the Band",
+      "duration": 208.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-31t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-10-31t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "One More Saturday Night",
+      "duration": 164.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-31t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-10-31t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Johnny B. Goode",
+      "duration": 133.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-31t04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-10-31t04.shn"
+        }
+      ]
+    }
+  ]
+}

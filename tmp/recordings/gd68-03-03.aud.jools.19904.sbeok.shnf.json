@@ -1,0 +1,110 @@
+{
+  "rating": 2.1153846153846154,
+  "review_count": 13,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-03-03",
+  "venue": "Haight Street",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.230769230769231,
+  "high_ratings": 12,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "banter",
+      "duration": 86.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-03t1.mp3",
+          "bitrate": "106"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-03t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Viola Lee Blues",
+      "duration": 1325.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-03t2.mp3",
+          "bitrate": "109"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-03t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Smokestack Lightning",
+      "duration": 839.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-03t3.mp3",
+          "bitrate": "107"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-03t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Turn On Your Love Light",
+      "duration": 900.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-03t4.mp3",
+          "bitrate": "110"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-03t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "It Hurts Me Too",
+      "duration": 318.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-03t5.mp3",
+          "bitrate": "111"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-03t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cryptical Envelopment",
+      "duration": 78.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-03t6.mp3",
+          "bitrate": "109"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-03t6.shn"
+        }
+      ]
+    }
+  ]
+}

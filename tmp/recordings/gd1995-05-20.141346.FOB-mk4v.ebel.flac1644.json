@@ -1,0 +1,318 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-05-20",
+  "venue": "Sam Boyd Silver Bowl, U.N.L.V.",
+  "location": "Las Vegas, NV",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 185.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi-Half Step",
+      "duration": 695.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Mississippi-halfStep.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Mississippi-halfStep.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Race is On",
+      "duration": 233.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03TheRaceIsOn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheRaceIsOn.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy River Road",
+      "duration": 564.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LazyRiverRoad.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint My Masterpiece",
+      "duration": 405.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 530.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TennesseeJed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 634.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Eternity.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 148.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Sunflower",
+      "duration": 463.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ChinaSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ChinaSunflower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 354.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IKnowYouRider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samba In The Rain",
+      "duration": 400.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SambaInTheRain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Women Are Smarter",
+      "duration": 523.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12WomenAreSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12WomenAreSmarter.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 560.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Truckin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drumz",
+      "duration": 751.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drumz.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 693.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Last Time",
+      "duration": 372.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheLastTime.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "That Would Be Something",
+      "duration": 173.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ThatWouldBeSomething.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ThatWouldBeSomething.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Morning Dew",
+      "duration": 828.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18MorningDew.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 377.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19OneMoreSaturdayNight.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

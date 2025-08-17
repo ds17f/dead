@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-06-25-blossom-music-center-cuyahoga-falls-oh-usa/",
+  "show_id": "1985-06-25-blossom-music-center-cuyahoga-falls-oh-usa",
+  "band": "Grateful Dead",
+  "venue": "Blossom Music Center",
+  "location_raw": "Cuyahoga Falls, OH",
+  "city": "Cuyahoga Falls",
+  "state": "OH",
+  "country": "USA",
+  "date": "1985-06-25",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Day Tripper",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:58.552264",
+  "show_time": null,
+  "recordings": [
+    "gd85-06-25.sbd.miller.18663.sbeok.shnf",
+    "gd85-06-25.sbd.jeffm.3049.sbeok.shnf",
+    "gd1985-06-25.142391.sbd.dalton.miller.clugston.flac1644",
+    "gd1985-06-25.mtx.seamons.kutik.106640.flac16",
+    "gd1985-06-25.121562.BeyerM160.d5scott.flac16",
+    "gd1985-06-25.senn441.kutik.106739.flac16",
+    "gd1985-06-25.148521.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1985-06-25.152625.akgc422-davis-murtha.holbrook.flac2448",
+    "gd1985-06-25.140891.s1.unkown.Bryant.Miller.Noel.t-flac2496",
+    "gd1985-06-25.132561.schopes.Oade.BCE.macdonald.flac16",
+    "gd1985-06-25.141241.s1.unknown.Bryant.Miller.Noel.t-flac1644",
+    "gd1985-06-25.148520.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1985-06-25.152624.akgc422-davis-murtha.holbrook.flac1644"
+  ],
+  "best_recording": "gd85-06-25.sbd.miller.18663.sbeok.shnf",
+  "avg_rating": 2.178855721393034,
+  "raw_rating": 4.422535211267606,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 62,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 10
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

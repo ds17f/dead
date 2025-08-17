@@ -1,0 +1,94 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1973-05-13",
+  "venue": "Iowa State Fairgrounds",
+  "location": "Des Moines, IA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "He's Gone ->",
+      "duration": 855.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-05-13d4t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-13d4t01.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Truckin' ->",
+      "duration": 794.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-05-13d4t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-13d4t02.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One ->",
+      "duration": 1157.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-05-13d4t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-13d4t03.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Eyes Of The World ->",
+      "duration": 968.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-05-13d4t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-13d4t04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "China Doll",
+      "duration": 336.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-05-13d4t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-13d4t05.mp3",
+          "bitrate": "167"
+        }
+      ]
+    }
+  ]
+}

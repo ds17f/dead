@@ -1,0 +1,72 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-07-03-mcmahon-stadium-calgary-alberta-canada/",
+  "show_id": "1970-07-03-mcmahon-stadium-calgary-alberta-canada",
+  "band": "Grateful Dead",
+  "venue": "McMahon Stadium",
+  "location_raw": "Calgary, AB",
+  "city": "Calgary",
+  "state": "AB",
+  "country": "Canada",
+  "date": "1970-07-03",
+  "setlist_status": "missing",
+  "setlist": null,
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage",
+    "Janis Joplin",
+    "The Band",
+    "Delaney & Bonnie",
+    "Buddy Guy",
+    "Sha Na Na",
+    "Eric Andersen",
+    "Ian & Sylvia / Great Speckled Bird",
+    "James & The Good Bros.",
+    "Charlebois"
+  ],
+  "collection_timestamp": "2025-08-10T08:19:12.213801",
+  "show_time": null,
+  "recordings": [],
+  "best_recording": null,
+  "avg_rating": 0.0,
+  "recording_count": 0,
+  "confidence": 0.0,
+  "source_types": {},
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

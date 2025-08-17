@@ -1,0 +1,94 @@
+{
+  "rating": 3.5,
+  "review_count": 5,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-01-20",
+  "venue": "Eureka Municipal Auditorium",
+  "location": "Eureka, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Clementine>",
+      "duration": 217.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t01.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Potato Caboose>",
+      "duration": 319.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t02.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Born Cross-Eyed>",
+      "duration": 171.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t03.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Spanish Jam>",
+      "duration": 349.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t04.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Caution Jam//",
+      "duration": 73.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t05.mp3",
+          "bitrate": "167"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t05.shn"
+        }
+      ]
+    }
+  ]
+}

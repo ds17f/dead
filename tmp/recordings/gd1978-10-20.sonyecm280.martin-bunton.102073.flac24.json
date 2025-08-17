@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-10-20",
+  "venue": "Winterland Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd intro",
+      "duration": 37.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New New Minglewood Blues",
+      "duration": 390.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 528.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 434.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Direwolf",
+      "duration": 337.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 347.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 552.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "It's All Over Now",
+      "duration": 555.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Loser",
+      "duration": 537.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Lazy Lightning",
+      "duration": 503.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d1tr10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d1tr10.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mississippi Half Step Toodeloo",
+      "duration": 540.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d2tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d2tr01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Franklins Tower",
+      "duration": 850.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d2tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d2tr02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Dancing In The Streets",
+      "duration": 1197.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 557.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 230.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Not Fade Away",
+      "duration": 505.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Peter",
+      "duration": 635.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around and Around",
+      "duration": 567.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Shakedown Street",
+      "duration": 456.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-20-d3tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-20-d3tr07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

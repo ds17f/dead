@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1984-04-17",
+  "venue": "Niagara Falls Convention Center",
+  "location": "Niagara Falls, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Jack Straw",
+      "duration": 357.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t01 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t01 Jack Straw.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Dire Wolf",
+      "duration": 235.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t02 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t02 Dire Wolf.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "New Minglewood Blues",
+      "duration": 476.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t03 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t03 Minglewood.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Row Jimmy",
+      "duration": 582.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t04 Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t04 Row Jimmy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "My Brother Esau",
+      "duration": 319.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t05 Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t05 Brother Esau.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Ramble On Rose",
+      "duration": 446.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t06 RoR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t06 RoR.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Looks Like Rain >",
+      "duration": 463.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t07 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t07 LLR.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Deal",
+      "duration": 544.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s1t08 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s1t08 Deal.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "\"Take A Step Back\"",
+      "duration": 53.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t01 Take A Step Back.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t01 Take A Step Back.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Help On The Way >",
+      "duration": 205.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t02 Help.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t02 Help.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Slipknot! >",
+      "duration": 547.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t03 Slipknot!.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t03 Slipknot!.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Franklin's Tower",
+      "duration": 751.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t04 Franklin's.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t04 Franklin's.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Man Smart (Woman Smarter) >",
+      "duration": 580.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t05 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t05 Man Smart (Woman Smarter).mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Eyes Of The World >",
+      "duration": 648.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t06 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t06 Eyes.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 524.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t07 Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 742.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t08 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Black Peter >",
+      "duration": 517.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t09 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t09 Black Peter.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Throwing Stones >",
+      "duration": 525.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t10 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t10 Throwing Stones.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Not Fade Away",
+      "duration": 473.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t11 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t11 NFA.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E: Touch Of Grey",
+      "duration": 374.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-04-17 s2t12 E_Touch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-04-17 s2t12 E_Touch.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

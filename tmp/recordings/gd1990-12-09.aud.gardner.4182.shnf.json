@@ -1,0 +1,434 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1990-12-09",
+  "venue": "Compton Terrace Amphitheatre",
+  "location": "Chandler, AZ",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket >",
+      "duration": 476.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t01.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t01_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 447.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t02.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t02_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 586.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t03.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t03_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack-A-Roe",
+      "duration": 308.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t04.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t04_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Maggie's Farm",
+      "duration": 449.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t05_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Black Throated Wind",
+      "duration": 353.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t06.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t06_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song",
+      "duration": 842.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t07.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t07_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Valley Road",
+      "duration": 311.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t08.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d1t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d1t08_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Samson And Delilah",
+      "duration": 472.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t01.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t01_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias >",
+      "duration": 554.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t02.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t02_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain",
+      "duration": 927.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t03_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin' >",
+      "duration": 511.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t04_vbr.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Spoonful >",
+      "duration": 293.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t05_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone >",
+      "duration": 767.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t06_vbr.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums > Space",
+      "duration": 425.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d2t07_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel >",
+      "duration": 350.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t01_vbr.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Playing Reprise >",
+      "duration": 239.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t02.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t02_vbr.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 394.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t03_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Good Lovin'",
+      "duration": 429.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t04_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Brokedown Palace",
+      "duration": 325.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-12-09d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-12-09d3t05_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

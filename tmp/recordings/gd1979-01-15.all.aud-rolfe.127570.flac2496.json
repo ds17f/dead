@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1979-01-15",
+  "venue": "Springfield Civic Center",
+  "location": "Springfield, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 149.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t01.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 459.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack-A-Roe",
+      "duration": 434.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 540.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 804.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried ->",
+      "duration": 153.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t06.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 447.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Stagger Lee",
+      "duration": 588.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Passenger",
+      "duration": 422.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 443.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s01t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s01t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 190.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Need A Miracle ->",
+      "duration": 413.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Shakedown Street",
+      "duration": 795.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "From The Heart Of Me",
+      "duration": 294.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Terrapin Station ->",
+      "duration": 859.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Playing In The Band ->",
+      "duration": 1095.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 414.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space ->",
+      "duration": 488.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playing In The Band ->",
+      "duration": 362.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t09.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Casey Jones",
+      "duration": 441.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t10.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Johnny B. Goode",
+      "duration": 275.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s02t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s02t11.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

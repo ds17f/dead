@@ -1,0 +1,126 @@
+{
+  "rating": 0.875,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1984-06-09",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 2.5,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Iko Iko",
+      "duration": 322.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hell in a Bucket",
+      "duration": 201.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Loser",
+      "duration": 233.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cassidy",
+      "duration": 194.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Dupree's Diamond Blues",
+      "duration": 201.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "C.C. Rider",
+      "duration": 256.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Deal",
+      "duration": 356.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09d1t07.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd84-06-09d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

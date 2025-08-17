@@ -1,0 +1,414 @@
+{
+  "rating": 2.0714285714285716,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1991-09-05",
+  "venue": "Richfield Coliseum",
+  "location": "Richfield, OH",
+  "raw_rating": 4.142857142857143,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning/Crowd",
+      "duration": 20.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mississippi Half-Step",
+      "duration": 350.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Little Red Rooster",
+      "duration": 423.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Stagger Lee",
+      "duration": 251.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Queen Jane Approximately",
+      "duration": 287.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Ramble On Rose",
+      "duration": 311.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Cassidy",
+      "duration": 289.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t07.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Don't Ease Me In",
+      "duration": 548.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d1t08.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "China Cat Sunflower",
+      "duration": 272.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 213.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Man Smart, Women Smarter",
+      "duration": 377.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship of Fools",
+      "duration": 313.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 421.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Smokestack Lightnin'",
+      "duration": 243.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 429.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d2t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d2t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 418.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d3t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d3t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 203.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d3t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d3t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 368.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d3t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d3t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 367.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d3t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d3t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "U.S. Blues",
+      "duration": 294.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-05d3t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1991-09-05d3t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-09-05d3t05.shn"
+        }
+      ]
+    }
+  ]
+}

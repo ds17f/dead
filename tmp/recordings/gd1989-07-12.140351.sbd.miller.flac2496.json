@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-07-12",
+  "venue": "Robert F. Kennedy Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 48.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 386.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TouchOfGrey.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 563.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mississippi Half-Step Uptown Toodleoo",
+      "duration": 667.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04MississippiHalf-stepUptownToodleoo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MississippiHalf-stepUptownToodleoo.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Just Like Tom Thumb Blues",
+      "duration": 360.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05JustLikeTomThumbBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05JustLikeTomThumbBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Far From Me",
+      "duration": 338.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06FarFromMe.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 414.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Cassidy.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Friend Of The Devil",
+      "duration": 485.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08FriendOfTheDevil.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 304.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PromisedLand.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugaree",
+      "duration": 668.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Sugaree.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 497.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ManSmartwomanSmarter.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship Of Fools",
+      "duration": 585.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ShipOfFools.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Estimated Prophet",
+      "duration": 648.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13EstimatedProphet.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World",
+      "duration": 619.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14EyesOfTheWorld.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 571.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 567.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 251.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17INeedAMiracle.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dear Mr Fantasy",
+      "duration": 383.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18DearMrFantasy.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter",
+      "duration": 554.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BlackPeter.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn On Your Lovelight",
+      "duration": 355.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TurnOnYourLovelight.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 82.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Black Muddy River",
+      "duration": 396.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22BlackMuddyRiver.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

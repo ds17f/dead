@@ -1,0 +1,286 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1985-03-09",
+  "venue": "Berkeley Community Theatre",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha ->",
+      "duration": 380.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "One More Saturday Night",
+      "duration": 252.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d1t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 602.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tuning",
+      "duration": 100.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Its All Over Now",
+      "duration": 574.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Row Jimmy",
+      "duration": 607.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d1t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Cat Sunflower ->",
+      "duration": 277.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d2t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cumberland Blues ->",
+      "duration": 404.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d2t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Need A Miracle ->",
+      "duration": 294.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d2t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Eyes Of The World ->",
+      "duration": 678.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d2t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums ->",
+      "duration": 318.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d2t05.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Space ->",
+      "duration": 438.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d2t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam ->",
+      "duration": 68.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d3t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Other One ->",
+      "duration": 366.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d3t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel ->",
+      "duration": 265.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d3t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Sugar Magnolia",
+      "duration": 595.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d3t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Its All Over Now, Baby Blue",
+      "duration": 430.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-09d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-09d3t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

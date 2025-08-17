@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-06-13",
+  "venue": "Seattle Center Arena",
+  "location": "Seattle, WA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 185.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t01 Crowd.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "New Minglewood Blues",
+      "duration": 506.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t02 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t02 New Minglewood Blues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Sugaree",
+      "duration": 831.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t03 Sugaree.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Mama Tried >",
+      "duration": 159.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t04 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t04 Mama Tried.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Mexicali Blues",
+      "duration": 367.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t05 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t05 Mexicali Blues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Candyman",
+      "duration": 448.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t06 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t06 Candyman.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Passenger",
+      "duration": 337.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t07 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t07 Passenger.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Althea",
+      "duration": 499.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t08 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t08 Althea.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Lost Sailor >",
+      "duration": 355.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t09 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t09 Lost Sailor.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Saint Of Circumstance >",
+      "duration": 345.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t10 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t10 Saint Of Circumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Deal",
+      "duration": 329.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s1t11 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s1t11 Deal.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 46.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t01 Crowd.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Don't Ease Me In",
+      "duration": 300.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t02 Don 't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t02 Don 't Ease Me In.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Let It Grow >",
+      "duration": 610.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t03 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t03 Let It Grow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "China Cat Sunflower >",
+      "duration": 330.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t04 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t04 China Cat Sunflower.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "I Know You Rider",
+      "duration": 483.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t05 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t05 I Know You Rider.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "CC Rider",
+      "duration": 468.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t06 CC Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t06 CC Rider.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Terrapin Station >",
+      "duration": 776.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t07 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t07 Terrapin Station.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Drums >",
+      "duration": 456.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t08 Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space >",
+      "duration": 317.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t09 Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "The Other One >",
+      "duration": 422.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t10 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t10 The Other One.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Wharf Rat >",
+      "duration": 550.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t11 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t11 Wharf Rat.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Sugar Magnolia",
+      "duration": 559.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t12 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t12 Sugar Magnolia.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Encore Break",
+      "duration": 299.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t13 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t13 Encore Break.mp3",
+          "bitrate": "240"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "Alabama Getaway",
+      "duration": 344.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-13 s2t14 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-13 s2t14 Alabama Getaway.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 2.994444444444444,
+  "review_count": 18,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-03-29",
+  "venue": "Carousel Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.277777777777778,
+  "high_ratings": 14,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Morning Dew",
+      "duration": 402.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Turn On Your Lovelight",
+      "duration": 456.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cryptical Envelopment",
+      "duration": 106.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "The Other One",
+      "duration": 211.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t04.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Cryptical Envelopment",
+      "duration": 265.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t05.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "New Potato Caboose",
+      "duration": 561.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t06.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Born Cross-Eyed",
+      "duration": 20.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-29d1t07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-03-29d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

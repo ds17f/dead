@@ -1,0 +1,126 @@
+{
+  "rating": 2.138888888888889,
+  "review_count": 18,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-09-29",
+  "venue": "Cafe au Go-Go",
+  "location": "New York City, NY",
+  "raw_rating": 4.277777777777778,
+  "high_ratings": 14,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Doin' That Rag",
+      "duration": 475.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Seven",
+      "duration": 435.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Lovin",
+      "duration": 88.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Drums",
+      "duration": 395.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Good Lovin'",
+      "duration": 143.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Saint Stephen",
+      "duration": 469.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Eleven",
+      "duration": 565.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-29t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-29t07.shn"
+        }
+      ]
+    }
+  ]
+}

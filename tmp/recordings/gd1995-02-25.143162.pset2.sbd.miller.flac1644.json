@@ -1,0 +1,78 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1995-02-25",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Space",
+      "duration": 433.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Space.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One",
+      "duration": 539.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TheOtherOne.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Wharf Rat",
+      "duration": 628.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WharfRat.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "One More Saturday Night",
+      "duration": 181.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04OneMoreSaturdayNight.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

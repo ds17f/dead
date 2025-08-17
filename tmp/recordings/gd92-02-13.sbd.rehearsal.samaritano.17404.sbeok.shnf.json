@@ -1,0 +1,30 @@
+{
+  "rating": 1.7142857142857142,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1992-02-13",
+  "venue": "Club Front",
+  "location": ", San Rafael, CA",
+  "raw_rating": 3.4285714285714284,
+  "high_ratings": 4,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "So Many Roads",
+      "duration": 176.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-02-13t01.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-02-13t01.shn"
+        }
+      ]
+    }
+  ]
+}

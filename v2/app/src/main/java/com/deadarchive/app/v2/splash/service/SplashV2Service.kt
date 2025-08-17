@@ -3,8 +3,8 @@ package com.deadarchive.v2.app.splash.service
 import android.util.Log
 import com.deadarchive.v2.app.model.PhaseV2
 import com.deadarchive.v2.app.model.ProgressV2
-import com.deadarchive.v2.core.database.service.DatabaseManagerV2
-import com.deadarchive.v2.core.database.service.ImportResult
+import com.deadarchive.v2.core.database.service.DatabaseManager
+import com.deadarchive.v2.core.database.service.DatabaseImportResult
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -20,7 +20,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class SplashV2Service @Inject constructor(
-    private val v2DatabaseManager: DatabaseManagerV2
+    private val databaseManager: DatabaseManager
 ) {
     companion object {
         private const val TAG = "SplashV2Service"
@@ -33,13 +33,15 @@ class SplashV2Service @Inject constructor(
     private var initStartTimeMs: Long = 0L
     
     /**
-     * Convert DatabaseManagerV2 progress to V2 splash progress
+     * Convert DatabaseManager progress to V2 splash progress
      */
     fun getV2Progress(): Flow<ProgressV2> {
-        return v2DatabaseManager.progress.map { v2Progress ->
+        return databaseManager.progress.map { v2Progress ->
             val phase = when (v2Progress.phase) {
                 "IDLE" -> PhaseV2.IDLE
                 "CHECKING" -> PhaseV2.CHECKING
+                "USING_LOCAL" -> PhaseV2.USING_LOCAL
+                "DOWNLOADING" -> PhaseV2.DOWNLOADING
                 "EXTRACTING" -> PhaseV2.EXTRACTING
                 "IMPORTING_SHOWS" -> PhaseV2.IMPORTING_SHOWS
                 "COMPUTING_VENUES" -> PhaseV2.COMPUTING_VENUES
@@ -50,7 +52,7 @@ class SplashV2Service @Inject constructor(
             }
             
             // Initialize start time when we begin processing
-            if (initStartTimeMs == 0L && phase in listOf(PhaseV2.CHECKING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS)) {
+            if (initStartTimeMs == 0L && phase in listOf(PhaseV2.CHECKING, PhaseV2.USING_LOCAL, PhaseV2.DOWNLOADING, PhaseV2.EXTRACTING, PhaseV2.IMPORTING_SHOWS)) {
                 initStartTimeMs = System.currentTimeMillis()
                 Log.d(TAG, "Database initialization started at ${initStartTimeMs}")
             }
@@ -96,18 +98,31 @@ class SplashV2Service @Inject constructor(
     suspend fun initializeV2Database(): V2InitResult {
         return try {
             Log.d(TAG, "Starting V2 database initialization")
-            val result = v2DatabaseManager.initializeV2DataIfNeeded()
+            
+            // Test GitHub API integration
+            databaseManager.testGitHubIntegration()
+            
+            // Test database health checking
+            databaseManager.testDatabaseHealth()
+            
+            // Test file discovery
+            databaseManager.testFileDiscovery()
+            
+            // Test download functionality (optional - can be slow)
+            // databaseManager.testDownloadFunctionality()
+            
+            val result = databaseManager.initializeV2DataIfNeeded()
             
             when (result) {
-                is ImportResult.Success -> {
+                is DatabaseImportResult.Success -> {
                     Log.d(TAG, "V2 database initialization completed: ${result.showsImported} shows, ${result.venuesImported} venues")
                     V2InitResult.Success(result.showsImported, result.venuesImported)
                 }
-                is ImportResult.Error -> {
+                is DatabaseImportResult.Error -> {
                     Log.e(TAG, "V2 database initialization failed: ${result.error}")
                     V2InitResult.Error(result.error)
                 }
-                is ImportResult.RequiresUserChoice -> {
+                is DatabaseImportResult.RequiresUserChoice -> {
                     Log.d(TAG, "Multiple database sources available, requiring user choice")
                     // Update UI to show source selection
                     updateUiState(
@@ -130,7 +145,7 @@ class SplashV2Service @Inject constructor(
      */
     suspend fun isV2DataInitialized(): Boolean {
         return try {
-            v2DatabaseManager.isV2DataInitialized()
+            databaseManager.isV2DataInitialized()
         } catch (e: Exception) {
             Log.e(TAG, "Failed to check V2 data initialization status", e)
             false
@@ -145,7 +160,7 @@ class SplashV2Service @Inject constructor(
         showError: Boolean = _uiState.value.showError,
         showProgress: Boolean = _uiState.value.showProgress,
         showSourceSelection: Boolean = _uiState.value.showSourceSelection,
-        availableSources: List<DatabaseManagerV2.DatabaseSource> = _uiState.value.availableSources,
+        availableSources: List<DatabaseManager.DatabaseSource> = _uiState.value.availableSources,
         message: String = _uiState.value.message,
         errorMessage: String? = _uiState.value.errorMessage,
         progress: ProgressV2 = _uiState.value.progress
@@ -223,7 +238,7 @@ class SplashV2Service @Inject constructor(
     /**
      * User selected a database source for initialization
      */
-    fun selectDatabaseSource(source: DatabaseManagerV2.DatabaseSource, coroutineScope: CoroutineScope) {
+    fun selectDatabaseSource(source: DatabaseManager.DatabaseSource, coroutineScope: CoroutineScope) {
         coroutineScope.launch {
             Log.d(TAG, "User selected database source: $source")
             
@@ -232,26 +247,26 @@ class SplashV2Service @Inject constructor(
                 showSourceSelection = false,
                 showProgress = true,
                 message = when (source) {
-                    DatabaseManagerV2.DatabaseSource.ZIP_BACKUP -> "Restoring from backup..."
-                    DatabaseManagerV2.DatabaseSource.DATA_IMPORT -> "Importing fresh data..."
+                    DatabaseManager.DatabaseSource.ZIP_BACKUP -> "Restoring from backup..."
+                    DatabaseManager.DatabaseSource.DATA_IMPORT -> "Importing fresh data..."
                 }
             )
             
             try {
-                val result = v2DatabaseManager.initializeFromSource(source)
+                val result = databaseManager.initializeFromSource(source)
                 
                 when (result) {
-                    is ImportResult.Success -> {
+                    is DatabaseImportResult.Success -> {
                         updateUiState(
                             isReady = true,
                             showProgress = false,
                             message = when (source) {
-                                DatabaseManagerV2.DatabaseSource.ZIP_BACKUP -> "Database restored from backup"
-                                DatabaseManagerV2.DatabaseSource.DATA_IMPORT -> "V2 database ready: ${result.showsImported} shows loaded"
+                                DatabaseManager.DatabaseSource.ZIP_BACKUP -> "Database restored from backup"
+                                DatabaseManager.DatabaseSource.DATA_IMPORT -> "V2 database ready: ${result.showsImported} shows loaded"
                             }
                         )
                     }
-                    is ImportResult.Error -> {
+                    is DatabaseImportResult.Error -> {
                         updateUiState(
                             showError = true,
                             showProgress = false,
@@ -259,7 +274,7 @@ class SplashV2Service @Inject constructor(
                             errorMessage = result.error
                         )
                     }
-                    is ImportResult.RequiresUserChoice -> {
+                    is DatabaseImportResult.RequiresUserChoice -> {
                         // This shouldn't happen when selecting a specific source
                         updateUiState(
                             showError = true,
@@ -290,7 +305,7 @@ data class SplashV2UiState(
     val showError: Boolean = false,
     val showProgress: Boolean = false,
     val showSourceSelection: Boolean = false,
-    val availableSources: List<com.deadarchive.v2.core.database.service.DatabaseManagerV2.DatabaseSource> = emptyList(),
+    val availableSources: List<DatabaseManager.DatabaseSource> = emptyList(),
     val message: String = "Loading V2 database...",
     val errorMessage: String? = null,
     val progress: ProgressV2 = ProgressV2(

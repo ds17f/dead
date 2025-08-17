@@ -1,0 +1,350 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1994-02-27",
+  "venue": "Oakland-Alameda County Coliseum Stadium",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 116.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t01.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t01.mtx.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 468.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t02.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t02.mtx.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Row Jimmy",
+      "duration": 722.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t03.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t03.mtx.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 464.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t04.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t04.mtx.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Lazy River Road",
+      "duration": 481.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t05.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t05.mtx.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried ->",
+      "duration": 155.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t06.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t06.mtx.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 420.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t07.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t07.mtx.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 595.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t08.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t08.mtx.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Easy Answers",
+      "duration": 393.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d1t09.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d1t09.mtx.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch Of Grey ->",
+      "duration": 453.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d2t01.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d2t01.mtx.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson And Delilah",
+      "duration": 493.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d2t02.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d2t02.mtx.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band ->",
+      "duration": 971.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d2t03.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d2t03.mtx.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Corrina ->",
+      "duration": 939.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d2t04.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d2t04.mtx.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums ->",
+      "duration": 1269.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d2t05.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d2t05.mtx.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space ->",
+      "duration": 685.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t01.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t01.mtx.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One ->",
+      "duration": 457.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t02.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t02.mtx.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Cosmic Charlie Tease ->",
+      "duration": 40.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t03.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t03.mtx.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat ->",
+      "duration": 617.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t04.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t04.mtx.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Turn On Your Lovelight",
+      "duration": 428.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t05.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t05.mtx.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Crowd/Tuning",
+      "duration": 50.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t06.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t06.mtx.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Rain",
+      "duration": 323.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-02-27d3t07.mtx.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-02-27d3t07.mtx.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

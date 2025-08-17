@@ -1,0 +1,142 @@
+{
+  "rating": 3.208333333333333,
+  "review_count": 12,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-08-23",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.583333333333333,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "That's It For The Other One",
+      "duration": 771.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star >",
+      "duration": 928.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St Stephen >",
+      "duration": 279.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven",
+      "duration": 653.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Death Don't Have No Mercy",
+      "duration": 482.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator > Drums > Jam >",
+      "duration": 1079.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Caution (Do Not Stop on Tracks) >",
+      "duration": 780.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feedback",
+      "duration": 191.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-08-23d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-23d1t08.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

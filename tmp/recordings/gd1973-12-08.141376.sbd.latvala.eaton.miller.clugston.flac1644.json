@@ -1,0 +1,510 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1973-12-08",
+  "venue": "Cameron Indoor Stadium, Duke U",
+  "location": "Durham, NC",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd73-12-08 tMe & My Uncle",
+      "duration": 197.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T01MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T01MeMyUncle.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd73-12-08 tSugaree",
+      "duration": 448.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T02Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T02Sugaree.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd73-12-08 tMexicali Blues",
+      "duration": 215.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T03MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T03MexicaliBlues.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd73-12-08 tDire Wolf",
+      "duration": 252.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T04DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T04DireWolf.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd73-12-08 tBlack Throated Wind",
+      "duration": 393.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T05BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T05BlackThroatedWind.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd73-12-08 tThey Love Each Other",
+      "duration": 384.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T06TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T06TheyLoveEachOther.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd73-12-08 tMe & Bobby McGee",
+      "duration": 328.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T07MeBobbyMcgee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T07MeBobbyMcgee.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd73-12-tDon't Ease Me In",
+      "duration": 222.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T08DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T08DontEaseMeIn.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd73-12-08 tThe Race Is On",
+      "duration": 186.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T09TheRaceIsOn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T09TheRaceIsOn.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd73-12-08 tBrown Eyed Women",
+      "duration": 295.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T10BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T10BrownEyedWomen.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd73-12-08 tBig River",
+      "duration": 316.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T11BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T11BigRiver.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd73-12-08 tCandyman",
+      "duration": 400.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T12Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T12Candyman.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd73-12-08 tWeather Report Suite",
+      "duration": 1002.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T13WeatherReportSuite.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T13WeatherReportSuite.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd73-12-08 tChina Cat Sunflower",
+      "duration": 446.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T14ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T14ChinaCatSunflower.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd73-12-08 tI Know You Rider",
+      "duration": 310.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T15IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T15IKnowYouRider.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd73-12-08 tTico Tico_Take A Step Back_Mexican Hat Dance",
+      "duration": 354.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T16TicoTico_takeAStepBack_mexicanHatDance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T16TicoTico_takeAStepBack_mexicanHatDance.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd73-12-08 tAround & Around",
+      "duration": 290.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T17AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T17AroundAround.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd73-12-08 tRamble On Rose",
+      "duration": 385.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T18RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T18RambleOnRose.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd73-12-08 tEl Paso",
+      "duration": 267.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T19ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T19ElPaso.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd73-12-08 tRow Jimmy",
+      "duration": 558.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T20RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T20RowJimmy.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd73-12-08 tGreatest Story Ever Told",
+      "duration": 312.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T21GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T21GreatestStoryEverTold.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd73-12-08 tBertha",
+      "duration": 353.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T22Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T22Bertha.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd73-12-08 tHe's Gone",
+      "duration": 632.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T23HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T23HesGone.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd73-12-08 tTruckin'",
+      "duration": 388.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T24Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T24Truckin.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd73-12-08 tNobodies Fault But Mine",
+      "duration": 312.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T25NobodiesFaultButMine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T25NobodiesFaultButMine.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "gd73-12-08 tThe Other One",
+      "duration": 1725.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T26TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T26TheOtherOne.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "gd73-12-08 tWharf Rat",
+      "duration": 603.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T27WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T27WharfRat.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "gd73-12-08 tStella Blue",
+      "duration": 467.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T28StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T28StellaBlue.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "gd73-12-08 tJohnny B. Goode",
+      "duration": 261.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T29JohnnyB.Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T29JohnnyB.Goode.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "gd73-12-08 tUncle John's Band",
+      "duration": 442.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T30UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T30UncleJohnsBand.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "gd73-12-08 tOne More Saturday Night",
+      "duration": 296.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-12-08T31OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-12-08T31OneMoreSaturdayNight.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

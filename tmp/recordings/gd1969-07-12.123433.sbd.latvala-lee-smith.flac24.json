@@ -1,0 +1,94 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-07-12",
+  "venue": "NY State Pavilion, Flushing Meadows Park",
+  "location": "Queens, NY",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "//Dark Star >",
+      "duration": 601.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-07-12t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t01.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One >",
+      "duration": 344.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-07-12t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t02.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St. Stephen >",
+      "duration": 438.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-07-12t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t03.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven >",
+      "duration": 834.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-07-12t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t04.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Lovelight",
+      "duration": 1489.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-07-12t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t05.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

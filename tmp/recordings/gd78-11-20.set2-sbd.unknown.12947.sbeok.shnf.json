@@ -1,0 +1,174 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-11-20",
+  "venue": "Cleveland Music Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jam",
+      "duration": 394.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums",
+      "duration": 103.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Jam",
+      "duration": 138.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t03.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jack-A-Roe",
+      "duration": 189.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Playin' in the Band",
+      "duration": 396.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Shakedown Street",
+      "duration": 486.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "If I Had the World to Give",
+      "duration": 288.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Jam",
+      "duration": 142.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t08.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Playin' in the Band",
+      "duration": 89.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t09.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around & Around",
+      "duration": 309.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-20-set2-d1t10.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-11-20-set2-d1t10.shn"
+        }
+      ]
+    }
+  ]
+}

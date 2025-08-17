@@ -1,0 +1,94 @@
+{
+  "rating": 2.0,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-08-30",
+  "venue": "KQED Studios",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Easy Wind",
+      "duration": 289.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Candyman",
+      "duration": 294.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Casey Jones",
+      "duration": 195.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Brokedown Palace",
+      "duration": 157.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Uncle John's Band",
+      "duration": 237.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-08-30t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-08-30t05.shn"
+        }
+      ]
+    }
+  ]
+}

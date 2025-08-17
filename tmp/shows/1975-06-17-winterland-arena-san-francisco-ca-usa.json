@@ -1,0 +1,185 @@
+{
+  "url": "https://jerrygarcia.com/show/1975-06-17-winterland-arena-san-francisco-ca-usa/",
+  "show_id": "1975-06-17-winterland-arena-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Winterland Arena",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1975-06-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Blues For Allah",
+          "url": "https://jerrygarcia.com/song/blues-for-allah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stronger Than Dirt Or Milkin' The Turkey",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Blues For Allah",
+          "url": "https://jerrygarcia.com/song/blues-for-allah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Kingfish",
+    "Keith & Donna",
+    "The Mirrors"
+  ],
+  "collection_timestamp": "2025-08-10T08:31:08.234865",
+  "show_time": null,
+  "recordings": [
+    "gd1975-06-17.sbd.GEMS.96125.flac16",
+    "gd1975-06-17.171166.set2.winterland.sbd.mr.miller.flac24",
+    "gd75-06-17.sbd.partial.backus.20084.sbeok.shnf",
+    "gd1975-06-17.171164.set2.sbd.mr.miller.flac1648",
+    "gd1975-06-17.145779.sbd.pcm.dalton.miller.noel.flac16",
+    "gd1975-06-17.mtx.tobin.96148.flac16",
+    "gd1975-06-17.fob.menke.motb.97077.flac16",
+    "gd75-06-17.bertrando.unknown.233.sbeok.shnf",
+    "gd1975-06-17.aud.unknown.87560.flac16",
+    "gd1975-06-17.mtx.menke.gems.97079.flac16",
+    "gd1975-06-17.mtx.chappell.SB7.29465.flac16",
+    "gd1975-06-17.fob.menke.motb.97078.flac24",
+    "gd1975-06-17.143102.SonyECM-280.bertrando.dalton.sirmick.miller.fixed.flac1644",
+    "gd1975-06-17.mtx.dts.tobin.96162.flac16",
+    "gd1975-06-17.143100.SonyECM-280.bertrando.dalton.sirmick.miller.flac1644"
+  ],
+  "best_recording": "gd1975-06-17.sbd.GEMS.96125.flac16",
+  "avg_rating": 2.1919089147286823,
+  "raw_rating": 4.48125,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 149,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 9,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "donna-years",
+    "keith-godchaux-years"
+  ]
+}

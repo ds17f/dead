@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-05-06",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 400.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Peggy-O",
+      "duration": 400.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 537.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 479.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Race Is On",
+      "duration": 214.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "West L.A. Fadeaway//",
+      "duration": 403.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Just A Little Light",
+      "duration": 403.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Queen Jane Approximately",
+      "duration": 414.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower >",
+      "duration": 404.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 347.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d01t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d01t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Let The Good Times Roll",
+      "duration": 263.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Hey Pocky Way",
+      "duration": 395.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson And Delilah",
+      "duration": 411.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ship Of Fools",
+      "duration": 462.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band >",
+      "duration": 485.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes Of The World >",
+      "duration": 480.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 328.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d02t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space >",
+      "duration": 380.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Will Take You Home >",
+      "duration": 263.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Wheel >",
+      "duration": 251.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "I Need A Miracle >",
+      "duration": 263.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Wharf Rat >",
+      "duration": 615.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around And Around >",
+      "duration": 232.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Not Fade Away",
+      "duration": 504.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Black Muddy River//",
+      "duration": 301.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd89-05-06-d03t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-05-06-d03t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

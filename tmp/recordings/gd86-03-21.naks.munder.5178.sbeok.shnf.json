@@ -1,0 +1,320 @@
+{
+  "rating": 1.2857142857142858,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1986-03-21",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 2.5714285714285716,
+  "high_ratings": 2,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Roadrunner",
+      "duration": 282.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t1.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dupree's Diamond Blues",
+      "duration": 394.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t2.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Minglewood Blues",
+      "duration": 464.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t3.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Bird Song",
+      "duration": 718.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t4.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "\"Certainly\"",
+      "duration": 8.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t5.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Tons of Steel >",
+      "duration": 289.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t6.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Supplication >",
+      "duration": 239.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t7.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t7.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Let It Grow",
+      "duration": 753.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d1t8.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d1t8.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Uncle John's Band >",
+      "duration": 301.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t1.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t1.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23d1t9.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-23d1t9.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Terrapin Station >",
+      "duration": 682.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t2.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t2.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-25d1t10.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-25d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playin' In The Band >",
+      "duration": 234.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t3.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Jam >",
+      "duration": 485.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t4.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums >",
+      "duration": 253.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t5.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space >",
+      "duration": 408.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t6.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Need A Miracle >",
+      "duration": 245.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t7.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t7.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue >",
+      "duration": 471.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t8.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t8.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Sugar Magnolia",
+      "duration": 487.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t9.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t9.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 409.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-21d2t10.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-03-21d2t10.shn"
+        }
+      ]
+    }
+  ]
+}

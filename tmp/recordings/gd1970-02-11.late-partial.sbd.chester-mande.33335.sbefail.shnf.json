@@ -1,0 +1,62 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-11",
+  "venue": "Fillmore East",
+  "location": "New York City, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 285.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-11d1t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-02-11d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Spanish Jam* >",
+      "duration": 336.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-11d1t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-02-11d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Turn on Your Lovelight#//",
+      "duration": 1027.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-11d1t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-02-11d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

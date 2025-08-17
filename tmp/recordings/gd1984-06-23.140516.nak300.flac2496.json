@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1984-06-23",
+  "venue": "City Island",
+  "location": "Harrisburg, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 297.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 276.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 445.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 566.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Brown Eyed Women",
+      "duration": 381.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau",
+      "duration": 304.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 381.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Music Never Stopped",
+      "duration": 560.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 183.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s1t-09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s1t-09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Touch Of Grey",
+      "duration": 467.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet",
+      "duration": 635.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes Of The World",
+      "duration": 695.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 526.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 505.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin",
+      "duration": 629.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter",
+      "duration": 529.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Around & Around ->",
+      "duration": 235.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Going Down The Road Feelin' Bad",
+      "duration": 397.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 266.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Day Job",
+      "duration": 268.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1984-06-23s2t-11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-23s2t-11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

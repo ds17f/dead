@@ -6,6 +6,8 @@ package com.deadarchive.v2.app.model
 enum class PhaseV2 {
     IDLE,
     CHECKING,
+    USING_LOCAL,
+    DOWNLOADING,
     EXTRACTING,
     IMPORTING_SHOWS,
     COMPUTING_VENUES,

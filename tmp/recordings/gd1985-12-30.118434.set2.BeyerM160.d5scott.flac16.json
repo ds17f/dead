@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-12-30",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Mighty Quinn",
+      "duration": 251.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson & Delilah",
+      "duration": 405.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "He's Gone",
+      "duration": 625.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Need A Miracle",
+      "duration": 222.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Crazy Fingers",
+      "duration": 639.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 456.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 348.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One",
+      "duration": 310.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Wharf Rat",
+      "duration": 492.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 417.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 437.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1980-12-27",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Feel Like A Stranger",
+      "duration": 583.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t01 Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t01 Stranger.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Sugaree >",
+      "duration": 750.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t02 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t02 Sugaree.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "New Minglewood Blues",
+      "duration": 425.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t03 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t03 Minglewood.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Loser",
+      "duration": 450.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t04 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t04 Loser.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Looks Like Rain",
+      "duration": 497.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t05 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t05 LLR.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Tennessee Jed",
+      "duration": 564.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t06 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t06 T Jed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Passenger",
+      "duration": 282.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t07 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t07 Passenger.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "It Must Have Been The Roses",
+      "duration": 378.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t08 IMHBTR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t08 IMHBTR.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "The Music Never Stopped",
+      "duration": 498.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s1t09 TMNS.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s1t09 TMNS.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "China Cat Sunflower >",
+      "duration": 384.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t01 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t01 China Cat.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Know You Rider",
+      "duration": 348.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t02 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t02 IKYR.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Estimated Prophet >",
+      "duration": 676.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t03 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t03 Estimated.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Eyes Of The World >",
+      "duration": 951.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t04 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t04 Eyes.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums >",
+      "duration": 458.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t05 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t05 Drums.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space >",
+      "duration": 250.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t06 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t06 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "The Wheel >",
+      "duration": 353.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t07 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t07 Wheel.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Truckin' >",
+      "duration": 490.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t08 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t08 Truckin'.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Wharf Rat >",
+      "duration": 585.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t09 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t09 Wharf Rat.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 425.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t10 GDTRFB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t10 GDTRFB.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "One More Saturday Night",
+      "duration": 308.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t11 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t11 OMSN.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E: Johnny B. Goode",
+      "duration": 273.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-27 s2t12 E_JBG.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-27 s2t12 E_JBG.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

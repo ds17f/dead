@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-12-09",
+  "venue": "Compton Terrace",
+  "location": "Chandler, AZ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 43.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 418.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 484.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Bertha.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 552.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack-A-Roe",
+      "duration": 307.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Jack-a-roe.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Maggie's Farm",
+      "duration": 461.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MaggiesFarm.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Throated Wind",
+      "duration": 430.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BlackThroatedWind.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 857.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Valley Road",
+      "duration": 309.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09ValleyRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ValleyRoad.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 105.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson And Delilah",
+      "duration": 463.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SamsonAndDelilah.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias",
+      "duration": 552.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ScarletBegonias.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain",
+      "duration": 1005.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13FireOnTheMountain.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin'",
+      "duration": 435.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Truckin.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Spoonful",
+      "duration": 284.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Spoonful.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "He's Gone",
+      "duration": 770.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16HesGone.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 664.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 551.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Wheel",
+      "duration": 394.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TheWheel.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playing In The Band Reprise",
+      "duration": 210.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20PlayingInTheBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20PlayingInTheBandReprise.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 394.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Good Lovin'",
+      "duration": 414.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22GoodLovin.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Tuning",
+      "duration": 44.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Brokedown Palace",
+      "duration": 323.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24BrokedownPalace.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-10-01",
+  "venue": "Warfiled Theater & Radio City Music Hall",
+  "location": "San Francisco, CA and New York City, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like a Stranger",
+      "duration": 499.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend of the Devil",
+      "duration": 635.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Passenger",
+      "duration": 292.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Althea",
+      "duration": 501.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 528.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Row Jimmy",
+      "duration": 604.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Candyman",
+      "duration": 444.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Little Red Rooster",
+      "duration": 650.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-xxt08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-xxt08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

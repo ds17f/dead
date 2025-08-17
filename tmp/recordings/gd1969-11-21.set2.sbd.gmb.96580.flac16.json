@@ -1,0 +1,110 @@
+{
+  "rating": 1.9,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-11-21",
+  "venue": "Building A, Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 3.8,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Lovin'",
+      "duration": 597.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-11-21t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-11-21t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower >",
+      "duration": 285.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-11-21t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-11-21t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 311.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-11-21t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-11-21t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 471.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-11-21t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-11-21t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 231.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-11-21t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-11-21t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Lovelight",
+      "duration": 960.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-11-21t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-11-21t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

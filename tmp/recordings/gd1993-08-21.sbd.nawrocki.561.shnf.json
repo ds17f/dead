@@ -1,0 +1,308 @@
+{
+  "rating": 1.9125,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1993-08-21",
+  "venue": "Autzen Stadium, U. of Oregon",
+  "location": "Eugene, OR",
+  "raw_rating": 4.25,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Here Comes Sunshine",
+      "duration": 214.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t1.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t1.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t1_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Walkin' Blues",
+      "duration": 282.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t2.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t2.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t2_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Lazy River Road",
+      "duration": 258.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t3.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t3.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t3_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane Approximately",
+      "duration": 265.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t4.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t4.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t4_vbr.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song ->",
+      "duration": 564.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t5.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t5.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t5_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Promised Land",
+      "duration": 195.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t6.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t6.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t6_vbr.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Cat Sunflower ->",
+      "duration": 519.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t7.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t7.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t7_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Know You Rider",
+      "duration": 270.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d1t8.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d1t8.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t8_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Way To Go Home",
+      "duration": 696.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d2t1.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d2t1.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t1_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Truckin' ->",
+      "duration": 877.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d2t2.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d2t2.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t2_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Good Mornin' Little Schoolgirl ->",
+      "duration": 244.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d2t3.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d2t3.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t3_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Smokestack Lightnin' ->",
+      "duration": 328.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d2t4.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d2t4.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t4_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums -> Sapce ->",
+      "duration": 188.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d2t5.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d2t5.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t5_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Last Time ->",
+      "duration": 118.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d2t6.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d2t6.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t6_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-09-10",
+  "venue": "Madison Square Garden",
+  "location": "Stand, Section 2, Row V, Seat 2",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd & Tuning",
+      "duration": 181.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street >",
+      "duration": 827.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "C.C. Rider >",
+      "duration": 345.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It Takes A Lot To Laugh It Takes A Train To Cry",
+      "duration": 393.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Throated Wind",
+      "duration": 429.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "09.09] High Time",
+      "duration": 549.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 506.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 565.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set1_t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Crowd & Tuning",
+      "duration": 107.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Help On The Way >",
+      "duration": 250.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Slipknot >",
+      "duration": 421.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Franklin's Tower",
+      "duration": 618.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Estimated Prophet >",
+      "duration": 761.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Dark Star >",
+      "duration": 763.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 639.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Jam >",
+      "duration": 119.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dark Star >",
+      "duration": 150.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space >",
+      "duration": 561.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t10.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Need A Miracle >",
+      "duration": 304.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t11.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Standing On the Moon >",
+      "duration": 544.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t12.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Lovelight",
+      "duration": 560.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Baby Blue",
+      "duration": 425.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-09-10_haugh_mtx24_set2_t14.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

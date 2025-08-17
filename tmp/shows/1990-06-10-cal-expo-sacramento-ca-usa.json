@@ -1,0 +1,197 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-06-10-cal-expo-sacramento-ca-usa/",
+  "show_id": "1990-06-10-cal-expo-sacramento-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Cal Expo",
+  "location_raw": "Sacramento, CA",
+  "city": "Sacramento",
+  "state": "CA",
+  "country": "USA",
+  "date": "1990-06-10",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Standing On The Moon",
+          "url": "https://jerrygarcia.com/song/standing-on-the-moon/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:06:09.359181",
+  "show_time": null,
+  "recordings": [
+    "gd90-06-10.sbd-matrix.miller-ladner.6937.sbeok.shnf",
+    "gd1990-06-10.149727.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1990-06-10.147940.sbd.ladner-braverman.flac1644",
+    "gd1990-06-10.149621.ultramatrix.sbd.pearson-healy.miller.flac2496",
+    "gd1990-06-10.mtx.dan.30369.sbeok.flac16",
+    "gd1990-06-10.schoeps.unknown.457.sbefail.shnf",
+    "gd1990-06-10.150620.FOB.Nak.700.dsd.Mow.Miller.Noel.t.flac1644",
+    "gd1990-06-10.dts.haugh.29669.sbeok.shnf",
+    "gd1990-06-10.150585.FOB.Nak.700.dsd.Mow.Miller.Noel.t.flac2496",
+    "gd1990-06-10..mtx.haugh.30361.sbeok.flac16",
+    "gd1990-06-10.142579.FOB.Schoeps.Weber-Small.Mattes.Miler.Noel.t-flac1648",
+    "gd1990-06-10.fob.alabamabob.andrewf.95449.flac16",
+    "gd1990-06-10.dts.haugh.30373.sbeok.flacf",
+    "gd1990-06-10.schoeps.wklitz.97059.sbeok.flac16",
+    "gd1990-06-10.152180.nakcp702.flac2496",
+    "gd1990-06-10.143345.FOB.Schoeps.Brotman.Miler.Noel.t-flac1648",
+    "gd1990-06-10.111344.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1990-06-10.168425.3xnakcm300.ont.flac1644"
+  ],
+  "best_recording": "gd90-06-10.sbd-matrix.miller-ladner.6937.sbeok.shnf",
+  "avg_rating": 2.0793736501079914,
+  "raw_rating": 4.254237288135593,
+  "recording_count": 18,
+  "confidence": 1.0,
+  "total_high_ratings": 50,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 14
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

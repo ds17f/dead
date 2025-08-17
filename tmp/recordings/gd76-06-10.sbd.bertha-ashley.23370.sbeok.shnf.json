@@ -1,0 +1,366 @@
+{
+  "rating": 2.15625,
+  "review_count": 32,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1976-06-10",
+  "venue": "Boston Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 4.3125,
+  "high_ratings": 27,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Promised Land",
+      "duration": 154.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t01.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugaree",
+      "duration": 364.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cassidy",
+      "duration": 177.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t03.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "They Love Each Other",
+      "duration": 316.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t04.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "The Music Never Stopped",
+      "duration": 221.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t05.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Brown-Eyed Women",
+      "duration": 243.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t06.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Lazy Lightning",
+      "duration": 95.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t07.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Supplication",
+      "duration": 171.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t08.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Row Jimmy",
+      "duration": 321.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad1t09.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Big River",
+      "duration": 261.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mission in the Rain",
+      "duration": 286.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t02.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain",
+      "duration": 318.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t03.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Might As Well",
+      "duration": 206.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t04.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samson And Delilah",
+      "duration": 263.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Help On the Way >",
+      "duration": 164.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Slipknot! >",
+      "duration": 284.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Franklin's Tower",
+      "duration": 416.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad2t08.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Let It Grow",
+      "duration": 422.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad3t01.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Friend of the Devil",
+      "duration": 307.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad3t02.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playin' in the Band",
+      "duration": 464.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad3t03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Dancin' In The Street s",
+      "duration": 408.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad3t04.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 204.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-10Berthad3t05.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-10Berthad3t05.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "rating": 1.9,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1979-00-00",
+  "venue": "Go to Heaven Sessions - Betty Cantor's Rough Mixes",
+  "location": "",
+  "raw_rating": 3.8,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Lost Sailor",
+      "duration": 357.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-xx-xxt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-xx-xxt01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint Of Circumstance",
+      "duration": 338.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-xx-xxt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-xx-xxt02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feel Like A Stranger",
+      "duration": 301.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-xx-xxt03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-xx-xxt03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

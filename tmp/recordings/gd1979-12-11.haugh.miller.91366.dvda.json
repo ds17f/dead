@@ -1,0 +1,78 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1979-12-11",
+  "venue": "Soldier's and Sailors Memorial Auditorium",
+  "location": "Kansas City, KS",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 90.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_1.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 89.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_2.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Loser",
+      "duration": 90.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_3.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me & My Uncle >",
+      "duration": 89.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "sound_samples_gd1979-12-11/sound_sample_4.mp3",
+          "bitrate": "165"
+        }
+      ]
+    }
+  ]
+}

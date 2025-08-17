@@ -1,0 +1,142 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 18,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-02-19",
+  "venue": "International Amphitheatre",
+  "location": "Chicago, IL",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 17,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 102.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "He's Gone ->",
+      "duration": 868.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Truckin' ->",
+      "duration": 751.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Other One ->",
+      "duration": 906.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Eyes of the World ->",
+      "duration": 1226.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "China Doll",
+      "duration": 440.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Sugar Magnolia",
+      "duration": 489.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Casey Jones",
+      "duration": 378.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-02-19s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-19s2t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

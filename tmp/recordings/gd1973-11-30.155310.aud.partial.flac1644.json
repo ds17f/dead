@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-11-30",
+  "venue": "Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mexicali Blues",
+      "duration": 246.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t01.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 285.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t02.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Black Throated Wind",
+      "duration": 431.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t03.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 342.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t04.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bertha",
+      "duration": 415.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t05.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Promised Land",
+      "duration": 184.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t06.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Here Comes Sunshine",
+      "duration": 719.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-11-30t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-11-30t07.mp3",
+          "bitrate": "134"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-12-27",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 494.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Playin' In The Band",
+      "duration": 822.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Crazy Fingers",
+      "duration": 527.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Uncle John's Band",
+      "duration": 545.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 502.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space",
+      "duration": 585.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Wheel",
+      "duration": 330.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Need A Miracle",
+      "duration": 240.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Morning Dew",
+      "duration": 758.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Johnny B. Goode",
+      "duration": 249.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Black Muddy River",
+      "duration": 395.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

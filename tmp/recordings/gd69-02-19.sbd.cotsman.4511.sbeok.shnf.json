@@ -1,0 +1,158 @@
+{
+  "rating": 2.259259259259259,
+  "review_count": 27,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-02-19",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.518518518518518,
+  "high_ratings": 24,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Turn On Your Lovelight",
+      "duration": 735.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Not Fade Away",
+      "duration": 152.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d1t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Turn On Your Lovelight",
+      "duration": 338.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d1t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "banter",
+      "duration": 113.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d1t04.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "chanting",
+      "duration": 726.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d1t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Jam",
+      "duration": 253.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d2t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Main Ten",
+      "duration": 178.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d2t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Jam",
+      "duration": 851.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d2t03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "The Other One Jam",
+      "duration": 468.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-19d2t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-19d2t04.shn"
+        }
+      ]
+    }
+  ]
+}

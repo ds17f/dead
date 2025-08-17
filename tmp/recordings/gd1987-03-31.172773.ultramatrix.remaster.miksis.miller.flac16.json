@@ -1,0 +1,321 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-03-31",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "WMMR Tuning Intro ->",
+      "duration": 30.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t01 - WMMR Tuning Intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t01 - WMMR Tuning Intro.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t01 - WMMR Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t01 - WMMR Tuning.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Jack Straw",
+      "duration": 390.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t02 - Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t02 - Jack Straw.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t02 - Touch Of Grey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t02 - Touch Of Grey.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Franklin's Tower",
+      "duration": 654.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t03 - Franklin's Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t03 - Franklin's Tower.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t03 - Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t03 - Estimated Prophet.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "C.C. Rider",
+      "duration": 687.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t04 - C.C. Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t04 - C.C. Rider.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t04 - Terrapin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t04 - Terrapin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Ramble On Rose",
+      "duration": 633.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t05 - Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t05 - Ramble On Rose.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t05 - Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t05 - Drums.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Tons Of Steel",
+      "duration": 396.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t06 - Tons Of Steel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t06 - Tons Of Steel.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t06 - Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t06 - Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Mama Tried ->",
+      "duration": 440.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t07 - Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t07 - Mama Tried.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t07 - Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t07 - Uncle John's Band.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Big River",
+      "duration": 222.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t08 - Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t08 - Big River.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t08 - I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t08 - I Need A Miracle.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Candyman",
+      "duration": 494.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t09 - Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t09 - Candyman.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t09 - Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t09 - Stella Blue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Desolation Row",
+      "duration": 223.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t10 - Desolation Row.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t10 - Desolation Row.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t10 - Around And Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t10 - Around And Around.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don;t Ease Me In",
+      "duration": 426.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t11 - Don't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t11 - Don't Ease Me In.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t11 - Turn On Your Lovleight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t11 - Turn On Your Lovleight.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Brokedown Palace (Encore)",
+      "duration": 341.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t12 - Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t12 - Brokedown Palace.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "WMMR Wrapup",
+      "duration": 279.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t13 - WMMR Wrapup.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t13 - WMMR Wrapup.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

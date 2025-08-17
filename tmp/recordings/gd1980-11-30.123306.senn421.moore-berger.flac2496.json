@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-11-30",
+  "venue": "Fox Theater",
+  "location": "Atlanta, GA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 115.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-11-30d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias >",
+      "duration": 699.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-11-30d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Mountain",
+      "duration": 628.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-11-30d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d1t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playin' In The Band >",
+      "duration": 953.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-11-30d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ...",
+      "duration": 109.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-11-30d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

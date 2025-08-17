@@ -1,0 +1,62 @@
+{
+  "rating": 1.75,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-08-17",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.5,
+  "high_ratings": 5,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Let Me In 83968",
+      "duration": 257.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-08-17d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-08-17d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Attics Of My Life",
+      "duration": 364.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-08-17d1t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-08-17d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Friend Of The Devil",
+      "duration": 42.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-08-17d1t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-08-17d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

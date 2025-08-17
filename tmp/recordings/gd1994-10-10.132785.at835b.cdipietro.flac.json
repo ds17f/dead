@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-10-10",
+  "venue": "USAir Arena",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko",
+      "duration": 505.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Walking Blues",
+      "duration": 361.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 528.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Desolation Row",
+      "duration": 638.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d1t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loose Lucy",
+      "duration": 485.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eternity",
+      "duration": 617.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d1t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "crowd",
+      "duration": 31.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Help On The Way >",
+      "duration": 218.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Slipknot >",
+      "duration": 451.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Franklin's Tower",
+      "duration": 927.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet >",
+      "duration": 758.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Terrapin Station >",
+      "duration": 1136.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums >",
+      "duration": 677.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space >",
+      "duration": 818.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "All Along The Watchtower >",
+      "duration": 455.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue",
+      "duration": 600.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t10.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "NFA",
+      "duration": 607.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Fought The Law",
+      "duration": 283.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-10d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-10d2t12.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

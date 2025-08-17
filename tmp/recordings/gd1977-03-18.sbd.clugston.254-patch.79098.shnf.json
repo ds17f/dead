@@ -1,0 +1,62 @@
+{
+  "rating": 2.4285714285714284,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-03-18",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.857142857142857,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 17.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-03-18d2t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-03-18d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias->",
+      "duration": 243.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-03-18d2t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-03-18d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Mountain",
+      "duration": 354.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-03-18d2t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-03-18d2t03.shn"
+        }
+      ]
+    }
+  ]
+}

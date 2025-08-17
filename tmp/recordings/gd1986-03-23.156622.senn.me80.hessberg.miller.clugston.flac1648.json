@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-03-23",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 60.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t01 Crowd.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Gimme Some Lovin' >",
+      "duration": 303.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t02 Gimme Some Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t02 Gimme Some Lovin'.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Deal",
+      "duration": 484.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t03 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t03 Deal.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Willy & The Hand Jive",
+      "duration": 402.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t04 Hand Jive.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t04 Hand Jive.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Candyman",
+      "duration": 403.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t05 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t05 Candyman.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Cassidy",
+      "duration": 345.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t06 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t06 Cassidy.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "West LA Fadeaway",
+      "duration": 502.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t07 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t07 West LA Fadeaway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Mama Tried >",
+      "duration": 154.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t08 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t08 Mama Tried.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Big River",
+      "duration": 306.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t09 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t09 Big River.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Might As Well",
+      "duration": 282.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s1t10 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s1t10 Might As Well.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Shakedown Street >",
+      "duration": 768.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t01 Shakedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t01 Shakedown.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Samson & Delilah",
+      "duration": 475.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t02 Samson.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t02 Samson.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "He's Gone >",
+      "duration": 691.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t03 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t03 He's Gone.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Spoonful >",
+      "duration": 347.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t04 Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t04 Spoonful.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums >",
+      "duration": 651.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t05 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t05 Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space >",
+      "duration": 490.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t06 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t06 Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "The Other One >",
+      "duration": 394.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t07 Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t07 Other One.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Comes A Time >",
+      "duration": 466.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t08 Comes A Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t08 Comes A Time.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Good Lovin'",
+      "duration": 542.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t09 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t09 Good Lovin'.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "E: Keep Your Day Job",
+      "duration": 248.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-23 s2t10 E_Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-23 s2t10 E_Day Job.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

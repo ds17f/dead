@@ -1,0 +1,110 @@
+{
+  "rating": 1.684782608695652,
+  "review_count": 46,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-01-27",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.369565217391304,
+  "high_ratings": 25,
+  "low_ratings": 10,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Morning Dew",
+      "duration": 195.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "New Potato Caboose",
+      "duration": 257.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Viola Lee Blues",
+      "duration": 658.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cold Rain and Snow",
+      "duration": 90.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Alligator",
+      "duration": 514.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Caution",
+      "duration": 674.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t06.shn"
+        }
+      ]
+    }
+  ]
+}

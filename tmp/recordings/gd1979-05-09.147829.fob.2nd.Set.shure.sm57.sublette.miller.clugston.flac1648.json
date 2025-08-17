@@ -1,0 +1,190 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1979-05-09",
+  "venue": "Broome County Arena",
+  "location": "Binghamton, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 34.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t01 Crowd.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 416.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t02 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t02 China Cat Sunflower.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 345.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t03 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t03 I Know You Rider.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "He's Gone >",
+      "duration": 776.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t04 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t04 He's Gone.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Truckin' >",
+      "duration": 815.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t05 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t05 Truckin'.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 672.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t06 Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 88.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t07 Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Wharf Rat >",
+      "duration": 671.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t08 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t08 Wharf Rat.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Sugar Magnollia",
+      "duration": 473.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t09 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t09 Sugar Magnolia.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Encore Break",
+      "duration": 143.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t10 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t10 Encore Break.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Johnny B. Goode",
+      "duration": 266.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-05-09 s2t11 Johnny B. Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-05-09 s2t11 Johnny B. Goode.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

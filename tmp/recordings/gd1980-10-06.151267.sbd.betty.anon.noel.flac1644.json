@@ -1,0 +1,217 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-06",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "crowd",
+      "duration": 302.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s2t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dire Wolf",
+      "duration": 318.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s2t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cassidy",
+      "duration": 421.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s2t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jack-A-Roe",
+      "duration": 314.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Monkey and the Engineer",
+      "duration": 225.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "I've Been All Around This World",
+      "duration": 262.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Heaven Help The Fool",
+      "duration": 393.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "China Doll",
+      "duration": 373.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "On The Road Again",
+      "duration": 188.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Bird Song ->",
+      "duration": 489.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Ripple",
+      "duration": 284.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-06.s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-06.s1t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

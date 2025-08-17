@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-07-01",
+  "venue": "Merriweather Post Pavilion",
+  "location": "Columbia, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Space >",
+      "duration": 298.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-07-01d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dear Mr. Fantasy >",
+      "duration": 273.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t02.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-07-01d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Goin' Down The Road Feelin' Bad >",
+      "duration": 286.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-07-01d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Lovin'",
+      "duration": 447.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t04.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-07-01d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "(I Can't Get No) Satisfaction >",
+      "duration": 257.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-07-01d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 313.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t06.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-07-01d3t06.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rating": 2.3421052631578947,
+  "review_count": 19,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-02-24",
+  "venue": "Fieldhouse, University of Iowa",
+  "location": "Iowa City, Iowa",
+  "raw_rating": 4.684210526315789,
+  "high_ratings": 18,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin' Jam > Nobody's Fault But Mine Jam",
+      "duration": 321.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "0224732ndsetjam.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "0224732ndsetjam.shn"
+        }
+      ]
+    }
+  ]
+}

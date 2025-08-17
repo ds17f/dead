@@ -1,0 +1,174 @@
+{
+  "rating": 3.2375,
+  "review_count": 8,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1969-11-07",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.625,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Morning Dew",
+      "duration": 369.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hard to Handle",
+      "duration": 199.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Casey Jones",
+      "duration": 163.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mama Tried",
+      "duration": 106.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Star Spangled Banner",
+      "duration": 32.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t06.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Merry Go Round Broke Down Tuning",
+      "duration": 26.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t07.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Spring Song Tuning",
+      "duration": 17.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t08.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Take Me Out To The Ballgame Tuning",
+      "duration": 20.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t09.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Next Time You See Me",
+      "duration": 173.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t10.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Good Lovin' >",
+      "duration": 70.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t11.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t11.shn"
+        }
+      ]
+    }
+  ]
+}

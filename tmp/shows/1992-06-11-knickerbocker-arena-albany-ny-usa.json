@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1992-06-11-knickerbocker-arena-albany-ny-usa/",
+  "show_id": "1992-06-11-knickerbocker-arena-albany-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Knickerbocker Arena",
+  "location_raw": "Albany, NY",
+  "city": "Albany",
+  "state": "NY",
+  "country": "USA",
+  "date": "1992-06-11",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Mighty Quinn (Quinn The Eskimo)",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:11:42.809645",
+  "show_time": null,
+  "recordings": [
+    "gd92-06-11.sbd.ladner.8069.sbeok.shnf",
+    "gd1992-06-11.sbd.miller.90105.sbeok.flac16",
+    "gd1992-06-11.154484.sbd.cm.miller.t.flac16",
+    "gd1992-06-11.152717.sbd.miller.flac2448",
+    "gd1992-06-11.nak300.baker-keo.sirmick.110979.sbeok.flac16",
+    "gd92-06-11.aud.vernon.18581.sbeok.shnf",
+    "gd1992-06-11.165916.me88.mc.rogosa.flac1644",
+    "gd1992-06-11.168984.fixed.165916.me88.mc.rogosa.flac1644",
+    "gd1992-06-11.nak.boedicker.116122.flac16",
+    "gd1992-06-11.134957.Nak300CP4.Fitzy.Keo.Flac2496",
+    "gd1992-06-11.137459.nak300.boedicker.flac16",
+    "gd1992-06-11.134956.Nak300CP4.Fitzy.Keo.Flac1644",
+    "gd1992-06-11.165914.me88.dat.rogosa.flac1648",
+    "gd1992-06-11.168983.fixed.165915.me88.mc.rogosa.flac2496",
+    "gd1992-06-11.nakcm300.andrewf.86035.flac1648",
+    "gd1992-06-11.139452.akg568.flac2448",
+    "gd1992-06-11.nak300.andrewf.86034.sbeok.flac16",
+    "gd1992-06-11.137754.aud.lamarre.berger.flac16",
+    "gd1992-06-11.149565.ts.schoeps34.travitz.ebel.flac16",
+    "gd1992-06-11.nak300.baker-keo.sirmick.110978.flac24",
+    "gd1992-06-11.137755.aud.lamarre.berger.flac24",
+    "gd1992-06-11.165915.me88.mc.rogosa.flac2496",
+    "gd1992-06-11.149564.set1.fob.BK4011.ebel.flac16"
+  ],
+  "best_recording": "gd92-06-11.sbd.ladner.8069.sbeok.shnf",
+  "avg_rating": 1.9647058823529415,
+  "raw_rating": 4.166666666666667,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 11,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 16,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "vince-welnick-years"
+  ]
+}

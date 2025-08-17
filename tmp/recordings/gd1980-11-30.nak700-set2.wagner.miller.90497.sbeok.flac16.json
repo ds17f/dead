@@ -1,0 +1,222 @@
+{
+  "rating": 2.4411764705882355,
+  "review_count": 17,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-11-30",
+  "venue": "Fox Theatre",
+  "location": "Atlanta, GA",
+  "raw_rating": 4.882352941176471,
+  "high_ratings": 17,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 72.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias ->",
+      "duration": 689.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Mountain",
+      "duration": 661.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Samson And Delilah",
+      "duration": 502.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ship Of Fools",
+      "duration": 588.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Playing In The Band ->",
+      "duration": 949.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums ->",
+      "duration": 562.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d2t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space ->",
+      "duration": 270.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d3t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Wheel ->",
+      "duration": 411.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d3t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Doll ->",
+      "duration": 408.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d3t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Around And Around ->",
+      "duration": 240.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d3t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Johnny B. Goode",
+      "duration": 320.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d3t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band",
+      "duration": 466.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-11-30d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-11-30d3t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

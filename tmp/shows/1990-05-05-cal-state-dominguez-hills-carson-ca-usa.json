@@ -1,0 +1,210 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-05-05-cal-state-dominguez-hills-carson-ca-usa/",
+  "show_id": "1990-05-05-cal-state-dominguez-hills-carson-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Cal State Dominguez Hills",
+  "location_raw": "Carson, CA",
+  "city": "Carson",
+  "state": "CA",
+  "country": "USA",
+  "date": "1990-05-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Race Is On",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:06:01.314433",
+  "show_time": null,
+  "recordings": [
+    "gd1990-05-05.nak300.lech.116818.flac",
+    "gd1990-05-05.138649.fm.french.sbeok.flac16",
+    "gd1990-05-05.143960.InHouseFM.Dalton-Miller-Noel.t-flac1644",
+    "gd1990-05-05.141939.FOB.Schoeps.BK.Mattes.Miler.Noel.t-flac1648",
+    "gd1990-05-05.131207.cmc521.fob.deal.jwpetty.flac16",
+    "gd1990-05-05.138754.FOB.Schoeps.BK.Katzeff.Berner.Ammons.Noel.t-flac16",
+    "gd1990-05-05.138648.bk4011.french.sbeok.flac16",
+    "gd1990-05-05.134997.bltz.flac2496",
+    "gd1990-05-05.dsbd.nickspicks.4850.shnf",
+    "gd90-05-05.dsbd.wiley.11660.sbeok.shnf",
+    "gd1990-05-05.141262.sbd.miller.flac2496",
+    "gd1990-05-05.137021.set1.sbd.miller.flac24",
+    "gd1990-05-05.141275.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1990-05-05.137088.set1.sbd.miller.flac16",
+    "gd1990-05-05.set1.fob.schoeps.b-and-d.andrewf.97423.flac16"
+  ],
+  "best_recording": "gd1990-05-05.nak300.lech.116818.flac",
+  "avg_rating": 2.116271186440678,
+  "raw_rating": 4.169491525423729,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 49,
+  "total_low_ratings": 3,
+  "source_types": {
+    "FM": 8,
+    "SBD": 6,
+    "UNKNOWN": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

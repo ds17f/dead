@@ -1,0 +1,190 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1981-05-17",
+  "venue": "Onondaga County War Memorial",
+  "location": "Syracuse, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow ->",
+      "duration": 387.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson And Delilah",
+      "duration": 440.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Ship Of Fools",
+      "duration": 522.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet ->",
+      "duration": 770.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "He's Gone ->",
+      "duration": 668.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One ->",
+      "duration": 272.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums ->",
+      "duration": 538.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space ->",
+      "duration": 339.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d3t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Saint Of Circumstance ->",
+      "duration": 382.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d3t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wharf Rat ->",
+      "duration": 609.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d3t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia",
+      "duration": 502.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-17d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-17d3t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

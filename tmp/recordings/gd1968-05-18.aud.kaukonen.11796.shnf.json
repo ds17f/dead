@@ -1,0 +1,140 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1968-05-18",
+  "venue": "County Fairgrounds",
+  "location": "Santa Clara, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alligator-->",
+      "duration": 194.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t01.mp3",
+          "bitrate": "136"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t01_vbr.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums-->",
+      "duration": 186.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t02.mp3",
+          "bitrate": "142"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t02_vbr.mp3",
+          "bitrate": "136"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Alligator-->",
+      "duration": 777.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t03.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t03_vbr.mp3",
+          "bitrate": "139"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Caution-->",
+      "duration": 925.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t04.mp3",
+          "bitrate": "136"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t04_vbr.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Feedback",
+      "duration": 290.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t05.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t05_vbr.mp3",
+          "bitrate": "141"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stage Banter",
+      "duration": 91.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t06.mp3",
+          "bitrate": "139"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18d1t06_vbr.mp3",
+          "bitrate": "138"
+        }
+      ]
+    }
+  ]
+}

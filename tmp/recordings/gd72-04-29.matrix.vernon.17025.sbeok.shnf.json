@@ -1,0 +1,62 @@
+{
+  "rating": 2.4285714285714284,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-04-29",
+  "venue": "Musikhalle",
+  "location": "Hamburg, Germany",
+  "raw_rating": 4.857142857142857,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star",
+      "duration": 995.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-29d3matrixt01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-29d3matrixt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugar Magnolia",
+      "duration": 235.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-29d3matrixt02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-29d3matrixt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Caution (Do Not Stop on Tracks)-> Who Do You Love",
+      "duration": 759.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-29d3matrixt03.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-29d3matrixt03.shn"
+        }
+      ]
+    }
+  ]
+}

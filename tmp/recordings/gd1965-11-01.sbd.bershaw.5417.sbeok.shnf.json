@@ -1,0 +1,46 @@
+{
+  "rating": 1.9285714285714286,
+  "review_count": 14,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1965-11-01",
+  "venue": "various",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.857142857142857,
+  "high_ratings": 9,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Speed Limit",
+      "duration": 364.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_01.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Neil Cassidy Raps",
+      "duration": 64.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid4_02.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid4_02.shn"
+        }
+      ]
+    }
+  ]
+}

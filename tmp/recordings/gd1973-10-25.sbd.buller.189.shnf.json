@@ -1,0 +1,140 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-10-25",
+  "venue": "Dane County Coliseum",
+  "location": "Madison, WI",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "China Cat Sunflower ->",
+      "duration": 281.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t1.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-25d1t1.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t1_vbr.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "I Know You Rider",
+      "duration": 185.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t2.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-25d1t2.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t2_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle",
+      "duration": 99.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t3.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-25d1t3.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t3_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Star ->",
+      "duration": 735.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t4.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-25d1t4.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t4_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Eyes Of The World ->",
+      "duration": 569.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t5.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-25d1t5.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t5_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stella Blue",
+      "duration": 270.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t6.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-25d1t6.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-25d1t6_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

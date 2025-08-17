@@ -1,0 +1,137 @@
+{
+  "url": "https://jerrygarcia.com/show/1978-11-17-rambler-room-loyola-university-chicago-il/",
+  "show_id": "1978-11-17-rambler-room-loyola-university-chicago-il",
+  "band": "Grateful Dead",
+  "venue": "Rambler Room, Loyola College",
+  "location_raw": "Chicago, IL",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "USA",
+  "date": "1978-11-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Whinin' Boy Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tom Dooley",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "This Time Forever",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deep Elem Blues",
+          "url": "https://jerrygarcia.com/song/deep-elem-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "K.C. Moan",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Boy Pete",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Hollow",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Oh Boy",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:36:58.401814",
+  "show_time": null,
+  "recordings": [
+    "gd78-11-17.acoustic.sbd.dodd.7687.sbeok.shnf",
+    "gd1978-11-17.sbd.dodd.audiohead22.remaster-7687.90110.sbefail.flac16",
+    "gd1978-11-17.acoustic.sbd.samaritano.32879.sbeok.flac16",
+    "gd1978-11-17.157671.aud.lamarre.vernon.sirmick.flac16",
+    "gd1978-11-17.157672.aud.lamarre.vernon.sirmick.flac24"
+  ],
+  "best_recording": "gd78-11-17.acoustic.sbd.dodd.7687.sbeok.shnf",
+  "avg_rating": 2.3913043478260874,
+  "raw_rating": 4.782608695652174,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 44,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 2
+  },
+  "matching_method": "venue_based",
+  "filtering_applied": [
+    "venue_matching: 5 matched, 0 unmatched"
+  ],
+  "collections": [
+    "donna-years",
+    "keith-godchaux-years"
+  ]
+}

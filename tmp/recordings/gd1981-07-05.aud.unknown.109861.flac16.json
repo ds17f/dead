@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-07-05",
+  "venue": "Zoo Amphitheater",
+  "location": "Oklahoma City, OK",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "samson and delilah",
+      "duration": 469.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t101.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "dont ease me in->",
+      "duration": 199.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t102.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "music never stopped",
+      "duration": 533.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t103.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "lost sailor->",
+      "duration": 422.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t104.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "saint of circumstance->",
+      "duration": 419.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t105.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "hes gone->",
+      "duration": 775.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t106.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "space->other one->",
+      "duration": 682.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t201.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "stella blue->",
+      "duration": 597.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t202.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "around and around->",
+      "duration": 236.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t203.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "johnny b goode",
+      "duration": 242.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t204.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "encore- u.s.blues - cut at end",
+      "duration": 297.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t205.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "first set- let it grow",
+      "duration": 700.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-07-05-aud-t206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-07-05-aud-t206.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

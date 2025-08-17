@@ -1,0 +1,62 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-02-28",
+  "venue": "Salt Palace",
+  "location": "Salt Lake City, UT",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "jam out of Truckin'",
+      "duration": 201.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-28s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-28s2t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One >",
+      "duration": 911.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-28s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-28s2t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Eyes Of The World//",
+      "duration": 791.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-28s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-28s2t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

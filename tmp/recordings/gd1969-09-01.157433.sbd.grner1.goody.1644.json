@@ -1,0 +1,171 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-09-01",
+  "venue": "Baton Rouge International Speedway",
+  "location": "Prairieville, LA",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "lead in",
+      "duration": 1050.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "101 lead in.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "101 lead in.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Flac",
+          "filename": "201 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "201 Dark Star.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Casey Jones",
+      "duration": 533.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "102 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "102 Casey Jones.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Flac",
+          "filename": "202 St. Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "202 St. Stephen.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Morning Dew",
+      "duration": 567.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "103 Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "103 Morning Dew.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Flac",
+          "filename": "203 The Eleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "203 The Eleven.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mama Tried >",
+      "duration": 1436.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "104 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "104 Mama Tried.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Flac",
+          "filename": "204 Turn On Your Lovelight (original edit tuned).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204 Turn On Your Lovelight (original edit tuned).mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "204 Turn On Your Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204 Turn On Your Lovelight.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "High Time",
+      "duration": 410.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "105 High Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "105 High Time.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Easy Wind",
+      "duration": 438.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "106 Easy Wind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "106 Easy Wind.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Yellow Dog Story",
+      "duration": 163.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "107 Yellow Dog Story.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "107 Yellow Dog Story.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

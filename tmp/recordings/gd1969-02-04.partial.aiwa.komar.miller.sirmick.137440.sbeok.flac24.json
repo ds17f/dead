@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-02-04",
+  "venue": "The Music Box",
+  "location": "Omaha, NE",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 536.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-02-04t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-04t01.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark//Star >",
+      "duration": 656.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-02-04t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-04t02.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Saint Stephen >",
+      "duration": 380.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-02-04t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-04t03.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven >",
+      "duration": 631.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-02-04t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-04t04.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Death Don't Have No Mercy/",
+      "duration": 579.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1969-02-04t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-04t05.mp3",
+          "bitrate": "166"
+        }
+      ]
+    }
+  ]
+}

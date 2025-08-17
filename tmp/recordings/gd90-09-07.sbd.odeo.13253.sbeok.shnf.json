@@ -1,0 +1,350 @@
+{
+  "rating": 1.6964285714285714,
+  "review_count": 28,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1990-09-07",
+  "venue": "Richfield Coliseum",
+  "location": "Richfield, OH",
+  "raw_rating": 3.392857142857143,
+  "high_ratings": 16,
+  "low_ratings": 5,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cold Rain & Snow",
+      "duration": 255.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t01.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Walkin' Blues",
+      "duration": 257.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Ramble On Rose",
+      "duration": 307.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Me & My Uncle",
+      "duration": 117.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Big River",
+      "duration": 233.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Althea",
+      "duration": 290.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t06.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "When I Paint My Masterpiece",
+      "duration": 212.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Bird Song",
+      "duration": 461.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t08.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Picasso Moon",
+      "duration": 248.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t09.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "U.S. Blues",
+      "duration": 105.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d1t10.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 250.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t01.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 224.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 344.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t03.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Crazy Fingers",
+      "duration": 332.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band",
+      "duration": 603.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t05.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 264.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t06.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 413.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d2t07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 143.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d3t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter",
+      "duration": 333.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d3t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Lovelight",
+      "duration": 240.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d3t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 224.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1990-09-07d3t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1990-09-07d3t04.shn"
+        }
+      ]
+    }
+  ]
+}

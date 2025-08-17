@@ -1,0 +1,302 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-07-02",
+  "venue": "Deer Creek Music Center",
+  "location": "Noblesville, IN",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Here Comes Sunshine",
+      "duration": 421.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Walkin' Blues",
+      "duration": 379.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 228.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now",
+      "duration": 391.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Broken Arrow",
+      "duration": 341.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Desolation Row",
+      "duration": 625.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 468.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 731.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d1t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Scarlet Begonias >",
+      "duration": 506.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d2t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Fire On The Mountain >",
+      "duration": 849.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d2t02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Victim Or The Crime >",
+      "duration": 473.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d2t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "It's All Too Much >",
+      "duration": 358.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "New Speedway Boogie >",
+      "duration": 544.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d2t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 879.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 581.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d3t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Attics Of My Life >",
+      "duration": 273.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d3t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Sugar Magnolia",
+      "duration": 554.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d3t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 249.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-07-02d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-07-02d3t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

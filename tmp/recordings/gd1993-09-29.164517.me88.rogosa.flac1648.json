@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-29",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd",
+      "duration": 61.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t01_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t01_crowd.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 382.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t02_Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t02_Hell In A Bucket.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 850.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t03_Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t03_Sugaree.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Same Thing",
+      "duration": 431.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t04_The Same Thing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t04_The Same Thing.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loose Lucy",
+      "duration": 479.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t05_Loose Lucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t05_Loose Lucy.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Black Throated Wind",
+      "duration": 426.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t06_Black Throated Wind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t06_Black Throated Wind.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dire Wolf",
+      "duration": 280.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t07_Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t07_Dire Wolf.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Eternity",
+      "duration": 572.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t08_Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t08_Eternity.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tennessee Jed",
+      "duration": 541.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t09_Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t09_Tennessee Jed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "crowd",
+      "duration": 43.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t10_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t10_crowd.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes OF The World >",
+      "duration": 1067.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t11_Eyes OF The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t11_Eyes OF The World.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain >",
+      "duration": 510.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t12_Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t12_Looks Like Rain.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Way To Go Home >",
+      "duration": 405.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t13_Way To Go Home.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t13_Way To Go Home.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station >",
+      "duration": 1545.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t14_Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t14_Terrapin Station.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 219.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t15_Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t15_Drums.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 1316.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t16_Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t16_Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "PLayin In The Band Reprise >",
+      "duration": 236.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t17_Playin In The Band Reprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t17_Playin In The Band Reprise.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue >",
+      "duration": 511.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t18_Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t18_Stella Blue.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 466.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t19_Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t19_Sugar Magnolia.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "crowd",
+      "duration": 138.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t20_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t20_crowd.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Liberty",
+      "duration": 406.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-29t21_Liberty.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-29t21_Liberty.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

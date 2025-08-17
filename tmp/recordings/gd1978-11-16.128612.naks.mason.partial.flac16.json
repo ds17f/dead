@@ -1,0 +1,206 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1978-11-16",
+  "venue": "Uptown Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 358.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me And My Uncle->",
+      "duration": 189.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Big River",
+      "duration": 356.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 475.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Looks Like Rain",
+      "duration": 435.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line",
+      "duration": 205.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stagger Lee",
+      "duration": 371.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s1t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dancing In The Street->",
+      "duration": 508.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s2t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 404.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s2t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias->",
+      "duration": 693.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain",
+      "duration": 675.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 433.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-16.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-16.s2t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

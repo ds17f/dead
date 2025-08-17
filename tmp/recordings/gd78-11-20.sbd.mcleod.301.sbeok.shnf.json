@@ -1,0 +1,158 @@
+{
+  "rating": 2.25,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-11-20",
+  "venue": "Cleveland Music Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.5,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Mexicali Blues",
+      "duration": 178.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "It Must Have Been the Roses",
+      "duration": 259.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Peggy-O",
+      "duration": 295.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jam",
+      "duration": 366.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t04.mp3",
+          "bitrate": "207"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Jack-A-Roe",
+      "duration": 165.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Playin' in the Band",
+      "duration": 337.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t06.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Shakedown Street",
+      "duration": 423.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "World to Give",
+      "duration": 260.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t08.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Playin' in teh Band Reprise",
+      "duration": 65.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_11-20-78t09.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_11-20-78t09.shn"
+        }
+      ]
+    }
+  ]
+}

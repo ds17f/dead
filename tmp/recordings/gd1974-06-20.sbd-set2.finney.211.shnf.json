@@ -1,0 +1,126 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1974-06-20",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Big River",
+      "duration": 181.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t1.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ship of Fools",
+      "duration": 216.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t2.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Truckin' >",
+      "duration": 769.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t3.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Eyes of the World >",
+      "duration": 607.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t4.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Slipknot! >",
+      "duration": 113.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t5.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "China Doll",
+      "duration": 236.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t6.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "One More Saturday Night",
+      "duration": 177.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd6-20-74t7.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd6-20-74t7.shn"
+        }
+      ]
+    }
+  ]
+}

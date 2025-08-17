@@ -1,0 +1,62 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1983-06-18",
+  "venue": "Saratoga Performing Arts Center",
+  "location": "Saratoga Springs, NY",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "GD 6-18-83 Scarlet-Fire 01-fixed",
+      "duration": 1547.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd016-18-83Scarlet-fire01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd016-18-83Scarlet-fire01-fixed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "GD 6-18-83 Playin-Drumz-wheel-Playin- Morning Dew 02-fixed",
+      "duration": 3273.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd026-18-83Playin-drumz-wheel-playin-MorningDew02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd026-18-83Playin-drumz-wheel-playin-MorningDew02-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "GD 6-18-83 Throwing Stones-NFA-Touch Of Grey 03-fixed",
+      "duration": 1387.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd036-18-83ThrowingStones-nfa-touchOfGrey03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd036-18-83ThrowingStones-nfa-touchOfGrey03-fixed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

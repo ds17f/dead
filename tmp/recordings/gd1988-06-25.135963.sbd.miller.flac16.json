@@ -1,0 +1,94 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1988-06-25",
+  "venue": "GD Summer 1988 Treats",
+  "location": "Compilation, Compilation",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd88-06-25 Introduction",
+      "duration": 37.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Gd88-06-25Introduction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Gd88-06-25Introduction.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd88-06-25 Sugaree",
+      "duration": 522.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Gd88-06-25Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Gd88-06-25Sugaree.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd88-06-25 Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 568.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Gd88-06-25StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Gd88-06-25StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd88-07-31 Little Red Rooster",
+      "duration": 484.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Gd88-07-31LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Gd88-07-31LittleRedRooster.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd88-07-31 West LA Fadeaway",
+      "duration": 436.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Gd88-07-31WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Gd88-07-31WestLaFadeaway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-06-14",
+  "venue": "Monterey Performing Arts Center",
+  "location": "Monterey, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Turn On Your Lovelight >",
+      "duration": 1591.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t01 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t01 Lovelight.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me & My Uncle >",
+      "duration": 186.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t02 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t02 M & MU.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Doin' That Rag >",
+      "duration": 433.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t03 Doin' That Rag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t03 Doin' That Rag.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "He Was A Friend Of Mine",
+      "duration": 599.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t04 He Was A Friend Of Mine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t04 He Was A Friend Of Mine.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dire Wolf",
+      "duration": 237.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t05 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t05 Dire Wolf.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star >",
+      "duration": 909.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t06 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t06 Dark Star.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "St. Stephen >",
+      "duration": 357.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t07 St. Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t07 St. Stephen.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Eleven >",
+      "duration": 878.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t08 The Eleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t08 The Eleven.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Turn On Your Lovelight",
+      "duration": 1008.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-14 t09 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-14 t09 Lovelight.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

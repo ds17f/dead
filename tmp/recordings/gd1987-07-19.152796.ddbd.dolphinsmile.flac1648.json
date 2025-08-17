@@ -1,0 +1,221 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-07-19",
+  "venue": "Autzen Stadium, University Of Oregon",
+  "location": "Eugene, OR",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket >",
+      "duration": 402.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track001 Hell In A Bucket.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 682.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track002 Sugaree.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried >",
+      "duration": 161.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track003 Mama Tried.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 307.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track004 Mexicali Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 467.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track005 Althea.flac"
+        },
+        {
+          "format": "Flac",
+          "filename": "track019 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "track019 Lovelight.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Victim Or The Crime >",
+      "duration": 521.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track006 Victim Or The Crime.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West L.A. Fadeaway",
+      "duration": 494.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track007 West LA Fadeaway.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Desolation Row >",
+      "duration": 723.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track008 Desolation Row.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 575.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track009 Deal.flac"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Box Of Rain",
+      "duration": 318.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track010 Box Of Rain.flac"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Foolish Heart >",
+      "duration": 711.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track011 Foolish Heart.flac"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain >",
+      "duration": 524.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track012 Look Like Rain.flac"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin Station >",
+      "duration": 917.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track013 Terrapin Station.flac"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 551.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track014 Drums.flac"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 670.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track015 Space.flac"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One >",
+      "duration": 470.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track016 The Other One.flac"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel >",
+      "duration": 237.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track017 The Wheel.flac"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Morning Dew >",
+      "duration": 736.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "track018 Morning Dew.flac"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "rating": 2.25,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-06-08",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancing In The Street ->",
+      "duration": 783.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "He Was A Friend Of Mine ->",
+      "duration": 731.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "China Cat Sunflower ->",
+      "duration": 256.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d1t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Potato Caboose",
+      "duration": 844.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 199.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d1t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tuning",
+      "duration": 69.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d2t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Turn On Your Lovelight *",
+      "duration": 2155.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d2t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Things I Used To Do **",
+      "duration": 457.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d2t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Who's Lovin' You Tonight **",
+      "duration": 371.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d2t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "That's It For The Other One ->",
+      "duration": 839.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d2t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cosmic Charlie",
+      "duration": 464.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-06-08d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-06-08d2t06.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1991-02-19",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 384.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 330.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 597.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Althea.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane Approximately",
+      "duration": 471.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04QueenJaneApproximately.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ramble On Rose",
+      "duration": 638.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RambleOnRose.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Picasso Moon",
+      "duration": 555.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06PicassoMoon.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Peggy-O",
+      "duration": 444.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Peggy-o.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 423.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Cassidy.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "New Speedway Boogie",
+      "duration": 547.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09NewSpeedwayBoogie.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 59.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 444.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ChinaCatSunflower.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 461.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 484.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Truckin.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Crazy Fingers",
+      "duration": 1271.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14CrazyFingers.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 846.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 514.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 322.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "19 Black Peter",
+      "duration": 591.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BlackPeter.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "20 Sugar Magnolia",
+      "duration": 572.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SugarMagnolia.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "21 Encore Break",
+      "duration": 158.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "22 US Blues",
+      "duration": 312.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22UsBlues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

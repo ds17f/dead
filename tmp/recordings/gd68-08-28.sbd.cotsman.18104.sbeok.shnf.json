@@ -1,0 +1,94 @@
+{
+  "rating": 1.5833333333333333,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-08-28",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.1666666666666665,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star-->",
+      "duration": 279.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t01.mp3",
+          "bitrate": "133"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "St. Stephen-->",
+      "duration": 117.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t02.mp3",
+          "bitrate": "133"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Eleven-->",
+      "duration": 267.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t03.mp3",
+          "bitrate": "134"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Death Don't Have No Mercy",
+      "duration": 220.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t04.mp3",
+          "bitrate": "132"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Turn On Your Lovelight",
+      "duration": 319.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t05.mp3",
+          "bitrate": "131"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

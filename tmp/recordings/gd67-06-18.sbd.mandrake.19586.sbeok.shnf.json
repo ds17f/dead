@@ -1,0 +1,94 @@
+{
+  "rating": 2.1538461538461537,
+  "review_count": 26,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-06-18",
+  "venue": "Monterey Fairgrounds",
+  "location": "Monterey, CA",
+  "raw_rating": 4.3076923076923075,
+  "high_ratings": 21,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Viola Lee Blues",
+      "duration": 584.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "\"The Beatles aren't here\"",
+      "duration": 79.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cold Rain and Snow",
+      "duration": 137.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Alligator>",
+      "duration": 293.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t04.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Caution (Do Not Stop on Tracks)",
+      "duration": 412.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t05.mp3",
+          "bitrate": "155"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18t05.shn"
+        }
+      ]
+    }
+  ]
+}

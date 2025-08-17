@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1982-07-29",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "201",
+      "title": "Crazy Fingers >",
+      "duration": 523.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t01 Crazy Fingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t01 Crazy Fingers.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Need A Miracle > Crazy Fingers Jam >",
+      "duration": 640.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t02 Miracle_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t02 Miracle_Jam.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Drums >",
+      "duration": 498.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t03 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t03 Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Space >",
+      "duration": 216.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t04 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t04 Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "The Other One >",
+      "duration": 636.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t05 Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t05 Other One.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 458.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t06 GDTRFB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t06 GDTRFB.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Wharf Rat >",
+      "duration": 558.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t07 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t07 Wharf Rat.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Around & Around >",
+      "duration": 236.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t08 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t08 A & A.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Good Lovin'",
+      "duration": 500.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t09 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t09 Good Lovin'.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "E: Brokedown Palace",
+      "duration": 321.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd82-07-29 s2t10 E_Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-07-29 s2t10 E_Brokedown.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

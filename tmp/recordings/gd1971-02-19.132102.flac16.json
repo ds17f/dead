@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-02-19",
+  "venue": "Capitol Theatre",
+  "location": "Port Chester, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cumberland Blues [4:44] ;",
+      "duration": 166.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02197101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02197101.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too [5:46] ;",
+      "duration": 371.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02197102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02197102.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha [4:52] ;",
+      "duration": 397.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02197103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02197103.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band [4:48] ;",
+      "duration": 452.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02197104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02197104.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Hollow [3:01] ;",
+      "duration": 228.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02197105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02197105.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Smokestack Lightnin' [14:42] ;",
+      "duration": 683.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02197106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02197106.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

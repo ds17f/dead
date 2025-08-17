@@ -1,0 +1,190 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-05-17",
+  "venue": "Uptown Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half Step Uptown Toodeloo >",
+      "duration": 563.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 887.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle >",
+      "duration": 183.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s1t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big River/",
+      "duration": 212.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s1t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Samson And Delilah",
+      "duration": 434.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Friend Of The Devil",
+      "duration": 563.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dancin' In The Streets >",
+      "duration": 867.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums >",
+      "duration": 952.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Space >",
+      "duration": 119.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Terrapin Station >",
+      "duration": 647.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Not Fade Away/",
+      "duration": 291.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

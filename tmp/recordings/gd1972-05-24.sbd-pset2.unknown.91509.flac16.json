@@ -1,0 +1,158 @@
+{
+  "rating": 2.2777777777777777,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-05-24",
+  "venue": "Strand Lyceum",
+  "location": "London, England",
+  "raw_rating": 4.555555555555555,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Rockin' Pneumonia",
+      "duration": 374.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc101.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mexicali Blues",
+      "duration": 238.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc102.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Black Peter",
+      "duration": 691.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc103.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexican Hat Dance",
+      "duration": 86.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc104.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Truckin' >",
+      "duration": 723.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc105.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums >",
+      "duration": 103.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc106.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Other One >",
+      "duration": 1791.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc107.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sing Me Back Home",
+      "duration": 745.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc108.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugar Magnolia //",
+      "duration": 42.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1972-05-24disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1972-05-24disc109.mp3",
+          "bitrate": "153"
+        }
+      ]
+    }
+  ]
+}

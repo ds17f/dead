@@ -1,0 +1,366 @@
+{
+  "rating": 2.2857142857142856,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1988-07-31",
+  "venue": "Laguna Seca Raceway",
+  "location": "Monterey, CA",
+  "raw_rating": 4.571428571428571,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step Uptown Toodleloo",
+      "duration": 579.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster [1]",
+      "duration": 480.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West L.A. Fadeaway [1]",
+      "duration": 467.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle >",
+      "duration": 193.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 357.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 424.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Gentlemen Start Your Engines",
+      "duration": 297.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "When I Paint My Masterpiece",
+      "duration": 353.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 721.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "crowd/tuning",
+      "duration": 38.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Hell In A Bucket >",
+      "duration": 343.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Foolish Heart >",
+      "duration": 519.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Women Are Smarter >",
+      "duration": 407.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station >",
+      "duration": 720.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Will Take You Home",
+      "duration": 238.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 484.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 151.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t08.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One >",
+      "duration": 481.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Need A Miracle >",
+      "duration": 252.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Morning Dew",
+      "duration": 673.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t11.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "encore call",
+      "duration": 88.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t12.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Midnight Hour",
+      "duration": 347.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1988-07-31.motb.0019.d2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-07-31.motb.0019.d2t13.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

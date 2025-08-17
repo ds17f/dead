@@ -1,0 +1,46 @@
+{
+  "rating": 2.1052631578947367,
+  "review_count": 19,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1993-02-10",
+  "venue": "Club Front",
+  "location": "San Rafael, CA",
+  "raw_rating": 4.2105263157894735,
+  "high_ratings": 15,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Days Between",
+      "duration": 477.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-10t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-02-10t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Days Between",
+      "duration": 443.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-10t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-02-10t02.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "rating": 0.875,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1994-09-18",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 2.5,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 403.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TouchOfGrey.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 257.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack A Roe",
+      "duration": 345.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03JackARoe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03JackARoe.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 517.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 486.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TennesseeJed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 387.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ElPaso.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown Eyed Women",
+      "duration": 339.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BrownEyedWomen.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Music Never Stopped",
+      "duration": 633.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TheMusicNeverStopped.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Iko Iko",
+      "duration": 641.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09IkoIko.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Saint Of Circumstance",
+      "duration": 450.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SaintOfCircumstance.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samba In The Rain",
+      "duration": 473.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SambaInTheRain.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "So Many Roads",
+      "duration": 572.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SoManyRoads.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson And Delilah",
+      "duration": 442.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SamsonAndDelilah.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 744.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 652.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Days Between",
+      "duration": 782.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheDaysBetween.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheDaysBetween.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 535.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ThrowingStones.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 560.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18NotFadeAway.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Brokedown Palace",
+      "duration": 298.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BrokedownPalace.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

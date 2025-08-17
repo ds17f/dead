@@ -1,0 +1,126 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1971-03-21",
+  "venue": "Exposition Center",
+  "location": "Milwaukee, WI",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Me and My Uncle",
+      "duration": 191.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hard To Handle",
+      "duration": 486.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Loser",
+      "duration": 374.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Beat It On Down The Line",
+      "duration": 194.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t04.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Me and Bobby McGee",
+      "duration": 332.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t05.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Not Fade Away",
+      "duration": 263.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t06.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 250.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-03-21d1t07.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-03-21d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

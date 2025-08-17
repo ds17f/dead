@@ -1,0 +1,220 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-03-26-hampton-coliseum-hampton-va-usa/",
+  "show_id": "1988-03-26-hampton-coliseum-hampton-va-usa",
+  "band": "Grateful Dead",
+  "venue": "Hampton Coliseum",
+  "location_raw": "Hampton, VA",
+  "city": "Hampton",
+  "state": "VA",
+  "country": "USA",
+  "date": "1988-03-26",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stir It Up",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Stuck Inside of Mobile with the Memphis Blues Again",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:00:17.758898",
+  "show_time": null,
+  "recordings": [
+    "gd1988-03-26.147992.fm.hessberg.miller.clugston.flac1648",
+    "gd1988-03-26.147993.fm.hessberg.miller.clugston.flac2496",
+    "gd1988-03-26.sbd.miller.91158.sbeok.flac16",
+    "gd88-03-26.sbd.braverman.7164.sbefail.shnf",
+    "gd1988-03-26.113740.SBD.flac16",
+    "gd1988-03-26.141142.sbd.miller.flac2496",
+    "gd1988-03-26.141311.UltraMatrix.sbd.miller.flac1644",
+    "gd1988-03-26.mtx.tobin.95488.flac16",
+    "gd1988-03-26.nak100.pasternak.mallick.107820.flac16",
+    "gd1988-03-26.142502.WeberSmall.Garrett.Mattes.Donaldson.Ammons.Noel.t-flac1644",
+    "gd1988-03-26.senn.grabski.33950.sbeok.flac16",
+    "gd1988-03-26.119007.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1988-03-26.134379.nakcm100.lynn.datbrad.flac16",
+    "gd1988-03-26.144486.sennme-80.porter.carbonetta.sirmick.flac2496",
+    "gd1988-03-26.mtx.dts.tobin.95931.flac16",
+    "gd1988-03-26.155948.5-1.tobin.flac1648",
+    "gd1988-03-26.152469.set2-aud-unknown-onemoreshot.shnf",
+    "gd1988-03-26.155945.mtx.tobin.flac24",
+    "gd1988-03-26.155947.dts.tobin.flac16",
+    "gd1988-03-26.144485.sennme-80.porter.carbonetta.sirmick.flac1644",
+    "gd1988-03-26.nak.cohen.106049.sbeok.flac16",
+    "gd1988-03-26.set2.nak.cohen.106000.sbeok.flac16",
+    "gd1988-03-26.155946.mtx.tobin.flac16"
+  ],
+  "best_recording": "gd1988-03-26.147992.fm.hessberg.miller.clugston.flac1648",
+  "avg_rating": 2.0483180428134555,
+  "raw_rating": 4.358974358974359,
+  "recording_count": 23,
+  "confidence": 1.0,
+  "total_high_ratings": 34,
+  "total_low_ratings": 1,
+  "source_types": {
+    "FM": 2,
+    "SBD": 5,
+    "UNKNOWN": 15,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years",
+    "return-and-recovery"
+  ]
+}

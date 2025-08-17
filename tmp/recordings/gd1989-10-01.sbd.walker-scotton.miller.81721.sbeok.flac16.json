@@ -1,0 +1,334 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1989-10-01",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 147.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 469.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Ramble On Rose",
+      "duration": 570.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 489.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Built To Last",
+      "duration": 386.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 421.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Just A Little Light",
+      "duration": 360.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy ->",
+      "duration": 424.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 247.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d1t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 138.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d2t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Hell In A Bucket ->",
+      "duration": 394.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias ->",
+      "duration": 659.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 471.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone ->",
+      "duration": 808.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 363.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 731.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t03.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One ->",
+      "duration": 521.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat ->",
+      "duration": 633.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Turn On Your Lovelight",
+      "duration": 647.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 472.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-01d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-01d3t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

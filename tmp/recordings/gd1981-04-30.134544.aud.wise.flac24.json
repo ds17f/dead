@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-04-30",
+  "venue": "Greensboro Coliseum",
+  "location": "Greensboro, NC",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jam",
+      "duration": 214.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 378.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-o",
+      "duration": 413.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "CC Rider",
+      "duration": 564.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Alabama Getaway",
+      "duration": 300.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Greatest Story Ever told",
+      "duration": 270.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 440.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 512.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower",
+      "duration": 392.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 353.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Set Up",
+      "duration": 40.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Shakedown Street",
+      "duration": 746.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson And Delilah",
+      "duration": 525.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t13.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "It Must Have Been The Roses",
+      "duration": 423.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t14.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet/",
+      "duration": 702.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t15.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes Of The World",
+      "duration": 463.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t16.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 476.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t17.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 285.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t18.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Truckin",
+      "duration": 495.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t19.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter",
+      "duration": 578.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t20.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around And Around",
+      "duration": 234.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t21.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B Goode",
+      "duration": 248.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t22.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Casey Jones",
+      "duration": 410.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t23.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

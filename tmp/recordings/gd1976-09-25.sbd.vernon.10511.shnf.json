@@ -1,0 +1,30 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1976-09-25",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Its All Over Now",
+      "duration": 283.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-dp20-outtakesd1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-dp20-outtakesd1t01.shn"
+        }
+      ]
+    }
+  ]
+}

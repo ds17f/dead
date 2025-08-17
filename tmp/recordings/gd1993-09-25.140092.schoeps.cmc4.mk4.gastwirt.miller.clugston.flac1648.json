@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-25",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd93-09-25 s1 tCrowd",
+      "duration": 63.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T01Crowd.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd93-09-25 s1 tCold Rain & Snow",
+      "duration": 388.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T02ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T02ColdRainSnow.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd93-09-25 s1 tWang Dang Doodle",
+      "duration": 386.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T03WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T03WangDangDoodle.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd93-09-25 s1 tLoser",
+      "duration": 447.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T04Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T04Loser.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd93-09-25 s1 tIt's All Over Now",
+      "duration": 438.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T05ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T05ItsAllOverNow.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd93-09-25 s1 tJust Like Tom Thumb's Blues",
+      "duration": 365.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T06JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T06JustLikeTomThumbsBlues.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd93-09-25 s1 tCassidy",
+      "duration": 436.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T07Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T07Cassidy.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd93-09-25 s1 tDeal",
+      "duration": 534.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S1T08Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S1T08Deal.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd93-09-25 s2 t01 Crowd",
+      "duration": 196.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T01Crowd.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd93-09-25 s2 t02 Foolish Heart",
+      "duration": 764.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T02FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T02FoolishHeart.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd93-09-25 s2 t03 Box Of Rain",
+      "duration": 301.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T03BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T03BoxOfRain.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd93-09-25 s2 t04 Crazy Fingers",
+      "duration": 517.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T04CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T04CrazyFingers.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd93-09-25 s2 t05 Corrina",
+      "duration": 919.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T05Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T05Corrina.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd93-09-25 s2 t06 Drums",
+      "duration": 894.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T06Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd93-09-25 s2 t07 Space",
+      "duration": 701.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T07Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd93-09-25 s2 t08 The Wheel",
+      "duration": 314.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T08TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T08TheWheel.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd93-09-25 s2 t09 All Along The Watchtower",
+      "duration": 416.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T09AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T09AllAlongTheWatchtower.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd93-09-25 s2 t10 Black Peter",
+      "duration": 527.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T10BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T10BlackPeter.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd93-09-25 s2 t11 One More Saturday Night",
+      "duration": 305.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T11OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T11OneMoreSaturdayNight.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd93-09-25 s2 t12 Encore Break",
+      "duration": 145.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T12EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T12EncoreBreak.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd93-09-25 s2 t13 I Fought The Law",
+      "duration": 196.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-25S2T13IFoughtTheLaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-25S2T13IFoughtTheLaw.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

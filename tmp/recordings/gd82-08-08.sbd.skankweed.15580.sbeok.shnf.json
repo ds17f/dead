@@ -1,0 +1,382 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1982-08-08",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Alabama Getaway",
+      "duration": 250.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t01.fixed.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t01.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Promised Land",
+      "duration": 206.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t02.fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t02.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "They Love Each Other",
+      "duration": 362.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t03.fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t03.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mama Tried",
+      "duration": 114.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t04.fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t04.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mexicali Blues",
+      "duration": 209.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t05.fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t05.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Loser",
+      "duration": 192.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t06.fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t06.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Little Red Rooster",
+      "duration": 321.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t07.fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t07.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Brown Eyed Women",
+      "duration": 226.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t08.fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t08.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Looks Like Rain",
+      "duration": 357.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t09.fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t09.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Peggy-O",
+      "duration": 295.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t10.fixed.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t10.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson and Delilah",
+      "duration": 335.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d1t11.fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d1t11.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Far From Me",
+      "duration": 188.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d2t01.fixed.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d2t01.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias",
+      "duration": 481.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d2t02.fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d2t02.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire On The Mountain",
+      "duration": 477.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d2t03.fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d2t03.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet",
+      "duration": 710.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t01.fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t01.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 413.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t02.fixed.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t02.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 275.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t03.fixed.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t03.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One",
+      "duration": 139.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t04.fixed.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t04.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 204.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t05.fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t05.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 355.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t06.fixed.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t06.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Good Lovin'",
+      "duration": 363.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t07.fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t07.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Satisfaction",
+      "duration": 315.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t08.fixed.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t08.fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Brokedown Palace",
+      "duration": 231.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd82-08-08d3t09.fixed.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd82-08-08d3t09.fixed.shn"
+        }
+      ]
+    }
+  ]
+}

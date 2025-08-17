@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-03-23",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 57.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 361.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TouchOfGrey.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 455.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LittleRedRooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Althea",
+      "duration": 555.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Althea.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 182.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 396.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Iko Iko",
+      "duration": 402.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07IkoIko.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tons Of Steel",
+      "duration": 414.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08TonsOfSteel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TonsOfSteel.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Feel Like A Stranger",
+      "duration": 384.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09FeelLikeAStranger.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 206.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 98.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Box Of Rain",
+      "duration": 295.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12BoxOfRain.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 449.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ManSmartwomanSmarter.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ship Of Fools",
+      "duration": 550.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ShipOfFools.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin'",
+      "duration": 593.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Truckin.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 577.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 334.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One",
+      "duration": 531.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheOtherOne.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue",
+      "duration": 518.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StellaBlue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 477.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ThrowingStones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 286.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21TurnOnYourLovelight.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 116.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "US Blues",
+      "duration": 328.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23UsBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

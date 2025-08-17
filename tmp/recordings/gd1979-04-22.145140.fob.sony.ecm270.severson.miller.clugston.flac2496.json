@@ -1,0 +1,462 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1979-04-22",
+  "venue": "Spartan Stadium, San Jose State University",
+  "location": "San Jose, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 202.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t01 Crowd.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Jack Straw",
+      "duration": 405.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t02 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t02 Jack Straw.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Tennessee Jed",
+      "duration": 594.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t03 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t03 Tennessee Jed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Mama Tried >",
+      "duration": 156.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t04 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t04 Mama Tried.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Mexicali Blues",
+      "duration": 368.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t05 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t05 Mexicali Blues.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Sugaree",
+      "duration": 848.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t06 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t06 Sugaree.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "New Minglewood Blues",
+      "duration": 381.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t07 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t07 New Minglewood Blues.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Brown Eyed Women",
+      "duration": 408.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t08 Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t08 Brown Eyed Women.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Looks Like Rain",
+      "duration": 539.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t09 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t09 Looks Like Rain.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Stagger Lee",
+      "duration": 491.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t10 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t10 Stagger Lee.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Passenger",
+      "duration": 289.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t11 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t11 Passenger.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "Deal",
+      "duration": 325.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s1t12 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s1t12 Deal.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 115.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t01 Crowd.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Need A Miracle >",
+      "duration": 272.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t02 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t02 I Need A Miracle.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Bertha >",
+      "duration": 400.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t03 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t03 Bertha.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Good Lovin'",
+      "duration": 543.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t04 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t04 Good Lovin'.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Scarlet Begonias >",
+      "duration": 579.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t05 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t05 Scarlet Begonias.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Fire On The Mountain",
+      "duration": 912.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t06 Fire On The Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t06 Fire On The Mountain.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Estimated Prophet >",
+      "duration": 682.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t07 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t07 Estimated Prophet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "He's Gone >",
+      "duration": 741.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t08 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t08 He's Gone.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Drums >",
+      "duration": 1128.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t09 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t09 Drums.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "The Other One >",
+      "duration": 686.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t10 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t10 The Other One.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Wharf Rat >",
+      "duration": 602.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t11 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t11 Wharf Rat.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Around & Around >",
+      "duration": 491.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t12 Around & Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t12 Around & Around.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Encore Break",
+      "duration": 114.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t13 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t13 Encore Break.mp3",
+          "bitrate": "221"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "US Blues",
+      "duration": 432.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t14 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t14 US Blues.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "Shakedown Street",
+      "duration": 656.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t15 Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t15 Shakedown Street.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "216",
+      "title": "Bill Graham Outro",
+      "duration": 22.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-04-22 s2t16 Bill Graham Outro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 s2t16 Bill Graham Outro.mp3",
+          "bitrate": "204"
+        }
+      ]
+    }
+  ]
+}

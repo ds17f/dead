@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-03-17",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd",
+      "duration": 152.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 775.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Wang Dang Doodle",
+      "duration": 418.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy River Road",
+      "duration": 462.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Desolation Row",
+      "duration": 653.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 581.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 563.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Liberty",
+      "duration": 395.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "crowd",
+      "duration": 185.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Picasso Moon>",
+      "duration": 421.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t02.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Fingers>",
+      "duration": 519.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin In The Band>",
+      "duration": 457.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Dark Star>",
+      "duration": 619.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums>",
+      "duration": 564.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space>",
+      "duration": 349.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Two Soldiers Jam>",
+      "duration": 284.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other one>",
+      "duration": 405.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Days Between>",
+      "duration": 615.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Good Lovin",
+      "duration": 437.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Enc: Lucy In The Sky With Diamonds",
+      "duration": 337.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

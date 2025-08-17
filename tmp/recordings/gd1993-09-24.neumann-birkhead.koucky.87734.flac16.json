@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-24",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 122.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 443.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack-A-Roe",
+      "duration": 316.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 563.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 386.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr05.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Queen Jane Approximately",
+      "duration": 368.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr06.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loose Lucy",
+      "duration": 521.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Picasso Moon",
+      "duration": 419.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d1-tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d1-tr08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 105.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias >",
+      "duration": 829.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr02.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain",
+      "duration": 818.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr03.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Women Are Smarter",
+      "duration": 584.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Way To Go Home",
+      "duration": 392.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone >",
+      "duration": 853.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 241.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d2-tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d2-tr07.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 981.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d3-tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d3-tr01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Last Time >",
+      "duration": 353.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d3-tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d3-tr02.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Days Between >",
+      "duration": 615.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d3-tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d3-tr03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Around And Around",
+      "duration": 455.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d3-tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d3-tr04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Tuning",
+      "duration": 136.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d3-tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d3-tr05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Liberty",
+      "duration": 389.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24-d3-tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24-d3-tr06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

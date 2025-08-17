@@ -1,0 +1,382 @@
+{
+  "rating": 2.3,
+  "review_count": 40,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1976-06-12",
+  "venue": "Boston Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 4.6,
+  "high_ratings": 38,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Samson and Delilah",
+      "duration": 372.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Row Jimmy",
+      "duration": 478.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Music Never Stopped",
+      "duration": 258.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Brown Eyed Women",
+      "duration": 250.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Big River",
+      "duration": 282.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Mission In The Rain",
+      "duration": 332.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Looks Like Rain",
+      "duration": 392.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Friend Of The Devil",
+      "duration": 396.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d1t08.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Lazy Lightnin' >",
+      "duration": 141.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Supplication",
+      "duration": 271.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "High Time",
+      "duration": 425.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Promised Land",
+      "duration": 149.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "The Wheel",
+      "duration": 226.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t05.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Cassidy",
+      "duration": 232.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Tennessee Jed",
+      "duration": 388.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d2t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Let It Grow >",
+      "duration": 470.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat >",
+      "duration": 513.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Comes A Time",
+      "duration": 359.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dancin' In The Street >",
+      "duration": 467.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around and Around",
+      "duration": 429.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia >",
+      "duration": 237.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 224.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t07.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sunshine Daydream",
+      "duration": 294.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd760612d3t08.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd760612d3t08.shn"
+        }
+      ]
+    }
+  ]
+}

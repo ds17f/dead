@@ -1,0 +1,110 @@
+{
+  "rating": 2.1375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1979-04-22",
+  "venue": "Spartan Stadium, San Jose State",
+  "location": "San Jose, CA",
+  "raw_rating": 4.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "... He's Gone >",
+      "duration": 183.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22d1t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-04-22d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums... >",
+      "duration": 579.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22d1t02.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-04-22d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "... Space >",
+      "duration": 20.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22d1t03.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-04-22d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Other One >",
+      "duration": 392.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22d1t04.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-04-22d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Wharf Rat >",
+      "duration": 352.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22d1t05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-04-22d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Around and Around ...",
+      "duration": 105.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22d1t06.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-04-22d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

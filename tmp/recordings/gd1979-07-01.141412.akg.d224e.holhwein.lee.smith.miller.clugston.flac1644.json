@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-07-01",
+  "venue": "Seattle Center Coliseum",
+  "location": "Seattle, WA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd79-07-s1 tMississippi Half-Step Uptown Toodeloo",
+      "duration": 535.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T01MississippiHalf-stepUptownToodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T01MississippiHalf-stepUptownToodeloo.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd79-07-01 s1 tFranklin's Tower",
+      "duration": 699.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T02FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T02FranklinsTower.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd79-07-01 s1 tMama Tried",
+      "duration": 153.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T03MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T03MamaTried.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd79-07-01 s1 tMexicali Blues",
+      "duration": 280.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T04MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T04MexicaliBlues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd79-07-01 s1 tPeggy O",
+      "duration": 508.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T05PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T05PeggyO.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd79-07-01 s1 tNew Minglewood Blues",
+      "duration": 417.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T06NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T06NewMinglewoodBlues.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd79-07-01 s1 tStagger Lee",
+      "duration": 450.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T07StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T07StaggerLee.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd79-07-01 s1 tEl Paso",
+      "duration": 311.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T08ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T08ElPaso.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd79-07-01 s1 tBrown Eyed Womem",
+      "duration": 391.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T09BrownEyedWomem.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T09BrownEyedWomem.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd79-07-01 s1 tPassenger",
+      "duration": 343.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S1T10Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S1T10Passenger.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd79-07-01 s2 t01 Crowd_Tuning",
+      "duration": 87.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T01Crowd_tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T01Crowd_tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd79-07-01 s2 t02 Don't Ease Me In",
+      "duration": 248.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T02DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T02DontEaseMeIn.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd79-07-01 s2 t03 Samson & Delilah",
+      "duration": 563.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T03SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T03SamsonDelilah.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd79-07-01 s2 t04 Sugaree",
+      "duration": 827.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T04Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T04Sugaree.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd79-07-01 s2 t05 Terrapin Station",
+      "duration": 719.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T05TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T05TerrapinStation.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd79-07-01 s2 t06 Playin' In The Band",
+      "duration": 835.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T06PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T06PlayinInTheBand.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd79-07-01 s2 t07 Drums",
+      "duration": 561.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T07Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd79-07-01 s2 t08 Space",
+      "duration": 226.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T08Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd79-07-01 s2 t09 Stella Blue",
+      "duration": 626.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T09StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T09StellaBlue.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd79-07-01 s2 t10 Truckin'",
+      "duration": 573.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T10Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T10Truckin.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd79-07-01 s2 t11 Around & Around",
+      "duration": 489.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T11AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T11AroundAround.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd79-07-01 s2 t12 Encore Break",
+      "duration": 157.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T12EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T12EncoreBreak.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd79-07-01 s2 t13 Shakedown Street",
+      "duration": 498.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd79-07-01S2T13ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd79-07-01S2T13ShakedownStreet.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

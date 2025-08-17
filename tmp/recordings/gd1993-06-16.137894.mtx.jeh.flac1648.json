@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-06-16",
+  "venue": "Freedom Hall",
+  "location": "Louisville, KY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd",
+      "duration": 130.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Crowd.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow",
+      "duration": 359.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ColdRainAndSnow.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Same Thing",
+      "duration": 432.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheSameThing.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 397.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Peggy-o.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 405.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05JustLikeTomThumbsBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble on Rose",
+      "duration": 496.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06RambleOnRose.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 602.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Eternity.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brown-Eyed Women",
+      "duration": 401.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Brown-eyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Brown-eyedWomen.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Easy Answers",
+      "duration": 423.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09EasyAnswers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09EasyAnswers.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 185.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Foolish Heart",
+      "duration": 804.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FoolishHeart.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Saint of Circumstance",
+      "duration": 420.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SaintOfCircumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Lazy River Road",
+      "duration": 418.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LazyRiverRoad.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Corrina",
+      "duration": 657.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Corrina.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 775.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 788.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need a Miracle",
+      "duration": 289.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17INeedAMiracle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue",
+      "duration": 510.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18StellaBlue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Good Lovin'",
+      "duration": 510.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19GoodLovin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "I Fought the Law",
+      "duration": 188.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20IFoughtTheLaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20IFoughtTheLaw.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-03-29",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 406.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01JackStraw.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Row Jimmy",
+      "duration": 671.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02RowJimmy.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walking Blues",
+      "duration": 376.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WalkingBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WalkingBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack A Roe",
+      "duration": 381.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04JackARoe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04JackARoe.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried",
+      "duration": 156.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MamaTried.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 462.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown-Eyed Women",
+      "duration": 426.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Brown-eyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Brown-eyedWomen.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 445.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Cassidy.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 32.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Unbroken Chain",
+      "duration": 420.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10UnbrokenChain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10UnbrokenChain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Help On The Way",
+      "duration": 579.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11HelpOnTheWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11HelpOnTheWay.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Slipknot",
+      "duration": 89.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Slipknot.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Franklins Tower",
+      "duration": 1089.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13FranklinsTower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Corrina",
+      "duration": 771.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Corrina.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Matilda",
+      "duration": 367.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Matilda.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Matilda.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drumz",
+      "duration": 869.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drumz.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 1010.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 330.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18INeedAMiracle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Standing On The Moon",
+      "duration": 585.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StandingOnTheMoon.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 639.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20NotFadeAway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "U.S. Blues",
+      "duration": 327.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21U.s.Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21U.s.Blues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

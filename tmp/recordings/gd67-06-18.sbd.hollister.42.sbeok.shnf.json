@@ -1,0 +1,78 @@
+{
+  "rating": 2.1818181818181817,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-06-18",
+  "venue": "Monterey Fairgrounds",
+  "location": "Monterey, CA",
+  "raw_rating": 4.363636363636363,
+  "high_ratings": 10,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cold Rain And Snow",
+      "duration": 157.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Viola Lee Blues",
+      "duration": 453.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18d1t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Alligator",
+      "duration": 296.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18d1t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Caution (Do Not Stop on Tracks)",
+      "duration": 412.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18d1t04.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-06-18d1t04.shn"
+        }
+      ]
+    }
+  ]
+}

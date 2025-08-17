@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-10-15",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 955.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 536.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stagger Lee",
+      "duration": 537.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Black Throated Wind *",
+      "duration": 389.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 365.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Candyman",
+      "duration": 385.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Easy Answers ->",
+      "duration": 401.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 545.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-15.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-15.s1t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

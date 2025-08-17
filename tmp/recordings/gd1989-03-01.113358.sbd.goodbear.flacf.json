@@ -1,0 +1,638 @@
+{
+  "rating": 1.7999999999999998,
+  "review_count": 1,
+  "source_type": "SBD",
+  "confidence": 0.2,
+  "date": "1989-03-01",
+  "venue": "Club Front - Grateful Dead Studio",
+  "location": "San Rafael, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bill warms up, chats -- starts at: 00:00:00",
+      "duration": 68.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t01.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bill take 1 - Picasso Moon -- starts at: 01:08:44",
+      "duration": 443.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t02.mp3",
+          "bitrate": "137"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bill chats with sound engineers -- starts at: 08:32:03",
+      "duration": 66.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t03.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bill warms up, chats -- starts at: 09:39:00",
+      "duration": 50.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t04.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bill take 2 - Picasso Moon -- starts at: 10:29:09",
+      "duration": 34.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t05.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bill take 3 - Picasso Moon -- starts at: 11:04:01",
+      "duration": 40.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t06.mp3",
+          "bitrate": "124"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bill take 4 - Picasso Moon -- starts at: 11:44:56",
+      "duration": 33.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t07.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bill take 5 - Picasso Moon -- starts at: 12:17:67",
+      "duration": 76.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t08.mp3",
+          "bitrate": "136"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bill take 1 - Blow Away -- starts at: 13:34:62",
+      "duration": 402.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t09.mp3",
+          "bitrate": "144"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jerry tells Bill - Blow Away -- starts at: 20:17:24",
+      "duration": 134.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t10.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Bill take 2 - Blow Away -- starts at: 22:31:45",
+      "duration": 36.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t11.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Bill take 3 - Blow Away -- starts at: 23:07:65",
+      "duration": 411.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t12.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jerry, Bill chat - Blow Away -- starts at: 29:59:15",
+      "duration": 18.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t13.mp3",
+          "bitrate": "119"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Bob take 1 - Picasso Moon -- starts at: 30:17:65",
+      "duration": 205.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t14.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Bob brief break -- starts at: 33:43:43",
+      "duration": 17.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t15.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Bob take 2 - Picasso Moon -- starts at: 34:00:44",
+      "duration": 24.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t16.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Bob take 3 - Picasso Moon -- starts at: 34:24:60",
+      "duration": 37.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t17.mp3",
+          "bitrate": "125"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Bob take 4 - Picasso Moon -- starts at: 35:02:32",
+      "duration": 114.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t18.mp3",
+          "bitrate": "137"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Bob take 5 - Picasso Moon -- starts at: 36:57:26",
+      "duration": 65.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t19.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Bob take 6 - Picasso Moon -- starts at: 38:03:25",
+      "duration": 26.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t20.mp3",
+          "bitrate": "121"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Bob take 7 - Picasso Moon -- starts at: 38:29:32",
+      "duration": 239.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t21.mp3",
+          "bitrate": "124"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Bob take 8 - Picasso Moon -- starts at: 42:29:01",
+      "duration": 95.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t22.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Bob take 9 - Picasso Moon -- starts at: 44:04:51",
+      "duration": 234.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t23.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Bob stops -- starts at: 47:59:23",
+      "duration": 19.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t24.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Jerry warms up -- starts at: 48:18:41",
+      "duration": 115.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t25.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t25.mp3",
+          "bitrate": "115"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Phil & Jerry warm up -- starts at: 50:14:35",
+      "duration": 36.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t26.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t26.mp3",
+          "bitrate": "111"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Bob, Jerry & Brent warm up -- starts at: 50:50:43",
+      "duration": 142.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t27.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t27.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "take 1 - Just A Little Light -- starts at: 53:13:41",
+      "duration": 343.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t28.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t28.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "chat & warm up -- starts at: 58:57:25",
+      "duration": 115.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t29.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t29.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "take 2 - Just A Little Light -- starts at: 60:53:01",
+      "duration": 318.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t30.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t30.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "chat -- starts at: 66:11:30",
+      "duration": 21.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t31.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t31.mp3",
+          "bitrate": "139"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "take 3 - Just A Little Light -- starts at: 66:33:05",
+      "duration": 63.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t32.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t32.mp3",
+          "bitrate": "126"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "take 4 - Just A Little Light -- starts at: 67:36:19",
+      "duration": 285.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t33.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t33.mp3",
+          "bitrate": "126"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "chat about next rehearsal -- starts at: 72:21:73",
+      "duration": 178.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t34.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t34.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Jerry practices more -- starts at: 75:20:34",
+      "duration": 204.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t35.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t35.mp3",
+          "bitrate": "116"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Jerry - Adams Family theme -- starts at: 78:45:11",
+      "duration": 34.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t36.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t36.mp3",
+          "bitrate": "113"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Jerry - Mr. Ed - more practice -- starts at: 79:20:05",
+      "duration": 81.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t37.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t37.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "take 5 - Just A Little Light -- starts at: 80:41:07",
+      "duration": 326.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t38.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t38.mp3",
+          "bitrate": "125"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "closing chat -- starts at: 86:07:19",
+      "duration": 15.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t39.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-03-xx_The_Making_of_Built_To_Last_t39.mp3",
+          "bitrate": "129"
+        }
+      ]
+    }
+  ]
+}

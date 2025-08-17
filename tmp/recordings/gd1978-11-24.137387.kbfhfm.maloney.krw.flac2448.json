@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-11-24",
+  "venue": "Capitol Theatre",
+  "location": "Passaic, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "KBFH/GD Intro",
+      "duration": 52.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_01.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Passenger",
+      "duration": 317.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 786.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Need a Miracle",
+      "duration": 263.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Good Lovin'",
+      "duration": 404.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 485.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Estimated Prophet (tape flip edit in song at 45:38)",
+      "duration": 725.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums",
+      "duration": 879.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_08.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Candyman",
+      "duration": 453.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Promised Land",
+      "duration": 261.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "KBFH Outro",
+      "duration": 48.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Track_11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track_11.mp3",
+          "bitrate": "206"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-01-21",
+  "venue": "Freeborn Hall, University of California",
+  "location": "Davis, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mama Tried",
+      "duration": 271.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Mama Tried.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Around And Around",
+      "duration": 257.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Around And Around.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cumberland Blues",
+      "duration": 333.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Cumberland Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Casey Jones",
+      "duration": 303.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Casey Jones.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical Envelopment",
+      "duration": 245.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Cryptical Envelopment.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Know You Rider",
+      "duration": 210.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 I Know You Rider.flac"
+        }
+      ]
+    }
+  ]
+}

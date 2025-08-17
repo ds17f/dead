@@ -1,0 +1,46 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-02-11",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Spanish Jam >",
+      "duration": 1099.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-02-11s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-11s2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Turn on Your Lovelight",
+      "duration": 1785.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-02-11s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-11s2t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-09-01",
+  "venue": "Baton Rouge International Speedway",
+  "location": "Baton Rouge, LA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 57.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d1t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Morning Dew ->",
+      "duration": 213.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried ->",
+      "duration": 315.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d1t03.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 78.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d1t04.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy WInd",
+      "duration": 197.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d1t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star->",
+      "duration": 220.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d1t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "St. Stephen ->",
+      "duration": 75.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d2t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Eleven ->",
+      "duration": 519.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d2t02.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Turn On Your Lovelight",
+      "duration": 188.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-09-01d2t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1969-09-01d2t03.shn"
+        }
+      ]
+    }
+  ]
+}

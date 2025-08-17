@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-10-02",
+  "venue": "Rainbow Theater",
+  "location": "London, England",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Playing in the Band ->",
+      "duration": 666.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street ->",
+      "duration": 789.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha ->",
+      "duration": 418.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jam ->",
+      "duration": 276.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t04.mp3",
+          "bitrate": "224"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 556.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t05.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space ->",
+      "duration": 307.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Spanish Jam ->",
+      "duration": 256.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Truckin' ->",
+      "duration": 473.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Black Peter ->",
+      "duration": 665.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t09.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 495.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-10-02s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-02s2t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

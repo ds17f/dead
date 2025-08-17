@@ -1,0 +1,95 @@
+{
+  "url": "https://jerrygarcia.com/show/1967-10-14-continental-ballroom-santa-clara-ca-usa/",
+  "show_id": "1967-10-14-continental-ballroom-santa-clara-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Continental Ballroom",
+  "location_raw": "Santa Clara, CA",
+  "city": "Santa Clara",
+  "state": "CA",
+  "country": "USA",
+  "date": "1967-10-14",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Morning Little School Girl",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Alligator",
+          "url": "https://jerrygarcia.com/song/alligator/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Caution (Do Not Stop On Tracks)",
+          "url": "https://jerrygarcia.com/song/caution-do-not-stop-on-tracks/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Powers Of Evil",
+    "Om"
+  ],
+  "collection_timestamp": "2025-08-10T08:06:48.250875",
+  "show_time": null,
+  "recordings": [],
+  "best_recording": null,
+  "avg_rating": 0.0,
+  "recording_count": 0,
+  "confidence": 0.0,
+  "source_types": {},
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

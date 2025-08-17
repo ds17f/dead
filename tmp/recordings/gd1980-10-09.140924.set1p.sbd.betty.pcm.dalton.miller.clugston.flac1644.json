@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-09",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd80-10-09 s1 tFeel Like A Stranger",
+      "duration": 597.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T01FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T01FeelLikeAStranger.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd80-10-09 s1 tFriend Of The Devil",
+      "duration": 589.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T02FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T02FriendOfTheDevil.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd80-10-09 s1 tMama Tried",
+      "duration": 147.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T03MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T03MamaTried.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd80-10-09 s1 tMexicali Blues",
+      "duration": 275.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T04MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T04MexicaliBlues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd80-10-09 s1 tPeggy O",
+      "duration": 411.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T05PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T05PeggyO.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd80-10-09 s1 tLittle Red Rooster",
+      "duration": 528.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T06LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T06LittleRedRooster.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd80-10-09 s1 tBrown Eyed Women",
+      "duration": 335.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-10-09S1T07BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-10-09S1T07BrownEyedWomen.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

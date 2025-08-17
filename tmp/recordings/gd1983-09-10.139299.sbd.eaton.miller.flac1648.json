@@ -1,0 +1,318 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1983-09-10",
+  "venue": "Santa Fe Downs",
+  "location": "Santa Fe, NM",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Music Never Stopped",
+      "duration": 574.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TheMusicNeverStopped.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 500.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TheyLoveEachOther.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "My Brother Esau",
+      "duration": 344.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03MyBrotherEsau.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big Railroad Blues",
+      "duration": 322.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BigRailroadBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 244.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BeatItOnDownTheLine.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 496.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TennesseeJed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Minglewood Blues",
+      "duration": 421.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07NewMinglewoodBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower",
+      "duration": 377.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ChinaCatSunflower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 308.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09IKnowYouRider.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 345.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ManSmartwomanSmarter.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cumberland Blues",
+      "duration": 423.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11CumberlandBlues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 733.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "China Doll",
+      "duration": 568.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ChinaDoll.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 483.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 654.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 574.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 398.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "One More Saturday Night",
+      "duration": 274.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18OneMoreSaturdayNight.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Cold Rain And Snow",
+      "duration": 347.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ColdRainAndSnow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

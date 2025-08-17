@@ -1,0 +1,62 @@
+{
+  "rating": 1.8333333333333333,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-09-18",
+  "venue": "Parc des Expositions",
+  "location": "Dijon, France",
+  "raw_rating": 3.6666666666666665,
+  "high_ratings": 4,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jerry Space",
+      "duration": 493.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-18d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-18d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cumberland Blues",
+      "duration": 180.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-18d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-18d1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Brokedown Palace",
+      "duration": 354.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-09-18d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-18d1t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

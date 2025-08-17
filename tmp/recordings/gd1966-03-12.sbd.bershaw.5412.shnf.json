@@ -1,0 +1,62 @@
+{
+  "rating": 2.2222222222222223,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-03-12",
+  "venue": "Danish Center",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.444444444444445,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 560.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid2_01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid2_01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "You See A Broken Heart",
+      "duration": 120.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid2_02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid2_02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "In The Midnight Hour",
+      "duration": 387.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid2_03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid2_03.shn"
+        }
+      ]
+    }
+  ]
+}

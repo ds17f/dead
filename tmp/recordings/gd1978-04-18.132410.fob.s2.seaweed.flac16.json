@@ -1,0 +1,158 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-04-18",
+  "venue": "Civic Arena",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Scarlet Begonias >",
+      "duration": 833.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t01.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dancin' In The Streets >",
+      "duration": 809.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t02.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums >",
+      "duration": 1122.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t03.mp3",
+          "bitrate": "137"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Samson & Delilah",
+      "duration": 461.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t04.mp3",
+          "bitrate": "135"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "tuning",
+      "duration": 33.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t05.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Terrapin Station >",
+      "duration": 660.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t06.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Around & Around",
+      "duration": 528.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t07.mp3",
+          "bitrate": "138"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "encore break -",
+      "duration": 34.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t08.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "U.S. Blues",
+      "duration": 345.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-04-18s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-04-18s2t09.mp3",
+          "bitrate": "138"
+        }
+      ]
+    }
+  ]
+}

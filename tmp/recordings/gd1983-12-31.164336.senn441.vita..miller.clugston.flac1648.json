@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1983-12-31",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 68.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t01 Crowd_Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Jack Straw",
+      "duration": 386.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t02 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t02 Jack Straw.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Peggy O",
+      "duration": 514.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t03 Peggy O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t03 Peggy O.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "New Minglewood Blues",
+      "duration": 522.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t04 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t04 Minglewood.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Candyman",
+      "duration": 406.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t05 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t05 Candyman.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "My Brother Esau",
+      "duration": 291.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t06 Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t06 Brother Esau.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Tennessee Jed",
+      "duration": 523.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t07 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t07 T Jed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Hell In A Bucket >",
+      "duration": 353.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t08 Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t08 Bucket.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Don't Ease Me In",
+      "duration": 220.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s1t09 Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s1t09 Don't Ease.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Tchaikovsky's 1812 Overture > New Year's Countdown >",
+      "duration": 219.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t01 1812 Overture_Countdown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t01 1812 Overture_Countdown.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Sugar Magnolia >",
+      "duration": 383.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t02 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t02 Sugar Mag.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Touch Of Grey",
+      "duration": 440.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t03 Touch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t03 Touch.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 855.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t04 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t04 Estimated.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Eyes Of The World >",
+      "duration": 656.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t05 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t05 Eyes.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 597.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t06 Drums.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 753.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t07 Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Throwing Stones >",
+      "duration": 477.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t08 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t08 Throwing Stones.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Not Fade Away",
+      "duration": 582.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t09 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t09 NFA.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Brokedown Palace",
+      "duration": 308.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s2t10 Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s2t10 Brokedown.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "301",
+      "title": "Crowd/Tuning",
+      "duration": 49.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s3t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s3t01 Crowd_Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "302",
+      "title": "Big Boss Man >",
+      "duration": 260.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s3t02 Big Boss Man.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s3t02 Big Boss Man.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "303",
+      "title": "Iko Iko",
+      "duration": 394.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s3t03 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s3t03 Iko Iko.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "304",
+      "title": "In The Midnight Hour",
+      "duration": 360.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s3t04 Midnight Hour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s3t04 Midnight Hour.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "305",
+      "title": "Goodnite Irene",
+      "duration": 333.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-12-31 s3t05 Goodnite Irene.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-12-31 s3t05 Goodnite Irene.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

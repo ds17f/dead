@@ -1,0 +1,238 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-12-29",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 437.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Good Lovin'",
+      "duration": 386.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GoodLovin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Must Have Been The Roses",
+      "duration": 554.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sunrise",
+      "duration": 355.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Sunrise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Sunrise.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playing In The Band",
+      "duration": 981.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05PlayingInTheBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "China Cat Sunflower",
+      "duration": 338.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ChinaCatSunflower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "I Know You Rider",
+      "duration": 333.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07IKnowYouRider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Doll",
+      "duration": 447.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ChinaDoll.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Playing Jam",
+      "duration": 96.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09PlayingJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PlayingJam.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Drums",
+      "duration": 237.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Not Fade Away",
+      "duration": 533.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 269.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin Station",
+      "duration": 655.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13TerrapinStation.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Johnny B Goode",
+      "duration": 272.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14JohnnyBGoode.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

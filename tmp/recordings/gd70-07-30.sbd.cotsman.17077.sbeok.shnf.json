@@ -1,0 +1,126 @@
+{
+  "rating": 3.6,
+  "review_count": 11,
+  "source_type": "MATRIX",
+  "confidence": 1.0,
+  "date": "1970-07-30",
+  "venue": "The Matrix",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 9,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "To Lay Me Down",
+      "duration": 231.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dire Wolf",
+      "duration": 146.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Candyman",
+      "duration": 219.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "stage banter",
+      "duration": 81.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Rosalie McFall",
+      "duration": 178.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t05.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "A Voice From On High",
+      "duration": 125.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Swing Low, Sweet Chariot",
+      "duration": 104.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-30d1t07.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-30d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

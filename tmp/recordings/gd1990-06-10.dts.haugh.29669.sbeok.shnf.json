@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-06-10",
+  "venue": "Cal Expo Amphitheatre",
+  "location": "Sacramento, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 355.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 327.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "We want Phil",
+      "duration": 82.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 200.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Wang Dang Doodle",
+      "duration": 358.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Row Jimmy",
+      "duration": 615.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Picasso Moon",
+      "duration": 402.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 420.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t08.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Promised Land",
+      "duration": 264.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d1t09.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Box Of Rain",
+      "duration": 295.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d2t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes Of The World >",
+      "duration": 810.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d2t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band >",
+      "duration": 456.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d2t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Crazy Fingers > Playing Jam >",
+      "duration": 556.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d2t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 405.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d2t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 472.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d3t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Gimme Some Lovin' >",
+      "duration": 368.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d3t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Standing On The Moon >",
+      "duration": 565.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d3t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones >",
+      "duration": 493.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d3t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 423.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d3t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Last Time",
+      "duration": 325.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-06-10-dts-d3t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1990-06-10-dts-d3t06.shn"
+        }
+      ]
+    }
+  ]
+}

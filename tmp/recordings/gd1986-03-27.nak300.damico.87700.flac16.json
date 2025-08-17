@@ -1,0 +1,334 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1986-03-27",
+  "venue": "Cumberland County Civic Center",
+  "location": "Portland, ME",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "jack straw >",
+      "duration": 436.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "peggy-o",
+      "duration": 391.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "minglewood blues",
+      "duration": 543.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "revolutionary hamstrung blues >",
+      "duration": 262.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "bertha",
+      "duration": 356.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "wang dang doodle",
+      "duration": 354.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "big railroad blues",
+      "duration": 359.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "supplication jam >",
+      "duration": 270.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "promised land",
+      "duration": 251.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "chinacat sunflower >",
+      "duration": 391.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc110.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "i know you rider",
+      "duration": 323.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc111.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "estimated prophet >",
+      "duration": 621.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "eyes of the world >",
+      "duration": 923.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "drums >",
+      "duration": 741.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "space >",
+      "duration": 468.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "spanish jam >",
+      "duration": 150.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "truckin' >",
+      "duration": 387.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "wharf rat >",
+      "duration": 538.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "sugar magnolia",
+      "duration": 503.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc208.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "day job",
+      "duration": 259.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc209.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

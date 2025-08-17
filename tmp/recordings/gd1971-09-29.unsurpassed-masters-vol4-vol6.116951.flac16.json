@@ -1,0 +1,270 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-09-29",
+  "venue": "Studio Rehearsals with Keith Godchaux",
+  "location": "Santa Venetia, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "saturday night (take 1)",
+      "duration": 238.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "saturday night (take 2)",
+      "duration": 234.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "brokedown(take 1)",
+      "duration": 321.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tennessee jed (take 1)",
+      "duration": 364.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee jed (take 2)",
+      "duration": 359.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee jed (take 3)",
+      "duration": 420.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t06.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "bobby mcgee",
+      "duration": 205.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t07.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "brokedown(take 2)",
+      "duration": 325.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t08.mp3",
+          "bitrate": "252"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "casey jones",
+      "duration": 357.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t09.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "truckin",
+      "duration": 486.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t10.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "china cat",
+      "duration": 675.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t11.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "bertha (take 1)",
+      "duration": 357.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t12.mp3",
+          "bitrate": "227"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "bertha (take 2)",
+      "duration": 225.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol4-t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol4-t13.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "ripple",
+      "duration": 249.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol6-t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol6-t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "cumberland (take 2)",
+      "duration": 263.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol6-t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol6-t02.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "deal",
+      "duration": 314.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-um-vol6-t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-um-vol6-t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1981-03-14",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway ->",
+      "duration": 312.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d2t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 278.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d2t02.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Ship Of Fools",
+      "duration": 518.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lost Sailor ->",
+      "duration": 394.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d2t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Saint Of Circumstance ->",
+      "duration": 421.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d2t05.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums ->",
+      "duration": 768.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d2t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Other One ->",
+      "duration": 483.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d3t01.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Stella Blue ->",
+      "duration": 614.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d3t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Need A Miracle ->",
+      "duration": 211.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d3t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Bertha ->",
+      "duration": 358.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d3t04.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Good Lovin'",
+      "duration": 461.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d3t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "One More Saturday Night",
+      "duration": 270.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-14d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-14d3t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

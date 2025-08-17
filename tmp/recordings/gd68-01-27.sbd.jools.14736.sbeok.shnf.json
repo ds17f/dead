@@ -1,0 +1,30 @@
+{
+  "rating": 2.3,
+  "review_count": 7,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-01-27",
+  "venue": "Eagle's Auditorium",
+  "location": "Seattle, WA",
+  "raw_rating": 3.2857142857142856,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Spanish Jam",
+      "duration": 462.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-01-27d1t1.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968-01-27d1t1.shn"
+        }
+      ]
+    }
+  ]
+}

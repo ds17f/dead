@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-07-13",
+  "venue": "Ventura County Fairgrounds",
+  "location": "Ventura, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "One More Saturday Night >",
+      "duration": 285.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t01 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t01 OMSN.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Fire On The Mountain",
+      "duration": 799.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t02 Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t02 Fire.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Walkin' Blues",
+      "duration": 507.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t03 Walkin' Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t03 Walkin' Blues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Dupree's Diamond Blues",
+      "duration": 415.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t04 Dupree's.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t04 Dupree's.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Mama Tried >",
+      "duration": 152.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t05 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t05 Mama Tried.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Big River",
+      "duration": 340.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t06 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t06 Big River.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Bird Song",
+      "duration": 593.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t07 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t07 Bird Song.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "The Music Never Stopped",
+      "duration": 462.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s1t08 TMNS.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s1t08 TMNS.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Touch Of Grey >",
+      "duration": 394.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t01 Touch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t01 Touch.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 464.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t02 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t02 Man Smart (Woman Smarter).mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Terrapin Station >",
+      "duration": 787.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t03 Terrapin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t03 Terrapin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Drums >",
+      "duration": 795.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t04 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t04 Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Space >",
+      "duration": 446.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t05 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t05 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "The Wheel >",
+      "duration": 335.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t06 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t06 Wheel.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "That's It For The Other One >",
+      "duration": 558.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t07 TIFTOO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t07 TIFTOO.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Comes A Time >",
+      "duration": 437.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t08 Comes A Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t08 Comes A Time.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Around & Around >",
+      "duration": 284.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t09 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t09 A & A.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Sugar Magnolia",
+      "duration": 574.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t10 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t10 Sugar Mag.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E: US Blues",
+      "duration": 338.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-13 s2t11 E_US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-13 s2t11 E_US Blues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

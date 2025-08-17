@@ -1,0 +1,147 @@
+{
+  "url": "https://jerrygarcia.com/show/1969-07-12-ny-state-pavilion-flushing-meadow-park-queens-ny-usa/",
+  "show_id": "1969-07-12-ny-state-pavilion-flushing-meadow-park-queens-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "NY State Pavilion, Flushing Meadow Park",
+  "location_raw": "Queens, NY",
+  "city": "Queens",
+  "state": "NY",
+  "country": "USA",
+  "date": "1969-07-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Green Green Grass Of Home",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Slewfoot",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mountains Of The Moon",
+          "url": "https://jerrygarcia.com/song/mountains-of-the-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Doin' That Rag",
+          "url": "https://jerrygarcia.com/song/doin-that-rag/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "High Time",
+          "url": "https://jerrygarcia.com/song/high-time/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Eleven",
+          "url": "https://jerrygarcia.com/song/the-eleven/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Joe Cocker & The Grease Band",
+    "Tribe"
+  ],
+  "collection_timestamp": "2025-08-10T08:14:42.161057",
+  "show_time": null,
+  "recordings": [
+    "gd69-07-12.sbd-aud.hanno.4645.sbeok.shnf",
+    "gd1969-07-12.123433.sbd.latvala-lee-smith.flac24",
+    "gd1969-07-12.123434.sbd.latvala-lee-smith.flac16",
+    "gd1969-07-12.136644.s2.partial.sbd.msc.sirmick.flac1644",
+    "gd1969-07-12.153554.aud.flac1644"
+  ],
+  "best_recording": "gd69-07-12.sbd-aud.hanno.4645.sbeok.shnf",
+  "avg_rating": 1.8625,
+  "raw_rating": 4.083333333333333,
+  "recording_count": 5,
+  "confidence": 1.0,
+  "total_high_ratings": 9,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

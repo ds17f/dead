@@ -1,0 +1,289 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1991-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "crowd - tuning",
+      "duration": 206.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t01.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hell in a Bucket",
+      "duration": 567.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t02.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t02.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Candyman",
+      "duration": 713.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Beat It On Down The Line",
+      "duration": 1206.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t04.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "It Must\u2019ve Been The Roses",
+      "duration": 844.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t05.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Black Throated Wind",
+      "duration": 565.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t06.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "West L.A. Fadeaway",
+      "duration": 665.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t07.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "When I Paint My Masterpiece",
+      "duration": 552.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t08.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Help on the Way ->",
+      "duration": 597.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t09.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Slipknot! ->",
+      "duration": 199.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t10.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t10.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Franklin\u2019s Tower",
+      "duration": 557.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s1t11.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd91-12-31.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-12-31.s2t11.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "rating": 2.324324324324324,
+  "review_count": 37,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-10-22",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.648648648648648,
+  "high_ratings": 36,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Morning Dew",
+      "duration": 239.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "New Potato Caboose",
+      "duration": null,
+      "formats": [
+        {
+          "format": "ZIP",
+          "filename": "gd67-10-22d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "It Hurts Me Too",
+      "duration": 157.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cold Rain And Snow",
+      "duration": 129.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t04.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Turn On Your Lovelight",
+      "duration": 468.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Beat It On Down The Line",
+      "duration": 95.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "That's It For The Other One",
+      "duration": 537.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

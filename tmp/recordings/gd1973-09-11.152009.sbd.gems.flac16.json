@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-09-11",
+  "venue": "College Of William & Mary Hall",
+  "location": "Williamsburg, VA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 192.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 - Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 - Promised Land.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 513.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 - Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 - Sugaree.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Race Is On",
+      "duration": 185.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 - The Race Is On.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 - The Race Is On.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 438.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 - Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 - Loser.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Looks Like Rain",
+      "duration": 498.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 - Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 - Looks Like Rain.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 512.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 - Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 - Tennessee Jed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jack Straw",
+      "duration": 297.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 - Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 - Jack Straw.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower >",
+      "duration": 556.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 - China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 - China Cat Sunflower.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 359.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 - I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 - I Know You Rider.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "El Paso",
+      "duration": 276.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 - El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 - El Paso.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 457.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 - Mississippi Half-Step Uptown Toodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 - Mississippi Half-Step Uptown Toodeloo.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing in the Band",
+      "duration": 1012.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 - Playing in the Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 - Playing in the Band.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Let Me Sing Your Blues Away",
+      "duration": 369.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 - Let Me Sing Your Blues Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 - Let Me Sing Your Blues Away.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "WRS Prelude >",
+      "duration": 82.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 - WRS Prelude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 - WRS Prelude.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "WRS Part 1 >",
+      "duration": 273.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 - WRS Part 1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 - WRS Part 1.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Let It Grow",
+      "duration": 667.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 - Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 - Let It Grow.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Row Jimmy",
+      "duration": 553.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 - Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 - Row Jimmy.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Big River",
+      "duration": 272.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 - Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 - Big River.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Deal",
+      "duration": 298.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 - Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 - Deal.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Beat It On Down the Line",
+      "duration": 198.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 - Beat It On Down the Line.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 - Beat It On Down the Line.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "tuning",
+      "duration": 64.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 - tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Dark Star >",
+      "duration": 1337.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 - Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 - Dark Star.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Morning Dew",
+      "duration": 770.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 - Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 - Morning Dew.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Sugar Magnolia",
+      "duration": 554.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 - Sugar Magnolia.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

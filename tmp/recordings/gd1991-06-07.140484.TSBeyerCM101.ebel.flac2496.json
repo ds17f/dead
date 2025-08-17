@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-06-07",
+  "venue": "Deer Creek Music Center",
+  "location": "Noblesville, IN",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 29.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half Step",
+      "duration": 518.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02MississippiHalfStep.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02MississippiHalfStep.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 563.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LittleRedRooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stagger Lee",
+      "duration": 493.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04StaggerLee.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me & My Uncle",
+      "duration": 188.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeMyUncle.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Maggie's Farm",
+      "duration": 584.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MaggiesFarm.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 511.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Loser.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Music Never Stopped",
+      "duration": 545.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MusicNeverStopped.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 212.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 51.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 620.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 759.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 549.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Truckin.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "New Speedway Boogie",
+      "duration": 544.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14NewSpeedwayBoogie.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drumz",
+      "duration": 781.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drumz.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 672.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 339.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17INeedAMiracle.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Standing On The Moon",
+      "duration": 532.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18StandingOnTheMoon.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 687.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19SugarMagnolia.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Weight",
+      "duration": 357.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20TheWeight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TheWeight.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

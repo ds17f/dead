@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-08-14",
+  "venue": "McNichols Sports Arena",
+  "location": "Denver, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Terrapin Station ->",
+      "duration": 731.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums ->",
+      "duration": 821.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Space ->",
+      "duration": 75.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Not Fade Away ->",
+      "duration": 500.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stella Blue ->",
+      "duration": 553.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Lovin'",
+      "duration": 648.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t06.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "U.S. Blues ->",
+      "duration": 458.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Johnny B. Goode",
+      "duration": 332.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-14s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-14s2t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

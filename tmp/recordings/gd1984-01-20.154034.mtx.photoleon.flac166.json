@@ -1,0 +1,312 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-01-20",
+  "venue": "Carrier Dome, Syracuse U",
+  "location": "Syracuse, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Bertha ->",
+      "duration": 40.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t01.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Greatest Story Ever Told",
+      "duration": 826.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t02.mp3",
+          "bitrate": "203"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "West L.A. Fadeaway",
+      "duration": 511.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t03.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "CC Rider",
+      "duration": 662.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t04.mp3",
+          "bitrate": "206"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "[take a step back]",
+      "duration": 471.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Ramble On Rose",
+      "duration": 644.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t06.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "[take another step back & stay there]",
+      "duration": 408.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t07.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "My Brother Esau ->",
+      "duration": 291.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t08.mp3",
+          "bitrate": "209"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Bird Song",
+      "duration": 401.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t09.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t09.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 535.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s1t10.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Turn On Your Lovelight",
+      "duration": 493.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t11.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "encore break",
+      "duration": 165.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t12.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Revolution",
+      "duration": 337.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20.s2t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

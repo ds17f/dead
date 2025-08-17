@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-12-08",
+  "venue": "Compton Terrace Amphitheatre",
+  "location": "Chandler, AZ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 40.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow",
+      "duration": 456.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ColdRainAndSnow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Picasso Moon",
+      "duration": 508.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03PicassoMoon.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 549.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Loser.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "New Minglewood Blues",
+      "duration": 465.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05NewMinglewoodBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Row Jimmy",
+      "duration": 563.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06RowJimmy.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Desolation Row",
+      "duration": 773.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DesolationRow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 488.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TennesseeJed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 505.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheMusicNeverStopped.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Victim Or The Crime",
+      "duration": 465.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10VictimOrTheCrime.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Foolish Heart",
+      "duration": 670.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FoolishHeart.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 534.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band",
+      "duration": 900.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13UncleJohnsBand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 540.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 402.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "All Along The Watchtower",
+      "duration": 457.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16AllAlongTheWatchtower.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Peter",
+      "duration": 591.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17BlackPeter.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around And Around",
+      "duration": 387.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AroundAndAround.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 318.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19OneMoreSaturdayNight.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 148.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "US Blues",
+      "duration": 321.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21UsBlues.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

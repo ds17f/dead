@@ -1,0 +1,558 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-10",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "On The Road Again",
+      "duration": 208.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t01 On The Road Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t01 On The Road Again.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "It Must Have Been The Roses",
+      "duration": 363.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t02 IMHBTR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t02 IMHBTR.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Monkey & The Engineer",
+      "duration": 194.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t03 Monkey & The Engineer.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t03 Monkey & The Engineer.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Jack-A-Roe",
+      "duration": 277.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t04 Jack-A-Roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t04 Jack-A-Roe.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Dark Hollow",
+      "duration": 233.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t05 Dark Hollow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t05 Dark Hollow.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "To Lay Me Down",
+      "duration": 542.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t06 To Lay Me Down.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t06 To Lay Me Down.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Heaven Help The Fool",
+      "duration": 389.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t07 Heaven Help The Fool.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t07 Heaven Help The Fool.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Bird Song",
+      "duration": 483.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t08 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t08 Bird Song.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Ripple",
+      "duration": 261.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s1t09 Ripple.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s1t09 Ripple.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 57.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Mississippi Half-Step Uptown Toodeloo >",
+      "duration": 451.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t02 Half-Step.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t02 Half-Step.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Franklin's Tower",
+      "duration": 566.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t03 Franklin's.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t03 Franklin's.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Me & My Uncle >",
+      "duration": 183.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t04 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t04 M & MU.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Big River",
+      "duration": 352.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t05 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t05 Big River.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Candyman",
+      "duration": 459.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t06 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t06 Candyman.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Beat It On Down The Line",
+      "duration": 218.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t07 BIODTL.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t07 BIODTL.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Row Jimmy",
+      "duration": 632.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t08 Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t08 Row Jimmy.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "New Minglewood Blues",
+      "duration": 453.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t09 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t09 Minglewood.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Althea",
+      "duration": 485.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t10 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t10 Althea.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Jack Straw",
+      "duration": 393.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s2t11 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s2t11 Jack Straw.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "301",
+      "title": "Crowd/Tuning",
+      "duration": 32.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t01 Crowd_Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "302",
+      "title": "Scarlet Begonias >",
+      "duration": 566.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t02 Scarlet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t02 Scarlet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "303",
+      "title": "Fire On The Mountain",
+      "duration": 619.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t03 Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t03 Fire.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "304",
+      "title": "Samson & Delilah",
+      "duration": 472.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t04 Samson.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t04 Samson.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "305",
+      "title": "Big Railroad Blues",
+      "duration": 232.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t05 Big RR Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t05 Big RR Blues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "306",
+      "title": "Estimated Prophet >",
+      "duration": 643.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t06 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t06 Estimated.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "307",
+      "title": "Eyes Of The World >",
+      "duration": 583.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t07 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t07 Eyes.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "308",
+      "title": "Drums >",
+      "duration": 438.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t08 Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "309",
+      "title": "Space >",
+      "duration": 479.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t09 Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "310",
+      "title": "Truckin' >",
+      "duration": 481.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t10 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t10 Truckin'.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "311",
+      "title": "Black Peter >",
+      "duration": 599.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t11 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t11 Black Peter.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "312",
+      "title": "Around & Around >",
+      "duration": 233.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t12 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t12 A & A.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "313",
+      "title": "Promised Land",
+      "duration": 257.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t13 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t13 Promised Land.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "314",
+      "title": "E: US Blues",
+      "duration": 322.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-10 s3t14 E_US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10 s3t14 E_US Blues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

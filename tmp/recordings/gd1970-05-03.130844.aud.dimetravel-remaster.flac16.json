@@ -1,0 +1,110 @@
+{
+  "rating": 0.6,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-05-03",
+  "venue": "Field House, Wesleyan University",
+  "location": "Middletown, CT",
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "introduction & tuning-up--",
+      "duration": 63.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Deep Elem Blues",
+      "duration": 391.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 218.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Silver Threads & Golden Needles (->)",
+      "duration": 235.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Peter",
+      "duration": 407.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "announcement--",
+      "duration": 33.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.mp3",
+          "bitrate": "123"
+        }
+      ]
+    }
+  ]
+}

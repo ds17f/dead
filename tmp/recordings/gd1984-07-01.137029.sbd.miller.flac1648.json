@@ -1,0 +1,318 @@
+{
+  "rating": 1.4625000000000001,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1984-07-01",
+  "venue": "Pine Knob Music Theater",
+  "location": "Clarkston, MI",
+  "raw_rating": 3.25,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 456.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01IkoIko.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 549.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02LittleRedRooster.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Brown Eyed Women",
+      "duration": 417.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03BrownEyedWomen.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 163.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MamaTried.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 349.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BigRiver.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 478.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TennesseeJed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Hell In A Bucket",
+      "duration": 378.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07HellInABucket.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Might As Well",
+      "duration": 273.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MightAsWell.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower",
+      "duration": 500.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ChinaCatSunflower.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 329.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IKnowYouRider.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson And Delilah",
+      "duration": 465.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SamsonAndDelilah.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone",
+      "duration": 924.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12HesGone.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 551.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 251.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Doll",
+      "duration": 387.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ChinaDoll.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 237.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16INeedAMiracle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Bertha",
+      "duration": 365.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Bertha.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia",
+      "duration": 579.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18SugarMagnolia.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 434.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "rating": 2.0,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1992-12-12",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jack Straw",
+      "duration": 564.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D1T1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D1T1.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Bertha",
+      "duration": 431.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D1T2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D1T2.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Little Red Rooster",
+      "duration": 582.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D1T3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D1T3.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Friend Of The Devil",
+      "duration": 538.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D1T4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D1T4.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Desolation Row",
+      "duration": 668.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D1T5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D1T5.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Bird Song",
+      "duration": 949.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D1T6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D1T6.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Picasso Moon",
+      "duration": 602.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D2T1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D2T1.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Crazy Fingers",
+      "duration": 510.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D2T2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D2T2.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Women Are Smarter",
+      "duration": 488.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D2T3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D2T3.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Dark Star-> Jam->",
+      "duration": 749.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D2T4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D2T4.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums-> Jam->",
+      "duration": 744.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D2T5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D2T5.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Space>",
+      "duration": 847.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D3T1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D3T1.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Need A Miracle->",
+      "duration": 266.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D3T2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D3T2.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Standing On the Moon->",
+      "duration": 518.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D3T3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D3T3.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "One More Saturday Night",
+      "duration": 480.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D3T4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D3T4.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Rain",
+      "duration": 386.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD1992-12-12D3T5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1992-12-12D3T5.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

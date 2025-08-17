@@ -1,0 +1,191 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-05-14-greek-theatre-berkeley-ca/",
+  "show_id": "1983-05-14-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1983-05-14",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:49:04.363599",
+  "show_time": null,
+  "recordings": [
+    "gd83-05-14.set1-sbd.samaritano.25407.sbeok.shnf",
+    "gd1983-05-14.sbd-set1.samaritano.tetzeli.patch-25407.91136.sbeok.flac16",
+    "gd1983-05-14.140368.sbd.aud.composite.eaton.miller.clugston.flac1648",
+    "gd83-05-14.sennheiser.gustin.342.sbeok.shnf",
+    "gd1983-05-14.fob.sonyecm220t.keshavan.miller.fix.94515.sbeok.flac16",
+    "gd83-05-14.senn.fishman.15387.sbeok.shnf",
+    "gd1983-05-14.fob.sonyecm220t.keshavan.miller.94396.sbeok.flac16",
+    "gd1983-05-14.138938.schoeps.miller.sirmick.sbeok.flac16",
+    "gd1983-05-14.beyerm201.holbrook.33502.sbeok.flac16",
+    "gd1983-05-14.163383.nak304.vita.miller.clugston.flac1648",
+    "gd1983-05-14.163384.nak304.vita.miller.clugston.flac2496",
+    "gd1983-05-14.141945.beyerm201.executivecrew-holbrook.flac2448",
+    "gd1983-05-14.168030.beyer.m201.kelley.miller.clugston.flac2496",
+    "gd1983-05-14.fob.senn421.barnes-powell.18225.sbeok.shnf",
+    "gd1983-05-14.141946.beyerm201.executivecrew-holbrook.flac1644",
+    "gd1983-05-14.168029.beyer.m201.kelley.miller.clugston.flac1648",
+    "gd1983-05-14.nak700.anon-severson-poris.LMPP.96570.flac16"
+  ],
+  "best_recording": "gd83-05-14.set1-sbd.samaritano.25407.sbeok.shnf",
+  "avg_rating": 1.7049295774647888,
+  "raw_rating": 4.076923076923077,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 18,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 14
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

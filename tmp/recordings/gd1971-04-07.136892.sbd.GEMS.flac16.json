@@ -1,0 +1,398 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1971-04-07",
+  "venue": "Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 169.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me And My Uncle",
+      "duration": 206.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Next Time You See me",
+      "duration": 253.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Casey Jones",
+      "duration": 311.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "tuning",
+      "duration": 287.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Playin' In The Band",
+      "duration": 320.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t06.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 457.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Me And Bobby McGee",
+      "duration": 372.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Hard To Handle",
+      "duration": 461.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "tuning",
+      "duration": 148.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t10.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia ->",
+      "duration": 182.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t11.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Sunshine Daydream",
+      "duration": 183.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t12.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "tuning",
+      "duration": 151.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t13.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Cat Sunflower ->",
+      "duration": 279.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t14.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Know You Rider",
+      "duration": 328.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t15.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "tuning",
+      "duration": 58.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t16.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "St. Stephen ->",
+      "duration": 382.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t17.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums ->",
+      "duration": 201.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t18.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Jam//",
+      "duration": 119.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t19.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away ->",
+      "duration": 161.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t20.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 416.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t21.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Not Fade Away ->",
+      "duration": 118.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t22.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Johnny B. Goode",
+      "duration": 221.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t23.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Curfew rap",
+      "duration": 31.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-07t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-07t24.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

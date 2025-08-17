@@ -12,7 +12,7 @@ import com.deadarchive.core.media.player.LastPlayedTrackMonitor
 import com.deadarchive.core.settings.api.SettingsRepository
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
-import com.deadarchive.v2.core.database.service.DatabaseManagerV2
+import com.deadarchive.v2.core.database.service.DatabaseManager
 import dagger.hilt.android.HiltAndroidApp
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.CoroutineScope
@@ -52,7 +52,7 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
     lateinit var globalUpdateManager: GlobalUpdateManager
     
     @Inject
-    lateinit var v2DatabaseManager: DatabaseManagerV2
+    lateinit var v2DatabaseManager: DatabaseManager
     
     private val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
     
@@ -80,13 +80,13 @@ class DeadArchiveApplication : Application(), Configuration.Provider {
                     android.util.Log.d("DeadArchiveApplication", "Initializing V2 database in background...")
                     val result = v2DatabaseManager.initializeV2DataIfNeeded()
                     when (result) {
-                        is com.deadarchive.v2.core.database.service.ImportResult.Success -> {
+                        is com.deadarchive.v2.core.database.service.DatabaseImportResult.Success -> {
                             android.util.Log.d("DeadArchiveApplication", "✅ V2 database initialized: ${result.showsImported} shows, ${result.venuesImported} venues")
                         }
-                        is com.deadarchive.v2.core.database.service.ImportResult.Error -> {
+                        is com.deadarchive.v2.core.database.service.DatabaseImportResult.Error -> {
                             android.util.Log.e("DeadArchiveApplication", "❌ V2 database initialization failed: ${result.error}")
                         }
-                        is com.deadarchive.v2.core.database.service.ImportResult.RequiresUserChoice -> {
+                        is com.deadarchive.v2.core.database.service.DatabaseImportResult.RequiresUserChoice -> {
                             android.util.Log.d("DeadArchiveApplication", "V2 database requires user choice - will be handled by splash screen")
                         }
                     }

@@ -1,0 +1,382 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1982-04-06",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "01. Cold Rain and Snow",
+      "duration": 370.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.ColdRainAndSnow.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "02. Promised Land",
+      "duration": 321.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.PromisedLand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "03. Candyman",
+      "duration": 388.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.Candyman.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "04. C.C. Rider",
+      "duration": 529.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.C.c.Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.C.c.Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "05. Brown-Eyed Women",
+      "duration": 336.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.Brown-eyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.Brown-eyedWomen.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "06. Mama Tried",
+      "duration": 143.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.MamaTried.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "07. Mexicali Blues",
+      "duration": 290.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07.MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.MexicaliBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "08. Big Railroad Blues",
+      "duration": 241.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08.BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.BigRailroadBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "09. Looks Like Rain",
+      "duration": 530.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09.LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.LooksLikeRain.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "10. Jack A Roe",
+      "duration": 295.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10.JackARoe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10.JackARoe.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "11. All Over Now",
+      "duration": 419.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11.AllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11.AllOverNow.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "12. Might As Well",
+      "duration": 277.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12.MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12.MightAsWell.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "13. Shakedown Street",
+      "duration": 823.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13.ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13.ShakedownStreet.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "14. Lost Sailor",
+      "duration": 380.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14.LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14.LostSailor.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "15. Saint Of Circumstance",
+      "duration": 392.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15.SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15.SaintOfCircumstance.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "16. Terrapin Station",
+      "duration": 718.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16.TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16.TerrapinStation.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "17. Drums",
+      "duration": 727.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17.Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17.Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "18. Space",
+      "duration": 517.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18.Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18.Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "19. Truckin'",
+      "duration": 406.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19.Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19.Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "20. The Other One",
+      "duration": 131.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20.TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20.TheOtherOne.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "21. Morning Dew",
+      "duration": 729.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21.MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21.MorningDew.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "22. Sugar Magnolia",
+      "duration": 536.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22.SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22.SugarMagnolia.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "23. It's all Over Now Baby Blue",
+      "duration": 458.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23.ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23.ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

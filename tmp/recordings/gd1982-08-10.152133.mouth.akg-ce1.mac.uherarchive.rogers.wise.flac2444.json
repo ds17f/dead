@@ -1,0 +1,478 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1982-08-10",
+  "venue": "University Of Iowa Fieldhouse",
+  "location": "Iowa City, IA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 26.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Feel Like a Stranger",
+      "duration": 583.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Friend of the Devil",
+      "duration": 505.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "New Minlewood Blues",
+      "duration": 462.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Tennessee Jed",
+      "duration": 589.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Cassidy",
+      "duration": 448.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "It Must Have Been the Roses",
+      "duration": 334.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Crowd/Technical Difficulties/Tico Tico",
+      "duration": 339.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "On the Road Again ->",
+      "duration": 176.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Beat It on Down the Line",
+      "duration": 306.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Stagger Lee",
+      "duration": 376.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "Crowd/Tuning",
+      "duration": 79.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t12.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "113",
+      "title": "I Need a Miracle ->",
+      "duration": 224.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t13.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "114",
+      "title": "Bertha",
+      "duration": 421.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s1t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s1t14.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "China Cat Sunflower ->",
+      "duration": 448.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Know You Rider",
+      "duration": 328.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Crowd/Tuning",
+      "duration": 158.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Lost Sailor ->",
+      "duration": 393.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Saint of Circumstance ->",
+      "duration": 414.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Eyes of the World ->",
+      "duration": 778.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums/",
+      "duration": 90.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "/Drums (cont'd) ->",
+      "duration": 359.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space ->",
+      "duration": 524.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t09.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Iko Iko ->",
+      "duration": 577.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Truckin' ->",
+      "duration": 392.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t11.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Stella Blue ->",
+      "duration": 517.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t12.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Sugar Magnolia",
+      "duration": 711.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t13.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "It's All Over Now, Baby Blue ->",
+      "duration": 403.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t14.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "Johnny B. Goode",
+      "duration": 258.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1982-08-10s2t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10s2t15.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

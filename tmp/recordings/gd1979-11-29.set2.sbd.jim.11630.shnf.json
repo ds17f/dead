@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1979-11-29",
+  "venue": "Cleveland Public Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street ->",
+      "duration": 459.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson & Delilah",
+      "duration": 283.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d1t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "High Time",
+      "duration": 294.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet ->",
+      "duration": 485.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Eyes of the World ->",
+      "duration": 769.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums ->",
+      "duration": 188.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Peter ->",
+      "duration": 339.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Around & Around ->",
+      "duration": 180.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Johnny B. Goode",
+      "duration": 187.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "U.S. Blues",
+      "duration": 195.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-11-29d2t07.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-11-29d2t07.shn"
+        }
+      ]
+    }
+  ]
+}

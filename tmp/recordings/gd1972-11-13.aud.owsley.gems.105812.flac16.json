@@ -1,0 +1,62 @@
+{
+  "rating": 2.269230769230769,
+  "review_count": 13,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-11-13",
+  "venue": "Soldiers and Sailors Memorial Hall",
+  "location": "Kansas City, KS",
+  "raw_rating": 4.538461538461538,
+  "high_ratings": 12,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 1322.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-11-13.GEMS.track1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-11-13.GEMS.track1.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Philo Stomp >",
+      "duration": 613.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-11-13.GEMS.track2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-11-13.GEMS.track2.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Morning Dew",
+      "duration": 684.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-11-13.GEMS.track3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-11-13.GEMS.track3.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

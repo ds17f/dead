@@ -1,0 +1,30 @@
+{
+  "rating": 1.875,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-05-02",
+  "venue": "Harpur College",
+  "location": "Binghamton, NY",
+  "raw_rating": 3.75,
+  "high_ratings": 9,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain & Snow",
+      "duration": 482.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-02d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-02d3t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

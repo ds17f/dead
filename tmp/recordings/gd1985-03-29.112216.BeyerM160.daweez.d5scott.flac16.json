@@ -1,0 +1,350 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1985-03-29",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain & Snow",
+      "duration": 378.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Down In The Bottom > Ain't Superstitious **",
+      "duration": 567.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 500.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Supplication Jam",
+      "duration": 324.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "My Brother Esau",
+      "duration": 268.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 486.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Minglewood Blues",
+      "duration": 470.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease Me In",
+      "duration": 220.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "\"Phil Loves NY\"",
+      "duration": 18.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Terrapin Station",
+      "duration": 762.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "223"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Woman Are Smarter",
+      "duration": 442.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Goin' Down The Road",
+      "duration": 400.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam",
+      "duration": 123.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Baby What You Want Me To Do?",
+      "duration": 356.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Jam",
+      "duration": 368.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t07.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 355.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t08.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 403.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat",
+      "duration": 536.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 493.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Johnny B. Goode",
+      "duration": 259.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Brokedown Palace",
+      "duration": 352.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "214"
+        }
+      ]
+    }
+  ]
+}

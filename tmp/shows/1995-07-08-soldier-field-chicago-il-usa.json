@@ -1,0 +1,194 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-07-08-soldier-field-chicago-il-usa/",
+  "show_id": "1995-07-08-soldier-field-chicago-il-usa",
+  "band": "Grateful Dead",
+  "venue": "Soldier Field",
+  "location_raw": "Chicago, IL",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "USA",
+  "date": "1995-07-08",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Eternity",
+          "url": "https://jerrygarcia.com/song/eternity/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Too Much",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Visions Of Johanna",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Band"
+  ],
+  "collection_timestamp": "2025-08-10T09:20:35.683401",
+  "show_time": null,
+  "recordings": [
+    "gd1995-07-08.sbd.miller.114363.flac16",
+    "gd1995-07-08.sbd.larson.35157.flac16",
+    "gd95-07-08.sbd.10071.sbeok.shnf",
+    "gd1995-07-08.sbd.larson.tetzeli.fix-35157.98576.flac16",
+    "gd1995-07-08.167438.matrix.davis.flac1648",
+    "gd95-07-08.BK401s.4362.sbeok.shnf",
+    "gd1995-07-08.134129.oade-micro-mics.flac1648",
+    "gd1995-07-08.127736.nick.flac16",
+    "gd1995-07-08.147113.walsh.suraci.at835.flac16",
+    "gd1995-07-08.147114.walsh.suraci.at835.flac24"
+  ],
+  "best_recording": "gd1995-07-08.sbd.miller.114363.flac16",
+  "avg_rating": 1.6397014925373135,
+  "raw_rating": 3.3855421686746987,
+  "recording_count": 10,
+  "confidence": 1.0,
+  "total_high_ratings": 42,
+  "total_low_ratings": 22,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "all-acoustic-shows",
+    "final-years",
+    "vince-welnick-years"
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1986-02-08",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 96.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Iko Iko",
+      "duration": 377.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster ->",
+      "duration": 438.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 551.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 206.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 387.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now",
+      "duration": 463.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bertha ->",
+      "duration": 353.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "One More Saturday Night",
+      "duration": 247.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 35.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 374.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Franklin's Tower ->",
+      "duration": 491.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' In The Band ->",
+      "duration": 566.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Doll ->",
+      "duration": 376.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playin' Jam ->",
+      "duration": 280.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t06.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 400.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 542.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 283.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter ->",
+      "duration": 453.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 563.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Keep Your Day Job",
+      "duration": 241.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-08d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-08d2t12.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

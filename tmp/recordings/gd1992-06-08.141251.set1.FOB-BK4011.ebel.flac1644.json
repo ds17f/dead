@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-06-08",
+  "venue": "Richfield Coliseum",
+  "location": "Richfield, OH",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 181.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel's Like A Stranger",
+      "duration": 502.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FeelsLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FeelsLikeAStranger.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Loser",
+      "duration": 564.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Loser.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 587.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "So Many Roads",
+      "duration": 428.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05SoManyRoads.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tom Thumb Blues",
+      "duration": 322.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06TomThumbBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TomThumbBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Throated Wind",
+      "duration": 392.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BlackThroatedWind.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease Me In",
+      "duration": 207.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08DontEaseMeIn.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "rating": 3.84,
+  "review_count": 10,
+  "source_type": "FM",
+  "confidence": 1.0,
+  "date": "1975-03-23",
+  "venue": "Kezar Stadium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.8,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Blues For Allah ->",
+      "duration": 573.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-03-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Stronger Than Dirt Or Milkin' The Turkey ->",
+      "duration": 411.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-03-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t02.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums ->",
+      "duration": 202.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-03-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stronger Than Dirt Or Milkin' The Turkey ->",
+      "duration": 562.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-03-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t04.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Blues For Allah",
+      "duration": 229.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-03-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t05.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Johnny B. Goode",
+      "duration": 246.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-03-23d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t06.mp3",
+          "bitrate": "231"
+        }
+      ]
+    }
+  ]
+}

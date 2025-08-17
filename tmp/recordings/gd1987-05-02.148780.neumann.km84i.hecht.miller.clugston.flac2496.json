@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "FM",
+  "confidence": 0.0,
+  "date": "1987-05-02",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Hell In A Bucket",
+      "duration": 369.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t01 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t01 Hell In A Bucket.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "West LA Fadeaway",
+      "duration": 501.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t02 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t02 West LA Fadeaway.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Beat It On Down The Line",
+      "duration": 194.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t03 BIODTL.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t03 BIODTL.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Stagger Lee",
+      "duration": 373.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t04 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t04 Stagger Lee.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Little Red Rooster",
+      "duration": 608.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t05 Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t05 Red Rooster.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Dire Wolf >",
+      "duration": 198.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t06 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t06 Dire Wolf.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Far From Me",
+      "duration": 290.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t07 Far From Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t07 Far From Me.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Jack Straw >",
+      "duration": 391.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t08 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t08 Jack Straw.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "When Push Comes To Shove",
+      "duration": 369.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t09 Push Comes To Shove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t09 Push Comes To Shove.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "One More Saturday Night",
+      "duration": 303.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s1t10 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s1t10 OMSN.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "China Cat Sunflower >",
+      "duration": 378.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t01 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t01 China Cat.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Know You Rider",
+      "duration": 418.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t02 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t02 IKYR.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Playin ' In The Band >",
+      "duration": 480.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t03 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t03 Playin'.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Terrapin Station >",
+      "duration": 695.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t04 Terrapin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t04 Terrapin.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums >",
+      "duration": 640.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t05 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t05 Drums.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space >",
+      "duration": 474.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t06 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t06 Space.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Truckin' >",
+      "duration": 387.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t07 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t07 Truckin'.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Morning Dew >",
+      "duration": 676.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t08 Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t08 Morning Dew.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Around & Around >",
+      "duration": 221.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t09 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t09 A & A.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Turn On Your Lovelight",
+      "duration": 373.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t10 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t10 Lovelight.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E: Black Muddy River",
+      "duration": 393.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd87-05-02 s2t11 Black Muddy River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-05-02 s2t11 Black Muddy River.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

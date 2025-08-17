@@ -1,0 +1,222 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-06-08",
+  "venue": "Folsom Field, U. of Colorado",
+  "location": "Boulder, CO",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd80-06-08 s2tCrowd",
+      "duration": 77.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t01Crowd.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd80-06-08 s2tFeel Like A Stranger",
+      "duration": 586.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t02FeelLikeAStranger.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd80-06-08 s2tShip Of Fools",
+      "duration": 522.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t03ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t03ShipOfFools.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd80-06-08 s2tEstimated Prophet",
+      "duration": 539.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t04EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t04EstimatedProphet.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd80-06-08 s2tEyes Of The World",
+      "duration": 820.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t05EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t05EyesOfTheWorld.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd80-06-08 s2tDrums",
+      "duration": 459.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t06Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd80-06-08 s2tSpace",
+      "duration": 168.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t07Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd80-06-s2tSaint Of Circumstance",
+      "duration": 351.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t08SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t08SaintOfCircumstance.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd80-06-08 s2tBlack Peter",
+      "duration": 529.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t09BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t09BlackPeter.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd80-06-08 s2tSugar Magnolia",
+      "duration": 505.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t10SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t10SugarMagnolia.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd80-06-08 s2tEncore Break",
+      "duration": 28.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t11EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t11EncoreBreak.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd80-06-08 s2tAlabama Getaway",
+      "duration": 291.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t12AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t12AlabamaGetaway.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd80-06-08 s2tBrokedown Palace",
+      "duration": 340.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-06-08S2t13BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-06-08S2t13BrokedownPalace.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

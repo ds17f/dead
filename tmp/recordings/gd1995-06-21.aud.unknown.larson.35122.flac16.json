@@ -1,0 +1,318 @@
+{
+  "rating": 0.7,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1995-06-21",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 562.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Loser",
+      "duration": 526.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Take Me To The River",
+      "duration": 356.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d1t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 957.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d1t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Broken Arrow",
+      "duration": 316.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d1t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Promised Land",
+      "duration": 320.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Crowd",
+      "duration": 29.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t01.mp3",
+          "bitrate": "91.4"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Scarlet Begonias",
+      "duration": 673.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Fire On The Mountain",
+      "duration": 1257.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Man Smart, Woman Smarter",
+      "duration": 457.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "It's All Too Much",
+      "duration": 360.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin' In The Band",
+      "duration": 243.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Supplication Jam/Jam",
+      "duration": 642.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 630.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d3t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 531.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d3t02.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Easy Answers",
+      "duration": 418.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d3t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Morning Dew",
+      "duration": 702.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d3t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Crowd",
+      "duration": 65.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d3t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "U.S. Blues",
+      "duration": 420.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-06-21d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-21d3t06.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

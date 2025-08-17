@@ -1,0 +1,414 @@
+{
+  "rating": 2.111111111111111,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1993-05-25",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 4.222222222222222,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Bertha",
+      "duration": 222.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Greatest Story Ever Told",
+      "duration": 130.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Jack-A-Roe",
+      "duration": 149.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Wang Dang Doodle",
+      "duration": 246.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Loose Lucy",
+      "duration": 251.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Queen Jane Approximately",
+      "duration": 223.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Lazy River Road",
+      "duration": 225.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Let It Grow",
+      "duration": 464.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t08.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Don't Ease Me In",
+      "duration": 116.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d1t09.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d1t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Eyes Of The World",
+      "duration": 503.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d2t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain",
+      "duration": 310.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d2t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Way To Go Home",
+      "duration": 214.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d2t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 311.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d2t04.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 248.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d2t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 483.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d2t06.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel",
+      "duration": 188.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d3t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d3t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 346.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d3t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d3t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 239.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d3t03.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d3t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Johnny B. Goode",
+      "duration": 146.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d3t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d3t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Rain",
+      "duration": 179.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-05-25d3t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd93-05-25d3t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd93-05-25d3t05.shn"
+        }
+      ]
+    }
+  ]
+}

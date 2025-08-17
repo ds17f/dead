@@ -1,0 +1,142 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-11",
+  "venue": "Fillmore East",
+  "location": "New York , NY",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Intro by Keeva Krystal > Not Fade Away",
+      "duration": 780.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d1t01.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cumberland Blues",
+      "duration": 295.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d1t02.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain and Snow",
+      "duration": 343.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d1t03.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 444.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d1t04.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me and My Uncle",
+      "duration": 191.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d1t05.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star >",
+      "duration": 1006.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d2t01.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Spanish Jam >",
+      "duration": 588.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d2t02.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn on Your Lovelight",
+      "duration": 2058.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11d2t03.mp3",
+          "bitrate": "132"
+        }
+      ]
+    }
+  ]
+}

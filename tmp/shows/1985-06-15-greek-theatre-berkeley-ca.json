@@ -1,0 +1,220 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-06-15-greek-theatre-berkeley-ca/",
+  "show_id": "1985-06-15-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1985-06-15",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "She Belongs To Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:48.565665",
+  "show_time": null,
+  "recordings": [
+    "gd1985-06-15.sbd.walker-scotton.miller.96317.sbeok.flac16",
+    "gd85-06-15.sbd.griesman.5682.sbeok.shnf",
+    "gd85-06-15.set2.sbd.gans-samaritano.28449.sbeok.flacf",
+    "gd1985-06-15.sbd.etter.20878.sbeok.shnf",
+    "gd1985-06-15.171296.set2.sbd.gans.miller.clugston.fixed.flac1644",
+    "gd1985-06-15.152254.sbd.miller.flac2496",
+    "gd1985-06-15.152520.sbd.cm.miller.t.flac16",
+    "gd1985-06-15.sbd.griesman.tetzeli.fix-5682.34302.sbeok.shnf",
+    "gd1985-06-15.140073.set2.sbd.pcm.gans.miller.clugston.flac1644",
+    "gd1985-06-15.matrix.chappell.85832.sbeok.flac16",
+    "gd85-06-15.oade-schoeps.sacks.24586.sbeok.flacf",
+    "gd1985-06-15.nak700.anon-severson-poris.lmpp.97497.flac16",
+    "gd1985-06-15.nak300.andrewf.97125.flac16",
+    "gd1985-06-15.148770.nak700.severson.miller.clugston.flac1648",
+    "gd1985-06-15.nak300.andrewf.97124.flac24",
+    "gd1985-06-15.154489.5-1.tobin.flac1648",
+    "gd1985-06-15.158880.Nak100.pasternak.vernon.flac1648",
+    "gd1985-06-15.154488.dts.tobin.flac16",
+    "gd1985-06-15.148771.nak700.severson.miller.clugston.flac2496",
+    "gd1985-06-15.166993.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1985-06-15.152789.OTSNAK300-SGMasterCassetteAnonNoelt-flac1648",
+    "gd1985-06-15.166992.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd85-06-15.oade.sacks.7086.sbeok.shnf",
+    "gd1985-06-15.158881.Nak100.pasternak.vernon.flac2448",
+    "gd1985-06-15.112725.BeyerM160.daweez.d5scott.flac16",
+    "gd1985-06-15.senn441.mccue.ford.33338.sbeok.flac16",
+    "gd1985-06-15.141239.s1.unknown.Bryant.Miller.Noel.t-flac1644",
+    "gd1985-06-15.154458.mtx.tobin.flac16",
+    "gd1985-06-15.140889.s1.unkown.Bryant.Miller.Noel.t-flac2496",
+    "gd1985-06-15.152642.OTS-NAK300-SGMasterCassette.Anon.Noel.t-flac2448"
+  ],
+  "best_recording": "gd1985-06-15.sbd.walker-scotton.miller.96317.sbeok.flac16",
+  "avg_rating": 2.166101694915254,
+  "raw_rating": 4.492307692307692,
+  "recording_count": 30,
+  "confidence": 1.0,
+  "total_high_ratings": 58,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 9,
+    "MATRIX": 1,
+    "UNKNOWN": 20
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

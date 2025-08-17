@@ -1,0 +1,46 @@
+{
+  "rating": 2.625,
+  "review_count": 8,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1969-11-08",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.75,
+  "high_ratings": 5,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star >",
+      "duration": 827.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-11-08-audt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-08-audt01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Other One",
+      "duration": 79.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-11-08-audt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-08-audt02.mp3",
+          "bitrate": "168"
+        }
+      ]
+    }
+  ]
+}

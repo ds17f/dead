@@ -1,0 +1,382 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1992-03-08",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll",
+      "duration": 247.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01LetTheGoodTimesRoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01LetTheGoodTimesRoll.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 437.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TouchOfGrey.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 585.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Ramble On Rose",
+      "duration": 543.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04RambleOnRose.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Throated Wind",
+      "duration": 442.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BlackThroatedWind.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 441.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LooseLucy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Desolation Row",
+      "duration": 696.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DesolationRow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big Railroad Blues",
+      "duration": 376.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BigRailroadBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 489.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheMusicNeverStopped.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samson And Delilah",
+      "duration": 498.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SamsonAndDelilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Way To Go Home",
+      "duration": 390.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11WayToGoHome.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Foolish Heart",
+      "duration": 499.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FoolishHeart.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 505.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Wave To The Wind",
+      "duration": 573.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14WaveToTheWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14WaveToTheWind.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 866.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 589.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "All Along The Watchtower",
+      "duration": 353.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17AllAlongTheWatchtower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "So Many Roads",
+      "duration": 419.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18SoManyRoads.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 527.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ThrowingStones.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 408.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20NotFadeAway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 149.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tuning Jam",
+      "duration": 63.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22TuningJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22TuningJam.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 279.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

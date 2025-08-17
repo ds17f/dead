@@ -1,0 +1,158 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-11-05",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hard to Handle",
+      "duration": 683.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t01.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sittin' on top of the World",
+      "duration": 276.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried",
+      "duration": 412.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t03.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Truckin'",
+      "duration": 407.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t04.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 203.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t05.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One",
+      "duration": 577.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t06.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star",
+      "duration": 1266.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t07.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "St. Stephen",
+      "duration": 361.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t08.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away/Goin' down the Road Feelin' Bad",
+      "duration": 327.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-05t09.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-05t09.shn"
+        }
+      ]
+    }
+  ]
+}

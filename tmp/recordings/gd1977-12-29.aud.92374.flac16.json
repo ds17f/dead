@@ -1,0 +1,158 @@
+{
+  "rating": 2.4166666666666665,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-12-29",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.833333333333333,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "playin in the band->",
+      "duration": 947.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "china cat sunflower->",
+      "duration": 335.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "i know you rider->",
+      "duration": 316.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "china doll->",
+      "duration": 534.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "drums->",
+      "duration": 226.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "not fade away->",
+      "duration": 506.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "playin in the band",
+      "duration": 267.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "encore- terrapin station",
+      "duration": 640.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "encore- johnny b goode",
+      "duration": 292.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-29-aud-t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-29-aud-t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

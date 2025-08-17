@@ -1,0 +1,318 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1991-05-04",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell in a Bucket",
+      "duration": 376.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 931.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Minglewood Blues",
+      "duration": 487.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 490.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T04.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Race is On * (1)",
+      "duration": 209.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Row Jimmy",
+      "duration": 634.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Masterpiece",
+      "duration": 395.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T07.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Speedway Boogie >",
+      "duration": 548.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T08.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 505.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set1_16bit_T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set1_16bit_T09.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Victim or the Crime >",
+      "duration": 651.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T01.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Finger >",
+      "duration": 521.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T02.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin' in the Band >",
+      "duration": 549.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T03.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band >",
+      "duration": 723.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T04.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums > (2)",
+      "duration": 704.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T05.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 920.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T06.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need a Miracle >",
+      "duration": 343.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T07.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Standing on the Moon >",
+      "duration": 610.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T08.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Saturday Night",
+      "duration": 304.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T09.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Touch of Grey",
+      "duration": 432.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD91-05-04_Set2_16bit_T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD91-05-04_Set2_16bit_T10.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

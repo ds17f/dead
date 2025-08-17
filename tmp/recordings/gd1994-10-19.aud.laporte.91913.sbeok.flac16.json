@@ -1,0 +1,350 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1994-10-19",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tune up",
+      "duration": 60.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T01.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like a Stranger",
+      "duration": 622.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 548.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Spoonful",
+      "duration": 315.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack a Roe",
+      "duration": 331.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso @ (1)",
+      "duration": 372.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "If the Shoe Fits",
+      "duration": 434.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Birdsong",
+      "duration": 913.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set1_T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set1_T08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tune up",
+      "duration": 48.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sampson & Deliah",
+      "duration": 489.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "So Many Roads",
+      "duration": 483.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "St. of Circumstance >",
+      "duration": 429.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin >",
+      "duration": 748.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Jam >",
+      "duration": 226.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums > *",
+      "duration": 615.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space > (2)",
+      "duration": 890.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T08.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Longway Home >",
+      "duration": 407.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue >",
+      "duration": 577.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T10.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 497.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "crowd noise",
+      "duration": 100.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T12.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Brokedown Palace",
+      "duration": 291.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD94-10-19_16bit_Set2_T13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD94-10-19_16bit_Set2_T13.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

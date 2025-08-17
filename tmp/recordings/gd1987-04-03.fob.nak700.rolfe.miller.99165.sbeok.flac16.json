@@ -1,0 +1,366 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1987-04-03",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 149.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket ->",
+      "duration": 353.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 577.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C C Rider",
+      "duration": 540.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It Must Have Been The Roses",
+      "duration": 503.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now",
+      "duration": 529.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t06.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 335.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t07.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow ->",
+      "duration": 728.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t08.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 215.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d1t09.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 46.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower ->",
+      "duration": 308.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 348.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter) ->",
+      "duration": 396.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Crazy Fingers ->",
+      "duration": 536.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Samson And Delilah ->",
+      "duration": 400.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 281.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 254.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One ->",
+      "duration": 397.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t09.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat ->",
+      "duration": 502.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t10.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones ->",
+      "duration": 494.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t11.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 402.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t12.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 338.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-04-03d2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-04-03d2t13.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

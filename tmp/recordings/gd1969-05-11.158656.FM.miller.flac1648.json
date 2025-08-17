@@ -1,0 +1,80 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-05-11",
+  "venue": "Aztec Bowl, San Diego State U.",
+  "location": "San Diego, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 609.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Morning Dew.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One>",
+      "duration": 1178.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 That's It For The Other One.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 540.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Good Morning Little Schoolgirl.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 180.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Me And My Uncle.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Alligator >",
+      "duration": 811.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Alligator.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Lovelight",
+      "duration": 991.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Turn On Your Lovelight.flac"
+        }
+      ]
+    }
+  ]
+}

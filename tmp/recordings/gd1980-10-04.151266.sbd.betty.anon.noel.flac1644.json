@@ -1,0 +1,219 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-04",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Deep Elem Blues",
+      "duration": 244.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s2t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Race Is On",
+      "duration": 253.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t02.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s2t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "It Must Have Been The Roses",
+      "duration": 442.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s2t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Monkey and The Engineer",
+      "duration": 148.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s2t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Rosalie McFall",
+      "duration": 205.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s2t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Dark Hollow",
+      "duration": 206.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd80-10-04.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "To Lay Me Down",
+      "duration": 527.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t07.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "On The Road Again",
+      "duration": 147.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Oh Babe It Ain't No Lie ->",
+      "duration": 345.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t09.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Ripple",
+      "duration": 278.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-04.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-04.s1t10.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

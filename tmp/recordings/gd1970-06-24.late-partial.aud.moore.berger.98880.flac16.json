@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-06-24",
+  "venue": "Capitol Theatre",
+  "location": "Port Chester, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Attics Of My Life ->",
+      "duration": 224.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star ->",
+      "duration": 422.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugar Magnolia ->",
+      "duration": 154.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Star ->",
+      "duration": 181.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t04.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Saint Stephen ->",
+      "duration": 372.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "China Cat Sunflower ->",
+      "duration": 201.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t06.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "I Know You Rider",
+      "duration": 28.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-24d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-24d1t07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

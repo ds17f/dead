@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-07-12",
+  "venue": "RFK Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 409.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t1.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Minglewood Blues",
+      "duration": 548.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t2.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 661.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t3.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 356.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t4.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Far From Me",
+      "duration": 335.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t5.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 424.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t6.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Friend Of The Devil",
+      "duration": 468.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t7.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t7.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 295.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d1.t8.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d1.t8.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 60.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t1.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugaree*",
+      "duration": 633.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t2.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Man Smart, Woman Smarter*",
+      "duration": 491.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t3.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship Of Fools",
+      "duration": 580.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t4.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Estimated Prophet ->",
+      "duration": 643.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t5.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World ->",
+      "duration": 605.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t6.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 572.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d2.t7.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d2.t7.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space->",
+      "duration": 517.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d3.t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d3.t1.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle ->",
+      "duration": 298.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d3.t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d3.t2.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dear Mr. Fantasy ->",
+      "duration": 386.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d3.t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d3.t3.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter ->",
+      "duration": 543.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d3.t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d3.t4.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn on your Lovelight",
+      "duration": 490.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d3.t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d3.t5.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "E: Black Muddy River",
+      "duration": 389.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1989-07-12.d3.t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-07-12.d3.t6.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

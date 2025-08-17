@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-12-27",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 75.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Playing In The Band",
+      "duration": 400.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02PlayingInTheBand.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 496.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Bertha.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 156.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MamaTried.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 383.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MexicaliBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 498.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06RambleOnRose.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Little Red Rooster",
+      "duration": 540.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LittleRedRooster.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 522.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 190.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Quinn The Eskimo (The Mighty Quinn)",
+      "duration": 335.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10QuinnTheEskimotheMightyQuinn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10QuinnTheEskimotheMightyQuinn.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Dancing In The Street",
+      "duration": 427.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11DancingInTheStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11DancingInTheStreet.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Black Muddy River",
+      "duration": 370.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12BlackMuddyRiver.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing Jam",
+      "duration": 239.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13PlayingJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingJam.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Need A Miracle",
+      "duration": 332.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14INeedAMiracle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 609.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 374.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Truckin'",
+      "duration": 367.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Truckin.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Smokestack Lightning",
+      "duration": 226.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18SmokestackLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18SmokestackLightning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Comes A Time",
+      "duration": 442.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19ComesATime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ComesATime.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around",
+      "duration": 249.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20AroundAndAround.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Playing In The Band",
+      "duration": 167.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21PlayingInTheBand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 37.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "When Push Comes To Shove",
+      "duration": 248.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23WhenPushComesToShove.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

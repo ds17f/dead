@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-06-24",
+  "venue": "Dane County Coliseum",
+  "location": "Madison, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd/Tuning",
+      "duration": 48.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 835.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Far From Me",
+      "duration": 298.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 400.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster (Tape Flip After Song)",
+      "duration": 554.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 362.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mama Tried >",
+      "duration": 176.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Mexicali Blues",
+      "duration": 326.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Althea",
+      "duration": 519.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Hell In A Bucket",
+      "duration": 396.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Deal, Set Break",
+      "duration": 564.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t11.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Take A Step Back",
+      "duration": 72.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t12.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Help On The Way >",
+      "duration": 244.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t13.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Slipknot! >",
+      "duration": 299.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t14.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Franklin's Tower",
+      "duration": 911.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t15.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Lost Sailor >",
+      "duration": 466.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t16.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Saint Of Circumstance >",
+      "duration": 444.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t17.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Jam > (Phil, Bob, Bill And Mickey)",
+      "duration": 190.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t18.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dr..ums..> (Tape Pause-Flip)",
+      "duration": 163.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t19.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Space >",
+      "duration": 730.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t20.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truckin' >",
+      "duration": 537.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t21.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Morning Dew >",
+      "duration": 805.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t22.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around And Around >",
+      "duration": 225.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t23.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Johnny B. Goode",
+      "duration": 263.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t24.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Don't Ease Me In",
+      "duration": 234.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1983-06-24.Aud.t25.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-06-24.Aud.t25.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

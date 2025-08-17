@@ -1,0 +1,302 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-05-15",
+  "venue": "Sam Boyd Silver Bowl, U.N.L.V.",
+  "location": "Las Vegas, NV",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Picasso Moon",
+      "duration": 432.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01PicassoMoon.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Peggy-O",
+      "duration": 470.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Peggy-o.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Same Thing",
+      "duration": 449.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheSameThing.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tennessee Jed",
+      "duration": 554.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04TennesseeJed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Broken Arrow",
+      "duration": 301.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05BrokenArrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BrokenArrow.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bird Song",
+      "duration": 876.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BirdSong.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tuning",
+      "duration": 26.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Here Comes Sunshine",
+      "duration": 431.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08HereComesSunshine.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Playing In The Band",
+      "duration": 563.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PlayingInTheBand.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crazy Fingers",
+      "duration": 634.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10CrazyFingers.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band",
+      "duration": 232.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11PlayingInTheBand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 724.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 564.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "All Along The Watchtower",
+      "duration": 311.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14AllAlongTheWatchtower.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Days Between",
+      "duration": 617.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15DaysBetween.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15DaysBetween.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "One More Saturday Night",
+      "duration": 303.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16OneMoreSaturdayNight.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Tuning",
+      "duration": 50.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 279.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18LucyInTheSkyWithDiamonds.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18LucyInTheSkyWithDiamonds.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

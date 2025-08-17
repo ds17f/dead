@@ -1,0 +1,494 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1980-09-06",
+  "venue": "State Fairgrounds",
+  "location": "Lewiston, ME",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 170.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t01-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway >",
+      "duration": 313.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t02-fixed.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 313.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t03-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 934.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t04-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me & My Uncle >",
+      "duration": 174.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t05-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 318.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t06-fixed.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 590.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t07-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t07-fixed.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feel Like a Stranger",
+      "duration": 737.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t08-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Friend of the Devil",
+      "duration": 614.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t09-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t09-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Far From Me >",
+      "duration": 246.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d1t10-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d1t10-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Little Red Rooster",
+      "duration": 574.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t01-fixed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "China Cat Sunflower >",
+      "duration": 368.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t02-fixed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Know You Rider >",
+      "duration": 329.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t03-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Promised Land",
+      "duration": 260.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t04-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Tuning",
+      "duration": 60.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t05-fixed.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Shakedown Street >",
+      "duration": 714.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t06-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Lost Sailor >",
+      "duration": 357.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t07-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t07-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Saint of Circumstance",
+      "duration": 387.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t08-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Althea",
+      "duration": 792.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t09-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t09-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playin' in the Band >",
+      "duration": 574.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d2t10-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d2t10-fixed.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Uncle John's Band >",
+      "duration": 464.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t01-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Drums >",
+      "duration": 828.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t02-fixed.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Space >",
+      "duration": 176.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t03-fixed.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Not Fade Away >",
+      "duration": 391.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t04-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "The Wheel >",
+      "duration": 312.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t05-fixed.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Uncle John's Band Reprise >",
+      "duration": 196.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t06-fixed.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Playin' in the Band Reprise >",
+      "duration": 179.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t07-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t07-fixed.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Sugar Magnolia",
+      "duration": 605.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t08-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "One More Saturday Night >",
+      "duration": 278.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t09-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t09-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Brokedown Palace",
+      "duration": 326.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-09-06d3t10-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-09-06d3t10-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

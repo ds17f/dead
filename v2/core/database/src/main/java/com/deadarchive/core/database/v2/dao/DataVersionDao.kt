@@ -16,6 +16,9 @@ interface DataVersionDao {
     @Query("SELECT * FROM data_version_v2 WHERE id = 1")
     suspend fun getCurrentDataVersion(): DataVersionEntity?
     
+    @Query("SELECT * FROM data_version_v2 WHERE id = 1")
+    suspend fun getDataVersion(): DataVersionEntity?
+    
     @Query("SELECT dataVersion FROM data_version_v2 WHERE id = 1")
     suspend fun getCurrentVersion(): String?
     

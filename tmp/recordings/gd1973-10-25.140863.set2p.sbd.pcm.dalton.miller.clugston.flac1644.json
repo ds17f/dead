@@ -1,0 +1,78 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-10-25",
+  "venue": "Dane County Coliseum",
+  "location": "Madison, WI",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd73-10-25 tDark Star Space",
+      "duration": 195.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-10-25T01DarkStarSpace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-10-25T01DarkStarSpace.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd73-10-25 tEyes Of The World",
+      "duration": 952.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-10-25T02EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-10-25T02EyesOfTheWorld.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd73-10-25 tStella Blue",
+      "duration": 529.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-10-25T03StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-10-25T03StellaBlue.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd73-10-25 tWeather Report Suite",
+      "duration": 1004.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-10-25T04WeatherReportSuite.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-10-25T04WeatherReportSuite.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

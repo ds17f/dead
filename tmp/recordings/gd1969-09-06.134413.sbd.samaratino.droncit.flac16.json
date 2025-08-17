@@ -1,0 +1,110 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1969-09-06",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 728.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t001.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Doin' That Rag",
+      "duration": 397.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t002.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "He Was A Friend Of Mine",
+      "duration": 755.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t003.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big Boy Pete",
+      "duration": 192.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t004.mp3",
+          "bitrate": "248"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Good Lovin'",
+      "duration": 285.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t005.mp3",
+          "bitrate": "246"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now",
+      "duration": 255.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06.sbd.Samaratino.droncit.t006.mp3",
+          "bitrate": "245"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1968-02-03",
+  "venue": "Crystal Ballroom",
+  "location": "Portland, OR",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 190.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t01.mp3",
+          "bitrate": "147"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower >",
+      "duration": 145.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t02.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven",
+      "duration": 389.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t03.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cryptical Envelopment >",
+      "duration": 62.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t04.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One >",
+      "duration": 102.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t05.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cryptical Envelopment >",
+      "duration": 119.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t06.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Potato Caboose >",
+      "duration": 318.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t07.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Born Cross-Eyed",
+      "duration": 127.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680203t08.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680203t08.shn"
+        }
+      ]
+    }
+  ]
+}

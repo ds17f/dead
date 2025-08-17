@@ -1,0 +1,222 @@
+{
+  "rating": 3.7090909090909094,
+  "review_count": 11,
+  "source_type": "FM",
+  "confidence": 1.0,
+  "date": "1980-01-13",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.636363636363637,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw ->",
+      "duration": 350.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 732.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d1t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 472.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d1t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tennessee Jed ->",
+      "duration": 513.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d1t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Looks Like Rain ->",
+      "duration": 443.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d1t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Don't Ease Me In",
+      "duration": 208.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d1t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Playing In The Band ->",
+      "duration": 661.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums ->",
+      "duration": 427.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away ->",
+      "duration": 893.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 504.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "U.S. Blues",
+      "duration": 382.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Land Of A Thousand Dances",
+      "duration": 266.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t06.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Amazing Grace",
+      "duration": 333.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-01-13d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-01-13d2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

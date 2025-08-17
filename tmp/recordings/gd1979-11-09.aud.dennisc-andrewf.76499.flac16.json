@@ -1,0 +1,46 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1979-11-09",
+  "venue": "Community War Memorial Auditorium",
+  "location": "Buffalo, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancin' In The Streets ->",
+      "duration": 789.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-09d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-09d1t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 701.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-09d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-09d1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

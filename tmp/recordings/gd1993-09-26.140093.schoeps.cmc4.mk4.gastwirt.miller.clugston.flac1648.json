@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-26",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd93-09-26 s1 tCrowd",
+      "duration": 53.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T01Crowd.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd93-09-26 s1 tJack Straw",
+      "duration": 348.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T02JackStraw.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd93-09-26 s1 tAlthea",
+      "duration": 591.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T03Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T03Althea.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd93-09-26 s1 tWalkin' Blues",
+      "duration": 398.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T04WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T04WalkinBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd93-09-26 s1 tHigh Time",
+      "duration": 484.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T05HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T05HighTime.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd93-09-26 s1 tMe & My Uncle",
+      "duration": 191.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T06MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T06MeMyUncle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd93-09-26 s1 tMaggie's Farm",
+      "duration": 472.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T07MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T07MaggiesFarm.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd93-09-26 s1 tLazy River Road",
+      "duration": 480.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T08LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T08LazyRiverRoad.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd93-09-26 s1 tEasy Answers",
+      "duration": 372.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T09EasyAnswers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T09EasyAnswers.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd93-09-26 s1 tDon't Ease Me In",
+      "duration": 223.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S1T10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S1T10DontEaseMeIn.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd93-09-26 s2 t01 Crowd",
+      "duration": 134.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T01Crowd.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd93-09-26 s2 t02 Iko Iko",
+      "duration": 566.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T02IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T02IkoIko.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd93-09-26 s2 t03 Saint Of Circumstance",
+      "duration": 453.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T03SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T03SaintOfCircumstance.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd93-09-26 s2 t04 Ship Of Fools",
+      "duration": 456.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T04ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T04ShipOfFools.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd93-09-26 s2 t05 Truckin'",
+      "duration": 670.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T05Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T05Truckin.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd93-09-26 s2 t06 Drums",
+      "duration": 864.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T06Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd93-09-26 s2 t07 Space",
+      "duration": 858.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T07Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd93-09-26 s2 t08 I Need A Miracle",
+      "duration": 363.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T08INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T08INeedAMiracle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd93-09-26 s2 t09 Standing On The Moon",
+      "duration": 526.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T09StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T09StandingOnTheMoon.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd93-09-26 s2 t10 Encore Break",
+      "duration": 138.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T10EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T10EncoreBreak.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd93-09-26 s2 t11 Rain",
+      "duration": 296.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-09-26S2T11Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-09-26S2T11Rain.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

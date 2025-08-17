@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1982-12-31",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "turn on your lovelight",
+      "duration": 328.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-12-31s03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-12-31s03t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "tell momma",
+      "duration": 256.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-12-31s03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-12-31s03t02.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "baby what you want me to do",
+      "duration": 448.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-12-31s03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-12-31s03t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "hard to handle",
+      "duration": 307.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-12-31s03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-12-31s03t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "midnite hour",
+      "duration": 279.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-12-31s03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-12-31s03t05.mp3",
+          "bitrate": "206"
+        }
+      ]
+    }
+  ]
+}

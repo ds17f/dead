@@ -1,0 +1,286 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-07-07",
+  "venue": "Robert F. Kennedy Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 123.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ramble On Rose",
+      "duration": 479.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02RambleOnRose.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 431.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It Must Have Been The Roses",
+      "duration": 421.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 384.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Desolation Row",
+      "duration": 709.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06DesolationRow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Box Of Rain",
+      "duration": 311.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BoxOfRain.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Playing In The Band",
+      "duration": 525.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PlayingInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Terrapin Station",
+      "duration": 529.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TerrapinStation.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Drums",
+      "duration": 743.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Space",
+      "duration": 291.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Other One",
+      "duration": 174.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TheOtherOne.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Wharf Rat",
+      "duration": 421.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13WharfRat.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Around And Around",
+      "duration": 220.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14AroundAndAround.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Good Lovin'",
+      "duration": 428.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15GoodLovin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Encore Break",
+      "duration": 137.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16EncoreBreak.mp3",
+          "bitrate": "223"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "(I Can't Get No) Satisfaction",
+      "duration": 543.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17iCantGetNoSatisfaction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17iCantGetNoSatisfaction.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

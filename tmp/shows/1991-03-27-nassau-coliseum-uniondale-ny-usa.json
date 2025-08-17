@@ -1,0 +1,206 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-03-27-nassau-coliseum-uniondale-ny-usa/",
+  "show_id": "1991-03-27-nassau-coliseum-uniondale-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Nassau Coliseum",
+  "location_raw": "Uniondale, NY",
+  "city": "Uniondale",
+  "state": "NY",
+  "country": "USA",
+  "date": "1991-03-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Maggie's Farm",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Picasso Moon",
+          "url": "https://jerrygarcia.com/song/picasso-moon/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Reuben And Cherise",
+          "url": "https://jerrygarcia.com/song/reuben-and-cherise/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:08:16.815602",
+  "show_time": null,
+  "recordings": [
+    "gd91-03-27.sbd.miller.14486.sbeok.shnf",
+    "gd1991-03-27.120857.sbd.miller.flac24",
+    "gd1991-03-27.120855.sbd.miller.flac16",
+    "gd1991-03-27.sbd.harrison-braverman.ladner.10310.shnf",
+    "gd1991-03-27.154474.UltraMatrix.sbd.cm.miller.t.flac16",
+    "gd1991-03-27.sbd.braverman.9405.shnf",
+    "gd1991-03-27.sbd.miller.tetzeli.fix-14486.35163.reflac.flac16",
+    "gd1991-03-27.sbd.harrison-braverman.gardner.9980.shnf",
+    "gd91-03-27.aud.eD.9189.sbeok.shnf",
+    "gd91-03-27.set2.fob-schoeps-mahoney-oneill.miller.28390.sbeok.shnf",
+    "gd1991-03-27.149559.FOB.Schoeps.Brotman.Metchick.Miller.Noel.t-flac1648",
+    "gd1991-03-27.139159.Schoeps-cmc4-mk4-ortf.gastwirt.miller.sirmick.sbeok.flac1648",
+    "gd1991-03-27.152199.miller.pearson.healy.flac2496",
+    "gd1991-03-27.141407.OTS.AKG.Ackerman.Miller.Noel.t-flac.1648",
+    "gd1991-03-27.133607.Nak300s-Senn441s.Fitzy.Keo.Flac1644",
+    "gd1991-03-27.133608.Nak300s-Senn441s.Fitzy.Keo.Flac2496",
+    "gd1991-03-27.nak300.andrewf.113159.flac1644",
+    "gd1991-03-27.146181.neuman-skm150.dalton.miller.sirmick.flac1648",
+    "gd1991-03-27.172999.mtx.seamons.ht178.flac16",
+    "gd1991-03-27.senn-me80.litzenberger.91484.sbeok.flac16"
+  ],
+  "best_recording": "gd91-03-27.sbd.miller.14486.sbeok.shnf",
+  "avg_rating": 1.8181818181818183,
+  "raw_rating": 3.75,
+  "recording_count": 20,
+  "confidence": 1.0,
+  "total_high_ratings": 15,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 8,
+    "AUD": 1,
+    "UNKNOWN": 11
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "bruce-hornsby-shows",
+    "vince-welnick-years"
+  ]
+}

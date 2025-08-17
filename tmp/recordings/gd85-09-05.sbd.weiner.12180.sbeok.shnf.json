@@ -1,0 +1,434 @@
+{
+  "rating": 2.05,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1985-09-05",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 4.1,
+  "high_ratings": 7,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 3.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cold Rain and Snow",
+      "duration": 305.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "C.C. Rider",
+      "duration": 408.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Candyman",
+      "duration": 275.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Beat It On Down The Line",
+      "duration": 183.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Stagger Lee",
+      "duration": 233.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t06.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Me and My Uncle",
+      "duration": 112.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Big River",
+      "duration": 175.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Peggy-O",
+      "duration": 231.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t09.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Let It Grow",
+      "duration": 441.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t10.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Brokedown Palace",
+      "duration": 203.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d1t11.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d1t11.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 8.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias",
+      "duration": 344.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire On The Mountain",
+      "duration": 388.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet",
+      "duration": 393.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes Of The World",
+      "duration": 412.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 249.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 183.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t07.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Gimme Some Lovin'",
+      "duration": 170.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t08.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 323.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t09.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia",
+      "duration": 341.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-05d2t10.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd85-09-05d2t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-09-05d2t10.shn"
+        }
+      ]
+    }
+  ]
+}

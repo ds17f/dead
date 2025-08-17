@@ -1,0 +1,286 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1982-09-05",
+  "venue": "US Festival, Glen Helen Regional Park",
+  "location": "Devore, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 294.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Playing In The Band",
+      "duration": 381.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Playing In The Band.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Shakedown Street",
+      "duration": 717.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Shakedown Street.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "New Minglewood Blues",
+      "duration": 489.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 New Minglewood Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Samson And Delilah",
+      "duration": 437.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Samson And Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Samson And Delilah.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "China Cat Sunflower",
+      "duration": 324.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 China Cat Sunflower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "I Know You Rider",
+      "duration": 300.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 I Know You Rider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Sugaree",
+      "duration": 688.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Sugaree.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 423.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Man Smart (Woman Smarter).mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Truckin'",
+      "duration": 450.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Truckin'.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums",
+      "duration": 346.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Space",
+      "duration": 286.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Not Fade Away",
+      "duration": 369.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Not Fade Away.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Black Peter",
+      "duration": 471.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Black Peter.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Sugar Magnolia",
+      "duration": 518.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Sugar Magnolia.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "U.S. Blues",
+      "duration": 300.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 US Blues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "(I Can't Get No) Satisfaction",
+      "duration": 359.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17 (I Can't Get No) Satisfaction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 (I Can't Get No) Satisfaction.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

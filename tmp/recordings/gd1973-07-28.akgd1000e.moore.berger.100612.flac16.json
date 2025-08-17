@@ -1,0 +1,206 @@
+{
+  "rating": 0.875,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1973-07-28",
+  "venue": "Grand Prix Racecourse",
+  "location": "Watkins Glen, NY",
+  "raw_rating": 2.5,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bill Graham Intro",
+      "duration": 100.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 460.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Beat It On Down The Line",
+      "duration": 235.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brown Eyed Women",
+      "duration": 465.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 273.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Box Of Rain",
+      "duration": 427.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Here Comes Sunshine",
+      "duration": 713.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 465.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 541.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d1t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 432.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Deal",
+      "duration": 486.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In the Band",
+      "duration": 1475.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-28d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-28d2t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

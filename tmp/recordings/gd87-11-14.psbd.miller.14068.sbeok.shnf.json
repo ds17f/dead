@@ -1,0 +1,78 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-11-14",
+  "venue": "Long Beach Arena",
+  "location": "Long Beach, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Shakedown Street",
+      "duration": 494.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-11-14d1t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-11-14d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Little Red Rooster",
+      "duration": 339.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-11-14d1t02.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-11-14d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Althea",
+      "duration": 280.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-11-14d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-11-14d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "The Mighty Quinn",
+      "duration": 196.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-11-14d1t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-11-14d1t04.shn"
+        }
+      ]
+    }
+  ]
+}

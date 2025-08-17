@@ -1,0 +1,94 @@
+{
+  "rating": 2.4285714285714284,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-05-23",
+  "venue": "Seminole Indian Village",
+  "location": "West Hollywood, FL",
+  "raw_rating": 4.857142857142857,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 329.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-05-23t1.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD69-05-23t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me and My Uncle",
+      "duration": 127.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-05-23t2.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD69-05-23t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star>",
+      "duration": 619.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-05-23t3.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD69-05-23t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "St. Stephen>",
+      "duration": 209.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-05-23t4.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD69-05-23t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Eleven//",
+      "duration": 145.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-05-23t5.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD69-05-23t5.shn"
+        }
+      ]
+    }
+  ]
+}

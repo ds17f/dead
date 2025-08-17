@@ -1,0 +1,47 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-06-22",
+  "venue": "Central Park",
+  "location": "New York City, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancing In The Street",
+      "duration": 691.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-06-22 t01 Dancing In The Streets.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Monitor Levels",
+      "duration": 102.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-06-22 t02 Monitor Levels.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Casey Jones",
+      "duration": 518.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-06-22 t03 Casey Jones.flac"
+        }
+      ]
+    }
+  ]
+}

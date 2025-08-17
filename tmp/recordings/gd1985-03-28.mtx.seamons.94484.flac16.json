@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-03-28",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 159.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t01.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Truckin' ->",
+      "duration": 436.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Smokestack Lightning* ->",
+      "duration": 336.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 488.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 289.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Peggy-O",
+      "duration": 462.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 370.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower ->",
+      "duration": 345.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 341.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias ->",
+      "duration": 632.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t10.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain ->",
+      "duration": 780.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t11.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain ->",
+      "duration": 535.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam ->",
+      "duration": 445.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums ->",
+      "duration": 599.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t03.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space ->",
+      "duration": 526.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 298.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One ->",
+      "duration": 323.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter ->",
+      "duration": 497.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 686.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Keep Your Day Job",
+      "duration": 277.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-03-28d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d2t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

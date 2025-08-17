@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-06-06",
+  "venue": "Rich Stadium",
+  "location": "Orchard Park, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch of Grey",
+      "duration": 482.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "101.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 319.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "102.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 514.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "103.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now",
+      "duration": 515.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "104.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend of the Devil",
+      "duration": 534.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "105.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 383.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "106.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Take A Step Back",
+      "duration": 104.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "107.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 516.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "108.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 773.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "109.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Iko, Iko",
+      "duration": 410.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "201.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet>",
+      "duration": 816.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "202.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Same Thing",
+      "duration": 430.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "203.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone>",
+      "duration": 568.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums>",
+      "duration": 685.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "205.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space>",
+      "duration": 684.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "301.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One>",
+      "duration": 427.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "302.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel>",
+      "duration": 315.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "303.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones>",
+      "duration": 549.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "304.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 295.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "305.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Crowd",
+      "duration": 173.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "306.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Baba O'Riley>",
+      "duration": 191.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "307.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "307.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tomorrow Never Knows",
+      "duration": 230.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "308.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "308.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

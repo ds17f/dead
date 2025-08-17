@@ -1,0 +1,392 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-06-16",
+  "venue": "Giants Stadium",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Picasso Moon",
+      "duration": 234.47,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T01.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T01_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 248.95,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T02.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T02_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 327.79,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T03.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T03_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 237.39,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T04.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T04_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stuck Inside of Mobile With The Memphis Blues Again",
+      "duration": 297.1,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T05.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T05_vbr.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 251.56,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T06.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T06_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Let It Grow",
+      "duration": 395.33,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D1T07.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D1T07_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jack Straw",
+      "duration": 253.81,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D2T01.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T01_vbr.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Crazy Fingers",
+      "duration": 285.91,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D2T02.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T02_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower >",
+      "duration": 254.06,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D2T03.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T03_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 209.84,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D2T04.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T04_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums >",
+      "duration": 377.92,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD1991-06-16D2T05.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD1991-06-16D2T05_vbr.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space >",
+      "duration": 411.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-06-16d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t01_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Need A Miracle >",
+      "duration": 196.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-06-16d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t02_vbr.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Black Peter >",
+      "duration": 369.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-06-16d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t03_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Throwin' Stones >",
+      "duration": 300.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-06-16d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t04_vbr.mp3",
+          "bitrate": "239"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 248.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-06-16d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t05_vbr.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Box of Rain",
+      "duration": 158.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1991-06-16d3t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1991-06-16d3t06_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

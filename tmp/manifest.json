@@ -1,0 +1,53 @@
+{
+  "package": {
+    "name": "Dead Archive Metadata",
+    "version": "2.0.2",
+    "version_type": "release",
+    "description": "Complete Grateful Dead concert metadata with track-level data and search optimization",
+    "created": "2025-08-14T15:42:10.320905",
+    "generator": "dead-metadata pipeline v3.0"
+  },
+  "build_info": {
+    "git_commit": "39a4305308c3db9c4234c943d59770b1feac9f5f",
+    "git_branch": "main",
+    "git_tag": "v2.0.2",
+    "git_clean": true,
+    "build_timestamp": "2025-08-14T15:42:10.320921",
+    "build_host": "fedora"
+  },
+  "contents": {
+    "stage2_data": {
+      "description": "Generated data products from Jerry Garcia shows and Archive.org integration",
+      "files": {
+        "collections.json": "Processed collections with resolved show memberships",
+        "recordings/": "Individual recording files with track-level data and ratings from Archive.org",
+        "shows/": "Individual show files with complete metadata (2,313+ shows)"
+      }
+    },
+    "stage3_data": {
+      "description": "Search-optimized indexes for mobile application consumption",
+      "files": {
+        "shows_index.json": "Denormalized show search index with collection tags",
+        "collections.json": "Collection search data with aliases and previews",
+        "venues.json": "Venue search index with geographical data",
+        "songs.json": "Song search index with performance statistics",
+        "members.json": "Band member data with instruments and images"
+      }
+    }
+  },
+  "statistics": {
+    "total_files": 2319,
+    "total_size_bytes": 31727355,
+    "total_size_mb": 30.26
+  },
+  "data_sources": [
+    "jerrygarcia.com - Complete show database (1965-1995)",
+    "Archive.org - 17,790+ recording metadata files with ratings",
+    "Curated collections - 25+ pre-defined show groupings"
+  ],
+  "usage": {
+    "mobile_apps": "Import data.zip contents into mobile app assets",
+    "web_apps": "Serve search indexes via REST API",
+    "research": "Comprehensive dataset for Dead analysis"
+  }
+}

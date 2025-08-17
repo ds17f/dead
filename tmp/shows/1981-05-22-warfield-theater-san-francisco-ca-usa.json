@@ -1,0 +1,141 @@
+{
+  "url": "https://jerrygarcia.com/show/1981-05-22-warfield-theater-san-francisco-ca-usa/",
+  "show_id": "1981-05-22-warfield-theater-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Warfield Theater",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1981-05-22",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Deep Elem Blues",
+          "url": "https://jerrygarcia.com/song/deep-elem-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Race Is On",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Monkey And The Engineer",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Oh Babe, It Ain't No Lie",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "On The Road Again",
+          "url": "https://jerrygarcia.com/song/on-the-road-again/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Ripple",
+          "url": "https://jerrygarcia.com/song/ripple/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Oh Boy",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Country Joe McDonald",
+    "Merl Saunders & Norton Buffalo"
+  ],
+  "collection_timestamp": "2025-08-10T08:44:25.952982",
+  "show_time": null,
+  "recordings": [
+    "gd1981-05-22.nak300.walker.scotton.miller.95938.sbeok.flac16",
+    "gd81-05-22.aud.munder.9829.sbeok.shnf",
+    "gd1981-05-22.151657.senn421.aprea.hance.flac2488",
+    "gd1981-05-22.aud.angus-hart.jupille.75972.flac16"
+  ],
+  "best_recording": "gd1981-05-22.nak300.walker.scotton.miller.95938.sbeok.flac16",
+  "avg_rating": 1.759090909090909,
+  "raw_rating": 4.0,
+  "recording_count": 4,
+  "confidence": 1.0,
+  "total_high_ratings": 10,
+  "total_low_ratings": 0,
+  "source_types": {
+    "UNKNOWN": 2,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

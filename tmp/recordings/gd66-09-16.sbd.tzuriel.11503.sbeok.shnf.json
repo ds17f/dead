@@ -1,0 +1,158 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-09-16",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "I Know You Rider",
+      "duration": 166.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 160.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 171.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dancin' In The Street",
+      "duration": 260.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track04.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Midnight Hour",
+      "duration": 643.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 420.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lindy",
+      "duration": 115.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Stealin'",
+      "duration": 108.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track08.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Same Thing (probably from another date)",
+      "duration": 412.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Vintage-Historic-Dead_Track09.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Vintage-Historic-Dead_Track09.shn"
+        }
+      ]
+    }
+  ]
+}

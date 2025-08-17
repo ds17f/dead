@@ -1,0 +1,418 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-05-07",
+  "venue": "Frost Ampitheater",
+  "location": "Stanford, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Aiko Aiko",
+      "duration": 362.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t01.mp3",
+          "bitrate": "140"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t01_vbr.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 336.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t02.mp3",
+          "bitrate": "139"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t02_vbr.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 297.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t03.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t03_vbr.mp3",
+          "bitrate": "117"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 190.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t04.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t04_vbr.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 179.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t05.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t05_vbr.mp3",
+          "bitrate": "117"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Built To Last",
+      "duration": 221.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t06.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t06_vbr.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Picasso Moon",
+      "duration": 280.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t07.mp3",
+          "bitrate": "136"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t07_vbr.mp3",
+          "bitrate": "120"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 517.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t08.mp3",
+          "bitrate": "136"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t08_vbr.mp3",
+          "bitrate": "117"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Foolish Heart",
+      "duration": 403.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t09.mp3",
+          "bitrate": "136"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t09_vbr.mp3",
+          "bitrate": "117"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Victim Or The Crime",
+      "duration": 265.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d01t10.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d01t10.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t10_vbr.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Fingers",
+      "duration": 393.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t01.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t01_vbr.mp3",
+          "bitrate": "117"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart, Woman Smarter",
+      "duration": 313.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t02.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t02_vbr.mp3",
+          "bitrate": "116"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 598.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t03.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t03_vbr.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 348.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t04.mp3",
+          "bitrate": "139"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t04_vbr.mp3",
+          "bitrate": "125"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 342.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t05.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t05_vbr.mp3",
+          "bitrate": "118"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter",
+      "duration": 170.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t06.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t06_vbr.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Peter Continued",
+      "duration": 235.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t07_vbr.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t07ii_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Turn On Your Lovelight",
+      "duration": 308.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t08.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t08_vbr.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 310.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "d02t09.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "d02t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t09_vbr.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

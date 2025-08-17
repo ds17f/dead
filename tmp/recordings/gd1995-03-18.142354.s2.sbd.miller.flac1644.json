@@ -1,0 +1,190 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-03-18",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "It's All Too Much",
+      "duration": 422.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ItsAllTooMuch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ItsAllTooMuch.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Iko Iko",
+      "duration": 704.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02IkoIko.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Playing In The Band",
+      "duration": 642.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03PlayingInTheBand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Uncle John's Band",
+      "duration": 771.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04UncleJohnsBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 709.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Drums.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space",
+      "duration": 911.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Last Time",
+      "duration": 407.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TheLastTime.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Visions Of Johanna",
+      "duration": 607.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08VisionsOfJohanna.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08VisionsOfJohanna.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "One More Saturday Night",
+      "duration": 312.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09OneMoreSaturdayNight.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Encore Break",
+      "duration": 20.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10EncoreBreak.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Rain",
+      "duration": 239.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Rain.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

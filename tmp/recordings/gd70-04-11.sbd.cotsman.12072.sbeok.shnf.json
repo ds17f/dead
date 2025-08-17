@@ -1,0 +1,46 @@
+{
+  "rating": 2.2,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-04-11",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.4,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Not Fade Away",
+      "duration": 69.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-04-11d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-04-11d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Turn On Your Lovelight",
+      "duration": 1055.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-04-11d1t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-04-11d1t02.shn"
+        }
+      ]
+    }
+  ]
+}

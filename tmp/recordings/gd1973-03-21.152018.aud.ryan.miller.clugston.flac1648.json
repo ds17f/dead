@@ -1,0 +1,462 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1973-03-21",
+  "venue": "Utica Memorial Auditorium",
+  "location": "Utica, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Bertha",
+      "duration": 429.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t01 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t01 Bertha.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Me & My Uncle",
+      "duration": 214.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t02 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t02 M & MU.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Wave That Flag",
+      "duration": 381.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t03 Wave That Flag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t03 Wave That Flag.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Looks Like Rain",
+      "duration": 473.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t04 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t04 LLR.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Tennessee Jed",
+      "duration": 470.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t05 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t05 T Jed.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Box Of Rain",
+      "duration": 301.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t06 Box Of Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t06 Box Of Rain.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "You Ain't Woman Enough",
+      "duration": 226.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t07 You Ain't Woman Enough.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t07 You Ain't Woman Enough.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Jack Straw",
+      "duration": 369.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t08 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t08 Jack Straw.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Row Jimmy",
+      "duration": 544.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t09 Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t09 Row Jimmy.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Beat It On Down The Line",
+      "duration": 221.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t10 BIODTL.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t10 BIODTL.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Here Comes Sunshine",
+      "duration": 526.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t11 HCS.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t11 HCS.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "The Race Is On",
+      "duration": 223.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t12 Race Is On.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t12 Race Is On.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "113",
+      "title": "Loser",
+      "duration": 483.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t13 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t13 Loser.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "114",
+      "title": "El Paso",
+      "duration": 265.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t14 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t14 El Paso.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "115",
+      "title": "China Cat Sunflower >",
+      "duration": 460.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t15 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t15 China Cat.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "116",
+      "title": "I Know You Rider//",
+      "duration": 160.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t16 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t16 IKYR.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "117",
+      "title": "Playin' In The Band",
+      "duration": 961.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s1t17 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s1t17 Playin'.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Greatest Story Ever Told",
+      "duration": 325.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t01 GSET.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t01 GSET.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "They Love Each Other",
+      "duration": 351.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t02 TLEO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t02 TLEO.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Mexicali Blues",
+      "duration": 206.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t03 Mexicali.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t03 Mexicali.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Brown Eyed Women",
+      "duration": 302.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t04 BEW.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t04 BEW.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Take A Step Back",
+      "duration": 89.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t05 Take A Step Back.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t05 Take A Step Back.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Big River",
+      "duration": 252.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t06 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t06 Big River.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Brokedown Palace",
+      "duration": 338.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t07 Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t07 Brokedown.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "//WRS Prelude >",
+      "duration": 66.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t08 WRS Prelude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t08 WRS Prelude.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Dark Star >",
+      "duration": 1287.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t09 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t09 Dark Star.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Eyes Of The World >",
+      "duration": 1005.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t10 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t10 Eyes.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Wharf Rat//",
+      "duration": 583.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-21 s2t11 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-21 s2t11 Wharf Rat.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

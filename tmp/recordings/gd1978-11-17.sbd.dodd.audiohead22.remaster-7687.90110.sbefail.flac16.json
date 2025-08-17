@@ -1,0 +1,174 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-11-17",
+  "venue": "Rambler Room, Loyola College",
+  "location": "Chicago, IL",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Winin' Boy Blues",
+      "duration": 251.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t01.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tom Dooley",
+      "duration": 219.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t02.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "This Time Forever",
+      "duration": 343.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t03.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Deep Elem Blues",
+      "duration": 213.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t04.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "KC Moan",
+      "duration": 279.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t05.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 499.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t06.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Boy Pete",
+      "duration": 188.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t07.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jack A Roe",
+      "duration": 291.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t08.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Dark Hollow",
+      "duration": 274.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t09.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Oh Boy",
+      "duration": 154.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-11-17.d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-17.d1t10.mp3",
+          "bitrate": "164"
+        }
+      ]
+    }
+  ]
+}

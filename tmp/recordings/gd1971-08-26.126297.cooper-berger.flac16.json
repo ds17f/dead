@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1971-08-26",
+  "venue": "Gaelic Park",
+  "location": "Bronx, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cumberland Blues/",
+      "duration": 81.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One",
+      "duration": 1057.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t02.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Next Time You See Me",
+      "duration": 286.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me & Bobby McGee/",
+      "duration": 150.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Uncle John's Band",
+      "duration": 386.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t05.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Saint Stephen >",
+      "duration": 329.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t06.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Not Fade Away >",
+      "duration": 270.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t07.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Goin' Down The Road Feelin' Bad >",
+      "duration": 480.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t08.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away",
+      "duration": 179.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t09.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Johnny B. Goode",
+      "duration": 201.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-08-26d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-08-26d1t10.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

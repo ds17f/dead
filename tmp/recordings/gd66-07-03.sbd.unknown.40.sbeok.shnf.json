@@ -1,0 +1,126 @@
+{
+  "rating": 2.9555555555555553,
+  "review_count": 18,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1966-07-03",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.222222222222222,
+  "high_ratings": 14,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Stealin'",
+      "duration": 277.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jam",
+      "duration": 73.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t09.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Hey Little One",
+      "duration": 145.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t10.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Hog For You Baby",
+      "duration": 110.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t11.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "You Don't Have To Ask",
+      "duration": 276.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t12.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cold Rain and Snow",
+      "duration": 124.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t13.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Next Time You See Me",
+      "duration": 83.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-03d1t14.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-03d1t14.shn"
+        }
+      ]
+    }
+  ]
+}

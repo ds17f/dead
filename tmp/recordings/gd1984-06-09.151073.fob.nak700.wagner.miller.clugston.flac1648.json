@@ -1,0 +1,318 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-06-09",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 124.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t01 Crowd.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Iko Iko",
+      "duration": 639.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t02 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t02 Iko Iko.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Hell In A Bucket",
+      "duration": 370.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t03 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t03 Hell In A Bucket.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Loser",
+      "duration": 488.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t04 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t04 Loser.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Cassidy",
+      "duration": 386.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t05 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t05 Cassidy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Dupree's Diamond Blues",
+      "duration": 422.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t06 Dupree's.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t06 Dupree's.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "CC Rider",
+      "duration": 480.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t07 CC Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t07 CC Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Deal",
+      "duration": 566.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s1t08 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s1t08 Deal.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 74.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t01 Crowd.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Need A Miracle >",
+      "duration": 289.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t02 Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t02 Miracle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Bertha",
+      "duration": 495.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t03 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t03 Bertha.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Playin' In The Band >",
+      "duration": 741.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t04 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t04 Playin'.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "China Doll > Jam >",
+      "duration": 750.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t05 China Doll_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t05 China Doll_Jam.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 424.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t06 Drums.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space > Jam >",
+      "duration": 671.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t07 Space_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t07 Space_Jam.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Playin' In The Band Reprise >",
+      "duration": 188.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t08 Playin' Reprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t08 Playin' Reprise.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Black Peter >",
+      "duration": 540.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t09 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t09 Black Peter.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Sugar Magnolia",
+      "duration": 591.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t10 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t10 Sugar Mag.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E: Keep Your Day Job",
+      "duration": 262.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-06-09 s2t11 E_Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-06-09 s2t11 E_Day Job.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

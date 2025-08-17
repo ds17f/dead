@@ -1,0 +1,318 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1984-10-15",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 4.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "\"noodling\"",
+      "duration": 42.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 397.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 653.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 306.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 812.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "C C Rider",
+      "duration": 524.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 530.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jack Straw",
+      "duration": 392.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Keep Your Day Job",
+      "duration": 290.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t09.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias",
+      "duration": 683.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain",
+      "duration": 1089.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band **",
+      "duration": 1262.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 17.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 385.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel",
+      "duration": 299.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Wharf Rat",
+      "duration": 515.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Playing In The Band",
+      "duration": 146.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia",
+      "duration": 502.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 457.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

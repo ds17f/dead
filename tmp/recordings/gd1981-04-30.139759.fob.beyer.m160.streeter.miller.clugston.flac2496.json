@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-04-30",
+  "venue": "Greensboro Coliseum",
+  "location": "Greensboro, NC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-04-30 s1 tCrowd",
+      "duration": 218.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T01Crowd.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-04-30 s1 tJack Straw",
+      "duration": 371.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T02JackStraw.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-04-30 s1 tPeggy O",
+      "duration": 403.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T03PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T03PeggyO.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-04-30 s1 tCC Rider",
+      "duration": 539.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T04CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T04CcRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-04-30 s1 tAlabama Getaway",
+      "duration": 297.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T05AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T05AlabamaGetaway.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-04-30 s1 tGreatest Story Ever Told",
+      "duration": 303.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T06GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T06GreatestStoryEverTold.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-04-30 s1 tLoser",
+      "duration": 431.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T07Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T07Loser.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-04-30 s1 tLooks Like Rain",
+      "duration": 515.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T08LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T08LooksLikeRain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-04-30 s1 tChina Cat Sunflower",
+      "duration": 383.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T09ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T09ChinaCatSunflower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-04-30 s1 tI Know You Rider",
+      "duration": 342.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S1T10IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S1T10IKnowYouRider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-04-30 s2 t01 Shakedown Street",
+      "duration": 762.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T01ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T01ShakedownStreet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-04-30 s2 t02 Samson & Delilah",
+      "duration": 515.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T02SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T02SamsonDelilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-04-30 s2 t03 It Must Have Been The Roses",
+      "duration": 423.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T03ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T03ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-04-30 s2 t04 Estimated Prophet",
+      "duration": 694.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T04EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T04EstimatedProphet.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-04-30 s2 t05 Eyes Of The World",
+      "duration": 464.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T05EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T05EyesOfTheWorld.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-04-30 s2 t06 Drums",
+      "duration": 532.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T06Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-04-30 s2 t07 Space",
+      "duration": 206.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T07Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-04-30 s2 t08 Truckin'",
+      "duration": 488.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T08Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T08Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-04-30 s2 t09 Black Peter",
+      "duration": 571.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T09BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T09BlackPeter.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-04-30 s2 t10 Around & Around",
+      "duration": 231.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T10AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T10AroundAround.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd81-04-30 s2 t11 Johnny B. Goode",
+      "duration": 262.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T11JohnnyB.Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T11JohnnyB.Goode.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd81-04-30 s2 t12 Casey Jones",
+      "duration": 354.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-04-30S2T12CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-04-30S2T12CaseyJones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

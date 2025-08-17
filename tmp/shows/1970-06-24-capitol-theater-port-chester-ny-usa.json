@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-06-24-capitol-theater-port-chester-ny-usa/",
+  "show_id": "1970-06-24-capitol-theater-port-chester-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Capitol Theater",
+  "location_raw": "Port Chester, NY",
+  "city": "Port Chester",
+  "state": "NY",
+  "country": "USA",
+  "date": "1970-06-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deep Elem Blues",
+          "url": "https://jerrygarcia.com/song/deep-elem-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Monkey And The Engineer",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Rub",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Silver Threads And Golden Needles",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Jordan*",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Easy Wind",
+          "url": "https://jerrygarcia.com/song/easy-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dark Star",
+          "url": "https://jerrygarcia.com/song/dark-star/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Swing Low (Sweet Chariot)",
+          "url": "https://jerrygarcia.com/song/swing-low-sweet-chariot/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "New Riders of the Purple Sage"
+  ],
+  "collection_timestamp": "2025-08-10T08:19:04.262427",
+  "show_time": "late",
+  "recordings": [
+    "gd_nrps70-06-24.aud.pcrp5.23062.sbeok.flacf",
+    "gd1970-06-24.late.aud.harlan.9330.sbefail.shnf",
+    "gd1970-06-24.aud.lee.5339.sbeok.shnf",
+    "gd1970-06-24.124175.cooper.berger.flac16",
+    "gd1970-06-24.aud.lai.7467.sbefail.shnf",
+    "gd1970-06-24.aud.cooper.coopernicus.32710.flac16",
+    "gd1970-06-24.145261.late.SonyF95.lee.hance.sirmick.flac1644",
+    "gd1970-06-24.aud.unknown.gadsden-reynolds.100223.flac16",
+    "gd1970-06-24.late-partial.aud.moore.berger.98880.flac16"
+  ],
+  "best_recording": "gd_nrps70-06-24.aud.pcrp5.23062.sbeok.flacf",
+  "avg_rating": 2.2978290366350063,
+  "raw_rating": 4.635514018691588,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 98,
+  "total_low_ratings": 1,
+  "source_types": {
+    "AUD": 7,
+    "UNKNOWN": 2
+  },
+  "matching_method": "time_based",
+  "filtering_applied": [
+    "show_time: late"
+  ],
+  "collections": [
+    "pigpen-years"
+  ]
+}

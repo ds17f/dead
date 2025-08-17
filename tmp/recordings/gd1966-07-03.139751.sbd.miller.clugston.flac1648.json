@@ -1,0 +1,158 @@
+{
+  "rating": 2.4266666666666663,
+  "review_count": 3,
+  "source_type": "AUD",
+  "confidence": 0.6,
+  "date": "1966-07-03",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd66-07-03 tDancin' In The Street",
+      "duration": 476.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T01DancinInTheStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T01DancinInTheStreet.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd66-07-03 tI Know You Rider",
+      "duration": 109.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T02IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T02IKnowYouRider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd66-07-tHe Was A Friend Of Mine",
+      "duration": 256.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T03HeWasAFriendOfMine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T03HeWasAFriendOfMine.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd66-07-03 tNext Time You See Me",
+      "duration": 215.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T04NextTimeYouSeeMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T04NextTimeYouSeeMe.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd66-07-03 tViola Lee Blues",
+      "duration": 473.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T05ViolaLeeBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T05ViolaLeeBlues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd66-07-03 tBig Boss Man",
+      "duration": 236.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T06BigBossMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T06BigBossMan.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd66-07-03 tSittin' On Top Of The World",
+      "duration": 151.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T07SittinOnTopOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T07SittinOnTopOfTheWorld.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd66-07-03 tDon't Ease Me In",
+      "duration": 123.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T08DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T08DontEaseMeIn.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd66-07-03 tStealin'",
+      "duration": 160.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd66-07-03T09Stealin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd66-07-03T09Stealin.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

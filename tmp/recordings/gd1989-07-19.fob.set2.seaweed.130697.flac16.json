@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-07-19",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 46.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Box Of Rain >",
+      "duration": 290.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Foolish Heart >",
+      "duration": 707.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Looks Like Rain >",
+      "duration": 523.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Terrapin >",
+      "duration": 920.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums...",
+      "duration": 40.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space >",
+      "duration": 99.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One >",
+      "duration": 412.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Wheel >",
+      "duration": 232.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Morning Dew",
+      "duration": 733.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "encore break -",
+      "duration": 53.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Turn On Your Lovelight...",
+      "duration": 405.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-02-05",
+  "venue": "Uni Dome, U of Northern Iowa",
+  "location": "Cedar Falls, IA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Samson & Delilah",
+      "duration": 699.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t01.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "lumberjack joke",
+      "duration": 101.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t02.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Scarlet Begonias >",
+      "duration": 752.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t03.mp3",
+          "bitrate": "136"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Fire on the Mountain",
+      "duration": 997.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t04.mp3",
+          "bitrate": "137"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Truckin' >",
+      "duration": 608.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t05.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums >",
+      "duration": 114.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t06.mp3",
+          "bitrate": "137"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Other One >",
+      "duration": 541.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t07.mp3",
+          "bitrate": "137"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat >",
+      "duration": 544.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t08.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Around & Around",
+      "duration": 493.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t09.mp3",
+          "bitrate": "138"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Encore: U.S. Blues",
+      "duration": 381.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-02-05s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-05s2t10.mp3",
+          "bitrate": "137"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-02-02",
+  "venue": "Crystal Ballroom",
+  "location": "Portland, OR",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cryptical Envelopment >",
+      "duration": 66.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t1.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One >",
+      "duration": 120.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t2.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envelopment >",
+      "duration": 241.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t3.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Clementine >",
+      "duration": 229.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t4.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "New Potato Caboose >",
+      "duration": 328.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t5.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Born Cross-Eyed >",
+      "duration": 125.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t6.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Spanish Jam",
+      "duration": 180.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23t7.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-23t7.shn"
+        }
+      ]
+    }
+  ]
+}

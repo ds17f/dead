@@ -1,0 +1,255 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1981-11-30",
+  "venue": "Hara Arena",
+  "location": "Dayton, OH",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Minglewood Blues",
+      "duration": 353.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mack The Knife",
+      "duration": 665.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Bird Song >",
+      "duration": 834.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Little Red Rooster",
+      "duration": 415.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t04.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "They Love Each Other",
+      "duration": 417.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cassidy",
+      "duration": 430.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Tennessee Jed",
+      "duration": 601.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Let It Grow >",
+      "duration": 589.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t08.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Don't Ease Me In",
+      "duration": 267.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t09.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d2t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Women Are Smarter",
+      "duration": 424.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-11-30d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-11-30d1t10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

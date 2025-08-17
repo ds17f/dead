@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-04-05",
+  "venue": "Jefferson Civic Center Coliseum",
+  "location": "Birmingham, AL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTouch Of Grey",
+      "duration": 424.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01TouchOfGrey.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackWang Dang Doodle",
+      "duration": 406.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02WangDangDoodle.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackStagger Lee",
+      "duration": 545.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03StaggerLee.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackMe And My Uncle",
+      "duration": 165.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04MeAndMyUncle.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackMaggies Farm",
+      "duration": 541.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05MaggiesFarm.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackRow Jimmy",
+      "duration": 640.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06RowJimmy.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackMusic Never Stopped",
+      "duration": 506.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07MusicNeverStopped.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc02.TrackDrums",
+      "duration": 829.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02.track08Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02.track08Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc02,Track01 Tuning",
+      "duration": 107.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc02,Track02 Here Comes Sunshine",
+      "duration": 426.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02HereComesSunshine.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track03 Way To Go home",
+      "duration": 391.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03WayToGoHome.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track04 Truckin",
+      "duration": 525.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04Truckin.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track05 That Would Be Something",
+      "duration": 344.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05ThatWouldBeSomething.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05ThatWouldBeSomething.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track06 Uncle Johns Band",
+      "duration": 933.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06UncleJohnsBand.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc02,Track07 Matilda",
+      "duration": 596.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track07Matilda.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track07Matilda.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc03,Track01 Space",
+      "duration": 808.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track01Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc03,Track02 I Need A Miracle",
+      "duration": 299.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track02INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track02INeedAMiracle.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc03,Track03 Morning Dew",
+      "duration": 726.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track03MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track03MorningDew.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Disc03,Track04 Johnny B Goode",
+      "duration": 281.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track04JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track04JohnnyBGoode.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

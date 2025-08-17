@@ -1,0 +1,30 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1984-10-31",
+  "venue": "Berkeley Community Theater",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 898.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-31t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-31t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

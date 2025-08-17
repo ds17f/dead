@@ -1,0 +1,126 @@
+{
+  "rating": 2.1363636363636362,
+  "review_count": 22,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-04-08",
+  "venue": "KPIX-TV Studios",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.2727272727272725,
+  "high_ratings": 18,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "The Wildflowers - Please Come Home",
+      "duration": 138.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "announcer's intro",
+      "duration": 13.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Ralph Gleason interviews Jerry Garcia",
+      "duration": 157.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Grateful Dead - Cream Puff War",
+      "duration": 147.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "QMS - Pride Of Man",
+      "duration": 146.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "QMS & Dead composite - Walkin' Blues",
+      "duration": 89.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "announcer's outro",
+      "duration": 12.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-maze-t07.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-maze-t07.shn"
+        }
+      ]
+    }
+  ]
+}

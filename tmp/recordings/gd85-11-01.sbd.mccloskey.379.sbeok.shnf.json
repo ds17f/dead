@@ -1,0 +1,382 @@
+{
+  "rating": 1.7142857142857142,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1985-11-01",
+  "venue": "Richmond Coliseum",
+  "location": "Richmond, VA",
+  "raw_rating": 3.4285714285714284,
+  "high_ratings": 4,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dancin' In The Streets",
+      "duration": 300.49,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T01.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T01.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cold Rain and Snow",
+      "duration": 335.02,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T02.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T02.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Little Red Rooster",
+      "duration": 350.57,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T03.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T03.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Stagger Lee",
+      "duration": 254.44,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T04.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Me & My Uncle",
+      "duration": 121.89,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T05.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T05.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Big River",
+      "duration": 248.14,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T06.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T06.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Brown-eyed Women",
+      "duration": 196.95,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T07.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T07.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Jack Straw",
+      "duration": 233.62,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T08.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T08.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Don't Ease Me In",
+      "duration": 132.25,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T09.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T09.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "SetII",
+      "duration": 28.22,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T10.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T10.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson & Delilah",
+      "duration": 272.45,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T11.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T11.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "HighTime",
+      "duration": 280.59,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D1T12.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D1T12.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 435.62,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T01.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T01.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Spoonful",
+      "duration": 195.28,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T02.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T02.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Comes a Time",
+      "duration": 324.07,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T03.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T03.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Lost Sailor",
+      "duration": 287.66,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T04.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T04.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 287.5,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T05.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T05.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 401.37,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T06.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T06.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Saint of Circumstance",
+      "duration": 304.09,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T07.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T07.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Gimme Some Lovin'",
+      "duration": 178.61,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T08.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "She Belongs to Me",
+      "duration": 297.93,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T09.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Gloria",
+      "duration": 237.08,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T10.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Day Job",
+      "duration": 187.66,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "85-11-01D2T11.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "85-11-01D2T11.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

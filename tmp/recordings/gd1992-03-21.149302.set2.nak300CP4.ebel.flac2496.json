@@ -1,0 +1,124 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-03-21",
+  "venue": "Copps Coliseum",
+  "location": "Hamilton, ON",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 87.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Tuning.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Way To Go Home",
+      "duration": 377.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Way To Go Home.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Corrina",
+      "duration": 599.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Corrina.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Terrapin Station",
+      "duration": 1131.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Terrapin Station.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drumz",
+      "duration": 877.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Drumz.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space",
+      "duration": 607.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Space.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Last Time",
+      "duration": 351.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 The Last Time.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Black Peter",
+      "duration": 563.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Black Peter.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "One More Saturday Night",
+      "duration": 445.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 One More Saturday Night.flac"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Box Of Rain",
+      "duration": 309.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Box Of Rain.flac"
+        }
+      ]
+    }
+  ]
+}

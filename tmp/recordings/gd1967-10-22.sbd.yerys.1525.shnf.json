@@ -1,0 +1,158 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-10-22",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 235.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Potato Caboose",
+      "duration": 354.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Hurts Me, Too",
+      "duration": 144.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cold, Rain, & Snow",
+      "duration": 119.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Lovelight//",
+      "duration": 430.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat it on Down the Line",
+      "duration": 86.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical Envelopment >",
+      "duration": 40.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t07.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One >",
+      "duration": 155.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t08.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cryptical Envelopment",
+      "duration": 291.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22d1t09.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-10-22d1t09.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-10-02",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 79.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow",
+      "duration": 420.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ColdRainAndSnow.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 536.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LittleRedRooster.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stagger Lee",
+      "duration": 409.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04StaggerLee.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 186.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 356.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Row Jimmy",
+      "duration": 644.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07RowJimmy.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Far From Me",
+      "duration": 267.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08FarFromMe.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 787.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower",
+      "duration": 359.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ChinaCatSunflower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 326.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11IKnowYouRider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 488.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ManSmartwomanSmarter.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Ship Of Fools",
+      "duration": 476.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ShipOfFools.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin'",
+      "duration": 568.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 503.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 460.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 295.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Gimme Some Lovin'",
+      "duration": 295.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GimmeSomeLovin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "All Along The Watchtower",
+      "duration": 382.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19AllAlongTheWatchtower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Don't Ease Me In",
+      "duration": 212.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20DontEaseMeIn.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 173.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Black Muddy River",
+      "duration": 370.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22BlackMuddyRiver.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1988-07-31",
+  "venue": "Laguna Seca Recreation Area",
+  "location": "Monterey, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 102.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 565.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02MississippiHalf-stepUptownToodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02MississippiHalf-stepUptownToodeloo.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 482.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LittleRedRooster.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West LA Fadeaway",
+      "duration": 467.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WestLaFadeaway.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 194.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 390.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BigRiver.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Ramble On Rose",
+      "duration": 467.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07RambleOnRose.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Gentlemen Start Your Engines",
+      "duration": 296.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08GentlemenStartYourEngines.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08GentlemenStartYourEngines.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "When I Paint My Masterpiece",
+      "duration": 358.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Bird Song",
+      "duration": 730.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10BirdSong.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

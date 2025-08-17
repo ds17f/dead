@@ -1,0 +1,382 @@
+{
+  "rating": 3.4461538461538463,
+  "review_count": 13,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1981-09-26",
+  "venue": "Buffalo Auditorium",
+  "location": "Buffalo, NY",
+  "raw_rating": 4.923076923076923,
+  "high_ratings": 13,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 800.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "C.C. Rider",
+      "duration": 484.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 416.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 329.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack A Roe",
+      "duration": 265.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "On The Road Again",
+      "duration": 200.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Ramble On Rose",
+      "duration": 392.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 604.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Brown Eyed Women",
+      "duration": 350.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Let It Grow",
+      "duration": 676.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 221.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d1t11.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 56.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' In The Band >",
+      "duration": 607.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Bertha >",
+      "duration": 409.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet >",
+      "duration": 612.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 425.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drumz/",
+      "duration": 482.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "/DrumSpace >",
+      "duration": 151.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away >",
+      "duration": 356.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Morning Dew >",
+      "duration": 609.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Playin' Reprise >",
+      "duration": 167.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "One More Saturday Night",
+      "duration": 291.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Johnny B. Goode",
+      "duration": 265.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-09-26d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-09-26d2t12.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

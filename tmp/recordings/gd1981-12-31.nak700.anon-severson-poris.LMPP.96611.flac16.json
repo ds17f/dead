@@ -1,0 +1,654 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1981-12-31",
+  "venue": "Oakland Auditorium",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Land Of A Thousand Dances",
+      "duration": 215.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Do Right Woman",
+      "duration": 169.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Boxer",
+      "duration": 274.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tunisian New Year Song",
+      "duration": 139.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And Bobby McGee",
+      "duration": 297.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bye Bye Love",
+      "duration": 161.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lucifer's Eyes",
+      "duration": 338.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Children Of The 80's",
+      "duration": 357.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Banks Of The Ohio",
+      "duration": 316.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d1t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crowd/Banter",
+      "duration": 108.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Shakedown Street",
+      "duration": 898.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crowd/Banter",
+      "duration": 71.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Me And My Uncle ->",
+      "duration": 174.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Mexicali Blues",
+      "duration": 287.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Cold Rain And Snow",
+      "duration": 388.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "C C Rider",
+      "duration": 542.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "It Must Have Been The Roses ->",
+      "duration": 385.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Beat It On Down The Line",
+      "duration": 215.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Crowd/Banter",
+      "duration": 67.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t10.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Big Boss Man ->",
+      "duration": 349.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "New Minglewood Blues",
+      "duration": 377.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t12.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Don't Ease Me In",
+      "duration": 195.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d2t13.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Ken Kesey Banter/Midnight Countdown",
+      "duration": 375.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Iko Iko",
+      "duration": 426.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Crowd/Banter",
+      "duration": 84.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Playing In The Band ->",
+      "duration": 879.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Terrapin Station ->",
+      "duration": 729.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Playing In The Band ->",
+      "duration": 278.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Drums ->",
+      "duration": 616.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Space ->",
+      "duration": 666.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d3t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "The Other One ->",
+      "duration": 375.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Not Fade Away ->",
+      "duration": 431.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 439.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Morning Dew",
+      "duration": 623.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Crowd/Banter",
+      "duration": 33.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Dark Star ->",
+      "duration": 876.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Bertha ->",
+      "duration": 376.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Good Lovin'",
+      "duration": 617.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 433.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "The Chinese Joke",
+      "duration": 125.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1981-12-31.d4t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1981-12-31.d4t10.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

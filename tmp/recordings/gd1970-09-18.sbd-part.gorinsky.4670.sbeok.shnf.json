@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-09-18",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Operator*",
+      "duration": 87.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-18t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-09-18t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dancin' In The Streets",
+      "duration": 463.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-18t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-09-18t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St. Stephen >",
+      "duration": 217.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-18t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-09-18t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Not Fade Away>",
+      "duration": 346.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-18t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-09-18t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Good Lovin'",
+      "duration": 430.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-18t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-09-18t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "And We Bid You Goodnight",
+      "duration": 92.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-18t06.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-09-18t06.shn"
+        }
+      ]
+    }
+  ]
+}

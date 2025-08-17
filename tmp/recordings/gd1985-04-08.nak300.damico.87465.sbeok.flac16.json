@@ -1,0 +1,366 @@
+{
+  "rating": 1.0499999999999998,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1985-04-08",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 3.0,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "In The Midnight Hour >",
+      "duration": 270.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Walkin' The Dog >",
+      "duration": 211.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Big Boss Man",
+      "duration": 358.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me & My Uncle >",
+      "duration": 178.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cumberland Blues",
+      "duration": 343.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Down In The Bottom > I Ain't Superstitious",
+      "duration": 386.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Althea",
+      "duration": 505.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tons Of Steel >",
+      "duration": 303.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Supplication >",
+      "duration": 245.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Might As Well",
+      "duration": 265.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc110.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Revolution",
+      "duration": 358.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc111.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Hell In A Bucket >",
+      "duration": 384.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc112.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc112.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Touch Of Grey",
+      "duration": 368.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc113.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc113.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Estimated Prophet >",
+      "duration": 604.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Eyes Of The World >",
+      "duration": 612.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 483.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 725.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Going Down The Road Feeling Bad >",
+      "duration": 344.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue >",
+      "duration": 394.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around & Around >",
+      "duration": 231.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 500.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc208.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Brokedown Palace",
+      "duration": 322.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc209.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

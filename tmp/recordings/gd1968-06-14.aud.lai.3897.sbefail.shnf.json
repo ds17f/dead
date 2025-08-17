@@ -1,0 +1,158 @@
+{
+  "rating": 2.1875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-06-14",
+  "venue": "Fillmore East",
+  "location": "New York , NY",
+  "raw_rating": 4.375,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Space >",
+      "duration": 233.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t101.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t101.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Eleven >",
+      "duration": 461.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t102.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t102.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St Stephen",
+      "duration": 416.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t103.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t103.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Alligator >",
+      "duration": 212.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t104.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t104.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Turn On Your Lovelight >",
+      "duration": 694.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t105.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t105.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Caution (Do Not Stop On Tracks) >",
+      "duration": 249.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t106.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t106.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums >",
+      "duration": 148.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t107.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t107.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Caution (Do Not Stop On Tracks) >",
+      "duration": 1061.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t108.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t108.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Feedback",
+      "duration": 270.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14t109.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14t109.shn"
+        }
+      ]
+    }
+  ]
+}

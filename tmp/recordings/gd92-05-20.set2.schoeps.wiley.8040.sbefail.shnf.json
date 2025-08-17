@@ -1,0 +1,190 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-05-20",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 132.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d1t1.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d1t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Box of Rain",
+      "duration": 442.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d1t2.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d1t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Truckin'",
+      "duration": 456.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d1t3.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d1t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Crazy Fingers",
+      "duration": 505.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d1t4.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d1t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Saint of Circumstance",
+      "duration": 440.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d1t5.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d1t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Drums",
+      "duration": 1274.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d1t6.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d1t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Jam",
+      "duration": 724.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d2t1.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d2t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "The Other One",
+      "duration": 476.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d2t2.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d2t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Wharf Rat",
+      "duration": 596.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d2t3.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d2t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around and Around",
+      "duration": 529.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d2t4.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d2t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "US Blues",
+      "duration": 1484.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-05-20set2d2t5.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd92-05-20set2d2t5.shn"
+        }
+      ]
+    }
+  ]
+}

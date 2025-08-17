@@ -1,0 +1,334 @@
+{
+  "rating": 1.2375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1995-02-20",
+  "venue": "Delta Center",
+  "location": "Salt Lake City, UT",
+  "raw_rating": 2.75,
+  "high_ratings": 2,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd95-02-20 s1tBertha",
+      "duration": 383.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t01Bertha.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd95-02-20 s1tGreatest Story Ever Told",
+      "duration": 262.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t02GreatestStoryEverTold.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd95-02-20 s1tLoser",
+      "duration": 473.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t03Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t03Loser.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd95-02-20 s1tLittle Red Rooster",
+      "duration": 494.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t04LittleRedRooster.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd95-02-20 s1tRamble On Rose",
+      "duration": 527.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t05RambleOnRose.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd95-02-20 s1tEl Paso",
+      "duration": 417.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t06ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t06ElPaso.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd95-02-20 s1tLazy River Road",
+      "duration": 444.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t07LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t07LazyRiverRoad.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd95-02-20 s1tCassidy",
+      "duration": 425.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S1t08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S1t08Cassidy.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd95-02-20 s2t01 Box Of Rain",
+      "duration": 299.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t01BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t01BoxOfRain.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd95-02-20 s2t02 Eyes Of The World",
+      "duration": 668.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t02EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t02EyesOfTheWorld.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd95-02-20 s2t03 Playin' In The Band",
+      "duration": 367.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t03PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t03PlayinInTheBand.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd95-02-20 s2t04 Uncle John's Band",
+      "duration": 914.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t04UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t04UncleJohnsBand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd95-02-20 s2t05 Drums",
+      "duration": 451.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t05Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t05Drums.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd95-02-20 s2t06 Space",
+      "duration": 930.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t06Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t06Space.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd95-02-20 s2t07 The Last Time",
+      "duration": 373.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t07TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t07TheLastTime.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd95-02-20 s2t08 Stella Blue",
+      "duration": 474.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t08StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t08StellaBlue.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd95-02-20 s2t09 Throwing Stones",
+      "duration": 561.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t09ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t09ThrowingStones.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd95-02-20 s2t10 Not Fade Away",
+      "duration": 330.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t10NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t10NotFadeAway.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd95-02-20 s2t11 Encore Break",
+      "duration": 52.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t11EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t11EncoreBreak.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd95-02-s2t12 Rain",
+      "duration": 282.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd95-02-20S2t12Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd95-02-20S2t12Rain.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

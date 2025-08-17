@@ -1,0 +1,142 @@
+{
+  "rating": 2.227272727272727,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-02-03",
+  "venue": "Crystal Ballroom",
+  "location": "Portland, OR",
+  "raw_rating": 4.454545454545454,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "That's It For The Other One ->",
+      "duration": 452.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t01.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Potato Caboose",
+      "duration": 540.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t02.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Hurts Me Too",
+      "duration": 245.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t03.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Born Cross-Eyed",
+      "duration": 261.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t04.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 929.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t05.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dark Star ->",
+      "duration": 322.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t06.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Cat Sunflower ->",
+      "duration": 200.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t07.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Eleven",
+      "duration": 633.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-03d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-03d1t08.mp3",
+          "bitrate": "157"
+        }
+      ]
+    }
+  ]
+}

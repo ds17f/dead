@@ -1,0 +1,126 @@
+{
+  "rating": 1.875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-03-29",
+  "venue": "Ice Palace",
+  "location": "Las Vegas, NV",
+  "raw_rating": 3.75,
+  "high_ratings": 6,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Morning Dew",
+      "duration": 346.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t01.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 343.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t02.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Doin' That Rag",
+      "duration": 273.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dark Star",
+      "duration": 524.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t04.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Saint Stephen",
+      "duration": 241.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Eleven",
+      "duration": 414.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t06.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Turn On Your Lovelight",
+      "duration": 515.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-29d1t07.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-29d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-03-28",
+  "venue": "Gruga Halle",
+  "location": "Essen, Germany",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Drums",
+      "duration": 97.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-28set2pt01.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-03-28set2pt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Not Fade Away",
+      "duration": 459.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-28set2pt02.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-03-28set2pt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Wharf Rat",
+      "duration": 370.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-28set2pt03.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-03-28set2pt03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Around and Around",
+      "duration": 161.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-28set2pt04.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-03-28set2pt04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Good Lovin'",
+      "duration": 328.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-28set2pt05.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-03-28set2pt05.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1980-10-14",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 318.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Hollow",
+      "duration": 244.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

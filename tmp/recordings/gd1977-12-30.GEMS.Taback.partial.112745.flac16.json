@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1977-12-30",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step",
+      "duration": 603.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track1.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 231.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track2.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Looks Like Rain",
+      "duration": 484.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track3.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 548.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track4.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 425.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track5.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 411.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track6.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Let It Grow",
+      "duration": 780.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track7.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track7.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ship of Fools",
+      "duration": 398.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track8.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track8.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Eyes of the World//",
+      "duration": 553.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-12-30.GEMS.track9.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-12-30.GEMS.track9.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

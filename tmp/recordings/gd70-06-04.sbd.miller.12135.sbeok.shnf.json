@@ -1,0 +1,62 @@
+{
+  "rating": 2.2777777777777777,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-06-04",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.555555555555555,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Not Fade Away",
+      "duration": 256.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-04d1t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-06-04d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "In the Midnight Hour",
+      "duration": 461.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-04d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-06-04d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 278.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-06-04d1t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-06-04d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

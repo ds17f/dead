@@ -1,0 +1,206 @@
+{
+  "rating": 2.4166666666666665,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-07-27",
+  "venue": "Grand Prix Racecourse",
+  "location": "Watkins Glen, NY",
+  "raw_rating": 4.833333333333333,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Promised Land",
+      "duration": 194.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 481.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mexicali Blues",
+      "duration": 351.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bird Song",
+      "duration": 1148.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 382.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 497.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Merry-Go-Round Broke Down",
+      "duration": 60.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Mississippi Half-Step Uptown Toodleoo",
+      "duration": 491.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Me And My Uncle",
+      "duration": 335.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Soundcheck Jam ->",
+      "duration": 1202.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Wharf Rat",
+      "duration": 610.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Around And Around",
+      "duration": 286.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

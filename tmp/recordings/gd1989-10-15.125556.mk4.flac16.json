@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-10-15",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll>",
+      "duration": 232.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Iko Iko",
+      "duration": 456.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin Blues",
+      "duration": 456.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Far From Me",
+      "duration": 341.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 678.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Victim or the Crime>",
+      "duration": 512.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Standing on the Moon",
+      "duration": 491.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-10-15s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-10-15s1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

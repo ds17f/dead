@@ -1,0 +1,117 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-09-16-avalon-ballroom-san-francisco-ca-usa/",
+  "show_id": "1966-09-16-avalon-ballroom-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Avalon Ballroom",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-09-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Hurts Me Too",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Morning Little School Girl",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Lindy",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Oxford Circle"
+  ],
+  "collection_timestamp": "2025-08-10T08:01:20.178365",
+  "show_time": null,
+  "recordings": [
+    "gd66-09-16.sbd.tzuriel.11503.sbeok.shnf",
+    "gd66-09-16.sbd.vernon.9127.sbeok.shnf",
+    "gd1966-09-16.117435.vinyl.sbd.indidarkstar.flac24",
+    "gd1966-09-16.sbd.davenport.95970.flac16",
+    "gd1966-09-16.vintagedead.25283.sbeok.shnf",
+    "gd1966-09-16.146098.vintage-dead.smith.flegel.flac1648"
+  ],
+  "best_recording": "gd66-09-16.sbd.tzuriel.11503.sbeok.shnf",
+  "avg_rating": 2.3100961538461537,
+  "raw_rating": 4.694444444444445,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 35,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

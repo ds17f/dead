@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-12-03",
+  "venue": "McNichols Sports Arena",
+  "location": "Denver, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 442.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TouchOfGrey.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 507.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02LittleRedRooster.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 401.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Peggy-o.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane Approximately",
+      "duration": 373.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04QueenJaneApproximately.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 516.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TennesseeJed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 390.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Cassidy.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Don't Ease Me In",
+      "duration": 198.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DontEaseMeIn.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

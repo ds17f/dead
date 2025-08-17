@@ -1,0 +1,78 @@
+{
+  "rating": 2.3529411764705883,
+  "review_count": 17,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-02-24",
+  "venue": "University of Iowa",
+  "location": "Iowa City, IA",
+  "raw_rating": 4.705882352941177,
+  "high_ratings": 17,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "El Paso",
+      "duration": 68.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-24P1t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-02-24P1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Box of Rain",
+      "duration": 150.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-24P1t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-02-24P1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Tennessee Jed",
+      "duration": 258.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-24P1t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-02-24P1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Playin' In The Band",
+      "duration": 738.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-02-24P1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-02-24P1t04.shn"
+        }
+      ]
+    }
+  ]
+}

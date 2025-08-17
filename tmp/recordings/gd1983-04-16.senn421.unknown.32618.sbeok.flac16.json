@@ -1,0 +1,206 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-04-16",
+  "venue": "Brendan Byrne Arena, Meadowlands Sports Complex",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "China Cat Sunflower >",
+      "duration": 441.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "I Know You Rider",
+      "duration": 373.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Uncle John's Band >",
+      "duration": 616.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d1t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Truckin' >",
+      "duration": 732.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums >",
+      "duration": 423.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Black Queen >",
+      "duration": 487.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Iko Iko >",
+      "duration": 425.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bob Star >",
+      "duration": 86.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Other One >",
+      "duration": 389.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Black Peter >",
+      "duration": 495.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "One More Saturday Night",
+      "duration": 276.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Johnny B. Goode",
+      "duration": 236.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-04-16d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-04-16d2t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-11-29",
+  "venue": "Alligator Alley Gymnasium, U of Florida",
+  "location": "Gainesville, FL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 631.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ShakedownStreet.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 450.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FranklinsTower.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Estimated Prophet",
+      "duration": 637.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03EstimatedProphet.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "He's Gone",
+      "duration": 762.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04HesGone.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Truckin'",
+      "duration": 548.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Truckin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 857.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 375.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One",
+      "duration": 361.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TheOtherOne.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Stella Blue",
+      "duration": 649.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09StellaBlue.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 488.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10GoodLovin.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Encore Break",
+      "duration": 74.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EncoreBreak.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Casey Jones",
+      "duration": 337.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12CaseyJones.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

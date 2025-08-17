@@ -1,0 +1,158 @@
+{
+  "rating": 1.8,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1981-04-25",
+  "venue": "Berkeley Community Theater",
+  "location": "Berkeley, CA",
+  "raw_rating": 3.6,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Deep Elementary Blues",
+      "duration": 322.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t01.mp3",
+          "bitrate": "260"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dark Hollow",
+      "duration": 267.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t02.mp3",
+          "bitrate": "244"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Jack-A-Roe",
+      "duration": 262.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t03.mp3",
+          "bitrate": "252"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Monkey and the Engineer",
+      "duration": 157.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t04.mp3",
+          "bitrate": "254"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Friend of the Devil",
+      "duration": 412.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t05.mp3",
+          "bitrate": "243"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "El Paso",
+      "duration": 248.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t06.mp3",
+          "bitrate": "255"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Babe It Ain't No Lie",
+      "duration": 262.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t07.mp3",
+          "bitrate": "213"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "On The Road Again",
+      "duration": 205.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t08.mp3",
+          "bitrate": "260"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Oh Boy",
+      "duration": 125.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-25t09.mp3",
+          "bitrate": "266"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-04-25t09.shn"
+        }
+      ]
+    }
+  ]
+}

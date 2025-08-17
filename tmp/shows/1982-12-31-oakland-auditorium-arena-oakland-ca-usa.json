@@ -1,0 +1,225 @@
+{
+  "url": "https://jerrygarcia.com/show/1982-12-31-oakland-auditorium-arena-oakland-ca-usa/",
+  "show_id": "1982-12-31-oakland-auditorium-arena-oakland-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Oakland Auditorium Arena",
+  "location_raw": "Oakland, CA",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "USA",
+  "date": "1982-12-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider***",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away**",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sunshine Daydream",
+          "url": "https://jerrygarcia.com/song/sunshine-daydream/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 3",
+      "songs": [
+        {
+          "name": "Turn On Your Lovelight*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Tell Mama*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Baby What You Want Me To Do?*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Hard To Handle*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "In The Midnight Hour*",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Dinosaurs"
+  ],
+  "collection_timestamp": "2025-08-10T08:48:20.320909",
+  "show_time": null,
+  "recordings": [
+    "gd1982-12-31.sbd.miller.77301.sbeok.flac16",
+    "gd82-12-31.sbd.bode.5958.sbeok.shnf",
+    "gd1982-12-31.sbd.walker-scotton.miller.105820.flac16",
+    "gd1982-12-31.118487.set3.sbd.chasingwilma.flac16",
+    "gd1982-12-31.FM.azjones.113090.flac16",
+    "gd1982-12-31.134487.s3.nak300.schley.flac2448",
+    "gd1982-12-31.134485.aud.fulton.flac2448",
+    "gd1982-12-31.148506.dts.tobin.flac16",
+    "gd1982-12-31.134488.s3.nak300.schley.flac1644",
+    "gd1982-12-31.134486.aud.fulton.flac1644",
+    "gd1982-12-31.148505.mat.tobin.flac16",
+    "gd1982-12-31.148507.5-1.tobin.flac1648",
+    "gd1982-12-31.148498.PandP-aud.tobin.flac16"
+  ],
+  "best_recording": "gd1982-12-31.sbd.miller.77301.sbeok.flac16",
+  "avg_rating": 2.929358108108108,
+  "raw_rating": 4.294117647058823,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 30,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "AUD": 9
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years",
+    "guest-etta-james"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1977-04-25",
+  "venue": "Capitol Theater",
+  "location": "Passaic, NJ",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 112.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 370.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02NewMinglewoodBlues.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Deal",
+      "duration": 469.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Deal.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 250.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MamaTried.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "They Love Each Other",
+      "duration": 507.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TheyLoveEachOther.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Looks Like Raiin",
+      "duration": 600.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LooksLikeRaiin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LooksLikeRaiin.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Peggy-O",
+      "duration": 457.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Peggy-o.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 44.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Lazy Lightning",
+      "duration": 208.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LazyLightning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Supplication",
+      "duration": 406.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Supplication.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Ship Of Fools",
+      "duration": 505.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ShipOfFools.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Estimated Prophet",
+      "duration": 546.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12EstimatedProphet.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Brown Eyed Women",
+      "duration": 390.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13BrownEyedWomen.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Music Never Stopped",
+      "duration": 396.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TheMusicNeverStopped.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

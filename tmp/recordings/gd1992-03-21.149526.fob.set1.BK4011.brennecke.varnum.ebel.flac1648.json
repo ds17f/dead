@@ -1,0 +1,102 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-03-21",
+  "venue": "Copps Coliseum",
+  "location": "Hamilton, ON",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 151.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Help On The Way",
+      "duration": 508.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Help On The Way.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Slipknot!",
+      "duration": 56.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Slipknot!.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Franklins Tower",
+      "duration": 699.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Franklins Tower.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 560.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Little Red Rooster.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Peggy' O",
+      "duration": 386.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Peggy' O.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Queen Jane",
+      "duration": 496.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Queen Jane.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "So Many Roads",
+      "duration": 422.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 So Many Roads.flac"
+        }
+      ]
+    }
+  ]
+}

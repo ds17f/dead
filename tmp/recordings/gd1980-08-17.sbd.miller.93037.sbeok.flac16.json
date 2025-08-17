@@ -1,0 +1,350 @@
+{
+  "rating": 3.0625,
+  "review_count": 8,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1980-08-17",
+  "venue": "Kansas City Municipal Auditorium",
+  "location": "Kansas City, MO",
+  "raw_rating": 4.375,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw ->",
+      "duration": 325.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 619.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried ->",
+      "duration": 140.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 269.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 383.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "New Minglewood Blues",
+      "duration": 440.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Friend Of The Devil",
+      "duration": 546.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Far From Me ->",
+      "duration": 229.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Lost Sailor ->",
+      "duration": 384.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Saint Of Circumstance",
+      "duration": 379.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d1t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 207.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 417.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias ->",
+      "duration": 577.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire On The Mountain ->",
+      "duration": 560.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 603.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t05.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 197.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 292.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Truckin' ->",
+      "duration": 464.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat ->",
+      "duration": 607.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t09.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Good Lovin'",
+      "duration": 438.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "U.S. Blues",
+      "duration": 324.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-08-17d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-17d2t11.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

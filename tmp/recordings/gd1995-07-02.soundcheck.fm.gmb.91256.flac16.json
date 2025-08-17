@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-07-02",
+  "venue": "Deer Creek Music Center",
+  "location": "Noblesville, IN",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hoochie Coochie Man",
+      "duration": 127.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t01.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tuning",
+      "duration": 28.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t02.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Death Don't Have No Mercy, Jerry, I don't remember",
+      "duration": 133.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t03.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Visions Of Johanna",
+      "duration": 557.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t04.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tuning, Noodle",
+      "duration": 165.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t05.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Here Comes Sunshine",
+      "duration": 94.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Here Comes Sunshine",
+      "duration": 316.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jesu Joy and other ditties",
+      "duration": 75.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-02t08.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

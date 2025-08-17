@@ -1,0 +1,382 @@
+{
+  "rating": 2.15,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-05-07",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 4.3,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 80.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t01.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Bertha",
+      "duration": 659.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t02.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cassidy",
+      "duration": 427.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t03.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Deal",
+      "duration": 474.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t04.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Jack Straw",
+      "duration": 351.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t05.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Peggy-O",
+      "duration": 581.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t06.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "New Minglewood Blues",
+      "duration": 391.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t07.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Billy's Happy Birthday",
+      "duration": 153.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t08.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Mississippi Half Step",
+      "duration": 754.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t09.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Big River",
+      "duration": 559.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d1t10.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tennessee Jed",
+      "duration": 629.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t01.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Music Never Stopped",
+      "duration": 480.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t02.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tuning",
+      "duration": 174.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t03.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 632.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t04.mp3",
+          "bitrate": "157"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Samson And Delilah",
+      "duration": 580.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t05.mp3",
+          "bitrate": "155"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Friend Of The Devil",
+      "duration": 462.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t06.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Estimated Prophet",
+      "duration": 766.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d2t07.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Eyes Of The World",
+      "duration": 702.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d3t01.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Drums",
+      "duration": 197.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d3t02.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Wheel",
+      "duration": 638.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d3t03.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Wharf Rat",
+      "duration": 857.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d3t04.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around And Around",
+      "duration": 673.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d3t05.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "U.S. Blues",
+      "duration": 348.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07d3t06.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07d3t06.shn"
+        }
+      ]
+    }
+  ]
+}

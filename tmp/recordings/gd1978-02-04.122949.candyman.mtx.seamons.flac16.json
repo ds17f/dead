@@ -1,0 +1,30 @@
+{
+  "rating": 2.4499999999999997,
+  "review_count": 2,
+  "source_type": "AUD",
+  "confidence": 0.4,
+  "date": "1978-02-04",
+  "venue": "Milwaukee Auditorium",
+  "location": "Milwaukee, WI",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Candyman (6:57)",
+      "duration": 417.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-02-04.candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-02-04.candyman.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

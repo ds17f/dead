@@ -1,0 +1,398 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-09-11",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "tuning",
+      "duration": 206.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Jack Straw",
+      "duration": 453.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Bertha ->",
+      "duration": 404.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Greatest Story Ever Told",
+      "duration": 304.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Candyman",
+      "duration": 444.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Queen Jane Approximately",
+      "duration": 411.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Brown Eyed Women",
+      "duration": 373.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "It's All Over Now",
+      "duration": 505.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Tennessee Jed",
+      "duration": 520.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Hell in a Bucket",
+      "duration": 391.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s1t10.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "tuning",
+      "duration": 213.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower ->",
+      "duration": 453.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 344.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Looks Like Rain ->",
+      "duration": 457.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "He's Gone ->",
+      "duration": 764.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Spoonful - >",
+      "duration": 976.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums ->",
+      "duration": 562.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space ->",
+      "duration": 631.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t08.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "The Wheel ->",
+      "duration": 349.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "I Need A Miracle ->",
+      "duration": 258.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Black Peter ->",
+      "duration": 604.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t11.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Around and Around",
+      "duration": 399.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t12.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "encore break",
+      "duration": 173.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 531.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-09-11.s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-11.s2t14.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

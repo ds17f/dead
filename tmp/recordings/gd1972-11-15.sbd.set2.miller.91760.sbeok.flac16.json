@@ -1,0 +1,222 @@
+{
+  "rating": 2.0833333333333335,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-11-15",
+  "venue": "Oklahoma City Music Hall",
+  "location": "Oklahoma City, OK",
+  "raw_rating": 4.166666666666667,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 213.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ramble On Rose",
+      "duration": 382.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mexicali Blues",
+      "duration": 206.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brokedown Palace",
+      "duration": 340.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t04.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playing In The Band",
+      "duration": 1870.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big Railroad Blues",
+      "duration": 234.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me And Bobby McGee",
+      "duration": 337.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat",
+      "duration": 666.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t08.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugar Magnolia",
+      "duration": 508.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d1t09.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Not Fade Away ->",
+      "duration": 449.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d2t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 433.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d2t02.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Not Fade Away",
+      "duration": 251.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d2t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Johnny B. Goode",
+      "duration": 216.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-15d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-15d2t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

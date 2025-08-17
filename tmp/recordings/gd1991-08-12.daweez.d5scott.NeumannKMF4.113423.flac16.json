@@ -1,0 +1,302 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1991-08-12",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 360.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Minglewood Blues",
+      "duration": 473.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 505.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me & My Uncle",
+      "duration": 190.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 395.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bird Song",
+      "duration": 760.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Promised Land",
+      "duration": 306.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Chinacat Sunflower",
+      "duration": 383.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 351.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playin' In The Band",
+      "duration": 510.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Terrapin Station",
+      "duration": 1118.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 610.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 615.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Wheel",
+      "duration": 320.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Need A Miracle",
+      "duration": 290.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue",
+      "duration": 495.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Turn On Your Lovelight",
+      "duration": 458.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Weight",
+      "duration": 360.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

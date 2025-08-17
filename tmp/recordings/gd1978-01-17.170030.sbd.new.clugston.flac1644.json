@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1978-01-17",
+  "venue": "Sacramento Memorial Auditorium",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Tuning",
+      "duration": 153.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t01 Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Promised Land",
+      "duration": 309.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t02 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t02 Promised Land.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Dire Wolf",
+      "duration": 350.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t03 Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t03 Dire Wolf.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Cassidy",
+      "duration": 408.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t04 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t04 Cassidy.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Loser",
+      "duration": 570.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t05 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t05 Loser.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Looks Like Rain",
+      "duration": 643.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t06 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t06 LLR.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Row Jimmy",
+      "duration": 671.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t07 Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t07 Row Jimmy.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "New Minglewood Blues",
+      "duration": 437.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t08 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t08 Minglewood.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "It Must Have Been The Roses",
+      "duration": 556.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t09 IMHBTR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t09 IMHBTR.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "The Music Never Stopped",
+      "duration": 476.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s1t10 TMNS.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s1t10 TMNS.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Tuning",
+      "duration": 67.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t01 Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Bertha > Good Lovin'",
+      "duration": 870.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t02 Bertha_Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t02 Bertha_Good Lovin'.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Candyman",
+      "duration": 598.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t03 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t03 Candyman.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 814.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t04 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t04 Estimated.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "He's Gone > Jam >",
+      "duration": 1368.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t05 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t05 He's Gone.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 184.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t06 Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "The Other One >",
+      "duration": 860.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t07 Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t07 Other One.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Black Peter >",
+      "duration": 722.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t08 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t08 Black Peter.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Truckin' >",
+      "duration": 551.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t09 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t09 Truckin'.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Around & Around",
+      "duration": 578.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t10 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t10 A & A.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E: US Blues",
+      "duration": 339.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-17 s2t11 E_US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-17 s2t11 E_US Blues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

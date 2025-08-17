@@ -1,0 +1,142 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1988-09-11",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 448.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger ->",
+      "duration": 465.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower",
+      "duration": 521.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 621.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 461.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Memphis Blues",
+      "duration": 572.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 483.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 283.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-09-11set1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-09-11set1t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

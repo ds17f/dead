@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-02-23",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 269.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain & Snow",
+      "duration": 384.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ColdRainSnow.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Wang Dang Doodle",
+      "duration": 455.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WangDangDoodle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 534.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Loser.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Memphis Blues",
+      "duration": 591.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MemphisBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MemphisBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Broken Arrow",
+      "duration": 424.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BrokenArrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BrokenArrow.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Long Way To Go Home",
+      "duration": 368.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LongWayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LongWayToGoHome.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Johnny B. Goode",
+      "duration": 285.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08JohnnyB.Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08JohnnyB.Goode.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

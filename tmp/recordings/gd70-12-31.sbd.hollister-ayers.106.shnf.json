@@ -1,0 +1,140 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-12-31",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf,",
+      "duration": 139.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-12-31d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t01_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cryptical ->",
+      "duration": 57.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-12-31d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t02_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums ->",
+      "duration": 191.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-12-31d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t03_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Other One -> Cryptical ->",
+      "duration": 356.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-12-31d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t04_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Peter,",
+      "duration": 241.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-12-31d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t05_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Sugar Magnolia",
+      "duration": 196.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t06.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-12-31d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-12-31d1t06_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

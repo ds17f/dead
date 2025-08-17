@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-03-25",
+  "venue": "Academy of Music",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "You Know I Love You So (Wo Wow Hey Hey) >",
+      "duration": 95.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Slow Blues (unknown title) >",
+      "duration": 382.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Pollution",
+      "duration": 333.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Say Boss Man",
+      "duration": 272.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jam",
+      "duration": 265.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bo Diddley-Itis (?)",
+      "duration": 376.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Outro",
+      "duration": 50.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1972-03-25s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-25s1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

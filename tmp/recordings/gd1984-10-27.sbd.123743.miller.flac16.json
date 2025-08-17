@@ -1,0 +1,122 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-10-27",
+  "venue": "Berkeley Community Theater",
+  "location": "Berkeley, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Beat It On Down The Line",
+      "duration": 69.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Women Are Smarter",
+      "duration": 178.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Wang Dang Doodle",
+      "duration": 431.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Going Down The Road Feeling Bad ->",
+      "duration": 392.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "One More Saturday Night",
+      "duration": 305.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Shakedown Street*",
+      "duration": 275.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "tmp",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-31t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1973-09-21",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 313.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-09-21-d3t6b.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-09-21-d3t6b.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

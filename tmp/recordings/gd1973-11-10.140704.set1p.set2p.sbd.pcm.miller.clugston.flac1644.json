@@ -1,0 +1,142 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-11-10",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd73-11-10 tWeather Report Suite",
+      "duration": 1039.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T01WeatherReportSuite.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T01WeatherReportSuite.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd73-11-10 tF'n Around",
+      "duration": 228.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T02FnAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T02FnAround.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd73-11-10 tPlayin' In The Band",
+      "duration": 723.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T03PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T03PlayinInTheBand.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd73-11-10 tUncle John's Band",
+      "duration": 572.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T04UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T04UncleJohnsBand.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd73-11-10 tMorning Dew",
+      "duration": 749.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T05MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T05MorningDew.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd73-11-10 tUncle John's Band Reprise",
+      "duration": 395.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T06UncleJohnsBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T06UncleJohnsBandReprise.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd73-11-10 tPlayin' In The Band Reprise",
+      "duration": 230.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T07PlayinInTheBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T07PlayinInTheBandReprise.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd73-11-10 tBig River",
+      "duration": 288.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd73-11-10T08BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd73-11-10T08BigRiver.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

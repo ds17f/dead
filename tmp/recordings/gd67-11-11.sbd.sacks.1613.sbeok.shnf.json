@@ -1,0 +1,126 @@
+{
+  "rating": 3.1999999999999997,
+  "review_count": 14,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1967-11-11",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.571428571428571,
+  "high_ratings": 14,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Turn On Your Lovelight",
+      "duration": 468.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Death Don't Have No Mercy",
+      "duration": 283.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 486.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cryptical Envelopment",
+      "duration": 40.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t04.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "The Other One",
+      "duration": 81.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t05.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cryptical Envelopment",
+      "duration": 355.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t06.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "New Potato Caboose",
+      "duration": 390.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-11d1t07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-11d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

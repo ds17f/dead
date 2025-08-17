@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-03-25",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 16.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told>",
+      "duration": 235.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Touch of Grey",
+      "duration": 422.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wang Dang Doodle",
+      "duration": 446.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Good Times (Never Trust A Women)",
+      "duration": 500.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack A Roe",
+      "duration": 280.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When I Paint My Masterpiece",
+      "duration": 378.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 798.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 700.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s1t09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Eyes of the World>",
+      "duration": 795.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t01.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samsom and Delilah>",
+      "duration": 468.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crazy Fingers>",
+      "duration": 438.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin>",
+      "duration": 454.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Spoonful>",
+      "duration": 292.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drumz>",
+      "duration": 546.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space>",
+      "duration": 603.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Will Take You Home>",
+      "duration": 279.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin Down The Road Feelin Bad>",
+      "duration": 409.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter>",
+      "duration": 559.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t10.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around and Around",
+      "duration": 362.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t11.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "encore break",
+      "duration": 50.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t12.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Mighty Quinn",
+      "duration": 285.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-25s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-25s2t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

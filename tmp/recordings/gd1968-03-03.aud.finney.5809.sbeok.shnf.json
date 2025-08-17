@@ -1,0 +1,94 @@
+{
+  "rating": 1.9,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-03-03",
+  "venue": "Haight Street",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.8,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 1320.6,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD68-03-03T01.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-03-03T01.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Smokestack Lightnin'",
+      "duration": 727.1,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD68-03-03T02.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-03-03T02.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Turn On Your Lovelight",
+      "duration": 873.3,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD68-03-03T03.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-03-03T03.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "announcement",
+      "duration": 24.1,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD68-03-03T04.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-03-03T04.mp3",
+          "bitrate": "109"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It Hurts Me Too",
+      "duration": 276.1,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD68-03-03T05.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD68-03-03T05.mp3",
+          "bitrate": "108"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1985-04-27",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Going Down the Road Feeling Bad",
+      "duration": 168.36,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d2t03fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d2t04fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d2t05fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t01fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t02fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t03fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t04fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t05fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t06fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t07fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d3t08fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "1",
+      "title": "Scarlet Begonias",
+      "duration": 465.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-04-27d2t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Eyes Of The World",
+      "duration": 354.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-04-27d2t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1985-04-27d2t02.shn"
+        }
+      ]
+    }
+  ]
+}

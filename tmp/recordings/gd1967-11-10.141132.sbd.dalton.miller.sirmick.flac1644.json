@@ -1,0 +1,142 @@
+{
+  "rating": 2.388888888888889,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-11-10",
+  "venue": "Shrine Exposition Hall",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.777777777777778,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 917.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 268.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t02.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Morning Dew",
+      "duration": 449.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 631.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "That's It For The Other One",
+      "duration": 670.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t05.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "New Potato Caboose >",
+      "duration": 659.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Alligator >",
+      "duration": 660.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Caution (Do Not//Stop On Tracks)",
+      "duration": 1440.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10t08.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

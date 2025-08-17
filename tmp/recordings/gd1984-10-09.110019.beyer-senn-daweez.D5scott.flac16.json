@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1984-10-09",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancin' In The Street",
+      "duration": 413.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 541.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle",
+      "duration": 174.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 310.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 515.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau",
+      "duration": 275.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 388.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 750.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "\"noodling\"",
+      "duration": 41.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Help On The Way",
+      "duration": 234.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Slipknot!",
+      "duration": 418.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Franklin's Tower",
+      "duration": 639.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jack Straw",
+      "duration": 353.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone",
+      "duration": 749.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Smokestack Lightnin'",
+      "duration": 229.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t07.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 314.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 362.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 302.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 543.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue",
+      "duration": 507.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around And Around",
+      "duration": 232.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B. Goode",
+      "duration": 277.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Revolution",
+      "duration": 325.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t07.mp3",
+          "bitrate": "207"
+        }
+      ]
+    }
+  ]
+}

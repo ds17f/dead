@@ -1,0 +1,78 @@
+{
+  "rating": 2.4,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-02",
+  "venue": "Fox Theatre",
+  "location": "St. Louis, MO",
+  "raw_rating": 4.8,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cumberland Blues",
+      "duration": 76.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dark Star",
+      "duration": 747.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "St. Stephen",
+      "duration": 188.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mason's Children",
+      "duration": 136.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t04.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 1.5714285714285714,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-10-26",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.142857142857143,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Instrumental",
+      "duration": 124.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hard To Handle",
+      "duration": 264.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cold Rain and Snow",
+      "duration": 197.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Me and My Uncle",
+      "duration": 124.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Next Time You See Me",
+      "duration": 134.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Dire Wolf",
+      "duration": 219.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Casey Jones",
+      "duration": 204.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Easy Wind",
+      "duration": 379.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-26t08.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-26t08.shn"
+        }
+      ]
+    }
+  ]
+}

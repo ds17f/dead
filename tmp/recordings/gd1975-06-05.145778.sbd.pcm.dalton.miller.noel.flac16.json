@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1975-06-05",
+  "venue": "Ace's Studio",
+  "location": "San Rafael, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "501",
+      "title": "Help on the Way (multiple takes fades in)",
+      "duration": 166.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-05.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-05.t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "502",
+      "title": "Help on the Way (multiple takes)",
+      "duration": 566.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-05.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-05.t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "503",
+      "title": "Help on the Way/banter (multiple takes)",
+      "duration": 1057.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-05.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-05.t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "504",
+      "title": "Help on the Way",
+      "duration": 519.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-05.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-05.t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "505",
+      "title": "Help on the Way/jam -> Slipknot! -> Franklin's Tower intro",
+      "duration": 493.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd75-06-05.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-06-05.t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

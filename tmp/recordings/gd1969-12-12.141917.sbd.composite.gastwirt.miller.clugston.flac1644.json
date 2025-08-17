@@ -1,0 +1,398 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-12-12",
+  "venue": "Thelma Theater",
+  "location": "Los Angeles, CA",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd69-12-12 tCold Rain & Snow",
+      "duration": 324.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T01ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T01ColdRainSnow.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd69-12-12 tMe & My Uncle",
+      "duration": 271.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T02MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T02MeMyUncle.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd69-12-12 tEasy Wind",
+      "duration": 570.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T03EasyWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T03EasyWind.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd69-12-12 tCumberland Blues",
+      "duration": 448.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T04CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T04CumberlandBlues.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd69-12-12 tBlack Peter",
+      "duration": 726.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T05BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T05BlackPeter.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd69-12-12 tNext Time You See Me",
+      "duration": 358.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T06NextTimeYouSeeMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T06NextTimeYouSeeMe.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd69-12-12 tChina Cat Sunflower",
+      "duration": 358.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T07ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T07ChinaCatSunflower.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd69-12-12 tI Know You Rider",
+      "duration": 316.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T08IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T08IKnowYouRider.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd69-12-12 tTurn On Your Lovelight",
+      "duration": 1788.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T09TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T09TurnOnYourLovelight.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd69-12-12 tHard To Handle",
+      "duration": 326.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T10HardToHandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T10HardToHandle.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd69-12-12 tCasey Jones",
+      "duration": 296.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T11CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T11CaseyJones.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd69-12-tMama Tried",
+      "duration": 156.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T12MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T12MamaTried.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd69-12-12 tHigh Time",
+      "duration": 459.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T13HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T13HighTime.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd69-12-12 tDire Wolf",
+      "duration": 309.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T14DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T14DireWolf.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd69-12-12 tGood Lovin'",
+      "duration": 347.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T15GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T15GoodLovin.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd69-12-12 tI'm A King Bee",
+      "duration": 464.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T16ImAKingBee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T16ImAKingBee.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd69-12-12 tUncle John's Band",
+      "duration": 522.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T17UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T17UncleJohnsBand.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd69-12-12 tHe Was A Friend Of Mine",
+      "duration": 201.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T18HeWasAFriendOfMine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T18HeWasAFriendOfMine.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd69-12-12 tAlligator",
+      "duration": 249.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T19Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T19Alligator.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd69-12-12 tDrums",
+      "duration": 408.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T20Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T20Drums.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd69-12-12 tAlligator",
+      "duration": 544.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T21Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T21Alligator.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd69-12-12 tCaution (Do Not Stop On Tracks)",
+      "duration": 1387.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T22CautiondoNotStopOnTracks.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T22CautiondoNotStopOnTracks.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd69-12-12 tFeedback",
+      "duration": 431.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T23Feedback.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T23Feedback.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd69-12-12 tAnd We Bid You Good Night",
+      "duration": 225.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-12-12T24AndWeBidYouGoodNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-12-12T24AndWeBidYouGoodNight.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

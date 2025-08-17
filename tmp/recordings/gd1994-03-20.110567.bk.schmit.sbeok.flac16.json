@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-03-20",
+  "venue": "Richfield Coliseum",
+  "location": "Richfield, OH",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "walk on",
+      "duration": 103.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t01.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow",
+      "duration": 441.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t02.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's All Over Now",
+      "duration": 464.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t03.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 428.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t04.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried",
+      "duration": 150.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 388.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t06.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lazy River Road",
+      "duration": 479.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t07.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 761.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t08.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 194.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-20d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-20d1t09.mp3",
+          "bitrate": "203"
+        }
+      ]
+    }
+  ]
+}

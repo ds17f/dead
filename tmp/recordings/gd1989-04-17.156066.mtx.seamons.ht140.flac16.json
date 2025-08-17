@@ -1,0 +1,255 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1989-04-17",
+  "venue": "Metropolitan Sports Center",
+  "location": "Minneapolis, MN",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Iko Iko",
+      "duration": 579.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t01.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t01.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Minglewood Blues",
+      "duration": 526.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t02.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t02.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Row Jimmy",
+      "duration": 347.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t03.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Far From Me",
+      "duration": 673.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t04.mp3",
+          "bitrate": "203"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Built To Last",
+      "duration": 233.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t05.mp3",
+          "bitrate": "203"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Victim Or The Crime",
+      "duration": 265.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t06.mp3",
+          "bitrate": "205"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t06.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Bertha",
+      "duration": 538.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t07.mp3",
+          "bitrate": "204"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t07.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Cold Rain And Snow",
+      "duration": 726.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t08.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Samson And Delilah",
+      "duration": 500.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t09.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d2t09.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crazy Fingers",
+      "duration": 468.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-17d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-17d1t10.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

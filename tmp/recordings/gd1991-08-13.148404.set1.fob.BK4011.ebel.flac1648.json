@@ -1,0 +1,113 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-08-13",
+  "venue": "Cal Expo",
+  "location": "Sacramento, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 172.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Piacsso Moon",
+      "duration": 468.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Picasso Moon.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 790.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Sugaree.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walking Blues",
+      "duration": 389.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Walking Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Candyman",
+      "duration": 444.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Candyman.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Memphis Blues",
+      "duration": 557.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Memphis Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "High Time",
+      "duration": 506.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 High Time.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow - Edit",
+      "duration": 799.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Let It Grow - Edit.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 798.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Let It Grow.flac"
+        }
+      ]
+    }
+  ]
+}

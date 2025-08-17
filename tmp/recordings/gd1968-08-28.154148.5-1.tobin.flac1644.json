@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1968-08-28",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star",
+      "duration": 637.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Dark Star.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint Stephen",
+      "duration": 209.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Saint Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Saint Stephen.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven",
+      "duration": 632.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 The Eleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 The Eleven.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Death Don't Have No Mercy",
+      "duration": 510.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Death Don't Have No Mercy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Death Don't Have No Mercy.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Turn On Your Lovelight",
+      "duration": 732.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Turn On Your Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Turn On Your Lovelight.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

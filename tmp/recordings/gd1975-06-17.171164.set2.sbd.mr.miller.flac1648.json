@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1975-06-17",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 148.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01. Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01. Tuning.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Blues For Allah >",
+      "duration": 509.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02. Blues For Allah _.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02. Blues For Allah _.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Drums >",
+      "duration": 196.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03. Drums _.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03. Drums _.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "King Solomon's Marbles >",
+      "duration": 368.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04. King Solomon's Marbles _.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04. King Solomon's Marbles _.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Blues For Allah",
+      "duration": 474.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05. Blues For Allah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05. Blues For Allah.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Sugar Magnolia",
+      "duration": 563.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06. Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06. Sugar Magnolia.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "U.S. Blues",
+      "duration": 361.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07. U.S. Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07. U.S. Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

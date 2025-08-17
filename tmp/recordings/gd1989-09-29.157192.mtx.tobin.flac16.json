@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-09-29",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll",
+      "duration": 263.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Let The Good Times Roll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Let The Good Times Roll.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 435.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Feel Like A Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Feel Like A Stranger.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower",
+      "duration": 697.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Franklin's Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Franklin's Tower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wang Dang Doodle",
+      "duration": 427.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Wang Dang Doodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Wang Dang Doodle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack-A-Roe",
+      "duration": 332.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Jack-A-Roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Jack-A-Roe.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 592.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Stuck Inside Of Mobile With The Memphis Blues Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Stuck Inside Of Mobile With The Memphis Blues Again.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "We Can Run",
+      "duration": 479.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 We Can Run.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 We Can Run.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 747.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Bird Song.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 265.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Promised Land.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 29.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 342.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 China Cat Sunflower.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 423.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 I Know You Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Blow Away",
+      "duration": 571.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Blow Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Blow Away.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band",
+      "duration": 522.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Playing In The Band.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Terrapin Station",
+      "duration": 918.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Terrapin Station.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 428.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 587.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 289.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 I Need A Miracle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Death Don't Have No Mercy",
+      "duration": 401.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Death Don't Have No Mercy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Death Don't Have No Mercy.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 576.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Sugar Magnolia.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 273.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 The Mighty Quinn (Quinn The Eskimo).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 The Mighty Quinn (Quinn The Eskimo).mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

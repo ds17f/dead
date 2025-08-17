@@ -1,0 +1,462 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1979-12-31",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Jack Straw >",
+      "duration": 387.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t01 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t01 Jack Straw.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Franklin's Tower",
+      "duration": 1038.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t02 Franklin's.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t02 Franklin's.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Mama Tried >",
+      "duration": 157.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t03 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t03 Mama Tried.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Mexicali Blues",
+      "duration": 300.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t04 Mexicali.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t04 Mexicali.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Tennessee Jed",
+      "duration": 565.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t05 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t05 T Jed.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Looks Like Rain >",
+      "duration": 504.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t06 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t06 LLR.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Alabama Getaway >",
+      "duration": 423.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t07 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t07 Alabama Getaway.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Promised Land",
+      "duration": 305.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s1t08 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s1t08 Promised Land.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "New Year's Countdown >",
+      "duration": 205.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t01 New Year's Countdown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t01 New Year's Countdown.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Sugar Magnolia >",
+      "duration": 360.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t02 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t02 Sugar Mag.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "China Cat Sunflower >",
+      "duration": 438.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t03 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t03 China Cat.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "I Know You Rider",
+      "duration": 504.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t04 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t04 IKYR.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Samson & Delilah",
+      "duration": 544.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t05 Samson.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t05 Samson.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Ship Of Fools",
+      "duration": 513.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t06 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t06 Ship Of Fools.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Lost Sailor >",
+      "duration": 397.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t07 Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t07 Sailor.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Saint Of Circumstance >",
+      "duration": 344.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t08 Saint.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t08 Saint.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Deal",
+      "duration": 347.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s2t09 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s2t09 Deal.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "301",
+      "title": "Crowd/Tuning",
+      "duration": 66.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t01 Crowd_Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "302",
+      "title": "Althea >",
+      "duration": 625.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t02 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t02 Althea.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "303",
+      "title": "New Minglewood Blues",
+      "duration": 573.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t03 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t03 Minglewood.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "304",
+      "title": "Uncle John's Band >",
+      "duration": 950.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t04 UJB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t04 UJB.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "305",
+      "title": "Drums >",
+      "duration": 489.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t05 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t05 Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "306",
+      "title": "Space >",
+      "duration": 328.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t06 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t06 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "307",
+      "title": "Not Fade Away >",
+      "duration": 850.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t07 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t07 NFA.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "308",
+      "title": "Stella Blue >",
+      "duration": 541.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t08 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t08 Stella Blue.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "309",
+      "title": "Sunshine Daydream",
+      "duration": 205.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t09 Sunshine Daydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t09 Sunshine Daydream.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "310",
+      "title": "Encore Break",
+      "duration": 71.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t10 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t10 Encore Break.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "311",
+      "title": "E: Good Lovin'",
+      "duration": 469.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd79-12-31 s3t11 E_Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-31 s3t11 E_Good Lovin'.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

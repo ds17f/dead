@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-08-26",
+  "venue": "Public Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 88.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t001.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree >",
+      "duration": 752.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t002.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "El Paso",
+      "duration": 366.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t003.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 512.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t004.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 242.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t005.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Althea",
+      "duration": 622.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t006.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lazy Lightning >",
+      "duration": 195.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t007.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Supplication",
+      "duration": 313.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t008.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t008.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 307.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d1t009.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d1t009.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 48.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t001.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 195.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t002.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Little Red Rooster",
+      "duration": 467.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t003.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Far From Me",
+      "duration": 249.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t004.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band >",
+      "duration": 552.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t005.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playin' In The Band >",
+      "duration": 494.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t006.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 564.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t007.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 106.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t008.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t008.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Comes A Time >",
+      "duration": 512.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t009.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t009.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Lost Sailor >",
+      "duration": 412.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t010.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t010.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Saint Of Circumstance >",
+      "duration": 349.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t011.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t011.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Casey Jones",
+      "duration": 410.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t012.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t012.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B. Goode",
+      "duration": 263.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-08-26d2t013.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-08-26d2t013.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

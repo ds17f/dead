@@ -1,0 +1,510 @@
+{
+  "rating": 2.4166666666666665,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-10-19",
+  "venue": "Saenger Performing Arts Center",
+  "location": "New Orleans, LA",
+  "raw_rating": 4.833333333333333,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "On The Road Again",
+      "duration": 267.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jackaroe",
+      "duration": 383.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Hollow",
+      "duration": 363.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Rosalie McFall",
+      "duration": 330.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 404.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Birdsong",
+      "duration": 616.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Heaven Help The Fool",
+      "duration": 417.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "//Ripple",
+      "duration": 234.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "crowd",
+      "duration": 114.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 521.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "They Love Each Other",
+      "duration": 638.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Mama Tried >",
+      "duration": 152.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Mexicali Blues",
+      "duration": 310.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Candyman",
+      "duration": 502.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Passenger",
+      "duration": 356.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Row Jimmy >",
+      "duration": 766.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Looks Like Rain",
+      "duration": 513.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Tennessee Jed",
+      "duration": 570.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Promised Land",
+      "duration": 270.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s2t11.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Scarlet Begonias >",
+      "duration": 573.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Fire On The Mountain",
+      "duration": 624.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Samson & Delilah",
+      "duration": 502.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Terrapin Station >",
+      "duration": 697.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Brent Jam >",
+      "duration": 205.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Drums >",
+      "duration": 592.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Space >",
+      "duration": 488.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Truckin' >",
+      "duration": 439.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Wharf Rat >",
+      "duration": 655.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Sugar Magnolia >",
+      "duration": 373.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Good Lovin'",
+      "duration": 501.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t11.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Encore: Brokedown Palace",
+      "duration": 410.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1980-10-19s3t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-19s3t12.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-04-02",
+  "venue": "Civic Arena",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Iko Iko ->",
+      "duration": 345.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Little Red Rooster",
+      "duration": 547.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Dire Wolf",
+      "duration": 250.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Its All Over Now",
+      "duration": 495.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "We Can Run",
+      "duration": 321.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Brown Eyed Women",
+      "duration": 302.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Queen Jane Approximately",
+      "duration": 394.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Tennessee Jed ->",
+      "duration": 457.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "The Music Never Stopped",
+      "duration": 476.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Shakedown Street",
+      "duration": 707.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Man Smart (Women are Smarter) ->",
+      "duration": 498.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Foolish Heart ->",
+      "duration": 470.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Drums ->",
+      "duration": 656.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Space ->",
+      "duration": 532.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "The Wheel ->",
+      "duration": 267.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Dear Mr. Fantasy ->",
+      "duration": 311.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Hey Jude Reprise ->",
+      "duration": 155.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Around and Around",
+      "duration": 230.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Goin' Down The Road Feelin' Bad ->",
+      "duration": 343.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t10.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Turn On Your Love Light",
+      "duration": 344.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 393.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-02.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-02.s2t12.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

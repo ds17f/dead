@@ -1,0 +1,291 @@
+{
+  "rating": 2.8000000000000003,
+  "review_count": 3,
+  "source_type": "AUD",
+  "confidence": 0.6,
+  "date": "1980-06-19",
+  "venue": "West High Auditorium",
+  "location": "Anchorage, AK",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Alabama Getaway >",
+      "duration": 315.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t01.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d3t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Promised Land",
+      "duration": 603.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d3t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "They Love Each Other >",
+      "duration": 249.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "El Paso",
+      "duration": 367.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d3t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Tennessee Jed",
+      "duration": 557.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d3t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cassidy",
+      "duration": 319.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d3t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Althea >",
+      "duration": 399.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d2t07.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Looks Like Rain",
+      "duration": 582.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Far From Me",
+      "duration": 319.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 502.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-19d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-19d1t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

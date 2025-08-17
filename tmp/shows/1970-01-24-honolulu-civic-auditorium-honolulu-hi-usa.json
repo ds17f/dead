@@ -1,0 +1,139 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-01-24-honolulu-civic-auditorium-honolulu-hi-usa/",
+  "show_id": "1970-01-24-honolulu-civic-auditorium-honolulu-hi-usa",
+  "band": "Grateful Dead",
+  "venue": "Honolulu Civic Auditorium",
+  "location_raw": "Honolulu, HI",
+  "city": "Honolulu",
+  "state": "HI",
+  "country": "USA",
+  "date": "1970-01-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I'm A King Bee",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Mason's Children",
+          "url": "https://jerrygarcia.com/song/masons-children/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Feedback",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "And We Bid You Good Night",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    },
+    {
+      "name": "Tom Constanten",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152432/TomConstanten_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Sun And The Moon",
+    "September Morn",
+    "Pilfridge Sump",
+    "Michael J. Brady"
+  ],
+  "collection_timestamp": "2025-08-10T08:16:50.210613",
+  "show_time": null,
+  "recordings": [
+    "gd70-01-24.sbd.kaplan.7890.sbeok.shnf"
+  ],
+  "best_recording": "gd70-01-24.sbd.kaplan.7890.sbeok.shnf",
+  "avg_rating": 3.392307692307692,
+  "raw_rating": 4.846153846153846,
+  "recording_count": 1,
+  "confidence": 1.0,
+  "total_high_ratings": 13,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

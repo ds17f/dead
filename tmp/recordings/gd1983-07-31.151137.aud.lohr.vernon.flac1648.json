@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-07-31",
+  "venue": "Ventura County Fairgrounds",
+  "location": "Ventura, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "01. Crowd",
+      "duration": 183.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01. Crowd.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "02. Jack Straw",
+      "duration": 451.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02. Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02. Jack Straw.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "03. Friend Of The Devil",
+      "duration": 707.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03. Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03. Friend Of The Devil.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "04. Me & My Uncle >",
+      "duration": 178.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04. Me & My Uncle >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04. Me & My Uncle >.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "05. Mexicali Blues",
+      "duration": 395.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05. Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05. Mexicali Blues.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "06. West L.A. Fadeaway",
+      "duration": 549.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06. West L.A. Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06. West L.A. Fadeaway.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "07. Little Red Rooster",
+      "duration": 594.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07. Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07. Little Red Rooster.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "08. Tennessee Jed",
+      "duration": 521.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08. Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08. Tennessee Jed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "09. Looks Like Rain >",
+      "duration": 505.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09. Looks Like Rain >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09. Looks Like Rain >.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "10. Deal",
+      "duration": 470.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10. Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10. Deal.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "11. Crowd",
+      "duration": 90.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11. Crowd.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "12. Hell In A Bucket >",
+      "duration": 380.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12. Hell In A Bucket >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12. Hell In A Bucket >.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "13. Scarlet Begonias >",
+      "duration": 683.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13. Scarlet Begonias >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13. Scarlet Begonias >.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "14. Fire On The Mountain >",
+      "duration": 580.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14. Fire On The Mountain >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14. Fire On The Mountain >.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "15. Drums >",
+      "duration": 517.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15. Drums >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15. Drums >.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "16. Space >",
+      "duration": 255.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16. Space >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16. Space >.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "17. The Other One >",
+      "duration": 956.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17. The Other One >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17. The Other One >.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "18. Wharf Rat >",
+      "duration": 563.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18. Wharf Rat >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18. Wharf Rat >.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "19. Throwing Stones >",
+      "duration": 546.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19. Throwing Stones >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19. Throwing Stones >.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "20. Not Fade Away",
+      "duration": 646.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20. Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20. Not Fade Away.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "21. Touch Of Grey >",
+      "duration": 375.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21. Touch Of Grey >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21. Touch Of Grey >.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "22. One More Saturday Night",
+      "duration": 272.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22. One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22. One More Saturday Night.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

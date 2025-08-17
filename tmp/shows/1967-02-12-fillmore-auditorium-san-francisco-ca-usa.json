@@ -1,0 +1,68 @@
+{
+  "url": "https://jerrygarcia.com/show/1967-02-12-fillmore-auditorium-san-francisco-ca-usa/",
+  "show_id": "1967-02-12-fillmore-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1967-02-12",
+  "setlist_status": "missing",
+  "setlist": null,
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Moby Grape",
+    "Sly & The Family Stone",
+    "New Salvation Army Banned",
+    "Notes From The Underground"
+  ],
+  "collection_timestamp": "2025-08-10T08:03:16.193301",
+  "show_time": null,
+  "recordings": [
+    "gd67-02-12.sbd.theotherwayne.18124.sbeok.shnf"
+  ],
+  "best_recording": "gd67-02-12.sbd.theotherwayne.18124.sbeok.shnf",
+  "avg_rating": 2.0833333333333335,
+  "raw_rating": 4.166666666666667,
+  "recording_count": 1,
+  "confidence": 1.0,
+  "total_high_ratings": 14,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "rating": 2.375,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-06-07",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.75,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dont Ease Me in",
+      "duration": 205.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Silver Threads And Golden Needles",
+      "duration": 276.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 237.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 384.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cold Jordan",
+      "duration": 192.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Swing Low Sweet Chariot",
+      "duration": 323.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cumberland Blues",
+      "duration": 311.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Me And My Uncle",
+      "duration": 220.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "New Speedway Boogie",
+      "duration": 552.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Cryptical",
+      "duration": 141.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums",
+      "duration": 100.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Other One",
+      "duration": 580.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cryptical",
+      "duration": 672.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t13.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 73.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t14.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Main Ten",
+      "duration": 304.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t15.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Sugar Magnolia",
+      "duration": 350.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t16.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Louie Louie",
+      "duration": 41.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t17.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "It's A Mans World",
+      "duration": 496.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t18.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Mama Tried",
+      "duration": 199.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t19.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sitting On Top Of The World",
+      "duration": 525.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t20.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Cosmic Charlie",
+      "duration": 483.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t21.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Casey Jones",
+      "duration": 316.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t22.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Good Lovin",
+      "duration": 167.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t23.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Drums",
+      "duration": 208.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t24.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Jam-Good Lovin",
+      "duration": 690.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t25.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t25.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

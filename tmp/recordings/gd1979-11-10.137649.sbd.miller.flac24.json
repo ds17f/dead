@@ -1,0 +1,142 @@
+{
+  "rating": 2.4,
+  "review_count": 1,
+  "source_type": "FM",
+  "confidence": 0.2,
+  "date": "1979-11-10",
+  "venue": "Go To Heaven Outtakes",
+  "location": "Unknown, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Far From Me",
+      "duration": 225.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01FarFromMe.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Althea",
+      "duration": 411.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Althea.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feel Like A Stranger",
+      "duration": 248.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FeelLikeAStranger.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Alabama Getaway",
+      "duration": 245.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04AlabamaGetaway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Don't Ease Me In",
+      "duration": 191.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05DontEaseMeIn.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Easy To Love You",
+      "duration": 217.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06EasyToLoveYou.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06EasyToLoveYou.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lost Sailor",
+      "duration": 353.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LostSailor.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Saint Of Circumstance",
+      "duration": 343.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08SaintOfCircumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

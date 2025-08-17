@@ -1,0 +1,94 @@
+{
+  "rating": 3.3499999999999996,
+  "review_count": 14,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-01-23",
+  "venue": "Eagles Auditorium",
+  "location": "Seattle, WA",
+  "raw_rating": 4.785714285714286,
+  "high_ratings": 13,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "That's It For The Other One ->",
+      "duration": 477.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23d1t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Clementine ->",
+      "duration": 512.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23d1t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Potato Caboose ->",
+      "duration": 477.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23d1t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Born Cross-Eyed ->",
+      "duration": 188.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23d1t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Spanish Jam//",
+      "duration": 288.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-23d1t05.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

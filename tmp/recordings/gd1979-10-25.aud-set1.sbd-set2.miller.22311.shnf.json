@@ -1,0 +1,455 @@
+{
+  "rating": 2.1,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1979-10-25",
+  "venue": "New Haven Coliseum",
+  "location": "New Haven, CT",
+  "raw_rating": 4.2,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Don't Ease Me In",
+      "duration": 223.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t01.mp3",
+          "bitrate": "209"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t01_vbr.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cassidy",
+      "duration": 221.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t02.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t02_vbr.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 294.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t03_vbr.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 203.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t04.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t04_vbr.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Brown Eyed Women",
+      "duration": 244.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t05.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t05_vbr.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now",
+      "duration": 379.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t06.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t06_vbr.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 343.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t07.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t07_vbr.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 336.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t08.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t08_vbr.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 249.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t09.mp3",
+          "bitrate": "209"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d1t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d1t09_vbr.mp3",
+          "bitrate": "231"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Shakedown Street",
+      "duration": 757.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t01_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Passenger",
+      "duration": 298.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t02_vbr.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Friend Of The Devil",
+      "duration": 486.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t03_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Estimated Prophet ->",
+      "duration": 595.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t04.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t04_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World ->",
+      "duration": 553.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t05_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space ->",
+      "duration": 220.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t06.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t06_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 221.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t07.mp3",
+          "bitrate": "203"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d2t07_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 77.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t01_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue ->",
+      "duration": 442.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t02_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Good Lovin'",
+      "duration": 313.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t03.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t03_vbr.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Tuning",
+      "duration": 18.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t04_vbr.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "US Blues",
+      "duration": 236.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-10-25d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25d3t05_vbr.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

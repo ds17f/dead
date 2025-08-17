@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-09-16",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 159.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 432.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain And Snow",
+      "duration": 410.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 732.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 521.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Queen Jane Approximately",
+      "duration": 523.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 662.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 400.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 594.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-16s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-16s1t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

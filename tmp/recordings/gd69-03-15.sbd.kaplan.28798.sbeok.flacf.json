@@ -1,0 +1,142 @@
+{
+  "rating": 1.8,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-03-15",
+  "venue": "Hilton Hotel",
+  "location": "San Franciso, CA",
+  "raw_rating": 3.6,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Stage Banter",
+      "duration": 194.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hard to Handle",
+      "duration": 310.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Morning, Little Schoolgirl",
+      "duration": 534.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dark Star >",
+      "duration": 1229.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "St. Stephen >",
+      "duration": 350.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "William Tell bridge >",
+      "duration": 167.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Eleven >",
+      "duration": 670.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Lovelight",
+      "duration": 1085.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-03-15t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15t08.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

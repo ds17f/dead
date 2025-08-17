@@ -1,0 +1,126 @@
+{
+  "rating": 2.267857142857143,
+  "review_count": 28,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-06-14",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.535714285714286,
+  "high_ratings": 26,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Feedback-->",
+      "duration": 220.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Eleven-->",
+      "duration": 466.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "St. Stephen",
+      "duration": 414.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Alligator-->",
+      "duration": 208.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Lovelight-->",
+      "duration": 654.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Caution-->",
+      "duration": 1468.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Feedback",
+      "duration": 240.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-06-14d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-06-14d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

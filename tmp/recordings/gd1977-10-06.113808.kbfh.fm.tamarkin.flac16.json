@@ -1,0 +1,174 @@
+{
+  "rating": 3.2,
+  "review_count": 3,
+  "source_type": "FM",
+  "confidence": 0.6,
+  "date": "1977-10-06",
+  "venue": "Activity Center. Arizona State U",
+  "location": "Tempe, AZ",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 283.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2001.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tennessee Jed",
+      "duration": 510.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2002.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Looks Like Rain",
+      "duration": 496.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2003.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet (fades out)",
+      "duration": 609.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2004.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums> (fades in)",
+      "duration": 206.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2005.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Not Fade Away>",
+      "duration": 705.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2006.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Black Peter>",
+      "duration": 544.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2007.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away>",
+      "duration": 214.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2008.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2008.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Around & Around (very slight fm glitch at 5:23)",
+      "duration": 463.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2009.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2009.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Terrapin Station",
+      "duration": 646.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1977-10-06-03-2010.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1977-10-06-03-2010.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

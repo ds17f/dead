@@ -1,0 +1,158 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1982-05-28",
+  "venue": "Moscone Convention Center",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tennessee Jed",
+      "duration": 238.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t1.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Truckin'",
+      "duration": 610.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t2.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Drums",
+      "duration": 533.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t3.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Goin' Down the Road Feeling Bad",
+      "duration": 378.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t4.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Not Fade Away",
+      "duration": 408.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t5.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Walkin' Blues",
+      "duration": 419.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t6.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t6.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "A Mind to Give Up Livin'",
+      "duration": 519.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t7.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t7.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Turn on Your Lovelight",
+      "duration": 317.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t8.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t8.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Johnny B. Goode",
+      "duration": 272.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1982-05-28t9.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd_1982-05-28t9.shn"
+        }
+      ]
+    }
+  ]
+}

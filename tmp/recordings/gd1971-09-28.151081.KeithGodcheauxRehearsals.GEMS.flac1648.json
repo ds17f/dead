@@ -1,0 +1,522 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1971-09-28",
+  "venue": "Keith rehearsals",
+  "location": "Santa Venetia, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Bertha",
+      "duration": 327.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t01 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t01 Bertha.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t01 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t01 China Cat Sunflower.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t01 Brown-Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t01 Brown-Eyed Women.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t01 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t01 Deal.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "One More Saturday Night",
+      "duration": 371.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t02 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t02 One More Saturday Night.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t02 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t02 I Know You Rider.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t02 Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t02 Playing In The Band.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t02 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t02 Tennessee Jed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Brokedown Palace",
+      "duration": 146.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t03 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t03 Brokedown Palace.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t03 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t03 Bertha.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t03 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t03 Jack Straw.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t03 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t03 Jam.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "(cut) Tennessee Jed",
+      "duration": 280.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t04 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t04 Tennessee Jed.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t04 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t04 Mexicali Blues.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t04 Deep Elem Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t04 Deep Elem Blues.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t04 Brown-Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t04 Brown-Eyed Women.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "(cut) Candyman",
+      "duration": 76.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t05 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t05 Candyman.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t05 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t05 Brokedown Palace.mp3",
+          "bitrate": "217"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t05 Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t05 Big Railroad Blues.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t05 talk.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t05 talk.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cumberland Blues",
+      "duration": 270.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t06 Cumberland Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t06 Cumberland Blues.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t06 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t06 Bird Song.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t06 The Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t06 The Promised Land.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t06 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t06 Casey Jones.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t07 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t07 Jack Straw.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "El Paso",
+      "duration": 266.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-28 t07 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-28 t07 El Paso.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t07 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t07 Tennessee Jed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t07 Attics Of My Life.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t07 Attics Of My Life.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t08 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t08 Jack Straw.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Uncle John's Band Jam",
+      "duration": 203.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t08 Uncle John's Band Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t08 Uncle John's Band Jam.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-09-30 t08 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-30 t08 Tennessee Jed.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t09 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t09 Mexicali Blues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Truckin'",
+      "duration": 238.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t09 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t09 Truckin'.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t10 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t10 One More Saturday Night.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Me and Bobby McGee",
+      "duration": 442.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t10 Me and Bobby McGee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t10 Me and Bobby McGee.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t11 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t11 Loser.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mama Tried",
+      "duration": 64.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t11 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t11 Mama Tried.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t12 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t12 Jam.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Me and My Uncle",
+      "duration": 341.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-09-29 t12 Me and My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-09-29 t12 Me and My Uncle.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t13 Cold Rain and Snow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t13 Cold Rain and Snow.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Ripple",
+      "duration": 252.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t14 Ripple.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t14 Ripple.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Cumberland Blues",
+      "duration": 274.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t15 Cumberland Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t15 Cumberland Blues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Uncle John's Band",
+      "duration": 405.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t16 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t16 Uncle John's Band.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Bird Song",
+      "duration": 390.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-10-01 t17 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-10-01 t17 Bird Song.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

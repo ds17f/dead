@@ -1,0 +1,206 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1976-10-01",
+  "venue": "Market Square Arena",
+  "location": "Indianapolis, IN",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 300.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t01.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mama Tried",
+      "duration": 203.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t02.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Deal",
+      "duration": 279.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t03.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 260.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t04.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 512.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t05.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 365.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t06.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown Eyed Women",
+      "duration": 301.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t07.mp3",
+          "bitrate": "149"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "It's All Over Now",
+      "duration": 393.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t08.mp3",
+          "bitrate": "149"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Scarlet Begonias",
+      "duration": 667.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t09.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Promised Land",
+      "duration": 245.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t10.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Might As Well",
+      "duration": 374.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t11.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 455.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd76-10-01d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-01d1t12.mp3",
+          "bitrate": "156"
+        }
+      ]
+    }
+  ]
+}

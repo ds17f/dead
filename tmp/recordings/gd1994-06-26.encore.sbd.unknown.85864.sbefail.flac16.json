@@ -1,0 +1,30 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1994-06-26",
+  "venue": "Sam Boyd Silver Bowl",
+  "location": "Las Vegas, NV",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "US Blues",
+      "duration": 310.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-06-26d1t01_usblues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-06-26d1t01_usblues.mp3",
+          "bitrate": "138"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-09-06",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Not Fade Away (13:05) > Easy Wind// (3:20)",
+      "duration": 985.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t1.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

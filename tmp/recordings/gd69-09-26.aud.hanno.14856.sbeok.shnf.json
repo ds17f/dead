@@ -1,0 +1,94 @@
+{
+  "rating": 1.2142857142857142,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-09-26",
+  "venue": "Fillmore East",
+  "location": "NYC, NY",
+  "raw_rating": 2.4285714285714284,
+  "high_ratings": 1,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star",
+      "duration": 1010.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-26new01.mp3",
+          "bitrate": "204"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-26new01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Saint Stephen",
+      "duration": 425.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-26new02.mp3",
+          "bitrate": "212"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-26new02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Eleven",
+      "duration": 538.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-26new03.mp3",
+          "bitrate": "212"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-26new03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "King Bee",
+      "duration": 268.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-26new04.mp3",
+          "bitrate": "208"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-26new04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Death Don't Have No Mercy",
+      "duration": 426.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-26new05.mp3",
+          "bitrate": "210"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-26new05.shn"
+        }
+      ]
+    }
+  ]
+}

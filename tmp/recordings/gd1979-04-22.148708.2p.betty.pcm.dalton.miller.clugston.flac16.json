@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-04-22",
+  "venue": "Spartan Stadium, San Jose State University",
+  "location": "San Jose, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "//He's Gone >",
+      "duration": 331.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-04-22 2p t01 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 2p t01 He's Gone.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drum//s >",
+      "duration": 1136.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-04-22 2p t02 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 2p t02 Drums.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One >",
+      "duration": 667.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-04-22 2p t03 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 2p t03 The Other One.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wharf Rat >",
+      "duration": 602.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-04-22 2p t04 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 2p t04 Wharf Rat.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Around & Around//",
+      "duration": 169.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-04-22 2p t05 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-04-22 2p t05 A & A.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

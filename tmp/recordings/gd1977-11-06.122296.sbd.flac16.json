@@ -1,0 +1,382 @@
+{
+  "rating": 2.1375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1977-11-06",
+  "venue": "Broome County Arena",
+  "location": "Binghamton, NY",
+  "raw_rating": 4.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step Uptown Toodleloo",
+      "duration": 743.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track101.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 446.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track102.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tennessee Jed",
+      "duration": 570.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track103.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues ->",
+      "duration": 195.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track104.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 212.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track105.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Friend Of The Devil",
+      "duration": 552.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track106.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Minglewood Blues",
+      "duration": 323.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track107.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dupree's Diamond Blues",
+      "duration": 363.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track108.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Passenger",
+      "duration": 321.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track109.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Dire Wolf",
+      "duration": 364.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track110.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Music Never Stopped",
+      "duration": 528.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track201.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 488.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track202.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Sunrise",
+      "duration": 266.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track203.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Scarlet Begonias ->",
+      "duration": 662.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track204.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Fire On The Mountain ->",
+      "duration": 564.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track205.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Good Lovin'",
+      "duration": 397.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track206.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Saint Stephen ->",
+      "duration": 472.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track301.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums ->",
+      "duration": 244.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track302.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away ->",
+      "duration": 514.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track303.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat ->",
+      "duration": 704.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track304.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Saint Stephen ->",
+      "duration": 35.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track305.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Truckin'",
+      "duration": 663.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track306.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Johnny B. Goode",
+      "duration": 308.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track307.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track307.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

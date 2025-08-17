@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-18",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd, perry mason theme",
+      "duration": 178.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half Step",
+      "duration": 507.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 565.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Althea",
+      "duration": 418.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint My Masterpiece",
+      "duration": 402.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 348.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 465.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Loose Lucy",
+      "duration": 424.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Gloria",
+      "duration": 437.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-18t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-18t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

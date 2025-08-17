@@ -1,0 +1,158 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-10-10",
+  "venue": "Warfield Theatre",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "On The Road Again",
+      "duration": 107.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t01.mp3",
+          "bitrate": "204"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Must Have Been The Roses",
+      "duration": 189.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Monkey And The Engineer",
+      "duration": 98.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t03.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack-A-Roe",
+      "duration": 145.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t04.mp3",
+          "bitrate": "212"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Hollow",
+      "duration": 115.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t05.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "To Lay Me Down",
+      "duration": 271.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Heaven Help The Fool",
+      "duration": 203.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t07.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 280.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t08.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Ripple",
+      "duration": 157.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-10t09.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-10t09.shn"
+        }
+      ]
+    }
+  ]
+}

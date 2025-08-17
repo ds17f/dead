@@ -1,0 +1,218 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-10-11-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1983-10-11-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1983-10-11",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Stephen",
+          "url": "https://jerrygarcia.com/song/saint-stephen/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:50:08.319156",
+  "show_time": null,
+  "recordings": [
+    "gd1983-10-11.sbd.harrell.14525.shnf",
+    "gd83-10-11.sbd.bertha-ashley.26459.sbeok.flacf",
+    "gd83-10-11.sbd.harrell.7339.sbeok.shnf",
+    "gd83-10-11.sbd.braverman.7372.sbeok.shnf",
+    "gd1983-10-11.118673.atm11.chasingwilma.flac16",
+    "gd83-10-11.silberman.gustin.344.sbeok.shnf",
+    "gd1983-10-11.fob.atm11.chasingwilma.fix.102106.sbeok.flac16",
+    "gd1983-10-11.120001.mtx.dusborne.flac16",
+    "gd1983-10-11.143258.senn421-beyer-m201.holbrook.flac1644",
+    "gd1983-10-11.143046.beyer.m160.wise.miller.clugston.flac1648",
+    "gd1983-10-11.beyerM160.wise.miller.32644.sbeok.flac16",
+    "gd1983-10-11.143610.fob.nak700.cohen.miller.clugston.flac1648",
+    "gd1983-10-11.143259.senn421-beyer-m201.holbrook.flac2448",
+    "gd1983-10-11.135250.mtx.v2.dusborne.flac16",
+    "gd1983-10-11.143611.fob.nak700.cohen.miller.clugston.flac2496",
+    "gd1983-10-11.135285.Unk-Hill.Keo.Flac1644",
+    "gd1983-10-11.135286.Unk-Hill.Keo.Flac2496",
+    "gd1983-10-11.senn441-u87.eaton.miller.91124.sbeok.flac16",
+    "gd1983-10-11.fob.atm11.chasingwilma.101949.sbeok.flac16",
+    "gd1983-10-11.122215.audio-technia.chaisingwilma.flac24",
+    "gd1983-10-11.152504.Beyer-M160-unknown-onemoreshot.shnf",
+    "gd1983-10-11.beyerm201.pinney.russjcan.103298.flac16",
+    "gd1983-10-11.163828.beyer.m88.vita.miller.clugston.flac1648",
+    "gd1983-10-11.137322.senn421.miller.flac16",
+    "gd1983-10-11.143047.beyer.m160.wise.miller.clugston.flac2496",
+    "gd1983-10-11.168941.mtx.seamons.ht170.flac16",
+    "gd1983-10-11.163829.beyer.m88.vita.miller.clugston.flac2496",
+    "gd1983-10-11.148172.2nd.set.fob.akg.d330bt.senn421.hecht.miller.clugston.flac2496",
+    "gd1983-10-11.137301.senn421.miller.flac24",
+    "gd1983-10-11.148171.2nd.set.fob.akg.d330bt.senn421.hecht.miller.clugston.flac1648",
+    "gd1983-10-11.167346.senn441.neumann.u87.blend.eaton.miller.clugston.flac2496",
+    "gd1983-10-11.167345.senn441.neumann.u87.blend.eaton.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1983-10-11.sbd.harrell.14525.shnf",
+  "avg_rating": 2.0484536082474225,
+  "raw_rating": 4.351851851851852,
+  "recording_count": 32,
+  "confidence": 1.0,
+  "total_high_ratings": 95,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 27,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years",
+    "in-out-of-the-garden-msg-81-83"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-10-20",
+  "venue": "The Centrum",
+  "location": "Worcester, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 379.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 233.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West LA Fadeaway",
+      "duration": 471.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WestLaFadeaway.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 554.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NewMinglewoodBlues.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 507.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TennesseeJed.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hell In A Bucket",
+      "duration": 368.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06HellInABucket.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Row Jimmy",
+      "duration": 558.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07RowJimmy.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 515.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LooksLikeRain.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 545.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Deal.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 530.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10GoodLovin.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Keep Your Day Job",
+      "duration": 282.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11KeepYourDayJob.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11KeepYourDayJob.mp3",
+          "bitrate": "203"
+        }
+      ]
+    }
+  ]
+}

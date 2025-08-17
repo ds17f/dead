@@ -1,0 +1,30 @@
+{
+  "rating": 1.4285714285714286,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-10-31",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 2.857142857142857,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jam Session (musicians unknown)",
+      "duration": 341.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Acid3_07.mp3",
+          "bitrate": "205"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Acid3_07.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 2.1,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1972-11-26",
+  "venue": "San Antonio Civic Auditorium",
+  "location": "San Antonio, TX",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 1519.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-26altt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-26altt01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bobby McGee",
+      "duration": 347.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-26altt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-26altt02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star >",
+      "duration": 1511.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-26d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-26d3t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bobby McGee",
+      "duration": 338.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-26d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-26d3t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-04-28",
+  "venue": "Frost Amphitheatre - Stanford University",
+  "location": "Palo Alto, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Gimme Some Lovin' > #",
+      "duration": 322.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo >",
+      "duration": 455.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "tuning",
+      "duration": 470.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 103.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song &",
+      "duration": 624.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tuning $",
+      "duration": 170.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tons Of Steel",
+      "duration": 265.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower > %",
+      "duration": 328.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 325.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "tuning",
+      "duration": 134.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Hell In A Bucket >",
+      "duration": 390.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crazy Fingers >",
+      "duration": 475.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band >",
+      "duration": 578.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Doll >",
+      "duration": 350.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band Jam >",
+      "duration": 241.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 431.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 625.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Playing In The Band Reprise >",
+      "duration": 228.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat >",
+      "duration": 509.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing//Stones > *",
+      "duration": 425.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 334.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 278.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "She Belongs To Me",
+      "duration": 366.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-28d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-28d3t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

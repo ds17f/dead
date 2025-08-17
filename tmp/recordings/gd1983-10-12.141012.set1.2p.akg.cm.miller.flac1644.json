@@ -1,0 +1,222 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-10-12",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 416.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ColdRainAndSnow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 560.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02NewMinglewoodBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Ramble On Rose",
+      "duration": 425.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03RambleOnRose.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "My Brother Esau",
+      "duration": 374.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MyBrotherEsau.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It Must Have Been The Roses",
+      "duration": 335.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 369.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Cassidy.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cumberland Blues",
+      "duration": 576.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07CumberlandBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 507.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LooksLikeRain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Might As Well",
+      "duration": 279.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09MightAsWell.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 18.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Help On The Way",
+      "duration": 238.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11HelpOnTheWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11HelpOnTheWay.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Slipknot!",
+      "duration": 566.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Slipknot.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Franklin's Tower",
+      "duration": 598.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13FranklinsTower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-07-16",
+  "venue": "Rich Stadium",
+  "location": "Orchard Park, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell in a Bucket",
+      "duration": 278.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t01_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step",
+      "duration": 312.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t02_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Blow Away",
+      "duration": 308.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t03_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried >",
+      "duration": 92.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t04_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 235.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t05_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 284.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t06_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now",
+      "duration": 306.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t07.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t07_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "High Time",
+      "duration": 239.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d1t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t08_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let it Grow >",
+      "duration": 423.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t01_vbr.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 135.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t02_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia >",
+      "duration": 159.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t03_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias >",
+      "duration": 226.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t04.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t04_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart, Woman Smarter",
+      "duration": 313.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t05_vbr.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ship of Fools",
+      "duration": 297.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t06.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t06_vbr.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin' >",
+      "duration": 342.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t07.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t07_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Jam >",
+      "duration": 315.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t08.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t08_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums >",
+      "duration": 305.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t09.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d2t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t09_vbr.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space >",
+      "duration": 299.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t01_vbr.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Wheel >",
+      "duration": 214.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t02.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t02_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Gimme Some Lovin' >",
+      "duration": 230.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t03_vbr.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Wharf Rat >",
+      "duration": 382.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t04_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around and Around >",
+      "duration": 149.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t05.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t05_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sunshine Daydream",
+      "duration": 265.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t06_vbr.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "E: Brokedown Palace",
+      "duration": 185.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t07.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-07-16d3t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t07_vbr.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-10-11",
+  "venue": "USAir Arena",
+  "location": "Landover, MD",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd intro >",
+      "duration": 183.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d101.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Picasso Moon",
+      "duration": 414.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d102.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack A Roe",
+      "duration": 335.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d103.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now",
+      "duration": 364.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d104.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 437.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d105.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "If The Shoe Fits",
+      "duration": 380.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d106.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lazy River Road",
+      "duration": 433.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d107.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ain't No Easy Answers",
+      "duration": 351.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d108.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 594.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d109.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crowd intro >",
+      "duration": 116.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d201.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes Of The World >",
+      "duration": 1284.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d202.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Women Are Smarter >",
+      "duration": 593.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d203.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samba In The Rain >",
+      "duration": 403.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d204.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone > Jam >",
+      "duration": 991.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d205.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Jerry & drummers >",
+      "duration": 340.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d206.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 676.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d207.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 766.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d301.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "China Doll >",
+      "duration": 331.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d302.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 654.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d303.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Lucy in the Sky With Diamonds",
+      "duration": 277.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d304.mp3",
+          "bitrate": "212"
+        }
+      ]
+    }
+  ]
+}

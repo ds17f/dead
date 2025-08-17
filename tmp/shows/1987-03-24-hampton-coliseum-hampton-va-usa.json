@@ -1,0 +1,197 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-03-24-hampton-coliseum-hampton-va-usa/",
+  "show_id": "1987-03-24-hampton-coliseum-hampton-va-usa",
+  "band": "Grateful Dead",
+  "venue": "Hampton Coliseum",
+  "location_raw": "Hampton, VA",
+  "city": "Hampton",
+  "state": "VA",
+  "country": "USA",
+  "date": "1987-03-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:57:16.190137",
+  "show_time": null,
+  "recordings": [
+    "gd1987-03-24.sbd.milller.94349.sbeok.flac16",
+    "gd87-03-24.set2-sbd.miller.25581.sbeok.shnf",
+    "gd1987-03-24.140805.sbd.miller.flac2496",
+    "gd1987-03-24.140920.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd87-03-24.schoeps.weber-small.gardner.10354.sbeok.shnf",
+    "gd1987-03-24.142042.mtx.tobin.flac1644",
+    "gd1987-03-24.senn441fob.scarletdog.126241.flac16",
+    "gd1987-03-24.nak.holtz.gems.91254.sbeok.flac16",
+    "gd1987-03-24.135546.set2.chasingwilma.flac24",
+    "gd1987-03-24.163461.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1987-03-24.nak300.braverman.10077.shnf",
+    "gd1987-03-24.142044.5-1.tobin.flac1648",
+    "gd1987-03-24.Senn441.Hill.Keo.131806.Flac1644",
+    "gd1987-03-24.142041.mtx.tobin.flac2496",
+    "gd1987-03-24.Senn441.Hill.Keo.131807.Flac2496",
+    "gd1987-03-24.135992.datbrad.flac16",
+    "gd1987-03-24.142039.pp-aud.hill.tobin.flac2496",
+    "gd1987-03-24.163462.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1987-03-24.142040.pp-aud.hill.tobin.flac1644",
+    "gd1987-03-24.senn.koucky.gmb.77915.sbeok.flac16",
+    "gd1987-03-24.142043.dts.tobin.flac1644",
+    "gd1987-03-24.nak300.damico.89110.sbeok.flac16"
+  ],
+  "best_recording": "gd1987-03-24.sbd.milller.94349.sbeok.flac16",
+  "avg_rating": 2.1238532110091746,
+  "raw_rating": 4.433333333333334,
+  "recording_count": 22,
+  "confidence": 1.0,
+  "total_high_ratings": 27,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 16,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

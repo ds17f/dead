@@ -1,0 +1,126 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-05-23",
+  "venue": "Seminole Indian Village",
+  "location": "Hollywood, FL",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd69-05-23 tHard To Handle",
+      "duration": 301.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T01HardToHandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T01HardToHandle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd69-05-23 tMorning Dew",
+      "duration": 582.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T02MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T02MorningDew.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd69-05-23 tMe & My Uncle",
+      "duration": 210.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T03MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T03MeMyUncle.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd69-05-23 tDark Star",
+      "duration": 1182.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T04DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T04DarkStar.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd69-05-23 tSt. Stephen",
+      "duration": 381.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T05St.Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T05St.Stephen.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd69-05-23 tThe Eleven",
+      "duration": 844.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T06TheEleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T06TheEleven.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd69-05-23 tTurn On Your Lovelight",
+      "duration": 1931.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-05-23T07TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-05-23T07TurnOnYourLovelight.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

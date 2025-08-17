@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1982-08-01",
+  "venue": "Zoo Amphitheater",
+  "location": "Oklahoma City, OK",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd/tuning",
+      "duration": 171.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 341.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 491.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C.C. Rider",
+      "duration": 604.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 533.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me & My Uncle >",
+      "duration": 175.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 337.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower >",
+      "duration": 356.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 316.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set1T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set1T09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "crowd/tuning",
+      "duration": 78.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band >",
+      "duration": 801.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Iko Iko > (Playing Jam) >",
+      "duration": 711.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Lost Sailor >",
+      "duration": 384.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Saint Of Circumstance >",
+      "duration": 523.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 503.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 438.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T07.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel >",
+      "duration": 365.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Playing In The Band Reprise >",
+      "duration": 285.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter >",
+      "duration": 481.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around & Around >",
+      "duration": 235.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Johnny B. Goode",
+      "duration": 271.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T12.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 328.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-01-ohr-set2T13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-01-ohr-set2T13.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

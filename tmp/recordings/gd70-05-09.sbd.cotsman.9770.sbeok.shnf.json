@@ -1,0 +1,110 @@
+{
+  "rating": 1.4615384615384615,
+  "review_count": 13,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-05-09",
+  "venue": "Worcester Polytechnic Institute",
+  "location": "Worcester, MA",
+  "raw_rating": 2.923076923076923,
+  "high_ratings": 6,
+  "low_ratings": 5,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Introduction",
+      "duration": 28.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-09d1t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-09d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Deep Elementary Blues",
+      "duration": 190.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-09d1t02.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-09d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Friend Of The Devil",
+      "duration": 108.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-09d1t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-09d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Silver Threads and Golden Needles",
+      "duration": 118.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-09d1t04.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-09d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Black Peter",
+      "duration": 204.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-09d1t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-09d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Announcement",
+      "duration": 16.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-09d1t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-09d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

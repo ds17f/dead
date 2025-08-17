@@ -1,0 +1,318 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-09-12",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Greatest Story Ever Told",
+      "duration": 297.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01GreatestStoryEverTold.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 511.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Bertha.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's All Over Now",
+      "duration": 611.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ItsAllOverNow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 302.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04RowJimmy.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "My Brother Esau",
+      "duration": 790.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MyBrotherEsau.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big Railroad Blues",
+      "duration": 293.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BigRailroadBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Looks Like Rain",
+      "duration": 502.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LooksLikeRain.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Might As Well",
+      "duration": 282.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MightAsWell.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Help On The Way",
+      "duration": 247.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09HelpOnTheWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09HelpOnTheWay.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Slipknot!",
+      "duration": 400.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Slipknot.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Franklin's Tower",
+      "duration": 666.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FranklinsTower.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 1005.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 391.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 513.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Other One",
+      "duration": 335.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15TheOtherOne.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter",
+      "duration": 464.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16BlackPeter.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 492.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ThrowingStones.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 605.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18NotFadeAway.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Brokedown Palace",
+      "duration": 322.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BrokedownPalace.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-05-04",
+  "venue": "Baltimore Civic Center",
+  "location": "Baltimore, MD",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 55.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t01.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step >",
+      "duration": 594.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t02.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower >",
+      "duration": 653.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t03.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Feel Like A Stranger",
+      "duration": 586.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t04.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 532.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t05.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 348.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t06.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Easy To Love You",
+      "duration": 282.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t07.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brown Eyed Women",
+      "duration": 417.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t08.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "It's All Over Now",
+      "duration": 585.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t09.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 198.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t10.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Promised Land",
+      "duration": 293.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t11.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 52.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias >",
+      "duration": 393.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t02.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire on the Mountain",
+      "duration": 687.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t03.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Samson and Delilah",
+      "duration": 580.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t04.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Ship Of Fools",
+      "duration": 546.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Playin' in the Band >",
+      "duration": 955.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums >",
+      "duration": 403.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t07.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space >",
+      "duration": 276.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter >",
+      "duration": 605.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t09.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia",
+      "duration": 517.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t10.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 324.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t11.mp3",
+          "bitrate": "220"
+        }
+      ]
+    }
+  ]
+}

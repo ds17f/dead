@@ -1,0 +1,174 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-21",
+  "venue": "Madison Square Garden",
+  "location": "New York City, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Here Comes Sunshine",
+      "duration": 478.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d2t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Way To Go Home",
+      "duration": 420.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Playing in the Band >",
+      "duration": 512.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Terrapin Station ->",
+      "duration": 1073.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Drums ->",
+      "duration": 638.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d2t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Space ->",
+      "duration": 636.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d3t01.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Last Time ->",
+      "duration": 342.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d3t02.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Stella Blue ->",
+      "duration": 475.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d3t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Sugar Magnolia",
+      "duration": 557.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d3t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Weight",
+      "duration": 362.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-09-21d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-09-21d3t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

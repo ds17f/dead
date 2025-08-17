@@ -1,0 +1,94 @@
+{
+  "rating": 1.6666666666666667,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-07-00",
+  "venue": "Festival Express Train",
+  "location": "Canada",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jam",
+      "duration": 676.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-0xd1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-0xd1t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jam",
+      "duration": 219.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-0xd1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-0xd1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jam",
+      "duration": 477.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-0xd1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-0xd1t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jam",
+      "duration": 950.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-0xd1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-0xd1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Sugar Magnolia",
+      "duration": 1100.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-07-0xd1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-0xd1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

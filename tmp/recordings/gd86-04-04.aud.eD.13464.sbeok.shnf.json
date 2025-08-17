@@ -1,0 +1,414 @@
+{
+  "rating": 1.2375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1986-04-04",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 2.75,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jack Straw",
+      "duration": 318.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dire Wolf",
+      "duration": 175.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "C.C. Rider",
+      "duration": 445.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Candyman",
+      "duration": 369.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t04.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "It's All Over Now",
+      "duration": 447.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Crazy Fingers",
+      "duration": 452.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t06.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Greatest Story Ever Told",
+      "duration": 221.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Keep Your Day Job",
+      "duration": 238.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t08.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Touch of Grey",
+      "duration": 343.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t09.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Looks Like Rain",
+      "duration": 578.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d1t10.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d1t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "He's Gone",
+      "duration": 639.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Smokestack Lightning",
+      "duration": 256.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam",
+      "duration": 187.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 772.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 300.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t05.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel",
+      "duration": 268.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t06.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Stella Blue",
+      "duration": 461.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones",
+      "duration": 518.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t08.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Turn on Your Lovelight",
+      "duration": 293.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t09.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Box of Rain",
+      "duration": 292.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-04d2t10.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd86-04-04d2t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd86-04-04d2t10.shn"
+        }
+      ]
+    }
+  ]
+}

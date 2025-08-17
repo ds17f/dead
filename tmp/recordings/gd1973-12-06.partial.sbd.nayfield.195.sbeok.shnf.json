@@ -1,0 +1,126 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1973-12-06",
+  "venue": "Cleveland Public Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "They Love Each Other",
+      "duration": 171.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d1t1.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d1t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 203.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d1t2.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d1t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "China Cat Sunflower ->",
+      "duration": 252.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d1t3.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d1t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Know You Rider",
+      "duration": 260.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d1t4.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d1t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Star ->",
+      "duration": 1322.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d2t1.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d2t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eyes Of The World ->",
+      "duration": 478.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d2t2.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d2t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "stella blue",
+      "duration": 286.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd731206-d2t3.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd731206-d2t3.shn"
+        }
+      ]
+    }
+  ]
+}

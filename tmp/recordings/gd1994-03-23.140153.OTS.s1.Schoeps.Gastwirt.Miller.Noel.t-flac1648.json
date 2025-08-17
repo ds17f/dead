@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-03-23",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street ->",
+      "duration": 787.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 578.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "tuning",
+      "duration": 153.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 678.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 333.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Might as Well ->",
+      "duration": 282.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Promised Land",
+      "duration": 322.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-23.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-23.s1t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-07-06",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 453.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01IkoIko.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 316.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02JackStraw.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Big Railroad Blues",
+      "duration": 388.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03BigRailroadBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 557.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Candyman",
+      "duration": 420.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Candyman.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle",
+      "duration": 168.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MeAndMyUncle.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 390.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MexicaliBlues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 733.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 871.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower",
+      "duration": 380.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ChinaCatSunflower.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 433.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship Of Fools",
+      "duration": 426.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ShipOfFools.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 506.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ManSmartwomanSmarter.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 722.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 414.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Dear Mr Fantasy",
+      "duration": 587.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16DearMrFantasy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One",
+      "duration": 511.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheOtherOne.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 515.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BlackPeter.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Why Don't We Do It In The Road",
+      "duration": 235.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19WhyDontWeDoItInTheRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19WhyDontWeDoItInTheRoad.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around",
+      "duration": 31.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20AroundAndAround.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia",
+      "duration": 525.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21SugarMagnolia.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 86.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Touch Of Grey",
+      "duration": 416.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23TouchOfGrey.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

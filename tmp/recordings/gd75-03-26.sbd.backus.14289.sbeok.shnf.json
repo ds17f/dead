@@ -1,0 +1,94 @@
+{
+  "rating": 1.4,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1975-03-26",
+  "venue": "Ace's Studio",
+  "location": "Mill Valley, California",
+  "raw_rating": 2.8,
+  "high_ratings": 1,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "tuning, noodling, ect",
+      "duration": 534.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-26T01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-26T01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "some bits of Lazy Lightning and some tuning and banter",
+      "duration": 432.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-26T02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-26T02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "more bits of Lazy lightning and Slipknot, banter, ect",
+      "duration": 55.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-26T03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-26T03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "some Blues For Allah bits",
+      "duration": 149.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-26T04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-26T04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "jamming with Slipknot-type theme",
+      "duration": 421.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-26T05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-26T05.shn"
+        }
+      ]
+    }
+  ]
+}

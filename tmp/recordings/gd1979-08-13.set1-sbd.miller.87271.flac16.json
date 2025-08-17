@@ -1,0 +1,190 @@
+{
+  "rating": 2.2142857142857144,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1979-08-13",
+  "venue": "McNichols Arena",
+  "location": "Denver, CO",
+  "raw_rating": 4.428571428571429,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 84.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 722.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle ->",
+      "duration": 187.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big River",
+      "duration": 478.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Candyman",
+      "duration": 479.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 234.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Friend Of The Devil",
+      "duration": 557.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "New Minglewood Blues",
+      "duration": 422.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Althea ->",
+      "duration": 515.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Lost Sailor ->",
+      "duration": 433.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Deal",
+      "duration": 314.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-08-13d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-08-13d1t11.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

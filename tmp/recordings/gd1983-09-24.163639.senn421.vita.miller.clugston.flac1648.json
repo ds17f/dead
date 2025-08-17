@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-09-24",
+  "venue": "Santa Cruz County Fairgrounds",
+  "location": "Watsonville, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Alabama Getaway >",
+      "duration": 301.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t01 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t01 Alabama Getaway.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Promised Land",
+      "duration": 272.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t02 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t02 Promised Land.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "They Love Each Other",
+      "duration": 492.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t03 TLEO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t03 TLEO.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Me & My Uncle >",
+      "duration": 185.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t04 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t04 M & MU.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Mexicali Blues",
+      "duration": 320.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t05 Mexicali.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t05 Mexicali.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Bird Song",
+      "duration": 632.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t06 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t06 Bird Song.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Hell In A Bucket",
+      "duration": 331.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t07 Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t07 Bucket.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Deep Elem Blues >",
+      "duration": 358.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t08 Deep Elem Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t08 Deep Elem Blues.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Looks Like Rain >",
+      "duration": 542.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t09 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t09 LLR.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Keep Your Day Job",
+      "duration": 260.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s1t10 Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s1t10 Day Job.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 60.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 460.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t02 China Cat.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 454.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t03 IKYR.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 429.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t04 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t04 Man Smart (Woman Smarter).mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Ship Of Fools",
+      "duration": 605.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t05 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t05 Ship Of Fools.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Truckin' >",
+      "duration": 633.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t06 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t06 Truckin'.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 505.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t07 Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 651.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t08 Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Uncle John's Band >",
+      "duration": 598.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t09 UJB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t09 UJB.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Throwing Stones >",
+      "duration": 460.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t10 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t10 Throwing Stones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Not Fade Away",
+      "duration": 544.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t11 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t11 NFA.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E1: Brokedown Palace",
+      "duration": 325.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t12 E1_Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t12 E1_Brokedown.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "E2: One More Saturday Night",
+      "duration": 328.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-09-24 s2t13 E2_OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24 s2t13 E2_OMSN.mp3",
+          "bitrate": "206"
+        }
+      ]
+    }
+  ]
+}

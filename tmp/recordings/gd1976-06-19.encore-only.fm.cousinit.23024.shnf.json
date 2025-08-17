@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1976-06-19",
+  "venue": "Capitol Theatre",
+  "location": "Passaic, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Not Fade Away",
+      "duration": 345.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-06-19e.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-06-19e.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1981-03-13",
+  "venue": "Utica Memorial Auditorium",
+  "location": "Utica, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 811.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-13d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-13d1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Minglewood Blues",
+      "duration": 448.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-13d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-13d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cassidy ->",
+      "duration": 356.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-13d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-13d1t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Althea",
+      "duration": 533.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-13d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-13d1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Music Never Stopped",
+      "duration": 529.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-03-13d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-03-13d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

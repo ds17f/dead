@@ -52,15 +52,15 @@ case "$1" in
   else
     echo "🔍 Showing V2 database import logs (${TIMEOUT}s)..."
   fi
-  run_with_timeout adb logcat -s AssetManagerV2 DataImportServiceV2 DatabaseManagerV2
+  run_with_timeout adb logcat -s AssetManager DataImportService DatabaseManager
   ;;
-"v2" | "v2db")
+"v2" | "v2db" | "database" | "db")
   if [ "$TIMEOUT" -eq 0 ]; then
     echo "🔍 Showing all V2 database logs (no timeout)..."
   else
     echo "🔍 Showing all V2 database logs (${TIMEOUT}s)..."
   fi
-  run_with_timeout adb logcat | grep -E ".*Database.*V2|.*Import.*V2|.*Asset.*V2|.*Manager.*V2"
+  run_with_timeout adb logcat | grep -E "Database|DataImport|DatabaseManager|AssetManager|DeadArchiveDatabase|ShowEntity|RecordingEntity|DataVersion|AwesomeBar"
   ;;
 "app" | "application")
   if [ "$TIMEOUT" -eq 0 ]; then
@@ -108,7 +108,23 @@ case "$1" in
   ;;
 "import-summary")
   echo "📊 V2 Import Summary (last run):"
-  adb logcat -d | grep -E "V2.*Import|shows.*venues" | tail -10
+  adb logcat -d | grep -E "DataImport|DatabaseManager|shows.*processed|recordings.*processed|entities.*created" | tail -15
+  ;;
+"startup" | "init")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing startup and database initialization logs (no timeout)..."
+  else
+    echo "🔍 Showing startup and database initialization logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s DeadArchiveApplication DatabaseManager DataImportService SplashV2Service SplashViewModelV2
+  ;;
+"awesome" | "search")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing Awesome Bar and search logs (no timeout)..."
+  else
+    echo "🔍 Showing Awesome Bar and search logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s AwesomeBarService ShowFtsDao BrowseSearchService
   ;;
 *)
   echo "📱 Dead Archive Logging Utility"
@@ -118,7 +134,9 @@ case "$1" in
   echo "📋 Available log views:"
   echo "  error         - Show all error logs for Dead Archive components"
   echo "  dataimport    - Show V2 database import logs"
-  echo "  v2            - Show all V2 database related logs"
+  echo "  database/db   - Show all V2 database related logs"
+  echo "  startup/init  - Show startup and database initialization logs"
+  echo "  awesome/search- Show Awesome Bar and search logs"
   echo "  app           - Show application startup logs"
   echo "  player        - Show media player logs"
   echo "  settings      - Show settings related logs"

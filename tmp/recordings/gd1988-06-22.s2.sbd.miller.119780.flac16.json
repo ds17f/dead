@@ -1,0 +1,190 @@
+{
+  "rating": 1.2000000000000002,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1988-06-22",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 3.0,
+  "high_ratings": 1,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 55.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t01.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Foolish Heart ->",
+      "duration": 412.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t02.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Looks Like Rain ->",
+      "duration": 630.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t03.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Scarlet Begonias >",
+      "duration": 470.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t04.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I Will Take You Home ->",
+      "duration": 210.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums ->",
+      "duration": 566.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t06.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space ->",
+      "duration": 461.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Wheel ->",
+      "duration": 304.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t08.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Stella Blue ->",
+      "duration": 605.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t09.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Turn On Your Lovelight",
+      "duration": 467.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t10.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 301.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd88-06-22s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-06-22s2t11.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

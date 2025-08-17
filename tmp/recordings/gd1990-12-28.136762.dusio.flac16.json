@@ -1,0 +1,270 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-12-28",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "01-01-Cold Rain And Snow",
+      "duration": 434.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-01-coldRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-01-coldRainAndSnow.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "01-02-Walking Blues",
+      "duration": 441.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-02-walkingBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-02-walkingBlues.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "01-03-Friend Of The Devil",
+      "duration": 602.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-03-friendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-03-friendOfTheDevil.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "01-04-Used To Love Her",
+      "duration": 536.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-04-usedToLoveHer.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-04-usedToLoveHer.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "01-05-Brown Eyed Women",
+      "duration": 379.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-05-brownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-05-brownEyedWomen.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "01-06-Victim Or The Crime",
+      "duration": 457.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-06-victimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-06-victimOrTheCrime.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "01-07-Foolish Heart",
+      "duration": 714.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-07-foolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-07-foolishHeart.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "02-01-China Cat Sunflower>I Know You Rider",
+      "duration": 784.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-01-chinaCatSunfloweriKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-01-chinaCatSunfloweriKnowYouRider.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Saint Of Circumstance",
+      "duration": 433.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-02-st.OfCirumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-02-st.OfCirumstance.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "02-03-He's Gone>Jam",
+      "duration": 1163.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-03-hesGonejam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-03-hesGonejam.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums->",
+      "duration": 528.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-04-Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-04-Drums.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Jam->",
+      "duration": 745.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-05-Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-05-Space.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "All Along The Watchtower->",
+      "duration": 475.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-06-allAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-06-allAlongTheWatchtower.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Stella Blue->",
+      "duration": 528.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-07-stellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-07-stellaBlue.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Around & Around,",
+      "duration": 826.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-08-aroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-08-aroundAndAround.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "E: Black Muddy River",
+      "duration": 370.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-09-blackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-09-blackMuddyRiver.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

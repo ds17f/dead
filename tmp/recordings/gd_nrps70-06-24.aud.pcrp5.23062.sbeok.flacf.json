@@ -1,0 +1,766 @@
+{
+  "rating": 2.403225806451613,
+  "review_count": 62,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-06-24",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.806451612903226,
+  "high_ratings": 60,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 350.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T01-Direwolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T01-Direwolf.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Don't Ease Me In",
+      "duration": 197.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T02-DontEase.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T02-DontEase.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Attics Of My Life",
+      "duration": 372.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T03-Attics.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T03-Attics.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend Of The Devil",
+      "duration": 299.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T04-FOTD.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T04-FOTD.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Let Me In",
+      "duration": 284.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T05-83968.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T05-83968.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Candyman",
+      "duration": 450.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T06-Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T06-Candyman.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Uncle John's Band",
+      "duration": 370.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T07-UncleJohns.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T07-UncleJohns.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "intro",
+      "duration": 32.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T08-Intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T08-Intro.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Workingman's Blues",
+      "duration": 285.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T09-WorkinManBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T09-WorkinManBlues.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Watcha Gonna Do",
+      "duration": 295.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T10-WatchaGonnaDo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T10-WatchaGonnaDo.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Live and Let Live",
+      "duration": 250.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T11-LiveAndLetLive.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T11-LiveAndLetLive.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "If You Hear Me",
+      "duration": 296.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T12-IfYouHearMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T12-IfYouHearMe.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Henry",
+      "duration": 252.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T13-Henry.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T13-Henry.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Portland Woman",
+      "duration": 328.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T14-PortlandWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T14-PortlandWoman.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Dirty Business",
+      "duration": 407.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED1T15-DirtyBusiness.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED1T15-DirtyBusiness.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truck Drivin' Man",
+      "duration": 234.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED2T01-TruckDrivinMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED2T01-TruckDrivinMan.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Last Lonely Eagle",
+      "duration": 410.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED2T02-LastLonelyEagle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED2T02-LastLonelyEagle.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Honkey Tonk Women",
+      "duration": 324.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24ED2T03-HonkeyTonkWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24ED2T03-HonkeyTonkWomen.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "intro",
+      "duration": 57.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD3T11-Intros.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD3T11-Intros.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Six Days On The Road",
+      "duration": 260.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD3T12-6DaysOnTheRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD3T12-6DaysOnTheRoad.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Superman",
+      "duration": 225.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD3T13-Superman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD3T13-Superman.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "I Don't Know You",
+      "duration": 416.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T01-IDontKnowYou.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T01-IDontKnowYou.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Together Again",
+      "duration": 122.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T02-TogetherAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T02-TogetherAgain.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Fair Chance To Know",
+      "duration": 281.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T03-FairChanceToKnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T03-FairChanceToKnow.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Portland Woman",
+      "duration": 307.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T04-PortlandWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T04-PortlandWoman.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Garden Of Eden",
+      "duration": 356.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T05-GardenOfEden.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T05-GardenOfEden.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Henry",
+      "duration": 238.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T06-Henry.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T06-Henry.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "All I Ever Wanted",
+      "duration": 457.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T07-AllIEverWanted.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T07-AllIEverWanted.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Delia",
+      "duration": 279.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T08-Delia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T08-Delia.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Louisiana Lady",
+      "duration": 271.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T09-LouisianaLady.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T09-LouisianaLady.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Honky Tonk Women",
+      "duration": 308.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T10-HonkeyTonkWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T10-HonkeyTonkWomen.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "tuning",
+      "duration": 139.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T11-Intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T11-Intro.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Not Fade Away",
+      "duration": 704.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T12-NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T12-NFA.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Easy Wind",
+      "duration": 602.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD4T13-EasyWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD4T13-EasyWind.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Me and My Uncle",
+      "duration": 227.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T01-MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T01-MeAndMyUncle.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Mickey's Gong",
+      "duration": 122.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T02-MickeysGong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T02-MickeysGong.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Dark Star",
+      "duration": 601.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T03-DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T03-DarkStar.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Attics Of My Life",
+      "duration": 391.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T04-Attics.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T04-Attics.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Dark Star",
+      "duration": 399.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T05-DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T05-DarkStar.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Sugar Magnolia",
+      "duration": 179.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T06-SugarMag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T06-SugarMag.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Dark Star",
+      "duration": 182.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T07-DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T07-DarkStar.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "42",
+      "title": "St Stephen",
+      "duration": 376.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T08-StStephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T08-StStephen.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "43",
+      "title": "China Cat Sunflower",
+      "duration": 277.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T09-ChinaCat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T09-ChinaCat.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "44",
+      "title": "I Know You Rider",
+      "duration": 357.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T10-Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T10-Rider.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "45",
+      "title": "Uncle John's Band",
+      "duration": 409.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T11-UncleJohns.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T11-UncleJohns.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "46",
+      "title": "tuning",
+      "duration": 292.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T12-ExitMusic.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T12-ExitMusic.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "47",
+      "title": "Swing Low Sweet Chariot",
+      "duration": 199.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dead-NRPS1970-6-24LD5T13-SwingLowSweetChariot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Dead-NRPS1970-6-24LD5T13-SwingLowSweetChariot.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

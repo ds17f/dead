@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1987-04-09",
+  "venue": "UIC Pavilion, Chicago, IL",
+  "location": "Chicago, IL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd",
+      "duration": 99.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t01_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t01_crowd.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story",
+      "duration": 236.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t02_Greatest Story.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t02_Greatest Story.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Promised Land",
+      "duration": 304.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t03_Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t03_Promised Land.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "When Push Comes To Shove",
+      "duration": 284.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t04_When Push Comes To Shove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t04_When Push Comes To Shove.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Never Trust A Woman",
+      "duration": 305.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t05_Never Trust A Woman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t05_Never Trust A Woman.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 340.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t06_El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t06_El Paso.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Row Jimmy",
+      "duration": 592.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t07_Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t07_Row Jimmy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brother Esau",
+      "duration": 339.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t08_Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t08_Brother Esau.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Far From Me",
+      "duration": 261.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t09_Far From Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t09_Far From Me.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 386.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t10_Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t10_Deal.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "crowd",
+      "duration": 33.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t11_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t11_crowd.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias >",
+      "duration": 508.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t12_Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t12_Scarlet Begonias.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain >",
+      "duration": 644.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t13_Fire On The Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t13_Fire On The Mountain.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playin' In The Band >",
+      "duration": 511.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t14_Playin' In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t14_Playin' In The Band.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Uncle John's Band >",
+      "duration": 445.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t15_Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t15_Uncle John's Band.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "drums >",
+      "duration": 609.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t16_Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t16_Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "space >",
+      "duration": 261.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t17_Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t17_Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "China Doll >",
+      "duration": 409.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t18_China Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t18_China Doll.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playin' Reprise >",
+      "duration": 389.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t19_Playin' Reprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t19_Playin' Reprise.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia >",
+      "duration": 332.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t20_Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t20_Sugar Magnolia.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sunshine Daydream",
+      "duration": 164.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t21_Sunshine Daydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t21_Sunshine Daydream.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "crowd",
+      "duration": 22.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t22_crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t22_crowd.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "U.S. Blues",
+      "duration": 317.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-04-09t23_U.S. Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-04-09t23_U.S. Blues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

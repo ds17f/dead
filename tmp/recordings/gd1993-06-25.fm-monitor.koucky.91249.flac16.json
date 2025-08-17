@@ -1,0 +1,142 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1993-06-25",
+  "venue": "RFK Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Aint That Peculiar",
+      "duration": 212.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t01.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jerry, something in the keyboard things are out of tune",
+      "duration": 110.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t02.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Aint That Peculiar, Jerry, were not going to do this tune are we?",
+      "duration": 262.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Vince, Its cool Jerry, Its cheap",
+      "duration": 37.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t04.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "New Speedway Boogie",
+      "duration": 179.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t05.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jerry, I dont wanna be trying to learn f*ckin songs now",
+      "duration": 59.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 164.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t07.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jerry to Bruce, Have you been through any of our new tunes I'll show you in the back room.",
+      "duration": 83.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-06-25t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-06-25t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    }
+  ]
+}

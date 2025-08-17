@@ -1,0 +1,209 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-07-02-sullivan-stadium-foxboro-ma-usa/",
+  "show_id": "1989-07-02-sullivan-stadium-foxboro-ma-usa",
+  "band": "Grateful Dead",
+  "venue": "Sullivan Stadium",
+  "location_raw": "Foxboro, MA",
+  "city": "Foxboro",
+  "state": "MA",
+  "country": "USA",
+  "date": "1989-07-02",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "We Can Run",
+          "url": "https://jerrygarcia.com/song/we-can-run/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "To Lay Me Down",
+          "url": "https://jerrygarcia.com/song/to-lay-me-down/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude Finale",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "The Mighty Quinn (Quinn The Eskimo)",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Los Lobos"
+  ],
+  "collection_timestamp": "2025-08-10T09:03:53.420294",
+  "show_time": null,
+  "recordings": [
+    "gd1989-07-02.138287.sbd.miller.flac24",
+    "gd1989-07-02.133781.akg414btl-fob-dantepper.flac16",
+    "gd1989-07-02.schoepsmk2.30364.flac16",
+    "gd1989-07-02.fob.thomson.motb.81459.sbeok.flac16",
+    "gd1989-07-02.138306.mtx.miller.flac16",
+    "gd89-07-02.nak.8243.sbefail.shnf",
+    "gd1989-07-02.134395.MOTB.droncit.flac16",
+    "gd1989-07-02.aud.gastwirt.1110.sbefail.shnf",
+    "gd1989-07-02.fob.alexander.tetzeli.77458.sbeok.flac24",
+    "gd1989-07-02.fob.thomson.motb.81855.sbeok.flac24",
+    "gd1989-07-02.fob.senn421s.alexander.77444.flac16",
+    "gd1989-07-02.akg414.30363.flac16",
+    "gd1989-07-02.nak300.bleich-sirmick.109498.sbeok.flac16",
+    "gd1989-07-02.150433.5-1.tobin.flac1648",
+    "gd1989-07-02.nak300.morris.crazyfingers.106586.flac16",
+    "gd1989-07-02.138258.FOB.Scheops.Mattes.Ammons.t-flac16",
+    "gd1989-07-02.150431.mtx.tobin.flac16",
+    "gd1989-07-02.fob.nak300.andrewf.99911.flac24",
+    "gd1989-07-02.149202.Dak.boedicker.flac1644",
+    "gd1989-07-02.150432.dts.tobin.flac16",
+    "gd1989-07-02.fob.nak300.andrewf.99912.flac16",
+    "gd1989-07-02.153412.MTX.photoLeon.t-flac16"
+  ],
+  "best_recording": "gd1989-07-02.138287.sbd.miller.flac24",
+  "avg_rating": 2.044459102902375,
+  "raw_rating": 4.383561643835616,
+  "recording_count": 22,
+  "confidence": 1.0,
+  "total_high_ratings": 65,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 20,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

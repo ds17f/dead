@@ -1,0 +1,121 @@
+{
+  "rating": 2.1,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1967-11-10",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "//Viola Lee (reel #2 side A; 8-track 15 ips)",
+      "duration": 915.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too (reel #2 side A; 8-track 15 ips)",
+      "duration": 290.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Morning Dew (reel #2 side A; 8-track 15 ips)",
+      "duration": 446.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little Schoolgirl (reel #2 side A; 8-track 15 ips)",
+      "duration": 646.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t04.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical > (reel #2 side A; 8-track 15 ips)",
+      "duration": 86.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t05.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One > (no source info)",
+      "duration": 227.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t06.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical > crowd (reel #3 side A; 8 track-15 ips)",
+      "duration": 363.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-10.sbd.motb.0172.d1t07.flac"
+        }
+      ]
+    }
+  ]
+}

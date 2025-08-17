@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-03",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd intro >",
+      "duration": 42.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d101.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Let The Good Times Roll",
+      "duration": 245.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d102.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feel Like A Stranger >",
+      "duration": 463.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d103.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Franklin's Tower",
+      "duration": 435.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d104.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 513.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d105.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Peggy-O",
+      "duration": 446.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d106.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me & My Uncle >",
+      "duration": 190.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d107.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big River",
+      "duration": 434.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d108.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 823.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d109.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crowd intro >",
+      "duration": 45.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d201.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Box Of Rain",
+      "duration": 291.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d202.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Victim Or The Crime >",
+      "duration": 332.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d203.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Foolish Heart >",
+      "duration": 535.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d204.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Women Are Smarter >",
+      "duration": 417.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d205.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Eyes of the World >",
+      "duration": 388.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d206.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 465.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d207.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 371.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d301.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down the Road Feeling Bad >",
+      "duration": 322.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d302.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Need A Miracle >",
+      "duration": 223.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d303.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Morning Dew",
+      "duration": 717.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d304.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night",
+      "duration": 296.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d305.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Ripple",
+      "duration": 557.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d306.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

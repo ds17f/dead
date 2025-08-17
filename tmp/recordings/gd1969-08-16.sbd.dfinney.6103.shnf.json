@@ -1,0 +1,174 @@
+{
+  "rating": 1.5714285714285714,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-08-16",
+  "venue": "Yasgur's Farm",
+  "location": "Bethel, NY",
+  "raw_rating": 3.142857142857143,
+  "high_ratings": 2,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Intro",
+      "duration": 88.56,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T01.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T01.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St. Stephen",
+      "duration": 80.65,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T02.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried",
+      "duration": 104.7,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T03.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stage Chatter",
+      "duration": 342.16,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T04.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T04.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Star",
+      "duration": 683.42,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T05.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tuning",
+      "duration": 22.45,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T06.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T06.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "High Time",
+      "duration": 141.55,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T07.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T07.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 12.2,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T08.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T08.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Turn On Your Lovelight",
+      "duration": 1336.83,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T09.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T09.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Extro",
+      "duration": 53.65,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "GD69-08-16T10.SHN"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD69-08-16T10.mp3",
+          "bitrate": "146"
+        }
+      ]
+    }
+  ]
+}

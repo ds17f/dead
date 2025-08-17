@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-10-15",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd intro >",
+      "duration": 223.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d101.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 985.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d102.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Little Red Rooster",
+      "duration": 538.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d103.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stagger Lee",
+      "duration": 523.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d104.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Throated Wind*",
+      "duration": 402.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d105.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 366.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d106.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Candyman",
+      "duration": 387.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d107.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Easy Answers",
+      "duration": 403.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d108.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 571.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d109.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crowd intro >",
+      "duration": 103.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d201.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Here Comes Sunshine",
+      "duration": 381.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d202.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Victim Or The Crime >",
+      "duration": 541.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d203.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Way to Go Home",
+      "duration": 384.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d204.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "New Speedway Boogie >",
+      "duration": 652.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d205.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 781.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d206.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 719.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d301.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Last Time >",
+      "duration": 404.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d302.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Standing On the Moon >",
+      "duration": 588.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d303.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night**",
+      "duration": 444.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d304.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "I Want to Tell You",
+      "duration": 400.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d305.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

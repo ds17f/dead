@@ -1,0 +1,25 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-09-17",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star",
+      "duration": 1587.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Dark Star.flac"
+        }
+      ]
+    }
+  ]
+}

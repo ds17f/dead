@@ -1,0 +1,174 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1978-05-06",
+  "venue": "Patrick Gymnasium - University of Vermont",
+  "location": "Burlington, VT",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning/Crowd",
+      "duration": 165.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sunrise",
+      "duration": 227.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Crowd/Tuning",
+      "duration": 180.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Terrapin Station >",
+      "duration": 642.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playing In The Band >",
+      "duration": 957.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums >",
+      "duration": 712.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space >",
+      "duration": 284.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat >",
+      "duration": 600.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugar Magnolia",
+      "duration": 579.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t09.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "One More Saturday Night",
+      "duration": 289.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-06.GEMS.d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-06.GEMS.d2t10.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 2.0,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-09-02",
+  "venue": "Betty Nelson's Organic Raspberry Farm",
+  "location": "Sultan, WA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star",
+      "duration": 572.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Saint Stephen",
+      "duration": 130.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Eleven > Death Don't Have No Mercy",
+      "duration": 606.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cryptical Envelopment",
+      "duration": 54.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Drums > The Other One",
+      "duration": 173.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cryptical Envelopment",
+      "duration": 269.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Alligator > Drums > Jam > Alligator",
+      "duration": 644.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Caution (Do Not Stop On Tracks) > Feedback",
+      "duration": 374.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-02d1t08.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-09-02d1t08.shn"
+        }
+      ]
+    }
+  ]
+}

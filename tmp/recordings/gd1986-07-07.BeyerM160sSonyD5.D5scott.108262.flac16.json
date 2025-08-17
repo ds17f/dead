@@ -1,0 +1,254 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-07-07",
+  "venue": "Robert F. Kennedy Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Ramble On Rose",
+      "duration": 448.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Minglewood Blues",
+      "duration": 394.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Must Have Been The Roses",
+      "duration": 363.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 384.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Desolation Row",
+      "duration": 663.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Box Of Rain",
+      "duration": 304.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Playing In The Band ->",
+      "duration": 518.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Terrapin Station ->",
+      "duration": 513.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Drums ->",
+      "duration": 722.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Space ->",
+      "duration": 204.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Other One ->",
+      "duration": 233.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Wharf Rat ->",
+      "duration": 411.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Around And Around ->",
+      "duration": 216.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Good Lovin'",
+      "duration": 436.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t09.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "E: Satisfaction",
+      "duration": 490.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t10.mp3",
+          "bitrate": "202"
+        }
+      ]
+    }
+  ]
+}

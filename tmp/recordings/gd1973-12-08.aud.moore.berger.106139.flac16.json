@@ -1,0 +1,174 @@
+{
+  "rating": 0.6,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-12-08",
+  "venue": "Cameron Indoor Stadium, Duke U",
+  "location": "Durham, NC",
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Don't Ease Me In",
+      "duration": 329.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Race Is On",
+      "duration": 227.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Brown Eyed Women",
+      "duration": 294.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bertha",
+      "duration": 355.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t04.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "He's Gone>",
+      "duration": 647.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Truckin'//",
+      "duration": 321.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stella Blue",
+      "duration": 537.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t07.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Johnny B Goode",
+      "duration": 255.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t08.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Uncle John's Band",
+      "duration": 447.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t09.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "One More Saturday Night",
+      "duration": 348.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-08d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-08d1t10.mp3",
+          "bitrate": "161"
+        }
+      ]
+    }
+  ]
+}

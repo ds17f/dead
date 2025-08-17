@@ -1,0 +1,222 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-04-16",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 69.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower",
+      "duration": 424.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ChinaCatSunflower.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 369.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03IKnowYouRider.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Uncle John's Band",
+      "duration": 621.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04UncleJohnsBand.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Truckin'",
+      "duration": 733.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Truckin.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 441.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 44.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Black Queen",
+      "duration": 451.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BlackQueen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BlackQueen.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Iko Iko",
+      "duration": 430.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09IkoIko.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Little Star",
+      "duration": 93.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10LittleStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10LittleStar.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Other One",
+      "duration": 390.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11TheOtherOne.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Black Peter",
+      "duration": 499.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12BlackPeter.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "One More Saturday Night",
+      "duration": 270.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13OneMoreSaturdayNight.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

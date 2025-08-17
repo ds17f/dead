@@ -1,0 +1,414 @@
+{
+  "rating": 2.1818181818181817,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1990-07-16",
+  "venue": "Rich Stadium",
+  "location": "Orchard Park, NY",
+  "raw_rating": 4.363636363636363,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 172.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 465.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mississippi Half-Step Uptown Toodleloo",
+      "duration": 548.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Blow Away",
+      "duration": 536.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried ->",
+      "duration": 151.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 447.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loose Lucy",
+      "duration": 499.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "It's All Over Now",
+      "duration": 574.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "High Time",
+      "duration": 482.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t09.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Let It Grow ->",
+      "duration": 699.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t10.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 215.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d1t11.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 61.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Sugar Magnolia ->",
+      "duration": 177.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Scarlet Begonias ->",
+      "duration": 391.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Man Smart, Woman Smarter",
+      "duration": 473.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Ship Of Fools",
+      "duration": 490.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Truckin' ->",
+      "duration": 1047.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums ->",
+      "duration": 563.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space ->",
+      "duration": 572.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Wheel ->",
+      "duration": 340.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 343.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Wharf Rat ->",
+      "duration": 652.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around And Around ->",
+      "duration": 234.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Sunshine Daydream",
+      "duration": 429.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Brokedown Palace",
+      "duration": 378.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-07-16d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-07-16d3t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

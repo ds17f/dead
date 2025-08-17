@@ -1,0 +1,174 @@
+{
+  "rating": 1.875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-08-25",
+  "venue": "Berkeley Community Theater",
+  "location": "Berkeley, CA",
+  "raw_rating": 3.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Bill Graham Introduction",
+      "duration": 23.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cold Rain And Snow",
+      "duration": 183.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Black Throated Wind",
+      "duration": 189.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "He's Gone",
+      "duration": 261.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t04.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Beat It On Down The Line",
+      "duration": 126.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Loser",
+      "duration": 203.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t06.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Frozen Logger",
+      "duration": 21.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t07.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "El Paso",
+      "duration": 140.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t08.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Truckin' > Jam",
+      "duration": 520.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t09.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Other One",
+      "duration": 554.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-08-25t10.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-08-25t10.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rating": 2.2049999999999996,
+  "review_count": 2,
+  "source_type": "AUD",
+  "confidence": 0.4,
+  "date": "1977-00-00",
+  "venue": "Various",
+  "location": "Various",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 5570.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd_1977_Tuning_77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_1977_Tuning_77.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

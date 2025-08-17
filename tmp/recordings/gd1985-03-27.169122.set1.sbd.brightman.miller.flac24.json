@@ -1,0 +1,124 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-03-27",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "5 seconds between Tom Thumb's Blues and Brown Eyed Women",
+      "duration": 37.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Tuning.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tuning",
+      "duration": 494.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mississippi Half-Step Uptown Toodleloo >",
+      "duration": 515.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Hell In A Bucket.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Hell In A Bucket",
+      "duration": 501.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 West LA Fadeaway.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "West L.A. Fadeaway",
+      "duration": 149.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Mama Tried.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried >",
+      "duration": 445.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Big River.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 348.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Just Like Tom Thumb's Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 339.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Brown Eyed Women.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Brown Eyed Women",
+      "duration": 256.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Tons Of Steel.flac"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tons Of Steel >",
+      "duration": 287.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Might As Well.flac"
+        }
+      ]
+    }
+  ]
+}

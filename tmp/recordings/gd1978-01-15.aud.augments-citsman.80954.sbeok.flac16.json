@@ -1,0 +1,46 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-01-15",
+  "venue": "Selland Arena",
+  "location": "Fresno, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Passenger",
+      "duration": 297.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-15d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-15d1t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Music Never Stopped",
+      "duration": 488.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-01-15d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-01-15d1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

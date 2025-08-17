@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-06-30",
+  "venue": "Riverbend Music Center",
+  "location": "Cincinnati, OH",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 377.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 363.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ManSmartwomanSmarter.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Ship Of Fools",
+      "duration": 417.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ShipOfFools.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Smokestack Lightning",
+      "duration": 328.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04SmokestackLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04SmokestackLightning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "He's Gone",
+      "duration": 679.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05HesGone.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 636.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 432.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Need A Miracle",
+      "duration": 215.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08INeedAMiracle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Stella Blue",
+      "duration": 458.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09StellaBlue.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 421.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10GoodLovin.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Encore Break",
+      "duration": 121.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 276.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

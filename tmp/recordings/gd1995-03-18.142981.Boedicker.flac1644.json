@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-03-18",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTuning",
+      "duration": 143.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01Tuning.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackHell In A Bucket",
+      "duration": 518.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02HellInABucket.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackWest LA fadeawy",
+      "duration": 624.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03WestLaFadeawy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03WestLaFadeawy.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackEl Paso",
+      "duration": 328.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04ElPaso.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackRamble On Rose",
+      "duration": 595.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05RambleOnRose.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackTom Thumb Blues",
+      "duration": 353.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06TomThumbBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06TomThumbBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackJack A-Roe",
+      "duration": 282.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07JackA-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07JackA-roe.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc01,TrackPromised Land",
+      "duration": 262.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track08PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track08PromisedLand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc02,Track01 Tuning",
+      "duration": 151.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc02,Track02 Its All Too Much",
+      "duration": 403.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02ItsAllTooMuch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02ItsAllTooMuch.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track03 Aiko-Aiko",
+      "duration": 698.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03Aiko-aiko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03Aiko-aiko.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track04 Playing In The Band",
+      "duration": 658.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04PlayingInTheBand.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track05 Uncle John's Band",
+      "duration": 737.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05UncleJohnsBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track06 Drums",
+      "duration": 747.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc03,Track01 Space",
+      "duration": 848.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track01Space.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc03,Track02 The Last Time",
+      "duration": 389.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track02TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track02TheLastTime.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc03,Track03 Visions Of Johanna",
+      "duration": 614.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track03VisionsOfJohanna.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track03VisionsOfJohanna.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc03,Track04 One More Saturday Night",
+      "duration": 305.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track04OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track04OneMoreSaturdayNight.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Disc03,Track05 Rain",
+      "duration": 370.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track05Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track05Rain.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-03-27",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step ->",
+      "duration": 507.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 446.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West L. A. Fadeaway",
+      "duration": 483.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried ->",
+      "duration": 148.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 338.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 348.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown Eyed Women",
+      "duration": 292.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tons Of Steel",
+      "duration": 257.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Might As Well",
+      "duration": 284.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Shakedown Street",
+      "duration": 853.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band ->",
+      "duration": 479.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band ->",
+      "duration": 857.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums ->",
+      "duration": 394.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space ->",
+      "duration": 436.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Stella Blue ->",
+      "duration": 547.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Turn On Your Lovelight",
+      "duration": 528.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Touch of Grey",
+      "duration": 412.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-03-27mccue-d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-03-27mccue-d2t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

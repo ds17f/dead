@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-04-03",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 31.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Iko Iko",
+      "duration": 493.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02IkoIko.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 542.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 450.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Peggy-o.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 177.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 276.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song",
+      "duration": 719.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BirdSong.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Supplication Jam",
+      "duration": 234.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08SupplicationJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08SupplicationJam.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 673.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 191.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 465.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11UncleJohnsBand.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 860.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Don't Need Love",
+      "duration": 403.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13DontNeedLove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13DontNeedLove.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 579.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 293.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 409.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 556.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17WharfRat.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around And Around",
+      "duration": 226.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AroundAndAround.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 615.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19NotFadeAway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 35.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20NotFadeAway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 433.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

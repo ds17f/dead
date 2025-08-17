@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-02-14",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd70-02-14 tBanter_Introduction",
+      "duration": 213.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T01Banter_introduction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T01Banter_introduction.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd70-02-14 tCasey Jones",
+      "duration": 261.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T02CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T02CaseyJones.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd70-02-14 tMama Tried",
+      "duration": 237.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T03MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T03MamaTried.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd70-02-14 tHard To Handle",
+      "duration": 390.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T04HardToHandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T04HardToHandle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd70-02-14 tTuning_Banter",
+      "duration": 359.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T05Tuning_banter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T05Tuning_banter.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd70-02-14 tMonkey & The Engineer",
+      "duration": 193.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T06MonkeyTheEngineer.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T06MonkeyTheEngineer.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd70-02-14 tDark Hollow",
+      "duration": 201.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T07DarkHollow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T07DarkHollow.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd70-02-14 tI've Been All Around This World",
+      "duration": 261.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T08IveBeenAllAroundThisWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T08IveBeenAllAroundThisWorld.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd70-02-14 tWake up Little Susie",
+      "duration": 150.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T09WakeUpLittleSusie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T09WakeUpLittleSusie.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd70-02-14 tBlack Peter",
+      "duration": 440.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T10BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T10BlackPeter.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd70-02-14 tUncle John's Band",
+      "duration": 503.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T11UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T11UncleJohnsBand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd70-02-14 tKatie Mae",
+      "duration": 472.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T12KatieMae.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T12KatieMae.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd70-02-14 tDancin' In The Streets",
+      "duration": 579.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T13DancinInTheStreets.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T13DancinInTheStreets.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd70-02-tChina Cat Sunflower",
+      "duration": 315.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T14ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T14ChinaCatSunflower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd70-02-14 tI Know You Rider",
+      "duration": 289.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T15IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T15IKnowYouRider.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd70-02-14 tHigh Time",
+      "duration": 406.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T16HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T16HighTime.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd70-02-14 tDire Wolf",
+      "duration": 299.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T17DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T17DireWolf.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd70-02-14 tAlligator",
+      "duration": 232.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T18Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T18Alligator.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd70-02-14 tDrums",
+      "duration": 749.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T19Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T19Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd70-02-14 tMe & My Uncle",
+      "duration": 193.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T20MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T20MeMyUncle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd70-02-14 tNot Fade Away",
+      "duration": 833.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T21NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T21NotFadeAway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd70-02-14 tMason's Children",
+      "duration": 228.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T22MasonsChildren.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T22MasonsChildren.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd70-02-14 tCaution (Do Not Stop On The Tracks)",
+      "duration": 861.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T23CautiondoNotStopOnTheTracks.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T23CautiondoNotStopOnTheTracks.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd70-02-14 tFeedback",
+      "duration": 520.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T24Feedback.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T24Feedback.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd70-02-14 tAnd We Bid you Good Night",
+      "duration": 146.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd70-02-14T25AndWeBidYouGoodNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd70-02-14T25AndWeBidYouGoodNight.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

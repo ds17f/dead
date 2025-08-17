@@ -1,0 +1,602 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-11-08",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 175.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t01.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t01_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "I Know You Rider",
+      "duration": 275.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t02.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t02_vbr.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Hollow",
+      "duration": 143.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t03_vbr.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Rosalie McFall",
+      "duration": 129.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t04.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t04_vbr.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 202.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t05_vbr.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Operator",
+      "duration": 145.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t06.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t06_vbr.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Ripple",
+      "duration": 183.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t07.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t07_vbr.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Friend of the Devil",
+      "duration": 140.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t08.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t08_vbr.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning/Chatter",
+      "duration": 31.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t09.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t09_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wake Up, Little Susie",
+      "duration": 142.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t10.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t10.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t10_vbr.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 254.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t11.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d1t11.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d1t11_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Morning Dew",
+      "duration": 368.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t01_vbr.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Me & My Uncle",
+      "duration": 108.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t02_vbr.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Mystery Train ->",
+      "duration": 129.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t03_vbr.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "My Babe",
+      "duration": 100.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t04_vbr.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Around & Around",
+      "duration": 107.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t05_vbr.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "New Orleans ->",
+      "duration": 152.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t06_vbr.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Searchin'",
+      "duration": 198.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t07_vbr.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 350.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t08.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t08_vbr.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Casey Jones",
+      "duration": 149.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t09.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t09_vbr.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truckin",
+      "duration": 274.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t10.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d2t10.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d2t10_vbr.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Dark Star ->",
+      "duration": 509.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t01_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Main Ten ->",
+      "duration": 278.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t02_vbr.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Dancin' in the Streets",
+      "duration": 325.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t03_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Not Fade Away ->",
+      "duration": 165.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t04_vbr.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Going Down the Road Feelin' Bad ->",
+      "duration": 252.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t05.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t05_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Not Fade Away ->",
+      "duration": 83.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t06.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t06_vbr.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Good Lovin'",
+      "duration": 482.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t07.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-08d3t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-08d3t07_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "rating": 3.015384615384615,
+  "review_count": 13,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1976-09-30",
+  "venue": "Mershon Auditorium, OSU",
+  "location": "Columbus, OH",
+  "raw_rating": 4.3076923076923075,
+  "high_ratings": 13,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crazy Fingers >",
+      "duration": 485.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-09-30d1t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-09-30d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It's All Over Now",
+      "duration": 189.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-09-30d1t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-09-30d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Scarlet Begonias",
+      "duration": 366.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-09-30d1t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-09-30d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy Lightning > Supplication",
+      "duration": 278.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-09-30d1t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-09-30d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It Must Have Been The Roses",
+      "duration": 216.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-09-30d1t05.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-09-30d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Samson and Delilah",
+      "duration": 251.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-09-30d1t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-09-30d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

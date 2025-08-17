@@ -1,0 +1,158 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1967-10-22",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 441.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Potato Caboose",
+      "duration": 579.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Hurts Me Too",
+      "duration": 259.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cold Rain And Snow",
+      "duration": 212.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Turn On Your Lovelight/",
+      "duration": 741.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line",
+      "duration": 170.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical Envelopment >",
+      "duration": 81.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "That's It For The Other One >",
+      "duration": 286.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cryptical Reprise",
+      "duration": 514.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-22t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-22t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

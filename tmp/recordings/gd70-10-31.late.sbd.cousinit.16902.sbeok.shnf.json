@@ -1,0 +1,462 @@
+{
+  "rating": 2.111111111111111,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-10-31",
+  "venue": "Gym, S.U.N.Y.",
+  "location": "Stony Brook, NY",
+  "raw_rating": 4.222222222222222,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Casey Jones",
+      "duration": 168.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugar Magnolia",
+      "duration": 170.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Next Time You See me",
+      "duration": 109.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cryptical Envelopment",
+      "duration": 65.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Drums",
+      "duration": 205.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Other One",
+      "duration": 332.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Cryptical Envelopment",
+      "duration": 116.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t07.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Cosmic Charlie",
+      "duration": 211.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t08.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Big Boss Man",
+      "duration": 140.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t09.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Mama Tried",
+      "duration": 96.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t10.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Hard To Handle",
+      "duration": 231.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t11.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 26.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t12.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Good Lovin'",
+      "duration": 56.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t13.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 138.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t14.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Good Lovin'",
+      "duration": 212.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld1t15.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld1t15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "St. Stephen",
+      "duration": 180.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 181.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down The Road Feelin' Bad-",
+      "duration": 163.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 105.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Workingman's Blues",
+      "duration": 131.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Whatcha Gonna Do",
+      "duration": 140.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Glendale Train",
+      "duration": 185.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Portland Woman",
+      "duration": 186.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Dirty Business",
+      "duration": 299.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t09.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Fair Chance To Know",
+      "duration": 133.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t10.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Last Lonely Eagle",
+      "duration": 199.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t11.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Louisianna Lady",
+      "duration": 133.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t12.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Honky Tonk Woman",
+      "duration": 168.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-10-31Ld2t13.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-10-31Ld2t13.shn"
+        }
+      ]
+    }
+  ]
+}

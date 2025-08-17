@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1972-11-22",
+  "venue": "Austin Municipal Auditorium",
+  "location": "Austin, TX",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd72-11-22 s1 tSugaree",
+      "duration": 444.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T01Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T01Sugaree.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd72-11-22 s1 tMexicali Blues",
+      "duration": 240.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T02MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T02MexicaliBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd72-11-22 s1 tLoser",
+      "duration": 384.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T03Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T03Loser.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd72-11-22 s1 tBlack Throated Wind",
+      "duration": 421.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T04BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T04BlackThroatedWind.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd72-11-22 s1 tChina Cat Sunflower",
+      "duration": 350.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T05ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T05ChinaCatSunflower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd72-11-22 s1 tI Know You Rider",
+      "duration": 329.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T06IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T06IKnowYouRider.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd72-11-22 s1 tBeat It On Down The Line",
+      "duration": 196.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T07BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T07BeatItOnDownTheLine.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd72-11-22 s1 tCandyman",
+      "duration": 445.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T08Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T08Candyman.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd72-11-22 s1 tEl Paso",
+      "duration": 271.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T09ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T09ElPaso.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd72-11-22 s1 tBird Song",
+      "duration": 615.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T10BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T10BirdSong.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd72-11-22 s1 tPlayin' In The Band",
+      "duration": 999.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T11PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T11PlayinInTheBand.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd72-11-22 s1 tCasey Jones",
+      "duration": 357.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S1T12CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S1T12CaseyJones.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd72-11-22 s2 t01 Greatest Story Ever Told",
+      "duration": 295.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T01GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T01GreatestStoryEverTold.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd72-11-22 s2 t02 He's Gone",
+      "duration": 780.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T02HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T02HesGone.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd72-11-22 s2 t03 Truckin'",
+      "duration": 606.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T03Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T03Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd72-11-22 s2 t04 Drums",
+      "duration": 138.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T04Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T04Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd72-11-22 s2 t05 The Other One",
+      "duration": 1073.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T05TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T05TheOtherOne.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd72-11-22 s2 t06 Stella Blue",
+      "duration": 471.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T06StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T06StellaBlue.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd72-11-22 s2 t07 Big River",
+      "duration": 188.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T07BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T07BigRiver.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd72-11-22 s2 t08 Ramble On Rose",
+      "duration": 363.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T08RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T08RambleOnRose.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd72-11-22 s2 t09 Sugar Magnolia",
+      "duration": 558.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T09SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T09SugarMagnolia.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd72-11-s2 t10 Brokedown Palace",
+      "duration": 303.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T10BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T10BrokedownPalace.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd72-11-22 s2 t11 Around & Around",
+      "duration": 246.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T11AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T11AroundAround.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd72-11-22 s2 t12 One More Saturday Night",
+      "duration": 277.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T12OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T12OneMoreSaturdayNight.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd72-11-22 s2 t13 Uncle John's Band",
+      "duration": 429.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd72-11-22S2T13UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd72-11-22S2T13UncleJohnsBand.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

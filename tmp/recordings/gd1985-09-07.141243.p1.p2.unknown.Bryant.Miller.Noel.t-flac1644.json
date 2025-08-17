@@ -1,0 +1,174 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-09-07",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dupree's Diamond Blues",
+      "duration": 422.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s1t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "One More Saturday Night",
+      "duration": 266.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s1t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums ->",
+      "duration": 535.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Space ->",
+      "duration": 346.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t07.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dear Mr. Fantasy -> *",
+      "duration": 326.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Truckin' ->",
+      "duration": 355.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Comes A Time ->",
+      "duration": 396.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t10.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn On Your Love Light",
+      "duration": 435.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t11.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Johnny B. Goode ->",
+      "duration": 232.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t12.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 413.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-07.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-07.s2t13.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

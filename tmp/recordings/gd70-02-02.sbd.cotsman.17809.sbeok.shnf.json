@@ -1,0 +1,94 @@
+{
+  "rating": 2.3214285714285716,
+  "review_count": 14,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-02",
+  "venue": "Fox Theatre",
+  "location": "St. Louis, MO",
+  "raw_rating": 4.642857142857143,
+  "high_ratings": 14,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cumberland Blues",
+      "duration": 32.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "tuning",
+      "duration": 43.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dark Star",
+      "duration": 750.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "St. Stephen",
+      "duration": 164.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mason's Children",
+      "duration": 164.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-02d1t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-02d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

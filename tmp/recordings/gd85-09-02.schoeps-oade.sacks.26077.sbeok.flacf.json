@@ -1,0 +1,382 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1985-09-02",
+  "venue": "Zoo Amphitheater",
+  "location": "Oklahoma City, OK",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Crowd",
+      "duration": 80.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Bertha",
+      "duration": 378.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Greatest Story Ever Told",
+      "duration": 312.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "West L.A. Fadeaway",
+      "duration": 587.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mama Tried",
+      "duration": 156.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Me And My Uncle",
+      "duration": 267.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Stagger Lee",
+      "duration": 325.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Iko Iko",
+      "duration": 411.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "New Minglewood Blues",
+      "duration": 515.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Ramble On Rose",
+      "duration": 424.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Hell In A Bucket",
+      "duration": 414.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d1t11.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "China Cat Sunflower >",
+      "duration": 383.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Know You Rider >",
+      "duration": 324.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 493.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ship Of Fools",
+      "duration": 454.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d2t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Playin' In The Band >",
+      "duration": 844.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d2t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 568.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space>",
+      "duration": 561.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d3t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Need A Miracle >",
+      "duration": 355.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d3t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "China Doll >",
+      "duration": 322.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around And Around >",
+      "duration": 228.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d3t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Good Lovin'",
+      "duration": 500.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d3t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Keep Your Day Job",
+      "duration": 280.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-02oade-d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-02oade-d3t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

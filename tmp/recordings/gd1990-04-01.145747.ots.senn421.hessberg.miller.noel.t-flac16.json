@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-04-01",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Touch of Grey ->",
+      "duration": 410.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Walkin' Blues",
+      "duration": 415.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Just A Little Light",
+      "duration": 396.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Candyman",
+      "duration": 461.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Me and My Uncle ->",
+      "duration": 184.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Big River",
+      "duration": 330.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Althea",
+      "duration": 459.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Victim or the Crime ->",
+      "duration": 637.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "To Lay Me Down ->",
+      "duration": 558.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "The Music Never Stopped",
+      "duration": 464.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s1t10.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "China Cat Sunflower ->",
+      "duration": 330.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Know You Rider",
+      "duration": 287.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Ship of Fools ->",
+      "duration": 465.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Man Smart (Woman are Smarter) ->",
+      "duration": 463.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums ->",
+      "duration": 431.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space ->",
+      "duration": 700.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Dear Mr. Fantasy ->",
+      "duration": 341.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Hey Jude ->",
+      "duration": 151.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Truckin' ->",
+      "duration": 422.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Stella Blue ->",
+      "duration": 614.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Sugar Magnolia",
+      "duration": 551.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t11.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 450.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-04-01.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-04-01.s2t12.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

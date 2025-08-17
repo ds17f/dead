@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-12-02",
+  "venue": "Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "boogie!",
+      "duration": 65.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t01.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain & Snow",
+      "duration": 403.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t02.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Beat it On Down the Line",
+      "duration": 223.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t03.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 299.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t04.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Race is On",
+      "duration": 218.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t05.mp3",
+          "bitrate": "150"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 306.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t06.mp3",
+          "bitrate": "148"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "tech problems > taper gets busted",
+      "duration": 211.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-02s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-12-02s1t07.mp3",
+          "bitrate": "136"
+        }
+      ]
+    }
+  ]
+}

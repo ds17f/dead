@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-09-15",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 128.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 377.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin Blues",
+      "duration": 488.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 481.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried ->",
+      "duration": 157.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 382.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West L.A. Fadeaway",
+      "duration": 519.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "When I Paint My Masterpiece",
+      "duration": 333.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 866.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Box Of Rain",
+      "duration": 313.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set1t10.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Weight",
+      "duration": 71.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin' In The Band>",
+      "duration": 392.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Crazy Fingers ->",
+      "duration": 525.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band ->",
+      "duration": 562.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 563.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 694.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 765.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All ALong The Watchtower ->",
+      "duration": 348.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue ->",
+      "duration": 374.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones ->",
+      "duration": 614.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 579.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t11.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "One More Saturday Night",
+      "duration": 507.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-09-15set2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-09-15set2t12.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-04-09",
+  "venue": "UIC Pavilion",
+  "location": "Chicago, IL",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 123.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 237.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Promised Land",
+      "duration": 307.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03PromisedLand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "When Push Comes To Shove",
+      "duration": 310.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WhenPushComesToShove.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Never Trust A Woman",
+      "duration": 307.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05NeverTrustAWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05NeverTrustAWoman.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 344.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ElPaso.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Row Jimmy",
+      "duration": 647.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07RowJimmy.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "My Brother Esau",
+      "duration": 347.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MyBrotherEsau.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Far From Me",
+      "duration": 262.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09FarFromMe.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 409.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Deal.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 61.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias",
+      "duration": 512.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ScarletBegonias.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain",
+      "duration": 648.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13FireOnTheMountain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band",
+      "duration": 513.59,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14PlayingInTheBand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Uncle John's Band",
+      "duration": 460.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15UncleJohnsBand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 580.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 342.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "China Doll",
+      "duration": 365.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18ChinaDoll.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playing Jam",
+      "duration": 30.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19PlayingJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19PlayingJam.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 361.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia",
+      "duration": 489.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21SugarMagnolia.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 129.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "US Blues",
+      "duration": 399.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23UsBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

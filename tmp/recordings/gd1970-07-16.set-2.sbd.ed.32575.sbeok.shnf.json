@@ -1,0 +1,110 @@
+{
+  "rating": 2.25,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-07-16",
+  "venue": "Euphoria Ballroom",
+  "location": "San Rafael, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 171.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d2t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-16d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Attics Of My Life",
+      "duration": 237.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d2t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-16d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cumberland Blues",
+      "duration": 163.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d2t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-16d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Not Fade Away >",
+      "duration": 280.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d2t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-16d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Saint Stephen >",
+      "duration": 212.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d2t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-16d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Uncle John's Band",
+      "duration": 233.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-16d2t06.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-16d2t06.shn"
+        }
+      ]
+    }
+  ]
+}

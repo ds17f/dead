@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Not Fade Away",
+      "duration": 313.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t01-NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t01-NotFadeAway.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 332.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t02-TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t02-TouchOfGrey.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tons Of Steel",
+      "duration": 313.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t03-TonsOfSteel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t03-TonsOfSteel.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C.C. Rider",
+      "duration": 426.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t04-C.c.Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t04-C.c.Rider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Duprees Diamond Blues",
+      "duration": 422.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t05-DupreesDiamondBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t05-DupreesDiamondBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 373.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t06-Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t06-Cassidy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown Eyed Women",
+      "duration": 347.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t07-BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t07-BrownEyedWomen.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 716.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d1t08-LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d1t08-LetItGrow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "New Year's Mayhem",
+      "duration": 240.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t01-NewYearsMayhem.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t01-NewYearsMayhem.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "In The Midnight Hour",
+      "duration": 381.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t02-InTheMidnightHour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t02-InTheMidnightHour.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugaree",
+      "duration": 537.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t03-Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t03-Sugaree.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Women Are Smarter",
+      "duration": 356.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t04-WomenAreSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t04-WomenAreSmarter.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Ship Of Fools",
+      "duration": 414.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t05-ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t05-ShipOfFools.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band",
+      "duration": 448.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t06-PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t06-PlayingInTheBand.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Terrapin Station",
+      "duration": 634.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t07-TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t07-TerrapinStation.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 415.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d2t08-Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d2t08-Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 367.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t01-Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t01-Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Truckin'",
+      "duration": 430.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t02-Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t02-Truckin.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter",
+      "duration": 470.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t03-BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t03-BlackPeter.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 522.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t04-ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t04-ThrowingStones.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 336.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t05-NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t05-NotFadeAway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Turn On Your Lovelite",
+      "duration": 326.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t06-TurnOnYourLovelite.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t06-TurnOnYourLovelite.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Brokedown Palace",
+      "duration": 317.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1985-12-31.d3t07-BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1985-12-31.d3t07-BrokedownPalace.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

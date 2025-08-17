@@ -1,0 +1,80 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-12-06",
+  "venue": "Public Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Here Comes Sunshine",
+      "duration": 965.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-06s2t01.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Big River",
+      "duration": 297.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-06s2t02.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star >",
+      "duration": 2651.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-06s2t03.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Eyes Of The World >",
+      "duration": 854.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-06s2t04.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stella Blue",
+      "duration": 563.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-06s2t05.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Sugar Magnolia",
+      "duration": 600.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-12-06s2t06.flac"
+        }
+      ]
+    }
+  ]
+}

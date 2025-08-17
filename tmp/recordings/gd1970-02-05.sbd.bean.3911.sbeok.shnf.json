@@ -1,0 +1,110 @@
+{
+  "rating": 2.1875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-05",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.375,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mason' Children/",
+      "duration": 301.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD70-02-05T01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD70-02-05T01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Eleven>",
+      "duration": 503.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD70-02-05T02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD70-02-05T02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Caution>",
+      "duration": 446.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD70-02-05T03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD70-02-05T03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Not Fade Away>",
+      "duration": 200.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD70-02-05T04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD70-02-05T04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cumberland",
+      "duration": 185.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD70-02-05T05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD70-02-05T05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Uncle John's Band",
+      "duration": 248.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD70-02-05T06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD70-02-05T06.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1971-07-02",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 522.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me And Bobby McGee",
+      "duration": 429.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Next Time You See Me",
+      "duration": 323.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "China Cat Sunflower>",
+      "duration": 312.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I Know You Rider",
+      "duration": 502.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Playin' In The Band",
+      "duration": 486.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 608.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Rub",
+      "duration": 323.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Me & My Uncle",
+      "duration": 196.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Big Railroad Blues",
+      "duration": 356.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Hard To Handle",
+      "duration": 476.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d01t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d01t11.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Deal",
+      "duration": 448.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Promised Land",
+      "duration": 240.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Good Lovin'",
+      "duration": 1096.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Sugar Magnolia",
+      "duration": 454.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Sing Me Back Home",
+      "duration": 675.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Mama Tried",
+      "duration": 238.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Cryptical Envelopement->",
+      "duration": 124.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Drums->",
+      "duration": 305.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Other One Jam->",
+      "duration": 109.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t09.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Space Jam",
+      "duration": 83.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Other one->",
+      "duration": 263.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t11.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Jam",
+      "duration": 294.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t12.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "the Other One",
+      "duration": 122.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t13.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Cryptical Jam",
+      "duration": 132.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d02t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d02t14.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Big Boss Man",
+      "duration": 431.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Casey Jones",
+      "duration": 398.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Not Fade Away->",
+      "duration": 222.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Goin' Down The Road Feelin' Bad->",
+      "duration": 511.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Not Fade Away",
+      "duration": 226.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "crowd",
+      "duration": 308.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t06.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Johnny B. Goode",
+      "duration": 262.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Comes a Time (Europe filler)",
+      "duration": 721.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-07-02d03t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-07-02d03t08-fixed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-05-10",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 117.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t01 Crowd_Tuning.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Bertha >",
+      "duration": 358.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t02 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t02 Bertha.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Greatest Story Ever Told",
+      "duration": 309.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t03 GSET.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t03 GSET.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "West LA Fadeaway",
+      "duration": 602.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t04 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t04 West LA Fadeaway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Desolation Row",
+      "duration": 604.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t05 Desolation Row.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t05 Desolation Row.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Tennessee Jed",
+      "duration": 618.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t06 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t06 T Jed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "New Minglewood Blues",
+      "duration": 508.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t07 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t07 Minglewood.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Big Railroad Blues",
+      "duration": 280.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t08 Big RR Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t08 Big RR Blues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Let It Grow",
+      "duration": 771.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s1t09 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s1t09 Let It Grow.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 102.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Hell In A Bucket >",
+      "duration": 416.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t02 Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t02 Bucket.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Sugaree",
+      "duration": 756.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t03 Sugaree.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 728.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t04 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t04 Estimated.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Eyes Of The World >",
+      "duration": 631.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t05 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t05 Eyes.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 584.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t06 Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 558.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t07 Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "The Wheel >",
+      "duration": 296.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t08 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t08 Wheel.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "China Doll >",
+      "duration": 293.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t09 China Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t09 China Doll.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Throwing Stones >",
+      "duration": 564.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t10 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t10 Throwing Stones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Turn On Your Lovelight",
+      "duration": 350.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t11 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t11 Lovelight.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Encore Break",
+      "duration": 74.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t12 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t12 Crowd_Tuning.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "E: The Mighty Quinn (Quinn",
+      "duration": 300.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-05-10 s2t13 E_Mighty Quinn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-05-10 s2t13 E_Mighty Quinn.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

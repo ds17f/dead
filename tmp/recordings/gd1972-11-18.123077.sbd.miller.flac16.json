@@ -1,0 +1,174 @@
+{
+  "rating": 2.4375,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-11-18",
+  "venue": "Hofheinz Pavilion",
+  "location": "Houston, TX",
+  "raw_rating": 4.875,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha ->",
+      "duration": 374.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 307.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "He's Gone",
+      "duration": 967.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack Straw",
+      "duration": 295.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Deal",
+      "duration": 291.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Playing In The Band",
+      "duration": 1583.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 554.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d1t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sugar Magnolia",
+      "duration": 551.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "One More Saturday Night",
+      "duration": 352.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d2t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Uncle John's Band",
+      "duration": 442.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-11-18d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-11-18d2t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

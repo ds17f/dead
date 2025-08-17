@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-18",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 449.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 549.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Times",
+      "duration": 433.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big Railroad Blues",
+      "duration": 311.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Memphis Blues Again",
+      "duration": 595.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 340.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Promised Land",
+      "duration": 291.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 209.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Scarlet Begonias",
+      "duration": 382.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Fire On The Mountain",
+      "duration": 676.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Woman Are Smarter",
+      "duration": 454.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 325.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 392.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Other One",
+      "duration": 385.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t07.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Wharf Rat",
+      "duration": 547.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Throwing Stones",
+      "duration": 637.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t09.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 193.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Muddy River",
+      "duration": 413.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t11.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

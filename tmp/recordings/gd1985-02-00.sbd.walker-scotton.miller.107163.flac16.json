@@ -1,0 +1,142 @@
+{
+  "rating": 2.25,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1985-02-00",
+  "venue": "Twilight Zone Sessions",
+  "location": "CA",
+  "raw_rating": 4.5,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Track 1",
+      "duration": 64.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Track 2",
+      "duration": 77.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Track 3",
+      "duration": 48.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Track 4",
+      "duration": 282.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Track 5",
+      "duration": 141.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Track 6",
+      "duration": 68.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Track 7",
+      "duration": 29.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Track 8",
+      "duration": 100.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "twilightzone1985-02-xxd1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "twilightzone1985-02-xxd1t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

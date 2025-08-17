@@ -1,0 +1,526 @@
+{
+  "rating": 2.4,
+  "review_count": 15,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-04-14",
+  "venue": "Tivolis Koncertsal",
+  "location": "K\u00f8benhavn (Copenhagen), D\u00e4nemark (Denmark)",
+  "raw_rating": 4.8,
+  "high_ratings": 14,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 424.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me And My Uncle",
+      "duration": 195.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t02.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mr. Charlie",
+      "duration": 306.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "You Win Again",
+      "duration": 240.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Throated Wind",
+      "duration": 366.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Chinatown Shuffle",
+      "duration": 176.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 389.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Me And Bobby McGee",
+      "duration": 380.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t08.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cumberland Blues",
+      "duration": 293.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t09.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band",
+      "duration": 720.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t10.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tennessee Jed",
+      "duration": 462.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t11.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "El Paso",
+      "duration": 270.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t12.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Big Boss Man",
+      "duration": 367.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d1t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d1t13.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Beat It On Down The Line",
+      "duration": 206.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Casey Jones",
+      "duration": 373.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d2t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin'",
+      "duration": 652.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d2t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "It Hurts Me Too",
+      "duration": 430.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d2t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Brown Eyed Women",
+      "duration": 302.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d2t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Looks Like Rain",
+      "duration": 432.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d2t06.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Dark Star ->",
+      "duration": 1784.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia ->",
+      "duration": 408.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Good Lovin' ->",
+      "duration": 1137.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Caution (Do Not Step On Tracks) ->",
+      "duration": 285.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Who Do You Love ->",
+      "duration": 24.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Caution (Do Not Stop On Tracks) ->",
+      "duration": 135.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Good Lovin'",
+      "duration": 225.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t07.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Ramble On Rose",
+      "duration": 361.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d3t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Not Fade Away ->",
+      "duration": 320.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d4t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d4t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "China Cat Sunflower Tease ->",
+      "duration": 35.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d4t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d4t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 428.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d4t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d4t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Not Fade Away",
+      "duration": 226.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d4t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d4t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "One More Saturday Night",
+      "duration": 290.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-04-14d4t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-14d4t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

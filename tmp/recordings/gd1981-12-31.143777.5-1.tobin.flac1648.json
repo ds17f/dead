@@ -1,0 +1,590 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1981-12-31",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Land Of A Thousand Dances",
+      "duration": 238.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01LandOfAThousandDances.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01LandOfAThousandDances.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Do Right Woman",
+      "duration": 196.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02DoRightWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02DoRightWoman.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Boxer",
+      "duration": 242.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03TheBoxer.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheBoxer.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tunisian New Year Song",
+      "duration": 175.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04TunisianNewYearSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04TunisianNewYearSong.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And Bobby McGee",
+      "duration": 284.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndBobbyMcgee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndBobbyMcgee.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bye Bye Love",
+      "duration": 182.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ByeByeLove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ByeByeLove.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lucifer's Eyes",
+      "duration": 321.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LucifersEyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LucifersEyes.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Children Of The 80's",
+      "duration": 402.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ChildrenOfThe80s.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ChildrenOfThe80s.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Banks Of The Ohio",
+      "duration": 286.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09BanksOfTheOhio.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BanksOfTheOhio.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 25.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Shakedown Street",
+      "duration": 919.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ShakedownStreet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Me And My Uncle",
+      "duration": 177.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12MeAndMyUncle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Mexicali Blues",
+      "duration": 298.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13MexicaliBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Cold Rain And Snow",
+      "duration": 391.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ColdRainAndSnow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "C C Rider",
+      "duration": 530.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15CCRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15CCRider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "It Must Have Been The Roses",
+      "duration": 385.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Beat It On Down The Line",
+      "duration": 232.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17BeatItOnDownTheLine.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Big Boss Man",
+      "duration": 354.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18BigBossMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BigBossMan.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "New Minglewood Blues",
+      "duration": 385.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19NewMinglewoodBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Don't Ease Me In",
+      "duration": 194.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20DontEaseMeIn.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Ken Kesey Banter-Midnight Countdown",
+      "duration": 483.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21KenKeseyBanter-midnightCountdown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21KenKeseyBanter-midnightCountdown.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Iko Iko",
+      "duration": 535.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22IkoIko.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Playin' In The Band",
+      "duration": 873.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23PlayinInTheBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Terrapin Station",
+      "duration": 860.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24TerrapinStation.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Playin' In The Band Reprise",
+      "duration": 198.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25PlayinInTheBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25PlayinInTheBandReprise.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Drums",
+      "duration": 630.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Space",
+      "duration": 658.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "The Other One",
+      "duration": 386.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "28TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28TheOtherOne.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Not Fade Away",
+      "duration": 441.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "29NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29NotFadeAway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 453.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "30GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Morning Dew",
+      "duration": 639.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "31MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31MorningDew.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Dark Star",
+      "duration": 895.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "32DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32DarkStar.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Bertha",
+      "duration": 385.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "33Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33Bertha.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Good Lovin'",
+      "duration": 612.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "34GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34GoodLovin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 426.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "35ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "35ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "The Chinese Joke",
+      "duration": 79.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "36TheChineseJoke.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "36TheChineseJoke.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-08-27",
+  "venue": "Seattle Center Coliseum",
+  "location": "Seattle, WA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "201",
+      "title": "Touch Of Grey",
+      "duration": 406.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t01 Touch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t01 Touch.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Playin' In The Band >",
+      "duration": 795.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t02 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t02 Playin'.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Uncle John's Band >",
+      "duration": 739.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t03 UJB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t03 UJB.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Drums >",
+      "duration": 678.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t04 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t04 Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Space >",
+      "duration": 491.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t05 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t05 Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Throwing Stones >",
+      "duration": 592.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t06 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t06 Throwing Stones.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Black Peter >",
+      "duration": 572.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t07 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t07 Black Peter.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "One More Saturday Night",
+      "duration": 268.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t08 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t08 OMSN.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "E: It's All Over Now, Baby Blue",
+      "duration": 409.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-27 s2t09 E_Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-27 s2t09 E_Baby Blue.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

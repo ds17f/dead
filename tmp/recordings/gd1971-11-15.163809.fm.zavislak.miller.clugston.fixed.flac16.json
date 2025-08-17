@@ -1,0 +1,361 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1971-11-15",
+  "venue": "Austin Municipal Auditorium",
+  "location": "Austin, TX",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "11",
+      "title": "Casey Jones",
+      "duration": 364.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t11 Casey Jones.flac"
+        }
+      ]
+    },
+    {
+      "track": "101",
+      "title": "Truckin'",
+      "duration": 553.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t01 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t01 Truckin'.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Bertha",
+      "duration": 363.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t02 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t02 Bertha.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Playin' In The Band",
+      "duration": 397.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t03 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t03 Playin'.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Deal",
+      "duration": 299.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t04 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t04 Deal.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Jack Straw",
+      "duration": 312.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t05 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t05 Jack Straw.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Loser",
+      "duration": 393.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t06 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t06 Loser.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Beat It On Down The Line",
+      "duration": 190.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t07 BIODTL.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t07 BIODTL.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "One More Saturday Night",
+      "duration": 301.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s1t12 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s1t12 OMSN.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "LBJ Emancipation Library Bail Fund",
+      "duration": 40.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t01 LBJ Bail Fund.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t01 LBJ Bail Fund.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Me & My Uncle",
+      "duration": 186.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t02 M & MU.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t02 M & MU.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Ramble On Rose",
+      "duration": 374.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t03 RoR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t03 RoR.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Mexicali Blues",
+      "duration": 211.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t04 Mexicali.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t04 Mexicali.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Brokedown Palace",
+      "duration": 329.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t05 Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t05 Brokedown.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Me & Bobby McGee",
+      "duration": 366.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t06 Bobby McGee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t06 Bobby McGee.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Cumberland Blues",
+      "duration": 367.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t07 Cumberland.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t07 Cumberland.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Sugar Magnolia",
+      "duration": 457.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t08 Sugar Mag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t08 Sugar Mag.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "You Win Again",
+      "duration": 162.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t09 You Win Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t09 You Win Again.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Not Fade Away >",
+      "duration": 754.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t10 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t10 NFA.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 504.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t11 GDTRFB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t11 GDTRFB.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Not Fade Away",
+      "duration": 215.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t12 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t12 NFA.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "E: Johnny B. Goode",
+      "duration": 251.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-11-15 s2t13 E_JBG.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-15 s2t13 E_JBG.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

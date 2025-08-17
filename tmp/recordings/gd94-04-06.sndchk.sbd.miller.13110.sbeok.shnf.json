@@ -1,0 +1,33 @@
+{
+  "rating": 2.025,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1994-04-06",
+  "venue": "Miami Arena",
+  "location": "Miami, FL",
+  "raw_rating": 4.5,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Comes A Time -> Days Between intro",
+      "duration": 642.34,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd94-04-06t01snchk.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd94-04-06t02snchk.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd94-04-06t03snchk.shn"
+        }
+      ]
+    }
+  ]
+}

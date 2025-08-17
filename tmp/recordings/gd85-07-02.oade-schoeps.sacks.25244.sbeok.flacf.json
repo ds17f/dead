@@ -1,0 +1,350 @@
+{
+  "rating": 1.9,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1985-07-02",
+  "venue": "Civic Arena",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 3.8,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Crowd",
+      "duration": 311.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t01.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Jack Straw >",
+      "duration": 313.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Must've Been The Roses",
+      "duration": 428.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Minglewood Blues",
+      "duration": 537.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Friend Of The Devil",
+      "duration": 670.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cassidy",
+      "duration": 357.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Big Railroad Blues",
+      "duration": 280.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Promised Land",
+      "duration": 267.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d1t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Crowd",
+      "duration": 129.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t01.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Women are Smarter >",
+      "duration": 369.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Fingers >",
+      "duration": 450.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Lost Sailor >",
+      "duration": 412.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Saint of Circumstance >",
+      "duration": 436.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station >",
+      "duration": 814.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums>",
+      "duration": 384.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d2t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 404.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d3t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat >",
+      "duration": 587.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones >",
+      "duration": 454.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d3t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn On Your Lovelight",
+      "duration": 489.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d3t05.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "E: Revolution >",
+      "duration": 287.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d3t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Brokedown Palace",
+      "duration": 379.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-02oade-d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-02oade-d3t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

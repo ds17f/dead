@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-12-30",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 124.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 519.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Bertha.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Feel Like A Stranger",
+      "duration": 653.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FeelLikeAStranger.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 526.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Candyman.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 187.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Maggie's Farm",
+      "duration": 430.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MaggiesFarm.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "High Time",
+      "duration": 559.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07HighTime.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 625.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tennessee Jed",
+      "duration": 514.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TennesseeJed.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Valley Road",
+      "duration": 378.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ValleyRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ValleyRoad.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 76.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Mississippi Half-Step Uptown Toodleloo",
+      "duration": 619.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12MississippiHalf-stepUptownToodleloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12MississippiHalf-stepUptownToodleloo.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 434.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Crazy Fingers",
+      "duration": 557.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14CrazyFingers.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band",
+      "duration": 1185.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15PlayingInTheBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 703.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 454.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Terrapin Station",
+      "duration": 806.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TerrapinStation.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 562.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19SugarMagnolia.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 177.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "US Blues",
+      "duration": 341.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21UsBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

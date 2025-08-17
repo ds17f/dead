@@ -1,0 +1,414 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1988-03-26",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 86.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 353.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 638.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stir It Up",
+      "duration": 149.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04StirItUp.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04StirItUp.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "New Minglewood Blues",
+      "duration": 534.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05NewMinglewoodBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Peggy-O",
+      "duration": 484.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Peggy-o.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 286.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MexicaliBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big River",
+      "duration": 392.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BigRiver.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 592.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09RowJimmy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 489.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Might As Well",
+      "duration": 319.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11MightAsWell.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 45.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "China Cat Sunflower",
+      "duration": 372.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ChinaCatSunflower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Know You Rider",
+      "duration": 331.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band",
+      "duration": 526.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15PlayingInTheBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Uncle John's Band",
+      "duration": 615.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16UncleJohnsBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 542.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 503.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Gimme Some Lovin'",
+      "duration": 314.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19GimmeSomeLovin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Wheel",
+      "duration": 288.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TheWheel.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "All Along The Watchtower",
+      "duration": 323.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21AllAlongTheWatchtower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Black Peter",
+      "duration": 515.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22BlackPeter.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "One More Saturday Night",
+      "duration": 307.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23OneMoreSaturdayNight.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Encore Break",
+      "duration": 198.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24EncoreBreak.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 524.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25KnockinOnHeavensDoor.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

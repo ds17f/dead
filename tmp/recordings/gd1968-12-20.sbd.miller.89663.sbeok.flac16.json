@@ -1,0 +1,62 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-12-20",
+  "venue": "Shrine Exhibition Hall",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Eleven",
+      "duration": 531.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-20d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-20d1t01.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mountains Of The Moon",
+      "duration": 364.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-20d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-20d1t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Turn On Your Lovelight",
+      "duration": 912.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-20d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-20d1t03.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

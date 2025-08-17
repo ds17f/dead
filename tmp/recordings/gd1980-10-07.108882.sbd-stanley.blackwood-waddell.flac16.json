@@ -1,0 +1,110 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1980-10-07",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 321.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Minglewood",
+      "duration": 436.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Shakedown",
+      "duration": 763.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated (cut)",
+      "duration": 26.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Wheel",
+      "duration": 373.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stella Blue (cut)",
+      "duration": 317.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10.BettysFavoritesFTW.t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10.BettysFavoritesFTW.t08.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

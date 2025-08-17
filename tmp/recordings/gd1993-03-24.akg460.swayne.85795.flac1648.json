@@ -1,0 +1,366 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-03-24",
+  "venue": "Dean Smith Center - University of North Carolina",
+  "location": "Chapel Hill, NC",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 14.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 352.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stagger Lee",
+      "duration": 339.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wang Dang Doodle",
+      "duration": 475.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It Must Have Been The Roses",
+      "duration": 369.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stuck In Mobile With The Memphis Blues Again",
+      "duration": 566.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed ->",
+      "duration": 549.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 680.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s1t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "tuning",
+      "duration": 29.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Here Comes Sunshine ->",
+      "duration": 416.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band ->",
+      "duration": 401.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Box Of Rain ->",
+      "duration": 341.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Crazy Fingers ->",
+      "duration": 543.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Jam ->",
+      "duration": 224.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 872.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 657.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Spanish Jam ->",
+      "duration": 245.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down The Raod Feelin' Bad ->",
+      "duration": 491.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwin' Stones ->",
+      "duration": 560.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t11.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 534.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t12.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "crowd",
+      "duration": 165.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t13.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 295.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-03-24s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-03-24s2t14.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 2.0384615384615383,
+  "review_count": 13,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1984-10-20",
+  "venue": "Carrier Dome, Syracuse U",
+  "location": "Syracuse, NY",
+  "raw_rating": 4.076923076923077,
+  "high_ratings": 10,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 33.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t01.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha ->",
+      "duration": 369.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 374.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West L.A. Fadeaway",
+      "duration": 533.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "C C Rider",
+      "duration": 532.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 632.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "My Brother Esau",
+      "duration": 272.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 684.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t08.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Jack Straw",
+      "duration": 445.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 46.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d2t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Shakedown Street ->",
+      "duration": 822.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d2t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 572.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d2t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone ->",
+      "duration": 662.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d2t04.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Smokestack Lightnin' ->",
+      "duration": 471.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d2t05.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 249.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d2t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 411.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d3t01.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel ->",
+      "duration": 288.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d3t02.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One ->",
+      "duration": 400.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d3t03.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter ->",
+      "duration": 536.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d3t04.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn On Your Lovelight",
+      "duration": 528.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d3t05.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Revolution",
+      "duration": 330.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20d3t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

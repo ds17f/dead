@@ -1,0 +1,46 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1975-09-01",
+  "venue": "Club Front Studio",
+  "location": "San Rafael, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Comes A Time",
+      "duration": 368.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1975.09.01.studio.bershaw.t01-ComesATime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975.09.01.studio.bershaw.t01-ComesATime.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 277.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1975.09.01.studio.bershaw.t02-TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975.09.01.studio.bershaw.t02-TheyLoveEachOther.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

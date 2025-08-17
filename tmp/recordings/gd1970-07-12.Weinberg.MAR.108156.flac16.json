@@ -1,0 +1,302 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-07-12",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Chipmunks\" Lodi//",
+      "duration": 4.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Lodi",
+      "duration": 200.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Can't Pay the Price",
+      "duration": 283.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Henry",
+      "duration": 216.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Portland Woman",
+      "duration": 305.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Truck Drivin' Man",
+      "duration": 182.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Last Lonely Eagle",
+      "duration": 376.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Workin' Man Blues",
+      "duration": 296.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cecelia",
+      "duration": 253.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Louisiana Lady",
+      "duration": 219.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc110.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Weight",
+      "duration": 415.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc111.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Easy Wind",
+      "duration": 569.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Mama Tried",
+      "duration": 167.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Cold Rain & Snow",
+      "duration": 354.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Attics of My Life",
+      "duration": 418.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "China Cat Sunflower >",
+      "duration": 319.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc205.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Know You Rider",
+      "duration": 275.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc206.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "It's a Man's, Man's, Man's World//",
+      "duration": 234.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc207.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

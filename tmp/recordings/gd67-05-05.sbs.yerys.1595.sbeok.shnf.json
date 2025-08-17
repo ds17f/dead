@@ -1,0 +1,94 @@
+{
+  "rating": 3.1585365853658534,
+  "review_count": 41,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1967-05-05",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.512195121951219,
+  "high_ratings": 38,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "He Was A Friend Of Mine",
+      "duration": 186.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-05-05d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-05-05d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Stage Banter",
+      "duration": 60.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-05-05d1t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-05-05d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Golden Road To Unlimited Devotion",
+      "duration": 75.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-05-05d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-05-05d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "New Potato Caboose",
+      "duration": 362.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-05-05d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-05-05d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Alligator",
+      "duration": 395.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-05-05d1t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-05-05d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

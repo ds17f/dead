@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-03-21",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 372.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story",
+      "duration": 253.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "221"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 487.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 310.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 489.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Ain't Superstitious > Meet Me At The Bottom",
+      "duration": 417.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dupree's Diamond Blues",
+      "duration": 340.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 542.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Might As Well",
+      "duration": 277.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t09.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Chinacat Sunflower",
+      "duration": 369.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 388.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 1114.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 399.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 470.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel",
+      "duration": 289.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 385.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 558.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around & Around",
+      "duration": 226.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Johnny B. Goode",
+      "duration": 255.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Keep Your Day Job",
+      "duration": 269.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t08.mp3",
+          "bitrate": "218"
+        }
+      ]
+    }
+  ]
+}

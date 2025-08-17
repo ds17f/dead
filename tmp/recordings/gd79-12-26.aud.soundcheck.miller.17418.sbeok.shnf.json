@@ -1,0 +1,29 @@
+{
+  "rating": 1.3066666666666666,
+  "review_count": 3,
+  "source_type": "AUD",
+  "confidence": 0.6,
+  "date": "1979-12-26",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 2.3333333333333335,
+  "high_ratings": 1,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Brokedown Palace",
+      "duration": 384.2,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd79-12-26snchk01.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd79-12-26snchk02.shn"
+        }
+      ]
+    }
+  ]
+}

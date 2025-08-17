@@ -1,0 +1,30 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1975-09-16",
+  "venue": "Club Front Studio",
+  "location": "San Rafael, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Catfish John (take 9)",
+      "duration": 404.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1975.09.16.studio.bershaw.t01-CatfishJohn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975.09.16.studio.bershaw.t01-CatfishJohn.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

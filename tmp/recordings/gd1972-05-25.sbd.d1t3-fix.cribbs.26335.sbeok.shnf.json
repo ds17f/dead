@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-05-25",
+  "venue": "The Strand Lyceum",
+  "location": "London, England",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star",
+      "duration": 1123.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-25d1t03fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-05-25d1t03fixed.shn"
+        }
+      ]
+    }
+  ]
+}

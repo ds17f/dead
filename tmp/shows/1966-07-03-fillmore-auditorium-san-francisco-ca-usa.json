@@ -1,0 +1,149 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-07-03-fillmore-auditorium-san-francisco-ca-usa/",
+  "show_id": "1966-07-03-fillmore-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-07-03",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "He Was A Friend Of Mine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Viola Lee Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Boss Man",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Sitting On Top Of The World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Unknown Title",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Unknown Title",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cream Puff War",
+          "url": "https://jerrygarcia.com/song/cream-puff-war/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Mess Up a Good Thing",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cardboard Cowboy",
+          "url": "https://jerrygarcia.com/song/cardboard-cowboy/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Love",
+    "Group B"
+  ],
+  "collection_timestamp": "2025-08-10T08:00:32.090672",
+  "show_time": null,
+  "recordings": [
+    "gd66-07-03.sbd.unknown.40.sbeok.shnf",
+    "gd1966-07-03.139751.sbd.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd66-07-03.sbd.unknown.40.sbeok.shnf",
+  "avg_rating": 2.88,
+  "raw_rating": 4.238095238095238,
+  "recording_count": 2,
+  "confidence": 1.0,
+  "total_high_ratings": 16,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun",
+    "pigpen-years"
+  ]
+}

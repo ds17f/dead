@@ -1,0 +1,208 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-04-03-civic-arena-pittsburgh-pa-usa/",
+  "show_id": "1989-04-03-civic-arena-pittsburgh-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "Civic Arena",
+  "location_raw": "Pittsburgh, PA",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "USA",
+  "date": "1989-04-03",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Built To Last",
+          "url": "https://jerrygarcia.com/song/built-to-last/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Blow Away",
+          "url": "https://jerrygarcia.com/song/blow-away/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:03:10.802742",
+  "show_time": null,
+  "recordings": [
+    "gd89-04-03.sbd.harrel.7507.sbeok.shnf",
+    "gd1989-04-03.upg-sbd.tobin.125413.flac16",
+    "gd1989-04-03.147893.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1989-04-03.147794.sbd.ultramatrix.miller.flac24",
+    "gd1989-04-03.nak300.pasternak.andrewf.89791.sbeok.flac16",
+    "gd89-04-03.beyerM88.connor.29758.sbeok.shnf",
+    "gd1989-04-03.141670.OTS.AKG.Ackerman.Miller.Noel.t-flac2496",
+    "gd1989-04-03.Nak300CP4.Fitzy.Keo.125023.Flac1644",
+    "gd1989-04-03.nak300.bleich.sirmick.96796.sbeok.flac16",
+    "gd1989-04-03.mtx.tobin.125281.flac16",
+    "gd1989-04-03.145689.ots.akg460.ackerman.miller.noel.t-flac16",
+    "gd1989-04-03.151402.151402.OTS.AKG.Ackerman.Noel.t-flac2496",
+    "gd1989-04-03.fob.schoeps.watson.100161.flac16",
+    "gd1989-04-03.dts.tobin.125403.flac16",
+    "gd1989-04-03.151420.OTS.AKG.Ackerman.Noel.t-flac1644",
+    "gd1989-04-03.133939.akg414btl-fob-dantepper.flac16",
+    "gd1989-04-03.135433.LPCM5-1.bhp.flac1648",
+    "gd1989-04-03.150551.FOB.Nak.700.dsd.Mow.Miller.Noel.t.flac2496",
+    "gd1989-04-03.Nak300CP4.Fitzy.Keo.125022.Flac2496"
+  ],
+  "best_recording": "gd89-04-03.sbd.harrel.7507.sbeok.shnf",
+  "avg_rating": 1.9276041666666666,
+  "raw_rating": 4.035714285714286,
+  "recording_count": 19,
+  "confidence": 1.0,
+  "total_high_ratings": 24,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 15
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

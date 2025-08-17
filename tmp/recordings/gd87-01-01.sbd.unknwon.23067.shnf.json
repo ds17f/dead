@@ -1,0 +1,30 @@
+{
+  "rating": 2.1176470588235294,
+  "review_count": 17,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1987-01-01",
+  "venue": "Backstage",
+  "location": "Allover, US",
+  "raw_rating": 4.235294117647059,
+  "high_ratings": 13,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Interview",
+      "duration": 578.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD_Talk_To_Themselves.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD_Talk_To_Themselves.shn"
+        }
+      ]
+    }
+  ]
+}

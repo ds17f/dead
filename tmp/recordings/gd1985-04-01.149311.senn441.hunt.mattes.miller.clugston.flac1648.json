@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-01",
+  "venue": "Cumberland County Civic Center",
+  "location": "Portland, ME",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Bertha >",
+      "duration": 379.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t01 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t01 Bertha.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Greatest Story Ever Told",
+      "duration": 322.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t02 GSET.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t02 GSET.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "West LA Fadeaway >",
+      "duration": 454.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t03 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t03 West LA Fadeaway.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Little Red Rooster",
+      "duration": 489.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t04 Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t04 Red Rooster.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Bird Song",
+      "duration": 605.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t05 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t05 Bird Song.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Just Like Tom Thumb's Blues >",
+      "duration": 335.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t06 Tom Thumb's Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t06 Tom Thumb's Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Looks Like Rain >",
+      "duration": 500.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t07 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t07 LLR.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Might As Well",
+      "duration": 271.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s1t08 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s1t08 Might As Well.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 74.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t01 Crowd.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 360.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t02 China Cat.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider >",
+      "duration": 346.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t03 IKYR.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 665.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t04 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t04 Estimated.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Eyes Of The World >",
+      "duration": 586.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t05 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t05 Eyes.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 441.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t06 Drums.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 472.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t07 Space.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "The Other One >",
+      "duration": 501.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t08 Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t08 Other One.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Stella Blue >",
+      "duration": 424.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t09 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t09 Stella Blue.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Around & Around >",
+      "duration": 234.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t10 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t10 A & A.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Not Fade Away",
+      "duration": 453.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t11 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t11 NFA.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Encore Break",
+      "duration": 67.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t12 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t12 Encore Break.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 459.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-01 s2t13 Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-01 s2t13 Baby Blue.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

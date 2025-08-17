@@ -1,0 +1,80 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-04-23",
+  "venue": "The Ark",
+  "location": "Boston, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "He was a friend of mine",
+      "duration": 866.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-23.GEMS.track1.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Darkstar",
+      "duration": 1331.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-23.GEMS.track2.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St Stephen>",
+      "duration": 163.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-23.GEMS.track3.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's a sin>",
+      "duration": 239.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-23.GEMS.track4.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "St Stephen>",
+      "duration": 136.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-23.GEMS.track5.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cryptical (cut)",
+      "duration": 52.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-23.GEMS.track6.flac"
+        }
+      ]
+    }
+  ]
+}

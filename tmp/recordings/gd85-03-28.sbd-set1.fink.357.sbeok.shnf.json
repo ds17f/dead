@@ -1,0 +1,126 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1985-03-28",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Truckin'",
+      "duration": 264.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Smokestack Lightnin'",
+      "duration": 188.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "High Time",
+      "duration": 206.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t03.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "El Paso",
+      "duration": 171.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Peggy-O",
+      "duration": 208.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cassidy",
+      "duration": 227.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t06.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "China Cat Sunflower > I Know You Rider",
+      "duration": 400.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-03-28d1t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-03-28d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

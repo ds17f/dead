@@ -1,0 +1,302 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1983-10-08",
+  "venue": "Richmond Coliseum",
+  "location": "Richmond, VA",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 559.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t1.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 503.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t2.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 483.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t3.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brown Eyed Women",
+      "duration": 307.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t4.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 335.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t5.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "West L.A. Fadeaway",
+      "duration": 557.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t6.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Hell In A Bucket",
+      "duration": 354.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t7.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t7.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 490.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t8.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t8.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Day Job",
+      "duration": 333.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t1.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band",
+      "duration": 782.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t2.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Fingers",
+      "duration": 612.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t3.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 496.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t4.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 530.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t1.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin'",
+      "duration": 510.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t2.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Spoonful",
+      "duration": 130.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t3.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Wharf Rat",
+      "duration": 566.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t4.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Good Lovin'",
+      "duration": 509.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t5.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "U.S. Blues",
+      "duration": 304.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t6.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

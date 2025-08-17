@@ -1,0 +1,62 @@
+{
+  "rating": 2.025,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1970-02-02",
+  "venue": "Fox Theatre",
+  "location": "St. Louis, MO",
+  "raw_rating": 4.5,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 781.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-02d1t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-02-02d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St. Stephen >",
+      "duration": 194.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-02d1t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-02-02d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mason's Children//",
+      "duration": 130.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-02-02d1t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1970-02-02d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

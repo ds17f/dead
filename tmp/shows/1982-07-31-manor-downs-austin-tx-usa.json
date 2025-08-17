@@ -1,0 +1,213 @@
+{
+  "url": "https://jerrygarcia.com/show/1982-07-31-manor-downs-austin-tx-usa/",
+  "show_id": "1982-07-31-manor-downs-austin-tx-usa",
+  "band": "Grateful Dead",
+  "venue": "Manor Downs",
+  "location_raw": "Austin, TX",
+  "city": "Austin",
+  "state": "TX",
+  "country": "USA",
+  "date": "1982-07-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Alabama Getaway",
+          "url": "https://jerrygarcia.com/song/alabama-getaway/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "El Paso",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "One More Saturday Night",
+          "url": "https://jerrygarcia.com/song/one-more-saturday-night/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:47:16.343394",
+  "show_time": null,
+  "recordings": [
+    "gd82-07-31.sbd.miller.31002.sbeok.flacf",
+    "gd1982-07-31.112575.sbd.LATVALA.GEMS.flac16",
+    "gd82-07-31.sbd.martinson.3419.sbeok.shnf",
+    "gd1982-07-31.141511.sbd.pcm.streeter.dalton.miller.clugston.flac1644",
+    "gd1982-07-31.sbd.jeffm.13310.sbeok.shnf",
+    "gd1982-07-31.mtx.chappell.sb11.30625.sbeok.flac16",
+    "gd82-07-31.aud-nakcm700.martin.warner.19017.sbeok.shnf",
+    "gd1982-07-31.167996.senn421.beyer.blend.michael.mckenzie.miller.clugston.flac1644",
+    "gd1982-07-31.138617.beyerm201.holbrook.flac2448",
+    "gd1982-07-31.167920.dts.tobin.flac16",
+    "gd1982-07-31.156440.gardner.suraci.nak300.flac16",
+    "gd1982-07-31.167919.mtx.tobin.flac16",
+    "gd1982-07-31.167921.5-1.tobin.flac1648",
+    "gd1982-07-31.158063.beyer.m88.vita.miller.clugston.flac2496",
+    "gd1982-07-31.156439.gardner.suraci.nak300.flac24",
+    "gd1982-07-31.138616.beyerm201.holbrook.flac1644",
+    "gd1982-07-31.158062.beyer.m88.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd82-07-31.sbd.miller.31002.sbeok.flacf",
+  "avg_rating": 2.195038759689923,
+  "raw_rating": 4.45679012345679,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 75,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 11,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun",
+    "brent-years"
+  ]
+}

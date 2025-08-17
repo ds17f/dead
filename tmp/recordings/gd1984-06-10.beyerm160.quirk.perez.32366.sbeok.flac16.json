@@ -1,0 +1,286 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1984-06-10",
+  "venue": "Cal Expo Amphitheatre",
+  "location": "Sacramento, CA",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 519.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 494.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Beat It On Down The Line",
+      "duration": 222.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 199.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Brother Esau",
+      "duration": 298.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bird Song",
+      "duration": 654.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Minglewood Blues",
+      "duration": 425.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Might As Well",
+      "duration": 282.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d1t08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower >",
+      "duration": 367.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 377.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson and Delilah",
+      "duration": 453.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone>",
+      "duration": 791.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Don't Need Love",
+      "duration": 381.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin'>",
+      "duration": 458.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Throwing Stones>",
+      "duration": 461.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Not Fade Away",
+      "duration": 370.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Brokedown Palace",
+      "duration": 325.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-06-10.d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-06-10.d2t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

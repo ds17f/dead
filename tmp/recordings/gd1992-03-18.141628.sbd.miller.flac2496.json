@@ -1,0 +1,302 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-03-18",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 401.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TouchOfGrey.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Wang Dang Doodle",
+      "duration": 472.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02WangDangDoodle.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack-A-Roe",
+      "duration": 386.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Jack-a-roe.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now",
+      "duration": 449.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItsAllOverNow.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 731.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RowJimmy.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Picasso Moon",
+      "duration": 435.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06PicassoMoon.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 468.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Deal.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Eyes Of The World",
+      "duration": 829.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08EyesOfTheWorld.mp3",
+          "bitrate": "149"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Corrina",
+      "duration": 603.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Corrina.mp3",
+          "bitrate": "112"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band Reprise",
+      "duration": 397.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10PlayingInTheBandReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10PlayingInTheBandReprise.mp3",
+          "bitrate": "110"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 782.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11UncleJohnsBand.mp3",
+          "bitrate": "109"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 241.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Drums.mp3",
+          "bitrate": "109"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 956.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Wave To The Wind",
+      "duration": 516.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14WaveToTheWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14WaveToTheWind.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Wharf Rat",
+      "duration": 568.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15WharfRat.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Throwing Stons",
+      "duration": 565.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16ThrowingStons.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ThrowingStons.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 474.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17NotFadeAway.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Brokedown Palace",
+      "duration": 343.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BrokedownPalace.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

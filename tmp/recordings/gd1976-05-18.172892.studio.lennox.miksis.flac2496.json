@@ -1,0 +1,46 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1976-05-18",
+  "venue": "Studio",
+  "location": "Unknown, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Peanut Butter Song",
+      "duration": 291.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t1 Peanut Buter Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t1 Peanut Buter Song.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Might As Well (partial)",
+      "duration": 71.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "s1t2 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t2 Might As Well.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

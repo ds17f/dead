@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1982-04-06",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd82-04-06 s1tCold Rain & Snow",
+      "duration": 372.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t01ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t01ColdRainSnow.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd82-04-06 s1tPromised Land",
+      "duration": 309.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t02PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t02PromisedLand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd82-04-06 s1tCandyman",
+      "duration": 388.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t03Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t03Candyman.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd82-04-06 s1tCC Rider",
+      "duration": 524.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t04CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t04CcRider.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd82-04-06 s1tBrown Eyed Women",
+      "duration": 314.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t05BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t05BrownEyedWomen.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd82-04-s1tMama Tried",
+      "duration": 143.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t06MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t06MamaTried.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd82-04-06 s1tMexicali Blues",
+      "duration": 276.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t07MexicaliBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd82-04-06 s1tBig Railroad Blues",
+      "duration": 234.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t08BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t08BigRailroadBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd82-04-06 s1tLooks Like Rain",
+      "duration": 499.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t09LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t09LooksLikeRain.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd82-04-06 s1tJack-A-Roe",
+      "duration": 295.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t10Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t10Jack-a-roe.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd82-04-06 s1tIt's All Over Now",
+      "duration": 412.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t11ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t11ItsAllOverNow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd82-04-06 s1tMight As Well",
+      "duration": 278.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S1t12MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S1t12MightAsWell.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd82-04-06 s2t01 Crowd",
+      "duration": 35.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t01Crowd.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd82-04-06 s2t02 Shakedown Street",
+      "duration": 786.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t02ShakedownStreet.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd82-04-06 s2t03 Lost Sailor",
+      "duration": 379.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t03LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t03LostSailor.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd82-04-06 s2t04 Saint Of Circumstance",
+      "duration": 391.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t04SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t04SaintOfCircumstance.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd82-04-06 s2t05 Terrapin Station",
+      "duration": 725.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t05TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t05TerrapinStation.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd82-04-06 s2t06 Drums",
+      "duration": 693.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t06Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd82-04-06 s2t07 Space",
+      "duration": 538.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t07Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd82-04-06 s2t08 Truckin'",
+      "duration": 367.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t08Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t08Truckin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd82-04-06 s2t09 The Other One",
+      "duration": 167.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t09TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t09TheOtherOne.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd82-04-06 s2t10 Morning Dew",
+      "duration": 727.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t10MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t10MorningDew.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd82-04-06 s2t11 Sugar Magnolia",
+      "duration": 521.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t11SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t11SugarMagnolia.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd82-04-06 s2t12 Encore Break",
+      "duration": 32.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t12EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t12EncoreBreak.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd82-04-06 s2t13 It's All Over Now, Baby Blue",
+      "duration": 455.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd82-04-06S2t13ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd82-04-06S2t13ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

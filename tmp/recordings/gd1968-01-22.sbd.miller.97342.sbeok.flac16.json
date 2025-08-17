@@ -1,0 +1,206 @@
+{
+  "rating": 3.436363636363636,
+  "review_count": 22,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-01-22",
+  "venue": "Eagles Auditorium",
+  "location": "Seattle, WA",
+  "raw_rating": 4.909090909090909,
+  "high_ratings": 22,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alligator",
+      "duration": 954.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t01.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One ->",
+      "duration": 441.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t02.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Potato Caboose ->",
+      "duration": 474.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t03.mp3",
+          "bitrate": "141"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Born Cross-Eyed ->",
+      "duration": 100.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t04.mp3",
+          "bitrate": "148"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Feedback ->",
+      "duration": 182.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t05.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Spanish Jam ->",
+      "duration": 604.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t06.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star ->",
+      "duration": 340.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t07.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower ->",
+      "duration": 248.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t08.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Eleven ->",
+      "duration": 392.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t09.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Caution (Do Not Stop On Tracks) ->",
+      "duration": 302.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t10.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Feedback ->",
+      "duration": 278.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t11.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "And We Bid You Good Night",
+      "duration": 85.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-01-22d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-22d1t12.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

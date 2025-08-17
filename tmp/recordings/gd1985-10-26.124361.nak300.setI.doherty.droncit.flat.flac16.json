@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-10-26",
+  "venue": "Sun Dome",
+  "location": "Tampa, FL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 303.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 283.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dupree's Diamond Blues",
+      "duration": 454.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C C Rider",
+      "duration": 531.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 389.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me & My Uncle ->",
+      "duration": 179.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 301.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "#Big Railroad Blues ->",
+      "duration": 220.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain ->",
+      "duration": 520.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat09.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 187.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-26.aud.setI.doherty.droncit.flat10.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

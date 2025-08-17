@@ -1,0 +1,254 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1980-10-10",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 207.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1980-10-09acoustic-filler01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1980-10-09acoustic-filler01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Hollow",
+      "duration": 237.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1980-10-09acoustic-filler02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1980-10-09acoustic-filler02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "All Around The World",
+      "duration": 238.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1980-10-09acoustic-filler03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1980-10-09acoustic-filler03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 430.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1980-10-09acoustic-filler04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1980-10-09acoustic-filler04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "China Doll",
+      "duration": 380.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1980-10-09acoustic-filler05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1980-10-09acoustic-filler05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "On The Road Again",
+      "duration": 193.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1980-10-09acoustic-filler06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1980-10-09acoustic-filler06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "On The Road Again",
+      "duration": 174.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic01.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "It Must Have Been The Roses",
+      "duration": 346.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Monkey and The Engineer",
+      "duration": 169.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack-A-Roe",
+      "duration": 258.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic04.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Dark Hollow",
+      "duration": 208.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "To Lay Me Down",
+      "duration": 525.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Heaven Help The Fool",
+      "duration": 367.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Bird Song >",
+      "duration": 480.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic08.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ripple",
+      "duration": 264.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-10-10acoustic09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-10-10acoustic09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

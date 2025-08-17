@@ -1,0 +1,271 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-02-18",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Iko Iko",
+      "duration": 466.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t01 - Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t01 - Iko Iko.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t01 - Samson And Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t01 - Samson And Delilah.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "C. C. Rider",
+      "duration": 784.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t02 - C.C Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t02 - C.C Rider.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t02 - He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t02 - He's Gone.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dire Wolf",
+      "duration": 286.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t03 - Dire Wolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t03 - Dire Wolf.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t03 - Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t03 - Spoonful.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cassidy",
+      "duration": 685.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t04 - Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t04 - Cassidy.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t04 - Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t04 - Eyes Of The World.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Ramble On Rose",
+      "duration": 385.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t05 - Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t05 - Ramble On Rose.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t05 - Going Down The Road Feeling Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t05 - Going Down The Road Feeling Bad.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Me And My Uncle ->",
+      "duration": 776.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t06 - Me And My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t06 - Me And My Uncle.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t06 - Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t06 - Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Mexicali Blues",
+      "duration": 600.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t07 - Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t07 - Mexicali Blues.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t07 - Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t07 - Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "China Cat Sunflower ->",
+      "duration": 307.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t08 - China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t08 - China Cat Sunflower.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t08 - China Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t08 - China Doll.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "I Know You Rider",
+      "duration": 346.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t09 - I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t09 - I Know You Rider.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t09 - Baby What You Wnat Me To Do.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t09 - Baby What You Wnat Me To Do.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 587.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t10 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t10 - Sugar Magnolia.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Day Job (Encore)",
+      "duration": 294.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t11 - Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t11 - Day Job.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

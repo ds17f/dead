@@ -1,0 +1,126 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-02-11",
+  "venue": "Fillmore East",
+  "location": "New York , NY",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain & Snow >",
+      "duration": 237.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "High Time",
+      "duration": 427.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me & My Uncle",
+      "duration": 187.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Star >",
+      "duration": 985.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t04.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Spanish Jam >",
+      "duration": 578.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Lovelight",
+      "duration": 2011.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t06.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Uncle John's Band",
+      "duration": 361.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-02-11t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-11t07.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

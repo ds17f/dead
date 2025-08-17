@@ -1,0 +1,174 @@
+{
+  "rating": 2.4,
+  "review_count": 20,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-10-11",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.8,
+  "high_ratings": 20,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dire Wolf",
+      "duration": 100.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dark Hollow",
+      "duration": 107.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Rosalie McFall",
+      "duration": 81.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T03.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cassidy",
+      "duration": 174.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Deep Elem Blues",
+      "duration": 150.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Monkey And The Engineer",
+      "duration": 73.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "China Doll",
+      "duration": 122.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Heaven Help The Fool",
+      "duration": 170.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T08.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Oh Babe It ain't No Lie >",
+      "duration": 171.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T09.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Ripple",
+      "duration": 149.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "GD101180_D1_T10.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "GD101180_D1_T10.shn"
+        }
+      ]
+    }
+  ]
+}

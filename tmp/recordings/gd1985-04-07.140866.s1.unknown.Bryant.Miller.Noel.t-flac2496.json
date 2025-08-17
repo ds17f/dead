@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-07",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "hiya kids",
+      "duration": 131.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Why Don't We Do It in the Road? ->",
+      "duration": 193.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 414.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C.C. Rider",
+      "duration": 478.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Birdsong",
+      "duration": 692.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dancin' in the Street",
+      "duration": 387.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 354.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Keep Your Day Job",
+      "duration": 308.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-04-07.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07.s1t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

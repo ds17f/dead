@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-06-15",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch of Grey",
+      "duration": 405.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 429.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend of the Devil",
+      "duration": 542.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy ->",
+      "duration": 357.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dupree's Diamond Blues",
+      "duration": 397.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me & My Uncle ->",
+      "duration": 182.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River ->",
+      "duration": 321.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Might as Well",
+      "duration": 256.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-15.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-15.s1t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-05-01",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 137.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t01 Crowd.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Alabama Getaway >",
+      "duration": 296.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t02 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t02 Alabama Getaway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Promised Land",
+      "duration": 289.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t03 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t03 Promised Land.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Friend Of The Devil",
+      "duration": 578.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t04 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t04 Friend Of The Devil.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Me & My Uncle >",
+      "duration": 183.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t05 Me & My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t05 Me & My Uncle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Big River",
+      "duration": 394.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t06 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t06 Big River.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Althea >",
+      "duration": 533.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t07 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t07 Althea.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Little Red Rooster",
+      "duration": 648.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t08 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t08 Little Red Rooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Tennessee Jed >",
+      "duration": 537.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t09 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t09 Tennessee Jed.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Let It Grow >",
+      "duration": 624.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t10 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t10 Let It Grow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Deal",
+      "duration": 450.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s1t11 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s1t11 Deal.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 122.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t01 Crowd.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Feel Like A Stranger >",
+      "duration": 588.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t02 Feel Like A Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t02 Feel Like A Stranger.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Franklin's Tower >",
+      "duration": 689.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t03 Franklin's Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t03 Franklin's Tower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Lost Sailor >",
+      "duration": 371.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t04 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t04 Lost Sailor.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Saint Of Circumstance >",
+      "duration": 390.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t05 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t05 Saint Of Circumstance.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "He's Gone >",
+      "duration": 710.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t06 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t06 He's Gone.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "The Other One >",
+      "duration": 343.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t07 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t07 The Other One.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Drums >",
+      "duration": 676.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t08 Drums.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space >",
+      "duration": 331.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t09 Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "The Wheel >",
+      "duration": 366.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t10 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t10 The Wheel.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Wharf Rat >",
+      "duration": 618.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t11 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t11 Wharf Rat.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Sugar Magnolia",
+      "duration": 539.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t12 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t12 Sugar Magnolia.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "US Blues",
+      "duration": 313.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-01 s2t13 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-01 s2t13 US Blues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

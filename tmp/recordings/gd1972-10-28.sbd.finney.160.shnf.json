@@ -1,0 +1,56 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1972-10-28",
+  "venue": "Cleveland Public Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star ->",
+      "duration": 580.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "seastones1-d1t7.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "seastones1-d1t7.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "seastones1-d1t7_vbr.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Philo Stomp -> Dark Star",
+      "duration": 389.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "seastones1-d1t8.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "seastones1-d1t8.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "seastones1-d1t8_vbr.mp3",
+          "bitrate": "175"
+        }
+      ]
+    }
+  ]
+}

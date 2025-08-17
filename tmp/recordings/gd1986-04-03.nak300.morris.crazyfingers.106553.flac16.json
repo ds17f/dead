@@ -1,0 +1,222 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-04-03",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Supplication Jam ->",
+      "duration": 213.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Let It Grow ->",
+      "duration": 670.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Don't Ease Me In",
+      "duration": 193.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Uncle John's Band ->",
+      "duration": 470.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playing in the Band ->",
+      "duration": 847.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Don't Need Love ->",
+      "duration": 396.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums ->",
+      "duration": 326.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space ->",
+      "duration": 262.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Other One ->",
+      "duration": 493.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wharf Rat ->",
+      "duration": 547.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Around And Around ->",
+      "duration": 225.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d2t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Not Fade Away",
+      "duration": 613.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 456.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-04-03d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-04-03d2t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

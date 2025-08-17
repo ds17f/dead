@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-14",
+  "venue": "Irvine Meadows",
+  "location": "Irvine, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "- Tuning",
+      "duration": 69.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "- Touch Of Grey",
+      "duration": 358.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Touch Of Grey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Touch Of Grey.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "- Hell In A Bucket >",
+      "duration": 409.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Hell In A Bucket.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "- Sugaree",
+      "duration": 661.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Sugaree.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "- Down In The Bottom >",
+      "duration": 153.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Down In The Bottom.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Down In The Bottom.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "- I Ain't Superstitious",
+      "duration": 333.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 I Ain't Superstitious.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 I Ain't Superstitious.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "- Brown Eyed Women",
+      "duration": 383.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Brown Eyed Women.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "- Tons Of Steel",
+      "duration": 268.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Tons Of Steel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Tons Of Steel.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "- Big Railroad Blues >",
+      "duration": 276.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Big Railroad Blues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "- Looks Like Rain >",
+      "duration": 584.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Looks Like Rain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "- Don't Ease Me In",
+      "duration": 188.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Don't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Don't Ease Me In.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "- Tuning",
+      "duration": 123.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "- I Need A Miracle >",
+      "duration": 222.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 I Need A Miracle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "- China Cat Sunflower >",
+      "duration": 349.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 China Cat Sunflower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "- I Know You Rider",
+      "duration": 464.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 I Know You Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "- Man Smart (Woman Smarter) >",
+      "duration": 444.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Man Smart (Woman Smarter).mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "- He's Gone >",
+      "duration": 997.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 He's Gone.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "- Drums >",
+      "duration": 440.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "- Space >",
+      "duration": 475.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "- Dear Mr. Fantasy >",
+      "duration": 371.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Dear Mr Fantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Dear Mr Fantasy.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "- The Other One >",
+      "duration": 470.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 The Other One.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "- Wharf Rat >",
+      "duration": 567.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Wharf Rat.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "- Sugar Magnolia",
+      "duration": 550.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 Sugar Magnolia.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "- Encore Break",
+      "duration": 171.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 Encore Break.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "- Gloria",
+      "duration": 435.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25 Gloria.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25 Gloria.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

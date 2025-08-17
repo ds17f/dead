@@ -1,0 +1,94 @@
+{
+  "rating": 1.0499999999999998,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1973-03-19",
+  "venue": "Nassau Veterans Memorial Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Intro Bill Graham",
+      "duration": 226.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-19DanHpartialD1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-19DanHpartialD1T01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Promised Land",
+      "duration": 198.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-19DanHpartialD1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-19DanHpartialD1T02.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "He's Gone",
+      "duration": 844.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-19DanHpartialD1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-19DanHpartialD1T03.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 246.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-19DanHpartialD1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-19DanHpartialD1T04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "They Love Each Other",
+      "duration": 338.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-03-19DanHpartialD1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-03-19DanHpartialD1T05.mp3",
+          "bitrate": "171"
+        }
+      ]
+    }
+  ]
+}

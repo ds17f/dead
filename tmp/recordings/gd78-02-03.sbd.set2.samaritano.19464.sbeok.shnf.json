@@ -1,0 +1,126 @@
+{
+  "rating": 2.1375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1978-02-03",
+  "venue": "Dane County Coliseum",
+  "location": "Madison, WI",
+  "raw_rating": 4.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Lovin'",
+      "duration": 240.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Ship of Fools",
+      "duration": 229.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Estimated Prophet",
+      "duration": 495.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Eyes of the World",
+      "duration": 622.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Playin' in the Band",
+      "duration": 951.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Wheel",
+      "duration": 431.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Playin in the Band",
+      "duration": 142.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-02-03s2t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1978-02-03s2t07.shn"
+        }
+      ]
+    }
+  ]
+}

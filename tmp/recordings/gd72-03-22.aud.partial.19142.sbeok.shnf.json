@@ -1,0 +1,46 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1972-03-22",
+  "venue": "Academy of Music",
+  "location": "NYC, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Playin' in the Band",
+      "duration": 657.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-22d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1972-03-22d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Caution",
+      "duration": 1102.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-03-22d1t02.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1972-03-22d1t02.shn"
+        }
+      ]
+    }
+  ]
+}

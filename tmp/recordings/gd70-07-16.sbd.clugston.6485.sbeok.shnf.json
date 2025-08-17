@@ -1,0 +1,41 @@
+{
+  "rating": 2.40625,
+  "review_count": 16,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-07-16",
+  "venue": "Euphoria Ballroom",
+  "location": "San Rafael, CA",
+  "raw_rating": 4.8125,
+  "high_ratings": 16,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "China Cat Sunflower",
+      "duration": 791.46,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-1601.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-1602.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-1603.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-1604.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-1605.shn"
+        }
+      ]
+    }
+  ]
+}

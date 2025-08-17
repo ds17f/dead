@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-07-12",
+  "venue": "NY State Pavilion, Flushing Meadows Park",
+  "location": "Queens, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 588.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-07-12t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t01.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One >",
+      "duration": 338.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-07-12t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t02.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St. Stephen >",
+      "duration": 428.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-07-12t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t03.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven >",
+      "duration": 822.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-07-12t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t04.mp3",
+          "bitrate": "123"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Turn On Your Love Light",
+      "duration": 1382.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-07-12t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-07-12t05.mp3",
+          "bitrate": "123"
+        }
+      ]
+    }
+  ]
+}

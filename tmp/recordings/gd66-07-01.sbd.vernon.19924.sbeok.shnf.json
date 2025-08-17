@@ -1,0 +1,110 @@
+{
+  "rating": 3.2199999999999998,
+  "review_count": 10,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1966-07-01",
+  "venue": "Unknown (perhaps Fillmore Auditorium)",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.6,
+  "high_ratings": 9,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cold Rain And Snow",
+      "duration": 113.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-01d1t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 154.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-01d1t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cream Puff War",
+      "duration": 160.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-01d1t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-01d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "I'm a King Bee",
+      "duration": 279.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-01d1t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-01d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Stealin'",
+      "duration": 105.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-01d1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-01d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Dancing In The Streets",
+      "duration": 243.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-01d1t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-01d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

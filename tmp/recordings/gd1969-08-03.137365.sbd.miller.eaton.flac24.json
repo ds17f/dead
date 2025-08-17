@@ -1,0 +1,206 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-08-03",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 282.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hard To Handle",
+      "duration": 458.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HardToHandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HardToHandle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Beat It On Down The Line",
+      "duration": 274.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03BeatItOnDownTheLine.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Hi-Heel Sneakers",
+      "duration": 462.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Hi-heelSneakers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Hi-heelSneakers.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 377.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05HighTime.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 322.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MamaTried.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star",
+      "duration": 1406.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DarkStar.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Alligator",
+      "duration": 241.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Alligator.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Drums",
+      "duration": 403.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Drums.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Other One",
+      "duration": 1065.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TheOtherOne.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Caution (Do Not Stop On Tracks)",
+      "duration": 1076.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11CautiondoNotStopOnTracks.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11CautiondoNotStopOnTracks.mp3",
+          "bitrate": "135"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "And We Bid You Goodnight",
+      "duration": 134.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12AndWeBidYouGoodnight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12AndWeBidYouGoodnight.mp3",
+          "bitrate": "134"
+        }
+      ]
+    }
+  ]
+}

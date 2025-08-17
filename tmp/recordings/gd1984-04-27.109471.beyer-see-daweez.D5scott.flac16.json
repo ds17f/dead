@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1984-04-27",
+  "venue": "Providence Civic Center",
+  "location": "Providence, RI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 315.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 311.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 197.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Minglewood Blues",
+      "duration": 487.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 750.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me & My Uncle",
+      "duration": 195.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 365.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Althea",
+      "duration": 573.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "My Brother Esau",
+      "duration": 281.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t09.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Big Railroad Blues",
+      "duration": 377.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t10.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Music Never Stopped",
+      "duration": 624.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t11.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "\"noodling\"",
+      "duration": 81.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t01.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' In the Band",
+      "duration": 623.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Doll",
+      "duration": 451.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "High Time",
+      "duration": 387.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Woman Are Smarter",
+      "duration": 465.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t05.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 532.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t06.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 413.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Wheel",
+      "duration": 353.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t02.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 589.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t03.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around & Around",
+      "duration": 226.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t04.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B Goode",
+      "duration": 270.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t05.mp3",
+          "bitrate": "219"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Touch of Grey",
+      "duration": 396.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d3t06.mp3",
+          "bitrate": "210"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-02-12-youth-opportunities-center-compton-ca-usa/",
+  "show_id": "1966-02-12-youth-opportunities-center-compton-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Youth Opportunities Center",
+  "location_raw": "Compton, CA",
+  "city": "Compton",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-02-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Who Cares Rap",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T07:59:44.055888",
+  "show_time": null,
+  "recordings": [
+    "gd1966-02-12.sbd.bershaw.9515.shnf"
+  ],
+  "best_recording": "gd1966-02-12.sbd.bershaw.9515.shnf",
+  "avg_rating": 1.8999999999999997,
+  "raw_rating": 3.8,
+  "recording_count": 1,
+  "confidence": 1.0,
+  "total_high_ratings": 7,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "acid-tests",
+    "pigpen-years"
+  ]
+}

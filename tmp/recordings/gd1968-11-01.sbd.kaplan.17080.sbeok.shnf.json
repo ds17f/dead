@@ -1,0 +1,126 @@
+{
+  "rating": 2.3333333333333335,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-11-01",
+  "venue": "Silver Dollar Fair",
+  "location": "Chico, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Intro > Dark Star >",
+      "duration": 326.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cryptical Envelopment > Drums >",
+      "duration": 51.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One >",
+      "duration": 338.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cryptical Envelopment > New Potato Caboose #",
+      "duration": 237.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "# Alligator > Caution >",
+      "duration": 404.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Feedback >",
+      "duration": 169.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "And We Bid You Good Night > outro",
+      "duration": 28.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track07.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track07.shn"
+        }
+      ]
+    }
+  ]
+}

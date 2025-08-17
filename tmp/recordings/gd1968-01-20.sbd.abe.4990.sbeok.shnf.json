@@ -1,0 +1,94 @@
+{
+  "rating": 2.94,
+  "review_count": 5,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-01-20",
+  "venue": "Eureka Municipal Auditorium",
+  "location": "Eureka, CA",
+  "raw_rating": 4.2,
+  "high_ratings": 4,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Clementine >",
+      "duration": 229.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680120t01.mp3",
+          "bitrate": "156"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680120t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Potato Caboose >",
+      "duration": 335.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680120t02.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680120t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Born Cross-Eyed >",
+      "duration": 145.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680120t03.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680120t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Spanish Jam >",
+      "duration": 399.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680120t04.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680120t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Star //",
+      "duration": 77.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "680120t05.mp3",
+          "bitrate": "156"
+        },
+        {
+          "format": "Shorten",
+          "filename": "680120t05.shn"
+        }
+      ]
+    }
+  ]
+}

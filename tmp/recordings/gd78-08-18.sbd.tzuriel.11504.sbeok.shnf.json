@@ -1,0 +1,53 @@
+{
+  "rating": 2.0,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-08-18",
+  "venue": "Studio",
+  "location": "Unknown",
+  "raw_rating": 4.0,
+  "high_ratings": 6,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Good Lovin'",
+      "duration": 183.28,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track01.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track02.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track03.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track04.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track05.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track06.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track07.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "ShakeDownStreetOuttakes_Track08.shn"
+        }
+      ]
+    }
+  ]
+}

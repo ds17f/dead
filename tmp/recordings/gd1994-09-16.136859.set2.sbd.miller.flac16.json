@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-09-16",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Victim Or The Crime",
+      "duration": 461.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01VictimOrTheCrime.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "If The Shoe Fits",
+      "duration": 383.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02IfTheShoeFits.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02IfTheShoeFits.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Crazy Fingers",
+      "duration": 558.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03CrazyFingers.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet",
+      "duration": 706.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04EstimatedProphet.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Eyes Of The World",
+      "duration": 702.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05EyesOfTheWorld.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 978.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drums.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 1091.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Last Time",
+      "duration": 359.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TheLastTime.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Wheel",
+      "duration": 373.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheWheel.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 515.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10GoodLovin.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Liberty",
+      "duration": 391.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Liberty.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Liberty.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

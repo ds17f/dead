@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-10-30",
+  "venue": "Gym, SUNY (Late Show)",
+  "location": "Stony Brook, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Smokestack Lightning",
+      "duration": 504.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-10-30s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-10-30s2t01.mp3",
+          "bitrate": "129"
+        }
+      ]
+    }
+  ]
+}

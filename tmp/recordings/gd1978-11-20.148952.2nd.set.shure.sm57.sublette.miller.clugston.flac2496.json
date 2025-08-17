@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-11-20",
+  "venue": "Cleveland Music Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 31.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t01 Crowd.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Jam >",
+      "duration": 511.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t02 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t02 Jam.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Drums >",
+      "duration": 182.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t03 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t03 Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Jam >",
+      "duration": 211.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t04 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t04 Jam.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Jack-A-Roe",
+      "duration": 310.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t05 Jack-A-Roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t05 Jack-A-Roe.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Playin' In The Band >",
+      "duration": 578.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t06 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t06 Playin'.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Shakedown Street >",
+      "duration": 702.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t07 Shakedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t07 Shakedown.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "If I Had The World To Give >",
+      "duration": 648.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t08 World To Give.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t08 World To Give.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Playin' Reprise >",
+      "duration": 191.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t09 Playin' Reprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t09 Playin' Reprise.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Around & Around",
+      "duration": 530.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd78-11-28 s2t10 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-11-28 s2t10 A & A.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

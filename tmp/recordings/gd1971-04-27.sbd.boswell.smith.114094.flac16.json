@@ -1,0 +1,510 @@
+{
+  "rating": 2.1375,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1971-04-27",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning (2:06)",
+      "duration": 126.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Truckin'(10:55)",
+      "duration": 655.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried (3:14)",
+      "duration": 194.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bertha (6:40)",
+      "duration": 400.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Next Time You See Me (4:41)",
+      "duration": 281.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cumberland Blues (6:31)",
+      "duration": 392.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me & My Bobby McGee (6:31)",
+      "duration": 391.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Loser (7:35)",
+      "duration": 455.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d1t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Hard To Handle (10:25)",
+      "duration": 625.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower (4:52) >",
+      "duration": 292.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider (5:57)",
+      "duration": 357.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Casey Jones (7:12)",
+      "duration": 432.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Sugar Magnolia (6:59)",
+      "duration": 419.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t05.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Deal (5:55)",
+      "duration": 355.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Me & My Uncle (3:49)",
+      "duration": 229.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Bird Song (8:26)",
+      "duration": 506.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d2t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Tuning (2:45)",
+      "duration": 165.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Playing In The Band (4:54)",
+      "duration": 294.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Tuning/Stage Noise (4:23)",
+      "duration": 263.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Dire Wolf (3:56)",
+      "duration": 236.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Tuning (3:54)",
+      "duration": 234.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Searchin (7:35)*",
+      "duration": 455.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Riot In Cell Block #9 (7:54)*",
+      "duration": 474.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Good Vibrations (8:22)**",
+      "duration": 502.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "I Get Around (7:10)**",
+      "duration": 430.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d3t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Help Me Rhonda*",
+      "duration": 308.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d4t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d4t01.mp3",
+          "bitrate": "152"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Okie From Muskogee (5:0*",
+      "duration": 226.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d4t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d4t02.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Johnny B. Goode (3:46)*",
+      "duration": 130.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d4t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d4t03.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Tuning (2:10)",
+      "duration": 647.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d4t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d4t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Sing Me Back Home (10:47)",
+      "duration": 371.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d4t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d4t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Uncle John's Band (6:11)",
+      "duration": 1331.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-04-27d4t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-04-27d4t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

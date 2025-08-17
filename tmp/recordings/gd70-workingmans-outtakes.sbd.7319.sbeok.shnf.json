@@ -1,0 +1,158 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-01-01",
+  "venue": "Studio- Workingman's Dead Outtakes",
+  "location": "?, CA",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Ripple",
+      "duration": 103.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Tastebud",
+      "duration": 139.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Mason's Children",
+      "duration": 149.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Uncle John's Band",
+      "duration": 146.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Ripple",
+      "duration": 93.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Tastebud",
+      "duration": 124.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Mason's Children",
+      "duration": 130.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Uncle John's Band",
+      "duration": 127.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t08.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Radio Promo",
+      "duration": 25.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "workingmans_t09.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "workingmans_t09.shn"
+        }
+      ]
+    }
+  ]
+}

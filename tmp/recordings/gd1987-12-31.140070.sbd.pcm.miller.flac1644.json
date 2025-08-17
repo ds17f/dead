@@ -1,0 +1,494 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1987-12-31",
+  "venue": "Oakland-Alameda County Coliseum Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Radio Interviews",
+      "duration": 1262.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01RadioInterviews.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01RadioInterviews.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tuning",
+      "duration": 161.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 417.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Bertha.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Promised Land",
+      "duration": 354.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04PromisedLand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cold Rain And Anow",
+      "duration": 341.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ColdRainAndAnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ColdRainAndAnow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Little Red Rooster",
+      "duration": 551.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LittleRedRooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When Push Comes To Shove",
+      "duration": 317.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07WhenPushComesToShove.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "When I Paint My Masterpiece",
+      "duration": 394.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 571.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BirdSong.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 428.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TheMusicNeverStopped.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Radio Interviews",
+      "duration": 390.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11RadioInterviews.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11RadioInterviews.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Mason Williams And Friends",
+      "duration": 1154.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12MasonWilliamsAndFriends.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12MasonWilliamsAndFriends.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Radio Interviews",
+      "duration": 358.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13RadioInterviews.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13RadioInterviews.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Midnight Madness",
+      "duration": 426.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14MidnightMadness.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14MidnightMadness.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Hell In A Bucket",
+      "duration": 379.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15HellInABucket.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Uncle John's Band",
+      "duration": 631.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16UncleJohnsBand.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Terrapin Station",
+      "duration": 783.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TerrapinStation.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 565.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 509.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Space.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Other One",
+      "duration": 357.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TheOtherOne.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Wharf Rat",
+      "duration": 610.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21WharfRat.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Throwing Stones",
+      "duration": 557.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22ThrowingStones.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away",
+      "duration": 683.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23NotFadeAway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Radio Announcers",
+      "duration": 378.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24RadioAnnouncers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24RadioAnnouncers.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "We Want Phil",
+      "duration": 24.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25WeWantPhil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25WeWantPhil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 287.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26ManSmartwomanSmarter.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Iko Iko",
+      "duration": 402.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27IkoIko.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "The Banana Boat Song",
+      "duration": 142.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "28TheBananaBoatSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28TheBananaBoatSong.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Do You Wanna Dance_",
+      "duration": 161.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "29DoYouWannaDance_.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29DoYouWannaDance_.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 500.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "30KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30KnockinOnHeavensDoor.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

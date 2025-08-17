@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-09-26",
+  "venue": "Stanley Theatre",
+  "location": "Jersey City, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Promised Land",
+      "duration": 204.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t01_thePromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t01_thePromisedLand.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow",
+      "duration": 345.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t02_coldRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t02_coldRainAndSnow.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle",
+      "duration": 201.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t03_meAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t03_meAndMyUncle.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "He's Gone",
+      "duration": 891.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t04_hesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t04_hesGone.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 225.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t05_mexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t05_mexicaliBlues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Deal",
+      "duration": 284.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-26_t06_Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-26_t06_Deal.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cumberland Blues",
+      "duration": 269.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t07_cumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t07_cumberlandBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Black-Throated Wind",
+      "duration": 416.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t08_black-throatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t08_black-throatedWind.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 680.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t09_birdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t09_birdSong.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Big River",
+      "duration": 330.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t10_bigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t10_bigRiver.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugaree",
+      "duration": 471.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-26_t11_Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-26_t11_Sugaree.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Around And Around",
+      "duration": 299.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t12_aroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t12_aroundAndAround.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Casey Jones",
+      "duration": 380.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t13_caseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t13_caseyJones.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band",
+      "duration": 1318.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t14_playingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t14_playingInTheBand.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "You Win Again",
+      "duration": 327.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t15_youWinAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t15_youWinAgain.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "El Paso",
+      "duration": 270.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t16_elPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t16_elPaso.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 461.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t17_mississippiHalf-stepUptownToodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t17_mississippiHalf-stepUptownToodeloo.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Greatest Story Ever Told",
+      "duration": 315.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t18_greatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t18_greatestStoryEverTold.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Tomorrow Is Forever",
+      "duration": 339.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t19_tomorrowIsForever.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t19_tomorrowIsForever.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Truckin'",
+      "duration": 603.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-26_t20_Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-26_t20_Truckin.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "The Other One Jam",
+      "duration": 1080.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t21_theOtherOneJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t21_theOtherOneJam.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 465.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t22_itsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t22_itsAllOverNowBabyBlue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sugar Magnolia",
+      "duration": 533.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t23_sugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t23_sugarMagnolia.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Miles Tuning",
+      "duration": 30.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t24_26MilesTuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t24_26MilesTuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Johnny B Goode",
+      "duration": 249.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-26_t25_johnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-26_t25_johnnyBGoode.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

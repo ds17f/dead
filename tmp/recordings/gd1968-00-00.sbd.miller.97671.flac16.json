@@ -1,0 +1,30 @@
+{
+  "rating": 2.15,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-00-00",
+  "venue": "unknown venue",
+  "location": "unknown location",
+  "raw_rating": 4.3,
+  "high_ratings": 7,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "In The Midnight Hour",
+      "duration": 963.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-00-00MidnightHour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-00-00MidnightHour.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

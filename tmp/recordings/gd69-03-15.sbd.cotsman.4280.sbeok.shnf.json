@@ -1,0 +1,110 @@
+{
+  "rating": 1.8888888888888888,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-03-15",
+  "venue": "Hilton Hotel",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.7777777777777777,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hard To Handle",
+      "duration": 152.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15d1t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-15d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Good Morning, Little Schoolgirl",
+      "duration": 251.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15d1t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-15d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dark Star",
+      "duration": 567.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15d1t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-15d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Saint Stephen",
+      "duration": 194.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15d1t04.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-15d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "The Eleven",
+      "duration": 293.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15d1t05.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-15d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Turn On Your Lovelight",
+      "duration": 515.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-15d1t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-15d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

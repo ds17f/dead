@@ -1,0 +1,382 @@
+{
+  "rating": 1.5,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1971-04-04",
+  "venue": "Manhattan Center",
+  "location": "NYC, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 3,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Bertha",
+      "duration": 479.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t01.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Me and My Uncle",
+      "duration": 235.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t02.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Next Time You See Me",
+      "duration": 225.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t03.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "tuning",
+      "duration": 101.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t04.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Morning Dew",
+      "duration": 648.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t05.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Playing In The Band",
+      "duration": 337.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t06.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Loser",
+      "duration": 448.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t07.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Easy Wind",
+      "duration": 681.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t08.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Me and Bobby McGee",
+      "duration": 473.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t09.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Greatest Story Ever Told",
+      "duration": 151.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t10.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Johnny B. Goode",
+      "duration": 228.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t11.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin'",
+      "duration": 310.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d1t12.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Hard To Handle",
+      "duration": 513.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t01.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Deal",
+      "duration": 286.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t02.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "stage banter",
+      "duration": 203.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t03.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Sugar Magnolia",
+      "duration": 362.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t04.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Casey Jones",
+      "duration": 319.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Good Lovin'",
+      "duration": 1392.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t06.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "tuning",
+      "duration": 214.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t07.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 387.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t08.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "St. Stephen",
+      "duration": 374.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t09.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Not Fade Away",
+      "duration": 284.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t10.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Uncle John's Band",
+      "duration": 387.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-04-04d2t11.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-04-04d2t11.shn"
+        }
+      ]
+    }
+  ]
+}

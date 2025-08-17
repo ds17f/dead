@@ -1,0 +1,195 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-09-13-madison-square-garden-new-york-ny-usa/",
+  "show_id": "1991-09-13-madison-square-garden-new-york-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Madison Square Garden",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1991-09-13",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wang Dang Doodle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Knockin' On Heaven's Door",
+          "url": "https://jerrygarcia.com/song/knockin-on-heavens-door/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:09:55.306737",
+  "show_time": null,
+  "recordings": [
+    "gd91-09-13.sbd.kowalski.520.sbeok.shnf",
+    "gd91-09-13.sbd.hinko.31244.sbeok.flacf",
+    "gd1991-09-13.149851.sbd.cm.miller.flac16",
+    "gd1991-09-13.149790.sbd.pearson-healy.miller.flac2496",
+    "gd1991-09-13.sbd.kowalski.tetzeli.fix-520.34679.reflac.flac16",
+    "gd1991-09-13.110642.dmtx.hansokolow.flac16",
+    "gd1991-09-13.fob.brennecke-young.GEMS.97387.flac16",
+    "gd1991-09-13.138572.Schoeps-cmc4-mk4-ortf.gastwirt.miller.sirmick.sbeok.flac16",
+    "gd1991-09-13.nak300.bleich-sirmick.111224.sbeok.flac16",
+    "gd1991-09-13.167488.me88.rogosa.flac1644",
+    "gd1991-09-13.nak300.gidley.122120.flac2448",
+    "gd1991-09-13.167489.me88.rogosa.flac2496",
+    "gd1991-09-13.141921.mtx.photoLeon.t-flac1644",
+    "gd1991-09-13.147304.FOB.bk4011.dalton.miller.sirmick.flac1648",
+    "gd1991-09-13.150956.senn-me88.rogosa.miller.sirmick.flac1648"
+  ],
+  "best_recording": "gd91-09-13.sbd.kowalski.520.sbeok.shnf",
+  "avg_rating": 1.649712643678161,
+  "raw_rating": 3.6818181818181817,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 16,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 10
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "bruce-hornsby-shows",
+    "vince-welnick-years"
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-09-23",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tune Up",
+      "duration": 176.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 428.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower",
+      "duration": 576.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 392.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 543.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tons Of Steel",
+      "duration": 298.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Desolation Row",
+      "duration": 633.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big Railroad Blues",
+      "duration": 306.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 470.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Bertha->",
+      "duration": 447.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cumberland Blues->",
+      "duration": 316.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T11.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin' In The Band->",
+      "duration": 444.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T12.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band->",
+      "duration": 537.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T13.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playin' In The Band Jam-> Drums->",
+      "duration": 629.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T14.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Jam->",
+      "duration": 447.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T15.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle->",
+      "duration": 242.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T16.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dear Mr. Fantasy->",
+      "duration": 356.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T17.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around & Around->",
+      "duration": 234.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T18.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Good Lovin'->",
+      "duration": 287.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T19.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "La Bamba->",
+      "duration": 119.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T20.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Good Lovin'",
+      "duration": 131.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T21.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "U.S. Blues",
+      "duration": 325.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "T22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "T22.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

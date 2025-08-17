@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-03-17",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Here Comes Sunshine",
+      "duration": 400.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01HereComesSunshine.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Wang Dang Doodle",
+      "duration": 500.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02WangDangDoodle.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy' O",
+      "duration": 466.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03PeggyO.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Queen Jane",
+      "duration": 460.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04QueenJane.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04QueenJane.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Lazy River Road",
+      "duration": 554.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LazyRiverRoad.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eternity",
+      "duration": 583.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Eternity.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loose Lucy",
+      "duration": 445.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LooseLucy.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower",
+      "duration": 406.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ChinaCatSunflower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 347.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09IKnowYouRider.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samba In The Rain",
+      "duration": 434.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SambaInTheRain.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Truckin'",
+      "duration": 590.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Truckin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "New Speedway Boogie",
+      "duration": 740.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12NewSpeedwayBoogie.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drumz",
+      "duration": 874.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drumz.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 1165.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "All Along The Watchtower",
+      "duration": 530.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15AllAlongTheWatchtower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Standing On The Moon",
+      "duration": 506.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16StandingOnTheMoon.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Sugar Magnolia",
+      "duration": 672.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17SugarMagnolia.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 474.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18LucyInTheSkyWithDiamonds.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18LucyInTheSkyWithDiamonds.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

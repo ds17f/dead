@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "FM",
+  "confidence": 0.0,
+  "date": "1990-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 127.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 490.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack-A-Roe",
+      "duration": 373.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Jack-a-roe.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wang Dang Doodle",
+      "duration": 506.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WangDangDoodle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 743.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RowJimmy.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 250.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 431.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BigRiver.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 872.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 294.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PromisedLand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Midnight Madness",
+      "duration": 19.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10MidnightMadness.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10MidnightMadness.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Not Fade Away",
+      "duration": 467.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11NotFadeAway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes Of The World",
+      "duration": 954.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12EyesOfTheWorld.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Dark Star",
+      "duration": 1236.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13DarkStar.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 978.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 481.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 683.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 627.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17WharfRat.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 607.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18NotFadeAway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Weight",
+      "duration": 369.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19TheWeight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TheWeight.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Johnny B; Goode",
+      "duration": 309.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20JohnnyBGoode.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

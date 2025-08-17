@@ -1,0 +1,206 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-10-20-carrier-dome-syracuse-u-syracuse-ny-usa/",
+  "show_id": "1984-10-20-carrier-dome-syracuse-u-syracuse-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Carrier Dome, Syracuse U.",
+  "location_raw": "Syracuse, NY",
+  "city": "Syracuse",
+  "state": "NY",
+  "country": "USA",
+  "date": "1984-10-20",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "He's Gone",
+          "url": "https://jerrygarcia.com/song/hes-gone/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Smokestack Lightning",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Revolution",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:32.596855",
+  "show_time": null,
+  "recordings": [
+    "gd84-10-20.sbd.mattman.15673.sbeok.shnf",
+    "gd1984-10-20.sbd.miller.105445.flac16",
+    "gd1984-10-20.150967.sbd.eaton-latvala.miller.flac1644",
+    "gd1984-10-20.122859.mtx.dusborne.flac16",
+    "gd1984-10-20.nak300.carpenter.108304.flac2496",
+    "gd1984-10-20.nak300.carpenter.wise.andrewf.33341.sbeok.flac16",
+    "gd1984-10-20.140928.fob.senn441.ackerman.miller.clugston.flac1644",
+    "gd1984-10-20.nak300.unknown.lai.1871.sbeok.shnf",
+    "gd1984-10-20.Nak100CP4.Hill.Keo.131798.Flac1644",
+    "gd1984-10-20.124527.chasingwilma.flac24",
+    "gd1984-10-20.110063.beyer-senn-daweez.D5scott.flac16",
+    "gd1984-10-20.128437.set2.schoeps.oade.BCE.flac16",
+    "gd1984-10-20.154034.mtx.photoleon.flac1644",
+    "gd1984-10-20.Nak100CP4.Hill.Keo.131799.Flac2496",
+    "gd1984-10-20.168183.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1984-10-20.aud.morris.108407.flac24",
+    "gd1984-10-20.168182.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1984-10-20.152671.FOBNak100-SGMasterCassette.Anon.Noel.t-flac2448",
+    "gd1984-10-20.140929.fob.senn441.ackerman.miller.clugston.flac2496",
+    "gd1984-10-20.nak300.morris.crazyfingers.106652.flac16",
+    "gd1984-10-20.152672.FOBNak100-SGMasterCassetteAnonNoel.t-flac16"
+  ],
+  "best_recording": "gd84-10-20.sbd.mattman.15673.sbeok.shnf",
+  "avg_rating": 2.031549520766773,
+  "raw_rating": 4.2073170731707314,
+  "recording_count": 21,
+  "confidence": 1.0,
+  "total_high_ratings": 70,
+  "total_low_ratings": 4,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 17,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

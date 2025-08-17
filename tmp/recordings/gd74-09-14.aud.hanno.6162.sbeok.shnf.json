@@ -1,0 +1,794 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1974-09-14",
+  "venue": "Olympia Halle",
+  "location": "Munich, GE",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Bertha",
+      "duration": 342.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t01.mp3",
+          "bitrate": "143"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dead Air",
+      "duration": 92.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t02.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Me And My Uncle",
+      "duration": 185.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t03.mp3",
+          "bitrate": "141"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dead Air",
+      "duration": 68.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t04.mp3",
+          "bitrate": "134"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Deal",
+      "duration": 278.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t05.mp3",
+          "bitrate": "141"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Dead Air",
+      "duration": 61.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t06.mp3",
+          "bitrate": "133"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Jack Straw",
+      "duration": 341.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t07.mp3",
+          "bitrate": "140"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Dead Air",
+      "duration": 57.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t08.mp3",
+          "bitrate": "133"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Scarlet Begonias",
+      "duration": 728.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t09.mp3",
+          "bitrate": "140"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Dead Air",
+      "duration": 57.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t10.mp3",
+          "bitrate": "134"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Promised Land",
+      "duration": 191.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t11.mp3",
+          "bitrate": "140"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t11.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Dead Air",
+      "duration": 38.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t12.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t12.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Loser",
+      "duration": 431.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t13.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t13.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Dead Air",
+      "duration": 70.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t14.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t14.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "El Paso",
+      "duration": 267.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t15.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t15.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Dead Air",
+      "duration": 82.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t16.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t16.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t16.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Row Jimmy",
+      "duration": 549.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t17.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t17.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t17.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dead Air",
+      "duration": 75.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d1t18.mp3",
+          "bitrate": "113"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d1t18.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d1t18.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Weather Report Suite Prelude",
+      "duration": 103.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Weather Report Suite Part I",
+      "duration": 267.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t02.mp3",
+          "bitrate": "157"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Let It Grow",
+      "duration": 718.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t03.mp3",
+          "bitrate": "144"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tennessee Jed",
+      "duration": 510.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t04.mp3",
+          "bitrate": "141"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around and Around",
+      "duration": 303.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t05.mp3",
+          "bitrate": "141"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Seastones",
+      "duration": 1019.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t06.mp3",
+          "bitrate": "157"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Dead Air",
+      "duration": 241.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t07.mp3",
+          "bitrate": "157"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Big River",
+      "duration": 300.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t08.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Sugaree",
+      "duration": 451.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t09.mp3",
+          "bitrate": "155"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Dead Air",
+      "duration": 47.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t10.mp3",
+          "bitrate": "153"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Mexicali Blues",
+      "duration": 238.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d2t11.mp3",
+          "bitrate": "150"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d2t11.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d2t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Mississippi Half-Step",
+      "duration": 495.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t01.mp3",
+          "bitrate": "141"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "It Must Have Been the Roses",
+      "duration": 343.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t02.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Dead Air",
+      "duration": 57.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t03.mp3",
+          "bitrate": "134"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Truckin'",
+      "duration": 1155.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t04.mp3",
+          "bitrate": "141"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Wharf Rat",
+      "duration": 584.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t05.mp3",
+          "bitrate": "136"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Sugar Magnolia",
+      "duration": 524.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t06.mp3",
+          "bitrate": "143"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Dead Air",
+      "duration": 90.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t07.mp3",
+          "bitrate": "135"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Eyes of the World",
+      "duration": 867.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t08.mp3",
+          "bitrate": "139"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "One More Saturday Night",
+      "duration": 284.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t09.mp3",
+          "bitrate": "140"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "U.S. Blues",
+      "duration": 393.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-09-14d3t10.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd74-09-14d3t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-09-14d3t10.shn"
+        }
+      ]
+    }
+  ]
+}

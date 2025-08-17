@@ -1,0 +1,221 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-12-31-san-francisco-civic-auditorium-san-francisco-ca-usa/",
+  "show_id": "1984-12-31-san-francisco-civic-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "S.F Civic Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1984-12-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Spanish Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 3",
+      "songs": [
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Bobs",
+    "Dirty Dozen Brass Band"
+  ],
+  "collection_timestamp": "2025-08-10T08:52:52.682763",
+  "show_time": null,
+  "recordings": [
+    "gd1984-12-31.fm.menke.miller.32347.sbeok.flac16",
+    "gd1984-12-31.121725.sbd.miller.flac16",
+    "gd84-12-31.sbd.gorinsky.6395.sbeok.shnf",
+    "gd1984-12-31.sbd.walker-scotton.miller.106251.flac16",
+    "gd1984-12-31.147328.sbd.clugston.flac16",
+    "gd1984-12-31.150896.sbd.clugston.flac16",
+    "gd1984-12-31.akg.keshavan.miller.106684.flac16",
+    "gd1984-12-31.165263.fm.mckenzie.miller.sirmick.flac16",
+    "gd1984-12-31.nak100.holtz-bolton.jaz.105154.flac16",
+    "gd1984-12-31.165264.fm.mckenzie.miller.sirmick.flac24",
+    "gd1984-12-31.128592.schoeps.oade.BCE.flac16",
+    "gd1984-12-31.nak300.russjcan.96435.sbeok.flac16",
+    "gd1984-12-31.154659.5-1.tobin.flac1648",
+    "gd1984-12-31.170341.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1984-12-31.154657.mtx.tobin.flac16",
+    "gd1984-12-31.154658.dts.tobin.flac16",
+    "gd1984-12-31.140161.fob.schoeps.cmc4.mk41.oade.bryant.miller.clugston.flac2496",
+    "gd1984-12-31.148401.fob.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1984-12-31.148402.fob.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1984-12-31.Senn421.Darby.118305.Flac2448",
+    "gd1984-12-31.151277.senn421.holbrook.flac1644",
+    "gd1984-12-31.151278.senn421.holbrook.flac2448",
+    "gd1984-12-31.170342.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1984-12-31.082395.cpb.IViews.flac1644",
+    "gd1984-12-31.140160.fob.schoeps.cmc4.mk41.oade.bryant.miller.clugston.flac1644",
+    "gd1984-12-31.senn421.mccue.ford.82046.sbeok.flac16",
+    "gd1984-12-31.Senn421.Darby.118306.Flac1644"
+  ],
+  "best_recording": "gd1984-12-31.fm.menke.miller.32347.sbeok.flac16",
+  "avg_rating": 2.7142643923240932,
+  "raw_rating": 4.433962264150943,
+  "recording_count": 27,
+  "confidence": 1.0,
+  "total_high_ratings": 49,
+  "total_low_ratings": 2,
+  "source_types": {
+    "FM": 1,
+    "SBD": 5,
+    "AUD": 19,
+    "UNKNOWN": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

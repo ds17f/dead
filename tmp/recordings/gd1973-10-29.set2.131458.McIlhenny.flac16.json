@@ -1,0 +1,190 @@
+{
+  "rating": 1.68,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1973-10-29",
+  "venue": "Kiel Auditorium",
+  "location": "St. Louis, MO",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Promised Land >",
+      "duration": 168.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha >",
+      "duration": 360.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 304.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 392.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 319.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brokedown Palace",
+      "duration": 345.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Truckin' >",
+      "duration": 1194.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One >",
+      "duration": 1319.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Wharf Rat >",
+      "duration": 615.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 577.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Casey Jones",
+      "duration": 415.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

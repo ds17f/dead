@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-08-31",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Ship Of Fools",
+      "duration": 283.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson And Delilah",
+      "duration": 344.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Terrapin Station->",
+      "duration": 335.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band->",
+      "duration": 523.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums->",
+      "duration": 588.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space->",
+      "duration": 119.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t06.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Not Fade Away->",
+      "duration": 372.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd78-08-31d2t07.shn"
+        }
+      ]
+    }
+  ]
+}

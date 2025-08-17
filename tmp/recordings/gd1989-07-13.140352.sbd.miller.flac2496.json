@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-07-13",
+  "venue": "Robert F. Kennedy Stadium",
+  "location": "Washington, DC",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 160.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 499.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain And Snow",
+      "duration": 393.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ColdRainAndSnow.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 577.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 518.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TennesseeJed.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 626.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "To Lay Me Down",
+      "duration": 561.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07ToLayMeDown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07ToLayMeDown.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 775.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LetItGrow.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "He's Gone",
+      "duration": 624.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09HesGone.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Looks Like Rain",
+      "duration": 558.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10LooksLikeRain.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Terrapin Station",
+      "duration": 805.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11TerrapinStation.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 501.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Drums.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 524.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Will Take You Home",
+      "duration": 251.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14IWillTakeYouHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14IWillTakeYouHome.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Other One",
+      "duration": 634.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15TheOtherOne.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Wharf Rat",
+      "duration": 661.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16WharfRat.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 584.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ThrowingStones.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Good Lovin'",
+      "duration": 472.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GoodLovin.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Encore Break",
+      "duration": 102.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19EncoreBreak.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "US Blues",
+      "duration": 565.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20UsBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-05-03",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 125.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Introduction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Introduction.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "He Was A Friend Of Mine",
+      "duration": 562.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HeWasAFriendOfMine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HeWasAFriendOfMine.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "That's It For The Other One",
+      "duration": 1301.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03ThatsItForTheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ThatsItForTheOtherOne.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Doin' That Rag",
+      "duration": 415.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04DoinThatRag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04DoinThatRag.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 211.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-04-25",
+  "venue": "Electric Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 75.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hard To Handle",
+      "duration": 270.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Doin' That Rag",
+      "duration": 482.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 778.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Morning Dew",
+      "duration": 527.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Yellow Dog Story",
+      "duration": 140.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t06.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Sitting On Top Of The World",
+      "duration": 255.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn On Your Lovelight",
+      "duration": 1424.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-25d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-25d1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

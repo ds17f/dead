@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-07-16",
+  "venue": "Rich Stadium",
+  "location": "Orchard Park, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 503.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Hell In A Bucket.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 548.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Mississippi Half-Step Uptown Toodeloo.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Blow Away",
+      "duration": 536.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Blow Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Blow Away.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 151.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Mama Tried.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 446.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Mexicali Blues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 503.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Loose Lucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Loose Lucy.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now",
+      "duration": 570.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 It's All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 It's All Over Now.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "High Time",
+      "duration": 482.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 High Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 High Time.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 699.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Let It Grow.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 208.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Don't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Don't Ease Me In.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia",
+      "duration": 175.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Sugar Magnolia.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias",
+      "duration": 398.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Scarlet Begonias.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 473.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Man Smart (Woman Smarter).mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ship Of Fools",
+      "duration": 490.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Ship Of Fools.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Trucking",
+      "duration": 1047.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Trucking.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Trucking.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 553.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 578.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Space.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 343.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 The Wheel.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Gimme Some Lovin'",
+      "duration": 342.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Gimme Some Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Gimme Some Lovin'.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 651.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Wharf Rat.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around And Around",
+      "duration": 236.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 Around And Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Around And Around.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sunshine Daydream",
+      "duration": 300.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 Sunshine Daydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Sunshine Daydream.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Brokedown Palace",
+      "duration": 324.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 Brokedown Palace.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

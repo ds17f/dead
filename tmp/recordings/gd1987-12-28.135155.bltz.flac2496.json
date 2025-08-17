@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-12-28",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like a Stranger ->",
+      "duration": 699.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 496.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 536.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 553.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Far From Me",
+      "duration": 277.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece ->",
+      "duration": 315.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Sugaree",
+      "duration": 595.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Hell In A Bucket",
+      "duration": 403.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d01t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning - China Cat Sunflower ->",
+      "duration": 508.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 372.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "We Want Phil Chant -> Cumberland Blues",
+      "duration": 437.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Women are Smarter ->",
+      "duration": 435.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums ->",
+      "duration": 507.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space ->",
+      "duration": 631.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel ->",
+      "duration": 320.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin' ->",
+      "duration": 346.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Smokestack Lightnin' ->",
+      "duration": 217.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t09.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter ->",
+      "duration": 560.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t10.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 574.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t11.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Muddy River",
+      "duration": 431.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1987-12-28d02t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-28d02t12.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

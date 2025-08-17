@@ -1,0 +1,190 @@
+{
+  "rating": 2.3636363636363638,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-07-27",
+  "venue": "Grand Prix Racecourse",
+  "location": "Watkins Glen, NY",
+  "raw_rating": 4.7272727272727275,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "The Promised Land",
+      "duration": 194.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugaree",
+      "duration": 481.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Mexicali Blues",
+      "duration": 217.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Bird Song",
+      "duration": 960.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Big River",
+      "duration": 297.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Tennessee Jed",
+      "duration": 461.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 409.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Me And My Uncle",
+      "duration": 187.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jam ->",
+      "duration": 1175.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Wharf Rat",
+      "duration": 610.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Around And Around",
+      "duration": 296.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-07-27d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27d2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

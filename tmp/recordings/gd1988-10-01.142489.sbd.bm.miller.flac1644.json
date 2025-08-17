@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1988-10-01",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 89.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 382.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 529.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 512.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 539.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05FriendOfTheDevil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Queen Jane Approximately",
+      "duration": 431.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06QueenJaneApproximately.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 490.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TennesseeJed.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 418.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Cassidy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 201.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 160.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Victim Or The Crime",
+      "duration": 324.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11VictimOrTheCrime.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias",
+      "duration": 521.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ScarletBegonias.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain",
+      "duration": 574.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13FireOnTheMountain.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 762.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 472.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 396.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 246.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17INeedAMiracle.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Uncle John's Band",
+      "duration": 418.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18UncleJohnsBand.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Morning Dew",
+      "duration": 650.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MorningDew.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 258.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night",
+      "duration": 303.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21OneMoreSaturdayNight.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

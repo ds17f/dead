@@ -1,0 +1,382 @@
+{
+  "rating": 2.35,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1981-04-30",
+  "venue": "Greensboro Coliseum",
+  "location": "Greensboro, NC",
+  "raw_rating": 4.7,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 209.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 377.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O ->",
+      "duration": 411.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C C Rider",
+      "duration": 616.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Alabama Getaway ->",
+      "duration": 297.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Greatest Story Ever Told",
+      "duration": 242.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 426.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 531.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower ->",
+      "duration": 371.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 354.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d1t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 47.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d2t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Shakedown Street ->",
+      "duration": 732.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d2t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson And Delilah",
+      "duration": 500.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "It Must Have Been The Roses",
+      "duration": 425.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d2t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet ->",
+      "duration": 697.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes Of The World ->",
+      "duration": 467.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 609.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space ->",
+      "duration": 207.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Truckin' ->",
+      "duration": 492.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter ->",
+      "duration": 579.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around And Around ->",
+      "duration": 234.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B. Goode",
+      "duration": 246.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Casey Jones",
+      "duration": 345.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-04-30d3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-04-30d3t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

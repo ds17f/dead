@@ -1,0 +1,126 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-05-23",
+  "venue": "Strand Lyceum",
+  "location": "London, England",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Ramble On Rose",
+      "duration": 364.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tuning",
+      "duration": 96.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star >",
+      "duration": 1772.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Morning Dew",
+      "duration": 711.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "He's Gone",
+      "duration": 478.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Sugar Magnolia",
+      "duration": 418.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Comes A Time",
+      "duration": 397.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-05-23t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-23t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

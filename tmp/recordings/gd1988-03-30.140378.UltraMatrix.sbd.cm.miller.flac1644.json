@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-03-30",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 118.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 405.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Bertha.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 240.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03GreatestStoryEverTold.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Hey Pocky Way",
+      "duration": 417.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04HeyPockyWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04HeyPockyWay.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "West LA Fadeaway",
+      "duration": 603.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WestLaFadeaway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Queen Jane Approximately",
+      "duration": 331.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06QueenJaneApproximately.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 320.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BigRailroadBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 416.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Cassidy.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 237.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Shakedown Street",
+      "duration": 728.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ShakedownStreet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain",
+      "duration": 539.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11LooksLikeRain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 428.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12UncleJohnsBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 337.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingInTheBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 157.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14UncleJohnsBand.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 316.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 469.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 244.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Gimme Some Lovin'",
+      "duration": 285.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GimmeSomeLovin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Morning Dew",
+      "duration": 639.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MorningDew.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn On Your Lovelight",
+      "duration": 354.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TurnOnYourLovelight.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 167.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Black Muddy River",
+      "duration": 417.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22BlackMuddyRiver.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

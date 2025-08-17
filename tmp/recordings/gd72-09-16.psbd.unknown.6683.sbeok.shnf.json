@@ -1,0 +1,142 @@
+{
+  "rating": 2.1875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-09-16",
+  "venue": "Boston Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 4.375,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Playing In The Band",
+      "duration": 663.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d1t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Morning Dew",
+      "duration": 399.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Greatest Story Ever Told",
+      "duration": 186.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dark Star",
+      "duration": 908.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d2t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Brokedown Palace",
+      "duration": 193.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d2t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Not Fade Away",
+      "duration": 240.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d2t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Going Down The Road",
+      "duration": 255.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d2t04.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Not Fade Away",
+      "duration": 21.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-16d2t05.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-16d2t05.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1977-10-02",
+  "venue": "Paramount Theater",
+  "location": "Portland, OR",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd77-10-02 s1tCrowd",
+      "duration": 64.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t01Crowd.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd77-10-s1tCasey Jones",
+      "duration": 664.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t02CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t02CaseyJones.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd77-10-02 s1tJack Straw",
+      "duration": 322.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t03JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t03JackStraw.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd77-10-02 s1tSunrise",
+      "duration": 280.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t04Sunrise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t04Sunrise.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd77-10-02 s1tBrown Eyed Women",
+      "duration": 355.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t05BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t05BrownEyedWomen.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd77-10-02 s1tEl Paso",
+      "duration": 334.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t06ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t06ElPaso.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd77-10-02 s1tDupree's Diamond Blues",
+      "duration": 370.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t07DupreesDiamondBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t07DupreesDiamondBlues.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd77-10-02 s1tLet It Grow",
+      "duration": 748.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t08LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t08LetItGrow.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd77-10-02 s1tDeal",
+      "duration": 412.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S1t09Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S1t09Deal.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd77-10-02 s2t01 Crowd",
+      "duration": 119.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t01Crowd.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd77-10-02 s2t02 Samson & Delilah",
+      "duration": 511.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t02SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t02SamsonDelilah.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd77-10-02 s2t03 Scarlet Begonias",
+      "duration": 550.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t03ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t03ScarletBegonias.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd77-10-02 s2t04 Fire On The Mountain",
+      "duration": 896.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t04FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t04FireOnTheMountain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd77-10-02 s2t05 Funiculi Funicula",
+      "duration": 52.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t05FuniculiFunicula.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t05FuniculiFunicula.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd77-10-02 s2t06 Playin' In The Band",
+      "duration": 585.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t06PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t06PlayinInTheBand.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd77-10-02 s2t07 Drums",
+      "duration": 308.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t07Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd77-10-02 s2t08 The Wheel",
+      "duration": 324.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t08TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t08TheWheel.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd77-10-02 s2t09 Truckin'",
+      "duration": 634.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t09Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t09Truckin.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd77-10-02 s2t10 The Other One",
+      "duration": 332.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t10TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t10TheOtherOne.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd77-10-02 s2t11 Wharf Rat",
+      "duration": 667.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t11WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t11WharfRat.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd77-10-02 s2t12 Sugar Magnolia",
+      "duration": 550.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd77-10-02S2t12SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd77-10-02S2t12SugarMagnolia.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

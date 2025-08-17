@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1973-03-22",
+  "venue": "Utica Memorial Auditorium",
+  "location": "Utica, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 118.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t01-fixed.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 217.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t02-fixed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 523.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t03-fixed.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 251.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t04-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "They Love Each Other",
+      "duration": 378.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t05-fixed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Looks Like Rain",
+      "duration": 484.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t06-fixed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 350.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t07-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t07-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Beat It On Down The Line",
+      "duration": 230.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t08-fixed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 792.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t09-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t09-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 298.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t10-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t10-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire Aisle Banter",
+      "duration": 123.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t11-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t11-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Box Of Rain",
+      "duration": 310.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t12-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t12-fixed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "You Ain't Woman Enough",
+      "duration": 198.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d1t13-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d1t13-fixed.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Race Is On",
+      "duration": 217.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Row Jimmy",
+      "duration": 524.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "El Paso",
+      "duration": 258.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t03-fixed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One ->",
+      "duration": 93.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t04-fixed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Eyes Of The World ->",
+      "duration": 913.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t05-fixed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "China Doll",
+      "duration": 468.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t06-fixed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 520.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t07-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t07-fixed.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night",
+      "duration": 319.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-03-22d2t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-03-22d2t08-fixed.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

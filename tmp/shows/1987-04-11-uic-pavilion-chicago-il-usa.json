@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-04-11-uic-pavilion-chicago-il-usa/",
+  "show_id": "1987-04-11-uic-pavilion-chicago-il-usa",
+  "band": "Grateful Dead",
+  "venue": "UIC Pavilion",
+  "location_raw": "Chicago, IL",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "USA",
+  "date": "1987-04-11",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tons Of Steel",
+          "url": "https://jerrygarcia.com/song/tons-of-steel/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Desolation Row",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:57:42.206997",
+  "show_time": null,
+  "recordings": [
+    "gd87-04-11.prefm.unknown.22934.sbeok.shnf",
+    "gd1987-04-11.prefm.unknown.tetzeli.fix-22934.34417.sbeok.shnf",
+    "gd1987-04-11.140936.fm.miller.flac2496",
+    "gd1987-04-11.148862.fob.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1987-04-11.150528.FOB.Nak.700.Dsd.Mow.Miller.Noel.t.flac2496",
+    "gd1987-04-11.119031.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1987-04-11.150582.FOB.Nak.700.Dsd.Mow.Miller.Noel.t.flac1644",
+    "gd1987-04-11.140941.fm.cm.miller.flac1644",
+    "gd1987-04-11.148863.fob.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1987-04-11.170629.nak300.mc.levitt.flac2496",
+    "gd1987-04-11.fm.unknown.123652.flac16",
+    "gd1987-04-11.140927.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1987-04-11.140921.sbd.miller.flac2496",
+    "gd1987-04-11.sbd.finney.tetzeli.fix-392.32365.shnf",
+    "gd1987-04-11.unk.dfinney.392.sbeok.shnf",
+    "gd1987-04-11.170628.nak300.mc.levitt.flac1644",
+    "gd1987-04-11.nak300.gidley.andrewf.92950.sbeok.flac16"
+  ],
+  "best_recording": "gd87-04-11.prefm.unknown.22934.sbeok.shnf",
+  "avg_rating": 1.9090950226244348,
+  "raw_rating": 4.130434782608695,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 19,
+  "total_low_ratings": 2,
+  "source_types": {
+    "FM": 11,
+    "SBD": 3,
+    "UNKNOWN": 2,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

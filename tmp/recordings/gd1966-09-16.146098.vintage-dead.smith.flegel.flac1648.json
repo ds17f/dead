@@ -1,0 +1,94 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1966-09-16",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "I Know You Rider",
+      "duration": 264.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 I Know You Rider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 263.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 It Hurts Me Too.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 It Hurts Me Too.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 284.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 It's All Over Now, Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 It's All Over Now, Baby Blue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dancing In The Streets",
+      "duration": 398.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Dancing in the Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Dancing in the Street.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "In The Midnight Hour",
+      "duration": 1119.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 In the Midnight Hour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 In the Midnight Hour.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

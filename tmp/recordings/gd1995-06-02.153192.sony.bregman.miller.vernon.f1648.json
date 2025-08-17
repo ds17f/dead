@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-06-02",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "0- crowd-tuning",
+      "duration": 84.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 - crowd-tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 - crowd-tuning.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "0- Alabama Getaway",
+      "duration": 374.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 - Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 - Alabama Getaway.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "0- Greatest Story Ever Told",
+      "duration": 340.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 - Greatest Story Ever Told.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 - Greatest Story Ever Told.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "0- Candyman",
+      "duration": 502.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 - Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 - Candyman.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "0- Good Morning Little Schoolgirl",
+      "duration": 364.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 - Good Morning Little Schoolgirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 - Good Morning Little Schoolgirl.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "0- Ramble On Rose",
+      "duration": 536.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 - Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 - Ramble On Rose.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "0- El Paso",
+      "duration": 385.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 - El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 - El Paso.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "0- Bird Song",
+      "duration": 906.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 - Bird Song .flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 - Bird Song .mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "0- Promised Land",
+      "duration": 307.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 - Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 - Promised Land.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-03-15",
+  "venue": "Hilton Hotel",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "banter and tuning",
+      "duration": 200.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hard To Handle",
+      "duration": 366.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 542.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Star >",
+      "duration": 1229.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t04.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "St. Stephen >",
+      "duration": 349.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t05.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "William Tell Bridge >",
+      "duration": 165.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t06.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Eleven >",
+      "duration": 670.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t07.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn On Your Love Light",
+      "duration": 1102.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-03-15t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-03-15t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    }
+  ]
+}

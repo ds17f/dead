@@ -1,0 +1,398 @@
+{
+  "rating": 2.0,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1981-05-11",
+  "venue": "Veterans' Memorial Coliseum",
+  "location": "New Haven, CT",
+  "raw_rating": 4.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "New Minglewood Blues ->",
+      "duration": 408.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugaree ->",
+      "duration": 681.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "El Paso",
+      "duration": 355.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jack-A-Roe",
+      "duration": 270.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Beat It On Down The Line",
+      "duration": 223.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Row Jimmy",
+      "duration": 591.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "It's All Over Now",
+      "duration": 526.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Althea",
+      "duration": 462.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Lazy Lightnin' ->",
+      "duration": 193.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Supplication",
+      "duration": 382.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t10.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 190.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d1t11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias ->",
+      "duration": 645.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain ->",
+      "duration": 638.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d2t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "C C Rider",
+      "duration": 552.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "To Lay Me Down",
+      "duration": 578.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d2t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Playing In The Band -",
+      "duration": 782.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d2t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 675.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space ->",
+      "duration": 303.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Wheel ->",
+      "duration": 290.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playing In The Band ->",
+      "duration": 352.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "China Doll ->",
+      "duration": 373.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around And Around ->",
+      "duration": 252.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Good Lovin'",
+      "duration": 490.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "(I Can't Get No) Satisfaction",
+      "duration": 395.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-11d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-11d3t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

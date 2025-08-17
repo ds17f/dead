@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-03-30",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 155.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 402.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 239.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Hey Pockey Way",
+      "duration": 412.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "West L A Fadeaway",
+      "duration": 605.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Queen Jane Approximately",
+      "duration": 334.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 265.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 68.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T08.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 415.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 210.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T10.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 25.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Shakedown Street",
+      "duration": 709.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 537.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 427.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing in The Band",
+      "duration": 338.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Uncle John's Band(Reprise)",
+      "duration": 128.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 372.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 288.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T08.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 148.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T01.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Wheel",
+      "duration": 245.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Gimme Some Lovin'",
+      "duration": 285.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Morning Dew",
+      "duration": 641.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Turn on Your Lovelight",
+      "duration": 422.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Black Muddy River",
+      "duration": 392.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

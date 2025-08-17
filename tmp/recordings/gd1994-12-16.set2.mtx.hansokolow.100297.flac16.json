@@ -1,0 +1,206 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-12-16",
+  "venue": "Los Angeles Sports Arena",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 69.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Eyes Of The World",
+      "duration": 1208.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Samba In The Rain",
+      "duration": 585.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet->",
+      "duration": 1092.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "He's Gone->",
+      "duration": 923.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums->",
+      "duration": 654.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d1t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space->",
+      "duration": 585.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d2t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One->",
+      "duration": 488.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Wharf Rat->",
+      "duration": 613.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d2t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 458.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 71.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Lucy In The Sky With Diamonds",
+      "duration": 262.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-12-16d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-12-16d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

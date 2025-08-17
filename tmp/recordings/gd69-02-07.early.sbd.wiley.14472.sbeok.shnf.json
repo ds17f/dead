@@ -1,0 +1,110 @@
+{
+  "rating": 2.3846153846153846,
+  "review_count": 13,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-02-07",
+  "venue": "Stanley Theater",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 4.769230769230769,
+  "high_ratings": 13,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Intro",
+      "duration": 15.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-07early_d1t01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-07early_d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dark Star",
+      "duration": 473.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-07early_d1t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-07early_d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "St. Stephen",
+      "duration": 185.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-07early_d1t03.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-07early_d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "William Tell Bridge",
+      "duration": 171.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-07early_d1t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-07early_d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "The Eleven",
+      "duration": 378.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-07early_d1t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-07early_d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Lovelight",
+      "duration": 456.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-07early_d1t06.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-07early_d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

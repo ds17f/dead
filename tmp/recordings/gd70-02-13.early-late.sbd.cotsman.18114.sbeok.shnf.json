@@ -1,0 +1,30 @@
+{
+  "rating": 2.2580645161290325,
+  "review_count": 31,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-02-13",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.516129032258065,
+  "high_ratings": 27,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "overall compression ratio)",
+      "duration": 211.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-13d1t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-13d1t01.shn"
+        }
+      ]
+    }
+  ]
+}

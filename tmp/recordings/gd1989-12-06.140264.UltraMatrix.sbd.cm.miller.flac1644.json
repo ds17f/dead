@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-12-06",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 76.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 742.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ShakedownStreet.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 436.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WalkinBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend Of The Devil",
+      "duration": 562.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04FriendOfTheDevil.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Queen Jane Approximately",
+      "duration": 500.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05QueenJaneApproximately.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack-A-Roe",
+      "duration": 389.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Jack-a-roe.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Just A Little Light",
+      "duration": 422.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07JustALittleLight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07JustALittleLight.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Victim Or The Crime",
+      "duration": 497.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08VictimOrTheCrime.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 207.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias",
+      "duration": 477.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ScarletBegonias.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia",
+      "duration": 174.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SugarMagnolia.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship Of Fools",
+      "duration": 454.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ShipOfFools.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin Station",
+      "duration": 1341.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13TerrapinStation.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 439.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 604.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel",
+      "duration": 309.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheWheel.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "All Along The Watchtower",
+      "duration": 345.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17AllAlongTheWatchtower.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Standing On The Moon",
+      "duration": 626.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18StandingOnTheMoon.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sunshine Daydream",
+      "duration": 214.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19SunshineDaydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19SunshineDaydream.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 26.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Muddy River",
+      "duration": 392.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BlackMuddyRiver.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

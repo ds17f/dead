@@ -1,0 +1,158 @@
+{
+  "rating": 1.92,
+  "review_count": 1,
+  "source_type": "FM",
+  "confidence": 0.2,
+  "date": "1969-04-06",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 13.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Introduction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Introduction.mp3",
+          "bitrate": "223"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 445.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GoodMorningLittleSchoolgirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GoodMorningLittleSchoolgirl.mp3",
+          "bitrate": "152"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Beat It On Down The Line",
+      "duration": 212.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03BeatItOnDownTheLine.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 484.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I'm A King Bee",
+      "duration": 450.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ImAKingBee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ImAKingBee.mp3",
+          "bitrate": "151"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "That's It For The Other One",
+      "duration": 1397.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ThatsItForTheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ThatsItForTheOtherOne.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Death Don't Have No Mercy",
+      "duration": 736.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07DeathDontHaveNoMercy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DeathDontHaveNoMercy.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Turn On Your Lovelight",
+      "duration": 1517.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TurnOnYourLovelight.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Viola Lee Blues",
+      "duration": 774.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ViolaLeeBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ViolaLeeBlues.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

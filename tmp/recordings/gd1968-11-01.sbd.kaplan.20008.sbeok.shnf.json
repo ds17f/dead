@@ -1,0 +1,142 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-11-01",
+  "venue": "Silver Dollar Fair",
+  "location": "Chico, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star ->",
+      "duration": 326.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cryptical Envelopment ->",
+      "duration": 51.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One ->",
+      "duration": 338.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cryptical Envelopment > New Potato Caboose >",
+      "duration": 237.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "> New Potato Caboose > Alligator > Drums > Alligator >",
+      "duration": 599.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track05a.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track05a.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator/Caution jam >",
+      "duration": 404.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Feedback ->",
+      "duration": 169.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "And We Bid You Goodnight",
+      "duration": 28.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track08.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track08.shn"
+        }
+      ]
+    }
+  ]
+}

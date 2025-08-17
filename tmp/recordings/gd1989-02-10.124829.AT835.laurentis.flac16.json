@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-02-10",
+  "venue": "Great Western LA Forum",
+  "location": "Inglewood, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 452.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 573.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 437.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "To Lay Me Down",
+      "duration": 593.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint my Masterpiece",
+      "duration": 307.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Friend of the Devil",
+      "duration": 490.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Let it Grow",
+      "duration": 712.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 189.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "A Little Light",
+      "duration": 510.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Truckin'",
+      "duration": 478.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crazy Fingers",
+      "duration": 503.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing in the Band",
+      "duration": 546.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam-Drums",
+      "duration": 538.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 218.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 299.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Intro",
+      "duration": 189.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 327.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Gimme Some Lovin'",
+      "duration": 291.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat",
+      "duration": 624.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 319.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "SSDD",
+      "duration": 207.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 501.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T09.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

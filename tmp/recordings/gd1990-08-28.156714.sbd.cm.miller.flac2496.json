@@ -1,0 +1,113 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-08-28",
+  "venue": "Club Front",
+  "location": "",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Fire On The Mountain",
+      "duration": 81.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Fire On The Mountain.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jerry And Vince Talking",
+      "duration": 367.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Jerry And Vince Talking.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 213.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 I Know You Rider.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wharf Rat",
+      "duration": 507.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Wharf Rat.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jerry And Vince Talking",
+      "duration": 198.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Jerry And Vince Talking.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jerry And Vince Playing",
+      "duration": 504.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Jerry And Vince Playing.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Vince's Wife Shows Up",
+      "duration": 622.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Vince's Wife Shows Up.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "He's Gone",
+      "duration": 1705.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 He's Gone.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Vince Playing",
+      "duration": 1322.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Vince Playing.flac"
+        }
+      ]
+    }
+  ]
+}

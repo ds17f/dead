@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-12-06",
+  "venue": "Compton Terrace Amphitheatre",
+  "location": "Tempe, AZ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Here Comes Sunshine",
+      "duration": 564.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 354.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend of the Devil",
+      "duration": 562.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me and My Uncle",
+      "duration": 189.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Maggie's Farm",
+      "duration": 422.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Althea",
+      "duration": 467.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Masterpiece",
+      "duration": 327.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 439.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Samson and Delilah",
+      "duration": 611.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track01.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Crazy Fingers",
+      "duration": 528.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 978.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin' Reprise",
+      "duration": 113.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 265.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 1440.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd3Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd3Track01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "This Could Be the Last Time",
+      "duration": 365.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd3Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd3Track02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "China Doll",
+      "duration": 376.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd3Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd3Track03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwin' Stones",
+      "duration": 579.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd3Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd3Track04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 582.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd3Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd3Track05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Brokedown Palace",
+      "duration": 384.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd3Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd3Track06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

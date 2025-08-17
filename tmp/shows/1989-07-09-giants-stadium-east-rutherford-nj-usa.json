@@ -1,0 +1,200 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-07-09-giants-stadium-east-rutherford-nj-usa/",
+  "show_id": "1989-07-09-giants-stadium-east-rutherford-nj-usa",
+  "band": "Grateful Dead",
+  "venue": "Giants Stadium",
+  "location_raw": "East Rutherford, NJ",
+  "city": "East Rutherford",
+  "state": "NJ",
+  "country": "USA",
+  "date": "1989-07-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Built To Last",
+          "url": "https://jerrygarcia.com/song/built-to-last/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Los Lobos"
+  ],
+  "collection_timestamp": "2025-08-10T09:03:59.346452",
+  "show_time": null,
+  "recordings": [
+    "gd1989-07-09.sbd.miller.81177.sbeok.flac16",
+    "gd1989-07-09.142610.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1989-07-09.142581.sbd.miller.fixed.flac2496",
+    "gd1989-07-09.141880.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1989-07-09.141761.sbd.miller.flac2496",
+    "gd89-07-09.bertha.6943.sbeok.shnf",
+    "gd1989-07-09.133773.akg414btl-fob-dantepper.flac16",
+    "gd1989-07-09.akg414s.alexander.78968.flac16",
+    "gd1989-07-09.124498.mtx.dusborne.flac16",
+    "gd1989-07-09.142466.schoeps.cmc4.mk2s.mattes.miller.clugston.flac1648",
+    "gd1989-07-09.142584.5-1.tobin.flac1648",
+    "gd1989-07-09.142582.mtx.tobin.flac1644",
+    "gd1989-07-09.akg414s.alexander.78977.flac2448",
+    "gd1989-07-09.fob.tepper.cutler.4650.sbeok.shnf",
+    "gd1989-07-09.Nak300CP4.Fitzy.Keo.125229.Flac1644",
+    "gd1989-07-09.akg414.tepper.89725.sbeok.shnf",
+    "gd1989-07-09.142583.dts.tobin.flac1644",
+    "gd1989-07-09.109562.akg-pasternak.mallick.flac16",
+    "gd1989-07-09.Nak300CP4.Fitzy.Keo.125228.Flac2496"
+  ],
+  "best_recording": "gd1989-07-09.sbd.miller.81177.sbeok.flac16",
+  "avg_rating": 2.106587837837838,
+  "raw_rating": 4.354166666666667,
+  "recording_count": 19,
+  "confidence": 1.0,
+  "total_high_ratings": 40,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 14
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

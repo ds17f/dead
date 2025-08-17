@@ -1,0 +1,190 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-10-24",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 235.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t01.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "banter",
+      "duration": 51.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 234.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 470.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy Wind",
+      "duration": 477.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t05.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "banter",
+      "duration": 130.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Cat Sunflower >",
+      "duration": 281.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t07.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Know You Rider",
+      "duration": 274.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t08.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "banter//",
+      "duration": 78.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t09.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "That's It for the Other One >",
+      "duration": 221.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t10.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cosmic Charlie//",
+      "duration": 316.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-10-24t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-10-24t11.mp3",
+          "bitrate": "216"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-12-17",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd",
+      "duration": 68.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway",
+      "duration": 276.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Promised Land",
+      "duration": 281.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West LA Fadeaway",
+      "duration": 490.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "900,000 Tons Of Steel",
+      "duration": 297.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Little Red Rooster",
+      "duration": 527.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 515.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Desolation Row",
+      "duration": 631.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "When Push Comes To Shove",
+      "duration": 265.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 383.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d1t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crowd",
+      "duration": 172.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Saint Of Circumstance",
+      "duration": 391.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cumberland Blues",
+      "duration": 263.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samson and Delilah",
+      "duration": 409.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ship Of Fools",
+      "duration": 530.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Women Are Smarter",
+      "duration": 408.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "He's Gone>Jam",
+      "duration": 740.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 583.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d2t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 601.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Other One",
+      "duration": 351.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Peter",
+      "duration": 551.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Throwing Stones",
+      "duration": 495.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away >",
+      "duration": 487.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Crowd - Not Fade Away Chant >",
+      "duration": 177.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Not Fade Away >",
+      "duration": 78.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Brokedown Palace",
+      "duration": 378.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-12-17.d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-12-17.d3t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

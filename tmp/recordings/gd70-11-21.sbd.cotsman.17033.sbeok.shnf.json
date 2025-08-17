@@ -1,0 +1,94 @@
+{
+  "rating": 1.8125,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-11-21",
+  "venue": "Sargent Gym, Boston University",
+  "location": "Boston, MA",
+  "raw_rating": 3.625,
+  "high_ratings": 5,
+  "low_ratings": 3,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cryptical Envelopment",
+      "duration": 70.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21d1t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums",
+      "duration": 3.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21d1t02.mp3",
+          "bitrate": "213"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Other One",
+      "duration": 278.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21d1t03.mp3",
+          "bitrate": "216"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cryptical Envelopment",
+      "duration": 213.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21d1t04.mp3",
+          "bitrate": "217"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Cosmic Charlie",
+      "duration": 245.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21d1t05.mp3",
+          "bitrate": "221"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

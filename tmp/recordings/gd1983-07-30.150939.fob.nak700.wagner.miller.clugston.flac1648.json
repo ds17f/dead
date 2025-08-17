@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-07-30",
+  "venue": "Ventura County Fairgrounds",
+  "location": "Ventura, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 52.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t01 Crowd.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "China Cat Sunflower >",
+      "duration": 364.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t02 China Cat.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "I Know You Rider",
+      "duration": 401.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t03 IKYR.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "It's All Over Now",
+      "duration": 503.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t04 It's All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t04 It's All Over Now.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Brown Eyed Women",
+      "duration": 417.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t05 BEW.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t05 BEW.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "My Brother Esau",
+      "duration": 287.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t06 Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t06 Brother Esau.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Big Railroad Blues",
+      "duration": 429.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t07 Big RR Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t07 Big RR Blues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Cassidy",
+      "duration": 361.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t08 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t08 Cassidy.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Loser",
+      "duration": 458.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t09 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t09 Loser.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "The Music Never Stopped",
+      "duration": 530.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s1t10 TMNS.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s1t10 TMNS.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Sugaree",
+      "duration": 720.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t01 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t01 Sugaree.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Playin' In The Band >",
+      "duration": 692.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t02 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t02 Playin'.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "China Doll >",
+      "duration": 585.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t03 China Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t03 China Doll.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Drums >",
+      "duration": 756.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t04 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t04 Drums.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Space >",
+      "duration": 558.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t05 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t05 Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Truckin' >",
+      "duration": 510.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t06 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t06 Truckin'.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Black Peter >",
+      "duration": 512.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t07 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t07 Black Peter.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Sugar Magnolia",
+      "duration": 582.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t08 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t08 Sugar Magnolia.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "E: US Blues",
+      "duration": 321.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-07-30 s2t09 E_US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-07-30 s2t09 E_US Blues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

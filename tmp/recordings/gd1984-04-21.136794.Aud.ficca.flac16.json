@@ -1,0 +1,350 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-04-21",
+  "venue": "Philadelphia Civic Center",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway >",
+      "duration": 358.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "101_Alabama_Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "101_Alabama_Getaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 281.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "102_Promised_Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "102_Promised_Land.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend of the Devil",
+      "duration": 521.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "103_Friend_Of_The_Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "103_Friend_Of_The_Devil.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me&My_Uncle",
+      "duration": 196.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "104_MeMy_Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "104_MeMy_Uncle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 308.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "105_Mexicali_Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "105_Mexicali_Blues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "West LA Fadeaway",
+      "duration": 495.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "106_West_LA_Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "106_West_LA_Fadeaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Minglewood Blues",
+      "duration": 513.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "107_Minglewood_Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "107_Minglewood_Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennesse Jed",
+      "duration": 490.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "108_Tennesse_Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "108_Tennesse_Jed.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain",
+      "duration": 462.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "109_Looks_Like_rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "109_Looks_Like_rain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 505.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "110_Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "110_Deal.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Help On The Way ->",
+      "duration": 307.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "201_Help_On_The_Way.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "201_Help_On_The_Way.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Slipknot >",
+      "duration": 457.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "202_Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "202_Slipknot.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Franklin's_Tower",
+      "duration": 771.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "203_Franklins_Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "203_Franklins_Tower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playin'_In_The_Band",
+      "duration": 711.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "204_Playin_In_The_Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204_Playin_In_The_Band.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Doll",
+      "duration": 364.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "205_China_Doll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "205_China_Doll.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Don't_Need_Love",
+      "duration": 189.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "206_Dont_Need_Love.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "206_Dont_Need_Love.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 595.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "301_Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "301_Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat >",
+      "duration": 628.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "302_Wharf_Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "302_Wharf_Rat.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones >",
+      "duration": 544.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "303_Throwing_Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "303_Throwing_Stones.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 393.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "304_Not_Fade_Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "304_Not_Fade_Away.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Brokedown_Palace",
+      "duration": 324.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "305_e_brokedown_palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "305_e_brokedown_palace.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

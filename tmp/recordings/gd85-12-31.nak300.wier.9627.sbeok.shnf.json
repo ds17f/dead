@@ -1,0 +1,366 @@
+{
+  "rating": 0.875,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1985-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 2.5,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Not Fade Away",
+      "duration": 284.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t01-fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch of Grey",
+      "duration": 318.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t02-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tons of Steel",
+      "duration": 303.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t03-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C.C. Rider",
+      "duration": 424.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t04-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dupree's Diamond Blues",
+      "duration": 422.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t05-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 330.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t06-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown-Eyed Women",
+      "duration": 333.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t07-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t07-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 696.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d1t08-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d1t08-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "In the Midnight Hour",
+      "duration": 423.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t01-fixed.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugaree",
+      "duration": 539.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t02-fixed.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Man Smart, Woman Smarter*",
+      "duration": 357.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t03-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Ship of Fools",
+      "duration": 412.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t04-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing in the Band",
+      "duration": 446.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t05-fixed.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin",
+      "duration": 619.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t06-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "drums",
+      "duration": 497.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d2t07-fixed.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d2t07-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "space",
+      "duration": 169.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t01-fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Truckin'",
+      "duration": 427.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t02-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 473.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t03-fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwin' Stones",
+      "duration": 528.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t04-fixed.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 343.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t05-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn on Your Lovelight",
+      "duration": 316.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t06-fixed.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Brokedown Palace (encore)",
+      "duration": 314.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-12-31d3t07-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd85-12-31d3t07-fixed.shn"
+        }
+      ]
+    }
+  ]
+}

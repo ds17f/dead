@@ -1,0 +1,158 @@
+{
+  "rating": 2.272727272727273,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-12-21",
+  "venue": "Shrine Exhibition Hall",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.545454545454546,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Turn On Your Lovelight",
+      "duration": 922.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One ->",
+      "duration": 924.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d1t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Hurts Me Too",
+      "duration": 485.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d1t03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Alligator ->",
+      "duration": 222.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d2t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ->",
+      "duration": 175.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d2t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator ->",
+      "duration": 606.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d2t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Caution (Do Not Stop On Tracks) ->",
+      "duration": 914.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d2t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feedback ->",
+      "duration": 313.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d2t05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "And We Bid You Good Night",
+      "duration": 280.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-21d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-21d2t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

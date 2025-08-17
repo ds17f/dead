@@ -1,0 +1,718 @@
+{
+  "rating": 2.125,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-06-22",
+  "venue": "Jai-Alai Fronton",
+  "location": "Miami, FL",
+  "raw_rating": 4.25,
+  "high_ratings": 6,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tune Up",
+      "duration": 159.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Promised Land (Bad Mix)",
+      "duration": 195.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Bertha",
+      "duration": 317.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Greatest Story Ever Told",
+      "duration": 327.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Tune Up",
+      "duration": 68.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt05.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Deal",
+      "duration": 276.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Tune Up",
+      "duration": 46.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt07.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Me and Bobby McGee",
+      "duration": 326.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt08.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Tune Up",
+      "duration": 80.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt09.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias",
+      "duration": 393.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt10.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tune Up",
+      "duration": 134.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt11.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Jack Straw",
+      "duration": 272.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt12.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tune Up",
+      "duration": 46.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt13.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Loose Lucy",
+      "duration": 277.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt14.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Tune Up",
+      "duration": 108.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt15.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Mexicali Blues",
+      "duration": 196.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt16.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt16.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Tune Up",
+      "duration": 55.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt17.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt17.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugaree",
+      "duration": 408.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt18.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt18.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Tune Up",
+      "duration": 110.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt19.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt19.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Race Is On",
+      "duration": 184.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt20.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt20.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Tune Up",
+      "duration": 76.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt21.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt21.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "It Must Have Been The Roses",
+      "duration": 317.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt22.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt22.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Tune Up",
+      "duration": 86.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt23.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt23.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Fade Out Track",
+      "duration": 15.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt23a.mp3",
+          "bitrate": "155"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt23a.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Fade In Track",
+      "duration": 15.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt23b.mp3",
+          "bitrate": "150"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt23b.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Playin' In The Band",
+      "duration": 1747.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt24.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt24.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Tune Up",
+      "duration": 82.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt25.mp3",
+          "bitrate": "167"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt25.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "China Cat Sunflower >",
+      "duration": 584.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt26.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt26.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "I Know You Rider",
+      "duration": 330.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt27.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt27.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Tune Up",
+      "duration": 112.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt28.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt28.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Me And My Uncle",
+      "duration": 172.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt29.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt29.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Tune Up",
+      "duration": 125.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt30.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt30.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Fade Out Track",
+      "duration": 14.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt30a.mp3",
+          "bitrate": "150"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt30a.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Fade In Track",
+      "duration": 16.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt30b.mp3",
+          "bitrate": "152"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt30b.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Ship Of Fools",
+      "duration": 368.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt31.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt31.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Tune Up",
+      "duration": 36.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt32.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt32.shn"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "El Paso",
+      "duration": 267.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt33.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt33.shn"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Tune Up",
+      "duration": 113.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt34.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt34.shn"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Eyes Of The World >",
+      "duration": 901.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt35.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt35.shn"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Wharf Rat >",
+      "duration": 591.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt36.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt36.shn"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Sugar Magnolia",
+      "duration": 514.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt37.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt37.shn"
+        }
+      ]
+    },
+    {
+      "track": "42",
+      "title": "Crowd/Tune Up",
+      "duration": 210.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt38.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt38.shn"
+        }
+      ]
+    },
+    {
+      "track": "43",
+      "title": "E: Johnny B. Goode",
+      "duration": 228.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt39.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt39.shn"
+        }
+      ]
+    },
+    {
+      "track": "44",
+      "title": "Crowd + PA",
+      "duration": 127.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-22audt40.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-22audt40.shn"
+        }
+      ]
+    }
+  ]
+}

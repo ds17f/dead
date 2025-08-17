@@ -1,0 +1,110 @@
+{
+  "rating": 1.0499999999999998,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-09-20",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Sugar Magnolia",
+      "duration": 298.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-2001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-2001.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mama Tried",
+      "duration": 146.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-2002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-2002.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Not Fade Away >",
+      "duration": 845.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-2003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-2003.mp3",
+          "bitrate": "152"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Caution >",
+      "duration": 1143.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-2004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-2004.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Feedback >",
+      "duration": 149.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-2005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-2005.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Goodnight",
+      "duration": 198.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-2006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-2006.mp3",
+          "bitrate": "154"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 2.5,
+  "review_count": 7,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1969-04-11",
+  "venue": "University Auditorium, University of Arizona",
+  "location": "Tucson, AZ",
+  "raw_rating": 3.5714285714285716,
+  "high_ratings": 4,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cryptical Envelopment >",
+      "duration": 280.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t01.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It's a sin",
+      "duration": 218.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Hard To Handle",
+      "duration": 236.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Star >",
+      "duration": 581.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t04.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Saint / Stephen >",
+      "duration": 138.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t05.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The /Eleven >",
+      "duration": 158.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t06.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lovelight",
+      "duration": 623.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11t07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11t07.shn"
+        }
+      ]
+    }
+  ]
+}

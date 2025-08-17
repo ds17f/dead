@@ -1,0 +1,222 @@
+{
+  "url": "https://jerrygarcia.com/show/1983-12-31-san-francisco-civic-auditorium-san-francisco-ca-usa/",
+  "show_id": "1983-12-31-san-francisco-civic-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "S.F Civic Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1983-12-31",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Candyman",
+          "url": "https://jerrygarcia.com/song/candyman/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Big Boss Man",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Goodnight Irene",
+          "url": "https://jerrygarcia.com/song/goodnight-irene/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Band",
+    "Mike Henderson"
+  ],
+  "collection_timestamp": "2025-08-10T08:50:38.317886",
+  "show_time": null,
+  "recordings": [
+    "gd1983-12-31.fm-set3.ford.90059.sbeok.flac16",
+    "gd83-12-31.sbd.bertha-ashley.14948.sbeok.shnf",
+    "gd83-12-31.sbd.miller.13963.sbeok.shnf",
+    "gd1983-12-31.sbd.walker-scotton.miller.96185.sbeok.flac16",
+    "gd1983-12-31.sbd.walker-scotton.miller.32514.sbeok.flac16",
+    "gd1983-12-31.169117.sbd.brightman.miller.clugston.flac1648",
+    "gd1983-12-31.sbd-grossman.popi.6102.shnf",
+    "gd1983-12-31.169118.sbd.brightman.miller.clugston.flac2496",
+    "gd83-12-31.beyer.walstib.18737.sbeok.shnf",
+    "gd1983-12-31.155215.5-1.tobin.flac1648",
+    "gd1983-12-31.nak304.mikeg-suraci.79383.sbeok.flac16",
+    "gd1983-12-31.fob.senn421.lipton.ladner.34968.sbeok.flac16",
+    "gd1983-12-31.112282.Sennheiser421.daweez.d5scott.flac16",
+    "gd1983-12-31.134902.Nak300CP4.Hill.Keo.Flac2496",
+    "gd1983-12-31.164337.senn441.vita..miller.clugston.flac2496",
+    "gd1983-12-31.mtx.tobin.126610.flac16",
+    "gd1983-12-31.151339.fob.nak700.wagner.miller.clugston.flac2496",
+    "gd1983-12-31.137701.aud.lamarre.berger.flac24",
+    "gd1983-12-31.151338.fob.nak700.wagner.miller.clugston.flac1648",
+    "gd1983-12-31.164336.senn441.vita..miller.clugston.flac1648",
+    "gd1983-12-31.134901.Nak300CP4.Hill.Keo.Flac1644",
+    "gd1983-12-31.148208.fob.akg.d330bt.senn421.hecht.miller.clugston.flac2496",
+    "gd1983-12-31.148207.fob.akg.d330bt.senn421.hecht.miller.clugston.flac1648",
+    "gd1983-12-31.137700.aud.lamarre.berger.flac16"
+  ],
+  "best_recording": "gd1983-12-31.fm-set3.ford.90059.sbeok.flac16",
+  "avg_rating": 2.434082191780822,
+  "raw_rating": 4.095238095238095,
+  "recording_count": 24,
+  "confidence": 1.0,
+  "total_high_ratings": 33,
+  "total_low_ratings": 2,
+  "source_types": {
+    "FM": 1,
+    "SBD": 7,
+    "AUD": 16
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

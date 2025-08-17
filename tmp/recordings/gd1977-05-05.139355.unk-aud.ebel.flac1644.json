@@ -1,0 +1,270 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1977-05-05",
+  "venue": "Veterans' Memorial Coliseum",
+  "location": "New Haven, CT",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "El Paso",
+      "duration": 322.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ElPaso.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tennessee Jed",
+      "duration": 763.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TennesseeJed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Look's Like Rain",
+      "duration": 663.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LooksLikeRain.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Deal",
+      "duration": 450.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Deal.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Lazy Lightning",
+      "duration": 290.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LazyLightning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Supplication",
+      "duration": 303.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Supplication.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Peggy' O",
+      "duration": 591.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07PeggyO.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Music Never Stopped",
+      "duration": 410.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MusicNeverStopped.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bertha",
+      "duration": 476.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Bertha.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Estimated Prophet",
+      "duration": 706.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10EstimatedProphet.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 656.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 728.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Good Lovin'",
+      "duration": 403.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13GoodLovin.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "St. Stephen",
+      "duration": 707.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14St.Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14St.Stephen.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Sugar Magnolia",
+      "duration": 636.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15SugarMagnolia.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Johnny B. Goode",
+      "duration": 283.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16JohnnyB.Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16JohnnyB.Goode.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

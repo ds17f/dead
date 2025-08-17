@@ -1,0 +1,224 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-06-16-greek-theatre-berkeley-ca/",
+  "show_id": "1985-06-16-greek-theatre-berkeley-ca",
+  "band": "Grateful Dead",
+  "venue": "Greek Theatre",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1985-06-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "In The Midnight Hour",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:50.628634",
+  "show_time": null,
+  "recordings": [
+    "gd1985-06-16.sbd-pcm.miller.79021.sbeok.flac16",
+    "gd85-06-16.sbd.barrick.970.sbefail.shnf",
+    "gd1985-06-16.sbd.miller.105876.flac16",
+    "gd85-06-16.sbd.braveman.26080.sbeok.shnf",
+    "gd1985-06-16.152521.sbd.fixed.cm.miller.t.flac16",
+    "gd1985-06-16.152304.sbd.miller.scotton-walker.flac2496",
+    "gd1985-06-16.152288.sbd.walker-scotton.miller.flac1696",
+    "gd1985-06-16.matrix.chappell.85833.sbeok.flac16",
+    "gd85-06-16.oade.sacks.7087.sbeok.shnf",
+    "gd1985-06-16.akg.keshavan.miller.105543.flac16",
+    "gd85-06-16.oade-schoeps.sacks.24611.sbeok.flacf",
+    "gd1985-06-16.oade.sacks.9218.sbefail.shnf",
+    "gd1985-06-16.150523.FOB.Nak.700.Dsd.Mow.Miller.Noel.t.flac2496",
+    "gd1985-06-16.nak300.andrewf.127488.flac1644",
+    "gd1985-06-16.148772.nak700.severson.miller.clugston.flac1648",
+    "gd1985-06-16.152643.OTS-NAK300-SGMasterCassette.Anon.Noel.t-flac2448",
+    "gd1985-06-16.152790.OTSNAK300-SGMasterCassetteAnonNoelt-flac1648",
+    "gd1985-06-16.140857.aud.bryant.miller.sirmick.flac2496",
+    "gd1985-06-16.148773.nak700.severson.miller.clugston.flac2496",
+    "gd1985-06-16.150586.FOB.Nak.700.Dsd.Mow.Miller.Noel.t.flac1644",
+    "gd1985-06-16.167182.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1985-06-16.158882.Nak100.pasternak.vernon.flac1648",
+    "gd1985-06-16.158883.Nak100.pasternak.vernon.flac2448",
+    "gd1985-06-16.nak300.andrewf.127487.flac2448",
+    "gd1985-06-16.140862.aud.bryant.miller.sirmick.flac1644",
+    "gd1985-06-16.167183.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1985-06-16.senn441.mccue.ford.33669.sbeok.flac16",
+    "gd1985-06-16.nak700.anon-severson-poris.lmpp.97499.flac16"
+  ],
+  "best_recording": "gd1985-06-16.sbd-pcm.miller.79021.sbeok.flac16",
+  "avg_rating": 2.017567567567568,
+  "raw_rating": 4.3090909090909095,
+  "recording_count": 28,
+  "confidence": 1.0,
+  "total_high_ratings": 47,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 7,
+    "MATRIX": 1,
+    "UNKNOWN": 18,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

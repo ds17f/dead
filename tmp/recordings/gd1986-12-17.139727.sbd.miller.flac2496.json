@@ -1,0 +1,430 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-12-17",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 62.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway",
+      "duration": 280.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02AlabamaGetaway.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Promised Land",
+      "duration": 313.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03PromisedLand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West LA Fadeaway",
+      "duration": 583.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WestLaFadeaway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tons Of Steel",
+      "duration": 301.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05TonsOfSteel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TonsOfSteel.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Little Red Rooster",
+      "duration": 593.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LittleRedRooster.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 572.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TennesseeJed.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Desolation Row",
+      "duration": 707.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08DesolationRow.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "When Push Comes To Shove",
+      "duration": 267.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09WhenPushComesToShove.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 378.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TheMusicNeverStopped.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 179.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Saint Of Circumstance",
+      "duration": 395.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SaintOfCircumstance.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cumberland Blues",
+      "duration": 265.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13CumberlandBlues.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samson And Delilah",
+      "duration": 416.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14SamsonAndDelilah.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ship Of Fools",
+      "duration": 569.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ShipOfFools.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 412.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ManSmartwomanSmarter.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "He's Gone",
+      "duration": 767.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17HesGone.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 640.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 569.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Other One",
+      "duration": 349.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TheOtherOne.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Peter",
+      "duration": 556.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BlackPeter.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Throwing Stones",
+      "duration": 516.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22ThrowingStones.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away",
+      "duration": 478.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Encore Break",
+      "duration": 166.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24EncoreBreak.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Not Fade Away",
+      "duration": 91.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Brokedown Palace",
+      "duration": 372.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "26BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26BrokedownPalace.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

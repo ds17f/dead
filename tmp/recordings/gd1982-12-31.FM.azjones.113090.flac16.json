@@ -1,0 +1,446 @@
+{
+  "rating": 2.9924999999999997,
+  "review_count": 4,
+  "source_type": "AUD",
+  "confidence": 0.8,
+  "date": "1982-12-31",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 4.75,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 399.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d101.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "C C Rider",
+      "duration": 550.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d102.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cumberland Blues",
+      "duration": 385.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d103.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Far From Me",
+      "duration": 286.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d104.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 369.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d105.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 438.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d106.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Looks Like Rain",
+      "duration": 495.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d107.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Keep Your Day Job",
+      "duration": 349.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d108.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Midnight Madness ->",
+      "duration": 35.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d201.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia ->",
+      "duration": 340.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d202.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugaree ->",
+      "duration": 620.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d203.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 483.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d204.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Ship Of Fools",
+      "duration": 441.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d205.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band ->",
+      "duration": 596.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d206.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 481.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d207.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 304.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d208.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away ->",
+      "duration": 606.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d209.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Deal ->",
+      "duration": 401.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d210.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d210.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sunshine Daydream",
+      "duration": 233.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d211.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d211.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Introductions/Tuning",
+      "duration": 86.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d301.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight ->",
+      "duration": 298.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d302.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tell Mama",
+      "duration": 273.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d303.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Baby What You Want Me To Do",
+      "duration": 441.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d304.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Stage Banter",
+      "duration": 46.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d305.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Hard To Handle",
+      "duration": 337.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d306.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "In The Midnight Hour",
+      "duration": 265.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d307.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d307.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Brokedown Palace",
+      "duration": 364.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d308.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d308.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

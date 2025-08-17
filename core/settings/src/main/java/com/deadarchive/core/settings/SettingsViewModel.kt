@@ -11,7 +11,7 @@ import com.deadarchive.core.settings.service.SettingsConfigurationService
 import com.deadarchive.core.settings.service.SettingsBackupService
 import com.deadarchive.core.data.service.UpdateService
 import com.deadarchive.core.data.service.GlobalUpdateManager
-import com.deadarchive.v2.core.database.service.DatabaseManagerV2
+import com.deadarchive.v2.core.database.service.DatabaseManager
 import com.deadarchive.core.model.AppUpdate
 import com.deadarchive.core.model.UpdateStatus
 import com.deadarchive.core.model.UpdateDownloadState
@@ -52,7 +52,7 @@ class SettingsViewModel @Inject constructor(
     private val backupService: SettingsBackupService,
     private val updateService: UpdateService,
     private val globalUpdateManager: GlobalUpdateManager,
-    private val v2DatabaseManager: DatabaseManagerV2
+    private val v2DatabaseManager: DatabaseManager
 ) : ViewModel() {
     
     companion object {

@@ -1,0 +1,239 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-04-16",
+  "venue": "MECCA Arena",
+  "location": "Milwaukee, WI",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hell In A Bucket >",
+      "duration": 361.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "They Love Each Other",
+      "duration": 493.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Little Red Rooster",
+      "duration": 488.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Stagger Lee",
+      "duration": 403.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t04.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mama Tried >",
+      "duration": 402.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Mexicali Blues",
+      "duration": 488.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t06.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Bird Song",
+      "duration": 574.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t07.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Scarlet Begonias >",
+      "duration": 623.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t08.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Fire On The Mountain",
+      "duration": 320.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t09.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd89-04-16d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

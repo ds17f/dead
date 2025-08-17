@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-03-14",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-03-14 s1 tCrowd",
+      "duration": 252.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T01Crowd.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-03-14 s1 tFeel Like A Stranger",
+      "duration": 556.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T02FeelLikeAStranger.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-03-14 s1 tSugaree",
+      "duration": 743.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T03Sugaree.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-03-14 s1 tMe & My Uncle",
+      "duration": 175.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T04MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T04MeMyUncle.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-03-14 s1 tBig River",
+      "duration": 379.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T05BigRiver.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-03-14 s1 tPeggy O",
+      "duration": 454.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T06PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T06PeggyO.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-03-14 s1 tCC Rider",
+      "duration": 553.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T07CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T07CcRider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-03-14 s1 tAlthea",
+      "duration": 543.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T08Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-03-14 s1 tPassenger",
+      "duration": 332.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T09Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T09Passenger.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-03-14 s1 tChina Cat Sunflower",
+      "duration": 341.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T10ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T10ChinaCatSunflower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-03-14 s1 tI Know You Rider",
+      "duration": 375.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S1T11IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S1T11IKnowYouRider.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-03-14 s2 t01 Crowd",
+      "duration": 115.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T01Crowd.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-03-14 s2 t02 Alabama Getaway",
+      "duration": 311.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T02AlabamaGetaway.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-03-s2 t03 Greatest Story Ever Told",
+      "duration": 291.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T03GreatestStoryEverTold.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-03-14 s2 t04 Ship Of Fools",
+      "duration": 520.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T04ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T04ShipOfFools.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-03-14 s2 t05 Lost Sailor",
+      "duration": 385.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T05LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T05LostSailor.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-03-14 s2 t06 Saint Of Circumstance",
+      "duration": 417.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T06SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T06SaintOfCircumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-03-14 s2 t07 Drums",
+      "duration": 776.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T07Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-03-14 s2 t08 The Other One Space",
+      "duration": 164.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T08TheOtherOneSpace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T08TheOtherOneSpace.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-03-14 s2 t09 The Other One",
+      "duration": 325.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T09TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T09TheOtherOne.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd81-03-14 s2 t10 Stella Blue",
+      "duration": 603.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T10StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T10StellaBlue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd81-03-14 s2 t11 I Need A Miracle",
+      "duration": 208.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T11INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T11INeedAMiracle.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd81-03-14 s2 t12 Bertha",
+      "duration": 355.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T12Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T12Bertha.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd81-03-14 s2 t13 Good Lovin'",
+      "duration": 496.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T13GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T13GoodLovin.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd81-03-14 s2 t14 One More Saturday Night",
+      "duration": 303.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-14S2T14OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-14S2T14OneMoreSaturdayNight.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

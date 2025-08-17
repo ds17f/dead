@@ -1,0 +1,78 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-07-11",
+  "venue": "Studio Rehersal, Club Front",
+  "location": "San Rafael, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Althea",
+      "duration": 395.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Grateful Dead-1979-07-11 tr01. Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Grateful Dead-1979-07-11 tr01. Althea.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Lost Sailor",
+      "duration": 349.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Grateful Dead-1979-07-11 tr02. Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Grateful Dead-1979-07-11 tr02. Lost Sailor.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "What'll You Raise",
+      "duration": 277.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Grateful Dead-1979-07-11 tr03. What'll You Raise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Grateful Dead-1979-07-11 tr03. What'll You Raise.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Easy To Love You",
+      "duration": 222.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Grateful Dead-1979-07-11 tr04. Easy To Love You.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Grateful Dead-1979-07-11 tr04. Easy To Love You.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

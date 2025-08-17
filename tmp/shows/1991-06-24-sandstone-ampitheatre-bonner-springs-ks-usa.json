@@ -1,0 +1,196 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-06-24-sandstone-ampitheatre-bonner-springs-ks-usa/",
+  "show_id": "1991-06-24-sandstone-ampitheatre-bonner-springs-ks-usa",
+  "band": "Grateful Dead",
+  "venue": "Sandstone Ampitheatre",
+  "location_raw": "Bonner Springs, KS",
+  "city": "Bonner Springs",
+  "state": "KS",
+  "country": "USA",
+  "date": "1991-06-24",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It Takes A Lot To Laugh, It Takes A Train To Cry",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Supplication Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:09:20.802850",
+  "show_time": null,
+  "recordings": [
+    "gd91-06-24.sbd.jeff_m.2533.sbeok.shnf",
+    "gd1991-06-24.sbd.jeffm.tetzeli.fix-2533.35251.reflac.flac16",
+    "gd1991-06-24.147391.sbd.cm.miller.flac16",
+    "gd1991-06-24.146590.sbd.miller.flac2496",
+    "gd1991-06-24.AKG451.Darby.118934.Flac1644",
+    "gd1991-06-24.150375.FOB.Schoeps.Brotman.Metchick.Miller.Noel.t-flac1648",
+    "gd91-06-24.fob-akg-mahoney-oneill.miller.28394.sbeok.shnf",
+    "gd91-06-24.mahoney-akg.unknown.21648.sbeok.shnf",
+    "gd1991-06-24.AKG451.Darby.118933.Flac2448",
+    "gd1991-06-24.cmc5u_mk4.chuckm.116711.flac16",
+    "gd1991-06-24.149327.set1BK4011.set2akg460.ebel.flac16"
+  ],
+  "best_recording": "gd91-06-24.sbd.jeff_m.2533.sbeok.shnf",
+  "avg_rating": 1.9480952380952383,
+  "raw_rating": 4.3076923076923075,
+  "recording_count": 11,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 7
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "bruce-hornsby-shows",
+    "vince-welnick-years"
+  ]
+}

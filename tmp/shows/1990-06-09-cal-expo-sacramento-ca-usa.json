@@ -1,0 +1,214 @@
+{
+  "url": "https://jerrygarcia.com/show/1990-06-09-cal-expo-sacramento-ca-usa/",
+  "show_id": "1990-06-09-cal-expo-sacramento-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Cal Expo",
+  "location_raw": "Sacramento, CA",
+  "city": "Sacramento",
+  "state": "CA",
+  "country": "USA",
+  "date": "1990-06-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Terrapin Station",
+          "url": "https://jerrygarcia.com/song/terrapin-station/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude Finale",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:06:07.463200",
+  "show_time": null,
+  "recordings": [
+    "gd90-06-09.sbd-matrix.miller-ladner.6936.sbeok.shnf",
+    "gd1990-06-09.sbd.miller.tetzeli.fix-6936.34398.sbeok.shnf",
+    "gd1990-06-09.149721.UltraMatrix.sbd.cm.miller.flac16",
+    "gd1990-06-09.149620.ultramatrix.sbd.pearson-healy.miller.flac2496",
+    "gd1990-06-09.145489.ultramatrix.gastwirt.miller.sirmick.flac16",
+    "gd90-06-09.bk4011.nickspicks.23532.sbeok.flac",
+    "gd1990-06-09.134549.aud.fobaud.flac16",
+    "gd1990-06-09.143344.FOB.Schoeps.Brotman.Miler.Noel.t-flac1648",
+    "gd1990-06-09.fob.alabamabob.andrewf.95251.flac16",
+    "gd1990-06-09.142578.FOB.Schoeps.Weber-Small.Mattes.Miler.Noel.t-flac1648",
+    "gd1990-06-09.Nak300CP4.Fitzy.Keo.126538.Flac1644",
+    "gd1990-06-09.josephson.miller.88197.sbeok.flac16",
+    "gd1990-06-09.111342.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1990-06-09.168389.3xcm300.ont.flac1644",
+    "gd1990-06-09.150619.FOB.Nak.700.dsd.Mow.Miller.Noel.t.flac1644",
+    "gd1990-06-09.150584.FOB.Nak.700.dsd.Mow.Miller.Noel.t.flac2496",
+    "gd1990-06-09.schoeps.kutick.adelman.29386.sbeok.shnf",
+    "gd1990-06-09.Nak300CP4.Fitzy.Keo.126537.Flac2496"
+  ],
+  "best_recording": "gd90-06-09.sbd-matrix.miller-ladner.6936.sbeok.shnf",
+  "avg_rating": 1.9947826086956526,
+  "raw_rating": 4.264705882352941,
+  "recording_count": 18,
+  "confidence": 1.0,
+  "total_high_ratings": 32,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 12,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

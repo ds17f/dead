@@ -1,0 +1,158 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1972-10-24",
+  "venue": "Milwaukee Performing Arts Center",
+  "location": "Milwaukee, WI",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Truckin'",
+      "duration": 332.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t01.wav.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums",
+      "duration": 79.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t02.wav.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Other One",
+      "duration": 238.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t03.wav.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Philo Stomp",
+      "duration": 172.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t04.wav.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Space",
+      "duration": 224.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t05.wav.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t05.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "He's Gone",
+      "duration": 355.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t06.wav.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t06.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Other One",
+      "duration": 32.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t07.wav.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t07.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Casey Jones",
+      "duration": 185.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t08.wav.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t08.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Johnny B. Goode",
+      "duration": 120.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-24t09.wav.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-10-24t09.wav.shn"
+        }
+      ]
+    }
+  ]
+}

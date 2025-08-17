@@ -1,0 +1,158 @@
+{
+  "rating": 2.0833333333333335,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-09-18",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.166666666666667,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin'",
+      "duration": 602.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Black Peter",
+      "duration": 521.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me and My Uncle",
+      "duration": 300.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Operator",
+      "duration": 254.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dancin' In The Street",
+      "duration": 962.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "St. Stephen ->",
+      "duration": 394.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Not Fade Away ->",
+      "duration": 588.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Good Lovin'/Crowd/House Music (Get Together)",
+      "duration": 1010.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "And We Bid You Goodnight/House Music (Darkness, Darkness)",
+      "duration": 137.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-09-18t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-18t09.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

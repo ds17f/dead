@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-05-20",
+  "venue": "Campus Stadium - University Of California",
+  "location": "Santa Barbara, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin' ->",
+      "duration": 271.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Nobody's Fault But Mine ->",
+      "duration": 289.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jam ->",
+      "duration": 75.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums ->",
+      "duration": 324.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t04.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One ->",
+      "duration": 413.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eyes of the World ->",
+      "duration": 279.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stella Blue",
+      "duration": 335.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t07.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sugar Magnolia",
+      "duration": 147.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-05-20set3t08.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-05-20set3t08.shn"
+        }
+      ]
+    }
+  ]
+}

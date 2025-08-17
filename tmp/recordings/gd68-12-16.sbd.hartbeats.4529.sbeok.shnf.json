@@ -1,0 +1,46 @@
+{
+  "rating": 3.87,
+  "review_count": 10,
+  "source_type": "MATRIX",
+  "confidence": 1.0,
+  "date": "1968-12-16",
+  "venue": "The Matrix",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.3,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jam",
+      "duration": 1435.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-12-16d1t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968-12-16d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Jam > Jam",
+      "duration": 1331.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-12-16d2t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968-12-16d2t01.shn"
+        }
+      ]
+    }
+  ]
+}

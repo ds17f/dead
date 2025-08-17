@@ -1,0 +1,142 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-03-30",
+  "venue": "Greensboro Coliseum",
+  "location": "Greensboro, NC",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 79.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha ->",
+      "duration": 400.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack Straw",
+      "duration": 499.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 782.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Blow Away",
+      "duration": 504.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 384.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song ->",
+      "duration": 714.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t07.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Promised Land",
+      "duration": 282.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-03-31d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-03-31d1t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

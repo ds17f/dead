@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-08-18",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin'",
+      "duration": 423.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Truckin.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 246.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02DireWolf.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend of the Devil",
+      "duration": 238.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FriendOfTheDevil.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Hollow",
+      "duration": 190.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04DarkHollow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04DarkHollow.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ripple",
+      "duration": 267.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05Ripple.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Ripple.mp3",
+          "bitrate": "155"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brokedown Palace",
+      "duration": 253.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BrokedownPalace.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Operator",
+      "duration": 171.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Operator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Operator.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Rosalie McFall",
+      "duration": 192.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08RosalieMcfall.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08RosalieMcfall.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "New Speedway Boogie",
+      "duration": 588.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09NewSpeedwayBoogie.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Cold Jordan",
+      "duration": 165.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10ColdJordan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ColdJordan.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Swing Low Sweet Chariot",
+      "duration": 201.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11SwingLowSweetChariot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SwingLowSweetChariot.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Dancin' in the Streets",
+      "duration": 863.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12DancinInTheStreets.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12DancinInTheStreets.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Next Time you see me",
+      "duration": 199.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13NextTimeYouSeeMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13NextTimeYouSeeMe.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Mama Tried",
+      "duration": 166.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14MamaTried.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Cryptical Envelopment",
+      "duration": 118.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15CrypticalEnvelopment.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15CrypticalEnvelopment.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 234.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Other One",
+      "duration": 512.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17OtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17OtherOne.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Cryptical Envelopment",
+      "duration": 115.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18CrypticalEnvelopment.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18CrypticalEnvelopment.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 236.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19SugarMagnolia.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Attics of My Life",
+      "duration": 419.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20AtticsOfMyLife.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20AtticsOfMyLife.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Man's World",
+      "duration": 729.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21MansWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21MansWorld.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Not Fade Away",
+      "duration": 627.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22NotFadeAway.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Casey Jones",
+      "duration": 300.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23CaseyJones.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Uncle John's Band",
+      "duration": 396.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24UncleJohnsBand.mp3",
+          "bitrate": "164"
+        }
+      ]
+    }
+  ]
+}

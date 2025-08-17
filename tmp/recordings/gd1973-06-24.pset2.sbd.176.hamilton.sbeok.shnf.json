@@ -1,0 +1,62 @@
+{
+  "rating": 2.3,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-06-24",
+  "venue": "Memorial Coliseum",
+  "location": "Portland, OR",
+  "raw_rating": 4.6,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 854.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-24d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-06-24d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Eyes Of The World >",
+      "duration": 486.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-24d1t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-06-24d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "China Doll",
+      "duration": 188.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-06-24d1t03.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-06-24d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

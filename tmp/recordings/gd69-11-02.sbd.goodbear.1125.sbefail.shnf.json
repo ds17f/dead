@@ -1,0 +1,110 @@
+{
+  "rating": 2.380952380952381,
+  "review_count": 42,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-11-02",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.761904761904762,
+  "high_ratings": 41,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain and Snow",
+      "duration": 196.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69_11_02-01coldrainsnow.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69_11_02-01coldrainsnow.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Midnight Hour",
+      "duration": 261.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69_11_02-02midnighthour.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69_11_02-02midnighthour.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star",
+      "duration": 878.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69_11_02-03DarkStar.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69_11_02-03DarkStar.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "St. Stephen",
+      "duration": 233.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69_11_02-04St.Stephen.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69_11_02-04St.Stephen.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Eleven",
+      "duration": 376.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69_11_02-05TheEleven.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69_11_02-05TheEleven.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Death Don't Have No Mercy",
+      "duration": 333.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69_11_02-06DeathDont.HaveNoMercy.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69_11_02-06DeathDont.HaveNoMercy.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 1.4666666666666668,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1991-09-12",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 3.6666666666666665,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "crowd/tuning)",
+      "duration": 400.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket->",
+      "duration": 389.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 447.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 452.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t04.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ramble On Rose",
+      "duration": 665.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line->",
+      "duration": 197.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 485.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 482.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 846.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s1t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "crowd/tuning)",
+      "duration": 213.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia->",
+      "duration": 178.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Foolish Heart->",
+      "duration": 775.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' In The Band->",
+      "duration": 530.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station->",
+      "duration": 739.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playin' In The Band->",
+      "duration": 178.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t06.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums->",
+      "duration": 639.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t07.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space->",
+      "duration": 509.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t08.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel->",
+      "duration": 283.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Black Peter->",
+      "duration": 558.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around->",
+      "duration": 225.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t11.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sunshine Daydream",
+      "duration": 389.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t12.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "crowd/tuning)",
+      "duration": 191.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t13.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Encore: Box Of Rain",
+      "duration": 318.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-09-12s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-09-12s2t14.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

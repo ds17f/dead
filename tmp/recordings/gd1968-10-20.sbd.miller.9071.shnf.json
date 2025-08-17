@@ -1,0 +1,110 @@
+{
+  "rating": 2.2777777777777777,
+  "review_count": 18,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-10-20",
+  "venue": "Greek Theatre - University of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.555555555555555,
+  "high_ratings": 15,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Morning Little School Girl",
+      "duration": 437.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968.10.20d1t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968.10.20d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Turn OnYour Lovelight",
+      "duration": 452.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968.10.20d1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968.10.20d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star ->",
+      "duration": 314.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968.10.20d1t03.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968.10.20d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "St. Stephen ->",
+      "duration": 117.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968.10.20d1t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968.10.20d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Eleven ->",
+      "duration": 274.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968.10.20d1t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968.10.20d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Caution (Do Not Stop On Tracks)",
+      "duration": 478.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968.10.20d1t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1968.10.20d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

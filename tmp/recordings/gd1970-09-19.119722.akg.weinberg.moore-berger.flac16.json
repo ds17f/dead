@@ -1,0 +1,142 @@
+{
+  "rating": 2.025,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1970-09-19",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 4.5,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 648.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t01.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me & My Uncle",
+      "duration": 194.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Morning Little School Girl",
+      "duration": 614.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cold Rain & Snow",
+      "duration": 349.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy Wind",
+      "duration": 523.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Sugar Magnolia",
+      "duration": 294.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star >",
+      "duration": 1557.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t07.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Saint Stephen...",
+      "duration": 419.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-09-19d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-09-19d1t08.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

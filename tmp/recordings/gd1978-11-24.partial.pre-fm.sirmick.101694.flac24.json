@@ -1,0 +1,94 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-11-24",
+  "venue": "Capitol Theater",
+  "location": "Passaic, NJ",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "KBFH intro >",
+      "duration": 44.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-11-24t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-11-24t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "GD intro > Passenger",
+      "duration": 363.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-11-24t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-11-24t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 798.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-11-24t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-11-24t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Need a Miracle >",
+      "duration": 266.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-11-24t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-11-24t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Good Lovin'",
+      "duration": 409.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1978-11-24t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-11-24t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

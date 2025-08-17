@@ -1,0 +1,140 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1980-06-20",
+  "venue": "West High Auditorium",
+  "location": "Anchorage, AK",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw > Franklin's Tower >",
+      "duration": 607.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-06-20S1T01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T01_vbr.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mama Tried > Mexicali Blues",
+      "duration": 236.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T02.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-06-20S1T02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T02_vbr.mp3",
+          "bitrate": "229"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend of the Devil",
+      "duration": 291.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-06-20S1T03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T03_vbr.mp3",
+          "bitrate": "220"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Let it Grow > Althea",
+      "duration": 585.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T04.mp3",
+          "bitrate": "205"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-06-20S1T04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T04_vbr.mp3",
+          "bitrate": "242"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy to Love You",
+      "duration": 140.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-06-20S1T05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T05_vbr.mp3",
+          "bitrate": "217"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Lost Sailor > Saint of Circumstance > Deal",
+      "duration": 565.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T06.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-06-20S1T06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-20S1T06_vbr.mp3",
+          "bitrate": "233"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 1.394736842105263,
+  "review_count": 19,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-05-16",
+  "venue": "Campolindo High School",
+  "location": "Moraga, CA",
+  "raw_rating": 2.789473684210526,
+  "high_ratings": 5,
+  "low_ratings": 8,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 410.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Doin' that Rag",
+      "duration": 320.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t02.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Me and My Uncle",
+      "duration": 122.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Hard To Handle",
+      "duration": 150.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Turn On Your Lovelight",
+      "duration": 342.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t05.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Drums",
+      "duration": 209.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Turn On Your Lovelight",
+      "duration": 246.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-16t07.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-05-16t07.shn"
+        }
+      ]
+    }
+  ]
+}

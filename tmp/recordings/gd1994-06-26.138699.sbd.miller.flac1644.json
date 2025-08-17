@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-06-26",
+  "venue": "Sam Boyd Silver Bowl",
+  "location": "Las Vegas, NV",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 73.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 436.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 388.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Peggy-o.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 486.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NewMinglewoodBlues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ramble On Rose",
+      "duration": 544.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RambleOnRose.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 419.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06ElPaso.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "So Many Roads",
+      "duration": 505.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07SoManyRoads.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 299.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08JustLikeTomThumbsBlues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 564.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheMusicNeverStopped.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Victim Or The Crime",
+      "duration": 652.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10VictimOrTheCrime.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes Of The World",
+      "duration": 1109.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EyesOfTheWorld.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Box Of Rain",
+      "duration": 319.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12BoxOfRain.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Saint Of Circumstance",
+      "duration": 455.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SaintOfCircumstance.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 1396.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TerrapinStation.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 1184.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 603.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 264.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All Along The Watchtower",
+      "duration": 390.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AllAlongTheWatchtower.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Morning Dew",
+      "duration": 702.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MorningDew.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "US Blues",
+      "duration": 312.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20UsBlues.mp3",
+          "bitrate": "175"
+        }
+      ]
+    }
+  ]
+}

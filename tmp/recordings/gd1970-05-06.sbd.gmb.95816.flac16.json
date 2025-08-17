@@ -1,0 +1,158 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-05-06",
+  "venue": "Kresge Plaza - MIT",
+  "location": "Cambridge, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dancin' In The Streets",
+      "duration": 1062.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d1t01.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower >",
+      "duration": 328.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d1t02.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 363.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d1t03.mp3",
+          "bitrate": "144"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Next Time You See",
+      "duration": 344.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d1t04.mp3",
+          "bitrate": "141"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Morning Dew",
+      "duration": 710.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d1t05.mp3",
+          "bitrate": "141"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Lovin'",
+      "duration": 1039.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d2t01.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Casey Jones",
+      "duration": 350.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d2t02.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Saint Stephen >",
+      "duration": 359.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d2t03.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away",
+      "duration": 734.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-05-06d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-05-06d2t04.mp3",
+          "bitrate": "150"
+        }
+      ]
+    }
+  ]
+}

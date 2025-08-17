@@ -1,0 +1,174 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-11-21",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 37.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Big Boy Pete",
+      "duration": 190.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02BigBoyPete.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02BigBoyPete.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 284.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03DireWolf.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 466.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Brown Eyed Women",
+      "duration": 376.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BrownEyedWomen.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle",
+      "duration": 181.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MeAndMyUncle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 272.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MexicaliBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 402.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08RambleOnRose.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain",
+      "duration": 513.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LooksLikeRain.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Might As Well",
+      "duration": 283.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10MightAsWell.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

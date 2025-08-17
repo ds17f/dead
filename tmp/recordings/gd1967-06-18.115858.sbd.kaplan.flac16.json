@@ -1,0 +1,126 @@
+{
+  "rating": 1.9166666666666667,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-06-18",
+  "venue": "Monterey Fairgrounds",
+  "location": "Monterey, CA",
+  "raw_rating": 3.8333333333333335,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 852.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Beatles aren't here\"*",
+      "duration": 50.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tuning >",
+      "duration": 88.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cold Rain and Snow",
+      "duration": 229.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Alligator >",
+      "duration": 506.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Caution (Do Not Stop on Tracks)",
+      "duration": 698.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bill Graham outro**",
+      "duration": 43.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-06-18t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-06-18t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-10-09",
+  "venue": "USAir Arena",
+  "location": "Landover, MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTuning",
+      "duration": 117.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackHell In A Bucket",
+      "duration": 484.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02HellInABucket.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackBertha",
+      "duration": 473.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03Bertha.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackSpoonful",
+      "duration": 313.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04Spoonful.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackStagger Lee",
+      "duration": 518.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05StaggerLee.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackBroken Arrow",
+      "duration": 358.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06BrokenArrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06BrokenArrow.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackMe And My Uncle",
+      "duration": 168.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07MeAndMyUncle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc01,TrackBig River",
+      "duration": 454.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track08BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track08BigRiver.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc01,TrackSo Many Roads",
+      "duration": 450.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track09SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track09SoManyRoads.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc01,TrackPromised Land",
+      "duration": 286.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track10PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track10PromisedLand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track01 Tuning",
+      "duration": 101.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Tuning.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track02 Here Comes Sunshine",
+      "duration": 355.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02HereComesSunshine.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track03 Samson And Delilah",
+      "duration": 552.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03SamsonAndDelilah.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track04 Way To Go Home",
+      "duration": 400.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04WayToGoHome.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc02,Track05 Ship Of Fools",
+      "duration": 421.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05ShipOfFools.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc02,Track06 Saint Of Circumstance",
+      "duration": 636.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06SaintOfCircumstance.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc02,Track07 Drums",
+      "duration": 817.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track07Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc03,Track01 Space",
+      "duration": 759.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track01Space.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Disc03,Track02 I Need A Miracle",
+      "duration": 358.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track02INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track02INeedAMiracle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Disc03,Track03 Comes A Time",
+      "duration": 372.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track03ComesATime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track03ComesATime.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Disc03,Track04 Throwing Stones",
+      "duration": 554.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track04ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track04ThrowingStones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Disc03,Track05 Lovelight",
+      "duration": 384.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track05Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track05Lovelight.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Disc03,Track06 Rain",
+      "duration": 308.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc03track06Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc03track06Rain.mp3",
+          "bitrate": "201"
+        }
+      ]
+    }
+  ]
+}

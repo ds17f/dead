@@ -1,0 +1,430 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1981-12-26",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-12-26 s1tCrowd",
+      "duration": 39.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t01Crowd.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-12-26 s1tAlabama Getaway",
+      "duration": 273.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t02AlabamaGetaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-12-26 s1tPromised Land",
+      "duration": 273.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t03PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t03PromisedLand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-12-26 s1tCandyman",
+      "duration": 400.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t04Candyman.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-12-26 s1tLittle Red Rooster",
+      "duration": 493.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t05LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t05LittleRedRooster.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-12-26 s1tBig Boss Man",
+      "duration": 268.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t06BigBossMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t06BigBossMan.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-12-26 s1tMe & My Uncle",
+      "duration": 175.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t07MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t07MeMyUncle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-12-26 s1tBig River",
+      "duration": 335.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t08BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t08BigRiver.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-12-26 s1tBird Song",
+      "duration": 693.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t09BirdSong.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-12-26 s1tIt's All Over Now",
+      "duration": 548.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t10ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t10ItsAllOverNow.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-12-26 s1tBig Railroad Blues",
+      "duration": 271.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t11BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t11BigRailroadBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-12-26 s1tLet It Grow",
+      "duration": 758.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S1t12LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S1t12LetItGrow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-12-26 s2t01 Crowd",
+      "duration": 14.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t01Crowd.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-12-26 s2t02 Scarlet Begonias",
+      "duration": 749.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t02ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t02ScarletBegonias.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-12-26 s2t03 Fire On The Mountain",
+      "duration": 647.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t03FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t03FireOnTheMountain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-12-26 s2t04 Estimated Prophet",
+      "duration": 727.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t04EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t04EstimatedProphet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-12-26 s2t05 He's Gone",
+      "duration": 863.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t05HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t05HesGone.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-12-26 s2t06 Drums",
+      "duration": 431.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t06Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-12-26 s2t07 Space",
+      "duration": 171.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t07Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-12-26 s2t08 A Day At The Dentist",
+      "duration": 274.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t08ADayAtTheDentist.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t08ADayAtTheDentist.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd81-12-26 s2t09 The Eleven Jam",
+      "duration": 617.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t09TheElevenJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t09TheElevenJam.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd81-12-26 s2t10 Truckin'",
+      "duration": 492.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t10Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t10Truckin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd81-12-26 s2t11 Black Peter",
+      "duration": 630.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t11BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t11BlackPeter.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd81-12-26 s2t12 Around & Around",
+      "duration": 226.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t12AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t12AroundAround.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd81-12-26 s2t13 One More Saturday Night",
+      "duration": 276.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t13OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t13OneMoreSaturdayNight.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "gd81-12-s2t14 Don't Ease Me In",
+      "duration": 201.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-12-26S2t14DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-12-26S2t14DontEaseMeIn.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

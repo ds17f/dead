@@ -97,7 +97,7 @@ fun SplashV2(
                         ) {
                             uiState.availableSources.forEach { source ->
                                 when (source) {
-                                    com.deadarchive.v2.core.database.service.DatabaseManagerV2.DatabaseSource.ZIP_BACKUP -> {
+                                    com.deadarchive.v2.core.database.service.DatabaseManager.DatabaseSource.ZIP_BACKUP -> {
                                         Button(
                                             onClick = { viewModel.selectDatabaseSource(source) },
                                             modifier = Modifier.fillMaxWidth()
@@ -114,7 +114,7 @@ fun SplashV2(
                                             }
                                         }
                                     }
-                                    com.deadarchive.v2.core.database.service.DatabaseManagerV2.DatabaseSource.DATA_IMPORT -> {
+                                    com.deadarchive.v2.core.database.service.DatabaseManager.DatabaseSource.DATA_IMPORT -> {
                                         OutlinedButton(
                                             onClick = { viewModel.selectDatabaseSource(source) },
                                             modifier = Modifier.fillMaxWidth()
@@ -192,6 +192,26 @@ fun SplashV2(
                         verticalArrangement = Arrangement.spacedBy(16.dp)
                     ) {
                         when (uiState.progress.phase) {
+                            PhaseV2.DOWNLOADING -> {
+                                if (uiState.progress.totalShows > 0) {
+                                    LinearProgressIndicator(
+                                        progress = { uiState.progress.processedShows.toFloat() / uiState.progress.totalShows.toFloat() },
+                                        modifier = Modifier.fillMaxWidth()
+                                    )
+                                    
+                                    Text(
+                                        text = "${uiState.progress.processedShows} / ${uiState.progress.totalShows} MB",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                                    )
+                                } else {
+                                    CircularProgressIndicator(
+                                        modifier = Modifier.size(32.dp),
+                                        strokeWidth = 3.dp
+                                    )
+                                }
+                            }
+                            
                             PhaseV2.IMPORTING_SHOWS -> {
                                 if (uiState.progress.totalShows > 0) {
                                     LinearProgressIndicator(

@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-12-19",
+  "venue": "Curtis Hixon Convention Hall",
+  "location": "Tampa, FL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "speech",
+      "duration": 179.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-19d1t1revt101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-19d1t1revt101.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 219.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-19d1t1revt102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-19d1t1revt102.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Nobody's Fault But Mine",
+      "duration": 380.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-19d3t3-4revt101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-19d3t3-4revt101.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bass Solo",
+      "duration": 285.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-19d3t3-4revt102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-19d3t3-4revt102.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One",
+      "duration": 953.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-12-19d3t3-4revt103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-12-19d3t3-4revt103.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

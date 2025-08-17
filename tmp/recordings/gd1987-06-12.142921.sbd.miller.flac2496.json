@@ -1,0 +1,414 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-06-12",
+  "venue": "Ventura County Fairgrounds",
+  "location": "Ventura, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 51.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 345.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02JackStraw.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West LA Fadeaway",
+      "duration": 575.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WestLaFadeaway.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 157.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MamaTried.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 373.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BigRiver.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Candyman",
+      "duration": 490.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Candyman.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "My Brother Esau",
+      "duration": 297.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MyBrotherEsau.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 732.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Desolation Row",
+      "duration": 561.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DesolationRow.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 213.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 68.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "China Cat Sunflower",
+      "duration": 322.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ChinaCatSunflower.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Know You Rider",
+      "duration": 521.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13IKnowYouRider.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Far From Me",
+      "duration": 270.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14FarFromMe.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 504.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ManSmartwomanSmarter.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "He's Gone",
+      "duration": 613.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16HesGone.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 457.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 453.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Wheel",
+      "duration": 356.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TheWheel.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "I Need A Miracle",
+      "duration": 261.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20INeedAMiracle.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Peter",
+      "duration": 548.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BlackPeter.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around And Around",
+      "duration": 231.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22AroundAndAround.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Good Lovin'",
+      "duration": 417.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23GoodLovin.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Encore Break",
+      "duration": 224.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24EncoreBreak.mp3",
+          "bitrate": "224"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Touch Of Grey",
+      "duration": 367.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25TouchOfGrey.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

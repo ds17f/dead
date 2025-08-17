@@ -1,0 +1,303 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-07-03",
+  "venue": "Oxford Plains Speedway",
+  "location": "Oxford, ME",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "0crowd",
+      "duration": 90.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 crowd.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "08 crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 crowd.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "0Hell In A Bucket",
+      "duration": 409.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Hell In A Bucket.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "09 Touch Of Grey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Touch Of Grey.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "0Sugaree",
+      "duration": 363.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Sugaree.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "10 Hey Pocky Way.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Hey Pocky Way.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "0Walkin' Blues",
+      "duration": 579.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Walkin' Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Walkin' Blues.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "11 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Looks Like Rain.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "0Tennessee Jed",
+      "duration": 681.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Tennessee Jed.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Flac",
+          "filename": "12 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Estimated Prophet.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "0Queen Jane Approximately",
+      "duration": 478.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Queen Jane Approximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Queen Jane Approximately.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Flac",
+          "filename": "13 Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Eyes Of The World.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "0Bird Song",
+      "duration": 225.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Bird Song.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Flac",
+          "filename": "14 I Will Take You Home.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 I Will Take You Home.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "15 drums",
+      "duration": 40.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 drums.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "21 encore break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 encore break.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "16 Space",
+      "duration": 459.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Space.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "22 Encore - Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Encore - Not Fade Away.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "17 Goin' Down The Road Feeling Bad",
+      "duration": 395.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Goin' Down The Road Feeling Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Goin' Down The Road Feeling Bad.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "18 I Need A Miracle",
+      "duration": 213.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 I Need A Miracle.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "19 Dear Mr. Fantasy",
+      "duration": 308.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Dear Mr. Fantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Dear Mr. Fantasy.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "20 Hey Jude",
+      "duration": 180.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Hey Jude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Hey Jude.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

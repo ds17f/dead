@@ -1,0 +1,126 @@
+{
+  "rating": 1.4625000000000001,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1995-05-24",
+  "venue": "Memorial Stadium",
+  "location": "Seattle, WA",
+  "raw_rating": 3.25,
+  "high_ratings": 2,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 552.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t01.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St. Of Circumstance",
+      "duration": 463.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t02.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Way To Go Home",
+      "duration": 387.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t03.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Want To Tell You",
+      "duration": 301.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t04.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Estimated Prophet",
+      "duration": 945.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t05.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Truckin'",
+      "duration": 639.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t06.mp3",
+          "bitrate": "231"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Terrapin Station",
+      "duration": 1178.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd95-05-24.partial.sbd.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-05-24.partial.sbd.t07.mp3",
+          "bitrate": "222"
+        }
+      ]
+    }
+  ]
+}

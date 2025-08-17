@@ -1,0 +1,110 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-01-24",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cryptical Envelopment >",
+      "duration": 51.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-24d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums -> The Other One ->",
+      "duration": 226.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-24d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envelopement->",
+      "duration": 207.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-24d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Potato Caboose",
+      "duration": 394.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-24d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dupree's Diamond Blues",
+      "duration": 120.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-24d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Doin' That Rag",
+      "duration": 184.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-24d1t06.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-24d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

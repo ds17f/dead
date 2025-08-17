@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-08-18",
+  "venue": "Compton Terrace Amphitheatre",
+  "location": "Tempe, AZ",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd87-08-18 tHell In A Bucket",
+      "duration": 361.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T01HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T01HellInABucket.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd87-08-18 tSugaree",
+      "duration": 627.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T02Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T02Sugaree.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd87-08-18 tWalkin' Blues",
+      "duration": 446.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T03WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T03WalkinBlues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd87-08-18 tRamble On Rose",
+      "duration": 522.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T04RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T04RambleOnRose.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd87-08-18 tMy Brother Esau",
+      "duration": 292.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T05MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T05MyBrotherEsau.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd87-08-18 tPeggy O",
+      "duration": 421.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T06PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T06PeggyO.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd87-08-18 tGreatest Story Ever Told",
+      "duration": 242.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T07GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T07GreatestStoryEverTold.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd87-08-18 tBertha",
+      "duration": 407.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T08Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T08Bertha.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd87-08-18 tCrowd",
+      "duration": 100.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T09Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T09Crowd.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd87-08-18 tCrazy Fingers",
+      "duration": 468.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T10CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T10CrazyFingers.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd87-08-18 tPlayin' In The Band",
+      "duration": 475.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T11PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T11PlayinInTheBand.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd87-08-18 tTerrapin Station",
+      "duration": 730.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T12TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T12TerrapinStation.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd87-08-18 tDrums",
+      "duration": 444.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T13Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T13Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd87-08-18 tSpace",
+      "duration": 279.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T14Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd87-08-18 tDear Mr. Fantasy",
+      "duration": 354.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T15DearMr.Fantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T15DearMr.Fantasy.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd87-08-18 tWharf Rat",
+      "duration": 499.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T16WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T16WharfRat.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd87-08-18 tThrowing Stones",
+      "duration": 532.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T17ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T17ThrowingStones.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd87-08-tTurn On Your Lovelight",
+      "duration": 335.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T18TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T18TurnOnYourLovelight.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd87-08-18 tEncore Break",
+      "duration": 161.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T19EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T19EncoreBreak.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd87-08-18 tBlack Muddy River",
+      "duration": 514.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-18T20BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-18T20BlackMuddyRiver.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

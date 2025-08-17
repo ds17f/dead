@@ -1,0 +1,478 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1972-05-04",
+  "venue": "Olympia Theater",
+  "location": "Paris, FR",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Greatest Story Ever Told",
+      "duration": 317.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "101 - Greatest Story Ever Told.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "101 - Greatest Story Ever Told.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Deal",
+      "duration": 294.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "102 - Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "102 - Deal.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Mr. Charlie",
+      "duration": 230.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "103 - Mr. Charlie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "103 - Mr. Charlie.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Beat It On Down The Line",
+      "duration": 193.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "104 - Beat It On Down The Line.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "104 - Beat It On Down The Line.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Brown Eyed Women",
+      "duration": 302.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "105 - Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "105 - Brown Eyed Women.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Chinatown Shuffle",
+      "duration": 186.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "106 - Chinatown Shuffle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "106 - Chinatown Shuffle.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Playing In The Band",
+      "duration": 603.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "107 - Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "107 - Playing In The Band.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "You Win Again",
+      "duration": 238.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "108 - You Win Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "108 - You Win Again.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "It Hurts Me Too",
+      "duration": 413.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "109 - It Hurts Me Too.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "109 - It Hurts Me Too.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "He's Gone",
+      "duration": 487.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "110 - He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "110 - He's Gone.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "El Paso",
+      "duration": 283.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "111 - El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "111 - El Paso.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "Big Railroad Blues",
+      "duration": 224.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "112 - Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "112 - Big Railroad Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "113",
+      "title": "The Stranger (Two Souls In Communion)",
+      "duration": 407.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "113 - The Stranger (Two Souls In Communion).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "113 - The Stranger (Two Souls In Communion).mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "114",
+      "title": "Casey Jones",
+      "duration": 350.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "114 - Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "114 - Casey Jones.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Good Lovin'",
+      "duration": 1383.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "201 - Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "201 - Good Lovin'.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Next Time You See Me",
+      "duration": 367.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "202 - Next Time You See Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "202 - Next Time You See Me.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Ramble On Rose",
+      "duration": 394.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "203 - Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "203 - Ramble On Rose.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Jack Straw",
+      "duration": 292.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "204 - Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204 - Jack Straw.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Dark Star",
+      "duration": 1161.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "205 - Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "205 - Dark Star.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums",
+      "duration": 151.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "206 - Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "206 - Drums.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Dark Star",
+      "duration": 1052.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "207 - Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "207 - Dark Star.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Sugar Magnolia",
+      "duration": 416.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "208 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "208 - Sugar Magnolia.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Sing Me Back Home",
+      "duration": 688.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "209 - Sing Me Back Home.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "209 - Sing Me Back Home.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Mexicali Blues",
+      "duration": 209.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "210 - Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "210 - Mexicali Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Big Boss Man",
+      "duration": 396.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "211 - Big Boss Man.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "211 - Big Boss Man.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Uncle John's Band",
+      "duration": 412.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "212 - Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "212 - Uncle John's Band.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 433.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "213 - Goin' Down The Road Feeling Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "213 - Goin' Down The Road Feeling Bad.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Not Fade Away",
+      "duration": 139.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "214 - Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "214 - Not Fade Away.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "One More Saturday Night",
+      "duration": 278.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "215 - One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "215 - One More Saturday Night.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

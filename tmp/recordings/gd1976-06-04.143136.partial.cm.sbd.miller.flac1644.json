@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1976-06-04",
+  "venue": "Paramount Theatre",
+  "location": "Portland, OR",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 185.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01PromisedLand.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 586.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FriendOfTheDevil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried",
+      "duration": 233.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03MamaTried.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 694.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Sugaree.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 403.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Cassidy.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Candyman",
+      "duration": 453.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Candyman.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Slipknot!",
+      "duration": 541.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Slipknot.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Franklin's Tower",
+      "duration": 753.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08FranklinsTower.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 275.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band",
+      "duration": 970.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10PlayingInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Might As Well",
+      "duration": 179.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11MightAsWell.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

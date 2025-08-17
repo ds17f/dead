@@ -1,0 +1,47 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-12-01",
+  "venue": "Club Front",
+  "location": "San Rafael, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Black Muddy River",
+      "duration": 338.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Black Muddy River.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "When Push Comes To Shove",
+      "duration": 230.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 When Push Comes To Shove.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Ugliest Girl In The World",
+      "duration": 291.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Ugliest Girl In The World.flac"
+        }
+      ]
+    }
+  ]
+}

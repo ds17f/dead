@@ -1,0 +1,190 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-10-20",
+  "venue": "Carrier Dome, Syracuse U",
+  "location": "Syracuse, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street ->",
+      "duration": 833.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Samson & Delilah",
+      "duration": 517.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "He's Gone ->",
+      "duration": 657.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Smokestack Lightnin' ->",
+      "duration": 475.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ->",
+      "duration": 639.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space ->",
+      "duration": 415.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Wheel ->",
+      "duration": 293.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Other One ->",
+      "duration": 395.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Black Peter ->",
+      "duration": 536.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Lovelight",
+      "duration": 530.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Revolution",
+      "duration": 344.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-20s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-20s2t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

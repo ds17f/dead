@@ -1,0 +1,302 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-04-04",
+  "venue": "Jefferson Civic Center Coliseum",
+  "location": "Birmingham, AL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackTuning",
+      "duration": 106.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackFeel Like A Stranger",
+      "duration": 588.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02FeelLikeAStranger.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackSugaree",
+      "duration": 875.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03Sugaree.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackMinglewood Blues",
+      "duration": 435.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04MinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04MinglewoodBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackRamble On Rose",
+      "duration": 570.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05RambleOnRose.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackBlack Throated Wind",
+      "duration": 379.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06BlackThroatedWind.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackDon't Ease Me In",
+      "duration": 214.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07DontEaseMeIn.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc01,TrackTuning",
+      "duration": 56.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track08Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track08Tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc01,TrackVictim Or The Crime",
+      "duration": 529.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track09VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track09VictimOrTheCrime.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc01,TrackAiko-Aiko",
+      "duration": 1012.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track10Aiko-aiko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track10Aiko-aiko.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track01 Corrina",
+      "duration": 474.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01Corrina.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track02 Terrapin Station",
+      "duration": 866.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02TerrapinStation.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track03 Drums",
+      "duration": 599.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03Drums.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track04 Space",
+      "duration": 928.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc02,Track05 Easy Answers",
+      "duration": 416.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05EasyAnswers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05EasyAnswers.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc02,Track06 Stella Blue",
+      "duration": 439.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06StellaBlue.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc02,Track07 Around And Around",
+      "duration": 556.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track07AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track07AroundAndAround.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Disc02,Track08 Quinn The Eskimo",
+      "duration": 295.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track08QuinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track08QuinnTheEskimo.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "url": "https://jerrygarcia.com/show/1992-06-12-knickerbocker-arena-albany-ny-usa/",
+  "show_id": "1992-06-12-knickerbocker-arena-albany-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Knickerbocker Arena",
+  "location_raw": "Albany, NY",
+  "city": "Albany",
+  "state": "NY",
+  "country": "USA",
+  "date": "1992-06-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Maggie's Farm",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Black Throated Wind",
+          "url": "https://jerrygarcia.com/song/black-throated-wind/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Speedway Boogie",
+          "url": "https://jerrygarcia.com/song/new-speedway-boogie/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Scarlet Begonias",
+          "url": "https://jerrygarcia.com/song/scarlet-begonias/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Fire On The Mountain",
+          "url": "https://jerrygarcia.com/song/fire-on-the-mountain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Way To Go Home",
+          "url": "https://jerrygarcia.com/song/way-to-go-home/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Smokestack Lightning",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Last Time",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:11:45.283903",
+  "show_time": null,
+  "recordings": [
+    "gd1992-06-12.sbd.miller.90111.sbeok.flac16",
+    "gd92-06-12.sbd.braverman.15821.sbeok.shnf",
+    "gd1992-06-12.152725.sbd.miller.flac2448",
+    "gd1992-06-12.sbd.braverman-edited.83901.pitch-corrected.sbeok.flac16",
+    "gd1992-06-12.154491.sbd.cm.miller.t.flac16",
+    "gd92-06-12.bk4011.Fochesato.4882.sbeok.shnf",
+    "gd1992-06-12.169061.fixed.165919.mc.rogosa.flac1644",
+    "gd1992-06-12.137823.aud.lamarre.berger.flac16",
+    "gd1992-06-12.169060.fixed.165918.mc.rogosa.flac2496",
+    "gd1992-06-12.134968.Nak300CP4.Fitzy.Keo.Flac2496",
+    "gd1992-06-12.aud.andrewf.86095.sbeok.flac16",
+    "gd1992-06-12.137824.aud.lamarre.berger.flac24",
+    "gd1992-06-12.145128.AUD.PCM.Composite.Dalton.Miller.Noel.t-flac1644",
+    "gd1992-06-12.134967.Nak300CP4.Fitzy.Keo.Flac1644",
+    "gd1992-06-12.137492.boedicker.flac16",
+    "gd1992-06-12.165918.me88.mc.rogosa.flac2496",
+    "gd1992-06-12.sennME80.wklitz.96095.flac16",
+    "gd1992-06-12.116279.naks.boedicker.flac16",
+    "gd1992-06-12.165919.me88.mc.rogosa.flac1644",
+    "gd1992-06-12.123682.crupi.flac16",
+    "gd1992-06-12.aud.andrewf.86096.flac1648",
+    "gd1992-06-12.165917.me88.dat.rogosa.flac1648",
+    "gd1992-06-12.nak300.baker-keo.sirmick.111079.flac24",
+    "gd1992-06-12.nak300.baker-keo.sirmick.111080.sbeok.flac16"
+  ],
+  "best_recording": "gd1992-06-12.sbd.miller.90111.sbeok.flac16",
+  "avg_rating": 1.8722826086956526,
+  "raw_rating": 3.875,
+  "recording_count": 24,
+  "confidence": 1.0,
+  "total_high_ratings": 15,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 5,
+    "UNKNOWN": 14,
+    "AUD": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "vince-welnick-years"
+  ]
+}

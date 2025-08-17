@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1968-08-28",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star",
+      "duration": 645.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Dark Star.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint Stephen",
+      "duration": 211.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Saint Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Saint Stephen.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven",
+      "duration": 632.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 The Eleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 The Eleven.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Death Don't Have No Mercy",
+      "duration": 521.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Death Don't Have No Mercy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Death Don't Have No Mercy.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Turn On Your Lovelight",
+      "duration": 733.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Turn On Your Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Turn On Your Lovelight.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 959.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Good Morning Little Schoolgirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Good Morning Little Schoolgirl.mp3",
+          "bitrate": "170"
+        }
+      ]
+    }
+  ]
+}

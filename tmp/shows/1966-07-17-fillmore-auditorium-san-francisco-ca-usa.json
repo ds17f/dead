@@ -1,0 +1,109 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-07-17-fillmore-auditorium-san-francisco-ca-usa/",
+  "show_id": "1966-07-17-fillmore-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-07-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Big Boss Man",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Standing On The Corner",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": true
+        },
+        {
+          "name": "In The Pines",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cardboard Cowboy",
+          "url": "https://jerrygarcia.com/song/cardboard-cowboy/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Nobody's Fault But Mine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Jefferson Airplane"
+  ],
+  "collection_timestamp": "2025-08-10T08:00:46.382682",
+  "show_time": null,
+  "recordings": [
+    "gd1966-07-17.sbd.serafin.4458.shnf",
+    "gd66-07-17.sbd.miller.21064.sbeok.shnf",
+    "gd1966-07-17.13959.serafin-marmar-sbefix-4458.flac16"
+  ],
+  "best_recording": "gd1966-07-17.sbd.serafin.4458.shnf",
+  "avg_rating": 3.002479338842975,
+  "raw_rating": 4.285714285714286,
+  "recording_count": 3,
+  "confidence": 1.0,
+  "total_high_ratings": 23,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

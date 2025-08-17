@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-09-24",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "walk on",
+      "duration": 86.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d1t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias ->",
+      "duration": 828.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d1t02.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Montain",
+      "duration": 817.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d1t03.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Women Are Smarter",
+      "duration": 582.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d1t04.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Way To Go Home",
+      "duration": 395.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d1t05.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "He's Gone ->",
+      "duration": 850.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d2t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums ->",
+      "duration": 1172.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d2t02.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Last Time ->",
+      "duration": 361.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d2t03.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Days Between",
+      "duration": 607.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d2t04.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around and Around",
+      "duration": 589.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d2t05.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Liberty",
+      "duration": 397.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-24d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-24d2t06.mp3",
+          "bitrate": "206"
+        }
+      ]
+    }
+  ]
+}

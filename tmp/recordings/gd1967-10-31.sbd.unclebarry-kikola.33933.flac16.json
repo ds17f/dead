@@ -1,0 +1,94 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1967-10-31",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alligator-> drums",
+      "duration": 716.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-31.01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-31.01.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Caution (Do Not Step On Tracks) //",
+      "duration": 1100.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-31.02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-31.02.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envelopment ->",
+      "duration": 101.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-31.03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-31.03.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Other One ->",
+      "duration": 153.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-31.04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-31.04.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical Reprise",
+      "duration": 641.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-10-31.05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-10-31.05.mp3",
+          "bitrate": "171"
+        }
+      ]
+    }
+  ]
+}

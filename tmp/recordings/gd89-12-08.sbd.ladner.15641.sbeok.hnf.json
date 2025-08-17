@@ -1,0 +1,514 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1989-12-08",
+  "venue": "Great Western LA",
+  "location": "Inglewood, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Let The Good Times Roll",
+      "duration": 166.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t01_vbr.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Feel Like A Stranger",
+      "duration": 354.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t02_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Stagger Lee",
+      "duration": 283.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t03_vbr.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Beat It On Down The Line",
+      "duration": 119.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t04_vbr.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Ramble On Rose",
+      "duration": 310.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t05_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cassidy",
+      "duration": 243.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t06_vbr.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Blow Away",
+      "duration": 446.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d1t07_vbr.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Help On The Way >",
+      "duration": 162.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t01_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Slipknot! >",
+      "duration": 262.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t02.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t02_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Franklin's Tower",
+      "duration": 358.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t03_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain >",
+      "duration": 361.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t04.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t04_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone >",
+      "duration": 477.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t05_vbr.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums >",
+      "duration": 235.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t06_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space >",
+      "duration": 182.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d2t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d2t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d2t07_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Will Take You Home >",
+      "duration": 123.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d3t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t01_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One >",
+      "duration": 361.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t02.mp3",
+          "bitrate": "203"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d3t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t02_vbr.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 345.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d3t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t03_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones",
+      "duration": 355.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t04.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d3t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t04_vbr.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 394.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d3t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t05_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "U.S. Blues",
+      "duration": 217.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1989-12-08d3t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-08d3t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-08d3t06_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

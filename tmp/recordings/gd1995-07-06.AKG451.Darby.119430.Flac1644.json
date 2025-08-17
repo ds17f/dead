@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-07-06",
+  "venue": "Riverport Amphitheatre",
+  "location": "Maryland Heights, MO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd/Tuning",
+      "duration": 94.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t01.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half Step",
+      "duration": 490.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t02.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Take Me To The River",
+      "duration": 283.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big Boss Man",
+      "duration": 308.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tuning/Crowd",
+      "duration": 81.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle> *",
+      "duration": 167.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River *",
+      "duration": 351.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brown Eyed Women",
+      "duration": 410.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy, Set Break",
+      "duration": 456.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t09.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 65.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes Of The World",
+      "duration": 1156.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t11.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Unbroken Chain",
+      "duration": 458.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t12.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samba In The Rain>",
+      "duration": 413.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t13.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Truckin'>",
+      "duration": 590.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t14.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "He's Gone>",
+      "duration": 602.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t15.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums>",
+      "duration": 624.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t16.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space>",
+      "duration": 754.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t17.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Last Time>",
+      "duration": 378.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t18.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue>",
+      "duration": 475.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t19.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around, Encore Break",
+      "duration": 605.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t20.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Liberty",
+      "duration": 384.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1995-07-06.AKG451.t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1995-07-06.AKG451.t21.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

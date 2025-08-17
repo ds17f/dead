@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1977-03-19",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 409.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mama Tried",
+      "duration": 179.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02MamaTried.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Loser",
+      "duration": 491.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Loser.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big River",
+      "duration": 431.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BigRiver.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "They Love Each Other",
+      "duration": 426.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TheyLoveEachOther.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Look's Like Rain",
+      "duration": 515.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LooksLikeRain.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 520.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TennesseeJed.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Estimated Prophet",
+      "duration": 512.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08EstimatedProphet.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 24.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Terrapin Station",
+      "duration": 622.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TerrapinStation.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band",
+      "duration": 747.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11PlayingInTheBand.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson & Delilah",
+      "duration": 446.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SamsonDelilah.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' Reprise",
+      "duration": 667.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13PlayinReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayinReprise.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World",
+      "duration": 901.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14EyesOfTheWorld.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Dancin In The Streets",
+      "duration": 633.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15DancinInTheStreets.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15DancinInTheStreets.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Wharf Rat",
+      "duration": 588.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16WharfRat.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Franklins Tower",
+      "duration": 796.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17FranklinsTower.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia",
+      "duration": 587.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18SugarMagnolia.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 311.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19OneMoreSaturdayNight.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Uncle John's Band",
+      "duration": 566.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20UncleJohnsBand.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

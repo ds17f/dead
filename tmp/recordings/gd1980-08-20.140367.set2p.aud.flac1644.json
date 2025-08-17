@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-08-20",
+  "venue": "Uptown Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "01-Terrapin Station",
+      "duration": 806.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-terrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-terrapinStation.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums/Space",
+      "duration": 982.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-Drums-Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-Drums-Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "03-Not Fade Away",
+      "duration": 403.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03-notFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03-notFadeAway.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "04-Morning Dew",
+      "duration": 694.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04-morningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04-morningDew.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "05-Good Lovin",
+      "duration": 476.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05-goodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05-goodLovin.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "06-US Blues",
+      "duration": 321.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06-usBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06-usBlues.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

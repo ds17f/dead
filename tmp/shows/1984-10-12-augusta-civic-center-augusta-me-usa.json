@@ -1,0 +1,214 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-10-12-augusta-civic-center-augusta-me-usa/",
+  "show_id": "1984-10-12-augusta-civic-center-augusta-me-usa",
+  "band": "Grateful Dead",
+  "venue": "Augusta Civic Center",
+  "location_raw": "Augusta, ME",
+  "city": "Augusta",
+  "state": "ME",
+  "country": "USA",
+  "date": "1984-10-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "On The Road Again",
+          "url": "https://jerrygarcia.com/song/on-the-road-again/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Jack-A-Roe",
+          "url": "https://jerrygarcia.com/song/jack-a-roe/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Need Love",
+          "url": "https://jerrygarcia.com/song/dont-need-love/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:22.616243",
+  "show_time": null,
+  "recordings": [
+    "gd84-10-12.sbd.clugston.5585.sbeok.shnf",
+    "gd1984-10-12.132814.sbd.flac16",
+    "gd1984-10-12.nak100.holtz.gems.101952.flac16",
+    "gd84-10-12.nak-rice.clugston.356.sbeok.shnf",
+    "gd84-10-12-oade.sacks.8795.sbefail.shnf",
+    "gd84-10-12.aud.ladner.30192.sbeok.flacf",
+    "gd1984-10-12.mtx.seamons.117573.flac16",
+    "gd84-10-12.beyer-ficca.ficca.20022.sbeok.shnf",
+    "gd1984-10-12.beyerm88.suraci.77979.flac16",
+    "gd1984-10-12.143637.set2.nak.blend.guy.miller.clugston.flac1648",
+    "gd1984-10-12.139117.FOB.Neumann.U87.billydee.Sellers.Noel.t-flac24",
+    "gd1984-10-12.124399.chasingwilma.flac24",
+    "gd1984-10-12.148413.fob.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1984-10-12.nak700.rolfe.minches.99198.flac16",
+    "gd1984-10-12.nak300.morris.crazyfingers.106647.flac16",
+    "gd1984-10-12.132822.fob-schoeps.oade.BCE.flac16",
+    "gd1984-10-12.143086.schoeps.sterry.beckwith.miller.clugston.flac1648",
+    "gd1984-10-12.139563.FOB.Neumann.McSheffrey.Gastwirt.Miller.Noel.t-flac16",
+    "gd1984-10-12.110040.beyer-senn-daweez.D5scott.flac16",
+    "gd1984-10-12.148414.fob.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1984-10-12.schoeps.oade.sacks.nawrocki.fix-17412.18436.sbefail.shnf",
+    "gd1984-10-12.143087.schoeps.sterry.beckwith.miller.clugston.flac2496",
+    "gd1984-10-12.137580.aud.lamarre.berger.flac24",
+    "gd1984-10-12.168024.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1984-10-12.137579.aud.lamarre.berger.flac16",
+    "gd1984-10-12.schoeps.oade.sacks.17412.sbeok.shnf",
+    "gd1984-10-12.165103.fob.nak100.photoleon.flac2448",
+    "gd1984-10-12.nak300.morris.113966.flac24",
+    "gd1984-10-12.fob.townshend.85219.sbeok.flac16",
+    "gd1984-10-12.168025.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1984-10-12.132346.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1984-10-12.143638.set2.nak.blend.guy.miller.clugston.flac2496",
+    "gd1984-10-12.132345.Nak100CP4.Hill.Keo.Flac1644"
+  ],
+  "best_recording": "gd84-10-12.sbd.clugston.5585.sbeok.shnf",
+  "avg_rating": 2.226185344827586,
+  "raw_rating": 4.6,
+  "recording_count": 33,
+  "confidence": 1.0,
+  "total_high_ratings": 140,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 28,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun",
+    "brent-years"
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1991-10-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 69.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Help On The Way",
+      "duration": 253.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HelpOnTheWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HelpOnTheWay.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Slipknot!",
+      "duration": 330.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Slipknot.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Franklin's Tower",
+      "duration": 554.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04FranklinsTower.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 537.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LittleRedRooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 542.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Loser.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 357.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07JustLikeTomThumbsBlues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 847.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LetItGrow.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 47.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Scarlet Begonias",
+      "duration": 522.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ScarletBegonias.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Fire On The Mountain",
+      "duration": 744.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FireOnTheMountain.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin'",
+      "duration": 428.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Truckin.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Spoonful",
+      "duration": 424.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Spoonful.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Dark Star",
+      "duration": 650.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14DarkStar.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 897.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 598.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dark Star",
+      "duration": 353.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17DarkStar.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Last Time",
+      "duration": 350.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheLastTime.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Standing On The Moon",
+      "duration": 503.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StandingOnTheMoon.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 593.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ThrowingStones.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 526.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21NotFadeAway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 99.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Werewolves Of London",
+      "duration": 340.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23WerewolvesOfLondon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23WerewolvesOfLondon.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "rating": 1.575,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1968-09-20",
+  "venue": "Community Theatre",
+  "location": "Berkeley, CA",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 422.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-09-20d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-20d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Stage Banter",
+      "duration": 221.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-09-20d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-20d1t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Saint Stephen ->",
+      "duration": 279.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-09-20d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-20d1t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven ->",
+      "duration": 198.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-09-20d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-20d1t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 1597.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-09-20d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-09-20d1t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

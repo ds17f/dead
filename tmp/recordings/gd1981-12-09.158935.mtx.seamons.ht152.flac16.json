@@ -1,0 +1,293 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-12-09",
+  "venue": "Events Center, University Of Colorado",
+  "location": "Boulder, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cold Rain And Snow",
+      "duration": 567.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Jack Straw",
+      "duration": 460.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t02.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Friend Of The Devil >",
+      "duration": 572.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Little Red Rooster",
+      "duration": 220.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t04.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Bird Song",
+      "duration": 526.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Mama Tried >",
+      "duration": 309.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t06.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Mexicali Blues",
+      "duration": 389.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t07.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d3t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Candyman",
+      "duration": 375.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t08.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d2t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Cassidy",
+      "duration": 375.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-12-09d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-09d1t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

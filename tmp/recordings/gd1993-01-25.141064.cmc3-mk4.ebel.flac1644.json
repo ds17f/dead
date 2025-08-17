@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-01-25",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 843.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ShakedownStreet.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Same Thing",
+      "duration": 588.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TheSameThing.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 475.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Althea.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 159.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MamaTried.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Maggie's Farm",
+      "duration": 480.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MaggiesFarm.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 474.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LooseLucy.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Music Never Stopped",
+      "duration": 629.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MusicNeverStopped.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower",
+      "duration": 409.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ChinaCatSunflower.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 347.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09IKnowYouRider.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Long Way To Go Home",
+      "duration": 395.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10LongWayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10LongWayToGoHome.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Corrina",
+      "duration": 535.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Corrina.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playin' Reprise",
+      "duration": 533.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayinReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayinReprise.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band",
+      "duration": 747.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13UncleJohnsBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drumz",
+      "duration": 1060.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drumz.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 824.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "All Along The Watchtower",
+      "duration": 416.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16AllAlongTheWatchtower.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 642.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17WharfRat.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around & Around",
+      "duration": 745.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AroundAround.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Box Of Rain",
+      "duration": 316.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BoxOfRain.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

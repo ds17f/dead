@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-02-18",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Candyman [6:38] ;",
+      "duration": 613.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187101.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Big Boss Man [4:41] ;",
+      "duration": 339.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187102.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugar Magnolia [5:32] ;",
+      "duration": 512.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187103.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Saint Stephen [6:05] >",
+      "duration": 383.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187104.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Not Fade Away [4:33] >",
+      "duration": 269.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187105.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Goin' Down The Road Feeling Bad [4:54] >",
+      "duration": 301.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187106.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Not Fade Away [3:55] >",
+      "duration": 241.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187107.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Uncle John's Band",
+      "duration": 351.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd02187108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd02187108.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

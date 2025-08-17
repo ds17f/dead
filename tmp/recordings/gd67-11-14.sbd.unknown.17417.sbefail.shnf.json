@@ -1,0 +1,46 @@
+{
+  "rating": 2.2916666666666665,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-11-14",
+  "venue": "American Studios",
+  "location": "Hollywood, CA",
+  "raw_rating": 4.583333333333333,
+  "high_ratings": 12,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Born Cross-Eyed>Feedback",
+      "duration": 115.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-14d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-14d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dark Star",
+      "duration": 85.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-11-14d1t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-11-14d1t02.shn"
+        }
+      ]
+    }
+  ]
+}

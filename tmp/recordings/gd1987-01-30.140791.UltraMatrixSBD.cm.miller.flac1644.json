@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1987-01-30",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 34.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 383.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TouchOfGrey.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 490.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 517.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Candyman.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 165.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 402.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When Push Comes To Shove",
+      "duration": 398.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07WhenPushComesToShove.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Beat It On Down The Line",
+      "duration": 202.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BeatItOnDownTheLine.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 237.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PromisedLand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower",
+      "duration": 295.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ChinaCatSunflower.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 342.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11IKnowYouRider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 113.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Iko Iko",
+      "duration": 318.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13IkoIko.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 411.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ManSmartwomanSmarter.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ship Of Fools",
+      "duration": 551.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ShipOfFools.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Estimated Prophet",
+      "duration": 646.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16EstimatedProphet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Truckin'",
+      "duration": 535.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Truckin.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 626.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Other One",
+      "duration": 613.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TheOtherOne.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 533.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20WharfRat.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Throwing Stones",
+      "duration": 507.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21ThrowingStones.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Not Fade Away",
+      "duration": 457.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22NotFadeAway.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away",
+      "duration": 117.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23NotFadeAway.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Brokedown Palace",
+      "duration": 381.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24BrokedownPalace.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

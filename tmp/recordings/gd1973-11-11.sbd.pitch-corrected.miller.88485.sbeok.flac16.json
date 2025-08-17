@@ -1,0 +1,414 @@
+{
+  "rating": 2.4545454545454546,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-11-11",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.909090909090909,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "The Promised Land ->",
+      "duration": 180.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha ->",
+      "duration": 357.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 357.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 441.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Throated Wind",
+      "duration": 430.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "To Lay Me Down",
+      "duration": 482.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "El Paso",
+      "duration": 274.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 427.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Me And Bobby McGee",
+      "duration": 361.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower ->",
+      "duration": 557.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 355.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t11.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Me And My Uncle",
+      "duration": 194.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d1t12.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Loose Lucy",
+      "duration": 444.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d2t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Weather Report Suite ->",
+      "duration": 339.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d2t02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Let It Grow",
+      "duration": 547.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d2t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 506.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d2t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Big River",
+      "duration": 324.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d2t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dark Star ->",
+      "duration": 1903.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Mind Left Body Jam ->",
+      "duration": 263.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Eyes Of The World ->",
+      "duration": 815.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "China Doll",
+      "duration": 321.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t04.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sugar Magnolia",
+      "duration": 612.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t05.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Uncle John's Band",
+      "duration": 456.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t06.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Johnny B. Goode ->",
+      "duration": 232.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "And We Bid You Good Night",
+      "duration": 187.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-11-11d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-11d3t08.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

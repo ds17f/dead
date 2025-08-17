@@ -1,0 +1,382 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-07-06",
+  "venue": "Civic Arena",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 122.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 442.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FeelLikeAStranger.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower",
+      "duration": 512.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FranklinsTower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 521.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NewMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 605.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RowJimmy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 155.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MamaTried.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 432.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BigRiver.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Far From Me",
+      "duration": 368.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08FarFromMe.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Stagger Lee",
+      "duration": 309.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09StaggerLee.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Desolation Row",
+      "duration": 632.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DesolationRow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 224.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11DontEaseMeIn.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 51.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Tuning.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Shakedown Street",
+      "duration": 734.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ShakedownStreet.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samson And Delilah",
+      "duration": 490.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14SamsonAndDelilah.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Iko Iko",
+      "duration": 361.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15IkoIko.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Banana Boat Song (Day-O)",
+      "duration": 142.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16BananaBoatSongday-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16BananaBoatSongday-o.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 375.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ManSmartwomanSmarter.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 515.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 515.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 542.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20KnockinOnHeavensDoor.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Good Lovin'",
+      "duration": 466.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21GoodLovin.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 211.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Johnny B Goode",
+      "duration": 269.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23JohnnyBGoode.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

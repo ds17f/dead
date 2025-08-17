@@ -1,0 +1,94 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-05-03",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 125.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Introduction.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Introduction.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "He Was A Friend Of Mine",
+      "duration": 562.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HeWasAFriendOfMine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HeWasAFriendOfMine.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "That's It For The Other One",
+      "duration": 1302.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03ThatsItForTheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ThatsItForTheOtherOne.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Doin' That Rag",
+      "duration": 451.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04DoinThatRag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04DoinThatRag.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 211.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

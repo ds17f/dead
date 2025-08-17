@@ -1,0 +1,125 @@
+{
+  "url": "https://jerrygarcia.com/show/1970-02-11-fillmore-east-new-york-ny-usa-early-show/",
+  "show_id": "1970-02-11-fillmore-east-new-york-ny-usa-early-show",
+  "band": "Grateful Dead",
+  "venue": "Fillmore East",
+  "location_raw": "New York, NY",
+  "city": "New York",
+  "state": "NY",
+  "country": "USA",
+  "date": "1970-02-11",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Cryptical Envelopment",
+          "url": "https://jerrygarcia.com/song/cryptical-envelopment/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Casey Jones",
+          "url": "https://jerrygarcia.com/song/casey-jones/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Allman Brothers Band",
+    "Love"
+  ],
+  "collection_timestamp": "2025-08-10T08:17:10.386699",
+  "show_time": "early",
+  "recordings": [
+    "gd1970-02-11.partial.sbd.greenberg-evans.28402.sbeok.flac16",
+    "gd70-02-11.early-late.sbd.sacks.90.sbefail.shnf",
+    "gd1970-02-11.sbd.warner.patched.28292.sbeok.flac16",
+    "gd1970-02-11.sbd.smith.patched.99154.sbeok.flac16",
+    "gd1970-02-11.126251.sbd.wolfe-lee-smith.flac16",
+    "gd1970-02-11.part.s2.127482.sbd.menke.lee.smith.flac24"
+  ],
+  "best_recording": "gd1970-02-11.partial.sbd.greenberg-evans.28402.sbeok.flac16",
+  "avg_rating": 2.357009345794392,
+  "raw_rating": 4.766355140186916,
+  "recording_count": 6,
+  "confidence": 1.0,
+  "total_high_ratings": 103,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 6
+  },
+  "matching_method": "time_based",
+  "filtering_applied": [
+    "show_time: early"
+  ],
+  "collections": [
+    "guest-allman-brothers",
+    "pigpen-years"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-11-08",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Truckin' >",
+      "duration": 512.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t01-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t01-fixed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star >",
+      "duration": 966.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t02-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t02-fixed.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Main Ten >",
+      "duration": 351.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t03-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t03-fixed.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dancin' jam >",
+      "duration": 178.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t04-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t04-fixed.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dancin' in the Streets",
+      "duration": 680.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t05-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t05-fixed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Not Fade Away >",
+      "duration": 355.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t06-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t06-fixed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Goin' Down the Road Feeling Bad >",
+      "duration": 466.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t07-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t07-fixed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away >",
+      "duration": 154.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t08-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t08-fixed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Drums >",
+      "duration": 25.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t09-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t09-fixed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin' >",
+      "duration": 121.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t10-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t10-fixed.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums >",
+      "duration": 241.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t11-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t11-fixed.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Good Lovin'",
+      "duration": 552.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t12-fixed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t12-fixed.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

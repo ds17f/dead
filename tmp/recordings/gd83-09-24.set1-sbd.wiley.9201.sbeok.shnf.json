@@ -1,0 +1,174 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1983-09-24",
+  "venue": "Santa Cruz County Fairgrounds",
+  "location": "Watsonville, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Alabama Getaway",
+      "duration": 184.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Promised Land",
+      "duration": 168.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "They Love Each Other",
+      "duration": 292.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Me And My Uncle",
+      "duration": 110.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mexicali Blues",
+      "duration": 195.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Bird Song",
+      "duration": 378.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Hell In A Bucket",
+      "duration": 200.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Deep Elem Blues",
+      "duration": 199.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t08.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Looks Like Rain",
+      "duration": 290.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t09.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Keep Your Day Job",
+      "duration": 152.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-24d1t10.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-09-24d1t10.shn"
+        }
+      ]
+    }
+  ]
+}

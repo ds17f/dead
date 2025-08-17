@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-04-20",
+  "venue": "Providence Civic Center",
+  "location": "Providence, RI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 425.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TouchOfGrey.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 269.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02PromisedLand.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Loser",
+      "duration": 436.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Loser.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 490.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NewMinglewoodBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ramble On Rose",
+      "duration": 445.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05RambleOnRose.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle",
+      "duration": 190.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MeAndMyUncle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cumberland Blues",
+      "duration": 379.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07CumberlandBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 452.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LooksLikeRain.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sumflower",
+      "duration": 379.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ChinaCatSumflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ChinaCatSumflower.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 325.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IKnowYouRider.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 178.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11DontEaseMeIn.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

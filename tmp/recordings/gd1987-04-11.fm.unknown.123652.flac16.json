@@ -1,0 +1,286 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "FM",
+  "confidence": 0.0,
+  "date": "1987-04-11",
+  "venue": "UIC Pavilion",
+  "location": "Chicago, IL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 415.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 653.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 495.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 583.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tons Of Steel",
+      "duration": 321.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Desolation Row",
+      "duration": 728.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 291.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Music Never Stopped",
+      "duration": 466.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Touch Of Grey",
+      "duration": 363.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track09.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Men Smart/woman Smarter",
+      "duration": 468.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd1Track10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd1Track10.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Terrapin Station(tape Flip Edit In Song At 5:35 Track Time And Real Time)",
+      "duration": 691.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 918.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 400.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Wharf Rat",
+      "duration": 531.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Throwin'stones",
+      "duration": 521.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Not Fade Away(tape Flip Edit In Song At 52:12 Real Time Or 1:08 Track Time)",
+      "duration": 547.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Muddy River",
+      "duration": 477.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "cd2Track07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "cd2Track07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

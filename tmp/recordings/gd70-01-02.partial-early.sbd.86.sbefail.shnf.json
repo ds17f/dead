@@ -1,0 +1,68 @@
+{
+  "rating": 2.357142857142857,
+  "review_count": 21,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-01-02",
+  "venue": "Fillmore East (Late Show)",
+  "location": "New York City, NY",
+  "raw_rating": 4.714285714285714,
+  "high_ratings": 21,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star",
+      "duration": 1163.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-02bt01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-01-02bt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "St. Stephen",
+      "duration": 157.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-02bt02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-01-02bt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Eleven",
+      "duration": null,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd70-01-02bt03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Turn On Your Lovelight",
+      "duration": null,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd70-01-02bt04.shn"
+        }
+      ]
+    }
+  ]
+}

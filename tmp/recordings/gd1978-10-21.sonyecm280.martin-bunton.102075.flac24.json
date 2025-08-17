@@ -1,0 +1,398 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-10-21",
+  "venue": "Winterland Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mickey Hart Introduction",
+      "duration": 63.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Unknown song title",
+      "duration": 186.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Unknown song title",
+      "duration": 185.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Olin Arageed",
+      "duration": 1087.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Promised Land",
+      "duration": 421.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Sugaree",
+      "duration": 987.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Passenger",
+      "duration": 367.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 542.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d1tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d1tr08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain",
+      "duration": 698.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Stagger Lee",
+      "duration": 569.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Need A Miracle",
+      "duration": 493.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Bertha",
+      "duration": 428.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr04.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Good Lovin",
+      "duration": 579.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "It Must Have Been The Roses",
+      "duration": 496.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr06.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet",
+      "duration": 878.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "He's Gone",
+      "duration": 635.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d2tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d2tr08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 896.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr01.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Jam",
+      "duration": 338.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Got My Mojo Working",
+      "duration": 446.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Other One",
+      "duration": 438.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Stella Blue",
+      "duration": 715.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sugar Magnolia",
+      "duration": 335.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sunshine Daydream",
+      "duration": 277.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr07.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "US Blues",
+      "duration": 363.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1978-10-21-d3tr08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1978-10-21-d3tr08.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

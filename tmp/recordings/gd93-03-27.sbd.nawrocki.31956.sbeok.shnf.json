@@ -1,0 +1,655 @@
+{
+  "rating": 2.0217391304347827,
+  "review_count": 23,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1993-03-27",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 4.043478260869565,
+  "high_ratings": 19,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Estimated Prophet",
+      "duration": 373.48,
+      "formats": [
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d2t03new.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d2t03new.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t03new_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 37.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t01_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Hell in a Bucket",
+      "duration": 212.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t02_vbr.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Bertha",
+      "duration": 232.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t03_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Same Thing",
+      "duration": 224.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t04_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Peggy-O",
+      "duration": 181.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t05.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t05_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Queen Jane Approximately",
+      "duration": 221.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t06_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Broken Arrow",
+      "duration": 193.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t07_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Loose Lucy",
+      "duration": 239.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t08_vbr.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Cassidy",
+      "duration": 223.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t09.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t09_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Casey Jones",
+      "duration": 193.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t10.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d1t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d1t10.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d1t10_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 21.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t01_vbr.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes of the World",
+      "duration": 371.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t02_vbr.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Comes A Time",
+      "duration": 202.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d2t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t04_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Corrina",
+      "duration": 347.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d2t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t05_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 289.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d2t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d2t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d2t06_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 214.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t01_vbr.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 151.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t02_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "All Along the Watchtower",
+      "duration": 191.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t03.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t03_vbr.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Days Between",
+      "duration": 274.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t04_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night",
+      "duration": 158.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t05_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tuning",
+      "duration": 13.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t06.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t06_vbr.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "I Fought the Law",
+      "duration": 92.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t07_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Shakedown Street",
+      "duration": 525.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t08.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t08_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Wang Dang Doodle",
+      "duration": 280.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t09.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t09_vbr.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Lazy River Road",
+      "duration": 273.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t10.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd1993-03-27d3t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1993-03-27d3t10.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-03-27d3t10_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

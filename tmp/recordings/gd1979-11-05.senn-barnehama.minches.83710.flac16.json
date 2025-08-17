@@ -1,0 +1,382 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1979-11-05",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 99.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t001.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower ->",
+      "duration": 393.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t002.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 466.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t003.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 310.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t004.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 606.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t005.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 309.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t006.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stagger Lee",
+      "duration": 597.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t007.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Passenger",
+      "duration": 404.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t008.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t008.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Peggy-O",
+      "duration": 577.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t009.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t009.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 549.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d1t010.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d1t010.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 207.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t001.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Althea",
+      "duration": 886.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t002.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Easy To Love You",
+      "duration": 355.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t003.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World ->",
+      "duration": 1362.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t004.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Estimated Prophet ->",
+      "duration": 824.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t005.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Franklin's Tower ->",
+      "duration": 836.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t006.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Jam ->",
+      "duration": 311.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d2t007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d2t007.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums ->",
+      "duration": 432.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d3t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d3t001.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space ->",
+      "duration": 151.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d3t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d3t002.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Lost Sailor ->",
+      "duration": 389.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d3t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d3t003.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Saint Of Circumstance ->",
+      "duration": 307.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d3t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d3t004.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sugar Magnolia",
+      "duration": 645.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d3t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d3t005.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Casey Jones",
+      "duration": 358.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-05d3t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-05d3t006.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

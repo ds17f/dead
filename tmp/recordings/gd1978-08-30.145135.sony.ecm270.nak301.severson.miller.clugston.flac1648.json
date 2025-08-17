@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-08-30",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 301.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t01 Crowd.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Promised Land",
+      "duration": 488.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t02 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t02 Promised Land.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Sugaree",
+      "duration": 1292.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t03 Sugaree.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Mexicali Blues >",
+      "duration": 191.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t04 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t04 Mexicali Blues.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Mama Tried",
+      "duration": 349.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t05 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t05 Mama Tried.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Stagger Lee",
+      "duration": 563.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t06 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t06 Stagger Lee.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Looks Like Rain",
+      "duration": 689.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t07 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t07 Looks Like Rain.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Deal",
+      "duration": 484.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s1t08 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s1t08 Deal.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 262.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t01 Crowd.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "I Need A Miracle",
+      "duration": 697.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t02 I Need A Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t02 I Need A Miracle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Brown Eyed Women",
+      "duration": 567.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t03 Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t03 Brown Eyed Women.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 736.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t04 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t04 Estimated Prophet.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "The Other One >",
+      "duration": 546.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t05 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t05 The Other One.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Eyes Of The World >",
+      "duration": 1028.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t06 Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t06 Eyes Of The World.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 731.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t07 Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 457.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t08 Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "If I Had The World To Give >",
+      "duration": 629.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t09 If I Had The World To Give.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t09 If I Had The World To Give.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Iko Iko >",
+      "duration": 639.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t10 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t10 Iko Iko.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Around & Around",
+      "duration": 536.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t11 Around & Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t11 Around & Around.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Encore Break",
+      "duration": 176.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t12 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t12 Encore Break.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "US Blues",
+      "duration": 373.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30 s2t13 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30 s2t13 US Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1973-07-27",
+  "venue": "Grand Prix Racecourse",
+  "location": "Watkins Glen, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 119.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s1t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Big River",
+      "duration": 274.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "tuning",
+      "duration": 95.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Tennessee Je/d",
+      "duration": 451.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "We're Gonna Take /A Short Break",
+      "duration": 214.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 468.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s2t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "/Me And My Uncle",
+      "duration": 171.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s2t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "tuning",
+      "duration": 73.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s2t08.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Jam ->",
+      "duration": 1196.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s2t09.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wharf Rat",
+      "duration": 583.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s2t10.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Around And Around",
+      "duration": 331.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-07-27s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-07-27s2t11.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

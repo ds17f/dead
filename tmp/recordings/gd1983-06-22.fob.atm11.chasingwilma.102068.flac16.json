@@ -1,0 +1,254 @@
+{
+  "rating": 0.6,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-06-22",
+  "venue": "City Island",
+  "location": "Harrisburg, PA",
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel like A Stranger",
+      "duration": 690.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend of the devil",
+      "duration": 458.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "C.C. rider",
+      "duration": 936.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Ramble on rose",
+      "duration": 339.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "My Brother Esau",
+      "duration": 661.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Deal",
+      "duration": 480.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Hell in a bucket",
+      "duration": 754.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China cat sunflower",
+      "duration": 718.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I know you rider",
+      "duration": 393.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing in the band",
+      "duration": 292.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums",
+      "duration": 487.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 781.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 455.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I need a Miracle",
+      "duration": 465.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Stella Blue",
+      "duration": 323.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

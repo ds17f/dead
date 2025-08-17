@@ -1,0 +1,110 @@
+{
+  "rating": 2.8,
+  "review_count": 2,
+  "source_type": "FM",
+  "confidence": 0.4,
+  "date": "1968-10-12",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star ->",
+      "duration": 952.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-12s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-12s1t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St. Stephen ->",
+      "duration": 299.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-12s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-12s1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven ->",
+      "duration": 613.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-12s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-12s1t03.mp3",
+          "bitrate": "221"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Death Don't Have No Mercy",
+      "duration": 512.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-12s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-12s1t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "//Cryptical Envelopment -> Drums -> The Other One -> Cryptical Envelopment ->",
+      "duration": 1089.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-12s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-12s2t01.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "New Potato Caboose -> Jam//",
+      "duration": 416.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-10-12s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-10-12s2t02.mp3",
+          "bitrate": "205"
+        }
+      ]
+    }
+  ]
+}

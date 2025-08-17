@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-11-12",
+  "venue": "46th Street Rock Palace",
+  "location": "Brooklyn, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "1. Till the Morning Comes",
+      "duration": 105.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "1.TillTheMorningComes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "1.TillTheMorningComes.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "2. China Cat Sunflower",
+      "duration": 384.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2.ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2.ChinaCatSunflower.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "3. I Know You Rider",
+      "duration": 257.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3.IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3.IKnowYouRider.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "4. Mama Tried",
+      "duration": 159.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "4.MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "4.MamaTried.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "5. Good Lovin'",
+      "duration": 755.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5.GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5.GoodLovin.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "6. Good Lovin'",
+      "duration": 194.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "6.GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "6.GoodLovin.mp3",
+          "bitrate": "167"
+        }
+      ]
+    }
+  ]
+}

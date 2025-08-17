@@ -1,0 +1,446 @@
+{
+  "rating": 1.92,
+  "review_count": 1,
+  "source_type": "FM",
+  "confidence": 0.2,
+  "date": "1988-07-16",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Pre-Show (KPFA)",
+      "duration": 1275.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Pre-showkpfa.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Pre-showkpfa.mp3",
+          "bitrate": "227"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Tuning",
+      "duration": 195.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Tuning.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Music Never Stopped",
+      "duration": 288.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheMusicNeverStopped.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 784.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Sugaree.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 567.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LittleRedRooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 492.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Loser.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 534.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Far From Me",
+      "duration": 280.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08FarFromMe.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 738.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BirdSong.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Set Break (KPFA)",
+      "duration": 1977.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10SetBreakkpfa.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SetBreakkpfa.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Alexander Gradsky",
+      "duration": 438.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11AlexanderGradsky.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11AlexanderGradsky.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Set Break (KPFA)",
+      "duration": 961.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12SetBreakkpfa.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SetBreakkpfa.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tuning",
+      "duration": 21.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Tuning.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Cat Sunflower",
+      "duration": 341.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ChinaCatSunflower.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I KnowYou Rider",
+      "duration": 338.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15IKnowyouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15IKnowyouRider.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Looks Like Rain",
+      "duration": 558.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16LooksLikeRain.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Terrapin Station",
+      "duration": 714.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TerrapinStation.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums",
+      "duration": 971.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Drums.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space",
+      "duration": 604.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19Space.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "I Will Take You Home",
+      "duration": 219.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20IWillTakeYouHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20IWillTakeYouHome.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "The Other One",
+      "duration": 463.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21TheOtherOne.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Stella Blue",
+      "duration": 481.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22StellaBlue.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around And Around",
+      "duration": 219.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23AroundAndAround.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "One More Saturday Night",
+      "duration": 260.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24OneMoreSaturdayNight.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Encore Break",
+      "duration": 213.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25EncoreBreak.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 442.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26KnockinOnHeavensDoor.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Post-Show (KPFA)",
+      "duration": 1234.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27Post-showkpfa.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27Post-showkpfa.mp3",
+          "bitrate": "207"
+        }
+      ]
+    }
+  ]
+}

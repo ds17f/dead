@@ -1,0 +1,350 @@
+{
+  "rating": 2.2,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1983-04-09",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 4.4,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha->",
+      "duration": 401.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "West LA Fadeaway",
+      "duration": 851.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Candyman",
+      "duration": 392.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Minglewood Blues",
+      "duration": 498.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t04.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Minglewood Blues (repeat)",
+      "duration": 496.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown-Eyed Women",
+      "duration": 316.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Looks Like Rain",
+      "duration": 388.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "China Cat Sunflower->",
+      "duration": 373.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I Know You Rider",
+      "duration": 317.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d1-t09.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d1-t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Help On The Way->",
+      "duration": 274.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Slipknot!->",
+      "duration": 254.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Franklin's Tower->",
+      "duration": 588.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'->",
+      "duration": 393.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Smokestack Lightning Jam->",
+      "duration": 218.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums->//",
+      "duration": 551.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space->",
+      "duration": 286.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t07.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones->",
+      "duration": 497.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t08.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter->",
+      "duration": 452.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t09.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Goin' Down The Road Feelin' Bad->",
+      "duration": 330.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t10.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night",
+      "duration": 262.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t11.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "E: Satisfaction",
+      "duration": 324.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-04-09-d2-t12.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd83-04-09-d2-t12.shn"
+        }
+      ]
+    }
+  ]
+}

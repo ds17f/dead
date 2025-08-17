@@ -1,0 +1,350 @@
+{
+  "rating": 2.2049999999999996,
+  "review_count": 2,
+  "source_type": "AUD",
+  "confidence": 0.4,
+  "date": "1987-01-29",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 322.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 373.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 563.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 349.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ElPaso.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loser",
+      "duration": 465.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Loser.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Little Red Rooster",
+      "duration": 608.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LittleRedRooster.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Brown Eyed Women",
+      "duration": 374.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BrownEyedWomen.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 334.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Cassidy.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 225.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 26.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 489.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 630.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 491.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 709.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TerrapinStation.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 522.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 241.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16INeedAMiracle.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Stella Blue",
+      "duration": 451.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17StellaBlue.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 357.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Johnny B Goode",
+      "duration": 235.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19JohnnyBGoode.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 145.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 494.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 1.68,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1967-11-11",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Turn On Your Love Light",
+      "duration": 746.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Beat It On Down The Line",
+      "duration": 149.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t02.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Death Don't Have No Mercy",
+      "duration": 460.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little School Girl",
+      "duration": 722.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "tuning",
+      "duration": 120.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator >",
+      "duration": 737.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Caution (Do Not Stop on Tracks)",
+      "duration": 1185.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t07.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feedback",
+      "duration": 78.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11t08.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

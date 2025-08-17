@@ -1,0 +1,350 @@
+{
+  "rating": 3.0,
+  "review_count": 1,
+  "source_type": "SBD",
+  "confidence": 0.2,
+  "date": "1993-03-24",
+  "venue": "Dean Smith Center",
+  "location": "Chapel Hill, NC",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "100 tuning",
+      "duration": 152.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "100Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "100Tuning.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "101 Jack Straw",
+      "duration": 353.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "101JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "101JackStraw.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "102 Stagger Lee",
+      "duration": 343.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "102StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "102StaggerLee.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "103 Wang Dang Doodle",
+      "duration": 470.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "103WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "103WangDangDoodle.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "104 It Must Have Been the Roses",
+      "duration": 368.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "104ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "104ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "105 Stuck Inside of Mobile with the Memphis Blues Again",
+      "duration": 566.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "105StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "105StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "106 Tennessee Jed",
+      "duration": 542.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "106TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "106TennesseeJed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "107 Let it Grow",
+      "duration": 686.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "107LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "107LetItGrow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "200 tuning",
+      "duration": 113.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "200Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "200Tuning.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "201 Here Comes Sunshine",
+      "duration": 414.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "201HereComesSunshine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "201HereComesSunshine.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "202 Playin'",
+      "duration": 403.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "202Playin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "202Playin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "203 Box of Rain",
+      "duration": 340.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "203BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "203BoxOfRain.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "204 Crazy Fingers",
+      "duration": 773.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "204CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204CrazyFingers.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "205 Drums",
+      "duration": 861.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "205Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "205Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "206 Space",
+      "duration": 647.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "206Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "206Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "207 Spanish Jam",
+      "duration": 258.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "207SpanishJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "207SpanishJam.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "208 Goin' Down the Road Feelin' Bad",
+      "duration": 494.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "208GoinDownTheRoadFeelinBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "208GoinDownTheRoadFeelinBad.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "209 Throwing Stones",
+      "duration": 559.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "209ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "209ThrowingStones.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "210 Not Fade Away",
+      "duration": 535.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "210NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "210NotFadeAway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "900 crowd",
+      "duration": 182.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "900Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "900Crowd.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "901 Lucy in the Sky with Diamonds",
+      "duration": 276.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "901LucyInTheSkyWithDiamonds.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "901LucyInTheSkyWithDiamonds.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

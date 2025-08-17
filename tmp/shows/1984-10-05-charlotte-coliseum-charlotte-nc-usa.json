@@ -1,0 +1,204 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-10-05-charlotte-coliseum-charlotte-nc-usa/",
+  "show_id": "1984-10-05-charlotte-coliseum-charlotte-nc-usa",
+  "band": "Grateful Dead",
+  "venue": "Charlotte Coliseum",
+  "location_raw": "Charlotte, NC",
+  "city": "Charlotte",
+  "state": "NC",
+  "country": "USA",
+  "date": "1984-10-05",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Bertha",
+          "url": "https://jerrygarcia.com/song/bertha/",
+          "segue_into_next": true
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "West L.A. Fadeaway",
+          "url": "https://jerrygarcia.com/song/west-l-a-fadeaway/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dupree's Diamond Blues",
+          "url": "https://jerrygarcia.com/song/duprees-diamond-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Brown Eyed Women",
+          "url": "https://jerrygarcia.com/song/brown-eyed-women/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Johnny B. Goode",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:12.579325",
+  "show_time": null,
+  "recordings": [
+    "gd84-10-05.sbd.sacks.2591.sbeok.shnf",
+    "gd1984-10-05.nak100.holtz.townshend.fix-83161.83188.sbeok.flac16",
+    "gd84-10-05.nak.grace-cole.15528.sbeok.shnf",
+    "gd1984-10-05.133026.mtx.dusborne.flac16",
+    "gd1984-10-05.nak300.holtz.gems.87757.sbeok.flac16",
+    "gd1984-10-05.sonyecm23f.cohen.103309.sbeok.flac16",
+    "gd1984-10-05.beyerm88.suraci.77703.flac16",
+    "gd1984-10-05.127551.set1.schoeps.oade.BCE.flac1648",
+    "gd1984-10-05.132575.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1984-10-05.124130.chasingwilma.flac24",
+    "gd1984-10-05.148395.fob.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1984-10-05.109982.beyer-senn-daweez.D5scott.flac16",
+    "gd1984-10-05.158246.FOB.NAK100-SG.Anon-Noel.t-flac2448",
+    "gd1984-10-05.163563.nak304.thomas.miller.clugston.flac2496",
+    "gd1984-10-05.148396.fob.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1984-10-05.158245.FOB.NAK100-SG.Anon-Noel.t-flac16",
+    "gd1984-10-05.163562.nak304.thomas.miller.clugston.flac1648",
+    "gd1984-10-05.167673.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1984-10-05.132574.Nak100CP4.Hill.Keo.Flac1644",
+    "gd1984-10-05.167672.beyer.m160.vita.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd84-10-05.sbd.sacks.2591.sbeok.shnf",
+  "avg_rating": 1.8609813084112152,
+  "raw_rating": 3.8684210526315788,
+  "recording_count": 20,
+  "confidence": 1.0,
+  "total_high_ratings": 27,
+  "total_low_ratings": 2,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 19
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

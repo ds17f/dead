@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-03-27",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 84.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway",
+      "duration": 282.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02AlabamaGetaway.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 300.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03GreatestStoryEverTold.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West LA Fadeaway",
+      "duration": 494.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WestLaFadeaway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 549.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LittleRedRooster.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 385.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BrownEyedWomen.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Beat It On Down The Line",
+      "duration": 202.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BeatItOnDownTheLine.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 547.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TennesseeJed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 530.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheMusicNeverStopped.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 36.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Touch Of Grey",
+      "duration": 363.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11TouchOfGrey.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 481.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SamsonAndDelilah.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cumberland Blues",
+      "duration": 330.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13CumberlandBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Estimated Prophet",
+      "duration": 612.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14EstimatedProphet.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Eyes Of The World",
+      "duration": 504.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15EyesOfTheWorld.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 568.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 421.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Uncle John's Band",
+      "duration": 436.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18UncleJohnsBand.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Morning Dew",
+      "duration": 632.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MorningDew.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 118.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Johnny B Goode",
+      "duration": 318.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21JohnnyBGoode.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "rating": 2.4499999999999997,
+  "review_count": 2,
+  "source_type": "AUD",
+  "confidence": 0.4,
+  "date": "1980-12-12",
+  "venue": "Swing Auditorium",
+  "location": "San Bernardino, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 81.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t01.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway ->",
+      "duration": 254.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 340.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Friend of the Devil",
+      "duration": 676.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried ->",
+      "duration": 149.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 353.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Althea ->",
+      "duration": 508.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Little Red Rooster",
+      "duration": 567.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Peggy-O",
+      "duration": 416.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t09.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Looks Like Rain ->",
+      "duration": 478.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t10.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tennessee Jed ->",
+      "duration": 489.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t11.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Promised Land",
+      "duration": 254.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s1t12.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tuning",
+      "duration": 67.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Cat Sunflower ->",
+      "duration": 423.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Know You Rider ->",
+      "duration": 312.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Estimated Prophet ->",
+      "duration": 651.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t04.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "He's Gone ->",
+      "duration": 698.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Eyes of the World ->",
+      "duration": 597.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Drums ->",
+      "duration": 644.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Space ->",
+      "duration": 595.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truckin' ->",
+      "duration": 510.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Wharf Rat ->",
+      "duration": 579.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around & Around ->",
+      "duration": 246.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t11.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Good Lovin'",
+      "duration": 510.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t12.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Don't Ease Me In",
+      "duration": 203.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-12s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-12s2t13.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

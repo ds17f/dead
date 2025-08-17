@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1979-12-30",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 92.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t01 Crowd_Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "New Minglewood Blues",
+      "duration": 683.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t02 Minglewood.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t02 Minglewood.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Candyman",
+      "duration": 464.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t03 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t03 Candyman.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Me & My Uncle > Big River",
+      "duration": 592.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t04 M & MU_Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t04 M & MU_Big River.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Ramble On Rose",
+      "duration": 575.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t05 RoR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t05 RoR.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Lazy Lightning > Supplication >",
+      "duration": 556.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t06 LL_Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t06 LL_Supplication.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Deal",
+      "duration": 344.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s1t07 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s1t07 Deal.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 51.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Scarlet Begonias > Fire On The Mountain >",
+      "duration": 1179.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t02 Scarlet_Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t02 Scarlet_Fire.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Let It Grow >",
+      "duration": 797.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t03 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t03 Let It Grow.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Drums >",
+      "duration": 487.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t04 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t04 Drums.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Space >",
+      "duration": 383.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t05 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t05 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Truckin' >",
+      "duration": 420.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t06 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t06 Truckin'.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Wharf Rat >",
+      "duration": 570.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t07 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t07 Wharf Rat.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Around & Around >",
+      "duration": 253.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t08 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t08 A & A.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Johnny B. Goode",
+      "duration": 277.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t09 JBG.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t09 JBG.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Encore Break",
+      "duration": 57.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t10 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t10 Encore Break.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E1: Don't Ease Me In",
+      "duration": 311.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t11 E1_Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t11 E1_Don't Ease.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E2: Brokedwon Palace",
+      "duration": 325.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-30 s2t12 E2_Brokedown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-30 s2t12 E2_Brokedown.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

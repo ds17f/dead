@@ -1,0 +1,302 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-09-18",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket ->",
+      "duration": 493.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 629.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 437.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 410.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint My Masterpiece",
+      "duration": 355.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bird Song",
+      "duration": 616.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Shakedown Street ->",
+      "duration": 824.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Man Smart (Woman Smarter) ->",
+      "duration": 427.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Terrapin Station ->",
+      "duration": 805.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Drums ->",
+      "duration": 498.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Space ->",
+      "duration": 479.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t04.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 366.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "All Along The Watchtower ->",
+      "duration": 291.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Morning Dew ->",
+      "duration": 669.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Good Lovin' ->",
+      "duration": 257.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "La Bamba ->",
+      "duration": 93.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Good Lovin'",
+      "duration": 175.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t10.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 605.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-09-18d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-18d2t11.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "rating": 2.4,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1971-04-05",
+  "venue": "Manhattan Center",
+  "location": "New York, NY",
+  "raw_rating": 4.8,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain and Snow",
+      "duration": 200.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me and Bobby McGee",
+      "duration": 211.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Rub",
+      "duration": 167.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 208.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playin' In The Band",
+      "duration": 171.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big Railroad Blues",
+      "duration": 143.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me and My Uncle",
+      "duration": 127.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big Boss Man",
+      "duration": 188.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t08.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower >",
+      "duration": 193.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t09.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 200.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t10.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Casey Jones",
+      "duration": 180.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d1-t11.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d1-t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "intro",
+      "duration": 10.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin' >",
+      "duration": 269.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 175.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t03.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Other One >",
+      "duration": 77.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One Jam",
+      "duration": 212.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 277.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia",
+      "duration": 208.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t07.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I'm A King Bee",
+      "duration": 226.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t08.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Bertha",
+      "duration": 189.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t09.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Deal",
+      "duration": 183.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d2-t10.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d2-t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sing Me Back Home",
+      "duration": 255.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d3-t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d3-t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away >",
+      "duration": 144.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d3-t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d3-t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 216.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d3-t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d3-t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Turn On Your Lovelight",
+      "duration": 718.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-71-04-05-d3-t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-71-04-05-d3-t04.shn"
+        }
+      ]
+    }
+  ]
+}

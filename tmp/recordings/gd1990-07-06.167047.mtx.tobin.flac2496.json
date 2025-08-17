@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-07-06",
+  "venue": "Cardinal Stadium",
+  "location": "Louisville, KY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 46.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 377.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Hell In A Bucket.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 712.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Sugaree.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Easy To Love You",
+      "duration": 342.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Easy To Love You.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Easy To Love You.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 470.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Peggy-O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Peggy-O.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Desolation Row",
+      "duration": 731.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Desolation Row.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Desolation Row.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West LA Fadeaway",
+      "duration": 562.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 West LA Fadeaway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Picasso Moon",
+      "duration": 440.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Picasso Moon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Picasso Moon.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Ramble On Rose",
+      "duration": 567.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Ramble On Rose.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 485.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 The Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 The Music Never Stopped.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 427.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 China Cat Sunflower.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 360.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 I Know You Rider.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 428.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Man Smart (Woman Smarter).mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Standing On The Moon",
+      "duration": 645.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14 Standing On The Moon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Standing On The Moon.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "He's Gone",
+      "duration": 580.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 He's Gone.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Jam",
+      "duration": 805.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Jam.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 450.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Drums.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 593.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Truckin'",
+      "duration": 423.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Truckin'.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 689.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Wharf Rat.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 440.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21 Goin' Down The Road Feeling Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Goin' Down The Road Feeling Bad.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around And Around",
+      "duration": 427.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22 Around And Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Around And Around.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 463.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23 It's All Over Now, Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 It's All Over Now, Baby Blue.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

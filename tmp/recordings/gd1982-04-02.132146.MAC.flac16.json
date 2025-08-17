@@ -1,0 +1,398 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1982-04-02",
+  "venue": "Cameron Indoor Stadium, Duke U",
+  "location": "Durham, NC",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Minglewood Blues ->",
+      "duration": 426.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D101.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 688.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D102.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Crowd/tuning",
+      "duration": 93.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D103.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried ->",
+      "duration": 162.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D104.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 294.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D105.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 466.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D106.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Little Red Rooster...(tape flip)",
+      "duration": 483.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D107.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Candyman",
+      "duration": 446.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D108.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain ->",
+      "duration": 544.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D109.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower ->",
+      "duration": 282.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D110.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 513.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D111.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson & Delilah",
+      "duration": 466.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D201.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "It Must Have Been The Roses*",
+      "duration": 413.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D202.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Women Are Smarter....(*w/one channel drop outs)",
+      "duration": 355.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D203.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "He's Gone* ->",
+      "duration": 621.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D204.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin' ->",
+      "duration": 282.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D205.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Other One Tease ->",
+      "duration": 582.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D206.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums -> (tape flip)",
+      "duration": 58.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D207.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Drums ->",
+      "duration": 528.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D208.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Space ->",
+      "duration": 261.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D209.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "The Other One ->",
+      "duration": 873.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D210.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D210.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Black Peter ->",
+      "duration": 519.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D211.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D211.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sugar Magnolia/",
+      "duration": 348.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D212.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D212.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "SSDD.................(tacked on from the end of tape one)",
+      "duration": 243.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D213.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D213.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

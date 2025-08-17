@@ -1,0 +1,142 @@
+{
+  "rating": 0.5249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1986-06-21",
+  "venue": "Greek Theatre - University of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 1.5,
+  "high_ratings": 0,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway ->",
+      "duration": 257.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Promised Land",
+      "duration": 239.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 494.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C C Rider",
+      "duration": 490.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loser",
+      "duration": 380.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Desolation Row",
+      "duration": 638.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Cat Sunflower ->",
+      "duration": 304.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t07.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Know You Rider",
+      "duration": 368.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-06-21d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-06-21d1t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

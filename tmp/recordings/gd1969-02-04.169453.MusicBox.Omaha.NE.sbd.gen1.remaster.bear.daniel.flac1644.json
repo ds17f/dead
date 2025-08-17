@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-02-04",
+  "venue": "The Music Box",
+  "location": "Omaha, NE",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Mornin' Little School Girl",
+      "duration": 544.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01 Good Morning Little School Girl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01 Good Morning Little School Girl.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "banter / tuning",
+      "duration": 132.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02 banter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02 banter.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Morning Dew",
+      "duration": 549.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03 Morning Dew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03 Morning Dew.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "banter / tuning",
+      "duration": 97.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04 banter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04 banter.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Dark Star >",
+      "duration": 812.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05 Dark Star.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "St. Stephen >",
+      "duration": 380.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06 St Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06 St Stephen.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Eleven >",
+      "duration": 631.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07 The Eleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07 The Eleven.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Death Don't Have No Mercy",
+      "duration": 581.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08 Death Don't Have No Mercy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08 Death Don't Have No Mercy.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "That's It For The Other One >",
+      "duration": 704.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09 That's It For The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09 That's It For The Other One.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Alligator >",
+      "duration": 756.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10 Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10 Alligator.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Caution (Do Not Stop At Tracks) >",
+      "duration": 542.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11 Caution.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11 Caution.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Feedback",
+      "duration": 153.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12 Feedback.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12 Feedback.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

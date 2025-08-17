@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1986-03-19",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 205.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t01 Crowd.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Hell In A Bucket",
+      "duration": 395.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t02 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t02 Hell In A Bucket.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Stagger Lee",
+      "duration": 420.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t03 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t03 Stagger Lee.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "CC Rider",
+      "duration": 482.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t04 CC Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t04 CC Rider.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Cold Rain & Snow",
+      "duration": 398.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t05 CR & S.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t05 CR & S.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Beat It On Down The Line",
+      "duration": 223.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t06 BIODTL.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t06 BIODTL.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Big Railroad Blues >",
+      "duration": 230.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t07 Big RR Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t07 Big RR Blues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Looks Like Rain",
+      "duration": 555.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t08 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t08 LLR.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Visions Of Johanna",
+      "duration": 628.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t09 Visions.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t09 Visions.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "The Music Never Stopped >",
+      "duration": 438.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t10 TMNS.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t10 TMNS.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Don't Ease Me In",
+      "duration": 189.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s1t11 Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s1t11 Don't Ease.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 59.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t01 Crowd.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "China Cat Sunflower >",
+      "duration": 360.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t02 China Cat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t02 China Cat.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "I Know You Rider",
+      "duration": 363.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t03 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t03 IKYR.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Playin' In The Band >",
+      "duration": 954.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t04 Playin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t04 Playin'.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums >",
+      "duration": 431.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t05 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t05 Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space >",
+      "duration": 214.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t06 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t06 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "The Wheel >",
+      "duration": 298.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t07 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t07 Wheel.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Truckin' >",
+      "duration": 469.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t08 Truckin '.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t08 Truckin '.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Black Peter >",
+      "duration": 484.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t09 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t09 Black Peter.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Around & Around >",
+      "duration": 213.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t10 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t10 A & A.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Johnny B. Goode",
+      "duration": 273.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t11 JBG.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t11 JBG.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "E: The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 275.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-03-19 s2t12 E_Mighty Quinn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-03-19 s2t12 E_Mighty Quinn.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

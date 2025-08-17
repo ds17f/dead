@@ -1,0 +1,393 @@
+{
+  "rating": 2.4,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1993-08-21",
+  "venue": "Autzen Stadium - University of Oregon",
+  "location": "Eugene, OR",
+  "raw_rating": 4.8,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Oregon Trail Mix''",
+      "duration": 638.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d01t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower",
+      "duration": 498.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 359.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Long Way Home",
+      "duration": 414.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Truckin'",
+      "duration": 417.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 325.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Smokestack Lightning",
+      "duration": 277.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums ->",
+      "duration": 54.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Space ->",
+      "duration": 1238.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d02t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "More stories",
+      "duration": 481.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d02t09.flac"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "This Will Be The Last Time->",
+      "duration": 385.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d03t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Standing On The Moon ->",
+      "duration": 563.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d03t02.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "one more saturday night",
+      "duration": 306.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d03t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Fought The Law",
+      "duration": 216.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d03t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Post Show Interview",
+      "duration": 124.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21d03t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Here Comes Sunshine",
+      "duration": 455.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t02.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Walkin' Blues",
+      "duration": 510.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Lazy River Road",
+      "duration": 452.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t04.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Queen Jane",
+      "duration": 438.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t05.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Bird Song",
+      "duration": 884.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t06.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Promised Land",
+      "duration": 290.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t07.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Interview with Vince Welnick",
+      "duration": 310.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t08.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Story: Sneaking into Winterland",
+      "duration": 188.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "More stories",
+      "duration": 90.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-08-21s01t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-08-21s01t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

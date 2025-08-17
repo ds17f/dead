@@ -1,0 +1,142 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1988-04-01",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Mississippi Half Step",
+      "duration": 368.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t01.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Jack Straw",
+      "duration": 203.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t02.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "To Lay Me Down",
+      "duration": 346.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Ballad of a Thin Man",
+      "duration": 255.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t04.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Push Comes To Shove",
+      "duration": 213.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t05.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Minglewood Blues",
+      "duration": 314.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t06.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Cumberland Blues",
+      "duration": 220.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t07.mp3",
+          "bitrate": "200"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Deal",
+      "duration": 289.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1988-04-01s1t08.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1988-04-01s1t08.shn"
+        }
+      ]
+    }
+  ]
+}

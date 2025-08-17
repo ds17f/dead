@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-02-11",
+  "venue": "Great Western LA Forum",
+  "location": "Inglewood, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd89-02-11 s1 tTuning",
+      "duration": 192.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T01Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd89-02-11 s1 tMississippi Half-Step Uptown Toodeloo",
+      "duration": 503.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T02MississippiHalf-stepUptownToodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T02MississippiHalf-stepUptownToodeloo.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd89-02-11 s1 tNew Minglewood Blues",
+      "duration": 560.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T03NewMinglewoodBlues.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd89-02-11 s1 tCandyman",
+      "duration": 477.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T04Candyman.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd89-02-11 s1 tBig River",
+      "duration": 354.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T05BigRiver.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd89-02-11 s1 tBuilt To Last",
+      "duration": 315.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T06BuiltToLast.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T06BuiltToLast.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd89-02-11 s1 tQueen Jane Approximately",
+      "duration": 463.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T07QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T07QueenJaneApproximately.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd89-02-11 s1 tWe Can Run",
+      "duration": 285.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T08WeCanRun.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T08WeCanRun.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd89-02-11 s1 tBird Song",
+      "duration": 733.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-11S1T09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-11S1T09BirdSong.mp3",
+          "bitrate": "167"
+        }
+      ]
+    }
+  ]
+}

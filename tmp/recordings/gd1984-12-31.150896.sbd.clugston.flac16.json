@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1984-12-31",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "t01",
+      "title": "Shakedown Street",
+      "duration": 1011.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t01 Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t01 Shakedown Street.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "t02",
+      "title": "New Minglewood Blues",
+      "duration": 524.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t02 Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t02 Minglewood Blues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "t03",
+      "title": "Peggy O",
+      "duration": 401.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t03 Peggy O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t03 Peggy O.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "t04",
+      "title": "Jack Straw >",
+      "duration": 302.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t04 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t04 Jack Straw.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "t05",
+      "title": "Bird Song",
+      "duration": 768.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t05 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t05 Bird Song.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "t06",
+      "title": "Hell In A Bucket >",
+      "duration": 363.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t06 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t06 Hell In A Bucket.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "t07",
+      "title": "Don't Ease Me In",
+      "duration": 200.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t07 Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t07 Don't Ease.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "t08",
+      "title": "Sugar Magnolia >",
+      "duration": 377.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t08 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t08 Sugar Magnolia.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "t09",
+      "title": "Scarlet Begonias >",
+      "duration": 779.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t09 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t09 Scarlet Begonias.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "t10",
+      "title": "Fire On The Mountain",
+      "duration": 728.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t10 Fire On The Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t10 Fire On The Mountain.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "t11",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 437.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t11 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t11 Man Smart (Woman Smarter).mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "t12",
+      "title": "Drums >",
+      "duration": 743.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t12 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t12 Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "t13",
+      "title": "Space >",
+      "duration": 462.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t13 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t13 Space.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "t14",
+      "title": "Spanish Jam >",
+      "duration": 412.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t14 Spanish Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t14 Spanish Jam.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "t15",
+      "title": "The Wheel >",
+      "duration": 307.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t15 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t15 The Wheel.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "t16",
+      "title": "Throwing Stones >",
+      "duration": 470.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t16 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t16 Throwing Stones.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "t17",
+      "title": "Turn On Your Lovelight",
+      "duration": 483.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t17 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t17 Lovelight.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "t18",
+      "title": "Gimme Some Lovin' >",
+      "duration": 301.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t18 Gimme Some Love Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t18 Gimme Some Love Lovin'.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "t19",
+      "title": "Uncle John's Band >",
+      "duration": 451.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t19 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t19 Uncle John's Band.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "t20",
+      "title": "Around & Around >",
+      "duration": 331.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t20 Around & Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t20 Around & Around.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "t21",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 426.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-12-31 t21 It's All Over Now, Bably Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-31 t21 It's All Over Now, Bably Blue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

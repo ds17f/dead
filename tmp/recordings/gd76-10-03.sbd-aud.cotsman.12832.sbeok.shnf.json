@@ -1,0 +1,474 @@
+{
+  "rating": 2.125,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1976-10-03",
+  "venue": "Cobo Arena",
+  "location": "Detroit, MI",
+  "raw_rating": 4.25,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Sugaree",
+      "duration": 201.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "tuning",
+      "duration": 109.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t02.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "New Minglewood Blues",
+      "duration": 163.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Ramble On Rose",
+      "duration": 245.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "tuning",
+      "duration": 88.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Looks Like Rain",
+      "duration": 239.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t06.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Loser",
+      "duration": 246.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t07.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "El Paso",
+      "duration": 136.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t08.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Scarlet Begonias",
+      "duration": 431.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t09.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 248.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t10.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d1t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson & Delilah",
+      "duration": 256.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d2t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "It Must Have Been The Roses",
+      "duration": 205.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d2t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playin' In The Band-->",
+      "duration": 456.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t01.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums-->",
+      "duration": 101.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t02.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel-->",
+      "duration": 179.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t03.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Jam-->",
+      "duration": 160.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t04.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Good Lovin'-->",
+      "duration": 153.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t05.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Jam-->",
+      "duration": 117.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t06.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t06.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Comes A Time-->",
+      "duration": 295.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t07.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t07.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Dancin' In The Streets-->",
+      "duration": 271.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t08.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t08.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away-->",
+      "duration": 440.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t09.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t09.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Dancin' In The Streets-->",
+      "duration": 130.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t10.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t10.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Around & Around",
+      "duration": 248.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d3t11.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Ogg Vorbis",
+          "filename": "gd76-10-03d3t11.ogg"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d3t11.shn"
+        }
+      ]
+    }
+  ]
+}

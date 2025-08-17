@@ -1,0 +1,222 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-06-05",
+  "venue": "Giants Stadium",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd93-06-05 s2 tCrowd",
+      "duration": 112.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T01Crowd.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd93-06-05 s2 tScarlet Begonias",
+      "duration": 507.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T02ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T02ScarletBegonias.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd93-06-05 s2 tFire On The Mountain",
+      "duration": 704.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T03FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T03FireOnTheMountain.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd93-06-05 s2 tWay To Go Home",
+      "duration": 397.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T04WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T04WayToGoHome.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd93-06-s2 tCrazy Fingers",
+      "duration": 530.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T05CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T05CrazyFingers.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd93-06-05 s2 tEstimated Prophet",
+      "duration": 711.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T06EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T06EstimatedProphet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd93-06-05 s2 tDrums",
+      "duration": 955.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T07Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd93-06-05 s2 tSpace",
+      "duration": 564.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T08Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd93-06-05 s2 tThe Other One",
+      "duration": 693.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T09TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T09TheOtherOne.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd93-06-05 s2 tStella Blue",
+      "duration": 416.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T10StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T10StellaBlue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd93-06-05 s2 tOne More Saturday Night",
+      "duration": 300.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T11OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T11OneMoreSaturdayNight.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd93-06-05 s2 tEncore Break",
+      "duration": 200.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T12EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T12EncoreBreak.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd93-06-05 s2 tBox Of Rain",
+      "duration": 349.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd93-06-05S2T13BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd93-06-05S2T13BoxOfRain.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

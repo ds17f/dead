@@ -1,0 +1,203 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-11-01",
+  "venue": "McGaw Memorial Hall, Northwestern University",
+  "location": "Evanston, IL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew >",
+      "duration": 813.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t01_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Playing In The Band >",
+      "duration": 895.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t02_vbr.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Uncle John's Band >",
+      "duration": 488.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t03_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Playing In The Band",
+      "duration": 412.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t04.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d1t04_vbr.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 481.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t01_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "He's Gone >",
+      "duration": 629.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t02_vbr.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Truckin' >",
+      "duration": 621.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t03_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat",
+      "duration": 583.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t04.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t04_vbr.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugar Magnolia",
+      "duration": 611.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t05.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-11-01set2d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-11-01set2d2t05_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-18",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel's Like A Stranger",
+      "duration": 438.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01FeelsLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01FeelsLikeAStranger.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklins Tower",
+      "duration": 541.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FranklinsTower.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Never Trust A Women",
+      "duration": 493.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NeverTrustAWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NeverTrustAWomen.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big Railroad Blues",
+      "duration": 381.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BigRailroadBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BigRailroadBlues.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Memphis Blues",
+      "duration": 649.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MemphisBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MemphisBlues.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 369.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06StaggerLee.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Promised Land",
+      "duration": 289.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07PromisedLand.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 312.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08NotFadeAway.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Scarlet Begonias",
+      "duration": 406.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ScarletBegonias.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Fire On The Mountain",
+      "duration": 643.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10FireOnTheMountain.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Women Are Smarter",
+      "duration": 452.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11WomenAreSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11WomenAreSmarter.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drumz",
+      "duration": 613.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Drumz.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 616.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Other One",
+      "duration": 233.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TheOtherOne.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Wharf Rat",
+      "duration": 541.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15WharfRat.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Throwing Stones",
+      "duration": 632.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ThrowingStones.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 379.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17NotFadeAway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Muddy River",
+      "duration": 369.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BlackMuddyRiver.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

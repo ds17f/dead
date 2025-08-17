@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1978-04-16",
+  "venue": "Huntington Civic Center",
+  "location": "Huntington, WV",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd78-04-16d1t01_Jack Staw",
+      "duration": 346.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t01_jackStaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t01_jackStaw.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd78-04-16d1t02_Dire Wolf",
+      "duration": 211.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t02_direWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t02_direWolf.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cassidy",
+      "duration": 270.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-16d1t03_Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-16d1t03_Cassidy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy - O",
+      "duration": 462.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-04-16d1t04_Peggy-O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-04-16d1t04_Peggy-O.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd78-04-16d1t05_Mexicali Blues",
+      "duration": 205.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t05_mexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t05_mexicaliBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd78-04-16d1t06_Mama Tried",
+      "duration": 156.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t06_mamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t06_mamaTried.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd78-04-16d1t07_They Love Each Other",
+      "duration": 416.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t07_theyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t07_theyLoveEachOther.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd78-04-16d1t08_New Minglewood Blues",
+      "duration": 331.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t08_newMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t08_newMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd78-04-16d1t09_Scarlet Begonias",
+      "duration": 593.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t09_scarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t09_scarletBegonias.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd78-04-16d1t10_Fire On The Mountain",
+      "duration": 548.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t10_fireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t10_fireOnTheMountain.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd78-04-16d1t11_Samson And Delilah",
+      "duration": 424.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t11_samsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t11_samsonAndDelilah.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd78-04-16d1t12_Ship Of Fools",
+      "duration": 466.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d1t12_shipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d1t12_shipOfFools.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd78-04-16d2t01_Estimated Prophet",
+      "duration": 749.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d2t01_estimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d2t01_estimatedProphet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd78-04-16d2t02_Eyes Of the World",
+      "duration": 695.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d2t02_eyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d2t02_eyesOfTheWorld.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd78-04-16d2t03_Drums Space",
+      "duration": 1148.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d2t03_drumsSpace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d2t03_drumsSpace.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd78-04-16d2t04_Iko Iko",
+      "duration": 715.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d2t04_ikoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d2t04_ikoIko.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd78-04-16d2t05_Sugar Magnolia",
+      "duration": 587.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d2t05_sugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d2t05_sugarMagnolia.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd78-04-16d2t06_U.S. Blues",
+      "duration": 325.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd78-04-16d2t06_u.s.Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd78-04-16d2t06_u.s.Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

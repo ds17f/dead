@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-07-01",
+  "venue": "San Diego Sports Arena",
+  "location": "San Diego, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd80-07-tTuning",
+      "duration": 279.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T01Tuning.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd80-07-01 tJack Straw",
+      "duration": 355.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T02JackStraw.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd80-07-01 tFranklin's Tower",
+      "duration": 784.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T03FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T03FranklinsTower.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd80-07-01 tEl Paso",
+      "duration": 398.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T04ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T04ElPaso.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd80-07-01 tTennessee Jed",
+      "duration": 644.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T05TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T05TennesseeJed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd80-07-01 tLazy Lightning",
+      "duration": 203.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T06LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T06LazyLightning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd80-07-01 tSupplication",
+      "duration": 479.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T07Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T07Supplication.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd80-07-01 tAlthea",
+      "duration": 538.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T08Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd80-07-01 tLost Sailor",
+      "duration": 364.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T09LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T09LostSailor.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd80-07-01 tSaint Of Circumstance",
+      "duration": 379.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T10SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T10SaintOfCircumstance.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd80-07-01 tChina Cat Sunflower",
+      "duration": 510.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T11ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T11ChinaCatSunflower.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd80-07-01 tI Know You Rider",
+      "duration": 379.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T12IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T12IKnowYouRider.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd80-07-01 tCC Rider",
+      "duration": 422.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T13CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T13CcRider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd80-07-01 tPeggy O",
+      "duration": 440.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T14PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T14PeggyO.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd80-07-01 tFar From Me",
+      "duration": 259.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T15FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T15FarFromMe.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd80-07-01 tUncle John's Band",
+      "duration": 452.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T16UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T16UncleJohnsBand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd80-07-01 tPlayin' In The Band",
+      "duration": 656.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T17PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T17PlayinInTheBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd80-07-01 tDrums",
+      "duration": 528.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T18Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T18Drums.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd80-07-01 tSpace",
+      "duration": 365.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T19Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T19Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd80-07-01 tTruckin'",
+      "duration": 513.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T20Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T20Truckin.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd80-07-01 tWharf Rat",
+      "duration": 625.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T21WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T21WharfRat.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd80-07-01 tAround & Around",
+      "duration": 249.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T22AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T22AroundAround.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd80-07-01 tGood Lovin'",
+      "duration": 432.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T23GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T23GoodLovin.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd80-07-01 tAlabama Getaway",
+      "duration": 308.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T24AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T24AlabamaGetaway.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd80-07-01 tPromised Land",
+      "duration": 262.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd80-07-01T25PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd80-07-01T25PromisedLand.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

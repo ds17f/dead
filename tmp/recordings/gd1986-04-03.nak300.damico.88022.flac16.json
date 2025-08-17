@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-04-03",
+  "venue": "Hartford Civic Center",
+  "location": "Hartford, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 517.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc101.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 449.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc102.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 409.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc103.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle >",
+      "duration": 181.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc104.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 285.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc105.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Bird Song",
+      "duration": 686.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc106.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Supplication Jam >",
+      "duration": 228.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc107.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow >",
+      "duration": 670.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc108.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 199.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc109.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Uncle John's Band >",
+      "duration": 463.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc201.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playin' In The Band >",
+      "duration": 855.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc202.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Don't Need Love >",
+      "duration": 410.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc203.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums >",
+      "duration": 744.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc204.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space >",
+      "duration": 101.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc301.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Other One >",
+      "duration": 394.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc302.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Wharf Rat >",
+      "duration": 556.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc303.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Around and Around >",
+      "duration": 228.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc304.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 644.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc305.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 446.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "disc306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "disc306.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

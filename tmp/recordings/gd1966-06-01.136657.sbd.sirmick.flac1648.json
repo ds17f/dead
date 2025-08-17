@@ -1,0 +1,46 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1966-06-01",
+  "venue": "Unknown",
+  "location": "Unknown",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "unknown song - several instrumental takes",
+      "duration": 286.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt01.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "unknown song - Phil vocal and Jerry harmony > talking",
+      "duration": 243.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1977-02-27",
+  "venue": "Robertson Gym, U.C.S.B.",
+  "location": "Santa Barbara, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Terrapin Station >",
+      "duration": 13.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Terrapin Station.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Morning Dew",
+      "duration": 824.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Morning Dew.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugar Magnolia",
+      "duration": 556.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Sugar Magnolia.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Encore Break",
+      "duration": 65.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Encore Break.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Johnny B. Goode",
+      "duration": 306.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Johnny B Goode.flac"
+        }
+      ]
+    }
+  ]
+}

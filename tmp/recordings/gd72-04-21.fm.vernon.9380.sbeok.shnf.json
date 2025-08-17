@@ -1,0 +1,126 @@
+{
+  "rating": 1.90625,
+  "review_count": 16,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-04-21",
+  "venue": "Beat Club",
+  "location": "Bremen, GE",
+  "raw_rating": 3.8125,
+  "high_ratings": 11,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Loser",
+      "duration": 218.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Black Throated Wind",
+      "duration": 633.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Bertha",
+      "duration": 222.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Playing In The Band",
+      "duration": 438.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Truckin'",
+      "duration": 382.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Drums",
+      "duration": 79.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Other One",
+      "duration": 912.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-04-21d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-04-21d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

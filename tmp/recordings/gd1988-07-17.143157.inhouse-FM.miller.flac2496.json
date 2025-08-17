@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1988-07-17",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 27.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Foolish Heart",
+      "duration": 477.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FoolishHeart.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 295.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03GreatestStoryEverTold.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Althea",
+      "duration": 562.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Althea.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 169.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 504.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BigRiver.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Candyman",
+      "duration": 458.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Candyman.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Let It Grow",
+      "duration": 782.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LetItGrow.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 19.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Box Of Rain",
+      "duration": 310.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10BoxOfRain.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Victim Or The Crime",
+      "duration": 361.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11VictimOrTheCrime.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Crazy Fingers",
+      "duration": 506.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12CrazyFingers.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 364.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingInTheBand.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 537.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14UncleJohnsBand.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 554.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 520.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 388.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All Along The Watchtower",
+      "duration": 283.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AllAlongTheWatchtower.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Believe It Or Not",
+      "duration": 452.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19BelieveItOrNot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BelieveItOrNot.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 574.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ThrowingStones.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 315.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21NotFadeAway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 230.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away",
+      "duration": 81.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23NotFadeAway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Blackbird",
+      "duration": 159.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24Blackbird.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24Blackbird.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Brokedown Palace",
+      "duration": 333.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "25BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25BrokedownPalace.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

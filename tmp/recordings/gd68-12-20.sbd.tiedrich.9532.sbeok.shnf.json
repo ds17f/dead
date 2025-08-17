@@ -1,0 +1,78 @@
+{
+  "rating": 2.8,
+  "review_count": 5,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-12-20",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "The Eleven",
+      "duration": 243.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1968-12-20-d1t1.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1968-12-20-d1t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "tuning",
+      "duration": 52.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1968-12-20-d1t2.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1968-12-20-d1t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Mountains Of The Moon",
+      "duration": 183.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1968-12-20-d1t3.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1968-12-20-d1t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Turn On Your Lovelight",
+      "duration": 502.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-1968-12-20-d1t4.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-1968-12-20-d1t4.shn"
+        }
+      ]
+    }
+  ]
+}

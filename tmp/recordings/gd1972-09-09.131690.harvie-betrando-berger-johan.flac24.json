@@ -1,0 +1,366 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1972-09-09",
+  "venue": "Hollywood Palladium",
+  "location": "Hollywood, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 220.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t01_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 433.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t02_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And My Uncle",
+      "duration": 206.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t03_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bird Song",
+      "duration": 698.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t04_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Throated Wind",
+      "duration": 403.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t05_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 452.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t06_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 226.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t07_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 298.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t08_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Playin' In The Band",
+      "duration": 409.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t10_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Loser",
+      "duration": 247.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s1t11_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Johnny B. Goode",
+      "duration": 468.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t01_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "China Cat Sunflower >",
+      "duration": 316.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t02_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Know You Rider",
+      "duration": 250.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t03_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Friend Of The Devil",
+      "duration": 304.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t04_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Jack Straw",
+      "duration": 659.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t05_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "He's Gone >",
+      "duration": 849.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t06_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Truckin' >",
+      "duration": 156.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t07_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums >",
+      "duration": 268.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t09_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Other One",
+      "duration": 304.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t10_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue//",
+      "duration": 404.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t11_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "El Paso",
+      "duration": 486.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t12_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Casey Jones",
+      "duration": 321.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd72-09-09s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-09s2t13_vbr.mp3",
+          "bitrate": "128"
+        }
+      ]
+    }
+  ]
+}

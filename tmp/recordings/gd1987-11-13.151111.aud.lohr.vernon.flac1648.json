@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-11-13",
+  "venue": "Long Beach Arena",
+  "location": "Long Beach, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "01. Crowd",
+      "duration": 49.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01. Crowd.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "02. Hell In A Bucket >",
+      "duration": 360.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02. Hell In A Bucket >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02. Hell In A Bucket >.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "03. Sugaree",
+      "duration": 759.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03. Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03. Sugaree.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "04. New Minglewood Blues",
+      "duration": 457.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04. New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04. New Minglewood Blues.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "05. Friend Of The Devil",
+      "duration": 539.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05. Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05. Friend Of The Devil.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "06. Far From Me",
+      "duration": 293.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06. Far From Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06. Far From Me.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "07. Bird Song",
+      "duration": 646.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07. Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07. Bird Song.mp3",
+          "bitrate": "159"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "08. The Music Never Stopped",
+      "duration": 420.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08. The Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08. The Music Never Stopped.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "09. Crowd",
+      "duration": 10.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09. Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09. Crowd.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "10. Bertha >",
+      "duration": 424.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10. Bertha >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10. Bertha >.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "11. Man Smart (Woman Smarter)",
+      "duration": 448.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11. Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11. Man Smart (Woman Smarter).mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "12. Ship Of Fools",
+      "duration": 490.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12. Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12. Ship Of Fools.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "13. Estimated Prophet >",
+      "duration": 750.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13. Estimated Prophet >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13. Estimated Prophet >.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "14. Drums >",
+      "duration": 505.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14. Drums >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14. Drums >.mp3",
+          "bitrate": "148"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "15. Space >",
+      "duration": 398.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15. Space >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15. Space >.mp3",
+          "bitrate": "126"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "16. The Wheel >",
+      "duration": 238.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16. The Wheel >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16. The Wheel >.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "17. Gimme Some Lovin' >",
+      "duration": 313.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17. Gimme Some Lovin' >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17. Gimme Some Lovin' >.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "18. Wharf Rat >",
+      "duration": 516.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18. Wharf Rat >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18. Wharf Rat >.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "19. Sugar Magnolia",
+      "duration": 650.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19. Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19. Sugar Magnolia.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "20. Knockin' On Heaven's Door",
+      "duration": 450.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20. Knockin' On Heaven's Door.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20. Knockin' On Heaven's Door.mp3",
+          "bitrate": "161"
+        }
+      ]
+    }
+  ]
+}

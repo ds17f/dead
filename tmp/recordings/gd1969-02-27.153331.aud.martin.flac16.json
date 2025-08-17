@@ -1,0 +1,62 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-02-27",
+  "venue": " Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 590.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Good Morning Little Schoolgirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Good Morning Little Schoolgirl.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Doing That Rag",
+      "duration": 395.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Doing That Rag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Doing That Rag.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envolopment Suite",
+      "duration": 1203.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Cryptical Envelopment Suite.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Cryptical Envelopment Suite.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

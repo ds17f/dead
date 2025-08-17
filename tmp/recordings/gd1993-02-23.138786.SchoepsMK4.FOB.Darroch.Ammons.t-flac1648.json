@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-02-23",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Space -> *",
+      "duration": 884.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-02-23s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-23s2t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One -> **",
+      "duration": 750.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-02-23s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-23s2t07.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stella Blue -> **",
+      "duration": 575.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-02-23s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-23s2t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Turn On Your Love Light **",
+      "duration": 495.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-02-23s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-23s2t09.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Encore",
+      "duration": 322.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd93-02-23s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd93-02-23s2t10.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

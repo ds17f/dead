@@ -1,0 +1,398 @@
+{
+  "rating": 2.1,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1983-04-15",
+  "venue": "Community War Memorial Auditorium",
+  "location": "Rochester, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 230.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Shakedown Street",
+      "duration": 836.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ShakedownStreet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "My Brother Esau",
+      "duration": 425.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03MyBrotherEsau.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Brown Eyed Women",
+      "duration": 415.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BrownEyedWomen.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 573.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05LittleRedRooster.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dire Wolf",
+      "duration": 242.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06DireWolf.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lazy Lightning",
+      "duration": 226.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LazyLightning.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Supplication",
+      "duration": 396.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Supplication.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 461.72,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Deal.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 58.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Feel Like A Stranger",
+      "duration": 569.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FeelLikeAStranger.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 541.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SamsonAndDelilah.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Ship Of Fools",
+      "duration": 513.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ShipOfFools.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Maybe You Know",
+      "duration": 301.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14MaybeYouKnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14MaybeYouKnow.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "He's Gone",
+      "duration": 783.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15HesGone.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Little Star",
+      "duration": 358.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16LittleStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16LittleStar.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 403.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space",
+      "duration": 673.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 582.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ThrowingStones.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 365.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20NotFadeAway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 404.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around And Around",
+      "duration": 221.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22AroundAndAround.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Johnny B Goode",
+      "duration": 265.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23JohnnyBGoode.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 434.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "24ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

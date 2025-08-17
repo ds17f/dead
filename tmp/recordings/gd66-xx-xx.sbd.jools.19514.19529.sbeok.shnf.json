@@ -1,0 +1,62 @@
+{
+  "rating": 2.2777777777777777,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-08-01",
+  "venue": "Various",
+  "location": "???, CA",
+  "raw_rating": 4.555555555555555,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Morning Lil' School Girl >",
+      "duration": 322.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-xx-xx_t1.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-xx-xx_t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "You Don't Love Me >",
+      "duration": 244.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-xx-xx_t2.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-xx-xx_t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Good Morning, Lil' School Girl",
+      "duration": 271.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-xx-xx_t3.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-xx-xx_t3.shn"
+        }
+      ]
+    }
+  ]
+}

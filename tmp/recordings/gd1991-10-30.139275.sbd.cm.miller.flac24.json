@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-10-30",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 114.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Picasso Moon",
+      "duration": 464.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02PicassoMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02PicassoMoon.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 610.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FriendOfTheDevil.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 196.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MeAndMyUncle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Maggie's Farm",
+      "duration": 513.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MaggiesFarm.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 415.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BrownEyedWomen.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now",
+      "duration": 423.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07ItsAllOverNow.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 478.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TennesseeJed.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Music Never Stopped",
+      "duration": 471.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheMusicNeverStopped.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 78.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Eyes Of The World",
+      "duration": 852.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EyesOfTheWorld.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Estimated Prophet",
+      "duration": 638.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12EstimatedProphet.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin Station",
+      "duration": 981.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13TerrapinStation.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 791.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 563.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 462.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Black Peter",
+      "duration": 572.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17BlackPeter.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around And Around",
+      "duration": 462.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AroundAndAround.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Encore Break",
+      "duration": 60.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19EncoreBreak.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 264.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

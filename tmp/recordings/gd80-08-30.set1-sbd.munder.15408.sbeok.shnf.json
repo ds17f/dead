@@ -1,0 +1,174 @@
+{
+  "rating": 1.5,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1980-08-30",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 3.0,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Feel Like a Stranger",
+      "duration": 269.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Peggy-O",
+      "duration": 194.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cassidy",
+      "duration": 168.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Friend of the Devil",
+      "duration": 297.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "New Minglewood Blues",
+      "duration": 236.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cold Rain And Snow >",
+      "duration": 211.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Looks Like Rain",
+      "duration": 247.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Easy to Love You",
+      "duration": 152.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t08.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Althea",
+      "duration": 262.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t09.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 210.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-08-30t10.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-08-30t10.shn"
+        }
+      ]
+    }
+  ]
+}

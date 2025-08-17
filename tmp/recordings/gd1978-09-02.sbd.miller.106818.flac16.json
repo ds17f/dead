@@ -1,0 +1,318 @@
+{
+  "rating": 2.0,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-09-02",
+  "venue": "Giants Stadium",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 4.0,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 724.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 622.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 319.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 369.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Looks Like Rain",
+      "duration": 496.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 542.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "I Need A Miracle",
+      "duration": 398.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Peggy-O",
+      "duration": 543.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Lazy Lightnin' ->",
+      "duration": 213.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Supplication",
+      "duration": 421.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d1t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Good Lovin'",
+      "duration": 476.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Scarlet Begonias ->",
+      "duration": 858.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain",
+      "duration": 839.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Estimated Prophet ->",
+      "duration": 890.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Eyes Of The World ->",
+      "duration": 957.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 438.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 75.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Sugar Magnolia",
+      "duration": 782.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d3t01.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 300.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-09-02d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-09-02d3t02.mp3",
+          "bitrate": "227"
+        }
+      ]
+    }
+  ]
+}

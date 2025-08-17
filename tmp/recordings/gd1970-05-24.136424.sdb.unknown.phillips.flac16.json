@@ -1,0 +1,206 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-05-24",
+  "venue": "Newcastle-Under-Lyme",
+  "location": "Newcastle, England",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cryptical Envelopment",
+      "duration": 120.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01CrypticalEnvelopment.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01CrypticalEnvelopment.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums",
+      "duration": 164.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Drums.mp3",
+          "bitrate": "146"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other One",
+      "duration": 501.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03TheOtherOne.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cryptical Envelopment",
+      "duration": 193.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04CrypticalEnvelopment.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04CrypticalEnvelopment.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Attics Of My Life",
+      "duration": 389.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05AtticsOfMyLife.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05AtticsOfMyLife.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Lovin'",
+      "duration": 647.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06GoodLovin.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cold Rain & Snow",
+      "duration": 367.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07ColdRainSnow.mp3",
+          "bitrate": "141"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dark Star",
+      "duration": 1146.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08DarkStar.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Saint Stephen",
+      "duration": 344.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09SaintStephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09SaintStephen.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Not Fade Away",
+      "duration": 341.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10NotFadeAway.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Turn On Your Lovelight (cuts)",
+      "duration": 329.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11TurnOnYourLovelightcuts.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11TurnOnYourLovelightcuts.mp3",
+          "bitrate": "149"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Turn On Your Lovelight (AUD patch)",
+      "duration": 108.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12TurnOnYourLovelightaudPatch.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TurnOnYourLovelightaudPatch.mp3",
+          "bitrate": "146"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-03-29",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 155.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 502.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FeelLikeAStranger.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 806.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 507.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WalkinBlues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dire Wolf",
+      "duration": 277.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05DireWolf.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle",
+      "duration": 191.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MeAndMyUncle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 353.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MexicaliBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Althea",
+      "duration": 517.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Althea.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "When I Paint My Masterpiece",
+      "duration": 374.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Iko Iko",
+      "duration": 616.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IkoIko.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Saint Of Circumstance",
+      "duration": 413.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11SaintOfCircumstance.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "New Speedway Boogie",
+      "duration": 421.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12NewSpeedwayBoogie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12NewSpeedwayBoogie.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 690.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Truckin.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 613.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 459.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 581.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Wharf Rat",
+      "duration": 634.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17WharfRat.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones",
+      "duration": 483.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18ThrowingStones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Touch Of Grey",
+      "duration": 402.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TouchOfGrey.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 57.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Brokedown Palace",
+      "duration": 338.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BrokedownPalace.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

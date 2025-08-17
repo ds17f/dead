@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-04-23",
+  "venue": "The Ark",
+  "location": "Boston, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 38.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "He Was A Friend Of Mine",
+      "duration": 693.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star ->",
+      "duration": 1255.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "St. Stephen ->",
+      "duration": 159.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "It's A Sin ->",
+      "duration": 231.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "St. Stephen ->",
+      "duration": 132.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical Envelopment ->",
+      "duration": 117.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Drums ->",
+      "duration": 44.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Other One ->",
+      "duration": 518.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Cryptical Envelopment ->",
+      "duration": 383.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sittin' On Top Of The World ->",
+      "duration": 178.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d1t11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Turn On Your Lovelight",
+      "duration": 1107.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Morning Dew",
+      "duration": 612.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Hard To Handle",
+      "duration": 378.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Doin' That Rag",
+      "duration": 438.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Alligator ->",
+      "duration": 229.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 293.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Jam ->",
+      "duration": 197.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Eleven ->",
+      "duration": 1038.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d2t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Caution (Do Not Stop On Tracks) ->",
+      "duration": 769.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d3t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Feedback ->",
+      "duration": 170.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d3t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "And We Bid You Good Night",
+      "duration": 407.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d3t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away tease",
+      "duration": 93.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d3t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 531.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-23d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-23d3t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

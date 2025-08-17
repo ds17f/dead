@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-12-27",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 380.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ColdRainAndSnow.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 278.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Never Trust A Woman",
+      "duration": 438.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NeverTrustAWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NeverTrustAWoman.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Althea",
+      "duration": 571.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Althea.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle",
+      "duration": 191.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MeAndMyUncle.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 479.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BigRiver.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 345.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07JustLikeTomThumbsBlues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 812.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Promised Land",
+      "duration": 284.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ThePromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ThePromisedLand.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 52.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Iko Iko",
+      "duration": 491.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11IkoIko.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 823.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Crazy Fingers",
+      "duration": 526.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13CrazyFingers.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 551.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14UncleJohnsBand.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 635.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 572.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 342.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 239.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18INeedAMiracle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Bird Song",
+      "duration": 781.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BirdSong.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Johnny B. Goode",
+      "duration": 243.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20JohnnyB.Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20JohnnyB.Goode.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Muddy River",
+      "duration": 383.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BlackMuddyRiver.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "rating": 2.0833333333333335,
+  "review_count": 18,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-02-12",
+  "venue": "Unknown",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.166666666666667,
+  "high_ratings": 14,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Smokestack Lightning >",
+      "duration": 341.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-02-12partD1T01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-02-12partD1T01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "King Bee",
+      "duration": 217.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-02-12partD1T02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-02-12partD1T02.shn"
+        }
+      ]
+    }
+  ]
+}

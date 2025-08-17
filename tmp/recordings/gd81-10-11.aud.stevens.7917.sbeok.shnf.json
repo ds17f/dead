@@ -1,0 +1,142 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1981-10-11",
+  "venue": "Melk Weg",
+  "location": "Amsterdam, Netherlands",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 119.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t01.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Monkey & The Engineer",
+      "duration": 198.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t02.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "I've Been All Around This World",
+      "duration": 245.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t03.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cassidy",
+      "duration": 306.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t04.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Jack-A-Roe",
+      "duration": 311.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t05.mp3",
+          "bitrate": "167"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "On The Road Again",
+      "duration": 163.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t06.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Birdsong",
+      "duration": 471.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t07.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Oh Babe It Ain't No Lie",
+      "duration": 287.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-10-11t08.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-10-11t08.shn"
+        }
+      ]
+    }
+  ]
+}

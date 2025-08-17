@@ -1,0 +1,110 @@
+{
+  "rating": 1.9125,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1968-05-18",
+  "venue": "SANTA CLARA FAIRGROUNDS",
+  "location": "San Jose, CA",
+  "raw_rating": 4.25,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "ALLIGATOR >",
+      "duration": 194.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD01.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "DRUMS >",
+      "duration": 256.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD02.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "ALLIGATOR >",
+      "duration": 678.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD03.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "CAUTION >",
+      "duration": 894.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD04.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "FEEDBACK",
+      "duration": 271.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD05.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "BOB WEIR TALKS TO JORMA BACKSTAGE",
+      "duration": 88.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

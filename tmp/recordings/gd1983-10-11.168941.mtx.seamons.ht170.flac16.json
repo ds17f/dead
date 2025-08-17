@@ -1,0 +1,280 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-10-11",
+  "venue": "Madison Square Garden",
+  "location": "New York City, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Wang Dang Doodle",
+      "duration": 291.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Jack Straw",
+      "duration": 365.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Loser",
+      "duration": 223.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t03.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Me And My Uncle >",
+      "duration": 488.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t04.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mexicali Blues",
+      "duration": 750.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Bird Song",
+      "duration": 673.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t06.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Hell In A Bucket >",
+      "duration": 417.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t07.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Keep Your Day Job",
+      "duration": 560.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t08.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "China Cat Sunflower >",
+      "duration": 423.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t09.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 260.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t10.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d2t10.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Jerry's Speaker Change",
+      "duration": 143.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-10-11d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-10-11d1t11.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

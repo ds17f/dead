@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-11-01",
+  "venue": "Richmond Coliseum",
+  "location": "Richmond, VA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd/Tuning",
+      "duration": 153.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t01 Crowd_Tuning.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Dancing In The Street >",
+      "duration": 403.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t02 Dancin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t02 Dancin'.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Cold Rain & Snow",
+      "duration": 527.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t03 CR & S.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t03 CR & S.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Little Red Rooster",
+      "duration": 502.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t04 Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t04 Red Rooster.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Stagger Lee",
+      "duration": 352.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t05 Stagger Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t05 Stagger Lee.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Me & My Uncle > Big River",
+      "duration": 563.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t06 M & MU_Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t06 M & MU_Big River.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Brown Eyed Women",
+      "duration": 293.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t07 BEW.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t07 BEW.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Jack Straw >",
+      "duration": 325.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t08 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t08 Jack Straw.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Don't Ease Me In",
+      "duration": 189.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s1t09 Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s1t09 Don't Ease.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd/Tuning",
+      "duration": 49.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t01 Crowd_Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t01 Crowd_Tuning.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Samson & Delilah",
+      "duration": 441.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t02 Samson.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t02 Samson.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "High Time",
+      "duration": 521.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t03 High Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t03 High Time.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "He's Gone >",
+      "duration": 659.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t04 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t04 He's Gone.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Spoonful >",
+      "duration": 296.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t05 Spoonful.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t05 Spoonful.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Comes A Time >",
+      "duration": 500.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t06 Comes A Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t06 Comes A Time.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Lost Sailor >",
+      "duration": 451.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t07 Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t07 Sailor.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Drums >",
+      "duration": 526.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t08 Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space >",
+      "duration": 626.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t09 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Saint Of Circumstance >",
+      "duration": 475.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t10 Saint.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t10 Saint.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Gimme Some Lovin' >",
+      "duration": 268.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t11 Gimme Some Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t11 Gimme Some Lovin'.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "She Belongs To Me >",
+      "duration": 471.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t12 She Belongs To Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t12 She Belongs To Me.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Gloria",
+      "duration": 379.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t13 Gloria.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t13 Gloria.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "E: Keep Your Day Job",
+      "duration": 260.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-01 s2t14 E_Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-01 s2t14 E_Day Job.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

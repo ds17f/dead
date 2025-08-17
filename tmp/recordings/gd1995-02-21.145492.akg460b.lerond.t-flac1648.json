@@ -1,0 +1,271 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-02-21",
+  "venue": "Delta Center",
+  "location": "Salt Lake City, UT",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "s1t0- tunin' & teasin'",
+      "duration": 88.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t01 - tunin' & teasin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t01 - tunin' & teasin'.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t01 - tunin' & teasin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t01 - tunin' & teasin'.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "s1t0- Salt Lake City",
+      "duration": 632.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t02 - Salt Lake City.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t02 - Salt Lake City.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t02 - Foolish Heart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t02 - Foolish Heart.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "s1t0- Friend of the Devil",
+      "duration": 434.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t03 - Friend of the Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t03 - Friend of the Devil.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t03 -Samba in the Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t03 -Samba in the Rain.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "s1t0- Wang Dang Doodle",
+      "duration": 499.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t04 - Wang Dang Doodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t04 - Wang Dang Doodle.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t04 - Truckin' ->.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t04 - Truckin' ->.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "s1t0- Tennessee Jed",
+      "duration": 252.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t05 - Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t05 - Tennessee Jed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t05 - I Just Wanna Make Love to You ->.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t05 - I Just Wanna Make Love to You ->.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "s1t0- Broken Arrow",
+      "duration": 231.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t06 - Broken Arrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t06 - Broken Arrow.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t06 - That Would be Something ->.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t06 - That Would be Something ->.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "s1t0- Black-Throated Wind",
+      "duration": 344.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t07 - Black-Throated Wind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t07 - Black-Throated Wind.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t07 - drums ->.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t07 - drums ->.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "s1t0- So Many Roads",
+      "duration": 973.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t08 - So Many Roads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t08 - So Many Roads.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t08 - space ->.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t08 - space ->.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "s1t0- The Music Never Stopped",
+      "duration": 613.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t09 - The Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t09 - The Music Never Stopped.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t09 - Visions of Johanna ->.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t09 - Visions of Johanna ->.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "s2t- Sugar Magnolia",
+      "duration": 716.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t10 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t10 - Sugar Magnolia.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "s2t- Liberty",
+      "duration": 546.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t11 - Liberty.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t11 - Liberty.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

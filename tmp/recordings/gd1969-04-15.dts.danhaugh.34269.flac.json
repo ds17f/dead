@@ -1,0 +1,94 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-04-15",
+  "venue": "The Music Box",
+  "location": "Omaha, NB",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 613.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-15-dts-t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-04-15-dts-t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Hurts Me Too",
+      "duration": 326.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-15-dts-t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-04-15-dts-t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "China Cat Sunflower >",
+      "duration": 326.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-15-dts-t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-04-15-dts-t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Doin' That Rag",
+      "duration": 411.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-15-dts-t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-04-15-dts-t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dark Star (cuts)*",
+      "duration": 926.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-04-15-dts-t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-04-15-dts-t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

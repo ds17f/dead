@@ -1,0 +1,478 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1981-12-31",
+  "venue": "Oakland Auditorium",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Me and Bobby Mcgee",
+      "duration": 182.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track01.wav.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bye Bye Love",
+      "duration": 108.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track02.wav.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Lucifer's Eyes",
+      "duration": 174.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track03.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Children Of The 80's",
+      "duration": 232.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track04.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Banks Of The Ohio",
+      "duration": 181.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track05.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track05.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Shakedown Street",
+      "duration": 588.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track06.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track06.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me and My Uncle >",
+      "duration": 116.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track07.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track07.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Mexicali Blues",
+      "duration": 179.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track08.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track08.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cold Rain and Snow",
+      "duration": 240.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track09.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track09.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "C.C. Rider",
+      "duration": 347.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track10.wav.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track10.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "It Must Have Been The Roses",
+      "duration": 224.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-13d1track11.wav.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-13d1track11.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Beat It On Down The Line",
+      "duration": 139.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track01.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Big Boss Man >",
+      "duration": 209.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track02.wav.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "New Minglewood Blues",
+      "duration": 238.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track03.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Don't Ease Me In",
+      "duration": 122.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track04.wav.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "New Year Celebration with Ken Kesey",
+      "duration": 239.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track05.wav.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track05.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Iko Iko",
+      "duration": 340.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track06.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track06.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Playin In The Band >",
+      "duration": 550.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track07.wav.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track07.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Terrapin Station >",
+      "duration": 549.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d2track08.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d2track08.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playin In The Band >",
+      "duration": 77.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d3track01.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d3track01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Drums > Space >",
+      "duration": 714.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d3track02.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d3track02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Other One >",
+      "duration": 271.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d3track03.wav.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d3track03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Not Fade Away >",
+      "duration": 155.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d3track04.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d3track04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Goin' Down The Road Feeling Bad >",
+      "duration": 257.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d3track05.wav.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d3track05.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Morning Dew",
+      "duration": 395.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d3track06.wav.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d3track06.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Dark Star >",
+      "duration": 538.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d4track01.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d4track01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Bertha >",
+      "duration": 259.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d4track02.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d4track02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Good Lovin",
+      "duration": 381.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d4track03.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d4track03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "It's All Over Now, Baby Blue*",
+      "duration": 254.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-12-31d4track04.wav.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd81-12-31d4track04.wav.shn"
+        }
+      ]
+    }
+  ]
+}

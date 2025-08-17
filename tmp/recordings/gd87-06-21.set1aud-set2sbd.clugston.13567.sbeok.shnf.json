@@ -1,0 +1,94 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1987-06-21",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Promised Land",
+      "duration": 209.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-06-21d1t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-06-21d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cumberland Blues>",
+      "duration": 208.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-06-21d1t02.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-06-21d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Women Are Smarter",
+      "duration": 318.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-06-21d1t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-06-21d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Playin' in the Band>",
+      "duration": 285.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-06-21d1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-06-21d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Black Peter>",
+      "duration": 177.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-06-21d1t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-06-21d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

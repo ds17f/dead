@@ -1,0 +1,382 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1988-03-31",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 162.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 357.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 673.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 190.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MeAndMyUncle.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 297.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MexicaliBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Woman",
+      "duration": 470.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BrownEyedWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BrownEyedWoman.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When I Paint My Masterpiece",
+      "duration": 285.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 401.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08RambleOnRose.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 744.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 28.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 458.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 707.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson And Delilah",
+      "duration": 402.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SamsonAndDelilah.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 706.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TerrapinStation.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 410.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 500.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 378.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 201.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18INeedAMiracle.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dear Mr Fantasy",
+      "duration": 260.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19DearMrFantasy.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Hey Jude",
+      "duration": 93.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20HeyJude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20HeyJude.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "All Along The Watchtower",
+      "duration": 263.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21AllAlongTheWatchtower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 196.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 537.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23KnockinOnHeavensDoor.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

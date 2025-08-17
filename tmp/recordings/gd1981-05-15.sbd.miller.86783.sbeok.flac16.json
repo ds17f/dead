@@ -1,0 +1,382 @@
+{
+  "rating": 2.125,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1981-05-15",
+  "venue": "Rutgers Athletic Center",
+  "location": "New Brunswick, NJ",
+  "raw_rating": 4.25,
+  "high_ratings": 12,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 42.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo >",
+      "duration": 537.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower >",
+      "duration": 606.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 427.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dire Wolf",
+      "duration": 213.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 353.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Candyman >",
+      "duration": 429.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t07.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Little Red Rooster",
+      "duration": 608.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Jack-A-Roe",
+      "duration": 312.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "El Paso",
+      "duration": 343.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d1t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Ramble On Rose >",
+      "duration": 495.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain >",
+      "duration": 528.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Don't Ease Me In",
+      "duration": 201.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Scarlet Begonias >",
+      "duration": 708.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Fire On The Mountain >",
+      "duration": 540.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Estimated Prophet >",
+      "duration": 706.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Eyes Of The World >",
+      "duration": 604.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Drums >",
+      "duration": 563.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space >",
+      "duration": 327.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d2t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away >",
+      "duration": 516.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d3t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Peter >",
+      "duration": 550.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d3t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Sugar Magnolia",
+      "duration": 567.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d3t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "U.S. Blues",
+      "duration": 314.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-05-15d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-05-15d3t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 1.7222222222222223,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-08-28",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.4444444444444446,
+  "high_ratings": 5,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "It's A Sin ->",
+      "duration": 491.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-28d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hi-Heel Sneakers",
+      "duration": 523.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-28d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star ->",
+      "duration": 2852.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-28d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven",
+      "duration": 1017.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-08-28d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

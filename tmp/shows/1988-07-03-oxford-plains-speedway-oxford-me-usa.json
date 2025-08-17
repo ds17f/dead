@@ -1,0 +1,213 @@
+{
+  "url": "https://jerrygarcia.com/show/1988-07-03-oxford-plains-speedway-oxford-me-usa/",
+  "show_id": "1988-07-03-oxford-plains-speedway-oxford-me-usa",
+  "band": "Grateful Dead",
+  "venue": "Oxford Plains Speedway",
+  "location_raw": "Oxford, ME",
+  "city": "Oxford",
+  "state": "ME",
+  "country": "USA",
+  "date": "1988-07-03",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Walkin' Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Hey Pocky Way",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Will Take You Home",
+          "url": "https://jerrygarcia.com/song/i-will-take-you-home/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Goin' Down The Road Feeling Bad",
+          "url": "https://jerrygarcia.com/song/goin-down-the-road-feelin-bad/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Hey Jude Finale",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Little Feat"
+  ],
+  "collection_timestamp": "2025-08-10T09:01:20.800926",
+  "show_time": null,
+  "recordings": [
+    "gd88-07-03.sbd.ststephen.3908.sbeok.shnf",
+    "gd1988-07-03.nak300.morris.crazyfingers.106587.flac16",
+    "gd1988-07-03.mtx.haugh.92585.flac16",
+    "gd1988-07-03.nakcm304.beyerm101.suraci.82801.sbeok.flac16",
+    "gd1988-07-03.beyer201.connor.3325.sbeok.shnf",
+    "gd1988-07-03.132399.Nak100CP4.Seremetcc.Keo.Flac2496",
+    "gd1988-07-03.141758.FOB.AKG.Ackerman.Miller.Noel.t-flac2496",
+    "gd1988-07-03.Nak300CP4.Fitzy.Keo.124855.Flac2496",
+    "gd1988-07-03.150324.aud.CMC42s.FOB.flac16",
+    "gd1988-07-03.fob.schoeps.houck.107117.flac16",
+    "gd1988-07-03.132398.Nak100CP4.Seremetcc.Keo.Flac1644",
+    "gd1988-07-03.139082.dts.tobin.flac16",
+    "gd1988-07-03.159379.OTS-Nak300.pasterrnak.vernon.flac2448",
+    "gd1988-07-03.mtx.haugh.98647.dvda",
+    "gd1988-07-03.nak300.carpenter.andrewf.92586.sbeok.flac16",
+    "gd1988-07-03.140675.FOB.Neumann.Silberman.Ammons.Noel.t-flac1644",
+    "gd1988-07-03.124810.AT835.laurentis.flac16",
+    "gd1988-07-03.159378.OTS-Nak300.pasterrnak.vernon.flac1648",
+    "gd1988-07-03.163580.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1988-07-03.142978.Senn.Porter.Wescott.Noel.t-flac1648",
+    "gd1988-07-03.145667.fob.akg460.ackerman.miller.noel.t-flac16",
+    "gd1988-07-03.139081.mtx.tobin.flac16",
+    "gd1988-07-03.167980.nak700.poris.yamaguchi.holbrook.flac2448",
+    "gd1988-07-03.Nak300CP4.Fitzy.Keo.124856.Flac1644",
+    "gd1988-07-03.163579.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1988-07-03.139083.5-1.tobin.flac1648",
+    "gd1988-07-03.147523.sennme80.porter.carbonetta.sirmick.flac24",
+    "gd1988-07-03.167979.nak700.poris.yamaguchi.holbrook.flac1644",
+    "gd1988-07-03.mtx.dts.haugh.92584.flac16"
+  ],
+  "best_recording": "gd88-07-03.sbd.ststephen.3908.sbeok.shnf",
+  "avg_rating": 2.1919475655430714,
+  "raw_rating": 4.424242424242424,
+  "recording_count": 29,
+  "confidence": 1.0,
+  "total_high_ratings": 61,
+  "total_low_ratings": 0,
+  "source_types": {
+    "SBD": 1,
+    "UNKNOWN": 27,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "30-trips-around-the-sun",
+    "brent-years",
+    "return-and-recovery"
+  ]
+}

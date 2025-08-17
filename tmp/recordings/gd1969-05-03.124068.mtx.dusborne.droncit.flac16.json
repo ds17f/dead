@@ -1,0 +1,142 @@
+{
+  "rating": 2.25,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1969-05-03",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bill Graham introduction ->",
+      "duration": 100.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "He Was a Friend of Mine",
+      "duration": 561.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envelopment ->",
+      "duration": 118.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums ->",
+      "duration": 35.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One ->",
+      "duration": 705.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cryptical reprise",
+      "duration": 440.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Doin That Rag",
+      "duration": 452.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Me & My Uncle",
+      "duration": 218.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03.MTX.dusborne.droncitt08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

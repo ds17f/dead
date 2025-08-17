@@ -1,0 +1,46 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1966-06-01",
+  "venue": "Unknown Location (possibly Owsley\u2019s house in Watts)",
+  "location": "Unknown",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hi-Heel Sneakers",
+      "duration": 221.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Viola Lee Blues (with false start)",
+      "duration": 431.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt02.mp3",
+          "bitrate": "202"
+        }
+      ]
+    }
+  ]
+}

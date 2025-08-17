@@ -1,0 +1,158 @@
+{
+  "rating": 2.5,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-05-18",
+  "venue": "County Fairgrounds",
+  "location": "Santa Clara, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jorma and Others Banter",
+      "duration": 4.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t01.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alligato r->",
+      "duration": 94.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums ->",
+      "duration": 83.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Alligator Reprise ->",
+      "duration": 408.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t04.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Caution ->",
+      "duration": 92.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mountain Jam ->",
+      "duration": 19.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t06.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Caution Reprise ->",
+      "duration": 335.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t07.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feedback",
+      "duration": 145.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t08.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "WEIR, JORMA, CASSIDY & ? BANTER",
+      "duration": 36.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t09.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t09.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "rating": 3.3804878048780487,
+  "review_count": 41,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1968-01-20",
+  "venue": "The Eureka Municipal Auditorium",
+  "location": "Eureka, CA",
+  "raw_rating": 4.829268292682927,
+  "high_ratings": 40,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Born Cross Eyed",
+      "duration": 72.81,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t3-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t4-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t5-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t6-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t7-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "1",
+      "title": "Clementine",
+      "duration": 233.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t1.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "New Potato Caboose",
+      "duration": 343.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-01-20t2.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-01-20t2.shn"
+        }
+      ]
+    }
+  ]
+}

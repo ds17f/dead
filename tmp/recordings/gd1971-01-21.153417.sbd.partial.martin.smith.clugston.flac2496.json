@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-01-21",
+  "venue": "Freeborn Hall, University of California",
+  "location": "Davis, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Mama Tried",
+      "duration": 269.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s1t01 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s1t01 Mama Tried.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Around & Around",
+      "duration": 257.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s1t02 A & A.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s1t02 A & A.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Cumberland Blues",
+      "duration": 330.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s1t03 Cumberland.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s1t03 Cumberland.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Casey Jones",
+      "duration": 306.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s1t04 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s1t04 Casey Jones.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Cryptical Envelopment > Drums//",
+      "duration": 239.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s2t01 Cryptical_Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s2t01 Cryptical_Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "//I Know You Rider",
+      "duration": 274.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s2t02 IKYR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s2t02 IKYR.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "E: Uncle John's Band",
+      "duration": 445.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-01-21 partial s2t03 E_UJB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-01-21 partial s2t03 E_UJB.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

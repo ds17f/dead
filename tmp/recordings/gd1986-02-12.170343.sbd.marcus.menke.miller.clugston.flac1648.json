@@ -1,0 +1,270 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-02-12",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Tuning",
+      "duration": 170.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t01 Tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Hell In A Bucket >",
+      "duration": 362.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t02 Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t02 Bucket.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Sugaree",
+      "duration": 585.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t03 Sugaree.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Tons Of Steel",
+      "duration": 326.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t04 Tons Of Steel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t04 Tons Of Steel.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Tennessee Jed",
+      "duration": 579.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t05 T Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t05 T Jed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Cassidy",
+      "duration": 358.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t06 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t06 Cassidy.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Don't Ease Me In",
+      "duration": 197.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s1t07 Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s1t07 Don't Ease.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Scarlet Begonias > Fire On The Mountain",
+      "duration": 1011.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t01 Scarlet_Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t01 Scarlet_Fire.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Estimated Prophet >",
+      "duration": 933.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t02 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t02 Estimated.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Drums >",
+      "duration": 855.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t03 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t03 Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Space >",
+      "duration": 259.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t04 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t04 Space.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Willy & The Hand Jive",
+      "duration": 393.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t05 Hand Jive.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t05 Hand Jive.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "The Wheel",
+      "duration": 304.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t06 Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t06 Wheel.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "In The Midnight Hour >",
+      "duration": 318.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t07 Midnight Hour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t07 Midnight Hour.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Johnny B. Goode",
+      "duration": 287.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t08 JBG.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t08 JBG.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "E: US Blues",
+      "duration": 299.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd86-02-12 s2t09 E_US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd86-02-12 s2t09 E_US Blues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

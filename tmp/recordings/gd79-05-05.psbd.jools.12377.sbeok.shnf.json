@@ -1,0 +1,37 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1979-05-05",
+  "venue": "Baltimore Civic Center",
+  "location": "Baltimore, MD",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Sugaree",
+      "duration": 441.84,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd050579_01.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd050579_02.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd050579_03.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd050579_04.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-02-24",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 312.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.01.caseyjones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.01.caseyjones.mp3",
+          "bitrate": "106"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cumberland Blues",
+      "duration": 303.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.02.cumberland.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.02.cumberland.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And Bobby McGee",
+      "duration": 341.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.03.bobbymcgee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.03.bobbymcgee.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bertha",
+      "duration": 322.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.04.bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.04.bertha.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Hard To Handle",
+      "duration": 403.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.05.hardtohandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.05.hardtohandle.mp3",
+          "bitrate": "107"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Playin' In The Band",
+      "duration": 265.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.06.playingintheband.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.06.playingintheband.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Sugar Magnolia",
+      "duration": 329.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.07.sugarmagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.07.sugarmagnolia.mp3",
+          "bitrate": "108"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "King Bee",
+      "duration": 411.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1971-02-24.weinberg.08.kingbee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1971-02-24.weinberg.08.kingbee.mp3",
+          "bitrate": "106"
+        }
+      ]
+    }
+  ]
+}

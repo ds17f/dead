@@ -1,0 +1,434 @@
+{
+  "rating": 0.6,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-12-31",
+  "venue": "Oakland-Alameda County Coliseum Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Sugar Magnolia",
+      "duration": 186.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d1t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t01_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch of Grey",
+      "duration": 260.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d1t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t02_vbr.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 398.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d1t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t03_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Big Boss Man (1)",
+      "duration": 235.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d1t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t04_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stuck Inside of Mobile",
+      "duration": 355.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d1t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t05_vbr.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Shakedown Street",
+      "duration": 422.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d1t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d1t06_vbr.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Year's Countdown",
+      "duration": 169.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t01.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d2t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t01_vbr.mp3",
+          "bitrate": "222"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Iko Iko",
+      "duration": 298.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d2t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t02_vbr.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Victim or the Crime ->",
+      "duration": 341.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t03.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d2t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t03_vbr.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Dark Star (2) ->",
+      "duration": 528.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d2t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t04_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Drums ->",
+      "duration": 408.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t05.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d2t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d2t05_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Space->",
+      "duration": 198.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t01_vbr.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Dear Mr. Fantasy ->",
+      "duration": 308.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t02_vbr.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Hey Jude Reprise ->",
+      "duration": 81.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t03_vbr.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Goin' Down The Road Feelin' Bad ->",
+      "duration": 196.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t04.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t04_vbr.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Throwing Stones ->",
+      "duration": 357.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t05_vbr.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 451.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t06_vbr.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Brokedown Palace ->",
+      "duration": 176.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t07.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t07_vbr.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sunshine Daydream",
+      "duration": 543.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t08.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t08.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t08_vbr.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "In the Midnight Hour (3)",
+      "duration": 202.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t09.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1989-12-31d3t09.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1989-12-31d3t09_vbr.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

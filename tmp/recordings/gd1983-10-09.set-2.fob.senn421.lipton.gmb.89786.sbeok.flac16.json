@@ -1,0 +1,158 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1983-10-09",
+  "venue": "Greensboro Coliseum",
+  "location": "Greensboro, NC",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 577.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d1t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Estimated Prophet >",
+      "duration": 727.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Eyes Of The World >",
+      "duration": 434.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Man Smart, Women Smarter >",
+      "duration": 476.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums >",
+      "duration": 452.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d1t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space >",
+      "duration": 590.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d2t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "-",
+      "duration": 614.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sugar Magnolia",
+      "duration": 632.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 445.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-10-09d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-10-09d2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 2.2,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1975-03-00",
+  "venue": "Studio",
+  "location": "Unknown, CA",
+  "raw_rating": 4.4,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Help On The Way (instrumental #1)",
+      "duration": 247.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower (#1)",
+      "duration": 275.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Help On The Way (instrumental #2)",
+      "duration": 276.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy Lightning (intrumental)",
+      "duration": 161.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Music Never Stopped(instrumental)",
+      "duration": 196.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jam",
+      "duration": 214.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Franklin's Tower (#2)",
+      "duration": 151.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Crazy Fingers (instrumental)",
+      "duration": 207.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-03-xxt08.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-03-xxt08.shn"
+        }
+      ]
+    }
+  ]
+}

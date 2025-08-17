@@ -1,0 +1,142 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1975-03-23",
+  "venue": "Kezar Stadium",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Radio Announcer",
+      "duration": 29.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23t1.mp3",
+          "bitrate": "236"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Blues For Allah >",
+      "duration": 394.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23t2.mp3",
+          "bitrate": "215"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stronger Than Dirt >",
+      "duration": 296.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23t3.mp3",
+          "bitrate": "236"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums ->",
+      "duration": 143.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23t4.mp3",
+          "bitrate": "223"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stronger Than Dirt >",
+      "duration": 446.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23T5.mp3",
+          "bitrate": "248"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23T5.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Blues For Allah",
+      "duration": 148.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23T6.mp3",
+          "bitrate": "252"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23T6.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Radio Announcements",
+      "duration": 25.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23T7.mp3",
+          "bitrate": "246"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23T7.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Johnny B. Goode",
+      "duration": 195.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-3-23T8.mp3",
+          "bitrate": "253"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-3-23T8.shn"
+        }
+      ]
+    }
+  ]
+}

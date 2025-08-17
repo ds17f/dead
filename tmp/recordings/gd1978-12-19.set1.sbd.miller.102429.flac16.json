@@ -1,0 +1,190 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1978-12-19",
+  "venue": "Memorial Coliseum, Mississippi State Fairgrounds",
+  "location": "Jackson, MS",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 567.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Franklin's Tower",
+      "duration": 840.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 402.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 493.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me And My Uncle ->",
+      "duration": 179.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t05.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 364.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t06.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 537.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "El Paso",
+      "duration": 373.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 824.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d1t09.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Lazy Lightnin' ->",
+      "duration": 219.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Supplication",
+      "duration": 345.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-12-19d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-12-19d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

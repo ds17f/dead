@@ -1,0 +1,110 @@
+{
+  "rating": 1.4625000000000001,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1967-10-20",
+  "venue": "American Studios",
+  "location": "North Hollywood, CA",
+  "raw_rating": 3.25,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Lovelight Instrumental Jam",
+      "duration": 675.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-10-20t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-10-20t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alligator",
+      "duration": 202.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-10-20t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-10-20t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jam",
+      "duration": 703.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-10-20t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-10-20t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Caution (Do Not Step On Tracks)",
+      "duration": 256.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-10-20t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-10-20t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical Envelopment",
+      "duration": 461.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-10-20t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-10-20t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Viola Lee Blues",
+      "duration": 373.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-10-20t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-10-20t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

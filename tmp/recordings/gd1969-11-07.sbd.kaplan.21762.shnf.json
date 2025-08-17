@@ -1,0 +1,382 @@
+{
+  "rating": 2.835,
+  "review_count": 4,
+  "source_type": "AUD",
+  "confidence": 0.8,
+  "date": "1969-11-07",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 370.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t01-fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hard to Handle*",
+      "duration": 200.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t02-fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Casey Jones*",
+      "duration": 164.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t03-fixed.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 106.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t04-fixed.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "There's resonance at",
+      "duration": 29.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t05-fixed.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Star Spangled Banner",
+      "duration": 32.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t06-fixed.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Merry Go Round Broke",
+      "duration": 26.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t07-fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t07-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Spring Song Tuning",
+      "duration": 17.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t08-fixed.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t08-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Take Me Out To The",
+      "duration": 20.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t09-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t09-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Next Time You See Me",
+      "duration": 173.34,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t10-fixed.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t10-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Good Lovin' >",
+      "duration": 70.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t11-fixed.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t11-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums >",
+      "duration": 94.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t12-fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t12-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam >",
+      "duration": 141.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t13-fixed.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t13-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Good Lovin'",
+      "duration": 83.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t14-fixed.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t14-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Cat Sunflower >",
+      "duration": 206.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t15-fixed.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t15-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Know You Rider",
+      "duration": 165.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d1t16-fixed.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d1t16-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dark Star >",
+      "duration": 633.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t01-fixed.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Uncle John's Jam/>",
+      "duration": 69.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t02-fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dark Star >",
+      "duration": 208.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t03-fixed.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Cryptical Envelopment >",
+      "duration": 58.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t04-fixed.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Drums >",
+      "duration": 164.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t05-fixed.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Other One >",
+      "duration": 384.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t06-fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Turn On Your Lovelight*",
+      "duration": 986.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-11-07d2t07-fixed.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-11-07d2t07-fixed.shn"
+        }
+      ]
+    }
+  ]
+}

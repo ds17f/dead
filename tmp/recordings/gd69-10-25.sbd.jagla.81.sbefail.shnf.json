@@ -1,0 +1,94 @@
+{
+  "rating": 2.4318181818181817,
+  "review_count": 44,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-10-25",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.863636363636363,
+  "high_ratings": 44,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dark Star",
+      "duration": 729.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-25d1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-25d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Saint Stephen",
+      "duration": 196.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-25d1t02.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-25d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Eleven",
+      "duration": 319.59,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-25d1t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-25d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Turn On Your Lovelight",
+      "duration": 737.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-25d1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-25d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Ending remarks from Bill Graham",
+      "duration": 70.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-10-25d1t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-10-25d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

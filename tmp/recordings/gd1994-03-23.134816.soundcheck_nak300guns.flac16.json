@@ -1,0 +1,94 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-03-23",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Might As Well - Take 1",
+      "duration": 169.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23_t01_might_as_well_take1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23_t01_might_as_well_take1.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Chord School",
+      "duration": 223.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23_t02_chord_school.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23_t02_chord_school.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Might As Well - Take 2",
+      "duration": 315.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23_t03_might_as_well_take2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23_t03_might_as_well_take2.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Might As Well - Take 3",
+      "duration": 183.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23_t04_might_as_well_take3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23_t04_might_as_well_take3.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Corrina",
+      "duration": 377.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23_t05_corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23_t05_corrina.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

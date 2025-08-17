@@ -1,0 +1,42 @@
+{
+  "url": "https://jerrygarcia.com/show/1968-03-17-carousel-ballroom-san-francisco-ca-usa/",
+  "show_id": "1968-03-17-carousel-ballroom-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Carousel Ballroom",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1968-03-17",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Learn more about troubleshooting WordPress.",
+          "url": "https://wordpress.org/documentation/article/faq-troubleshooting/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "missing",
+  "lineup": null,
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:08:04.193141",
+  "show_time": null,
+  "recordings": [],
+  "best_recording": null,
+  "avg_rating": 0.0,
+  "recording_count": 0,
+  "confidence": 0.0,
+  "source_types": {},
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "download-series-vol-6",
+    "pigpen-years"
+  ]
+}

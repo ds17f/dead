@@ -1,0 +1,189 @@
+{
+  "url": "https://jerrygarcia.com/show/1995-07-09-soldier-field-chicago-il-usa/",
+  "show_id": "1995-07-09-soldier-field-chicago-il-usa",
+  "band": "Grateful Dead",
+  "venue": "Soldier Field",
+  "location_raw": "Chicago, IL",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "USA",
+  "date": "1995-07-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Lazy River Road",
+          "url": "https://jerrygarcia.com/song/lazy-river-road/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Childhood's End",
+          "url": "https://jerrygarcia.com/song/childhoods-end/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samba In The Rain",
+          "url": "https://jerrygarcia.com/song/samba-in-the-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Corinna",
+          "url": "https://jerrygarcia.com/song/corinna/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Unbroken Chain",
+          "url": "https://jerrygarcia.com/song/unbroken-chain/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Band"
+  ],
+  "collection_timestamp": "2025-08-10T09:20:37.109602",
+  "show_time": null,
+  "recordings": [
+    "gd1995-07-09.sbd.gardner.4091.shnf",
+    "gd1995-07-09.sbd.miller.114369.flac16",
+    "gd95-07-09.sbd.7233.sbeok.shnf",
+    "gd1995-07-09.aud.mahoney.86405.flac16",
+    "gd1995-07-09.schoeps.wklitz.95445.flac16",
+    "gd1995-07-09.aud.liberated-bootleg.larson.27977.flac16",
+    "gd1995-07-09.127735.nick.flac16",
+    "gd1995-07-09.134130.oade-micro-mics.flac1648",
+    "gd1995-07-09.schoeps.wklitz.95444.flac1648",
+    "gd1995-07-09.147058.walsh.suraci.at835.flac24",
+    "gd1995-07-09.147057.walsh.suraci.at835.flac16"
+  ],
+  "best_recording": "gd1995-07-09.sbd.gardner.4091.shnf",
+  "avg_rating": 1.7632649984926139,
+  "raw_rating": 3.5411140583554377,
+  "recording_count": 11,
+  "confidence": 1.0,
+  "total_high_ratings": 208,
+  "total_low_ratings": 101,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 2,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "final-years",
+    "vince-welnick-years"
+  ]
+}

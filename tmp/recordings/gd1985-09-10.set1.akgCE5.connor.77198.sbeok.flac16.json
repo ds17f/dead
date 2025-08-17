@@ -1,0 +1,174 @@
+{
+  "rating": 1.4666666666666668,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1985-09-10",
+  "venue": "Henry J. Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 3.6666666666666665,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd/Tuning",
+      "duration": 50.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 305.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 364.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 465.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 374.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle",
+      "duration": 176.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 294.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 414.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 331.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 195.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-09-10d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-09-10d1t10.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

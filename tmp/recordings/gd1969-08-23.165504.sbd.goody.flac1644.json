@@ -1,0 +1,155 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-08-23",
+  "venue": "Pelletier Farm",
+  "location": "St. Helens, OR",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hard To Handle (fades in)",
+      "duration": 1655.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "101 Hard to Handle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "101 Hard to Handle.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "201 Dark Star_.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "201 Dark Star_.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mama Tried >",
+      "duration": 379.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "102 Mama Tried_.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "102 Mama Tried_.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "202 St. Stephen_.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "202 St. Stephen_.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "High Time",
+      "duration": 811.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "103 High Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "103 High Time.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "203 The Eleven_.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "203 The Eleven_.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Casey Jones",
+      "duration": 1701.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "104 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "104 Casey Jones.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Flac",
+          "filename": "204 Turn On Your Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "204 Turn On Your Lovelight.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Easy Wind",
+      "duration": 244.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "105 Easy Wind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "105 Easy Wind.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "205 And We Bid You Goodnight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "205 And We Bid You Goodnight.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Sittin' On Top Of The World",
+      "duration": 247.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "106 Sittin' On Top Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "106 Sittin' On Top Of The World.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

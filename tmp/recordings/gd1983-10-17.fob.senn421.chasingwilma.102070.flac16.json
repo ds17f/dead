@@ -1,0 +1,350 @@
+{
+  "rating": 0.35,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1983-10-17",
+  "venue": "Olympic Center",
+  "location": "Lake Placid, NY",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Sugaree ->",
+      "duration": 993.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 548.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 573.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "My Brother Esau",
+      "duration": 357.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 765.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hell In A Bucket ->",
+      "duration": 398.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 651.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d01t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Space ->",
+      "duration": 674.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Wheel ->",
+      "duration": 423.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Need A Miracle ->",
+      "duration": 278.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Goin' Down The Road Feelin' Bad ->",
+      "duration": 440.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Good Lovin'",
+      "duration": 481.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Revolution",
+      "duration": 362.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d02t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Touch Of Grey",
+      "duration": 449.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Samson & Delilah",
+      "duration": 553.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "To Lay Me Down",
+      "duration": 545.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Man Smart Woman Smarter",
+      "duration": 449.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Terrapin Station",
+      "duration": 753.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dumws ->",
+      "duration": 80.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Drums ->",
+      "duration": 491.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Drums ->",
+      "duration": 7.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d03t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d03t08.mp3",
+          "bitrate": "103"
+        }
+      ]
+    }
+  ]
+}

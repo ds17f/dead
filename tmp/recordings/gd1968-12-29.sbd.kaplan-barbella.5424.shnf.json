@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-12-29",
+  "venue": "Gulfstream Park Race Track",
+  "location": "Hallandale, FL",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Turn On Your Lovelight",
+      "duration": 430.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star >",
+      "duration": 356.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Saint Stephen > The 11 >",
+      "duration": 255.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven >",
+      "duration": 317.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t04.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drumz >",
+      "duration": 95.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One >",
+      "duration": 228.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t06.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical Envelopment",
+      "duration": 296.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29t07.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-12-29t07.shn"
+        }
+      ]
+    }
+  ]
+}

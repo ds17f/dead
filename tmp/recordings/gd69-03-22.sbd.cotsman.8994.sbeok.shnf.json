@@ -1,0 +1,94 @@
+{
+  "rating": 2.2916666666666665,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-03-22",
+  "venue": "Rose Palace",
+  "location": "Pasadena, CA",
+  "raw_rating": 4.583333333333333,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Morning, Little Schoolgirl",
+      "duration": 418.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-22d1t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-22d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dark Star",
+      "duration": 492.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-22d1t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-22d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Saint Stephen",
+      "duration": 176.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-22d1t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-22d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "The Eleven",
+      "duration": 168.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-22d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-22d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Turn on Your Lovelight",
+      "duration": 410.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-03-22d1t05.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-03-22d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

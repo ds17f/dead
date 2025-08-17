@@ -1,0 +1,206 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-11-16",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Friend Of The Devil",
+      "duration": 129.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow *",
+      "duration": 374.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "King Bee +",
+      "duration": 437.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "I Know You Rider",
+      "duration": 325.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t04.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Hard To Handle !!",
+      "duration": 476.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t05.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big Railroad Blues + !!",
+      "duration": 322.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t06.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mama Tries",
+      "duration": 159.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t07.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away > + !!",
+      "duration": 568.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t08.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Goin' Down The Road Feelin' Bad >",
+      "duration": 521.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t09.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Truckin' > +",
+      "duration": 551.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t10.mp3",
+          "bitrate": "228"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Other One +",
+      "duration": 481.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t11.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 442.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-23t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-23t12.mp3",
+          "bitrate": "205"
+        }
+      ]
+    }
+  ]
+}

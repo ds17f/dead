@@ -1,0 +1,190 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-02",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 393.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.Bertha.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 256.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.GreatestStoryEverTold.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 436.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.Peggy-o.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.Peggy-o.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 157.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.MamaTried.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 322.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.MexicaliBlues.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It Must Have Been The Roses",
+      "duration": 435.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now",
+      "duration": 497.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07.ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.ItsAllOverNow.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Loser",
+      "duration": 428.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08.Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.Loser.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Looks Like Rain",
+      "duration": 516.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09.LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.LooksLikeRain.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower",
+      "duration": 409.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10.ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10.ChinaCatSunflower.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 377.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11.IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11.IKnowYouRider.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "url": "https://jerrygarcia.com/show/1991-04-09-orlando-arena-orlando-fl-usa/",
+  "show_id": "1991-04-09-orlando-arena-orlando-fl-usa",
+  "band": "Grateful Dead",
+  "venue": "Orlando Arena",
+  "location_raw": "Orlando, FL",
+  "city": "Orlando",
+  "state": "FL",
+  "country": "USA",
+  "date": "1991-04-09",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Loose Lucy",
+          "url": "https://jerrygarcia.com/song/loose-lucy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Bruce Hornsby",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152446/BruceHornsby_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:08:37.392046",
+  "show_time": null,
+  "recordings": [
+    "gd91-04-09.sbd.miller.25466.sbeok.shnf",
+    "gd91-04-09.sbd.ingle.10061.sbeok.shnf",
+    "gd1991-04-09.137171.sbd.miller.flac16",
+    "gd1991-04-09.154481.sbd.cm.miller.t.flac16",
+    "gd1991-04-09.137163.sbd.miller.flac24",
+    "gd1991-04-09.154480.UltraMatrix.sbd.cm.miller.t.flac16",
+    "gd1991-04-09.152231.s2.sbd.miller.flac1648",
+    "gd1991-04-09.152232.sbd.miller.flac2496",
+    "gd1991-04-09.152233.ultramatrix.miller.flac2496",
+    "gd1991-04-09.aud.Holtz.Naks.115534.flac16",
+    "gd1991-04-09.senn.unknown.34654.sbeok.flac1648",
+    "gd1991-04-09.fob.schoepsCMC34.unknown.GEMS.93471.flac16",
+    "gd1991-04-09.149658.FOB.Schoeps.Brotman.Metchick.Miller.Noel.t-flac1648",
+    "gd1991-04-09.143390.km86.dalton.miller.sirmick.flac1648",
+    "gd1991-04-09.Nak300CP4.Floater.Keo.113168.Flac2496",
+    "gd1991-04-09.Nak300CP4.Floater.Keo.113172.Flac1644"
+  ],
+  "best_recording": "gd91-04-09.sbd.miller.25466.sbeok.shnf",
+  "avg_rating": 1.4666666666666668,
+  "raw_rating": 3.411764705882353,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 8,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 8,
+    "MATRIX": 1,
+    "AUD": 1,
+    "UNKNOWN": 6
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "bruce-hornsby-shows",
+    "vince-welnick-years"
+  ]
+}

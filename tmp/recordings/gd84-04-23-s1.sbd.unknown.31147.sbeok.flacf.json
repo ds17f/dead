@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1984-04-23",
+  "venue": "Veterans' Memorial Coliseum",
+  "location": "New Haven, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jack Straw",
+      "duration": 431.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-04-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-04-23d1t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugaree",
+      "duration": 854.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-04-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-04-23d1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cassidy",
+      "duration": 427.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-04-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-04-23d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dupree's Diamond Blues",
+      "duration": 459.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-04-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-04-23d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Hell in a Bucket",
+      "duration": 416.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-04-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-04-23d1t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Might as Well",
+      "duration": 286.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-04-23d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-04-23d1t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

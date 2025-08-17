@@ -1,0 +1,78 @@
+{
+  "rating": 2.111111111111111,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-01-18",
+  "venue": "CBS Studios in West Hollywood",
+  "location": "West Hollywood, CA",
+  "raw_rating": 4.222222222222222,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hefner interviews Garcia",
+      "duration": 117.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-18t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-18t01.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mountains of the Moon",
+      "duration": 234.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-18t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-18t02.mp3",
+          "bitrate": "148"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St. Stephen (fades out)",
+      "duration": 244.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-18t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-18t03.mp3",
+          "bitrate": "152"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Closing / Turn On Your Lovelight (segment)",
+      "duration": 82.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-01-18t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-18t04.mp3",
+          "bitrate": "156"
+        }
+      ]
+    }
+  ]
+}

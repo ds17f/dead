@@ -1,0 +1,180 @@
+{
+  "url": "https://jerrygarcia.com/show/1966-07-16-fillmore-auditorium-san-francisco-ca-usa/",
+  "show_id": "1966-07-16-fillmore-auditorium-san-francisco-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Fillmore Auditorium",
+  "location_raw": "San Francisco, CA",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "USA",
+  "date": "1966-07-16",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Boss Man",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Standing On The Corner",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Beat It On Down The Line",
+          "url": "https://jerrygarcia.com/song/beat-it-on-down-the-line/",
+          "segue_into_next": false
+        },
+        {
+          "name": "In The Pines",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cardboard Cowboy",
+          "url": "https://jerrygarcia.com/song/cardboard-cowboy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Nobody's Fault But Mine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Next Time You See Me",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "He Was A Friend Of Mine",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cream Puff War",
+          "url": "https://jerrygarcia.com/song/cream-puff-war/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Viola Lee Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Pain In My Heart",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sitting On Top Of The World",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "You Don't Have To Ask",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Cold Rain And Snow",
+          "url": "https://jerrygarcia.com/song/cold-rain-and-snow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Morning Little School Girl",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Ron \"Pigpen\" McKernan",
+      "instruments": "keyboards, harmonica, percussion, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152433/RonPigpenMcKernan_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Jefferson Airplane"
+  ],
+  "collection_timestamp": "2025-08-10T08:00:44.478185",
+  "show_time": null,
+  "recordings": [
+    "gd1966-07-16.sbd.miller.89555.sbeok.flac16",
+    "gd1966-07-16.sbd.miller.21063.shnf",
+    "gd1966-07-16.sbd.serafin.4459.sbefail.shnf",
+    "gd1966-07-16.13958.serafin-marmar-sbefix-4459.flac16"
+  ],
+  "best_recording": "gd1966-07-16.sbd.miller.89555.sbeok.flac16",
+  "avg_rating": 3.2011538461538454,
+  "raw_rating": 4.684210526315789,
+  "recording_count": 4,
+  "confidence": 1.0,
+  "total_high_ratings": 35,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "pigpen-years"
+  ]
+}

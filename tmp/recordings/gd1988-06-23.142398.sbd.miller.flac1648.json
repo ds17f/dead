@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1988-06-23",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 399.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01IkoIko.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 530.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02NewMinglewoodBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Must Have Been The Roses",
+      "duration": 512.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 186.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MeAndMyUncle.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 368.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MexicaliBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 320.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06StaggerLee.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When I Paint My Masterpiece",
+      "duration": 333.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 644.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BirdSong.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 290.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PromisedLand.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Hey Pocky Way",
+      "duration": 364.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10HeyPockyWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10HeyPockyWay.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Believe It Or Not",
+      "duration": 455.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11BelieveItOrNot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11BelieveItOrNot.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 429.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ManSmartwomanSmarter.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 701.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13HesGone.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 741.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 532.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Need A Miracle",
+      "duration": 230.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16INeedAMiracle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Gimme Some Lovin'",
+      "duration": 301.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17GimmeSomeLovin.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All Along The Watchtower",
+      "duration": 295.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AllAlongTheWatchtower.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Morning Dew",
+      "duration": 600.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19MorningDew.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 63.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Blackbird",
+      "duration": 168.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Blackbird.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Blackbird.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Brokedown Palace",
+      "duration": 376.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22BrokedownPalace.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

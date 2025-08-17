@@ -1,0 +1,91 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1968-11-06",
+  "venue": "Pacific High Recording",
+  "location": "San Mateo, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "- Turn On Your Lovelight",
+      "duration": 352.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Turn On Your Lovelight.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "- Dark Star >",
+      "duration": 800.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Dark Star.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "- Saint Stephen",
+      "duration": 467.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Saint Stephen.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "- William Tell Bridge",
+      "duration": 291.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 William Tell Bridge.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "- Saint Stephen >",
+      "duration": 546.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Saint Stephen.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "- William Tell Bridge >",
+      "duration": 65.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 William Tell Bridge.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "- The Eleven",
+      "duration": 2401.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 The Eleven.flac"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "rating": 2.1666666666666665,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-04-02",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Promised Land",
+      "duration": 113.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Deal",
+      "duration": 167.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Mexicali Blues",
+      "duration": 131.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Brown Eyed Women",
+      "duration": 209.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Tuning (Havin' Fun)",
+      "duration": 14.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t05.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Beat It On Down the Line",
+      "duration": 132.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Row Jimmy",
+      "duration": 290.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t07.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Bobby's Spider Rap",
+      "duration": 11.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t08.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Looks Like Rain",
+      "duration": 268.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t09.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wave That Flag",
+      "duration": 229.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t10.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Box of Rain",
+      "duration": 197.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t11.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Big River",
+      "duration": 169.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t12.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "China Cat Sunflower",
+      "duration": 281.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t13.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "I Know You Rider",
+      "duration": 221.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t14.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "You Ain't Woman Enough",
+      "duration": 124.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t15.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Jack Straw",
+      "duration": 181.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t16.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t16.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Don't Ease Me In",
+      "duration": 162.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad1t17.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad1t17.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Playing in the Band",
+      "duration": 673.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stage Banter",
+      "duration": 14.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t02.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Ramble On Rose",
+      "duration": 237.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Me and My Uncle",
+      "duration": 129.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Mississippi Halfstep",
+      "duration": 270.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Greatest STory Ever Told",
+      "duration": 194.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t06.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Loose Lucy",
+      "duration": 253.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "El Paso",
+      "duration": 152.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t08.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Stella Blue",
+      "duration": 236.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t09.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Around and Around",
+      "duration": 180.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad2t10.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad2t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Here Comes Sunshine",
+      "duration": 758.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Me and Bobby McGee",
+      "duration": 221.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Weather Report Prelude",
+      "duration": 107.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Eyes of the World",
+      "duration": 621.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "China Doll",
+      "duration": 183.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Sugar Magnolia",
+      "duration": 345.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Casey Jones",
+      "duration": 268.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Johnny B. Goode",
+      "duration": 139.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t08.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "We Bid You Good Night",
+      "duration": 69.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-04-02Berthad3t09.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-04-02Berthad3t09.shn"
+        }
+      ]
+    }
+  ]
+}

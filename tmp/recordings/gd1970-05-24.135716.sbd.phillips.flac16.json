@@ -1,0 +1,286 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-05-24",
+  "venue": "Newcastle-Under-Lyme",
+  "location": "Newcastle, England",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "01. intro",
+      "duration": 291.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01.Intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.Intro.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "02. Casey Jones",
+      "duration": 300.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02.CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.CaseyJones.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "03. China Cat Sunflower",
+      "duration": 318.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03.ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.ChinaCatSunflower.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "04. I Know You Rider",
+      "duration": 302.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04.IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.IKnowYouRider.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "05. Hard To Handle",
+      "duration": 387.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05.HardToHandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.HardToHandle.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "06. Me & My Uncle",
+      "duration": 222.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06.MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.MeMyUncle.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "07. Cryptical Envelopment",
+      "duration": 126.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07.CrypticalEnvelopment.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.CrypticalEnvelopment.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "08. Drums",
+      "duration": 168.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08.Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "09. The Other One",
+      "duration": 527.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09.TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.TheOtherOne.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "10. Cryptical Reprise",
+      "duration": 200.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10.CrypticalReprise.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10.CrypticalReprise.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "11. Attics Of My Life",
+      "duration": 384.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11.AtticsOfMyLife.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11.AtticsOfMyLife.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "12. Good Lovin'",
+      "duration": 656.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12.GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12.GoodLovin.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "13. Cold Rain & Snow",
+      "duration": 387.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13.ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13.ColdRainSnow.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "14. Dark Star",
+      "duration": 1289.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14.DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14.DarkStar.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "15. St. Stephen",
+      "duration": 365.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15.St.Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15.St.Stephen.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "16. Not Fade Away",
+      "duration": 366.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16.NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16.NotFadeAway.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "17. Lovelight",
+      "duration": 2035.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17.Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17.Lovelight.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

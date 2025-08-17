@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1966-06-01",
+  "venue": "Unknown",
+  "location": "Unknown",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Indecipherable talking over pa//",
+      "duration": 58.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt01.mp3",
+          "bitrate": "126"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "jam, nothing recognisable as a tune. Mostly Phil and Billy (1)",
+      "duration": 757.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt02.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "possibly part of a soundcheck (2)",
+      "duration": 134.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt03.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "jam, similar to track 2",
+      "duration": 83.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt04.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "jam, similar to track 2",
+      "duration": 149.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt05.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Phil bass jam > talking",
+      "duration": 327.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1966-xx-xxt06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-xx-xxt06.mp3",
+          "bitrate": "133"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-02-27",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Morning Little School Girl",
+      "duration": 371.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d1t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Doin' That Rag",
+      "duration": 298.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d1t02.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envelopment > Drums > The Othe One > Cryptical Envelopment",
+      "duration": 743.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cosmic Charlie",
+      "duration": 219.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d1t04.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dupree's Diamond Blues ->",
+      "duration": 141.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d2t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mountains Of The Moon >",
+      "duration": 174.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d2t02.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star ->",
+      "duration": 707.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d2t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Saint Stephen ->",
+      "duration": 288.49,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d2t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Eleven ->",
+      "duration": 458.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d2t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Turn On Your Lovelight",
+      "duration": 677.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-69-02-27-d2t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-69-02-27-d2t06.shn"
+        }
+      ]
+    }
+  ]
+}

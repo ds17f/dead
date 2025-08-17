@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-03-24",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll",
+      "duration": 266.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set101.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Help On The Way >",
+      "duration": 208.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set102.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Slipknot! >",
+      "duration": 265.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set103.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Franklin's Tower",
+      "duration": 475.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set104.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Walkin' Blues",
+      "duration": 547.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set105.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 513.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set106.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Desolation Row",
+      "duration": 713.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set107.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 462.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set108.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "One More Saturday Night",
+      "duration": 301.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set109.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 135.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set201.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing In The Band >",
+      "duration": 611.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set202.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 608.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set203.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin Station >",
+      "duration": 1287.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set204.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 539.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set205.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space >",
+      "duration": 656.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set206.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The wheel >",
+      "duration": 284.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set207.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "All Along The Watchtower >",
+      "duration": 461.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set208.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue >",
+      "duration": 520.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set209.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set209.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away >",
+      "duration": 443.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set210.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set210.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Crowd",
+      "duration": 137.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set211.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set211.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "We Bid You Goodnight",
+      "duration": 186.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1990-03-24set212.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-03-24set212.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

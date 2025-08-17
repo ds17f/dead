@@ -1,0 +1,494 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-05-06",
+  "venue": "Recreation Hall - Penn State University",
+  "location": "University Park, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 149.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t01.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway ->",
+      "duration": 263.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 262.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 394.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me & My Uncle ->",
+      "duration": 198.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 323.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "tuning",
+      "duration": 46.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Loser",
+      "duration": 439.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "tuning",
+      "duration": 79.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Far From Me",
+      "duration": 318.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Lazy Lightnin' ->",
+      "duration": 209.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Supplication",
+      "duration": 315.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t12.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Althea",
+      "duration": 526.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t13.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Lost Sailor ->",
+      "duration": 383.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t14.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "St of Circumstance",
+      "duration": 376.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d1t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d1t15.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "tuning",
+      "duration": 73.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d2t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Take a step back jam ->",
+      "duration": 44.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "China Cat Sunflower ->",
+      "duration": 323.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Know You Rider",
+      "duration": 378.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d2t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "tuning",
+      "duration": 154.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Feel Like A Stranger ->",
+      "duration": 572.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "He's Gone ->",
+      "duration": 849.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Other One ->",
+      "duration": 273.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "The Other One ->",
+      "duration": 276.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t04b.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t04b.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Drums ->",
+      "duration": 521.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Space ->",
+      "duration": 278.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Wharf Rat ->",
+      "duration": 602.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Around And Around ->",
+      "duration": 239.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Johnny B. Goode",
+      "duration": 353.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Brokedown Palace",
+      "duration": 359.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-05-06.d3t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-05-06.d3t10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

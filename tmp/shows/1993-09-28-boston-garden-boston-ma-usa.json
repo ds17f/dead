@@ -1,0 +1,191 @@
+{
+  "url": "https://jerrygarcia.com/show/1993-09-28-boston-garden-boston-ma-usa/",
+  "show_id": "1993-09-28-boston-garden-boston-ma-usa",
+  "band": "Grateful Dead",
+  "venue": "Boston Garden",
+  "location_raw": "Boston, MA",
+  "city": "Boston",
+  "state": "MA",
+  "country": "USA",
+  "date": "1993-09-28",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "So Many Roads",
+          "url": "https://jerrygarcia.com/song/so-many-roads/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Uncle John's Band",
+          "url": "https://jerrygarcia.com/song/uncle-johns-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Attics Of My Life",
+          "url": "https://jerrygarcia.com/song/attics-of-my-life/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Vince Welnick",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152431/VinceWelnick_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:14:59.334426",
+  "show_time": null,
+  "recordings": [
+    "gd93-09-28.aud-sbd.miller.12850.sbeok.shnf",
+    "gd1993-09-28.sbd.miller.79058.sbeok.flac16",
+    "gd93-09-28.schoeps.pujol.12378.sbeok.shnf",
+    "gd1993-09-28.126746.mtx-redo2.eichorn.sbeok.t-flac16",
+    "gd1993-09-28.nak300.andrewf.87780.flac1648",
+    "gd1993-09-28.neumann-birkhead.koucky.87989.flac16",
+    "gd1993-09-28.128694.boedicker.flac16",
+    "gd1993-09-28.172811.mtx.eichorn2025.143772.t-flac1644",
+    "gd1993-09-28.125382.mtx.eichorn.sbeok.t-flac16",
+    "gd1993-09-28.140131.schoeps.cmc4.mk4.gastwirt.miller.clugston.flac1648",
+    "gd1993-09-28.125461.-redo.mtx.eichorn.sbeok.t-flac16",
+    "gd1993-09-28.neumann.larson.28899.shnf",
+    "gd1993-09-28.139981.aud.lamarre.berger.flac1648",
+    "gd1993-09-28.164516.me88.rogosa.flac1648",
+    "gd1993-09-28.nak300.andrewf.87781.flac16"
+  ],
+  "best_recording": "gd93-09-28.aud-sbd.miller.12850.sbeok.shnf",
+  "avg_rating": 1.8619047619047615,
+  "raw_rating": 3.95,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 13,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 12,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "final-years",
+    "vince-welnick-years"
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1988-10-16",
+  "venue": "Bayfront Center Arena",
+  "location": "St. Petersburg, FL",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "tuning - Happy Birthday",
+      "duration": 177.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 514.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Never Trust a Woman",
+      "duration": 445.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Feel Like a Stranger",
+      "duration": 516.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Friend of The Devil",
+      "duration": 503.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Stuck Inside of Mobile with The Memphis Blues Again",
+      "duration": 618.64,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "To Lay Me Down ->",
+      "duration": 477.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Don't Ease Me In",
+      "duration": 213.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "tuning",
+      "duration": 95.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Box of Rain",
+      "duration": 305.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Victim or The Crime ->",
+      "duration": 319.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Foolish Heart ->",
+      "duration": 536.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Looks Like Rain ->",
+      "duration": 510.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Terrapin Station ->",
+      "duration": 689.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums ->",
+      "duration": 410.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space ->",
+      "duration": 349.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "The Wheel ->",
+      "duration": 303.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 290.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "All Along The Watchtower ->",
+      "duration": 318.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t11.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Morning Dew",
+      "duration": 649.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t12.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 306.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd88-10-16.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd88-10-16.s2t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

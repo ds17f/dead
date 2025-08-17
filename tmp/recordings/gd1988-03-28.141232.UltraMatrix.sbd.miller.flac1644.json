@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-03-28",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 112.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 578.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FeelLikeAStranger.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower",
+      "duration": 734.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FranklinsTower.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Box Of Rain",
+      "duration": 333.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BoxOfRain.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When Push Comes To Shove",
+      "duration": 300.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WhenPushComesToShove.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Walkin' Blues",
+      "duration": 441.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06WalkinBlues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It Must Have Been The Roses",
+      "duration": 442.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "When I Paint My Masterpiece",
+      "duration": 296.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 682.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BirdSong.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 508.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TheMusicNeverStopped.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 53.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Touch Of Grey",
+      "duration": 381.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TouchOfGrey.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 476.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ManSmartwomanSmarter.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ship Of Fools",
+      "duration": 479.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ShipOfFools.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin'",
+      "duration": 491.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Truckin.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 465.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 454.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One",
+      "duration": 512.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheOtherOne.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue",
+      "duration": 500.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StellaBlue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 608.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ThrowingStones.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 425.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21NotFadeAway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 166.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Mighty Quinn (Quinn the Eskimo)",
+      "duration": 535.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

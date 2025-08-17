@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-09-11",
+  "venue": "Santa Fe Downs",
+  "location": "Santa Fe, NM",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 70.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Alabama Getaway ->",
+      "duration": 303.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 265.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dire Wolf",
+      "duration": 221.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Hell In A Bucket",
+      "duration": 318.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "West L.A. Fadeaway",
+      "duration": 594.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me & My Uncle ->",
+      "duration": 184.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Mexicali Blues",
+      "duration": 338.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Althea",
+      "duration": 441.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t09.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "C.C. Rider ->",
+      "duration": 483.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t10.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Might As Well",
+      "duration": 273.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s1t11.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Help on the Way ->",
+      "duration": 227.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Slipknot! ->",
+      "duration": 440.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Franklin's Tower ->",
+      "duration": 581.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Let It Grow",
+      "duration": 909.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "He's Gone ->",
+      "duration": 640.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums ->",
+      "duration": 494.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space ->",
+      "duration": 578.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Truckin' ->",
+      "duration": 478.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wang Dang Doodle ->",
+      "duration": 642.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Morning Dew ->",
+      "duration": 606.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Around & Around->",
+      "duration": 221.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t11.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sugar Magnolia",
+      "duration": 623.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t12.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "U.S. Blues",
+      "duration": 303.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t13.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Dinasoars",
+      "duration": 260.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-11.s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-11.s2t14.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-10-23",
+  "venue": "Metropolitan Sports Center",
+  "location": "Bloomington, MN",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "China Cat Sunflower > I Know You Rider",
+      "duration": 410.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-23t01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-23t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Truckin'",
+      "duration": 344.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-23t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-23t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Other One",
+      "duration": 529.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-23t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-23t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Weather Report Suit Prelude > Weather Report Suite Part 1",
+      "duration": 515.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-23t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-23t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Sugar Magnolia",
+      "duration": 292.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-23t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-23t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Casey Jones",
+      "duration": 131.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-10-23t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-10-23t06.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 1.8181818181818181,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-08-28",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.6363636363636362,
+  "high_ratings": 5,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "It's A Sin",
+      "duration": 278.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "High Heel Sneakers",
+      "duration": 312.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t02.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dark Star",
+      "duration": 952.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jam",
+      "duration": 203.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d1t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Jam",
+      "duration": 615.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d2t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Eleven Jam",
+      "duration": 379.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d2t02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Jam",
+      "duration": 265.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-08-28d2t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-08-28d2t03.shn"
+        }
+      ]
+    }
+  ]
+}

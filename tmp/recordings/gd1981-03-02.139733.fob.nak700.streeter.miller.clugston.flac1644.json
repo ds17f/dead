@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-03-02",
+  "venue": "Cleveland Music Hall",
+  "location": "Cleveland, OH",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-03-02 s1 tCrowd",
+      "duration": 87.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T01Crowd.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-03-s1 tShakedown Street",
+      "duration": 793.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T02ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T02ShakedownStreet.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-03-02 s1 tNew Minglewood Blues",
+      "duration": 478.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T03NewMinglewoodBlues.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-03-02 s1 tDire Wolf",
+      "duration": 211.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T04DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T04DireWolf.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-03-02 s1 tCassidy",
+      "duration": 351.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T05Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T05Cassidy.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-03-02 s1 tAlthea",
+      "duration": 511.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T06Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T06Althea.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-03-02 s1 tEl Paso",
+      "duration": 330.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T07ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T07ElPaso.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-03-02 s1 tJack-A-Roe",
+      "duration": 307.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T08Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T08Jack-a-roe.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-03-02 s1 tLazy Lightning",
+      "duration": 202.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T09LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T09LazyLightning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-03-02 s1 tSupplication",
+      "duration": 447.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T10Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T10Supplication.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-03-02 s1 tDon't Ease Me In",
+      "duration": 191.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T11DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T11DontEaseMeIn.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-03-02 s1 tPromised Land",
+      "duration": 268.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S1T12PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S1T12PromisedLand.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-03-02 s2 t01 Crowd",
+      "duration": 44.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T01Crowd.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-03-02 s2 t02 Ramble On Rose",
+      "duration": 460.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T02RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T02RambleOnRose.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-03-02 s2 t03 Playing In The Band",
+      "duration": 753.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T03PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T03PlayingInTheBand.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-03-02 s2 t04 China Doll",
+      "duration": 322.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T04ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T04ChinaDoll.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-03-02 s2 t05 Playing In The Band Jam",
+      "duration": 211.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T05PlayingInTheBandJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T05PlayingInTheBandJam.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-03-02 s2 t06 Drums",
+      "duration": 713.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T06Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-03-02 s2 t07 Space",
+      "duration": 488.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T07Space.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-03-02 s2 t08 Playing In The Band Jam",
+      "duration": 167.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T08PlayingInTheBandJam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T08PlayingInTheBandJam.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd81-03-02 s2 t09 Playing In The Band",
+      "duration": 142.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T09PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T09PlayingInTheBand.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd81-03-02 s2 t10 The Wheel",
+      "duration": 420.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T10TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T10TheWheel.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd81-03-02 s2 t11 Around & Around",
+      "duration": 234.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T11AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T11AroundAround.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd81-03-02 s2 t12 Johnny B. Goode",
+      "duration": 284.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T12JohnnyB.Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T12JohnnyB.Goode.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd81-03-02 s2 t13 US Blues",
+      "duration": 334.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-03-02S2T13UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-02S2T13UsBlues.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 2.3529411764705883,
+  "review_count": 17,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-02-21",
+  "venue": "Dream Bowl",
+  "location": "Vallejo, CA",
+  "raw_rating": 4.705882352941177,
+  "high_ratings": 16,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 331.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Doin' That Rag",
+      "duration": 173.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d1t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dark Star",
+      "duration": 567.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d1t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Saint Stephen",
+      "duration": 181.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d2t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "The Eleven",
+      "duration": 577.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d2t02.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Turn on Your Lovelight",
+      "duration": 664.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d2t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Morning Dew",
+      "duration": 304.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-21d2t04.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-02-21d2t04.shn"
+        }
+      ]
+    }
+  ]
+}

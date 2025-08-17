@@ -1,0 +1,462 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1974-06-16",
+  "venue": "Iowa State Fairgrounds",
+  "location": "Des Moines, IA",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 212.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mexicali Blues",
+      "duration": 231.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Row Jimmy",
+      "duration": 304.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Beat It On Down The Line",
+      "duration": 194.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Scarlet Begonias",
+      "duration": 364.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Black Throated Wind",
+      "duration": 272.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t06.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Sugaree",
+      "duration": 209.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "El Paso",
+      "duration": 307.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t08.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "It Must Have Been The Roses",
+      "duration": 231.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t09.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 227.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d1t10.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat->",
+      "duration": 334.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 283.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Around",
+      "duration": 200.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "U.S. Blues",
+      "duration": 201.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Race is On",
+      "duration": 133.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Eyes Of The World->",
+      "duration": 666.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Big River",
+      "duration": 264.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d2t07.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Playin' In The Band",
+      "duration": 1020.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d3t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Tennessee Jed",
+      "duration": 277.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d3t02.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Me & My Uncle",
+      "duration": 110.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d3t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Deal",
+      "duration": 207.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d3t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Greatest Story Ever Told",
+      "duration": 195.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d3t05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Ship Of Fools",
+      "duration": 223.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d3t06.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Truckin'->",
+      "duration": 291.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d4t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d4t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Nobody's Jam->",
+      "duration": 450.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d4t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d4t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Wharf Rat->",
+      "duration": 300.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d4t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d4t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Goin' Down The Road Feelin' Bad",
+      "duration": 284.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d4t04.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d4t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "E: Casey Jones",
+      "duration": 251.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-06-16d4t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-06-16d4t05.shn"
+        }
+      ]
+    }
+  ]
+}

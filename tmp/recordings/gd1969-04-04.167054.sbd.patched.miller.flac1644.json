@@ -1,0 +1,124 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1969-04-04",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction",
+      "duration": 36.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Introduction.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 617.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Good Morning Little Schoolgirl.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Doin' That Rag",
+      "duration": 393.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Doin' That Rag.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "That's It For The Other One >",
+      "duration": 1203.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 That's It For The Other One.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Death Don't Have No Mercy",
+      "duration": 522.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Death Don't Have No Mercy.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Lovelight",
+      "duration": 1387.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Turn On Your Lovelight.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star >",
+      "duration": 1202.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Dark Star.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Saint Stephen >",
+      "duration": 400.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Saint Stephen.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Eleven >",
+      "duration": 623.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 The Eleven.flac"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Feedback",
+      "duration": 180.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Feedback.flac"
+        }
+      ]
+    }
+  ]
+}

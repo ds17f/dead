@@ -1,0 +1,62 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-00-00",
+  "venue": "Wake Of The Flood Sessions",
+  "location": "",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Weather Report Suite",
+      "duration": 352.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-xx-xxt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-xx-xxt01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Let It Grow",
+      "duration": 472.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-xx-xxt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-xx-xxt02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "China Doll",
+      "duration": 214.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd73-xx-xxt03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-xx-xxt03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

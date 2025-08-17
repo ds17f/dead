@@ -1,0 +1,382 @@
+{
+  "rating": 1.2249999999999999,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1994-10-09",
+  "venue": "USAir Arena",
+  "location": "Landover, MD",
+  "raw_rating": 3.5,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd intro >",
+      "duration": 210.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d101.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 490.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d102.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 476.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d103.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Spoonful",
+      "duration": 318.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d104.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 524.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d105.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Broken Arrow",
+      "duration": 392.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d106.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Me & My Uncle >",
+      "duration": 172.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d107.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Big River",
+      "duration": 457.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d108.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "So Many Roads",
+      "duration": 453.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d109.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Promised Land",
+      "duration": 288.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d110.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Crowd intro >",
+      "duration": 170.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d201.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Here Comes Sunshine",
+      "duration": 355.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d202.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson & Delilah",
+      "duration": 553.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d203.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Way to Go Home",
+      "duration": 404.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d204.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ship of Fools",
+      "duration": 425.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d205.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Saint Of Circumstance >",
+      "duration": 638.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d206.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums with Jerry > Drums >",
+      "duration": 798.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d207.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Space >",
+      "duration": 787.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d301.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "I Need A Miracle >",
+      "duration": 383.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d302.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Comes A Time",
+      "duration": 375.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d303.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Throwing Stones",
+      "duration": 556.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d304.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Lovelight",
+      "duration": 469.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d305.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Rain Song",
+      "duration": 318.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d306.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d306.mp3",
+          "bitrate": "212"
+        }
+      ]
+    }
+  ]
+}

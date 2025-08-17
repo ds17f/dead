@@ -1,0 +1,197 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-12-10-great-western-la-forum-inglewood-ca-usa/",
+  "show_id": "1989-12-10-great-western-la-forum-inglewood-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Great Western LA Forum",
+  "location_raw": "Inglewood, CA",
+  "city": "Inglewood",
+  "state": "CA",
+  "country": "USA",
+  "date": "1989-12-10",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "We Can Run",
+          "url": "https://jerrygarcia.com/song/we-can-run/",
+          "segue_into_next": false
+        },
+        {
+          "name": "When I Paint My Masterpiece",
+          "url": "https://jerrygarcia.com/song/when-i-paint-my-masterpiece/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Victim Or The Crime",
+          "url": "https://jerrygarcia.com/song/victim-or-the-crime/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider**",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "I'm A Man**",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "It's All Over Now Baby Blue*",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:05:08.787511",
+  "show_time": null,
+  "recordings": [
+    "gd89-12-10.sbd.ladner.5451.sbeok.shnf",
+    "gd1989-12-10.sbd.miller.119728.flac16",
+    "gd1989-12-10.140276.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1989-12-10.140202.sbd.miller.flac2496",
+    "gd1989-12-10.sbd.tobin.patched.102510.flac16",
+    "gd1989-12-10.sbd.ladner.16669.sbeok.shnf",
+    "gd1989-12-10.fob.french.brown.83792.sbeok.flac24",
+    "gd1989-12-10.mtx.tobin.102402.flac16",
+    "gd1989-12-10.nak300.bowen.foster.102175.flac16",
+    "gd1989-12-10.158260.dts.tobin.flac16",
+    "gd1989-12-10.137973.dbx.hale.flac16",
+    "gd1989-12-10.158257.PandP-aud.bowen.flac16",
+    "gd1989-12-10.158261.5-1.tobin.flac1648",
+    "gd1989-12-10.mtx.dts.tobin.102513.flac16",
+    "gd1989-12-10.158258.mtx.tobin.flac16",
+    "gd1989-12-10.146096.Senn-MKE2002.french.flac1644",
+    "gd1989-12-10.141797.FOB.Schoeps.Mattes.Miller.Noel.t-flac1648"
+  ],
+  "best_recording": "gd89-12-10.sbd.ladner.5451.sbeok.shnf",
+  "avg_rating": 2.0437219730941703,
+  "raw_rating": 4.444444444444445,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 25,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 6,
+    "UNKNOWN": 10,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

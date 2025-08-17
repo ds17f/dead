@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-05-17",
+  "venue": "Uptown Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Samson And Delilah",
+      "duration": 434.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 563.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dancin' In The Streets >",
+      "duration": 867.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums >",
+      "duration": 952.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Space >",
+      "duration": 119.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Terrapin Station >",
+      "duration": 647.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Not Fade Away",
+      "duration": 822.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Around And Around",
+      "duration": 543.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Crowd",
+      "duration": 184.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t09.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Werewolves Of London",
+      "duration": 435.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-05-17.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-05-17.s2t10.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

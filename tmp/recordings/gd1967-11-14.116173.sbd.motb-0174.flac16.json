@@ -1,0 +1,46 @@
+{
+  "rating": 1.4666666666666668,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1967-11-14",
+  "venue": "American Studios",
+  "location": "North Hollywood, CA",
+  "raw_rating": 3.6666666666666665,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Born Cross-Eyed (reel #2 side B; 8 track 15 ips)",
+      "duration": 196.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-14.sbd.motb.0174.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-14.sbd.motb.0174.d1t01.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star (reel #2 side B; 8 track 15 ips)",
+      "duration": 171.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-14.sbd.motb.0174.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-14.sbd.motb.0174.d1t02.mp3",
+          "bitrate": "173"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "rating": 2.1315789473684212,
+  "review_count": 19,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-10-07",
+  "venue": "University of New Mexico",
+  "location": "Albuquerque, NM",
+  "raw_rating": 4.2631578947368425,
+  "high_ratings": 15,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "The Wheel",
+      "duration": 182.17,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd77-10-07d1t1-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-10-07d1t2-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-10-07d1t3-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-10-07d1t4-fixed.shn"
+        }
+      ]
+    }
+  ]
+}

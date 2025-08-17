@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-03-26",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 381.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Hell In A Bucket.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 639.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Sugaree.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stir It Up",
+      "duration": 149.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Stir It Up.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Stir It Up.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 535.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 New Minglewood Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 525.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Peggy-O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Peggy-O.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 287.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Mexicali Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 391.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Big River.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Row Jimmy",
+      "duration": 594.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Row Jimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Row Jimmy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Stuck Inside of Mobile With The Memphis Blues Again",
+      "duration": 489.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Stuck Inside of Mobile With The Memphis Blues Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Stuck Inside of Mobile With The Memphis Blues Again.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Might As Well",
+      "duration": 288.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Might As Well.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Cat Sunflower",
+      "duration": 386.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 China Cat Sunflower.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider",
+      "duration": 329.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 I Know You Rider.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 525.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Playing In The Band.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band",
+      "duration": 614.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Uncle John's Band.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 540.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 503.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Gimme Some Lovin'",
+      "duration": 313.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Gimme Some Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Gimme Some Lovin'.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 288.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 The Wheel.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "All Along The Watchtower",
+      "duration": 321.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 All Along The Watchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 All Along The Watchtower.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter",
+      "duration": 514.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Black Peter.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night",
+      "duration": 499.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 One More Saturday Night.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 366.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 Knockin' On Heaven's Door.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Knockin' On Heaven's Door.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

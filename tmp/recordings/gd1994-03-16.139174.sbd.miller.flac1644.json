@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-03-16",
+  "venue": "Rosemont Horizon",
+  "location": "Rosemont, IL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 452.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01JackStraw.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 503.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FriendOfTheDevil.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 545.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "So Many Roads",
+      "duration": 443.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04SoManyRoads.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 420.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05JustLikeTomThumbsBlues.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line",
+      "duration": 190.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BeatItOnDownTheLine.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "High Time",
+      "duration": 426.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07HighTime.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Easy Answers",
+      "duration": 353.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08EasyAnswers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08EasyAnswers.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Don't Ease Me In",
+      "duration": 180.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09DontEaseMeIn.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 94.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 614.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 753.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12FireOnTheMountain.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 507.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Way To Go Home",
+      "duration": 392.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14WayToGoHome.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Dark Star",
+      "duration": 674.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15DarkStar.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 721.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 784.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle",
+      "duration": 235.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18INeedAMiracle.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Standing On The Moon",
+      "duration": 533.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StandingOnTheMoon.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 539.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SugarMagnolia.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Tuning",
+      "duration": 40.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Tuning.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "I Fought The Law",
+      "duration": 193.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22IFoughtTheLaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22IFoughtTheLaw.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

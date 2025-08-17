@@ -1,0 +1,142 @@
+{
+  "rating": 2.3,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1978-02-03",
+  "venue": "Dane County Coliseum",
+  "location": "Madison, WI",
+  "raw_rating": 4.6,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Lovin",
+      "duration": 379.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ship Of Fools",
+      "duration": 454.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Estimated Prophet",
+      "duration": 730.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Eyes Of The World",
+      "duration": 885.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Playing In The Band",
+      "duration": 1489.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Wheel",
+      "duration": 310.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Playing In The Band",
+      "duration": 594.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Johnny B. Goode",
+      "duration": 267.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

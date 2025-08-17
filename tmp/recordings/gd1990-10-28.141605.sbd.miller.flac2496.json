@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-10-28",
+  "venue": "The Zenith",
+  "location": "Paris, France",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 49.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Touch Of Grey",
+      "duration": 400.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02TouchOfGrey.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 512.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WalkinBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 501.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Candyman.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Box Of Rain",
+      "duration": 344.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BoxOfRain.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 320.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Maggie's Farm",
+      "duration": 357.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MaggiesFarm.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Althea",
+      "duration": 465.23,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Althea.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 420.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Cassidy.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tennessee Jed",
+      "duration": 489.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TennesseeJed.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Stander On The Mountain",
+      "duration": 432.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11StanderOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11StanderOnTheMountain.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Victim Or The Crime",
+      "duration": 522.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12VictimOrTheCrime.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Eyes Of The World",
+      "duration": 642.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13EyesOfTheWorld.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Estimated Prophet",
+      "duration": 612.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14EstimatedProphet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Uncle John's Band",
+      "duration": 534.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15UncleJohnsBand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 551.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 570.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One",
+      "duration": 481.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheOtherOne.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat",
+      "duration": 509.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19WharfRat.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 494.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SugarMagnolia.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 192.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 525.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22KnockinOnHeavensDoor.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

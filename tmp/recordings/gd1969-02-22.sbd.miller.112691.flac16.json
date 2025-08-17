@@ -1,0 +1,158 @@
+{
+  "rating": 2.4130434782608696,
+  "review_count": 23,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-02-22",
+  "venue": "Dream Bowl",
+  "location": "Vallejo, CA",
+  "raw_rating": 4.826086956521739,
+  "high_ratings": 22,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dupree's Diamond Blues ->",
+      "duration": 235.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mountains Of The Moon ->",
+      "duration": 322.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d1t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star ->",
+      "duration": 1339.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d1t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "That's It For The Other One ->",
+      "duration": 1195.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Death Don't Have No Mercy",
+      "duration": 441.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d1t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Doin' That Rag ->",
+      "duration": 405.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "St. Stephen ->",
+      "duration": 425.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Eleven ->",
+      "duration": 1087.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d2t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Turn On Your Lovelight",
+      "duration": 1394.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-02-22d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-02-22d2t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

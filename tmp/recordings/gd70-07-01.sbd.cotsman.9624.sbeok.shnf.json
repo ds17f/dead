@@ -1,0 +1,62 @@
+{
+  "rating": 1.0666666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-07-01",
+  "venue": "Winnipeg Fairgrounds",
+  "location": "Winnipeg, Manitoba, Canada",
+  "raw_rating": 2.6666666666666665,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Hard To Handle",
+      "duration": 121.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-01d1t01.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Easy Wind",
+      "duration": 307.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-01d1t02.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Candyman",
+      "duration": 202.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-07-01d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-07-01d1t03.shn"
+        }
+      ]
+    }
+  ]
+}

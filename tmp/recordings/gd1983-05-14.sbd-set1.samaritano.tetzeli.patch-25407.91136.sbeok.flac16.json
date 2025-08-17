@@ -1,0 +1,142 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-05-14",
+  "venue": "Greek Theatre - University of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 517.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 588.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me & My Uncle",
+      "duration": 203.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mexicali Blues",
+      "duration": 374.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Happy Birthday Billy K",
+      "duration": 61.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 483.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "My Brother Esau",
+      "duration": 324.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bertha",
+      "duration": 385.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1983-05-14s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1983-05-14s1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

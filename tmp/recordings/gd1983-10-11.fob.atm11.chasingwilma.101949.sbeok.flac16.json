@@ -1,0 +1,206 @@
+{
+  "rating": 1.3333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1983-10-11",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 3.3333333333333335,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "wang dang doodle",
+      "duration": 465.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t1.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "jack straw, the loser",
+      "duration": 837.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t2.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "me and my uncle > mexicali blues",
+      "duration": 651.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t3.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "bird song",
+      "duration": 631.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t4.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "hell in a bucket",
+      "duration": 694.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t5.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "day job",
+      "duration": 857.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t6.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "china cat sun flower> I know you rider",
+      "duration": 1351.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t1.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I need a miracle > bertha > china doll >",
+      "duration": 834.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t2.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "drums >",
+      "duration": 480.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t3.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "space > st. stephen > throwing stones",
+      "duration": 1088.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t4.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "touch of gray",
+      "duration": 387.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t5.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t5.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "E: Johnny B. Goode",
+      "duration": 331.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d2t6.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d2t6.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

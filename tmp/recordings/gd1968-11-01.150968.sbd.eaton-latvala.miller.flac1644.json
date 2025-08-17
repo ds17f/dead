@@ -1,0 +1,69 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-11-01",
+  "venue": "The Silver Dollar Fair",
+  "location": "Chico, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 742.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Dark Star.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One >",
+      "duration": 1185.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 That's It For The Other One.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Potato Caboose//",
+      "duration": 36.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 New Potato Caboose.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Caution (Do Not Stop On Tracks) > Feedback >",
+      "duration": 510.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Caution (Do Not Stop On Tracks).flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "And We Bid You Good Night",
+      "duration": 72.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 And We Bid You Good Night.flac"
+        }
+      ]
+    }
+  ]
+}

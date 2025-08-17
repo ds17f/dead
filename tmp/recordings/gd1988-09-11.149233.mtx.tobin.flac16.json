@@ -1,0 +1,318 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-11",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Iko Iko",
+      "duration": 475.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Iko Iko.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 465.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Feel Like A Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Feel Like A Stranger.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Franklin's Tower",
+      "duration": 521.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Franklin's Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Franklin's Tower.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 633.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Little Red Rooster.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Peggy-O",
+      "duration": 506.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Peggy-O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Peggy-O.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 602.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Stuck Inside Of Mobile With The Memphis Blues Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Stuck Inside Of Mobile With The Memphis Blues Again.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 477.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Tennessee Jed.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 295.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Promised Land.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Foolish Heart",
+      "duration": 597.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Foolish Heart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Foolish Heart.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Victim Or The Crime",
+      "duration": 336.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Victim Or The Crime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Victim Or The Crime.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 447.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Scarlet Begonias.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Fire On The Mountain",
+      "duration": 657.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Fire On The Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Fire On The Mountain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 587.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 416.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Wheel",
+      "duration": 305.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 The Wheel.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Stella Blue",
+      "duration": 516.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Stella Blue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Throwing Stones",
+      "duration": 549.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Throwing Stones.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 730.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Not Fade Away.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 443.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 It's All Over Now, Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 It's All Over Now, Baby Blue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

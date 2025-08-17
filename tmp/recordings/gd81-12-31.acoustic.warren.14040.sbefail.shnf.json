@@ -1,0 +1,41 @@
+{
+  "rating": 2.927272727272727,
+  "review_count": 11,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1981-12-31",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 4.181818181818182,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Me and Bobby McGee",
+      "duration": 165.07,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd1981-12-31Acoustic01.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-12-31Acoustic02.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-12-31Acoustic03.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-12-31Acoustic04.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1981-12-31Acoustic05.shn"
+        }
+      ]
+    }
+  ]
+}

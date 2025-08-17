@@ -1,0 +1,197 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-06-27-merriweather-post-pavilion-columbia-md-usa/",
+  "show_id": "1984-06-27-merriweather-post-pavilion-columbia-md-usa",
+  "band": "Grateful Dead",
+  "venue": "Merriweather Post Pavilion",
+  "location_raw": "Columbia, MD",
+  "city": "Columbia",
+  "state": "MD",
+  "country": "USA",
+  "date": "1984-06-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Cumberland Blues",
+          "url": "https://jerrygarcia.com/song/cumberland-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "My Brother Esau",
+          "url": "https://jerrygarcia.com/song/my-brother-esau/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Help On The Way",
+          "url": "https://jerrygarcia.com/song/help-on-the-way/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Slipknot",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Why Don't We Do It In The Road*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:51:44.605769",
+  "show_time": null,
+  "recordings": [
+    "gd84-06-27.sbd.unknown.12929.sbeok.shnf",
+    "gd1984-06-27.sbd.miller.87467.sbeok.flac16",
+    "gd1984-06-27.sbd.miller.repitch-87467.87658.sbeok.flac16",
+    "gd84-06-27.sbd.skankweed.4615.sbeok.shnf",
+    "gd84-06-27.nak-ziemba.connor.6999.sbeok.shnf",
+    "gd1984-06-27.senn421.pauline.miller.91375.sbeok.flac16",
+    "gd1984-06-27.163306.neumann.u87.akg414.blend.eaton.miller.clugston.flac1648",
+    "gd1984-06-27.senn.hubbard.bandrofcheck.81509.sbefail.flac16",
+    "gd1984-06-27.getto.aud.122873.flac16",
+    "gd1984-06-27.163307.neumann.u87.akg414.blend.eaton.miller.clugston.flac2496",
+    "gd1984-06-27.148235.fob.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1984-06-27.139841.FOB.Schoeps.Oade.Bryant.Miller.Noel.t-flac24",
+    "gd1984-06-27.148236.fob.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1984-06-27.111477.beyer-senn.daweez.d5scott.flac16",
+    "gd1984-06-27.141139.FOB.Schoeps.Oade.Bryant.Miller.Noel.t-flac1644",
+    "gd1984-06-27.beyerm88.holbrook.burke.82420.sbeok.flac16",
+    "gd1984-06-27.beyerm88.holbrook.burke.82450.sbeok.flac16"
+  ],
+  "best_recording": "gd84-06-27.sbd.unknown.12929.sbeok.shnf",
+  "avg_rating": 2.227490421455938,
+  "raw_rating": 4.516129032258065,
+  "recording_count": 17,
+  "confidence": 1.0,
+  "total_high_ratings": 57,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 4,
+    "UNKNOWN": 12,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

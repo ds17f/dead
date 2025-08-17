@@ -1,0 +1,110 @@
+{
+  "rating": 1.7727272727272727,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-09-30",
+  "venue": "Cafe au Go-Go",
+  "location": "New York City, NY",
+  "raw_rating": 3.5454545454545454,
+  "high_ratings": 5,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "China Cat Sunflower",
+      "duration": 247.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-30t01.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-30t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "I Know You Rider",
+      "duration": 284.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-30t02.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-30t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Merry-Go-Round Broke down > Take Me Out to the Ballgame Tuning",
+      "duration": 57.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-30t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-30t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Alligator",
+      "duration": 258.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-30t04.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-30t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Drums",
+      "duration": 512.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-30t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-30t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Other One",
+      "duration": 692.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-30t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-30t06.shn"
+        }
+      ]
+    }
+  ]
+}

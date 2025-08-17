@@ -1,0 +1,382 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-03-24",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let the Good Times Roll",
+      "duration": 249.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Help on the Way ->",
+      "duration": 248.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Slipknot! ->",
+      "duration": 225.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Franklin's Tower",
+      "duration": 479.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Walkin' Blues",
+      "duration": 378.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tuning",
+      "duration": 165.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 513.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Desolation Row",
+      "duration": 589.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "tuning",
+      "duration": 124.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tennessee Jed",
+      "duration": 464.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "One More Saturday Night",
+      "duration": 289.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s1t11.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing in the Band ->",
+      "duration": 610.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle John's Band ->",
+      "duration": 604.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station ->",
+      "duration": 805.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Mind Left Body Jam ->",
+      "duration": 494.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 552.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 624.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel ->",
+      "duration": 294.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "All Along the Watchtower ->",
+      "duration": 460.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stella Blue ->",
+      "duration": 520.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 449.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t10.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "encore break",
+      "duration": 100.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t11.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "We Bid You Good Night",
+      "duration": 214.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd90-03-24.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-03-24.s2t12.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

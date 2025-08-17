@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1984-12-31",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jane Dornak with Bob Weir",
+      "duration": 325.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Father Guido Sarduchi & various crowd members",
+      "duration": 296.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Father Guido Sarduchi & Bill Kreutzman",
+      "duration": 359.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t03.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jane Dornak & Brent Midland",
+      "duration": 190.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Poem Dr. Spazmodious by Robert Hunter.",
+      "duration": 306.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Father Guido & Jerry Garcia (topics, being Catholic, UFOs, Egypt, Canada)",
+      "duration": 602.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t06.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Happy New Year to radio stations from Dan Heally.",
+      "duration": 10.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t07.mp3",
+          "bitrate": "236"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Whilly & Phil (discussing the art of fugue).",
+      "duration": 295.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Jan & Eileen Law.",
+      "duration": 258.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1984-12-31d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1984-12-31d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

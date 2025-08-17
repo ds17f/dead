@@ -1,0 +1,382 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1987-03-29",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 96.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 337.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HellInABucket.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 431.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Bertha.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 549.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LittleRedRooster.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Far From Me",
+      "duration": 288.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05FarFromMe.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Friend Of The Devil",
+      "duration": 489.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06FriendOfTheDevil.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "El Paso",
+      "duration": 334.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07ElPaso.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "When Push Comes To Shove",
+      "duration": 360.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08WhenPushComesToShove.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 786.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 72.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mississippi Half-Step Uptown Toodleoo",
+      "duration": 467.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11MississippiHalf-stepUptownToodleoo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11MississippiHalf-stepUptownToodleoo.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band",
+      "duration": 614.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12PlayingInTheBand.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "China Doll",
+      "duration": 399.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ChinaDoll.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 442.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ManSmartwomanSmarter.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 423.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 469.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 421.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 375.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playing In The Band",
+      "duration": 196.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19PlayingInTheBand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Muddy River",
+      "duration": 358.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20BlackMuddyRiver.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Sugar Magnolia",
+      "duration": 531.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21SugarMagnolia.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 41.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 308.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-03-01",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 60.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 340.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 517.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wang Dang Doodle",
+      "duration": 489.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Row Jimmy",
+      "duration": 678.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Memphis Blues",
+      "duration": 560.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "So Many Roads",
+      "duration": 506.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Picasso Moon",
+      "duration": 410.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Dont Ease Me In",
+      "duration": 218.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set1t09.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "tuning",
+      "duration": 60.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Saint of Circumstance",
+      "duration": 458.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Way to Go Home",
+      "duration": 362.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias ->",
+      "duration": 496.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire on the Mountain ->",
+      "duration": 743.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 562.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 544.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Last Time ->",
+      "duration": 331.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter ->",
+      "duration": 545.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 666.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t10.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Weight",
+      "duration": 361.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1992-03-01set2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1992-03-01set2t11.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

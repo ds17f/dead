@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1991-03-20",
+  "venue": "Capital Centre",
+  "location": "Landover , MD",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Might As Well (multiple takes)",
+      "duration": 1118.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd91-03-20snchk.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd91-03-20snchk.mp3",
+          "bitrate": "177"
+        }
+      ]
+    }
+  ]
+}

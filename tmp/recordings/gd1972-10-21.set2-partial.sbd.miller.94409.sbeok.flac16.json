@@ -1,0 +1,110 @@
+{
+  "rating": 2.3,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-10-21",
+  "venue": "Vanderbilt University",
+  "location": "Nashville, TN",
+  "raw_rating": 4.6,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "He's Gone",
+      "duration": 852.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-21d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-21d1t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 357.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-21d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-21d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bird Song",
+      "duration": 956.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-21d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-21d1t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Truckin' ->",
+      "duration": 690.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-21d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-21d1t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One ->",
+      "duration": 1092.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-21d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-21d1t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Morning Dew",
+      "duration": 727.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd72-10-21d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-10-21d1t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

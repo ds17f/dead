@@ -1,0 +1,286 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-03-27",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "tuning",
+      "duration": 38.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Picasso Moon",
+      "duration": 455.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Picasso Moon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Picasso Moon.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Sugaree",
+      "duration": 1103.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Sugaree.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "It's All Over Now",
+      "duration": 458.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 It's All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 It's All Over Now.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "So Many Roads",
+      "duration": 600.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 So Many Roads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 So Many Roads.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Let It Grow",
+      "duration": 626.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Let It Grow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Iko Iko",
+      "duration": 768.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Iko Iko.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Way To Go Home",
+      "duration": 416.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Way To Go Home.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Way To Go Home.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Playing In The Band >",
+      "duration": 952.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Playing In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Playing In The Band.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Uncle John's Band >",
+      "duration": 589.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Uncle John's Band.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Jam >",
+      "duration": 807.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Jam.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums >",
+      "duration": 401.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space >",
+      "duration": 316.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Days Between >",
+      "duration": 809.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 Days Between.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Days Between.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Sugar Magnolia",
+      "duration": 549.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Sugar Magnolia.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "tuning",
+      "duration": 48.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Fought The Law",
+      "duration": 241.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 I Fought The Law.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 I Fought The Law.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

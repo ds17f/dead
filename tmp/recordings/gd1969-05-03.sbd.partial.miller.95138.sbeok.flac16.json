@@ -1,0 +1,78 @@
+{
+  "rating": 0.3,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-05-03",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 1.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "//He Was A Friend Of Mine",
+      "duration": 535.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03d1t01.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One ->",
+      "duration": 1275.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03d1t02.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Doin' That Rag",
+      "duration": 444.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03d1t03.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 198.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-05-03d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-05-03d1t04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

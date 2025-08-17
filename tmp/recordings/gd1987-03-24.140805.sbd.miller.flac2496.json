@@ -1,0 +1,350 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1987-03-24",
+  "venue": "Hampton Coliseum",
+  "location": "Hampton, VA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 156.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 393.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02JackStraw.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Candyman",
+      "duration": 436.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Candyman.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 448.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NewMinglewoodBlues.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loser",
+      "duration": 520.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Loser.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 151.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MamaTried.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 367.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07MexicaliBlues.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 384.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08RambleOnRose.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 647.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 81.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Gimme Some Lovin'",
+      "duration": 306.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11GimmeSomeLovin.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Black Muddy River",
+      "duration": 365.22,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12BlackMuddyRiver.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 504.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13PlayingInTheBand.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 728.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TerrapinStation.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 364.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 397.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dear Mr Fantasy",
+      "duration": 331.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17DearMrFantasy.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat",
+      "duration": 617.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18WharfRat.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 420.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19NotFadeAway.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 82.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "216"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Brokedown Palace",
+      "duration": 434.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BrokedownPalace.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

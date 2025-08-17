@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1976-09-28",
+  "venue": "Onondaga County War Memorial",
+  "location": "Syracuse, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 190.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd-dp20-outtakesd1t01.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd-dp20-outtakesd1t01.shn"
+        }
+      ]
+    }
+  ]
+}

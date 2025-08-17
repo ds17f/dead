@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-02-06",
+  "venue": "Henry J Kaiser Convention Center",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 235.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T01.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Beer Barrel Polka",
+      "duration": 73.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T02.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Not Fade Away",
+      "duration": 223.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 637.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T04.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Wang Dang Doodle",
+      "duration": 479.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tuning",
+      "duration": 25.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T06.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jack A Roe",
+      "duration": 397.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T07.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Queen Jane Approximately",
+      "duration": 418.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T08.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 62.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T09.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Brown Eyed Women",
+      "duration": 355.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T10.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cassidy",
+      "duration": 406.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T11.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tennesse Jed",
+      "duration": 472.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D1T12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D1T12.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tuning",
+      "duration": 106.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Hell in A Bucket",
+      "duration": 357.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Scarlet Begonias",
+      "duration": 608.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Looks Like Rain",
+      "duration": 482.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Terrapin Station",
+      "duration": 780.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Jam",
+      "duration": 155.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Drums",
+      "duration": 366.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D2T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D2T07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Drums",
+      "duration": 66.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Space",
+      "duration": 398.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Other One",
+      "duration": 300.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Stella Blue",
+      "duration": 598.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Turn on Your Lovelight",
+      "duration": 426.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Black Muddy River",
+      "duration": 421.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "D3T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "D3T06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

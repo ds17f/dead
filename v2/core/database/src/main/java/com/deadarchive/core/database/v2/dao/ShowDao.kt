@@ -1,0 +1,75 @@
+package com.deadarchive.v2.core.database.dao
+
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+import com.deadarchive.v2.core.database.entities.ShowEntity
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+interface ShowDao {
+    
+    // Core operations for import
+    @Insert
+    suspend fun insert(show: ShowEntity)
+    
+    @Insert
+    suspend fun insertAll(shows: List<ShowEntity>)
+    
+    // Basic queries for verification
+    @Query("SELECT * FROM shows ORDER BY date DESC")
+    suspend fun getAllShows(): List<ShowEntity>
+    
+    @Query("SELECT * FROM shows ORDER BY date DESC")
+    fun getAllShowsFlow(): Flow<List<ShowEntity>>
+    
+    @Query("SELECT * FROM shows WHERE showId = :showId")
+    suspend fun getShowById(showId: String): ShowEntity?
+    
+    @Query("SELECT COUNT(*) FROM shows")
+    suspend fun getShowCount(): Int
+    
+    // Date-based queries
+    @Query("SELECT * FROM shows WHERE year = :year ORDER BY date")
+    suspend fun getShowsByYear(year: Int): List<ShowEntity>
+    
+    @Query("SELECT * FROM shows WHERE yearMonth = :yearMonth ORDER BY date")
+    suspend fun getShowsByYearMonth(yearMonth: String): List<ShowEntity>
+    
+    @Query("SELECT * FROM shows WHERE date = :date ORDER BY showSequence")
+    suspend fun getShowsByDate(date: String): List<ShowEntity>
+    
+    
+    // Location queries
+    @Query("SELECT * FROM shows WHERE venueName LIKE '%' || :venueName || '%' ORDER BY date")
+    suspend fun getShowsByVenue(venueName: String): List<ShowEntity>
+    
+    @Query("SELECT * FROM shows WHERE city = :city ORDER BY date DESC")
+    suspend fun getShowsByCity(city: String): List<ShowEntity>
+    
+    @Query("SELECT * FROM shows WHERE state = :state ORDER BY date DESC")
+    suspend fun getShowsByState(state: String): List<ShowEntity>
+    
+    // Search queries
+    @Query("""
+        SELECT * FROM shows 
+        WHERE songList LIKE '%' || :songName || '%' 
+        ORDER BY date DESC
+    """)
+    suspend fun getShowsBySong(songName: String): List<ShowEntity>
+    
+    // Popular/featured queries
+    @Query("SELECT * FROM shows WHERE averageRating IS NOT NULL ORDER BY averageRating DESC LIMIT :limit")
+    suspend fun getTopRatedShows(limit: Int = 20): List<ShowEntity>
+    
+    @Query("SELECT * FROM shows ORDER BY date DESC LIMIT :limit")
+    suspend fun getRecentShows(limit: Int = 20): List<ShowEntity>
+    
+    // Specific famous shows for verification
+    @Query("SELECT * FROM shows WHERE date = '1977-05-08'")
+    suspend fun getCornell77(): List<ShowEntity>
+    
+    // Management operations
+    @Query("DELETE FROM shows")
+    suspend fun deleteAll()
+}

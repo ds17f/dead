@@ -1,0 +1,110 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1973-02-24",
+  "venue": "UI Field House, University Of Iowa",
+  "location": "Iowa City, IA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Wave That Flag",
+      "duration": 342.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-24s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-24s2t01.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "You Ain\u2019t Woman Enough (fragment)",
+      "duration": 23.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-24s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-24s2t02.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Truckin\u2019 > nobody\u2019s dang fault doodle jam >",
+      "duration": 777.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-24s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-24s2t03.mp3",
+          "bitrate": "163"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Eyes Of The World /> phil > groovy jam > uncle j\u2019s jam>",
+      "duration": 1243.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-24s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-24s2t04.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Sugar Magnolia/",
+      "duration": 485.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-24s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-24s2t05.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 258.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1973-02-24s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1973-02-24s2t06.mp3",
+          "bitrate": "160"
+        }
+      ]
+    }
+  ]
+}

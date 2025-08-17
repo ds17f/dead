@@ -1,0 +1,366 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1972-04-17",
+  "venue": "Tivolis Koncertsal",
+  "location": "K\u00f8benhavn (Copenhagen), D\u00e4nemark (Denmark)",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain & Snow",
+      "duration": 334.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me and Bobby McGee",
+      "duration": 356.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Chinatown Shuffle",
+      "duration": 168.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "China Cat Sunflower ->",
+      "duration": 413.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I Know You Rider",
+      "duration": 312.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack Straw",
+      "duration": 288.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "He's Gone",
+      "duration": 414.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Next Time You See Me",
+      "duration": 300.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Black Throated Wind",
+      "duration": 405.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Casey Jones",
+      "duration": 348.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d1t10.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playin In The Band",
+      "duration": 563.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Sugaree",
+      "duration": 401.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "One More Saturday Night",
+      "duration": 287.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "It Hurts Me Too",
+      "duration": 437.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ramble On Rose",
+      "duration": 426.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t05.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "El Paso",
+      "duration": 279.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Big Railroad Blues",
+      "duration": 206.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t07.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Truckin'",
+      "duration": 663.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d2t08.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dark Star ->",
+      "duration": 1854.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia >",
+      "duration": 419.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d3t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Caution (Do Not Step On Tracks) ->",
+      "duration": 1417.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d3t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B. Goode",
+      "duration": 259.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-04-17d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-04-17d3t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1986-03-23",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 736.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-03-23t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-03-23t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Other One >",
+      "duration": 416.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-03-23t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-03-23t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Comes a Time >",
+      "duration": 468.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-03-23t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-03-23t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Lovin'",
+      "duration": 513.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1986-03-23t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1986-03-23t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-03-18",
+  "venue": "Fox Theatre",
+  "location": "St. Louis, MO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "/Truckin*",
+      "duration": 416.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums",
+      "duration": 349.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Other/One*",
+      "duration": 730.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wharf Rat",
+      "duration": 709.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Sugar Magnolia",
+      "duration": 559.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Greatest Story Ever Told",
+      "duration": 158.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Johnny B. Goode",
+      "duration": 330.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 386.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Goin Down The Road Feelin Bad",
+      "duration": 226.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Caution(Do Not Stop On Tracks)",
+      "duration": 870.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Feedback",
+      "duration": 155.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band",
+      "duration": 484.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

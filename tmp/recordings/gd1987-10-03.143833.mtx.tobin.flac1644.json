@@ -1,0 +1,350 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-10-03",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 44.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hey Pocky Way",
+      "duration": 325.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02HeyPockyWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02HeyPockyWay.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 458.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03NewMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 449.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Candyman.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Addams Family Tuning",
+      "duration": 22.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05TheAddamsFamilyTuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TheAddamsFamilyTuning.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 280.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "West LA Fadeaway",
+      "duration": 524.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07WestLaFadeaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "My Brother Esau",
+      "duration": 252.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MyBrotherEsau.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song",
+      "duration": 682.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BirdSong.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 469.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10TheMusicNeverStopped.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Maggie's Farm",
+      "duration": 377.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11MaggiesFarm.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11MaggiesFarm.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Cumberland Blues",
+      "duration": 263.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12CumberlandBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Looks Like Rain",
+      "duration": 551.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13LooksLikeRain.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Terrapin Station",
+      "duration": 718.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14TerrapinStation.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 437.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 412.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Other One",
+      "duration": 402.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheOtherOne.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue",
+      "duration": 502.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18StellaBlue.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 579.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ThrowingStones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Turn On Your Lovelight",
+      "duration": 527.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20TurnOnYourLovelight.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Quinn The Eskimo (The Mighty Quinn)",
+      "duration": 312.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21QuinnTheEskimotheMightyQuinn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21QuinnTheEskimotheMightyQuinn.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

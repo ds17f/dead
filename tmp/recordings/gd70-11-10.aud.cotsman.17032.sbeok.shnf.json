@@ -1,0 +1,78 @@
+{
+  "rating": 0.9333333333333335,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-11-10",
+  "venue": "Action House",
+  "location": "Island Park, NY",
+  "raw_rating": 2.3333333333333335,
+  "high_ratings": 0,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Not Fade Away",
+      "duration": 842.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-10d1t01.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-10d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Caution (Do Not Stop on Tracks)",
+      "duration": 48.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-10d1t02.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-10d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Drums",
+      "duration": 21.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-10d1t03.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-10d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "The Other One",
+      "duration": 692.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-10d1t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-10d1t04.shn"
+        }
+      ]
+    }
+  ]
+}

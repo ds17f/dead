@@ -1,0 +1,30 @@
+{
+  "rating": 2.4,
+  "review_count": 1,
+  "source_type": "FM",
+  "confidence": 0.2,
+  "date": "1970-10-04",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "- KSAN Setbreak Broadcast",
+      "duration": 1393.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-KsanSetbreakBroadcast.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-KsanSetbreakBroadcast.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

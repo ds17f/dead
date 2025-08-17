@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-04-27",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Crowd/Tuning",
+      "duration": 120.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01. Crowd-Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01. Crowd-Tuning.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dancin' In The Street >",
+      "duration": 369.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02. Dancin' In The Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02. Dancin' In The Street.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Bertha",
+      "duration": 459.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03. Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03. Bertha.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Little Red Rooster",
+      "duration": 519.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04. Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04. Little Red Rooster.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Brown Eyed Women",
+      "duration": 326.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05. Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05. Brown Eyed Women.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "My Brother Esau",
+      "duration": 289.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06. My Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06. My Brother Esau.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Ramble On Rose",
+      "duration": 463.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07. Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07. Ramble On Rose.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Tom Thumb's Blues >",
+      "duration": 302.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08. Tom Thumb's Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08. Tom Thumb's Blues.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Cold Rain & Snow >",
+      "duration": 346.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09. Cold Rain & Snow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09. Cold Rain & Snow.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 426.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10. The Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10. The Music Never Stopped.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias >",
+      "duration": 745.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11. Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11. Scarlet Begonias.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes of the World >",
+      "duration": 546.74,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12. Eyes of the World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12. Eyes of the World.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Goin' Down the Road Feelin' Bad >",
+      "duration": 302.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13. Goin' Down the Road Feelin' Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13. Goin' Down the Road Feelin' Bad.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Man Smart, Women Smarter >",
+      "duration": 405.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14. Man Smart, Women Smarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14. Man Smart, Women Smarter.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 672.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15. Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15. Drums.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 416.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16. Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16. Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel >",
+      "duration": 294.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17. The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17. The Wheel.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Truckin' >",
+      "duration": 375.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18. Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18. Truckin'.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "The Other One >",
+      "duration": 337.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19. The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19. The Other One.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter >",
+      "duration": 499.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20. Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20. Black Peter.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around and Around >",
+      "duration": 217.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21. Around and Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21. Around and Around.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "One More Saturday Night",
+      "duration": 282.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22. One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22. One More Saturday Night.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Keep Your Day Job",
+      "duration": 264.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "23. Keep Your Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23. Keep Your Day Job.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

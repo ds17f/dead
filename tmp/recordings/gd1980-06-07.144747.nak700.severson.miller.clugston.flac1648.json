@@ -1,0 +1,478 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-06-07",
+  "venue": "Folsom Field, University Of Colorado",
+  "location": "Boulder, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Intro",
+      "duration": 208.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t01 Intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t01 Intro.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Jack Straw",
+      "duration": 476.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t02 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t02 Jack Straw.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Friend Of The Devil >",
+      "duration": 508.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t03 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t03 Friend Of The Devil.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "El Paso >",
+      "duration": 246.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t04 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t04 El Paso.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Mama Tried",
+      "duration": 271.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t05 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t05 Mama Tried.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Ramble On Rose",
+      "duration": 508.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t06 Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t06 Ramble On Rose.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Passenger",
+      "duration": 380.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t07 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t07 Passenger.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Far From Me",
+      "duration": 268.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t08 Far From Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t08 Far From Me.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "New Minglewood Blues",
+      "duration": 564.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t09 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t09 New Minglewood Blues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Loser",
+      "duration": 502.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t10 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t10 Loser.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Feel Like A Stranger",
+      "duration": 475.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t11 Feel Like A Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t11 Feel Like A Stranger.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "Deal",
+      "duration": 323.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s1t12 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s1t12 Deal.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 34.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t01 Crowd.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Bertha >",
+      "duration": 416.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t02 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t02 Bertha.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Greatest Story Ever Told",
+      "duration": 273.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t03 Greatest Story Ever Told.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t03 Greatest Story Ever Told.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Althea >",
+      "duration": 456.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t04 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t04 Althea.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Lost Sailor >",
+      "duration": 362.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t05 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t05 Lost Sailor.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Saint Of Circumstance >",
+      "duration": 348.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t06 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t06 Saint Of Circumstance.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Jam >",
+      "duration": 473.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t07 Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t07 Jam.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Drums >",
+      "duration": 448.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t08 Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space >",
+      "duration": 135.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t09 Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Not Fade Away >",
+      "duration": 401.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t10 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t10 Not Fade Away.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Wharf Rat >",
+      "duration": 531.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t11 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t11 Wharf Rat.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Good Lovin'",
+      "duration": 471.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t12 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t12 Good Lovin'.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Encore Break",
+      "duration": 70.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t13 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t13 Encore Break.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Alabama Getaway >",
+      "duration": 290.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t14 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t14 Alabama Getaway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "One More Saturday Night",
+      "duration": 287.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t15 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t15 One More Saturday Night.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "216",
+      "title": "2nd Encore Break",
+      "duration": 105.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t16 2nd Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t16 2nd Encore Break.mp3",
+          "bitrate": "209"
+        }
+      ]
+    },
+    {
+      "track": "217",
+      "title": "US Blues",
+      "duration": 341.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-06-07 s2t17 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-06-07 s2t17 US Blues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

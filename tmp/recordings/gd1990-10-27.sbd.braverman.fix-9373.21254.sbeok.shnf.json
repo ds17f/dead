@@ -1,0 +1,350 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-10-27",
+  "venue": "Zenith",
+  "location": "Paris, France",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell in a Bucket",
+      "duration": 220.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t01-fixed.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 392.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t02-fixed.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Minglewood Blues",
+      "duration": 276.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t03-fixed.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Jack-a-roe",
+      "duration": 172.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t04-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black-Throated Wind",
+      "duration": 242.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t05-fixed.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble on Rose",
+      "duration": 251.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t06-fixed.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "When I Paint My Masterpiece",
+      "duration": 171.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t07-fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t07-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Bird Song",
+      "duration": 376.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t08-fixed.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t08-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Promised Land",
+      "duration": 172.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d1t09-fixed.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d1t09-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "China Cat Sunflower",
+      "duration": 266.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d2t01-fixed.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d2t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Know You Rider",
+      "duration": 219.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d2t02-fixed.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d2t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Saint of Circumstance",
+      "duration": 228.93,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d2t03-fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d2t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Crazy Fingers",
+      "duration": 284.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d2t04-fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d2t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing in the Band",
+      "duration": 362.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d2t05-fixed.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d2t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "drums",
+      "duration": 298.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d2t06-fixed.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d2t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "space",
+      "duration": 254.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d3t01-fixed.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d3t01-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Playing in the Band",
+      "duration": 123.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d3t02-fixed.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d3t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Stella Blue",
+      "duration": 253.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d3t03-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d3t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwin' Stones",
+      "duration": 344.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d3t04-fixed.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d3t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 294.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d3t05-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d3t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "One More Saturday Night (encore)",
+      "duration": 191.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-10-27d3t06-fixed.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-10-27d3t06-fixed.shn"
+        }
+      ]
+    }
+  ]
+}

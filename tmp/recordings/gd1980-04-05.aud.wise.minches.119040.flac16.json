@@ -1,0 +1,46 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-04-05",
+  "venue": "NBC Studios",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 218.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-04-05d1t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-04-05d1t001.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Saint of Circumstance",
+      "duration": 290.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1980-04-05d1t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1980-04-05d1t002.mp3",
+          "bitrate": "178"
+        }
+      ]
+    }
+  ]
+}

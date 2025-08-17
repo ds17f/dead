@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-11-07",
+  "venue": "Capitol Theatre",
+  "location": "Port Chester, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Attics Of My Life",
+      "duration": 369.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugar Magnolia",
+      "duration": 306.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Big Boss Man",
+      "duration": 237.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t03.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried",
+      "duration": 166.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t04.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "China Cat Sunflower >",
+      "duration": 397.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t05.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Know You Rider",
+      "duration": 273.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t06.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "King Bee",
+      "duration": 479.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1970-11-07bd1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-07bd1t07.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

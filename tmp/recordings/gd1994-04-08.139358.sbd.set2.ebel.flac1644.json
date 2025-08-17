@@ -1,0 +1,190 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-04-08",
+  "venue": "Miami Arena",
+  "location": "Miami, FL",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Scarlet Begonias",
+      "duration": 524.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ScarletBegonias.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Fire On The Mountain",
+      "duration": 1084.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02FireOnTheMountain.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Saint Of Circumstance",
+      "duration": 436.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03SaintOfCircumstance.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy River Road",
+      "duration": 428.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LazyRiverRoad.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Corrina",
+      "duration": 812.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Corrina.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drumz",
+      "duration": 934.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drumz.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 417.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Need A Miracle",
+      "duration": 258.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08INeedAMiracle.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Days Between",
+      "duration": 821.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09TheDaysBetween.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09TheDaysBetween.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around & Around",
+      "duration": 399.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10AroundAround.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "I Fought The Law",
+      "duration": 198.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11IFoughtTheLaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11IFoughtTheLaw.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

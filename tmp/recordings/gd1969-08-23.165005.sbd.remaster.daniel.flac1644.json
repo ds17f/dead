@@ -1,0 +1,190 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-08-23",
+  "venue": "Pelletier Farm",
+  "location": "St. Helens, OR",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "//Hard To Handle",
+      "duration": 615.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01 Hard to Handle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01 Hard to Handle.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mama Tried >",
+      "duration": 163.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02 Mama Tried.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "High Time",
+      "duration": 427.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03 High Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03 High Time.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Casey Jones",
+      "duration": 375.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04 Casey Jones.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Easy Wind",
+      "duration": 715.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05 Easy Wind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05 Easy Wind.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Sitting On Top Of The World",
+      "duration": 252.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06 Sitting On Top Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06 Sitting On Top Of The World.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Dark Star",
+      "duration": 1691.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07 Dark Star.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07 Dark Star.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "St. Stephen",
+      "duration": 386.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08 St. Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08 St. Stephen.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "The Eleven",
+      "duration": 824.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09 The Eleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09 The Eleven.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Turn On Your Lovelight",
+      "duration": 1727.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10 Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10 Lovelight.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "And We Bid You Goodnight",
+      "duration": 248.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11 Goodnight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11 Goodnight.mp3",
+          "bitrate": "106"
+        }
+      ]
+    }
+  ]
+}

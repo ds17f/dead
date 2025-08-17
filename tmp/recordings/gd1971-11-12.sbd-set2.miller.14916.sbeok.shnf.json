@@ -1,0 +1,174 @@
+{
+  "rating": 3.15,
+  "review_count": 4,
+  "source_type": "AUD",
+  "confidence": 0.8,
+  "date": "1971-11-12",
+  "venue": "San Antonio Civic Auditorium",
+  "location": "San Antonio, TX",
+  "raw_rating": 5.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Ramble on Rose",
+      "duration": 216.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t01.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me & My Uncle",
+      "duration": 134.29,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cryptical Envelopment ->",
+      "duration": 62.27,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums->",
+      "duration": 79.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Other One ->",
+      "duration": 701.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t05.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cryptical Envelopment Reprise ->",
+      "duration": 174.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big Railroad Blues",
+      "duration": 176.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t07.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Sugar Magnolia",
+      "duration": 234.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t08.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Casey Jones",
+      "duration": 213.37,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t09.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Johnny B. Goode",
+      "duration": 151.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-11-12d2t10.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd71-11-12d2t10.shn"
+        }
+      ]
+    }
+  ]
+}

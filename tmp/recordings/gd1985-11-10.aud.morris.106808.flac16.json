@@ -1,0 +1,366 @@
+{
+  "rating": 1.4666666666666668,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1985-11-10",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 3.6666666666666665,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 30.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "A Touch of Grey ->",
+      "duration": 364.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Hell in a Bucket ->",
+      "duration": 365.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 597.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassidy",
+      "duration": 345.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stagger Lee",
+      "duration": 351.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "All Over Now",
+      "duration": 523.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Row Jimmy",
+      "duration": 701.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Feel Like A Stranger",
+      "duration": 457.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d1t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "tuning",
+      "duration": 38.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t01.mp3",
+          "bitrate": "122"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mississippi Halfstep ->",
+      "duration": 403.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Know You Rider ->",
+      "duration": 347.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing in the Band ->",
+      "duration": 521.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band ->",
+      "duration": 740.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 364.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 315.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t07.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Truckin' ->",
+      "duration": 410.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Comes A Time ->",
+      "duration": 404.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Around & Around ->",
+      "duration": 230.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t10.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Good Lovin'",
+      "duration": 422.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "tuning",
+      "duration": 11.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t12.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 435.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-11-10d2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10d2t13.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "rating": 1.9125,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1976-08-02",
+  "venue": "Colt Park",
+  "location": "Hartford, CT",
+  "raw_rating": 4.25,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 267.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half Step",
+      "duration": 651.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried",
+      "duration": 197.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Deal*",
+      "duration": 320.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cassisdy",
+      "duration": 274.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennesse Jed",
+      "duration": 531.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 378.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brown Eyed Women",
+      "duration": 350.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Minglewood Blues",
+      "duration": 289.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "They Love Each Other",
+      "duration": 457.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain",
+      "duration": 503.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t11.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Loser",
+      "duration": 493.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t12.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Lazy Lighting-Supplication",
+      "duration": 561.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t13.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Might As Well",
+      "duration": 344.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t14.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Jam",
+      "duration": 240.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t15.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Samson & Delilah",
+      "duration": 584.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t16.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Candyman",
+      "duration": 455.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t17.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "tuning",
+      "duration": 123.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t18.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Playing /In The Band",
+      "duration": 964.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t19.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Wharf Rat",
+      "duration": 672.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t20.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Jam",
+      "duration": 405.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t21.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t21.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Going Down The Road Feeling Bad",
+      "duration": 490.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t22.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t22.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "PITB reprise",
+      "duration": 694.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t23.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t23.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Around & Around",
+      "duration": 682.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t24.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t24.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "U.S. Blues",
+      "duration": 534.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t25.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t25.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Sugar Magnolia",
+      "duration": 576.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "t26.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "t26.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

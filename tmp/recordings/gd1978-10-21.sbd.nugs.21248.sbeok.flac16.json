@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1978-10-21",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 450.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_01_Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_01_Bertha.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Good Lovin'",
+      "duration": 562.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_02_Good_Lovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_02_Good_Lovin.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It Must Have Been The Roses",
+      "duration": 429.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_03_It_Must_Have_Been_the_Roses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_03_It_Must_Have_Been_the_Roses.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet ->",
+      "duration": 889.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_04_Estimated_Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_04_Estimated_Prophet.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "He's Gone ->",
+      "duration": 474.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_05_Hes_Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_05_Hes_Gone.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums ->",
+      "duration": 634.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_06_Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_06_Drums.mp3",
+          "bitrate": "210"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space ->",
+      "duration": 450.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_07_Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_07_Space.mp3",
+          "bitrate": "214"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Got My Mojo Workin'",
+      "duration": 640.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_08_Got_My_Mojo_Workin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_08_Got_My_Mojo_Workin.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Other One ->",
+      "duration": 443.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_09_The_Other_One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_09_The_Other_One.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Stella Blue ->",
+      "duration": 714.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_10_Stella_Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_10_Stella_Blue.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugar Magnolia",
+      "duration": 533.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_11_Sugar_Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_11_Sugar_Magnolia.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "U. S. Blues",
+      "duration": 371.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021ii_12_US_Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021ii_12_US_Blues.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Hamza Jam #1",
+      "duration": 470.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_01_Hamza_Jam1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_01_Hamza_Jam1.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ollin Agrageed",
+      "duration": 1121.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_02_Ollin_Arageed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_02_Ollin_Arageed.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Promised Land",
+      "duration": 382.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_03_Promised_Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_03_Promised_Land.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Sugaree",
+      "duration": 712.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_04_Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_04_Sugaree.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Passenger",
+      "duration": 317.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_05_Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_05_Passenger.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Ramble On Rose",
+      "duration": 485.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_06_Ramble_on_Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_06_Ramble_on_Rose.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Looks Like Rain",
+      "duration": 539.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_07_Looks_Like_Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_07_Looks_Like_Rain.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Stagger Lee",
+      "duration": 457.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_08_Stagger_Lee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_08_Stagger_Lee.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "I Need A Miracle",
+      "duration": 462.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781021i_09_I_Need_A_Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781021i_09_I_Need_A_Miracle.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "rating": 1.9444444444444444,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-09-04",
+  "venue": "Dance Hall",
+  "location": "Rio Nido, CA",
+  "raw_rating": 3.888888888888889,
+  "high_ratings": 6,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Caution",
+      "duration": 133.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-04t1.mp3",
+          "bitrate": "104"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-04t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Feedback",
+      "duration": 67.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-09-04t2.mp3",
+          "bitrate": "107"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-09-04t2.shn"
+        }
+      ]
+    }
+  ]
+}

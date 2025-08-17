@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-09-19",
+  "venue": "Fillmore East",
+  "location": "New York, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dark Star >",
+      "duration": 781.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St Stephen >",
+      "duration": 223.21,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t02.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Not Fade Away >",
+      "duration": 175.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Darkness Jam ->",
+      "duration": 49.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "China Cat Sunflower Jam ->",
+      "duration": 55.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t05.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Not Fade Away->",
+      "duration": 68.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t06.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Turn On Your Lovelight",
+      "duration": 722.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-09-19d1t07.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-09-19d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

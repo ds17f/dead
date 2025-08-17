@@ -1,0 +1,46 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1966-11-00",
+  "venue": "KFRC studio",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Interview",
+      "duration": 410.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd66-11-00.FM.interview.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-11-00.FM.interview.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Interview",
+      "duration": 1397.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd67-00-00.FM.interview.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-00-00.FM.interview.mp3",
+          "bitrate": "149"
+        }
+      ]
+    }
+  ]
+}

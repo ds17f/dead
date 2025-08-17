@@ -1,0 +1,110 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-10-09",
+  "venue": "Warfield Theater",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Feel Like A Stranger",
+      "duration": 332.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-09d1t01.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-09d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Friend Of The Devil",
+      "duration": 286.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-09d1t02.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-09d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mama Tried > Mexicali Blues",
+      "duration": 234.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-09d1t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-09d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 176.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-09d1t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-09d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Little Red Rooster",
+      "duration": 277.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-09d1t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-09d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 156.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-09d1t06.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd80-10-09d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

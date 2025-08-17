@@ -1,0 +1,158 @@
+{
+  "rating": 1.7857142857142858,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-03-30",
+  "venue": "Carousel Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.5714285714285716,
+  "high_ratings": 5,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 398.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One ->",
+      "duration": 617.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star ->",
+      "duration": 539.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "China Cat Sunflower ->",
+      "duration": 211.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Eleven ->",
+      "duration": 678.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Lovelight",
+      "duration": 747.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Born Cross Eyed ->",
+      "duration": 312.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t07.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Spanish Jam ->",
+      "duration": 417.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Death Don't Have No Mercy",
+      "duration": 107.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-03-30d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-03-30d1t09.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

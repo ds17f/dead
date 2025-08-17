@@ -1,0 +1,110 @@
+{
+  "rating": 1.75,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-05-16",
+  "venue": "Temple University",
+  "location": "Philadelphia, PA",
+  "raw_rating": 3.5,
+  "high_ratings": 4,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Casey Jones",
+      "duration": 131.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-16t01.mp3",
+          "bitrate": "104"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-16t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Mama Tried",
+      "duration": 178.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-16t02.mp3",
+          "bitrate": "104"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-16t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Hard To Handle",
+      "duration": 374.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-16t03.mp3",
+          "bitrate": "104"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-16t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "China Cat Sunflower",
+      "duration": 273.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-16t04.mp3",
+          "bitrate": "106"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-16t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "I Know You Rider",
+      "duration": 352.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-16t05.mp3",
+          "bitrate": "105"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-16t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "New Speedway Boogie",
+      "duration": 278.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-16t06.mp3",
+          "bitrate": "105"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-16t06.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1969-05-23",
+  "venue": "Seminole Indian Village",
+  "location": "West Hollywood, FL",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 583.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-05-23t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-05-23t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me & My Uncle",
+      "duration": 245.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-05-23t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-05-23t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star >",
+      "duration": 1137.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-05-23t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-05-23t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Saint Stephen >",
+      "duration": 365.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-05-23t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-05-23t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "William Tell Bridge >",
+      "duration": 177.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-05-23t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-05-23t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Eleven",
+      "duration": 68.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-05-23t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-05-23t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

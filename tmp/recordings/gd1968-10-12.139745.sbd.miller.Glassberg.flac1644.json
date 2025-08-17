@@ -1,0 +1,190 @@
+{
+  "rating": 4.0,
+  "review_count": 7,
+  "source_type": "FM",
+  "confidence": 1.0,
+  "date": "1968-10-12",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 547.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01MorningDew.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Stage Banter",
+      "duration": 101.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02StageBanter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02StageBanter.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark Star",
+      "duration": 900.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03DarkStar.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "St. Stephen",
+      "duration": 292.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04St.Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04St.Stephen.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Eleven",
+      "duration": 593.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05TheEleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TheEleven.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Death Don't Have No Mercy",
+      "duration": 520.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06DeathDontHaveNoMercy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06DeathDontHaveNoMercy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "That's It For The Other One",
+      "duration": 1074.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07ThatsItForTheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07ThatsItForTheOtherOne.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "New Potato Caboose",
+      "duration": 412.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08NewPotatoCaboose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08NewPotatoCaboose.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Drums",
+      "duration": 96.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jam",
+      "duration": 442.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Jam.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Feedback",
+      "duration": 447.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Feedback.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Feedback.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

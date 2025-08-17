@@ -1,0 +1,702 @@
+{
+  "rating": 2.125,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1975-06-05",
+  "venue": "Club Front",
+  "location": "San Rafael, California",
+  "raw_rating": 4.25,
+  "high_ratings": 10,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Track 1",
+      "duration": 23.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Track 2",
+      "duration": 101.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Track 3",
+      "duration": 57.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Track 4",
+      "duration": 28.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t04.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Track 5",
+      "duration": 233.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Track 6",
+      "duration": 123.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t06.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Track 7",
+      "duration": 57.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t07.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Track 8",
+      "duration": 61.55,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t08.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Track 9",
+      "duration": 15.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t09.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Track 10",
+      "duration": 26.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t10.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Track 11",
+      "duration": 139.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t11.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Track 12",
+      "duration": 63.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t12.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Track 13",
+      "duration": 58.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t13.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Track 14",
+      "duration": 82.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t14.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Track 15",
+      "duration": 97.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t15.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Track 16",
+      "duration": 2.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t16.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t16.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Track 17",
+      "duration": 25.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t17.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t17.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Track 18",
+      "duration": 100.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t18.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t18.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Track 19",
+      "duration": 20.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t19.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t19.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Track 20",
+      "duration": 34.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t20.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t20.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Track 21",
+      "duration": 26.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t21.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t21.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Track 22",
+      "duration": 20.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t22.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t22.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Track 23",
+      "duration": 18.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t23.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t23.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Track 24",
+      "duration": 29.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t24.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t24.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Track 25",
+      "duration": 196.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t25.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t25.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Track 26",
+      "duration": 22.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t26.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t26.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Track 27",
+      "duration": 21.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t27.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t27.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Track 28",
+      "duration": 21.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t28.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t28.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Track 29",
+      "duration": 48.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t29.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t29.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Track 30",
+      "duration": 39.03,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t30.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t30.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Track 31",
+      "duration": 21.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t31.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t31.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Track 32",
+      "duration": 23.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t32.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t32.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Track 33",
+      "duration": 26.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t33.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t33.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Track 34",
+      "duration": 30.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t34.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t34.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Track 35",
+      "duration": 28.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t35.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t35.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Track 36",
+      "duration": 30.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t36.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t36.shn"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Track 37",
+      "duration": 44.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t37.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t37.shn"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Track 38",
+      "duration": 21.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t38.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t38.shn"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Track 39",
+      "duration": 55.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t39.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t39.shn"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Track 40",
+      "duration": 41.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t40.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t40.shn"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Track 41",
+      "duration": 26.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t41.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t41.shn"
+        }
+      ]
+    },
+    {
+      "track": "42",
+      "title": "Track 42",
+      "duration": 4.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t42.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t42.shn"
+        }
+      ]
+    },
+    {
+      "track": "43",
+      "title": "Track 43",
+      "duration": 286.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1975-06-05t43.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1975-06-05t43.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-03-13-berkeley-community-theater-berkeley-ca-usa/",
+  "show_id": "1985-03-13-berkeley-community-theater-berkeley-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Berkeley Community Theater",
+  "location_raw": "Berkeley, CA",
+  "city": "Berkeley",
+  "state": "CA",
+  "country": "USA",
+  "date": "1985-03-13",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Jack Straw",
+          "url": "https://jerrygarcia.com/song/jack-straw/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "The Music Never Stopped",
+          "url": "https://jerrygarcia.com/song/the-music-never-stopped/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Franklin's Tower",
+          "url": "https://jerrygarcia.com/song/franklins-tower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Spoonful*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums**",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Ollin Arageed**",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Good Lovin'",
+          "url": "https://jerrygarcia.com/song/good-lovin/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Brokedown Palace",
+          "url": "https://jerrygarcia.com/song/brokedown-palace/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:06.645669",
+  "show_time": null,
+  "recordings": [
+    "gd85-03-13.sbd.barbella.9961.sbeok.shnf",
+    "gd1985-03-13.sbd.miller.77347.flac16",
+    "gd1985-03-13.169167.sbd.marcus.menke.miller.clugston.flac1648",
+    "gd1985-03-13.sbd.walker.scotton.miller.117343.flac24",
+    "gd1985-03-13.169168.sbd.marcus.menke.miller.clugston.flac2496",
+    "gd1985-03-13.sbd.walker.scotton.miller.117344.flac16",
+    "gd1985-03-13.senn421.mccue.ford.84490.flac16",
+    "gd1985-03-13.149309.senn441.hunt.mattes.miller.clugston.flac1648",
+    "gd1985-03-13.nakcm300.32017.sbeok.flac16"
+  ],
+  "best_recording": "gd85-03-13.sbd.barbella.9961.sbeok.shnf",
+  "avg_rating": 2.0284883720930234,
+  "raw_rating": 4.3,
+  "recording_count": 9,
+  "confidence": 1.0,
+  "total_high_ratings": 17,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 6,
+    "UNKNOWN": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

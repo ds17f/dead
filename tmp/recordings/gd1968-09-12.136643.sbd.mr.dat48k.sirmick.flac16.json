@@ -1,0 +1,62 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-09-12",
+  "venue": "Unknown (possibly Pacific High Recording)",
+  "location": "Unknown, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Clementine (many takes)",
+      "duration": 1662.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-09-12t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-09-12t01.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Clementine (several takes, a couple with vocals by Phil)",
+      "duration": 470.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-09-12t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-09-12t02.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Space like jam with some improvised vocals",
+      "duration": 523.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1968-09-12t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1968-09-12t03.mp3",
+          "bitrate": "132"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "url": "https://jerrygarcia.com/show/1982-10-10-frost-amphitheatre-palo-alto-ca-usa/",
+  "show_id": "1982-10-10-frost-amphitheatre-palo-alto-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Frost Amphitheatre",
+  "location_raw": "Palo Alto, CA",
+  "city": "Palo Alto",
+  "state": "CA",
+  "country": "USA",
+  "date": "1982-10-10",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Loser",
+          "url": "https://jerrygarcia.com/song/loser/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Lost Sailor",
+          "url": "https://jerrygarcia.com/song/lost-sailor/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Saint Of Circumstance",
+          "url": "https://jerrygarcia.com/song/saint-of-circumstance/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Wheel",
+          "url": "https://jerrygarcia.com/song/the-wheel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "(I Can't Get No) Satisfaction",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "It's All Over Now Baby Blue",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:48:04.399344",
+  "show_time": null,
+  "recordings": [
+    "gd1982-10-10.sbd.fixed.miller.110783.flac24",
+    "gd82-10-10.sbd.sacks.338.sbefail.shnf",
+    "gd1982-10-10.sbd.tetzeli.ayers.79903.sbeok.flac16",
+    "gd1982-10-10.sbd.miller.110626.flac16",
+    "gd1982-10-10.sbd.miller.110628.flac24",
+    "gd1982-10-10.sbd.fixed.miller.110784.flac16",
+    "gd1982-10-10.141523.sbd.pcm.dalton.miller.clugston.flac1644",
+    "gd1982-10-10.mtx.seamons.110744.flac24",
+    "gd1982-10-10.mtx.seamons.86784.sbeok.shnf",
+    "gd1982-10-10.aud.keshavan.bertha.77325.sbeok.flac16",
+    "gd1982-10-10.mtx.seamons.ht02.110970.flac16",
+    "gd1982-10-10.sonyecm220T.keshavan.miller.93733.sbeok.flac24",
+    "gd1982-10-10.sony-ecm220.keshavan.tzuriel.29315.sbeok.flac16",
+    "gd1982-10-10.sonyecm220T.keshavan.miller.93732.sbeok.flac16",
+    "gd1982-10-10.beyers.stankiewicz.128808.flac16",
+    "gd1982-10-10.mtx.seamons.fix.92058.sbeok.flac16",
+    "gd1982-10-10.nak700.anon-poris.LMPP.95682.flac16",
+    "gd1982-10-10.123624.senn421.gans.miller.flac16",
+    "gd1982-10-10.111039.nak300.hoey.flac16",
+    "gd1982-10-10.123623.senn421.gans.miller.flac24",
+    "gd1982-10-10.143391.FOB.ECM-150.Keeler.Miller.Noel.t-flac2496",
+    "gd1982-10-10.145248.fob.sony.ecm150.keeler.miller.noel.t-flac1644",
+    "gd1982-10-10.nak700.wagner.miller.109822.flac16",
+    "gd1982-10-10.nak700.wagner.miller.109823.flac24",
+    "gd1982-10-10.167623.nak700.severson.miller.clugston.flac1648",
+    "gd1982-10-10.167624.nak700.severson.miller.clugston.flac2496",
+    "gd1982-10-10.beyers.stankiewicz.128807.flac2496"
+  ],
+  "best_recording": "gd1982-10-10.sbd.fixed.miller.110783.flac24",
+  "avg_rating": 2.2847624565469293,
+  "raw_rating": 4.722689075630252,
+  "recording_count": 27,
+  "confidence": 1.0,
+  "total_high_ratings": 115,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 7,
+    "UNKNOWN": 19,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

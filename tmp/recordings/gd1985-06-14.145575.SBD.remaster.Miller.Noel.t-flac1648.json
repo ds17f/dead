@@ -1,0 +1,336 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-06-14",
+  "venue": "Greek Theatre, U. Of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "tuning",
+      "duration": 64.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Dancin\u2019 in the Streets",
+      "duration": 511.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t02.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "C.C. Rider",
+      "duration": 393.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Peggy-O",
+      "duration": 515.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Hell in a Bucket",
+      "duration": 389.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t06.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Keep on Growing ->",
+      "duration": 305.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t07.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Stagger Lee ->",
+      "duration": 313.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Let It Grow ->",
+      "duration": 678.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t09.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Deal",
+      "duration": 380.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s1t10.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Space",
+      "duration": 76.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Morning Dew ->",
+      "duration": 639.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t02.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "China Doll ->",
+      "duration": 568.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Drums ->",
+      "duration": 524.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Space ->",
+      "duration": 492.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Truckin' ->",
+      "duration": 410.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Smokestack Lightning ->",
+      "duration": 256.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Comes a Time ->",
+      "duration": 337.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t09.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Sugar Magnolia",
+      "duration": 572.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t10.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Keep Your Day Job",
+      "duration": 254.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-06-14.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-06-14.s2t11.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

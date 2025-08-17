@@ -1,0 +1,430 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-01-03",
+  "venue": "Fillmore East (Early Show)",
+  "location": "New York, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 559.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01MorningDew.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Me And My Uncle",
+      "duration": 200.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02MeAndMyUncle.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Hard To Handle",
+      "duration": 262.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03HardToHandle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03HardToHandle.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cumberland Blues",
+      "duration": 340.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04CumberlandBlues.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cold Rain And Snow",
+      "duration": 315.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ColdRainAndSnow.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator",
+      "duration": 238.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Alligator.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums",
+      "duration": 117.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Drums.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jam",
+      "duration": 648.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Jam.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Alligator",
+      "duration": 70.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Alligator.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Alligator.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Feedback",
+      "duration": 457.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Feedback.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Feedback.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 413.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11UncleJohnsBand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Casey Jones",
+      "duration": 262.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12CaseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12CaseyJones.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Mama Tried",
+      "duration": 171.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13MamaTried.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Big Boss Man",
+      "duration": 291.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14BigBossMan.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14BigBossMan.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Cat Sunflower",
+      "duration": 308.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ChinaCatSunflower.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "I Know You Rider",
+      "duration": 318.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16IKnowYouRider.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Mason's Children",
+      "duration": 318.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17MasonsChildren.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17MasonsChildren.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "That's It For The Other One",
+      "duration": 1233.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18ThatsItForTheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18ThatsItForTheOtherOne.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Cosmic Charlie",
+      "duration": 433.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19CosmicCharlie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19CosmicCharlie.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Uncle John's Band",
+      "duration": 369.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20UncleJohnsBand.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Black Peter",
+      "duration": 524.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BlackPeter.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Dire Wolf",
+      "duration": 285.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22DireWolf.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22DireWolf.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Good Lovin'",
+      "duration": 553.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23GoodLovin.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Dancin' In The Street",
+      "duration": 650.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24DancinInTheStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24DancinInTheStreet.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Saint Stephen",
+      "duration": 372.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25SaintStephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25SaintStephen.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "In The Midnight Hour",
+      "duration": 558.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26InTheMidnightHour.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26InTheMidnightHour.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 1.2599999999999998,
+  "review_count": 1,
+  "source_type": "AUD",
+  "confidence": 0.2,
+  "date": "1979-12-27",
+  "venue": "Oakland Auditorium Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 428.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "They Love Each Other",
+      "duration": 453.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cassidy",
+      "duration": 366.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O >",
+      "duration": 442.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 306.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t05.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Don't Ease Me In",
+      "duration": 268.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Beat It On Down The Line",
+      "duration": 205.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 311.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-12-27d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-12-27d1t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

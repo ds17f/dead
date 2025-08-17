@@ -1,0 +1,142 @@
+{
+  "rating": 2.3625000000000003,
+  "review_count": 4,
+  "source_type": "AUD",
+  "confidence": 0.8,
+  "date": "1969-04-11",
+  "venue": "University Auditorium, U. Arizona",
+  "location": "Tucson, AZ",
+  "raw_rating": 3.75,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cryptical Envelopment",
+      "duration": 278.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "It's A Sin",
+      "duration": 211.47,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Hard To Handle",
+      "duration": 183.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Tuning",
+      "duration": 48.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t04.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Dark Star",
+      "duration": 702.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Saint Stephen",
+      "duration": 141.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Eleven",
+      "duration": 154.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Turn On Your Lovelight",
+      "duration": 628.31,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-11d1t08.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-04-11d1t08.shn"
+        }
+      ]
+    }
+  ]
+}

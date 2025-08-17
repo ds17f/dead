@@ -1,0 +1,158 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1973-07-27",
+  "venue": "Grand Prix Racecourse",
+  "location": "Watkins Glen, NY",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Big River",
+      "duration": 19.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Tennessee Jed",
+      "duration": 467.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Merry-Go-Round Broke Down tuning",
+      "duration": 44.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Crowd",
+      "duration": 36.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mississippi Half Step Uptown Toodeloo",
+      "duration": 450.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Me And My Uncle",
+      "duration": 182.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Jam",
+      "duration": 925.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t07.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Wharf Rat",
+      "duration": 593.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t08.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Around And Around",
+      "duration": 274.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd73-07-27t09.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd73-07-27t09.shn"
+        }
+      ]
+    }
+  ]
+}

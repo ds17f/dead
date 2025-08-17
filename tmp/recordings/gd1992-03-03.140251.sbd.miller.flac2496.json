@@ -1,0 +1,302 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-03-03",
+  "venue": "The Omni",
+  "location": "Atlanta, GA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 394.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01HellInABucket.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 657.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Sugaree.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 430.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WalkinBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Candyman",
+      "duration": 412.28,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Candyman.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Queen Jane Approximately",
+      "duration": 443.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05QueenJaneApproximately.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 497.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TennesseeJed.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Corrina",
+      "duration": 573.01,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Corrina.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Corrina.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Iko Iko",
+      "duration": 631.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08IkoIko.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Playing In The Band",
+      "duration": 501.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09PlayingInTheBand.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Unlce John's Band",
+      "duration": 497.16,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10UnlceJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10UnlceJohnsBand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Wave To The Wind",
+      "duration": 476.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11WaveToTheWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11WaveToTheWind.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 688.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 531.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Doll",
+      "duration": 424.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ChinaDoll.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Throwing Stones",
+      "duration": 575.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ThrowingStones.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Turn On Your Lovelight",
+      "duration": 411.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TurnOnYourLovelight.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Encore Break",
+      "duration": 155.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17EncoreBreak.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Brokedown Palace",
+      "duration": 338.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18BrokedownPalace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BrokedownPalace.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

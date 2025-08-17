@@ -1,0 +1,286 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-12-27",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 408.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-01-jackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-01-jackStraw.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 781.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-02-Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-02-Sugaree.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Minglewood Blues",
+      "duration": 502.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-03-minglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-03-minglewoodBlues.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It Must Have Been The Roses",
+      "duration": 375.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-04-mustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-04-mustHaveBeenTheRoses.mp3",
+          "bitrate": "157"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Queen Jane Approximately",
+      "duration": 444.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-05-queenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-05-queenJaneApproximately.mp3",
+          "bitrate": "148"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loose Lucy",
+      "duration": 641.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-06-looseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-06-looseLucy.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 398.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-07-Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-07-Cassidy.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease Me In",
+      "duration": 224.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01-08-dontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01-08-dontEaseMeIn.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Scarlet Begonias-> Fire On The Mountain",
+      "duration": 1454.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-01-ScarletFire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-01-ScarletFire.mp3",
+          "bitrate": "167"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Estimated Prophet->",
+      "duration": 706.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-02-estimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-02-estimatedProphet.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Comes A Time->",
+      "duration": 634.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-03-comesATime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-03-comesATime.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums*, Jam->",
+      "duration": 1257.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-04-DrumsSpace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-04-DrumsSpace.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Need A Miracle->",
+      "duration": 326.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-05-iNeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-05-iNeedAMiracle.mp3",
+          "bitrate": "160"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Wheel->",
+      "duration": 255.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-06-theWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-06-theWheel.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Throwing Stones->",
+      "duration": 492.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-07-throwingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-07-throwingStones.mp3",
+          "bitrate": "158"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Turn On Your Love Light,",
+      "duration": 324.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-08-Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-08-Lovelight.mp3",
+          "bitrate": "154"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "E: It's All Over Now Baby Blue",
+      "duration": 422.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02-09-itsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02-09-itsAllOverNowBabyBlue.mp3",
+          "bitrate": "167"
+        }
+      ]
+    }
+  ]
+}

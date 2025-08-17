@@ -1,0 +1,241 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-07-01",
+  "venue": "Merriweather Post Pavilion",
+  "location": "Columbia, MD",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dancing In The Streets",
+      "duration": 569.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t01.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d2t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dupree's Diamond Blues",
+      "duration": 362.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d2t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Walkin' Blues",
+      "duration": 356.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d2t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Jack-A-Roe",
+      "duration": 685.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t04.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d2t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "My Brother Esau",
+      "duration": 322.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t05.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d2t05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Stagger Lee",
+      "duration": 442.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d3t06.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Let It Grow >",
+      "duration": 767.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t07.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Keep Your Day Job",
+      "duration": 261.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-07-01d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-07-01d1t08.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

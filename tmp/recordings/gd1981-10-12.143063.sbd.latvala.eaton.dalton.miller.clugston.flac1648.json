@@ -1,0 +1,414 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-10-12",
+  "venue": "Olympia Halle",
+  "location": "Munich, Germany",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-10-12 s1tJack Straw",
+      "duration": 364.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t01JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t01JackStraw.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-10-12 s1tCandyman",
+      "duration": 389.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t02Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t02Candyman.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-10-12 s1tLittle Red Rooster",
+      "duration": 502.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t03LittleRedRooster.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-10-12 s1tCumberland Blues",
+      "duration": 332.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t04CumberlandBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t04CumberlandBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-10-12 s1tBeat It On Down The Line",
+      "duration": 189.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t05BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t05BeatItOnDownTheLine.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-10-12 s1tRamble On Rose",
+      "duration": 494.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t06RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t06RambleOnRose.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-10-12 s1tMama Tried",
+      "duration": 152.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t07MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t07MamaTried.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-10-12 s1tMexicali Blues",
+      "duration": 221.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t08MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t08MexicaliBlues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-10-12 s1tAlthea",
+      "duration": 581.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t09Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t09Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-10-12 s1tPassenger",
+      "duration": 336.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t10Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t10Passenger.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-10-12 s1tChina Cat Sunflower",
+      "duration": 406.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t11ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t11ChinaCatSunflower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-10-s1tI Know You Rider",
+      "duration": 422.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S1t12IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S1t12IKnowYouRider.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-10-12 s2t01 Bertha",
+      "duration": 422.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t01Bertha.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-10-12 s2t02 Samson & Delilah",
+      "duration": 442.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t02SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t02SamsonDelilah.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-10-12 s2t03 Ship Of Fools",
+      "duration": 519.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t03ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t03ShipOfFools.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-10-12 s2t04 Estimated Prophet",
+      "duration": 951.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t04EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t04EstimatedProphet.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-10-12 s2t05 Goin' Down The Road Feeling Bad",
+      "duration": 507.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t05GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t05GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-10-12 s2t06 Never Trust A Woman",
+      "duration": 550.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t06NeverTrustAWoman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t06NeverTrustAWoman.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-10-12 s2t07 Drums",
+      "duration": 527.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t07Drums.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-10-12 s2t08 Space",
+      "duration": 298.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t08Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd81-10-12 s2t09 Not Fade Away",
+      "duration": 729.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t09NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t09NotFadeAway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd81-10-12 s2t10 Stella Blue",
+      "duration": 692.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t10StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t10StellaBlue.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd81-10-12 s2t11 Around & Around",
+      "duration": 223.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t11AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t11AroundAround.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd81-10-12 s2t12 Good Lovin'",
+      "duration": 539.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t12GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t12GoodLovin.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd81-10-12 s2t13 US Blues",
+      "duration": 312.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-10-12S2t13UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-10-12S2t13UsBlues.mp3",
+          "bitrate": "203"
+        }
+      ]
+    }
+  ]
+}

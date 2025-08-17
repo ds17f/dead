@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-12-10",
+  "venue": "Great Western Forum",
+  "location": "Inglewood, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 133.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell In A Bucket",
+      "duration": 494.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 709.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "We Can Run",
+      "duration": 464.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t04.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When I Paint My Masterpiece",
+      "duration": 363.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 446.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t06.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Victim Or The Crime",
+      "duration": 720.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "C C Rider",
+      "duration": 505.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "I'm A Man",
+      "duration": 337.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d1t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning ->",
+      "duration": 180.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Jack Straw ->",
+      "duration": 351.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "China Cat Sunflower ->",
+      "duration": 439.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Know You Rider ->",
+      "duration": 438.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Man Smart (Woman Smarter) ->",
+      "duration": 543.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 789.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d2t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 522.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel ->",
+      "duration": 350.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle ->",
+      "duration": 294.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue ->",
+      "duration": 642.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Good Lovin'",
+      "duration": 459.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 504.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-12-10.dbx.hale.flac16.d3t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

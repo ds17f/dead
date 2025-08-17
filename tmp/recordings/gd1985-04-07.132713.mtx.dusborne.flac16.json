@@ -1,0 +1,334 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1985-04-07",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 131.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t01.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Why Don't We Do It In The Road ->",
+      "duration": 192.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 410.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "C C Rider",
+      "duration": 480.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 825.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Dancing In The Street",
+      "duration": 386.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 362.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tuning",
+      "duration": 67.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Shakedown Street ->",
+      "duration": 774.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samson And Delilah",
+      "duration": 611.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "She Belongs To Me ->",
+      "duration": 361.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart (Woman Smarter) ->",
+      "duration": 454.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums ->",
+      "duration": 515.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space ->",
+      "duration": 686.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Gimme Some Lovin' ->",
+      "duration": 325.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin' ->",
+      "duration": 334.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Smokestack Lightnin' ->",
+      "duration": 181.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Morning Dew ->",
+      "duration": 557.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t11.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 603.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t12.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Keep Your Day Job",
+      "duration": 264.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-04-07s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-04-07s2t13.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

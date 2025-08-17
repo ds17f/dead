@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-06-27",
+  "venue": "SPAC",
+  "location": "Saratoga Springs, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 44.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Midnight Hour",
+      "duration": 236.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Bertha",
+      "duration": 295.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 470.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 396.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 307.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Crazy Fingers",
+      "duration": 514.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Supplication Jam",
+      "duration": 265.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t08.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "High Time",
+      "duration": 452.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t09.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Hell In A Bucket",
+      "duration": 442.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t10.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 208.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d1t11.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Feel Like A Stranger",
+      "duration": 492.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d2t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Eyes Of The World",
+      "duration": 547.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d2t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 260.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d2t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Men Smart (Women Smarter)",
+      "duration": 408.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d2t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 662.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d2t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 449.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Truckin'",
+      "duration": 379.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Spoonful",
+      "duration": 268.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter",
+      "duration": 471.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t04.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 487.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Johnny B Goode",
+      "duration": 289.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 465.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1985-06-27d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1985-06-27d3t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

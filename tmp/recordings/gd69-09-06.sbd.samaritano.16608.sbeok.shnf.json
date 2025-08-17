@@ -1,0 +1,110 @@
+{
+  "rating": 1.9375,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-09-06",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.875,
+  "high_ratings": 5,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Good Morning Little School Girl",
+      "duration": 389.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06d1t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-06d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Doin' That Rag",
+      "duration": 204.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06d1t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-06d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "He Was A Friend Of Mine",
+      "duration": 373.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06d1t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-06d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Big Boy Pete",
+      "duration": 109.62,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06d1t04.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-06d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Good Lovin",
+      "duration": 164.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06d1t05.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-06d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "All Over Now",
+      "duration": 148.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-09-06d1t06.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-09-06d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

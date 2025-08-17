@@ -1,0 +1,734 @@
+{
+  "rating": 2.5,
+  "review_count": 22,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-11-08",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 22,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 235.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t01.aif.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t01.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf",
+      "duration": 299.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t02.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t02.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 551.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t03.aif.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t03.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Hollow",
+      "duration": 218.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t04.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t04.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Rosalie McFall",
+      "duration": 259.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t05.aif.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t05.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 396.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t06.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t06.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Operator (Final time played)",
+      "duration": 208.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t07.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t07.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ripple",
+      "duration": 360.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t08.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t08.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Friend Of The Devil",
+      "duration": 296.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t09.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t09.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wake Up, Little Suzie (Final time played)",
+      "duration": 327.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t10.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t10.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 391.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t11.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d1t11.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 199.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t01.aif.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t01.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Six Days On The Road",
+      "duration": 225.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t02.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t02.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Superman",
+      "duration": 222.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t03.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t03.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Whatcha Gonna Do",
+      "duration": 274.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t04.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t04.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Glendale Train",
+      "duration": 355.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t05.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t05.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "All I Ever Wanted",
+      "duration": 558.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t06.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t06.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Fair Chance To Know",
+      "duration": 297.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t07.aif.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t07.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Portland Woman",
+      "duration": 389.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t08.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t08.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Cecilia",
+      "duration": 290.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t09.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t09.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truck Drivin' Man",
+      "duration": 209.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t10.aif.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t10.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Last Lonely Eagle",
+      "duration": 423.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t11.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t11.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Louisiana Lady",
+      "duration": 254.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t12.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t12.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Honky Tonk Women",
+      "duration": 306.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t13.aif.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d2t13.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Tuning",
+      "duration": 194.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t01.aif.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t01.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Morning Dew",
+      "duration": 700.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t02.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t02.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Me And My Uncle",
+      "duration": 325.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t03.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t03.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Mystery Train (Only time played)",
+      "duration": 234.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t04.aif.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t04.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "My Babe (Only time played)",
+      "duration": 358.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t05.aif.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t05.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Around And Around (First time played)",
+      "duration": 238.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t06.aif.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t06.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "New Orleans",
+      "duration": 290.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t07.aif.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t07.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Searchin'",
+      "duration": 386.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t08.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t08.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 771.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t09.aif.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t09.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Casey Jones",
+      "duration": 336.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t10.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d3t10.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Truckin'",
+      "duration": 516.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t01.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t01.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Dark Star (First verse only)",
+      "duration": 972.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t02.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t02.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "The Main Ten (Final time played)",
+      "duration": 311.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t03.aif.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t03.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Dancin' In The Streets",
+      "duration": 925.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t04.aif.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t04.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Not Fade Away",
+      "duration": 306.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t05.aif.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t05.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Goin' Down The Road Feelin' Bad",
+      "duration": 452.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t06.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t06.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Not Fade Away",
+      "duration": 174.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t07.aif.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t07.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "42",
+      "title": "Drums",
+      "duration": 25.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t08.aif.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t08.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "43",
+      "title": "Good Lovin'",
+      "duration": 119.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t09.aif.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t09.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "44",
+      "title": "Drums",
+      "duration": 248.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t10.aif.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t10.aif.shn"
+        }
+      ]
+    },
+    {
+      "track": "45",
+      "title": "Good Lovin'",
+      "duration": 501.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t11.aif.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "PCRP-007NRPS-GD1970-11-8d4t11.aif.shn"
+        }
+      ]
+    }
+  ]
+}

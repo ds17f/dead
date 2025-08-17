@@ -1,0 +1,153 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1969-08-16",
+  "venue": "Max Yasgur's Farm",
+  "location": "Bethel, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dead air",
+      "duration": 11.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t01.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Stage announcements by Chip Monck/tuning/Intro",
+      "duration": 189.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t02.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St. //Stephen >",
+      "duration": 124.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mama Tried >",
+      "duration": 161.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time false start",
+      "duration": 36.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t05.mp3",
+          "bitrate": "156"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tech problems/Chip Monck banter/Country Joe warning the audience about bad LSD.",
+      "duration": 632.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t06.mp3",
+          "bitrate": "153"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Dark Star >",
+      "duration": 1151.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t07.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "High Time",
+      "duration": 378.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-08-16t08.mp3",
+          "bitrate": "165"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Turn On Your//Love Light *",
+      "duration": 2337.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-08-16t09.flac"
+        }
+      ]
+    }
+  ]
+}

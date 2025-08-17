@@ -1,0 +1,382 @@
+{
+  "rating": 2.357142857142857,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1987-12-27",
+  "venue": "Oakland Coliseum Arena",
+  "location": "Oakland, CA",
+  "raw_rating": 4.714285714285714,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 397.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 439.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 364.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 356.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Ramble On Rose",
+      "duration": 624.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle ->",
+      "duration": 164.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t06.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Big River",
+      "duration": 409.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "It Must Have Been The Roses",
+      "duration": 351.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Desolation Row ->",
+      "duration": 566.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 218.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d1t10.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning ->",
+      "duration": 144.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Playing In The Band ->",
+      "duration": 547.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d2t02.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Uncle john's Band ->",
+      "duration": 482.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d2t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Estimated Prophet ->",
+      "duration": 631.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Eyes Of The World ->",
+      "duration": 510.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d2t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 576.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d2t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 518.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dear Mr. Fantasy ->",
+      "duration": 408.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue ->",
+      "duration": 456.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones ->",
+      "duration": 560.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Turn On Your Lovelight",
+      "duration": 312.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Crowd/Tuning",
+      "duration": 100.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t06.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 285.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-12-27d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-12-27d3t07.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

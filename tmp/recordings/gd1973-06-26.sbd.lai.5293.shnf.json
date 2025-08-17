@@ -1,0 +1,140 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1973-06-26",
+  "venue": "Seattle Center Arena",
+  "location": "Seattle, WA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha ->",
+      "duration": 262.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track01.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track01_vbr.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 10.9,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track02.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track02_vbr.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 136.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track03.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track03_vbr.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 145.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track04.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track04_vbr.mp3",
+          "bitrate": "225"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Peter",
+      "duration": 346.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track05.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track05.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track05_vbr.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big River",
+      "duration": 84.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track06.shn"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track06_vbr.mp3",
+          "bitrate": "202"
+        }
+      ]
+    }
+  ]
+}

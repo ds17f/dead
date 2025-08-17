@@ -1,0 +1,158 @@
+{
+  "rating": 2.3,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-09-16",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.6,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 662.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Lindy",
+      "duration": 172.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Stealin",
+      "duration": 184.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Same Thing",
+      "duration": 726.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I Know You Rider",
+      "duration": 262.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It Hurts Me Too",
+      "duration": 259.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 296.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dancin' In The Streets",
+      "duration": 408.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "In The Midnight Hour",
+      "duration": 1101.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

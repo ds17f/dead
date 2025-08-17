@@ -6,7 +6,7 @@ import com.deadarchive.v2.app.model.PhaseV2
 import com.deadarchive.v2.app.splash.service.SplashV2Service
 import com.deadarchive.v2.app.splash.service.SplashV2UiState
 import com.deadarchive.v2.app.splash.service.V2InitResult
-import com.deadarchive.v2.core.database.service.DatabaseManagerV2
+import com.deadarchive.v2.core.database.service.DatabaseManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -44,6 +44,8 @@ class SplashViewModelV2 @Inject constructor(
                         val message = when (progress.phase) {
                             PhaseV2.IDLE -> "Preparing V2 database..."
                             PhaseV2.CHECKING -> "Checking existing data..."
+                            PhaseV2.USING_LOCAL -> "Using local files..."
+                            PhaseV2.DOWNLOADING -> "Downloading files..."
                             PhaseV2.EXTRACTING -> "Extracting data files..."
                             PhaseV2.IMPORTING_SHOWS -> "Importing shows (${progress.processedShows}/${progress.totalShows})"
                             PhaseV2.COMPUTING_VENUES -> "Computing venue statistics..."
@@ -106,7 +108,7 @@ class SplashViewModelV2 @Inject constructor(
         splashV2Service.abortInitialization()
     }
     
-    fun selectDatabaseSource(source: DatabaseManagerV2.DatabaseSource) {
+    fun selectDatabaseSource(source: DatabaseManager.DatabaseSource) {
         splashV2Service.selectDatabaseSource(source, viewModelScope)
     }
 }

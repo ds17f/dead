@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1971-01-21",
+  "venue": "Freeborn Hall, University of California",
+  "location": "Davis, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mama Tried",
+      "duration": 271.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Mama Tried.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Around And Around",
+      "duration": 257.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Around And Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Around And Around.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cumberland Blues",
+      "duration": 333.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Cumberland Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Cumberland Blues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Casey Jones",
+      "duration": 303.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Casey Jones.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical Envolopment",
+      "duration": 245.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Cryptical Envelopment.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Cryptical Envelopment.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Know You Rider",
+      "duration": 210.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 I Know You Rider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

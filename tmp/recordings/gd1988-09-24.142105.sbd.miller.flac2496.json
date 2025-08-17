@@ -1,0 +1,446 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1988-09-24",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Everytime You Go Away",
+      "duration": 871.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01EverytimeYouGoAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01EverytimeYouGoAway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "What's Going On",
+      "duration": 763.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02WhatsGoingOn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02WhatsGoingOn.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tuning",
+      "duration": 88.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Iko Iko",
+      "duration": 440.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04IkoIko.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Feel Like A Stranger",
+      "duration": 528.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05FeelLikeAStranger.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "West LA Fadeaway",
+      "duration": 489.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06WestLaFadeaway.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Little Red Rooster",
+      "duration": 702.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LittleRedRooster.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Box Of Rain",
+      "duration": 345.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08BoxOfRain.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Ramble On Rose",
+      "duration": 390.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09RambleOnRose.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "When I Paint My Masterpiece",
+      "duration": 314.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Don't Ease Me In",
+      "duration": 230.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11DontEaseMeIn.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tuning",
+      "duration": 167.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Tuning.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Chinese Bones",
+      "duration": 412.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13ChineseBones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13ChineseBones.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Neighborhood Girls",
+      "duration": 278.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14NeighborhoodGirls.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14NeighborhoodGirls.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Crazy Fingers",
+      "duration": 479.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15CrazyFingers.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 508.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ManSmartwomanSmarter.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Rainforest Announcement",
+      "duration": 81.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17RainforestAnnouncement.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17RainforestAnnouncement.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Everytime You Go Away",
+      "duration": 415.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18EverytimeYouGoAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18EverytimeYouGoAway.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "What's Going On",
+      "duration": 361.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19WhatsGoingOn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19WhatsGoingOn.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Drums",
+      "duration": 851.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Space",
+      "duration": 374.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Wheel",
+      "duration": 247.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22TheWheel.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Throwing Stones",
+      "duration": 584.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23ThrowingStones.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Not Fade Away",
+      "duration": 564.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Encore Break",
+      "duration": 149.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25EncoreBreak.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Good Lovin'",
+      "duration": 381.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26GoodLovin.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 375.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27KnockinOnHeavensDoor.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-03-23",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Shakedown Street",
+      "duration": 711.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Little Red Rooster",
+      "duration": 666.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Row Jimmy",
+      "duration": 676.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 333.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t04.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Might As Well",
+      "duration": 281.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Promised Land",
+      "duration": 307.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Cat Sunflower",
+      "duration": 350.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "I Know You Rider",
+      "duration": 341.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-03-23d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-03-23d1t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

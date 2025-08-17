@@ -1,0 +1,142 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-01-25",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dupree's Diamond Blues",
+      "duration": 153.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Doin' That Rag >",
+      "duration": 199.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t02.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "cosmic Charlie",
+      "duration": 268.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Alligator >",
+      "duration": 142.42,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums->",
+      "duration": 76.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Alligator ->",
+      "duration": 374.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t06.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Caution (Do Not Stop On Tracks) >",
+      "duration": 139.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t07.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feedback >",
+      "duration": 78.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-01-25s2t08.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-01-25s2t08.shn"
+        }
+      ]
+    }
+  ]
+}

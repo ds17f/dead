@@ -1,0 +1,126 @@
+{
+  "rating": 2.25,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-08-22",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alligator >",
+      "duration": 129.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t1_gans.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t1_gans.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Drums >",
+      "duration": 198.05,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t2_gans.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t2_gans.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jam >",
+      "duration": 360.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t3_gans.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t3_gans.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums >",
+      "duration": 8.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t4_gans.mp3",
+          "bitrate": "203"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t4_gans.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Caution (Do Not Stop On The Tracks) >",
+      "duration": 267.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t5_gans.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t5_gans.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Feedback >",
+      "duration": 81.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t6_gans.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t6_gans.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "And We Bid You Good Night",
+      "duration": 27.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-22t7_gans.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-22t7_gans.shn"
+        }
+      ]
+    }
+  ]
+}

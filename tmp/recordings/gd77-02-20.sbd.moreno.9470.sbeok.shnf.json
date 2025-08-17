@@ -1,0 +1,142 @@
+{
+  "rating": 2.1296296296296298,
+  "review_count": 27,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-02-20",
+  "venue": "Studio (Terrapin Station Outtakes)",
+  "location": "Novato, CA",
+  "raw_rating": 4.2592592592592595,
+  "high_ratings": 24,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Dancin' in the Streets",
+      "duration": 161.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sunrise",
+      "duration": 87.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Passenger",
+      "duration": 122.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Estimated Prophet",
+      "duration": 211.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Fire on the Mountain",
+      "duration": 300.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Equinox",
+      "duration": 166.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Terrapin Station",
+      "duration": 542.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t07.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Samson and Delilah",
+      "duration": 174.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "terrapin_t08.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "terrapin_t08.shn"
+        }
+      ]
+    }
+  ]
+}

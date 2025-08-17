@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-08-27",
+  "venue": "Long Beach Arena",
+  "location": "Long Beach, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Alabama Getaway >",
+      "duration": 298.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t01 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t01 Alabama Getaway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Promised Land",
+      "duration": 274.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t02 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t02 Promised Land.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Friend Of The Devil",
+      "duration": 556.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t03 FotD.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t03 FotD.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "CC Rider",
+      "duration": 499.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t04 CC Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t04 CC Rider.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Peggy O",
+      "duration": 440.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t05 Peggy O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t05 Peggy O.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "El Paso",
+      "duration": 297.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t06 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t06 El Paso.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Bird Song",
+      "duration": 721.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t07 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t07 Bird Song.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Passenger",
+      "duration": 291.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t08 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t08 Passenger.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Cumberland Blues >",
+      "duration": 285.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t09 Cumberland Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t09 Cumberland Blues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Looks Like Rain",
+      "duration": 484.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t10 LLR.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t10 LLR.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Might As Well",
+      "duration": 264.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s1t11 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s1t11 Might As Well.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Samson & Delilah",
+      "duration": 507.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t01 Samson.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t01 Samson.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Scarlet Begonias >",
+      "duration": 753.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t02 Scarlet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t02 Scarlet.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Fire On The Mountain",
+      "duration": 711.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t03 Fire.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t03 Fire.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Estimated Prophet >",
+      "duration": 704.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t04 Estimated.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t04 Estimated.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Eyes Of The World >",
+      "duration": 599.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t05 Eyes.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t05 Eyes.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Drums >",
+      "duration": 509.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t06 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t06 Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 246.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t07 Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Not Fade Away >",
+      "duration": 396.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t08 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t08 NFA.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Black Peter >",
+      "duration": 537.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t09 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t09 Black Peter.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Good Lovin'",
+      "duration": 540.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t10 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t10 Good Lovin'.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "E: Don't Ease Me In",
+      "duration": 242.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd81-08-27 s2t11 E_Don't Ease.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd81-08-27 s2t11 E_Don't Ease.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

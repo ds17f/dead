@@ -1,0 +1,206 @@
+{
+  "rating": 1.4400000000000002,
+  "review_count": 1,
+  "source_type": "FM",
+  "confidence": 0.2,
+  "date": "1990-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Midnight Madness",
+      "duration": 149.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01MidnightMadness.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01MidnightMadness.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Not Fade Away",
+      "duration": 467.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Eyes Of The World",
+      "duration": 954.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03EyesOfTheWorld.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Star",
+      "duration": 1236.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04DarkStar.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums",
+      "duration": 978.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Drums.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Space",
+      "duration": 481.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Other One",
+      "duration": 689.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TheOtherOne.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Wharf Rat",
+      "duration": 621.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08WharfRat.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away",
+      "duration": 370.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09NotFadeAway.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Encore Break",
+      "duration": 237.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10EncoreBreak.mp3",
+          "bitrate": "166"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "The Weight",
+      "duration": 501.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11TheWeight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11TheWeight.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Johnny B Goode",
+      "duration": 501.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12JohnnyBGoode.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

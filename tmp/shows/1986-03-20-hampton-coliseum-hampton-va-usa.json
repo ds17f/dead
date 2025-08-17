@@ -1,0 +1,191 @@
+{
+  "url": "https://jerrygarcia.com/show/1986-03-20-hampton-coliseum-hampton-va-usa/",
+  "show_id": "1986-03-20-hampton-coliseum-hampton-va-usa",
+  "band": "Grateful Dead",
+  "venue": "Hampton Coliseum",
+  "location_raw": "Hampton, VA",
+  "city": "Hampton",
+  "state": "VA",
+  "country": "USA",
+  "date": "1986-03-20",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Row Jimmy",
+          "url": "https://jerrygarcia.com/song/row-jimmy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Althea",
+          "url": "https://jerrygarcia.com/song/althea/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Box of Rain",
+          "url": "https://jerrygarcia.com/song/box-of-rain/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Iko Iko",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:55:34.614619",
+  "show_time": null,
+  "recordings": [
+    "gd86-03-20.sbd-matrix.munder.8098.sbeok.shnf",
+    "gd1986-03-20.sbd.fishman.107321.flac16",
+    "gd1986-03-20.nak300.damico.87611.flac16",
+    "gd86-03-20.sony.lai.3906.sbeok.shnf",
+    "gd1986-03-20.127513.chasingwilma.flac24",
+    "gd1986-03-20.140273.fob.schoeps.cmc4.mk41.oade.wise.miller.clugston.flac1644",
+    "gd1986-03-20.132687.naks.datbrad.lynn.flac16",
+    "gd1986-03-20.aud.bandrofcheck.81845.flac16",
+    "gd1986-03-20.151197.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1986-03-20.156023.beyer-m201.holbrook.flac1644",
+    "gd1986-03-20.156024.beyer-m201.holbrook.flac2448",
+    "gd1986-03-20.151196.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1986-03-20.164741.nak304.thomas.miller.clugston.flac1648",
+    "gd1986-03-20.168896.sennme80.porter.carbonetta.sirmick.flac2496",
+    "gd1986-03-20.168895.sennme80.porter.carbonetta.sirmick.flac1644",
+    "gd1986-03-20.164742.nak304.thomas.miller.clugston.flac2496"
+  ],
+  "best_recording": "gd86-03-20.sbd-matrix.munder.8098.sbeok.shnf",
+  "avg_rating": 1.694117647058824,
+  "raw_rating": 3.6444444444444444,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 27,
+  "total_low_ratings": 8,
+  "source_types": {
+    "SBD": 2,
+    "UNKNOWN": 13,
+    "AUD": 1
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

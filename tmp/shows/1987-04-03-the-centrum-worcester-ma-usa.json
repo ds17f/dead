@@ -1,0 +1,199 @@
+{
+  "url": "https://jerrygarcia.com/show/1987-04-03-the-centrum-worcester-ma-usa/",
+  "show_id": "1987-04-03-the-centrum-worcester-ma-usa",
+  "band": "Grateful Dead",
+  "venue": "The Centrum",
+  "location_raw": "Worcester, MA",
+  "city": "Worcester",
+  "state": "MA",
+  "country": "USA",
+  "date": "1987-04-03",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "It Must Have Been The Roses",
+          "url": "https://jerrygarcia.com/song/it-must-have-been-the-roses/",
+          "segue_into_next": false
+        },
+        {
+          "name": "It's All Over Now",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Big Railroad Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Don't Ease Me In",
+          "url": "https://jerrygarcia.com/song/dont-ease-me-in/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "The Other One",
+          "url": "https://jerrygarcia.com/song/the-other-one/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:57:30.787745",
+  "show_time": null,
+  "recordings": [
+    "gd1987-04-03.sbd.miller.95720.sbeok.flac16",
+    "gd1987-04-03.140335.UltraMatrix.sbd.cm.miller.flac1644",
+    "gd1987-04-03.140292.sbd.miller.flac2496",
+    "gd87-04-03.sennme80.clark-miller.24898.sbeok.shnf",
+    "gd1987-04-03.fob.nak700.rolfe.miller.99165.sbeok.flac16",
+    "gd87-04-03.set2.senn421.eD.11631.sbeok.shnf",
+    "gd1987-04-03.nak300.damico.89432.sbeok.flac16",
+    "gd1987-04-03.141283.at835.akg.d12e.ackerman.miller.clugston.flac2496",
+    "gd1987-04-03.Senn441.Hill.Keo.131430.Flac2496",
+    "gd1987-04-03.141970.set2.fob.oade.cmc4.mk41.jacobs.miller.clugston.flac1644",
+    "gd1987-04-03.135572.set2.chasingwilma.flac24",
+    "gd1987-04-03.141282.at835.akg.d12e.ackerman.miller.clugston.flac1644",
+    "gd1987-04-03.167355.senn441.lamarre.miller.clugston.flac1648",
+    "gd1987-04-03.167356.senn441.lamarre.miller.clugston.flac2496",
+    "gd1987-04-03.Senn441.Hill.Keo.131429.Flac1644"
+  ],
+  "best_recording": "gd1987-04-03.sbd.miller.95720.sbeok.flac16",
+  "avg_rating": 2.041310541310541,
+  "raw_rating": 4.298507462686567,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 57,
+  "total_low_ratings": 5,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 12
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-03-23",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "0crowd",
+      "duration": 756.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 crowd.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "11 Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Shakedown Street.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "0Gimme Some Lovin",
+      "duration": 465.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Gimme Some Lovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Gimme Some Lovin.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "12 Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Samson & Delilah.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "0Deal",
+      "duration": 676.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Deal.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "13 He's Gone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 He's Gone.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "0Willie & The Hand Jive",
+      "duration": 342.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Willie & The Hand Jive .flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Willie & The Hand Jive .mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "14 Spoonful .flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Spoonful .mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "0Candyman",
+      "duration": 289.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Candyman.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "15 Drums .flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Drums .mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "0Cassidy",
+      "duration": 697.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Cassidy.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "16 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "0West L.A. Fadeaway",
+      "duration": 346.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 West L.A. Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 West L.A. Fadeaway.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "17 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 The Other One.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "0Mama Tried",
+      "duration": 452.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Mama Tried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Mama Tried.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "18 Comes A Time.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Comes A Time.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "0Big River",
+      "duration": 504.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Big River.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "19 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Good Lovin'.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Might As Well",
+      "duration": 234.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Might As Well.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "24bit Flac",
+          "filename": "20 Keep Your Day Job.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Keep Your Day Job.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

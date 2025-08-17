@@ -1,0 +1,334 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1978-08-31",
+  "venue": "Red Rocks Ampitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 127.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Mississippi Half-Step Uptown Toodeloo ->",
+      "duration": 635.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "El Paso",
+      "duration": 319.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Peggy-O",
+      "duration": 647.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Minglewood Blues",
+      "duration": 420.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t05.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Candyman",
+      "duration": 453.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "From The Heart Of Me",
+      "duration": 311.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jack Straw",
+      "duration": 395.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d1t08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Shakedown Street ->",
+      "duration": 402.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 540.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Ship Of Fools",
+      "duration": 566.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samson And Delilah",
+      "duration": 614.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Terrapin Station ->",
+      "duration": 662.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playing In The Band ->",
+      "duration": 826.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t06.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 990.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Ollin Arageed ->",
+      "duration": 187.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d2t08.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away ->",
+      "duration": 787.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter ->",
+      "duration": 633.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d3t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Sugar Magnolia",
+      "duration": 505.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d3t03.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Johnny B. Goode",
+      "duration": 245.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-31d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-31d3t04.mp3",
+          "bitrate": "174"
+        }
+      ]
+    }
+  ]
+}

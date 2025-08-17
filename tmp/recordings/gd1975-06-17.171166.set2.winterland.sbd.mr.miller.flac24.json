@@ -1,0 +1,91 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1975-06-17",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 148.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Tuning.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Blues For Allah >",
+      "duration": 509.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Blues For Allah.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums >",
+      "duration": 196.97,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Drums.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "King Solomon's Marbles >",
+      "duration": 368.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 King Solomon's Marbles.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Blues For Allah",
+      "duration": 474.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Blues For Allah.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Sugar Magnolia",
+      "duration": 563.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Sugar Magnolia.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "U.S. Blues",
+      "duration": 361.7,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 US Blues.flac"
+        }
+      ]
+    }
+  ]
+}

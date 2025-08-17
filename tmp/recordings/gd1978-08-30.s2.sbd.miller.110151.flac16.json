@@ -1,0 +1,190 @@
+{
+  "rating": 1.6875,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1978-08-30",
+  "venue": "Red Rocks Ampitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 3.75,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "I Need A Miracle",
+      "duration": 591.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d2t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Brown Eyed Women",
+      "duration": 320.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d2t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Estimated Prophet ->",
+      "duration": 679.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d2t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Other One ->",
+      "duration": 599.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d2t04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Eyes Of The World ->",
+      "duration": 1016.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d2t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums ->",
+      "duration": 623.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d2t06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space ->",
+      "duration": 578.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d3t01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "If I Had The World To Give ->",
+      "duration": 626.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d3t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Iko Iko ->",
+      "duration": 607.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d3t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around And Around",
+      "duration": 573.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d3t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "U.S. Blues",
+      "duration": 361.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd78-08-30d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd78-08-30d3t05.mp3",
+          "bitrate": "206"
+        }
+      ]
+    }
+  ]
+}

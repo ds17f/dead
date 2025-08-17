@@ -1,0 +1,318 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-10-14",
+  "venue": "Madison Square Garden",
+  "location": "New York, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 389.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t01.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "West L.A. Fadeaway",
+      "duration": 521.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Queen Jane Approximately",
+      "duration": 383.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy River Road",
+      "duration": 442.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso *",
+      "duration": 395.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 562.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Box of Rain",
+      "duration": 320.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Scarlet Begonias ->",
+      "duration": 579.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Fire on the Mountain",
+      "duration": 1406.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Looks Like Rain",
+      "duration": 527.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samba in the Rain",
+      "duration": 426.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Corinna ->",
+      "duration": 1035.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums ->",
+      "duration": 646.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space ->",
+      "duration": 1038.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Need a Miracle ->",
+      "duration": 331.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t08.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Attics of My Life ->",
+      "duration": 326.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Turn On Your Love Light",
+      "duration": 362.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t10.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "encore break",
+      "duration": 120.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Liberty",
+      "duration": 387.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-10-14.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-10-14.s2t12.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

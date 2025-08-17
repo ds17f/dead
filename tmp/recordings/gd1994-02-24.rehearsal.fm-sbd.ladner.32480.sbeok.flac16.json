@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-02-24",
+  "venue": "Oakland County Coliseum*",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "It's A Man's World (take 1)",
+      "duration": 109.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It's A Man's World (take 2)",
+      "duration": 219.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t02.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's A Man's World (take 3)",
+      "duration": 609.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t03.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Bob!!! BoB!!! ... Bob Do It . > Jerry slipknotian noodles",
+      "duration": 138.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Slipknot >",
+      "duration": 275.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t05.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Franklin's Tower",
+      "duration": 501.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t06.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "messing around > Blues jam(schoolgirl?).",
+      "duration": 182.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-02-24_soundcheck_t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-02-24_soundcheck_t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

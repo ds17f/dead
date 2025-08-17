@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-09-26",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 101.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 345.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 594.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t03.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Walkin' Blues",
+      "duration": 394.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "High Time",
+      "duration": 486.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Me And My Uncle ->",
+      "duration": 195.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Maggie's Farm",
+      "duration": 455.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Lazy River Road",
+      "duration": 493.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t08.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Easy Answers ->",
+      "duration": 375.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 205.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 128.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t11.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Iko Iko",
+      "duration": 543.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d1t12.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Saint Of Circumstance ->",
+      "duration": 481.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t01.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ship Of Fools",
+      "duration": 456.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin' ->",
+      "duration": 664.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t03.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 843.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t04.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 920.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle ->",
+      "duration": 311.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Standing On The Moon",
+      "duration": 538.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t07.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Crowd/Tuning",
+      "duration": 153.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Rain",
+      "duration": 291.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1993-09-26d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1993-09-26d2t09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

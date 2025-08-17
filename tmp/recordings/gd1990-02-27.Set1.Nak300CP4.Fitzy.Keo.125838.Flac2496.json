@@ -1,0 +1,126 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-02-27",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll",
+      "duration": 250.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t01.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 526.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t02.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 640.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Victim Or The Crime",
+      "duration": 616.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mississippi Half-Step..(Ending Missing/Tape Flip)",
+      "duration": 672.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece (Start Cuts In)",
+      "duration": 290.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song, Set Break",
+      "duration": 973.15,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd1990-02-27.Nak300.t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1990-02-27.Nak300.t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

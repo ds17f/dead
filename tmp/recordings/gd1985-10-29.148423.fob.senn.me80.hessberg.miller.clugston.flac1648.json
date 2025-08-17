@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-10-29",
+  "venue": "Fox Theater",
+  "location": "Atlanta, GA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 96.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t01 Crowd.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Feel Like A Stranger",
+      "duration": 529.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t02 Feel Like A Stranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t02 Feel Like A Stranger.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Friend Of The Devil",
+      "duration": 538.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t03 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t03 Friend Of The Devil.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "New Minglewood Blues",
+      "duration": 442.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t04 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t04 New Minglewood Blues.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Bird Song",
+      "duration": 701.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t05 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t05 Bird Song.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Hell In A Bucket >",
+      "duration": 446.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t06 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t06 Hell In A Bucket.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Deal",
+      "duration": 463.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s1t07 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s1t07 Deal.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Space >",
+      "duration": 70.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t01 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t01 Space.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Mississippi Half-Step Uptown Toodeloo >",
+      "duration": 389.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t02 Mississippi Half-Step.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t02 Mississippi Half-Step.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Franklin's Tower >",
+      "duration": 484.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t03 Franklin's Tower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t03 Franklin's Tower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Lost Sailor >",
+      "duration": 384.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t04 Lost Sailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t04 Lost Sailor.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Saint Of Circumstance >",
+      "duration": 402.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t05 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t05 Saint Of Circumstance.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Crazy Fingers > Jam >",
+      "duration": 951.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t06 Crazy Fingers_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t06 Crazy Fingers_Jam.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 549.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t07 Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 417.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t08 Space.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "The Wheel >",
+      "duration": 291.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t09 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t09 The Wheel.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "The Other One >",
+      "duration": 257.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t10 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t10 The Other One.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Wharf Rat >",
+      "duration": 498.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t11 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t11 Wharf Rat.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Johnny B. Goode",
+      "duration": 298.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t12 Johnny B. Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t12 Johnny B. Goode.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "Brokedown Palace",
+      "duration": 340.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd85-10-29 s2t13 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-10-29 s2t13 Brokedown Palace.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

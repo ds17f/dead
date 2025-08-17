@@ -1,0 +1,142 @@
+{
+  "rating": 2.40625,
+  "review_count": 16,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-12-29",
+  "venue": "Gulfstream Park Race Track",
+  "location": "Hallandale, FL",
+  "raw_rating": 4.8125,
+  "high_ratings": 16,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Turn On Your Lovelight",
+      "duration": 744.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dark Star ->",
+      "duration": 625.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Saint Stephen ->",
+      "duration": 458.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Eleven ->",
+      "duration": 515.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t04.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Drums ->",
+      "duration": 186.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One ->",
+      "duration": 366.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t06.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical Envelopment ->",
+      "duration": 449.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t07.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "And We Bid You Good Night",
+      "duration": 62.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-12-29d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-12-29d1t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "rating": 2.1875,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1989-04-16",
+  "venue": "The Mecca",
+  "location": "Milwaukee, WI",
+  "raw_rating": 4.375,
+  "high_ratings": 7,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "0",
+      "title": "Bird Song",
+      "duration": 183.86,
+      "formats": [
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t07-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t08-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t09-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t04-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t05-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t06-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t07-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t08-fixed.shn"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t09-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "1",
+      "title": "Hell in a Bucket",
+      "duration": 233.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "They Love Each Other",
+      "duration": 226.94,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t02.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Little Red Rooster",
+      "duration": 333.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t03.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Stagger Lee",
+      "duration": 220.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mama Tried",
+      "duration": 102.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t05.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Mexicali Blues",
+      "duration": 173.78,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d1t06.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Saint of Circumstance",
+      "duration": 224.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Truckin'",
+      "duration": 295.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Drums",
+      "duration": 242.04,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd89-04-16d2t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd89-04-16d2t03.shn"
+        }
+      ]
+    }
+  ]
+}

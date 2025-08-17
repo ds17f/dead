@@ -1,0 +1,505 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1989-07-04",
+  "venue": "Sullivan Stadium",
+  "location": "Foxboro, MA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd / Intro >",
+      "duration": 75.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t01 Crowd_Intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t01 Crowd_Intro.mp3",
+          "bitrate": "208"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Touch Of Grey",
+      "duration": 448.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t02 Touch Of Grey.flac"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Hell In A Bucket",
+      "duration": 369.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t03 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t03 Hell In A Bucket.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "West LA Fadeaway",
+      "duration": 508.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t04 West LA Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t04 West LA Fadeaway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Tons Of Steel",
+      "duration": 372.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t05 Tons Of Steel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t05 Tons Of Steel.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Little Red Rooster",
+      "duration": 625.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t06 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t06 Little Red Rooster.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Box Of Rain",
+      "duration": 323.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t07 Box Of Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t07 Box Of Rain.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Althea",
+      "duration": 516.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t08 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t08 Althea.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Uncle John's Band >",
+      "duration": 426.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t09 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t09 Uncle John's Band.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Playin' In The Band >",
+      "duration": 558.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t10 Playin' In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t10 Playin' In The Band.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "111",
+      "title": "Drums >",
+      "duration": 395.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t11 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t11 Drums.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "112",
+      "title": "Space >",
+      "duration": 304.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t12 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t12 Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "113",
+      "title": "Truckin' >",
+      "duration": 393.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t13 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t13 Truckin'.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "114",
+      "title": "The Other One >",
+      "duration": 261.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t14 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t14 The Other One.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "115",
+      "title": "Wharf Rat >",
+      "duration": 476.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t15 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t15 Wharf Rat.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "116",
+      "title": "Throwing Stones",
+      "duration": 574.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s1t16 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s1t16 Throwing Stones.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 51.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t01 Crowd.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "The Times They Are A-Changin'",
+      "duration": 306.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t02 The Times They Are-A-Changin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t02 The Times They Are-A-Changin'.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Man Of Peace",
+      "duration": 292.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t03 Man Of Peace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t03 Man Of Peace.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "I'll Be Your Baby Tonight",
+      "duration": 299.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t04 I'll Be Your Baby Tonight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t04 I'll Be Your Baby Tonight.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "John Brown",
+      "duration": 375.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t05 John Brown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t05 John Brown.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "I Want You",
+      "duration": 259.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t06 I Want You.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t06 I Want You.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Ballad Of A Thin Man",
+      "duration": 362.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t07 Ballad Of A Thin Man.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t07 Ballad Of A Thin Man.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Stuck Inside Of Mobile With The Memphis Blueas Again",
+      "duration": 424.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t08 Memphis Blues Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t08 Memphis Blues Again.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Queen Jane Approximately",
+      "duration": 380.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t09 Queen Jane Approximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t09 Queen Jane Approximately.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Chimes Of Freedom",
+      "duration": 384.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t10 Chimes Of Freedom.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t10 Chimes Of Freedom.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Slow Train",
+      "duration": 296.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t11 Slow Train.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t11 Slow Train.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Joey",
+      "duration": 626.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t12 Joey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t12 Joey.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "All Along the Watchtower",
+      "duration": 256.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t13 All Along The Watchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t13 All Along The Watchtower.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "214",
+      "title": "Encore Break",
+      "duration": 53.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t14 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t14 Encore Break.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "215",
+      "title": "Knockin' On Heavens Door",
+      "duration": 410.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd87-07-04 s2t15 Knockin' On Heaven's Door.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-07-04 s2t15 Knockin' On Heaven's Door.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

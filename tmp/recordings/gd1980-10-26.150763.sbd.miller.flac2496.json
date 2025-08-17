@@ -1,0 +1,124 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-10-26",
+  "venue": "Radio City Music Hall",
+  "location": "New York, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Starting Mix",
+      "duration": 423.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Starting Mix.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Readjusted Amp",
+      "duration": 434.38,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Readjusted Amp.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "False",
+      "duration": 25.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 False.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "No Room",
+      "duration": 159.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 No Room.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "False",
+      "duration": 26.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 False.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Incomplete",
+      "duration": 279.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Incomplete.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "No Room",
+      "duration": 434.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 No Room.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Incomplete",
+      "duration": 51.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Incomplete.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "With Room",
+      "duration": 433.18,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 With Room.flac"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Final Mix",
+      "duration": 434.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Final Mix.flac"
+        }
+      ]
+    }
+  ]
+}

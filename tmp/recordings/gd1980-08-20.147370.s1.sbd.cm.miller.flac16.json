@@ -1,0 +1,124 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1980-08-20",
+  "venue": "Uptown Theater",
+  "location": "Chicago, IL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 480.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Jack Straw.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Loser",
+      "duration": 542.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Loser.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Beat It On Down The Line",
+      "duration": 265.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Beat It On Down The Line.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Ramble On Rose >",
+      "duration": 456.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Ramble On Rose.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 385.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 El Paso.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Big Railroad Blues >",
+      "duration": 245.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Big Railroad Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Looks Like Rain",
+      "duration": 681.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Looks Like Rain.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Far From Me",
+      "duration": 333.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Far From Me.flac"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow >",
+      "duration": 609.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Let It Grow.flac"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Deal",
+      "duration": 263.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 Deal.flac"
+        }
+      ]
+    }
+  ]
+}

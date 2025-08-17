@@ -1,0 +1,414 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1987-09-23",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning",
+      "duration": 151.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Feel Like A Stranger >",
+      "duration": 428.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t02.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Franklin's Tower",
+      "duration": 584.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t03.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Walkin' Blues",
+      "duration": 401.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t04.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Friend Of The Devil",
+      "duration": 603.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Tons Of Steel >",
+      "duration": 304.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Desolation Row",
+      "duration": 652.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Big Railroad Blues >",
+      "duration": 312.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t08.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "The Music Never Stopped",
+      "duration": 490.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d1t09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 40.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Bertha >",
+      "duration": 416.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t02.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Cumberland Blues",
+      "duration": 324.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band >",
+      "duration": 449.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John's Band >",
+      "duration": 372.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band Jam >",
+      "duration": 181.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums >",
+      "duration": 607.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space >",
+      "duration": 476.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t08.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Need A Miracle >",
+      "duration": 253.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dear Mr. Fantasy >",
+      "duration": 364.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t10.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around >",
+      "duration": 233.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t11.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Good Lovin' >",
+      "duration": 300.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t12.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "La Bamba >",
+      "duration": 119.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t13.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Good Lovin'",
+      "duration": 103.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t14.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "encore call/break",
+      "duration": 139.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t15.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "E: U.S. Blues",
+      "duration": 378.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-09-23d2t16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-09-23d2t16.mp3",
+          "bitrate": "191"
+        }
+      ]
+    }
+  ]
+}

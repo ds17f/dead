@@ -1,0 +1,78 @@
+{
+  "rating": 2.2916666666666665,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-02-02",
+  "venue": "Crystal Ballroom",
+  "location": "Portland, OR",
+  "raw_rating": 4.583333333333333,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 860.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-02d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02d1t01.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "That's It For The Other One ->",
+      "duration": 518.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-02d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02d1t02.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Clementine ->",
+      "duration": 464.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-02d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02d1t03.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Good Morning Little Schoolgirl//",
+      "duration": 133.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd68-02-02d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-02-02d1t04.mp3",
+          "bitrate": "161"
+        }
+      ]
+    }
+  ]
+}

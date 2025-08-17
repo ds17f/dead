@@ -1,0 +1,46 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1989-08-19",
+  "venue": "The Greek Theatre - University of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd89-08-19weir set 1",
+      "duration": 3779.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-08-19weirSet1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-08-19weirSet1.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd89-08-19weir set 2",
+      "duration": 4936.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-08-19weirSet2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-08-19weirSet2.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

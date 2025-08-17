@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1986-06-28",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 414.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01HellInABucket.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ramble On Rose",
+      "duration": 436.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02RambleOnRose.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "CC Rider",
+      "duration": 488.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03CcRider.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 626.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04RowJimmy.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Beat It On Down The Line",
+      "duration": 182.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BeatItOnDownTheLine.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Touch Of Grey",
+      "duration": 329.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TouchOfGrey.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Looks Like Rain",
+      "duration": 503.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LooksLikeRain.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease Me In",
+      "duration": 189.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08DontEaseMeIn.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 85.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band",
+      "duration": 492.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10PlayingInTheBand.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 799.19,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11UncleJohnsBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11UncleJohnsBand.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 606.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 275.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Doll",
+      "duration": 285.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ChinaDoll.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Playing In The Band",
+      "duration": 193.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15PlayingInTheBand.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 346.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Turn On Your Lovelight",
+      "duration": 324.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TurnOnYourLovelight.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Encore Break",
+      "duration": 171.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 270.2,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19OneMoreSaturdayNight.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 412.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

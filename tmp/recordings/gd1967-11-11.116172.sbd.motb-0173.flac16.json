@@ -1,0 +1,158 @@
+{
+  "rating": 3.15,
+  "review_count": 8,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1967-11-11",
+  "venue": "Shrine Auditorium",
+  "location": "Los Angeles, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "// Turn On Your Lovelight (reel #2 side B; 8-track 15 ips)",
+      "duration": 704.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Death Don't Have No Mercy (reel #2 side B; 8-track 15 ips)",
+      "duration": 458.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t02.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Good Morning Little School (reel #2 side B; 8-track 15 ips)",
+      "duration": 727.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t03.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Potato Caboose (reel #1 side A; 2-track 7.5 ips)",
+      "duration": 672.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d1t04.mp3",
+          "bitrate": "211"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical > (reel #1 side B; 8-track 15 ips)",
+      "duration": 87.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Other One > (reel #1 side B; 8-track 15 ips)",
+      "duration": 156.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t02.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cryptical (reel #1 side B; 8-track 15 ips)",
+      "duration": 681.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t03.mp3",
+          "bitrate": "218"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Alligator > (reel #1 side A; 2-track 7.5 ips)",
+      "duration": 683.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t04.mp3",
+          "bitrate": "221"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Caution // has cut > Feedback > end crowd (reel #1 side A; 2-track 7.5 ips)",
+      "duration": 1520.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1967-11-11.sbd.motb.0173.d2t05.mp3",
+          "bitrate": "217"
+        }
+      ]
+    }
+  ]
+}

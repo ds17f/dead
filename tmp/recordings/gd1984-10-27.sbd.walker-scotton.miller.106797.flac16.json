@@ -1,0 +1,62 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1984-10-27",
+  "venue": "Berkeley Community Theater",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Beat It On Down The Line",
+      "duration": 246.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t01.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Goin' Down The Road Feeling Bad ->",
+      "duration": 307.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "One More Saturday Night",
+      "duration": 276.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd84-10-27t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-10-27t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

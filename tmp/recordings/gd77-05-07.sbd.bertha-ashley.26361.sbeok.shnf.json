@@ -1,0 +1,478 @@
+{
+  "rating": 2.4833333333333334,
+  "review_count": 30,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1977-05-07",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 4.966666666666667,
+  "high_ratings": 30,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Equipment Repairs",
+      "duration": 93.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t01.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Bertha",
+      "duration": 291.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "More Repairs",
+      "duration": 84.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t03.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cassidy",
+      "duration": 171.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Tune Up",
+      "duration": 57.15,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t05.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Deal",
+      "duration": 273.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t06.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Jack Straw",
+      "duration": 196.13,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t07.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Peggy-O",
+      "duration": 316.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t08.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "New Minglewood Blues",
+      "duration": 208.01,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t09.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Repairs",
+      "duration": 97.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t10.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mississippi Half-Step",
+      "duration": 489.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t11.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Big River",
+      "duration": 278.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t12.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Tune Up",
+      "duration": 83.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad1t13.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Tennessee Jed",
+      "duration": 356.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "The Music Never Stopped",
+      "duration": 314.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Tune Up",
+      "duration": 88.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t03.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Terrapin Station",
+      "duration": 391.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Samson and Delilah",
+      "duration": 282.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Tune Up",
+      "duration": 52.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t06.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Friend of the Devil",
+      "duration": 290.02,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t07.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Estimated Prophet",
+      "duration": 307.28,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t08.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tune Up",
+      "duration": 121.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad2t09.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Eyes Of The World",
+      "duration": 439.33,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Drums",
+      "duration": 111.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "The Wheel",
+      "duration": 373.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Wharf Rat",
+      "duration": 520.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Around And Around",
+      "duration": 289.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Crowd - Jerry's Guitar is Broke!",
+      "duration": 107.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t06.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "U.S. Blues",
+      "duration": 223.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-05-07Berthad3t07.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd77-05-07Berthad3t07.shn"
+        }
+      ]
+    }
+  ]
+}

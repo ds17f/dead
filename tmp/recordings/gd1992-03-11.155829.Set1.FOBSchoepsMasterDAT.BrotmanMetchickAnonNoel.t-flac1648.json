@@ -1,0 +1,158 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-03-11",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "[crowd - tuning]",
+      "duration": 170.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cold Rain and Snow ->",
+      "duration": 393.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Wang Dang Doodle",
+      "duration": 519.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Dire Wolf",
+      "duration": 211.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Queen Jane Approximately",
+      "duration": 484.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Althea",
+      "duration": 491.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "It's All Over Now",
+      "duration": 443.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t07.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "So Many Roads",
+      "duration": 521.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t08.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Picasso Moon",
+      "duration": 396.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd92-03-11.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd92-03-11.s1t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-12-28-oakland-alameda-county-coliseum-oakland-ca-usa/",
+  "show_id": "1989-12-28-oakland-alameda-county-coliseum-oakland-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location_raw": "Oakland, CA",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "USA",
+  "date": "1989-12-28",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Let The Good Times Roll",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Feel Like A Stranger",
+          "url": "https://jerrygarcia.com/song/feel-like-a-stranger/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dire Wolf",
+          "url": "https://jerrygarcia.com/song/dire-wolf/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Little Red Rooster",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Queen Jane Approximately",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Just A Little Light",
+          "url": "https://jerrygarcia.com/song/a-little-light/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Let It Grow",
+          "url": "https://jerrygarcia.com/song/let-it-grow/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Foolish Heart",
+          "url": "https://jerrygarcia.com/song/foolish-heart/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums*",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "All Along The Watchtower",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Stella Blue",
+          "url": "https://jerrygarcia.com/song/stella-blue/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T09:05:14.768158",
+  "show_time": null,
+  "recordings": [
+    "gd1989-12-28.sbd.miller.32254.sbeok.flac16",
+    "gd1989-12-28.154423.UltraMatrix.sbd.cm.miller.t.flac16",
+    "gd1989-12-28.153956.ultramatrix.miller.flac2496",
+    "gd1989-12-28.142684.schoeps-akg414.composite.mattes.miller.clugston.flac1648",
+    "gd1989-12-28.117731.NeumannKMF4.daweez.d5scott.flac16",
+    "gd1989-12-28.sennme80.wklitz.91643.flac",
+    "gd1989-12-28.131028.cmc521.fob.deal.jwpetty.flac16",
+    "gd1989-12-28.140375.AA-fob-toak1.flac2448",
+    "gd1989-12-28.139207.FOB.s1.Schoeps.Ammons.Noel.t-flac16",
+    "gd1989-12-28.Nak300CP4.Baker.Keo.126031.Flac1644",
+    "gd1989-12-28.Nak300CP4.Baker.Keo.126030.Flac2496",
+    "gd1989-12-28.fob.oleynick.12565.sbeok.shnf",
+    "gd1989-12-28.165021.mtx.seamons.ht159.flac16",
+    "gd1989-12-28.142684.schoeps.akg.414.composite.mattes.miller.clugston.flac1648",
+    "gd1989-12-28.140421.fob.AA.toak1.flac1644",
+    "gd1989-12-28.142684.schoeps.akg-414.composite.mattes.miller.clugston.flac1648"
+  ],
+  "best_recording": "gd1989-12-28.sbd.miller.32254.sbeok.flac16",
+  "avg_rating": 1.875,
+  "raw_rating": 3.8333333333333335,
+  "recording_count": 16,
+  "confidence": 1.0,
+  "total_high_ratings": 10,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "MATRIX": 1,
+    "UNKNOWN": 13
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-08-11",
+  "venue": "Red Rocks Amphitheatre",
+  "location": "Morrison, CO",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd87-08-11 tCold Rain & Snow",
+      "duration": 365.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T01ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T01ColdRainSnow.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd87-08-11 tLittle Red Rooster",
+      "duration": 592.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T02LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T02LittleRedRooster.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd87-08-11 tTons Of Steel",
+      "duration": 314.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T03TonsOfSteel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T03TonsOfSteel.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd87-08-11 tHigh Time",
+      "duration": 482.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T04HighTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T04HighTime.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd87-08-11 tWhen I Paint My Masterpiece",
+      "duration": 262.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T05WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T05WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd87-08-11 tWhen Push Comes To Shove",
+      "duration": 361.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T06WhenPushComesToShove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T06WhenPushComesToShove.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd87-08-11 tLet It Grow",
+      "duration": 783.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T07LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T07LetItGrow.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd87-08-11 tCrowd",
+      "duration": 84.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T08Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T08Crowd.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd87-08-11 tCrazy Fingers",
+      "duration": 479.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T09CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T09CrazyFingers.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd87-08-11 tSamson & Delilah",
+      "duration": 384.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T10SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T10SamsonDelilah.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd87-08-tShip Of Fools",
+      "duration": 571.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T11ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T11ShipOfFools.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd87-08-11 tPlayin' In The Band",
+      "duration": 500.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T12PlayinInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T12PlayinInTheBand.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd87-08-11 tChina Doll",
+      "duration": 315.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T13ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T13ChinaDoll.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd87-08-11 tDrums",
+      "duration": 516.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T14Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd87-08-11 tSpace",
+      "duration": 433.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T15Space.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd87-08-11 tAll Along The Watchtower",
+      "duration": 288.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T16AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T16AllAlongTheWatchtower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd87-08-11 tGoin' Down The Road Feeling Bad",
+      "duration": 384.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T17GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T17GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd87-08-11 tAround & Around",
+      "duration": 225.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T18AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T18AroundAround.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd87-08-11 tSugar Magnolia",
+      "duration": 552.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T19SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T19SugarMagnolia.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd87-08-11 tEncore Break",
+      "duration": 109.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T20EncoreBreak.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd87-08-11 tBlack Muddy River",
+      "duration": 407.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-08-11T21BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-08-11T21BlackMuddyRiver.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

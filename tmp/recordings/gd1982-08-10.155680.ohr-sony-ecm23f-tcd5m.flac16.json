@@ -1,0 +1,430 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1982-08-10",
+  "venue": "University Of Iowa Fieldhouse",
+  "location": "Iowa City, IA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Crowd/tuning",
+      "duration": 48.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T01.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Feel Like A Stranger",
+      "duration": 519.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T02.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 515.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T03.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 437.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tennessee Jed",
+      "duration": 531.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T05.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 384.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "It Must Have Been The Roses",
+      "duration": 349.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Crowd/Technical Issues/Tuning",
+      "duration": 281.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T08.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "On The Road Again >",
+      "duration": 176.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T09.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Beat It On Down The Line",
+      "duration": 232.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T10.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Stagger Lee",
+      "duration": 399.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T11.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "I Need A Miracle >",
+      "duration": 225.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T12.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Bertha",
+      "duration": 367.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set1T13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set1T13.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Cat Sunflower >",
+      "duration": 433.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Know You Rider",
+      "duration": 381.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Lost Sailor >",
+      "duration": 398.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T03.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Saint Of Circumstance >",
+      "duration": 414.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T04.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Eyes Of The World >",
+      "duration": 780.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T05.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Drums >",
+      "duration": 450.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T06.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Space >",
+      "duration": 524.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Iko Iko >",
+      "duration": 577.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T08.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Truckin' >",
+      "duration": 399.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T09.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Stella Blue >",
+      "duration": 511.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T10.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Sugar Magnolia",
+      "duration": 700.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T11.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "It's All Over Now Baby Blue >",
+      "duration": 404.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T12.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Johnny B. Goode",
+      "duration": 248.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-08-10-ohr-set2T13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-08-10-ohr-set2T13.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

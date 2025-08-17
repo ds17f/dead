@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-09-14",
+  "venue": "Madison Square Garden",
+  "location": "New York , NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Stranger",
+      "duration": 660.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 734.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t02.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Minglewood",
+      "duration": 594.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t03.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "ROR",
+      "duration": 515.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "BT Wind",
+      "duration": 391.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t05.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Jack-a-Roe",
+      "duration": 350.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t06.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Cassidy",
+      "duration": 383.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t07.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease",
+      "duration": 219.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d1t08.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Scarlet >",
+      "duration": 658.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d2t01.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Fire",
+      "duration": 903.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d2t02.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Truckin' >",
+      "duration": 620.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d2t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Terrapin >",
+      "duration": 873.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d2t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam >",
+      "duration": 322.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d2t05.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums >",
+      "duration": 39.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d2t06.mp3",
+          "bitrate": "157"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums >",
+      "duration": 567.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d3t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space >",
+      "duration": 440.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d3t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "TOO >",
+      "duration": 633.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d3t03.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Wharf Rat >",
+      "duration": 647.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d3t04.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "SMag",
+      "duration": 720.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d3t05.mp3",
+          "bitrate": "198"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "E: U.S. Blues",
+      "duration": 332.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-14d3t06.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-14d3t06.shn"
+        }
+      ]
+    }
+  ]
+}

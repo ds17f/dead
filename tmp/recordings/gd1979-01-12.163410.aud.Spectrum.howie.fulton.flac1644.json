@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-01-12",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "It Must Have Been the Roses",
+      "duration": 543.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t01 - Must Have Been the Roses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t01 - Must Have Been the Roses.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Dancin' In the Streets ->",
+      "duration": 1041.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t02 - Dancin In the Streets.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t02 - Dancin In the Streets.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Jerry jamin' with Billy ->",
+      "duration": 486.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t03 - Jerry jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t03 - Jerry jam.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "drums and percussion ->",
+      "duration": 525.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t04 - percussion.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t04 - percussion.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Not Fade Away ->",
+      "duration": 918.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t05 - Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t05 - Not Fade Away.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Gonig Down the Road ->",
+      "duration": 415.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t06 - Going Down the Road.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t06 - Going Down the Road.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Sugar Magnolia",
+      "duration": 625.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t07 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t07 - Sugar Magnolia.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "US Blues",
+      "duration": 371.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "d1t08 - US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "d1t08 - US Blues.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

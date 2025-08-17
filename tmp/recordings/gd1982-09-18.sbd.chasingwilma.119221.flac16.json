@@ -1,0 +1,350 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1982-09-18",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "jack straw",
+      "duration": 313.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t01.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "sugaree",
+      "duration": 717.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t02.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "mama tried>",
+      "duration": 453.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t03.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "mexicali blues",
+      "duration": 491.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t04.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "west l.a. fadeaway",
+      "duration": 464.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t05.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "little red rooster",
+      "duration": 363.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t06.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "dupree's diamond blues",
+      "duration": 414.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "cassidy",
+      "duration": 44.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "far from me",
+      "duration": 268.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s01t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s01t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "samson and delilah",
+      "duration": 431.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t01.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "uncle john's band>",
+      "duration": 598.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "playing in the band>",
+      "duration": 579.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "drums>",
+      "duration": 289.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "space>",
+      "duration": 245.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "throwing stones>",
+      "duration": 411.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "the wheel>",
+      "duration": 326.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "truckin>",
+      "duration": 470.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "wharf rat>",
+      "duration": 527.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t09.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "around and around>",
+      "duration": 241.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "one more saturday night",
+      "duration": 281.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t11.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "it's all over now baby blue",
+      "duration": 458.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1982-09-18s02t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1982-09-18s02t12.mp3",
+          "bitrate": "192"
+        }
+      ]
+    }
+  ]
+}

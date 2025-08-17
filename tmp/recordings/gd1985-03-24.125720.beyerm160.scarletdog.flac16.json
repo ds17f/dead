@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-03-24",
+  "venue": "Springfield Civic Center",
+  "location": "Springfield, MA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha*",
+      "duration": 432.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_01.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 310.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 565.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me & My Uncle",
+      "duration": 193.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mexicali Blues",
+      "duration": 308.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 468.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Minglewood Blues",
+      "duration": 478.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_07.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Deal",
+      "duration": 486.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_08.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 125.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_09.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samson & Delilah",
+      "duration": 524.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_10.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cumberland Blues",
+      "duration": 412.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_11.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Women Are Smarter",
+      "duration": 481.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_12.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 647.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_13.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Spoonful",
+      "duration": 440.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_14.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 496.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_15.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 314.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_16.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_16.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dear Mr. Fantasy",
+      "duration": 304.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_17.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_17.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones",
+      "duration": 558.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_18.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_18.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 595.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_19.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_19.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "U.S. Blues",
+      "duration": 334.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd_springfield_032485_20.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd_springfield_032485_20.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

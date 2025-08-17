@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1976-06-10",
+  "venue": "Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Promised Land",
+      "duration": 262.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01PromisedLand.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree",
+      "duration": 663.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Sugaree.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cassidy",
+      "duration": 306.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Cassidy.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "They Love Each Other",
+      "duration": 603.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04TheyLoveEachOther.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Music Never Stopped",
+      "duration": 389.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TheMusicNeverStopped.mp3",
+          "bitrate": "144"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Brown Eyed Women",
+      "duration": 481.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BrownEyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BrownEyedWomen.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Lazy Lightning",
+      "duration": 172.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07LazyLightning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07LazyLightning.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Supplication",
+      "duration": 308.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Supplication.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Row Jimmy",
+      "duration": 619.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09RowJimmy.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Big River",
+      "duration": 453.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10BigRiver.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Mission In The Rain",
+      "duration": 543.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11MissionInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11MissionInTheRain.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Looks Like Rain",
+      "duration": 623.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12LooksLikeRain.mp3",
+          "bitrate": "140"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Might As Well",
+      "duration": 364.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13MightAsWell.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13MightAsWell.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Tuning",
+      "duration": 103.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Tuning.mp3",
+          "bitrate": "139"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Samson And Delilah",
+      "duration": 432.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15SamsonAndDelilah.mp3",
+          "bitrate": "144"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Help On The Way",
+      "duration": 295.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16HelpOnTheWay.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16HelpOnTheWay.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Slipknot!",
+      "duration": 418.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Slipknot.mp3",
+          "bitrate": "147"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Franklin's Tower",
+      "duration": 723.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18FranklinsTower.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Let It Grow",
+      "duration": 726.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19LetItGrow.mp3",
+          "bitrate": "145"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Friend Of The Devil",
+      "duration": 579.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20FriendOfTheDevil.mp3",
+          "bitrate": "142"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Playing In The Band",
+      "duration": 854.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21PlayingInTheBand.mp3",
+          "bitrate": "143"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Dancing In The Street",
+      "duration": 661.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22DancingInTheStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22DancingInTheStreet.mp3",
+          "bitrate": "144"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "US Blues",
+      "duration": 425.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23UsBlues.mp3",
+          "bitrate": "141"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "rating": 1.5,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-12-10",
+  "venue": "Charlotte Coliseum",
+  "location": "Charlotte, NC",
+  "raw_rating": 3.0,
+  "high_ratings": 3,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 62.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "121073_01.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "121073_01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "One More Saturday Night",
+      "duration": 169.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "121073_02.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "121073_02.shn"
+        }
+      ]
+    }
+  ]
+}

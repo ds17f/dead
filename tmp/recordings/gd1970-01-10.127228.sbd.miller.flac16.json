@@ -1,0 +1,222 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1970-01-10",
+  "venue": "Golden Hall",
+  "location": "San Diego, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Stage Banter/Tuning",
+      "duration": 69.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t01.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "China Cat Sunflower ->",
+      "duration": 275.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t02.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 483.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t03.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me And My Uncle",
+      "duration": 200.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t04.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Dire Wolf",
+      "duration": 307.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t05.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Hard To Handle",
+      "duration": 315.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t06.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Casey Jones",
+      "duration": 307.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t07.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Mason's Children ->",
+      "duration": 280.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t08.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Black Peter",
+      "duration": 568.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t09.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 510.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t10.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cold Rain And Snow",
+      "duration": 336.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d1t11.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Turn On Your Lovelight",
+      "duration": 1514.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d2t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Announcements",
+      "duration": 23.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-01-10d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-01-10d2t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

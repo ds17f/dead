@@ -1,0 +1,158 @@
+{
+  "rating": 2.1363636363636362,
+  "review_count": 11,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1969-04-18",
+  "venue": "Purdue University",
+  "location": "Layfayette, IN",
+  "raw_rating": 4.2727272727272725,
+  "high_ratings": 8,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hard To Handle",
+      "duration": 402.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d1t01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Morning Dew",
+      "duration": 726.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d1t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "That's It For The Other One ->",
+      "duration": 1130.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d1t03.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sittin' On Top Of The World ->",
+      "duration": 176.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d1t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "I'm A King Bee",
+      "duration": 553.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Doin' That Rag",
+      "duration": 472.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d1t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Turn On Your Lovelight",
+      "duration": 1647.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d2t01.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cosmic Charlie",
+      "duration": 491.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d2t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Beat It On Down The Line",
+      "duration": 165.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd69-04-18d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-04-18d2t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

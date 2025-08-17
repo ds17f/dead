@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1993-01-24",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "2-Tuning",
+      "duration": 79.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2-01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2-01Tuning.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "2-Playing In The Band",
+      "duration": 466.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2-02PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2-02PlayingInTheBand.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "2-Crazy Fingers",
+      "duration": 469.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2-03CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2-03CrazyFingers.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "2-Samon & Delilah",
+      "duration": 445.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2-04SamonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2-04SamonDelilah.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "2-He's Gone",
+      "duration": 815.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2-05HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2-05HesGone.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "2-Drumz",
+      "duration": 149.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "2-06Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "2-06Drumz.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "3-01 Space",
+      "duration": 1140.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-01Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-01Space.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "3-02 The Last Time",
+      "duration": 398.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-02TheLastTime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-02TheLastTime.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "3-03 Black Peter",
+      "duration": 635.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-03BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-03BlackPeter.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "3-04 Sugar Magnolia",
+      "duration": 372.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-04SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-04SugarMagnolia.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "3-05 Sunshine Daydream",
+      "duration": 317.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-05SunshineDaydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-05SunshineDaydream.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "3-06 Knockin' On Heavens Door",
+      "duration": 406.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-06KnockinOnHeavensDoor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-06KnockinOnHeavensDoor.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1970-06-21",
+  "venue": "Pauley Ballroom, U. of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 77.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Frozen Logger",
+      "duration": 55.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Casey Jones",
+      "duration": 278.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t03.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cumberland Blues",
+      "duration": 321.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t04.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Easy Wind",
+      "duration": 575.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t05.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 155.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Candyman",
+      "duration": 349.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t07.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 622.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Saint Stephen",
+      "duration": 368.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t09.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Good Lovin'",
+      "duration": 501.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-06-21t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-06-21t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

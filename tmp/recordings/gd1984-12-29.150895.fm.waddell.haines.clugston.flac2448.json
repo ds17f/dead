@@ -1,0 +1,286 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1984-12-29",
+  "venue": "San Francisco Civic Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "One More Saturday Night",
+      "duration": 336.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t01 OMSN.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t01 OMSN.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Friend Of The Devil",
+      "duration": 623.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t02 FotD.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t02 FotD.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "My Brother Esau",
+      "duration": 309.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t03 Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t03 Brother Esau.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Big Railroad Blues",
+      "duration": 453.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t04 Big RR Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t04 Big RR Blues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "Cassidy",
+      "duration": 460.49,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t05 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t05 Cassidy.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Althea",
+      "duration": 548.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t06 Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t06 Althea.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Let It Grow",
+      "duration": 716.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s1t07 Let It Grow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s1t07 Let It Grow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Samson & Delilah",
+      "duration": 463.11,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t01 Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t01 Samson & Delilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Terrapin Station >",
+      "duration": 705.52,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t02 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t02 Terrapin Station.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Playin' In The Band >",
+      "duration": 1077.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t03 Playin' In The Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t03 Playin' In The Band.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Drums >",
+      "duration": 839.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t04 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t04 Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Space >",
+      "duration": 677.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t05 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t05 Space.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Truckin' >",
+      "duration": 521.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t06 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t06 Truckin'.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Stella Blue >",
+      "duration": 538.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t07 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t07 Stella Blue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Not Fade Away",
+      "duration": 604.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t08 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t08 NFA.mp3",
+          "bitrate": "207"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Not Fade Away >",
+      "duration": 105.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t09 NFA.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t09 NFA.mp3",
+          "bitrate": "234"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Brokedown Palace",
+      "duration": 366.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd84-12-29 s2t10 Brokedown Palace.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd84-12-29 s2t10 Brokedown Palace.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

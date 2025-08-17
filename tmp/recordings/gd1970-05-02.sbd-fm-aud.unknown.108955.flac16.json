@@ -1,0 +1,670 @@
+{
+  "rating": 1.9125,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1970-05-02",
+  "venue": "Harpur College",
+  "location": "Binghampton, NY",
+  "raw_rating": 4.25,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Don't Ease Me In",
+      "duration": 220.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0101.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0101.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "banter",
+      "duration": 6.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0102.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0102.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider",
+      "duration": 441.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0103.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0103.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "tuning",
+      "duration": 17.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0104.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0104.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 237.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0105.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0105.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "tuning",
+      "duration": 30.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0106.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0106.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "banter",
+      "duration": 58.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0107.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0107.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dire Wolf",
+      "duration": 229.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0108.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0108.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "tuning",
+      "duration": 7.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0109.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0109.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Beat It On Down The Line",
+      "duration": 188.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0110.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0110.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Black Peter",
+      "duration": 465.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0111.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0111.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Candyman",
+      "duration": 102.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0112.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0112.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cumberland Blues",
+      "duration": 322.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0113.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0113.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Deep Elem Blues",
+      "duration": 373.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0114.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0114.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "banter",
+      "duration": 17.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0115.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0115.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Cold Jordan",
+      "duration": 162.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0116.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0116.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Uncle John's Band",
+      "duration": 422.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0117.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0117.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All I Ever Wanted",
+      "duration": 456.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0201.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0201.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "What?",
+      "duration": 2.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0202.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0202.mp3",
+          "bitrate": "228"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Henry",
+      "duration": 236.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0203.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0203.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "The Sawmill",
+      "duration": 261.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0204.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0204.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Race Is On",
+      "duration": 144.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0205.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0205.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Mama Tried",
+      "duration": 221.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0206.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0206.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Me and My Uncle",
+      "duration": 223.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0207.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0207.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "The Weight",
+      "duration": 415.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0208.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0208.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "St Stephen",
+      "duration": 264.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0301.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0301.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Cryptical Envelopment",
+      "duration": 317.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0302.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0302.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "The Other One > Cryptical",
+      "duration": 1403.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0303.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0303.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Cosmic Charlie",
+      "duration": 412.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0304.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0304.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Cold Rain and Snow (cut)",
+      "duration": 417.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0305.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0305.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Cold Rain and Snow (complete)",
+      "duration": 479.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0401.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0401.mp3",
+          "bitrate": "169"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Dancin' In The Streets",
+      "duration": 901.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0402.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0402.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "break",
+      "duration": 24.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0403.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0403.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Good Love >",
+      "duration": 153.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0404.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0404.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Drums >",
+      "duration": 182.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0405.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0405.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Good Love",
+      "duration": 587.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0406.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0406.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Morning Dew",
+      "duration": 699.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0501.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0501.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Casey Jones",
+      "duration": 285.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0502.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0502.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "It's A Man's World",
+      "duration": 562.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0503.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0503.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Viola Lee Blues > Feedback",
+      "duration": 1024.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0504.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0504.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "And We Bid You Good Night",
+      "duration": 204.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track0505.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track0505.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

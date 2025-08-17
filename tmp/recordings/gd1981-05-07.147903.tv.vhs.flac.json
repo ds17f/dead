@@ -1,0 +1,80 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-05-07",
+  "venue": "Tommorow With Tom Snyder, NBC Studios",
+  "location": "New York, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tom interviews Jerry Garcia and Ken Kesey",
+      "duration": 482.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Interview Kesey Garcia.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "On the Road Again",
+      "duration": 200.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 On the Road Again.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dire Wolf",
+      "duration": 204.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Dire Wolf.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Deep Elem Blues",
+      "duration": 260.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Deep Elem Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Tom interviews Bob and Jerry, then adds Billy and Mickey",
+      "duration": 631.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Interview Garcia Weir Mickey Billy.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Cassidy",
+      "duration": 310.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Cassidy.flac"
+        }
+      ]
+    }
+  ]
+}

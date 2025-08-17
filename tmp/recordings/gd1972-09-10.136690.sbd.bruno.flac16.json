@@ -1,0 +1,334 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1972-09-10",
+  "venue": "Hollywood Palladium",
+  "location": "Hollywood, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Black Peter",
+      "duration": 151.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-10_t01_Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-10_t01_Bertha.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 348.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t02_greatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t02_greatestStoryEverTold.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 461.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t03_mississippiHalf-stepUptownToodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t03_mississippiHalf-stepUptownToodeloo.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Black-Throated Wind",
+      "duration": 386.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t04_black-throatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t04_black-throatedWind.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Bird Song",
+      "duration": 845.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t05_birdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t05_birdSong.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "The Promised Land",
+      "duration": 193.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t06_thePromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t06_thePromisedLand.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 288.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-10_t07_Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-10_t07_Deal.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "El Paso",
+      "duration": 306.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t08_elPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t08_elPaso.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Sugaree",
+      "duration": 477.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-10_t09_Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-10_t09_Sugaree.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band",
+      "duration": 1228.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t10_playingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t10_playingInTheBand.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Casey Jones",
+      "duration": 364.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t11_caseyJones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t11_caseyJones.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "He's Gone",
+      "duration": 852.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t12_hesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t12_hesGone.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Truckin'",
+      "duration": 746.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-10_t13_Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-10_t13_Truckin.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Ramble On Rose",
+      "duration": 373.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t14_rambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t14_rambleOnRose.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Beat It On Down The Line",
+      "duration": 199.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t15_beatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t15_beatItOnDownTheLine.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter",
+      "duration": 558.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t16_blackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t16_blackPeter.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dark Star",
+      "duration": 1919.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t17_darkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t17_darkStar.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Bass-Drums-Jam",
+      "duration": 201.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1972-09-10_t18_Bass-Drums-Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1972-09-10_t18_Bass-Drums-Jam.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Jack Straw",
+      "duration": 292.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t19_jackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t19_jackStraw.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sing Me Back Home",
+      "duration": 570.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1972-09-10_t20_singMeBackHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1972-09-10_t20_singMeBackHome.mp3",
+          "bitrate": "176"
+        }
+      ]
+    }
+  ]
+}

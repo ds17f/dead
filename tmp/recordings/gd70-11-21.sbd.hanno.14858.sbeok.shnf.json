@@ -1,0 +1,78 @@
+{
+  "rating": 1.6,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-11-21",
+  "venue": "Sargent Gym, Boston University",
+  "location": "Boston, MA",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cryptical Envelopment",
+      "duration": 72.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21t01.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "The Other One",
+      "duration": 290.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21t02.mp3",
+          "bitrate": "205"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Cryptical Envelopment",
+      "duration": 216.07,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21t03.mp3",
+          "bitrate": "207"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cosmic Charlie",
+      "duration": 254.57,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-21t04.mp3",
+          "bitrate": "210"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-11-21t04.shn"
+        }
+      ]
+    }
+  ]
+}

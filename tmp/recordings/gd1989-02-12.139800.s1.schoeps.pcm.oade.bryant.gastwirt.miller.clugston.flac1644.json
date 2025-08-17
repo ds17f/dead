@@ -1,0 +1,142 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-02-12",
+  "venue": "Great Western LA Forum",
+  "location": "Inglewood, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd89-02-12 s1 tCold Rain & Snow",
+      "duration": 350.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T01ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T01ColdRainSnow.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd89-02-12 s1 tHell In A Bucket",
+      "duration": 557.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T02HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T02HellInABucket.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd89-02-12 s1 tRow Jimmy",
+      "duration": 732.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T03RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T03RowJimmy.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd89-02-12 s1 tBeat It On Down The Line",
+      "duration": 196.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T04BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T04BeatItOnDownTheLine.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd89-02-12 s1 tPromised Land",
+      "duration": 345.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T05PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T05PromisedLand.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd89-02-12 s1 tWest LA Fadeaway",
+      "duration": 454.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T06WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T06WestLaFadeaway.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd89-02-12 s1 tHow Long Blues",
+      "duration": 349.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T07HowLongBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T07HowLongBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd89-02-12 s1 tGimme Some Lovin'",
+      "duration": 489.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd89-02-12S1T08GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd89-02-12S1T08GimmeSomeLovin.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

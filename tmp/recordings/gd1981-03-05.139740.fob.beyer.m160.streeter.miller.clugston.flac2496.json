@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1981-03-05",
+  "venue": "Stanley Theater",
+  "location": "Pittsburgh, PA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-03-05 s1 tCrowd",
+      "duration": 68.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T01Crowd.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-03-05 s1 tAlabama Getaway",
+      "duration": 319.83,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T02AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T02AlabamaGetaway.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-03-05 s1 tGreatest Story Ever Told",
+      "duration": 246.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T03GreatestStoryEverTold.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-03-05 s1 tFriend Of The Devil",
+      "duration": 568.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T04FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T04FriendOfTheDevil.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-03-s1 tCC Rider",
+      "duration": 466.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T05CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T05CcRider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-03-05 s1 tAlthea",
+      "duration": 488.08,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T06Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T06Althea.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-03-05 s1 tMama Tried",
+      "duration": 152.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T07MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T07MamaTried.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-03-05 s1 tMexicali Blues",
+      "duration": 322.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T08MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T08MexicaliBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-03-05 s1 tTo Lay Me Down",
+      "duration": 590.24,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T09ToLayMeDown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T09ToLayMeDown.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-03-05 s1 tNew Minglewood Blues",
+      "duration": 437.6,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T10NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T10NewMinglewoodBlues.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-03-05 s1 tTennessee Jed",
+      "duration": 531.39,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T11TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T11TennesseeJed.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-03-05 s1 tThe Music Never Stopped",
+      "duration": 479.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S1T12TheMusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S1T12TheMusicNeverStopped.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-03-05 s2 t01 Crowd",
+      "duration": 181.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T01Crowd.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-03-05 s2 t02 Jam",
+      "duration": 444.75,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T02Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T02Jam.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-03-05 s2 t03 Passenger",
+      "duration": 318.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T03Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T03Passenger.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-03-05 s2 t04 Scarlet Begonias",
+      "duration": 690.67,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T04ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T04ScarletBegonias.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-03-05 s2 t05 Fire On The Mountain",
+      "duration": 722.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T05FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T05FireOnTheMountain.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-03-05 s2 t06 Playing In The Band",
+      "duration": 853.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T06PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T06PlayingInTheBand.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-03-05 s2 t07 Drums",
+      "duration": 708.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T07Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-03-05 s2 t08 Space",
+      "duration": 253.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T08Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd81-03-05 s2 t09 Not Fade Away",
+      "duration": 569.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T09NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T09NotFadeAway.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd81-03-05 s2 t10 Wharf Rat",
+      "duration": 689.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T10WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T10WharfRat.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd81-03-05 s2 t11 Around & Around",
+      "duration": 524.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T11AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T11AroundAround.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd81-03-05 s2 t12 US Blues",
+      "duration": 316.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "Gd81-03-05S2T12UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-03-05S2T12UsBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

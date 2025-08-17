@@ -1,0 +1,62 @@
+{
+  "rating": 2.25,
+  "review_count": 6,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-09-15",
+  "venue": "Boston Music Hall",
+  "location": "Boston, MA",
+  "raw_rating": 4.5,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Truckin'",
+      "duration": 392.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-15t01.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-15t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums",
+      "duration": 36.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-15t02.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-15t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "The Other One",
+      "duration": 763.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-09-15t03.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-09-15t03.shn"
+        }
+      ]
+    }
+  ]
+}

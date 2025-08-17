@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1992-06-06",
+  "venue": "Rich Stadium",
+  "location": "Orchard Park, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 408.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TouchOfGrey.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 319.41,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Althea",
+      "duration": 501.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Althea.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "It's All Over Now",
+      "duration": 496.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04ItsAllOverNow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04ItsAllOverNow.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 532.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05FriendOfTheDevil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 301.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Take A Step Back",
+      "duration": 101.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07TakeAStepBack.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TakeAStepBack.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ramble On Rose",
+      "duration": 511.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08RambleOnRose.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Grow",
+      "duration": 758.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LetItGrow.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Iko Iko",
+      "duration": 395.91,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10IkoIko.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet",
+      "duration": 807.45,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EstimatedProphet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "The Same Thing",
+      "duration": 424.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12TheSameThing.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TheSameThing.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 552.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13HesGone.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 797.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 423.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Other One",
+      "duration": 550.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16TheOtherOne.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheOtherOne.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 311.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Throwing Stones",
+      "duration": 545.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18ThrowingStones.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "One More Saturday Night",
+      "duration": 290.73,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19OneMoreSaturdayNight.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Encore Break",
+      "duration": 174.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20EncoreBreak.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Baba O'Riley",
+      "duration": 188.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21BabaOriley.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21BabaOriley.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Tomorrow Never Knows",
+      "duration": 230.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22TomorrowNeverKnows.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22TomorrowNeverKnows.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-04-12",
+  "venue": "Fillmore West",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd1970-04-12.aud.FW.tSchoolgirl",
+      "duration": 1062.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd1970-04-12.aud.fw.t01Schoolgirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd1970-04-12.aud.fw.t01Schoolgirl.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

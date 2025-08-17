@@ -1,0 +1,206 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1980-06-05",
+  "venue": "Compton Terrace Amphitheatre",
+  "location": "Tempe, AZ",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "China Cat Sunflower",
+      "duration": 309.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ChinaCatSunflower.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "I Know You Rider",
+      "duration": 396.25,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02IKnowYouRider.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Lost Sailor",
+      "duration": 346.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03LostSailor.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03LostSailor.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Saint Of Circumstance",
+      "duration": 349.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04SaintOfCircumstance.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Terrapin Station",
+      "duration": 919.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05TerrapinStation.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Drums",
+      "duration": 579.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Space",
+      "duration": 291.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Space.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Truckin'",
+      "duration": 452.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Truckin.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Black Peter",
+      "duration": 582.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09BlackPeter.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Around And Around",
+      "duration": 236.84,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10AroundAndAround.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Johnny B Goode",
+      "duration": 291.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11JohnnyBGoode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11JohnnyBGoode.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "US Blues",
+      "duration": 338.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12UsBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

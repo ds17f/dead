@@ -1,0 +1,574 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1972-01-02",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "intro",
+      "duration": 41.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 - intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 - intro.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Truckin'",
+      "duration": 544.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 - Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 - Truckin'.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "tuning",
+      "duration": 160.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 - tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sugaree",
+      "duration": 399.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 - Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 - Sugaree.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "tuning",
+      "duration": 172.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 - tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mr. Charlie",
+      "duration": 238.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 - Mr. Charlie.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 - Mr. Charlie.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "tuning",
+      "duration": 108.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 - tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Beat It On Down the Line",
+      "duration": 208.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 - Beat It On Down the Line.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 - Beat It On Down the Line.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Loser",
+      "duration": 417.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 - Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 - Loser.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 313.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10 - Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 - Jack Straw.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Chinatown Shuffle",
+      "duration": 229.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11 - Chinatown Shuffle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 - Chinatown Shuffle.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tennessee Jed",
+      "duration": 412.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12 - Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 - Tennessee Jed.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "tuning",
+      "duration": 160.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 - tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "El Paso",
+      "duration": 292.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14 - El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 - El Paso.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "You Win Again",
+      "duration": 249.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15 - You Win Again.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 - You Win Again.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Big Railroad Blues",
+      "duration": 241.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16 - Big Railroad Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 - Big Railroad Blues.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "tuning",
+      "duration": 60.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 - tuning.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Mexicali Blues",
+      "duration": 215.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18 - Mexicali Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 - Mexicali Blues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "tuning",
+      "duration": 86.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 - tuning.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Playing in the Band",
+      "duration": 369.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 - Playing in the Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 - Playing in the Band.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Next Time You See Me",
+      "duration": 291.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 - Next Time You See Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 - Next Time You See Me.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Brown Eyed Women",
+      "duration": 287.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 - Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 - Brown Eyed Women.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Casey Jones",
+      "duration": 304.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 - Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 - Casey Jones.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Good Lovin' >",
+      "duration": 861.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24 - Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24 - Good Lovin'.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "China Cat Sunflower >",
+      "duration": 215.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25 - China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25 - China Cat Sunflower.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Good Lovin'",
+      "duration": 207.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26 - Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26 - Good Lovin'.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "tuning",
+      "duration": 64.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "27 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "27 - tuning.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Ramble On Rose",
+      "duration": 421.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "28 - Ramble On Rose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "28 - Ramble On Rose.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Sugar Magnolia",
+      "duration": 438.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "29 - Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "29 - Sugar Magnolia.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "tuning",
+      "duration": 74.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "30 - tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "30 - tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Not Fade Away >",
+      "duration": 313.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "31 - Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "31 - Not Fade Away.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Goin' Down the Road Feelin' Bad >",
+      "duration": 407.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "32 - Goin' Down the Road Feelin' Bad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "32 - Goin' Down the Road Feelin' Bad.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Not Fade Away",
+      "duration": 184.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "33 - Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "33 - Not Fade Away.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "encore break",
+      "duration": 145.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "34 - encore break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "34 - encore break.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "One More Saturday Night",
+      "duration": 298.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "35 - One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "35 - One More Saturday Night.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

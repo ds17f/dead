@@ -1,0 +1,302 @@
+{
+  "rating": 1.7857142857142858,
+  "review_count": 21,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1995-06-22",
+  "venue": "Knickerbocker Arena",
+  "location": "Albany, NY",
+  "raw_rating": 3.5714285714285716,
+  "high_ratings": 12,
+  "low_ratings": 4,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Touch Of Grey",
+      "duration": 470.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d1t01.wav.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d1t01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Walkin' Blues",
+      "duration": 419.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d1t02.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d1t02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "It Must Have Been The Roses",
+      "duration": 423.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d1t03.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d1t03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "When I Paint My Masterpiece",
+      "duration": 368.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d1t04.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d1t04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "So Many Roads",
+      "duration": 756.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d1t05.wav.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d1t05.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Music Never Stopped",
+      "duration": 548.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d1t06.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d1t06.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Help On The Way",
+      "duration": 267.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t01.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Slipknot!",
+      "duration": 414.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t02.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Franklin's Tower",
+      "duration": 1113.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t03.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samba In The Rain",
+      "duration": 469.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t04.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet",
+      "duration": 822.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t05.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t05.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Terrapin Station",
+      "duration": 1060.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t06.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t06.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 334.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d2t07.wav.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d2t07.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Silent Way Jam > Space",
+      "duration": 1177.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d3t01.wav.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d3t01.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "All Along the Watchtower",
+      "duration": 464.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d3t02.wav.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d3t02.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Black Peter",
+      "duration": 625.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d3t03.wav.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d3t03.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Around and Around",
+      "duration": 458.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d3t04.wav.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d3t04.wav.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Fought The Law",
+      "duration": 235.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd95-06-22d3t05.wav.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd95-06-22d3t05.wav.shn"
+        }
+      ]
+    }
+  ]
+}

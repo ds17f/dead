@@ -1,0 +1,102 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1969-00-00",
+  "venue": "Studio",
+  "location": "",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Aoxomoxoa #1",
+      "duration": 54.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 Aoxomoxoa #1.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Aoxomoxoa #2",
+      "duration": 54.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Aoxomoxoa #2.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Aoxomoxoa #3",
+      "duration": 54.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 Aoxomoxoa #3.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Live/Dead",
+      "duration": 61.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Live - Dead.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Workingman's Dead #1",
+      "duration": 65.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Workingman's Dead #1.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Workingman's Dead #2",
+      "duration": 55.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Workingman's Dead #2.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Workingman's Dead #3",
+      "duration": 55.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Workingman's Dead #3.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "American Beauty",
+      "duration": 61.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 American Beauty.flac"
+        }
+      ]
+    }
+  ]
+}

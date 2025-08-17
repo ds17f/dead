@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-09-10",
+  "venue": "Santa Fe Downs",
+  "location": "Santa Fe, NM",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 39.65,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "The Music Never Stopped",
+      "duration": 533.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t02.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 487.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t03.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "My Brother Esau",
+      "duration": 363.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t04.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big Railroad Blues ->",
+      "duration": 323.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t05.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line",
+      "duration": 244.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t06.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 521.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "New Minglewood Blues ->",
+      "duration": 436.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "China Cat Sunflower ->",
+      "duration": 379.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t09.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider",
+      "duration": 311.92,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s1t10.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "tuning",
+      "duration": 29.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t01.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 384.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t02.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Cumberland Blues",
+      "duration": 542.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Playin' In The Band ->",
+      "duration": 738.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "China Doll ->",
+      "duration": 560.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums ->",
+      "duration": 492.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t06.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space ->",
+      "duration": 481.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Other One ->",
+      "duration": 738.51,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Goin' Down The Road Feelin' Bad ->",
+      "duration": 397.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t09.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night",
+      "duration": 300.21,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t10.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Cold Rain & Snow",
+      "duration": 341.26,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t11.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Bird Song",
+      "duration": 658.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t12.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Lazy Lightning ->",
+      "duration": 276.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t13.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Supplication",
+      "duration": 528.55,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd83-09-10.s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-09-10.s2t14.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

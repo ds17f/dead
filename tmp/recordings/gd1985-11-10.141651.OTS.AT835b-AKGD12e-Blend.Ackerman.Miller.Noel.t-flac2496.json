@@ -1,0 +1,334 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1985-11-10",
+  "venue": "Meadowlands Arena",
+  "location": "East Rutherford, NJ",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch of Grey ->",
+      "duration": 432.77,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Hell in a Bucket ->",
+      "duration": 370.46,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 609.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 350.99,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Stagger Lee",
+      "duration": 334.42,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t05.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "It's All Over Now ->",
+      "duration": 529.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Row Jimmy ->",
+      "duration": 708.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feel Like a Stranger",
+      "duration": 462.48,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s1t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Mississippi Half Step Uptown Toodeloo ->",
+      "duration": 425.86,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t01.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "I Know You Rider ->",
+      "duration": 353.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Playing in the Band ->",
+      "duration": 548.0,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Uncle John's Band ->",
+      "duration": 412.14,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t04.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Supplication ->",
+      "duration": 324.54,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums ->",
+      "duration": 370.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t06.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space ->",
+      "duration": 335.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Truckin' ->",
+      "duration": 422.81,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t08.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Comes a Time ->",
+      "duration": 412.06,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t09.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Around and Around ->",
+      "duration": 235.27,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t10.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Good Lovin'",
+      "duration": 437.68,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t11.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 436.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "gd85-11-10.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd85-11-10.s2t12.mp3",
+          "bitrate": "184"
+        }
+      ]
+    }
+  ]
+}

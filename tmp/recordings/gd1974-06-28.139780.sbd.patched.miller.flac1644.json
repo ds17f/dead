@@ -1,0 +1,430 @@
+{
+  "rating": 1.75,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1974-06-28",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Mississippi Half-Step Uptown Toodeloo",
+      "duration": 449.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01MississippiHalf-stepUptownToodeloo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01MississippiHalf-stepUptownToodeloo.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Must Have Been The Roses",
+      "duration": 299.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02ItMustHaveBeenTheRoses.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02ItMustHaveBeenTheRoses.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack Straw",
+      "duration": 316.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03JackStraw.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Beait It On Down The Line",
+      "duration": 234.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BeaitItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BeaitItOnDownTheLine.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Deal",
+      "duration": 302.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Deal.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 201.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Tennessee Jed",
+      "duration": 484.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07TennesseeJed.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Me And Bobby McGee",
+      "duration": 434.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08MeAndBobbyMcgee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08MeAndBobbyMcgee.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Loose Lucy",
+      "duration": 307.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09LooseLucy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09LooseLucy.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "El Paso",
+      "duration": 256.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ElPaso.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Sugaree",
+      "duration": 427.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Sugaree.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Around And Around",
+      "duration": 318.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12AroundAndAround.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Seastones",
+      "duration": 1472.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Seastones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Seastones.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Sugar Magnolia",
+      "duration": 372.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14SugarMagnolia.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Scarlet Begonias",
+      "duration": 576.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15ScarletBegonias.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Big River",
+      "duration": 343.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16BigRiver.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "To Lay Me Down",
+      "duration": 503.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17ToLayMeDown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17ToLayMeDown.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Me And My Uncle",
+      "duration": 197.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18MeAndMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18MeAndMyUncle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Row Jimmy",
+      "duration": 591.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19RowJimmy.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Weather Report Suite",
+      "duration": 2807.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20WeatherReportSuite.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20WeatherReportSuite.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "US Blues",
+      "duration": 406.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21UsBlues.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Promised Land",
+      "duration": 182.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22PromisedLand.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Goin' Down The Road Feeling Bad",
+      "duration": 501.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Sunshine Daydream",
+      "duration": 225.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "24SunshineDaydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "24SunshineDaydream.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Encore Break",
+      "duration": 65.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "25EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "25EncoreBreak.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Ship Of Fools",
+      "duration": 390.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "26ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "26ShipOfFools.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

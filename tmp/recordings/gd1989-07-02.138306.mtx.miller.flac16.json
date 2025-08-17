@@ -1,0 +1,350 @@
+{
+  "rating": 2.2,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1989-07-02",
+  "venue": "Sullivan Stadium",
+  "location": "Foxboro, MA",
+  "raw_rating": 4.4,
+  "high_ratings": 5,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 121.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Playing In The Band",
+      "duration": 323.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02PlayingInTheBand.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Crazy Fingers",
+      "duration": 460.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03CrazyFingers.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03CrazyFingers.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Wang Dang Doodle",
+      "duration": 491.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04WangDangDoodle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WangDangDoodle.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "We Can Run",
+      "duration": 326.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WeCanRun.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WeCanRun.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Tennessee Jed",
+      "duration": 526.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06TennesseeJed.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Queen Jane Approximately",
+      "duration": 407.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07QueenJaneApproximately.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "To Lay Me Down",
+      "duration": 661.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08ToLayMeDown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08ToLayMeDown.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 363.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Cassidy.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 200.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Friend Of The Devil",
+      "duration": 697.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11FriendOfTheDevil.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin'",
+      "duration": 428.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Truckin.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "He's Gone",
+      "duration": 836.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13HesGone.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Eyes Of The World",
+      "duration": 646.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14EyesOfTheWorld.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 461.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 662.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 305.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Dear Mr Fantasy",
+      "duration": 422.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18DearMrFantasy.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Hey Jude",
+      "duration": 229.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19HeyJude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19HeyJude.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sugar Magnolia",
+      "duration": 569.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SugarMagnolia.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 381.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "200"
+        }
+      ]
+    }
+  ]
+}

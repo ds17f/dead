@@ -1,0 +1,158 @@
+{
+  "rating": 2.2,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-12-05",
+  "venue": "Studio",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.4,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "I Know Your Rider",
+      "duration": 85.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t01.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain and Snow",
+      "duration": 86.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t02-fixed.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t02-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cream Puff War",
+      "duration": 132.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t03-fixed.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t03-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Sitting on Top of the World",
+      "duration": 61.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t04-fixed.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t04-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Same Thing",
+      "duration": 189.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t05-fixed.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t05-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stealin'",
+      "duration": 74.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t06-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t06-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "New Minglewood Blues",
+      "duration": 129.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t07-fixed.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t07-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Your Sons and Daughters *",
+      "duration": 113.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t08-fixed.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t08-fixed.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Fire in the City *",
+      "duration": 97.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-12-05d1t09-fixed.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-12-05d1t09-fixed.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1990-10-24",
+  "venue": "Sportsahalle",
+  "location": "Hamburg, Germany",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd90-10-24 tTuning",
+      "duration": 66.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T01Tuning.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd90-10-24 tFeel Like A Stranger",
+      "duration": 499.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T02FeelLikeAStranger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T02FeelLikeAStranger.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd90-10-24 tCold Rain & Snow",
+      "duration": 419.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T03ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T03ColdRainSnow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd90-10-24 tLittle Red Rooster",
+      "duration": 506.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T04LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T04LittleRedRooster.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd90-10-24 tThey Love Each Other",
+      "duration": 467.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T05TheyLoveEachOther.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T05TheyLoveEachOther.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd90-10-24 tMe & My Uncle",
+      "duration": 184.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T06MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T06MeMyUncle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd90-10-24 tBig River",
+      "duration": 361.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T07BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T07BigRiver.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd90-10-24 tWest LA Fadeaway",
+      "duration": 434.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T08WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T08WestLaFadeaway.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd90-10-24 tQueen Jane Approximately",
+      "duration": 403.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T09QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T09QueenJaneApproximately.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd90-10-24 tIko Iko",
+      "duration": 383.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T10IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T10IkoIko.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd90-10-24 tHelp On The Way_Slipknot!",
+      "duration": 555.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T11HelpOnTheWay_slipknot.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T11HelpOnTheWay_slipknot.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd90-10-24 tFranklin's Tower",
+      "duration": 546.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T12FranklinsTower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T12FranklinsTower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd90-10-24 tTruckin'",
+      "duration": 467.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T13Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T13Truckin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd90-10-24 tHe's Gone",
+      "duration": 559.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T14HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T14HesGone.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd90-10-24 tDrums",
+      "duration": 606.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T15Drums.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd90-10-24 tSpace",
+      "duration": 532.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T16Space.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd90-10-24 tI Need A Miracle",
+      "duration": 275.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T17INeedAMiracle.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd90-10-24 tThe Wheel",
+      "duration": 282.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T18TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T18TheWheel.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd90-10-24 tGoin' Down The Road Feeling Bad",
+      "duration": 354.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T19GoinDownTheRoadFeelingBad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T19GoinDownTheRoadFeelingBad.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd90-10-24 tAround & Around",
+      "duration": 442.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T20AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T20AroundAround.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd90-10-24 tEncore Break",
+      "duration": 121.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T21EncoreBreak.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd90-10-24 tUS Blues",
+      "duration": 337.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd90-10-24T22UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd90-10-24T22UsBlues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

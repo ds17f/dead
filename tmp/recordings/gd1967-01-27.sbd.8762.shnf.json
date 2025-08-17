@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-01-27",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 4,
+  "low_ratings": 4,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Viola Lee Blues",
+      "duration": 1149.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t01.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Morning Dew",
+      "duration": 384.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t02.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain And Snow",
+      "duration": 164.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t03.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Potato Caboose",
+      "duration": 1019.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t04.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Alligator >",
+      "duration": 249.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t05.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Caution (Do Not Stop on Tracks)",
+      "duration": 693.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t06.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Good Morning Little School Girl",
+      "duration": 483.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-01-27t07.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-01-27t07.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "rating": 1.9444444444444444,
+  "review_count": 9,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-10-07",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 3.888888888888889,
+  "high_ratings": 7,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cream Puff War",
+      "duration": 216.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-10-07t01.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-10-07t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Good Morning Little Schoolgirl",
+      "duration": 350.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-10-07t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-10-07t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Stealin'",
+      "duration": 105.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd1966-10-07t03.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd1966-10-07t03.shn"
+        }
+      ]
+    }
+  ]
+}

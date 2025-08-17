@@ -1,0 +1,350 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1977-12-31",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 247.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Tuning.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Music Never Stopped",
+      "duration": 519.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Music Never Stopped.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Tennessee Jed",
+      "duration": 569.62,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Tennessee Jed.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Funiculi Funicula",
+      "duration": 134.4,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Funiculi Funicula.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Funiculi Funicula.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me and My Uncle",
+      "duration": 298.36,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Me and My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Me and My Uncle.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Loser",
+      "duration": 648.09,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Loser.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Jack Straw",
+      "duration": 430.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Jack Straw.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Friend of the Devil",
+      "duration": 677.3,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Friend of the Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Friend of the Devil.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Lazy Lightnin'",
+      "duration": 210.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Lazy Lightnin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Lazy Lightnin'.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Supplication",
+      "duration": 331.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Supplication.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Supplication.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "New Year's Countdown",
+      "duration": 237.5,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11 New Year's Countdown.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 New Year's Countdown.mp3",
+          "bitrate": "144"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Sugar Magnolia",
+      "duration": 657.76,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12 Sugar Magnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Sugar Magnolia.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Scarlet Begonias",
+      "duration": 524.47,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13 Scarlet Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Scarlet Begonias.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Fire on the Mountain",
+      "duration": 719.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14 Fire on the Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Fire on the Mountain.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin'",
+      "duration": 1082.98,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15 Truckin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Truckin'.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Wharf Rat",
+      "duration": 612.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Wharf Rat.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums",
+      "duration": 349.71,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Not Fade Away",
+      "duration": 889.05,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Not Fade Away.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Around and Around",
+      "duration": 580.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19 Around and Around.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Around and Around.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "One More Saturday Night",
+      "duration": 307.1,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 One More Saturday Night.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Casey Jones",
+      "duration": 479.69,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21 Casey Jones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Casey Jones.mp3",
+          "bitrate": "186"
+        }
+      ]
+    }
+  ]
+}

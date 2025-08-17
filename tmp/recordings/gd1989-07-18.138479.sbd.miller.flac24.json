@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1989-07-18",
+  "venue": "Alpine Valley Music Theatre",
+  "location": "East Troy, WI",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Touch Of Grey",
+      "duration": 414.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01TouchOfGrey.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 422.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02JackStraw.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Jack-A-Roe",
+      "duration": 341.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03Jack-a-roe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Jack-a-roe.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "New Minglewood Blues",
+      "duration": 465.87,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04NewMinglewoodBlues.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Friend Of The Devil",
+      "duration": 602.43,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05FriendOfTheDevil.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Stuck Inside Of Mobile With The Memphis Blues Again",
+      "duration": 596.9,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06StuckInsideOfMobileWithTheMemphisBluesAgain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06StuckInsideOfMobileWithTheMemphisBluesAgain.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song",
+      "duration": 706.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BirdSong.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 296.35,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PromisedLand.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 40.63,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Tuning.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Sugar Magnolia",
+      "duration": 183.53,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SugarMagnolia.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 440.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 464.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ManSmartwomanSmarter.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Eyes Of The World",
+      "duration": 604.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13EyesOfTheWorld.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 623.78,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 726.79,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "China Doll",
+      "duration": 346.95,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16ChinaDoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16ChinaDoll.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dear Mr Fantasy",
+      "duration": 404.33,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17DearMrFantasy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17DearMrFantasy.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Hey Jude",
+      "duration": 146.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18HeyJude.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18HeyJude.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 612.17,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ThrowingStones.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Sunshine Daydream",
+      "duration": 273.02,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20SunshineDaydream.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20SunshineDaydream.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 148.56,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "The Mighty Quinn (Quinn The Eskimo)",
+      "duration": 366.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22TheMightyQuinnquinnTheEskimo.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22TheMightyQuinnquinnTheEskimo.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

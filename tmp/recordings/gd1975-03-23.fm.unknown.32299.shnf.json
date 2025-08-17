@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1975-03-23",
+  "venue": "Kezar Stadium",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Blues For Allah",
+      "duration": 397.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t01.mp3",
+          "bitrate": "220"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Stonger Than Dirt",
+      "duration": 298.8,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t02.mp3",
+          "bitrate": "239"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums",
+      "duration": 144.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t03.mp3",
+          "bitrate": "225"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Stronger Than Dirt",
+      "duration": 449.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t04.mp3",
+          "bitrate": "251"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Blues For Allah",
+      "duration": 148.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t05.mp3",
+          "bitrate": "256"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Radio Banter",
+      "duration": 23.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t06.mp3",
+          "bitrate": "236"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "The Promised Land",
+      "duration": 196.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd75-03-23d1t07.mp3",
+          "bitrate": "254"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd75-03-23d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

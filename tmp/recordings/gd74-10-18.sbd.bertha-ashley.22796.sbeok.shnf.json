@@ -1,0 +1,494 @@
+{
+  "rating": 2.375,
+  "review_count": 12,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-10-18",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.75,
+  "high_ratings": 11,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Around and Around",
+      "duration": 208.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t01.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Sugaree",
+      "duration": 249.51,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Beer Barrel Polka",
+      "duration": 39.44,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mexicali Blues",
+      "duration": 139.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Peggy-O",
+      "duration": 229.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t05.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Beat It On Down the Line",
+      "duration": 134.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t06.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Brown Eyed Women",
+      "duration": 180.54,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Cumberland Blues",
+      "duration": 243.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t08.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "El Paso",
+      "duration": 166.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t09.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tennessee Jed",
+      "duration": 238.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t10.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Jack Straw",
+      "duration": 203.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t11.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Row Jimmy",
+      "duration": 300.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t12.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Weather Report Suite Prelude > Part 1",
+      "duration": 201.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t13.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Let It Grow",
+      "duration": 377.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad1t14.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad1t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Phil and Ned",
+      "duration": 775.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad2t01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Jam",
+      "duration": 337.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad2t02.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Dark Star",
+      "duration": 789.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad2t03.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Morning Dew",
+      "duration": 431.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad2t04.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Crowd",
+      "duration": 163.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad2t05.mp3",
+          "bitrate": "202"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Promised Land",
+      "duration": 124.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t01.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Bertha",
+      "duration": 189.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t02.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Greatest STory Ever Told",
+      "duration": 218.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t03.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Ship of Fools",
+      "duration": 228.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Tuning",
+      "duration": 68.46,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Not Fade Away",
+      "duration": 307.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t06.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Goin' Down the Road Feelin' Bad",
+      "duration": 276.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t07.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "One More Saturday Night",
+      "duration": 173.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t08.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Crowd",
+      "duration": 209.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t09.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "US Blues",
+      "duration": 202.76,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t10.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Crowd Greensleeves",
+      "duration": 123.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-18Berthad3t11.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd74-10-18Berthad3t11.shn"
+        }
+      ]
+    }
+  ]
+}

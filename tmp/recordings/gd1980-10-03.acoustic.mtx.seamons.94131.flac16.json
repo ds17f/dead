@@ -1,0 +1,174 @@
+{
+  "rating": 2.25,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1980-10-03",
+  "venue": "Warfield Theatre",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 4,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Dire Wolf",
+      "duration": 225.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Monkey & The Engineer",
+      "duration": 181.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I've Been All Around This World",
+      "duration": 226.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t03.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark Hollow",
+      "duration": 269.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t04.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Jack-A-Roe",
+      "duration": 270.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t05.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Heaven Help The Fool",
+      "duration": 427.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "China Doll",
+      "duration": 315.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t07.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "On The Road Again",
+      "duration": 269.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t08.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Bird Song >",
+      "duration": 447.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t09.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Ripple",
+      "duration": 262.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-10-03t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-10-03t10.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1977-03-01",
+  "venue": "Multiple",
+  "location": "Multiple",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "3-18-77 >",
+      "duration": 5725.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "3-18-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "3-18-77.mp3",
+          "bitrate": "196"
+        },
+        {
+          "format": "Flac",
+          "filename": "Full Mix.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Full Mix.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "4-22-77 >",
+      "duration": 462.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "4-22-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "4-22-77.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "4-23-77 >",
+      "duration": 310.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "4-23-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "4-23-77.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "4-30-77 >",
+      "duration": 480.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "4-30-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "4-30-77.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "5-4-77 >",
+      "duration": 410.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-4-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-4-77.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "5-5-77 >",
+      "duration": 535.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-5-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-5-77.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "5-8-7>",
+      "duration": 507.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-8-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-8-77.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "5-11-77 >",
+      "duration": 448.5,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-11-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-11-77.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "5-13-77 >",
+      "duration": 383.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-13-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-13-77.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "5-17-77 >",
+      "duration": 522.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-17-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-17-77.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "5-21-77 >",
+      "duration": 544.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-21-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-21-77.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "5-25-77 >",
+      "duration": 466.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "5-25-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "5-25-77.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "6-7-77",
+      "duration": 422.42,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "6-7-77.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "6-7-77.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "rating": 2.1,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-00-00",
+  "venue": "Studio",
+  "location": "Unknown, Unknown",
+  "raw_rating": 4.2,
+  "high_ratings": 8,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "jerry garcia:",
+      "duration": 134.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "dire wolf (l = acoustic guitar, r = jerry garcia acoustic guitar",
+      "duration": 329.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "casey jones (falsetto at times)",
+      "duration": 177.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track03.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "false start > false start > high time (falsetto at times) >",
+      "duration": 256.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track04.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "jerry garcia:",
+      "duration": 316.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "acoustic blues (l = acoustic guitar, stops at about 5:25)",
+      "duration": 508.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track06.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "that's probably what's causing all the... and rumble",
+      "duration": 8.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "dire wolf (fast) (r = jerry garcia vocals and acoustic guitar,",
+      "duration": 139.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track08.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "dire wolf (slower version) >",
+      "duration": 31.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track09.mp3",
+          "bitrate": "170"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "dire wolf >",
+      "duration": 77.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track10.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "jerry garcia:",
+      "duration": 681.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track11.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "high time (l = acoustic guitar, start then tuning)",
+      "duration": 38.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track12.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "high time (l = acoustic guitar)",
+      "duration": 9.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track13.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "high time (l = acoustic guitar, r = jerry garcia vocals) (x)",
+      "duration": 235.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Track14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Track14.mp3",
+          "bitrate": "172"
+        }
+      ]
+    }
+  ]
+}

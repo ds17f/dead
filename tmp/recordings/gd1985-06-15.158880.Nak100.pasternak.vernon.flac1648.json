@@ -1,0 +1,319 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1985-06-15",
+  "venue": "Greek Theater, U. of California",
+  "location": "Berkeley, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "0crowd",
+      "duration": 38.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01 crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 crowd.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "10 crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 crowd.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "0Touch Of Grey",
+      "duration": 368.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02 Touch Of Grey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Touch Of Grey.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Flac",
+          "filename": "11 China Cat Sunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 China Cat Sunflower.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "0New Minglewood Blues",
+      "duration": 313.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 New Minglewood Blues.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "12 I Know You Rider .flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 I Know You Rider .mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "0Friend Of The Devil",
+      "duration": 392.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Friend Of The Devil.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "13Lost Sailor .flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Lost Sailor .mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "0Cassidy",
+      "duration": 371.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 Cassidy.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "14 Saint Of Circumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 Saint Of Circumstance.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "0Dupree's Diamond Blues",
+      "duration": 761.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06 Dupree's Diamond Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 Dupree's Diamond Blues.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "15 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Terrapin Station.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "0Me And My Uncle",
+      "duration": 546.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07 Me And My Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Me And My Uncle.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "16 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Drums.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "0Big River",
+      "duration": 423.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08 Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 Big River.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Flac",
+          "filename": "17 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Space.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "0Might As Well",
+      "duration": 263.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09 Might As Well.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Might As Well.mp3",
+          "bitrate": "193"
+        },
+        {
+          "format": "Flac",
+          "filename": "18 The Wheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 The Wheel.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "19 Gimmie Some Lovin",
+      "duration": 237.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19 Gimmie Some Lovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Gimmie Some Lovin.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "20 Throwing Stones",
+      "duration": 466.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Throwing Stones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "21 Not Fade Away",
+      "duration": 360.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Not Fade Away.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "22 She Belongs To Me",
+      "duration": 467.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22 She Belongs To Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 She Belongs To Me.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "23 U.S. Blues",
+      "duration": 282.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23 U.S. Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23 U.S. Blues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1994-12-16",
+  "venue": "Sports Arena",
+  "location": "Los Angeles, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell In A Bucket",
+      "duration": 493.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Hell In A Bucket.flac"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cold Rain And Snow",
+      "duration": 391.88,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Cold Rain And Snow.flac"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "New Minglewood Blues",
+      "duration": 550.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 New Minglewood Blues.flac"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "So Many Roads",
+      "duration": 471.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 So Many Roads.flac"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Childhood's End",
+      "duration": 299.93,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 Childhood's End.flac"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Eternity >",
+      "duration": 724.96,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 Eternity.flac"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Don't Ease Me In",
+      "duration": 228.89,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Don't Ease Me In.flac"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Eyes Of The World",
+      "duration": 1225.8,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 Eyes Of The World.flac"
+        }
+      ]
+    }
+  ]
+}

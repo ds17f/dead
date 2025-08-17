@@ -1,0 +1,30 @@
+{
+  "rating": 1.9,
+  "review_count": 10,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1966-02-12",
+  "venue": "Youth Opportunities Center",
+  "location": "Compton, CA",
+  "raw_rating": 3.8,
+  "high_ratings": 7,
+  "low_ratings": 2,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Who Cares Rap (Pigpen, Weir, etc.)",
+      "duration": 187.18,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "acid5t01.mp3",
+          "bitrate": "148"
+        },
+        {
+          "format": "Shorten",
+          "filename": "acid5t01.shn"
+        }
+      ]
+    }
+  ]
+}

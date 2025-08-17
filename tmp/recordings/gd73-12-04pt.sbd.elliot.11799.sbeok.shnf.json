@@ -1,0 +1,62 @@
+{
+  "rating": 1.5714285714285714,
+  "review_count": 7,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1973-12-04",
+  "venue": "Cincinnati Gardens",
+  "location": "Cincinnati, OH",
+  "raw_rating": 3.142857142857143,
+  "high_ratings": 2,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Goin' Down The Road Feelin' Bad",
+      "duration": 205.81,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "120473_01.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "120473_01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sunshine Daydream",
+      "duration": 135.87,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "120473_02.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "120473_02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Casey Jones",
+      "duration": 259.11,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "120473_03.mp3",
+          "bitrate": "144"
+        },
+        {
+          "format": "Shorten",
+          "filename": "120473_03.shn"
+        }
+      ]
+    }
+  ]
+}

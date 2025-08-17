@@ -1,0 +1,310 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-02-19",
+  "venue": "Delta Center",
+  "location": "Salt Lake City, UT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "s1t0- crowd & tuning",
+      "duration": 116.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t01 - crowd & tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t01 - crowd & tuning.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t01 - crowd & tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t01 - crowd & tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "s1t0- Jack Straw",
+      "duration": 454.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t02 - Jack Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t02 - Jack Straw.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t02 - China Cat Sunflower >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t02 - China Cat Sunflower >.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "s1t0- Sugaree",
+      "duration": 287.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t03 - Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t03 - Sugaree.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t03 - I Know You Rider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t03 - I Know You Rider.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "s1t0- Walkin' Blues",
+      "duration": 582.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t04 - Walkin' Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t04 - Walkin' Blues.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t04 - Samson & Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t04 - Samson & Delilah.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "s1t0- Alabama Getaway",
+      "duration": 382.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t05 - Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t05 - Alabama Getaway.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t05 - If The Shoe Fits >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t05 - If The Shoe Fits >.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "s1t0- Me & My Uncle >",
+      "duration": 421.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t06 - Me & My Uncle >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t06 - Me & My Uncle >.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t06 - New Speedway Boogie >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t06 - New Speedway Boogie >.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "s1t0- Big River",
+      "duration": 963.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t07 - Big River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t07 - Big River.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t07 - Estimated Prophet >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t07 - Estimated Prophet >.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "s1t0- Don't Ease Me In",
+      "duration": 399.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s1t08 - Don't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s1t08 - Don't Ease Me In.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "s2t08 - Drums >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t08 - Drums >.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "s2t0- Space>",
+      "duration": 1294.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t09 - Space >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t09 - Space >.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "s2t- I Need A Miracle >",
+      "duration": 358.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t10 - I Need A Miracle  >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t10 - I Need A Miracle  >.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "s2t- Attics Of My Like >",
+      "duration": 278.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t11 - Attics Of My Like >.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t11 - Attics Of My Like >.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "s2t- Johnny B. Goode",
+      "duration": 279.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t12 - Johnny B. Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t12 - Johnny B. Goode.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "s2t- encore break",
+      "duration": 160.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t13 - encore break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t13 - encore break.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "s2t- It's All Over Now Baby Blue",
+      "duration": 417.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "s2t14 - It's All Over Now Baby Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "s2t14 - It's All Over Now Baby Blue.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

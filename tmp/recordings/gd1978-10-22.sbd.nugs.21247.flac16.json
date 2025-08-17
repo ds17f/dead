@@ -1,0 +1,366 @@
+{
+  "rating": 2.0,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1978-10-22",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Intro",
+      "duration": 69.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_01_intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_01_intro.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Scarlet Begonias",
+      "duration": 702.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_02_Scarlet_Begonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_02_Scarlet_Begonias.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Fire On The Mountain",
+      "duration": 771.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_03_Fire_on_the_Mountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_03_Fire_on_the_Mountain.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Samson & Delilah",
+      "duration": 541.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_04_Samson_and_Delilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_04_Samson_and_Delilah.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "From The Heart Of Me",
+      "duration": 238.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_05_From_the_Heart_of_Me.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_05_From_the_Heart_of_Me.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Need A Miracle",
+      "duration": 469.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_06_I_Need_a_Miracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_06_I_Need_a_Miracle.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Drums",
+      "duration": 844.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_07_Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_07_Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Not Fade Away",
+      "duration": 1068.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_08_Not_Fade_Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_08_Not_Fade_Away.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Mojo Jam",
+      "duration": 196.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_09_Mojo_Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_09_Mojo_Jam.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Goin' Down The Road Feelin' Bad",
+      "duration": 443.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_10_GDTRFB.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_10_GDTRFB.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Johnny B. Goode",
+      "duration": 281.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022ii_11_Johnny_B_Goode.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022ii_11_Johnny_B_Goode.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Intro",
+      "duration": 89.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_01_intro.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_01_intro.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Hamza Jam #1",
+      "duration": 405.26,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_02_Hamza_Jam1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_02_Hamza_Jam1.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Hamza Jam #2",
+      "duration": 322.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_03_Hamza_Jam2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_03_Hamza_Jam2.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Ollin Agrageed",
+      "duration": 942.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_04_Ollin_Arageed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_04_Ollin_Arageed.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Deal",
+      "duration": 445.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_05_Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_05_Deal.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Me and My Uncle",
+      "duration": 194.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_06_Me_and_My_Uncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_06_Me_and_My_Uncle.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Big River",
+      "duration": 427.14,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_07_Big_River.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_07_Big_River.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Friend Of The Devil",
+      "duration": 603.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_08_Friend_of_the_Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_08_Friend_of_the_Devil.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Minglewood Blues",
+      "duration": 375.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_09_Minglewood_Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_09_Minglewood_Blues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Peggy-O",
+      "duration": 712.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_10_Peggy-O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_10_Peggy-O.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Jack Straw",
+      "duration": 388.3,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd781022i_11_Jack_Straw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd781022i_11_Jack_Straw.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

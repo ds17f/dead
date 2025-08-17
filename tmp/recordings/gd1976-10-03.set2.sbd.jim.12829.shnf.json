@@ -1,0 +1,190 @@
+{
+  "rating": 1.575,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1976-10-03",
+  "venue": "Cobo Arena",
+  "location": "Detroit, MI",
+  "raw_rating": 4.5,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Samson & Delilah",
+      "duration": 257.65,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Must Have Been The Roses",
+      "duration": 205.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Playin' In The Band ->",
+      "duration": 461.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d1t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Drums ->",
+      "duration": 99.95,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Wheel -> Jam ->",
+      "duration": 341.85,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Lovin' -> Jam ->",
+      "duration": 253.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t03.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Comes A Time -> Jam ->",
+      "duration": 310.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dancin' In The Street ->",
+      "duration": 256.17,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Not Fade Away ->",
+      "duration": 437.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t06.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Dancin' In The Street",
+      "duration": 130.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t07.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Around & Around",
+      "duration": 248.32,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd76-10-03d2t08.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd76-10-03d2t08.shn"
+        }
+      ]
+    }
+  ]
+}

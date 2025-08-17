@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1995-04-07",
+  "venue": "Tampa Stadium",
+  "location": "Tampa, FL",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 143.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track01.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 375.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Peggy-O",
+      "duration": 426.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track03.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 524.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loose Lucy",
+      "duration": 549.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 399.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Visions Of Johanna>",
+      "duration": 678.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Promised Land",
+      "duration": 293.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc01Track08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc01Track08.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Tuning",
+      "duration": 81.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track01.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Eyes Of The World ->",
+      "duration": 953.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Saint Of Circumstance",
+      "duration": 467.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samba In The Rain",
+      "duration": 436.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Unbroken Chain",
+      "duration": 395.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Corrina ->",
+      "duration": 648.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track06.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums ->",
+      "duration": 1000.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc02Track07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc02Track07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space ->",
+      "duration": 802.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc03Track01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc03Track01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Easy Answers ->",
+      "duration": 412.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc03Track02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc03Track02.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Days Between ->",
+      "duration": 694.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc03Track03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc03Track03.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Not Fade Away",
+      "duration": 671.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc03Track04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc03Track04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Enc: U.S. Blues",
+      "duration": 320.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "GD-Disc03Track05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "GD-Disc03Track05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

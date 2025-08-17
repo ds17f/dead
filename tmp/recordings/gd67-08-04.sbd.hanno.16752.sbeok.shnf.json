@@ -1,0 +1,46 @@
+{
+  "rating": 2.3125,
+  "review_count": 16,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1967-08-04",
+  "venue": "O'Keefe Center",
+  "location": "Toronto, ON",
+  "raw_rating": 4.625,
+  "high_ratings": 15,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "New Potato Caboose",
+      "duration": 256.58,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-08-04t1.mp3",
+          "bitrate": "204"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-08-04t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Viola Lee Blues",
+      "duration": 742.38,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd67-08-04t2.mp3",
+          "bitrate": "207"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd67-08-04t2.shn"
+        }
+      ]
+    }
+  ]
+}

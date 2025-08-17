@@ -1,0 +1,286 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-04-01",
+  "venue": "Pyramid Arena",
+  "location": "Memphis, TN",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Disc01,TrackHell In A Bucket",
+      "duration": 468.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track01HellInABucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track01HellInABucket.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Disc01,TrackCandyman",
+      "duration": 471.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track02Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track02Candyman.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Disc01,TrackTake Me To The river",
+      "duration": 281.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track03TakeMeToTheRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track03TakeMeToTheRiver.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Disc01,TrackLazy River Road",
+      "duration": 523.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track04LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track04LazyRiverRoad.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Disc01,TrackWhen I Paint My Masterpiece",
+      "duration": 309.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track05WhenIPaintMyMasterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track05WhenIPaintMyMasterpiece.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Disc01,TrackChildhoods End",
+      "duration": 257.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track06ChildhoodsEnd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track06ChildhoodsEnd.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Disc01,TrackDeal",
+      "duration": 586.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track07Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track07Deal.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Disc01,TrackFoolish Heart",
+      "duration": 885.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track08FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track08FoolishHeart.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Disc01,TrackWay To Go Home",
+      "duration": 400.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc01track09WayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc01track09WayToGoHome.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Disc02,Track01 Saint Of Circumstance",
+      "duration": 488.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track01SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track01SaintOfCircumstance.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Disc02,Track02 Eyes Of The World",
+      "duration": 679.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track02EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track02EyesOfTheWorld.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Disc02,Track03 Drums",
+      "duration": 729.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track03Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track03Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Disc02,Track04 Space",
+      "duration": 876.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track04Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track04Space.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Disc02,Track05 The Wheel",
+      "duration": 359.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track05TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track05TheWheel.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Disc02,Track06 All Along The Watchtower",
+      "duration": 336.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track06AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track06AllAlongTheWatchtower.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Disc02,Track07 Standing On The Moon",
+      "duration": 703.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track07StandingOnTheMoon.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track07StandingOnTheMoon.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Disc02,Track08 One More Saturday Night",
+      "duration": 315.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Disc02track08OneMoreSaturdayNight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Disc02track08OneMoreSaturdayNight.mp3",
+          "bitrate": "190"
+        }
+      ]
+    }
+  ]
+}

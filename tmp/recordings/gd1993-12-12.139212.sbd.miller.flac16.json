@@ -1,0 +1,366 @@
+{
+  "rating": 0.6,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1993-12-12",
+  "venue": "San Diego Sports Arena",
+  "location": "San Diego, CA",
+  "raw_rating": 2.0,
+  "high_ratings": 0,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Cold Rain And Snow",
+      "duration": 389.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01ColdRainAndSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01ColdRainAndSnow.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "New Minglewood Blues",
+      "duration": 504.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02NewMinglewoodBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02NewMinglewoodBlues.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Friend Of The Devil",
+      "duration": 466.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03FriendOfTheDevil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03FriendOfTheDevil.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Black Throated Wind",
+      "duration": 392.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04BlackThroatedWind.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04BlackThroatedWind.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Althea",
+      "duration": 445.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05Althea.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat It On Down The Line",
+      "duration": 188.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06BeatItOnDownTheLine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06BeatItOnDownTheLine.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song",
+      "duration": 506.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07BirdSong.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Promised Land",
+      "duration": 246.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08PromisedLand.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Shakedown Street",
+      "duration": 695.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09ShakedownStreet.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Samson And Delilah",
+      "duration": 474.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10SamsonAndDelilah.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Ship Of Fools",
+      "duration": 473.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ShipOfFools.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Truckin'",
+      "duration": 399.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12Truckin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Nobody's Fault But Mine",
+      "duration": 151.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13NobodysFaultButMine.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13NobodysFaultButMine.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "That Would Be Something",
+      "duration": 220.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14ThatWouldBeSomething.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14ThatWouldBeSomething.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drums",
+      "duration": 1004.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drums.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 588.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "168"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 300.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "All Along The Watchtower",
+      "duration": 379.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18AllAlongTheWatchtower.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Stella Blue",
+      "duration": 487.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19StellaBlue.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around And Around",
+      "duration": 414.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20AroundAndAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20AroundAndAround.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 129.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "I Fought The Law",
+      "duration": 188.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22IFoughtTheLaw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22IFoughtTheLaw.mp3",
+          "bitrate": "198"
+        }
+      ]
+    }
+  ]
+}

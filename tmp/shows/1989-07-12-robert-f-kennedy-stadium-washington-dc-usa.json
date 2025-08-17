@@ -1,0 +1,202 @@
+{
+  "url": "https://jerrygarcia.com/show/1989-07-12-robert-f-kennedy-stadium-washington-dc-usa/",
+  "show_id": "1989-07-12-robert-f-kennedy-stadium-washington-dc-usa",
+  "band": "Grateful Dead",
+  "venue": "RFK Stadium",
+  "location_raw": "Washington, DC",
+  "city": "Washington",
+  "state": "DC",
+  "country": "USA",
+  "date": "1989-07-12",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Just Like Tom Thumb's Blues",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Far From Me",
+          "url": "https://jerrygarcia.com/song/far-from-me/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Cassidy",
+          "url": "https://jerrygarcia.com/song/cassidy/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Friend Of The Devil",
+          "url": "https://jerrygarcia.com/song/friend-of-the-devil/",
+          "segue_into_next": false
+        },
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter*",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Estimated Prophet",
+          "url": "https://jerrygarcia.com/song/estimated-prophet/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Eyes Of The World",
+          "url": "https://jerrygarcia.com/song/eyes-of-the-world/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "I Need A Miracle",
+          "url": "https://jerrygarcia.com/song/i-need-a-miracle/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Turn On Your Lovelight",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Black Muddy River",
+          "url": "https://jerrygarcia.com/song/black-muddy-river/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "Bruce Hornsby & The Range"
+  ],
+  "collection_timestamp": "2025-08-10T09:04:02.788110",
+  "show_time": null,
+  "recordings": [
+    "gd1989-07-12.140396.UltraMatrix.sbd.mc.miller.flac1644",
+    "gd1989-07-12.140351.sbd.miller.flac2496",
+    "gd89-07-12.aud-fob.gardner.2554.sbeok.shnf",
+    "gd1989-07-12.nak100.mchugh.hanscom.32130.sbeok.shnf",
+    "gd1989-07-12.Nak300CP4.Fitzy.Keo.125358.Flac2496",
+    "gd1989-07-12.141911.dts.tobin.flac1644",
+    "gd1989-07-12.142013.5-1.tobin.flac1648",
+    "gd1989-07-12.akg414.wklitz.86332.flac16",
+    "gd1989-07-12.141906.pp-aud.tobin.flac2496",
+    "gd1989-07-12.141908.mtx.tobin.flac2496",
+    "gd1989-07-12.141910.mtx.tobin.flac1644",
+    "gd1989-07-12.140444.beyer-cm101.ebel.flac2496",
+    "gd1989-07-12.141907.pp-aud.tobin.flac1644",
+    "gd1989-07-12.141912.5-1.tobin.flac1648",
+    "gd1989-07-12.Nak300CP4.Fitzy.Keo.125359.Flac1644"
+  ],
+  "best_recording": "gd1989-07-12.140396.UltraMatrix.sbd.mc.miller.flac1644",
+  "avg_rating": 1.7653465346534651,
+  "raw_rating": 3.8,
+  "recording_count": 15,
+  "confidence": 1.0,
+  "total_high_ratings": 11,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 2,
+    "AUD": 3,
+    "UNKNOWN": 10
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

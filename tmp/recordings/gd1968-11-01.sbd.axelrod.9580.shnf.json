@@ -1,0 +1,158 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-11-01",
+  "venue": "Silver Dollar Fair",
+  "location": "Chico, CA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Introduction > Dark Star >",
+      "duration": 444.16,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t01.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Cryptical Envelopment >",
+      "duration": 63.61,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums >",
+      "duration": 6.83,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "The Other One >",
+      "duration": 382.36,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t04.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Cryptical Envelopment >",
+      "duration": 246.99,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t05.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "New Potato Caboose %",
+      "duration": 21.12,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t06.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "//Caution >",
+      "duration": 48.74,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t07.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Feedback >",
+      "duration": 244.09,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t08.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "And We Bid You Good Night & closing Remarks",
+      "duration": 37.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-11-01d1t09.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-11-01d1t09.shn"
+        }
+      ]
+    }
+  ]
+}

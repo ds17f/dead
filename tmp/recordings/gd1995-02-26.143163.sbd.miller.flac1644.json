@@ -1,0 +1,318 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1995-02-26",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll",
+      "duration": 294.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01LetTheGoodTimesRoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01LetTheGoodTimesRoll.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "West LA Fadeaway",
+      "duration": 495.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02WestLaFadeaway.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Queen Jane Approximately",
+      "duration": 374.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03QueenJaneApproximately.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03QueenJaneApproximately.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Lazy River Road",
+      "duration": 463.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04LazyRiverRoad.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mama Tried",
+      "duration": 164.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05MamaTried.mp3",
+          "bitrate": "171"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mexicali Blues",
+      "duration": 342.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MexicaliBlues.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Don't Ease Me In",
+      "duration": 193.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07DontEaseMeIn.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Iko Iko",
+      "duration": 761.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08IkoIko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08IkoIko.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Samson And Delilah",
+      "duration": 527.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09SamsonAndDelilah.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Ship Of Fools",
+      "duration": 630.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10ShipOfFools.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Estimated Prophet",
+      "duration": 793.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11EstimatedProphet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11EstimatedProphet.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Eyes Of The World",
+      "duration": 973.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12EyesOfTheWorld.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12EyesOfTheWorld.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Drums",
+      "duration": 780.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Space",
+      "duration": 1015.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Space.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "I Need A Miracle",
+      "duration": 293.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15INeedAMiracle.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Days Between",
+      "duration": 566.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16DaysBetween.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16DaysBetween.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 679.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17NotFadeAway.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Encore Break",
+      "duration": 169.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18EncoreBreak.mp3",
+          "bitrate": "139"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Box Of Rain",
+      "duration": 344.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19BoxOfRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19BoxOfRain.mp3",
+          "bitrate": "138"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1992-06-25",
+  "venue": "Soldier Field",
+  "location": "Chicago, IL",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 393.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Bertha.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Greatest Story Ever Told",
+      "duration": 261.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02GreatestStoryEverTold.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "West L.A. Fadeaway",
+      "duration": 594.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03WestL.a.Fadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03WestL.a.Fadeaway.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Me & My Uncle",
+      "duration": 182.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04MeMyUncle.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Big River",
+      "duration": 456.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05BigRiver.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Ramble On Rose",
+      "duration": 443.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06RambleOnRose.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06RambleOnRose.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Masterpiece",
+      "duration": 404.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Masterpiece.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Brown-Eyed Women",
+      "duration": 349.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08Brown-eyedWomen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08Brown-eyedWomen.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Music Never Stopped",
+      "duration": 608.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09MusicNeverStopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09MusicNeverStopped.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Iko-Iko",
+      "duration": 475.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Iko-iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Iko-iko.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Good Morning Little School Girl",
+      "duration": 600.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11GoodMorningLittleSchoolGirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11GoodMorningLittleSchoolGirl.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Long Way To Go Home",
+      "duration": 400.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12LongWayToGoHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12LongWayToGoHome.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Saint Of Circumstance",
+      "duration": 420.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13SaintOfCircumstance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13SaintOfCircumstance.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "He's Gone",
+      "duration": 560.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14HesGone.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Drumz",
+      "duration": 1322.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Drumz.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Drumz.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Space",
+      "duration": 599.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Space.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "The Wheel",
+      "duration": 300.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17TheWheel.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "So Many Roads",
+      "duration": 443.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18SoManyRoads.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18SoManyRoads.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "All Along The Watchtower",
+      "duration": 460.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19AllAlongTheWatchtower.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Lovelight",
+      "duration": 650.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20Lovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20Lovelight.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Gloria",
+      "duration": 493.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21Gloria.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21Gloria.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

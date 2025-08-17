@@ -1,0 +1,350 @@
+{
+  "rating": 3.383333333333333,
+  "review_count": 12,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1977-02-26",
+  "venue": "Swing Auditorium",
+  "location": "San Bernardino, CA",
+  "raw_rating": 4.833333333333333,
+  "high_ratings": 12,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Terrapin Station*",
+      "duration": 1051.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t01.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Minglewood Blues",
+      "duration": 351.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t02.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "They Love Each Other",
+      "duration": 493.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t03.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Estimated Prophet*",
+      "duration": 552.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t04.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Sugaree",
+      "duration": 811.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t05.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried",
+      "duration": 190.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t06.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Deal",
+      "duration": 398.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d1t07.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Playing In The Band ->",
+      "duration": 878.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d2t01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Wheel ->",
+      "duration": 251.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d2t02.mp3",
+          "bitrate": "206"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Playing In The Band",
+      "duration": 312.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d2t03.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samson & Delilah",
+      "duration": 504.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d2t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Tennessee Jed",
+      "duration": 664.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d2t05.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "The Music Never Stopped",
+      "duration": 462.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d2t06.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Help On The Way ->",
+      "duration": 345.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t01.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Slipknot ->",
+      "duration": 437.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t02.mp3",
+          "bitrate": "205"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Franklin's Tower",
+      "duration": 1086.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Promised Land",
+      "duration": 323.02,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t04.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Eyes Of The World ->",
+      "duration": 712.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Dancing In The Streets ->",
+      "duration": 586.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t06.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Around & Around",
+      "duration": 592.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t07.mp3",
+          "bitrate": "203"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "U.S. Blues",
+      "duration": 355.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd77-02-26d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd77-02-26d3t08.mp3",
+          "bitrate": "209"
+        }
+      ]
+    }
+  ]
+}

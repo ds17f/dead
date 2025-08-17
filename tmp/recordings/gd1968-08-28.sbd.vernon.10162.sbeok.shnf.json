@@ -1,0 +1,94 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1968-08-28",
+  "venue": "Avalon Ballroom",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "//Dark Star - >",
+      "duration": 287.73,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t01.mp3",
+          "bitrate": "134"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "St. Stephen >",
+      "duration": 116.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t02.mp3",
+          "bitrate": "132"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "The Eleven - >",
+      "duration": 266.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t03.mp3",
+          "bitrate": "132"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Death Don't Have No Mercy",
+      "duration": 207.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t04.mp3",
+          "bitrate": "133"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Turn On Your Lovelight",
+      "duration": 337.63,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-08-28d1t05.mp3",
+          "bitrate": "131"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-08-28d1t05.shn"
+        }
+      ]
+    }
+  ]
+}

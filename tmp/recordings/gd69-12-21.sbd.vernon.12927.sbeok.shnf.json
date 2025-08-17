@@ -1,0 +1,126 @@
+{
+  "rating": 2.8777777777777773,
+  "review_count": 9,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1969-12-21",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.111111111111111,
+  "high_ratings": 6,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "I Know You Rider",
+      "duration": 131.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t01.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Black Peter",
+      "duration": 301.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t02.mp3",
+          "bitrate": "167"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Not Fade Away",
+      "duration": 335.39,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Good Lovin",
+      "duration": 67.68,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t04.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Drums",
+      "duration": 207.67,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t05.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "The Other One",
+      "duration": 477.71,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t06.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Cumberland Blues",
+      "duration": 164.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd69-12-21d1t07.mp3",
+          "bitrate": "171"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd69-12-21d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

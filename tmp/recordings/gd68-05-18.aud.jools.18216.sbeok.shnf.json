@@ -1,0 +1,110 @@
+{
+  "rating": 2.2666666666666666,
+  "review_count": 15,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1968-05-18",
+  "venue": "Santa Clara County Fairgrounds",
+  "location": "San Jose, CA",
+  "raw_rating": 4.533333333333333,
+  "high_ratings": 14,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Alligator",
+      "duration": 207.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t1.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t1.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums",
+      "duration": 171.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t2.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t2.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Jam",
+      "duration": 95.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t3.mp3",
+          "bitrate": "201"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t3.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Alligator",
+      "duration": 648.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t4.mp3",
+          "bitrate": "199"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t4.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Caution (Do Not Stop On Tracks)>",
+      "duration": 984.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t5.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t5.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Feedback",
+      "duration": 378.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd68-05-18t6.mp3",
+          "bitrate": "197"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd68-05-18t6.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,670 @@
+{
+  "rating": 1.8,
+  "review_count": 4,
+  "source_type": "UNKNOWN",
+  "confidence": 0.8,
+  "date": "1970-11-08",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning*",
+      "duration": 239.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t01.mp3",
+          "bitrate": "173"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Dire Wolf*",
+      "duration": 294.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t02.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "I Know You Rider*",
+      "duration": 601.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Dark* Hollow",
+      "duration": 232.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t04.mp3",
+          "bitrate": "138"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Rosalie McFall",
+      "duration": 183.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t05.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "El Paso",
+      "duration": 291.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t06.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Operator",
+      "duration": 139.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t07.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Ripple",
+      "duration": 263.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t08.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Friend Of The Devil",
+      "duration": 220.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t09.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Wake Up Little Suzie",
+      "duration": 136.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t10.mp3",
+          "bitrate": "135"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Uncle John's Band",
+      "duration": 387.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t11.mp3",
+          "bitrate": "134"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "intermission",
+      "duration": 59.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d1t12.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Six Days On The Road",
+      "duration": 176.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t01.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Superman",
+      "duration": 204.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t02.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Whatcha Gonna Do",
+      "duration": 266.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t03.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Glendale Train",
+      "duration": 312.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t04.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "All I Ever Wanted",
+      "duration": 467.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t05.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Fair Chance To Know",
+      "duration": 235.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t06.mp3",
+          "bitrate": "129"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Portland Woman",
+      "duration": 330.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t07.mp3",
+          "bitrate": "127"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Cecilia",
+      "duration": 259.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t08.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Truck Drivin' Man",
+      "duration": 191.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t09.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Last Lonely Eagle",
+      "duration": 395.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t10.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Louisiana Lady",
+      "duration": 219.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t11.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Honky Tonk Women",
+      "duration": 294.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d2t12.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Morning Dew",
+      "duration": 668.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t01.mp3",
+          "bitrate": "133"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Me And My Uncle",
+      "duration": 203.17,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t02.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Mystery Train >",
+      "duration": 218.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t03.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "My Babe",
+      "duration": 193.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t04.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Around And Around",
+      "duration": 188.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t05.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "New Orleans >",
+      "duration": 276.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t06.mp3",
+          "bitrate": "131"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Searchin'",
+      "duration": 366.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t07.mp3",
+          "bitrate": "130"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 583.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t08.mp3",
+          "bitrate": "128"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Casey Jones",
+      "duration": 291.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d3t09.mp3",
+          "bitrate": "132"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Truckin'+ >",
+      "duration": 501.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t01.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "Dark Star+ >",
+      "duration": 995.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t02.mp3",
+          "bitrate": "161"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "The Main Ten+ >",
+      "duration": 522.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t03.mp3",
+          "bitrate": "164"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Dancin'+ In The Streets*",
+      "duration": 718.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t04.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "Not Fade Away* >",
+      "duration": 472.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t05.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Goin' Down The Road Feelin' Bad* >",
+      "duration": 386.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Not Fade Away*",
+      "duration": 71.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t07.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Good Lovin'*",
+      "duration": 954.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1970-11-08d4t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1970-11-08d4t08.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

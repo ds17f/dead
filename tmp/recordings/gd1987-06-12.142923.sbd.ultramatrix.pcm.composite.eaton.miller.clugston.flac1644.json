@@ -1,0 +1,414 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-06-12",
+  "venue": "Ventura County Fairgrounds",
+  "location": "Ventura, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd87-06-12 s1tTuning",
+      "duration": 52.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t01Tuning.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd87-06-12 s1tJack Straw",
+      "duration": 343.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t02JackStraw.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd87-06-12 s1tWest LA Fadeaway",
+      "duration": 566.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t03WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t03WestLaFadeaway.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd87-06-12 s1tMama Tried",
+      "duration": 157.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t04MamaTried.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t04MamaTried.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd87-06-12 s1tBig River",
+      "duration": 371.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t05BigRiver.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd87-06-12 s1tCandyman",
+      "duration": 489.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t06Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t06Candyman.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd87-06-12 s1tMy Brother Esau",
+      "duration": 320.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t07MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t07MyBrotherEsau.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd87-06-12 s1tBird Song",
+      "duration": 707.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t08BirdSong.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t08BirdSong.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd87-06-12 s1tDesolation Row",
+      "duration": 560.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t09DesolationRow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t09DesolationRow.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd87-06-12 s1tDon't Ease Me In",
+      "duration": 211.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S1t10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S1t10DontEaseMeIn.mp3",
+          "bitrate": "204"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd87-06-12 s2t01 Tuning",
+      "duration": 61.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t01Tuning.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd87-06-s2t02 China Cat Sunflower",
+      "duration": 348.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t02ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t02ChinaCatSunflower.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd87-06-12 s2t03 I Know You Rider",
+      "duration": 493.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t03IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t03IKnowYouRider.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd87-06-12 s2t04 Far From Me",
+      "duration": 270.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t04FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t04FarFromMe.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd87-06-12 s2t05 Man Smart (Woman Smarter)",
+      "duration": 504.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t05ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t05ManSmartwomanSmarter.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd87-06-12 s2t06 He's Gone",
+      "duration": 623.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t06HesGone.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t06HesGone.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd87-06-12 s2t07 Drums",
+      "duration": 412.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t07Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t07Drums.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd87-06-12 s2t08 Space",
+      "duration": 467.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t08Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t08Space.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd87-06-12 s2t09 The Wheel",
+      "duration": 364.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t09TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t09TheWheel.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd87-06-12 s2t10 I Need A Miracle",
+      "duration": 262.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t10INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t10INeedAMiracle.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd87-06-12 s2t11 Black Peter",
+      "duration": 548.92,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t11BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t11BlackPeter.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd87-06-12 s2t12 Around & Around",
+      "duration": 230.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t12AroundAround.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t12AroundAround.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "gd87-06-12 s2t13 Good Lovin'",
+      "duration": 419.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t13GoodLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t13GoodLovin.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "gd87-06-12 s2t14 Encore Break",
+      "duration": 55.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t14EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t14EncoreBreak.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "gd87-06-12 s2t15 Touch Of Grey",
+      "duration": 367.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-06-12S2t15TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-06-12S2t15TouchOfGrey.mp3",
+          "bitrate": "197"
+        }
+      ]
+    }
+  ]
+}

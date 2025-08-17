@@ -1,0 +1,846 @@
+{
+  "rating": 2.1,
+  "review_count": 15,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-05-07",
+  "venue": "Dupont Gymnasium M.I.T.",
+  "location": "Cambridge, MA",
+  "raw_rating": 4.2,
+  "high_ratings": 13,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Intro",
+      "duration": 34.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t01.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Don\u00c3\u0083\u00c2\u0083\u00c3\u0082\u00c2\u0082\u00c3\u0083\u00c2\u0082\u00c3\u0082\u00c2\u0092t Ease Me In",
+      "duration": 210.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t02.mp3",
+          "bitrate": "116"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "I Know You Rider",
+      "duration": 494.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t03.mp3",
+          "bitrate": "114"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "level setting",
+      "duration": 102.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t04.mp3",
+          "bitrate": "114"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Friend Of The Devil",
+      "duration": 229.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t05.mp3",
+          "bitrate": "118"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "level setting",
+      "duration": 60.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t06.mp3",
+          "bitrate": "115"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Me And My Uncle",
+      "duration": 233.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t07.mp3",
+          "bitrate": "118"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Deep Elem Blues",
+      "duration": 399.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t08.mp3",
+          "bitrate": "118"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Candyman",
+      "duration": 370.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t09.mp3",
+          "bitrate": "119"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "banter",
+      "duration": 263.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t10.mp3",
+          "bitrate": "116"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Cumberland Blues",
+      "duration": 317.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t11.mp3",
+          "bitrate": "120"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "New Speedway Boogie",
+      "duration": 693.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t12.mp3",
+          "bitrate": "122"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Black Peter",
+      "duration": 396.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t13.mp3",
+          "bitrate": "116"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Uncle John\u00c3\u0083\u00c2\u0083\u00c3\u0082\u00c2\u0082\u00c3\u0083\u00c2\u0082\u00c3\u0082\u00c2\u0092s Band",
+      "duration": 452.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d1t14.mp3",
+          "bitrate": "122"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d1t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Whatcha Gonna Do?",
+      "duration": 373.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t01.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Six Days On The Road",
+      "duration": 338.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t02.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Don\u00c3\u0083\u00c2\u0083\u00c3\u0082\u00c2\u0082\u00c3\u0083\u00c2\u0082\u00c3\u0082\u00c2\u0092t Know You",
+      "duration": 347.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t03.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Portland Woman",
+      "duration": 257.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t04.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Henry",
+      "duration": 270.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t05.mp3",
+          "bitrate": "159"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Workin\u00c3\u0083\u00c2\u0083\u00c3\u0082\u00c2\u0082\u00c3\u0083\u00c2\u0082\u00c3\u0082\u00c2\u0092 Man Blues",
+      "duration": 306.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t06.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "All I Ever Wanted",
+      "duration": 494.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t07.mp3",
+          "bitrate": "158"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Fair Chance To Know",
+      "duration": 228.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t08.mp3",
+          "bitrate": "155"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Last Lonely Eagle",
+      "duration": 382.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t09.mp3",
+          "bitrate": "150"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Lodi",
+      "duration": 267.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t10.mp3",
+          "bitrate": "147"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "The Race Is On",
+      "duration": 233.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t11.mp3",
+          "bitrate": "125"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Seasons",
+      "duration": 184.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t12.mp3",
+          "bitrate": "121"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Mama Tried",
+      "duration": 182.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t13.mp3",
+          "bitrate": "121"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Saw Mill",
+      "duration": 264.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t14.mp3",
+          "bitrate": "121"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "Honky Tonk Woman",
+      "duration": 295.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d2t15.mp3",
+          "bitrate": "128"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d2t15.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Good Lovin\u00c3\u0083\u00c2\u0083\u00c3\u0082\u00c2\u0082\u00c3\u0083\u00c2\u0082\u00c3\u0082\u00c2\u0092",
+      "duration": 520.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t01.mp3",
+          "bitrate": "124"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Cold Rain And Snow",
+      "duration": 394.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t02.mp3",
+          "bitrate": "122"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Dire Wolf",
+      "duration": 280.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t03.mp3",
+          "bitrate": "122"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Easy Wind",
+      "duration": 601.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t04.mp3",
+          "bitrate": "123"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "Beat It On Down The Line",
+      "duration": 220.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t05.mp3",
+          "bitrate": "126"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "High Time",
+      "duration": 421.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t06.mp3",
+          "bitrate": "118"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "Cryptical Envelopment",
+      "duration": 118.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t07.mp3",
+          "bitrate": "120"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Drums",
+      "duration": 163.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t08.mp3",
+          "bitrate": "118"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "38",
+      "title": "The Other One",
+      "duration": 552.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t09.mp3",
+          "bitrate": "121"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "39",
+      "title": "Cryptical Envelopment",
+      "duration": 364.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t10.mp3",
+          "bitrate": "122"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "40",
+      "title": "Cosmic Charlie",
+      "duration": 419.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t11.mp3",
+          "bitrate": "119"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "41",
+      "title": "Casey Jones",
+      "duration": 294.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d3t12.mp3",
+          "bitrate": "120"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d3t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "42",
+      "title": "I'm A King Bee",
+      "duration": 487.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t01.mp3",
+          "bitrate": "119"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "43",
+      "title": "Frozen Logger",
+      "duration": 31.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t02.mp3",
+          "bitrate": "137"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "44",
+      "title": "Drums",
+      "duration": 28.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t03.mp3",
+          "bitrate": "138"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "45",
+      "title": "Not Fade Away",
+      "duration": 502.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t04.mp3",
+          "bitrate": "125"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "46",
+      "title": "Turn On Your Love Light",
+      "duration": 1063.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t05.mp3",
+          "bitrate": "156"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "47",
+      "title": "St. Stephen Jam",
+      "duration": 86.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t06.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "48",
+      "title": "Jam",
+      "duration": 42.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t07.mp3",
+          "bitrate": "166"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "49",
+      "title": "Darkness Jam",
+      "duration": 84.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t08.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "50",
+      "title": "Jam",
+      "duration": 148.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t09.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "51",
+      "title": "China Cat Sunflower Jam",
+      "duration": 107.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t10.mp3",
+          "bitrate": "165"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "52",
+      "title": "Turn On Your Love Light",
+      "duration": 421.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-05-07d4t11.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-05-07d4t11.shn"
+        }
+      ]
+    }
+  ]
+}

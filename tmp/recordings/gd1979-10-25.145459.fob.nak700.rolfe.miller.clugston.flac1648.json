@@ -1,0 +1,382 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1979-10-25",
+  "venue": "Veterans' Memorial Coliseum",
+  "location": "New Haven, CT",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 43.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t01 Crowd.mp3",
+          "bitrate": "212"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Don't Ease Me In",
+      "duration": 314.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t02 Don't Ease Me In.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t02 Don't Ease Me In.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Cassidy",
+      "duration": 325.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t03 Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t03 Cassidy.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "Peggy O",
+      "duration": 441.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t04 Peggy O.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t04 Peggy O.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "El Paso",
+      "duration": 304.39,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t05 El Paso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t05 El Paso.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Brown Eyed Women",
+      "duration": 369.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t06 Brown Eyed Women.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t06 Brown Eyed Women.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "It's All Over Now",
+      "duration": 799.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t07 It's All Over Now.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t07 It's All Over Now.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Tennessee Jed",
+      "duration": 499.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t08 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t08 Tennessee Jed.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Looks Like Rain",
+      "duration": 505.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t09 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t09 Looks Like Rain.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Deal",
+      "duration": 361.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s1t10 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s1t10 Deal.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 87.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t01 Crowd.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Shakedown Street",
+      "duration": 975.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t02 Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t02 Shakedown Street.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Passenger",
+      "duration": 354.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t03 Passenger.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t03 Passenger.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Friend Of The Devil",
+      "duration": 725.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t04 Friend Of The Devil.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t04 Friend Of The Devil.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Estimated Prophet >",
+      "duration": 927.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t05 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t05 Estimated Prophet.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Eyes Of The World >",
+      "duration": 690.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t06 Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t06 Eyes Of The World.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Space >",
+      "duration": 334.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t07 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t07 Space.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Drums >",
+      "duration": 374.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t08 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t08 Drums.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "Space >",
+      "duration": 140.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t09 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t09 Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Stella Blue >",
+      "duration": 705.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t10 Stella Blue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t10 Stella Blue.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Good Lovin'",
+      "duration": 432.79,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t11 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t11 Good Lovin'.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "Encore Break",
+      "duration": 74.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t12 Encore Break.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t12 Encore Break.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "213",
+      "title": "US Blues",
+      "duration": 341.74,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-10-25 s2t13 US Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-10-25 s2t13 US Blues.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

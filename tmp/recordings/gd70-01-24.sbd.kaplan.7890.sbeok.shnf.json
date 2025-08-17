@@ -1,0 +1,142 @@
+{
+  "rating": 3.392307692307692,
+  "review_count": 13,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1970-01-24",
+  "venue": "Honolulu Civic Auditorium",
+  "location": "Honolulu, HI",
+  "raw_rating": 4.846153846153846,
+  "high_ratings": 13,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Cumberland Blues",
+      "duration": 187.84,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t01.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cold Rain And Snow",
+      "duration": 177.79,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t02.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Me And My Uncle",
+      "duration": 113.19,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t03.mp3",
+          "bitrate": "180"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "I'm a King Bee",
+      "duration": 211.88,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Mason's Children",
+      "duration": 255.86,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t05.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Black Peter",
+      "duration": 286.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t06.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Good Lovin'",
+      "duration": 235.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t07.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Dancing In The Streets",
+      "duration": 311.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "01-24-70t08.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "01-24-70t08.shn"
+        }
+      ]
+    }
+  ]
+}

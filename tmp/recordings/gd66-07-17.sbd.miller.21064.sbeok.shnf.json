@@ -1,0 +1,126 @@
+{
+  "rating": 2.8466666666666662,
+  "review_count": 15,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1966-07-17",
+  "venue": "Fillmore Auditorium",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.066666666666666,
+  "high_ratings": 11,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Big Boss Man",
+      "duration": 14.97,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Cold Rain And Snow",
+      "duration": 118.22,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 154.08,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t03.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cream Puff War",
+      "duration": 159.91,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t04.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "King Bee",
+      "duration": 280.56,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t05.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Stealin'",
+      "duration": 125.06,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t06.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Dancin' in the Streets",
+      "duration": 254.82,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd66-07-17d1t07.mp3",
+          "bitrate": "194"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd66-07-17d1t07.shn"
+        }
+      ]
+    }
+  ]
+}

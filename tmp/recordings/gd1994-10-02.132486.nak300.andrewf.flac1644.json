@@ -1,0 +1,398 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-10-02",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Jack Straw",
+      "duration": 428.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t01.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Loser",
+      "duration": 513.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t02.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "It's All Over Now",
+      "duration": 429.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t03.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Row Jimmy",
+      "duration": 773.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Broken Arrow",
+      "duration": 427.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t05.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Mama Tried >",
+      "duration": 158.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t06.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Mexicali Blues",
+      "duration": 351.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t07.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 471.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t08.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Picasso Moon",
+      "duration": 433.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s1t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Iko Iko",
+      "duration": 775.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t01.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Samba in the Rain",
+      "duration": 435.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "If the Shoe Fits",
+      "duration": 439.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Samson & Delilah",
+      "duration": 553.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t04.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Crazy Fingers >",
+      "duration": 515.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t05.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Truckin' >",
+      "duration": 461.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t06.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "That Would Be Something >",
+      "duration": 505.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t07.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Drums >",
+      "duration": 296.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t08.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Electronic Percussion >",
+      "duration": 388.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Space >",
+      "duration": 558.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t10.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "The Days Between >",
+      "duration": 757.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t11.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Throwing Stones >",
+      "duration": 594.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t12.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Not Fade Away",
+      "duration": 442.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t13.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "crowd chant",
+      "duration": 176.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t14.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Encore: U.S. Blues",
+      "duration": 311.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1994-10-02s2t15.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1994-10-02s2t15.mp3",
+          "bitrate": "196"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1981-05-08",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd81-05-08 s1 tCrowd_Tuning",
+      "duration": 44.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T01Crowd_tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T01Crowd_tuning.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd81-05-08 s1 tJack Straw",
+      "duration": 333.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T02JackStraw.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd81-05-08 s1 tPeggy O",
+      "duration": 412.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T03PeggyO.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T03PeggyO.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd81-05-08 s1 tMe & My Uncle",
+      "duration": 177.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T04MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T04MeMyUncle.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd81-05-08 s1 tBig River",
+      "duration": 367.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T05BigRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T05BigRiver.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd81-05-08 s1 tLoser",
+      "duration": 560.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T06Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T06Loser.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd81-05-08 s1 tCC Rider",
+      "duration": 487.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T07CcRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T07CcRider.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd81-05-s1 tAlthea",
+      "duration": 513.31,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T08Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T08Althea.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd81-05-08 s1 tLet It Grow",
+      "duration": 614.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T09LetItGrow.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd81-05-08 s1 tDon't Ease Me In",
+      "duration": 192.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S1T10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S1T10DontEaseMeIn.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd81-05-08 s2 t01 Shakedown Street",
+      "duration": 969.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T01ShakedownStreet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T01ShakedownStreet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd81-05-08 s2 t02 Samson & Delilah",
+      "duration": 442.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T02SamsonDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T02SamsonDelilah.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd81-05-08 s2 t03 Terrapin Station",
+      "duration": 753.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T03TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T03TerrapinStation.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd81-05-08 s2 t04 Playing In The Band",
+      "duration": 968.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T04PlayingInTheBand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T04PlayingInTheBand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd81-05-08 s2 t05 Drums",
+      "duration": 502.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T05Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T05Drums.mp3",
+          "bitrate": "201"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd81-05-08 s2 t06 Space",
+      "duration": 343.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T06Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T06Space.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd81-05-08 s2 t07 Not Fade Away",
+      "duration": 540.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T07NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T07NotFadeAway.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd81-05-08 s2 t08 Stella Blue",
+      "duration": 551.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T08StellaBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T08StellaBlue.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd81-05-08 s2 t09 Sugar Magnolia",
+      "duration": 551.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T09SugarMagnolia.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T09SugarMagnolia.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd81-05-08 s2 t10 US Blues",
+      "duration": 351.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd81-05-08S2T10UsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd81-05-08S2T10UsBlues.mp3",
+          "bitrate": "187"
+        }
+      ]
+    }
+  ]
+}

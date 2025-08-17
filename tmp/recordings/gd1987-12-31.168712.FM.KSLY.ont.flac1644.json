@@ -1,0 +1,293 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Tuning (start set 1)",
+      "duration": 509.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t01.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d2t01.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Bertha >",
+      "duration": 638.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d2t02.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t02.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Promised Land",
+      "duration": 580.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d2t03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Cold Rain & Snow >",
+      "duration": 598.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t04.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d2t04.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t04.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Little Red Rooster",
+      "duration": 315.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d2t05.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t05.mp3",
+          "bitrate": "172"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "When Push Comes To Shove",
+      "duration": 152.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t06.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d2t06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t06.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "When I Paint My Masterpiece (tape flip)",
+      "duration": 320.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t07.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Bird Song",
+      "duration": 168.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t08.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "The Music Never Stopped",
+      "duration": 439.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d1t09.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd1987-12-31FM.d3t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1987-12-31FM.d3t09.mp3",
+          "bitrate": "171"
+        }
+      ]
+    }
+  ]
+}

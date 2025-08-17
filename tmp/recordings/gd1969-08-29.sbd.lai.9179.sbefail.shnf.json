@@ -1,0 +1,174 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1969-08-29",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Casey Jones",
+      "duration": 186.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track01.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Easy Wind",
+      "duration": 281.52,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track02.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me and My Uncle",
+      "duration": 107.96,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track03.mp3",
+          "bitrate": "183"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "High Time",
+      "duration": 219.92,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track04.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "New Orleans->",
+      "duration": 119.35,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track05.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Searchin'->",
+      "duration": 109.24,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track06.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track06.shn"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Good // Lovin'(jerry / lead vocals)",
+      "duration": 159.23,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track07.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track07.shn"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Dire Wolf",
+      "duration": 138.69,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track08.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track08.shn"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "King Bee",
+      "duration": 247.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track09.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Turn On Your Lovelight",
+      "duration": 1028.64,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "Track10.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "Track10.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "url": "https://jerrygarcia.com/show/1984-10-11-augusta-civic-center-augusta-me-usa/",
+  "show_id": "1984-10-11-augusta-civic-center-augusta-me-usa",
+  "band": "Grateful Dead",
+  "venue": "Augusta Civic Center",
+  "location_raw": "Augusta, ME",
+  "city": "Augusta",
+  "state": "ME",
+  "country": "USA",
+  "date": "1984-10-11",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Greatest Story Ever Told",
+          "url": "https://jerrygarcia.com/song/greatest-story-ever-told/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Peggy-O",
+          "url": "https://jerrygarcia.com/song/peggy-o/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mama Tried",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ramble On Rose",
+          "url": "https://jerrygarcia.com/song/ramble-on-rose/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Looks Like Rain",
+          "url": "https://jerrygarcia.com/song/looks-like-rain/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Might As Well",
+          "url": "https://jerrygarcia.com/song/might-as-well/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Touch of Grey",
+          "url": "https://jerrygarcia.com/song/touch-of-grey/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Ship Of Fools",
+          "url": "https://jerrygarcia.com/song/ship-of-fools/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Dear Mr. Fantasy",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Black Peter",
+          "url": "https://jerrygarcia.com/song/black-peter/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:52:20.179794",
+  "show_time": null,
+  "recordings": [
+    "gd84-10-11.oade.sacks.17411.sbeok.shnf",
+    "gd1984-10-11.fob.nak100.holtz-bolton.jaz.100420.flac16",
+    "gd1984-10-11.schoeps.oade.sacks.8794.sbefail.shnf",
+    "gd1984-10-11.nak700.rolfe.minches.99190.flac16",
+    "gd1984-10-11.fob.senn441.andrewf.94404.sbeok.flac16",
+    "gd1984-10-11.nak300.morris.113965.flac24",
+    "gd1984-10-11.132793.fob-schoeps.oade.BCE.flac16",
+    "gd1984-10-11.110034.beyer-senn-daweez.D5scott.flac16",
+    "gd1984-10-11.141028.FOB.Neumann.billydee.Sellers.Noel.t-flac1644",
+    "gd84-10-11.aud.unknown.5304.sbeok.shnf",
+    "gd1984-10-11.124355.chasingwilma.flac24",
+    "gd1984-10-11.143631.nak.blend.guy.miller.clugston.flac1648",
+    "gd1984-10-11.132351.Nak100CP4.Hill.Keo.Flac1644",
+    "gd1984-10-11.168003.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1984-10-11.beyerm88.suraci.sbeok.77916.flac16",
+    "gd1984-10-11.137265.aud.lamarre.berger.flac16",
+    "gd1984-10-11.168002.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1984-10-11.143632.nak.blend.guy.miller.clugston.flac2496",
+    "gd1984-10-11.nak300.morris.crazyfingers.106646.flac16",
+    "gd1984-10-11.beyerm160.mccabe.ladner.33825.sbeok.flac16",
+    "gd1984-10-11.139116.FOB.Neumann.billydee.Sellers.Noel.t-flac24",
+    "gd1984-10-11.137264.aud.lamarre.berger.flac24",
+    "gd1984-10-11.132352.Nak100CP4.Hill.Keo.Flac2496",
+    "gd1984-10-11.165102.fob.nak100.photoleon.flac2448"
+  ],
+  "best_recording": "gd84-10-11.oade.sacks.17411.sbeok.shnf",
+  "avg_rating": 1.954010695187166,
+  "raw_rating": 4.45945945945946,
+  "recording_count": 24,
+  "confidence": 1.0,
+  "total_high_ratings": 36,
+  "total_low_ratings": 0,
+  "source_types": {
+    "UNKNOWN": 21,
+    "AUD": 3
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

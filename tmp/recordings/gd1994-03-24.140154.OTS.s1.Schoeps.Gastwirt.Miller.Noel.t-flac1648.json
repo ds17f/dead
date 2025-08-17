@@ -1,0 +1,142 @@
+{
+  "rating": 0.8999999999999999,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1994-03-24",
+  "venue": "Nassau Coliseum",
+  "location": "Uniondale, NY",
+  "raw_rating": 3.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Hell in a Bucket",
+      "duration": 385.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t01.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Sugaree ->",
+      "duration": 672.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t02.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Walkin' Blues",
+      "duration": 407.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Loser",
+      "duration": 487.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t04.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Me & My Uncle ->",
+      "duration": 165.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Maggie's Farm",
+      "duration": 421.15,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loose Lucy",
+      "duration": 493.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t07.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cassidy",
+      "duration": 575.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd94-03-24.s1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd94-03-24.s1t08.mp3",
+          "bitrate": "185"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "rating": 2.4499999999999997,
+  "review_count": 2,
+  "source_type": "AUD",
+  "confidence": 0.4,
+  "date": "1969-02-06",
+  "venue": "Kiel Auditorium",
+  "location": "St. Louis, MO",
+  "raw_rating": 5.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Morning Dew",
+      "duration": 528.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "tuning",
+      "duration": 71.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Dark//Star >",
+      "duration": 841.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "St. Stephen >",
+      "duration": 386.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t04.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "The Eleven >",
+      "duration": 654.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t05.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Turn On Your Love Light",
+      "duration": 1174.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t06.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "crowd/tuning",
+      "duration": 214.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t07.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Cryptical Envelopment >",
+      "duration": 131.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t08.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "The Other One >",
+      "duration": 429.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t09.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Cryptical Envelopment// >",
+      "duration": 467.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t10.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Feedback >",
+      "duration": 245.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t11.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "We Bid You Goodnight",
+      "duration": 101.75,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t12.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "crowd/outro",
+      "duration": 70.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1969-02-06t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1969-02-06t13.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-09-16",
+  "venue": "Madison Square Garden",
+  "location": "NYC, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "He's Gone >",
+      "duration": 510.98,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Drums >",
+      "duration": 359.77,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t02.mp3",
+          "bitrate": "192"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Space >",
+      "duration": 336.89,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t03.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Truckin' >",
+      "duration": 263.45,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t04.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Wharf Rat >",
+      "duration": 401.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t05.mp3",
+          "bitrate": "189"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Throwin' Stones >",
+      "duration": 373.48,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t06.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Not Fade Away",
+      "duration": 414.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd87-09-16pII_t07.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd87-09-16pII_t07.shn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "rating": 1.2000000000000002,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1994-09-28",
+  "venue": "Boston Garden",
+  "location": "Boston, MA",
+  "raw_rating": 3.0,
+  "high_ratings": 1,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Let The Good Times Roll",
+      "duration": 234.07,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01LetTheGoodTimesRoll.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01LetTheGoodTimesRoll.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 487.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02Bertha.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Greatest Story Ever Told",
+      "duration": 253.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03GreatestStoryEverTold.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03GreatestStoryEverTold.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "West LA Fadeaway",
+      "duration": 573.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04WestLaFadeaway.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "El Paso",
+      "duration": 431.76,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05ElPaso.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05ElPaso.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Lazy River Road",
+      "duration": 393.81,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06LazyRiverRoad.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06LazyRiverRoad.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Eternity",
+      "duration": 643.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Eternity.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Eternity.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Don't Ease Me In",
+      "duration": 186.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08DontEaseMeIn.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Victim Or The Crime",
+      "duration": 609.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09VictimOrTheCrime.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09VictimOrTheCrime.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Foolish Heart",
+      "duration": 689.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10FoolishHeart.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10FoolishHeart.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Looks Like Rain",
+      "duration": 530.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11LooksLikeRain.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Samba In The Rain",
+      "duration": 441.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12SambaInTheRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12SambaInTheRain.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Jam",
+      "duration": 383.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13Jam.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Drums",
+      "duration": 423.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Drums.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Space",
+      "duration": 899.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15Space.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "The Wheel",
+      "duration": 354.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16TheWheel.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "I Need A Miracle",
+      "duration": 296.45,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17INeedAMiracle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17INeedAMiracle.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Black Peter",
+      "duration": 555.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18BlackPeter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18BlackPeter.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Turn On Your Lovelight",
+      "duration": 446.29,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19TurnOnYourLovelight.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "It's All Over Now, Baby Blue",
+      "duration": 400.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20ItsAllOverNowBabyBlue.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ItsAllOverNowBabyBlue.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1987-12-31",
+  "venue": "Oakland-Alameda County Coliseum",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Bertha",
+      "duration": 449.58,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "01 Bertha.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01 Bertha.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 303.31,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "02 Promised Land.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02 Promised Land.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Cold Rain And Snow",
+      "duration": 342.37,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "03 Cold Rain And Snow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03 Cold Rain And Snow.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Little Red Rooster",
+      "duration": 537.04,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "04 Little Red Rooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04 Little Red Rooster.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "When Push Comes To Shove",
+      "duration": 321.32,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "05 When Push Comes To Shove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05 When Push Comes To Shove.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "When I Paint My Masterpiece",
+      "duration": 344.34,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "06 When I Paint My Masterpiece.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06 When I Paint My Masterpiece.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Bird Song",
+      "duration": 571.07,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "07 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07 Bird Song.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "The Music Never Stopped",
+      "duration": 425.66,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "08 The Music Never Stopped.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08 The Music Never Stopped.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Hell In A Bucket",
+      "duration": 387.82,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "09 Hell In A Bucket.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09 Hell In A Bucket.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Uncle John's Band",
+      "duration": 633.13,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "10 Uncle John's Band.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10 Uncle John's Band.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Terrapin Station",
+      "duration": 786.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "11 Terrapin Station.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11 Terrapin Station.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Drums",
+      "duration": 535.03,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "12 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12 Drums.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Space",
+      "duration": 542.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "13 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13 Space.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "The Other One",
+      "duration": 350.85,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "14 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14 The Other One.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Wharf Rat",
+      "duration": 610.61,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "15 Wharf Rat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15 Wharf Rat.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Throwing Stones",
+      "duration": 557.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "16 Throwing Stones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16 Throwing Stones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Not Fade Away",
+      "duration": 411.44,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "17 Not Fade Away.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17 Not Fade Away.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 293.29,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "18 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18 Man Smart (Woman Smarter).mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Iko Iko",
+      "duration": 406.94,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "19 Iko Iko.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19 Iko Iko.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Banana Boat Song (Day-O)",
+      "duration": 149.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "20 Banana Boat Song (Day-O).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20 Banana Boat Song (Day-O).mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Do You Want To Dance",
+      "duration": 150.12,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "21 Do You Want To Dance.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21 Do You Want To Dance.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Knockin' On Heaven's Door",
+      "duration": 446.57,
+      "formats": [
+        {
+          "format": "24bit Flac",
+          "filename": "22 Knockin' On Heaven's Door.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22 Knockin' On Heaven's Door.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

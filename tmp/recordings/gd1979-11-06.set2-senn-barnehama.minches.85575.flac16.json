@@ -1,0 +1,126 @@
+{
+  "rating": 1.866666666666667,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1979-11-06",
+  "venue": "The Spectrum",
+  "location": "Philadelphia, PA",
+  "raw_rating": 4.666666666666667,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Terrapin Station ->",
+      "duration": 908.86,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t001.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t001.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Playing In The Band ->",
+      "duration": 1286.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t002.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t002.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Drums ->",
+      "duration": 412.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t003.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t003.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Space ->",
+      "duration": 333.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t004.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t004.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Black Peter ->",
+      "duration": 675.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t005.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t005.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Good Lovin' ->",
+      "duration": 463.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t006.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t006.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "US Blues",
+      "duration": 338.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1979-11-06d2t007.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1979-11-06d2t007.mp3",
+          "bitrate": "179"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1990-03-15",
+  "venue": "Capital Centre",
+  "location": "Landover, MD",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 120.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01Tuning.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Jack Straw",
+      "duration": 327.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02JackStraw.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02JackStraw.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Sugaree",
+      "duration": 673.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Sugaree.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Sugaree.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Easy To Love You",
+      "duration": 391.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04EasyToLoveYou.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04EasyToLoveYou.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Walkin' Blues",
+      "duration": 371.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WalkinBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WalkinBlues.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Althea",
+      "duration": 512.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06Althea.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06Althea.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Just Like Tom Thumb's Blues",
+      "duration": 417.27,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07JustLikeTomThumbsBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07JustLikeTomThumbsBlues.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Tennessee Jed",
+      "duration": 557.21,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08TennesseeJed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08TennesseeJed.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cassidy",
+      "duration": 371.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Cassidy.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Don't Ease Me In",
+      "duration": 229.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10DontEaseMeIn.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Tuning",
+      "duration": 123.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11Tuning.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "China Cat Sunflower",
+      "duration": 369.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12ChinaCatSunflower.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "I Know You Rider",
+      "duration": 413.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13IKnowYouRider.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Samson And Delilah",
+      "duration": 419.35,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14SamsonAndDelilah.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14SamsonAndDelilah.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Terrapin Station",
+      "duration": 1358.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15TerrapinStation.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15TerrapinStation.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 609.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 670.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "I Will Take You Home",
+      "duration": 256.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18IWillTakeYouHome.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18IWillTakeYouHome.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Wharf Rat",
+      "duration": 658.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19WharfRat.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19WharfRat.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Throwing Stones",
+      "duration": 534.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20ThrowingStones.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Not Fade Away",
+      "duration": 334.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21NotFadeAway.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Encore Break",
+      "duration": 228.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22EncoreBreak.mp3",
+          "bitrate": "162"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Revolution",
+      "duration": 303.13,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "23Revolution.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "23Revolution.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

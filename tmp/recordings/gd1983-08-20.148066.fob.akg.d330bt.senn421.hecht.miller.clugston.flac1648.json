@@ -1,0 +1,366 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1983-08-20",
+  "venue": "Frost Amphitheatre",
+  "location": "Palo Alto, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "101",
+      "title": "Crowd",
+      "duration": 47.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t01 Crowd.mp3",
+          "bitrate": "213"
+        }
+      ]
+    },
+    {
+      "track": "102",
+      "title": "Alabama Getaway >",
+      "duration": 325.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t02 Alabama Getaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t02 Alabama Getaway.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "103",
+      "title": "Greatest Story Ever Told",
+      "duration": 257.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t03 Greatest Story Ever Told.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t03 Greatest Story Ever Told.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "104",
+      "title": "They Love Each Other",
+      "duration": 455.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t04 They Love Each Other.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t04 They Love Each Other.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "105",
+      "title": "New Minglewood Blues",
+      "duration": 534.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t05 New Minglewood Blues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t05 New Minglewood Blues.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "106",
+      "title": "Bird Song",
+      "duration": 579.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t06 Bird Song.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t06 Bird Song.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "107",
+      "title": "Looks Like Rain",
+      "duration": 463.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t07 Looks Like Rain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t07 Looks Like Rain.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "108",
+      "title": "Tennessee Jed",
+      "duration": 465.03,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t08 Tennessee Jed.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t08 Tennessee Jed.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "109",
+      "title": "Brother Esau",
+      "duration": 295.96,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t09 Brother Esau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t09 Brother Esau.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "110",
+      "title": "Deal",
+      "duration": 542.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s1t10 Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s1t10 Deal.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "201",
+      "title": "Crowd",
+      "duration": 24.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t01 Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t01 Crowd.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "202",
+      "title": "Shakedown Street",
+      "duration": 816.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t02 Shakedown Street.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t02 Shakedown Street.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "203",
+      "title": "Man Smart (Woman Smarter)",
+      "duration": 422.63,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t03 Man Smart (Woman Smarter).flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t03 Man Smart (Woman Smarter).mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "204",
+      "title": "Ship Of Fools",
+      "duration": 419.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t04 Ship Of Fools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t04 Ship Of Fools.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "205",
+      "title": "Estimated Prophet >",
+      "duration": 834.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t05 Estimated Prophet.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t05 Estimated Prophet.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "206",
+      "title": "Eyes Of The World >",
+      "duration": 599.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t06 Eyes Of The World.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t06 Eyes Of The World.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "207",
+      "title": "Drums >",
+      "duration": 569.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t07 Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t07 Drums.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "208",
+      "title": "Space >",
+      "duration": 289.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t08 Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t08 Space.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "209",
+      "title": "The Other One >",
+      "duration": 670.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t09 The Other One.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t09 The Other One.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "210",
+      "title": "Black Peter >",
+      "duration": 567.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t10 Black Peter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t10 Black Peter.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "211",
+      "title": "Good Lovin'",
+      "duration": 559.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t11 Good Lovin'.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t11 Good Lovin'.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "212",
+      "title": "One More Saturday Night",
+      "duration": 278.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-08-20 s2t12 One More Saturday Night.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-08-20 s2t12 One More Saturday Night.mp3",
+          "bitrate": "194"
+        }
+      ]
+    }
+  ]
+}

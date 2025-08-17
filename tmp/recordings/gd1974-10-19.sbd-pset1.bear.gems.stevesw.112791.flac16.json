@@ -1,0 +1,222 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1974-10-19",
+  "venue": "Winterland Arena",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Beat It On Down The Line",
+      "duration": 211.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat01.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "It Must Have Been The Roses",
+      "duration": 395.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat02.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "tuning",
+      "duration": 103.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat03.mp3",
+          "bitrate": "202"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "El Paso",
+      "duration": 262.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat04.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Loose Lucy",
+      "duration": 293.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat05.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Black Throated Wind",
+      "duration": 453.98,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat06.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Scarlet Begonias",
+      "duration": 799.4,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sat07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sat07.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "To Lay Me Down",
+      "duration": 491.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sbt01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sbt01.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Mama Tried",
+      "duration": 153.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sbt02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sbt02.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Eyes Of The World",
+      "duration": 632.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sbt03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sbt03.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "China Doll",
+      "duration": 240.22,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sbt04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sbt04.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Big River",
+      "duration": 286.49,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-19.sbt05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-19.sbt05.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Good Lovin'",
+      "duration": 715.9,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd74-10-20.sbt06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd74-10-20.sbt06.mp3",
+          "bitrate": "205"
+        }
+      ]
+    }
+  ]
+}

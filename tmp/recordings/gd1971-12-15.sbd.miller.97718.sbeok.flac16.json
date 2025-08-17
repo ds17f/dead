@@ -1,0 +1,430 @@
+{
+  "rating": 3.3764705882352937,
+  "review_count": 34,
+  "source_type": "AUD",
+  "confidence": 1.0,
+  "date": "1971-12-15",
+  "venue": "Hill Auditorium",
+  "location": "Ann Arbor, MI",
+  "raw_rating": 4.823529411764706,
+  "high_ratings": 34,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Tuning",
+      "duration": 197.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Bertha",
+      "duration": 365.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t02.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Me And Bobby McGee",
+      "duration": 372.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Mr. Charlie",
+      "duration": 253.18,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t04.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "China Cat Sunflower ->",
+      "duration": 356.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t05.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "I Know You Rider ->",
+      "duration": 409.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t06.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Beat It On Down The Line",
+      "duration": 239.34,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t07.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "It Hurts Me Too",
+      "duration": 529.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t08.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Cumberland Blues",
+      "duration": 305.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Jack Straw",
+      "duration": 349.46,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t10.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "You Win Again",
+      "duration": 283.82,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t11.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Run Rudolph Run",
+      "duration": 348.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t12.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Playing In The Band",
+      "duration": 405.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t13.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t13.mp3",
+          "bitrate": "190"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Brown Eyed Women",
+      "duration": 355.78,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d1t14.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d1t14.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Mexicali Blues",
+      "duration": 226.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Big Railroad Blues",
+      "duration": 297.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t02.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Brokedown Palace",
+      "duration": 348.09,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t03.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "El Paso",
+      "duration": 256.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Casey Jones",
+      "duration": 323.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t05.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Dark Star ->",
+      "duration": 1222.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Deal",
+      "duration": 384.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t07.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Stars and Stripes Forever",
+      "duration": 68.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t08.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Sugar Magnolia",
+      "duration": 390.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t09.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Turn On Your Lovelight",
+      "duration": 1180.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d2t10.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "One More Saturday Night",
+      "duration": 290.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Uncle John's Band",
+      "duration": 376.62,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd71-12-15d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd71-12-15d3t02.mp3",
+          "bitrate": "181"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 2.5,
+  "review_count": 16,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1972-05-25",
+  "venue": "The Strand Lyceum",
+  "location": "London, England",
+  "raw_rating": 5.0,
+  "high_ratings": 16,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Uncle John's Band >",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-25d1t01.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-05-25d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Wharf Rat >",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-25d1t02.mp3",
+          "bitrate": "195"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-05-25d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Dark Star >",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-25d1t03.mp3",
+          "bitrate": "191"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-05-25d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Sugar Magnolia",
+      "duration": null,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd72-05-25d1t04.mp3",
+          "bitrate": "182"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd72-05-25d1t04.shn"
+        }
+      ]
+    }
+  ]
+}

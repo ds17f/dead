@@ -1,0 +1,126 @@
+{
+  "rating": 1.7333333333333334,
+  "review_count": 3,
+  "source_type": "UNKNOWN",
+  "confidence": 0.6,
+  "date": "1970-11-06",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.333333333333333,
+  "high_ratings": 3,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Good Lovin' (ending)(warbles at very end)",
+      "duration": 169.36,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t01.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "portion of jam/",
+      "duration": 134.25,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t02.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "jam > Not Fade Away >",
+      "duration": 477.94,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t03.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Goin' Down The Road >",
+      "duration": 304.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t04.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Not Fade Away (brief glitch) >",
+      "duration": 118.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t05.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Caution (brief warble 10:35)",
+      "duration": 837.16,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t06.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Turn On Your Lovelight// (glitch) only 49 sec's",
+      "duration": 49.7,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd70-11-06d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-11-06d1t07.mp3",
+          "bitrate": "203"
+        }
+      ]
+    }
+  ]
+}

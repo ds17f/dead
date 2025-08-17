@@ -1,0 +1,446 @@
+{
+  "rating": 2.357142857142857,
+  "review_count": 14,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1974-06-23",
+  "venue": "Jai-Alai Fronton",
+  "location": "Miami, FL",
+  "raw_rating": 4.714285714285714,
+  "high_ratings": 14,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "tuning",
+      "duration": 200.06,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t01.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Ramble On Rose",
+      "duration": 471.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t02.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Black Throated Wind",
+      "duration": 795.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t03.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "tico - tico",
+      "duration": 46.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t04.mp3",
+          "bitrate": "174"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "Mississippi 1/2 Step",
+      "duration": 504.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t05.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "Beat it On Down The Line",
+      "duration": 281.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t06.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Row Jimmy",
+      "duration": 555.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Jack Straw",
+      "duration": 355.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t08.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Let It Rock",
+      "duration": 297.58,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t09.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Cumberland Blues",
+      "duration": 476.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t10.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "El Paso",
+      "duration": 461.93,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d1t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d1t11.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "To Lay Me Down>",
+      "duration": 563.54,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t01.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Weather Report Suite Prelude>Weather Report Suite>Let It Grow",
+      "duration": 980.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t02.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "China Doll",
+      "duration": 347.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t03.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Phil 'n' Ned",
+      "duration": 770.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t04.mp3",
+          "bitrate": "177"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "tuning",
+      "duration": 143.28,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t05.mp3",
+          "bitrate": "175"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "jam",
+      "duration": 246.1,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t06.mp3",
+          "bitrate": "178"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Ship Of Fools",
+      "duration": 380.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t07.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Big River",
+      "duration": 345.37,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t08.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Black Peter",
+      "duration": 571.24,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d2t09.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Around And Around",
+      "duration": 365.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t01.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Dark Star>",
+      "duration": 1094.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t02.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "Spanish Jam>",
+      "duration": 224.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t03.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "U.S. Blues",
+      "duration": 650.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t04.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Uncle John's Band",
+      "duration": 478.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t05.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "One More Saturday Night",
+      "duration": 572.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t06.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "Casey Jones",
+      "duration": 413.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd1974-06-23.d3t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd1974-06-23.d3t07.mp3",
+          "bitrate": "182"
+        }
+      ]
+    }
+  ]
+}

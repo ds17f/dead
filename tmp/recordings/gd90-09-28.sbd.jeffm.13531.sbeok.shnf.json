@@ -1,0 +1,62 @@
+{
+  "rating": 2.25,
+  "review_count": 8,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1990-09-28",
+  "venue": "Front Street",
+  "location": "San Francisco, California",
+  "raw_rating": 4.5,
+  "high_ratings": 7,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "St. of Circumstance",
+      "duration": 1008.66,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-28rehearsals_t01.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-28rehearsals_t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Stander on the Montain",
+      "duration": 738.43,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-28rehearsals_t02.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-28rehearsals_t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Valley Road",
+      "duration": 438.53,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd90-09-28rehearsals_t03.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd90-09-28rehearsals_t03.shn"
+        }
+      ]
+    }
+  ]
+}

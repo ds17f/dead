@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1987-10-02",
+  "venue": "Shoreline Amphitheatre",
+  "location": "Mountain View, CA",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd87-10-02 tCrowd",
+      "duration": 99.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T01Crowd.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T01Crowd.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd87-10-tCold Rain & Snow",
+      "duration": 419.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T02ColdRainSnow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T02ColdRainSnow.mp3",
+          "bitrate": "193"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd87-10-02 tLittle Red Rooster",
+      "duration": 535.99,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T03LittleRedRooster.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T03LittleRedRooster.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd87-10-02 tStagger Lee",
+      "duration": 409.23,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T04StaggerLee.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T04StaggerLee.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd87-10-02 tMe & My Uncle",
+      "duration": 185.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T05MeMyUncle.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T05MeMyUncle.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd87-10-02 tMexicali Blues",
+      "duration": 356.55,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T06MexicaliBlues.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T06MexicaliBlues.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd87-10-02 tRow Jimmy",
+      "duration": 643.44,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T07RowJimmy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T07RowJimmy.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "gd87-10-02 tFar From Me",
+      "duration": 269.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T08FarFromMe.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T08FarFromMe.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "gd87-10-02 tLet It Grow",
+      "duration": 790.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T09LetItGrow.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T09LetItGrow.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "gd87-10-02 tChina Cat Sunflower",
+      "duration": 374.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T10ChinaCatSunflower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T10ChinaCatSunflower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "gd87-10-02 tI Know You Rider",
+      "duration": 315.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T11IKnowYouRider.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T11IKnowYouRider.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "gd87-10-02 tMan Smart (Woman Smarter)",
+      "duration": 483.43,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T12ManSmartwomanSmarter.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T12ManSmartwomanSmarter.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "gd87-10-02 tShip Of Fools",
+      "duration": 476.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T13ShipOfFools.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T13ShipOfFools.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "gd87-10-02 tTruckin'",
+      "duration": 577.59,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T14Truckin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T14Truckin.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "gd87-10-02 tDrums",
+      "duration": 505.6,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T15Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T15Drums.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "gd87-10-02 tSpace",
+      "duration": 444.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T16Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T16Space.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "gd87-10-02 tThe Wheel",
+      "duration": 297.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T17TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T17TheWheel.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "gd87-10-02 tGimme Some Lovin'",
+      "duration": 295.89,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T18GimmeSomeLovin.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T18GimmeSomeLovin.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "gd87-10-02 tAll Along The Watchtower",
+      "duration": 381.73,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T19AllAlongTheWatchtower.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T19AllAlongTheWatchtower.mp3",
+          "bitrate": "195"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "gd87-10-02 tDon't Ease Me In",
+      "duration": 220.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T20DontEaseMeIn.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T20DontEaseMeIn.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "gd87-10-02 tEncore Break",
+      "duration": 163.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T21EncoreBreak.mp3",
+          "bitrate": "215"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "gd87-10-02 tBlack Muddy River",
+      "duration": 379.32,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd87-10-02T22BlackMuddyRiver.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd87-10-02T22BlackMuddyRiver.mp3",
+          "bitrate": "193"
+        }
+      ]
+    }
+  ]
+}

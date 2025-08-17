@@ -1,0 +1,606 @@
+{
+  "rating": 2.0,
+  "review_count": 5,
+  "source_type": "UNKNOWN",
+  "confidence": 1.0,
+  "date": "1970-11-07",
+  "venue": "Capitol Theater",
+  "location": "Port Chester, NY",
+  "raw_rating": 4.0,
+  "high_ratings": 3,
+  "low_ratings": 1,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Crowd/tuning",
+      "duration": 91.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Deep Elem Blues",
+      "duration": 414.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t02.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Monkey and the Engineer",
+      "duration": 307.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t03.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Big Railroad Blues",
+      "duration": 373.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t04.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Operator",
+      "duration": 268.6,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t05.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "El Paso",
+      "duration": 332.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t06.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "How Long Blues",
+      "duration": 209.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t07.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Ripple",
+      "duration": 253.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t08.mp3",
+          "bitrate": "168"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Brokedown Palace >",
+      "duration": 262.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t09.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Uncle John's Band",
+      "duration": 338.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t10.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Truck Drivin' Man",
+      "duration": 144.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t11.mp3",
+          "bitrate": "184"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Together Again (Instrumental)",
+      "duration": 132.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t12.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t12.shn"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Sweet Lovin' One (false start)",
+      "duration": 81.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t13.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t13.shn"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Sweet Lovin' One",
+      "duration": 216.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t14.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t14.shn"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Dirty Business",
+      "duration": 644.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t15.mp3",
+          "bitrate": "170"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t15.shn"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Henry",
+      "duration": 217.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t16.mp3",
+          "bitrate": "169"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t16.shn"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Last Lonely Eagle",
+      "duration": 381.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d1t17.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d1t17.shn"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "Connection",
+      "duration": 235.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t01.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Louisiana Lady",
+      "duration": 234.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t02.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Honky Tonk Women",
+      "duration": 301.0,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t03.mp3",
+          "bitrate": "179"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Cumberland Blues",
+      "duration": 287.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t04.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Cold Rain and Snow",
+      "duration": 490.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t05.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "23",
+      "title": "It Hurts Me Too",
+      "duration": 317.3,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t06.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "24",
+      "title": "Beat It On Down the Line",
+      "duration": 219.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t07.mp3",
+          "bitrate": "174"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "25",
+      "title": "Truckin' >",
+      "duration": 415.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t08.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "26",
+      "title": "Drums >",
+      "duration": 1002.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t09.mp3",
+          "bitrate": "177"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t09.shn"
+        }
+      ]
+    },
+    {
+      "track": "27",
+      "title": "The Other One",
+      "duration": 604.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t10.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t10.shn"
+        }
+      ]
+    },
+    {
+      "track": "28",
+      "title": "Casey Jones",
+      "duration": 346.1,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d2t11.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d2t11.shn"
+        }
+      ]
+    },
+    {
+      "track": "29",
+      "title": "tuning",
+      "duration": 219.4,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t01.mp3",
+          "bitrate": "172"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "30",
+      "title": "Attics Of My Life",
+      "duration": 406.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t02.mp3",
+          "bitrate": "173"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "31",
+      "title": "Sugar Magnolia",
+      "duration": 365.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t03.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "32",
+      "title": "Big Boss Man",
+      "duration": 310.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t04.mp3",
+          "bitrate": "175"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "33",
+      "title": "Mama Tried",
+      "duration": 176.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t05.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "34",
+      "title": "China Cat Sunflower >",
+      "duration": 363.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t06.mp3",
+          "bitrate": "181"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t06.shn"
+        }
+      ]
+    },
+    {
+      "track": "35",
+      "title": "I Know You Rider",
+      "duration": 425.7,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t07.mp3",
+          "bitrate": "178"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t07.shn"
+        }
+      ]
+    },
+    {
+      "track": "36",
+      "title": "King Bee",
+      "duration": 631.2,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t08.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t08.shn"
+        }
+      ]
+    },
+    {
+      "track": "37",
+      "title": "Good Lovin'",
+      "duration": 659.5,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd701107d3t09.mp3",
+          "bitrate": "176"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd701107d3t09.shn"
+        }
+      ]
+    }
+  ]
+}

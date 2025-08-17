@@ -1,0 +1,153 @@
+{
+  "url": "https://jerrygarcia.com/show/1973-07-27-grand-prix-racecourse-watkins-glen-ny-usa/",
+  "show_id": "1973-07-27-grand-prix-racecourse-watkins-glen-ny-usa",
+  "band": "Grateful Dead",
+  "venue": "Grand Prix Racecourse",
+  "location_raw": "Watkins Glen, NY",
+  "city": "Watkins Glen",
+  "state": "NY",
+  "country": "USA",
+  "date": "1973-07-27",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "The Promised Land",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Sugaree",
+          "url": "https://jerrygarcia.com/song/sugaree/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Mexicali Blues",
+          "url": "https://jerrygarcia.com/song/mexicali-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Big River",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Tennessee Jed",
+          "url": "https://jerrygarcia.com/song/tennessee-jed/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Me And My Uncle",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Jam",
+          "url": "https://jerrygarcia.com/song/jam/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Around & Around",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Keith Godchaux",
+      "instruments": "keyboards",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152439/KeithGodchaux_200-100x100.jpg"
+    },
+    {
+      "name": "Donna Jean Godchaux",
+      "instruments": "vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2013/07/12152444/DonnaGodchaux_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "found",
+  "supporting_acts": [
+    "The Allman Brothers Band",
+    "The Band"
+  ],
+  "collection_timestamp": "2025-08-10T08:28:16.234219",
+  "show_time": null,
+  "recordings": [
+    "gd73-07-27.sbd.miller.27779.sbeok.flacf",
+    "gd73-07-27.sbd.weiner.180.sbeok.shnf",
+    "gd1973-07-27.146057.sbd.miller-smith-berger-cloverman.flac1644",
+    "gd1973-07-27.mtx.seamons.100410.sbeok.flac16",
+    "gd73-07-27.aud.weiner.gdadt26.26363.sbeok.shnf",
+    "gd1973-07-27.123407.candelario-smith.flac24",
+    "gd73-07-27.siniawsky-smith.weiner-gdADT11.25509.sbeok.shnf",
+    "gd1973-07-27.123408.candelario-boswell-smith.flac16",
+    "gd1973-07-27.aud.pantagruel.28882.sbeok.flac16",
+    "gd1973-07-27.aud.sirmick.87464.flac16",
+    "gd1973-07-27.152005.moscal.mandel.sonyecm.flac24",
+    "gd1973-07-27.135381.aud.cooper.berger.flac24",
+    "gd1973-07-27.135383.aud.cooper.berger.flac16"
+  ],
+  "best_recording": "gd73-07-27.sbd.miller.27779.sbeok.flacf",
+  "avg_rating": 2.2491434689507495,
+  "raw_rating": 4.704918032786885,
+  "recording_count": 13,
+  "confidence": 1.0,
+  "total_high_ratings": 60,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 3,
+    "UNKNOWN": 5,
+    "AUD": 5
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "donna-years",
+    "keith-donna-single-drummer",
+    "keith-godchaux-years"
+  ]
+}

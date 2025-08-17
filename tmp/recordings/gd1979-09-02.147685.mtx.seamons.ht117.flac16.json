@@ -1,0 +1,273 @@
+{
+  "rating": 1.4,
+  "review_count": 2,
+  "source_type": "UNKNOWN",
+  "confidence": 0.4,
+  "date": "1979-09-02",
+  "venue": "Augusta Civic Center",
+  "location": "Augusta, ME",
+  "raw_rating": 4.0,
+  "high_ratings": 2,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "Jack Straw",
+      "duration": 373.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t01.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d2t01.mp3",
+          "bitrate": "186"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d3t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d3t01.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "They Love Each Other",
+      "duration": 653.72,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t02.mp3",
+          "bitrate": "190"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d2t02.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d3t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d3t02.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Mama Tried >",
+      "duration": 422.87,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t03.mp3",
+          "bitrate": "187"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d2t03.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d3t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d3t03.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Mexicali Blues",
+      "duration": 64.11,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t04.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d2t04.mp3",
+          "bitrate": "185"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d3t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d3t04.mp3",
+          "bitrate": "184"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Stagger Lee",
+      "duration": 544.53,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d2t05.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d3t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d3t05.mp3",
+          "bitrate": "187"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Cassidy",
+      "duration": 324.67,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t06.mp3",
+          "bitrate": "188"
+        },
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d3t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d3t06.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "Row Jimmy",
+      "duration": 728.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t07.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Minglewood Blues",
+      "duration": 408.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t08.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Jack-A-Roe",
+      "duration": 381.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t09.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "The Music Never Stopped",
+      "duration": 485.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd79-09-02d1t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd79-09-02d1t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    }
+  ]
+}

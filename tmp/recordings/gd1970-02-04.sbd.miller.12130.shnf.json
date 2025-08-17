@@ -1,0 +1,110 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "UNKNOWN",
+  "confidence": 0.0,
+  "date": "1970-02-04",
+  "venue": "Family Dog at the Great Highway",
+  "location": "San Francisco, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "China Cat Sunflower ->",
+      "duration": 193.26,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04d1t01.mp3",
+          "bitrate": "162"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04d1t01.shn"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "I Know You Rider",
+      "duration": 154.14,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04d1t02.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04d1t02.shn"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "St Stephen ->",
+      "duration": 83.41,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04d1t03.mp3",
+          "bitrate": "163"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04d1t03.shn"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Not Fade Away >",
+      "duration": 252.72,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04d1t04.mp3",
+          "bitrate": "164"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04d1t04.shn"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "St Stephen ->",
+      "duration": 87.75,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04d1t05.mp3",
+          "bitrate": "161"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04d1t05.shn"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "In The Midnight Hour",
+      "duration": 284.25,
+      "formats": [
+        {
+          "format": "VBR MP3",
+          "filename": "gd70-02-04d1t06.mp3",
+          "bitrate": "160"
+        },
+        {
+          "format": "Shorten",
+          "filename": "gd70-02-04d1t06.shn"
+        }
+      ]
+    }
+  ]
+}

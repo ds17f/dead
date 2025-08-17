@@ -1,0 +1,208 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-04-07-the-spectrum-philadelphia-pa-usa/",
+  "show_id": "1985-04-07-the-spectrum-philadelphia-pa-usa",
+  "band": "Grateful Dead",
+  "venue": "The Spectrum",
+  "location_raw": "Philadelphia, PA",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "USA",
+  "date": "1985-04-07",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Why Don't We Do It In The Road",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "C.C. Rider",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Dancin' In The Street",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Deal",
+          "url": "https://jerrygarcia.com/song/deal/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Shakedown Street",
+          "url": "https://jerrygarcia.com/song/shakedown-street/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Samson & Delilah",
+          "url": "https://jerrygarcia.com/song/samson-delilah/",
+          "segue_into_next": false
+        },
+        {
+          "name": "She Belongs To Me",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Man Smart, Woman Smarter",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": false
+        },
+        {
+          "name": "Truckin'",
+          "url": "https://jerrygarcia.com/song/truckin/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Smokestack Lightning",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Morning Dew",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Sugar Magnolia",
+          "url": "https://jerrygarcia.com/song/sugar-magnolia/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "Keep Your Day Job",
+          "url": "https://jerrygarcia.com/song/keep-your-day-job/",
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:34.666731",
+  "show_time": null,
+  "recordings": [
+    "gd85-04-07.sbd.keith.14614.sbeok.shnf",
+    "gd1985-04-07.118484.sbd.healy.damico.flac16",
+    "gd85-04-07.sbd.sacks.3346.sbeok.shnf",
+    "gd1985-04-07.169900.sbd.patched.pitched.remaster.sacks.keith.miksis.flac1648",
+    "gd1985-04-07.169904.matrix.miksis.sacks.hunt.mattes.clugston.flac1648",
+    "gd1985-04-07.nak300.damico.87419.sbeok.flac16",
+    "gd1985-04-07.senn421.cohen.103429.flac16",
+    "gd1985-04-07.132713.mtx.dusborne.flac16",
+    "gd1985-04-07.senn-hubbard.bandrofcheck.81454.flac16",
+    "gd1985-04-07.170701.beyer.m160.vita.miller.clugston.flac2496",
+    "gd1985-04-07.163935.nak304.thomas.miller.clugston.flac2496",
+    "gd1985-04-07.139541.dts.tobin.flac16",
+    "gd1985-04-07.140866.s1.unknown.Bryant.Miller.Noel.t-flac2496",
+    "gd1985-04-07.beyerm160.d5scott.107238.flac16",
+    "gd1985-04-07.senn421.pauline.miller.91389.sbeok.flac16",
+    "gd1985-04-07.152156.beyerm88s.holbrook.flac2448",
+    "gd1985-04-07.168026.senn.me80.hessberg.miller.clugston.flac1648",
+    "gd1985-04-07.Sennheiser421FOB.35081.shnf",
+    "gd1985-04-07.139540.mtx.tobin.flac16",
+    "gd1985-04-07.149320.senn441.hunt.mattes.miller.clugston.flac2496",
+    "gd1985-04-07.141212.s1.unknown.Bryant.Miller.Noel.t-flac1644",
+    "gd1985-04-07.170700.beyer.m160.vita.miller.clugston.flac1648",
+    "gd1985-04-07.124835.chasingwilma.flac24",
+    "gd1985-04-07.139542.5-1.tobin.flac1648",
+    "gd1985-04-07.145487.aud.lamarre.berger.flac24",
+    "gd1985-04-07.149319.senn441.hunt.mattes.miller.clugston.flac1648",
+    "gd1985-04-07.152155.beyerm88s.holbrook.flac1644",
+    "gd1985-04-07.163934.nak304.thomas.miller.clugston.flac1648",
+    "gd1985-04-07.168027.senn.me80.hessberg.miller.clugston.flac2496",
+    "gd1985-04-07.145488.aud.lamarre.berger.flac16",
+    "gd1985-04-07.128613.schoeps.oade.BCE.flac16",
+    "gd1985-04-07.senn421.mccue.ford.28488.sbeok.shnf"
+  ],
+  "best_recording": "gd85-04-07.sbd.keith.14614.sbeok.shnf",
+  "avg_rating": 2.044665012406948,
+  "raw_rating": 4.170212765957447,
+  "recording_count": 32,
+  "confidence": 1.0,
+  "total_high_ratings": 38,
+  "total_low_ratings": 3,
+  "source_types": {
+    "SBD": 4,
+    "MATRIX": 1,
+    "UNKNOWN": 25,
+    "AUD": 2
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years"
+  ]
+}

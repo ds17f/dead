@@ -1,0 +1,206 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1983-06-18",
+  "venue": "Saratoga Performing Arts Center",
+  "location": "Saratoga Springs, NY",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "1",
+      "title": "crowd / tuning",
+      "duration": 100.83,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t01.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t01.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "2",
+      "title": "Scarlet Begonias ->",
+      "duration": 788.69,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t02.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t02.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "3",
+      "title": "Fire on the Mountain ->",
+      "duration": 868.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t03.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t03.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "4",
+      "title": "Playing in the Band ->",
+      "duration": 1102.84,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t04.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t04.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "5",
+      "title": "Drums ->",
+      "duration": 320.77,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t05.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t05.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "6",
+      "title": "Space ->",
+      "duration": 440.64,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t06.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t06.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "7",
+      "title": "The Wheel ->",
+      "duration": 424.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t07.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t07.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "8",
+      "title": "Playing in the Band (reprise) ->",
+      "duration": 211.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t08.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t08.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "9",
+      "title": "Morning Dew",
+      "duration": 671.88,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t09.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t09.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Throwing Stones ->",
+      "duration": 592.19,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t10.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t10.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Not Fade Away ->",
+      "duration": 401.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t11.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t11.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Touch of Grey",
+      "duration": 409.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd83-06-18.s2t12.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd83-06-18.s2t12.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

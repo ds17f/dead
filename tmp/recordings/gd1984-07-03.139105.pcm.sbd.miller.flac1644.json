@@ -1,0 +1,366 @@
+{
+  "rating": 1.2,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1984-07-03",
+  "venue": "Starlight Theater",
+  "location": "Kansas City, MO",
+  "raw_rating": 4.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "Alabama Getaway",
+      "duration": 310.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "01AlabamaGetaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "01AlabamaGetaway.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "Promised Land",
+      "duration": 401.41,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "02PromisedLand.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "02PromisedLand.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Candyman",
+      "duration": 439.65,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "03Candyman.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "03Candyman.mp3",
+          "bitrate": "191"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Cassidy",
+      "duration": 367.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "04Cassidy.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "04Cassidy.mp3",
+          "bitrate": "200"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "West LA Fadeaway",
+      "duration": 556.0,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "05WestLaFadeaway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "05WestLaFadeaway.mp3",
+          "bitrate": "192"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "My Brother Esau",
+      "duration": 378.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "06MyBrotherEsau.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "06MyBrotherEsau.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "Loser",
+      "duration": 457.61,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "07Loser.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "07Loser.mp3",
+          "bitrate": "188"
+        }
+      ]
+    },
+    {
+      "track": "08",
+      "title": "Looks Like Rain",
+      "duration": 573.91,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "08LooksLikeRain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "08LooksLikeRain.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "09",
+      "title": "Deal",
+      "duration": 652.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "09Deal.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "09Deal.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "10",
+      "title": "Tuning",
+      "duration": 88.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "10Tuning.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "10Tuning.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "11",
+      "title": "Scarlet Begonias",
+      "duration": 670.08,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "11ScarletBegonias.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "11ScarletBegonias.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "12",
+      "title": "Touch Of Grey",
+      "duration": 356.51,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "12TouchOfGrey.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "12TouchOfGrey.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "13",
+      "title": "Fire On The Mountain",
+      "duration": 734.52,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "13FireOnTheMountain.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "13FireOnTheMountain.mp3",
+          "bitrate": "199"
+        }
+      ]
+    },
+    {
+      "track": "14",
+      "title": "Jam",
+      "duration": 249.57,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "14Jam.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "14Jam.mp3",
+          "bitrate": "198"
+        }
+      ]
+    },
+    {
+      "track": "15",
+      "title": "Don't Need Love",
+      "duration": 401.95,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "15DontNeedLove.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "15DontNeedLove.mp3",
+          "bitrate": "189"
+        }
+      ]
+    },
+    {
+      "track": "16",
+      "title": "Drums",
+      "duration": 463.04,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "16Drums.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "16Drums.mp3",
+          "bitrate": "185"
+        }
+      ]
+    },
+    {
+      "track": "17",
+      "title": "Space",
+      "duration": 458.97,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "17Space.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "17Space.mp3",
+          "bitrate": "176"
+        }
+      ]
+    },
+    {
+      "track": "18",
+      "title": "The Wheel",
+      "duration": 321.2,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "18TheWheel.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "18TheWheel.mp3",
+          "bitrate": "197"
+        }
+      ]
+    },
+    {
+      "track": "19",
+      "title": "Throwing Stones",
+      "duration": 483.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "19ThrowingStones.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "19ThrowingStones.mp3",
+          "bitrate": "196"
+        }
+      ]
+    },
+    {
+      "track": "20",
+      "title": "Not Fade Away",
+      "duration": 577.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "20NotFadeAway.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "20NotFadeAway.mp3",
+          "bitrate": "194"
+        }
+      ]
+    },
+    {
+      "track": "21",
+      "title": "Encore Break",
+      "duration": 74.68,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "21EncoreBreak.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "21EncoreBreak.mp3",
+          "bitrate": "186"
+        }
+      ]
+    },
+    {
+      "track": "22",
+      "title": "Keep Your Day Job",
+      "duration": 267.85,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "22KeepYourDayJob.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "22KeepYourDayJob.mp3",
+          "bitrate": "188"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "url": "https://jerrygarcia.com/show/1985-04-28-frost-amphitheatre-palo-alto-ca-usa/",
+  "show_id": "1985-04-28-frost-amphitheatre-palo-alto-ca-usa",
+  "band": "Grateful Dead",
+  "venue": "Frost Amphitheatre",
+  "location_raw": "Palo Alto, CA",
+  "city": "Palo Alto",
+  "state": "CA",
+  "country": "USA",
+  "date": "1985-04-28",
+  "setlist_status": "found",
+  "setlist": [
+    {
+      "set_name": "Set 1",
+      "songs": [
+        {
+          "name": "Gimme Some Lovin'",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Mississippi Half-Step Uptown Toodeloo",
+          "url": "https://jerrygarcia.com/song/mississippi-half-step-uptown-toodeloo/",
+          "segue_into_next": true
+        },
+        {
+          "name": "New Minglewood Blues",
+          "url": "https://jerrygarcia.com/song/new-minglewood-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Bird Song",
+          "url": "https://jerrygarcia.com/song/bird-song/",
+          "segue_into_next": false
+        },
+        {
+          "name": "Tons Of Steel",
+          "url": "https://jerrygarcia.com/song/tons-of-steel/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Cat Sunflower",
+          "url": "https://jerrygarcia.com/song/china-cat-sunflower/",
+          "segue_into_next": true
+        },
+        {
+          "name": "I Know You Rider",
+          "url": "https://jerrygarcia.com/song/i-know-you-rider/",
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Set 2",
+      "songs": [
+        {
+          "name": "Hell In A Bucket",
+          "url": "https://jerrygarcia.com/song/hell-in-a-bucket/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Crazy Fingers",
+          "url": "https://jerrygarcia.com/song/crazy-fingers/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "China Doll",
+          "url": "https://jerrygarcia.com/song/china-doll/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band Jam",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Drums",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Space",
+          "url": null,
+          "segue_into_next": true
+        },
+        {
+          "name": "Playing In The Band",
+          "url": "https://jerrygarcia.com/song/playin-in-the-band/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Wharf Rat",
+          "url": "https://jerrygarcia.com/song/wharf-rat/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Throwing Stones",
+          "url": "https://jerrygarcia.com/song/throwing-stones/",
+          "segue_into_next": true
+        },
+        {
+          "name": "Not Fade Away",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    },
+    {
+      "set_name": "Encore",
+      "songs": [
+        {
+          "name": "U.S. Blues",
+          "url": "https://jerrygarcia.com/song/u-s-blues/",
+          "segue_into_next": false
+        },
+        {
+          "name": "She Belongs To Me",
+          "url": null,
+          "segue_into_next": false
+        }
+      ]
+    }
+  ],
+  "lineup_status": "found",
+  "lineup": [
+    {
+      "name": "Jerry Garcia",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152441/JerryGarcia_200-100x100.jpg"
+    },
+    {
+      "name": "Bob Weir",
+      "instruments": "guitar, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BobWeir_200-100x100.jpg"
+    },
+    {
+      "name": "Phil Lesh",
+      "instruments": "bass, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12145827/phil.jpg"
+    },
+    {
+      "name": "Bill Kreutzmann",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152447/BillKreutzmann_200-100x100.jpg"
+    },
+    {
+      "name": "Mickey Hart",
+      "instruments": "drums",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/1995/07/12152436/MickeyHart_200-100x100.jpg"
+    },
+    {
+      "name": "Brent Mydland",
+      "instruments": "keyboards, vocals",
+      "image_url": "https://cdn.jerrygarcia.com/wp-content/uploads/2019/12/12152446/BretMydland_200-100x100.jpg"
+    }
+  ],
+  "supporting_acts_status": "missing",
+  "supporting_acts": null,
+  "collection_timestamp": "2025-08-10T08:53:44.637001",
+  "show_time": null,
+  "recordings": [
+    "gd85-04-28.sbd.new.miller.28357.sbeok.flacf",
+    "gd85-04-28.sbd.new.miller.28439.sbeok.flacf",
+    "gd85-04-28.sbd.barbella.14192.sbeok.shnf",
+    "gd1985-04-28.sbd.sirmick.77406.flac16",
+    "gd1985-04-28.152303.sbd.walker.scotton.miller.clugston.flac2496",
+    "gd1985-04-28.028439.sbd.miller.sbeok.flacf",
+    "gd1985-04-28.152302.sbd.walker.scotton.miller.clugston.flac1648",
+    "gd1985-04-28.140825.fob.nak700.wagner.miller.clugston.flac1644",
+    "gd1985-04-28.124404.nak700.wagner.miller.flac16",
+    "gd1985-04-28.148417.fob.neumann.km84i.hecht.miller.clugston.flac1648",
+    "gd1985-04-28.senn421.mccue.ford.33505.sbeok.flac16",
+    "gd1985-04-28.148418.fob.neumann.km84i.hecht.miller.clugston.flac2496",
+    "gd1985-04-28.125010.chasingwilma.flac24",
+    "gd1985-04-28.151971.Mouth.AKG.Rogers.Noel.fixed.151704.t-flac2496",
+    "gd1985-04-28.nak700.anon.lmpp.105549.flac16",
+    "gd1985-04-28.140826.fob.nak700.wagner.miller.clugston.flac2496",
+    "gd1985-04-28.151948.Mouth.AKG.Master.Cassette.Rogers.Noel.t-flac16",
+    "gd1985-04-28.143492.FOB.ECM150.Keeler.Miller.Noel.t-flac2496",
+    "gd1985-04-28.nak100.holtz.jaz.102036.flac16",
+    "gd1985-04-28.151704.Mouth.AKG.Master.Cassette.Rogers.Noel.t-flac2496",
+    "gd1985-04-28.166752.akgC-33e.fob.Hoey.flac2496",
+    "gd1985-04-28.145342.fob.sony.ecm150.keeler.miller.noel.t-flac16"
+  ],
+  "best_recording": "gd85-04-28.sbd.new.miller.28357.sbeok.flacf",
+  "avg_rating": 1.9733905579399142,
+  "raw_rating": 4.413793103448276,
+  "recording_count": 22,
+  "confidence": 1.0,
+  "total_high_ratings": 26,
+  "total_low_ratings": 1,
+  "source_types": {
+    "SBD": 7,
+    "UNKNOWN": 15
+  },
+  "matching_method": "date_only",
+  "filtering_applied": [],
+  "collections": [
+    "brent-years",
+    "daves-picks-vol-49"
+  ]
+}

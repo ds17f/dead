@@ -1,0 +1,126 @@
+{
+  "rating": 1.5,
+  "review_count": 1,
+  "source_type": "UNKNOWN",
+  "confidence": 0.2,
+  "date": "1969-03-29",
+  "venue": "Ice Palace",
+  "location": "Las Vegas, NV",
+  "raw_rating": 5.0,
+  "high_ratings": 1,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "gd69-03-29 tMorning Dew",
+      "duration": 605.8,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T01MorningDew.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T01MorningDew.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "gd69-03-29 tGood Morning Little Schoolgirl",
+      "duration": 578.71,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T02GoodMorningLittleSchoolgirl.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T02GoodMorningLittleSchoolgirl.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "gd69-03-29 tDoin' That Rag",
+      "duration": 459.48,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T03DoinThatRag.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T03DoinThatRag.mp3",
+          "bitrate": "179"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "gd69-03-29 tDark Star",
+      "duration": 1279.12,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T04DarkStar.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T04DarkStar.mp3",
+          "bitrate": "182"
+        }
+      ]
+    },
+    {
+      "track": "05",
+      "title": "gd69-03-29 tSt. Stephen",
+      "duration": 335.47,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T05St.Stephen.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T05St.Stephen.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "06",
+      "title": "gd69-03-29 tThe Eleven",
+      "duration": 712.05,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T06TheEleven.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T06TheEleven.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "07",
+      "title": "gd69-03-29 tTurn On Your Lovelight",
+      "duration": 1061.38,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "Gd69-03-29T07TurnOnYourLovelight.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "Gd69-03-29T07TurnOnYourLovelight.mp3",
+          "bitrate": "180"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "rating": 0.0,
+  "review_count": 0,
+  "source_type": "AUD",
+  "confidence": 0.0,
+  "date": "1980-12-30",
+  "venue": "Oakland Auditorium",
+  "location": "Oakland, CA",
+  "raw_rating": 0.0,
+  "high_ratings": 0,
+  "low_ratings": 0,
+  "tracks": [
+    {
+      "track": "01",
+      "title": "It's All Over Now Baby Blue",
+      "duration": 403.56,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-30snchk1.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-30snchk1.mp3",
+          "bitrate": "180"
+        }
+      ]
+    },
+    {
+      "track": "02",
+      "title": "To Lay Me Down",
+      "duration": 407.33,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-30snchk2.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-30snchk2.mp3",
+          "bitrate": "181"
+        }
+      ]
+    },
+    {
+      "track": "03",
+      "title": "Youngblood",
+      "duration": 135.01,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-30snchk3.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-30snchk3.mp3",
+          "bitrate": "183"
+        }
+      ]
+    },
+    {
+      "track": "04",
+      "title": "Searchin'",
+      "duration": 260.66,
+      "formats": [
+        {
+          "format": "Flac",
+          "filename": "gd80-12-30snchk4.flac"
+        },
+        {
+          "format": "VBR MP3",
+          "filename": "gd80-12-30snchk4.mp3",
+          "bitrate": "183"
+        }
+      ]
+    }
+  ]
+}
