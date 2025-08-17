@@ -1,13 +1,37 @@
 # Changelog
 
+## [0.46.0] - 2025-08-17
+
+### New Features
+* Remove assets for database as they can now be downloaded (c0aea5b2)
+* re-enable recording import with show-recording matching (8b29de60)
+* enhance show data with lineup and recordings array (85d1b0a6)
+* implement complete smart download infrastructure (d72a18c8)
+* add comprehensive collections import system (221426d9)
+* add comprehensive search table integration (1131a135)
+* add database source selection UI for ZIP backup vs data import (1e31b481)
+* add abort button to cancel V2 database import (e8916950)
+* add automatic database restoration from ZIP assets (b2025171)
+* add database initialization timer with logging (7dc7b7bb)
+* add recordings import progress display (2f040669)
+* add recordings and tracks schema with Archive.org integration (86b1b02a)
+* add comprehensive setlist schema with songs and performances (e9848506)
+
+### Bug Fixes
+* fix clearV2Database to properly clear all tables (4633a188)
+
+### Code Refactoring
+* rename feature module from browse to search (9f8d41d0)
+* reorganize V2 modules for clean package/module alignment (33f6d85d)
+* remove dead code and unused restoration service (a845e15c)
+
+
 ## [0.45.0] - 2025-08-14
 
 ### New Features
 * upgrade V2 data package to version 2.0.2 (c3cb92d)
 * add SplashV2 with progress tracking and settings toggle (605d1c4)
 * add V2 database MVP with shows and venues tracer bullet (48b3169)
-
-
 ## [0.44.0] - 2025-08-11
 
 ### New Features
