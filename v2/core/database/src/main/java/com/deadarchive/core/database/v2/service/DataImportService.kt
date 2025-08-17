@@ -1,6 +1,7 @@
 package com.deadarchive.v2.core.database.service
 
 import android.util.Log
+import com.deadarchive.v2.core.database.V2Database
 import com.deadarchive.v2.core.database.dao.DataVersionDao
 import com.deadarchive.v2.core.database.dao.ShowDao
 import com.deadarchive.v2.core.database.dao.ShowFtsDao
@@ -133,10 +134,10 @@ data class RecordingImportData(
 
 @Singleton
 class DataImportService @Inject constructor(
-    private val showDao: ShowDao,
-    private val showFtsDao: ShowFtsDao,
-    private val recordingDao: RecordingDao,
-    private val dataVersionDao: DataVersionDao
+    @V2Database private val showDao: ShowDao,
+    @V2Database private val showFtsDao: ShowFtsDao,
+    @V2Database private val recordingDao: RecordingDao,
+    @V2Database private val dataVersionDao: DataVersionDao
 ) {
     
     companion object {

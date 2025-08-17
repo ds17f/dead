@@ -1,6 +1,7 @@
 package com.deadarchive.v2.core.database.service
 
 import android.util.Log
+import com.deadarchive.v2.core.database.V2Database
 import com.deadarchive.v2.core.database.dao.ShowDao
 import com.deadarchive.v2.core.database.dao.ShowFtsDao
 import com.deadarchive.v2.core.database.entities.ShowEntity
@@ -25,8 +26,8 @@ enum class AwesomeBarMatchType {
 
 @Singleton
 class AwesomeBarService @Inject constructor(
-    private val showDao: ShowDao,
-    private val showFtsDao: ShowFtsDao
+    @V2Database private val showDao: ShowDao,
+    @V2Database private val showFtsDao: ShowFtsDao
 ) {
     
     companion object {

@@ -73,7 +73,12 @@ class SplashViewModelV2 @Inject constructor(
                 
                 when (result) {
                     is V2InitResult.Success -> {
-                        // Progress tracking will handle UI updates
+                        // Handle immediate success (e.g., database already initialized)
+                        splashV2Service.updateUiState(
+                            isReady = true,
+                            showProgress = false,
+                            message = "V2 database ready: ${result.showsImported} shows loaded"
+                        )
                     }
                     is V2InitResult.Error -> {
                         splashV2Service.updateUiState(

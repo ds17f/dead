@@ -1,6 +1,7 @@
 package com.deadarchive.v2.core.database.service
 
 import android.util.Log
+import com.deadarchive.v2.core.database.V2Database
 import com.deadarchive.v2.core.database.dao.ShowDao
 import com.deadarchive.v2.core.database.dao.RecordingDao
 import javax.inject.Inject
@@ -8,8 +9,8 @@ import javax.inject.Singleton
 
 @Singleton
 class DatabaseHealthService @Inject constructor(
-    private val showDao: ShowDao,
-    private val recordingDao: RecordingDao
+    @V2Database private val showDao: ShowDao,
+    @V2Database private val recordingDao: RecordingDao
 ) {
     
     companion object {

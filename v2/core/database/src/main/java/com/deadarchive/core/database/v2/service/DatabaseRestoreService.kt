@@ -3,6 +3,7 @@ package com.deadarchive.v2.core.database.service
 import android.content.Context
 import android.util.Log
 import com.deadarchive.v2.core.database.DeadArchiveDatabase
+import com.deadarchive.v2.core.database.V2Database
 import com.deadarchive.v2.core.database.dao.DataVersionDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -19,7 +20,7 @@ import javax.inject.Singleton
 class DatabaseRestoreService @Inject constructor(
     @dagger.hilt.android.qualifiers.ApplicationContext private val context: Context,
     private val database: DeadArchiveDatabase,
-    private val dataVersionDao: DataVersionDao
+    @V2Database private val dataVersionDao: DataVersionDao
 ) {
     companion object {
         private const val TAG = "DatabaseRestoreService"

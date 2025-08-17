@@ -7,6 +7,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import com.deadarchive.v2.core.database.DeadArchiveDatabase
+import com.deadarchive.v2.core.database.V2Database
 import com.deadarchive.v2.core.database.dao.ShowDao
 import com.deadarchive.v2.core.database.dao.ShowFtsDao
 import com.deadarchive.v2.core.database.dao.RecordingDao
@@ -24,21 +25,25 @@ object DatabaseModule {
     }
     
     @Provides
+    @V2Database
     fun provideShowDao(database: DeadArchiveDatabase): ShowDao {
         return database.showDao()
     }
     
     @Provides
+    @V2Database
     fun provideShowFtsDao(database: DeadArchiveDatabase): ShowFtsDao {
         return database.showFtsDao()
     }
     
     @Provides
+    @V2Database
     fun provideRecordingDao(database: DeadArchiveDatabase): RecordingDao {
         return database.recordingDao()
     }
     
     @Provides
+    @V2Database
     fun provideDataVersionDao(database: DeadArchiveDatabase): DataVersionDao {
         return database.dataVersionDao()
     }
