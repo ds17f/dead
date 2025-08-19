@@ -15,8 +15,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Search
-import com.deadarchive.v2.core.design.component.topbar.TopBar
+import com.deadarchive.v2.core.design.component.topbar.TopBarMode
 import com.deadarchive.v2.core.design.component.topbar.TopBarDefaults
+import com.deadarchive.v2.core.design.scaffold.AppScaffold
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -36,7 +37,7 @@ import com.deadarchive.v2.core.design.component.debug.DebugBottomSheet
 import com.deadarchive.v2.core.design.component.debug.DebugData
 import com.deadarchive.v2.core.design.component.debug.DebugSection
 import com.deadarchive.v2.core.design.component.debug.DebugItem
-import com.deadarchive.v2.core.design.component.IconResources
+import com.deadarchive.v2.core.design.resources.IconResources
 import com.deadarchive.v2.feature.search.ui.models.SearchViewModel
 import com.deadarchive.v2.core.model.SearchUiState
 
@@ -89,19 +90,23 @@ fun SearchScreen(
     // QR Scanner coming soon dialog state
     var showQrComingSoonDialog by remember { mutableStateOf(false) }
     
-    Box(modifier = Modifier.fillMaxSize()) {
-        LazyColumn(
-            modifier = Modifier.fillMaxSize()
+    AppScaffold(
+        topBarMode = TopBarMode.IMMERSIVE,
+        topBarTitle = "Search",
+        topBarActions = TopBarDefaults.SearchActions(
+            onCameraClick = { showQrComingSoonDialog = true }
+        )
+    ) { paddingValues ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
         ) {
-            // Row 1: Top bar with SYF, Search title, and camera icon
-            item {
-                TopBar(
-                    title = "Search",
-                    actions = TopBarDefaults.SearchActions(
-                        onCameraClick = { showQrComingSoonDialog = true }
-                    )
-                )
-            }
+            LazyColumn(
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(16.dp),
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
             
             // Row 2: Search box
             item {
@@ -133,16 +138,17 @@ fun SearchScreen(
                     onBrowseAllClick = { item -> /* TODO: Handle browse all */ }
                 )
             }
+            }
+            
+            // Debug activator (always enabled in V2)
+            DebugActivator(
+                isVisible = true,
+                onClick = { showDebugPanel = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp)
+            )
         }
-        
-        // Debug activator (always enabled in V2)
-        DebugActivator(
-            isVisible = true,
-            onClick = { showDebugPanel = true },
-            modifier = Modifier
-                .align(Alignment.BottomEnd)
-                .padding(16.dp)
-        )
     }
     
     // Debug bottom sheet
@@ -178,7 +184,8 @@ private fun collectSearchDebugData(
                     DebugItem.KeyValue("Is Loading", uiState.isLoading.toString()),
                     DebugItem.KeyValue("Error State", uiState.error ?: "None"),
                     DebugItem.KeyValue("Initial Era", initialEra ?: "None"),
-                    DebugItem.KeyValue("Feature Flag", "useSearchV2 = true")
+                    DebugItem.KeyValue("Feature Flag", "useSearchV2 = true"),
+                    DebugItem.KeyValue("TopBar Mode", "IMMERSIVE")
                 )
             ),
             DebugSection(
@@ -187,7 +194,8 @@ private fun collectSearchDebugData(
                     DebugItem.KeyValue("Implementation", "Foundation Complete"),
                     DebugItem.KeyValue("UI State", "Basic scaffold ready"),
                     DebugItem.KeyValue("Navigation", "Feature flag routing active"),
-                    DebugItem.KeyValue("Next Phase", "UI-first development")
+                    DebugItem.KeyValue("Next Phase", "UI-first development"),
+                    DebugItem.KeyValue("TopBar Mode Actions", "Future: Toggle SOLID/IMMERSIVE")
                 )
             )
         )

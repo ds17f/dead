@@ -11,7 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.v2.app.model.PhaseV2
-import com.deadarchive.v2.core.design.component.IconResources
+import com.deadarchive.v2.core.design.resources.IconResources
 import kotlinx.coroutines.delay
 
 @Composable

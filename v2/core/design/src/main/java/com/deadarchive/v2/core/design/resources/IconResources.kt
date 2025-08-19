@@ -1,4 +1,4 @@
-package com.deadarchive.v2.core.design.component
+package com.deadarchive.v2.core.design.resources
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*

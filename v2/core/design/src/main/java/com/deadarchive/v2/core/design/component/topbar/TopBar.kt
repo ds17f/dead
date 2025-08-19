@@ -1,77 +1,213 @@
 package com.deadarchive.v2.core.design.component.topbar
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.zIndex
 import com.deadarchive.v2.core.design.R
-import com.deadarchive.v2.core.design.component.IconResources
+import com.deadarchive.v2.core.design.resources.IconResources
 
 /**
- * TopBar - Reusable top bar component for V2 screens
+ * Defines how the TopBar should handle status bar interaction
+ */
+sealed class TopBarMode {
+    /**
+     * Content is padded below the status bar.
+     * Status bar area is treated as reserved system space.
+     */
+    data object SOLID : TopBarMode()
+    
+    /**
+     * Content draws behind the status bar with a gradient scrim.
+     * Creates an immersive edge-to-edge experience.
+     */
+    data object IMMERSIVE : TopBarMode()
+}
+
+/**
+ * TopBar - Spotify-style TopBar with flexible status bar handling
  * 
- * This component provides consistent height and styling across all V2 screens.
- * It includes the Steal Your Face logo and properly sized layout that matches
- * the V2 design system.
+ * This component provides consistent styling across all V2 screens with
+ * flexible status bar interaction modes. It includes the Steal Your Face logo
+ * and integrates with the V2 design system.
+ * 
+ * @param title The title text to display
+ * @param mode How to handle status bar interaction (SOLID or IMMERSIVE)
+ * @param navigationIcon Optional navigation icon (typically back arrow)
+ * @param actions Optional action buttons
+ * @param onNavigationClick Callback for navigation icon clicks
+ * @param backgroundColor Background color for the top bar content
+ * @param contentColor Color for text and icons
  * 
  * Used by:
- * - SearchScreen
- * - LibraryScreen  
- * - PlayerScreen (future)
+ * - SearchScreen (SOLID mode)
+ * - PlayerScreen (IMMERSIVE mode) 
+ * - LibraryScreen (SOLID mode)
  * - Other V2 implementations
  */
 @Composable
 fun TopBar(
-    title: String? = null,
-    titleContent: @Composable (() -> Unit)? = null,
-    actions: @Composable RowScope.() -> Unit = {},
-    modifier: Modifier = Modifier
+    title: String,
+    mode: TopBarMode,
+    modifier: Modifier = Modifier,
+    navigationIcon: @Composable (() -> Unit)? = null,
+    actions: @Composable (RowScope.() -> Unit) = {},
+    onNavigationClick: (() -> Unit)? = null,
+    backgroundColor: Color = MaterialTheme.colorScheme.surface,
+    contentColor: Color = MaterialTheme.colorScheme.onSurface
 ) {
-    Surface(
-        modifier = modifier.fillMaxWidth(),
-        color = MaterialTheme.colorScheme.surface
-    ) {
-        Row(
-            modifier = Modifier
-                .padding(8.dp)
-                .fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
-        ) {
-            // Left side: SYF logo + (title OR titleContent)
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(12.dp)
+    val density = LocalDensity.current
+    val statusBarHeight = with(density) {
+        WindowInsets.statusBars.getTop(density).toDp()
+    }
+    
+    when (mode) {
+        TopBarMode.SOLID -> {
+            // SOLID mode: Traditional top bar with status bar padding
+            Column(
+                modifier = modifier
+                    .fillMaxWidth()
+                    .background(backgroundColor)
             ) {
-                Image(
-                    painter = painterResource(R.drawable.steal_your_face),
-                    contentDescription = "Dead Archive",
-                    modifier = Modifier.size(32.dp)
+                // Status bar spacer
+                Spacer(modifier = Modifier.height(statusBarHeight))
+                
+                // Top bar content
+                TopBarContent(
+                    title = title,
+                    navigationIcon = navigationIcon,
+                    actions = actions,
+                    onNavigationClick = onNavigationClick,
+                    contentColor = contentColor,
+                    modifier = Modifier.padding(horizontal = 4.dp)
+                )
+            }
+        }
+        
+        TopBarMode.IMMERSIVE -> {
+            // IMMERSIVE mode: Edge-to-edge with gradient scrim
+            Box(
+                modifier = modifier.fillMaxWidth()
+            ) {
+                // Gradient scrim behind status bar for system icon readability
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(statusBarHeight + 56.dp) // Status bar + top bar height
+                        .background(
+                            Brush.verticalGradient(
+                                colors = listOf(
+                                    Color.Black.copy(alpha = 0.6f), // Darker at top for system icons
+                                    Color.Black.copy(alpha = 0.4f),
+                                    backgroundColor.copy(alpha = 0.9f), // Fade to top bar color
+                                    backgroundColor
+                                ),
+                                startY = 0f,
+                                endY = with(density) { (statusBarHeight + 32.dp).toPx() }
+                            )
+                        )
+                        .zIndex(0f)
                 )
                 
-                // Backward compatible: title string or custom content
-                when {
-                    title != null -> {
-                        Text(
-                            text = title,
-                            style = MaterialTheme.typography.headlineSmall,
-                            fontWeight = FontWeight.Bold
-                        )
-                    }
-                    titleContent != null -> {
-                        titleContent()
-                    }
+                // Top bar content positioned below status bar
+                Column(
+                    modifier = Modifier.zIndex(1f)
+                ) {
+                    // Status bar spacer (transparent, content can show behind)
+                    Spacer(modifier = Modifier.height(statusBarHeight))
+                    
+                    // Top bar content with enhanced contrast for immersive mode
+                    TopBarContent(
+                        title = title,
+                        navigationIcon = navigationIcon,
+                        actions = actions,
+                        onNavigationClick = onNavigationClick,
+                        contentColor = Color.White, // High contrast for immersive mode
+                        modifier = Modifier.padding(horizontal = 4.dp)
+                    )
                 }
             }
-            
-            // Right side: Action buttons (customizable)
-            Row(content = actions)
         }
+    }
+}
+
+/**
+ * Internal composable for the actual top bar content
+ * Separated for reuse between SOLID and IMMERSIVE modes
+ */
+@Composable
+private fun TopBarContent(
+    title: String,
+    navigationIcon: @Composable (() -> Unit)?,
+    actions: @Composable (RowScope.() -> Unit),
+    onNavigationClick: (() -> Unit)?,
+    contentColor: Color,
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .height(56.dp), // Standard Material3 top bar height
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        // Navigation icon
+        navigationIcon?.let { icon ->
+            IconButton(
+                onClick = onNavigationClick ?: {},
+                modifier = Modifier.size(48.dp)
+            ) {
+                CompositionLocalProvider(LocalContentColor provides contentColor) {
+                    icon()
+                }
+            }
+        }
+        
+        // SYF Logo
+        Image(
+            painter = painterResource(R.drawable.steal_your_face),
+            contentDescription = "Dead Archive",
+            modifier = Modifier.size(32.dp)
+        )
+        
+        Spacer(modifier = Modifier.width(12.dp))
+        
+        // Title
+        Text(
+            text = title,
+            style = MaterialTheme.typography.headlineSmall,
+            fontWeight = FontWeight.Bold,
+            color = contentColor,
+            maxLines = 1,
+            overflow = TextOverflow.Ellipsis,
+            modifier = Modifier
+                .weight(1f)
+                .padding(horizontal = 4.dp)
+        )
+        
+        // Action buttons
+        Row(
+            horizontalArrangement = Arrangement.End,
+            content = {
+                CompositionLocalProvider(LocalContentColor provides contentColor) {
+                    actions()
+                }
+            }
+        )
+        
+        Spacer(modifier = Modifier.width(4.dp))
     }
 }
 
