@@ -31,8 +31,8 @@ except ImportError:
 # Configuration
 MATERIAL_ICONS_CDN = "https://fonts.gstatic.com/s/i/materialicons"
 DEFAULT_VERSION = "v4"
-DEFAULT_OUTPUT_DIR = "core/design/src/main/res/drawable"
-ICON_RESOURCES_PATH = "core/design/src/main/java/com/deadarchive/core/design/component/IconResources.kt"
+DEFAULT_OUTPUT_DIR = "v2/core/design/src/main/res/drawable"
+ICON_RESOURCES_PATH = "v2/core/design/src/main/java/com/deadarchive/v2/core/design/component/IconResources.kt"
 ICON_REGISTRY_PATTERN = r"object (\w+) \{"
 
 # Icon styles mapping

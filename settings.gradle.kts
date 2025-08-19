@@ -21,6 +21,7 @@ include(":app")
 // V2 modules
 include(":v2:app")
 include(":v2:core:database")
+include(":v2:core:design")
 include(":v2:core:model")
 include(":v2:core:network")
 include(":v2:core:api:search")

@@ -11,7 +11,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.v2.app.model.PhaseV2
-import com.deadarchive.core.design.component.IconResources
+import com.deadarchive.v2.core.design.component.IconResources
 import kotlinx.coroutines.delay
 
 @Composable
@@ -52,7 +52,7 @@ fun SplashV2(
         ) {
             // Large Steal Your Face Logo
             Image(
-                painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
+                painter = painterResource(com.deadarchive.v2.core.design.R.drawable.steal_your_face),
                 contentDescription = "Steal Your Face - Grateful Dead Logo",
                 modifier = Modifier.size(200.dp)
             )
