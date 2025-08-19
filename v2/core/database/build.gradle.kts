@@ -36,6 +36,7 @@ android {
 
 dependencies {
     implementation(project(":core:common"))
+    implementation(project(":v2:core:model"))
     implementation(project(":v2:core:network"))
     
     implementation("androidx.core:core-ktx:1.12.0")

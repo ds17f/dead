@@ -43,6 +43,9 @@ dependencies {
     // V2 model dependencies
     implementation(project(":v2:core:model"))
 
+    // V2 database dependencies
+    implementation(project(":v2:core:database"))
+
     // Core model dependencies (temporary until we migrate models)
     implementation(project(":core:model"))
 

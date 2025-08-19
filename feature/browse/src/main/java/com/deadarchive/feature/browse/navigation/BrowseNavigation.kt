@@ -4,8 +4,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.deadarchive.feature.browse.BrowseScreen
-import com.deadarchive.v2.feature.search.ui.components.SearchScreen
-import com.deadarchive.v2.feature.search.ui.components.SearchResultsScreen
+import com.deadarchive.feature.browse.SearchV2Screen
+import com.deadarchive.feature.browse.SearchResultsV2Screen
 import com.deadarchive.core.model.Show
 
 fun NavGraphBuilder.browseScreen(
@@ -28,7 +28,7 @@ fun NavGraphBuilder.browseScreen(
         val era = backStackEntry.arguments?.getString("era")
         when {
             useSearchV2 -> {
-                SearchScreen(
+                SearchV2Screen(
                     onNavigateToPlayer = onNavigateToPlayer,
                     onNavigateToShow = onNavigateToShow,
                     onNavigateToSearchResults = { navController.navigate("search_results") },
@@ -49,7 +49,7 @@ fun NavGraphBuilder.browseScreen(
     composable("browse") {
         when {
             useSearchV2 -> {
-                SearchScreen(
+                SearchV2Screen(
                     onNavigateToPlayer = onNavigateToPlayer,
                     onNavigateToShow = onNavigateToShow,
                     onNavigateToSearchResults = { navController.navigate("search_results") },
@@ -68,7 +68,7 @@ fun NavGraphBuilder.browseScreen(
     
     // Search results screen
     composable("search_results") {
-        SearchResultsScreen(
+        SearchResultsV2Screen(
             onNavigateBack = { navController.popBackStack() },
             onNavigateToShow = onNavigateToShow,
             onNavigateToPlayer = onNavigateToPlayer

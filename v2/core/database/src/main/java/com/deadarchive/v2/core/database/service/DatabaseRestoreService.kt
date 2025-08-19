@@ -3,7 +3,7 @@ package com.deadarchive.v2.core.database.service
 import android.content.Context
 import android.util.Log
 import com.deadarchive.v2.core.database.DeadArchiveDatabase
-import com.deadarchive.v2.core.database.V2Database
+import com.deadarchive.v2.core.model.V2Database
 import com.deadarchive.v2.core.database.dao.DataVersionDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

@@ -4,8 +4,6 @@ import android.util.Log
 import com.deadarchive.v2.core.api.search.SearchService
 import com.deadarchive.v2.core.api.search.SearchFilter
 import com.deadarchive.v2.core.model.*
-import com.deadarchive.core.model.Show
-import com.deadarchive.core.model.Recording
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -55,170 +53,154 @@ class SearchServiceStub @Inject constructor() : SearchService {
     private val mockShows = listOf(
         // Cornell 5/8/77 - The legendary show
         Show(
+            id = "gd1977-05-08",
             date = "1977-05-08",
-            venue = "Barton Hall",
-            location = "Ithaca, NY",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd1977-05-08.sbd.hicks.4982.sbeok.shnf",
-                    title = "Cornell 5/8/77 - Soundboard",
-                    concertDate = "1977-05-08",
-                    concertVenue = "Barton Hall",
-                    concertLocation = "Ithaca, NY",
-                    source = "Soundboard",
-                    lineage = "SBD > Cassette > DAT > CDR > FLAC",
-                    transferer = "David Hicks",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1977,
+            band = "Grateful Dead",
+            venue = Venue("Barton Hall", "Ithaca", "NY", "USA"),
+            location = Location("Ithaca, NY", "Ithaca", "NY"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd1977-05-08.sbd.hicks.4982.sbeok.shnf"),
+            bestRecordingId = "gd1977-05-08.sbd.hicks.4982.sbeok.shnf",
+            recordingCount = 1,
+            averageRating = 4.8f,
+            totalReviews = 245,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // Europe '72 Classic
         Show(
+            id = "gd1972-05-03",
             date = "1972-05-03",
-            venue = "Olympia Theatre",
-            location = "Paris, France",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd72-05-03.sbd.unknown.30057.sbeok.shnf",
-                    title = "Europe '72 - Paris",
-                    concertDate = "1972-05-03",
-                    concertVenue = "Olympia Theatre",
-                    concertLocation = "Paris, France",
-                    source = "Soundboard",
-                    lineage = "SBD > Cassette > FLAC",
-                    transferer = "Unknown",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1972,
+            band = "Grateful Dead",
+            venue = Venue("Olympia Theatre", "Paris", null, "France"),
+            location = Location("Paris, France", "Paris", null),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd72-05-03.sbd.unknown.30057.sbeok.shnf"),
+            bestRecordingId = "gd72-05-03.sbd.unknown.30057.sbeok.shnf",
+            recordingCount = 1,
+            averageRating = 4.6f,
+            totalReviews = 189,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // Woodstock 1969
         Show(
+            id = "gd1969-08-16",
             date = "1969-08-16",
-            venue = "Woodstock Music & Art Fair",
-            location = "Bethel, NY",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd69-08-16.aud.vernon.16793.sbeok.shnf",
-                    title = "Woodstock '69 - Audience",
-                    concertDate = "1969-08-16",
-                    concertVenue = "Woodstock Music & Art Fair",
-                    concertLocation = "Bethel, NY",
-                    source = "Audience",
-                    lineage = "AUD > Cassette > DAT > CDR > FLAC",
-                    transferer = "Vernon",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1969,
+            band = "Grateful Dead",
+            venue = Venue("Woodstock Music & Art Fair", "Bethel", "NY", "USA"),
+            location = Location("Bethel, NY", "Bethel", "NY"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd69-08-16.aud.vernon.16793.sbeok.shnf"),
+            bestRecordingId = "gd69-08-16.aud.vernon.16793.sbeok.shnf",
+            recordingCount = 1,
+            averageRating = 4.2f,
+            totalReviews = 156,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // Dick's Picks era
         Show(
+            id = "gd1973-06-10",
             date = "1973-06-10",
-            venue = "RFK Stadium",
-            location = "Washington, DC",
-            recordings = listOf(
-                Recording(
-                    identifier = "dp12",
-                    title = "Dick's Picks Vol. 12",
-                    concertDate = "1973-06-10",
-                    concertVenue = "RFK Stadium",
-                    concertLocation = "Washington, DC",
-                    source = "Soundboard",
-                    lineage = "SBD > Reel > DAT > FLAC",
-                    transferer = "Dick Latvala",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1973,
+            band = "Grateful Dead",
+            venue = Venue("RFK Stadium", "Washington", "DC", "USA"),
+            location = Location("Washington, DC", "Washington", "DC"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("dp12"),
+            bestRecordingId = "dp12",
+            recordingCount = 1,
+            averageRating = 4.7f,
+            totalReviews = 203,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // 1990s era
         Show(
+            id = "gd1995-07-09",
             date = "1995-07-09",
-            venue = "Soldier Field",
-            location = "Chicago, IL",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd95-07-09.sbd.miller.97483.flac1644",
-                    title = "Jerry's Last Show",
-                    concertDate = "1995-07-09",
-                    concertVenue = "Soldier Field",
-                    concertLocation = "Chicago, IL",
-                    source = "Soundboard",
-                    lineage = "SBD > DAT > FLAC",
-                    transferer = "Miller",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1995,
+            band = "Grateful Dead",
+            venue = Venue("Soldier Field", "Chicago", "IL", "USA"),
+            location = Location("Chicago, IL", "Chicago", "IL"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd95-07-09.sbd.miller.97483.flac1644"),
+            bestRecordingId = "gd95-07-09.sbd.miller.97483.flac1644",
+            recordingCount = 1,
+            averageRating = 4.1f,
+            totalReviews = 298,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // Fillmore East classics
         Show(
+            id = "gd1970-02-13",
             date = "1970-02-13",
-            venue = "Fillmore East",
-            location = "New York, NY",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd70-02-13.sbd.16332.sbeok.shnf",
-                    title = "Fillmore East Classic",
-                    concertDate = "1970-02-13",
-                    concertVenue = "Fillmore East",
-                    concertLocation = "New York, NY",
-                    source = "Soundboard",
-                    lineage = "SBD > Reel > FLAC",
-                    transferer = "Unknown",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1970,
+            band = "Grateful Dead",
+            venue = Venue("Fillmore East", "New York", "NY", "USA"),
+            location = Location("New York, NY", "New York", "NY"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd70-02-13.sbd.16332.sbeok.shnf"),
+            bestRecordingId = "gd70-02-13.sbd.16332.sbeok.shnf",
+            recordingCount = 1,
+            averageRating = 4.5f,
+            totalReviews = 167,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // Fillmore West
         Show(
+            id = "gd1969-02-27",
             date = "1969-02-27",
-            venue = "Fillmore West",
-            location = "San Francisco, CA",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd69-02-27.sbd.vernon.87915.flac1644",
-                    title = "Live/Dead Era",
-                    concertDate = "1969-02-27",
-                    concertVenue = "Fillmore West",
-                    concertLocation = "San Francisco, CA",
-                    source = "Soundboard",
-                    lineage = "SBD > Reel > FLAC",
-                    transferer = "Vernon",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1969,
+            band = "Grateful Dead",
+            venue = Venue("Fillmore West", "San Francisco", "CA", "USA"),
+            location = Location("San Francisco, CA", "San Francisco", "CA"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd69-02-27.sbd.vernon.87915.flac1644"),
+            bestRecordingId = "gd69-02-27.sbd.vernon.87915.flac1644",
+            recordingCount = 1,
+            averageRating = 4.3f,
+            totalReviews = 134,
+            isInLibrary = false,
+            libraryAddedAt = null
         ),
         
         // More 1977 shows
         Show(
+            id = "gd1977-05-22",
             date = "1977-05-22",
-            venue = "The Sportatorium",
-            location = "Pembroke Pines, FL",
-            recordings = listOf(
-                Recording(
-                    identifier = "gd77-05-22.sbd.hicks.32928.sbeok.shnf",
-                    title = "Florida '77",
-                    concertDate = "1977-05-22",
-                    concertVenue = "The Sportatorium",
-                    concertLocation = "Pembroke Pines, FL",
-                    source = "Soundboard",
-                    lineage = "SBD > Cassette > FLAC",
-                    transferer = "David Hicks",
-                    tracks = emptyList(),
-                    audioFiles = emptyList()
-                )
-            )
+            year = 1977,
+            band = "Grateful Dead",
+            venue = Venue("The Sportatorium", "Pembroke Pines", "FL", "USA"),
+            location = Location("Pembroke Pines, FL", "Pembroke Pines", "FL"),
+            setlist = null,
+            lineup = null,
+            recordingIds = listOf("gd77-05-22.sbd.hicks.32928.sbeok.shnf"),
+            bestRecordingId = "gd77-05-22.sbd.hicks.32928.sbeok.shnf",
+            recordingCount = 1,
+            averageRating = 4.4f,
+            totalReviews = 178,
+            isInLibrary = false,
+            libraryAddedAt = null
         )
     )
     
@@ -376,7 +358,7 @@ class SearchServiceStub @Inject constructor() : SearchService {
             
             if (relevanceScore > 0.1f) {
                 val hasDownloads = listOf("gd1977-05-08", "gd72-05-03", "dp12").any { 
-                    show.recordings.any { recording -> recording.identifier.contains(it) }
+                    show.recordingIds.any { recordingId -> recordingId.contains(it) }
                 }
                 
                 results.add(SearchResultShow(
@@ -397,10 +379,9 @@ class SearchServiceStub @Inject constructor() : SearchService {
     
     private fun determineMatchType(show: Show, query: String): SearchMatchType {
         return when {
-            show.date.contains(query) || show.year?.contains(query) == true -> SearchMatchType.YEAR
-            show.venue?.lowercase()?.contains(query) == true -> SearchMatchType.VENUE
-            show.location?.lowercase()?.contains(query) == true -> SearchMatchType.LOCATION
-            show.recordings.any { it.title?.lowercase()?.contains(query) == true } -> SearchMatchType.TITLE
+            show.date.contains(query) || show.year.toString().contains(query) -> SearchMatchType.YEAR
+            show.venue.name.lowercase().contains(query) -> SearchMatchType.VENUE
+            show.location.displayText.lowercase().contains(query) -> SearchMatchType.LOCATION
             else -> SearchMatchType.GENERAL
         }
     }
@@ -419,7 +400,7 @@ class SearchServiceStub @Inject constructor() : SearchService {
         }
         
         // Bonus for exact matches
-        if (show.venue?.lowercase() == query) score += 0.5f
+        if (show.venue.name.lowercase() == query) score += 0.5f
         if (show.date.contains(query)) score += 0.3f
         
         // Popular show bonuses
@@ -440,10 +421,12 @@ class SearchServiceStub @Inject constructor() : SearchService {
             filtered = when (filter) {
                 SearchFilter.HAS_DOWNLOADS -> filtered.filter { it.hasDownloads }
                 SearchFilter.SOUNDBOARD -> filtered.filter { show ->
-                    show.show.recordings.any { it.source?.contains("Soundboard", ignoreCase = true) == true }
+                    // Mock soundboard detection based on recording IDs
+                    show.show.recordingIds.any { it.contains("sbd") }
                 }
                 SearchFilter.AUDIENCE -> filtered.filter { show ->
-                    show.show.recordings.any { it.source?.contains("Audience", ignoreCase = true) == true }
+                    // Mock audience detection based on recording IDs
+                    show.show.recordingIds.any { it.contains("aud") }
                 }
                 SearchFilter.POPULAR -> filtered.filter { it.relevanceScore > 0.8f }
                 else -> filtered

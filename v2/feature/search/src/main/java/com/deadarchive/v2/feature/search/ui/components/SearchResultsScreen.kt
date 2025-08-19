@@ -30,7 +30,6 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.model.Show
 import com.deadarchive.core.design.component.IconResources
 import com.deadarchive.v2.feature.search.ui.models.SearchViewModel
 import com.deadarchive.v2.core.model.*
@@ -421,7 +420,7 @@ private fun SearchResultCard(
                     
                     // Date and location line
                     Text(
-                        text = "${searchResult.show.displayDate} • ${searchResult.show.displayLocation}",
+                        text = "${searchResult.show.date} • ${searchResult.show.location.displayText}",
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurface,
                         maxLines = 1,
@@ -431,7 +430,7 @@ private fun SearchResultCard(
                 
                 // Venue line
                 Text(
-                    text = searchResult.show.displayVenue,
+                    text = searchResult.show.venue.name,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     maxLines = 1,

@@ -1,14 +1,14 @@
 package com.deadarchive.v2.core.database.service
 
 import android.util.Log
-import com.deadarchive.v2.core.database.V2Database
+import com.deadarchive.v2.core.model.V2Database
 import com.deadarchive.v2.core.database.dao.DataVersionDao
 import com.deadarchive.v2.core.database.dao.ShowDao
-import com.deadarchive.v2.core.database.dao.ShowFtsDao
+import com.deadarchive.v2.core.database.dao.ShowSearchDao
 import com.deadarchive.v2.core.database.dao.RecordingDao
 import com.deadarchive.v2.core.database.entities.DataVersionEntity
 import com.deadarchive.v2.core.database.entities.ShowEntity
-import com.deadarchive.v2.core.database.entities.ShowFtsEntity
+import com.deadarchive.v2.core.database.entities.ShowSearchEntity
 import com.deadarchive.v2.core.database.entities.RecordingEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -135,7 +135,7 @@ data class RecordingImportData(
 @Singleton
 class DataImportService @Inject constructor(
     @V2Database private val showDao: ShowDao,
-    @V2Database private val showFtsDao: ShowFtsDao,
+    @V2Database private val showSearchDao: ShowSearchDao,
     @V2Database private val recordingDao: RecordingDao,
     @V2Database private val dataVersionDao: DataVersionDao
 ) {
@@ -167,7 +167,7 @@ class DataImportService @Inject constructor(
             
             // Clear existing data
             progressCallback?.invoke(ImportProgress("CLEARING", 0, 0, "Clearing existing data..."))
-            showFtsDao.deleteAll()
+            showSearchDao.clearAllSearchData()
             recordingDao.deleteAllRecordings()
             showDao.deleteAll()
             dataVersionDao.deleteAll()
@@ -265,9 +265,9 @@ class DataImportService @Inject constructor(
                     importedShows++
                     showDbSuccessCount++
                     
-                    // Create FTS entry for search
-                    val ftsEntity = createFtsEntityFromV2(showData)
-                    showFtsDao.insert(ftsEntity)
+                    // Create search index entry
+                    val searchEntity = createSearchEntityFromV2(showData)
+                    showSearchDao.insertOrUpdate(searchEntity)
                     
                     Log.d(TAG, "✅ Successfully inserted show: ${showData.showId}")
                     
@@ -393,7 +393,7 @@ class DataImportService @Inject constructor(
             var importedRecordings = 0
             
             // Clear existing data
-            showFtsDao.deleteAll()
+            showSearchDao.clearAllSearchData()
             recordingDao.deleteAllRecordings()
             showDao.deleteAll()
             
@@ -405,9 +405,9 @@ class DataImportService @Inject constructor(
                     showDao.insert(showEntity)
                     importedShows++
                     
-                    // Create FTS entry for search
-                    val ftsEntity = createFtsEntity(showData)
-                    showFtsDao.insert(ftsEntity)
+                    // Create search index entry
+                    val searchEntity = createSearchEntity(showData)
+                    showSearchDao.insertOrUpdate(searchEntity)
                     
                     // Import recordings for this show
                     showData.recordings?.forEach { recordingData ->
@@ -563,7 +563,7 @@ class DataImportService @Inject constructor(
         }
     }
     
-    private fun createFtsEntityFromV2(showData: ShowV2ImportData): ShowFtsEntity {
+    private fun createSearchEntityFromV2(showData: ShowV2ImportData): ShowSearchEntity {
         // Combine all searchable text for FTS
         val searchableText = buildList {
             add(showData.date)
@@ -587,7 +587,7 @@ class DataImportService @Inject constructor(
             }
         }.joinToString(" ")
         
-        return ShowFtsEntity(searchText = searchableText)
+        return ShowSearchEntity(showId = showData.showId, searchText = searchableText)
     }
     
     private fun createRecordingEntityFromV2(recordingId: String, recordingData: RecordingV2ImportData, showId: String): RecordingEntity {
@@ -655,7 +655,7 @@ class DataImportService @Inject constructor(
         )
     }
     
-    private fun createFtsEntity(showData: ShowImportData): ShowFtsEntity {
+    private fun createSearchEntity(showData: ShowImportData): ShowSearchEntity {
         // Combine all searchable text for FTS
         val searchableText = buildList {
             add(showData.date)
@@ -668,7 +668,7 @@ class DataImportService @Inject constructor(
             }?.let { addAll(it) }
         }.joinToString(" ")
         
-        return ShowFtsEntity(searchText = searchableText)
+        return ShowSearchEntity(showId = showData.showId, searchText = searchableText)
     }
     
     private fun createRecordingEntity(recordingData: RecordingImportData, showId: String): RecordingEntity {

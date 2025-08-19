@@ -1,4 +1,4 @@
-package com.deadarchive.v2.core.database
+package com.deadarchive.v2.core.model
 
 import javax.inject.Qualifier
 

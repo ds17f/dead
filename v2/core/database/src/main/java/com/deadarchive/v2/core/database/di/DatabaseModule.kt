@@ -7,9 +7,9 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import com.deadarchive.v2.core.database.DeadArchiveDatabase
-import com.deadarchive.v2.core.database.V2Database
+import com.deadarchive.v2.core.model.V2Database
 import com.deadarchive.v2.core.database.dao.ShowDao
-import com.deadarchive.v2.core.database.dao.ShowFtsDao
+import com.deadarchive.v2.core.database.dao.ShowSearchDao
 import com.deadarchive.v2.core.database.dao.RecordingDao
 import com.deadarchive.v2.core.database.dao.DataVersionDao
 import javax.inject.Singleton
@@ -32,8 +32,8 @@ object DatabaseModule {
     
     @Provides
     @V2Database
-    fun provideShowFtsDao(database: DeadArchiveDatabase): ShowFtsDao {
-        return database.showFtsDao()
+    fun provideShowSearchDao(database: DeadArchiveDatabase): ShowSearchDao {
+        return database.showSearchDao()
     }
     
     @Provides
@@ -50,5 +50,4 @@ object DatabaseModule {
     
     // Services are automatically provided by @Singleton @Inject constructor:
     // - DataImportService
-    // - AwesomeBarService
 }

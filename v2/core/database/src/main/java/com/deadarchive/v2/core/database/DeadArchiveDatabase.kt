@@ -5,18 +5,18 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import android.content.Context
 import com.deadarchive.v2.core.database.entities.ShowEntity
-import com.deadarchive.v2.core.database.entities.ShowFtsEntity
+import com.deadarchive.v2.core.database.entities.ShowSearchEntity
 import com.deadarchive.v2.core.database.entities.RecordingEntity
 import com.deadarchive.v2.core.database.entities.DataVersionEntity
 import com.deadarchive.v2.core.database.dao.ShowDao
-import com.deadarchive.v2.core.database.dao.ShowFtsDao
+import com.deadarchive.v2.core.database.dao.ShowSearchDao
 import com.deadarchive.v2.core.database.dao.RecordingDao
 import com.deadarchive.v2.core.database.dao.DataVersionDao
 
 @Database(
     entities = [
         ShowEntity::class,
-        ShowFtsEntity::class,
+        ShowSearchEntity::class,
         RecordingEntity::class,
         DataVersionEntity::class
     ],
@@ -26,7 +26,7 @@ import com.deadarchive.v2.core.database.dao.DataVersionDao
 abstract class DeadArchiveDatabase : RoomDatabase() {
     
     abstract fun showDao(): ShowDao
-    abstract fun showFtsDao(): ShowFtsDao
+    abstract fun showSearchDao(): ShowSearchDao
     abstract fun recordingDao(): RecordingDao
     abstract fun dataVersionDao(): DataVersionDao
     

@@ -26,6 +26,9 @@ interface ShowDao {
     @Query("SELECT * FROM shows WHERE showId = :showId")
     suspend fun getShowById(showId: String): ShowEntity?
     
+    @Query("SELECT * FROM shows WHERE showId IN (:showIds)")
+    suspend fun getShowsByIds(showIds: List<String>): List<ShowEntity>
+    
     @Query("SELECT COUNT(*) FROM shows")
     suspend fun getShowCount(): Int
     

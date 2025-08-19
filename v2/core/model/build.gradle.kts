@@ -40,4 +40,7 @@ dependencies {
 
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    
+    // Javax inject for Hilt qualifiers
+    implementation("javax.inject:javax.inject:1")
 }

@@ -1,7 +1,6 @@
 package com.deadarchive.v2.core.model
 
 import kotlinx.serialization.Serializable
-import com.deadarchive.core.model.Show
 
 /**
  * Search specific data models for the V2 search interface

@@ -1,7 +1,7 @@
 package com.deadarchive.v2.core.database.service
 
 import android.util.Log
-import com.deadarchive.v2.core.database.V2Database
+import com.deadarchive.v2.core.model.V2Database
 import com.deadarchive.v2.core.database.dao.ShowDao
 import com.deadarchive.v2.core.database.dao.RecordingDao
 import javax.inject.Inject
