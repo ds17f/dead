@@ -3,7 +3,7 @@ package com.deadarchive.v2.app.splash
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.deadarchive.v2.app.model.PhaseV2
-import com.deadarchive.v2.app.splash.service.SplashV2Service
+import com.deadarchive.v2.app.splash.service.SplashService
 import com.deadarchive.v2.app.splash.service.SplashV2UiState
 import com.deadarchive.v2.app.splash.service.V2InitResult
 import com.deadarchive.v2.core.database.service.DatabaseManager
@@ -16,11 +16,11 @@ import javax.inject.Inject
  * ViewModel for SplashV2 screen
  */
 @HiltViewModel
-class SplashViewModelV2 @Inject constructor(
-    private val splashV2Service: SplashV2Service
+class SplashViewModel @Inject constructor(
+    private val splashService: SplashService
 ) : ViewModel() {
     
-    val uiState: StateFlow<SplashV2UiState> = splashV2Service.uiState
+    val uiState: StateFlow<SplashV2UiState> = splashService.uiState
     
     init {
         initializeV2Database()
@@ -33,14 +33,14 @@ class SplashViewModelV2 @Inject constructor(
                 // The service will check for database ZIP, existing data, etc.
                 
                 // Show progress and start initialization
-                splashV2Service.updateUiState(
+                splashService.updateUiState(
                     showProgress = true,
                     message = "Initializing V2 database..."
                 )
                 
                 // Collect progress updates
                 launch {
-                    splashV2Service.getV2Progress().collect { progress ->
+                    splashService.getV2Progress().collect { progress ->
                         val message = when (progress.phase) {
                             PhaseV2.IDLE -> "Preparing V2 database..."
                             PhaseV2.CHECKING -> "Checking existing data..."
@@ -54,7 +54,7 @@ class SplashViewModelV2 @Inject constructor(
                             PhaseV2.ERROR -> "V2 database error"
                         }
                         
-                        splashV2Service.updateUiState(
+                        splashService.updateUiState(
                             showProgress = progress.phase != PhaseV2.COMPLETED && progress.phase != PhaseV2.ERROR,
                             showError = progress.phase == PhaseV2.ERROR,
                             message = message,
@@ -63,25 +63,25 @@ class SplashViewModelV2 @Inject constructor(
                         )
                         
                         if (progress.phase == PhaseV2.COMPLETED) {
-                            splashV2Service.updateUiState(isReady = true)
+                            splashService.updateUiState(isReady = true)
                         }
                     }
                 }
                 
                 // Start the initialization
-                val result = splashV2Service.initializeV2Database()
+                val result = splashService.initializeV2Database()
                 
                 when (result) {
                     is V2InitResult.Success -> {
                         // Handle immediate success (e.g., database already initialized)
-                        splashV2Service.updateUiState(
+                        splashService.updateUiState(
                             isReady = true,
                             showProgress = false,
                             message = "V2 database ready: ${result.showsImported} shows loaded"
                         )
                     }
                     is V2InitResult.Error -> {
-                        splashV2Service.updateUiState(
+                        splashService.updateUiState(
                             showError = true,
                             showProgress = false,
                             message = "V2 database initialization failed",
@@ -91,7 +91,7 @@ class SplashViewModelV2 @Inject constructor(
                 }
                 
             } catch (e: Exception) {
-                splashV2Service.updateUiState(
+                splashService.updateUiState(
                     showError = true,
                     showProgress = false,
                     message = "V2 database initialization failed",
@@ -102,18 +102,18 @@ class SplashViewModelV2 @Inject constructor(
     }
     
     fun retryInitialization() {
-        splashV2Service.retryInitialization(viewModelScope)
+        splashService.retryInitialization(viewModelScope)
     }
     
     fun skipInitialization() {
-        splashV2Service.skipInitialization()
+        splashService.skipInitialization()
     }
     
     fun abortInitialization() {
-        splashV2Service.abortInitialization()
+        splashService.abortInitialization()
     }
     
     fun selectDatabaseSource(source: DatabaseManager.DatabaseSource) {
-        splashV2Service.selectDatabaseSource(source, viewModelScope)
+        splashService.selectDatabaseSource(source, viewModelScope)
     }
 }

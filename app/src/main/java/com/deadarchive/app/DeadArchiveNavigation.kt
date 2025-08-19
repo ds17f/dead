@@ -8,7 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.deadarchive.v2.app.splash.SplashV2
+import com.deadarchive.v2.app.splash.Splash
 import com.deadarchive.core.settings.api.model.AppSettings
 import com.deadarchive.feature.browse.navigation.browseScreen
 import com.deadarchive.feature.library.navigation.libraryScreen
@@ -33,7 +33,7 @@ fun DeadArchiveNavigation(
     ) {
         composable("splash") {
             if (settings.useSplashV2) {
-                SplashV2(
+                Splash(
                     onSplashComplete = { 
                         navController.navigate("main_app") {
                             popUpTo("splash") { inclusive = true }

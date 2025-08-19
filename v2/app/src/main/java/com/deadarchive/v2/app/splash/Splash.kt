@@ -15,9 +15,9 @@ import com.deadarchive.v2.core.design.component.IconResources
 import kotlinx.coroutines.delay
 
 @Composable
-fun SplashV2(
+fun Splash(
     onSplashComplete: () -> Unit,
-    viewModel: SplashViewModelV2 = hiltViewModel()
+    viewModel: SplashViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
     var currentTime by remember { mutableLongStateOf(System.currentTimeMillis()) }

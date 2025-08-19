@@ -19,7 +19,7 @@ import javax.inject.Singleton
  * Service for coordinating V2 database initialization during splash screen
  */
 @Singleton
-class SplashV2Service @Inject constructor(
+class SplashService @Inject constructor(
     private val databaseManager: DatabaseManager
 ) {
     companion object {
