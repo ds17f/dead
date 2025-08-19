@@ -1,7 +1,7 @@
 # Dead Archive Android App - Makefile
 # Simplifies common development tasks
 
-.PHONY: help build clean test lint install run run-emulator debug release tag-release tag-release-quick update-release-descriptions dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data
+.PHONY: help build clean test lint install run run-emulator debug release tag-release tag-release-quick update-release-descriptions dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data v2-enable v2-disable v2-status
 
 # Default target
 help:
@@ -56,6 +56,9 @@ help:
 	@echo "  make emu-list    - List all available Android Virtual Devices"
 	@echo "  make emu-stop    - Stop all running emulators"
 	@echo "  make emu-cold-boot - Perform a cold boot of the emulator with virtual audio"
+	@echo "  make v2-enable   - Enable V2 app (file-based toggle)"
+	@echo "  make v2-disable  - Disable V2 app (fall back to V1)"
+	@echo "  make v2-status   - Check current V2 app status"
 	@echo ""
 	@echo "Test Data Management:"
 	@echo "  make capture-test-data - Pull test data exported by debug screen"
@@ -768,6 +771,30 @@ view-test-data:
 	else \
 		echo "  No test data directory found"; \
 		echo "  💡 Use 'make capture-test-data' after exporting from Debug screen"; \
+	fi
+
+# V2 App Toggle Commands
+v2-enable:
+	@echo "🚀 Enabling V2 app..."
+	@adb shell run-as com.deadarchive.app.debug "touch files/enable-v2-app" 2>/dev/null || \
+	 adb shell run-as com.deadarchive.app "touch files/enable-v2-app" 2>/dev/null || \
+	 echo "❌ Failed to enable V2 app. Make sure the app is installed."
+	@echo "✅ V2 app enabled! Restart the app to see changes."
+
+v2-disable:
+	@echo "🔄 Disabling V2 app (falling back to V1)..."
+	@adb shell run-as com.deadarchive.app.debug "rm -f files/enable-v2-app" 2>/dev/null || \
+	 adb shell run-as com.deadarchive.app "rm -f files/enable-v2-app" 2>/dev/null || \
+	 echo "❌ Failed to disable V2 app. Make sure the app is installed."
+	@echo "✅ V2 app disabled! Restart the app to see V1."
+
+v2-status:
+	@echo "📊 V2 App Status:"
+	@if adb shell run-as com.deadarchive.app.debug "test -f files/enable-v2-app" 2>/dev/null || \
+	   adb shell run-as com.deadarchive.app "test -f files/enable-v2-app" 2>/dev/null; then \
+		echo "✅ V2 app is ENABLED"; \
+	else \
+		echo "❌ V2 app is DISABLED (using V1)"; \
 	fi
 
 # Documentation

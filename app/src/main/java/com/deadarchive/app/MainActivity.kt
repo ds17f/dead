@@ -17,6 +17,9 @@ import com.deadarchive.core.settings.api.SettingsRepository
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlin.OptIn
+import java.io.File
+import com.deadarchive.app.DeadArchiveNavigation as V1Navigation
+import com.deadarchive.v2.app.MainNavigation as V2Navigation
 
 @UnstableApi
 @AndroidEntryPoint
@@ -24,6 +27,16 @@ class MainActivity : ComponentActivity() {
     
     @Inject
     lateinit var settingsRepository: SettingsRepository
+    
+    /**
+     * Check if V2 app is enabled via file-based toggle.
+     * If the enable-v2-app file exists in the app's files directory, use V2 app.
+     * Otherwise, fall back to V1 app.
+     */
+    private fun shouldUseV2App(): Boolean {
+        val toggleFile = File(filesDir, "enable-v2-app")
+        return toggleFile.exists()
+    }
     
     @OptIn(UnstableApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,10 +53,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DeadArchiveNavigation(
-                        showSplash = true,
-                        settings = settings
-                    )
+                    // File-based toggle between V1 and V2 apps
+                    if (shouldUseV2App()) {
+                        // Use V2 app - completely independent navigation
+                        V2Navigation()
+                    } else {
+                        // Use V1 app - existing navigation
+                        V1Navigation(
+                            showSplash = true,
+                            settings = settings
+                        )
+                    }
                 }
             }
         }
