@@ -18,6 +18,7 @@ import androidx.compose.material.icons.outlined.Search
 import com.deadarchive.v2.core.design.component.topbar.TopBarMode
 import com.deadarchive.v2.core.design.component.topbar.TopBarDefaults
 import com.deadarchive.v2.core.design.scaffold.AppScaffold
+import com.deadarchive.v2.core.design.component.statusbar.StatusBarUnderlayWithContent
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -85,13 +86,27 @@ fun SearchScreen(
     
     // Debug panel state - hard-coded to true for V2
     var showDebugPanel by remember { mutableStateOf(false) }
-    val debugData = collectSearchDebugData(uiState, initialEra)
+    
+    // TopBar mode state for testing - start with IMMERSIVE to show the difference  
+    var topBarMode: TopBarMode by remember { mutableStateOf(TopBarMode.SOLID) }
+    val debugData = collectSearchDebugData(
+        uiState = uiState,
+        initialEra = initialEra,
+        topBarMode = topBarMode,
+        onToggleTopBarMode = { 
+            topBarMode = when (topBarMode) {
+                TopBarMode.SOLID -> TopBarMode.IMMERSIVE
+                TopBarMode.IMMERSIVE -> TopBarMode.SOLID
+                else -> TopBarMode.SOLID
+            }
+        }
+    )
     
     // QR Scanner coming soon dialog state
     var showQrComingSoonDialog by remember { mutableStateOf(false) }
     
     AppScaffold(
-        topBarMode = TopBarMode.IMMERSIVE,
+        topBarMode = topBarMode,
         topBarTitle = "Search",
         topBarActions = TopBarDefaults.SearchActions(
             onCameraClick = { showQrComingSoonDialog = true }
@@ -100,11 +115,27 @@ fun SearchScreen(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(paddingValues)
+                .then(
+                    // In IMMERSIVE mode, don't apply scaffold padding to allow edge-to-edge
+                    if (topBarMode == TopBarMode.IMMERSIVE) Modifier 
+                    else Modifier.padding(paddingValues)
+                )
         ) {
+            // Content that scrolls (behind status bar in immersive mode)
             LazyColumn(
                 modifier = Modifier.fillMaxSize(),
-                contentPadding = PaddingValues(16.dp),
+                contentPadding = if (topBarMode == TopBarMode.IMMERSIVE) {
+                    // In immersive mode, add top padding for status bar + extra space
+                    PaddingValues(
+                        start = 16.dp,
+                        end = 16.dp,
+                        top = WindowInsets.statusBars.asPaddingValues().calculateTopPadding() + 16.dp,
+                        bottom = 16.dp
+                    )
+                } else {
+                    // In solid mode, normal padding
+                    PaddingValues(16.dp)
+                },
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
             
@@ -140,6 +171,31 @@ fun SearchScreen(
             }
             }
             
+            // StatusBar underlay for immersive mode
+            if (topBarMode == TopBarMode.IMMERSIVE) {
+                StatusBarUnderlayWithContent(
+                    backgroundColor = MaterialTheme.colorScheme.surface,
+                    alpha = 0.85f
+                ) {
+                    // Camera icon positioned in the top-right of the underlay
+                    Box(
+                        modifier = Modifier.fillMaxSize(),
+                        contentAlignment = Alignment.CenterEnd
+                    ) {
+                        IconButton(
+                            onClick = { showQrComingSoonDialog = true },
+                            modifier = Modifier.padding(horizontal = 16.dp)
+                        ) {
+                            Icon(
+                                painter = IconResources.Content.QrCodeScanner(),
+                                contentDescription = "Scan QR Code",
+                                tint = MaterialTheme.colorScheme.onSurface
+                            )
+                        }
+                    }
+                }
+            }
+            
             // Debug activator (always enabled in V2)
             DebugActivator(
                 isVisible = true,
@@ -173,7 +229,9 @@ fun SearchScreen(
 @Composable
 private fun collectSearchDebugData(
     uiState: SearchUiState,
-    initialEra: String?
+    initialEra: String?,
+    topBarMode: TopBarMode,
+    onToggleTopBarMode: () -> Unit
 ): DebugData {
     return DebugData(
         screenName = "SearchScreen",
@@ -185,7 +243,10 @@ private fun collectSearchDebugData(
                     DebugItem.KeyValue("Error State", uiState.error ?: "None"),
                     DebugItem.KeyValue("Initial Era", initialEra ?: "None"),
                     DebugItem.KeyValue("Feature Flag", "useSearchV2 = true"),
-                    DebugItem.KeyValue("TopBar Mode", "IMMERSIVE")
+                    DebugItem.KeyValue("TopBar Mode", when (topBarMode) {
+                        TopBarMode.SOLID -> "SOLID"
+                        TopBarMode.IMMERSIVE -> "IMMERSIVE"
+                    })
                 )
             ),
             DebugSection(
@@ -195,7 +256,13 @@ private fun collectSearchDebugData(
                     DebugItem.KeyValue("UI State", "Basic scaffold ready"),
                     DebugItem.KeyValue("Navigation", "Feature flag routing active"),
                     DebugItem.KeyValue("Next Phase", "UI-first development"),
-                    DebugItem.KeyValue("TopBar Mode Actions", "Future: Toggle SOLID/IMMERSIVE")
+                    DebugItem.KeyValue("TopBar Toggle", "Tap this section to toggle: ${when (topBarMode) {
+                        TopBarMode.SOLID -> "SOLID"
+                        TopBarMode.IMMERSIVE -> "IMMERSIVE"
+                    }} → ${when (topBarMode) {
+                        TopBarMode.SOLID -> "IMMERSIVE"
+                        TopBarMode.IMMERSIVE -> "SOLID"
+                    }}")
                 )
             )
         )

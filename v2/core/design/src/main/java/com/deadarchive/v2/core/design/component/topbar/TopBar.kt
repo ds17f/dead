@@ -28,13 +28,13 @@ sealed class TopBarMode {
      * Content is padded below the status bar.
      * Status bar area is treated as reserved system space.
      */
-    data object SOLID : TopBarMode()
+    object SOLID : TopBarMode()
     
     /**
      * Content draws behind the status bar with a gradient scrim.
      * Creates an immersive edge-to-edge experience.
      */
-    data object IMMERSIVE : TopBarMode()
+    object IMMERSIVE : TopBarMode()
 }
 
 /**

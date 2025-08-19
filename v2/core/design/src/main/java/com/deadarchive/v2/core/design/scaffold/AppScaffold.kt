@@ -45,7 +45,7 @@ fun AppScaffold(
 ) {
     Scaffold(
         modifier = modifier,
-        topBar = if (topBarMode != null) {
+        topBar = if (topBarMode == TopBarMode.SOLID) {
             {
                 TopBar(
                     title = topBarTitle,
@@ -56,6 +56,8 @@ fun AppScaffold(
                 )
             }
         } else {
+            // IMMERSIVE mode or null - no TopBar rendered
+            // In IMMERSIVE mode, content flows behind status bar with underlay
             {}
         },
         bottomBar = if (showBottomNav) {
