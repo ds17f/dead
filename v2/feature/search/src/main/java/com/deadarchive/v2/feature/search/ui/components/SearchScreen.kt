@@ -15,9 +15,8 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Search
-import com.deadarchive.core.design.component.IconResources
-import com.deadarchive.core.design.component.V2TopBar
-import com.deadarchive.core.design.component.V2TopBarDefaults
+import com.deadarchive.v2.core.design.component.topbar.TopBar
+import com.deadarchive.v2.core.design.component.topbar.TopBarDefaults
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -32,12 +31,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadarchive.core.model.Show
-import com.deadarchive.core.design.component.DebugActivator
-import com.deadarchive.core.design.component.DebugBottomSheet
-import com.deadarchive.core.design.component.DebugData
-import com.deadarchive.core.design.component.DebugSection
-import com.deadarchive.core.design.component.DebugItem
-import com.deadarchive.core.settings.SettingsViewModel
+import com.deadarchive.v2.core.design.component.debug.DebugActivator
+import com.deadarchive.v2.core.design.component.debug.DebugBottomSheet
+import com.deadarchive.v2.core.design.component.debug.DebugData
+import com.deadarchive.v2.core.design.component.debug.DebugSection
+import com.deadarchive.v2.core.design.component.debug.DebugItem
+import com.deadarchive.v2.core.design.component.IconResources
 import com.deadarchive.v2.feature.search.ui.models.SearchViewModel
 import com.deadarchive.v2.core.model.SearchUiState
 
@@ -79,19 +78,13 @@ fun SearchScreen(
     onNavigateToShow: (Show) -> Unit,
     onNavigateToSearchResults: () -> Unit,
     initialEra: String? = null,
-    viewModel: SearchViewModel = hiltViewModel(),
-    settingsViewModel: SettingsViewModel = hiltViewModel()
+    viewModel: SearchViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    val settings by settingsViewModel.settings.collectAsState()
     
-    // Debug panel state - only when debug mode is enabled
+    // Debug panel state - hard-coded to true for V2
     var showDebugPanel by remember { mutableStateOf(false) }
-    val debugData = if (settings.showDebugInfo) {
-        collectSearchDebugData(uiState, initialEra)
-    } else {
-        null
-    }
+    val debugData = collectSearchDebugData(uiState, initialEra)
     
     // QR Scanner coming soon dialog state
     var showQrComingSoonDialog by remember { mutableStateOf(false) }
@@ -102,9 +95,9 @@ fun SearchScreen(
         ) {
             // Row 1: Top bar with SYF, Search title, and camera icon
             item {
-                V2TopBar(
+                TopBar(
                     title = "Search",
-                    actions = V2TopBarDefaults.SearchActions(
+                    actions = TopBarDefaults.SearchActions(
                         onCameraClick = { showQrComingSoonDialog = true }
                     )
                 )
@@ -142,26 +135,22 @@ fun SearchScreen(
             }
         }
         
-        // Debug activator (conditional rendering based on settings)
-        if (settings.showDebugInfo && debugData != null) {
-            DebugActivator(
-                isVisible = true,
-                onClick = { showDebugPanel = true },
-                modifier = Modifier
-                    .align(Alignment.BottomEnd)
-                    .padding(16.dp)
-            )
-        }
+        // Debug activator (always enabled in V2)
+        DebugActivator(
+            isVisible = true,
+            onClick = { showDebugPanel = true },
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(16.dp)
+        )
     }
     
     // Debug bottom sheet
-    debugData?.let { data ->
-        DebugBottomSheet(
-            debugData = data,
-            isVisible = showDebugPanel,
-            onDismiss = { showDebugPanel = false }
-        )
-    }
+    DebugBottomSheet(
+        debugData = debugData,
+        isVisible = showDebugPanel,
+        onDismiss = { showDebugPanel = false }
+    )
     
     // QR Scanner coming soon dialog
     if (showQrComingSoonDialog) {
@@ -329,7 +318,7 @@ private fun DecadeCard(
         ) {
             // Background SYF image (right justified)
             Image(
-                painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
+                painter = painterResource(com.deadarchive.v2.core.design.R.drawable.steal_your_face),
                 contentDescription = null,
                 modifier = Modifier
                     .size(40.dp)

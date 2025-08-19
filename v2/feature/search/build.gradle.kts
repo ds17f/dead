@@ -45,16 +45,14 @@ android {
 }
 
 dependencies {
-    // V2 API dependencies
+    // V2 dependencies
     implementation(project(":v2:core:api:search"))
     implementation(project(":v2:core:search"))
     implementation(project(":v2:core:model"))
+    implementation(project(":v2:core:design"))
 
-    // Core dependencies (temporary until we migrate models)
+    // V1 Core dependencies (only for models until we migrate)
     implementation(project(":core:model"))
-    implementation(project(":core:design"))
-    implementation(project(":core:settings"))
-    implementation(project(":core:settings-api"))
 
     // Compose BOM
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))

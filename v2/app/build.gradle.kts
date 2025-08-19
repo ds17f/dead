@@ -51,6 +51,9 @@ dependencies {
     implementation(project(":v2:core:database"))
     implementation(project(":v2:core:design"))
     
+    // V2 Feature Dependencies
+    implementation(project(":v2:feature:search"))
+    
     // Android & Compose
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
