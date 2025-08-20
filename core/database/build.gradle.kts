@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.core.database"
+    namespace = "com.deadly.core.database"
     compileSdk = 34
 
     defaultConfig {

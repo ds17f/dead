@@ -27,7 +27,7 @@
    - Configure proper Room annotations and relationships
 
 2. **Build V2 Database**
-   - Create DeadArchiveV2Database with version management
+   - Create DeadlyV2Database with version management
    - Set up proper indices for search optimization
    - Implement database migrations from V1
 

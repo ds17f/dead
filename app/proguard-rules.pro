@@ -58,12 +58,12 @@
 -keep class androidx.compose.runtime.** { *; }
 
 # Keep domain models
--keep class com.deadarchive.core.model.** { *; }
--keep class com.deadarchive.core.network.model.** { *; }
+-keep class com.deadly.core.model.** { *; }
+-keep class com.deadly.core.network.model.** { *; }
 
 # Archive.org API models - keep all fields for JSON parsing
--keep class com.deadarchive.core.network.model.ArchiveSearchResponse** { *; }
--keep class com.deadarchive.core.network.model.ArchiveMetadataResponse** { *; }
+-keep class com.deadly.core.network.model.ArchiveSearchResponse** { *; }
+-keep class com.deadly.core.network.model.ArchiveMetadataResponse** { *; }
 
 # Custom serializers
--keep class com.deadarchive.core.network.serializer.** { *; }
+-keep class com.deadly.core.network.serializer.** { *; }

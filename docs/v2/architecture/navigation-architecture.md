@@ -13,12 +13,13 @@ The Dead Archive app uses a **two-app architecture** with complete separation be
 - **No Component Sharing**: Each app uses only its own components
 
 ### 2. Top-Level App Selection
+
 ```kotlin
 // Main app startup logic
 if (settings.useV1App) {
-    com.deadarchive.app.DeadArchiveNavigation()  // Entire V1 app
+    com.deadly.app.DeadlyNavigation()  // Entire V1 app
 } else {
-    com.deadarchive.v2.app.MainNavigation()      // Entire V2 app  
+    com.deadly.v2.app.MainNavigation()      // Entire V2 app  
 }
 ```
 
@@ -56,7 +57,7 @@ v2/
 
 ### V2 App Module (`v2/app`)
 ```
-v2/app/src/main/java/com/deadarchive/v2/app/
+v2/app/src/main/java/com/deadly/v2/app/
 ├── MainNavigation.kt            (main navigation function)
 ├── MainAppScreen.kt             (main app container with bottom nav)
 └── build.gradle.kts             (dependencies)
@@ -64,7 +65,7 @@ v2/app/src/main/java/com/deadarchive/v2/app/
 
 ### V2 Feature Modules
 ```
-v2/feature/search/src/main/java/com/deadarchive/v2/feature/search/
+v2/feature/search/src/main/java/com/deadly/v2/feature/search/
 ├── ui/components/
 │   ├── SearchScreen.kt          (IMPLEMENTED)
 │   └── SearchResultsScreen.kt   (IMPLEMENTED)
@@ -78,8 +79,9 @@ v2/feature/player/               (NOT YET CREATED)
 ## Navigation Implementation
 
 ### V2 MainNavigation.kt
+
 ```kotlin
-package com.deadarchive.v2.app
+package com.deadly.v2.app
 
 @Composable
 fun MainNavigation(
@@ -95,7 +97,7 @@ fun MainNavigation(
         composable("main_app") {
             MainAppScreen(settings = settings)
         }
-        
+
         // V2-only routes
         // Add player, playlist routes here when V2 versions exist
     }
@@ -103,8 +105,9 @@ fun MainNavigation(
 ```
 
 ### V2 MainAppScreen.kt
+
 ```kotlin
-package com.deadarchive.v2.app
+package com.deadly.v2.app
 
 @Composable
 fun MainAppScreen(
@@ -132,13 +135,13 @@ fun MainAppScreen(
             composable("search") {
                 SearchScreen(/* V2 search implementation */)
             }
-            
+
             // Future V2 features
             composable("browse") {
                 ComingSoonScreen("Browse")
             }
             composable("library") {
-                ComingSoonScreen("Library") 
+                ComingSoonScreen("Library")
             }
             composable("player") {
                 ComingSoonScreen("Player")

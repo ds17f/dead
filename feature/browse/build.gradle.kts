@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.feature.browse"
+    namespace = "com.deadly.feature.browse"
     compileSdk = 34
 
     defaultConfig {

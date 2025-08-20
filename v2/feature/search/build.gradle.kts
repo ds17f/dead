@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.v2.feature.search"
+    namespace = "com.deadly.v2.feature.search"
     compileSdk = 34
 
     defaultConfig {

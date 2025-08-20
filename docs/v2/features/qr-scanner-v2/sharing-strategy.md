@@ -43,15 +43,15 @@ https://archive.org/details/{identifier}/{filename} # Specific track
 
 **App Deep Links** (Future):
 ```
-deadarchive://recording/{identifier}                # App-specific recording
-deadarchive://show/{show-id}                       # Enhanced show entity
-deadarchive://playlist/{playlist-id}               # User playlists
-deadarchive://collection/{collection-id}           # Content collections
+deadly://recording/{identifier}                # App-specific recording
+deadly://show/{show-id}                       # Enhanced show entity
+deadly://playlist/{playlist-id}               # User playlists
+deadly://collection/{collection-id}           # Content collections
 ```
 
 **Hybrid URLs** (Advanced):
 ```
-https://deadarchive.app/share/recording/{identifier}?fallback=archive.org
+https://deadly.app/share/recording/{identifier}?fallback=archive.org
 ```
 
 ### QR Code Generation Strategy
@@ -62,7 +62,7 @@ fun generateShareableUrl(content: ShareableContent): String {
     return when (content) {
         is Recording -> {
             // Primary: App deep link with Archive.org fallback
-            val appUrl = "deadarchive://recording/${content.identifier}"
+            val appUrl = "deadly://recording/${content.identifier}"
             val fallbackUrl = ArchiveUrlUtil.getRecordingUrl(content)
             createHybridUrl(appUrl, fallbackUrl)
         }

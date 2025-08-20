@@ -241,6 +241,7 @@ debugData?.let { data ->
 ## Navigation Architecture
 
 ### 1. Routing Implementation
+
 ```kotlin
 // MainAppScreen.kt - Main navigation integration
 NavHost(
@@ -250,8 +251,8 @@ NavHost(
     composable("home") {
         if (settings.useHomeV2) {
             // V2 implementation with proper callbacks
-            com.deadarchive.feature.browse.HomeV2Screen(
-                onNavigateToPlayer = { recordingId -> 
+            com.deadly.feature.browse.HomeV2Screen(
+                onNavigateToPlayer = { recordingId ->
                     navController.navigate("playlist/$recordingId")
                 },
                 onNavigateToShow = { show ->

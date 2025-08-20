@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.core.library"
+    namespace = "com.deadly.core.library"
     compileSdk = 34
 
     defaultConfig {

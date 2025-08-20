@@ -1,11 +1,11 @@
-# Dead Archive Android App - Makefile
+# Deadly Android App - Makefile
 # Simplifies common development tasks
 
 .PHONY: help build clean test lint install run run-emulator debug release tag-release tag-release-quick update-release-descriptions dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data v2-enable v2-disable v2-status
 
 # Default target
 help:
-	@echo "Dead Archive Android App - Available Commands:"
+	@echo "Deadly Android App - Available Commands:"
 	@echo ""
 	@echo "Setup & Dependencies:"
 	@echo "  make setup       - Initial project setup and dependency installation"
@@ -80,7 +80,7 @@ help:
 
 # Setup and Dependencies
 setup:
-	@echo "🚀 Setting up Dead Archive project..."
+	@echo "🚀 Setting up Deadly project..."
 	gradle --version
 	@echo "✅ Project setup complete!"
 
@@ -202,8 +202,8 @@ install-quiet:
 	fi
 
 run: install
-	@echo "🚀 Launching Dead Archive app..."
-	adb shell am start -n com.deadarchive.app/.MainActivity
+	@echo "🚀 Launching Deadly app..."
+	adb shell am start -n com.deadly.app/.MainActivity
 	@echo "✅ App launched!"
 
 run-emulator:
@@ -227,14 +227,14 @@ run-emulator:
 		sleep 2; \
 	done
 	@echo ""
-	@echo "3️⃣ Building and installing Dead Archive app..."
+	@echo "3️⃣ Building and installing Deadly app..."
 	@$(MAKE) --no-print-directory build
 	@$(MAKE) --no-print-directory install
 	@echo ""
 	@echo "4️⃣ Launching app..."
-	@adb shell am start -n com.deadarchive.app/.MainActivity
+	@adb shell am start -n com.deadly.app/.MainActivity
 	@echo ""
-	@echo "🎉 SUCCESS! Dead Archive is now running on emulator!"
+	@echo "🎉 SUCCESS! Deadly is now running on emulator!"
 	@echo "📱 Use 'make emu-stop' when done"
 
 debug: build install
@@ -264,7 +264,7 @@ check: test lint
 
 # Utilities
 status:
-	@echo "📊 Dead Archive Project Status:"
+	@echo "📊 Deadly Project Status:"
 	@echo ""
 	@echo "Gradle Version:"
 	@gradle --version | head -5
@@ -279,12 +279,12 @@ status:
 	@find . -name "*.apk" -newer . 2>/dev/null | head -3 || echo "No recent APK builds found"
 
 logs:
-	@echo "📱 Showing Dead Archive app logs..."
+	@echo "📱 Showing Deadly app logs..."
 	@echo "Press Ctrl+C to stop"
 	adb logcat | grep -i "deadarchive\|grateful\|dead"
 
 modules:
-	@echo "📦 Dead Archive Modules:"
+	@echo "📦 Deadly Modules:"
 	@echo ""
 	@echo "Core Modules:"
 	@find core -name "build.gradle.kts" -exec dirname {} \; | sort
@@ -336,8 +336,8 @@ install-release:
 	gradle installRelease
 
 uninstall:
-	@echo "🗑️ Uninstalling Dead Archive..."
-	adb uninstall com.deadarchive.app || echo "App not installed"
+	@echo "🗑️ Uninstalling Deadly..."
+	adb uninstall com.deadly.app || echo "App not installed"
 
 # Emulator management
 emu-list:
@@ -461,7 +461,7 @@ download-icons:
 		python download_material_icons.py \
 		--from-json "$(PWD)/scripts/material_icons_config.json" \
 		--output "$(PWD)/core/design/src/main/res/drawable" \
-		--icon-registry-path "$(PWD)/core/design/src/main/java/com/deadarchive/core/design/component/IconResources.kt" \
+		--icon-registry-path "$(PWD)/core/design/src/main/java/com/deadly/core/design/component/IconResources.kt" \
 		--update-registry
 	@echo "✅ Icons downloaded and processed!"
 
@@ -737,10 +737,10 @@ capture-test-data:
 	@echo "2️⃣ Pulling files from device..."
 	@mkdir -p testdata
 	@echo "   Trying app external files directory..."
-	@adb pull /storage/emulated/0/Android/data/com.deadarchive.app.debug/files/testdata/ ./testdata/ 2>/dev/null || \
-	 adb pull /storage/emulated/0/Android/data/com.deadarchive.app/files/testdata/ ./testdata/ 2>/dev/null || \
-	 adb pull /sdcard/Android/data/com.deadarchive.app.debug/files/testdata/ ./testdata/ 2>/dev/null || \
-	 adb pull /sdcard/Android/data/com.deadarchive.app/files/testdata/ ./testdata/ 2>/dev/null || \
+	@adb pull /storage/emulated/0/Android/data/com.deadly.app.debug/files/testdata/ ./testdata/ 2>/dev/null || \
+	 adb pull /storage/emulated/0/Android/data/com.deadly.app/files/testdata/ ./testdata/ 2>/dev/null || \
+	 adb pull /sdcard/Android/data/com.deadly.app.debug/files/testdata/ ./testdata/ 2>/dev/null || \
+	 adb pull /sdcard/Android/data/com.deadly.app/files/testdata/ ./testdata/ 2>/dev/null || \
 	 echo "⚠️  No data found. Make sure to export data first using the Debug screen"
 	@if [ -d "testdata/testdata" ]; then mv testdata/testdata/* testdata/ && rmdir testdata/testdata; fi
 	@echo "✅ Test data captured to ./testdata/"
@@ -748,7 +748,7 @@ capture-test-data:
 
 clean-test-data:
 	@echo "🧹 Cleaning test data..."
-	@adb shell pm clear com.deadarchive.app.debug || adb shell pm clear com.deadarchive.app || echo "⚠️  App not installed or ADB not connected"
+	@adb shell pm clear com.deadly.app.debug || adb shell pm clear com.deadly.app || echo "⚠️  App not installed or ADB not connected"
 	@rm -rf testdata/
 	@echo "✅ Test data cleaned"
 
@@ -776,22 +776,22 @@ view-test-data:
 # V2 App Toggle Commands
 v2-enable:
 	@echo "🚀 Enabling V2 app..."
-	@adb shell run-as com.deadarchive.app.debug "touch files/enable-v2-app" 2>/dev/null || \
-	 adb shell run-as com.deadarchive.app "touch files/enable-v2-app" 2>/dev/null || \
+	@adb shell run-as com.deadly.app.debug "touch files/enable-v2-app" 2>/dev/null || \
+	 adb shell run-as com.deadly.app "touch files/enable-v2-app" 2>/dev/null || \
 	 echo "❌ Failed to enable V2 app. Make sure the app is installed."
 	@echo "✅ V2 app enabled! Restart the app to see changes."
 
 v2-disable:
 	@echo "🔄 Disabling V2 app (falling back to V1)..."
-	@adb shell run-as com.deadarchive.app.debug "rm -f files/enable-v2-app" 2>/dev/null || \
-	 adb shell run-as com.deadarchive.app "rm -f files/enable-v2-app" 2>/dev/null || \
+	@adb shell run-as com.deadly.app.debug "rm -f files/enable-v2-app" 2>/dev/null || \
+	 adb shell run-as com.deadly.app "rm -f files/enable-v2-app" 2>/dev/null || \
 	 echo "❌ Failed to disable V2 app. Make sure the app is installed."
 	@echo "✅ V2 app disabled! Restart the app to see V1."
 
 v2-status:
 	@echo "📊 V2 App Status:"
-	@if adb shell run-as com.deadarchive.app.debug "test -f files/enable-v2-app" 2>/dev/null || \
-	   adb shell run-as com.deadarchive.app "test -f files/enable-v2-app" 2>/dev/null; then \
+	@if adb shell run-as com.deadly.app.debug "test -f files/enable-v2-app" 2>/dev/null || \
+	   adb shell run-as com.deadly.app "test -f files/enable-v2-app" 2>/dev/null; then \
 		echo "✅ V2 app is ENABLED"; \
 	else \
 		echo "❌ V2 app is DISABLED (using V1)"; \

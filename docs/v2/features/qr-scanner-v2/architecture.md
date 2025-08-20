@@ -79,7 +79,7 @@ interface QrScannerV2Service {
 private val mockQrUrls = listOf(
     "https://archive.org/details/gd1977-05-08.sbd.hicks.4982.sbeok.shnf", // Cornell
     "https://archive.org/details/gd72-05-03.sbd.unknown.30057.sbeok.shnf", // Europe '72
-    "deadarchive://recording/gd1977-05-08.sbd.hicks.4982.sbeok.shnf", // App deep link
+    "deadly://recording/gd1977-05-08.sbd.hicks.4982.sbeok.shnf", // App deep link
     "https://invalid-qr-content.com", // Error case
 )
 ```
@@ -239,7 +239,7 @@ suspend fun processArchiveUrl(url: String): Result<ArchiveUrlInfo> {
                 val filename = extractFilename(url)
                 ArchiveUrlInfo(identifier, filename, ArchiveUrlType.RECORDING)
             }
-            url.startsWith("deadarchive://") -> {
+            url.startsWith("deadly://") -> {
                 processAppDeepLink(url)
             }
             else -> return Result.failure(InvalidUrlException("Unsupported URL format"))

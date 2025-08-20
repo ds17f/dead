@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.core.backup"
+    namespace = "com.deadly.core.backup"
     compileSdk = 34
 
     defaultConfig {

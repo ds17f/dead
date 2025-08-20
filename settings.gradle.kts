@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DeadArchive"
+rootProject.name = "Deadly"
 
 include(":app")
 

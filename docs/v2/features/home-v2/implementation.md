@@ -215,8 +215,8 @@ Precise routing to Home button (not Search button):
 // MainAppScreen.kt - Home route
 composable("home") {
     if (settings.useHomeV2) {
-        com.deadarchive.feature.browse.HomeV2Screen(
-            onNavigateToPlayer = { recordingId -> 
+        com.deadly.feature.browse.HomeV2Screen(
+            onNavigateToPlayer = { recordingId ->
                 navController.navigate("playlist/$recordingId")
             },
             onNavigateToShow = { show ->

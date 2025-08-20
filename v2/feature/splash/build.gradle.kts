@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.v2.feature.splash"
+    namespace = "com.deadly.v2.feature.splash"
     compileSdk = 34
 
     defaultConfig {

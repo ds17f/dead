@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.v2.feature.home"
+    namespace = "com.deadly.v2.feature.home"
     compileSdk = 34
 
     defaultConfig {

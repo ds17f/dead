@@ -14,7 +14,7 @@ This document provides a comprehensive technical deep-dive into the SearchV2 imp
 ### Core Implementation Files
 
 ```
-feature/browse/src/main/java/com/deadarchive/feature/browse/
+feature/browse/src/main/java/com/deadly/feature/browse/
 ├── SearchV2Screen.kt                 # 540 lines - Complete main UI implementation
 ├── SearchResultsV2Screen.kt          # 566 lines - Full-screen search interface  
 ├── SearchV2ViewModel.kt              # 199 lines - Comprehensive state management
@@ -24,22 +24,22 @@ feature/browse/src/main/java/com/deadarchive/feature/browse/
 ### Supporting Infrastructure
 
 ```
-core/search-api/src/main/java/com/deadarchive/core/search/api/
+core/search-api/src/main/java/com/deadly/core/search/api/
 └── SearchV2Service.kt                # 124 lines - Clean service interface
 
-core/search/src/main/java/com/deadarchive/core/search/
+core/search/src/main/java/com/deadly/core/search/
 ├── service/SearchV2ServiceStub.kt    # 493 lines - Production-ready stub
 └── di/SearchV2StubModule.kt          # 35 lines - Hilt dependency injection
 
-core/model/src/main/java/com/deadarchive/core/model/
+core/model/src/main/java/com/deadly/core/model/
 └── SearchV2Models.kt                 # Domain models for search functionality
 
-core/settings-api/src/main/java/com/deadarchive/core/settings/api/model/
+core/settings-api/src/main/java/com/deadly/core/settings/api/model/
 └── AppSettings.kt                    # Feature flag: useSearchV2: Boolean
 
-app/src/main/java/com/deadarchive/app/
+app/src/main/java/com/deadly/app/
 ├── MainAppScreen.kt                  # Navigation parameter passing
-└── DeadArchiveNavigation.kt          # Feature flag routing
+└── DeadlyNavigation.kt          # Feature flag routing
 ```
 
 ## Architecture Diagram
@@ -138,6 +138,7 @@ fun SearchV2Screen(
 ### 2. SearchV2TopBar - Header Component (32 lines)
 
 **Implementation Pattern**:
+
 ```kotlin
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -154,13 +155,13 @@ private fun SearchV2TopBar(onCameraClick: () -> Unit) {
             // Left: SYF logo + Search title
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
-                    painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
+                    painter = painterResource(com.deadly.core.design.R.drawable.steal_your_face),
                     contentDescription = "Dead Archive",
                     modifier = Modifier.size(32.dp)
                 )
                 Text("Search", style = MaterialTheme.typography.headlineSmall)
             }
-            
+
             // Right: Camera/QR scanner icon
             IconButton(onClick = onCameraClick) {
                 Icon(Icons.Outlined.Settings, contentDescription = "QR Code Scanner")
@@ -245,6 +246,7 @@ private fun SearchV2BrowseSection(onDecadeClick: (String) -> Unit) {
 ```
 
 **DecadeCard Visual Design**:
+
 ```kotlin
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -264,11 +266,11 @@ private fun DecadeCard(decade: DecadeBrowse, onClick: () -> Unit) {
         ) {
             // SYF watermark (right-justified, 30% opacity)
             Image(
-                painter = painterResource(com.deadarchive.core.design.R.drawable.steal_your_face),
+                painter = painterResource(com.deadly.core.design.R.drawable.steal_your_face),
                 modifier = Modifier.size(40.dp).align(Alignment.BottomEnd).padding(8.dp),
                 alpha = 0.3f
             )
-            
+
             // Decade text (bottom-left)
             Text(
                 text = decade.title,
@@ -532,7 +534,7 @@ debugData?.let { data ->
 ## Service Layer Implementation
 
 ### SearchV2Service Interface
-**Location**: `core/search-api/src/main/java/com/deadarchive/core/search/api/SearchV2Service.kt`
+**Location**: `core/search-api/src/main/java/com/deadly/core/search/api/SearchV2Service.kt`
 
 ```kotlin
 /**
@@ -563,7 +565,7 @@ interface SearchV2Service {
 ```
 
 ### SearchV2ServiceStub Implementation
-**Location**: `core/search/src/main/java/com/deadarchive/core/search/service/SearchV2ServiceStub.kt`
+**Location**: `core/search/src/main/java/com/deadly/core/search/service/SearchV2ServiceStub.kt`
 
 **Key Features**:
 - **493 lines of production-ready stub implementation**
@@ -621,7 +623,7 @@ private fun calculateRelevanceScore(show: Show, query: String, matchType: Search
 ```
 
 ### Dependency Injection Architecture
-**Location**: `core/search/src/main/java/com/deadarchive/core/search/di/SearchV2StubModule.kt`
+**Location**: `core/search/src/main/java/com/deadly/core/search/di/SearchV2StubModule.kt`
 
 ```kotlin
 @Module

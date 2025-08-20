@@ -28,7 +28,7 @@
 Create a proper domain model that represents "Show in Library context":
 
 ```kotlin
-package com.deadarchive.core.model
+package com.deadly.core.model
 
 /**
  * Domain model representing a Show within the Library context.
@@ -49,7 +49,7 @@ data class LibraryV2Show(
     val displayLocation: String get() = show.displayLocation
     val displayVenue: String get() = show.displayVenue
     val recordings: List<Recording> get() = show.recordings
-    
+
     // Library-specific computed properties
     val isPinnedAndDownloaded: Boolean get() = isPinned && downloadStatus == DownloadStatus.COMPLETED
     val libraryAge: Long get() = System.currentTimeMillis() - addedToLibraryAt
@@ -59,7 +59,7 @@ data class LibraryV2Show(
 ### Database Layer: LibraryV2ItemEntity
 
 ```kotlin
-package com.deadarchive.core.database.entity
+package com.deadly.core.database.entity
 
 @Entity(
     tableName = "library_v2",
@@ -73,12 +73,12 @@ package com.deadarchive.core.database.entity
     ]
 )
 data class LibraryV2ItemEntity(
-    @PrimaryKey 
+    @PrimaryKey
     val showId: String,
-    
+
     @ColumnInfo(name = "added_to_library_at")
     val addedToLibraryAt: Long,
-    
+
     @ColumnInfo(name = "is_pinned")
     val isPinned: Boolean = false
 )
@@ -87,9 +87,9 @@ data class LibraryV2ItemEntity(
  * Room relation for efficient querying of library shows with full show data
  */
 data class LibraryV2ShowWithDetails(
-    @Embedded 
+    @Embedded
     val libraryItem: LibraryV2ItemEntity,
-    
+
     @Relation(
         parentColumn = "showId",
         entityColumn = "show_id"
@@ -101,29 +101,29 @@ data class LibraryV2ShowWithDetails(
 ### Database Access Layer
 
 ```kotlin
-package com.deadarchive.core.database.dao
+package com.deadly.core.database.dao
 
 @Dao
 interface LibraryV2Dao {
     @Query("SELECT * FROM library_v2 ORDER BY added_to_library_at DESC")
     fun getAllLibraryV2Items(): Flow<List<LibraryV2ItemEntity>>
-    
+
     @Transaction
     @Query("SELECT * FROM library_v2 ORDER BY is_pinned DESC, added_to_library_at DESC")
     fun getAllLibraryV2ShowsWithDetails(): Flow<List<LibraryV2ShowWithDetails>>
-    
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertLibraryV2Item(item: LibraryV2ItemEntity)
-    
+
     @Query("DELETE FROM library_v2 WHERE showId = :showId")
     suspend fun removeLibraryV2Item(showId: String)
-    
+
     @Query("UPDATE library_v2 SET is_pinned = :isPinned WHERE showId = :showId")
     suspend fun updatePinStatus(showId: String, isPinned: Boolean)
-    
+
     @Query("SELECT is_pinned FROM library_v2 WHERE showId = :showId")
     fun getPinStatus(showId: String): Flow<Boolean?>
-    
+
     @Query("DELETE FROM library_v2")
     suspend fun clearAllLibraryV2Items()
 }
@@ -134,23 +134,23 @@ interface LibraryV2Dao {
 ### LibraryV2Service Interface Update
 
 ```kotlin
-package com.deadarchive.core.library.api
+package com.deadly.core.library.api
 
 interface LibraryV2Service {
     // Returns LibraryV2Show instead of Show
     fun getLibraryV2Shows(): Flow<List<LibraryV2Show>>
-    
+
     // Library management (unchanged interface)
     suspend fun addShowToLibraryV2(showId: String): Result<Unit>
     suspend fun removeShowFromLibraryV2(showId: String): Result<Unit>
     suspend fun clearLibraryV2(): Result<Unit>
     fun isShowInLibraryV2(showId: String): Flow<Boolean>
-    
+
     // Pin management (unchanged interface)
     suspend fun pinShowV2(showId: String): Result<Unit>
     suspend fun unpinShowV2(showId: String): Result<Unit>
     fun isShowPinnedV2(showId: String): Flow<Boolean>
-    
+
     // Statistics and utilities
     suspend fun getLibraryV2Stats(): LibraryV2Stats
     suspend fun populateTestDataV2(): Result<Unit>
@@ -160,14 +160,14 @@ interface LibraryV2Service {
 ### Service Implementation Strategy
 
 ```kotlin
-package com.deadarchive.core.library.service
+package com.deadly.core.library.service
 
 @Singleton
 class LibraryV2ServiceImpl @Inject constructor(
     private val libraryV2Dao: LibraryV2Dao,
     private val downloadService: DownloadService // For download status
 ) : LibraryV2Service {
-    
+
     override fun getLibraryV2Shows(): Flow<List<LibraryV2Show>> {
         return libraryV2Dao.getAllLibraryV2ShowsWithDetails()
             .map { libraryShowsWithDetails ->
@@ -175,7 +175,7 @@ class LibraryV2ServiceImpl @Inject constructor(
                     val show = libraryShowWithDetails.show.toShow()
                     val libraryItem = libraryShowWithDetails.libraryItem
                     val downloadStatus = getDownloadStatusForShow(show.showId)
-                    
+
                     LibraryV2Show(
                         show = show,
                         addedToLibraryAt = libraryItem.addedToLibraryAt,
@@ -185,7 +185,7 @@ class LibraryV2ServiceImpl @Inject constructor(
                 }
             }
     }
-    
+
     private suspend fun getDownloadStatusForShow(showId: String): DownloadStatus {
         // Query download service for this show's download status
         return downloadService.getDownloadState(showId)?.status ?: DownloadStatus.NOT_DOWNLOADED

@@ -69,7 +69,7 @@
         
         <!-- App update installation receiver -->
         <receiver
-            android:name="com.deadarchive.core.data.service.UpdateInstallReceiver"
+            android:name="com.deadly.core.data.service.UpdateInstallReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.content.pm.action.SESSION_COMMITTED" />

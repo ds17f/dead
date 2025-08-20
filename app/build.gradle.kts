@@ -21,11 +21,11 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.app"
+    namespace = "com.deadly.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.deadarchive.app"
+        applicationId = "com.deadly.app"
         minSdk = 24
         targetSdk = 34
         versionCode = 62

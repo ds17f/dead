@@ -58,7 +58,7 @@ dependencies {
 ### Core Implementation Files
 
 ```
-feature/browse/src/main/java/com/deadarchive/feature/browse/
+feature/browse/src/main/java/com/deadly/feature/browse/
 ├── QrScannerV2Screen.kt                 # Main camera scanning UI
 ├── QrScannerV2ViewModel.kt              # State coordination and service integration
 ├── component/
@@ -72,10 +72,10 @@ feature/browse/src/main/java/com/deadarchive/feature/browse/
 ### Service Layer Files
 
 ```
-core/qr-scanner-api/src/main/java/com/deadarchive/core/qr/api/
+core/qr-scanner-api/src/main/java/com/deadly/core/qr/api/
 └── QrScannerV2Service.kt                # Clean service interface
 
-core/qr-scanner/src/main/java/com/deadarchive/core/qr/
+core/qr-scanner/src/main/java/com/deadly/core/qr/
 ├── service/QrScannerV2ServiceStub.kt     # Mock implementation with realistic behavior
 ├── di/QrScannerV2StubModule.kt          # Hilt dependency injection
 └── model/                               # Domain models (if not in core/model)
@@ -357,7 +357,7 @@ class QrScannerV2ServiceStub @Inject constructor() : QrScannerV2Service {
     private fun determineUrlType(url: String): ArchiveUrlType {
         return when {
             url.contains("archive.org/details/") -> ArchiveUrlType.RECORDING
-            url.startsWith("deadarchive://") -> ArchiveUrlType.APP_DEEP_LINK
+            url.startsWith("deadly://") -> ArchiveUrlType.APP_DEEP_LINK
             else -> ArchiveUrlType.INVALID
         }
     }
@@ -386,7 +386,7 @@ fun parseArchiveUrl(url: String): ArchiveUrlInfo {
                 urlType = if (filename != null) ArchiveUrlType.TRACK else ArchiveUrlType.RECORDING
             )
         }
-        url.startsWith("deadarchive://") -> {
+        url.startsWith("deadly://") -> {
             parseAppDeepLink(url)
         }
         else -> throw InvalidUrlException("Unsupported URL format: $url")

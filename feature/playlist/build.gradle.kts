@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.deadarchive.feature.playlist"
+    namespace = "com.deadly.feature.playlist"
     compileSdk = 34
 
     defaultConfig {

@@ -1,4 +1,4 @@
-# Dead Archive - Grateful Dead Concert Archive Android App
+# Deadly - Grateful Dead Concert Archive Android App
 
 [![Build APK](https://github.com/username/dead-archive/actions/workflows/build-apk.yml/badge.svg)](https://github.com/username/dead-archive/actions/workflows/build-apk.yml)
 [![Release](https://github.com/username/dead-archive/actions/workflows/release.yml/badge.svg)](https://github.com/username/dead-archive/releases)
@@ -7,7 +7,7 @@ A modern Android application for browsing, streaming, and downloading Grateful D
 
 ## Project Overview
 
-Dead Archive provides Grateful Dead fans with a mobile-first experience to explore the vast collection of concert recordings available on Archive.org. The app features streaming playback, offline downloads, favorites management, and social sharing capabilities.
+Deadly provides Grateful Dead fans with a mobile-first experience to explore the vast collection of concert recordings available on Archive.org. The app features streaming playback, offline downloads, favorites management, and social sharing capabilities.
 
 ## Architecture
 
