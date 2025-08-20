@@ -1,7 +1,10 @@
 package com.deadly.v2.app
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
@@ -42,13 +45,21 @@ fun MainNavigation(
     themeManager: ThemeManager,
     themeProvider: ThemeAssetProvider
 ) {
+    Log.d("MainNavigation", "MainNavigation: Starting with injected provider: ${themeProvider.getThemeName()}")
+    
     // Initialize theme system on app startup
     LaunchedEffect(Unit) {
+        Log.d("MainNavigation", "MainNavigation: Starting theme auto-initialization")
         themeManager.autoInitialize()
+        Log.d("MainNavigation", "MainNavigation: Theme auto-initialization completed")
     }
     
-    // Wrap entire navigation with DI-injected theme provider
-    DeadlyTheme(themeProvider = themeProvider) {
+    // Observe the current theme provider from ThemeManager
+    val currentProvider by themeManager.currentProvider.collectAsState()
+    Log.d("MainNavigation", "MainNavigation: Current provider from ThemeManager: ${currentProvider.getThemeName()}")
+    
+    // Wrap entire navigation with the current theme provider
+    DeadlyTheme(themeProvider = currentProvider) {
         val navController = rememberNavController()
         
         NavHost(

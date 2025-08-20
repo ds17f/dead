@@ -1,6 +1,7 @@
 package com.deadly.v2.core.theme
 
 import android.content.Context
+import android.util.Log
 import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -22,6 +23,10 @@ class ThemeManager @Inject constructor(
     private val context: Context
 ) {
     
+    companion object {
+        private const val TAG = "ThemeManager"
+    }
+    
     private val _currentProvider = MutableStateFlow<ThemeAssetProvider>(builtinProvider)
     val currentProvider: StateFlow<ThemeAssetProvider> = _currentProvider.asStateFlow()
     
@@ -41,6 +46,7 @@ class ThemeManager @Inject constructor(
      * Switch to the built-in theme
      */
     fun useBuiltinTheme() {
+        Log.d(TAG, "useBuiltinTheme: Switching to builtin theme")
         _currentProvider.value = builtinProvider
     }
     
@@ -51,11 +57,15 @@ class ThemeManager @Inject constructor(
      * @throws IllegalStateException if the ZIP theme fails to load
      */
     suspend fun useZipTheme(zipPath: String) {
+        Log.d(TAG, "useZipTheme: Attempting to load ZIP theme from: $zipPath")
         try {
             val zipProvider = zipProviderFactory.create(zipPath)
+            Log.d(TAG, "useZipTheme: Created ZIP provider, initializing...")
             zipProvider.initialize()
+            Log.d(TAG, "useZipTheme: ZIP provider initialized successfully")
             
             _currentProvider.value = zipProvider
+            Log.d(TAG, "useZipTheme: Set current provider to ZIP theme: ${zipProvider.getThemeName()}")
             
             // Add to available themes if not already present
             val currentThemes = _availableThemes.value.toMutableList()
@@ -72,6 +82,7 @@ class ThemeManager @Inject constructor(
             }
             
         } catch (e: Exception) {
+            Log.e(TAG, "useZipTheme: Failed to load ZIP theme: $zipPath", e)
             throw IllegalStateException("Failed to load ZIP theme: $zipPath", e)
         }
     }
@@ -88,35 +99,45 @@ class ThemeManager @Inject constructor(
      * loads the newest ZIP theme if found, otherwise uses builtin theme.
      */
     suspend fun autoInitialize() {
+        Log.d(TAG, "autoInitialize: Starting theme auto-initialization")
         val themesDir = File(context.filesDir, "themes")
+        Log.d(TAG, "autoInitialize: Checking themes directory: ${themesDir.absolutePath}")
+        
         if (!themesDir.exists()) {
-            // No themes directory, use builtin theme
+            Log.d(TAG, "autoInitialize: Themes directory does not exist, using builtin theme")
             useBuiltinTheme()
             return
         }
         
         // Find all .zip files in themes directory
         val zipFiles = themesDir.listFiles { _, name -> name.endsWith(".zip") }
+        Log.d(TAG, "autoInitialize: Found ${zipFiles?.size ?: 0} ZIP files in themes directory")
+        
+        zipFiles?.forEach { file ->
+            Log.d(TAG, "autoInitialize: Found ZIP file: ${file.name} (${file.lastModified()})")
+        }
         
         if (zipFiles.isNullOrEmpty()) {
-            // No ZIP themes found, use builtin theme
+            Log.d(TAG, "autoInitialize: No ZIP themes found, using builtin theme")
             useBuiltinTheme()
             return
         }
         
         // Find the newest theme file by last modified timestamp
         val newestTheme = zipFiles.maxByOrNull { it.lastModified() }
+        Log.d(TAG, "autoInitialize: Newest theme file: ${newestTheme?.name}")
         
         if (newestTheme != null) {
             try {
-                // Try to load the newest theme
+                Log.d(TAG, "autoInitialize: Attempting to load newest theme: ${newestTheme.absolutePath}")
                 useZipTheme(newestTheme.absolutePath)
+                Log.d(TAG, "autoInitialize: Successfully loaded ZIP theme")
             } catch (e: Exception) {
-                // If ZIP theme fails, fallback to builtin
+                Log.e(TAG, "autoInitialize: ZIP theme loading failed, falling back to builtin", e)
                 useBuiltinTheme()
             }
         } else {
-            // Fallback to builtin
+            Log.d(TAG, "autoInitialize: No valid theme found, using builtin theme")
             useBuiltinTheme()
         }
     }

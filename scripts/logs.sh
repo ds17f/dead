@@ -138,6 +138,14 @@ case "$1" in
   echo "📊 Current Database Health Check:"
   adb logcat -d | grep -E "DatabaseHealthService.*health check|Database health check" | tail -5
   ;;
+"theme" | "themes")
+  if [ "$TIMEOUT" -eq 0 ]; then
+    echo "🔍 Showing theme system logs (no timeout)..."
+  else
+    echo "🔍 Showing theme system logs (${TIMEOUT}s)..."
+  fi
+  run_with_timeout adb logcat -s ThemeManager ZipThemeProvider MainNavigation
+  ;;
 *)
   echo "📱 Dead Archive Logging Utility"
   echo ""
@@ -154,6 +162,7 @@ case "$1" in
   echo "  app           - Show application startup logs"
   echo "  player        - Show media player logs"
   echo "  settings      - Show settings related logs"
+  echo "  theme         - Show theme system logs (loading, switching, assets)"
   echo "  debug         - Show debug panel logs"
   echo "  tail/follow   - Follow all Dead Archive logs in real-time"
   echo "  import-summary- Show V2 import summary from last run"
@@ -169,6 +178,7 @@ case "$1" in
   echo "  ./scripts/logs.sh error 5      # Run for 5 seconds"
   echo "  ./scripts/logs.sh error 0      # Run indefinitely"
   echo "  ./scripts/logs.sh dataimport 30 # Run for 30 seconds"
+  echo "  ./scripts/logs.sh theme 30     # Monitor theme loading for 30s"
   ;;
 esac
 
