@@ -35,8 +35,6 @@ android {
 }
 
 dependencies {
-    // Core model dependencies (for Show, etc.)
-    implementation(project(":core:model"))
 
     // Serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")

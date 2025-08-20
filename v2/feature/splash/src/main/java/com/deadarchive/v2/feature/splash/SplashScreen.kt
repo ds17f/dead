@@ -1,4 +1,4 @@
-package com.deadarchive.v2.app.splash
+package com.deadarchive.v2.feature.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -10,12 +10,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.v2.app.model.PhaseV2
+import com.deadarchive.v2.feature.splash.model.PhaseV2
 import com.deadarchive.v2.core.design.resources.IconResources
 import kotlinx.coroutines.delay
 
 @Composable
-fun Splash(
+fun SplashScreen(
     onSplashComplete: () -> Unit,
     viewModel: SplashViewModel = hiltViewModel()
 ) {

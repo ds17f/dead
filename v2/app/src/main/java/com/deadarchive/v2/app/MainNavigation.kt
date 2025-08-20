@@ -1,35 +1,46 @@
 package com.deadarchive.v2.app
 
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.deadarchive.v2.feature.search.ui.components.SearchScreen
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
+import com.deadarchive.v2.feature.splash.navigation.splashGraph
+import com.deadarchive.v2.feature.home.navigation.homeGraph
+import com.deadarchive.v2.feature.search.navigation.searchGraph
 
 /**
- * Main navigation entry point for the V2 Dead Archive app.
+ * MainNavigation - Scalable navigation architecture for V2 app
  * 
- * This is a complete, independent V2 application that does not depend on 
- * or delegate to any V1 components. Now testing the V2 SearchScreen.
+ * This is the main navigation coordinator that orchestrates routing between
+ * all feature modules. Each feature owns its own navigation subgraph,
+ * maintaining clean separation of concerns.
+ * 
+ * Navigation Flow:
+ * 1. splash → home (after database initialization) 
+ * 2. home → search-graph (user taps search)
+ * 3. search → search-results (user taps search box)
+ * 4. search-results → search (back navigation)
+ * 
+ * Architecture Benefits:
+ * - Scalable: Easy to add new feature subgraphs
+ * - Modular: Each feature manages its own navigation
+ * - Testable: Features accept navigation callbacks
+ * - Clean: App module stays minimal and focused
  */
 @Composable
 fun MainNavigation() {
-    // Test V2 SearchScreen
-    SearchScreen(
-        onNavigateToPlayer = { recordingId ->
-            // TODO: Navigate to V2 Player
-        },
-        onNavigateToShow = { show ->
-            // TODO: Navigate to V2 Show details
-        },
-        onNavigateToSearchResults = {
-            // TODO: Navigate to V2 Search results
-        },
-        initialEra = null
-    )
+    val navController = rememberNavController()
+    
+    NavHost(
+        navController = navController,
+        startDestination = "splash"
+    ) {
+        // Splash feature - handles V2 database initialization
+        splashGraph(navController)
+        
+        // Home feature - main navigation hub
+        homeGraph(navController)
+        
+        // Search feature - search and browse functionality
+        searchGraph(navController)
+    }
 }

@@ -48,7 +48,7 @@ import com.deadarchive.v2.core.model.*
 fun SearchResultsScreen(
     initialQuery: String = "",
     onNavigateBack: () -> Unit,
-    onNavigateToShow: (Show) -> Unit,
+    onNavigateToShow: (String) -> Unit,
     onNavigateToPlayer: (String) -> Unit,
     viewModel: SearchViewModel = hiltViewModel()
 ) {
@@ -278,7 +278,7 @@ private fun SearchResultsSection(
     searchResults: List<SearchResultShow>,
     searchStatus: SearchStatus,
     searchStats: SearchStats,
-    onShowSelected: (Show) -> Unit,
+    onShowSelected: (String) -> Unit,
     onRecordingSelected: (String) -> Unit
 ) {
     Column {
@@ -357,15 +357,15 @@ private fun SearchResultsSection(
 @Composable
 private fun SearchResultCard(
     searchResult: SearchResultShow,
-    onShowSelected: (Show) -> Unit,
-    onShowLongPress: (Show) -> Unit
+    onShowSelected: (String) -> Unit,
+    onShowLongPress: (String) -> Unit
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .combinedClickable(
-                onClick = { onShowSelected(searchResult.show) },
-                onLongClick = { onShowLongPress(searchResult.show) }
+                onClick = { onShowSelected(searchResult.show.id) },
+                onLongClick = { onShowLongPress(searchResult.show.id) }
             ),
         colors = CardDefaults.cardColors(
             containerColor = Color.Transparent

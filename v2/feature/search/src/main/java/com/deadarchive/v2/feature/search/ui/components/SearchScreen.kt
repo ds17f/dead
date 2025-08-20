@@ -32,7 +32,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.deadarchive.core.model.Show
 import com.deadarchive.v2.core.design.component.debug.DebugActivator
 import com.deadarchive.v2.core.design.component.debug.DebugBottomSheet
 import com.deadarchive.v2.core.design.component.debug.DebugData
@@ -77,7 +76,7 @@ data class BrowseAllItem(
 @Composable
 fun SearchScreen(
     onNavigateToPlayer: (String) -> Unit,
-    onNavigateToShow: (Show) -> Unit,
+    onNavigateToShow: (String) -> Unit,
     onNavigateToSearchResults: () -> Unit,
     initialEra: String? = null,
     viewModel: SearchViewModel = hiltViewModel()

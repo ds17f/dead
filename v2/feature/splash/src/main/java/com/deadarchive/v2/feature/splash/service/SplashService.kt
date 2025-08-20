@@ -1,8 +1,8 @@
-package com.deadarchive.v2.app.splash.service
+package com.deadarchive.v2.feature.splash.service
 
 import android.util.Log
-import com.deadarchive.v2.app.model.PhaseV2
-import com.deadarchive.v2.app.model.ProgressV2
+import com.deadarchive.v2.feature.splash.model.PhaseV2
+import com.deadarchive.v2.feature.splash.model.ProgressV2
 import com.deadarchive.v2.core.database.service.DatabaseManager
 import com.deadarchive.v2.core.database.service.DatabaseImportResult
 import kotlinx.coroutines.CoroutineScope

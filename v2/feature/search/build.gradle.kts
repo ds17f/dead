@@ -51,8 +51,6 @@ dependencies {
     implementation(project(":v2:core:model"))
     implementation(project(":v2:core:design"))
 
-    // V1 Core dependencies (only for models until we migrate)
-    implementation(project(":core:model"))
 
     // Compose BOM
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))

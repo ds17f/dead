@@ -1,4 +1,4 @@
-package com.deadarchive.v2.app.model
+package com.deadarchive.v2.feature.splash.model
 
 /**
  * V2 database initialization phases for progress tracking

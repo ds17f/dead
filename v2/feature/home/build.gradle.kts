@@ -4,11 +4,10 @@ plugins {
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
     id("com.google.devtools.ksp")
-    id("kotlinx-serialization")
 }
 
 android {
-    namespace = "com.deadarchive.v2.app"
+    namespace = "com.deadarchive.v2.feature.home"
     compileSdk = 34
 
     defaultConfig {
@@ -47,13 +46,8 @@ android {
 }
 
 dependencies {
-    // V2 Core Dependencies (only design needed for pure navigation app)
+    // V2 Core Dependencies
     implementation(project(":v2:core:design"))
-    
-    // V2 Feature Dependencies
-    implementation(project(":v2:feature:splash"))
-    implementation(project(":v2:feature:home"))
-    implementation(project(":v2:feature:search"))
     
     // Android & Compose
     implementation("androidx.core:core-ktx:1.12.0")
@@ -72,17 +66,10 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
     ksp("com.google.dagger:hilt-compiler:2.51.1")
     
-    // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    
     // Testing
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation(platform("androidx.compose:compose-bom:2024.05.00"))
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
 
 kapt {

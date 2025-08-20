@@ -1,11 +1,11 @@
-package com.deadarchive.v2.app.splash
+package com.deadarchive.v2.feature.splash
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.deadarchive.v2.app.model.PhaseV2
-import com.deadarchive.v2.app.splash.service.SplashService
-import com.deadarchive.v2.app.splash.service.SplashV2UiState
-import com.deadarchive.v2.app.splash.service.V2InitResult
+import com.deadarchive.v2.feature.splash.model.PhaseV2
+import com.deadarchive.v2.feature.splash.service.SplashService
+import com.deadarchive.v2.feature.splash.service.SplashV2UiState
+import com.deadarchive.v2.feature.splash.service.V2InitResult
 import com.deadarchive.v2.core.database.service.DatabaseManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.StateFlow

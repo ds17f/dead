@@ -46,8 +46,6 @@ dependencies {
     // V2 database dependencies
     implementation(project(":v2:core:database"))
 
-    // Core model dependencies (temporary until we migrate models)
-    implementation(project(":core:model"))
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
