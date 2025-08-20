@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.47.0] - 2025-08-19
+
+### New Features
+* improve SearchResults UI with Spotify-style fixed header (31d7eb33)
+* implement FTS4 search with comprehensive date format support (8bc775c6)
+* implement complete V2 navigation architecture with file-based toggle (7503c985)
+* implement immersive status bar mode with debug panel integration (b40e6ecd)
+* implement complete V2 UI architecture with AppScaffold and TopBar system (8388f0e9)
+* integrate V2 SearchScreen with complete component migration (232816f6)
+* complete V2 design module with Material3 theme system (4a74907c)
+* implement complete V2 navigation architecture with file-based toggle (0f685ad8)
+
+### Bug Fixes
+* resolve SearchScreen import references for successful build (9b149e4a)
+* resolve Hilt injection conflicts and splash navigation (722b5d96)
+
+### Code Refactoring
+* clean up V2 component naming conventions (5397b4a6)
+* Arrange all code v2 modules under v2 packages (4e315b49)
+
+### Other Changes
+* chore: update Gradle wrapper to version 8.14.2 (4d3b1ede)
+
+
 ## [0.46.0] - 2025-08-17
 
 ### New Features
@@ -24,8 +48,6 @@
 * rename feature module from browse to search (9f8d41d0)
 * reorganize V2 modules for clean package/module alignment (33f6d85d)
 * remove dead code and unused restoration service (a845e15c)
-
-
 ## [0.45.0] - 2025-08-14
 
 ### New Features
