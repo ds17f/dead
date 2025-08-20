@@ -38,10 +38,10 @@ fun SplashScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            // Large Steal Your Face Logo
+            // Large Deadly Logo
             Image(
-                painter = painterResource(R.drawable.steal_your_face),
-                contentDescription = "Steal Your Face - Grateful Dead Logo",
+                painter = painterResource(R.drawable.deadly_logo),
+                contentDescription = "Deadly Logo",
                 modifier = Modifier.size(200.dp)
             )
             

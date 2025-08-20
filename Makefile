@@ -1,7 +1,7 @@
 # Deadly Android App - Makefile
 # Simplifies common development tasks
 
-.PHONY: help build clean test lint install run run-emulator debug release tag-release tag-release-quick update-release-descriptions dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data v2-enable v2-disable v2-status
+.PHONY: help build clean test lint install run run-emulator debug release tag-release tag-release-quick update-release-descriptions dry-run-release setup deps check status logs capture-test-data clean-test-data view-test-data v2-enable v2-disable v2-status theme-install theme-remove theme-status
 
 # Default target
 help:
@@ -59,6 +59,11 @@ help:
 	@echo "  make v2-enable   - Enable V2 app (file-based toggle)"
 	@echo "  make v2-disable  - Disable V2 app (fall back to V1)"
 	@echo "  make v2-status   - Check current V2 app status"
+	@echo ""
+	@echo "Theme Management (V2):"
+	@echo "  make theme-install - Install Grateful Dead Classic theme"
+	@echo "  make theme-remove  - Remove all custom themes (use default)"
+	@echo "  make theme-status  - Check current theme status"
 	@echo ""
 	@echo "Test Data Management:"
 	@echo "  make capture-test-data - Pull test data exported by debug screen"
@@ -806,3 +811,4 @@ view-db-schema:
 		mv docs/v2/database/schema-diagram-1.png docs/v2/database/schema-diagram.png; \
 	fi
 	@open docs/v2/database/schema-diagram.png
+

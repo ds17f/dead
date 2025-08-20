@@ -48,8 +48,8 @@ fun V2TopBar(
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 Image(
-                    painter = painterResource(R.drawable.steal_your_face),
-                    contentDescription = "Dead Archive",
+                    painter = painterResource(R.drawable.deadly_logo),
+                    contentDescription = "Deadly",
                     modifier = Modifier.size(32.dp)
                 )
                 

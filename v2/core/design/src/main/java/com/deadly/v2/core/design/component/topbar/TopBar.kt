@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import com.deadly.v2.core.design.R
 import com.deadly.v2.core.design.resources.IconResources
+import com.deadly.v2.core.theme.api.ThemeAssets
 
 /**
  * Defines how the TopBar should handle status bar interaction
@@ -38,11 +39,11 @@ sealed class TopBarMode {
 }
 
 /**
- * TopBar - Spotify-style TopBar with flexible status bar handling
+ * TopBar - Spotify-style TopBar with flexible status bar handling and theme support
  * 
  * This component provides consistent styling across all V2 screens with
- * flexible status bar interaction modes. It includes the Steal Your Face logo
- * and integrates with the V2 design system.
+ * flexible status bar interaction modes. It integrates with the V2 theme system
+ * to display the current theme's logo (lightning bolt by default, or themed logos).
  * 
  * @param title The title text to display
  * @param mode How to handle status bar interaction (SOLID or IMMERSIVE)
@@ -175,9 +176,9 @@ private fun TopBarContent(
             }
         }
         
-        // SYF Logo
+        // App Logo
         Image(
-            painter = painterResource(R.drawable.steal_your_face),
+            painter = ThemeAssets.current.primaryLogo(),
             contentDescription = "Deadly",
             modifier = Modifier.size(32.dp)
         )
@@ -212,9 +213,20 @@ private fun TopBarContent(
 }
 
 /**
- * TopBarDefaults - Default action buttons for common TopBar use cases
+ * TopBarDefaults - Default action buttons and navigation icons for common TopBar use cases
  */
 object TopBarDefaults {
+    
+    /**
+     * Back navigation icon for screens with back navigation
+     */
+    @Composable
+    fun BackNavigationIcon(onBackClick: () -> Unit): @Composable () -> Unit = {
+        Icon(
+            painter = IconResources.Navigation.Back(),
+            contentDescription = "Back"
+        )
+    }
     
     /**
      * Search and Add actions for LibraryScreen

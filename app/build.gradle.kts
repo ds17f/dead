@@ -128,6 +128,8 @@ android {
 
 dependencies {
     implementation(project(":v2:app"))
+    implementation(project(":v2:core:theme"))
+    implementation(project(":v2:core:theme-api"))
     implementation(project(":core:data-api"))
     implementation(project(":core:design"))
     implementation(project(":core:common"))

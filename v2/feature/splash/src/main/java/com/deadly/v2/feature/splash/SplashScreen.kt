@@ -12,6 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.deadly.v2.feature.splash.model.PhaseV2
 import com.deadly.v2.core.design.resources.IconResources
+import com.deadly.v2.core.theme.api.ThemeAssets
 import kotlinx.coroutines.delay
 
 @Composable
@@ -50,10 +51,10 @@ fun SplashScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(24.dp)
         ) {
-            // Large Steal Your Face Logo
+            // Large App Logo
             Image(
-                painter = painterResource(com.deadly.v2.core.design.R.drawable.steal_your_face),
-                contentDescription = "Steal Your Face - Grateful Dead Logo",
+                painter = ThemeAssets.current.splashLogo(),
+                contentDescription = "Deadly Logo",
                 modifier = Modifier.size(200.dp)
             )
             

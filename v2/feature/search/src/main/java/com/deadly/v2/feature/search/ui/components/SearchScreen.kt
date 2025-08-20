@@ -390,9 +390,9 @@ private fun DecadeCard(
                 )
                 .clip(RoundedCornerShape(8.dp))
         ) {
-            // Background SYF image (right justified)
+            // Background alt logo image (right justified)
             Image(
-                painter = painterResource(com.deadly.v2.core.design.R.drawable.steal_your_face),
+                painter = painterResource(com.deadly.v2.core.design.R.drawable.alt_logo),
                 contentDescription = null,
                 modifier = Modifier
                     .size(40.dp)

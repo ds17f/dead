@@ -12,6 +12,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.deadly.v2.core.design.resources.IconResources
+import com.deadly.v2.core.theme.api.ThemeAssets
 
 /**
  * HomeScreen - Main navigation hub for V2 app
@@ -44,7 +45,7 @@ fun HomeScreen(
         ) {
             // Logo and title
             Image(
-                painter = painterResource(com.deadly.v2.core.design.R.drawable.steal_your_face),
+                painter = ThemeAssets.current.primaryLogo(),
                 contentDescription = "Deadly Logo",
                 modifier = Modifier.size(120.dp)
             )

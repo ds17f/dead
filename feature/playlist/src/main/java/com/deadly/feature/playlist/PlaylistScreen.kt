@@ -293,7 +293,7 @@ fun PlaylistScreen(
                             contentAlignment = Alignment.Center
                         ) {
                             Image(
-                                painter = painterResource(com.deadly.core.design.R.drawable.steal_your_face),
+                                painter = painterResource(com.deadly.core.design.R.drawable.deadly_logo),
                                 contentDescription = "Album Art",
                                 contentScale = ContentScale.Crop,
                                 modifier = Modifier

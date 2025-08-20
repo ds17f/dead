@@ -14,6 +14,8 @@ import androidx.core.view.WindowCompat
 import androidx.media3.common.util.UnstableApi
 import com.deadly.core.design.theme.DeadArchiveTheme
 import com.deadly.core.settings.api.SettingsRepository
+import com.deadly.v2.core.theme.ThemeManager
+import com.deadly.v2.core.theme.api.ThemeAssetProvider
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlin.OptIn
@@ -27,6 +29,12 @@ class MainActivity : ComponentActivity() {
     
     @Inject
     lateinit var settingsRepository: SettingsRepository
+    
+    @Inject
+    lateinit var themeManager: ThemeManager
+    
+    @Inject
+    lateinit var themeProvider: ThemeAssetProvider
     
     /**
      * Check if V2 app is enabled via file-based toggle.
@@ -55,8 +63,11 @@ class MainActivity : ComponentActivity() {
                 ) {
                     // File-based toggle between V1 and V2 apps
                     if (shouldUseV2App()) {
-                        // Use V2 app - completely independent navigation
-                        V2Navigation()
+                        // Use V2 app - completely independent navigation with DI theme system
+                        V2Navigation(
+                            themeManager = themeManager,
+                            themeProvider = themeProvider
+                        )
                     } else {
                         // Use V1 app - existing navigation
                         V1Navigation(

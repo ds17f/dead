@@ -49,11 +49,14 @@ android {
 dependencies {
     // V2 Core Dependencies (only design needed for pure navigation app)
     implementation(project(":v2:core:design"))
-    
+    implementation(project(":v2:core:theme"))
+    implementation(project(":v2:core:theme-api"))
+
     // V2 Feature Dependencies
     implementation(project(":v2:feature:splash"))
     implementation(project(":v2:feature:home"))
     implementation(project(":v2:feature:search"))
+    implementation(project(":v2:feature:settings"))
     
     // Android & Compose
     implementation("androidx.core:core-ktx:1.12.0")

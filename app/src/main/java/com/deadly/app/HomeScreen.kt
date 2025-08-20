@@ -37,8 +37,8 @@ fun HomeScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
-                    painter = painterResource(R.drawable.steal_your_face),
-                    contentDescription = "Steal Your Face Logo",
+                    painter = painterResource(R.drawable.deadly_logo),
+                    contentDescription = "Deadly Logo",
                     modifier = Modifier.size(48.dp)
                 )
                 Spacer(modifier = Modifier.width(12.dp))

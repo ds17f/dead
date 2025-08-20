@@ -15,7 +15,7 @@ import com.deadly.core.design.R
 /**
  * PlaylistV2AlbumArt - Album artwork component
  * 
- * Clean V2 implementation displaying the steal_your_face image
+ * Clean V2 implementation displaying the deadly logo image
  * with proper sizing and styling to match V1 appearance.
  */
 @Composable
@@ -29,7 +29,7 @@ fun PlaylistV2AlbumArt(
         contentAlignment = Alignment.Center
     ) {
         Image(
-            painter = painterResource(R.drawable.steal_your_face),
+            painter = painterResource(R.drawable.deadly_logo),
             contentDescription = "Album Art",
             contentScale = ContentScale.Crop,
             modifier = Modifier
